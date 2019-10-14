@@ -26,9 +26,9 @@ class ObjectFactory_Android {
     return android_os_Bundle()..refId = refId;
   }
 
-  static Future<android_graphics_Bitmap> createBitmap(Uint8List bitmapBytes) async {
+  static Future<android_graphics_Bitmap> createandroid_graphics_Bitmap(Uint8List bitmapBytes) async {
     final refId =
-        await _channel.invokeMethod('ObjectFactory::createBitmap', {'bitmapBytes': bitmapBytes});
+        await _channel.invokeMethod('ObjectFactory::createandroid_graphics_Bitmap', {'bitmapBytes': bitmapBytes});
     return android_graphics_Bitmap()..refId = refId;
   }
 
@@ -36,8 +36,16 @@ class ObjectFactory_Android {
     await _channel.invokeMethod('ObjectFactory::release', {'refId': ref.refId});
   }
 
-  static Future<void> clearRefMap() async {
-    await _channel.invokeMethod('ObjectFactory::clearRefMap');
+  static Future<void> clearHeap() async {
+    await _channel.invokeMethod('ObjectFactory::clearHeap');
+  }
+
+  static Future<void> pushStack(String name, Ref_Android ref) async {
+    await _channel.invokeMethod('ObjectFactory::pushStack', {'name': name, 'refId': ref.refId});
+  }
+
+  static Future<void> clearStack() async {
+    await _channel.invokeMethod('ObjectFactory::clearStack');
   }
 
   static Future<com_autonavi_ae_gmap_maploader_ProcessingTile> createcom_autonavi_ae_gmap_maploader_ProcessingTile__String(String var1) async {

@@ -10,6 +10,9 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.PluginRegistry.Registrar
 
+// Dart端一次方法调用所存在的栈, 只有当MethodChannel传递参数受限时, 再启用这个容器
+val STACK = mutableMapOf<String, Int>()
+// Dart端随机存取对象的容器
 val HEAP = mutableMapOf<Int, Any>()
 
 @Suppress("FunctionName", "UsePropertyAccessSyntax", "RedundantUnitReturnType", "UNUSED_PARAMETER", "SpellCheckingInspection", "ConvertToStringTemplate", "DEPRECATION", "UNUSED_VARIABLE")
@@ -50325,7 +50328,7 @@ class AmapMapFlutterPlugin(private val registrar: Registrar): MethodChannel.Meth
                 methodResult.success(Bundle().apply { HEAP[hashCode()] = this }.hashCode())
             }
             // 创建bitmap对象
-            "ObjectFactory::createBitmap" -> {
+            "ObjectFactory::createandroid_graphics_Bitmap" -> {
                 val bitmapBytes = args["bitmapBytes"] as ByteArray
                 val bitmap = android.graphics.BitmapFactory.decodeByteArray(bitmapBytes, 0, bitmapBytes.size)
 
@@ -50345,7 +50348,7 @@ class AmapMapFlutterPlugin(private val registrar: Registrar): MethodChannel.Meth
                 Log.d("ObjectFactory", "HEAP: $HEAP")
             }
             // 清空HEAP中所有对象
-            "ObjectFactory::clearRefMap" -> {
+            "ObjectFactory::clearHeap" -> {
                 Log.d("ObjectFactory", "清空堆")
 
                 HEAP.clear()
@@ -50353,6 +50356,29 @@ class AmapMapFlutterPlugin(private val registrar: Registrar): MethodChannel.Meth
 
                 // 打印当前HEAP
                 Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
+            // 压入栈
+            "ObjectFactory::pushStack" -> {
+                Log.d("ObjectFactory", "压入对象: ${args["refId"]}")
+
+                val name = args["name"] as String
+                val refId = args["refId"] as Int
+
+                STACK[name] = refId
+
+                methodResult.success("success")
+
+                // 打印当前STACK
+                Log.d("ObjectFactory", "STACK: $STACK")
+            }
+            // 清空栈
+            "ObjectFactory::clearStack" -> {
+                STACK.clear()
+
+                methodResult.success("success")
+
+                // 打印当前STACK
+                Log.d("ObjectFactory", "STACK: $STACK")
             }
             else -> {
                 handlerMap[methodCall.method]?.invoke(registrar, args, methodResult) ?: methodResult.notImplemented()

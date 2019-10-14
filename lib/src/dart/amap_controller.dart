@@ -424,7 +424,9 @@ class AmapController {
               break;
           }
 
-          final bitmap = await ObjectFactory_Android.createBitmap(iconData);
+          final bitmap =
+              await ObjectFactory_Android.createandroid_graphics_Bitmap(
+                  iconData);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
           await markerOption.icon(icon);
@@ -453,10 +455,41 @@ class AmapController {
         if (title != null) {
           await pointAnnotation.set_title(title);
         }
-
         // 设置副标题
         if (snippet != null) {
           await pointAnnotation.set_subtitle(snippet);
+        }
+        // 设置图片
+        // 设置marker图标
+        if (iconUri != null) {
+          Uint8List iconData;
+          switch (iconUri.scheme) {
+            // 网络图片
+            case 'https':
+            case 'http':
+              HttpClient httpClient = HttpClient();
+              var request = await httpClient.getUrl(iconUri);
+              var response = await request.close();
+              iconData = await consolidateHttpClientResponseBytes(response);
+              break;
+            // 文件图片
+            case 'file':
+              // todo
+              break;
+            // asset图片
+            default:
+              final byteData = await rootBundle.load(iconUri.path);
+              iconData = byteData.buffer.asUint8List();
+              break;
+          }
+
+          final icon = await ObjectFactory_iOS.createUIImage(iconData);
+
+          // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
+          // 供ios的回调去获取
+          await ObjectFactory_iOS.pushStack('icon', icon);
+
+          pool..add(icon);
         }
 
         await iosController.addAnnotation(pointAnnotation);

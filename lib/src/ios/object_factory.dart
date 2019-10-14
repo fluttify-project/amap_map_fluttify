@@ -13,9 +13,9 @@ class ObjectFactory_iOS {
     return CLLocationCoordinate2D()..refId = refId;
   }
 
-  static Future<UIImage> createBitmap(Uint8List bitmapBytes) async {
+  static Future<UIImage> createUIImage(Uint8List bitmapBytes) async {
     final refId =
-        await _channel.invokeMethod('ObjectFactory::createBitmap', {'bitmapBytes': bitmapBytes});
+        await _channel.invokeMethod('ObjectFactory::createUIImage', {'bitmapBytes': bitmapBytes});
     return UIImage()..refId = refId;
   }
 
@@ -23,8 +23,16 @@ class ObjectFactory_iOS {
     await _channel.invokeMethod('ObjectFactory::release', {'refId': ref.refId});
   }
 
-  static Future<void> clearRefMap() async {
-    await _channel.invokeMethod('ObjectFactory::clearRefMap');
+  static Future<void> clearHeap() async {
+    await _channel.invokeMethod('ObjectFactory::clearHeap');
+  }
+
+  static Future<void> pushStack(String name, Ref_iOS ref) async {
+    await _channel.invokeMethod('ObjectFactory::pushStack', {'name': name, 'refId': ref.refId});
+  }
+
+  static Future<void> clearStack() async {
+    await _channel.invokeMethod('ObjectFactory::clearStack');
   }
 
   static Future<AMapURLSearch> createAMapURLSearch() async {

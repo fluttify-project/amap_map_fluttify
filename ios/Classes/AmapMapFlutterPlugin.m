@@ -6,7 +6,10 @@
 
 typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSString *, NSObject *> *, FlutterResult);
 
-NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
+// Dart端一次方法调用所存在的栈, 只有当MethodChannel传递参数受限时, 再启用这个容器
+NSMutableDictionary<NSString*, NSNumber*>* STACK;
+// Dart端随机存取对象的容器
+NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
 
 @implementation AmapMapFlutterPlugin {
   NSObject <FlutterPluginRegistrar> * _registrar;
@@ -8506,7 +8509,9 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
 }
 
 + (void)registerWithRegistrar:(NSObject <FlutterPluginRegistrar> *)registrar {
-  // 引用Map
+  // 栈容器
+  STACK = @{}.mutableCopy;
+  // 堆容器
   HEAP = @{}.mutableCopy;
 
   FlutterMethodChannel *channel = [FlutterMethodChannel
@@ -8535,13 +8540,35 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
     NSLog(@"HEAP: %@", HEAP);
   }
   // 清空堆
-  else if ([@"ObjectFactory::clearRefMap" isEqualToString:methodCall.method]) {
+  else if ([@"ObjectFactory::clearHeap" isEqualToString:methodCall.method]) {
     NSLog(@"ObjectFactory::清空堆");
 
     [HEAP removeAllObjects];
     methodResult(@"success");
 
     NSLog(@"HEAP: %@", HEAP);
+  }
+  // 压入栈
+  else if ([@"ObjectFactory::pushStack" isEqualToString:methodCall.method]) {
+    NSLog(@"ObjectFactory::压入栈");
+
+    NSString* name = (NSString*) args[@"name"];
+    NSNumber* refId = (NSNumber*) args[@"refId"];
+
+    STACK[name] = refId;
+
+    methodResult(@"success");
+
+    NSLog(@"STACK: %@", STACK);
+  }
+  // 清空栈
+  else if ([@"ObjectFactory::clearStack" isEqualToString:methodCall.method]) {
+    NSLog(@"ObjectFactory::清空栈");
+
+    [STACK removeAllObjects];
+    methodResult(@"success");
+
+    NSLog(@"STACK: %@", STACK);
   }
   // 创建CLLocationCoordinate2D
   else if ([@"ObjectFactory::createCLLocationCoordinate2D" isEqualToString:methodCall.method]) {
@@ -8556,7 +8583,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
     methodResult(@(dataValue.hash));
   }
   // 创建UIImage
-  else if ([@"ObjectFactory::createBitmap" isEqualToString:methodCall.method]) {
+  else if ([@"ObjectFactory::createUIImage" isEqualToString:methodCall.method]) {
     FlutterStandardTypedData* bitmapBytes = (FlutterStandardTypedData*) args[@"bitmapBytes"];
 
     UIImage* bitmap = [UIImage imageWithData:bitmapBytes.data];
