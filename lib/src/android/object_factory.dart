@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:flutter/services.dart';
 
 import 'package:amap_map_flutter/src/android/android.export.dart';
@@ -22,6 +24,12 @@ class ObjectFactory_Android {
     final refId =
         await _channel.invokeMethod('ObjectFactory::createandroid_os_Bundle');
     return android_os_Bundle()..refId = refId;
+  }
+
+  static Future<android_graphics_Bitmap> createBitmap(Uint8List bitmapBytes) async {
+    final refId =
+        await _channel.invokeMethod('ObjectFactory::createBitmap', {'bitmapBytes': bitmapBytes});
+    return android_graphics_Bitmap()..refId = refId;
   }
 
   static Future<void> release(Ref_Android ref) async {

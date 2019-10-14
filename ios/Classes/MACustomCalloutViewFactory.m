@@ -380,6 +380,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 相关issue https://github.com/flutter/flutter/issues/28310
   NSLog(@"暂不支持有返回值的回调方法");
   
+  ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
+  
+  ////////////////////////////////////////////////////////////////////////////////
+  
   return nil;
 }
 
@@ -577,6 +581,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
   NSLog(@"暂不支持有返回值的回调方法");
+  
+  ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
+  
+  ////////////////////////////////////////////////////////////////////////////////
   
   return nil;
 }

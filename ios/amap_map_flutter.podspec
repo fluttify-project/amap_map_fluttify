@@ -31,7 +31,7 @@ A new flutter plugin project.
   ]
   # 需要添加的资源文件
   s.resources = [
-        "MAMapKit.framework/AMap.bundle"
+        
   ]
 end
 

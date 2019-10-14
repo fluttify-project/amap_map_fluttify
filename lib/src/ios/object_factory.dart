@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:flutter/services.dart';
 
 import 'package:amap_map_flutter/src/ios/ios.export.dart';
@@ -9,6 +11,12 @@ class ObjectFactory_iOS {
   static Future<CLLocationCoordinate2D> createCLLocationCoordinate2D(double latitude, double longitude) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createCLLocationCoordinate2D', {'latitude': latitude, 'longitude': longitude});
     return CLLocationCoordinate2D()..refId = refId;
+  }
+
+  static Future<UIImage> createBitmap(Uint8List bitmapBytes) async {
+    final refId =
+        await _channel.invokeMethod('ObjectFactory::createBitmap', {'bitmapBytes': bitmapBytes});
+    return UIImage()..refId = refId;
   }
 
   static Future<void> release(Ref_iOS ref) async {
@@ -431,6 +439,8 @@ mixin NSCopying on NSObject {}
 class UIView extends NSObject {}
 
 class UIControl extends NSObject {}
+
+class UIImage extends NSObject {}
 
 class MAAnnotation_Ref = NSObject with MAAnnotation;
 class MAAnimatableAnnotation_Ref = NSObject with MAAnimatableAnnotation;

@@ -8525,6 +8525,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
 // Method Handlers
 - (void)handleMethodCall:(FlutterMethodCall *)methodCall result:(FlutterResult)methodResult {
   NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
+  // 是否一个对象
   if ([@"ObjectFactory::release" isEqualToString:methodCall.method]) {
     NSLog(@"ObjectFactory::释放对象: %@", (NSNumber *) args[@"refId"]);
 
@@ -8532,14 +8533,18 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
     methodResult(@"success");
 
     NSLog(@"HEAP: %@", HEAP);
-  } else if ([@"ObjectFactory::clearRefMap" isEqualToString:methodCall.method]) {
+  }
+  // 清空堆
+  else if ([@"ObjectFactory::clearRefMap" isEqualToString:methodCall.method]) {
     NSLog(@"ObjectFactory::清空堆");
 
     [HEAP removeAllObjects];
     methodResult(@"success");
 
     NSLog(@"HEAP: %@", HEAP);
-  } else if ([@"ObjectFactory::createCLLocationCoordinate2D" isEqualToString:methodCall.method]) {
+  }
+  // 创建CLLocationCoordinate2D
+  else if ([@"ObjectFactory::createCLLocationCoordinate2D" isEqualToString:methodCall.method]) {
     CLLocationDegrees latitude = [args[@"latitude"] doubleValue];
     CLLocationDegrees longitude = [args[@"longitude"] doubleValue];
 
@@ -8549,6 +8554,16 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
     HEAP[@(dataValue.hash)] = dataValue;
 
     methodResult(@(dataValue.hash));
+  }
+  // 创建UIImage
+  else if ([@"ObjectFactory::createBitmap" isEqualToString:methodCall.method]) {
+    FlutterStandardTypedData* bitmapBytes = (FlutterStandardTypedData*) args[@"bitmapBytes"];
+
+    UIImage* bitmap = [UIImage imageWithData:bitmapBytes.data];
+
+    HEAP[@(bitmap.hash)] = bitmap;
+
+    methodResult(@(bitmap.hash));
   } else {
     if (_handlerMap[methodCall.method] != nil) {
       _handlerMap[methodCall.method](_registrar, args, methodResult);
@@ -8850,6 +8865,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   // 相关issue https://github.com/flutter/flutter/issues/28310
   NSLog(@"暂不支持有返回值的回调方法");
   
+  ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
+  
+  ////////////////////////////////////////////////////////////////////////////////
+  
   return nil;
 }
 
@@ -9047,6 +9066,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
   NSLog(@"暂不支持有返回值的回调方法");
+  
+  ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
+  
+  ////////////////////////////////////////////////////////////////////////////////
   
   return nil;
 }

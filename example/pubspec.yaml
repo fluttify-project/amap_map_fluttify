@@ -10,8 +10,10 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^0.1.2
   permission_handler: ^3.2.2
+  oktoast:
   decorated_flutter:
     path: /Users/yohom/Github/Util/Flutter/package/decorated_flutter
+  dio:
 
 dev_dependencies:
   flutter_test:
@@ -21,3 +23,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - images/

@@ -1,6 +1,7 @@
 import 'package:amap_map_flutter_example/widgets/dimens.dart';
 import 'package:amap_map_flutter_example/widgets/function_group.widget.dart';
 import 'package:amap_map_flutter_example/widgets/function_item.widget.dart';
+import 'package:amap_map_flutter_example/widgets/todo.screen.dart';
 import 'package:flutter/material.dart';
 
 import 'create_map/create_map.screen.dart';
@@ -10,9 +11,6 @@ import 'draw_on_map/draw_polyline.screen.dart';
 import 'interact_with_map/code_interaction.screen.dart';
 import 'interact_with_map/control_interaction.screen.dart';
 import 'interact_with_map/gesture_interaction.screen.dart';
-import 'interact_with_map/screen_shot.screen.dart';
-import 'tools/calcute_distance_screen.dart';
-import 'tools/coordinate_transformation_screen.dart';
 
 class MapDemo extends StatelessWidget {
   @override
@@ -50,8 +48,8 @@ class MapDemo extends StatelessWidget {
             ),
             FunctionItem(
               label: '截图',
-              sublabel: 'ScreenShotScreen',
-              target: ScreenShotScreen(),
+              sublabel: 'TODO',
+              target: TODOScreen(),
             ),
           ],
         ),
@@ -82,13 +80,13 @@ class MapDemo extends StatelessWidget {
           children: <Widget>[
             FunctionItem(
               label: "坐标转换",
-              sublabel: "CoordinateTransformationScreen",
-              target: CoordinateTransformationScreen(),
+              sublabel: "TODO",
+              target: TODOScreen(),
             ),
             FunctionItem(
               label: "两点间距离计算",
-              sublabel: "CalcuteDistanceScreen",
-              target: CalcuteDistanceScreen(),
+              sublabel: "TODO",
+              target: TODOScreen(),
             ),
           ],
         ),

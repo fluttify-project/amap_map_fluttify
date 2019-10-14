@@ -50324,6 +50324,15 @@ class AmapMapFlutterPlugin(private val registrar: Registrar): MethodChannel.Meth
             "ObjectFactory::createandroid_os_Bundle" -> {
                 methodResult.success(Bundle().apply { HEAP[hashCode()] = this }.hashCode())
             }
+            // 创建bitmap对象
+            "ObjectFactory::createBitmap" -> {
+                val bitmapBytes = args["bitmapBytes"] as ByteArray
+                val bitmap = android.graphics.BitmapFactory.decodeByteArray(bitmapBytes, 0, bitmapBytes.size)
+
+                HEAP[bitmap.hashCode()] = bitmap
+
+                methodResult.success(bitmap.hashCode())
+            }
             // 释放一个对象
             "ObjectFactory::release" -> {
                 Log.d("ObjectFactory", "释放对象: ${args["refId"]}")

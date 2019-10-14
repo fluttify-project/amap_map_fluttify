@@ -364,24 +364,45 @@ class AmapController {
 
   /// 添加marker
   ///
-  /// 在纬度[lat], 经度[lng]的位置添加marker, 并设置标题[title]和副标题[snippet]
-  Future addMarker(LatLng point, {String title, String snippet}) {
+  /// 在纬度[lat], 经度[lng]的位置添加marker, 并设置标题[title]和副标题[snippet], [iconData]
+  /// 可以是任何途径获取来(assets/网络/文件等)的图标数据
+  Future addMarker(
+    LatLng point, {
+    String title,
+    String snippet,
+    Uint8List iconData,
+  }) {
     final lat = point.lat;
     final lng = point.lng;
     return platform(
       android: (pool) async {
+        // 获取地图
         final map = await androidController.getMap();
+
+        // marker经纬度
         final latLng = await ObjectFactory_Android
             .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
+
+        // marker配置
         final markerOption = await ObjectFactory_Android
             .createcom_amap_api_maps_model_MarkerOptions__();
 
+        // 设置marker经纬度
         await markerOption.position(latLng);
+        // 设置marker标题
         if (title != null) {
           await markerOption.title(title);
         }
+        // 设置marker副标题
         if (snippet != null) {
           await markerOption.snippet(snippet);
+        }
+        // 设置marker图标
+        if (iconData != null) {
+          final bitmap = await ObjectFactory_Android.createBitmap(iconData);
+          final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
+              .fromBitmap(bitmap);
+          await markerOption.icon(icon);
         }
 
         final marker = await map.addMarker(markerOption);
