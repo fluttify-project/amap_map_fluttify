@@ -5,7 +5,7 @@ import 'package:oktoast/oktoast.dart';
 import 'map/map.screen.dart';
 
 void main() async {
-  await AmapService.init('7a04506d15fdb7585707f7091d715ef4');
+  AmapService.init('7a04506d15fdb7585707f7091d715ef4');
 
   runApp(MyApp());
 }

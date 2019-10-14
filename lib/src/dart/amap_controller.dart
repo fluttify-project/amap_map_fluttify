@@ -371,11 +371,50 @@ class AmapController {
   /// 在纬度[lat], 经度[lng]的位置添加marker, 并设置标题[title]和副标题[snippet], [iconUri]
   /// 可以是图片url, asset路径或者文件路径
   Future addMarker(
+    BuildContext context,
     LatLng point, {
     String title,
     String snippet,
     Uri iconUri,
   }) {
+    Future<Uint8List> _getImageData(Uri iconUri) async {
+      Uint8List iconData;
+      switch (iconUri.scheme) {
+        // 网络图片
+        case 'https':
+        case 'http':
+          HttpClient httpClient = HttpClient();
+          var request = await httpClient.getUrl(iconUri);
+          var response = await request.close();
+          iconData = await consolidateHttpClientResponseBytes(response);
+          break;
+        // 文件图片
+        case 'file':
+          final imageFile = File.fromUri(iconUri);
+          iconData = imageFile.readAsBytesSync();
+          break;
+        // asset图片
+        default:
+          // asset的bug描述:
+          // android和ios平台上都取了1.0密度的图片, android上就显示了1.0密度的图片, 而ios
+          // 平台上使用的图片也是1.0密度, 但是根据设备密度进行了对应的放大, 导致了android和ios
+          // 两端的图片的大小不一致, 这里只对android根据密度选择原始图片, ios原封不动
+          // 这样做android端能够保证完美, ios端的话图片会有点糊, 因为原始图片是1.0密度, 但是这样
+          // 的话两端大小是一致的, 如果要求再高一点的话, ios这边对图片根据设备密度选择好图片后, 再进行对应密度
+          // 的缩小, 就是完美的了, 但是处理起来比较麻烦, 这里就不去处理了
+          if (Platform.isAndroid) {
+            final byteData = await rootBundle
+                .load(AmapService.toResolutionAware(context, iconUri.path));
+            iconData = byteData.buffer.asUint8List();
+          } else {
+            final byteData = await rootBundle.load(iconUri.path);
+            iconData = byteData.buffer.asUint8List();
+          }
+          break;
+      }
+      return iconData;
+    }
+
     final lat = point.lat;
     final lng = point.lng;
     return platform(
@@ -403,26 +442,7 @@ class AmapController {
         }
         // 设置marker图标
         if (iconUri != null) {
-          Uint8List iconData;
-          switch (iconUri.scheme) {
-            // 网络图片
-            case 'https':
-            case 'http':
-              HttpClient httpClient = HttpClient();
-              var request = await httpClient.getUrl(iconUri);
-              var response = await request.close();
-              iconData = await consolidateHttpClientResponseBytes(response);
-              break;
-            // 文件图片
-            case 'file':
-              // todo
-              break;
-            // asset图片
-            default:
-              final byteData = await rootBundle.load(iconUri.path);
-              iconData = byteData.buffer.asUint8List();
-              break;
-          }
+          Uint8List iconData = await _getImageData(iconUri);
 
           final bitmap =
               await ObjectFactory_Android.createandroid_graphics_Bitmap(
@@ -462,26 +482,7 @@ class AmapController {
         // 设置图片
         // 设置marker图标
         if (iconUri != null) {
-          Uint8List iconData;
-          switch (iconUri.scheme) {
-            // 网络图片
-            case 'https':
-            case 'http':
-              HttpClient httpClient = HttpClient();
-              var request = await httpClient.getUrl(iconUri);
-              var response = await request.close();
-              iconData = await consolidateHttpClientResponseBytes(response);
-              break;
-            // 文件图片
-            case 'file':
-              // todo
-              break;
-            // asset图片
-            default:
-              final byteData = await rootBundle.load(iconUri.path);
-              iconData = byteData.buffer.asUint8List();
-              break;
-          }
+          Uint8List iconData = await _getImageData(iconUri);
 
           final icon = await ObjectFactory_iOS.createUIImage(iconData);
 

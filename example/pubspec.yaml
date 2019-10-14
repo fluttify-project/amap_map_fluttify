@@ -13,7 +13,6 @@ dependencies:
   oktoast:
   decorated_flutter:
     path: /Users/yohom/Github/Util/Flutter/package/decorated_flutter
-  dio:
 
 dev_dependencies:
   flutter_test:
