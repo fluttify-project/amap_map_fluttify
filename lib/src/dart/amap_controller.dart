@@ -1,9 +1,13 @@
+import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
 
 import 'package:amap_map_flutter/amap_map_flutter.dart';
 import 'package:amap_map_flutter/src/android/android.export.dart';
 import 'package:amap_map_flutter/src/ios/ios.export.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 
 import 'enums.dart';
 
@@ -364,13 +368,13 @@ class AmapController {
 
   /// 添加marker
   ///
-  /// 在纬度[lat], 经度[lng]的位置添加marker, 并设置标题[title]和副标题[snippet], [iconData]
-  /// 可以是任何途径获取来(assets/网络/文件等)的图标数据
+  /// 在纬度[lat], 经度[lng]的位置添加marker, 并设置标题[title]和副标题[snippet], [iconUri]
+  /// 可以是图片url, asset路径或者文件路径
   Future addMarker(
     LatLng point, {
     String title,
     String snippet,
-    Uint8List iconData,
+    Uri iconUri,
   }) {
     final lat = point.lat;
     final lng = point.lng;
@@ -398,11 +402,34 @@ class AmapController {
           await markerOption.snippet(snippet);
         }
         // 设置marker图标
-        if (iconData != null) {
+        if (iconUri != null) {
+          Uint8List iconData;
+          switch (iconUri.scheme) {
+            // 网络图片
+            case 'https':
+            case 'http':
+              HttpClient httpClient = HttpClient();
+              var request = await httpClient.getUrl(iconUri);
+              var response = await request.close();
+              iconData = await consolidateHttpClientResponseBytes(response);
+              break;
+            // 文件图片
+            case 'file':
+              // todo
+              break;
+            // asset图片
+            default:
+              final byteData = await rootBundle.load(iconUri.path);
+              iconData = byteData.buffer.asUint8List();
+              break;
+          }
+
           final bitmap = await ObjectFactory_Android.createBitmap(iconData);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
           await markerOption.icon(icon);
+
+          pool..add(bitmap)..add(icon);
         }
 
         final marker = await map.addMarker(markerOption);
@@ -411,14 +438,27 @@ class AmapController {
       },
       ios: (pool) async {
         await iosController.set_delegate(MyDelegate());
+
+        // 创建marker
         final pointAnnotation =
             await ObjectFactory_iOS.createMAPointAnnotation();
 
         final coordinate =
             await ObjectFactory_iOS.createCLLocationCoordinate2D(lat, lng);
+
+        // 设置经纬度
         await pointAnnotation.set_coordinate(coordinate);
-        await pointAnnotation.set_title(title);
-        await pointAnnotation.set_subtitle(snippet);
+
+        // 设置标题
+        if (title != null) {
+          await pointAnnotation.set_title(title);
+        }
+
+        // 设置副标题
+        if (snippet != null) {
+          await pointAnnotation.set_subtitle(snippet);
+        }
+
         await iosController.addAnnotation(pointAnnotation);
 
         pool..add(pointAnnotation)..add(coordinate);

@@ -52,7 +52,9 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                       _getNextLatLng(),
                       title: '北京',
                       snippet: '描述',
-                      iconData: await _getNetworkImageData(),
+//                      iconUri: Uri.parse(
+//                          'https://w3.hoopchina.com.cn/30/a7/6a/30a76aea75aef69e4ea0e7d3dee552c7001.jpg'),
+                      iconUri: Uri.parse('images/error_placeholder.png'),
                     );
                     _controller?.setMarkerClickListener((marker) async {
                       print('Marker点击回调: 标题: ${await marker.getTitle()}');
