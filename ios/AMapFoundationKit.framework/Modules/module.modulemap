@@ -1,0 +1,6 @@
+framework module AMapFoundationKit {
+  umbrella header "AMapFoundationKit.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module MAMapKit {
+  umbrella header "MAMapKit.h"
+
+  export *
+  module * { export * }
+}

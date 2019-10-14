@@ -1,0 +1,23 @@
+name: amap_map_flutter_example
+description: Demonstrates how to use the amap_map_flutter plugin.
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  permission_handler: ^3.2.2
+  decorated_flutter:
+    path: /Users/yohom/Github/Util/Flutter/package/decorated_flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  amap_map_flutter:
+    path: ../
+
+flutter:
+  uses-material-design: true

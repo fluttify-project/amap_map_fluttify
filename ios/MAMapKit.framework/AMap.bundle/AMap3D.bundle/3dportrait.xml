@@ -1,0 +1,112 @@
+<Xml>
+  <XmlVerSion>v1.0</XmlVerSion>
+  <NavigationParam>
+    <!--竖屏:0-->
+    <ScreenDirection>0</ScreenDirection>
+    <!--相机角度多少帧会跟随道路朝向，单位“帧”，10帧/秒-->
+    <InterpolationFrame>30</InterpolationFrame>
+    <!--相机默认仰角(20-80)-->
+    <DefaultTitle>65</DefaultTitle>
+    <!--相机推近后的到地面的默认初始距离(米)-->
+    <DefaultCamerah>50</DefaultCamerah>
+    <!--相机角度前置车标多少米-->
+    <ForwardDis0>50</ForwardDis0>
+    <!--相机角度前置车标多少米(针对掉头)-->
+    <ForwardDis1>10</ForwardDis1>
+    <!--相机角度不可超出阈值-->
+    <ForwardDegreeMax>45</ForwardDegreeMax>
+
+    <!--距离语音点多少米开始下压,0不检测语音点-->
+    <DisBeforeSound>100</DisBeforeSound>
+    <!--走过语音点多少米后开始抬起-->
+    <DisAfterSound>100</DisAfterSound>
+    <!--路口三维推近仰角(20-80)-->
+    <SoundTitle>65</SoundTitle>
+    <!--相机推近后的到地面的最小距离(米)-->
+    <SoundCamerah>50</SoundCamerah>
+
+    <!--距离Pick点多少米开始下压,0不检测Pick点-->
+    <DisBeforePick>100</DisBeforePick>
+    <!--走过Pick点多少米后开始抬起-->
+    <DisAfterPick>100</DisAfterPick>
+    <!--Pick推近最小仰角(20-80)-->
+    <PickTitle>70</PickTitle>
+    <!--相机推近后的到地面的最小距离(米)-->
+    <PickCamerah>3.0</PickCamerah>
+    <!--距离DisBeforePick前的Pick采样间隔(米/帧)，实际采样间隔再加上车速-->
+    <PickInterval>4</PickInterval>
+
+    <!--完成下压的限制距离(米)-->
+    <LimitDis>10</LimitDis>
+    <!--低速行驶时相机视角是否往回摆-->
+    <LowSpeedTurnBack>0</LowSpeedTurnBack>
+
+    <!--车道切换、主辅路切换角度阀值（度）-->
+    <LaneSwitchAngle>15</LaneSwitchAngle>
+    <!--车道切换、主辅路切换中间转弯的方向线长度阀值(米)-->
+    <LaneSwitchDis>150</LaneSwitchDis>
+    <!--车道切换、主辅路切换忽略普通线也转弯的长度阀值(米)-->
+    <LaneSwitchIgnorDis>80</LaneSwitchIgnorDis>
+    
+    <!--转弯箭头距离车位置多远开始显示-->
+    <TrunPicMaxDis>250</TrunPicMaxDis>
+    <!--转弯提示文字距离车位置多远开始不显示-->
+    <TrunPicMinDis>25</TrunPicMinDis>
+    <!--转弯提示文字的大小，单位"像素"-->
+    <TrunPicSize>50</TrunPicSize>
+
+    <!--10米比例尺车标宽度，单位"米"-->
+    <CarWidth>6.5</CarWidth>
+
+    <!--车道线宽，单位"米"-->
+    <RoadLineWidth>7.0</RoadLineWidth>
+    <!--车道线颜色-->
+    <LineColorRed>0</LineColorRed>
+    <LineColorGreen>174</LineColorGreen>
+    <LineColorBlue>255</LineColorBlue>
+    <LineColorAlpha>204</LineColorAlpha>
+
+    <!--方向线向前长度，单位"米"-->
+    <LineforwardLength>30</LineforwardLength>
+    <!--方向线向后长度，单位"米"-->
+    <LinebackLength>30</LinebackLength>
+    <!--方向线宽度，单位"米"-->
+    <LineWidth>7.0</LineWidth>
+    <!--车道线融合(0-255,0全透,暂无效)-->
+    <LineAlpha>100</LineAlpha>
+    
+  </NavigationParam>
+  <AnimateParam>
+    <!--二维进入三维，蒙板颜色红色分量［0，255］-->
+    <ColorInRed>29</ColorInRed>
+    <!--二维进入三维，蒙板颜色绿色分量［0，255］-->
+    <ColorInGreed>30</ColorInGreed>
+    <!--二维进入三维，蒙板颜色蓝色分量［0，255］-->
+    <ColorInBlue>26</ColorInBlue>
+    <!--二维动画帧数-->
+    <FrameIn2d>4</FrameIn2d>
+    <!--三维动画帧数-->
+    <FrameIn3d>6</FrameIn3d>
+
+    <!--三维退出二维，蒙板颜色红色分量［0，255］-->
+    <ColorOutRed>29</ColorOutRed>
+    <!--三维退出二维，蒙板颜色绿色分量［0，255］-->
+    <ColorOutGreed>30</ColorOutGreed>
+    <!--三维退出二维，蒙板颜色蓝色分量［0，255］-->
+    <ColorOutBlue>26</ColorOutBlue>
+    <!--二维动画帧数-->
+    <FrameOut2d>2</FrameOut2d>
+    <!--三维动画帧数-->
+    <FrameOut3d>3</FrameOut3d>
+
+    <!--2d透明度变化范围起始值[0,255]-->
+    <AlphaBegin2d>60</AlphaBegin2d>
+    <!--2d透明度变化范围结束值[0,255]-->
+    <AlphaEnd2d>120</AlphaEnd2d>
+    <!--透明度变化范围起始值[0,255]-->
+    <AlphaBegin3d>180</AlphaBegin3d>
+    <!--透明度变化范围结束值[0,255]-->
+    <AlphaEnd3d>100</AlphaEnd3d>
+    
+  </AnimateParam> 
+</Xml>
