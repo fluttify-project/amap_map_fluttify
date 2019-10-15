@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAParticleOverLifeModule extends NSObject  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class MAParticleOverLifeModule extends NSObject  {
     print('fluttify-dart: MAParticleOverLifeModule@$refId::setVelocityOverLife([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAParticleOverLifeModule::setVelocityOverLife', {"velocity": velocity.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setVelocityOverLife', {"velocity": velocity.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class MAParticleOverLifeModule extends NSObject  {
     print('fluttify-dart: MAParticleOverLifeModule@$refId::setRotationOverLife([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAParticleOverLifeModule::setRotationOverLife', {"rotation": rotation.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setRotationOverLife', {"rotation": rotation.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class MAParticleOverLifeModule extends NSObject  {
     print('fluttify-dart: MAParticleOverLifeModule@$refId::setSizeOverLife([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAParticleOverLifeModule::setSizeOverLife', {"size": size.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setSizeOverLife', {"size": size.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class MAParticleOverLifeModule extends NSObject  {
     print('fluttify-dart: MAParticleOverLifeModule@$refId::setColorOverLife([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAParticleOverLifeModule::setColorOverLife', {"color": color.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setColorOverLife', {"color": color.refId, "refId": refId});
   
   
     // 接受原生回调

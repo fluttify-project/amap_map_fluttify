@@ -6,11 +6,9 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAArcRenderer extends MAOverlayPathRenderer  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<MAArc> get_arc() async {
-    final result = await _channel.invokeMethod("MAArcRenderer::get_arc", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAArcRenderer::get_arc", {'refId': refId});
     return MAArc()..refId = result;
   }
   
@@ -24,7 +22,7 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
     print('fluttify-dart: MAArcRenderer@$refId::initWithArc([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAArcRenderer::initWithArc', {"arc": arc.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArcRenderer::initWithArc', {"arc": arc.refId, "refId": refId});
   
   
     // 接受原生回调

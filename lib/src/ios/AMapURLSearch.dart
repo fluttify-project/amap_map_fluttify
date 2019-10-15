@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class AMapURLSearch extends NSObject  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class AMapURLSearch extends NSObject  {
     print('fluttify-dart: AMapURLSearch::getLatestAMapApp([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('AMapURLSearch::getLatestAMapApp', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('AMapURLSearch::getLatestAMapApp', );
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class AMapURLSearch extends NSObject  {
     print('fluttify-dart: AMapURLSearch::openAMapNavigation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('AMapURLSearch::openAMapNavigation', {"config": config.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('AMapURLSearch::openAMapNavigation', {"config": config.refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class AMapURLSearch extends NSObject  {
     print('fluttify-dart: AMapURLSearch::openAMapRouteSearch([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('AMapURLSearch::openAMapRouteSearch', {"config": config.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('AMapURLSearch::openAMapRouteSearch', {"config": config.refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class AMapURLSearch extends NSObject  {
     print('fluttify-dart: AMapURLSearch::openAMapPOISearch([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('AMapURLSearch::openAMapPOISearch', {"config": config.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('AMapURLSearch::openAMapPOISearch', {"config": config.refId});
   
   
     // 接受原生回调

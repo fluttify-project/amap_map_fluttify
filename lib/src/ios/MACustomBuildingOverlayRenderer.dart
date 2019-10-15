@@ -6,11 +6,9 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<MACustomBuildingOverlay> get_customBuildingOverlay() async {
-    final result = await _channel.invokeMethod("MACustomBuildingOverlayRenderer::get_customBuildingOverlay", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayRenderer::get_customBuildingOverlay", {'refId': refId});
     return MACustomBuildingOverlay()..refId = result;
   }
   
@@ -24,7 +22,7 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
     print('fluttify-dart: MACustomBuildingOverlayRenderer@$refId::initWithCustomBuildingOverlay([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay', {"customBuildingOverlay": customBuildingOverlay.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay', {"customBuildingOverlay": customBuildingOverlay.refId, "refId": refId});
   
   
     // 接受原生回调

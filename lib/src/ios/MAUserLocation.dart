@@ -6,11 +6,9 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAUserLocation extends MAAnimatedAnnotation  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<bool> get_updating() async {
-    final result = await _channel.invokeMethod("MAUserLocation::get_isUpdating", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocation::get_isUpdating", {'refId': refId});
     return result;
   }
   

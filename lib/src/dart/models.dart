@@ -9,6 +9,16 @@ class Marker {
 
   com_amap_api_maps_model_Marker _androidModel;
   MAAnnotationView _iosModel;
+
+  Future<String> get title {
+    return platform(
+      android: (_) => _androidModel.getTitle(),
+      ios: (_) async {
+        final annotation = await _iosModel.get_annotation();
+        return annotation.get_title();
+      },
+    );
+  }
 }
 
 class LatLng {

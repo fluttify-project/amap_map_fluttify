@@ -6,11 +6,9 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<MAMultiPolyline> get_multiPolyline() async {
-    final result = await _channel.invokeMethod("MAMultiTexturePolylineRenderer::get_multiPolyline", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_multiPolyline", {'refId': refId});
     return MAMultiPolyline()..refId = result;
   }
   
@@ -24,7 +22,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     print('fluttify-dart: MAMultiTexturePolylineRenderer@$refId::initWithMultiPolyline([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline.refId, "refId": refId});
   
   
     // 接受原生回调

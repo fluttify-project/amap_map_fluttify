@@ -6,11 +6,9 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MATileOverlayRenderer extends MAOverlayRenderer  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<MATileOverlay> get_tileOverlay() async {
-    final result = await _channel.invokeMethod("MATileOverlayRenderer::get_tileOverlay", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayRenderer::get_tileOverlay", {'refId': refId});
     return MATileOverlay()..refId = result;
   }
   
@@ -24,7 +22,7 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
     print('fluttify-dart: MATileOverlayRenderer@$refId::initWithTileOverlay([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MATileOverlayRenderer::initWithTileOverlay', {"tileOverlay": tileOverlay.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::initWithTileOverlay', {"tileOverlay": tileOverlay.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -43,7 +41,7 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
     print('fluttify-dart: MATileOverlayRenderer@$refId::reloadData([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MATileOverlayRenderer::reloadData', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::reloadData', {"refId": refId});
   
   
     // 接受原生回调

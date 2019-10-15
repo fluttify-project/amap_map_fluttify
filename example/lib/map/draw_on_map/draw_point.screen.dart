@@ -54,7 +54,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
 //                      iconUri: Uri.parse('images/test_icon.png'),
                     );
                     _controller?.setMarkerClickListener((marker) async {
-//                      print('Marker点击回调: 标题: ${await marker.getTitle()}');
+                      print('Marker点击回调: 标题: ${await marker.title}');
                     });
                   },
                 ),

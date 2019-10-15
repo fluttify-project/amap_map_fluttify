@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
     print('fluttify-dart: MAPolyline::polylineWithPoints([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAPolyline::polylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::polylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
     print('fluttify-dart: MAPolyline::polylineWithCoordinates([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAPolyline::polylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::polylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
     print('fluttify-dart: MAPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAPolyline::setPolylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::setPolylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
     print('fluttify-dart: MAPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAPolyline::setPolylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::setPolylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});
   
   
     // 接受原生回调

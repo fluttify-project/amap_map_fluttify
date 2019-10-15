@@ -6,11 +6,9 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAParticleOverlayRenderer extends MAOverlayRenderer  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<MAParticleOverlay> get_particleOverlay() async {
-    final result = await _channel.invokeMethod("MAParticleOverlayRenderer::get_particleOverlay", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayRenderer::get_particleOverlay", {'refId': refId});
     return MAParticleOverlay()..refId = result;
   }
   
@@ -24,7 +22,7 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
     print('fluttify-dart: MAParticleOverlayRenderer@$refId::initWithParticleOverlay([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAParticleOverlayRenderer::initWithParticleOverlay', {"particleOverlay": particleOverlay.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayRenderer::initWithParticleOverlay', {"particleOverlay": particleOverlay.refId, "refId": refId});
   
   
     // 接受原生回调

@@ -6,18 +6,16 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<double> get_movingDirection() async {
-    final result = await _channel.invokeMethod("MAAnimatedAnnotation::get_movingDirection", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnimatedAnnotation::get_movingDirection", {'refId': refId});
     return result;
   }
   
 
   // 生成setters
   Future<void> set_movingDirection(double movingDirection) async {
-    await _channel.invokeMethod('MAAnimatedAnnotation::set_movingDirection', {'refId': refId, "movingDirection": movingDirection});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::set_movingDirection', {'refId': refId, "movingDirection": movingDirection});
   
   
   }
@@ -29,7 +27,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     print('fluttify-dart: MAAnimatedAnnotation@$refId::addMoveAnimationWithKeyCoordinates([\'count\':$count, \'duration\':$duration, \'name\':$name])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback', {"coordinates": coordinates.map((it) => it.refId).toList(), "count": count, "duration": duration, "name": name, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback', {"coordinates": coordinates.map((it) => it.refId).toList(), "count": count, "duration": duration, "name": name, "refId": refId});
   
   
     // 接受原生回调
@@ -65,7 +63,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     print('fluttify-dart: MAAnimatedAnnotation@$refId::setNeedsStart([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAAnimatedAnnotation::setNeedsStart', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::setNeedsStart', {"refId": refId});
   
   
     // 接受原生回调

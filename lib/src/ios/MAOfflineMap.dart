@@ -6,31 +6,29 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAOfflineMap extends NSObject  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<List<MAOfflineProvince>> get_provinces() async {
-    final result = await _channel.invokeMethod("MAOfflineMap::get_provinces", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMap::get_provinces", {'refId': refId});
     return (result as List).cast<int>().map((it) => MAOfflineProvince()..refId = it).toList();
   }
   
   Future<List<MAOfflineItemMunicipality>> get_municipalities() async {
-    final result = await _channel.invokeMethod("MAOfflineMap::get_municipalities", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMap::get_municipalities", {'refId': refId});
     return (result as List).cast<int>().map((it) => MAOfflineItemMunicipality()..refId = it).toList();
   }
   
   Future<MAOfflineItemNationWide> get_nationWide() async {
-    final result = await _channel.invokeMethod("MAOfflineMap::get_nationWide", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMap::get_nationWide", {'refId': refId});
     return MAOfflineItemNationWide()..refId = result;
   }
   
   Future<List<MAOfflineCity>> get_cities() async {
-    final result = await _channel.invokeMethod("MAOfflineMap::get_cities", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMap::get_cities", {'refId': refId});
     return (result as List).cast<int>().map((it) => MAOfflineCity()..refId = it).toList();
   }
   
   Future<String> get_version() async {
-    final result = await _channel.invokeMethod("MAOfflineMap::get_version", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMap::get_version", {'refId': refId});
     return result;
   }
   
@@ -44,7 +42,7 @@ class MAOfflineMap extends NSObject  {
     print('fluttify-dart: MAOfflineMap::sharedOfflineMap([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAOfflineMap::sharedOfflineMap', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::sharedOfflineMap', );
   
   
     // 接受原生回调
@@ -63,7 +61,7 @@ class MAOfflineMap extends NSObject  {
     print('fluttify-dart: MAOfflineMap@$refId::setupWithCompletionBlock([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAOfflineMap::setupWithCompletionBlock', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::setupWithCompletionBlock', {"refId": refId});
   
   
     // 接受原生回调
@@ -99,7 +97,7 @@ class MAOfflineMap extends NSObject  {
     print('fluttify-dart: MAOfflineMap@$refId::isDownloadingForItem([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAOfflineMap::isDownloadingForItem', {"item": item.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::isDownloadingForItem', {"item": item.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -118,7 +116,7 @@ class MAOfflineMap extends NSObject  {
     print('fluttify-dart: MAOfflineMap@$refId::pauseItem([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAOfflineMap::pauseItem', {"item": item.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::pauseItem', {"item": item.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -137,7 +135,7 @@ class MAOfflineMap extends NSObject  {
     print('fluttify-dart: MAOfflineMap@$refId::deleteItem([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAOfflineMap::deleteItem', {"item": item.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::deleteItem', {"item": item.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -156,7 +154,7 @@ class MAOfflineMap extends NSObject  {
     print('fluttify-dart: MAOfflineMap@$refId::cancelAll([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAOfflineMap::cancelAll', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::cancelAll', {"refId": refId});
   
   
     // 接受原生回调
@@ -175,7 +173,7 @@ class MAOfflineMap extends NSObject  {
     print('fluttify-dart: MAOfflineMap@$refId::clearDisk([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAOfflineMap::clearDisk', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::clearDisk', {"refId": refId});
   
   
     // 接受原生回调

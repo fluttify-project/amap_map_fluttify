@@ -6,40 +6,38 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAPointAnnotation extends MAShape  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<CLLocationCoordinate2D> get_coordinate() async {
-    final result = await _channel.invokeMethod("MAPointAnnotation::get_coordinate", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPointAnnotation::get_coordinate", {'refId': refId});
     return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<bool> get_lockedToScreen() async {
-    final result = await _channel.invokeMethod("MAPointAnnotation::get_isLockedToScreen", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPointAnnotation::get_isLockedToScreen", {'refId': refId});
     return result;
   }
   
   Future<CGPoint> get_lockedScreenPoint() async {
-    final result = await _channel.invokeMethod("MAPointAnnotation::get_lockedScreenPoint", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPointAnnotation::get_lockedScreenPoint", {'refId': refId});
     return CGPoint()..refId = result;
   }
   
 
   // 生成setters
   Future<void> set_coordinate(CLLocationCoordinate2D coordinate) async {
-    await _channel.invokeMethod('MAPointAnnotation::set_coordinate', {'refId': refId, "coordinate": coordinate.refId});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_coordinate', {'refId': refId, "coordinate": coordinate.refId});
   
   
   }
   
   Future<void> set_lockedToScreen(bool lockedToScreen) async {
-    await _channel.invokeMethod('MAPointAnnotation::set_lockedToScreen', {'refId': refId, "lockedToScreen": lockedToScreen});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_lockedToScreen', {'refId': refId, "lockedToScreen": lockedToScreen});
   
   
   }
   
   Future<void> set_lockedScreenPoint(CGPoint lockedScreenPoint) async {
-    await _channel.invokeMethod('MAPointAnnotation::set_lockedScreenPoint', {'refId': refId, "lockedScreenPoint": lockedScreenPoint.refId});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_lockedScreenPoint', {'refId': refId, "lockedScreenPoint": lockedScreenPoint.refId});
   
   
   }

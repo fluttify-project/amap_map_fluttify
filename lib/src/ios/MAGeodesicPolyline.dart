@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAGeodesicPolyline extends MAPolyline  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class MAGeodesicPolyline extends MAPolyline  {
     print('fluttify-dart: MAGeodesicPolyline::polylineWithPoints([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAGeodesicPolyline::polylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGeodesicPolyline::polylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class MAGeodesicPolyline extends MAPolyline  {
     print('fluttify-dart: MAGeodesicPolyline::polylineWithCoordinates([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAGeodesicPolyline::polylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGeodesicPolyline::polylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class MAGeodesicPolyline extends MAPolyline  {
     print('fluttify-dart: MAGeodesicPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAGeodesicPolyline::setPolylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGeodesicPolyline::setPolylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class MAGeodesicPolyline extends MAPolyline  {
     print('fluttify-dart: MAGeodesicPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAGeodesicPolyline::setPolylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGeodesicPolyline::setPolylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});
   
   
     // 接受原生回调

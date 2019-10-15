@@ -6,16 +6,14 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<MACustomBuildingOverlayOption> get_defaultOption() async {
-    final result = await _channel.invokeMethod("MACustomBuildingOverlay::get_defaultOption", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlay::get_defaultOption", {'refId': refId});
     return MACustomBuildingOverlayOption()..refId = result;
   }
   
   Future<List<MACustomBuildingOverlayOption>> get_customOptions() async {
-    final result = await _channel.invokeMethod("MACustomBuildingOverlay::get_customOptions", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlay::get_customOptions", {'refId': refId});
     return (result as List).cast<int>().map((it) => MACustomBuildingOverlayOption()..refId = it).toList();
   }
   
@@ -29,7 +27,7 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
     print('fluttify-dart: MACustomBuildingOverlay@$refId::addCustomOption([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MACustomBuildingOverlay::addCustomOption', {"option": option.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::addCustomOption', {"option": option.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -48,7 +46,7 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
     print('fluttify-dart: MACustomBuildingOverlay@$refId::removeCustomOption([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MACustomBuildingOverlay::removeCustomOption', {"option": option.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::removeCustomOption', {"option": option.refId, "refId": refId});
   
   
     // 接受原生回调

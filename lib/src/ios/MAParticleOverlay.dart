@@ -6,11 +6,9 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<MAParticleOverlayOptions> get_overlayOption() async {
-    final result = await _channel.invokeMethod("MAParticleOverlay::get_overlayOption", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlay::get_overlayOption", {'refId': refId});
     return MAParticleOverlayOptions()..refId = result;
   }
   
@@ -24,7 +22,7 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
     print('fluttify-dart: MAParticleOverlay::particleOverlayWithOption([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAParticleOverlay::particleOverlayWithOption', {"option": option.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::particleOverlayWithOption', {"option": option.refId});
   
   
     // 接受原生回调
@@ -43,7 +41,7 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
     print('fluttify-dart: MAParticleOverlay@$refId::updateOverlayOption([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAParticleOverlay::updateOverlayOption', {"overlayOption": overlayOption.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::updateOverlayOption', {"overlayOption": overlayOption.refId, "refId": refId});
   
   
     // 接受原生回调

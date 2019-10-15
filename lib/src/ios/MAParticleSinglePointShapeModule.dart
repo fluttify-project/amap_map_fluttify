@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModule {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
     print('fluttify-dart: MAParticleSinglePointShapeModule@$refId::initWithShapeX([\'x\':$x, \'y\':$y, \'z\':$z, \'isUseRatio\':$isUseRatio])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAParticleSinglePointShapeModule::initWithShapeXYZuseRatio', {"x": x, "y": y, "z": z, "isUseRatio": isUseRatio, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSinglePointShapeModule::initWithShapeXYZuseRatio', {"x": x, "y": y, "z": z, "isUseRatio": isUseRatio, "refId": refId});
   
   
     // 接受原生回调

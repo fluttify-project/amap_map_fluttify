@@ -6,23 +6,21 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAPolylineRenderer extends MAOverlayPathRenderer  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<MAPolyline> get_polyline() async {
-    final result = await _channel.invokeMethod("MAPolylineRenderer::get_polyline", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_polyline", {'refId': refId});
     return MAPolyline()..refId = result;
   }
   
   Future<bool> get_is3DArrowLine() async {
-    final result = await _channel.invokeMethod("MAPolylineRenderer::get_is3DArrowLine", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_is3DArrowLine", {'refId': refId});
     return result;
   }
   
 
   // 生成setters
   Future<void> set_is3DArrowLine(bool is3DArrowLine) async {
-    await _channel.invokeMethod('MAPolylineRenderer::set_is3DArrowLine', {'refId': refId, "is3DArrowLine": is3DArrowLine});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_is3DArrowLine', {'refId': refId, "is3DArrowLine": is3DArrowLine});
   
   
   }
@@ -34,7 +32,7 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     print('fluttify-dart: MAPolylineRenderer@$refId::initWithPolyline([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAPolylineRenderer::initWithPolyline', {"polyline": polyline.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline', {"polyline": polyline.refId, "refId": refId});
   
   
     // 接受原生回调

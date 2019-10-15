@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityGenerate {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
     print('fluttify-dart: MAParticleRandomVelocityGenerate@$refId::initWithBoundaryValueX1([\'x1\':$x1, \'y1\':$y1, \'z1\':$z1, \'x2\':$x2, \'y2\':$y2, \'z2\':$z2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1Y1Z1X2Y2Z2', {"x1": x1, "y1": y1, "z1": z1, "x2": x2, "y2": y2, "z2": z2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1Y1Z1X2Y2Z2', {"x1": x1, "y1": y1, "z1": z1, "x2": x2, "y2": y2, "z2": z2, "refId": refId});
   
   
     // 接受原生回调

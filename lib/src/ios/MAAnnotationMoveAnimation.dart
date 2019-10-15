@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAAnnotationMoveAnimation extends NSObject  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::name([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::name', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::name', {"refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::coordinates([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::coordinates', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::coordinates', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::count([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::count', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::count', {"refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::duration([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::duration', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::duration', {"refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::elapsedTime([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::elapsedTime', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::elapsedTime', {"refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::cancel([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::cancel', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::cancel', {"refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::isCancelled([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::isCancelled', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::isCancelled', {"refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::passedPointCount([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::passedPointCount', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::passedPointCount', {"refId": refId});
   
   
     // 接受原生回调

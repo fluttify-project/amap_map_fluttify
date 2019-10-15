@@ -6,11 +6,9 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<List<MAMultiPointItem>> get_items() async {
-    final result = await _channel.invokeMethod("MAMultiPointOverlay::get_items", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlay::get_items", {'refId': refId});
     return (result as List).cast<int>().map((it) => MAMultiPointItem()..refId = it).toList();
   }
   
@@ -24,7 +22,7 @@ class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
     print('fluttify-dart: MAMultiPointOverlay@$refId::initWithMultiPointItems([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMultiPointOverlay::initWithMultiPointItems', {"items": items.map((it) => it.refId).toList(), "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlay::initWithMultiPointItems', {"items": items.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调

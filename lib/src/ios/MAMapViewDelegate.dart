@@ -6,6 +6,10 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 mixin MAMapViewDelegate on NSObject {
+  
+
+  
+
   Future<void> mapViewRegionChanged(MAMapView mapView) {}
   
   Future<void> mapViewRegionWillChangeAnimated(MAMapView mapView, bool animated) {}

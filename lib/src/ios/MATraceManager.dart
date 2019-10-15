@@ -6,14 +6,12 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MATraceManager extends NSObject  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
   // 生成setters
   Future<void> set_delegate(MATraceDelegate delegate) async {
-    await _channel.invokeMethod('MATraceManager::set_delegate', {'refId': refId, "delegate": delegate.refId});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::set_delegate', {'refId': refId, "delegate": delegate.refId});
   
     MethodChannel('MATraceDelegate::Callback')
       .setMethodCallHandler((methodCall) async {
@@ -42,7 +40,7 @@ class MATraceManager extends NSObject  {
     print('fluttify-dart: MATraceManager::sharedInstance([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MATraceManager::sharedInstance', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::sharedInstance', );
   
   
     // 接受原生回调
@@ -61,7 +59,7 @@ class MATraceManager extends NSObject  {
     print('fluttify-dart: MATraceManager@$refId::start([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MATraceManager::start', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::start', {"refId": refId});
   
   
     // 接受原生回调
@@ -80,7 +78,7 @@ class MATraceManager extends NSObject  {
     print('fluttify-dart: MATraceManager@$refId::stop([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MATraceManager::stop', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::stop', {"refId": refId});
   
   
     // 接受原生回调

@@ -6,23 +6,21 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<MAMultiPolyline> get_multiPolyline() async {
-    final result = await _channel.invokeMethod("MAMultiColoredPolylineRenderer::get_multiPolyline", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiColoredPolylineRenderer::get_multiPolyline", {'refId': refId});
     return MAMultiPolyline()..refId = result;
   }
   
   Future<bool> get_gradient() async {
-    final result = await _channel.invokeMethod("MAMultiColoredPolylineRenderer::get_isGradient", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiColoredPolylineRenderer::get_isGradient", {'refId': refId});
     return result;
   }
   
 
   // 生成setters
   Future<void> set_gradient(bool gradient) async {
-    await _channel.invokeMethod('MAMultiColoredPolylineRenderer::set_gradient', {'refId': refId, "gradient": gradient});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::set_gradient', {'refId': refId, "gradient": gradient});
   
   
   }
@@ -34,7 +32,7 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
     print('fluttify-dart: MAMultiColoredPolylineRenderer@$refId::initWithMultiPolyline([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMultiColoredPolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline.refId, "refId": refId});
   
   
     // 接受原生回调
