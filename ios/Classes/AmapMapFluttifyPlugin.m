@@ -3110,6 +3110,29 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
       
+      @"MACircle::get_hollowShapes": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MACircle::get_hollowShapes");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACircle* ref = (MACircle*) HEAP[@(refId)];
+      
+          // 开始调用
+          NSArray<id<MAOverlay>>* result = ref.hollowShapes;
+      
+      
+      
+          // 返回值: 列表
+          NSMutableArray* refIdList = [NSMutableArray array];
+          for (int i = 0; i < result.count; i++) {
+              NSObject* object = [result objectAtIndex:i];
+              [refIdList addObject: @(object.hash)];
+              HEAP[@([object hash])] = object;
+          }
+      
+          methodResult(refIdList);
+      },
+      
       @"MACircle::get_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MACircle::get_coordinate");
       
@@ -3236,6 +3259,29 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           // 返回值: jsonable
           methodResult(result);
+      },
+      
+      @"MAPolygon::get_hollowShapes": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAPolygon::get_hollowShapes");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAPolygon* ref = (MAPolygon*) HEAP[@(refId)];
+      
+          // 开始调用
+          NSArray<id<MAOverlay>>* result = ref.hollowShapes;
+      
+      
+      
+          // 返回值: 列表
+          NSMutableArray* refIdList = [NSMutableArray array];
+          for (int i = 0; i < result.count; i++) {
+              NSObject* object = [result objectAtIndex:i];
+              [refIdList addObject: @(object.hash)];
+              HEAP[@([object hash])] = object;
+          }
+      
+          methodResult(refIdList);
       },
       
       @"MAParticleOverlay::get_overlayOption": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -4110,6 +4156,40 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@(result));
       },
       
+      @"MAParticleOverlayOptions::get_particleStartColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAParticleOverlayOptions::get_particleStartColor");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+      
+          // 开始调用
+          id<MAParticleColorGenerate> result = ref.particleStartColor;
+      
+      
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
+      @"MAParticleOverlayOptions::get_particleStartSpeed": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAParticleOverlayOptions::get_particleStartSpeed");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+      
+          // 开始调用
+          id<MAParticleVelocityGenerate> result = ref.particleStartSpeed;
+      
+      
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
       @"MAParticleOverlayOptions::get_particleEmissionModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAParticleOverlayOptions::get_particleEmissionModule");
       
@@ -4127,6 +4207,23 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@(result.hash));
       },
       
+      @"MAParticleOverlayOptions::get_particleShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAParticleOverlayOptions::get_particleShapeModule");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+      
+          // 开始调用
+          id<MAParticleShapeModule> result = ref.particleShapeModule;
+      
+      
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
       @"MAParticleOverlayOptions::get_particleOverLifeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAParticleOverlayOptions::get_particleOverLifeModule");
       
@@ -4136,6 +4233,23 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           // 开始调用
           MAParticleOverLifeModule* result = ref.particleOverLifeModule;
+      
+      
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
+      @"MAOverlayRenderer::get_overlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAOverlayRenderer::get_overlay");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+      
+          // 开始调用
+          id<MAOverlay> result = ref.overlay;
       
       
       

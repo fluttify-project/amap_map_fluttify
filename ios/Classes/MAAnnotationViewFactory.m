@@ -140,6 +140,23 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@(result));
       },
       
+      @"MAAnnotationView::get_annotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAAnnotationView::get_annotation");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+      
+          // 开始调用
+          id<MAAnnotation> result = ref.annotation;
+      
+      
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
       @"MAAnnotationView::get_customCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAAnnotationView::get_customCalloutView");
       
