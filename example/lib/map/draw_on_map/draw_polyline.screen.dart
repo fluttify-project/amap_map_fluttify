@@ -20,8 +20,6 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('绘制线'),
-        backgroundColor: Colors.black,
-        centerTitle: true,
       ),
       body: DecoratedColumn(
         children: <Widget>[

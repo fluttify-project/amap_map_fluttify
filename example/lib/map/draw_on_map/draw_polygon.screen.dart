@@ -15,8 +15,6 @@ class _DrawPolygonScreenState extends State<DrawPolygonScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('绘制多边形'),
-        backgroundColor: Colors.black,
-        centerTitle: true,
       ),
     );
   }
