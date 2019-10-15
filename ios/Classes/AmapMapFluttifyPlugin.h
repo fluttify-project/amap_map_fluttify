@@ -9,7 +9,7 @@
 #import "MACustomCalloutViewFactory.h"
 #import "MAMapViewFactory.h"
 
-@interface AmapMapFlutterPlugin : NSObject<MATraceDelegate, MAMultiPointOverlayRendererDelegate, MAMapViewDelegate, FlutterPlugin>
+@interface AmapMapFluttifyPlugin : NSObject<MATraceDelegate, MAMultiPointOverlayRendererDelegate, MAMapViewDelegate, FlutterPlugin>
 
 - (instancetype) initWithFlutterPluginRegistrar: (NSObject <FlutterPluginRegistrar> *) registrar;
 

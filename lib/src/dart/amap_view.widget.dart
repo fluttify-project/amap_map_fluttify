@@ -1,9 +1,9 @@
 import 'dart:io';
 
-import 'package:amap_map_flutter/amap_map_flutter.dart';
-import 'package:amap_map_flutter/src/android/android.export.dart';
-import 'package:amap_map_flutter/src/dart/amap_controller.dart';
-import 'package:amap_map_flutter/src/ios/ios.export.dart';
+import 'package:amap_map_fluttify/amap_map_fluttify.dart';
+import 'package:amap_map_fluttify/src/android/android.export.dart';
+import 'package:amap_map_fluttify/src/dart/amap_controller.dart';
+import 'package:amap_map_fluttify/src/ios/ios.export.dart';
 import 'package:flutter/material.dart';
 
 typedef void OnMapCreated(AmapController controller);

@@ -2,9 +2,9 @@ import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
 
-import 'package:amap_map_flutter/amap_map_flutter.dart';
-import 'package:amap_map_flutter/src/android/android.export.dart';
-import 'package:amap_map_flutter/src/ios/ios.export.dart';
+import 'package:amap_map_fluttify/amap_map_fluttify.dart';
+import 'package:amap_map_fluttify/src/android/android.export.dart';
+import 'package:amap_map_fluttify/src/ios/ios.export.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -395,7 +395,7 @@ class AmapController {
           break;
         // asset图片
         default:
-          // asset的bug描述:
+          // asset的bug描述(https://github.com/flutter/flutter/issues/24865):
           // android和ios平台上都取了1.0密度的图片, android上就显示了1.0密度的图片, 而ios
           // 平台上使用的图片也是1.0密度, 但是根据设备密度进行了对应的放大, 导致了android和ios
           // 两端的图片的大小不一致, 这里只对android根据密度选择原始图片, ios原封不动

@@ -2,7 +2,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'amap_map_flutter'
+  s.name             = 'amap_map_fluttify'
   s.version          = '0.0.1'
   s.summary          = '{{description}}'
   s.description      = <<-DESC
@@ -31,7 +31,7 @@ A new flutter plugin project.
   ]
   # 需要添加的资源文件
   s.resources = [
-        
+        "MAMapKit.framework/AMap.bundle"
   ]
 end
 

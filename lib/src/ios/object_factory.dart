@@ -2,11 +2,11 @@ import 'dart:typed_data';
 
 import 'package:flutter/services.dart';
 
-import 'package:amap_map_flutter/src/ios/ios.export.dart';
+import 'package:amap_map_fluttify/src/ios/ios.export.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class ObjectFactory_iOS {
-  static final _channel = MethodChannel('me.yohom/amap_map_flutter');
+  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
 
   static Future<CLLocationCoordinate2D> createCLLocationCoordinate2D(double latitude, double longitude) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createCLLocationCoordinate2D', {'latitude': latitude, 'longitude': longitude});

@@ -1,4 +1,4 @@
-package me.yohom.amap_map_flutter_example
+package me.yohom.amap_map_fluttify_example
 
 import android.os.Bundle
 

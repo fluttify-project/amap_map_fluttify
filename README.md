@@ -1,4 +1,4 @@
-# amap_map_flutter
+# amap_map_fluttify
 
 A new flutter plugin project.
 

@@ -1,8 +1,8 @@
 import 'dart:math';
 import 'dart:typed_data';
 
-import 'package:amap_map_flutter/amap_map_flutter.dart';
-import 'package:amap_map_flutter_example/utils/misc.dart';
+import 'package:amap_map_fluttify/amap_map_fluttify.dart';
+import 'package:amap_map_fluttify_example/utils/misc.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
@@ -53,9 +53,9 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                       _getNextLatLng(),
                       title: '北京',
                       snippet: '描述',
-//                      iconUri: Uri.parse(
-//                          'https://w3.hoopchina.com.cn/30/a7/6a/30a76aea75aef69e4ea0e7d3dee552c7001.jpg'),
-                      iconUri: Uri.parse('images/test_icon.png'),
+                      iconUri: Uri.parse(
+                          'https://w3.hoopchina.com.cn/30/a7/6a/30a76aea75aef69e4ea0e7d3dee552c7001.jpg'),
+//                      iconUri: Uri.parse('images/test_icon.png'),
                     );
                     _controller?.setMarkerClickListener((marker) async {
                       print('Marker点击回调: 标题: ${await marker.getTitle()}');

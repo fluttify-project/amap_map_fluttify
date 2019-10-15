@@ -2,11 +2,11 @@ import 'dart:typed_data';
 
 import 'package:flutter/services.dart';
 
-import 'package:amap_map_flutter/src/android/android.export.dart';
+import 'package:amap_map_fluttify/src/android/android.export.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class ObjectFactory_Android {
-  static final _channel = MethodChannel('me.yohom/amap_map_flutter');
+  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
 
   static Future<android_app_Application> getandroid_app_Application() async {
     final refId =

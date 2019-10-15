@@ -1,7 +1,7 @@
-import 'package:amap_map_flutter_example/widgets/dimens.dart';
-import 'package:amap_map_flutter_example/widgets/function_group.widget.dart';
-import 'package:amap_map_flutter_example/widgets/function_item.widget.dart';
-import 'package:amap_map_flutter_example/widgets/todo.screen.dart';
+import 'package:amap_map_fluttify_example/widgets/dimens.dart';
+import 'package:amap_map_fluttify_example/widgets/function_group.widget.dart';
+import 'package:amap_map_fluttify_example/widgets/function_item.widget.dart';
+import 'package:amap_map_fluttify_example/widgets/todo.screen.dart';
 import 'package:flutter/material.dart';
 
 import 'create_map/create_map.screen.dart';

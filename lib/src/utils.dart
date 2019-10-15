@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:amap_map_flutter/src/android/android.export.dart';
-import 'package:amap_map_flutter/src/ios/ios.export.dart';
+import 'package:amap_map_fluttify/src/android/android.export.dart';
+import 'package:amap_map_fluttify/src/ios/ios.export.dart';
 
 typedef Future<T> AndroidFutureCallback<T>(List<Ref_Android> releasePool);
 typedef Future<T> IOSFutureCallback<T>(List<Ref_iOS> releasePool);

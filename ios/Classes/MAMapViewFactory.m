@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////
 
 #import "MAMapViewFactory.h"
-#import "AmapMapFlutterPlugin.h"
+#import "AmapMapFluttifyPlugin.h"
 
 typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSString *, NSObject *> *, FlutterResult);
 
@@ -2259,7 +2259,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   //region method call handler
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"me.yohom/amap_map_flutter/MAMapView"
+      methodChannelWithName:@"me.yohom/amap_map_fluttify/MAMapView"
             binaryMessenger:[_registrar messenger]];
 
   __weak __typeof(self)weakSelf = self;
