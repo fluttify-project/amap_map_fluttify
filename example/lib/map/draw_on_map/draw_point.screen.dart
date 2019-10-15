@@ -22,11 +22,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('绘制点标记'),
-        backgroundColor: Colors.black,
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: const Text('绘制点标记')),
       body: DecoratedColumn(
         children: <Widget>[
           Flexible(
@@ -58,7 +54,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
 //                      iconUri: Uri.parse('images/test_icon.png'),
                     );
                     _controller?.setMarkerClickListener((marker) async {
-                      print('Marker点击回调: 标题: ${await marker.getTitle()}');
+//                      print('Marker点击回调: 标题: ${await marker.getTitle()}');
                     });
                   },
                 ),

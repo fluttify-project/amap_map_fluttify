@@ -10,8 +10,9 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'enums.dart';
+import 'models.dart';
 
-typedef void OnMarkerClick(com_amap_api_maps_model_Marker marker);
+typedef void OnMarkerClick(Marker marker);
 
 class AmapController {
   AmapController.android(this.androidController);
@@ -459,7 +460,7 @@ class AmapController {
         pool..add(map)..add(latLng)..add(markerOption)..add(marker);
       },
       ios: (pool) async {
-        await iosController.set_delegate(MyDelegate());
+        await iosController.set_delegate(IOSMapDelegate());
 
         // 创建marker
         final pointAnnotation =
@@ -503,7 +504,7 @@ class AmapController {
   /// 添加线
   ///
   /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[color]
-  Future addPolyline(List<LatLng> points, {double width, Color color}) {
+  Future<void> addPolyline(List<LatLng> points, {double width, Color color}) {
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
@@ -534,7 +535,7 @@ class AmapController {
           ..addAll(latLngList);
       },
       ios: (pool) async {
-        await iosController.set_delegate(MyDelegate());
+        await iosController.set_delegate(IOSMapDelegate());
 
         List<CLLocationCoordinate2D> latLngList = [];
         for (final point in points) {
@@ -554,34 +555,51 @@ class AmapController {
     );
   }
 
-  Future setMarkerClickListener(OnMarkerClick onMarkerClick) async {
+  Future<void> setMarkerClickListener(OnMarkerClick onMarkerClicked) async {
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
 
-        await map
-            .setOnMarkerClickListener(OnMarkerClickListener(onMarkerClick));
+        await map.setOnMarkerClickListener(
+            AndroidMapDelegate(onMarkerClicked: onMarkerClicked));
 
         pool..add(map);
       },
       ios: (pool) async {
-        // todo
+        await iosController
+            .set_delegate(IOSMapDelegate(onMarkerClicked: onMarkerClicked));
       },
     );
   }
 }
 
-class MyDelegate extends NSObject with MAMapViewDelegate {}
+class IOSMapDelegate extends NSObject with MAMapViewDelegate {
+  final OnMarkerClick onMarkerClicked;
 
-class OnMarkerClickListener extends java_lang_Object
+  IOSMapDelegate({this.onMarkerClicked});
+
+  @override
+  Future<void> mapViewDidSelectAnnotationView(
+    MAMapView mapView,
+    MAAnnotationView view,
+  ) async {
+    if (onMarkerClicked != null) {
+      onMarkerClicked(Marker.ios(view));
+    }
+  }
+}
+
+class AndroidMapDelegate extends java_lang_Object
     with com_amap_api_maps_AMap_OnMarkerClickListener {
   final OnMarkerClick onMarkerClicked;
 
-  OnMarkerClickListener(this.onMarkerClicked);
+  AndroidMapDelegate({this.onMarkerClicked});
 
   @override
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
-    onMarkerClicked(var1);
+    if (onMarkerClicked != null) {
+      onMarkerClicked(Marker.android(var1));
+    }
     return true;
   }
 }
