@@ -32,7 +32,7 @@ mixin MAMapViewDelegate on NSObject {
   
   Future<MAAnnotationView> mapViewViewForAnnotation(MAMapView mapView, MAAnnotation annotation) {}
   
-  Future<void> mapViewDidAddAnnotationViews(MAMapView mapView, List views) {}
+  Future<void> mapViewDidAddAnnotationViews(MAMapView mapView, List<Object> views) {}
   
   Future<void> mapViewDidSelectAnnotationView(MAMapView mapView, MAAnnotationView view) {}
   
@@ -52,7 +52,7 @@ mixin MAMapViewDelegate on NSObject {
   
   Future<MAOverlayRenderer> mapViewRendererForOverlay(MAMapView mapView, MAOverlay overlay) {}
   
-  Future<void> mapViewDidAddOverlayRenderers(MAMapView mapView, List overlayRenderers) {}
+  Future<void> mapViewDidAddOverlayRenderers(MAMapView mapView, List<Object> overlayRenderers) {}
   
   Future<void> mapViewAnnotationViewcalloutAccessoryControlTapped(MAMapView mapView, MAAnnotationView view, UIControl control) {}
   
@@ -64,7 +64,7 @@ mixin MAMapViewDelegate on NSObject {
   
   Future<void> mapViewDidChangeOpenGLESDisabled(MAMapView mapView, bool openGLESDisabled) {}
   
-  Future<void> mapViewDidTouchPois(MAMapView mapView, List pois) {}
+  Future<void> mapViewDidTouchPois(MAMapView mapView, List<Object> pois) {}
   
   Future<void> mapViewDidSingleTappedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate) {}
   
