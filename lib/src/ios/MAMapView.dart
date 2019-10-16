@@ -324,14 +324,7 @@ class MAMapView extends UIView  {
             print('fluttify-dart-callback: mapViewViewForAnnotation([])');
         
               // 调用回调方法
-            delegate?.mapViewViewForAnnotation(MAMapView()..refId = (args['mapView']), MAAnnotation_Ref()..refId = (args['annotation']));
-            break;
-          case 'Callback::MAMapViewDelegate::mapViewDidAddAnnotationViews':
-            // 日志打印
-            print('fluttify-dart-callback: mapViewDidAddAnnotationViews([])');
-        
-              // 调用回调方法
-            delegate?.mapViewDidAddAnnotationViews(MAMapView()..refId = (args['mapView']), (args['views'] as List).cast<int>().map((it) => java_lang_Object()..refId = it).toList());
+            delegate?.mapViewViewForAnnotation(MAMapView()..refId = (args['mapView']), MAGroundOverlay()..refId = (args['annotation']));
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidSelectAnnotationView':
             // 日志打印
@@ -394,14 +387,7 @@ class MAMapView extends UIView  {
             print('fluttify-dart-callback: mapViewRendererForOverlay([])');
         
               // 调用回调方法
-            delegate?.mapViewRendererForOverlay(MAMapView()..refId = (args['mapView']), MAOverlay_Ref()..refId = (args['overlay']));
-            break;
-          case 'Callback::MAMapViewDelegate::mapViewDidAddOverlayRenderers':
-            // 日志打印
-            print('fluttify-dart-callback: mapViewDidAddOverlayRenderers([])');
-        
-              // 调用回调方法
-            delegate?.mapViewDidAddOverlayRenderers(MAMapView()..refId = (args['mapView']), (args['overlayRenderers'] as List).cast<int>().map((it) => java_lang_Object()..refId = it).toList());
+            delegate?.mapViewRendererForOverlay(MAMapView()..refId = (args['mapView']), MAGroundOverlay()..refId = (args['overlay']));
             break;
           case 'Callback::MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped':
             // 日志打印
@@ -437,13 +423,6 @@ class MAMapView extends UIView  {
         
               // 调用回调方法
             delegate?.mapViewDidChangeOpenGLESDisabled(MAMapView()..refId = (args['mapView']), args['openGLESDisabled']);
-            break;
-          case 'Callback::MAMapViewDelegate::mapViewDidTouchPois':
-            // 日志打印
-            print('fluttify-dart-callback: mapViewDidTouchPois([])');
-        
-              // 调用回调方法
-            delegate?.mapViewDidTouchPois(MAMapView()..refId = (args['mapView']), (args['pois'] as List).cast<int>().map((it) => java_lang_Object()..refId = it).toList());
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate':
             // 日志打印
@@ -749,7 +728,7 @@ class MAMapView extends UIView  {
   
 
   // 生成方法们
-  Future<void> setRegion(MACoordinateRegion region, bool animated) async {
+  Future<void> setRegionAnimated(MACoordinateRegion region, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setRegion([\'animated\':$animated])');
   
@@ -787,7 +766,7 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setVisibleMapRect(MAMapRect mapRect, bool animated) async {
+  Future<void> setVisibleMapRectAnimated(MAMapRect mapRect, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setVisibleMapRect([\'animated\':$animated])');
   
@@ -825,7 +804,45 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setCenterCoordinate(CLLocationCoordinate2D coordinate, bool animated) async {
+  Future<MAMapRect> mapRectThatFitsEdgePadding(MAMapRect mapRect, UIEdgeInsets insets) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::mapRectThatFits([])');
+  
+    // 调用原生方法
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/MAMapView').invokeMethod('MAMapView::mapRectThatFitsEdgePadding', {"mapRect": mapRect.refId, "insets": insets.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return MAMapRect()..refId = result;
+    }
+  }
+  
+  Future<void> setVisibleMapRectEdgePaddinganimated(MAMapRect mapRect, UIEdgeInsets insets, bool animated) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::setVisibleMapRect([\'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/MAMapView').invokeMethod('MAMapView::setVisibleMapRectEdgePaddinganimated', {"mapRect": mapRect.refId, "insets": insets.refId, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> setCenterCoordinateAnimated(CLLocationCoordinate2D coordinate, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setCenterCoordinate([\'animated\':$animated])');
   
@@ -844,7 +861,7 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setZoomLevel(double zoomLevel, bool animated) async {
+  Future<void> setZoomLevelAnimated(double zoomLevel, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setZoomLevel([\'zoomLevel\':$zoomLevel, \'animated\':$animated])');
   
@@ -863,7 +880,26 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setRotationDegree(double rotationDegree, bool animated, double duration) async {
+  Future<void> setZoomLevelAtPivotanimated(double zoomLevel, CGPoint pivot, bool animated) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::setZoomLevel([\'zoomLevel\':$zoomLevel, \'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/MAMapView').invokeMethod('MAMapView::setZoomLevelAtPivotanimated', {"zoomLevel": zoomLevel, "pivot": pivot.refId, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> setRotationDegreeAnimatedduration(double rotationDegree, bool animated, double duration) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setRotationDegree([\'rotationDegree\':$rotationDegree, \'animated\':$animated, \'duration\':$duration])');
   
@@ -882,7 +918,7 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setCameraDegree(double cameraDegree, bool animated, double duration) async {
+  Future<void> setCameraDegreeAnimatedduration(double cameraDegree, bool animated, double duration) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setCameraDegree([\'cameraDegree\':$cameraDegree, \'animated\':$animated, \'duration\':$duration])');
   
@@ -920,12 +956,31 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setMapStatus(MAMapStatus status, bool animated) async {
+  Future<void> setMapStatusAnimated(MAMapStatus status, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setMapStatus([\'animated\':$animated])');
   
     // 调用原生方法
     final result = await MethodChannel('me.yohom/amap_map_fluttify/MAMapView').invokeMethod('MAMapView::setMapStatusAnimated', {"status": status.refId, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> setMapStatusAnimatedduration(MAMapStatus status, bool animated, double duration) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::setMapStatus([\'animated\':$animated, \'duration\':$duration])');
+  
+    // 调用原生方法
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/MAMapView').invokeMethod('MAMapView::setMapStatusAnimatedduration', {"status": status.refId, "animated": animated, "duration": duration, "refId": refId});
   
   
     // 接受原生回调
@@ -958,7 +1013,7 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<CGPoint> convertCoordinate(CLLocationCoordinate2D coordinate, UIView view) async {
+  Future<CGPoint> convertCoordinateToPointToView(CLLocationCoordinate2D coordinate, UIView view) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::convertCoordinate([])');
   
@@ -977,7 +1032,7 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<CLLocationCoordinate2D> convertPoint(CGPoint point, UIView view) async {
+  Future<CLLocationCoordinate2D> convertPointToCoordinateFromView(CGPoint point, UIView view) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::convertPoint([])');
   
@@ -996,7 +1051,7 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<CGRect> convertRegion(MACoordinateRegion region, UIView view) async {
+  Future<CGRect> convertRegionToRectToView(MACoordinateRegion region, UIView view) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::convertRegion([])');
   
@@ -1015,7 +1070,7 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<MACoordinateRegion> convertRect(CGRect rect, UIView view) async {
+  Future<MACoordinateRegion> convertRectToRegionFromView(CGRect rect, UIView view) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::convertRect([])');
   
@@ -1224,7 +1279,7 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> selectAnnotation(MAAnnotation annotation, bool animated) async {
+  Future<void> selectAnnotationAnimated(MAAnnotation annotation, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::selectAnnotation([\'animated\':$animated])');
   
@@ -1243,7 +1298,7 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> deselectAnnotation(MAAnnotation annotation, bool animated) async {
+  Future<void> deselectAnnotationAnimated(MAAnnotation annotation, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::deselectAnnotation([\'animated\':$animated])');
   
@@ -1262,7 +1317,7 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setUserTrackingMode(MAUserTrackingMode mode, bool animated) async {
+  Future<void> setUserTrackingModeAnimated(MAUserTrackingMode mode, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setUserTrackingMode([\'animated\':$animated])');
   
@@ -1319,6 +1374,25 @@ class MAMapView extends UIView  {
     }
   }
   
+  Future<void> addOverlayLevel(MAOverlay overlay, MAOverlayLevel level) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::addOverlay([])');
+  
+    // 调用原生方法
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/MAMapView').invokeMethod('MAMapView::addOverlayLevel', {"overlay": overlay.refId, "level": level.index, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
   Future<void> removeOverlay(MAOverlay overlay) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::removeOverlay([])');
@@ -1338,7 +1412,7 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> insertOverlay(MAOverlay overlay, int index, MAOverlayLevel level) async {
+  Future<void> insertOverlayAtIndexlevel(MAOverlay overlay, int index, MAOverlayLevel level) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::insertOverlay([\'index\':$index])');
   
@@ -1357,7 +1431,64 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> exchangeOverlayAtIndex(int index1, int index2) async {
+  Future<void> insertOverlayAboveOverlay(MAOverlay overlay, MAOverlay sibling) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::insertOverlay([])');
+  
+    // 调用原生方法
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/MAMapView').invokeMethod('MAMapView::insertOverlayAboveOverlay', {"overlay": overlay.refId, "sibling": sibling.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> insertOverlayBelowOverlay(MAOverlay overlay, MAOverlay sibling) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::insertOverlay([])');
+  
+    // 调用原生方法
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/MAMapView').invokeMethod('MAMapView::insertOverlayBelowOverlay', {"overlay": overlay.refId, "sibling": sibling.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> insertOverlayAtIndex(MAOverlay overlay, int index) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::insertOverlay([\'index\':$index])');
+  
+    // 调用原生方法
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/MAMapView').invokeMethod('MAMapView::insertOverlayAtIndex', {"overlay": overlay.refId, "index": index, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> exchangeOverlayAtIndexWithOverlayAtIndex(int index1, int index2) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::exchangeOverlayAtIndex([\'index1\':$index1, \'index2\':$index2])');
   
@@ -1376,7 +1507,26 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> exchangeOverlay(MAOverlay overlay1, MAOverlay overlay2) async {
+  Future<void> exchangeOverlayAtIndexWithOverlayAtIndexatLevel(int index1, int index2, MAOverlayLevel level) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::exchangeOverlayAtIndex([\'index1\':$index1, \'index2\':$index2])');
+  
+    // 调用原生方法
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/MAMapView').invokeMethod('MAMapView::exchangeOverlayAtIndexWithOverlayAtIndexatLevel', {"index1": index1, "index2": index2, "level": level.index, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> exchangeOverlayWithOverlay(MAOverlay overlay1, MAOverlay overlay2) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::exchangeOverlay([])');
   
