@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient::getInstance([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.trace.LBSTraceClient::getInstance', {"var0": var0.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::getInstance', {"var0": var0.refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::queryProcessedTrace([\'var1\':$var1, \'var3\':$var3])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.trace.LBSTraceClient::queryProcessedTrace', {"var1": var1, "var2": var2.map((it) => it.refId).toList(), "var3": var3, "var4": var4.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::queryProcessedTrace', {"var1": var1, "var2": var2.map((it) => it.refId).toList(), "var3": var3, "var4": var4.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::startTrace([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.trace.LBSTraceClient::startTrace', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::startTrace', {"refId": refId});
   
   
     // 接受原生回调
@@ -94,7 +92,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::stopTrace([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.trace.LBSTraceClient::stopTrace', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::stopTrace', {"refId": refId});
   
   
     // 接受原生回调
@@ -113,7 +111,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::destroy([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.trace.LBSTraceClient::destroy', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::destroy', {"refId": refId});
   
   
     // 接受原生回调

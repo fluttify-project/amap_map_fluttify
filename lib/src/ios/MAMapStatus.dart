@@ -66,7 +66,7 @@ class MAMapStatus extends NSObject  {
   
 
   // 生成方法们
-  static Future<MAMapStatus> statusWithCenterCoordinate(CLLocationCoordinate2D coordinate, double zoomLevel, double rotationDegree, double cameraDegree, CGPoint screenAnchor) async {
+  static Future<MAMapStatus> statusWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor(CLLocationCoordinate2D coordinate, double zoomLevel, double rotationDegree, double cameraDegree, CGPoint screenAnchor) async {
     // 日志打印
     print('fluttify-dart: MAMapStatus::statusWithCenterCoordinate([\'zoomLevel\':$zoomLevel, \'rotationDegree\':$rotationDegree, \'cameraDegree\':$cameraDegree])');
   

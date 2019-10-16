@@ -10,6 +10,5 @@ mixin MAParticleColorGenerate on NSObject {
 
   
 
-  Future<double> getColor() {}
   
 }

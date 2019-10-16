@@ -49,7 +49,7 @@ class MAArc extends MAShape with MAAnnotation, MAOverlay {
   
 
   // 生成方法们
-  static Future<MAArc> arcWithStartCoordinate(CLLocationCoordinate2D startCoordinate, CLLocationCoordinate2D passedCoordinate, CLLocationCoordinate2D endCoordinate) async {
+  static Future<MAArc> arcWithStartCoordinatePassedCoordinateendCoordinate(CLLocationCoordinate2D startCoordinate, CLLocationCoordinate2D passedCoordinate, CLLocationCoordinate2D endCoordinate) async {
     // 日志打印
     print('fluttify-dart: MAArc::arcWithStartCoordinate([])');
   

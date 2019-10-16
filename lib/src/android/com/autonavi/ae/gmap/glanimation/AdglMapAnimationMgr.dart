@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::setMapCoreListener([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapCoreListener', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapCoreListener', {"refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::clearAnimations([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::clearAnimations', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::clearAnimations', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::getAnimationsCount([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::getAnimationsCount', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::getAnimationsCount', {"refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::doAnimations([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::doAnimations', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::doAnimations', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::addAnimation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -139,7 +137,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::setMapAnimationListener([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener', {"refId": refId});
   
   
     // 接受原生回调

@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::remove([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::remove', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::remove', {"refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getId([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::getId', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::getId', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setPoints([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::setPoints', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::setPoints', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getPoints([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::getPoints', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::getPoints', {"refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setWidth([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::setWidth', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::setWidth', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getWidth([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::getWidth', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::getWidth', {"refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setTopColor([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::setTopColor', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::setTopColor', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getTopColor([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::getTopColor', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::getTopColor', {"refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setSideColor([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::setSideColor', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::setSideColor', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setZIndex([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::setZIndex', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::setZIndex', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getZIndex([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::getZIndex', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::getZIndex', {"refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setVisible([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::setVisible', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::setVisible', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::isVisible([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::isVisible', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::isVisible', {"refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::set3DModel([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::set3DModel', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::set3DModel', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::is3DModel([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.NavigateArrow::is3DModel', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::is3DModel', {"refId": refId});
   
   
     // 接受原生回调

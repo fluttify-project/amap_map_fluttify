@@ -6,18 +6,16 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<double> get_angleDelta() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::get_angleDelta", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::get_angleDelta", {'refId': refId});
     return result;
   }
   
 
   // 生成setters
   Future<void> set_angleDelta(double angleDelta) async {
-    await _channel.invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::set_angleDelta', {'refId': refId, "angleDelta": angleDelta});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::set_angleDelta', {'refId': refId, "angleDelta": angleDelta});
   
   
   }
@@ -29,7 +27,7 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang
     print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain([\'var0\':$var0, \'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain', {"var0": var0, "var1": var1});
   
   
     // 接受原生回调
@@ -48,7 +46,7 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang
     print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory', );
   
   
     // 接受原生回调
@@ -67,7 +65,7 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang
     print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage@$refId::getType([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::getType', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::getType', {"refId": refId});
   
   
     // 接受原生回调
@@ -86,7 +84,7 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang
     print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage@$refId::runCameraUpdate([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::runCameraUpdate', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::runCameraUpdate', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调

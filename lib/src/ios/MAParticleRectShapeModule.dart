@@ -13,7 +13,7 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
   
 
   // 生成方法们
-  Future<MAParticleRectShapeModule> initWithLeft(double left, double top, double right, double bottom, bool isUseRatio) async {
+  Future<MAParticleRectShapeModule> initWithLeftToprightbottomuseRatio(double left, double top, double right, double bottom, bool isUseRatio) async {
     // 日志打印
     print('fluttify-dart: MAParticleRectShapeModule@$refId::initWithLeft([\'left\':$left, \'top\':$top, \'right\':$right, \'bottom\':$bottom, \'isUseRatio\':$isUseRatio])');
   

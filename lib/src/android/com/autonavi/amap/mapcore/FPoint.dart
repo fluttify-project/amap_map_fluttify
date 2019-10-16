@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
     print('fluttify-dart: com.autonavi.amap.mapcore.FPoint::obtain([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.FPoint::obtain', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPoint::obtain', );
   
   
     // 接受原生回调

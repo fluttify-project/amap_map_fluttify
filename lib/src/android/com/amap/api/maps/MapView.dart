@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_MapView');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::getMap([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapView::getMap', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_MapView').invokeMethod('com.amap.api.maps.MapView::getMap', {"refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::onCreate([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapView::onCreate', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_MapView').invokeMethod('com.amap.api.maps.MapView::onCreate', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::onResume([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapView::onResume', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_MapView').invokeMethod('com.amap.api.maps.MapView::onResume', {"refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::onPause([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapView::onPause', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_MapView').invokeMethod('com.amap.api.maps.MapView::onPause', {"refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::onDestroy([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapView::onDestroy', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_MapView').invokeMethod('com.amap.api.maps.MapView::onDestroy', {"refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::onLowMemory([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapView::onLowMemory', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_MapView').invokeMethod('com.amap.api.maps.MapView::onLowMemory', {"refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::onSaveInstanceState([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapView::onSaveInstanceState', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_MapView').invokeMethod('com.amap.api.maps.MapView::onSaveInstanceState', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::setVisibility([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapView::setVisibility', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_MapView').invokeMethod('com.amap.api.maps.MapView::setVisibility', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调

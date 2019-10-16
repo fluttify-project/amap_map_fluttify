@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::resumeMarker([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::resumeMarker', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::resumeMarker', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::AddOverlayTexture([\'var2\':$var2, \'var3\':$var3])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::AddOverlayTexture', {"var1": var1.refId, "var2": var2, "var3": var3, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::AddOverlayTexture', {"var1": var1.refId, "var2": var2, "var3": var3, "refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::dipToPixel([\'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::dipToPixel', {"var1": var1.refId, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::dipToPixel', {"var1": var1.refId, "var2": var2, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setAttribute([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setAttribute', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setAttribute', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setData([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setData', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setData', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::remove([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::remove', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::remove', {"refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setImageMode([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setImageMode', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setImageMode', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setGenerateCrossImageListener([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setGenerateCrossImageListener', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setGenerateCrossImageListener', {"refId": refId});
   
   
     // 接受原生回调
@@ -189,7 +187,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::getTextureID([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::getTextureID', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::getTextureID', {"refId": refId});
   
   
     // 接受原生回调

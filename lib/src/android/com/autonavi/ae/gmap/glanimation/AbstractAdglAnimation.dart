@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::isOver([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::isOver', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::isOver', {"refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::isValid([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::isValid', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::isValid', {"refId": refId});
   
   
     // 接受原生回调

@@ -13,7 +13,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
   
 
   // 生成方法们
-  static Future<MAPolyline> polylineWithPoints(List<MAMapPoint> points, int count) async {
+  static Future<MAPolyline> polylineWithPointsCount(List<MAMapPoint> points, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolyline::polylineWithPoints([\'count\':$count])');
   
@@ -32,7 +32,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
     }
   }
   
-  static Future<MAPolyline> polylineWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
+  static Future<MAPolyline> polylineWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolyline::polylineWithCoordinates([\'count\':$count])');
   
@@ -51,7 +51,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
     }
   }
   
-  Future<bool> setPolylineWithPoints(List<MAMapPoint> points, int count) async {
+  Future<bool> setPolylineWithPointsCount(List<MAMapPoint> points, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
   
@@ -70,7 +70,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
     }
   }
   
-  Future<bool> setPolylineWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
+  Future<bool> setPolylineWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
   

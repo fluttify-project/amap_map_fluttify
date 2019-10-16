@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::initialize([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::initialize', {"var0": var0.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::initialize', {"var0": var0.refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::setNetWorkEnable([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::setNetWorkEnable', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setNetWorkEnable', {"var0": var0});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::getNetWorkEnable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::getNetWorkEnable', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getNetWorkEnable', );
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::setApiKey([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::setApiKey', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setApiKey', {"var0": var0});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::getVersion([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::getVersion', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getVersion', );
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::loadWorldGridMap([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldGridMap', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldGridMap', {"var0": var0});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::isLoadWorldGridMap([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldGridMap', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldGridMap', );
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::setBuildingHeight([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::setBuildingHeight', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setBuildingHeight', {"var0": var0});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary', {"var0": var0});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary', );
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::setHost([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::setHost', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setHost', {"var0": var0});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::setProtocol([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::setProtocol', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setProtocol', {"var0": var0});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::getProtocol([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::getProtocol', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getProtocol', );
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::closeTileOverlay([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::closeTileOverlay', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::closeTileOverlay', {"var0": var0});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::isTileOverlayClosed([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::isTileOverlayClosed', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isTileOverlayClosed', );
   
   
     // 接受原生回调

@@ -13,7 +13,7 @@ class MAParticleEmissionModule extends NSObject  {
   
 
   // 生成方法们
-  Future<MAParticleEmissionModule> initWithEmissionRate(int rate, int rateTime) async {
+  Future<MAParticleEmissionModule> initWithEmissionRateRateTime(int rate, int rateTime) async {
     // 日志打印
     print('fluttify-dart: MAParticleEmissionModule@$refId::initWithEmissionRate([\'rate\':$rate, \'rateTime\':$rateTime])');
   

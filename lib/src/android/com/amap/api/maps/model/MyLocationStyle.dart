@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with android_os_Parcelable {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::myLocationIcon([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::myLocationIcon', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::myLocationIcon', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::anchor([\'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::anchor', {"var1": var1, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::anchor', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::radiusFillColor([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::radiusFillColor', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::radiusFillColor', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::strokeColor([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::strokeColor', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::strokeColor', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::strokeWidth([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::strokeWidth', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::strokeWidth', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::myLocationType([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::myLocationType', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::myLocationType', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::interval([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::interval', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::interval', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::showMyLocation([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::showMyLocation', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::showMyLocation', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getMyLocationIcon([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::getMyLocationIcon', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getMyLocationIcon', {"refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getAnchorU([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::getAnchorU', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getAnchorU', {"refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getAnchorV([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::getAnchorV', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getAnchorV', {"refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getRadiusFillColor([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::getRadiusFillColor', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getRadiusFillColor', {"refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getStrokeColor([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::getStrokeColor', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getStrokeColor', {"refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getStrokeWidth([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::getStrokeWidth', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getStrokeWidth', {"refId": refId});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getMyLocationType([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::getMyLocationType', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getMyLocationType', {"refId": refId});
   
   
     // 接受原生回调
@@ -305,7 +303,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getInterval([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::getInterval', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getInterval', {"refId": refId});
   
   
     // 接受原生回调
@@ -324,7 +322,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::isMyLocationShowing([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MyLocationStyle::isMyLocationShowing', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::isMyLocationShowing', {"refId": refId});
   
   
     // 接受原生回调

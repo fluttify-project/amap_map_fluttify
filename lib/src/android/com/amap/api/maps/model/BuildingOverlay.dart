@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setDefaultOptions([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlay::setDefaultOptions', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setDefaultOptions', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getDefaultOptions([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlay::getDefaultOptions', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getDefaultOptions', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setCustomOptions([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlay::setCustomOptions', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setCustomOptions', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getCustomOptions([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlay::getCustomOptions', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getCustomOptions', {"refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::destroy([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlay::destroy', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::destroy', {"refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getId([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlay::getId', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getId', {"refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setZIndex([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlay::setZIndex', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setZIndex', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getZIndex([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlay::getZIndex', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getZIndex', {"refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setVisible([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlay::setVisible', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setVisible', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::isVisible([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlay::isVisible', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::isVisible', {"refId": refId});
   
   
     // 接受原生回调

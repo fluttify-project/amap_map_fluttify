@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_CircleOptions extends java_lang_Object with android_os_Parcelable {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::center([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::center', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::center', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::radius([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::radius', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::radius', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::strokeWidth([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::strokeWidth', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::strokeWidth', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::strokeColor([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::strokeColor', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::strokeColor', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::fillColor([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::fillColor', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::fillColor', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::zIndex([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::zIndex', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::zIndex', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::visible([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::visible', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::visible', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getCenter([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::getCenter', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getCenter', {"refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getRadius([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::getRadius', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getRadius', {"refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeWidth([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::getStrokeWidth', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getStrokeWidth', {"refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeColor([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::getStrokeColor', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getStrokeColor', {"refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getFillColor([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::getFillColor', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getFillColor', {"refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getZIndex([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::getZIndex', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getZIndex', {"refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::isVisible([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::isVisible', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::isVisible', {"refId": refId});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::addHoles([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::addHoles', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::addHoles', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -300,31 +298,12 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     }
   }
   
-  Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() async {
-    // 日志打印
-    print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getHoleOptions([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::getHoleOptions', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return (result as List).cast<int>().map((it) => com_amap_api_maps_model_BaseHoleOptions()..refId = it).toList();
-    }
-  }
-  
   Future<com_amap_api_maps_model_CircleOptions> setStrokeDottedLineType(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::setStrokeDottedLineType([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::setStrokeDottedLineType', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::setStrokeDottedLineType', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -343,7 +322,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeDottedLineType([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::getStrokeDottedLineType', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getStrokeDottedLineType', {"refId": refId});
   
   
     // 接受原生回调

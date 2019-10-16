@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getPosition([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::getPosition', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::getPosition', {"refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getId([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::getId', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::getId', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setPosition([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::setPosition', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::setPosition', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setTitle([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::setTitle', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::setTitle', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getTitle([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::getTitle', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::getTitle', {"refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getSnippet([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::getSnippet', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::getSnippet', {"refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setSnippet([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::setSnippet', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::setSnippet', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setVisible([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::setVisible', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::setVisible', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::isVisible([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::isVisible', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::isVisible', {"refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setRotateAngle([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::setRotateAngle', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::setRotateAngle', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getRotateAngle([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::getRotateAngle', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::getRotateAngle', {"refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setAnimation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::setAnimation', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::setAnimation', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setGeoPoint([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::setGeoPoint', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::setGeoPoint', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::destroy([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::destroy', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::destroy', {"refId": refId});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::remove([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::remove', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::remove', {"refId": refId});
   
   
     // 接受原生回调
@@ -305,7 +303,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::startAnimation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::startAnimation', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::startAnimation', {"refId": refId});
   
   
     // 接受原生回调
@@ -324,7 +322,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::showInfoWindow([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BasePointOverlay::showInfoWindow', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BasePointOverlay::showInfoWindow', {"refId": refId});
   
   
     // 接受原生回调

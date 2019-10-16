@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::reset([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::reset', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::reset', {"refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::needToCaculate([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::needToCaculate', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::needToCaculate', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::getCurMult([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::getCurMult', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::getCurMult', {"refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::setNormalizedTime([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::setNormalizedTime', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::setNormalizedTime', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::setInterpolatorType([\'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::setInterpolatorType', {"var1": var1, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::setInterpolatorType', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::getInterpolatorType([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::getInterpolatorType', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::getInterpolatorType', {"refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::checkParam([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::checkParam', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::checkParam', {"refId": refId});
   
   
     // 接受原生回调

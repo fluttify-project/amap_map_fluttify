@@ -13,7 +13,7 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
   
 
   // 生成方法们
-  Future<MAParticleCurveSizeGenerate> initWithCurveX(double x, double y, double z) async {
+  Future<MAParticleCurveSizeGenerate> initWithCurveXYZ(double x, double y, double z) async {
     // 日志打印
     print('fluttify-dart: MAParticleCurveSizeGenerate@$refId::initWithCurveX([\'x\':$x, \'y\':$y, \'z\':$z])');
   

@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
     print('fluttify-dart: com.autonavi.amap.mapcore.VirtualEarthProjection::clip([\'var0\':$var0, \'var2\':$var2, \'var4\':$var4])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.VirtualEarthProjection::clip', {"var0": var0, "var2": var2, "var4": var4});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.VirtualEarthProjection::clip', {"var0": var0, "var2": var2, "var4": var4});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
     print('fluttify-dart: com.autonavi.amap.mapcore.VirtualEarthProjection::latLongToPixels([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.VirtualEarthProjection::latLongToPixels', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.VirtualEarthProjection::latLongToPixels', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
     print('fluttify-dart: com.autonavi.amap.mapcore.VirtualEarthProjection::pixelsToLatLong([\'var0\':$var0, \'var2\':$var2, \'var4\':$var4])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.VirtualEarthProjection::pixelsToLatLong', {"var0": var0, "var2": var2, "var4": var4});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.VirtualEarthProjection::pixelsToLatLong', {"var0": var0, "var2": var2, "var4": var4});
   
   
     // 接受原生回调

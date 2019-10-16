@@ -6,29 +6,27 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<double> get_maxZoomLevel() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_maxZoomLevel", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_maxZoomLevel", {'refId': refId});
     return result;
   }
   
   Future<double> get_minZoomLevel() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_minZoomLevel", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_minZoomLevel", {'refId': refId});
     return result;
   }
   
 
   // 生成setters
   Future<void> set_maxZoomLevel(double maxZoomLevel) async {
-    await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::set_maxZoomLevel', {'refId': refId, "maxZoomLevel": maxZoomLevel});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::set_maxZoomLevel', {'refId': refId, "maxZoomLevel": maxZoomLevel});
   
   
   }
   
   Future<void> set_minZoomLevel(double minZoomLevel) async {
-    await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::set_minZoomLevel', {'refId': refId, "minZoomLevel": minZoomLevel});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::set_minZoomLevel', {'refId': refId, "minZoomLevel": minZoomLevel});
   
   
   }
@@ -40,7 +38,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getAnchorY([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getAnchorY', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getAnchorY', {"refId": refId});
   
   
     // 接受原生回调
@@ -59,7 +57,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setAnchorY([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setAnchorY', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setAnchorY', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -78,7 +76,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getAnchorX([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getAnchorX', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getAnchorX', {"refId": refId});
   
   
     // 接受原生回调
@@ -97,7 +95,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setAnchorX([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setAnchorX', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setAnchorX', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -116,7 +114,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getChangedCounter([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getChangedCounter', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getChangedCounter', {"refId": refId});
   
   
     // 接受原生回调
@@ -135,7 +133,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::resetChangedCounter([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::resetChangedCounter', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::resetChangedCounter', {"refId": refId});
   
   
     // 接受原生回调
@@ -154,7 +152,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isMapStateChange([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isMapStateChange', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isMapStateChange', {"refId": refId});
   
   
     // 接受原生回调
@@ -173,7 +171,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getChangeRatio([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getChangeRatio', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getChangeRatio', {"refId": refId});
   
   
     // 接受原生回调
@@ -192,7 +190,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getChangeGridRatio([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getChangeGridRatio', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getChangeGridRatio', {"refId": refId});
   
   
     // 接受原生回调
@@ -211,7 +209,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isZoomChanged([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isZoomChanged', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isZoomChanged', {"refId": refId});
   
   
     // 接受原生回调
@@ -230,7 +228,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isTiltChanged([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isTiltChanged', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isTiltChanged', {"refId": refId});
   
   
     // 接受原生回调
@@ -249,7 +247,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isBearingChanged([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isBearingChanged', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isBearingChanged', {"refId": refId});
   
   
     // 接受原生回调
@@ -268,7 +266,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isIndoorEnable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isIndoorEnable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isIndoorEnable', {"refId": refId});
   
   
     // 接受原生回调
@@ -287,7 +285,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setIndoorEnable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setIndoorEnable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setIndoorEnable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -306,7 +304,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isBuildingEnable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isBuildingEnable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isBuildingEnable', {"refId": refId});
   
   
     // 接受原生回调
@@ -325,7 +323,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setBuildingEnable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setBuildingEnable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setBuildingEnable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -344,7 +342,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isMapTextEnable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isMapTextEnable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isMapTextEnable', {"refId": refId});
   
   
     // 接受原生回调
@@ -363,7 +361,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapTextEnable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapTextEnable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapTextEnable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -382,7 +380,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isTrafficEnabled([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isTrafficEnabled', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isTrafficEnabled', {"refId": refId});
   
   
     // 接受原生回调
@@ -401,7 +399,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setTrafficEnabled([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setTrafficEnabled', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setTrafficEnabled', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -420,7 +418,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isNeedUpdateZoomControllerState([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isNeedUpdateZoomControllerState', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isNeedUpdateZoomControllerState', {"refId": refId});
   
   
     // 接受原生回调
@@ -439,7 +437,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getSX([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getSX', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getSX', {"refId": refId});
   
   
     // 接受原生回调
@@ -458,7 +456,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSX([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setSX', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setSX', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -477,7 +475,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getSY([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getSY', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getSY', {"refId": refId});
   
   
     // 接受原生回调
@@ -496,7 +494,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSY([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setSY', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setSY', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -515,7 +513,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapGeoCenter([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapGeoCenter', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapGeoCenter', {"refId": refId});
   
   
     // 接受原生回调
@@ -534,7 +532,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getSZ([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getSZ', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getSZ', {"refId": refId});
   
   
     // 接受原生回调
@@ -553,7 +551,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSZ([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setSZ', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setSZ', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -572,7 +570,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getSC([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getSC', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getSC', {"refId": refId});
   
   
     // 接受原生回调
@@ -591,7 +589,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSC([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setSC', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setSC', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -610,7 +608,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getSR([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getSR', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getSR', {"refId": refId});
   
   
     // 接受原生回调
@@ -629,7 +627,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSR([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setSR', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setSR', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -648,7 +646,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getGeoRectangle([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getGeoRectangle', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getGeoRectangle', {"refId": refId});
   
   
     // 接受原生回调
@@ -667,7 +665,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMaxZoomLevel([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMaxZoomLevel', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMaxZoomLevel', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -686,7 +684,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMinZoomLevel([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMinZoomLevel', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMinZoomLevel', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -705,7 +703,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMaxZoomLevel([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMaxZoomLevel', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMaxZoomLevel', {"refId": refId});
   
   
     // 接受原生回调
@@ -724,7 +722,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMinZoomLevel([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMinZoomLevel', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMinZoomLevel', {"refId": refId});
   
   
     // 接受原生回调
@@ -743,7 +741,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isSetLimitZoomLevel([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isSetLimitZoomLevel', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isSetLimitZoomLevel', {"refId": refId});
   
   
     // 接受原生回调
@@ -762,7 +760,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getLimitLatLngBounds([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getLimitLatLngBounds', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getLimitLatLngBounds', {"refId": refId});
   
   
     // 接受原生回调
@@ -781,7 +779,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setLimitLatLngBounds([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setLimitLatLngBounds', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setLimitLatLngBounds', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -800,7 +798,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::resetMinMaxZoomPreference([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::resetMinMaxZoomPreference', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::resetMinMaxZoomPreference', {"refId": refId});
   
   
     // 接受原生回调
@@ -819,7 +817,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::updateMapRectNextFrame([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::updateMapRectNextFrame', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::updateMapRectNextFrame', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -838,7 +836,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapPerPixelUnitLength([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapPerPixelUnitLength', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapPerPixelUnitLength', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -857,7 +855,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapPerPixelUnitLength([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapPerPixelUnitLength', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapPerPixelUnitLength', {"refId": refId});
   
   
     // 接受原生回调
@@ -876,7 +874,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomStylePath([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setCustomStylePath', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setCustomStylePath', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -895,7 +893,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getCustomStylePath([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getCustomStylePath', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getCustomStylePath', {"refId": refId});
   
   
     // 接受原生回调
@@ -914,7 +912,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getCustomStyleID([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getCustomStyleID', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getCustomStyleID', {"refId": refId});
   
   
     // 接受原生回调
@@ -933,7 +931,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomStyleID([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setCustomStyleID', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setCustomStyleID', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -952,7 +950,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomStyleEnable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setCustomStyleEnable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setCustomStyleEnable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -971,7 +969,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isCustomStyleEnable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isCustomStyleEnable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isCustomStyleEnable', {"refId": refId});
   
   
     // 接受原生回调
@@ -990,7 +988,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapStyleTime([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapStyleTime', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapStyleTime', {"refId": refId});
   
   
     // 接受原生回调
@@ -1009,7 +1007,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapStyleTime([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapStyleTime', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapStyleTime', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1028,7 +1026,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapStyleMode([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapStyleMode', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapStyleMode', {"refId": refId});
   
   
     // 接受原生回调
@@ -1047,7 +1045,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapStyleMode([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapStyleMode', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapStyleMode', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1066,7 +1064,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapStyleState([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapStyleState', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapStyleState', {"refId": refId});
   
   
     // 接受原生回调
@@ -1085,7 +1083,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapStyleState([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapStyleState', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapStyleState', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1104,7 +1102,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomTextureResourcePath([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setCustomTextureResourcePath', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setCustomTextureResourcePath', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1123,7 +1121,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getCustomTextureResourcePath([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getCustomTextureResourcePath', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getCustomTextureResourcePath', {"refId": refId});
   
   
     // 接受原生回调
@@ -1142,7 +1140,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isProFunctionAuthEnable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isProFunctionAuthEnable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isProFunctionAuthEnable', {"refId": refId});
   
   
     // 接受原生回调
@@ -1161,7 +1159,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setProFunctionAuthEnable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setProFunctionAuthEnable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setProFunctionAuthEnable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1180,7 +1178,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isUseProFunction([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isUseProFunction', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isUseProFunction', {"refId": refId});
   
   
     // 接受原生回调
@@ -1199,7 +1197,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setUseProFunction([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setUseProFunction', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setUseProFunction', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1218,7 +1216,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomBackgroundColor([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setCustomBackgroundColor', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setCustomBackgroundColor', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1237,7 +1235,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getCustomBackgroundColor([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getCustomBackgroundColor', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getCustomBackgroundColor', {"refId": refId});
   
   
     // 接受原生回调
@@ -1256,7 +1254,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapZoomScale([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapZoomScale', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapZoomScale', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1275,7 +1273,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapZoomScale([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapZoomScale', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapZoomScale', {"refId": refId});
   
   
     // 接受原生回调
@@ -1294,7 +1292,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapWidth([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapWidth', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapWidth', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1313,7 +1311,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapWidth([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapWidth', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapWidth', {"refId": refId});
   
   
     // 接受原生回调
@@ -1332,7 +1330,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapHeight([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapHeight', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapHeight', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1351,7 +1349,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapHeight([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapHeight', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapHeight', {"refId": refId});
   
   
     // 接受原生回调
@@ -1370,7 +1368,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapLanguage([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapLanguage', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setMapLanguage', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1389,7 +1387,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapLanguage([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapLanguage', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMapLanguage', {"refId": refId});
   
   
     // 接受原生回调
@@ -1408,7 +1406,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setHideLogoEnble([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setHideLogoEnble', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setHideLogoEnble', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1427,7 +1425,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isHideLogoEnable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isHideLogoEnable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isHideLogoEnable', {"refId": refId});
   
   
     // 接受原生回调
@@ -1446,7 +1444,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setWorldMapEnable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setWorldMapEnable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setWorldMapEnable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1465,7 +1463,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isWorldMapEnable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::isWorldMapEnable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::isWorldMapEnable', {"refId": refId});
   
   
     // 接受原生回调
@@ -1484,7 +1482,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getSkyHeight([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getSkyHeight', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getSkyHeight', {"refId": refId});
   
   
     // 接受原生回调
@@ -1503,7 +1501,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSkyHeight([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::setSkyHeight', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::setSkyHeight', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1522,7 +1520,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getViewMatrix([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getViewMatrix', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getViewMatrix', {"refId": refId});
   
   
     // 接受原生回调
@@ -1541,7 +1539,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getProjectionMatrix([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getProjectionMatrix', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getProjectionMatrix', {"refId": refId});
   
   
     // 接受原生回调
@@ -1560,7 +1558,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMvpMatrix([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMvpMatrix', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMvpMatrix', {"refId": refId});
   
   
     // 接受原生回调
@@ -1579,7 +1577,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::updateFinalMatrix([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::updateFinalMatrix', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::updateFinalMatrix', {"refId": refId});
   
   
     // 接受原生回调
@@ -1598,7 +1596,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getCurTileIds([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getCurTileIds', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getCurTileIds', {"refId": refId});
   
   
     // 接受原生回调

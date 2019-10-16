@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindowUpdateTime([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowParams::setInfoWindowUpdateTime', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::setInfoWindowUpdateTime', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::getInfoWindowUpdateTime([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowParams::getInfoWindowUpdateTime', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::getInfoWindowUpdateTime', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindowType([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowParams::setInfoWindowType', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::setInfoWindowType', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::getInfoWindowType([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowParams::getInfoWindowType', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::getInfoWindowType', {"refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::getInfoWindow([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowParams::getInfoWindow', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::getInfoWindow', {"refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoContent([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowParams::setInfoContent', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::setInfoContent', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindow([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowParams::setInfoWindow', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::setInfoWindow', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::getInfoContents([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowParams::getInfoContents', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::getInfoContents', {"refId": refId});
   
   
     // 接受原生回调

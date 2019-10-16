@@ -6,18 +6,16 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<com_autonavi_amap_mapcore_animation_GLAnimation> get_glAnimation() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.animation.Animation::get_glAnimation", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.animation.Animation::get_glAnimation", {'refId': refId});
     return com_autonavi_amap_mapcore_animation_GLAnimation()..refId = result;
   }
   
 
   // 生成setters
   Future<void> set_glAnimation(com_autonavi_amap_mapcore_animation_GLAnimation glAnimation) async {
-    await _channel.invokeMethod('com.amap.api.maps.model.animation.Animation::set_glAnimation', {'refId': refId, "glAnimation": glAnimation.refId});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::set_glAnimation', {'refId': refId, "glAnimation": glAnimation.refId});
   
   
   }
@@ -29,7 +27,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setAnimationListener([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.animation.Animation::setAnimationListener', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::setAnimationListener', {"refId": refId});
   
   
     // 接受原生回调
@@ -72,7 +70,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setDuration([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.animation.Animation::setDuration', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::setDuration', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -91,7 +89,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setFillMode([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.animation.Animation::setFillMode', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::setFillMode', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -110,7 +108,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getFillMode([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.animation.Animation::getFillMode', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::getFillMode', {"refId": refId});
   
   
     // 接受原生回调
@@ -129,7 +127,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setRepeatCount([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.animation.Animation::setRepeatCount', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::setRepeatCount', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -148,7 +146,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setRepeatMode([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.animation.Animation::setRepeatMode', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::setRepeatMode', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -167,7 +165,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getRepeatMode([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.animation.Animation::getRepeatMode', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::getRepeatMode', {"refId": refId});
   
   
     // 接受原生回调
@@ -186,7 +184,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getRepeatCount([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.animation.Animation::getRepeatCount', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::getRepeatCount', {"refId": refId});
   
   
     // 接受原生回调

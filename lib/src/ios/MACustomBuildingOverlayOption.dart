@@ -44,7 +44,7 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
   
 
   // 生成方法们
-  static Future<MACustomBuildingOverlayOption> optionWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
+  static Future<MACustomBuildingOverlayOption> optionWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MACustomBuildingOverlayOption::optionWithCoordinates([\'count\':$count])');
   
@@ -63,7 +63,7 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
     }
   }
   
-  Future<bool> setOptionWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
+  Future<bool> setOptionWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MACustomBuildingOverlayOption@$refId::setOptionWithCoordinates([\'count\':$count])');
   

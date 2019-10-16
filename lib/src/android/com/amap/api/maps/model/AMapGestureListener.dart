@@ -6,6 +6,10 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
+  
+
+  
+
   Future<void> onDoubleTap(double var1, double var2) {}
   
   Future<void> onSingleTap(double var1, double var2) {}

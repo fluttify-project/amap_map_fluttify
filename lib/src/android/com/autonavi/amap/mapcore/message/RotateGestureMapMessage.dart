@@ -6,40 +6,38 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<int> get_pivotX() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotX", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotX", {'refId': refId});
     return result;
   }
   
   Future<int> get_pivotY() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotY", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotY", {'refId': refId});
     return result;
   }
   
   Future<double> get_angleDelta() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_angleDelta", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_angleDelta", {'refId': refId});
     return result;
   }
   
 
   // 生成setters
   Future<void> set_pivotX(int pivotX) async {
-    await _channel.invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotX', {'refId': refId, "pivotX": pivotX});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotX', {'refId': refId, "pivotX": pivotX});
   
   
   }
   
   Future<void> set_pivotY(int pivotY) async {
-    await _channel.invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotY', {'refId': refId, "pivotY": pivotY});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotY', {'refId': refId, "pivotY": pivotY});
   
   
   }
   
   Future<void> set_angleDelta(double angleDelta) async {
-    await _channel.invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_angleDelta', {'refId': refId, "angleDelta": angleDelta});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_angleDelta', {'refId': refId, "angleDelta": angleDelta});
   
   
   }
@@ -51,7 +49,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
     print('fluttify-dart: com.autonavi.amap.mapcore.message.RotateGestureMapMessage::obtain([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::obtain', {"var0": var0, "var1": var1, "var2": var2, "var3": var3});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::obtain', {"var0": var0, "var1": var1, "var2": var2, "var3": var3});
   
   
     // 接受原生回调
@@ -70,7 +68,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
     print('fluttify-dart: com.autonavi.amap.mapcore.message.RotateGestureMapMessage::destory([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::destory', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::destory', );
   
   
     // 接受原生回调
@@ -89,7 +87,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
     print('fluttify-dart: com.autonavi.amap.mapcore.message.RotateGestureMapMessage@$refId::getType([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::getType', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::getType', {"refId": refId});
   
   
     // 接受原生回调
@@ -108,7 +106,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
     print('fluttify-dart: com.autonavi.amap.mapcore.message.RotateGestureMapMessage@$refId::runCameraUpdate([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::runCameraUpdate', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::runCameraUpdate', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调

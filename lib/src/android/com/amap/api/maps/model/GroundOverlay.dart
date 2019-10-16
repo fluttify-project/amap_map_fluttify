@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::remove([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::remove', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::remove', {"refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getId([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::getId', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getId', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPosition([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::setPosition', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setPosition', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getPosition([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::getPosition', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getPosition', {"refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setDimensions([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::setDimensions', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setDimensions', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setImage([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::setImage', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setImage', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getWidth([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::getWidth', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getWidth', {"refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getHeight([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::getHeight', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getHeight', {"refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPositionFromBounds([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::setPositionFromBounds', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setPositionFromBounds', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBounds([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::getBounds', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getBounds', {"refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setBearing([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::setBearing', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setBearing', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBearing([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::getBearing', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getBearing', {"refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setZIndex([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::setZIndex', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setZIndex', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getZIndex([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::getZIndex', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getZIndex', {"refId": refId});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setVisible([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::setVisible', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setVisible', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -305,7 +303,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::isVisible([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::isVisible', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::isVisible', {"refId": refId});
   
   
     // 接受原生回调
@@ -324,7 +322,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setTransparency([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::setTransparency', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setTransparency', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -343,7 +341,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getTransparency([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::getTransparency', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getTransparency', {"refId": refId});
   
   
     // 接受原生回调
@@ -362,7 +360,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::destroy([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.GroundOverlay::destroy', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::destroy', {"refId": refId});
   
   
     // 接受原生回调

@@ -6,6 +6,10 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 mixin com_autonavi_amap_mapcore_interfaces_IProjection on java_lang_Object {
+  
+
+  
+
   Future<com_amap_api_maps_model_LatLng> fromScreenLocation(android_graphics_Point var1) {}
   
   Future<android_graphics_Point> toScreenLocation(com_amap_api_maps_model_LatLng var1) {}

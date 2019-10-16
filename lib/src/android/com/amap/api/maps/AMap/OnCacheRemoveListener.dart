@@ -6,6 +6,10 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 mixin com_amap_api_maps_AMap_OnCacheRemoveListener on java_lang_Object {
+  
+
+  
+
   Future<void> onRemoveCacheFinish(bool var1) {}
   
 }

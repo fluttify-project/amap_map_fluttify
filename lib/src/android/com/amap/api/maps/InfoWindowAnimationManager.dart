@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowAnimation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -63,7 +61,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowAppearAnimation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAppearAnimation', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAppearAnimation', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -82,7 +80,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackColor([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowBackColor', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowBackColor', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -101,7 +99,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackEnable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowBackEnable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowBackEnable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -120,7 +118,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackScale([\'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowBackScale', {"var1": var1, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowBackScale', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // 接受原生回调
@@ -139,7 +137,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowDisappearAnimation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowDisappearAnimation', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowDisappearAnimation', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -158,7 +156,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowMovingAnimation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowMovingAnimation', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowMovingAnimation', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -177,7 +175,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::startAnimation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::startAnimation', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::startAnimation', {"refId": refId});
   
   
     // 接受原生回调

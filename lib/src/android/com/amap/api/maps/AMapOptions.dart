@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Parcelable {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::logoPosition([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::logoPosition', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::logoPosition', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::zOrderOnTop([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::zOrderOnTop', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::zOrderOnTop', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::mapType([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::mapType', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::mapType', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::camera([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::camera', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::camera', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::scaleControlsEnabled([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::scaleControlsEnabled', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::scaleControlsEnabled', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::zoomControlsEnabled([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::zoomControlsEnabled', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::zoomControlsEnabled', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::compassEnabled([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::compassEnabled', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::compassEnabled', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::scrollGesturesEnabled([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::scrollGesturesEnabled', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::scrollGesturesEnabled', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::zoomGesturesEnabled([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::zoomGesturesEnabled', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::zoomGesturesEnabled', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::tiltGesturesEnabled([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::tiltGesturesEnabled', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::tiltGesturesEnabled', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::rotateGesturesEnabled([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::rotateGesturesEnabled', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::rotateGesturesEnabled', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getLogoPosition([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::getLogoPosition', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::getLogoPosition', {"refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getZOrderOnTop([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::getZOrderOnTop', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::getZOrderOnTop', {"refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getMapType([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::getMapType', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::getMapType', {"refId": refId});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getCamera([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::getCamera', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::getCamera', {"refId": refId});
   
   
     // 接受原生回调
@@ -305,7 +303,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getScaleControlsEnabled([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::getScaleControlsEnabled', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::getScaleControlsEnabled', {"refId": refId});
   
   
     // 接受原生回调
@@ -324,7 +322,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getZoomControlsEnabled([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::getZoomControlsEnabled', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::getZoomControlsEnabled', {"refId": refId});
   
   
     // 接受原生回调
@@ -343,7 +341,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getCompassEnabled([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::getCompassEnabled', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::getCompassEnabled', {"refId": refId});
   
   
     // 接受原生回调
@@ -362,7 +360,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getScrollGesturesEnabled([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::getScrollGesturesEnabled', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::getScrollGesturesEnabled', {"refId": refId});
   
   
     // 接受原生回调
@@ -381,7 +379,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getZoomGesturesEnabled([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::getZoomGesturesEnabled', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::getZoomGesturesEnabled', {"refId": refId});
   
   
     // 接受原生回调
@@ -400,7 +398,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getTiltGesturesEnabled([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::getTiltGesturesEnabled', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::getTiltGesturesEnabled', {"refId": refId});
   
   
     // 接受原生回调
@@ -419,7 +417,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getRotateGesturesEnabled([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMapOptions::getRotateGesturesEnabled', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::getRotateGesturesEnabled', {"refId": refId});
   
   
     // 接受原生回调

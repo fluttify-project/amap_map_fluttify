@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with android_os_Parcelable {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::add([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::add', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::add', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addAll([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::addAll', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::addAll', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setPoints([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::setPoints', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::setPoints', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setHoleOptions([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::setHoleOptions', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::setHoleOptions', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addHoles([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::addHoles', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::addHoles', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeWidth([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::strokeWidth', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::strokeWidth', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeColor([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::strokeColor', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::strokeColor', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::fillColor([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::fillColor', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::fillColor', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::zIndex([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::zIndex', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::zIndex', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::visible([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::visible', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::visible', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getPoints([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::getPoints', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::getPoints', {"refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeWidth([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::getStrokeWidth', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::getStrokeWidth', {"refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeColor([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::getStrokeColor', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::getStrokeColor', {"refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getFillColor([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::getFillColor', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::getFillColor', {"refId": refId});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getZIndex([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::getZIndex', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::getZIndex', {"refId": refId});
   
   
     // 接受原生回调
@@ -305,7 +303,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::isVisible([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::isVisible', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::isVisible', {"refId": refId});
   
   
     // 接受原生回调
@@ -316,25 +314,6 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
       return null;
     } else {
       return result;
-    }
-  }
-  
-  Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() async {
-    // 日志打印
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getHoleOptions([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::getHoleOptions', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return (result as List).cast<int>().map((it) => com_amap_api_maps_model_BaseHoleOptions()..refId = it).toList();
     }
   }
   

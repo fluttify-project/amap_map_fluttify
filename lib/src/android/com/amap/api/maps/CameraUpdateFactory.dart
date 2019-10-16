@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomIn([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomIn', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomIn', );
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomOut([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomOut', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomOut', );
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::scrollBy([\'var0\':$var0, \'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::scrollBy', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::scrollBy', {"var0": var0, "var1": var1});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomTo([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomTo', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomTo', {"var0": var0});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomBy([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomBy', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomBy', {"var0": var0});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newCameraPosition([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::newCameraPosition', {"var0": var0.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newCameraPosition', {"var0": var0.refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLng([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLng', {"var0": var0.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLng', {"var0": var0.refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLngZoom([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngZoom', {"var0": var0.refId, "var1": var1});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngZoom', {"var0": var0.refId, "var1": var1});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLngBounds([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBounds', {"var0": var0.refId, "var1": var1});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBounds', {"var0": var0.refId, "var1": var1});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeLatLng([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeLatLng', {"var0": var0.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeLatLng', {"var0": var0.refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeBearing([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeBearing', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeBearing', {"var0": var0});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter', {"var0": var0, "var1": var1.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter', {"var0": var0, "var1": var1.refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeTilt([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeTilt', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeTilt', {"var0": var0});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect', {"var0": var0.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect', {"var0": var0.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
   
   
     // 接受原生回调

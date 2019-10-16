@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setPoints([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setPoints', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setPoints', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::resetIndex([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::resetIndex', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::resetIndex', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setTotalDuration([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setTotalDuration', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setTotalDuration', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::startSmoothMove([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::startSmoothMove', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::startSmoothMove', {"refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::stopMove([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::stopMove', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::stopMove', {"refId": refId});
   
   
     // 接受原生回调
@@ -110,31 +108,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     }
   }
   
-  Future<com_amap_api_maps_model_BasePointOverlay> getObject() async {
-    // 日志打印
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getObject([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getObject', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return com_amap_api_maps_model_BasePointOverlay()..refId = result;
-    }
-  }
-  
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getPosition([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getPosition', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getPosition', {"refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +132,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getIndex([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getIndex', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getIndex', {"refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +151,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::destroy([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::destroy', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::destroy', {"refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +170,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::removeMarker([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::removeMarker', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::removeMarker', {"refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +189,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setPosition([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setPosition', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setPosition', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +208,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setRotate([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setRotate', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setRotate', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +227,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setVisible([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setVisible', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setVisible', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +246,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setMoveListener([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener', {"refId": refId});
   
   
     // 接受原生回调

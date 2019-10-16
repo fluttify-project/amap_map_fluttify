@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_Marker extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPeriod([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setPeriod', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setPeriod', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getPeriod([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getPeriod', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getPeriod', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setIcons([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setIcons', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setIcons', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getIcons([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getIcons', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getIcons', {"refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::remove([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::remove', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::remove', {"refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::destroy([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::destroy', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::destroy', {"refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getId([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getId', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getId', {"refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPerspective([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setPerspective', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setPerspective', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isPerspective([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::isPerspective', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isPerspective', {"refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPosition([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setPosition', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setPosition', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getPosition([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getPosition', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getPosition', {"refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setTitle([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setTitle', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setTitle', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getTitle([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getTitle', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getTitle', {"refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setSnippet([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setSnippet', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setSnippet', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getSnippet([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getSnippet', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getSnippet', {"refId": refId});
   
   
     // 接受原生回调
@@ -305,7 +303,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setIcon([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setIcon', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setIcon', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -324,7 +322,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setAnchor', {"var1": var1, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setAnchor', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // 接受原生回调
@@ -343,7 +341,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setDraggable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setDraggable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setDraggable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -362,7 +360,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isDraggable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::isDraggable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isDraggable', {"refId": refId});
   
   
     // 接受原生回调
@@ -381,7 +379,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::showInfoWindow([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::showInfoWindow', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::showInfoWindow', {"refId": refId});
   
   
     // 接受原生回调
@@ -400,7 +398,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::hideInfoWindow([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::hideInfoWindow', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::hideInfoWindow', {"refId": refId});
   
   
     // 接受原生回调
@@ -419,7 +417,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowShown([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::isInfoWindowShown', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isInfoWindowShown', {"refId": refId});
   
   
     // 接受原生回调
@@ -438,7 +436,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setVisible([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setVisible', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setVisible', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -457,7 +455,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isVisible([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::isVisible', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isVisible', {"refId": refId});
   
   
     // 接受原生回调
@@ -476,7 +474,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setRotateAngle([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setRotateAngle', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setRotateAngle', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -495,7 +493,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getRotateAngle([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getRotateAngle', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getRotateAngle', {"refId": refId});
   
   
     // 接受原生回调
@@ -514,7 +512,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setToTop([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setToTop', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setToTop', {"refId": refId});
   
   
     // 接受原生回调
@@ -533,7 +531,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setGeoPoint([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setGeoPoint', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setGeoPoint', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -552,7 +550,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getGeoPoint([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getGeoPoint', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getGeoPoint', {"refId": refId});
   
   
     // 接受原生回调
@@ -571,7 +569,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setFlat([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setFlat', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setFlat', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -590,7 +588,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isFlat([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::isFlat', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isFlat', {"refId": refId});
   
   
     // 接受原生回调
@@ -609,7 +607,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPositionByPixels([\'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setPositionByPixels', {"var1": var1, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setPositionByPixels', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // 接受原生回调
@@ -628,7 +626,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setZIndex([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setZIndex', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setZIndex', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -647,7 +645,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getZIndex([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getZIndex', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getZIndex', {"refId": refId});
   
   
     // 接受原生回调
@@ -666,7 +664,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnimation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setAnimation', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setAnimation', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -685,7 +683,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::startAnimation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::startAnimation', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::startAnimation', {"refId": refId});
   
   
     // 接受原生回调
@@ -704,7 +702,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnimationListener([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setAnimationListener', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setAnimationListener', {"refId": refId});
   
   
     // 接受原生回调
@@ -747,7 +745,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAlpha([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getAlpha', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getAlpha', {"refId": refId});
   
   
     // 接受原生回调
@@ -766,7 +764,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAlpha([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setAlpha', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setAlpha', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -785,7 +783,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getDisplayLevel([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getDisplayLevel', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getDisplayLevel', {"refId": refId});
   
   
     // 接受原生回调
@@ -804,7 +802,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getOptions([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getOptions', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getOptions', {"refId": refId});
   
   
     // 接受原生回调
@@ -823,7 +821,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isClickable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::isClickable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isClickable', {"refId": refId});
   
   
     // 接受原生回调
@@ -842,7 +840,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowAutoOverturn([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::isInfoWindowAutoOverturn', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isInfoWindowAutoOverturn', {"refId": refId});
   
   
     // 接受原生回调
@@ -861,7 +859,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowEnable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::isInfoWindowEnable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isInfoWindowEnable', {"refId": refId});
   
   
     // 接受原生回调
@@ -880,7 +878,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setInfoWindowEnable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setInfoWindowEnable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setInfoWindowEnable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -899,7 +897,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setMarkerOptions([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setMarkerOptions', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setMarkerOptions', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -918,7 +916,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAutoOverturnInfoWindow([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setAutoOverturnInfoWindow', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setAutoOverturnInfoWindow', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -937,7 +935,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setClickable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setClickable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setClickable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -956,7 +954,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setDisplayLevel([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setDisplayLevel', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setDisplayLevel', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -975,7 +973,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setFixingPointEnable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setFixingPointEnable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setFixingPointEnable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -994,7 +992,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isRemoved([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::isRemoved', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isRemoved', {"refId": refId});
   
   
     // 接受原生回调
@@ -1013,7 +1011,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPositionNotUpdate([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setPositionNotUpdate', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setPositionNotUpdate', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -1032,7 +1030,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setRotateAngleNotUpdate([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setRotateAngleNotUpdate', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setRotateAngleNotUpdate', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1051,7 +1049,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setBelowMaskLayer([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setBelowMaskLayer', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setBelowMaskLayer', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -1070,7 +1068,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAnchorU([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getAnchorU', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getAnchorU', {"refId": refId});
   
   
     // 接受原生回调
@@ -1089,7 +1087,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAnchorV([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::getAnchorV', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getAnchorV', {"refId": refId});
   
   
     // 接受原生回调

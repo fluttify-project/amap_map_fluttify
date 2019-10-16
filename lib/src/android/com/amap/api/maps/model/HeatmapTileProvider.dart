@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTile([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.HeatmapTileProvider::getTile', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider::getTile', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTileHeight([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.HeatmapTileProvider::getTileHeight', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider::getTileHeight', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTileWidth([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.HeatmapTileProvider::getTileWidth', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider::getTileWidth', {"refId": refId});
   
   
     // 接受原生回调

@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY', );
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isMockEnable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isMockEnable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isMockEnable', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setMockEnable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setMockEnable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setMockEnable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getInterval([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getInterval', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getInterval', {"refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setInterval([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setInterval', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setInterval', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocation', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocation', {"refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocation([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocation', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocation', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isNeedAddress([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isNeedAddress', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isNeedAddress', {"refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setNeedAddress([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setNeedAddress', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setNeedAddress', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiActiveScan([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiActiveScan', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiActiveScan', {"refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiActiveScan([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiActiveScan', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiActiveScan', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiScan([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiScan', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiScan', {"refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiScan([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiScan', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiScan', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationMode([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationMode', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationMode', {"refId": refId});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationProtocol([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationProtocol', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationProtocol', {"refId": refId});
   
   
     // 接受原生回调
@@ -305,7 +303,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationMode([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationMode', {"var1": var1.index, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationMode', {"var1": var1.index, "refId": refId});
   
   
     // 接受原生回调
@@ -324,7 +322,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol', {"var0": var0.index});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol', {"var0": var0.index});
   
   
     // 接受原生回调
@@ -343,7 +341,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isKillProcess([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isKillProcess', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isKillProcess', {"refId": refId});
   
   
     // 接受原生回调
@@ -362,7 +360,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setKillProcess([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setKillProcess', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setKillProcess', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -381,7 +379,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isGpsFirst([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isGpsFirst', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isGpsFirst', {"refId": refId});
   
   
     // 接受原生回调
@@ -400,7 +398,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setGpsFirst([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setGpsFirst', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setGpsFirst', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -419,7 +417,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::clone([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::clone', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::clone', {"refId": refId});
   
   
     // 接受原生回调
@@ -438,7 +436,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getHttpTimeOut([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getHttpTimeOut', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getHttpTimeOut', {"refId": refId});
   
   
     // 接受原生回调
@@ -457,7 +455,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setHttpTimeOut([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setHttpTimeOut', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setHttpTimeOut', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -476,7 +474,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOffset([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOffset', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOffset', {"refId": refId});
   
   
     // 接受原生回调
@@ -495,7 +493,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOffset([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOffset', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOffset', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -514,7 +512,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isLocationCacheEnable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isLocationCacheEnable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isLocationCacheEnable', {"refId": refId});
   
   
     // 接受原生回调
@@ -533,7 +531,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationCacheEnable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationCacheEnable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationCacheEnable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -552,7 +550,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocationLatest([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocationLatest', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocationLatest', {"refId": refId});
   
   
     // 接受原生回调
@@ -571,7 +569,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocationLatest([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocationLatest', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocationLatest', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -590,7 +588,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isSensorEnable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isSensorEnable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isSensorEnable', {"refId": refId});
   
   
     // 接受原生回调
@@ -609,7 +607,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setSensorEnable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setSensorEnable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setSensorEnable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调

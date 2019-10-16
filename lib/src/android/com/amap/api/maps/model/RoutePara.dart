@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getDrivingRouteStyle([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.RoutePara::getDrivingRouteStyle', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::getDrivingRouteStyle', {"refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setDrivingRouteStyle([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.RoutePara::setDrivingRouteStyle', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::setDrivingRouteStyle', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getTransitRouteStyle([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.RoutePara::getTransitRouteStyle', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::getTransitRouteStyle', {"refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setTransitRouteStyle([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.RoutePara::setTransitRouteStyle', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::setTransitRouteStyle', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getStartPoint([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.RoutePara::getStartPoint', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::getStartPoint', {"refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setStartPoint([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.RoutePara::setStartPoint', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::setStartPoint', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getEndPoint([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.RoutePara::getEndPoint', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::getEndPoint', {"refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setEndPoint([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.RoutePara::setEndPoint', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::setEndPoint', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getEndName([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.RoutePara::getEndName', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::getEndName', {"refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setEndName([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.RoutePara::setEndName', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::setEndName', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getStartName([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.RoutePara::getStartName', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::getStartName', {"refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setStartName([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.RoutePara::setStartName', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::setStartName', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调

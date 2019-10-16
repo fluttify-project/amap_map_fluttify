@@ -6,29 +6,27 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<double> get_touchDeltaX() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::get_touchDeltaX", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::get_touchDeltaX", {'refId': refId});
     return result;
   }
   
   Future<double> get_touchDeltaY() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::get_touchDeltaY", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::get_touchDeltaY", {'refId': refId});
     return result;
   }
   
 
   // 生成setters
   Future<void> set_touchDeltaX(double touchDeltaX) async {
-    await _channel.invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaX', {'refId': refId, "touchDeltaX": touchDeltaX});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaX', {'refId': refId, "touchDeltaX": touchDeltaX});
   
   
   }
   
   Future<void> set_touchDeltaY(double touchDeltaY) async {
-    await _channel.invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaY', {'refId': refId, "touchDeltaY": touchDeltaY});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaY', {'refId': refId, "touchDeltaY": touchDeltaY});
   
   
   }
@@ -40,7 +38,7 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
     print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::obtain([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::obtain', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::obtain', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // 接受原生回调
@@ -59,7 +57,7 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
     print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::destory([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::destory', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::destory', );
   
   
     // 接受原生回调
@@ -78,7 +76,7 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
     print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage@$refId::getType([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::getType', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::getType', {"refId": refId});
   
   
     // 接受原生回调
@@ -97,7 +95,7 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
     print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage@$refId::runCameraUpdate([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::runCameraUpdate', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::runCameraUpdate', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调

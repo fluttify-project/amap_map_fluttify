@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::initialize([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::initialize', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::initialize', {"refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::clone([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::clone', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::clone', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::setFillAfter([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::setFillAfter', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::setFillAfter', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::setFillBefore([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::setFillBefore', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::setFillBefore', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::setRepeatMode([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::setRepeatMode', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::setRepeatMode', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::setStartOffset([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::setStartOffset', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::setStartOffset', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::hasAlpha([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::hasAlpha', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::hasAlpha', {"refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::setDuration([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::setDuration', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::setDuration', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::addAnimation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::addAnimation', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::addAnimation', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::setStartTime([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::setStartTime', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::setStartTime', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::getStartTime([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::getStartTime', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::getStartTime', {"refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::restrictDuration([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::restrictDuration', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::restrictDuration', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::getDuration([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::getDuration', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::getDuration', {"refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::computeDurationHint([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::computeDurationHint', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::computeDurationHint', {"refId": refId});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::getTransformation([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::getTransformation', {"var1": var1, "var3": var3.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::getTransformation', {"var1": var1, "var3": var3.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -305,7 +303,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::scaleCurrentDuration([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::scaleCurrentDuration', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::scaleCurrentDuration', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -324,7 +322,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::reset([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::reset', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::reset', {"refId": refId});
   
   
     // 接受原生回调
@@ -343,7 +341,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::getAnimations([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::getAnimations', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::getAnimations', {"refId": refId});
   
   
     // 接受原生回调
@@ -362,7 +360,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::willChangeTransformationMatrix([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::willChangeTransformationMatrix', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::willChangeTransformationMatrix', {"refId": refId});
   
   
     // 接受原生回调
@@ -381,7 +379,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::willChangeBounds([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::willChangeBounds', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::willChangeBounds', {"refId": refId});
   
   
     // 接受原生回调
@@ -400,7 +398,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::cleanAnimation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::cleanAnimation', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::cleanAnimation', {"refId": refId});
   
   
     // 接受原生回调

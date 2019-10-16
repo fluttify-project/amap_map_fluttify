@@ -13,7 +13,7 @@ class MAGeodesicPolyline extends MAPolyline  {
   
 
   // 生成方法们
-  static Future<MAGeodesicPolyline> polylineWithPoints(List<MAMapPoint> points, int count) async {
+  static Future<MAGeodesicPolyline> polylineWithPointsCount(List<MAMapPoint> points, int count) async {
     // 日志打印
     print('fluttify-dart: MAGeodesicPolyline::polylineWithPoints([\'count\':$count])');
   
@@ -32,7 +32,7 @@ class MAGeodesicPolyline extends MAPolyline  {
     }
   }
   
-  static Future<MAGeodesicPolyline> polylineWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
+  static Future<MAGeodesicPolyline> polylineWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MAGeodesicPolyline::polylineWithCoordinates([\'count\':$count])');
   
@@ -51,7 +51,7 @@ class MAGeodesicPolyline extends MAPolyline  {
     }
   }
   
-  Future<bool> setPolylineWithPoints(List<MAMapPoint> points, int count) async {
+  Future<bool> setPolylineWithPointsCount(List<MAMapPoint> points, int count) async {
     // 日志打印
     print('fluttify-dart: MAGeodesicPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
   
@@ -70,7 +70,7 @@ class MAGeodesicPolyline extends MAPolyline  {
     }
   }
   
-  Future<bool> setPolylineWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
+  Future<bool> setPolylineWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MAGeodesicPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
   

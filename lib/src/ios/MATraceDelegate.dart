@@ -10,8 +10,6 @@ mixin MATraceDelegate on NSObject {
 
   
 
-  Future<void> traceManagerDidTracecorrectdistancewithError(MATraceManager manager, List<CLLocation> locations, List<MATracePoint> tracePoints, double distance, NSError error) {}
-  
   Future<void> mapViewRequireLocationAuth(CLLocationManager locationManager) {}
   
 }

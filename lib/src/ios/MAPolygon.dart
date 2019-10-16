@@ -22,7 +22,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
 
   // 生成方法们
-  static Future<MAPolygon> polygonWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
+  static Future<MAPolygon> polygonWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolygon::polygonWithCoordinates([\'count\':$count])');
   
@@ -41,7 +41,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     }
   }
   
-  static Future<MAPolygon> polygonWithPoints(List<MAMapPoint> points, int count) async {
+  static Future<MAPolygon> polygonWithPointsCount(List<MAMapPoint> points, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolygon::polygonWithPoints([\'count\':$count])');
   
@@ -60,7 +60,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     }
   }
   
-  Future<bool> setPolygonWithPoints(List<MAMapPoint> points, int count) async {
+  Future<bool> setPolygonWithPointsCount(List<MAMapPoint> points, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolygon@$refId::setPolygonWithPoints([\'count\':$count])');
   
@@ -79,7 +79,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     }
   }
   
-  Future<bool> setPolygonWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
+  Future<bool> setPolygonWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolygon@$refId::setPolygonWithCoordinates([\'count\':$count])');
   

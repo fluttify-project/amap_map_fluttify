@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::lonlat2Geo([\'var0\':$var0, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::lonlat2Geo', {"var0": var0, "var2": var2, "var4": var4.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::lonlat2Geo', {"var0": var0, "var2": var2, "var4": var4.refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::geo2LonLat([\'var0\':$var0, \'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::geo2LonLat', {"var0": var0, "var1": var1, "var2": var2.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::geo2LonLat', {"var0": var0, "var1": var1, "var2": var2.refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::screenToP20Point([\'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::screenToP20Point', {"var1": var1, "var2": var2, "var3": var3.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::screenToP20Point', {"var1": var1, "var2": var2, "var3": var3.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::p20ToScreenPoint([\'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::p20ToScreenPoint', {"var1": var1, "var2": var2, "var3": var3.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::p20ToScreenPoint', {"var1": var1, "var2": var2, "var3": var3.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapGeoCenter([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapGeoCenter', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapGeoCenter', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setMapGeoCenter([\'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapGeoCenter', {"var1": var1, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapGeoCenter', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setCameraDegree([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::setCameraDegree', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setCameraDegree', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setMapAngle([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapAngle', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapAngle', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setMapZoomer([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapZoomer', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapZoomer', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapZoomer([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapZoomer', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapZoomer', {"refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getCameraDegree([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getCameraDegree', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getCameraDegree', {"refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapAngle([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapAngle', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapAngle', {"refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::recalculate([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::recalculate', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::recalculate', {"refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::reset([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::reset', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::reset', {"refId": refId});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapLenWithWin([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapLenWithWin', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapLenWithWin', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -305,7 +303,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getGLUnitWithWin([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getGLUnitWithWin', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getGLUnitWithWin', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -324,7 +322,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getNativeInstance([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getNativeInstance', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getNativeInstance', {"refId": refId});
   
   
     // 接受原生回调
@@ -343,7 +341,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getViewMatrix([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getViewMatrix', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getViewMatrix', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -362,7 +360,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getProjectionMatrix([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getProjectionMatrix', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getProjectionMatrix', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -381,7 +379,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getSkyHeight([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getSkyHeight', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getSkyHeight', {"refId": refId});
   
   
     // 接受原生回调
@@ -400,7 +398,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setNativeMapengineState([\'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::setNativeMapengineState', {"var1": var1, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setNativeMapengineState', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // 接受原生回调
@@ -419,7 +417,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::calMapZoomScalefactor([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::calMapZoomScalefactor', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::calMapZoomScalefactor', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // 接受原生回调
@@ -438,7 +436,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeNewInstance([\'var0\':$var0, \'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeNewInstance', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeNewInstance', {"var0": var0, "var1": var1});
   
   
     // 接受原生回调
@@ -457,7 +455,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point', {"var0": var0, "var2": var2, "var3": var3, "var4": var4.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point', {"var0": var0, "var2": var2, "var3": var3, "var4": var4.refId});
   
   
     // 接受原生回调
@@ -476,7 +474,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5.refId});
   
   
     // 接受原生回调
@@ -495,7 +493,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter', {"var0": var0, "var2": var2, "var3": var3});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter', {"var0": var0, "var2": var2, "var3": var3});
   
   
     // 接受原生回调
@@ -514,7 +512,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter', {"var0": var0, "var2": var2.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter', {"var0": var0, "var2": var2.refId});
   
   
     // 接受原生回调
@@ -533,7 +531,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetMapZoomer([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapZoomer', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapZoomer', {"var0": var0});
   
   
     // 接受原生回调
@@ -552,7 +550,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer([\'var0\':$var0, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer', {"var0": var0, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer', {"var0": var0, "var2": var2});
   
   
     // 接受原生回调
@@ -571,7 +569,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle([\'var0\':$var0, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle', {"var0": var0, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle', {"var0": var0, "var2": var2});
   
   
     // 接受原生回调
@@ -590,7 +588,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree', {"var0": var0});
   
   
     // 接受原生回调
@@ -609,7 +607,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle', {"var0": var0});
   
   
     // 接受原生回调
@@ -628,7 +626,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree([\'var0\':$var0, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree', {"var0": var0, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree', {"var0": var0, "var2": var2});
   
   
     // 接受原生回调
@@ -647,7 +645,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeRecalculate([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeRecalculate', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeRecalculate', {"var0": var0});
   
   
     // 接受原生回调
@@ -666,7 +664,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeStateDestroy([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeStateDestroy', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeStateDestroy', {"var0": var0});
   
   
     // 接受原生回调
@@ -685,7 +683,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix([\'var0\':$var0, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix', {"var0": var0, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix', {"var0": var0, "var2": var2});
   
   
     // 接受原生回调
@@ -704,7 +702,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix([\'var0\':$var0, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix', {"var0": var0, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix', {"var0": var0, "var2": var2});
   
   
     // 接受原生回调
@@ -723,7 +721,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight', {"var0": var0});
   
   
     // 接受原生回调
@@ -742,7 +740,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin([\'var0\':$var0, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin', {"var0": var0, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin', {"var0": var0, "var2": var2});
   
   
     // 接受原生回调
@@ -761,7 +759,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeCalMapZoomScalefactor([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeCalMapZoomScalefactor', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeCalMapZoomScalefactor', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // 接受原生回调

@@ -6,40 +6,38 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<double> get_scaleDelta() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::get_scaleDelta", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::get_scaleDelta", {'refId': refId});
     return result;
   }
   
   Future<int> get_pivotX() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::get_pivotX", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::get_pivotX", {'refId': refId});
     return result;
   }
   
   Future<int> get_pivotY() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::get_pivotY", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::get_pivotY", {'refId': refId});
     return result;
   }
   
 
   // 生成setters
   Future<void> set_scaleDelta(double scaleDelta) async {
-    await _channel.invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_scaleDelta', {'refId': refId, "scaleDelta": scaleDelta});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_scaleDelta', {'refId': refId, "scaleDelta": scaleDelta});
   
   
   }
   
   Future<void> set_pivotX(int pivotX) async {
-    await _channel.invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotX', {'refId': refId, "pivotX": pivotX});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotX', {'refId': refId, "pivotX": pivotX});
   
   
   }
   
   Future<void> set_pivotY(int pivotY) async {
-    await _channel.invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotY', {'refId': refId, "pivotY": pivotY});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotY', {'refId': refId, "pivotY": pivotY});
   
   
   }
@@ -51,7 +49,7 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends java_lang
     print('fluttify-dart: com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::obtain([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::obtain', {"var0": var0, "var1": var1, "var2": var2, "var3": var3});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::obtain', {"var0": var0, "var1": var1, "var2": var2, "var3": var3});
   
   
     // 接受原生回调
@@ -70,7 +68,7 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends java_lang
     print('fluttify-dart: com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::destory([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::destory', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::destory', );
   
   
     // 接受原生回调
@@ -89,7 +87,7 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends java_lang
     print('fluttify-dart: com.autonavi.amap.mapcore.message.ScaleGestureMapMessage@$refId::getType([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::getType', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::getType', {"refId": refId});
   
   
     // 接受原生回调
@@ -108,7 +106,7 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends java_lang
     print('fluttify-dart: com.autonavi.amap.mapcore.message.ScaleGestureMapMessage@$refId::runCameraUpdate([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::runCameraUpdate', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::runCameraUpdate', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调

@@ -130,7 +130,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   }
   
-  Future<CGPoint> glPointsForMapPoints(List<MAMapPoint> mapPoints, int count) async {
+  Future<CGPoint> glPointsForMapPointsCount(List<MAMapPoint> mapPoints, int count) async {
     // 日志打印
     print('fluttify-dart: MAOverlayRenderer@$refId::glPointsForMapPoints([\'count\':$count])');
   

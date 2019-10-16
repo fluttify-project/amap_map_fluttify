@@ -6,11 +6,9 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_mapcore_AbstractNativeInstance  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   Future<int> get_DEFAULT_SIZE() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.particle.SizeOverLife::get_DEFAULT_SIZE", {'refId': refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.particle.SizeOverLife::get_DEFAULT_SIZE", {'refId': refId});
     return result;
   }
   
@@ -24,7 +22,7 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
     print('fluttify-dart: com.amap.api.maps.model.particle.SizeOverLife@$refId::getSizeX([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.SizeOverLife::getSizeX', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.SizeOverLife::getSizeX', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -43,7 +41,7 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
     print('fluttify-dart: com.amap.api.maps.model.particle.SizeOverLife@$refId::getSizeY([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.SizeOverLife::getSizeY', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.SizeOverLife::getSizeY', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -62,7 +60,7 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
     print('fluttify-dart: com.amap.api.maps.model.particle.SizeOverLife@$refId::getSizeZ([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.SizeOverLife::getSizeZ', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.SizeOverLife::getSizeZ', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调

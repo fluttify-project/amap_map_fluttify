@@ -10,8 +10,6 @@ mixin MAParticleShapeModule on NSObject {
 
   
 
-  Future<double> getPoint() {}
-  
   Future<bool> isRatioEnable() {}
   
 }

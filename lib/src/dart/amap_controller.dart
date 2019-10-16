@@ -39,7 +39,7 @@ class AmapController {
         await iosController.set_showsUserLocation(show);
 
         if (show) {
-          await iosController.setUserTrackingMode(
+          await iosController.setUserTrackingModeAnimated(
               MAUserTrackingMode.MAUserTrackingModeFollow, true);
         }
       },
@@ -286,7 +286,7 @@ class AmapController {
         pool..add(map)..add(cameraUpdate);
       },
       ios: (pool) async {
-        await iosController.setZoomLevel(level, animated);
+        await iosController.setZoomLevelAnimated(level, animated);
       },
     );
   }
@@ -308,7 +308,7 @@ class AmapController {
       },
       ios: (pool) async {
         final currentLevel = await iosController.get_zoomLevel();
-        await iosController.setZoomLevel(currentLevel + 1, animated);
+        await iosController.setZoomLevelAnimated(currentLevel + 1, animated);
       },
     );
   }
@@ -330,7 +330,7 @@ class AmapController {
       },
       ios: (pool) async {
         final currentLevel = await iosController.get_zoomLevel();
-        await iosController.setZoomLevel(currentLevel - 1, animated);
+        await iosController.setZoomLevelAnimated(currentLevel - 1, animated);
       },
     );
   }
@@ -360,7 +360,7 @@ class AmapController {
       ios: (pool) async {
         final latLng =
             await ObjectFactory_iOS.createCLLocationCoordinate2D(lat, lng);
-        await iosController.setCenterCoordinate(latLng, animated);
+        await iosController.setCenterCoordinateAnimated(latLng, animated);
 
         pool..add(latLng);
       },
@@ -544,7 +544,7 @@ class AmapController {
           latLngList.add(latLng);
         }
 
-        final polyline = await MAPolyline.polylineWithCoordinates(
+        final polyline = await MAPolyline.polylineWithCoordinatesCount(
             latLngList, latLngList.length);
         await iosController.addOverlay(polyline);
 

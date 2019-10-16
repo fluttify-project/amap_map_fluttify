@@ -20,13 +20,6 @@ class MATraceManager extends NSObject  {
         // if (refId != this.refId) return;
   
         switch (methodCall.method) {
-          case 'Callback::MATraceDelegate::traceManagerDidTracecorrectdistancewithError':
-            // 日志打印
-            print('fluttify-dart-callback: traceManagerDidTracecorrectdistancewithError([\'distance\':$args[distance]])');
-        
-              // 调用回调方法
-            delegate?.traceManagerDidTracecorrectdistancewithError(MATraceManager()..refId = (args['manager']), (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it).toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it).toList(), args['distance'], NSError()..refId = (args['error']));
-            break;
           case 'Callback::MATraceDelegate::mapViewRequireLocationAuth':
             // 日志打印
             print('fluttify-dart-callback: mapViewRequireLocationAuth([])');

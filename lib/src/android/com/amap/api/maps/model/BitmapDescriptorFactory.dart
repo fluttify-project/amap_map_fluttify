@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromResource([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromResource', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromResource', {"var0": var0});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromView([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromView', {"var0": var0.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromView', {"var0": var0.refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromPath([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromPath', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromPath', {"var0": var0});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromAsset([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromAsset', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromAsset', {"var0": var0});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromFile([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromFile', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromFile', {"var0": var0});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker', );
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromBitmap([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromBitmap', {"var0": var0.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromBitmap', {"var0": var0.refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::getContext([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::getContext', );
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::getContext', );
   
   
     // 接受原生回调

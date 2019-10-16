@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_View  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_offlinemap_DownloadProgressView');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_Vie
     print('fluttify-dart: com.amap.api.maps.offlinemap.DownloadProgressView@$refId::setProgress([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.offlinemap.DownloadProgressView::setProgress', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_offlinemap_DownloadProgressView').invokeMethod('com.amap.api.maps.offlinemap.DownloadProgressView::setProgress', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调

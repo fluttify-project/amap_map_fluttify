@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_Projection extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::fromScreenLocation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.Projection::fromScreenLocation', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::fromScreenLocation', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::toScreenLocation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.Projection::toScreenLocation', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::toScreenLocation', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::toOpenGLLocation([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.Projection::toOpenGLLocation', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::toOpenGLLocation', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::toOpenGLWidth([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.Projection::toOpenGLWidth', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::toOpenGLWidth', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::getVisibleRegion([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.Projection::getVisibleRegion', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::getVisibleRegion', {"refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::fromBoundsToTile([\'var2\':$var2, \'var3\':$var3])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.Projection::fromBoundsToTile', {"var1": var1.refId, "var2": var2, "var3": var3, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::fromBoundsToTile', {"var1": var1.refId, "var2": var2, "var3": var3, "refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::getMapBounds([\'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.Projection::getMapBounds', {"var1": var1.refId, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::getMapBounds', {"var1": var1.refId, "var2": var2, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::getCameraInfo([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.Projection::getCameraInfo', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::getCameraInfo', {"refId": refId});
   
   
     // 接受原生回调

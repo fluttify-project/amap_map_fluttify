@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt([\'var0\':$var0, \'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt', {"var0": var0, "var1": var1});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::getLong([\'var0\':$var0, \'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getLong', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getLong', {"var0": var0, "var1": var1});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt2([\'var0\':$var0, \'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt2', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt2', {"var0": var0, "var1": var1});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::getUShort([\'var0\':$var0, \'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getUShort', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getUShort', {"var0": var0, "var1": var1});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::convertInt([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertInt', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertInt', {"var0": var0});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::convertShort([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertShort', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertShort', {"var0": var0});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::convertDouble([\'var0\':$var0, \'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertDouble', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertDouble', {"var0": var0, "var1": var1});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::writeInt([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::writeInt', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::writeInt', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::moveArray([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::moveArray', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::moveArray', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::get1BString([\'var0\':$var0])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::get1BString', {"var0": var0});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::get1BString', {"var0": var0});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::getString([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getString', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getString', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::getSubBytes([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getSubBytes', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getSubBytes', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // 接受原生回调

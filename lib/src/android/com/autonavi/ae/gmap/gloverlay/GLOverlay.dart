@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getNativeInstatnce([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getNativeInstatnce', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getNativeInstatnce', {"refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getCode([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getCode', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getCode', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getType([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getType', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getType', {"refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getSubType([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getSubType', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getSubType', {"refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::removeItem([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::removeItem', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::removeItem', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::removeAll([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::removeAll', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::removeAll', {"refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getSize([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getSize', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getSize', {"refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setVisible([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setVisible', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setVisible', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::isVisible([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::isVisible', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::isVisible', {"refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setClickable([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setClickable', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setClickable', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::isClickable([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::isClickable', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::isClickable', {"refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::clearFocus([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::clearFocus', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::clearFocus', {"refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getIsInBundle([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getIsInBundle', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getIsInBundle', {"refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMaxCountShown([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setMaxCountShown', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setMaxCountShown', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayOnTop([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setOverlayOnTop', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setOverlayOnTop', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -305,7 +303,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMinDisplayLevel([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setMinDisplayLevel', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setMinDisplayLevel', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -324,7 +322,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMaxDisplayLevel([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setMaxDisplayLevel', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setMaxDisplayLevel', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -343,7 +341,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayPriority([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setOverlayPriority', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setOverlayPriority', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -362,7 +360,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getOverlayPriority([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getOverlayPriority', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getOverlayPriority', {"refId": refId});
   
   
     // 接受原生回调
@@ -381,7 +379,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayItemPriority([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setOverlayItemPriority', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setOverlayItemPriority', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -400,7 +398,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::useNightStyle([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::useNightStyle', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::useNightStyle', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调

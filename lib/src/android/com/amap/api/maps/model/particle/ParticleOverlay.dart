@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps_model_BaseOverlay  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setVisible([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setVisible', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setVisible', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::destroy([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::destroy', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::destroy', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setStartParticleSize([\'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setStartParticleSize', {"var1": var1, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setStartParticleSize', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setMaxParticles([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setMaxParticles', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setMaxParticles', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setDuration([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setDuration', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setDuration', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleLifeTime([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleLifeTime', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleLifeTime', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleStartSpeed([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleStartSpeed', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleStartSpeed', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setLoop([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setLoop', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setLoop', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleShapeModule([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleShapeModule', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleShapeModule', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleEmission([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleEmission', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleEmission', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::getCurrentParticleNum([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::getCurrentParticleNum', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::getCurrentParticleNum', {"refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleOverLifeModule([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleOverLifeModule', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleOverLifeModule', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setStartColor([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setStartColor', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setStartColor', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调

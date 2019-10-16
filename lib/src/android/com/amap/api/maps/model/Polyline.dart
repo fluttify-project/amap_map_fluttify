@@ -6,8 +6,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_Polyline extends java_lang_Object  {
-  static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
-
   // 生成getters
   
 
@@ -20,7 +18,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::remove([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::remove', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::remove', {"refId": refId});
   
   
     // 接受原生回调
@@ -39,7 +37,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getId([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::getId', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::getId', {"refId": refId});
   
   
     // 接受原生回调
@@ -58,7 +56,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setPoints([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setPoints', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setPoints', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -77,7 +75,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getPoints([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::getPoints', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::getPoints', {"refId": refId});
   
   
     // 接受原生回调
@@ -96,7 +94,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setGeodesic([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setGeodesic', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setGeodesic', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -115,7 +113,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::isGeodesic([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::isGeodesic', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::isGeodesic', {"refId": refId});
   
   
     // 接受原生回调
@@ -134,7 +132,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setDottedLine([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setDottedLine', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setDottedLine', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -153,7 +151,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::isDottedLine([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::isDottedLine', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::isDottedLine', {"refId": refId});
   
   
     // 接受原生回调
@@ -172,7 +170,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setWidth([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setWidth', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setWidth', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -191,7 +189,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getWidth([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::getWidth', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::getWidth', {"refId": refId});
   
   
     // 接受原生回调
@@ -210,7 +208,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setColor([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setColor', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setColor', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -229,7 +227,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getColor([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::getColor', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::getColor', {"refId": refId});
   
   
     // 接受原生回调
@@ -248,7 +246,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setZIndex([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setZIndex', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setZIndex', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -267,7 +265,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getZIndex([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::getZIndex', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::getZIndex', {"refId": refId});
   
   
     // 接受原生回调
@@ -286,7 +284,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setVisible([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setVisible', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setVisible', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -305,7 +303,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::isVisible([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::isVisible', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::isVisible', {"refId": refId});
   
   
     // 接受原生回调
@@ -324,7 +322,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getNearestLatLng([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::getNearestLatLng', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::getNearestLatLng', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -343,7 +341,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setTransparency([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setTransparency', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setTransparency', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -362,7 +360,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setAboveMaskLayer([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setAboveMaskLayer', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setAboveMaskLayer', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -381,7 +379,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setCustomTexture([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setCustomTexture', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setCustomTexture', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -400,7 +398,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setOptions([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setOptions', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setOptions', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -419,7 +417,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getOptions([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::getOptions', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::getOptions', {"refId": refId});
   
   
     // 接受原生回调
@@ -438,7 +436,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setCustemTextureIndex([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setCustemTextureIndex', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setCustemTextureIndex', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -457,7 +455,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setShownRatio([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setShownRatio', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setShownRatio', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -476,7 +474,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setShownRange([\'var1\':$var1, \'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setShownRange', {"var1": var1, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setShownRange', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // 接受原生回调
@@ -495,7 +493,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getShownRatio([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::getShownRatio', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::getShownRatio', {"refId": refId});
   
   
     // 接受原生回调
@@ -514,7 +512,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setCustomTextureList([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Polyline::setCustomTextureList', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Polyline::setCustomTextureList', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
