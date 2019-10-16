@@ -3,8 +3,8 @@ import 'dart:typed_data';
 import 'dart:ui';
 
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
-import 'package:amap_map_fluttify/src/android/android.export.dart';
-import 'package:amap_map_fluttify/src/ios/ios.export.dart';
+import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';

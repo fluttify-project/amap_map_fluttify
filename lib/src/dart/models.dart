@@ -1,6 +1,6 @@
-import 'package:amap_map_fluttify/src/android/android.export.dart';
+import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 
-import '../ios/ios.export.dart';
+import '../ios/ios.export.g.dart';
 
 class Marker {
   Marker.android(this._androidModel);
