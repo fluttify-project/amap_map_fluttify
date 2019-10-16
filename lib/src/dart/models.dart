@@ -14,7 +14,7 @@ class Marker {
     return platform(
       android: (_) => _androidModel.getTitle(),
       ios: (_) async {
-        final annotation = await _iosModel.get_annotation();
+        final annotation = await _iosModel.get_annotation(viewChannel: false);
         return annotation.get_title();
       },
     );

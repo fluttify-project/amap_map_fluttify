@@ -13,12 +13,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
 
   // 生成方法们
-  Future<com_amap_api_maps_AMap> getMap() async {
+  Future<com_amap_api_maps_AMap> getMap({bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::getMap([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView').invokeMethod('com.amap.api.maps.TextureMapView::getMap', {"refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::getMap', {"refId": refId});
   
   
     // 接受原生回调
@@ -32,12 +32,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     }
   }
   
-  Future<void> onCreate(android_os_Bundle var1) async {
+  Future<void> onCreate(android_os_Bundle var1, {bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onCreate([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView').invokeMethod('com.amap.api.maps.TextureMapView::onCreate', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onCreate', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -51,12 +51,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     }
   }
   
-  Future<void> onResume() async {
+  Future<void> onResume({bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onResume([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView').invokeMethod('com.amap.api.maps.TextureMapView::onResume', {"refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onResume', {"refId": refId});
   
   
     // 接受原生回调
@@ -70,12 +70,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     }
   }
   
-  Future<void> onPause() async {
+  Future<void> onPause({bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onPause([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView').invokeMethod('com.amap.api.maps.TextureMapView::onPause', {"refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onPause', {"refId": refId});
   
   
     // 接受原生回调
@@ -89,12 +89,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     }
   }
   
-  Future<void> onDestroy() async {
+  Future<void> onDestroy({bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onDestroy([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView').invokeMethod('com.amap.api.maps.TextureMapView::onDestroy', {"refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onDestroy', {"refId": refId});
   
   
     // 接受原生回调
@@ -108,12 +108,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     }
   }
   
-  Future<void> onLowMemory() async {
+  Future<void> onLowMemory({bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onLowMemory([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView').invokeMethod('com.amap.api.maps.TextureMapView::onLowMemory', {"refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onLowMemory', {"refId": refId});
   
   
     // 接受原生回调
@@ -127,12 +127,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     }
   }
   
-  Future<void> onSaveInstanceState(android_os_Bundle var1) async {
+  Future<void> onSaveInstanceState(android_os_Bundle var1, {bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onSaveInstanceState([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView').invokeMethod('com.amap.api.maps.TextureMapView::onSaveInstanceState', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onSaveInstanceState', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -146,12 +146,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     }
   }
   
-  Future<void> setVisibility(int var1) async {
+  Future<void> setVisibility(int var1, {bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::setVisibility([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView').invokeMethod('com.amap.api.maps.TextureMapView::setVisibility', {"var1": var1, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::setVisibility', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调

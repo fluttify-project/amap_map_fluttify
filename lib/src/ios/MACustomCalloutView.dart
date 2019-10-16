@@ -7,8 +7,8 @@ import 'package:flutter/services.dart';
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MACustomCalloutView extends UIView  {
   // 生成getters
-  Future<UIView> get_customView() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/MACustomCalloutView').invokeMethod("MACustomCalloutView::get_customView", {'refId': refId});
+  Future<UIView> get_customView({bool viewChannel = true}) async {
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod("MACustomCalloutView::get_customView", {'refId': refId});
     return UIView()..refId = result;
   }
   

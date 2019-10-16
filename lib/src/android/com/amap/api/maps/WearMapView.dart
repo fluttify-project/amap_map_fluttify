@@ -13,12 +13,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
 
   // 生成方法们
-  Future<com_amap_api_maps_AMap> getMap() async {
+  Future<com_amap_api_maps_AMap> getMap({bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::getMap([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView').invokeMethod('com.amap.api.maps.WearMapView::getMap', {"refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::getMap', {"refId": refId});
   
   
     // 接受原生回调
@@ -32,12 +32,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   }
   
-  Future<void> onCreate(android_os_Bundle var1) async {
+  Future<void> onCreate(android_os_Bundle var1, {bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onCreate([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView').invokeMethod('com.amap.api.maps.WearMapView::onCreate', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onCreate', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -51,12 +51,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   }
   
-  Future<void> onResume() async {
+  Future<void> onResume({bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onResume([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView').invokeMethod('com.amap.api.maps.WearMapView::onResume', {"refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onResume', {"refId": refId});
   
   
     // 接受原生回调
@@ -70,12 +70,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   }
   
-  Future<void> onPause() async {
+  Future<void> onPause({bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onPause([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView').invokeMethod('com.amap.api.maps.WearMapView::onPause', {"refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onPause', {"refId": refId});
   
   
     // 接受原生回调
@@ -89,12 +89,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   }
   
-  Future<void> onDestroy() async {
+  Future<void> onDestroy({bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDestroy([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView').invokeMethod('com.amap.api.maps.WearMapView::onDestroy', {"refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onDestroy', {"refId": refId});
   
   
     // 接受原生回调
@@ -108,12 +108,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   }
   
-  Future<void> onLowMemory() async {
+  Future<void> onLowMemory({bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onLowMemory([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView').invokeMethod('com.amap.api.maps.WearMapView::onLowMemory', {"refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onLowMemory', {"refId": refId});
   
   
     // 接受原生回调
@@ -127,12 +127,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   }
   
-  Future<void> onSaveInstanceState(android_os_Bundle var1) async {
+  Future<void> onSaveInstanceState(android_os_Bundle var1, {bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onSaveInstanceState([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView').invokeMethod('com.amap.api.maps.WearMapView::onSaveInstanceState', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onSaveInstanceState', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -146,12 +146,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   }
   
-  Future<void> setVisibility(int var1) async {
+  Future<void> setVisibility(int var1, {bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setVisibility([\'var1\':$var1])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView').invokeMethod('com.amap.api.maps.WearMapView::setVisibility', {"var1": var1, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::setVisibility', {"var1": var1, "refId": refId});
   
   
     // 接受原生回调
@@ -165,12 +165,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   }
   
-  Future<void> setOnDismissCallbackListener(com_amap_api_maps_WearMapView_OnDismissCallback var1) async {
+  Future<void> setOnDismissCallbackListener(com_amap_api_maps_WearMapView_OnDismissCallback var1, {bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView').invokeMethod('com.amap.api.maps.WearMapView::setOnDismissCallbackListener', {"refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::setOnDismissCallbackListener', {"refId": refId});
   
   
     // 接受原生回调
@@ -208,12 +208,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   }
   
-  Future<void> onDismiss() async {
+  Future<void> onDismiss({bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDismiss([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView').invokeMethod('com.amap.api.maps.WearMapView::onDismiss', {"refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onDismiss', {"refId": refId});
   
   
     // 接受原生回调
@@ -227,12 +227,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   }
   
-  Future<void> onEnterAmbient(android_os_Bundle var1) async {
+  Future<void> onEnterAmbient(android_os_Bundle var1, {bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onEnterAmbient([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView').invokeMethod('com.amap.api.maps.WearMapView::onEnterAmbient', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onEnterAmbient', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -246,12 +246,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   }
   
-  Future<void> onExitAmbient() async {
+  Future<void> onExitAmbient({bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onExitAmbient([])');
   
     // 调用原生方法
-    final result = await MethodChannel('me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView').invokeMethod('com.amap.api.maps.WearMapView::onExitAmbient', {"refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onExitAmbient', {"refId": refId});
   
   
     // 接受原生回调
