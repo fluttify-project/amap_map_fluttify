@@ -583,6 +583,7 @@ class IOSMapDelegate extends NSObject with MAMapViewDelegate {
     MAMapView mapView,
     MAAnnotationView view,
   ) async {
+    super.mapViewDidSelectAnnotationView(mapView, view);
     if (onMarkerClicked != null) {
       onMarkerClicked(Marker.ios(view));
     }
@@ -597,6 +598,7 @@ class AndroidMapDelegate extends java_lang_Object
 
   @override
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
+    super.onMarkerClick(var1);
     if (onMarkerClicked != null) {
       onMarkerClicked(Marker.android(var1));
     }
