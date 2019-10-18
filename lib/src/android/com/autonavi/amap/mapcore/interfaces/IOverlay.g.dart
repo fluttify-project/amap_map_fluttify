@@ -14,56 +14,67 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   @mustCallSuper
   Future<void> remove() {
   
+    debugPrint('remove::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<String> getId() {
   
+    debugPrint('getId::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<void> setZIndex(double var1) {
   
+    debugPrint('setZIndex::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<double> getZIndex() {
   
+    debugPrint('getZIndex::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<void> setVisible(bool var1) {
   
+    debugPrint('setVisible::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<bool> isVisible() {
   
+    debugPrint('isVisible::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_IOverlay var1) {
   
+    debugPrint('equalsRemote::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<int> hashCodeRemote() {
   
+    debugPrint('hashCodeRemote::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<void> destroy() {
   
+    debugPrint('destroy::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<bool> isAboveMaskLayer() {
   
+    debugPrint('isAboveMaskLayer::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<void> setAboveMaskLayer(bool var1) {
   
+    debugPrint('setAboveMaskLayer::kCallbackPool: $kCallbackPool');
   }
   
 }

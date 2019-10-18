@@ -14,6 +14,7 @@ mixin com_amap_api_maps_AMap_ImageInfoWindowAdapter on com_amap_api_maps_AMap_In
   @mustCallSuper
   Future<int> getInfoWindowUpdateTime() {
   
+    debugPrint('getInfoWindowUpdateTime::kCallbackPool: $kCallbackPool');
   }
   
 }

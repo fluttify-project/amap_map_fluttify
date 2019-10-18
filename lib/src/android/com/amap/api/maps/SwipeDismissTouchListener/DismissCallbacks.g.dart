@@ -14,6 +14,7 @@ mixin com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks on java_lang_
   @mustCallSuper
   Future<void> onNotifySwipe() {
   
+    debugPrint('onNotifySwipe::kCallbackPool: $kCallbackPool');
   }
   
 }

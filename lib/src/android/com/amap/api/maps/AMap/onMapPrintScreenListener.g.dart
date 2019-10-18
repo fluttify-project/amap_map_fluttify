@@ -14,6 +14,7 @@ mixin com_amap_api_maps_AMap_onMapPrintScreenListener on java_lang_Object {
   @mustCallSuper
   Future<void> onMapPrint(android_graphics_drawable_Drawable var1) {
     kCallbackPool[var1.refId] = var1;
+    debugPrint('onMapPrint::kCallbackPool: $kCallbackPool');
   }
   
 }

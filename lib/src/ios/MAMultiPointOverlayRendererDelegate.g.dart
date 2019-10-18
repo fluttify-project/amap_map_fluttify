@@ -15,6 +15,7 @@ mixin MAMultiPointOverlayRendererDelegate on NSObject {
   Future<void> multiPointOverlayRendererDidItemTapped(MAMultiPointOverlayRenderer renderer, MAMultiPointItem item) {
     kCallbackPool[renderer.refId] = renderer;
     kCallbackPool[item.refId] = item;
+    debugPrint('multiPointOverlayRendererDidItemTapped::kCallbackPool: $kCallbackPool');
   }
   
 }

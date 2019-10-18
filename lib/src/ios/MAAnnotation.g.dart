@@ -39,6 +39,7 @@ mixin MAAnnotation on NSObject {
   @mustCallSuper
   Future<void> setCoordinate(CLLocationCoordinate2D newCoordinate) {
   
+    debugPrint('setCoordinate::kCallbackPool: $kCallbackPool');
   }
   
 }

@@ -12,8 +12,18 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     return MAMultiPolyline()..refId = result;
   }
   
+  Future<List> get_strokeTextureImages() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_strokeTextureImages", {'refId': refId});
+    return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
+  }
+  
 
   // 生成setters
+  Future<void> set_strokeTextureImages(List strokeTextureImages) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::set_strokeTextureImages', {'refId': refId, "strokeTextureImages": strokeTextureImages.map((it) => it.refId).toList()});
+  
+  
+  }
   
 
   // 生成方法们

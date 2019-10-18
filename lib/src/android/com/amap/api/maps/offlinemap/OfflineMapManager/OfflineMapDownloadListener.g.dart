@@ -14,16 +14,19 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener 
   @mustCallSuper
   Future<void> onDownload(int var1, int var2, String var3) {
   
+    debugPrint('onDownload::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<void> onCheckUpdate(bool var1, String var2) {
   
+    debugPrint('onCheckUpdate::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<void> onRemove(bool var1, String var2, String var3) {
   
+    debugPrint('onRemove::kCallbackPool: $kCallbackPool');
   }
   
 }

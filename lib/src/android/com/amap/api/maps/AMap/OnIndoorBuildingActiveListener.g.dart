@@ -14,6 +14,7 @@ mixin com_amap_api_maps_AMap_OnIndoorBuildingActiveListener on java_lang_Object 
   @mustCallSuper
   Future<void> OnIndoorBuilding(com_amap_api_maps_model_IndoorBuildingInfo var1) {
     kCallbackPool[var1.refId] = var1;
+    debugPrint('OnIndoorBuilding::kCallbackPool: $kCallbackPool');
   }
   
 }

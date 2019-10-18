@@ -14,6 +14,7 @@ mixin com_amap_api_maps_AMap_OnPolylineClickListener on java_lang_Object {
   @mustCallSuper
   Future<void> onPolylineClick(com_amap_api_maps_model_Polyline var1) {
     kCallbackPool[var1.refId] = var1;
+    debugPrint('onPolylineClick::kCallbackPool: $kCallbackPool');
   }
   
 }

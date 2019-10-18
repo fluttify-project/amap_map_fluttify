@@ -14,16 +14,19 @@ mixin com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter on com_amap_api_maps
   @mustCallSuper
   Future<android_view_View> getInfoWindowClick(com_amap_api_maps_model_Marker var1) {
   
+    debugPrint('getInfoWindowClick::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<android_view_View> getOverturnInfoWindow(com_amap_api_maps_model_Marker var1) {
   
+    debugPrint('getOverturnInfoWindow::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<android_view_View> getOverturnInfoWindowClick(com_amap_api_maps_model_Marker var1) {
   
+    debugPrint('getOverturnInfoWindowClick::kCallbackPool: $kCallbackPool');
   }
   
 }

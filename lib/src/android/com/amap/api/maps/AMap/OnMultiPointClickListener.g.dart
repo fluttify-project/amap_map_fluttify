@@ -14,6 +14,7 @@ mixin com_amap_api_maps_AMap_OnMultiPointClickListener on java_lang_Object {
   @mustCallSuper
   Future<bool> onPointClick(com_amap_api_maps_model_MultiPointItem var1) {
     kCallbackPool[var1.refId] = var1;
+    debugPrint('onPointClick::kCallbackPool: $kCallbackPool');
   }
   
 }

@@ -14,6 +14,7 @@ mixin com_amap_api_maps_LocationSource_OnLocationChangedListener on java_lang_Ob
   @mustCallSuper
   Future<void> onLocationChanged(android_location_Location var1) {
     kCallbackPool[var1.refId] = var1;
+    debugPrint('onLocationChanged::kCallbackPool: $kCallbackPool');
   }
   
 }

@@ -14,6 +14,7 @@ mixin com_amap_api_maps_AMap_OnMapClickListener on java_lang_Object {
   @mustCallSuper
   Future<void> onMapClick(com_amap_api_maps_model_LatLng var1) {
     kCallbackPool[var1.refId] = var1;
+    debugPrint('onMapClick::kCallbackPool: $kCallbackPool');
   }
   
 }

@@ -32,6 +32,11 @@ class MAOfflineMap extends NSObject  {
     return result;
   }
   
+  Future<List> get_offlineCities() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMap::get_offlineCities", {'refId': refId});
+    return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
+  }
+  
 
   // 生成setters
   

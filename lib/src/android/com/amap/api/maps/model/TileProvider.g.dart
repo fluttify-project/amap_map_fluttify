@@ -14,16 +14,19 @@ mixin com_amap_api_maps_model_TileProvider on java_lang_Object {
   @mustCallSuper
   Future<com_amap_api_maps_model_Tile> getTile(int var1, int var2, int var3) {
   
+    debugPrint('getTile::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<int> getTileWidth() {
   
+    debugPrint('getTileWidth::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<int> getTileHeight() {
   
+    debugPrint('getTileHeight::kCallbackPool: $kCallbackPool');
   }
   
 }

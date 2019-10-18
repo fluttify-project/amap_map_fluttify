@@ -14,6 +14,7 @@ mixin com_amap_api_maps_utils_overlay_MovingPointOverlay_MoveListener on java_la
   @mustCallSuper
   Future<void> move(double var1) {
   
+    debugPrint('move::kCallbackPool: $kCallbackPool');
   }
   
 }

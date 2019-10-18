@@ -12422,12 +12422,7 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   NSLog(@"MAMapViewDelegate::mapViewViewForAnnotation");
 
   // 构造可以直接传输的参数
-  // 引用回调参数
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
-  // 引用回调参数
-  NSNumber* argannotation = @(annotation.hash);
-  HEAP[argannotation] = annotation;
+  
 
   // __block #__callback_result_type__# _callbackResult = nil;
   // [channel invokeMethod:@"#__callback_method__#"
@@ -12628,12 +12623,7 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   NSLog(@"MAMapViewDelegate::mapViewRendererForOverlay");
 
   // 构造可以直接传输的参数
-  // 引用回调参数
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
-  // 引用回调参数
-  NSNumber* argoverlay = @(overlay.hash);
-  HEAP[argoverlay] = overlay;
+  
 
   // __block #__callback_result_type__# _callbackResult = nil;
   // [channel invokeMethod:@"#__callback_method__#"

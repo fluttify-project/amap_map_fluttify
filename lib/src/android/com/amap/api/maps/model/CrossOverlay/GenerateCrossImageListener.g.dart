@@ -14,6 +14,7 @@ mixin com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener on java_la
   @mustCallSuper
   Future<void> onGenerateComplete(android_graphics_Bitmap var1, int var2) {
     kCallbackPool[var1.refId] = var1;
+    debugPrint('onGenerateComplete::kCallbackPool: $kCallbackPool');
   }
   
 }

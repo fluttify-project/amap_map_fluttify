@@ -172,6 +172,16 @@ class MAMapView extends UIView  {
     return CGPoint()..refId = result;
   }
   
+  Future<List> get_annotations({bool viewChannel = true}) async {
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_annotations", {'refId': refId});
+    return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
+  }
+  
+  Future<List> get_selectedAnnotations({bool viewChannel = true}) async {
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_selectedAnnotations", {'refId': refId});
+    return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
+  }
+  
   Future<CGRect> get_annotationVisibleRect({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_annotationVisibleRect", {'refId': refId});
     return CGRect()..refId = result;
@@ -220,6 +230,11 @@ class MAMapView extends UIView  {
   Future<bool> get_allowsBackgroundLocationUpdates({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_allowsBackgroundLocationUpdates", {'refId': refId});
     return result;
+  }
+  
+  Future<List> get_overlays({bool viewChannel = true}) async {
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_overlays", {'refId': refId});
+    return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
   }
   
   Future<bool> get_showsIndoorMap({bool viewChannel = true}) async {
@@ -326,6 +341,13 @@ class MAMapView extends UIView  {
               // 调用回调方法
             delegate?.mapViewViewForAnnotation(MAMapView()..refId = (args['mapView']), MAGroundOverlay()..refId = (args['annotation']));
             break;
+          case 'Callback::MAMapViewDelegate::mapViewDidAddAnnotationViews':
+            // 日志打印
+            print('fluttify-dart-callback: mapViewDidAddAnnotationViews([])');
+        
+              // 调用回调方法
+            delegate?.mapViewDidAddAnnotationViews(MAMapView()..refId = (args['mapView']), (args['views'] as List).cast<int>().map((it) => NSObject()..refId = it).toList());
+            break;
           case 'Callback::MAMapViewDelegate::mapViewDidSelectAnnotationView':
             // 日志打印
             print('fluttify-dart-callback: mapViewDidSelectAnnotationView([])');
@@ -389,6 +411,13 @@ class MAMapView extends UIView  {
               // 调用回调方法
             delegate?.mapViewRendererForOverlay(MAMapView()..refId = (args['mapView']), MAGroundOverlay()..refId = (args['overlay']));
             break;
+          case 'Callback::MAMapViewDelegate::mapViewDidAddOverlayRenderers':
+            // 日志打印
+            print('fluttify-dart-callback: mapViewDidAddOverlayRenderers([])');
+        
+              // 调用回调方法
+            delegate?.mapViewDidAddOverlayRenderers(MAMapView()..refId = (args['mapView']), (args['overlayRenderers'] as List).cast<int>().map((it) => NSObject()..refId = it).toList());
+            break;
           case 'Callback::MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped':
             // 日志打印
             print('fluttify-dart-callback: mapViewAnnotationViewcalloutAccessoryControlTapped([])');
@@ -423,6 +452,13 @@ class MAMapView extends UIView  {
         
               // 调用回调方法
             delegate?.mapViewDidChangeOpenGLESDisabled(MAMapView()..refId = (args['mapView']), args['openGLESDisabled']);
+            break;
+          case 'Callback::MAMapViewDelegate::mapViewDidTouchPois':
+            // 日志打印
+            print('fluttify-dart-callback: mapViewDidTouchPois([])');
+        
+              // 调用回调方法
+            delegate?.mapViewDidTouchPois(MAMapView()..refId = (args['mapView']), (args['pois'] as List).cast<int>().map((it) => NSObject()..refId = it).toList());
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate':
             // 日志打印
@@ -668,6 +704,12 @@ class MAMapView extends UIView  {
   
   Future<void> set_screenAnchor(CGPoint screenAnchor, {bool viewChannel = true}) async {
     await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_screenAnchor', {'refId': refId, "screenAnchor": screenAnchor.refId});
+  
+  
+  }
+  
+  Future<void> set_selectedAnnotations(List selectedAnnotations, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_selectedAnnotations', {'refId': refId, "selectedAnnotations": selectedAnnotations.map((it) => it.refId).toList()});
   
   
   }
@@ -1222,12 +1264,50 @@ class MAMapView extends UIView  {
     }
   }
   
+  Future<void> addAnnotations(List<NSObject> annotations, {bool viewChannel = true}) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::addAnnotations([])');
+  
+    // 调用原生方法
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addAnnotations', {"annotations": annotations.map((it) => it.refId).toList(), "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
   Future<void> removeAnnotation(MAAnnotation annotation, {bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::removeAnnotation([])');
   
     // 调用原生方法
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeAnnotation', {"annotation": annotation.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> removeAnnotations(List<NSObject> annotations, {bool viewChannel = true}) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::removeAnnotations([])');
+  
+    // 调用原生方法
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeAnnotations', {"annotations": annotations.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -1317,6 +1397,44 @@ class MAMapView extends UIView  {
     }
   }
   
+  Future<void> showAnnotationsAnimated(List<NSObject> annotations, bool animated, {bool viewChannel = true}) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::showAnnotations([\'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotationsAnimated', {"annotations": annotations.map((it) => it.refId).toList(), "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> showAnnotationsEdgePaddinganimated(List<NSObject> annotations, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::showAnnotations([\'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotationsEdgePaddinganimated', {"annotations": annotations.map((it) => it.refId).toList(), "insets": insets.refId, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
   Future<void> setUserTrackingModeAnimated(MAUserTrackingMode mode, bool animated, {bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setUserTrackingMode([\'animated\':$animated])');
@@ -1355,12 +1473,50 @@ class MAMapView extends UIView  {
     }
   }
   
+  Future<List> overlaysInLevel(MAOverlayLevel level, {bool viewChannel = true}) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::overlaysInLevel([])');
+  
+    // 调用原生方法
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::overlaysInLevel', {"level": level.index, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
+    }
+  }
+  
   Future<void> addOverlay(MAOverlay overlay, {bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::addOverlay([])');
   
     // 调用原生方法
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlay', {"overlay": overlay.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> addOverlays(List<NSObject> overlays, {bool viewChannel = true}) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::addOverlays([])');
+  
+    // 调用原生方法
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlays', {"overlays": overlays.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -1393,12 +1549,50 @@ class MAMapView extends UIView  {
     }
   }
   
+  Future<void> addOverlaysLevel(List<NSObject> overlays, MAOverlayLevel level, {bool viewChannel = true}) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::addOverlays([])');
+  
+    // 调用原生方法
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlaysLevel', {"overlays": overlays.map((it) => it.refId).toList(), "level": level.index, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
   Future<void> removeOverlay(MAOverlay overlay, {bool viewChannel = true}) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::removeOverlay([])');
   
     // 调用原生方法
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeOverlay', {"overlay": overlay.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> removeOverlays(List<NSObject> overlays, {bool viewChannel = true}) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::removeOverlays([])');
+  
+    // 调用原生方法
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeOverlays', {"overlays": overlays.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -1561,6 +1755,44 @@ class MAMapView extends UIView  {
       return null;
     } else {
       return MAOverlayRenderer()..refId = result;
+    }
+  }
+  
+  Future<void> showOverlaysAnimated(List<NSObject> overlays, bool animated, {bool viewChannel = true}) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::showOverlays([\'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlaysAnimated', {"overlays": overlays.map((it) => it.refId).toList(), "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> showOverlaysEdgePaddinganimated(List<NSObject> overlays, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::showOverlays([\'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlaysEdgePaddinganimated', {"overlays": overlays.map((it) => it.refId).toList(), "insets": insets.refId, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
     }
   }
   

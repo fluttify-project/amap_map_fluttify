@@ -14,36 +14,43 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase on java_lang_Obj
   @mustCallSuper
   Future<void> setLocationOption(com_autonavi_amap_mapcore_Inner_3dMap_locationOption var1) {
   
+    debugPrint('setLocationOption::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<void> setLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) {
   
+    debugPrint('setLocationListener::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<void> startLocation() {
   
+    debugPrint('startLocation::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<void> stopLocation() {
   
+    debugPrint('stopLocation::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<void> unRegisterLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) {
   
+    debugPrint('unRegisterLocationListener::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<com_autonavi_amap_mapcore_Inner_3dMap_location> getLastKnownLocation() {
   
+    debugPrint('getLastKnownLocation::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<void> destroy() {
   
+    debugPrint('destroy::kCallbackPool: $kCallbackPool');
   }
   
 }

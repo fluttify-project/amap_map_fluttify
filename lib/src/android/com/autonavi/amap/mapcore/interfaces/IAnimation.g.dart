@@ -14,16 +14,19 @@ mixin com_autonavi_amap_mapcore_interfaces_IAnimation on java_lang_Object {
   @mustCallSuper
   Future<void> setAnimation(com_autonavi_amap_mapcore_animation_GLAnimation var1) {
   
+    debugPrint('setAnimation::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<bool> startAnimation() {
   
+    debugPrint('startAnimation::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) {
   
+    debugPrint('setAnimationListener::kCallbackPool: $kCallbackPool');
   }
   
 }

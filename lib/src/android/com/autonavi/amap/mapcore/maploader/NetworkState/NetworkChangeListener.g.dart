@@ -14,6 +14,7 @@ mixin com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener on 
   @mustCallSuper
   Future<void> networkStateChanged(android_content_Context var1) {
     kCallbackPool[var1.refId] = var1;
+    debugPrint('networkStateChanged::kCallbackPool: $kCallbackPool');
   }
   
 }

@@ -14,6 +14,7 @@ mixin com_amap_api_maps_AMap_OnPOIClickListener on java_lang_Object {
   @mustCallSuper
   Future<void> onPOIClick(com_amap_api_maps_model_Poi var1) {
     kCallbackPool[var1.refId] = var1;
+    debugPrint('onPOIClick::kCallbackPool: $kCallbackPool');
   }
   
 }

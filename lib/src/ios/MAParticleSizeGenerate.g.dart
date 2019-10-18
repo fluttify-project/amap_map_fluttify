@@ -14,16 +14,19 @@ mixin MAParticleSizeGenerate on NSObject {
   @mustCallSuper
   Future<double> getSizeX(double timeFrame) {
   
+    debugPrint('getSizeX::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<double> getSizeY(double timeFrame) {
   
+    debugPrint('getSizeY::kCallbackPool: $kCallbackPool');
   }
   
   @mustCallSuper
   Future<double> getSizeZ(double timeFrame) {
   
+    debugPrint('getSizeZ::kCallbackPool: $kCallbackPool');
   }
   
 }

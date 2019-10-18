@@ -14,6 +14,7 @@ mixin com_amap_api_maps_AMap_OnMapTouchListener on java_lang_Object {
   @mustCallSuper
   Future<void> onTouch(android_view_MotionEvent var1) {
     kCallbackPool[var1.refId] = var1;
+    debugPrint('onTouch::kCallbackPool: $kCallbackPool');
   }
   
 }

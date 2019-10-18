@@ -14,6 +14,7 @@ mixin com_amap_api_maps_AMap_OnCacheRemoveListener on java_lang_Object {
   @mustCallSuper
   Future<void> onRemoveCacheFinish(bool var1) {
   
+    debugPrint('onRemoveCacheFinish::kCallbackPool: $kCallbackPool');
   }
   
 }
