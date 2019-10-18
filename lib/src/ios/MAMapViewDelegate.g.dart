@@ -2,6 +2,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -10,70 +11,186 @@ mixin MAMapViewDelegate on NSObject {
 
   
 
-  Future<void> mapViewRegionChanged(MAMapView mapView) {}
+  @mustCallSuper
+  Future<void> mapViewRegionChanged(MAMapView mapView) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewRegionWillChangeAnimated(MAMapView mapView, bool animated) {}
+  @mustCallSuper
+  Future<void> mapViewRegionWillChangeAnimated(MAMapView mapView, bool animated) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewRegionDidChangeAnimated(MAMapView mapView, bool animated) {}
+  @mustCallSuper
+  Future<void> mapViewRegionDidChangeAnimated(MAMapView mapView, bool animated) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewMapWillMoveByUser(MAMapView mapView, bool wasUserAction) {}
+  @mustCallSuper
+  Future<void> mapViewMapWillMoveByUser(MAMapView mapView, bool wasUserAction) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewMapDidMoveByUser(MAMapView mapView, bool wasUserAction) {}
+  @mustCallSuper
+  Future<void> mapViewMapDidMoveByUser(MAMapView mapView, bool wasUserAction) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewMapWillZoomByUser(MAMapView mapView, bool wasUserAction) {}
+  @mustCallSuper
+  Future<void> mapViewMapWillZoomByUser(MAMapView mapView, bool wasUserAction) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewMapDidZoomByUser(MAMapView mapView, bool wasUserAction) {}
+  @mustCallSuper
+  Future<void> mapViewMapDidZoomByUser(MAMapView mapView, bool wasUserAction) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewWillStartLoadingMap(MAMapView mapView) {}
+  @mustCallSuper
+  Future<void> mapViewWillStartLoadingMap(MAMapView mapView) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewDidFinishLoadingMap(MAMapView mapView) {}
+  @mustCallSuper
+  Future<void> mapViewDidFinishLoadingMap(MAMapView mapView) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewDidFailLoadingMapWithError(MAMapView mapView, NSError error) {}
+  @mustCallSuper
+  Future<void> mapViewDidFailLoadingMapWithError(MAMapView mapView, NSError error) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(error);
+  }
   
-  Future<MAAnnotationView> mapViewViewForAnnotation(MAMapView mapView, MAAnnotation annotation) {}
+  @mustCallSuper
+  Future<MAAnnotationView> mapViewViewForAnnotation(MAMapView mapView, MAAnnotation annotation) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(annotation);
+  }
   
-  Future<void> mapViewDidSelectAnnotationView(MAMapView mapView, MAAnnotationView view) {}
+  @mustCallSuper
+  Future<void> mapViewDidSelectAnnotationView(MAMapView mapView, MAAnnotationView view) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(view);
+  }
   
-  Future<void> mapViewDidDeselectAnnotationView(MAMapView mapView, MAAnnotationView view) {}
+  @mustCallSuper
+  Future<void> mapViewDidDeselectAnnotationView(MAMapView mapView, MAAnnotationView view) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(view);
+  }
   
-  Future<void> mapViewWillStartLocatingUser(MAMapView mapView) {}
+  @mustCallSuper
+  Future<void> mapViewWillStartLocatingUser(MAMapView mapView) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewDidStopLocatingUser(MAMapView mapView) {}
+  @mustCallSuper
+  Future<void> mapViewDidStopLocatingUser(MAMapView mapView) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewDidUpdateUserLocationupdatingLocation(MAMapView mapView, MAUserLocation userLocation, bool updatingLocation) {}
+  @mustCallSuper
+  Future<void> mapViewDidUpdateUserLocationupdatingLocation(MAMapView mapView, MAUserLocation userLocation, bool updatingLocation) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(userLocation);
+  }
   
-  Future<void> mapViewRequireLocationAuth(CLLocationManager locationManager) {}
+  @mustCallSuper
+  Future<void> mapViewRequireLocationAuth(CLLocationManager locationManager) {
+    kCallbackPool.add(locationManager);
+  }
   
-  Future<void> mapViewDidFailToLocateUserWithError(MAMapView mapView, NSError error) {}
+  @mustCallSuper
+  Future<void> mapViewDidFailToLocateUserWithError(MAMapView mapView, NSError error) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(error);
+  }
   
-  Future<void> mapViewAnnotationViewdidChangeDragStatefromOldState(MAMapView mapView, MAAnnotationView view, MAAnnotationViewDragState newState, MAAnnotationViewDragState oldState) {}
+  @mustCallSuper
+  Future<void> mapViewAnnotationViewdidChangeDragStatefromOldState(MAMapView mapView, MAAnnotationView view, MAAnnotationViewDragState newState, MAAnnotationViewDragState oldState) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(view);
+  }
   
-  Future<MAOverlayRenderer> mapViewRendererForOverlay(MAMapView mapView, MAOverlay overlay) {}
+  @mustCallSuper
+  Future<MAOverlayRenderer> mapViewRendererForOverlay(MAMapView mapView, MAOverlay overlay) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(overlay);
+  }
   
-  Future<void> mapViewAnnotationViewcalloutAccessoryControlTapped(MAMapView mapView, MAAnnotationView view, UIControl control) {}
+  @mustCallSuper
+  Future<void> mapViewAnnotationViewcalloutAccessoryControlTapped(MAMapView mapView, MAAnnotationView view, UIControl control) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(view);
+    kCallbackPool.add(control);
+  }
   
-  Future<void> mapViewDidAnnotationViewCalloutTapped(MAMapView mapView, MAAnnotationView view) {}
+  @mustCallSuper
+  Future<void> mapViewDidAnnotationViewCalloutTapped(MAMapView mapView, MAAnnotationView view) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(view);
+  }
   
-  Future<void> mapViewDidAnnotationViewTapped(MAMapView mapView, MAAnnotationView view) {}
+  @mustCallSuper
+  Future<void> mapViewDidAnnotationViewTapped(MAMapView mapView, MAAnnotationView view) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(view);
+  }
   
-  Future<void> mapViewDidChangeUserTrackingModeanimated(MAMapView mapView, MAUserTrackingMode mode, bool animated) {}
+  @mustCallSuper
+  Future<void> mapViewDidChangeUserTrackingModeanimated(MAMapView mapView, MAUserTrackingMode mode, bool animated) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewDidChangeOpenGLESDisabled(MAMapView mapView, bool openGLESDisabled) {}
+  @mustCallSuper
+  Future<void> mapViewDidChangeOpenGLESDisabled(MAMapView mapView, bool openGLESDisabled) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewDidSingleTappedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate) {}
+  @mustCallSuper
+  Future<void> mapViewDidSingleTappedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(coordinate);
+  }
   
-  Future<void> mapViewDidLongPressedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate) {}
+  @mustCallSuper
+  Future<void> mapViewDidLongPressedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(coordinate);
+  }
   
-  Future<void> mapInitComplete(MAMapView mapView) {}
+  @mustCallSuper
+  Future<void> mapInitComplete(MAMapView mapView) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> mapViewDidIndoorMapShowed(MAMapView mapView, MAIndoorInfo indoorInfo) {}
+  @mustCallSuper
+  Future<void> mapViewDidIndoorMapShowed(MAMapView mapView, MAIndoorInfo indoorInfo) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(indoorInfo);
+  }
   
-  Future<void> mapViewDidIndoorMapFloorIndexChanged(MAMapView mapView, MAIndoorInfo indoorInfo) {}
+  @mustCallSuper
+  Future<void> mapViewDidIndoorMapFloorIndexChanged(MAMapView mapView, MAIndoorInfo indoorInfo) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(indoorInfo);
+  }
   
-  Future<void> mapViewDidIndoorMapHidden(MAMapView mapView, MAIndoorInfo indoorInfo) {}
+  @mustCallSuper
+  Future<void> mapViewDidIndoorMapHidden(MAMapView mapView, MAIndoorInfo indoorInfo) {
+    kCallbackPool.add(mapView);
+    kCallbackPool.add(indoorInfo);
+  }
   
-  Future<void> offlineDataWillReload(MAMapView mapView) {}
+  @mustCallSuper
+  Future<void> offlineDataWillReload(MAMapView mapView) {
+    kCallbackPool.add(mapView);
+  }
   
-  Future<void> offlineDataDidReload(MAMapView mapView) {}
+  @mustCallSuper
+  Future<void> offlineDataDidReload(MAMapView mapView) {
+    kCallbackPool.add(mapView);
+  }
   
 }

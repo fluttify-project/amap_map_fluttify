@@ -5,9 +5,7 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class Ref_Android {
-  int refId;
-
+class Ref_Android extends Ref {
   Future<bool> isKindOfcom_autonavi_ae_gmap_maploader_Pools() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_maploader_Pools', {'refId': refId});
     return result;

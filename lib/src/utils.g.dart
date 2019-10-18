@@ -24,3 +24,17 @@ Future<T> platform<T>({
     return Future.value();
   }
 }
+
+Future release(Ref ref) {
+  return platform(
+    android: (pool) => ObjectFactory_Android.release(ref),
+    ios: (pool) => ObjectFactory_iOS.release(ref),
+  );
+}
+
+class Ref {
+  int refId;
+}
+
+/// 回调参数的释放池
+final kCallbackPool = <Ref>[];

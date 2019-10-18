@@ -5,9 +5,7 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class Ref_iOS {
-  int refId;
-
+class Ref_iOS extends Ref {
   Future<bool> isKindOfAMapURLSearch() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfAMapURLSearch', {'refId': refId});
     return result;

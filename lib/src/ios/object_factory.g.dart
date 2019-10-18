@@ -449,15 +449,3 @@ class UIView extends NSObject {}
 class UIControl extends NSObject {}
 
 class UIImage extends NSObject {}
-
-class MAAnnotation_Ref = NSObject with MAAnnotation;
-class MAAnimatableAnnotation_Ref = NSObject with MAAnimatableAnnotation;
-class MAOverlay_Ref = NSObject with MAAnnotation, MAOverlay;
-class MATraceDelegate_Ref = NSObject with MATraceDelegate;
-class MAMultiPointOverlayRendererDelegate_Ref = NSObject with MAMultiPointOverlayRendererDelegate;
-class MAParticleVelocityGenerate_Ref = NSObject with MAParticleVelocityGenerate;
-class MAParticleColorGenerate_Ref = NSObject with MAParticleColorGenerate;
-class MAParticleRotationGenerate_Ref = NSObject with MAParticleRotationGenerate;
-class MAParticleSizeGenerate_Ref = NSObject with MAParticleSizeGenerate;
-class MAParticleShapeModule_Ref = NSObject with MAParticleShapeModule;
-class MAMapViewDelegate_Ref = NSObject with MAMapViewDelegate;
