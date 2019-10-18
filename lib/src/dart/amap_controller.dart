@@ -591,11 +591,11 @@ class IOSMapDelegate extends NSObject with MAMapViewDelegate {
   IOSMapDelegate({this.onMarkerClicked});
 
   @override
-  Future<void> mapViewDidSelectAnnotationView(
+  Future<void> mapViewDidAnnotationViewTapped(
     MAMapView mapView,
     MAAnnotationView view,
   ) async {
-    super.mapViewDidSelectAnnotationView(mapView, view);
+    super.mapViewDidAnnotationViewTapped(mapView, view);
     if (onMarkerClicked != null) {
       onMarkerClicked(Marker.ios(view));
     }
