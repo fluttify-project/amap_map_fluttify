@@ -1,6 +1,6 @@
-# amap_map_flutter_example
+# amap_map_fluttify_example
 
-Demonstrates how to use the amap_map_flutter plugin.
+Demonstrates how to use the amap_map_fluttify plugin.
 
 ## Getting Started
 

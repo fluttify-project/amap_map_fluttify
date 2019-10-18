@@ -1,5 +1,5 @@
-import 'package:amap_map_flutter/amap_map_flutter.dart';
-import 'package:amap_map_flutter_example/utils/misc.dart';
+import 'package:amap_map_fluttify/amap_map_fluttify.dart';
+import 'package:amap_map_fluttify_example/utils/misc.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:flutter/material.dart';
 
@@ -20,8 +20,6 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('绘制线'),
-        backgroundColor: Colors.black,
-        centerTitle: true,
       ),
       body: DecoratedColumn(
         children: <Widget>[

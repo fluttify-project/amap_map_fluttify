@@ -1,5 +1,5 @@
-name: amap_map_flutter_example
-description: Demonstrates how to use the amap_map_flutter plugin.
+name: amap_map_fluttify_example
+description: Demonstrates how to use the amap_map_fluttify plugin.
 publish_to: 'none'
 
 environment:
@@ -13,12 +13,11 @@ dependencies:
   oktoast:
   decorated_flutter:
     path: /Users/yohom/Github/Util/Flutter/package/decorated_flutter
-  dio:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  amap_map_flutter:
+  amap_map_fluttify:
     path: ../
 
 flutter:

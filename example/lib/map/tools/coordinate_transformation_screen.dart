@@ -1,4 +1,4 @@
-import 'package:amap_map_flutter_example/widgets/dimens.dart';
+import 'package:amap_map_fluttify_example/widgets/dimens.dart';
 import 'package:flutter/material.dart';
 
 class CoordinateTransformationScreen extends StatefulWidget {

@@ -1,4 +1,4 @@
-group 'me.yohom.amap_map_flutter'
+group 'me.yohom.amap_map_fluttify'
 version '1.0-SNAPSHOT'
 
 buildscript {

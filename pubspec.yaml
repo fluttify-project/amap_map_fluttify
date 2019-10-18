@@ -1,11 +1,11 @@
-name: amap_map_flutter
+name: amap_map_fluttify
 description: A new flutter plugin project.
-version: 0.0.1
+version: 0.0.2
 author: yohom <382146139@qq.com>
 homepage: https://github.com/fluttify-project/amap_map_fluttify
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.2.2 <3.0.0"
 
 dependencies:
   flutter:
@@ -17,5 +17,5 @@ dev_dependencies:
 
 flutter:
   plugin:
-    androidPackage: me.yohom.amap_map_flutter
-    pluginClass: AmapMapFlutterPlugin
+    androidPackage: me.yohom.amap_map_fluttify
+    pluginClass: AmapMapFluttifyPlugin

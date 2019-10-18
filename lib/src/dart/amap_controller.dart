@@ -2,16 +2,17 @@ import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
 
-import 'package:amap_map_flutter/amap_map_flutter.dart';
-import 'package:amap_map_flutter/src/android/android.export.dart';
-import 'package:amap_map_flutter/src/ios/ios.export.dart';
+import 'package:amap_map_fluttify/amap_map_fluttify.dart';
+import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'enums.dart';
+import 'models.dart';
 
-typedef void OnMarkerClick(com_amap_api_maps_model_Marker marker);
+typedef void OnMarkerClick(Marker marker);
 
 class AmapController {
   AmapController.android(this.androidController);
@@ -38,7 +39,7 @@ class AmapController {
         await iosController.set_showsUserLocation(show);
 
         if (show) {
-          await iosController.setUserTrackingMode(
+          await iosController.setUserTrackingModeAnimated(
               MAUserTrackingMode.MAUserTrackingModeFollow, true);
         }
       },
@@ -285,7 +286,7 @@ class AmapController {
         pool..add(map)..add(cameraUpdate);
       },
       ios: (pool) async {
-        await iosController.setZoomLevel(level, animated);
+        await iosController.setZoomLevelAnimated(level, animated);
       },
     );
   }
@@ -307,7 +308,7 @@ class AmapController {
       },
       ios: (pool) async {
         final currentLevel = await iosController.get_zoomLevel();
-        await iosController.setZoomLevel(currentLevel + 1, animated);
+        await iosController.setZoomLevelAnimated(currentLevel + 1, animated);
       },
     );
   }
@@ -329,7 +330,7 @@ class AmapController {
       },
       ios: (pool) async {
         final currentLevel = await iosController.get_zoomLevel();
-        await iosController.setZoomLevel(currentLevel - 1, animated);
+        await iosController.setZoomLevelAnimated(currentLevel - 1, animated);
       },
     );
   }
@@ -359,7 +360,7 @@ class AmapController {
       ios: (pool) async {
         final latLng =
             await ObjectFactory_iOS.createCLLocationCoordinate2D(lat, lng);
-        await iosController.setCenterCoordinate(latLng, animated);
+        await iosController.setCenterCoordinateAnimated(latLng, animated);
 
         pool..add(latLng);
       },
@@ -371,11 +372,50 @@ class AmapController {
   /// 在纬度[lat], 经度[lng]的位置添加marker, 并设置标题[title]和副标题[snippet], [iconUri]
   /// 可以是图片url, asset路径或者文件路径
   Future addMarker(
+    BuildContext context,
     LatLng point, {
     String title,
     String snippet,
     Uri iconUri,
   }) {
+    Future<Uint8List> _getImageData(Uri iconUri) async {
+      Uint8List iconData;
+      switch (iconUri.scheme) {
+        // 网络图片
+        case 'https':
+        case 'http':
+          HttpClient httpClient = HttpClient();
+          var request = await httpClient.getUrl(iconUri);
+          var response = await request.close();
+          iconData = await consolidateHttpClientResponseBytes(response);
+          break;
+        // 文件图片
+        case 'file':
+          final imageFile = File.fromUri(iconUri);
+          iconData = imageFile.readAsBytesSync();
+          break;
+        // asset图片
+        default:
+          // asset的bug描述(https://github.com/flutter/flutter/issues/24865):
+          // android和ios平台上都取了1.0密度的图片, android上就显示了1.0密度的图片, 而ios
+          // 平台上使用的图片也是1.0密度, 但是根据设备密度进行了对应的放大, 导致了android和ios
+          // 两端的图片的大小不一致, 这里只对android根据密度选择原始图片, ios原封不动
+          // 这样做android端能够保证完美, ios端的话图片会有点糊, 因为原始图片是1.0密度, 但是这样
+          // 的话两端大小是一致的, 如果要求再高一点的话, ios这边对图片根据设备密度选择好图片后, 再进行对应密度
+          // 的缩小, 就是完美的了, 但是处理起来比较麻烦, 这里就不去处理了
+          if (Platform.isAndroid) {
+            final byteData = await rootBundle
+                .load(AmapService.toResolutionAware(context, iconUri.path));
+            iconData = byteData.buffer.asUint8List();
+          } else {
+            final byteData = await rootBundle.load(iconUri.path);
+            iconData = byteData.buffer.asUint8List();
+          }
+          break;
+      }
+      return iconData;
+    }
+
     final lat = point.lat;
     final lng = point.lng;
     return platform(
@@ -403,26 +443,7 @@ class AmapController {
         }
         // 设置marker图标
         if (iconUri != null) {
-          Uint8List iconData;
-          switch (iconUri.scheme) {
-            // 网络图片
-            case 'https':
-            case 'http':
-              HttpClient httpClient = HttpClient();
-              var request = await httpClient.getUrl(iconUri);
-              var response = await request.close();
-              iconData = await consolidateHttpClientResponseBytes(response);
-              break;
-            // 文件图片
-            case 'file':
-              // todo
-              break;
-            // asset图片
-            default:
-              final byteData = await rootBundle.load(iconUri.path);
-              iconData = byteData.buffer.asUint8List();
-              break;
-          }
+          Uint8List iconData = await _getImageData(iconUri);
 
           final bitmap =
               await ObjectFactory_Android.createandroid_graphics_Bitmap(
@@ -439,7 +460,7 @@ class AmapController {
         pool..add(map)..add(latLng)..add(markerOption)..add(marker);
       },
       ios: (pool) async {
-        await iosController.set_delegate(MyDelegate());
+        await iosController.set_delegate(IOSMapDelegate());
 
         // 创建marker
         final pointAnnotation =
@@ -462,26 +483,7 @@ class AmapController {
         // 设置图片
         // 设置marker图标
         if (iconUri != null) {
-          Uint8List iconData;
-          switch (iconUri.scheme) {
-            // 网络图片
-            case 'https':
-            case 'http':
-              HttpClient httpClient = HttpClient();
-              var request = await httpClient.getUrl(iconUri);
-              var response = await request.close();
-              iconData = await consolidateHttpClientResponseBytes(response);
-              break;
-            // 文件图片
-            case 'file':
-              // todo
-              break;
-            // asset图片
-            default:
-              final byteData = await rootBundle.load(iconUri.path);
-              iconData = byteData.buffer.asUint8List();
-              break;
-          }
+          Uint8List iconData = await _getImageData(iconUri);
 
           final icon = await ObjectFactory_iOS.createUIImage(iconData);
 
@@ -502,7 +504,7 @@ class AmapController {
   /// 添加线
   ///
   /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[color]
-  Future addPolyline(List<LatLng> points, {double width, Color color}) {
+  Future<void> addPolyline(List<LatLng> points, {double width, Color color}) {
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
@@ -533,7 +535,7 @@ class AmapController {
           ..addAll(latLngList);
       },
       ios: (pool) async {
-        await iosController.set_delegate(MyDelegate());
+        await iosController.set_delegate(IOSMapDelegate());
 
         List<CLLocationCoordinate2D> latLngList = [];
         for (final point in points) {
@@ -542,7 +544,7 @@ class AmapController {
           latLngList.add(latLng);
         }
 
-        final polyline = await MAPolyline.polylineWithCoordinates(
+        final polyline = await MAPolyline.polylineWithCoordinatesCount(
             latLngList, latLngList.length);
         await iosController.addOverlay(polyline);
 
@@ -553,34 +555,53 @@ class AmapController {
     );
   }
 
-  Future setMarkerClickListener(OnMarkerClick onMarkerClick) async {
+  Future<void> setMarkerClickListener(OnMarkerClick onMarkerClicked) async {
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
 
-        await map
-            .setOnMarkerClickListener(OnMarkerClickListener(onMarkerClick));
+        await map.setOnMarkerClickListener(
+            AndroidMapDelegate(onMarkerClicked: onMarkerClicked));
 
         pool..add(map);
       },
       ios: (pool) async {
-        // todo
+        await iosController
+            .set_delegate(IOSMapDelegate(onMarkerClicked: onMarkerClicked));
       },
     );
   }
 }
 
-class MyDelegate extends NSObject with MAMapViewDelegate {}
+class IOSMapDelegate extends NSObject with MAMapViewDelegate {
+  final OnMarkerClick onMarkerClicked;
 
-class OnMarkerClickListener extends java_lang_Object
+  IOSMapDelegate({this.onMarkerClicked});
+
+  @override
+  Future<void> mapViewDidSelectAnnotationView(
+    MAMapView mapView,
+    MAAnnotationView view,
+  ) async {
+    super.mapViewDidSelectAnnotationView(mapView, view);
+    if (onMarkerClicked != null) {
+      onMarkerClicked(Marker.ios(view));
+    }
+  }
+}
+
+class AndroidMapDelegate extends java_lang_Object
     with com_amap_api_maps_AMap_OnMarkerClickListener {
   final OnMarkerClick onMarkerClicked;
 
-  OnMarkerClickListener(this.onMarkerClicked);
+  AndroidMapDelegate({this.onMarkerClicked});
 
   @override
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
-    onMarkerClicked(var1);
+    super.onMarkerClick(var1);
+    if (onMarkerClicked != null) {
+      onMarkerClicked(Marker.android(var1));
+    }
     return true;
   }
 }

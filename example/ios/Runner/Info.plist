@@ -11,7 +11,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>amap_map_flutter_example</string>
+	<string>amap_map_fluttify_example</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -43,7 +43,7 @@
 	<false/>
 	<key>io.flutter.embedded_views_preview</key>
 	<string>YES</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>需要定位权限</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>需要定位权限</string>
 </dict>
 </plist>

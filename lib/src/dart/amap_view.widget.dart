@@ -1,9 +1,9 @@
 import 'dart:io';
 
-import 'package:amap_map_flutter/amap_map_flutter.dart';
-import 'package:amap_map_flutter/src/android/android.export.dart';
-import 'package:amap_map_flutter/src/dart/amap_controller.dart';
-import 'package:amap_map_flutter/src/ios/ios.export.dart';
+import 'package:amap_map_fluttify/amap_map_fluttify.dart';
+import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:amap_map_fluttify/src/dart/amap_controller.dart';
+import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:flutter/material.dart';
 
 typedef void OnMapCreated(AmapController controller);
@@ -21,7 +21,6 @@ class AmapView extends StatefulWidget {
 }
 
 class _AmapViewState extends State<AmapView> {
-  int _iosId;
   @override
   Widget build(BuildContext context) {
     if (Platform.isAndroid) {
@@ -37,7 +36,6 @@ class _AmapViewState extends State<AmapView> {
     } else if (Platform.isIOS) {
       return MAMapView_iOS(
         onViewCreated: (controller) {
-          _iosId = controller.refId;
           if (widget.onMapCreated != null) {
             widget.onMapCreated(AmapController.ios(controller));
           }
@@ -46,5 +44,13 @@ class _AmapViewState extends State<AmapView> {
     } else {
       return Center(child: Text('未实现的平台'));
     }
+  }
+
+  @override
+  void dispose() {
+    kCallbackPool
+      ..forEach((key, value) => release(value))
+      ..clear();
+    super.dispose();
   }
 }
