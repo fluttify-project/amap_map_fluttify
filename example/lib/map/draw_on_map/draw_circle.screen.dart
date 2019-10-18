@@ -43,7 +43,7 @@ class _DrawCircleScreenState extends State<DrawCircleScreen> {
                       LatLng(39.999391, 116.135972),
                       10000,
                       width: 10,
-                      color: Colors.green,
+                      strokeColor: Colors.green,
                     );
                   },
                 ),

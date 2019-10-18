@@ -47,7 +47,7 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen> {
                         LatLng(39.955192, 116.140092),
                       ],
                       width: 10,
-                      color: Colors.green,
+                      strokeColor: Colors.green,
                     );
                   },
                 ),

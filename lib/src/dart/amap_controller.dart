@@ -504,8 +504,12 @@ class AmapController {
 
   /// 添加线
   ///
-  /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[color]
-  Future<void> addPolyline(List<LatLng> points, {double width, Color color}) {
+  /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[strokeColor]
+  Future<void> addPolyline(
+    List<LatLng> points, {
+    double width,
+    Color strokeColor = Colors.black,
+  }) {
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
@@ -528,8 +532,9 @@ class AmapController {
         if (width != null) {
           await polylineOptions.width(width);
         }
-        if (color != null) {
-          await polylineOptions.color(Int32List.fromList([color.value])[0]);
+        if (strokeColor != null) {
+          await polylineOptions
+              .color(Int32List.fromList([strokeColor.value])[0]);
         }
 
         // 设置参数
@@ -558,8 +563,9 @@ class AmapController {
         // 宽度和颜色需要设置到STACK里去
         if (width != null)
           await ObjectFactory_iOS.pushStackJsonable('width', width);
-        if (color != null)
-          await ObjectFactory_iOS.pushStackJsonable('color', color.value);
+        if (strokeColor != null)
+          await ObjectFactory_iOS.pushStackJsonable(
+              'strokeColor', strokeColor.value);
 
         // 设置参数
         await iosController.addOverlay(polyline);
@@ -573,46 +579,45 @@ class AmapController {
 
   /// 添加圆
   ///
-  /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[color]
+  /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[strokeColor]
   Future<void> addCircle(
     LatLng point,
     double radius, {
     double width = 5,
-    Color color = Colors.black,
+    Color fillColor = Colors.white,
+    Color strokeColor = Colors.black,
   }) {
     return platform(
       android: (pool) async {
-//        final map = await androidController.getMap();
-//
-//        // 构造折线点
-//        List<com_amap_api_maps_model_LatLng> latLngList = [];
-//        for (final point in points) {
-//          final latLng = await ObjectFactory_Android
-//              .createcom_amap_api_maps_model_LatLng__double__double(
-//                  point.lat, point.lng);
-//          latLngList.add(latLng);
-//        }
-//
-//        // 构造折线参数
-//        final polylineOptions = await ObjectFactory_Android
-//            .createcom_amap_api_maps_model_PolylineOptions__();
-//
-//        // 添加参数
-//        await polylineOptions.addAll(latLngList);
-//        if (width != null) {
-//          await polylineOptions.width(width);
-//        }
-//        if (color != null) {
-//          await polylineOptions.color(Int32List.fromList([color.value])[0]);
-//        }
-//
-//        // 设置参数
-//        await map.addPolyline(polylineOptions);
-//
-//        pool
-//          ..add(map)
-//          ..add(polylineOptions)
-//          ..addAll(latLngList);
+        final map = await androidController.getMap();
+
+        // 构造点
+        final latLng = await ObjectFactory_Android
+            .createcom_amap_api_maps_model_LatLng__double__double(
+                point.lat, point.lng);
+
+        // 构造参数
+        final circleOptions = await ObjectFactory_Android
+            .createcom_amap_api_maps_model_CircleOptions__();
+
+        // 添加参数
+        await circleOptions.center(latLng);
+        await circleOptions.radius(radius);
+        if (width != null) {
+          await circleOptions.strokeWidth(width);
+        }
+        if (strokeColor != null) {
+          await circleOptions
+              .strokeColor(Int32List.fromList([strokeColor.value])[0]);
+        }
+        if (fillColor != null)
+          await circleOptions
+              .fillColor(Int32List.fromList([fillColor.value])[0]);
+
+        // 设置参数
+        await map.addCircle(circleOptions);
+
+        pool..add(map)..add(circleOptions)..add(latLng);
       },
       ios: (pool) async {
         await iosController.set_delegate(IOSMapDelegate());
@@ -627,8 +632,12 @@ class AmapController {
         // 宽度和颜色需要设置到STACK里去
         if (width != null)
           await ObjectFactory_iOS.pushStackJsonable('width', width);
-        if (color != null)
-          await ObjectFactory_iOS.pushStackJsonable('color', color.value);
+        if (strokeColor != null)
+          await ObjectFactory_iOS.pushStackJsonable(
+              'strokeColor', strokeColor.value);
+        if (fillColor != null)
+          await ObjectFactory_iOS.pushStackJsonable(
+              'fillColor', fillColor.value);
 
         // 设置参数
         await iosController.addOverlay(circle);

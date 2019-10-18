@@ -3377,15 +3377,18 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   
   ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
   NSNumber* width = (NSNumber*) STACK[@"width"];
-  NSNumber* color = (NSNumber*) STACK[@"color"];
+  NSNumber* strokeColor = (NSNumber*) STACK[@"strokeColor"];
+  NSNumber* fillColor = (NSNumber*) STACK[@"fillColor"];
+    
+  // 线
   if ([overlay isKindOfClass:[MAPolyline class]])
   {
       MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:overlay];
 
       // 宽度 比android端的粗一倍 这里除以2
       polylineRenderer.lineWidth    = [width doubleValue] / 2;
-      // 颜色
-      NSUInteger rgba = [color unsignedIntegerValue];
+      // 描边颜色
+      NSUInteger rgba = [strokeColor unsignedIntegerValue];
       float components[4];
       for (int i = 3; i >= 0; i--) {
           components[i] = (rgba & 0xff) / 255.0;
@@ -3395,6 +3398,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       return polylineRenderer;
   }
     
+  // 圆
   if ([overlay isKindOfClass:[MACircle class]])
   {
       MACircleRenderer *circleRenderer = [[MACircleRenderer alloc] initWithCircle:overlay];
@@ -3402,14 +3406,22 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       // 宽度
       circleRenderer.lineWidth    = [width doubleValue] / 2;
       
-      // 颜色
-      NSUInteger rgba = [color unsignedIntegerValue];
+      // 描边颜色
+      NSUInteger rgba = [strokeColor unsignedIntegerValue];
       float components[4];
       for (int i = 3; i >= 0; i--) {
           components[i] = (rgba & 0xff) / 255.0;
           rgba >>= 8;
       }
       circleRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+      
+      // 填充颜色
+      rgba = [fillColor unsignedIntegerValue];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      circleRenderer.fillColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
       return circleRenderer;
   }
     
