@@ -5,6 +5,7 @@ import 'package:amap_map_fluttify_example/widgets/todo.screen.dart';
 import 'package:flutter/material.dart';
 
 import 'create_map/create_map.screen.dart';
+import 'draw_on_map/draw_circle.screen.dart';
 import 'draw_on_map/draw_point.screen.dart';
 import 'draw_on_map/draw_polygon.screen.dart';
 import 'draw_on_map/draw_polyline.screen.dart';
@@ -66,6 +67,11 @@ class MapDemo extends StatelessWidget {
               label: '绘制线',
               sublabel: 'DrawPolylineScreen',
               target: DrawPolylineScreen(),
+            ),
+            FunctionItem(
+              label: '绘制圆',
+              sublabel: 'DrawCircleScreen',
+              target: DrawCircleScreen(),
             ),
             FunctionItem(
               label: '绘制多边形',

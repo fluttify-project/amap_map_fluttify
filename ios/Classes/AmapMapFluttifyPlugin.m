@@ -7,7 +7,7 @@
 typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSString *, NSObject *> *, FlutterResult);
 
 // Dart端一次方法调用所存在的栈, 只有当MethodChannel传递参数受限时, 再启用这个容器
-NSMutableDictionary<NSString*, NSNumber*>* STACK;
+NSMutableDictionary<NSString*, NSObject*>* STACK;
 // Dart端随机存取对象的容器
 NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
 
@@ -162,6 +162,29 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           HEAP[@(result.hash)] = result;
           methodResult(@(result.hash));
       },
+      @"MACircle::circleWithCenterCoordinateRadius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 结构体参数
+          NSValue* coordValue = (NSValue*) HEAP[@([args[@"coord"] integerValue])];
+          CLLocationCoordinate2D coord;
+          [coordValue getValue:&coord];
+          // jsonable参数
+          CLLocationDistance radius = [args[@"radius"] doubleValue];
+      
+          // 调用对象引用
+      
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MACircle::circleWithCenterCoordinate(暂未实现参数打印)");
+      
+          // 开始调用
+          MACircle* result = [MACircle circleWithCenterCoordinate: coord radius: radius];
+      
+          // 调用结果
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
       @"MACircle::circleWithMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 结构体参数
@@ -182,6 +205,29 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // 返回值: 引用
           HEAP[@(result.hash)] = result;
           methodResult(@(result.hash));
+      },
+      @"MACircle::setCircleWithCenterCoordinateRadius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 结构体参数
+          NSValue* coordValue = (NSValue*) HEAP[@([args[@"coord"] integerValue])];
+          CLLocationCoordinate2D coord;
+          [coordValue getValue:&coord];
+          // jsonable参数
+          CLLocationDistance radius = [args[@"radius"] doubleValue];
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACircle* ref = (MACircle*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MACircle@%@::setCircleWithCenterCoordinate(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          BOOL result = [ref setCircleWithCenterCoordinate: coord radius: radius];
+      
+          // 调用结果
+          // 返回值: Value
+          methodResult(@(result));
       },
       @"MAArcRenderer::initWithArc": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
@@ -1930,6 +1976,108 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // 返回值: Value
           methodResult(@(result));
       },
+      @"MAOverlayRenderer::renderTexturedLinesWithPointsPointCountlineWidthtextureIDsdrawStyleIndexeslooped": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 列表参数
+          NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
+          CGPoint points[pointsRefIdArray.count];
+      
+          for (int i = 0; i < pointsRefIdArray.count; i++) {
+              NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+              CGPoint pointsItem;
+              [pointsValue getValue:&pointsItem];
+              points[i] = pointsItem;
+          }
+          // jsonable参数
+          NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
+          // jsonable参数
+          CGFloat lineWidth = [args[@"lineWidth"] floatValue];
+          // 列表参数
+          NSArray<NSNumber*>* textureIDsRefArray = (NSArray<NSNumber*> *) args[@"textureIDs"];
+          NSMutableArray<NSArray*>* textureIDs = [NSMutableArray arrayWithCapacity:textureIDsRefArray.count];
+          for (int i = 0; i < textureIDs.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[textureIDsRefArray objectAtIndex:i]];
+              [textureIDs addObject:item];
+          }
+          // 列表参数
+          NSArray<NSNumber*>* drawStyleIndexesRefArray = (NSArray<NSNumber*> *) args[@"drawStyleIndexes"];
+          NSMutableArray<NSArray*>* drawStyleIndexes = [NSMutableArray arrayWithCapacity:drawStyleIndexesRefArray.count];
+          for (int i = 0; i < drawStyleIndexes.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[drawStyleIndexesRefArray objectAtIndex:i]];
+              [drawStyleIndexes addObject:item];
+          }
+          // jsonable参数
+          BOOL looped = [args[@"looped"] boolValue];
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderTexturedLinesWithPoints(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref renderTexturedLinesWithPoints : points pointCount: pointCount lineWidth: lineWidth textureIDs: textureIDs drawStyleIndexes: drawStyleIndexes looped: looped];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
+      },
+      @"MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorsdrawStyleIndexesisGradientlineWidthloopedLineJoinTypeLineCapTypelineDash": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 列表参数
+          NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
+          CGPoint points[pointsRefIdArray.count];
+      
+          for (int i = 0; i < pointsRefIdArray.count; i++) {
+              NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+              CGPoint pointsItem;
+              [pointsValue getValue:&pointsItem];
+              points[i] = pointsItem;
+          }
+          // jsonable参数
+          NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
+          // 列表参数
+          NSArray<NSNumber*>* strokeColorsRefArray = (NSArray<NSNumber*> *) args[@"strokeColors"];
+          NSMutableArray<NSArray*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
+          for (int i = 0; i < strokeColors.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[strokeColorsRefArray objectAtIndex:i]];
+              [strokeColors addObject:item];
+          }
+          // 列表参数
+          NSArray<NSNumber*>* drawStyleIndexesRefArray = (NSArray<NSNumber*> *) args[@"drawStyleIndexes"];
+          NSMutableArray<NSArray*>* drawStyleIndexes = [NSMutableArray arrayWithCapacity:drawStyleIndexesRefArray.count];
+          for (int i = 0; i < drawStyleIndexes.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[drawStyleIndexesRefArray objectAtIndex:i]];
+              [drawStyleIndexes addObject:item];
+          }
+          // jsonable参数
+          BOOL isGradient = [args[@"isGradient"] boolValue];
+          // jsonable参数
+          CGFloat lineWidth = [args[@"lineWidth"] floatValue];
+          // jsonable参数
+          BOOL looped = [args[@"looped"] boolValue];
+          // 枚举参数
+          MALineJoinType lineJoinType = (MALineJoinType) [args[@"lineJoinType"] integerValue];
+          // 枚举参数
+          MALineCapType lineCapType = (MALineCapType) [args[@"lineCapType"] integerValue];
+          // 枚举参数
+          MALineDashType lineDash = (MALineDashType) [args[@"lineDash"] integerValue];
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref renderLinesWithPoints : points pointCount: pointCount strokeColors: strokeColors drawStyleIndexes: drawStyleIndexes isGradient: isGradient lineWidth: lineWidth looped: looped LineJoinType: lineJoinType LineCapType: lineCapType lineDash: lineDash];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
+      },
       @"MAOverlayRenderer::glRender": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
       
@@ -2707,6 +2855,30 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // 无返回值
           methodResult(@"success");
       },
+      @"MAMapView::addAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 列表参数
+          NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
+          NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
+          for (int i = 0; i < annotations.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
+              [annotations addObject:item];
+          }
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapView@%@::addAnnotations(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref addAnnotations : annotations];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
+      },
       @"MAMapView::removeAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 引用参数
@@ -2721,6 +2893,30 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           // 开始调用
           [ref removeAnnotation : annotation];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
+      },
+      @"MAMapView::removeAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 列表参数
+          NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
+          NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
+          for (int i = 0; i < annotations.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
+              [annotations addObject:item];
+          }
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotations(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref removeAnnotations : annotations];
       
           // 调用结果
           // 无返回值
@@ -2808,6 +3004,62 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // 无返回值
           methodResult(@"success");
       },
+      @"MAMapView::showAnnotationsAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 列表参数
+          NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
+          NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
+          for (int i = 0; i < annotations.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
+              [annotations addObject:item];
+          }
+          // jsonable参数
+          BOOL animated = [args[@"animated"] boolValue];
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref showAnnotations : annotations animated: animated];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
+      },
+      @"MAMapView::showAnnotationsEdgePaddinganimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 列表参数
+          NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
+          NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
+          for (int i = 0; i < annotations.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
+              [annotations addObject:item];
+          }
+          // 结构体参数
+          NSValue* insetsValue = (NSValue*) HEAP[@([args[@"insets"] integerValue])];
+          UIEdgeInsets insets;
+          [insetsValue getValue:&insets];
+          // jsonable参数
+          BOOL animated = [args[@"animated"] boolValue];
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref showAnnotations : annotations edgePadding: insets animated: animated];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
+      },
       @"MAMapView::setUserTrackingModeAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 枚举参数
@@ -2848,6 +3100,32 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // 无返回值
           methodResult(@"success");
       },
+      @"MAMapView::overlaysInLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 枚举参数
+          MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          NSArray* result = [ref overlaysInLevel: level];
+      
+          // 调用结果
+          // 返回值: 列表
+          NSMutableArray* refIdList = [NSMutableArray array];
+          for (int i = 0; i < result.count; i++) {
+              NSObject* object = [result objectAtIndex:i];
+              [refIdList addObject: @(object.hash)];
+              HEAP[@([object hash])] = object;
+          }
+      
+          methodResult(refIdList);
+      },
       @"MAMapView::addOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 引用参数
@@ -2862,6 +3140,30 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           // 开始调用
           [ref addOverlay : overlay];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
+      },
+      @"MAMapView::addOverlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 列表参数
+          NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
+          NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
+          for (int i = 0; i < overlays.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
+              [overlays addObject:item];
+          }
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref addOverlays : overlays];
       
           // 调用结果
           // 无返回值
@@ -2888,6 +3190,32 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // 无返回值
           methodResult(@"success");
       },
+      @"MAMapView::addOverlaysLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 列表参数
+          NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
+          NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
+          for (int i = 0; i < overlays.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
+              [overlays addObject:item];
+          }
+          // 枚举参数
+          MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref addOverlays : overlays level: level];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
+      },
       @"MAMapView::removeOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 引用参数
@@ -2902,6 +3230,30 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           // 开始调用
           [ref removeOverlay : overlay];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
+      },
+      @"MAMapView::removeOverlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 列表参数
+          NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
+          NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
+          for (int i = 0; i < overlays.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
+              [overlays addObject:item];
+          }
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapView@%@::removeOverlays(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref removeOverlays : overlays];
       
           // 调用结果
           // 无返回值
@@ -3077,6 +3429,62 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // 返回值: 引用
           HEAP[@(result.hash)] = result;
           methodResult(@(result.hash));
+      },
+      @"MAMapView::showOverlaysAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 列表参数
+          NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
+          NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
+          for (int i = 0; i < overlays.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
+              [overlays addObject:item];
+          }
+          // jsonable参数
+          BOOL animated = [args[@"animated"] boolValue];
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref showOverlays : overlays animated: animated];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
+      },
+      @"MAMapView::showOverlaysEdgePaddinganimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 列表参数
+          NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
+          NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
+          for (int i = 0; i < overlays.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
+              [overlays addObject:item];
+          }
+          // 结构体参数
+          NSValue* insetsValue = (NSValue*) HEAP[@([args[@"insets"] integerValue])];
+          UIEdgeInsets insets;
+          [insetsValue getValue:&insets];
+          // jsonable参数
+          BOOL animated = [args[@"animated"] boolValue];
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref showOverlays : overlays edgePadding: insets animated: animated];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
       },
       @"MAMapView::setIndoorMapControlOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
@@ -3381,6 +3789,32 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           HEAP[@(result.hash)] = result;
           methodResult(@(result.hash));
       },
+      @"MAMapViewDelegate::mapViewDidAddAnnotationViews": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 引用参数
+          MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+          // 列表参数
+          NSArray<NSNumber*>* viewsRefArray = (NSArray<NSNumber*> *) args[@"views"];
+          NSMutableArray<NSArray*>* views = [NSMutableArray arrayWithCapacity:viewsRefArray.count];
+          for (int i = 0; i < views.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[viewsRefArray objectAtIndex:i]];
+              [views addObject:item];
+          }
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref mapView : mapView didAddAnnotationViews: views];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
+      },
       @"MAMapViewDelegate::mapViewDidSelectAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 引用参数
@@ -3571,6 +4005,32 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           HEAP[@(result.hash)] = result;
           methodResult(@(result.hash));
       },
+      @"MAMapViewDelegate::mapViewDidAddOverlayRenderers": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 引用参数
+          MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+          // 列表参数
+          NSArray<NSNumber*>* overlayRenderersRefArray = (NSArray<NSNumber*> *) args[@"overlayRenderers"];
+          NSMutableArray<NSArray*>* overlayRenderers = [NSMutableArray arrayWithCapacity:overlayRenderersRefArray.count];
+          for (int i = 0; i < overlayRenderers.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[overlayRenderersRefArray objectAtIndex:i]];
+              [overlayRenderers addObject:item];
+          }
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref mapView : mapView didAddOverlayRenderers: overlayRenderers];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
+      },
       @"MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 引用参数
@@ -3675,6 +4135,32 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           // 开始调用
           [ref mapView : mapView didChangeOpenGLESDisabled: openGLESDisabled];
+      
+          // 调用结果
+          // 无返回值
+          methodResult(@"success");
+      },
+      @"MAMapViewDelegate::mapViewDidTouchPois": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 引用参数
+          MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+          // 列表参数
+          NSArray<NSNumber*>* poisRefArray = (NSArray<NSNumber*> *) args[@"pois"];
+          NSMutableArray<NSArray*>* pois = [NSMutableArray arrayWithCapacity:poisRefArray.count];
+          for (int i = 0; i < pois.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[poisRefArray objectAtIndex:i]];
+              [pois addObject:item];
+          }
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref mapView : mapView didTouchPois: pois];
       
           // 调用结果
           // 无返回值
@@ -4767,6 +5253,22 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
       
+      @"MACircle::get_radius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MACircle::get_radius");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACircle* ref = (MACircle*) HEAP[@(refId)];
+      
+          // 开始调用
+          CLLocationDistance result = ref.radius;
+      
+      
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
       @"MACircle::get_boundingMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MACircle::get_boundingMapRect");
       
@@ -5020,6 +5522,52 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // 返回值: 引用
           HEAP[@(result.hash)] = result;
           methodResult(@(result.hash));
+      },
+      
+      @"MAMultiTexturePolylineRenderer::get_strokeTextureImages": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMultiTexturePolylineRenderer::get_strokeTextureImages");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[@(refId)];
+      
+          // 开始调用
+          NSArray* result = ref.strokeTextureImages;
+      
+      
+      
+          // 返回值: 列表
+          NSMutableArray* refIdList = [NSMutableArray array];
+          for (int i = 0; i < result.count; i++) {
+              NSObject* object = [result objectAtIndex:i];
+              [refIdList addObject: @(object.hash)];
+              HEAP[@([object hash])] = object;
+          }
+      
+          methodResult(refIdList);
+      },
+      
+      @"MAOfflineProvince::get_cities": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAOfflineProvince::get_cities");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAOfflineProvince* ref = (MAOfflineProvince*) HEAP[@(refId)];
+      
+          // 开始调用
+          NSArray* result = ref.cities;
+      
+      
+      
+          // 返回值: 列表
+          NSMutableArray* refIdList = [NSMutableArray array];
+          for (int i = 0; i < result.count; i++) {
+              NSObject* object = [result objectAtIndex:i];
+              [refIdList addObject: @(object.hash)];
+              HEAP[@([object hash])] = object;
+          }
+      
+          methodResult(refIdList);
       },
       
       @"MATileOverlayRenderer::get_tileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -5368,6 +5916,29 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           // 返回值: Value
           methodResult(@(result));
+      },
+      
+      @"MAIndoorInfo::get_floorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAIndoorInfo::get_floorInfo");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[@(refId)];
+      
+          // 开始调用
+          NSArray* result = ref.floorInfo;
+      
+      
+      
+          // 返回值: 列表
+          NSMutableArray* refIdList = [NSMutableArray array];
+          for (int i = 0; i < result.count; i++) {
+              NSObject* object = [result objectAtIndex:i];
+              [refIdList addObject: @(object.hash)];
+              HEAP[@([object hash])] = object;
+          }
+      
+          methodResult(refIdList);
       },
       
       @"MAIndoorInfo::get_numberOfFloor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -5940,6 +6511,29 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           // 返回值: jsonable
           methodResult(result);
+      },
+      
+      @"MAOfflineMap::get_offlineCities": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAOfflineMap::get_offlineCities");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+      
+          // 开始调用
+          NSArray* result = ref.offlineCities;
+      
+      
+      
+          // 返回值: 列表
+          NSMutableArray* refIdList = [NSMutableArray array];
+          for (int i = 0; i < result.count; i++) {
+              NSObject* object = [result objectAtIndex:i];
+              [refIdList addObject: @(object.hash)];
+              HEAP[@([object hash])] = object;
+          }
+      
+          methodResult(refIdList);
       },
       
       @"MACircleRenderer::get_circle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7181,6 +7775,52 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
       
+      @"MAMapView::get_annotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_annotations");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 开始调用
+          NSArray* result = ref.annotations;
+      
+      
+      
+          // 返回值: 列表
+          NSMutableArray* refIdList = [NSMutableArray array];
+          for (int i = 0; i < result.count; i++) {
+              NSObject* object = [result objectAtIndex:i];
+              [refIdList addObject: @(object.hash)];
+              HEAP[@([object hash])] = object;
+          }
+      
+          methodResult(refIdList);
+      },
+      
+      @"MAMapView::get_selectedAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_selectedAnnotations");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 开始调用
+          NSArray* result = ref.selectedAnnotations;
+      
+      
+      
+          // 返回值: 列表
+          NSMutableArray* refIdList = [NSMutableArray array];
+          for (int i = 0; i < result.count; i++) {
+              NSObject* object = [result objectAtIndex:i];
+              [refIdList addObject: @(object.hash)];
+              HEAP[@([object hash])] = object;
+          }
+      
+          methodResult(refIdList);
+      },
+      
       @"MAMapView::get_annotationVisibleRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_annotationVisibleRect");
       
@@ -7316,6 +7956,22 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@(result));
       },
       
+      @"MAMapView::get_distanceFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_distanceFilter");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 开始调用
+          CLLocationDistance result = ref.distanceFilter;
+      
+      
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
       @"MAMapView::get_pausesLocationUpdatesAutomatically": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_pausesLocationUpdatesAutomatically");
       
@@ -7346,6 +8002,29 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           // 返回值: Value
           methodResult(@(result));
+      },
+      
+      @"MAMapView::get_overlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_overlays");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 开始调用
+          NSArray* result = ref.overlays;
+      
+      
+      
+          // 返回值: 列表
+          NSMutableArray* refIdList = [NSMutableArray array];
+          for (int i = 0; i < result.count; i++) {
+              NSObject* object = [result objectAtIndex:i];
+              [refIdList addObject: @(object.hash)];
+              HEAP[@([object hash])] = object;
+          }
+      
+          methodResult(refIdList);
       },
       
       @"MAMapView::get_isShowsIndoorMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -8104,6 +8783,20 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@"success");
       },
       
+      @"MACircle::set_radius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MACircle::set_radius");
+      
+          // 参数
+          // jsonable参数
+          CLLocationDistance radius = [args[@"radius"] doubleValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACircle* ref = (MACircle*) HEAP[@(refId)];
+      
+          ref.radius = radius;
+          methodResult(@"success");
+      },
+      
       @"MAAnnotation::set_title": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAAnnotation::set_title");
       
@@ -8190,6 +8883,25 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[@(refId)];
       
           ref.movingDirection = movingDirection;
+          methodResult(@"success");
+      },
+      
+      @"MAMultiTexturePolylineRenderer::set_strokeTextureImages": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMultiTexturePolylineRenderer::set_strokeTextureImages");
+      
+          // 参数
+          // 列表参数
+          NSArray<NSNumber*>* strokeTextureImagesRefArray = (NSArray<NSNumber*> *) args[@"strokeTextureImages"];
+          NSMutableArray<NSArray*>* strokeTextureImages = [NSMutableArray arrayWithCapacity:strokeTextureImagesRefArray.count];
+          for (int i = 0; i < strokeTextureImages.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[strokeTextureImagesRefArray objectAtIndex:i]];
+              [strokeTextureImages addObject:item];
+          }
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[@(refId)];
+      
+          ref.strokeTextureImages = strokeTextureImages;
           methodResult(@"success");
       },
       
@@ -9438,6 +10150,25 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@"success");
       },
       
+      @"MAMapView::set_selectedAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_selectedAnnotations");
+      
+          // 参数
+          // 列表参数
+          NSArray<NSNumber*>* selectedAnnotationsRefArray = (NSArray<NSNumber*> *) args[@"selectedAnnotations"];
+          NSMutableArray<NSArray*>* selectedAnnotations = [NSMutableArray arrayWithCapacity:selectedAnnotationsRefArray.count];
+          for (int i = 0; i < selectedAnnotations.count; i++) {
+              NSArray* item = (NSArray*) HEAP[[selectedAnnotationsRefArray objectAtIndex:i]];
+              [selectedAnnotations addObject:item];
+          }
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          ref.selectedAnnotations = selectedAnnotations;
+          methodResult(@"success");
+      },
+      
       @"MAMapView::set_allowsAnnotationViewSorting": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_allowsAnnotationViewSorting");
       
@@ -9491,6 +10222,20 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[@(refId)];
       
           ref.userTrackingMode = userTrackingMode;
+          methodResult(@"success");
+      },
+      
+      @"MAMapView::set_distanceFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_distanceFilter");
+      
+          // 参数
+          // jsonable参数
+          CLLocationDistance distanceFilter = [args[@"distanceFilter"] doubleValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          ref.distanceFilter = distanceFilter;
           methodResult(@"success");
       },
       
@@ -12103,9 +12848,23 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
     NSNumber* refId = (NSNumber*) args[@"refId"];
 
     // todo release去掉日志
-    NSLog(@"ObjectFactory::压入栈 %@@%@", HEAP[refId], refId);
+    NSLog(@"ObjectFactory::压入栈 %@@%@", NSStringFromClass([HEAP[refId] class]), refId);
 
-    STACK[name] = refId;
+    STACK[name] = HEAP[refId];
+
+    methodResult(@"success");
+
+    NSLog(@"STACK: %@", STACK);
+  }
+  // 压入栈 jsonable
+  else if ([@"ObjectFactory::pushStackJsonable" isEqualToString:methodCall.method]) {
+    NSString* name = (NSString*) args[@"name"];
+    NSObject* data = (NSObject*) args[@"data"];
+
+    // todo release去掉日志
+    NSLog(@"ObjectFactory::压入栈 %@", data);
+
+    STACK[name] = data;
 
     methodResult(@"success");
 

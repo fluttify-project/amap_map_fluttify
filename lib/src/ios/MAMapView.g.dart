@@ -222,6 +222,11 @@ class MAMapView extends UIView  {
     return result;
   }
   
+  Future<double> get_distanceFilter({bool viewChannel = true}) async {
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_distanceFilter", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_pausesLocationUpdatesAutomatically({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_pausesLocationUpdatesAutomatically", {'refId': refId});
     return result;
@@ -734,6 +739,12 @@ class MAMapView extends UIView  {
   
   Future<void> set_userTrackingMode(MAUserTrackingMode userTrackingMode, {bool viewChannel = true}) async {
     await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_userTrackingMode', {'refId': refId, "userTrackingMode": userTrackingMode.index});
+  
+  
+  }
+  
+  Future<void> set_distanceFilter(double distanceFilter, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_distanceFilter', {'refId': refId, "distanceFilter": distanceFilter});
   
   
   }

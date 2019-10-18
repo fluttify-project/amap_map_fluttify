@@ -11,7 +11,7 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.PluginRegistry.Registrar
 
 // Dart端一次方法调用所存在的栈, 只有当MethodChannel传递参数受限时, 再启用这个容器
-val STACK = mutableMapOf<String, Int>()
+val STACK = mutableMapOf<String, Any>()
 // Dart端随机存取对象的容器
 val HEAP = mutableMapOf<Int, Any>()
 
@@ -50076,7 +50076,21 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
 
                 Log.d("ObjectFactory", "压入对象: ${HEAP[refId]?.javaClass}@${refId}")
 
-                STACK[name] = refId
+                HEAP[refId]?.run { STACK[name] = this }
+
+                methodResult.success("success")
+
+                // 打印当前STACK
+                Log.d("ObjectFactory", "STACK: $STACK")
+            }
+            // 压入栈 jsonable
+            "ObjectFactory::pushStackJsonable" -> {
+                val name = args["name"] as String
+                val data = args["data"]
+
+                Log.d("ObjectFactory", "压入jsonable: ${data?.javaClass}@${data}")
+
+                STACK[name] = data!!
 
                 methodResult.success("success")
 

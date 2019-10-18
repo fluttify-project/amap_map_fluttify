@@ -5,6 +5,10 @@ import 'package:amap_map_fluttify_example/utils/misc.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:flutter/material.dart';
 
+final _networkIcon = Uri.parse(
+    'https://w3.hoopchina.com.cn/30/a7/6a/30a76aea75aef69e4ea0e7d3dee552c7001.jpg');
+final _assetsIcon = Uri.parse('images/test_icon.png');
+
 class DrawPointScreen extends StatefulWidget {
   DrawPointScreen();
 
@@ -45,12 +49,16 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                       _getNextLatLng(),
                       title: '北京',
                       snippet: '描述',
-//                      iconUri: Uri.parse(
-//                          'https://w3.hoopchina.com.cn/30/a7/6a/30a76aea75aef69e4ea0e7d3dee552c7001.jpg'),
-                      iconUri: Uri.parse('images/test_icon.png'),
+//                      iconUri: _networkIcon,
+                      iconUri: _assetsIcon,
                     );
+                  },
+                ),
+                ListTile(
+                  title: Text('Marker添加点击事件'),
+                  onTap: () {
                     _controller?.setMarkerClickListener((marker) async {
-                      toast(await marker.title);
+                      toast('${await marker.title}, ${await marker.snippet}');
                     });
                   },
                 ),

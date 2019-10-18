@@ -19,6 +19,16 @@ class Marker {
       },
     );
   }
+
+  Future<String> get snippet {
+    return platform(
+      android: (_) => _androidModel.getSnippet(),
+      ios: (_) async {
+        final annotation = await _iosModel.get_annotation(viewChannel: false);
+        return annotation.get_subtitle();
+      },
+    );
+  }
 }
 
 class LatLng {
