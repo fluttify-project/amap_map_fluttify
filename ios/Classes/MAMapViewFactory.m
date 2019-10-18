@@ -2101,6 +2101,22 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@(result));
       },
       
+      @"MAMapView::get_distanceFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_distanceFilter");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 开始调用
+          CLLocationDistance result = ref.distanceFilter;
+      
+      
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
       @"MAMapView::get_pausesLocationUpdatesAutomatically": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_pausesLocationUpdatesAutomatically");
       
@@ -2744,6 +2760,20 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@"success");
       },
       
+      @"MAMapView::set_distanceFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_distanceFilter");
+      
+          // 参数
+          // jsonable参数
+          CLLocationDistance distanceFilter = [args[@"distanceFilter"] doubleValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          ref.distanceFilter = distanceFilter;
+          methodResult(@"success");
+      },
+      
       @"MAMapView::set_pausesLocationUpdatesAutomatically": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_pausesLocationUpdatesAutomatically");
       
@@ -3351,7 +3381,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   if ([overlay isKindOfClass:[MAPolyline class]])
   {
       MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:overlay];
-      
+
       // 宽度 比android端的粗一倍 这里除以2
       polylineRenderer.lineWidth    = [width doubleValue] / 2;
       // 颜色
@@ -3362,11 +3392,29 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           rgba >>= 8;
       }
       polylineRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
-      
-      // 这次调用完成后 清空栈
-      [STACK removeAllObjects];
       return polylineRenderer;
   }
+    
+  if ([overlay isKindOfClass:[MACircle class]])
+  {
+      MACircleRenderer *circleRenderer = [[MACircleRenderer alloc] initWithCircle:overlay];
+      
+      // 宽度
+      circleRenderer.lineWidth    = [width doubleValue] / 2;
+      
+      // 颜色
+      NSUInteger rgba = [color unsignedIntegerValue];
+      float components[4];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      circleRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+      return circleRenderer;
+  }
+    
+  // 这次调用完成后 清空栈
+  [STACK removeAllObjects];
   ////////////////////////////////////////////////////////////////////////////////
   
   return nil;

@@ -7,6 +7,7 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'enums.dart';
@@ -555,8 +556,10 @@ class AmapController {
             latLngList, latLngList.length);
 
         // 宽度和颜色需要设置到STACK里去
-        await ObjectFactory_iOS.pushStackJsonable('width', width);
-        await ObjectFactory_iOS.pushStackJsonable('color', color.value);
+        if (width != null)
+          await ObjectFactory_iOS.pushStackJsonable('width', width);
+        if (color != null)
+          await ObjectFactory_iOS.pushStackJsonable('color', color.value);
 
         // 设置参数
         await iosController.addOverlay(polyline);
@@ -564,6 +567,73 @@ class AmapController {
         pool
           ..add(polyline)
           ..addAll(latLngList);
+      },
+    );
+  }
+
+  /// 添加圆
+  ///
+  /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[color]
+  Future<void> addCircle(
+    LatLng point,
+    double radius, {
+    double width = 5,
+    Color color = Colors.black,
+  }) {
+    return platform(
+      android: (pool) async {
+//        final map = await androidController.getMap();
+//
+//        // 构造折线点
+//        List<com_amap_api_maps_model_LatLng> latLngList = [];
+//        for (final point in points) {
+//          final latLng = await ObjectFactory_Android
+//              .createcom_amap_api_maps_model_LatLng__double__double(
+//                  point.lat, point.lng);
+//          latLngList.add(latLng);
+//        }
+//
+//        // 构造折线参数
+//        final polylineOptions = await ObjectFactory_Android
+//            .createcom_amap_api_maps_model_PolylineOptions__();
+//
+//        // 添加参数
+//        await polylineOptions.addAll(latLngList);
+//        if (width != null) {
+//          await polylineOptions.width(width);
+//        }
+//        if (color != null) {
+//          await polylineOptions.color(Int32List.fromList([color.value])[0]);
+//        }
+//
+//        // 设置参数
+//        await map.addPolyline(polylineOptions);
+//
+//        pool
+//          ..add(map)
+//          ..add(polylineOptions)
+//          ..addAll(latLngList);
+      },
+      ios: (pool) async {
+        await iosController.set_delegate(IOSMapDelegate());
+
+        final latLng = await ObjectFactory_iOS.createCLLocationCoordinate2D(
+            point.lat, point.lng);
+
+        // 参数
+        final circle =
+            await MACircle.circleWithCenterCoordinateRadius(latLng, radius);
+
+        // 宽度和颜色需要设置到STACK里去
+        if (width != null)
+          await ObjectFactory_iOS.pushStackJsonable('width', width);
+        if (color != null)
+          await ObjectFactory_iOS.pushStackJsonable('color', color.value);
+
+        // 设置参数
+        await iosController.addOverlay(circle);
+
+        pool..add(circle);
       },
     );
   }

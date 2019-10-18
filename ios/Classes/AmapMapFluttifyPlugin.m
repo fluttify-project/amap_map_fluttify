@@ -162,6 +162,29 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           HEAP[@(result.hash)] = result;
           methodResult(@(result.hash));
       },
+      @"MACircle::circleWithCenterCoordinateRadius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 结构体参数
+          NSValue* coordValue = (NSValue*) HEAP[@([args[@"coord"] integerValue])];
+          CLLocationCoordinate2D coord;
+          [coordValue getValue:&coord];
+          // jsonable参数
+          CLLocationDistance radius = [args[@"radius"] doubleValue];
+      
+          // 调用对象引用
+      
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MACircle::circleWithCenterCoordinate(暂未实现参数打印)");
+      
+          // 开始调用
+          MACircle* result = [MACircle circleWithCenterCoordinate: coord radius: radius];
+      
+          // 调用结果
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
       @"MACircle::circleWithMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 结构体参数
@@ -182,6 +205,29 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // 返回值: 引用
           HEAP[@(result.hash)] = result;
           methodResult(@(result.hash));
+      },
+      @"MACircle::setCircleWithCenterCoordinateRadius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 结构体参数
+          NSValue* coordValue = (NSValue*) HEAP[@([args[@"coord"] integerValue])];
+          CLLocationCoordinate2D coord;
+          [coordValue getValue:&coord];
+          // jsonable参数
+          CLLocationDistance radius = [args[@"radius"] doubleValue];
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACircle* ref = (MACircle*) HEAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MACircle@%@::setCircleWithCenterCoordinate(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          BOOL result = [ref setCircleWithCenterCoordinate: coord radius: radius];
+      
+          // 调用结果
+          // 返回值: Value
+          methodResult(@(result));
       },
       @"MAArcRenderer::initWithArc": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
@@ -5207,6 +5253,22 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
       
+      @"MACircle::get_radius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MACircle::get_radius");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACircle* ref = (MACircle*) HEAP[@(refId)];
+      
+          // 开始调用
+          CLLocationDistance result = ref.radius;
+      
+      
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
       @"MACircle::get_boundingMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MACircle::get_boundingMapRect");
       
@@ -7894,6 +7956,22 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@(result));
       },
       
+      @"MAMapView::get_distanceFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_distanceFilter");
+      
+          // 引用对象
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          // 开始调用
+          CLLocationDistance result = ref.distanceFilter;
+      
+      
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
       @"MAMapView::get_pausesLocationUpdatesAutomatically": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_pausesLocationUpdatesAutomatically");
       
@@ -8702,6 +8780,20 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MACircle* ref = (MACircle*) HEAP[@(refId)];
       
           ref.coordinate = coordinate;
+          methodResult(@"success");
+      },
+      
+      @"MACircle::set_radius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MACircle::set_radius");
+      
+          // 参数
+          // jsonable参数
+          CLLocationDistance radius = [args[@"radius"] doubleValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACircle* ref = (MACircle*) HEAP[@(refId)];
+      
+          ref.radius = radius;
           methodResult(@"success");
       },
       
@@ -10130,6 +10222,20 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[@(refId)];
       
           ref.userTrackingMode = userTrackingMode;
+          methodResult(@"success");
+      },
+      
+      @"MAMapView::set_distanceFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_distanceFilter");
+      
+          // 参数
+          // jsonable参数
+          CLLocationDistance distanceFilter = [args[@"distanceFilter"] doubleValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+      
+          ref.distanceFilter = distanceFilter;
           methodResult(@"success");
       },
       
