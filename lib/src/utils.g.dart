@@ -37,4 +37,4 @@ class Ref {
 }
 
 /// 回调参数的释放池
-final kCallbackPool = <Ref>[];
+final kCallbackPool = <int, Ref>{};

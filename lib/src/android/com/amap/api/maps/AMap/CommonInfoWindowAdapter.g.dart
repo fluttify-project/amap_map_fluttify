@@ -13,7 +13,7 @@ mixin com_amap_api_maps_AMap_CommonInfoWindowAdapter on java_lang_Object {
 
   @mustCallSuper
   Future<com_amap_api_maps_InfoWindowParams> getInfoWindowParams(com_amap_api_maps_model_BasePointOverlay var1) {
-    kCallbackPool.add(var1);
+    kCallbackPool[var1.refId] = var1;
   }
   
 }

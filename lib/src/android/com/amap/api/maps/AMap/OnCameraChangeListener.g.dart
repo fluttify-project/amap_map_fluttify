@@ -13,12 +13,12 @@ mixin com_amap_api_maps_AMap_OnCameraChangeListener on java_lang_Object {
 
   @mustCallSuper
   Future<void> onCameraChange(com_amap_api_maps_model_CameraPosition var1) {
-    kCallbackPool.add(var1);
+    kCallbackPool[var1.refId] = var1;
   }
   
   @mustCallSuper
   Future<void> onCameraChangeFinish(com_amap_api_maps_model_CameraPosition var1) {
-    kCallbackPool.add(var1);
+    kCallbackPool[var1.refId] = var1;
   }
   
 }

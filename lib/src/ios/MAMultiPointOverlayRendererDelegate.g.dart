@@ -13,8 +13,8 @@ mixin MAMultiPointOverlayRendererDelegate on NSObject {
 
   @mustCallSuper
   Future<void> multiPointOverlayRendererDidItemTapped(MAMultiPointOverlayRenderer renderer, MAMultiPointItem item) {
-    kCallbackPool.add(renderer);
-    kCallbackPool.add(item);
+    kCallbackPool[renderer.refId] = renderer;
+    kCallbackPool[item.refId] = item;
   }
   
 }

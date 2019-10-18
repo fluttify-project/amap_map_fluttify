@@ -13,8 +13,8 @@ mixin com_amap_api_trace_TraceStatusListener on java_lang_Object {
 
   @mustCallSuper
   Future<void> onTraceStatus(List<com_amap_api_trace_TraceLocation> var1, List<com_amap_api_maps_model_LatLng> var2, String var3) {
-    kCallbackPool.addAll(var1);
-    kCallbackPool.addAll(var2);
+    kCallbackPool.addAll(Map.fromIterable(var1, key: (it) => it.refId, value: (it) => it));
+    kCallbackPool.addAll(Map.fromIterable(var2, key: (it) => it.refId, value: (it) => it));
   }
   
 }

@@ -13,7 +13,7 @@ mixin com_amap_api_maps_AMap_onMapPrintScreenListener on java_lang_Object {
 
   @mustCallSuper
   Future<void> onMapPrint(android_graphics_drawable_Drawable var1) {
-    kCallbackPool.add(var1);
+    kCallbackPool[var1.refId] = var1;
   }
   
 }

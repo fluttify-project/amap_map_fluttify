@@ -13,7 +13,7 @@ mixin com_amap_api_maps_AMap_OnMapTouchListener on java_lang_Object {
 
   @mustCallSuper
   Future<void> onTouch(android_view_MotionEvent var1) {
-    kCallbackPool.add(var1);
+    kCallbackPool[var1.refId] = var1;
   }
   
 }
