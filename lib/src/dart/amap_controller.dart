@@ -554,11 +554,12 @@ class AmapController {
         final polyline = await MAPolyline.polylineWithCoordinatesCount(
             latLngList, latLngList.length);
 
+        // 宽度和颜色需要设置到STACK里去
+        await ObjectFactory_iOS.pushStackJsonable('width', width);
+        await ObjectFactory_iOS.pushStackJsonable('color', color.value);
+
         // 设置参数
         await iosController.addOverlay(polyline);
-
-        // 宽度和颜色需要设置到STACK里去
-        ObjectFactory_iOS.pushStackJsonable('width', width);
 
         pool
           ..add(polyline)

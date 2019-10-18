@@ -3346,7 +3346,27 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"暂不支持有返回值的回调方法");
   
   ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
-  
+  NSNumber* width = (NSNumber*) STACK[@"width"];
+  NSNumber* color = (NSNumber*) STACK[@"color"];
+  if ([overlay isKindOfClass:[MAPolyline class]])
+  {
+      MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:overlay];
+      
+      // 宽度 比android端的粗一倍 这里除以2
+      polylineRenderer.lineWidth    = [width doubleValue] / 2;
+      // 颜色
+      NSUInteger rgba = [color unsignedIntegerValue];
+      float components[4];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      polylineRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+      
+      // 这次调用完成后 清空栈
+      [STACK removeAllObjects];
+      return polylineRenderer;
+  }
   ////////////////////////////////////////////////////////////////////////////////
   
   return nil;
