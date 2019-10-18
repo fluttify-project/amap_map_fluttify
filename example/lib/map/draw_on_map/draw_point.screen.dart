@@ -58,7 +58,10 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                   title: Text('Marker添加点击事件'),
                   onTap: () async {
                     _controller?.setMarkerClickListener((marker) async {
-                      toast('${await marker.title}, ${await marker.snippet}');
+                      final info =
+                          '${await marker.title}, ${await marker.snippet}';
+                      debugPrint(info);
+                      toast(info);
                     });
                   },
                 ),

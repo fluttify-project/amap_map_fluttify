@@ -44,6 +44,10 @@ class ObjectFactory_Android {
     await _channel.invokeMethod('ObjectFactory::pushStack', {'name': name, 'refId': ref.refId});
   }
 
+  static Future<void> pushStackJsonable(String name, dynamic jsonable) async {
+    await _channel.invokeMethod('ObjectFactory::pushStackJsonable', {'name': name, 'data': jsonable});
+  }
+
   static Future<void> clearStack() async {
     await _channel.invokeMethod('ObjectFactory::clearStack');
   }

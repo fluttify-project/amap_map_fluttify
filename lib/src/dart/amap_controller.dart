@@ -509,6 +509,7 @@ class AmapController {
       android: (pool) async {
         final map = await androidController.getMap();
 
+        // 构造折线点
         List<com_amap_api_maps_model_LatLng> latLngList = [];
         for (final point in points) {
           final latLng = await ObjectFactory_Android
@@ -516,9 +517,12 @@ class AmapController {
                   point.lat, point.lng);
           latLngList.add(latLng);
         }
+
+        // 构造折线参数
         final polylineOptions = await ObjectFactory_Android
             .createcom_amap_api_maps_model_PolylineOptions__();
 
+        // 添加参数
         await polylineOptions.addAll(latLngList);
         if (width != null) {
           await polylineOptions.width(width);
@@ -527,6 +531,7 @@ class AmapController {
           await polylineOptions.color(Int32List.fromList([color.value])[0]);
         }
 
+        // 设置参数
         await map.addPolyline(polylineOptions);
 
         pool
@@ -537,6 +542,7 @@ class AmapController {
       ios: (pool) async {
         await iosController.set_delegate(IOSMapDelegate());
 
+        // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
         for (final point in points) {
           final latLng = await ObjectFactory_iOS.createCLLocationCoordinate2D(
@@ -544,9 +550,15 @@ class AmapController {
           latLngList.add(latLng);
         }
 
+        // 构造折线参数
         final polyline = await MAPolyline.polylineWithCoordinatesCount(
             latLngList, latLngList.length);
+
+        // 设置参数
         await iosController.addOverlay(polyline);
+
+        // 宽度和颜色需要设置到STACK里去
+        ObjectFactory_iOS.pushStackJsonable('width', width);
 
         pool
           ..add(polyline)

@@ -6,8 +6,8 @@
 #import <Flutter/Flutter.h>
 #import <MAMapKit/MAMapKit.h>
 
+extern NSMutableDictionary<NSString*, NSObject*> *STACK;
 extern NSMutableDictionary<NSNumber*, NSObject*> *HEAP;
-extern NSMutableDictionary<NSString*, NSNumber*> *STACK;
 
 @interface MAMapViewFactory : NSObject <FlutterPlatformViewFactory>
 - (instancetype)initWithRegistrar:(NSObject <FlutterPluginRegistrar> *)registrar;
