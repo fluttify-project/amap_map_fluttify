@@ -12079,9 +12079,11 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
   // 是否一个对象
   if ([@"ObjectFactory::release" isEqualToString:methodCall.method]) {
-    NSLog(@"ObjectFactory::释放对象: %@", (NSNumber *) args[@"refId"]);
+    NSNumber* refId = (NSNumber *) args[@"refId"];
 
-    [HEAP removeObjectForKey:(NSNumber *) args[@"refId"]];
+    NSLog(@"ObjectFactory::释放对象: %@@%@", NSStringFromClass([HEAP[refId] class]), refId);
+
+    [HEAP removeObjectForKey:refId];
     methodResult(@"success");
 
     NSLog(@"HEAP: %@", HEAP);
@@ -12097,10 +12099,11 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   }
   // 压入栈
   else if ([@"ObjectFactory::pushStack" isEqualToString:methodCall.method]) {
-    NSLog(@"ObjectFactory::压入栈");
-
     NSString* name = (NSString*) args[@"name"];
     NSNumber* refId = (NSNumber*) args[@"refId"];
+
+    // todo release去掉日志
+    NSLog(@"ObjectFactory::压入栈 %@@%@", HEAP[refId], refId);
 
     STACK[name] = refId;
 

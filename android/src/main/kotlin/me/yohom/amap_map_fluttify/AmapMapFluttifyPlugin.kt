@@ -50050,7 +50050,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             }
             // 释放一个对象
             "ObjectFactory::release" -> {
-                Log.d("ObjectFactory", "释放对象: ${args["refId"]}")
+                Log.d("ObjectFactory", "释放对象: ${HEAP[args["refId"] as Int]?.javaClass}@${args["refId"]}")
 
                 HEAP.remove(args["refId"] as Int)
 
@@ -50071,10 +50071,10 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             }
             // 压入栈
             "ObjectFactory::pushStack" -> {
-                Log.d("ObjectFactory", "压入对象: ${args["refId"]}")
-
                 val name = args["name"] as String
                 val refId = args["refId"] as Int
+
+                Log.d("ObjectFactory", "压入对象: ${HEAP[refId]?.javaClass}@${refId}")
 
                 STACK[name] = refId
 
