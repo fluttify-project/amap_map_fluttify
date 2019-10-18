@@ -23,11 +23,7 @@ class _CodeInteractionScreenState extends State<CodeInteractionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('调用方法交互'),
-        backgroundColor: Colors.black,
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: const Text('调用方法交互')),
       body: DecoratedColumn(
         children: <Widget>[
           Flexible(

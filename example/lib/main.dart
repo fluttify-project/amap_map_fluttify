@@ -21,11 +21,7 @@ class _MyAppState extends State<MyApp> {
     return OKToast(
       child: MaterialApp(
         home: Scaffold(
-          appBar: AppBar(
-            title: const Text('AMaps examples'),
-            backgroundColor: Colors.black,
-            centerTitle: true,
-          ),
+          appBar: AppBar(title: const Text('AMaps examples')),
           backgroundColor: Colors.grey.shade200,
           body: MapDemo(),
         ),

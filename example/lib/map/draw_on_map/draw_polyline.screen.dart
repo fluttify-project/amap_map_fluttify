@@ -18,9 +18,7 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('绘制线'),
-      ),
+      appBar: AppBar(title: const Text('绘制线')),
       body: DecoratedColumn(
         children: <Widget>[
           Flexible(

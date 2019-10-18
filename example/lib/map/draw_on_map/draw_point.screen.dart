@@ -50,7 +50,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                       iconUri: Uri.parse('images/test_icon.png'),
                     );
                     _controller?.setMarkerClickListener((marker) async {
-                      toast(await marker.title);
+                      toast('${await marker.title}, ${await marker.snippet}');
                     });
                   },
                 ),

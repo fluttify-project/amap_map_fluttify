@@ -13,9 +13,7 @@ class _DrawPolygonScreenState extends State<DrawPolygonScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('绘制多边形'),
-      ),
+      appBar: AppBar(title: const Text('绘制多边形')),
     );
   }
 
