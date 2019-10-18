@@ -3398,6 +3398,32 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       return polylineRenderer;
   }
     
+  // 多边形
+  if ([overlay isKindOfClass:[MAPolygon class]])
+  {
+      MAPolygonRenderer *polygonRenderer = [[MAPolygonRenderer alloc] initWithPolygon:overlay];
+
+      // 宽度 比android端的粗一倍 这里除以2
+      polygonRenderer.lineWidth    = [width doubleValue] / 2;
+      // 描边颜色
+      NSUInteger rgba = [strokeColor unsignedIntegerValue];
+      float components[4];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      polygonRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+      
+      // 填充颜色
+      rgba = [fillColor unsignedIntegerValue];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      polygonRenderer.fillColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+      return polygonRenderer;
+  }
+    
   // 圆
   if ([overlay isKindOfClass:[MACircle class]])
   {
