@@ -577,6 +577,89 @@ class AmapController {
     );
   }
 
+  /// 添加多边形
+  ///
+  /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[strokeColor]
+  Future<void> addPolygon(
+    List<LatLng> points, {
+    double width = 5,
+    Color fillColor = Colors.white,
+    Color strokeColor = Colors.black,
+  }) {
+    return platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        // 构造折线点
+        List<com_amap_api_maps_model_LatLng> latLngList = [];
+        for (final point in points) {
+          final latLng = await ObjectFactory_Android
+              .createcom_amap_api_maps_model_LatLng__double__double(
+                  point.lat, point.lng);
+          latLngList.add(latLng);
+        }
+
+        // 构造参数
+        final polygonOptions = await ObjectFactory_Android
+            .createcom_amap_api_maps_model_PolygonOptions__();
+
+        // 添加参数
+        await polygonOptions.addAll(latLngList);
+        if (width != null) {
+          await polygonOptions.strokeWidth(width);
+        }
+        if (strokeColor != null) {
+          await polygonOptions
+              .strokeColor(Int32List.fromList([strokeColor.value])[0]);
+        }
+        if (fillColor != null) {
+          await polygonOptions
+              .fillColor(Int32List.fromList([fillColor.value])[0]);
+        }
+
+        // 设置参数
+        await map.addPolygon(polygonOptions);
+
+        pool
+          ..add(map)
+          ..add(polygonOptions)
+          ..addAll(latLngList);
+      },
+      ios: (pool) async {
+        await iosController.set_delegate(IOSMapDelegate());
+
+        // 构造折线点
+        List<CLLocationCoordinate2D> latLngList = [];
+        for (final point in points) {
+          final latLng = await ObjectFactory_iOS.createCLLocationCoordinate2D(
+              point.lat, point.lng);
+          latLngList.add(latLng);
+        }
+
+        // 构造折线参数
+        final polygon = await MAPolygon.polygonWithCoordinatesCount(
+            latLngList, latLngList.length);
+
+        // 宽度和颜色需要设置到STACK里去
+        if (width != null)
+          await ObjectFactory_iOS.pushStackJsonable('width', width);
+        if (strokeColor != null)
+          await ObjectFactory_iOS.pushStackJsonable(
+              'strokeColor', strokeColor.value);
+        if (fillColor != null)
+          await ObjectFactory_iOS.pushStackJsonable(
+              'fillColor', fillColor.value);
+
+        // 设置参数
+        await iosController.addOverlay(polygon);
+
+        pool
+          ..add(polygon)
+          ..addAll(latLngList);
+      },
+    );
+  }
+
   /// 添加圆
   ///
   /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[strokeColor]
@@ -647,6 +730,7 @@ class AmapController {
     );
   }
 
+  /// 设置marker监听事件
   Future<void> setMarkerClickListener(OnMarkerClick onMarkerClicked) async {
     return platform(
       android: (pool) async {
