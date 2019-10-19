@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the addMarker method from the AmapController class, for the Dart programming language.">
+  <title>addMarker method - AmapController class - amap_map_fluttify library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">amap_map_fluttify</a></li>
+    <li><a href="amap_map_fluttify/amap_map_fluttify-library.html">amap_map_fluttify</a></li>
+    <li><a href="amap_map_fluttify/AmapController-class.html">AmapController</a></li>
+    <li class="self-crumb">addMarker method</li>
+  </ol>
+  <div class="self-name">addMarker</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">amap_map_fluttify</a></li>
+      <li><a href="amap_map_fluttify/amap_map_fluttify-library.html">amap_map_fluttify</a></li>
+      <li><a href="amap_map_fluttify/AmapController-class.html">AmapController</a></li>
+      <li class="self-crumb">addMarker method</li>
+    </ol>
+    
+    <h5>AmapController class</h5>
+    <ol>
+      <li class="section-title"><a href="amap_map_fluttify/AmapController-class.html#constructors">Constructors</a></li>
+      <li><a href="amap_map_fluttify/AmapController/AmapController.android.html">android</a></li>
+      <li><a href="amap_map_fluttify/AmapController/AmapController.ios.html">ios</a></li>
+    
+      <li class="section-title">
+        <a href="amap_map_fluttify/AmapController-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="amap_map_fluttify/AmapController/androidController.html">androidController</a></li>
+      <li><a href="amap_map_fluttify/AmapController/iosController.html">iosController</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="amap_map_fluttify/AmapController-class.html#instance-methods">Methods</a></li>
+      <li><a href="amap_map_fluttify/AmapController/addCircle.html">addCircle</a></li>
+      <li><a href="amap_map_fluttify/AmapController/addMarker.html">addMarker</a></li>
+      <li><a href="amap_map_fluttify/AmapController/addPolygon.html">addPolygon</a></li>
+      <li><a href="amap_map_fluttify/AmapController/addPolyline.html">addPolyline</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setAllGesturesEnabled.html">setAllGesturesEnabled</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setCenterCoordinate.html">setCenterCoordinate</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setMapType.html">setMapType</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setMarkerClickListener.html">setMarkerClickListener</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setRotateGesturesEnabled.html">setRotateGesturesEnabled</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setScrollGesturesEnabled.html">setScrollGesturesEnabled</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setTiltGesturesEnabled.html">setTiltGesturesEnabled</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setZoomGesturesEnabled.html">setZoomGesturesEnabled</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setZoomLevel.html">setZoomLevel</a></li>
+      <li><a href="amap_map_fluttify/AmapController/showCompass.html">showCompass</a></li>
+      <li><a href="amap_map_fluttify/AmapController/showIndoorMap.html">showIndoorMap</a></li>
+      <li><a href="amap_map_fluttify/AmapController/showLocateControl.html">showLocateControl</a></li>
+      <li><a href="amap_map_fluttify/AmapController/showMyLocation.html">showMyLocation</a></li>
+      <li><a href="amap_map_fluttify/AmapController/showScaleControl.html">showScaleControl</a></li>
+      <li><a href="amap_map_fluttify/AmapController/showTraffic.html">showTraffic</a></li>
+      <li><a href="amap_map_fluttify/AmapController/showZoomControl.html">showZoomControl</a></li>
+      <li><a href="amap_map_fluttify/AmapController/zoomIn.html">zoomIn</a></li>
+      <li><a href="amap_map_fluttify/AmapController/zoomOut.html">zoomOut</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="amap_map_fluttify/AmapController-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1><span class="kind-method">addMarker</span> method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="dart-async/Future-class.html">Future</a></span>
+            <span class="name ">addMarker</span>
+(<wbr><span class="parameter" id="addMarker-param-context"><span class="type-annotation">BuildContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="addMarker-param-point"><span class="type-annotation"><a href="amap_map_fluttify/LatLng-class.html">LatLng</a></span> <span class="parameter-name">point</span>, {</span> <span class="parameter" id="addMarker-param-title"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">title</span>, </span> <span class="parameter" id="addMarker-param-snippet"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">snippet</span>, </span> <span class="parameter" id="addMarker-param-iconUri"><span class="type-annotation"><a href="dart-core/Uri-class.html">Uri</a></span> <span class="parameter-name">iconUri</span></span> })
+      
+    </section>
+    <section class="desc markdown">
+      <p>添加marker</p>
+<p>在纬度<code>lat</code>, 经度<code>lng</code>的位置添加marker, 并设置标题<code>title</code>和副标题<code>snippet</code>, <code>iconUri</code>
+可以是图片url, asset路径或者文件路径</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">Future addMarker(
+  BuildContext context,
+  LatLng point, {
+  String title,
+  String snippet,
+  Uri iconUri,
+}) {
+  Future&lt;Uint8List&gt; _getImageData(Uri iconUri) async {
+    Uint8List iconData;
+    switch (iconUri.scheme) {
+      &#47;&#47; 网络图片
+      case &#39;https&#39;:
+      case &#39;http&#39;:
+        HttpClient httpClient = HttpClient();
+        var request = await httpClient.getUrl(iconUri);
+        var response = await request.close();
+        iconData = await consolidateHttpClientResponseBytes(response);
+        break;
+      &#47;&#47; 文件图片
+      case &#39;file&#39;:
+        final imageFile = File.fromUri(iconUri);
+        iconData = imageFile.readAsBytesSync();
+        break;
+      &#47;&#47; asset图片
+      default:
+        &#47;&#47; asset的bug描述(https:&#47;&#47;github.com&#47;flutter&#47;flutter&#47;issues&#47;24865):
+        &#47;&#47; android和ios平台上都取了1.0密度的图片, android上就显示了1.0密度的图片, 而ios
+        &#47;&#47; 平台上使用的图片也是1.0密度, 但是根据设备密度进行了对应的放大, 导致了android和ios
+        &#47;&#47; 两端的图片的大小不一致, 这里只对android根据密度选择原始图片, ios原封不动
+        &#47;&#47; 这样做android端能够保证完美, ios端的话图片会有点糊, 因为原始图片是1.0密度, 但是这样
+        &#47;&#47; 的话两端大小是一致的, 如果要求再高一点的话, ios这边对图片根据设备密度选择好图片后, 再进行对应密度
+        &#47;&#47; 的缩小, 就是完美的了, 但是处理起来比较麻烦, 这里就不去处理了
+        if (Platform.isAndroid) {
+          final byteData = await rootBundle
+              .load(AmapService.toResolutionAware(context, iconUri.path));
+          iconData = byteData.buffer.asUint8List();
+        } else {
+          final byteData = await rootBundle.load(iconUri.path);
+          iconData = byteData.buffer.asUint8List();
+        }
+        break;
+    }
+    return iconData;
+  }
+
+  final lat = point.lat;
+  final lng = point.lng;
+  return platform(
+    android: (pool) async {
+      &#47;&#47; 获取地图
+      final map = await androidController.getMap();
+
+      &#47;&#47; marker经纬度
+      final latLng = await ObjectFactory_Android
+          .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
+
+      &#47;&#47; marker配置
+      final markerOption = await ObjectFactory_Android
+          .createcom_amap_api_maps_model_MarkerOptions__();
+
+      &#47;&#47; 设置marker经纬度
+      await markerOption.position(latLng);
+      &#47;&#47; 设置marker标题
+      if (title != null) {
+        await markerOption.title(title);
+      }
+      &#47;&#47; 设置marker副标题
+      if (snippet != null) {
+        await markerOption.snippet(snippet);
+      }
+      &#47;&#47; 设置marker图标
+      if (iconUri != null) {
+        Uint8List iconData = await _getImageData(iconUri);
+
+        final bitmap =
+            await ObjectFactory_Android.createandroid_graphics_Bitmap(
+                iconData);
+        final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
+            .fromBitmap(bitmap);
+        await markerOption.icon(icon);
+
+        pool..add(bitmap)..add(icon);
+      }
+
+      final marker = await map.addMarker(markerOption);
+
+      pool..add(map)..add(latLng)..add(markerOption)..add(marker);
+    },
+    ios: (pool) async {
+      await iosController.set_delegate(IOSMapDelegate());
+
+      &#47;&#47; 创建marker
+      final pointAnnotation =
+          await ObjectFactory_iOS.createMAPointAnnotation();
+
+      final coordinate =
+          await ObjectFactory_iOS.createCLLocationCoordinate2D(lat, lng);
+
+      &#47;&#47; 设置经纬度
+      await pointAnnotation.set_coordinate(coordinate);
+
+      &#47;&#47; 设置标题
+      if (title != null) {
+        await pointAnnotation.set_title(title);
+      }
+      &#47;&#47; 设置副标题
+      if (snippet != null) {
+        await pointAnnotation.set_subtitle(snippet);
+      }
+      &#47;&#47; 设置图片
+      &#47;&#47; 设置marker图标
+      if (iconUri != null) {
+        Uint8List iconData = await _getImageData(iconUri);
+
+        final icon = await ObjectFactory_iOS.createUIImage(iconData);
+
+        &#47;&#47; 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
+        &#47;&#47; 供ios的回调去获取
+        await ObjectFactory_iOS.pushStack(&#39;icon&#39;, icon);
+
+        pool..add(icon);
+      }
+
+      await iosController.addAnnotation(pointAnnotation);
+
+      pool..add(pointAnnotation)..add(coordinate);
+    },
+  );
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    amap_map_fluttify 0.0.4
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>
