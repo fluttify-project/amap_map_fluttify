@@ -9,6 +9,7 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
   // 生成getters
   Future<MACustomBuildingOverlay> get_customBuildingOverlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayRenderer::get_customBuildingOverlay", {'refId': refId});
+    kNativeObjectPool.add(MACustomBuildingOverlay()..refId = result);
     return MACustomBuildingOverlay()..refId = result;
   }
   
@@ -32,6 +33,7 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MACustomBuildingOverlayRenderer()..refId = result);
       return MACustomBuildingOverlayRenderer()..refId = result;
     }
   }

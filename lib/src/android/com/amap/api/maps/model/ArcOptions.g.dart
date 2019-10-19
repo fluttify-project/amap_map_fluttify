@@ -28,6 +28,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_ArcOptions()..refId = result);
       return com_amap_api_maps_model_ArcOptions()..refId = result;
     }
   }
@@ -47,6 +48,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_ArcOptions()..refId = result);
       return com_amap_api_maps_model_ArcOptions()..refId = result;
     }
   }
@@ -66,6 +68,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_ArcOptions()..refId = result);
       return com_amap_api_maps_model_ArcOptions()..refId = result;
     }
   }
@@ -85,6 +88,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_ArcOptions()..refId = result);
       return com_amap_api_maps_model_ArcOptions()..refId = result;
     }
   }
@@ -104,6 +108,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_ArcOptions()..refId = result);
       return com_amap_api_maps_model_ArcOptions()..refId = result;
     }
   }
@@ -123,6 +128,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -142,6 +148,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -161,6 +168,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -180,6 +188,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -199,6 +208,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
       return com_amap_api_maps_model_LatLng()..refId = result;
     }
   }
@@ -218,6 +228,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
       return com_amap_api_maps_model_LatLng()..refId = result;
     }
   }
@@ -237,6 +248,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
       return com_amap_api_maps_model_LatLng()..refId = result;
     }
   }

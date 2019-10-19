@@ -9,26 +9,31 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
   // 生成getters
   Future<com_amap_api_maps_model_LatLng> get_target() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.CameraPosition::get_target", {'refId': refId});
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
     return com_amap_api_maps_model_LatLng()..refId = result;
   }
   
   Future<double> get_zoom() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.CameraPosition::get_zoom", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_tilt() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.CameraPosition::get_tilt", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_bearing() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.CameraPosition::get_bearing", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_isAbroad() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.CameraPosition::get_isAbroad", {'refId': refId});
+  
     return result;
   }
   
@@ -52,6 +57,7 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition()..refId = result);
       return com_amap_api_maps_model_CameraPosition()..refId = result;
     }
   }
@@ -71,6 +77,7 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition_Builder()..refId = result);
       return com_amap_api_maps_model_CameraPosition_Builder()..refId = result;
     }
   }

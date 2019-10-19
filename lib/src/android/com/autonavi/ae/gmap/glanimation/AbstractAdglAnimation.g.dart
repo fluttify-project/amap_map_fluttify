@@ -28,6 +28,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -47,6 +48,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

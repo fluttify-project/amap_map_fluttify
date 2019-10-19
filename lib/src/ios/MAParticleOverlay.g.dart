@@ -9,6 +9,7 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
   // 生成getters
   Future<MAParticleOverlayOptions> get_overlayOption() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlay::get_overlayOption", {'refId': refId});
+    kNativeObjectPool.add(MAParticleOverlayOptions()..refId = result);
     return MAParticleOverlayOptions()..refId = result;
   }
   
@@ -32,6 +33,7 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAParticleOverlay()..refId = result);
       return MAParticleOverlay()..refId = result;
     }
   }
@@ -51,6 +53,7 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

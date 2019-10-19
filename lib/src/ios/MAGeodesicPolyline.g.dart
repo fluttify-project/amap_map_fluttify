@@ -28,6 +28,7 @@ class MAGeodesicPolyline extends MAPolyline  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAGeodesicPolyline()..refId = result);
       return MAGeodesicPolyline()..refId = result;
     }
   }
@@ -47,6 +48,7 @@ class MAGeodesicPolyline extends MAPolyline  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAGeodesicPolyline()..refId = result);
       return MAGeodesicPolyline()..refId = result;
     }
   }
@@ -66,6 +68,7 @@ class MAGeodesicPolyline extends MAPolyline  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -85,6 +88,7 @@ class MAGeodesicPolyline extends MAPolyline  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

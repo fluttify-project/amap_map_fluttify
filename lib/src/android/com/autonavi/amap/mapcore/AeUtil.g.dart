@@ -28,6 +28,7 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -47,6 +48,7 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = result);
       return com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = result;
     }
   }
@@ -66,6 +68,7 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

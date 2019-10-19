@@ -28,6 +28,7 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -47,6 +48,7 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -66,6 +68,7 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

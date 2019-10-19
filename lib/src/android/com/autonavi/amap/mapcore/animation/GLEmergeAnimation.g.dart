@@ -9,6 +9,7 @@ class com_autonavi_amap_mapcore_animation_GLEmergeAnimation extends java_lang_Ob
   // 生成getters
   Future<com_amap_api_maps_model_LatLng> get_mStartPoint() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLEmergeAnimation::get_mStartPoint", {'refId': refId});
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
     return com_amap_api_maps_model_LatLng()..refId = result;
   }
   

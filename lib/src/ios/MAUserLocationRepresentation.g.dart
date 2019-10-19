@@ -9,21 +9,25 @@ class MAUserLocationRepresentation extends NSObject  {
   // 生成getters
   Future<bool> get_showsAccuracyRing() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_showsAccuracyRing", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_showsHeadingIndicator() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_showsHeadingIndicator", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_lineWidth() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_lineWidth", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_enablePulseAnnimation() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_enablePulseAnnimation", {'refId': refId});
+  
     return result;
   }
   

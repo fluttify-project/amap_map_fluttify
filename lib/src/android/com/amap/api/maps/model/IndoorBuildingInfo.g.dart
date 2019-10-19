@@ -9,21 +9,25 @@ class com_amap_api_maps_model_IndoorBuildingInfo extends java_lang_Object  {
   // 生成getters
   Future<String> get_activeFloorName() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorName", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_activeFloorIndex() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorIndex", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_poiid() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.IndoorBuildingInfo::get_poiid", {'refId': refId});
+  
     return result;
   }
   
   Future<List<int>> get_floor_indexs() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_indexs", {'refId': refId});
+  
     return result;
   }
   

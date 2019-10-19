@@ -545,7 +545,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 引用回调参数
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
+  // 枚举回调参数
   NSNumber* argnewState = @((NSInteger) newState);
+  // 枚举回调参数
   NSNumber* argoldState = @((NSInteger) oldState);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState" arguments:@{@"mapView": argmapView, @"view": argview, @"newState": argnewState, @"oldState": argoldState}];
@@ -690,6 +692,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 枚举回调参数
   NSNumber* argmode = @((NSInteger) mode);
   // primitive回调参数
   NSNumber* arganimated = @(animated);

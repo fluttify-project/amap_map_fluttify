@@ -28,6 +28,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAPolyline()..refId = result);
       return MAPolyline()..refId = result;
     }
   }
@@ -47,6 +48,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAPolyline()..refId = result);
       return MAPolyline()..refId = result;
     }
   }
@@ -66,6 +68,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -85,6 +88,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

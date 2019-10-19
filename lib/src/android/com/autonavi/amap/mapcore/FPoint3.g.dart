@@ -9,6 +9,7 @@ class com_autonavi_amap_mapcore_FPoint3 extends java_lang_Object  {
   // 生成getters
   Future<int> get_colorIndex() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.FPoint3::get_colorIndex", {'refId': refId});
+  
     return result;
   }
   
@@ -37,6 +38,7 @@ class com_autonavi_amap_mapcore_FPoint3 extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

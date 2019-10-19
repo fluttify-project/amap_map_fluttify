@@ -9,16 +9,19 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
   // 生成getters
   Future<int> get_pivotX() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotX", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_pivotY() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotY", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_angleDelta() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_angleDelta", {'refId': refId});
+  
     return result;
   }
   
@@ -59,6 +62,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = result);
       return com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = result;
     }
   }
@@ -78,6 +82,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -97,6 +102,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -116,6 +122,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

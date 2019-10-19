@@ -9,31 +9,37 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
   // 生成getters
   Future<int> get_width() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::get_width", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_height() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::get_height", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_isGestureScaleByMapCenter() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::get_isGestureScaleByMapCenter", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_isUseAnchor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::get_isUseAnchor", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_anchorX() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::get_anchorX", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_anchorY() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::get_anchorY", {'refId': refId});
+  
     return result;
   }
   
@@ -92,6 +98,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -111,6 +118,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -130,6 +138,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -149,6 +158,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -168,6 +178,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

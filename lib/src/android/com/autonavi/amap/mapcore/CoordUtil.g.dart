@@ -28,6 +28,7 @@ class com_autonavi_amap_mapcore_CoordUtil extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

@@ -14,61 +14,61 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   @mustCallSuper
   Future<void> remove() {
   
-    debugPrint('remove::kCallbackPool: $kCallbackPool');
+    debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> destroy(bool var1) {
   
-    debugPrint('destroy::kCallbackPool: $kCallbackPool');
+    debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> clearTileCache() {
   
-    debugPrint('clearTileCache::kCallbackPool: $kCallbackPool');
+    debugPrint('clearTileCache::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<String> getId() {
   
-    debugPrint('getId::kCallbackPool: $kCallbackPool');
+    debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setZIndex(double var1) {
   
-    debugPrint('setZIndex::kCallbackPool: $kCallbackPool');
+    debugPrint('setZIndex::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<double> getZIndex() {
   
-    debugPrint('getZIndex::kCallbackPool: $kCallbackPool');
+    debugPrint('getZIndex::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setVisible(bool var1) {
   
-    debugPrint('setVisible::kCallbackPool: $kCallbackPool');
+    debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isVisible() {
   
-    debugPrint('isVisible::kCallbackPool: $kCallbackPool');
+    debugPrint('isVisible::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_ITileOverlay var1) {
   
-    debugPrint('equalsRemote::kCallbackPool: $kCallbackPool');
+    debugPrint('equalsRemote::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> hashCodeRemote() {
   
-    debugPrint('hashCodeRemote::kCallbackPool: $kCallbackPool');
+    debugPrint('hashCodeRemote::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

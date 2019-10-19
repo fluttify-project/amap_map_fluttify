@@ -9,36 +9,43 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo extends java_lang_Ob
   // 生成getters
   Future<int> get_mGestureState() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mGestureState", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_mGestureType() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mGestureType", {'refId': refId});
+  
     return result;
   }
   
   Future<List<double>> get_mLocation() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mLocation", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mScale() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mScale", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mRotation() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mRotation", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mVeLocityFloat() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mVeLocityFloat", {'refId': refId});
+  
     return result;
   }
   
   Future<List<double>> get_mVelocityPoint() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mVelocityPoint", {'refId': refId});
+  
     return result;
   }
   

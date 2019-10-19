@@ -28,6 +28,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -47,6 +48,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -66,6 +68,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -85,6 +88,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -104,6 +108,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -123,6 +128,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -142,6 +148,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -161,6 +168,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -180,6 +188,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -199,6 +208,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -218,6 +228,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -237,6 +248,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -256,6 +268,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -275,6 +288,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -294,6 +308,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -313,6 +328,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(android_content_Context()..refId = result);
       return android_content_Context()..refId = result;
     }
   }
@@ -332,6 +348,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -351,6 +368,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -370,6 +388,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -389,6 +408,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -408,6 +428,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -427,6 +448,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -446,6 +468,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -465,6 +488,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -484,6 +508,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -503,6 +528,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -522,6 +548,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -541,6 +568,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -560,6 +588,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -579,6 +608,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -598,6 +628,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -617,6 +648,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -636,6 +668,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -655,6 +688,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_ae_gmap_GLMapState()..refId = result);
       return com_autonavi_ae_gmap_GLMapState()..refId = result;
     }
   }
@@ -674,6 +708,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_ae_gmap_GLMapState()..refId = result);
       return com_autonavi_ae_gmap_GLMapState()..refId = result;
     }
   }
@@ -693,6 +728,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_ae_gmap_GLMapState()..refId = result);
       return com_autonavi_ae_gmap_GLMapState()..refId = result;
     }
   }
@@ -712,6 +748,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -731,6 +768,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -750,6 +788,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -793,6 +832,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -812,6 +852,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -831,6 +872,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -850,6 +892,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -869,6 +912,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -888,6 +932,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -907,6 +952,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -926,6 +972,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -945,6 +992,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -964,6 +1012,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -983,6 +1032,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1002,6 +1052,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1021,6 +1072,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1040,6 +1092,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1059,6 +1112,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1078,6 +1132,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1097,6 +1152,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1116,6 +1172,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1135,6 +1192,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1154,6 +1212,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1173,6 +1232,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1192,6 +1252,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1211,6 +1272,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1230,6 +1292,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1249,6 +1312,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1268,6 +1332,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1287,6 +1352,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1306,6 +1372,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1325,6 +1392,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1344,6 +1412,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1363,6 +1432,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1382,6 +1452,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1401,6 +1472,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1420,6 +1492,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1439,6 +1512,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1458,6 +1532,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1477,6 +1552,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1496,6 +1572,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1515,6 +1592,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1534,6 +1612,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1553,6 +1632,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1572,6 +1652,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1591,6 +1672,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1610,6 +1692,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1629,6 +1712,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1648,6 +1732,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1667,6 +1752,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1686,6 +1772,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1705,6 +1792,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1724,6 +1812,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1743,6 +1832,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1762,6 +1852,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

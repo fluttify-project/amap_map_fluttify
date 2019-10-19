@@ -14,7 +14,7 @@ mixin com_amap_api_maps_AMap_OnMapLoadedListener on java_lang_Object {
   @mustCallSuper
   Future<void> onMapLoaded() {
   
-    debugPrint('onMapLoaded::kCallbackPool: $kCallbackPool');
+    debugPrint('onMapLoaded::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

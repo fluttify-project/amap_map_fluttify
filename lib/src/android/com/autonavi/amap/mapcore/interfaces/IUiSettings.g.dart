@@ -14,205 +14,205 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   @mustCallSuper
   Future<bool> isIndoorSwitchEnabled() {
   
-    debugPrint('isIndoorSwitchEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('isIndoorSwitchEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setIndoorSwitchEnabled(bool var1) {
   
-    debugPrint('setIndoorSwitchEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('setIndoorSwitchEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setScaleControlsEnabled(bool var1) {
   
-    debugPrint('setScaleControlsEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('setScaleControlsEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setZoomControlsEnabled(bool var1) {
   
-    debugPrint('setZoomControlsEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('setZoomControlsEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setCompassEnabled(bool var1) {
   
-    debugPrint('setCompassEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('setCompassEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setMyLocationButtonEnabled(bool var1) {
   
-    debugPrint('setMyLocationButtonEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('setMyLocationButtonEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setScrollGesturesEnabled(bool var1) {
   
-    debugPrint('setScrollGesturesEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('setScrollGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setZoomGesturesEnabled(bool var1) {
   
-    debugPrint('setZoomGesturesEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('setZoomGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setTiltGesturesEnabled(bool var1) {
   
-    debugPrint('setTiltGesturesEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('setTiltGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setRotateGesturesEnabled(bool var1) {
   
-    debugPrint('setRotateGesturesEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('setRotateGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setAllGesturesEnabled(bool var1) {
   
-    debugPrint('setAllGesturesEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('setAllGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setLogoPosition(int var1) {
   
-    debugPrint('setLogoPosition::kCallbackPool: $kCallbackPool');
+    debugPrint('setLogoPosition::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setZoomPosition(int var1) {
   
-    debugPrint('setZoomPosition::kCallbackPool: $kCallbackPool');
+    debugPrint('setZoomPosition::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isScaleControlsEnabled() {
   
-    debugPrint('isScaleControlsEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('isScaleControlsEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isZoomControlsEnabled() {
   
-    debugPrint('isZoomControlsEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('isZoomControlsEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isCompassEnabled() {
   
-    debugPrint('isCompassEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('isCompassEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isMyLocationButtonEnabled() {
   
-    debugPrint('isMyLocationButtonEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('isMyLocationButtonEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isScrollGesturesEnabled() {
   
-    debugPrint('isScrollGesturesEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('isScrollGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isZoomGesturesEnabled() {
   
-    debugPrint('isZoomGesturesEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('isZoomGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isTiltGesturesEnabled() {
   
-    debugPrint('isTiltGesturesEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('isTiltGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isRotateGesturesEnabled() {
   
-    debugPrint('isRotateGesturesEnabled::kCallbackPool: $kCallbackPool');
+    debugPrint('isRotateGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> getLogoPosition() {
   
-    debugPrint('getLogoPosition::kCallbackPool: $kCallbackPool');
+    debugPrint('getLogoPosition::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> getZoomPosition() {
   
-    debugPrint('getZoomPosition::kCallbackPool: $kCallbackPool');
+    debugPrint('getZoomPosition::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setZoomInByScreenCenter(bool var1) {
   
-    debugPrint('setZoomInByScreenCenter::kCallbackPool: $kCallbackPool');
+    debugPrint('setZoomInByScreenCenter::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isZoomInByScreenCenter() {
   
-    debugPrint('isZoomInByScreenCenter::kCallbackPool: $kCallbackPool');
+    debugPrint('isZoomInByScreenCenter::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setLogoBottomMargin(int var1) {
   
-    debugPrint('setLogoBottomMargin::kCallbackPool: $kCallbackPool');
+    debugPrint('setLogoBottomMargin::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setLogoLeftMargin(int var1) {
   
-    debugPrint('setLogoLeftMargin::kCallbackPool: $kCallbackPool');
+    debugPrint('setLogoLeftMargin::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<double> getLogoMarginRate(int var1) {
   
-    debugPrint('getLogoMarginRate::kCallbackPool: $kCallbackPool');
+    debugPrint('getLogoMarginRate::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setLogoMarginRate(int var1, double var2) {
   
-    debugPrint('setLogoMarginRate::kCallbackPool: $kCallbackPool');
+    debugPrint('setLogoMarginRate::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setGestureScaleByMapCenter(bool var1) {
   
-    debugPrint('setGestureScaleByMapCenter::kCallbackPool: $kCallbackPool');
+    debugPrint('setGestureScaleByMapCenter::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isGestureScaleByMapCenter() {
   
-    debugPrint('isGestureScaleByMapCenter::kCallbackPool: $kCallbackPool');
+    debugPrint('isGestureScaleByMapCenter::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setLogoEnable(bool var1) {
   
-    debugPrint('setLogoEnable::kCallbackPool: $kCallbackPool');
+    debugPrint('setLogoEnable::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> requestRefreshLogo() {
   
-    debugPrint('requestRefreshLogo::kCallbackPool: $kCallbackPool');
+    debugPrint('requestRefreshLogo::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isLogoEnable() {
   
-    debugPrint('isLogoEnable::kCallbackPool: $kCallbackPool');
+    debugPrint('isLogoEnable::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

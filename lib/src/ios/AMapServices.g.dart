@@ -9,21 +9,25 @@ class AMapServices extends NSObject  {
   // 生成getters
   Future<String> get_apiKey() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("AMapServices::get_apiKey", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_enableHTTPS() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("AMapServices::get_enableHTTPS", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_crashReportEnabled() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("AMapServices::get_crashReportEnabled", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_identifier() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("AMapServices::get_identifier", {'refId': refId});
+  
     return result;
   }
   
@@ -64,6 +68,7 @@ class AMapServices extends NSObject  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(AMapServices()..refId = result);
       return AMapServices()..refId = result;
     }
   }

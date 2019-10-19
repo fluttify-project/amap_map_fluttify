@@ -14,13 +14,13 @@ mixin com_amap_api_maps_AMap_CancelableCallback on java_lang_Object {
   @mustCallSuper
   Future<void> onFinish() {
   
-    debugPrint('onFinish::kCallbackPool: $kCallbackPool');
+    debugPrint('onFinish::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onCancel() {
   
-    debugPrint('onCancel::kCallbackPool: $kCallbackPool');
+    debugPrint('onCancel::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

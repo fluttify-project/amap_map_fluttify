@@ -9,11 +9,13 @@ class MAHeatMapNode extends NSObject  {
   // 生成getters
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapNode::get_coordinate", {'refId': refId});
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
     return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<double> get_intensity() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapNode::get_intensity", {'refId': refId});
+  
     return result;
   }
   

@@ -9,6 +9,7 @@ class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
   // 生成getters
   Future<List<MAMultiPointItem>> get_items() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlay::get_items", {'refId': refId});
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAMultiPointItem()..refId = it).toList());
     return (result as List).cast<int>().map((it) => MAMultiPointItem()..refId = it).toList();
   }
   
@@ -32,6 +33,7 @@ class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAMultiPointOverlay()..refId = result);
       return MAMultiPointOverlay()..refId = result;
     }
   }

@@ -9,6 +9,7 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
   // 生成getters
   Future<MAParticleOverlay> get_particleOverlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayRenderer::get_particleOverlay", {'refId': refId});
+    kNativeObjectPool.add(MAParticleOverlay()..refId = result);
     return MAParticleOverlay()..refId = result;
   }
   
@@ -32,6 +33,7 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAParticleOverlayRenderer()..refId = result);
       return MAParticleOverlayRenderer()..refId = result;
     }
   }

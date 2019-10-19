@@ -9,11 +9,13 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
   // 生成getters
   Future<int> get_mainKey() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_mainKey", {'refId': refId});
+  
     return result;
   }
   
   Future<List<int>> get_subKey() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_subKey", {'refId': refId});
+  
     return result;
   }
   
@@ -48,6 +50,7 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_ae_gmap_style_StyleElement()..refId = result);
       return com_autonavi_ae_gmap_style_StyleElement()..refId = result;
     }
   }
@@ -67,6 +70,7 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -86,6 +90,7 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

@@ -9,16 +9,19 @@ import 'package:flutter/services.dart';
 mixin MAAnnotation on NSObject {
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnnotation::get_coordinate", {'refId': refId});
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
     return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<String> get_title() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnnotation::get_title", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_subtitle() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnnotation::get_subtitle", {'refId': refId});
+  
     return result;
   }
   
@@ -39,7 +42,7 @@ mixin MAAnnotation on NSObject {
   @mustCallSuper
   Future<void> setCoordinate(CLLocationCoordinate2D newCoordinate) {
   
-    debugPrint('setCoordinate::kCallbackPool: $kCallbackPool');
+    debugPrint('setCoordinate::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

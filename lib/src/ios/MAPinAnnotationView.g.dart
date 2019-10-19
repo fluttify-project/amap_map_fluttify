@@ -9,11 +9,13 @@ class MAPinAnnotationView extends MAAnnotationView  {
   // 生成getters
   Future<MAPinAnnotationColor> get_pinColor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPinAnnotationView::get_pinColor", {'refId': refId});
+  
     return MAPinAnnotationColor.values[result];
   }
   
   Future<bool> get_animatesDrop() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPinAnnotationView::get_animatesDrop", {'refId': refId});
+  
     return result;
   }
   

@@ -9,6 +9,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   // 生成getters
   Future<bool> get_mSurfacedestoryed() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_mSurfacedestoryed", {'refId': refId});
+  
     return result;
   }
   
@@ -43,6 +44,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -62,6 +64,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -81,6 +84,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -100,6 +104,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -119,6 +124,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -138,6 +144,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -157,6 +164,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -176,6 +184,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -195,6 +204,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

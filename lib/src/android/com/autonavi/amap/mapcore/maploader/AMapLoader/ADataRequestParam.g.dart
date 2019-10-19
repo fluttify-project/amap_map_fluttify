@@ -9,31 +9,37 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam extends j
   // 生成getters
   Future<String> get_requestUrl() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_requestUrl", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_handler() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_handler", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_nRequestType() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_nRequestType", {'refId': refId});
+  
     return result;
   }
   
   Future<List<int>> get_enCodeString() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_enCodeString", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_nCompress() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_nCompress", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_requestBaseUrl() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_requestBaseUrl", {'refId': refId});
+  
     return result;
   }
   

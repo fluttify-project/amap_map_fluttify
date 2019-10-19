@@ -14,13 +14,13 @@ mixin com_autonavi_custom_IUnityCallback on java_lang_Object {
   @mustCallSuper
   Future<void> UnitySetGraphicsDevice(int var1) {
   
-    debugPrint('UnitySetGraphicsDevice::kCallbackPool: $kCallbackPool');
+    debugPrint('UnitySetGraphicsDevice::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> UnityRenderEvent(int var1) {
   
-    debugPrint('UnityRenderEvent::kCallbackPool: $kCallbackPool');
+    debugPrint('UnityRenderEvent::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

@@ -9,16 +9,19 @@ class com_autonavi_amap_mapcore_animation_GLAlphaAnimation extends java_lang_Obj
   // 生成getters
   Future<double> get_mFromAlpha() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::get_mFromAlpha", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mToAlpha() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::get_mToAlpha", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mCurAlpha() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::get_mCurAlpha", {'refId': refId});
+  
     return result;
   }
   

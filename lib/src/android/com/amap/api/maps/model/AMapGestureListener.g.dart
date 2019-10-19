@@ -14,49 +14,49 @@ mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
   @mustCallSuper
   Future<void> onDoubleTap(double var1, double var2) {
   
-    debugPrint('onDoubleTap::kCallbackPool: $kCallbackPool');
+    debugPrint('onDoubleTap::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onSingleTap(double var1, double var2) {
   
-    debugPrint('onSingleTap::kCallbackPool: $kCallbackPool');
+    debugPrint('onSingleTap::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onFling(double var1, double var2) {
   
-    debugPrint('onFling::kCallbackPool: $kCallbackPool');
+    debugPrint('onFling::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onScroll(double var1, double var2) {
   
-    debugPrint('onScroll::kCallbackPool: $kCallbackPool');
+    debugPrint('onScroll::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onLongPress(double var1, double var2) {
   
-    debugPrint('onLongPress::kCallbackPool: $kCallbackPool');
+    debugPrint('onLongPress::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onDown(double var1, double var2) {
   
-    debugPrint('onDown::kCallbackPool: $kCallbackPool');
+    debugPrint('onDown::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onUp(double var1, double var2) {
   
-    debugPrint('onUp::kCallbackPool: $kCallbackPool');
+    debugPrint('onUp::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onMapStable() {
   
-    debugPrint('onMapStable::kCallbackPool: $kCallbackPool');
+    debugPrint('onMapStable::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

@@ -9,11 +9,13 @@ class com_autonavi_ae_gmap_maploader_ProcessingTile extends java_lang_Object  {
   // 生成getters
   Future<String> get_mKeyName() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.maploader.ProcessingTile::get_mKeyName", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_mCreateTime() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.maploader.ProcessingTile::get_mCreateTime", {'refId': refId});
+  
     return result;
   }
   
@@ -48,6 +50,7 @@ class com_autonavi_ae_gmap_maploader_ProcessingTile extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = result);
       return com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = result;
     }
   }

@@ -9,6 +9,7 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang
   // 生成getters
   Future<double> get_angleDelta() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::get_angleDelta", {'refId': refId});
+  
     return result;
   }
   
@@ -37,6 +38,7 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = result);
       return com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = result;
     }
   }
@@ -56,6 +58,7 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -75,6 +78,7 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -94,6 +98,7 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

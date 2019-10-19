@@ -9,11 +9,13 @@ class com_amap_api_maps_model_WeightedLatLng extends java_lang_Object  {
   // 生成getters
   Future<double> get_intensity() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.WeightedLatLng::get_intensity", {'refId': refId});
+  
     return result;
   }
   
   Future<com_amap_api_maps_model_LatLng> get_latLng() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.WeightedLatLng::get_latLng", {'refId': refId});
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
     return com_amap_api_maps_model_LatLng()..refId = result;
   }
   

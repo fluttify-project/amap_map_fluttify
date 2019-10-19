@@ -1,6 +1,6 @@
 name: amap_map_fluttify
-description: A new flutter plugin project.
-version: 0.0.4
+description: An `Amap` map component, based on `fluttify` engine.
+version: 0.1.0
 author: yohom <382146139@qq.com>
 homepage: https://github.com/fluttify-project/amap_map_fluttify
 

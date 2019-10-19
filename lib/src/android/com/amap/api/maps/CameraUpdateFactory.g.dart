@@ -28,6 +28,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }
@@ -47,6 +48,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }
@@ -66,6 +68,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }
@@ -85,6 +88,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }
@@ -104,6 +108,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }
@@ -123,6 +128,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }
@@ -142,6 +148,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }
@@ -161,6 +168,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }
@@ -180,6 +188,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }
@@ -199,6 +208,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }
@@ -218,6 +228,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }
@@ -237,6 +248,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }
@@ -256,6 +268,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }
@@ -275,6 +288,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = result);
       return com_amap_api_maps_CameraUpdate()..refId = result;
     }
   }

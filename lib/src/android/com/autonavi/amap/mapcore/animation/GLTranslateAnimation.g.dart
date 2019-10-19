@@ -9,31 +9,37 @@ class com_autonavi_amap_mapcore_animation_GLTranslateAnimation extends java_lang
   // 生成getters
   Future<double> get_mFromXDelta() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::get_mFromXDelta", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mFromYDelta() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::get_mFromYDelta", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mToXDelta() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::get_mToXDelta", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mToYDelta() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::get_mToYDelta", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mCurXDelta() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::get_mCurXDelta", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mCurYDelta() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::get_mCurYDelta", {'refId': refId});
+  
     return result;
   }
   
@@ -92,6 +98,7 @@ class com_autonavi_amap_mapcore_animation_GLTranslateAnimation extends java_lang
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

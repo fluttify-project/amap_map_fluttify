@@ -9,6 +9,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
   // 生成getters
   Future<bool> get_isFinish() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader::get_isFinish", {'refId': refId});
+  
     return result;
   }
   
@@ -37,6 +38,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -56,6 +58,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -75,6 +78,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -94,6 +98,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -113,6 +118,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -132,6 +138,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

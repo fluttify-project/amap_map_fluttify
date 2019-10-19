@@ -14,13 +14,13 @@ mixin com_amap_api_maps_model_animation_Animation_AnimationListener on java_lang
   @mustCallSuper
   Future<void> onAnimationStart() {
   
-    debugPrint('onAnimationStart::kCallbackPool: $kCallbackPool');
+    debugPrint('onAnimationStart::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onAnimationEnd() {
   
-    debugPrint('onAnimationEnd::kCallbackPool: $kCallbackPool');
+    debugPrint('onAnimationEnd::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

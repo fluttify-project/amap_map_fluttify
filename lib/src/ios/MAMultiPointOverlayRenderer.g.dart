@@ -9,11 +9,13 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   // 生成getters
   Future<CGPoint> get_anchor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlayRenderer::get_anchor", {'refId': refId});
+    kNativeObjectPool.add(CGPoint()..refId = result);
     return CGPoint()..refId = result;
   }
   
   Future<MAMultiPointOverlay> get_multiPointOverlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlayRenderer::get_multiPointOverlay", {'refId': refId});
+    kNativeObjectPool.add(MAMultiPointOverlay()..refId = result);
     return MAMultiPointOverlay()..refId = result;
   }
   
@@ -65,6 +67,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAMultiPointOverlayRenderer()..refId = result);
       return MAMultiPointOverlayRenderer()..refId = result;
     }
   }

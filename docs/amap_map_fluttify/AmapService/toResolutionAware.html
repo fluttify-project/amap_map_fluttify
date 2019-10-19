@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the toResolutionAware method from the AmapService class, for the Dart programming language.">
+  <title>toResolutionAware method - AmapService class - amap_map_fluttify library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">amap_map_fluttify</a></li>
+    <li><a href="amap_map_fluttify/amap_map_fluttify-library.html">amap_map_fluttify</a></li>
+    <li><a href="amap_map_fluttify/AmapService-class.html">AmapService</a></li>
+    <li class="self-crumb">toResolutionAware method</li>
+  </ol>
+  <div class="self-name">toResolutionAware</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">amap_map_fluttify</a></li>
+      <li><a href="amap_map_fluttify/amap_map_fluttify-library.html">amap_map_fluttify</a></li>
+      <li><a href="amap_map_fluttify/AmapService-class.html">AmapService</a></li>
+      <li class="self-crumb">toResolutionAware method</li>
+    </ol>
+    
+    <h5>AmapService class</h5>
+    <ol>
+      <li class="section-title"><a href="amap_map_fluttify/AmapService-class.html#constructors">Constructors</a></li>
+      <li><a href="amap_map_fluttify/AmapService/AmapService.html">AmapService</a></li>
+    
+      <li class="section-title inherited">
+        <a href="amap_map_fluttify/AmapService-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title inherited"><a href="amap_map_fluttify/AmapService-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="amap_map_fluttify/AmapService-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+      <li class="section-title"><a href="amap_map_fluttify/AmapService-class.html#static-methods">Static methods</a></li>
+      <li><a href="amap_map_fluttify/AmapService/init.html">init</a></li>
+      <li><a href="amap_map_fluttify/AmapService/toResolutionAware.html">toResolutionAware</a></li>
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1><span class="kind-method">toResolutionAware</span> method</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="dart-core/String-class.html">String</a></span>
+            <span class="name ">toResolutionAware</span>
+(<wbr><span class="parameter" id="toResolutionAware-param-context"><span class="type-annotation">BuildContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="toResolutionAware-param-assetName"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">assetName</span></span>)
+      
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">static String toResolutionAware(BuildContext context, String assetName) {
+  final RegExp _extractRatioRegExp = RegExp(r&#39;&#47;?(\d+(\.\d*)?)x$&#39;);
+  const double _naturalResolution = 1.0;
+
+  double _parseScale(String key) {
+    if (key == assetName) {
+      return _naturalResolution;
+    }
+
+    final File assetPath = File(key);
+    final Directory assetDir = assetPath.parent;
+
+    final Match match = _extractRatioRegExp.firstMatch(assetDir.path);
+    if (match != null &amp;&amp; match.groupCount &gt; 0)
+      return double.parse(match.group(1));
+    return _naturalResolution; &#47;&#47; i.e. default to 1.0x
+  }
+
+  String _findNearest(SplayTreeMap&lt;double, String&gt; candidates, double value) {
+    if (candidates.containsKey(value)) return candidates[value];
+    final double lower = candidates.lastKeyBefore(value);
+    final double upper = candidates.firstKeyAfter(value);
+    if (lower == null) return candidates[upper];
+    if (upper == null) return candidates[lower];
+    if (value &gt; (lower + upper) &#47; 2)
+      return candidates[upper];
+    else
+      return candidates[lower];
+  }
+
+  String _chooseVariant(
+    String main,
+    ImageConfiguration config,
+    List&lt;String&gt; candidates,
+  ) {
+    if (config.devicePixelRatio == null ||
+        candidates == null ||
+        candidates.isEmpty) return main;
+    final SplayTreeMap&lt;double, String&gt; mapping =
+        SplayTreeMap&lt;double, String&gt;();
+    for (String candidate in candidates)
+      mapping[_parseScale(candidate)] = candidate;
+    return _findNearest(mapping, config.devicePixelRatio);
+  }
+
+  final _devicePixelRatio = MediaQuery.of(context).devicePixelRatio;
+  final String chosenName = _chooseVariant(
+      assetName,
+      ImageConfiguration(devicePixelRatio: _devicePixelRatio),
+      _assetManifest == null ? null : _assetManifest[assetName]);
+  debugPrint(&#39;设备devicePixelRatio: $_devicePixelRatio, 选中的图片: $chosenName&#39;);
+  return chosenName;
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    amap_map_fluttify 0.0.4
+  </span>
+
+  
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -9,26 +9,31 @@ class com_autonavi_ae_gmap_GLMapEngine_InitParam extends java_lang_Object  {
   // 生成getters
   Future<String> get_mRootPath() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.GLMapEngine.InitParam::get_mRootPath", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_mConfigPath() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.GLMapEngine.InitParam::get_mConfigPath", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_mConfigContent() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.GLMapEngine.InitParam::get_mConfigContent", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_mOfflineDataPath() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.GLMapEngine.InitParam::get_mOfflineDataPath", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_mP3dCrossPath() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.GLMapEngine.InitParam::get_mP3dCrossPath", {'refId': refId});
+  
     return result;
   }
   

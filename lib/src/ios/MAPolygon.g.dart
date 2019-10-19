@@ -9,6 +9,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   // 生成getters
   Future<List<MAOverlay>> get_hollowShapes() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygon::get_hollowShapes", {'refId': refId});
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it).toList());
     return (result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it).toList();
   }
   
@@ -37,6 +38,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAPolygon()..refId = result);
       return MAPolygon()..refId = result;
     }
   }
@@ -56,6 +58,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAPolygon()..refId = result);
       return MAPolygon()..refId = result;
     }
   }
@@ -75,6 +78,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -94,6 +98,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

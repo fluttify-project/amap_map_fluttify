@@ -28,6 +28,7 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAParticleRandomVelocityGenerate()..refId = result);
       return MAParticleRandomVelocityGenerate()..refId = result;
     }
   }

@@ -9,16 +9,19 @@ class MAMultiPoint extends MAShape  {
   // 生成getters
   Future<MAMapPoint> get_points() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPoint::get_points", {'refId': refId});
+    kNativeObjectPool.add(MAMapPoint()..refId = result);
     return MAMapPoint()..refId = result;
   }
   
   Future<int> get_pointCount() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPoint::get_pointCount", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_cross180Longitude() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPoint::get_cross180Longitude", {'refId': refId});
+  
     return result;
   }
   

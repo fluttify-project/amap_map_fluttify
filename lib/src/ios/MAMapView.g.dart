@@ -9,251 +9,301 @@ class MAMapView extends UIView  {
   // 生成getters
   Future<MAMapType> get_mapType({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_mapType", {'refId': refId});
+  
     return MAMapType.values[result];
   }
   
   Future<CLLocationCoordinate2D> get_centerCoordinate({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_centerCoordinate", {'refId': refId});
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
     return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<MACoordinateRegion> get_region({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_region", {'refId': refId});
+    kNativeObjectPool.add(MACoordinateRegion()..refId = result);
     return MACoordinateRegion()..refId = result;
   }
   
   Future<MAMapRect> get_visibleMapRect({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_visibleMapRect", {'refId': refId});
+    kNativeObjectPool.add(MAMapRect()..refId = result);
     return MAMapRect()..refId = result;
   }
   
   Future<MACoordinateRegion> get_limitRegion({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_limitRegion", {'refId': refId});
+    kNativeObjectPool.add(MACoordinateRegion()..refId = result);
     return MACoordinateRegion()..refId = result;
   }
   
   Future<MAMapRect> get_limitMapRect({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_limitMapRect", {'refId': refId});
+    kNativeObjectPool.add(MAMapRect()..refId = result);
     return MAMapRect()..refId = result;
   }
   
   Future<double> get_zoomLevel({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_zoomLevel", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_minZoomLevel({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_minZoomLevel", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_maxZoomLevel({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_maxZoomLevel", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_rotationDegree({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_rotationDegree", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_cameraDegree({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_cameraDegree", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_zoomingInPivotsAroundAnchorPoint({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_zoomingInPivotsAroundAnchorPoint", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_zoomEnabled({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isZoomEnabled", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_scrollEnabled({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isScrollEnabled", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_rotateEnabled({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isRotateEnabled", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_rotateCameraEnabled({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isRotateCameraEnabled", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_skyModelEnable({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isSkyModelEnabled", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_showsBuildings({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isShowsBuildings", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_showsLabels({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isShowsLabels", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_showTraffic({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isShowTraffic", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_trafficRatio({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_trafficRatio", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_touchPOIEnabled({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_touchPOIEnabled", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_showsCompass({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_showsCompass", {'refId': refId});
+  
     return result;
   }
   
   Future<CGPoint> get_compassOrigin({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_compassOrigin", {'refId': refId});
+    kNativeObjectPool.add(CGPoint()..refId = result);
     return CGPoint()..refId = result;
   }
   
   Future<bool> get_showsScale({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_showsScale", {'refId': refId});
+  
     return result;
   }
   
   Future<CGPoint> get_scaleOrigin({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_scaleOrigin", {'refId': refId});
+    kNativeObjectPool.add(CGPoint()..refId = result);
     return CGPoint()..refId = result;
   }
   
   Future<CGPoint> get_logoCenter({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_logoCenter", {'refId': refId});
+    kNativeObjectPool.add(CGPoint()..refId = result);
     return CGPoint()..refId = result;
   }
   
   Future<double> get_metersPerPointForCurrentZoom({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_metersPerPointForCurrentZoom", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_isAbroad({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isAbroad", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_maxRenderFrame({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_maxRenderFrame", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_isAllowDecreaseFrame({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isAllowDecreaseFrame", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_openGLESDisabled({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_openGLESDisabled", {'refId': refId});
+  
     return result;
   }
   
   Future<CGPoint> get_screenAnchor({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_screenAnchor", {'refId': refId});
+    kNativeObjectPool.add(CGPoint()..refId = result);
     return CGPoint()..refId = result;
   }
   
   Future<List> get_annotations({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_annotations", {'refId': refId});
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it).toList());
     return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
   }
   
   Future<List> get_selectedAnnotations({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_selectedAnnotations", {'refId': refId});
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it).toList());
     return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
   }
   
   Future<CGRect> get_annotationVisibleRect({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_annotationVisibleRect", {'refId': refId});
+    kNativeObjectPool.add(CGRect()..refId = result);
     return CGRect()..refId = result;
   }
   
   Future<bool> get_allowsAnnotationViewSorting({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_allowsAnnotationViewSorting", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_showsUserLocation({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_showsUserLocation", {'refId': refId});
+  
     return result;
   }
   
   Future<MAUserLocation> get_userLocation({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_userLocation", {'refId': refId});
+    kNativeObjectPool.add(MAUserLocation()..refId = result);
     return MAUserLocation()..refId = result;
   }
   
   Future<bool> get_customizeUserLocationAccuracyCircleRepresentation({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_customizeUserLocationAccuracyCircleRepresentation", {'refId': refId});
+  
     return result;
   }
   
   Future<MACircle> get_userLocationAccuracyCircle({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_userLocationAccuracyCircle", {'refId': refId});
+    kNativeObjectPool.add(MACircle()..refId = result);
     return MACircle()..refId = result;
   }
   
   Future<MAUserTrackingMode> get_userTrackingMode({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_userTrackingMode", {'refId': refId});
+  
     return MAUserTrackingMode.values[result];
   }
   
   Future<bool> get_userLocationVisible({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isUserLocationVisible", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_distanceFilter({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_distanceFilter", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_pausesLocationUpdatesAutomatically({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_pausesLocationUpdatesAutomatically", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_allowsBackgroundLocationUpdates({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_allowsBackgroundLocationUpdates", {'refId': refId});
+  
     return result;
   }
   
   Future<List> get_overlays({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_overlays", {'refId': refId});
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it).toList());
     return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
   }
   
   Future<bool> get_showsIndoorMap({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isShowsIndoorMap", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_showsIndoorMapControl({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isShowsIndoorMapControl", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_customMapStyleEnabled({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_customMapStyleEnabled", {'refId': refId});
+  
     return result;
   }
   
@@ -796,6 +846,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -815,6 +866,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MACoordinateRegion()..refId = result);
       return MACoordinateRegion()..refId = result;
     }
   }
@@ -834,6 +886,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -853,6 +906,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAMapRect()..refId = result);
       return MAMapRect()..refId = result;
     }
   }
@@ -872,6 +926,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAMapRect()..refId = result);
       return MAMapRect()..refId = result;
     }
   }
@@ -891,6 +946,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -910,6 +966,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -929,6 +986,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -948,6 +1006,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -967,6 +1026,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -986,6 +1046,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1005,6 +1066,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAMapStatus()..refId = result);
       return MAMapStatus()..refId = result;
     }
   }
@@ -1024,6 +1086,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1043,6 +1106,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1062,6 +1126,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1081,6 +1146,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(CGPoint()..refId = result);
       return CGPoint()..refId = result;
     }
   }
@@ -1100,6 +1166,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
       return CLLocationCoordinate2D()..refId = result;
     }
   }
@@ -1119,6 +1186,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(CGRect()..refId = result);
       return CGRect()..refId = result;
     }
   }
@@ -1138,6 +1206,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MACoordinateRegion()..refId = result);
       return MACoordinateRegion()..refId = result;
     }
   }
@@ -1157,6 +1226,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1176,6 +1246,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1195,6 +1266,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1214,6 +1286,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1233,6 +1306,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1252,6 +1326,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1271,6 +1346,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1290,6 +1366,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1309,6 +1386,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1328,6 +1406,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1347,6 +1426,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAAnnotationView()..refId = result);
       return MAAnnotationView()..refId = result;
     }
   }
@@ -1366,6 +1446,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAAnnotationView()..refId = result);
       return MAAnnotationView()..refId = result;
     }
   }
@@ -1385,6 +1466,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1404,6 +1486,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1423,6 +1506,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1442,6 +1526,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1461,6 +1546,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1480,6 +1566,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1499,6 +1586,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it).toList());
       return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
     }
   }
@@ -1518,6 +1606,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1537,6 +1626,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1556,6 +1646,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1575,6 +1666,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1594,6 +1686,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1613,6 +1706,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1632,6 +1726,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1651,6 +1746,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1670,6 +1766,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1689,6 +1786,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1708,6 +1806,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1727,6 +1826,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1746,6 +1846,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1765,6 +1866,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAOverlayRenderer()..refId = result);
       return MAOverlayRenderer()..refId = result;
     }
   }
@@ -1784,6 +1886,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1803,6 +1906,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1822,6 +1926,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1841,6 +1946,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1860,6 +1966,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1879,6 +1986,7 @@ class MAMapView extends UIView  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

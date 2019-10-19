@@ -9,26 +9,31 @@ class MAOverlayRenderer extends NSObject  {
   // 生成getters
   Future<MAOverlay> get_overlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_overlay", {'refId': refId});
+    kNativeObjectPool.add(MAGroundOverlay()..refId = result);
     return MAGroundOverlay()..refId = result;
   }
   
   Future<CGPoint> get_glPoints() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_glPoints", {'refId': refId});
+    kNativeObjectPool.add(CGPoint()..refId = result);
     return CGPoint()..refId = result;
   }
   
   Future<int> get_glPointCount() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_glPointCount", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_alpha() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_alpha", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_contentScale() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_contentScale", {'refId': refId});
+  
     return result;
   }
   
@@ -69,6 +74,7 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAOverlayRenderer()..refId = result);
       return MAOverlayRenderer()..refId = result;
     }
   }
@@ -88,6 +94,7 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAMapPoint()..refId = result);
       return MAMapPoint()..refId = result;
     }
   }
@@ -107,6 +114,7 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -126,6 +134,7 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(CGPoint()..refId = result);
       return CGPoint()..refId = result;
     }
   }
@@ -145,6 +154,7 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(CGPoint()..refId = result);
       return CGPoint()..refId = result;
     }
   }
@@ -164,6 +174,7 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -183,6 +194,7 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -202,6 +214,7 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -221,6 +234,7 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -240,6 +254,7 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

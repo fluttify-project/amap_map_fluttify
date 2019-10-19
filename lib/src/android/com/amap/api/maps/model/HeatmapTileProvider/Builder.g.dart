@@ -28,6 +28,7 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider()..refId = result);
       return com_amap_api_maps_model_HeatmapTileProvider()..refId = result;
     }
   }

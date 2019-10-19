@@ -9,21 +9,25 @@ class MATraceLocation extends NSObject  {
   // 生成getters
   Future<CLLocationCoordinate2D> get_loc() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATraceLocation::get_loc", {'refId': refId});
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
     return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<double> get_angle() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATraceLocation::get_angle", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_speed() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATraceLocation::get_speed", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_time() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATraceLocation::get_time", {'refId': refId});
+  
     return result;
   }
   

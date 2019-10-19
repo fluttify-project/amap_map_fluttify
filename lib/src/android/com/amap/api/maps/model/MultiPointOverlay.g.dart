@@ -28,6 +28,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -47,6 +48,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -66,6 +68,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -85,6 +88,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -104,6 +108,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

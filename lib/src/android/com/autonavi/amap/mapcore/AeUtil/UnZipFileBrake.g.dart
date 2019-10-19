@@ -9,6 +9,7 @@ class com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake extends java_lang_Object  
   // 生成getters
   Future<bool> get_mIsAborted() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake::get_mIsAborted", {'refId': refId});
+  
     return result;
   }
   

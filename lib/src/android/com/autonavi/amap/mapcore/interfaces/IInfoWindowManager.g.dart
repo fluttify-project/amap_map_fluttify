@@ -14,49 +14,49 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
   @mustCallSuper
   Future<void> setInfoWindowAnimation(com_amap_api_maps_model_animation_Animation var1, com_amap_api_maps_model_animation_Animation_AnimationListener var2) {
   
-    debugPrint('setInfoWindowAnimation::kCallbackPool: $kCallbackPool');
+    debugPrint('setInfoWindowAnimation::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setInfoWindowAppearAnimation(com_amap_api_maps_model_animation_Animation var1) {
   
-    debugPrint('setInfoWindowAppearAnimation::kCallbackPool: $kCallbackPool');
+    debugPrint('setInfoWindowAppearAnimation::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setInfoWindowBackColor(int var1) {
   
-    debugPrint('setInfoWindowBackColor::kCallbackPool: $kCallbackPool');
+    debugPrint('setInfoWindowBackColor::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setInfoWindowBackEnable(bool var1) {
   
-    debugPrint('setInfoWindowBackEnable::kCallbackPool: $kCallbackPool');
+    debugPrint('setInfoWindowBackEnable::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setInfoWindowBackScale(double var1, double var2) {
   
-    debugPrint('setInfoWindowBackScale::kCallbackPool: $kCallbackPool');
+    debugPrint('setInfoWindowBackScale::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setInfoWindowDisappearAnimation(com_amap_api_maps_model_animation_Animation var1) {
   
-    debugPrint('setInfoWindowDisappearAnimation::kCallbackPool: $kCallbackPool');
+    debugPrint('setInfoWindowDisappearAnimation::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setInfoWindowMovingAnimation(com_amap_api_maps_model_animation_Animation var1) {
   
-    debugPrint('setInfoWindowMovingAnimation::kCallbackPool: $kCallbackPool');
+    debugPrint('setInfoWindowMovingAnimation::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> startAnimation() {
   
-    debugPrint('startAnimation::kCallbackPool: $kCallbackPool');
+    debugPrint('startAnimation::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

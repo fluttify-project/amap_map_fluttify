@@ -1,14 +1,6 @@
 # amap_map_fluttify
 
-A new flutter plugin project.
+[![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify)
+[![Codemagic build status](https://api.codemagic.io/apps/5dab1239813e331c1ca09a1a/5dab1239813e331c1ca09a19/status_badge.svg)](https://codemagic.io/apps/5dab1239813e331c1ca09a1a/5dab1239813e331c1ca09a19/latest_build)
 
-## Getting Started
-
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+高德地图`地图`组件. Dart接口基于[fluttify](https://github.com/yohom/fluttify-core-example)引擎生成. dartdoc[接口文档](https://fluttify-project.github.io/amap_map_fluttify/).

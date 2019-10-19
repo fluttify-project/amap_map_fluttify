@@ -28,6 +28,7 @@ class com_amap_api_maps_model_particle_ParticleShapeModule extends com_autonavi_
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -47,6 +48,7 @@ class com_amap_api_maps_model_particle_ParticleShapeModule extends com_autonavi_
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

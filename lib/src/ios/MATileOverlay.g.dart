@@ -9,31 +9,37 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   // 生成getters
   Future<int> get_minimumZ() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlay::get_minimumZ", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_maximumZ() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlay::get_maximumZ", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_URLTemplate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlay::get_URLTemplate", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_canReplaceMapContent() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlay::get_canReplaceMapContent", {'refId': refId});
+  
     return result;
   }
   
   Future<MAMapRect> get_boundingMapRect() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlay::get_boundingMapRect", {'refId': refId});
+    kNativeObjectPool.add(MAMapRect()..refId = result);
     return MAMapRect()..refId = result;
   }
   
   Future<bool> get_disableOffScreenTileLoading() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlay::get_disableOffScreenTileLoading", {'refId': refId});
+  
     return result;
   }
   
@@ -86,6 +92,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

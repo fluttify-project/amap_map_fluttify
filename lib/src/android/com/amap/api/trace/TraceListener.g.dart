@@ -14,19 +14,19 @@ mixin com_amap_api_trace_TraceListener on java_lang_Object {
   @mustCallSuper
   Future<void> onRequestFailed(int var1, String var2) {
   
-    debugPrint('onRequestFailed::kCallbackPool: $kCallbackPool');
+    debugPrint('onRequestFailed::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onTraceProcessing(int var1, int var2, List<com_amap_api_maps_model_LatLng> var3) {
   
-    debugPrint('onTraceProcessing::kCallbackPool: $kCallbackPool');
+    debugPrint('onTraceProcessing::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onFinished(int var1, List<com_amap_api_maps_model_LatLng> var2, int var3, int var4) {
   
-    debugPrint('onFinished::kCallbackPool: $kCallbackPool');
+    debugPrint('onFinished::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

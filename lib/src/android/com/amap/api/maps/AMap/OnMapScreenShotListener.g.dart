@@ -13,8 +13,8 @@ mixin com_amap_api_maps_AMap_OnMapScreenShotListener on java_lang_Object {
 
   @mustCallSuper
   Future<void> onMapScreenShot(android_graphics_Bitmap var1) {
-    kCallbackPool[var1.refId] = var1;
-    debugPrint('onMapScreenShot::kCallbackPool: $kCallbackPool');
+    kNativeObjectPool.add(var1);
+    debugPrint('onMapScreenShot::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

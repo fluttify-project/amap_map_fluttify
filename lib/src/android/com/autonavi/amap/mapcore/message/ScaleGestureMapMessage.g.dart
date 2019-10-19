@@ -9,16 +9,19 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends java_lang
   // 生成getters
   Future<double> get_scaleDelta() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::get_scaleDelta", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_pivotX() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::get_pivotX", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_pivotY() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::get_pivotY", {'refId': refId});
+  
     return result;
   }
   
@@ -59,6 +62,7 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends java_lang
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = result);
       return com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = result;
     }
   }
@@ -78,6 +82,7 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends java_lang
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -97,6 +102,7 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends java_lang
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -116,6 +122,7 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends java_lang
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

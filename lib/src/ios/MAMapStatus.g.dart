@@ -9,26 +9,31 @@ class MAMapStatus extends NSObject  {
   // 生成getters
   Future<CLLocationCoordinate2D> get_centerCoordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_centerCoordinate", {'refId': refId});
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
     return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<double> get_zoomLevel() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_zoomLevel", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_rotationDegree() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_rotationDegree", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_cameraDegree() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_cameraDegree", {'refId': refId});
+  
     return result;
   }
   
   Future<CGPoint> get_screenAnchor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_screenAnchor", {'refId': refId});
+    kNativeObjectPool.add(CGPoint()..refId = result);
     return CGPoint()..refId = result;
   }
   
@@ -81,6 +86,7 @@ class MAMapStatus extends NSObject  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAMapStatus()..refId = result);
       return MAMapStatus()..refId = result;
     }
   }
