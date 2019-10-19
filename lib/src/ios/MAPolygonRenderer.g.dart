@@ -9,6 +9,7 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
   // 生成getters
   Future<MAPolygon> get_polygon() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygonRenderer::get_polygon", {'refId': refId});
+    kNativeObjectPool.add(MAPolygon()..refId = result);
     return MAPolygon()..refId = result;
   }
   
@@ -32,6 +33,7 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAPolygonRenderer()..refId = result);
       return MAPolygonRenderer()..refId = result;
     }
   }

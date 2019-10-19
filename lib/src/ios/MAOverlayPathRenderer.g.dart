@@ -9,31 +9,37 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   // 生成getters
   Future<double> get_lineWidth() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineWidth", {'refId': refId});
+  
     return result;
   }
   
   Future<MALineJoinType> get_lineJoinType() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineJoinType", {'refId': refId});
+  
     return MALineJoinType.values[result];
   }
   
   Future<MALineCapType> get_lineCapType() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineCapType", {'refId': refId});
+  
     return MALineCapType.values[result];
   }
   
   Future<double> get_miterLimit() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_miterLimit", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_lineDash() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineDash", {'refId': refId});
+  
     return result;
   }
   
   Future<MALineDashType> get_lineDashType() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineDashType", {'refId': refId});
+  
     return MALineDashType.values[result];
   }
   

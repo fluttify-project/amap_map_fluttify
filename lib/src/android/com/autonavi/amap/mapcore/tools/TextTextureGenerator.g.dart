@@ -28,6 +28,7 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -47,6 +48,7 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -66,6 +68,7 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

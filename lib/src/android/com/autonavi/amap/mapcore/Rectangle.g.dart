@@ -9,21 +9,25 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
   // 生成getters
   Future<double> get_left() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.Rectangle::get_left", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_right() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.Rectangle::get_right", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_bottom() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.Rectangle::get_bottom", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_top() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.Rectangle::get_top", {'refId': refId});
+  
     return result;
   }
   
@@ -70,6 +74,7 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -89,6 +94,7 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -108,6 +114,7 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

@@ -28,6 +28,7 @@ class com_amap_api_maps_model_animation_TranslateAnimation extends java_lang_Obj
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

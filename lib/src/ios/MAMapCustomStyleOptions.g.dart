@@ -9,6 +9,7 @@ class MAMapCustomStyleOptions extends NSObject  {
   // 生成getters
   Future<String> get_styleId() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleId", {'refId': refId});
+  
     return result;
   }
   

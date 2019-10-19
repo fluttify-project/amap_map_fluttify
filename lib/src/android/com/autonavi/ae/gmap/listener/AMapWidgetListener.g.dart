@@ -14,25 +14,25 @@ mixin com_autonavi_ae_gmap_listener_AMapWidgetListener on java_lang_Object {
   @mustCallSuper
   Future<void> invalidateScaleView() {
   
-    debugPrint('invalidateScaleView::kCallbackPool: $kCallbackPool');
+    debugPrint('invalidateScaleView::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> invalidateCompassView() {
   
-    debugPrint('invalidateCompassView::kCallbackPool: $kCallbackPool');
+    debugPrint('invalidateCompassView::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> invalidateZoomController(double var1) {
   
-    debugPrint('invalidateZoomController::kCallbackPool: $kCallbackPool');
+    debugPrint('invalidateZoomController::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setFrontViewVisibility(bool var1) {
   
-    debugPrint('setFrontViewVisibility::kCallbackPool: $kCallbackPool');
+    debugPrint('setFrontViewVisibility::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

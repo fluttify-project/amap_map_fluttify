@@ -9,6 +9,7 @@ class MAOfflineProvince extends MAOfflineItem  {
   // 生成getters
   Future<List> get_cities() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineProvince::get_cities", {'refId': refId});
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it).toList());
     return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
   }
   

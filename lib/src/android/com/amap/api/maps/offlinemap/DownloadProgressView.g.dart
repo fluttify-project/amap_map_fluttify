@@ -28,6 +28,7 @@ class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_Vie
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

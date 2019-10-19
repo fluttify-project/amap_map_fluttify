@@ -9,21 +9,25 @@ class AMapNaviConfig extends NSObject  {
   // 生成getters
   Future<String> get_appScheme() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("AMapNaviConfig::get_appScheme", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_appName() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("AMapNaviConfig::get_appName", {'refId': refId});
+  
     return result;
   }
   
   Future<CLLocationCoordinate2D> get_destination() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("AMapNaviConfig::get_destination", {'refId': refId});
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
     return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<AMapDrivingStrategy> get_strategy() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("AMapNaviConfig::get_strategy", {'refId': refId});
+  
     return AMapDrivingStrategy.values[result];
   }
   

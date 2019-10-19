@@ -14,67 +14,67 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   @mustCallSuper
   Future<void> remove() {
   
-    debugPrint('remove::kCallbackPool: $kCallbackPool');
+    debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<String> getId() {
   
-    debugPrint('getId::kCallbackPool: $kCallbackPool');
+    debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setZIndex(double var1) {
   
-    debugPrint('setZIndex::kCallbackPool: $kCallbackPool');
+    debugPrint('setZIndex::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<double> getZIndex() {
   
-    debugPrint('getZIndex::kCallbackPool: $kCallbackPool');
+    debugPrint('getZIndex::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setVisible(bool var1) {
   
-    debugPrint('setVisible::kCallbackPool: $kCallbackPool');
+    debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isVisible() {
   
-    debugPrint('isVisible::kCallbackPool: $kCallbackPool');
+    debugPrint('isVisible::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_IOverlay var1) {
   
-    debugPrint('equalsRemote::kCallbackPool: $kCallbackPool');
+    debugPrint('equalsRemote::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> hashCodeRemote() {
   
-    debugPrint('hashCodeRemote::kCallbackPool: $kCallbackPool');
+    debugPrint('hashCodeRemote::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> destroy() {
   
-    debugPrint('destroy::kCallbackPool: $kCallbackPool');
+    debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isAboveMaskLayer() {
   
-    debugPrint('isAboveMaskLayer::kCallbackPool: $kCallbackPool');
+    debugPrint('isAboveMaskLayer::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setAboveMaskLayer(bool var1) {
   
-    debugPrint('setAboveMaskLayer::kCallbackPool: $kCallbackPool');
+    debugPrint('setAboveMaskLayer::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

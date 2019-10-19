@@ -9,16 +9,19 @@ class com_amap_api_maps_model_Tile extends java_lang_Object with android_os_Parc
   // 生成getters
   Future<int> get_width() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.Tile::get_width", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_height() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.Tile::get_height", {'refId': refId});
+  
     return result;
   }
   
   Future<List<int>> get_data() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.Tile::get_data", {'refId': refId});
+  
     return result;
   }
   
@@ -42,6 +45,7 @@ class com_amap_api_maps_model_Tile extends java_lang_Object with android_os_Parc
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_Tile()..refId = result);
       return com_amap_api_maps_model_Tile()..refId = result;
     }
   }

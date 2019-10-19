@@ -28,6 +28,7 @@ class com_autonavi_ae_gmap_AbstractMapMessage extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

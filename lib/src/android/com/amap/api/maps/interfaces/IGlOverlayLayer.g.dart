@@ -14,43 +14,43 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   @mustCallSuper
   Future<bool> removeOverlay(String var1) {
   
-    debugPrint('removeOverlay::kCallbackPool: $kCallbackPool');
+    debugPrint('removeOverlay::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> getCurrentParticleNum(String var1) {
   
-    debugPrint('getCurrentParticleNum::kCallbackPool: $kCallbackPool');
+    debugPrint('getCurrentParticleNum::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<com_amap_api_maps_model_LatLng> getNearestLatLng(com_amap_api_maps_model_PolylineOptions var1, com_amap_api_maps_model_LatLng var2) {
   
-    debugPrint('getNearestLatLng::kCallbackPool: $kCallbackPool');
+    debugPrint('getNearestLatLng::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> IsPolygonContainsPoint(com_amap_api_maps_model_PolygonOptions var1, com_amap_api_maps_model_LatLng var2) {
   
-    debugPrint('IsPolygonContainsPoint::kCallbackPool: $kCallbackPool');
+    debugPrint('IsPolygonContainsPoint::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> processPolygonHoleOption(com_amap_api_maps_model_PolygonOptions var1) {
   
-    debugPrint('processPolygonHoleOption::kCallbackPool: $kCallbackPool');
+    debugPrint('processPolygonHoleOption::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> IsCircleContainPoint(com_amap_api_maps_model_CircleOptions var1, com_amap_api_maps_model_LatLng var2) {
   
-    debugPrint('IsCircleContainPoint::kCallbackPool: $kCallbackPool');
+    debugPrint('IsCircleContainPoint::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> processCircleHoleOption(com_amap_api_maps_model_CircleOptions var1) {
   
-    debugPrint('processCircleHoleOption::kCallbackPool: $kCallbackPool');
+    debugPrint('processCircleHoleOption::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

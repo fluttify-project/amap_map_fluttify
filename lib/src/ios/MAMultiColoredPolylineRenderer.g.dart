@@ -9,11 +9,13 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   // 生成getters
   Future<MAMultiPolyline> get_multiPolyline() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiColoredPolylineRenderer::get_multiPolyline", {'refId': refId});
+    kNativeObjectPool.add(MAMultiPolyline()..refId = result);
     return MAMultiPolyline()..refId = result;
   }
   
   Future<bool> get_gradient() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiColoredPolylineRenderer::get_isGradient", {'refId': refId});
+  
     return result;
   }
   
@@ -42,6 +44,7 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAMultiColoredPolylineRenderer()..refId = result);
       return MAMultiColoredPolylineRenderer()..refId = result;
     }
   }

@@ -28,6 +28,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
     }
   }
@@ -47,6 +48,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = result);
       return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
     }
   }
@@ -66,6 +68,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -85,6 +88,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
     }
   }
@@ -104,6 +108,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -123,6 +128,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
     }
   }
@@ -142,6 +148,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -161,6 +168,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
     }
   }
@@ -180,6 +188,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -199,6 +208,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
     }
   }
@@ -218,6 +228,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = result);
       return com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = result;
     }
   }
@@ -237,6 +248,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
     }
   }
@@ -256,6 +268,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
     }
   }
@@ -275,6 +288,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
     }
   }
@@ -294,6 +308,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
     }
   }
@@ -313,6 +328,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
     }
   }
@@ -332,6 +348,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = result;
     }
   }
@@ -351,6 +368,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
     }
   }
@@ -370,6 +388,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -389,6 +408,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -408,6 +428,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
     }
   }
@@ -427,6 +448,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -446,6 +468,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
     }
   }
@@ -465,6 +488,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

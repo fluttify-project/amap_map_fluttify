@@ -14,19 +14,19 @@ mixin MAParticleVelocityGenerate on NSObject {
   @mustCallSuper
   Future<double> getX() {
   
-    debugPrint('getX::kCallbackPool: $kCallbackPool');
+    debugPrint('getX::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<double> getY() {
   
-    debugPrint('getY::kCallbackPool: $kCallbackPool');
+    debugPrint('getY::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<double> getZ() {
   
-    debugPrint('getZ::kCallbackPool: $kCallbackPool');
+    debugPrint('getZ::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

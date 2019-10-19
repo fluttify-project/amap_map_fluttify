@@ -9,6 +9,7 @@ class MAUserLocation extends MAAnimatedAnnotation  {
   // 生成getters
   Future<bool> get_updating() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocation::get_isUpdating", {'refId': refId});
+  
     return result;
   }
   

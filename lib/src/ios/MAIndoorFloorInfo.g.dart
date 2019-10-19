@@ -9,21 +9,25 @@ class MAIndoorFloorInfo extends NSObject  {
   // 生成getters
   Future<String> get_floorName() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_floorName", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_floorIndex() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_floorIndex", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_floorNona() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_floorNona", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_isPark() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_isPark", {'refId': refId});
+  
     return result;
   }
   

@@ -33,8 +33,25 @@ Future release(Ref ref) {
 }
 
 class Ref {
+  /// 对应原生对象的唯一id(目前为hashCode)
   int refId;
+
+  /// 自定义的标识
+  String tag;
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is Ref && runtimeType == other.runtimeType && refId == other.refId;
+
+  @override
+  int get hashCode => refId.hashCode;
+
+  @override
+  String toString() {
+    return '$runtimeType{refId: $refId}';
+  }
 }
 
-/// 回调参数的释放池
-final kCallbackPool = <int, Ref>{};
+/// 原生对象的释放池
+final kNativeObjectPool = <Ref>{};

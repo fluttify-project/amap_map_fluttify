@@ -14,7 +14,7 @@ mixin MAParticleShapeModule on NSObject {
   @mustCallSuper
   Future<bool> isRatioEnable() {
   
-    debugPrint('isRatioEnable::kCallbackPool: $kCallbackPool');
+    debugPrint('isRatioEnable::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

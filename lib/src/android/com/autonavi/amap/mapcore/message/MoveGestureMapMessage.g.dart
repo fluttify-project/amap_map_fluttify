@@ -9,11 +9,13 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
   // 生成getters
   Future<double> get_touchDeltaX() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::get_touchDeltaX", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_touchDeltaY() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::get_touchDeltaY", {'refId': refId});
+  
     return result;
   }
   
@@ -48,6 +50,7 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = result);
       return com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = result;
     }
   }
@@ -67,6 +70,7 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -86,6 +90,7 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -105,6 +110,7 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

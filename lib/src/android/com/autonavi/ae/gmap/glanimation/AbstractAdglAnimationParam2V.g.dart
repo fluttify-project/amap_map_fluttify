@@ -9,21 +9,25 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
   // 生成getters
   Future<double> get_fromXValue() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::get_fromXValue", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_toXValue() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::get_toXValue", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_fromYValue() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::get_fromYValue", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_toYValue() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::get_toYValue", {'refId': refId});
+  
     return result;
   }
   
@@ -70,6 +74,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -89,6 +94,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -108,6 +114,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -127,6 +134,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -146,6 +154,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -165,6 +174,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -184,6 +194,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -203,6 +214,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -222,6 +234,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -241,6 +254,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

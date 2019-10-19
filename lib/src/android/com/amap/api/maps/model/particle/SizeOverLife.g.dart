@@ -9,6 +9,7 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
   // 生成getters
   Future<int> get_DEFAULT_SIZE() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.particle.SizeOverLife::get_DEFAULT_SIZE", {'refId': refId});
+  
     return result;
   }
   
@@ -32,6 +33,7 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -51,6 +53,7 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -70,6 +73,7 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

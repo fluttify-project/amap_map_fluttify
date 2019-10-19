@@ -28,6 +28,7 @@ class com_amap_api_maps_AMapException extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

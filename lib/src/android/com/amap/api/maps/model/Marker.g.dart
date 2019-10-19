@@ -28,6 +28,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -47,6 +48,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -66,6 +68,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -85,6 +88,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_model_BitmapDescriptor()..refId = it).toList());
       return (result as List).cast<int>().map((it) => com_amap_api_maps_model_BitmapDescriptor()..refId = it).toList();
     }
   }
@@ -104,6 +108,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -123,6 +128,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -142,6 +148,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -161,6 +168,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -180,6 +188,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -199,6 +208,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -218,6 +228,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
       return com_amap_api_maps_model_LatLng()..refId = result;
     }
   }
@@ -237,6 +248,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -256,6 +268,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -275,6 +288,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -294,6 +308,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -313,6 +328,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -332,6 +348,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -351,6 +368,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -370,6 +388,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -389,6 +408,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -408,6 +428,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -427,6 +448,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -446,6 +468,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -465,6 +488,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -484,6 +508,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -503,6 +528,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -522,6 +548,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -541,6 +568,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -560,6 +588,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = result);
       return com_autonavi_amap_mapcore_IPoint()..refId = result;
     }
   }
@@ -579,6 +608,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -598,6 +628,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -617,6 +648,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -636,6 +668,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -655,6 +688,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -674,6 +708,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -693,6 +728,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -736,6 +772,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -755,6 +792,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -774,6 +812,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -793,6 +832,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -812,6 +852,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = result);
       return com_amap_api_maps_model_MarkerOptions()..refId = result;
     }
   }
@@ -831,6 +872,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -850,6 +892,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -869,6 +912,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -888,6 +932,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -907,6 +952,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -926,6 +972,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -945,6 +992,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -964,6 +1012,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -983,6 +1032,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1002,6 +1052,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1021,6 +1072,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1040,6 +1092,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1059,6 +1112,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1078,6 +1132,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -1097,6 +1152,7 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

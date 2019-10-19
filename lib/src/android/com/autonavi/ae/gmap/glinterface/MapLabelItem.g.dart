@@ -9,96 +9,115 @@ class com_autonavi_ae_gmap_glinterface_MapLabelItem extends java_lang_Object  {
   // 生成getters
   Future<String> get_name() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_name", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_poiid() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_poiid", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_angle() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_angle", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_strWidth() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_strWidth", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_strHeight() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_strHeight", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_iconID() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_iconID", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_labelx() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_labelx", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_labely() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_labely", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_pixel20X() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_pixel20X", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_pixel20Y() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_pixel20Y", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_pixel20Z() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_pixel20Z", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_fontColor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_fontColor", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_borderColor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_borderColor", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_type() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_type", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_anchor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_anchor", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_fontSize() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_fontSize", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_mSublayerId() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_mSublayerId", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_mIsFouces() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_mIsFouces", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_timeStamp() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_timeStamp", {'refId': refId});
+  
     return result;
   }
   

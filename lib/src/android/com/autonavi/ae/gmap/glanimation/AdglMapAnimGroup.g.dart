@@ -9,6 +9,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
   // 生成getters
   Future<bool> get_needMove() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::get_needMove", {'refId': refId});
+  
     return result;
   }
   
@@ -37,6 +38,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -56,6 +58,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -75,6 +78,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -94,6 +98,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -113,6 +118,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -132,6 +138,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -151,6 +158,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -170,6 +178,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -189,6 +198,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

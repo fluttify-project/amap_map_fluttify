@@ -28,6 +28,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -47,6 +48,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -66,6 +68,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

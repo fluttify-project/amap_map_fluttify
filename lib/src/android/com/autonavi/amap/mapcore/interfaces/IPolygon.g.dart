@@ -14,61 +14,61 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   @mustCallSuper
   Future<void> setStrokeWidth(double var1) {
   
-    debugPrint('setStrokeWidth::kCallbackPool: $kCallbackPool');
+    debugPrint('setStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<double> getStrokeWidth() {
   
-    debugPrint('getStrokeWidth::kCallbackPool: $kCallbackPool');
+    debugPrint('getStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setFillColor(int var1) {
   
-    debugPrint('setFillColor::kCallbackPool: $kCallbackPool');
+    debugPrint('setFillColor::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> getFillColor() {
   
-    debugPrint('getFillColor::kCallbackPool: $kCallbackPool');
+    debugPrint('getFillColor::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setStrokeColor(int var1) {
   
-    debugPrint('setStrokeColor::kCallbackPool: $kCallbackPool');
+    debugPrint('setStrokeColor::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) {
   
-    debugPrint('setPoints::kCallbackPool: $kCallbackPool');
+    debugPrint('setPoints::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() {
   
-    debugPrint('getPoints::kCallbackPool: $kCallbackPool');
+    debugPrint('getPoints::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> getStrokeColor() {
   
-    debugPrint('getStrokeColor::kCallbackPool: $kCallbackPool');
+    debugPrint('getStrokeColor::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> contains(com_amap_api_maps_model_LatLng var1) {
   
-    debugPrint('contains::kCallbackPool: $kCallbackPool');
+    debugPrint('contains::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) {
   
-    debugPrint('setHoleOptions::kCallbackPool: $kCallbackPool');
+    debugPrint('setHoleOptions::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

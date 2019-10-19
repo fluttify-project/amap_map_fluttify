@@ -9,11 +9,13 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
   // 生成getters
   Future<MACustomBuildingOverlayOption> get_defaultOption() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlay::get_defaultOption", {'refId': refId});
+    kNativeObjectPool.add(MACustomBuildingOverlayOption()..refId = result);
     return MACustomBuildingOverlayOption()..refId = result;
   }
   
   Future<List<MACustomBuildingOverlayOption>> get_customOptions() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlay::get_customOptions", {'refId': refId});
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MACustomBuildingOverlayOption()..refId = it).toList());
     return (result as List).cast<int>().map((it) => MACustomBuildingOverlayOption()..refId = it).toList();
   }
   
@@ -37,6 +39,7 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -56,6 +59,7 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

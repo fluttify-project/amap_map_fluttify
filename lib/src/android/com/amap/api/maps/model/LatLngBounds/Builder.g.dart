@@ -28,6 +28,7 @@ class com_amap_api_maps_model_LatLngBounds_Builder extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds()..refId = result);
       return com_amap_api_maps_model_LatLngBounds()..refId = result;
     }
   }

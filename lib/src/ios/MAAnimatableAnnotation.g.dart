@@ -14,25 +14,25 @@ mixin MAAnimatableAnnotation on NSObject {
   @mustCallSuper
   Future<void> step(double timeDelta) {
   
-    debugPrint('step::kCallbackPool: $kCallbackPool');
+    debugPrint('step::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isAnimationFinished() {
   
-    debugPrint('isAnimationFinished::kCallbackPool: $kCallbackPool');
+    debugPrint('isAnimationFinished::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> shouldAnimationStart() {
   
-    debugPrint('shouldAnimationStart::kCallbackPool: $kCallbackPool');
+    debugPrint('shouldAnimationStart::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<double> rotateDegree() {
   
-    debugPrint('rotateDegree::kCallbackPool: $kCallbackPool');
+    debugPrint('rotateDegree::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

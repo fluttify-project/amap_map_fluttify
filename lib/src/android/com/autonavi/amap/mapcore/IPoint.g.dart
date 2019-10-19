@@ -28,6 +28,7 @@ class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = result);
       return com_autonavi_amap_mapcore_IPoint()..refId = result;
     }
   }

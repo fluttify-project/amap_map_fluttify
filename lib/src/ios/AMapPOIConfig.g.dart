@@ -9,26 +9,31 @@ class AMapPOIConfig extends NSObject  {
   // 生成getters
   Future<String> get_appScheme() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("AMapPOIConfig::get_appScheme", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_appName() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("AMapPOIConfig::get_appName", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_keywords() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("AMapPOIConfig::get_keywords", {'refId': refId});
+  
     return result;
   }
   
   Future<CLLocationCoordinate2D> get_leftTopCoordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("AMapPOIConfig::get_leftTopCoordinate", {'refId': refId});
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
     return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<CLLocationCoordinate2D> get_rightBottomCoordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("AMapPOIConfig::get_rightBottomCoordinate", {'refId': refId});
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
     return CLLocationCoordinate2D()..refId = result;
   }
   

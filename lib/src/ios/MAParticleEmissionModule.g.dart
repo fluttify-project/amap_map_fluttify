@@ -28,6 +28,7 @@ class MAParticleEmissionModule extends NSObject  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAParticleEmissionModule()..refId = result);
       return MAParticleEmissionModule()..refId = result;
     }
   }

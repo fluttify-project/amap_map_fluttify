@@ -9,41 +9,49 @@ class MAParticleOverlayOptions extends NSObject  {
   // 生成getters
   Future<bool> get_visibile() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_visibile", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_loop() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_loop", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_maxParticles() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_maxParticles", {'refId': refId});
+  
     return result;
   }
   
   Future<MAParticleColorGenerate> get_particleStartColor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_particleStartColor", {'refId': refId});
+    kNativeObjectPool.add(MAParticleRandomColorGenerate()..refId = result);
     return MAParticleRandomColorGenerate()..refId = result;
   }
   
   Future<MAParticleVelocityGenerate> get_particleStartSpeed() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_particleStartSpeed", {'refId': refId});
+    kNativeObjectPool.add(MAParticleRandomVelocityGenerate()..refId = result);
     return MAParticleRandomVelocityGenerate()..refId = result;
   }
   
   Future<MAParticleEmissionModule> get_particleEmissionModule() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_particleEmissionModule", {'refId': refId});
+    kNativeObjectPool.add(MAParticleEmissionModule()..refId = result);
     return MAParticleEmissionModule()..refId = result;
   }
   
   Future<MAParticleShapeModule> get_particleShapeModule() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_particleShapeModule", {'refId': refId});
+    kNativeObjectPool.add(MAParticleSinglePointShapeModule()..refId = result);
     return MAParticleSinglePointShapeModule()..refId = result;
   }
   
   Future<MAParticleOverLifeModule> get_particleOverLifeModule() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_particleOverLifeModule", {'refId': refId});
+    kNativeObjectPool.add(MAParticleOverLifeModule()..refId = result);
     return MAParticleOverLifeModule()..refId = result;
   }
   

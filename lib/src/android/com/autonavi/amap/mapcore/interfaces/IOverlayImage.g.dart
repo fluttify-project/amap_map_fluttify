@@ -14,97 +14,97 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   @mustCallSuper
   Future<bool> remove() {
   
-    debugPrint('remove::kCallbackPool: $kCallbackPool');
+    debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> destroy(bool var1) {
   
-    debugPrint('destroy::kCallbackPool: $kCallbackPool');
+    debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setRotateAngle(double var1) {
   
-    debugPrint('setRotateAngle::kCallbackPool: $kCallbackPool');
+    debugPrint('setRotateAngle::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<double> getRotateAngle() {
   
-    debugPrint('getRotateAngle::kCallbackPool: $kCallbackPool');
+    debugPrint('getRotateAngle::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setZIndex(double var1) {
   
-    debugPrint('setZIndex::kCallbackPool: $kCallbackPool');
+    debugPrint('setZIndex::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<double> getZIndex() {
   
-    debugPrint('getZIndex::kCallbackPool: $kCallbackPool');
+    debugPrint('getZIndex::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<String> getId() {
   
-    debugPrint('getId::kCallbackPool: $kCallbackPool');
+    debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<com_amap_api_maps_model_LatLng> getPosition() {
   
-    debugPrint('getPosition::kCallbackPool: $kCallbackPool');
+    debugPrint('getPosition::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) {
   
-    debugPrint('setPosition::kCallbackPool: $kCallbackPool');
+    debugPrint('setPosition::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setVisible(bool var1) {
   
-    debugPrint('setVisible::kCallbackPool: $kCallbackPool');
+    debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isVisible() {
   
-    debugPrint('isVisible::kCallbackPool: $kCallbackPool');
+    debugPrint('isVisible::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_IOverlayImage var1) {
   
-    debugPrint('equalsRemote::kCallbackPool: $kCallbackPool');
+    debugPrint('equalsRemote::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> hashCodeRemote() {
   
-    debugPrint('hashCodeRemote::kCallbackPool: $kCallbackPool');
+    debugPrint('hashCodeRemote::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setAnchor(double var1, double var2) {
   
-    debugPrint('setAnchor::kCallbackPool: $kCallbackPool');
+    debugPrint('setAnchor::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<double> getAnchorU() {
   
-    debugPrint('getAnchorU::kCallbackPool: $kCallbackPool');
+    debugPrint('getAnchorU::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<double> getAnchorV() {
   
-    debugPrint('getAnchorV::kCallbackPool: $kCallbackPool');
+    debugPrint('getAnchorV::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

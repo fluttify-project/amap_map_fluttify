@@ -48,8 +48,8 @@ class _AmapViewState extends State<AmapView> {
 
   @override
   void dispose() {
-    kCallbackPool
-      ..forEach((key, value) => release(value))
+    kNativeObjectPool
+      ..forEach(release)
       ..clear();
     super.dispose();
   }

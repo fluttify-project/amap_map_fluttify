@@ -9,11 +9,13 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
   // 生成getters
   Future<MAMultiPolyline> get_multiPolyline() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_multiPolyline", {'refId': refId});
+    kNativeObjectPool.add(MAMultiPolyline()..refId = result);
     return MAMultiPolyline()..refId = result;
   }
   
   Future<List> get_strokeTextureImages() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_strokeTextureImages", {'refId': refId});
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it).toList());
     return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
   }
   
@@ -42,6 +44,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAMultiTexturePolylineRenderer()..refId = result);
       return MAMultiTexturePolylineRenderer()..refId = result;
     }
   }

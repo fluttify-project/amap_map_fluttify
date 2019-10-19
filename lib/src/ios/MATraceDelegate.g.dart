@@ -13,8 +13,8 @@ mixin MATraceDelegate on NSObject {
 
   @mustCallSuper
   Future<void> mapViewRequireLocationAuth(CLLocationManager locationManager) {
-    kCallbackPool[locationManager.refId] = locationManager;
-    debugPrint('mapViewRequireLocationAuth::kCallbackPool: $kCallbackPool');
+    kNativeObjectPool.add(locationManager);
+    debugPrint('mapViewRequireLocationAuth::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

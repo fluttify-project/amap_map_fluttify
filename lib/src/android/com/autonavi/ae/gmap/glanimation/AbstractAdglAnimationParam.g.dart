@@ -28,6 +28,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -47,6 +48,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -66,6 +68,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -85,6 +88,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -104,6 +108,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -123,6 +128,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -142,6 +148,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

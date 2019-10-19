@@ -28,6 +28,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends jav
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = it).toList());
       return (result as List).cast<int>().map((it) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = it).toList();
     }
   }

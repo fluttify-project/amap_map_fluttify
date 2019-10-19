@@ -9,11 +9,13 @@ class MAShape extends NSObject with MAAnnotation {
   // 生成getters
   Future<String> get_title() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_title", {'refId': refId});
+  
     return result;
   }
   
   Future<String> get_subtitle() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_subtitle", {'refId': refId});
+  
     return result;
   }
   

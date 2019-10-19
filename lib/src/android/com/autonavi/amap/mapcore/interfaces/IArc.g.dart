@@ -14,25 +14,25 @@ mixin com_autonavi_amap_mapcore_interfaces_IArc on com_autonavi_amap_mapcore_int
   @mustCallSuper
   Future<void> setStrokeWidth(double var1) {
   
-    debugPrint('setStrokeWidth::kCallbackPool: $kCallbackPool');
+    debugPrint('setStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<double> getStrokeWidth() {
   
-    debugPrint('getStrokeWidth::kCallbackPool: $kCallbackPool');
+    debugPrint('getStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setStrokeColor(int var1) {
   
-    debugPrint('setStrokeColor::kCallbackPool: $kCallbackPool');
+    debugPrint('setStrokeColor::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> getStrokeColor() {
   
-    debugPrint('getStrokeColor::kCallbackPool: $kCallbackPool');
+    debugPrint('getStrokeColor::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

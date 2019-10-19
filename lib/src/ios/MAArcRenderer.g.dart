@@ -9,6 +9,7 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
   // 生成getters
   Future<MAArc> get_arc() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAArcRenderer::get_arc", {'refId': refId});
+    kNativeObjectPool.add(MAArc()..refId = result);
     return MAArc()..refId = result;
   }
   
@@ -32,6 +33,7 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAArcRenderer()..refId = result);
       return MAArcRenderer()..refId = result;
     }
   }

@@ -9,6 +9,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   // 生成getters
   Future<double> get_movingDirection() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnimatedAnnotation::get_movingDirection", {'refId': refId});
+  
     return result;
   }
   
@@ -54,6 +55,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAAnnotationMoveAnimation()..refId = result);
       return MAAnnotationMoveAnimation()..refId = result;
     }
   }
@@ -97,6 +99,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAAnnotationMoveAnimation()..refId = result);
       return MAAnnotationMoveAnimation()..refId = result;
     }
   }
@@ -116,6 +119,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

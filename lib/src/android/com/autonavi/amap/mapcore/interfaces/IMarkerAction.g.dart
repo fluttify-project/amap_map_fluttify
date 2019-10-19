@@ -14,103 +14,103 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   @mustCallSuper
   Future<double> getAlpha() {
   
-    debugPrint('getAlpha::kCallbackPool: $kCallbackPool');
+    debugPrint('getAlpha::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setAlpha(double var1) {
   
-    debugPrint('setAlpha::kCallbackPool: $kCallbackPool');
+    debugPrint('setAlpha::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> getDisplayLevel() {
   
-    debugPrint('getDisplayLevel::kCallbackPool: $kCallbackPool');
+    debugPrint('getDisplayLevel::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<com_amap_api_maps_model_MarkerOptions> getOptions() {
   
-    debugPrint('getOptions::kCallbackPool: $kCallbackPool');
+    debugPrint('getOptions::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isClickable() {
   
-    debugPrint('isClickable::kCallbackPool: $kCallbackPool');
+    debugPrint('isClickable::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isInfoWindowAutoOverturn() {
   
-    debugPrint('isInfoWindowAutoOverturn::kCallbackPool: $kCallbackPool');
+    debugPrint('isInfoWindowAutoOverturn::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isInfoWindowEnable() {
   
-    debugPrint('isInfoWindowEnable::kCallbackPool: $kCallbackPool');
+    debugPrint('isInfoWindowEnable::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setInfoWindowEnable(bool var1) {
   
-    debugPrint('setInfoWindowEnable::kCallbackPool: $kCallbackPool');
+    debugPrint('setInfoWindowEnable::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setMarkerOptions(com_amap_api_maps_model_MarkerOptions var1) {
   
-    debugPrint('setMarkerOptions::kCallbackPool: $kCallbackPool');
+    debugPrint('setMarkerOptions::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setAutoOverturnInfoWindow(bool var1) {
   
-    debugPrint('setAutoOverturnInfoWindow::kCallbackPool: $kCallbackPool');
+    debugPrint('setAutoOverturnInfoWindow::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setClickable(bool var1) {
   
-    debugPrint('setClickable::kCallbackPool: $kCallbackPool');
+    debugPrint('setClickable::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setDisplayLevel(int var1) {
   
-    debugPrint('setDisplayLevel::kCallbackPool: $kCallbackPool');
+    debugPrint('setDisplayLevel::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setFixingPointEnable(bool var1) {
   
-    debugPrint('setFixingPointEnable::kCallbackPool: $kCallbackPool');
+    debugPrint('setFixingPointEnable::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setPositionNotUpdate(com_amap_api_maps_model_LatLng var1) {
   
-    debugPrint('setPositionNotUpdate::kCallbackPool: $kCallbackPool');
+    debugPrint('setPositionNotUpdate::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setRotateAngleNotUpdate(double var1) {
   
-    debugPrint('setRotateAngleNotUpdate::kCallbackPool: $kCallbackPool');
+    debugPrint('setRotateAngleNotUpdate::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setSnippet(String var1) {
   
-    debugPrint('setSnippet::kCallbackPool: $kCallbackPool');
+    debugPrint('setSnippet::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setTitle(String var1) {
   
-    debugPrint('setTitle::kCallbackPool: $kCallbackPool');
+    debugPrint('setTitle::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

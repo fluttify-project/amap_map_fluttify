@@ -14,115 +14,115 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   @mustCallSuper
   Future<String> getTitle() {
   
-    debugPrint('getTitle::kCallbackPool: $kCallbackPool');
+    debugPrint('getTitle::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<String> getSnippet() {
   
-    debugPrint('getSnippet::kCallbackPool: $kCallbackPool');
+    debugPrint('getSnippet::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<String> getId() {
   
-    debugPrint('getId::kCallbackPool: $kCallbackPool');
+    debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) {
   
-    debugPrint('setPosition::kCallbackPool: $kCallbackPool');
+    debugPrint('setPosition::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setRotateAngle(double var1) {
   
-    debugPrint('setRotateAngle::kCallbackPool: $kCallbackPool');
+    debugPrint('setRotateAngle::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<double> getRotateAngle() {
   
-    debugPrint('getRotateAngle::kCallbackPool: $kCallbackPool');
+    debugPrint('getRotateAngle::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<com_amap_api_maps_model_LatLng> getPosition() {
   
-    debugPrint('getPosition::kCallbackPool: $kCallbackPool');
+    debugPrint('getPosition::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) {
   
-    debugPrint('setAnimation::kCallbackPool: $kCallbackPool');
+    debugPrint('setAnimation::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> startAnimation() {
   
-    debugPrint('startAnimation::kCallbackPool: $kCallbackPool');
+    debugPrint('startAnimation::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> remove() {
   
-    debugPrint('remove::kCallbackPool: $kCallbackPool');
+    debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setVisible(bool var1) {
   
-    debugPrint('setVisible::kCallbackPool: $kCallbackPool');
+    debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isVisible() {
   
-    debugPrint('isVisible::kCallbackPool: $kCallbackPool');
+    debugPrint('isVisible::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setZoomLimit(double var1) {
   
-    debugPrint('setZoomLimit::kCallbackPool: $kCallbackPool');
+    debugPrint('setZoomLimit::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> destroy() {
   
-    debugPrint('destroy::kCallbackPool: $kCallbackPool');
+    debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) {
   
-    debugPrint('setGeoPoint::kCallbackPool: $kCallbackPool');
+    debugPrint('setGeoPoint::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> showInfoWindow() {
   
-    debugPrint('showInfoWindow::kCallbackPool: $kCallbackPool');
+    debugPrint('showInfoWindow::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setTitle(String var1) {
   
-    debugPrint('setTitle::kCallbackPool: $kCallbackPool');
+    debugPrint('setTitle::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setSnippet(String var1) {
   
-    debugPrint('setSnippet::kCallbackPool: $kCallbackPool');
+    debugPrint('setSnippet::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setModelFixedLength(int var1) {
   
-    debugPrint('setModelFixedLength::kCallbackPool: $kCallbackPool');
+    debugPrint('setModelFixedLength::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

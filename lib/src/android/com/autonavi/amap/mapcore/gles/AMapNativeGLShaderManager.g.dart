@@ -28,6 +28,7 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -47,6 +48,7 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

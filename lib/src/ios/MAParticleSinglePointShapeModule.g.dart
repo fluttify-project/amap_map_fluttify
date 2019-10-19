@@ -28,6 +28,7 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAParticleSinglePointShapeModule()..refId = result);
       return MAParticleSinglePointShapeModule()..refId = result;
     }
   }

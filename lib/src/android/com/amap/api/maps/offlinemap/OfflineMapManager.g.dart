@@ -28,6 +28,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -47,6 +48,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -66,6 +68,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -85,6 +88,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -104,6 +108,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = it).toList());
       return (result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = it).toList();
     }
   }
@@ -123,6 +128,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_offlinemap_OfflineMapCity()..refId = result);
       return com_amap_api_maps_offlinemap_OfflineMapCity()..refId = result;
     }
   }
@@ -142,6 +148,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_offlinemap_OfflineMapCity()..refId = result);
       return com_amap_api_maps_offlinemap_OfflineMapCity()..refId = result;
     }
   }
@@ -161,6 +168,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = result);
       return com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = result;
     }
   }
@@ -180,6 +188,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = it).toList());
       return (result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = it).toList();
     }
   }
@@ -199,6 +208,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = it).toList());
       return (result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = it).toList();
     }
   }
@@ -218,6 +228,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = it).toList());
       return (result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = it).toList();
     }
   }
@@ -237,6 +248,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = it).toList());
       return (result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = it).toList();
     }
   }
@@ -256,6 +268,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = it).toList());
       return (result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = it).toList();
     }
   }
@@ -275,6 +288,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -294,6 +308,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -313,6 +328,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -332,6 +348,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -351,6 +368,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -370,6 +388,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -389,6 +408,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -425,6 +445,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

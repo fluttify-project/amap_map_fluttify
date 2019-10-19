@@ -14,13 +14,13 @@ mixin com_amap_api_maps_AMap_InfoWindowAdapter on java_lang_Object {
   @mustCallSuper
   Future<android_view_View> getInfoWindow(com_amap_api_maps_model_Marker var1) {
   
-    debugPrint('getInfoWindow::kCallbackPool: $kCallbackPool');
+    debugPrint('getInfoWindow::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<android_view_View> getInfoContents(com_amap_api_maps_model_Marker var1) {
   
-    debugPrint('getInfoContents::kCallbackPool: $kCallbackPool');
+    debugPrint('getInfoContents::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

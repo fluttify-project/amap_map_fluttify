@@ -9,11 +9,13 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
   // 生成getters
   Future<com_autonavi_amap_mapcore_FPoint> get_southwest() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.FPointBounds::get_southwest", {'refId': refId});
+    kNativeObjectPool.add(com_autonavi_amap_mapcore_FPoint()..refId = result);
     return com_autonavi_amap_mapcore_FPoint()..refId = result;
   }
   
   Future<com_autonavi_amap_mapcore_FPoint> get_northeast() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.FPointBounds::get_northeast", {'refId': refId});
+    kNativeObjectPool.add(com_autonavi_amap_mapcore_FPoint()..refId = result);
     return com_autonavi_amap_mapcore_FPoint()..refId = result;
   }
   
@@ -37,6 +39,7 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = result);
       return com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = result;
     }
   }
@@ -56,6 +59,7 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -75,6 +79,7 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

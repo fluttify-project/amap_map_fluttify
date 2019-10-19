@@ -9,116 +9,139 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
   // 生成getters
   Future<com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Type> get_nowType() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_nowType", {'refId': refId});
+  
     return com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Type.values[result];
   }
   
   Future<double> get_xPixel() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_xPixel", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_yPixel() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_yPixel", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_amount() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_amount", {'refId': refId});
+  
     return result;
   }
   
   Future<com_amap_api_maps_model_CameraPosition> get_cameraPosition() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_cameraPosition", {'refId': refId});
+    kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition()..refId = result);
     return com_amap_api_maps_model_CameraPosition()..refId = result;
   }
   
   Future<com_amap_api_maps_model_LatLngBounds> get_bounds() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_bounds", {'refId': refId});
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds()..refId = result);
     return com_amap_api_maps_model_LatLngBounds()..refId = result;
   }
   
   Future<android_graphics_Point> get_focus() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_focus", {'refId': refId});
+    kNativeObjectPool.add(android_graphics_Point()..refId = result);
     return android_graphics_Point()..refId = result;
   }
   
   Future<double> get_zoom() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_zoom", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_tilt() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_tilt", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_bearing() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_bearing", {'refId': refId});
+  
     return result;
   }
   
   Future<android_graphics_Point> get_geoPoint() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_geoPoint", {'refId': refId});
+    kNativeObjectPool.add(android_graphics_Point()..refId = result);
     return android_graphics_Point()..refId = result;
   }
   
   Future<bool> get_isUseAnchor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_isUseAnchor", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_anchorX() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_anchorX", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_anchorY() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_anchorY", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_isChangeFinished() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_isChangeFinished", {'refId': refId});
+  
     return result;
   }
   
   Future<com_autonavi_amap_mapcore_MapConfig> get_mapConfig() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_mapConfig", {'refId': refId});
+    kNativeObjectPool.add(com_autonavi_amap_mapcore_MapConfig()..refId = result);
     return com_autonavi_amap_mapcore_MapConfig()..refId = result;
   }
   
   Future<int> get_paddingLeft() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_paddingLeft", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_paddingRight() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_paddingRight", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_paddingTop() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_paddingTop", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_paddingBottom() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_paddingBottom", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_mDuration() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_mDuration", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_width() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_width", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_height() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_height", {'refId': refId});
+  
     return result;
   }
   
@@ -309,6 +332,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -328,6 +352,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -347,6 +372,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

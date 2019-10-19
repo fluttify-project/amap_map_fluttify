@@ -50,6 +50,7 @@ class MATraceManager extends NSObject  {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MATraceManager()..refId = result);
       return MATraceManager()..refId = result;
     }
   }
@@ -69,6 +70,7 @@ class MATraceManager extends NSObject  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -88,6 +90,7 @@ class MATraceManager extends NSObject  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

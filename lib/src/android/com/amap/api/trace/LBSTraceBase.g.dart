@@ -14,37 +14,37 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   @mustCallSuper
   Future<void> queryProcessedTrace(int var1, List<com_amap_api_trace_TraceLocation> var2, int var3, com_amap_api_trace_TraceListener var4) {
   
-    debugPrint('queryProcessedTrace::kCallbackPool: $kCallbackPool');
+    debugPrint('queryProcessedTrace::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setLocationInterval(int var1) {
   
-    debugPrint('setLocationInterval::kCallbackPool: $kCallbackPool');
+    debugPrint('setLocationInterval::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setTraceStatusInterval(int var1) {
   
-    debugPrint('setTraceStatusInterval::kCallbackPool: $kCallbackPool');
+    debugPrint('setTraceStatusInterval::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> startTrace(com_amap_api_trace_TraceStatusListener var1) {
   
-    debugPrint('startTrace::kCallbackPool: $kCallbackPool');
+    debugPrint('startTrace::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> stopTrace() {
   
-    debugPrint('stopTrace::kCallbackPool: $kCallbackPool');
+    debugPrint('stopTrace::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> destroy() {
   
-    debugPrint('destroy::kCallbackPool: $kCallbackPool');
+    debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

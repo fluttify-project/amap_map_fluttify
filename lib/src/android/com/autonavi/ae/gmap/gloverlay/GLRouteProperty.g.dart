@@ -9,151 +9,181 @@ class com_autonavi_ae_gmap_gloverlay_GLRouteProperty extends java_lang_Object  {
   // 生成getters
   Future<com_autonavi_ae_gmap_gloverlay_GLRouteProperty_EAMapRouteTexture> get_euRouteTexture() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_euRouteTexture", {'refId': refId});
+  
     return com_autonavi_ae_gmap_gloverlay_GLRouteProperty_EAMapRouteTexture.values[result];
   }
   
   Future<int> get_mFilledResId() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mFilledResId", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_mSimple3DFillResId() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DFillResId", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_mFilledColor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mFilledColor", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_mBgResId() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mBgResId", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_mBgColor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mBgColor", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_mLineWidth() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mLineWidth", {'refId': refId});
+  
     return result;
   }
   
   Future<int> get_mBorderLineWidth() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mBorderLineWidth", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mX1() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mX1", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mY1() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mY1", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mX2() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mX2", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mY2() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mY2", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mGLStart() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mGLStart", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mTextureLen() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mTextureLen", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mSimple3DX1() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DX1", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mSimple3DY1() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DY1", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mSimple3DX2() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DX2", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mSimple3DY2() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DY2", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mSimple3DGLStart() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DGLStart", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mSimple3DTextureLen() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DTextureLen", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mCapX1() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mCapX1", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mCapY1() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mCapY1", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mCapX2() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mCapX2", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_mCapY2() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mCapY2", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_isLineExtract() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_isLineExtract", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_isCanCovered() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_isCanCovered", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_isUseColor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_isUseColor", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_isUseCap() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_isUseCap", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_mShowArrow() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mShowArrow", {'refId': refId});
+  
     return result;
   }
   
   Future<bool> get_mbTexPreMulAlpha() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mbTexPreMulAlpha", {'refId': refId});
+  
     return result;
   }
   

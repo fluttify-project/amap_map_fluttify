@@ -9,6 +9,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   // 生成getters
   Future<com_autonavi_amap_mapcore_animation_GLAnimation> get_glAnimation() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.animation.Animation::get_glAnimation", {'refId': refId});
+    kNativeObjectPool.add(com_autonavi_amap_mapcore_animation_GLAnimation()..refId = result);
     return com_autonavi_amap_mapcore_animation_GLAnimation()..refId = result;
   }
   
@@ -61,6 +62,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -80,6 +82,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -99,6 +102,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -118,6 +122,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -137,6 +142,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -156,6 +162,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -175,6 +182,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -194,6 +202,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

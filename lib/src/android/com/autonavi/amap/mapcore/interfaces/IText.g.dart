@@ -14,67 +14,67 @@ mixin com_autonavi_amap_mapcore_interfaces_IText on com_autonavi_amap_mapcore_in
   @mustCallSuper
   Future<void> setText(String var1) {
   
-    debugPrint('setText::kCallbackPool: $kCallbackPool');
+    debugPrint('setText::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<String> getText() {
   
-    debugPrint('getText::kCallbackPool: $kCallbackPool');
+    debugPrint('getText::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setBackgroundColor(int var1) {
   
-    debugPrint('setBackgroundColor::kCallbackPool: $kCallbackPool');
+    debugPrint('setBackgroundColor::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> getBackgroundColor() {
   
-    debugPrint('getBackgroundColor::kCallbackPool: $kCallbackPool');
+    debugPrint('getBackgroundColor::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setFontColor(int var1) {
   
-    debugPrint('setFontColor::kCallbackPool: $kCallbackPool');
+    debugPrint('setFontColor::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> getFontColor() {
   
-    debugPrint('getFontColor::kCallbackPool: $kCallbackPool');
+    debugPrint('getFontColor::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setFontSize(int var1) {
   
-    debugPrint('setFontSize::kCallbackPool: $kCallbackPool');
+    debugPrint('setFontSize::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> getFontSize() {
   
-    debugPrint('getFontSize::kCallbackPool: $kCallbackPool');
+    debugPrint('getFontSize::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setAlign(int var1, int var2) {
   
-    debugPrint('setAlign::kCallbackPool: $kCallbackPool');
+    debugPrint('setAlign::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> getAlignX() {
   
-    debugPrint('getAlignX::kCallbackPool: $kCallbackPool');
+    debugPrint('getAlignX::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<int> getAlignY() {
   
-    debugPrint('getAlignY::kCallbackPool: $kCallbackPool');
+    debugPrint('getAlignY::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

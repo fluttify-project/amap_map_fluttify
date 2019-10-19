@@ -28,6 +28,7 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
@@ -47,6 +48,7 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(android_graphics_Point()..refId = result);
       return android_graphics_Point()..refId = result;
     }
   }
@@ -66,6 +68,7 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_DPoint()..refId = result);
       return com_autonavi_amap_mapcore_DPoint()..refId = result;
     }
   }

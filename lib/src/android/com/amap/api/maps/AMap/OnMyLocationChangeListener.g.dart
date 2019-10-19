@@ -13,8 +13,8 @@ mixin com_amap_api_maps_AMap_OnMyLocationChangeListener on java_lang_Object {
 
   @mustCallSuper
   Future<void> onMyLocationChange(android_location_Location var1) {
-    kCallbackPool[var1.refId] = var1;
-    debugPrint('onMyLocationChange::kCallbackPool: $kCallbackPool');
+    kNativeObjectPool.add(var1);
+    debugPrint('onMyLocationChange::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

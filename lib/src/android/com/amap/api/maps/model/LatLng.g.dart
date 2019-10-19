@@ -9,11 +9,13 @@ class com_amap_api_maps_model_LatLng extends java_lang_Object with android_os_Pa
   // 生成getters
   Future<double> get_latitude() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.LatLng::get_latitude", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_longitude() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.LatLng::get_longitude", {'refId': refId});
+  
     return result;
   }
   
@@ -37,6 +39,7 @@ class com_amap_api_maps_model_LatLng extends java_lang_Object with android_os_Pa
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
       return com_amap_api_maps_model_LatLng()..refId = result;
     }
   }

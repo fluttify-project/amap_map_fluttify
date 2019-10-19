@@ -52,6 +52,7 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

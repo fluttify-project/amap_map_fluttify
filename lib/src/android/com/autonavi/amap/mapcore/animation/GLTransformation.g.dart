@@ -9,21 +9,25 @@ class com_autonavi_amap_mapcore_animation_GLTransformation extends java_lang_Obj
   // 生成getters
   Future<double> get_alpha() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTransformation::get_alpha", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_rotate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTransformation::get_rotate", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_scaleX() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTransformation::get_scaleX", {'refId': refId});
+  
     return result;
   }
   
   Future<double> get_scaleY() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTransformation::get_scaleY", {'refId': refId});
+  
     return result;
   }
   
@@ -70,6 +74,7 @@ class com_autonavi_amap_mapcore_animation_GLTransformation extends java_lang_Obj
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }

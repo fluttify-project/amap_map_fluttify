@@ -14,7 +14,7 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationListener on java_lang_Object
   @mustCallSuper
   Future<void> onLocationChanged(com_autonavi_amap_mapcore_Inner_3dMap_location var1) {
   
-    debugPrint('onLocationChanged::kCallbackPool: $kCallbackPool');
+    debugPrint('onLocationChanged::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

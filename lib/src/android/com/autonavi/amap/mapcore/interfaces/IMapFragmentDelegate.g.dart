@@ -14,73 +14,73 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   @mustCallSuper
   Future<void> onInflate(android_app_Activity var1, com_amap_api_maps_AMapOptions var2, android_os_Bundle var3) {
   
-    debugPrint('onInflate::kCallbackPool: $kCallbackPool');
+    debugPrint('onInflate::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setContext(android_content_Context var1) {
   
-    debugPrint('setContext::kCallbackPool: $kCallbackPool');
+    debugPrint('setContext::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setOptions(com_amap_api_maps_AMapOptions var1) {
   
-    debugPrint('setOptions::kCallbackPool: $kCallbackPool');
+    debugPrint('setOptions::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onCreate(android_os_Bundle var1) {
   
-    debugPrint('onCreate::kCallbackPool: $kCallbackPool');
+    debugPrint('onCreate::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onResume() {
   
-    debugPrint('onResume::kCallbackPool: $kCallbackPool');
+    debugPrint('onResume::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onPause() {
   
-    debugPrint('onPause::kCallbackPool: $kCallbackPool');
+    debugPrint('onPause::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onDestroyView() {
   
-    debugPrint('onDestroyView::kCallbackPool: $kCallbackPool');
+    debugPrint('onDestroyView::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onDestroy() {
   
-    debugPrint('onDestroy::kCallbackPool: $kCallbackPool');
+    debugPrint('onDestroy::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onLowMemory() {
   
-    debugPrint('onLowMemory::kCallbackPool: $kCallbackPool');
+    debugPrint('onLowMemory::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> onSaveInstanceState(android_os_Bundle var1) {
   
-    debugPrint('onSaveInstanceState::kCallbackPool: $kCallbackPool');
+    debugPrint('onSaveInstanceState::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<bool> isReady() {
   
-    debugPrint('isReady::kCallbackPool: $kCallbackPool');
+    debugPrint('isReady::kNativeObjectPool: $kNativeObjectPool');
   }
   
   @mustCallSuper
   Future<void> setVisibility(int var1) {
   
-    debugPrint('setVisibility::kCallbackPool: $kCallbackPool');
+    debugPrint('setVisibility::kNativeObjectPool: $kNativeObjectPool');
   }
   
 }

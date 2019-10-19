@@ -28,6 +28,7 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAParticleCurveSizeGenerate()..refId = result);
       return MAParticleCurveSizeGenerate()..refId = result;
     }
   }

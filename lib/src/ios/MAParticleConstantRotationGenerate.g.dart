@@ -28,6 +28,7 @@ class MAParticleConstantRotationGenerate extends NSObject with MAParticleRotatio
     if (result == null) {
       return null;
     } else {
+      kNativeObjectPool.add(MAParticleConstantRotationGenerate()..refId = result);
       return MAParticleConstantRotationGenerate()..refId = result;
     }
   }

@@ -28,6 +28,7 @@ class com_amap_api_maps_model_particle_ColorGenerate extends com_autonavi_amap_m
     if (result == null) {
       return null;
     } else {
+    
       return result;
     }
   }
