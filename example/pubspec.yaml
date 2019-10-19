@@ -3,7 +3,7 @@ description: Demonstrates how to use the amap_map_fluttify plugin.
 publish_to: 'none'
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.2.2 <3.0.0"
 
 dependencies:
   flutter:
@@ -12,7 +12,6 @@ dependencies:
   permission_handler: ^3.2.2
   oktoast:
   decorated_flutter:
-    path: /Users/yohom/Github/Util/Flutter/package/decorated_flutter
 
 dev_dependencies:
   flutter_test:

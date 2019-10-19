@@ -95,9 +95,9 @@ packages:
   decorated_flutter:
     dependency: "direct main"
     description:
-      path: "/Users/yohom/Github/Util/Flutter/package/decorated_flutter"
-      relative: false
-    source: path
+      name: decorated_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "0.7.0"
   dio:
     dependency: transitive
