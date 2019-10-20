@@ -9,7 +9,7 @@
 <img src="./other/1557492318.jpg" height="300">  <img src="./other/WechatIMG111.jpeg" height="300">
 
 ## LICENSE
-> Copyright 2018 yohom
+> Copyright 2019 yohom
 >   
 > Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
