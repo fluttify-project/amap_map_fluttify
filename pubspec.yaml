@@ -10,6 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  amap_core_fluttify:
+    git:
+      url: https://github.com/fluttify-project/amap_core_fluttify.git
+      ref: develop
 
 dev_dependencies:
   flutter_test:
