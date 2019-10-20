@@ -4,12 +4,10 @@ packages:
   amap_core_fluttify:
     dependency: "direct main"
     description:
-      path: "."
-      ref: develop
-      resolved-ref: bdcc8aed81d384bf7694f510943a8265f023c0ce
-      url: "https://github.com/fluttify-project/amap_core_fluttify.git"
-    source: git
-    version: "0.0.1"
+      name: amap_core_fluttify
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.2"
   async:
     dependency: transitive
     description:
