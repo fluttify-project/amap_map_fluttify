@@ -1,3 +1,4 @@
+/// 地图类型
 enum MapType {
   /// 标准视图
   Standard,

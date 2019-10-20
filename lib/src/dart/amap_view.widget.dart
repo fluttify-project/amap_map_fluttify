@@ -6,15 +6,16 @@ import 'package:amap_map_fluttify/src/dart/amap_controller.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:flutter/material.dart';
 
-typedef void OnMapCreated(AmapController controller);
+typedef void _OnMapCreated(AmapController controller);
 
+/// 高德地图 Widget
 class AmapView extends StatefulWidget {
   const AmapView({
     Key key,
     this.onMapCreated,
   }) : super(key: key);
 
-  final OnMapCreated onMapCreated;
+  final _OnMapCreated onMapCreated;
 
   @override
   _AmapViewState createState() => _AmapViewState();
