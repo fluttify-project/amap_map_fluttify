@@ -5,6 +5,35 @@
 
 Dart接口基于[fluttify](https://github.com/yohom/fluttify-core-example)引擎生成. dartdoc[接口文档](https://fluttify-project.github.io/amap_map_fluttify/).
 
+安装: 
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  amap_map_fluttify: ^x.x.x
+```
+
+导入:
+```dart
+import 'package:amap_map_fluttify/amap_map_fluttify.dart';
+```
+
+使用:
+```dart 
+class AmapWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return AmapView(
+      onMapCreated: (controller) async {
+        if (await requestPermission()) {
+          await controller.showMyLocation(true);
+        }
+      },
+    );
+  }
+}
+```
+
 ## 请作者喝杯奶茶
 <img src="./other/1557492318.jpg" height="300">  <img src="./other/WechatIMG111.jpeg" height="300">
 
