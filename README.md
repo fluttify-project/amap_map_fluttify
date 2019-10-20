@@ -1,4 +1,4 @@
-# ![fluttify](https://avatars1.githubusercontent.com/u/56247236?s=60&v=4) 高德地图 `地图`组件
+# 高德 `地图`组件
 
 [![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify)
 [![Codemagic build status](https://api.codemagic.io/apps/5dab1239813e331c1ca09a1a/5dab1239813e331c1ca09a19/status_badge.svg)](https://codemagic.io/apps/5dab1239813e331c1ca09a1a/5dab1239813e331c1ca09a19/latest_build)
