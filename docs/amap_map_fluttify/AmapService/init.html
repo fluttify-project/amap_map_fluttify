@@ -112,13 +112,11 @@
   );
 
   return platform(
-    android: (releasePool) async {
+    android: (pool) async {
       print(&#39;android端需要在Manifest里面设置&#39;);
     },
-    ios: (releasePool) async {
-      final service = await AMapServices.sharedServices();
-      await service.set_apiKey(iosKey);
-      await service.set_enableHTTPS(true);
+    ios: (pool) async {
+      AmapCore.init(iosKey);
     },
   );
 }</code></pre>
@@ -133,7 +131,7 @@
 
 <footer>
   <span class="no-break">
-    amap_map_fluttify 0.1.0+1
+    amap_map_fluttify 0.2.0
   </span>
 
   
