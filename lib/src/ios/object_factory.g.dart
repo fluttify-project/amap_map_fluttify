@@ -39,31 +39,6 @@ class ObjectFactory_iOS {
     await _channel.invokeMethod('ObjectFactory::clearStack');
   }
 
-  static Future<AMapURLSearch> createAMapURLSearch() async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createAMapURLSearch');
-    return AMapURLSearch()..refId = refId;
-  }
-  
-  static Future<AMapNaviConfig> createAMapNaviConfig() async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createAMapNaviConfig');
-    return AMapNaviConfig()..refId = refId;
-  }
-  
-  static Future<AMapRouteConfig> createAMapRouteConfig() async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createAMapRouteConfig');
-    return AMapRouteConfig()..refId = refId;
-  }
-  
-  static Future<AMapPOIConfig> createAMapPOIConfig() async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createAMapPOIConfig');
-    return AMapPOIConfig()..refId = refId;
-  }
-  
-  static Future<AMapServices> createAMapServices() async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createAMapServices');
-    return AMapServices()..refId = refId;
-  }
-  
   static Future<MAOfflineCity> createMAOfflineCity() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAOfflineCity');
     return MAOfflineCity()..refId = refId;

@@ -55,8 +55,6 @@
       <li><a href="amap_map_fluttify/AmapController-class.html">AmapController</a></li>
       <li><a href="amap_map_fluttify/AmapService-class.html">AmapService</a></li>
       <li><a href="amap_map_fluttify/AmapView-class.html">AmapView</a></li>
-      <li><a href="amap_map_fluttify/AndroidMapDelegate-class.html">AndroidMapDelegate</a></li>
-      <li><a href="amap_map_fluttify/IOSMapDelegate-class.html">IOSMapDelegate</a></li>
       <li><a href="amap_map_fluttify/LatLng-class.html">LatLng</a></li>
       <li><a href="amap_map_fluttify/Marker-class.html">Marker</a></li>
     
@@ -67,9 +65,6 @@
       <li class="section-title"><a href="amap_map_fluttify/amap_map_fluttify-library.html#enums">Enums</a></li>
       <li><a href="amap_map_fluttify/MapType-class.html">MapType</a></li>
     
-      <li class="section-title"><a href="amap_map_fluttify/amap_map_fluttify-library.html#typedefs">Typedefs</a></li>
-      <li><a href="amap_map_fluttify/OnMapCreated.html">OnMapCreated</a></li>
-      <li><a href="amap_map_fluttify/OnMarkerClick.html">OnMarkerClick</a></li>
     
     </ol>
   </div>
@@ -77,6 +72,9 @@
   <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
       <div><h1><span class="kind-class">AmapView</span> class </h1></div>
 
+    <section class="desc markdown">
+      <p>高德地图 Widget</p>
+    </section>
     
 
     <section class="summary offset-anchor" id="constructors">
@@ -84,7 +82,7 @@
 
       <dl class="constructor-summary-list">
         <dt id="AmapView" class="callable">
-          <span class="name"><a href="amap_map_fluttify/AmapView/AmapView.html">AmapView</a></span><span class="signature">({<span class="parameter" id="-param-key"><span class="type-annotation">Key</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="-param-onMapCreated"><span class="type-annotation"><a href="amap_map_fluttify/OnMapCreated.html">OnMapCreated</a></span> <span class="parameter-name">onMapCreated</span></span> })</span>
+          <span class="name"><a href="amap_map_fluttify/AmapView/AmapView.html">AmapView</a></span><span class="signature">({<span class="parameter" id="-param-key"><span class="type-annotation">Key</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="-param-onMapCreated"><span class="type-annotation">_OnMapCreated</span> <span class="parameter-name">onMapCreated</span></span> })</span>
         </dt>
         <dd>
           
@@ -99,18 +97,18 @@
       <dl class="properties">
         <dt id="onMapCreated" class="property">
           <span class="name"><a href="amap_map_fluttify/AmapView/onMapCreated.html">onMapCreated</a></span>
-          <span class="signature">&#8594; <a href="amap_map_fluttify/OnMapCreated.html">OnMapCreated</a></span>         
+          <span class="signature">&#8594; _OnMapCreated</span>         
         </dt>
         <dd>
           
                   <div class="features">final</div>
 </dd>
         <dt id="hashCode" class="property inherited">
-          <span class="name"><a href="dart-core/Object/hashCode.html">hashCode</a></span>
-          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>         
+          <span class="name"><a href="amap_map_fluttify/AmapView/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>         
         </dt>
         <dd class="inherited">
-          The hash code for this object. <a href="dart-core/Object/hashCode.html">[...]</a>
+          The hash code for this object. <a href="amap_map_fluttify/AmapView/hashCode.html">[...]</a>
                   <div class="features">read-only, inherited</div>
 </dd>
         <dt id="key" class="property inherited">
@@ -122,8 +120,8 @@
                   <div class="features">final, inherited</div>
 </dd>
         <dt id="runtimeType" class="property inherited">
-          <span class="name"><a href="dart-core/Object/runtimeType.html">runtimeType</a></span>
-          <span class="signature">&#8594; <a href="dart-core/Type-class.html">Type</a></span>         
+          <span class="name"><a href="amap_map_fluttify/AmapView/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>         
         </dt>
         <dd class="inherited">
           A representation of the runtime type of the object.
@@ -155,7 +153,7 @@
 </dd>
         <dt id="debugDescribeChildren" class="callable inherited">
           <span class="name"><a href="amap_map_fluttify/AmapView/debugDescribeChildren.html">debugDescribeChildren</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">DiagnosticsNode</span>&gt;</span></span>
+            <span class="returntype parameter">&#8594; List<span class="signature">&lt;<wbr><span class="type-parameter">DiagnosticsNode</span>&gt;</span></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -173,16 +171,16 @@ children. <a href="amap_map_fluttify/AmapView/debugDescribeChildren.html">[...]<
                   <div class="features">inherited</div>
 </dd>
         <dt id="noSuchMethod" class="callable inherited">
-          <span class="name"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+          <span class="name"><a href="amap_map_fluttify/AmapView/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
                   </dt>
         <dd class="inherited">
-          Invoked when a non-existent method or property is accessed. <a href="dart-core/Object/noSuchMethod.html">[...]</a>
+          Invoked when a non-existent method or property is accessed. <a href="amap_map_fluttify/AmapView/noSuchMethod.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
         <dt id="toDiagnosticsNode" class="callable inherited">
-          <span class="name"><a href="amap_map_fluttify/AmapView/toDiagnosticsNode.html">toDiagnosticsNode</a></span><span class="signature">(<wbr>{<span class="parameter" id="toDiagnosticsNode-param-name"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span>, </span> <span class="parameter" id="toDiagnosticsNode-param-style"><span class="type-annotation">DiagnosticsTreeStyle</span> <span class="parameter-name">style</span></span> })
+          <span class="name"><a href="amap_map_fluttify/AmapView/toDiagnosticsNode.html">toDiagnosticsNode</a></span><span class="signature">(<wbr>{<span class="parameter" id="toDiagnosticsNode-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span>, </span> <span class="parameter" id="toDiagnosticsNode-param-style"><span class="type-annotation">DiagnosticsTreeStyle</span> <span class="parameter-name">style</span></span> })
             <span class="returntype parameter">&#8594; DiagnosticsNode</span>
           </span>
                   </dt>
@@ -193,7 +191,7 @@ tools and by <a href="amap_map_fluttify/AmapView/toStringDeep.html">DiagnosticsN
 </dd>
         <dt id="toString" class="callable inherited">
           <span class="name"><a href="amap_map_fluttify/AmapView/toString.html">toString</a></span><span class="signature">(<wbr>{<span class="parameter" id="toString-param-minLevel"><span class="type-annotation">DiagnosticLevel</span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
-            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+            <span class="returntype parameter">&#8594; String</span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -201,8 +199,8 @@ tools and by <a href="amap_map_fluttify/AmapView/toStringDeep.html">DiagnosticsN
                   <div class="features">inherited</div>
 </dd>
         <dt id="toStringDeep" class="callable inherited">
-          <span class="name"><a href="amap_map_fluttify/AmapView/toStringDeep.html">toStringDeep</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringDeep-param-prefixLineOne"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixLineOne</span>: <span class="default-value">''</span>, </span> <span class="parameter" id="toStringDeep-param-prefixOtherLines"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixOtherLines</span>, </span> <span class="parameter" id="toStringDeep-param-minLevel"><span class="type-annotation">DiagnosticLevel</span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
-            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="amap_map_fluttify/AmapView/toStringDeep.html">toStringDeep</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringDeep-param-prefixLineOne"><span class="type-annotation">String</span> <span class="parameter-name">prefixLineOne</span>: <span class="default-value">''</span>, </span> <span class="parameter" id="toStringDeep-param-prefixOtherLines"><span class="type-annotation">String</span> <span class="parameter-name">prefixOtherLines</span>, </span> <span class="parameter" id="toStringDeep-param-minLevel"><span class="type-annotation">DiagnosticLevel</span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+            <span class="returntype parameter">&#8594; String</span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -210,8 +208,8 @@ tools and by <a href="amap_map_fluttify/AmapView/toStringDeep.html">DiagnosticsN
                   <div class="features">inherited</div>
 </dd>
         <dt id="toStringShallow" class="callable inherited">
-          <span class="name"><a href="amap_map_fluttify/AmapView/toStringShallow.html">toStringShallow</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringShallow-param-joiner"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">joiner</span>: <span class="default-value">', '</span>, </span> <span class="parameter" id="toStringShallow-param-minLevel"><span class="type-annotation">DiagnosticLevel</span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
-            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="amap_map_fluttify/AmapView/toStringShallow.html">toStringShallow</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringShallow-param-joiner"><span class="type-annotation">String</span> <span class="parameter-name">joiner</span>: <span class="default-value">', '</span>, </span> <span class="parameter" id="toStringShallow-param-minLevel"><span class="type-annotation">DiagnosticLevel</span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+            <span class="returntype parameter">&#8594; String</span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -220,7 +218,7 @@ tools and by <a href="amap_map_fluttify/AmapView/toStringDeep.html">DiagnosticsN
 </dd>
         <dt id="toStringShort" class="callable inherited">
           <span class="name"><a href="amap_map_fluttify/AmapView/toStringShort.html">toStringShort</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+            <span class="returntype parameter">&#8594; String</span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -234,12 +232,12 @@ tools and by <a href="amap_map_fluttify/AmapView/toStringDeep.html">DiagnosticsN
       <h2>Operators</h2>
       <dl class="callables">
         <dt id="operator ==" class="callable inherited">
-          <span class="name"><a href="dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="amap_map_fluttify/AmapView/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
           </span>
                   </dt>
         <dd class="inherited">
-          The equality operator. <a href="dart-core/Object/operator_equals.html">[...]</a>
+          The equality operator. <a href="amap_map_fluttify/AmapView/operator_equals.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
       </dl>
@@ -259,16 +257,16 @@ tools and by <a href="amap_map_fluttify/AmapView/toStringDeep.html">DiagnosticsN
         <a href="amap_map_fluttify/AmapView-class.html#instance-properties">Properties</a>
       </li>
       <li><a href="amap_map_fluttify/AmapView/onMapCreated.html">onMapCreated</a></li>
-      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="amap_map_fluttify/AmapView/hashCode.html">hashCode</a></li>
       <li class="inherited"><a href="amap_map_fluttify/AmapView/key.html">key</a></li>
-      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="amap_map_fluttify/AmapView/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="amap_map_fluttify/AmapView-class.html#instance-methods">Methods</a></li>
       <li><a href="amap_map_fluttify/AmapView/createState.html">createState</a></li>
       <li class="inherited"><a href="amap_map_fluttify/AmapView/createElement.html">createElement</a></li>
       <li class="inherited"><a href="amap_map_fluttify/AmapView/debugDescribeChildren.html">debugDescribeChildren</a></li>
       <li class="inherited"><a href="amap_map_fluttify/AmapView/debugFillProperties.html">debugFillProperties</a></li>
-      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="amap_map_fluttify/AmapView/noSuchMethod.html">noSuchMethod</a></li>
       <li class="inherited"><a href="amap_map_fluttify/AmapView/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
       <li class="inherited"><a href="amap_map_fluttify/AmapView/toString.html">toString</a></li>
       <li class="inherited"><a href="amap_map_fluttify/AmapView/toStringDeep.html">toStringDeep</a></li>
@@ -276,7 +274,7 @@ tools and by <a href="amap_map_fluttify/AmapView/toStringDeep.html">DiagnosticsN
       <li class="inherited"><a href="amap_map_fluttify/AmapView/toStringShort.html">toStringShort</a></li>
     
       <li class="section-title inherited"><a href="amap_map_fluttify/AmapView-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="amap_map_fluttify/AmapView/operator_equals.html">operator ==</a></li>
     
     
     
@@ -287,7 +285,7 @@ tools and by <a href="amap_map_fluttify/AmapView/toStringDeep.html">DiagnosticsN
 
 <footer>
   <span class="no-break">
-    amap_map_fluttify 0.0.4
+    amap_map_fluttify 0.1.0+1
   </span>
 
   

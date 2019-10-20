@@ -2,10 +2,13 @@ import 'dart:collection';
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+
+export 'package:amap_core_fluttify/amap_core_fluttify.dart';
 
 /// 除了地图以外的功能放在这里, 比如说sdk初始化
 class AmapService {
@@ -32,13 +35,11 @@ class AmapService {
     );
 
     return platform(
-      android: (releasePool) async {
+      android: (pool) async {
         print('android端需要在Manifest里面设置');
       },
-      ios: (releasePool) async {
-        final service = await AMapServices.sharedServices();
-        await service.set_apiKey(iosKey);
-        await service.set_enableHTTPS(true);
+      ios: (pool) async {
+        AmapCore.init(iosKey);
       },
     );
   }

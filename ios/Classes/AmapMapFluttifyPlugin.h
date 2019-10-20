@@ -3,7 +3,6 @@
 //////////////////////////////////////////////////////////
 
 #import <Flutter/Flutter.h>
-#import <AMapFoundationKit/AMapFoundationKit.h>
 #import <MAMapKit/MAMapKit.h>
 #import "MAAnnotationViewFactory.h"
 #import "MACustomCalloutViewFactory.h"

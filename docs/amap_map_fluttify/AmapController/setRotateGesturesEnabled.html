@@ -57,13 +57,11 @@
       <li><a href="amap_map_fluttify/AmapController/AmapController.android.html">android</a></li>
       <li><a href="amap_map_fluttify/AmapController/AmapController.ios.html">ios</a></li>
     
-      <li class="section-title">
+      <li class="section-title inherited">
         <a href="amap_map_fluttify/AmapController-class.html#instance-properties">Properties</a>
       </li>
-      <li><a href="amap_map_fluttify/AmapController/androidController.html">androidController</a></li>
-      <li><a href="amap_map_fluttify/AmapController/iosController.html">iosController</a></li>
-      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
-      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="amap_map_fluttify/AmapController/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="amap_map_fluttify/AmapController/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="amap_map_fluttify/AmapController-class.html#instance-methods">Methods</a></li>
       <li><a href="amap_map_fluttify/AmapController/addCircle.html">addCircle</a></li>
@@ -88,11 +86,11 @@
       <li><a href="amap_map_fluttify/AmapController/showZoomControl.html">showZoomControl</a></li>
       <li><a href="amap_map_fluttify/AmapController/zoomIn.html">zoomIn</a></li>
       <li><a href="amap_map_fluttify/AmapController/zoomOut.html">zoomOut</a></li>
-      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
-      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+      <li class="inherited"><a href="amap_map_fluttify/AmapController/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="amap_map_fluttify/AmapController/toString.html">toString</a></li>
     
       <li class="section-title inherited"><a href="amap_map_fluttify/AmapController-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="amap_map_fluttify/AmapController/operator_equals.html">operator ==</a></li>
     
     
     
@@ -103,9 +101,9 @@
       <div><h1><span class="kind-method">setRotateGesturesEnabled</span> method</h1></div>
 
     <section class="multi-line-signature">
-      <span class="returntype"><a href="dart-async/Future-class.html">Future</a></span>
+      <span class="returntype">Future</span>
             <span class="name ">setRotateGesturesEnabled</span>
-(<wbr><span class="parameter" id="setRotateGesturesEnabled-param-enable"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enable</span></span>)
+(<wbr><span class="parameter" id="setRotateGesturesEnabled-param-enable"><span class="type-annotation">bool</span> <span class="parameter-name">enable</span></span>)
       
     </section>
     <section class="desc markdown">
@@ -117,14 +115,14 @@
       <pre class="language-dart"><code class="language-dart">Future setRotateGesturesEnabled(bool enable) {
   return platform(
     android: (pool) async {
-      final map = await androidController.getMap();
+      final map = await _androidController.getMap();
       final uiSetting = await map.getUiSettings();
       await uiSetting.setRotateGesturesEnabled(enable);
 
       pool..add(map)..add(uiSetting);
     },
     ios: (pool) async {
-      await iosController.set_rotateEnabled(enable);
+      await _iosController.set_rotateEnabled(enable);
     },
   );
 }</code></pre>
@@ -139,7 +137,7 @@
 
 <footer>
   <span class="no-break">
-    amap_map_fluttify 0.0.4
+    amap_map_fluttify 0.1.0+1
   </span>
 
   

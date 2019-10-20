@@ -2,6 +2,7 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 
 import '../ios/ios.export.g.dart';
 
+/// 地图标记
 class Marker {
   Marker.android(this._androidModel);
 
@@ -31,6 +32,7 @@ class Marker {
   }
 }
 
+/// 经纬度model
 class LatLng {
   LatLng(this.lat, this.lng);
 
