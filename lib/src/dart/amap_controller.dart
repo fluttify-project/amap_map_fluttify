@@ -832,6 +832,37 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       onMarkerClicked(Marker.ios(view));
     }
   }
+
+  @override
+  Future<void> mapViewAnnotationViewdidChangeDragStatefromOldState(
+    MAMapView mapView,
+    MAAnnotationView view,
+    MAAnnotationViewDragState newState,
+    MAAnnotationViewDragState oldState,
+  ) async {
+    super.mapViewAnnotationViewdidChangeDragStatefromOldState(
+      mapView,
+      view,
+      newState,
+      oldState,
+    );
+    if (_onMarkerDragStart != null &&
+        newState ==
+            MAAnnotationViewDragState.MAAnnotationViewDragStateStarting) {
+      _onMarkerDragStart(Marker.ios(view));
+    }
+
+    if (_onMarkerDragging != null &&
+        newState ==
+            MAAnnotationViewDragState.MAAnnotationViewDragStateDragging) {
+      _onMarkerDragging(Marker.ios(view));
+    }
+
+    if (_onMarkerDragEnd != null &&
+        newState == MAAnnotationViewDragState.MAAnnotationViewDragStateEnding) {
+      _onMarkerDragEnd(Marker.ios(view));
+    }
+  }
 }
 
 class _AndroidMapDelegate extends java_lang_Object

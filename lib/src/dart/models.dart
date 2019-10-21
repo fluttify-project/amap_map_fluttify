@@ -41,9 +41,9 @@ class Marker {
         );
       },
       ios: (_) async {
-//        final _annotation = await _iosModel.get_annotation(viewChannel: false);
-//        final _location = await _annotation.get_coordinate();
-//        return LatLng(await _location., lng)
+        final _annotation = await _iosModel.get_annotation(viewChannel: false);
+        final _location = await _annotation.get_coordinate();
+        return LatLng(await _location.latitude, await _location.longitude);
       },
     );
   }

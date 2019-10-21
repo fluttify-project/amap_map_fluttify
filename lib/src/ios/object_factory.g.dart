@@ -405,16 +405,18 @@ class NSObject extends Ref_iOS {}
 
 // 结构体
 class CLLocationCoordinate2D extends Ref_iOS {
-  double latitude;
-  double longitude;
+  Future<double> get latitude {
+    return MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('CLLocationCoordinate2D::get_latitude', {'refId': refId});
+  }
+
+  Future<double> get longitude {
+    return MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('CLLocationCoordinate2D::get_longitude', {'refId': refId});
+  }
 }
 
 class CLLocation extends Ref_iOS {}
 
-class CGRect extends Ref_iOS {
-  CGPoint origin;
-  CGSize size;
-}
+class CGRect extends Ref_iOS {}
 
 class CGPoint extends Ref_iOS {}
 
