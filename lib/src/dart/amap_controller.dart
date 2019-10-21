@@ -26,6 +26,9 @@ class AmapController {
   com_amap_api_maps_MapView _androidController;
   MAMapView _iosController;
 
+  final _iosMapDelegate = _IOSMapDelegate();
+  final _androidMapDelegate = _AndroidMapDelegate();
+
   /// 是否显示我的位置
   Future<void> showMyLocation(bool show) async {
     return platform(
@@ -491,7 +494,7 @@ class AmapController {
         pool..add(map)..add(latLng)..add(markerOption)..add(marker);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_IOSMapDelegate());
+        await _iosController.set_delegate(_iosMapDelegate);
 
         // 创建marker
         final pointAnnotation =
@@ -579,7 +582,7 @@ class AmapController {
           ..addAll(latLngList);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_IOSMapDelegate());
+        await _iosController.set_delegate(_iosMapDelegate);
 
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
@@ -659,7 +662,7 @@ class AmapController {
           ..addAll(latLngList);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_IOSMapDelegate());
+        await _iosController.set_delegate(_iosMapDelegate);
 
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
@@ -736,7 +739,7 @@ class AmapController {
         pool..add(map)..add(circleOptions)..add(latLng);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_IOSMapDelegate());
+        await _iosController.set_delegate(_iosMapDelegate);
 
         final latLng = await ObjectFactory_iOS.createCLLocationCoordinate2D(
             point.lat, point.lng);
@@ -770,20 +773,20 @@ class AmapController {
         final map = await _androidController.getMap();
 
         await map.setOnMarkerClickListener(
-            _AndroidMapDelegate(onMarkerClicked: onMarkerClicked));
+            _androidMapDelegate..onMarkerClicked = onMarkerClicked);
 
         pool..add(map);
       },
       ios: (pool) async {
         await _iosController
-            .set_delegate(_IOSMapDelegate(onMarkerClicked: onMarkerClicked));
+            .set_delegate(_iosMapDelegate..onMarkerClicked = onMarkerClicked);
       },
     );
   }
 }
 
 class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
-  final _OnMarkerClick onMarkerClicked;
+  _OnMarkerClick onMarkerClicked;
 
   _IOSMapDelegate({this.onMarkerClicked});
 
@@ -801,7 +804,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
 
 class _AndroidMapDelegate extends java_lang_Object
     with com_amap_api_maps_AMap_OnMarkerClickListener {
-  final _OnMarkerClick onMarkerClicked;
+  _OnMarkerClick onMarkerClicked;
 
   _AndroidMapDelegate({this.onMarkerClicked});
 
