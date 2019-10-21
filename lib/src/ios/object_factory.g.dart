@@ -404,13 +404,21 @@ class ObjectFactory_iOS {
 class NSObject extends Ref_iOS {}
 
 // 结构体
-class CLLocationCoordinate2D extends Ref_iOS {}
+class CLLocationCoordinate2D extends Ref_iOS {
+  double latitude;
+  double longitude;
+}
 
 class CLLocation extends Ref_iOS {}
 
-class CGRect extends Ref_iOS {}
+class CGRect extends Ref_iOS {
+  CGPoint origin;
+  CGSize size;
+}
 
 class CGPoint extends Ref_iOS {}
+
+class CGSize extends Ref_iOS {}
 
 class UIEdgeInsets extends Ref_iOS {}
 
