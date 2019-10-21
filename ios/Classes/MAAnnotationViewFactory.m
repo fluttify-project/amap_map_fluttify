@@ -118,8 +118,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           NSString* result = ref.reuseIdentifier;
       
-      
-      
           // 返回值: jsonable
           methodResult(result);
       },
@@ -134,8 +132,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           NSInteger result = ref.zIndex;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -149,8 +145,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           id<MAAnnotation> result = ref.annotation;
-      
-      
       
           // 返回值: 引用
           HEAP_AmapMapFluttify[@(result.hash)] = result;
@@ -167,8 +161,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           MACustomCalloutView* result = ref.customCalloutView;
       
-      
-      
           // 返回值: 引用
           HEAP_AmapMapFluttify[@(result.hash)] = result;
           methodResult(@(result.hash));
@@ -184,15 +176,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           CGPoint result = ref.centerOffset;
       
-          NSLog(@"MAAnnotationView::get_centerOffset:结构体getter暂时不支持");
-      
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       
       @"MAAnnotationView::get_calloutOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -205,15 +193,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           CGPoint result = ref.calloutOffset;
       
-          NSLog(@"MAAnnotationView::get_calloutOffset:结构体getter暂时不支持");
-      
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       
       @"MAAnnotationView::get_isEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -225,8 +209,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           BOOL result = ref.enabled;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -242,8 +224,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.highlighted;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -257,8 +237,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           BOOL result = ref.selected;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -274,8 +252,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.canShowCallout;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -289,8 +265,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           UIView* result = ref.leftCalloutAccessoryView;
-      
-      
       
           // 返回值: 引用
           HEAP_AmapMapFluttify[@(result.hash)] = result;
@@ -307,8 +281,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           UIView* result = ref.rightCalloutAccessoryView;
       
-      
-      
           // 返回值: 引用
           HEAP_AmapMapFluttify[@(result.hash)] = result;
           methodResult(@(result.hash));
@@ -324,8 +296,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.draggable;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -339,8 +309,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           MAAnnotationViewDragState result = ref.dragState;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));

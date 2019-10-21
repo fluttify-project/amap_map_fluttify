@@ -70,8 +70,10 @@
       <li><a href="amap_map_fluttify/AmapController/addPolyline.html">addPolyline</a></li>
       <li><a href="amap_map_fluttify/AmapController/setAllGesturesEnabled.html">setAllGesturesEnabled</a></li>
       <li><a href="amap_map_fluttify/AmapController/setCenterCoordinate.html">setCenterCoordinate</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setMapLanguage.html">setMapLanguage</a></li>
       <li><a href="amap_map_fluttify/AmapController/setMapType.html">setMapType</a></li>
       <li><a href="amap_map_fluttify/AmapController/setMarkerClickListener.html">setMarkerClickListener</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setMarkerDragListener.html">setMarkerDragListener</a></li>
       <li><a href="amap_map_fluttify/AmapController/setRotateGesturesEnabled.html">setRotateGesturesEnabled</a></li>
       <li><a href="amap_map_fluttify/AmapController/setScrollGesturesEnabled.html">setScrollGesturesEnabled</a></li>
       <li><a href="amap_map_fluttify/AmapController/setTiltGesturesEnabled.html">setTiltGesturesEnabled</a></li>
@@ -103,7 +105,7 @@
     <section class="multi-line-signature">
       <span class="returntype">Future</span>
             <span class="name ">addMarker</span>
-(<wbr><span class="parameter" id="addMarker-param-context"><span class="type-annotation">BuildContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="addMarker-param-point"><span class="type-annotation"><a href="amap_map_fluttify/LatLng-class.html">LatLng</a></span> <span class="parameter-name">point</span>, {</span> <span class="parameter" id="addMarker-param-title"><span class="type-annotation">String</span> <span class="parameter-name">title</span>, </span> <span class="parameter" id="addMarker-param-snippet"><span class="type-annotation">String</span> <span class="parameter-name">snippet</span>, </span> <span class="parameter" id="addMarker-param-iconUri"><span class="type-annotation">Uri</span> <span class="parameter-name">iconUri</span></span> })
+(<wbr><span class="parameter" id="addMarker-param-context"><span class="type-annotation">BuildContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="addMarker-param-point"><span class="type-annotation"><a href="amap_map_fluttify/LatLng-class.html">LatLng</a></span> <span class="parameter-name">point</span>, {</span> <span class="parameter" id="addMarker-param-title"><span class="type-annotation">String</span> <span class="parameter-name">title</span>, </span> <span class="parameter" id="addMarker-param-snippet"><span class="type-annotation">String</span> <span class="parameter-name">snippet</span>, </span> <span class="parameter" id="addMarker-param-iconUri"><span class="type-annotation">Uri</span> <span class="parameter-name">iconUri</span>, </span> <span class="parameter" id="addMarker-param-draggable"><span class="type-annotation">bool</span> <span class="parameter-name">draggable</span></span> })
       
     </section>
     <section class="desc markdown">
@@ -120,6 +122,7 @@
   String title,
   String snippet,
   Uri iconUri,
+  bool draggable,
 }) {
   Future&lt;Uint8List&gt; _getImageData(Uri iconUri) async {
     Uint8List iconData;
@@ -197,13 +200,15 @@
 
         pool..add(bitmap)..add(icon);
       }
+      &#47;&#47; 是否可拖拽
+      if (draggable != null) await markerOption.draggable(draggable);
 
       final marker = await map.addMarker(markerOption);
 
       pool..add(map)..add(latLng)..add(markerOption)..add(marker);
     },
     ios: (pool) async {
-      await _iosController.set_delegate(_IOSMapDelegate());
+      await _iosController.set_delegate(_iosMapDelegate);
 
       &#47;&#47; 创建marker
       final pointAnnotation =
@@ -236,6 +241,9 @@
 
         pool..add(icon);
       }
+      &#47;&#47; 是否可拖拽
+      if (draggable != null)
+        await ObjectFactory_iOS.pushStackJsonable(&#39;draggable&#39;, draggable);
 
       await _iosController.addAnnotation(pointAnnotation);
 
@@ -254,7 +262,7 @@
 
 <footer>
   <span class="no-break">
-    amap_map_fluttify 0.1.0+1
+    amap_map_fluttify 0.2.1
   </span>
 
   

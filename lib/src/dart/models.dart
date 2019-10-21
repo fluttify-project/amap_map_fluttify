@@ -30,6 +30,23 @@ class Marker {
       },
     );
   }
+
+  Future<LatLng> get location {
+    return platform(
+      android: (_) async {
+        final _location = await _androidModel.getPosition();
+        return LatLng(
+          await _location.get_latitude(),
+          await _location.get_longitude(),
+        );
+      },
+      ios: (_) async {
+        final _annotation = await _iosModel.get_annotation(viewChannel: false);
+        final _location = await _annotation.get_coordinate();
+        return LatLng(await _location.latitude, await _location.longitude);
+      },
+    );
+  }
 }
 
 /// 经纬度model
@@ -38,4 +55,9 @@ class LatLng {
 
   final double lat;
   final double lng;
+
+  @override
+  String toString() {
+    return 'LatLng{lat: $lat, lng: $lng}';
+  }
 }

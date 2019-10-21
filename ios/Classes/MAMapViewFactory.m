@@ -90,12 +90,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 调用结果
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       @"MAMapView::setVisibleMapRectAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
@@ -139,12 +137,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 调用结果
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       @"MAMapView::mapRectThatFitsEdgePadding": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
@@ -169,12 +165,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 调用结果
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       @"MAMapView::setVisibleMapRectEdgePaddinganimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
@@ -421,12 +415,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 调用结果
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       @"MAMapView::convertPointToCoordinateFromView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
@@ -449,12 +441,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 调用结果
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       @"MAMapView::convertRegionToRectToView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
@@ -477,12 +467,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 调用结果
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGRect)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGRect)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       @"MAMapView::convertRectToRegionFromView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
@@ -505,12 +493,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 调用结果
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       @"MAMapView::reloadMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
@@ -1357,8 +1343,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           MAMapType result = ref.mapType;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -1373,15 +1357,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           CLLocationCoordinate2D result = ref.centerCoordinate;
       
-          NSLog(@"MAMapView::get_centerCoordinate:结构体getter暂时不支持");
-      
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       
       @"MAMapView::get_region": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -1394,15 +1374,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           MACoordinateRegion result = ref.region;
       
-          NSLog(@"MAMapView::get_region:结构体getter暂时不支持");
-      
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       
       @"MAMapView::get_visibleMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -1415,15 +1391,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           MAMapRect result = ref.visibleMapRect;
       
-          NSLog(@"MAMapView::get_visibleMapRect:结构体getter暂时不支持");
-      
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       
       @"MAMapView::get_limitRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -1436,15 +1408,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           MACoordinateRegion result = ref.limitRegion;
       
-          NSLog(@"MAMapView::get_limitRegion:结构体getter暂时不支持");
-      
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       
       @"MAMapView::get_limitMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -1457,15 +1425,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           MAMapRect result = ref.limitMapRect;
       
-          NSLog(@"MAMapView::get_limitMapRect:结构体getter暂时不支持");
-      
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       
       @"MAMapView::get_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -1477,8 +1441,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           CGFloat result = ref.zoomLevel;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -1494,8 +1456,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           CGFloat result = ref.minZoomLevel;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -1509,8 +1469,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           CGFloat result = ref.maxZoomLevel;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -1526,8 +1484,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           CGFloat result = ref.rotationDegree;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -1541,8 +1497,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           CGFloat result = ref.cameraDegree;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -1558,8 +1512,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.zoomingInPivotsAroundAnchorPoint;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -1573,8 +1525,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           BOOL result = ref.zoomEnabled;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -1590,8 +1540,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.scrollEnabled;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -1605,8 +1553,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           BOOL result = ref.rotateEnabled;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -1622,8 +1568,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.rotateCameraEnabled;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -1637,8 +1581,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           BOOL result = ref.skyModelEnable;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -1654,8 +1596,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.showsBuildings;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -1669,8 +1609,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           BOOL result = ref.showsLabels;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -1686,8 +1624,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.showTraffic;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -1701,8 +1637,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           CGFloat result = ref.trafficRatio;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -1718,8 +1652,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.touchPOIEnabled;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -1733,8 +1665,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           BOOL result = ref.showsCompass;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -1750,15 +1680,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           CGPoint result = ref.compassOrigin;
       
-          NSLog(@"MAMapView::get_compassOrigin:结构体getter暂时不支持");
-      
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       
       @"MAMapView::get_showsScale": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -1770,8 +1696,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           BOOL result = ref.showsScale;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -1787,15 +1711,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           CGPoint result = ref.scaleOrigin;
       
-          NSLog(@"MAMapView::get_scaleOrigin:结构体getter暂时不支持");
-      
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       
       @"MAMapView::get_logoCenter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -1808,15 +1728,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           CGPoint result = ref.logoCenter;
       
-          NSLog(@"MAMapView::get_logoCenter:结构体getter暂时不支持");
-      
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       
       @"MAMapView::get_metersPerPointForCurrentZoom": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -1828,8 +1744,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           double result = ref.metersPerPointForCurrentZoom;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -1845,8 +1759,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.isAbroad;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -1860,8 +1772,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           NSUInteger result = ref.maxRenderFrame;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -1877,8 +1787,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.isAllowDecreaseFrame;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -1892,8 +1800,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           BOOL result = ref.openGLESDisabled;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -1909,15 +1815,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           CGPoint result = ref.screenAnchor;
       
-          NSLog(@"MAMapView::get_screenAnchor:结构体getter暂时不支持");
-      
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       
       @"MAMapView::get_annotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -1929,8 +1831,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           NSArray* result = ref.annotations;
-      
-      
       
           // 返回值: 列表
           NSMutableArray* refIdList = [NSMutableArray array];
@@ -1953,8 +1853,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           NSArray* result = ref.selectedAnnotations;
       
-      
-      
           // 返回值: 列表
           NSMutableArray* refIdList = [NSMutableArray array];
           for (int i = 0; i < result.count; i++) {
@@ -1976,15 +1874,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           CGRect result = ref.annotationVisibleRect;
       
-          NSLog(@"MAMapView::get_annotationVisibleRect:结构体getter暂时不支持");
-      
           // 返回值: 结构体
-          // NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGRect)];
-          // HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
-          //
-          // methodResult(@(resultValue.hash));
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGRect)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
       
-          methodResult(nil/* 结构体getter暂时不支持 */);
+          methodResult(@(resultValue.hash));
       },
       
       @"MAMapView::get_allowsAnnotationViewSorting": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -1996,8 +1890,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           BOOL result = ref.allowsAnnotationViewSorting;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -2013,8 +1905,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.showsUserLocation;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -2028,8 +1918,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           MAUserLocation* result = ref.userLocation;
-      
-      
       
           // 返回值: 引用
           HEAP_AmapMapFluttify[@(result.hash)] = result;
@@ -2046,8 +1934,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.customizeUserLocationAccuracyCircleRepresentation;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -2061,8 +1947,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           MACircle* result = ref.userLocationAccuracyCircle;
-      
-      
       
           // 返回值: 引用
           HEAP_AmapMapFluttify[@(result.hash)] = result;
@@ -2079,8 +1963,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           MAUserTrackingMode result = ref.userTrackingMode;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -2094,8 +1976,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           BOOL result = ref.userLocationVisible;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -2111,8 +1991,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           CLLocationDistance result = ref.distanceFilter;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -2126,8 +2004,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           BOOL result = ref.pausesLocationUpdatesAutomatically;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -2143,8 +2019,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.allowsBackgroundLocationUpdates;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -2158,8 +2032,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           NSArray* result = ref.overlays;
-      
-      
       
           // 返回值: 列表
           NSMutableArray* refIdList = [NSMutableArray array];
@@ -2182,8 +2054,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.showsIndoorMap;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -2198,8 +2068,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           BOOL result = ref.showsIndoorMapControl;
       
-      
-      
           // 返回值: Value
           methodResult(@(result));
       },
@@ -2213,8 +2081,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // 开始调用
           BOOL result = ref.customMapStyleEnabled;
-      
-      
       
           // 返回值: Value
           methodResult(@(result));
@@ -3162,6 +3028,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   
   ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
   UIImage* icon = (UIImage*) STACK_AmapMapFluttify[@"icon"];
+  NSNumber* draggable = (NSNumber*) STACK_AmapMapFluttify[@"draggable"];
   if ([annotation isKindOfClass:[MAPointAnnotation class]])
   {
       static NSString *pointReuseIndentifier = @"pointReuseIndentifier";
@@ -3171,6 +3038,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pointReuseIndentifier];
       }
       annotationView.image = icon;
+      annotationView.draggable = [draggable boolValue];
+      annotationView.canShowCallout = YES; // 这个参数在android端没有配置, 默认就是可以显示弹窗
 
       // 这次调用完成后 清空栈
       [STACK_AmapMapFluttify removeAllObjects];
@@ -3397,6 +3266,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           rgba >>= 8;
       }
       polylineRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+        
+      // 这次调用完成后 清空栈
+      [STACK_AmapMapFluttify removeAllObjects];
       return polylineRenderer;
   }
     
@@ -3423,6 +3295,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           rgba >>= 8;
       }
       polygonRenderer.fillColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+        
+      // 这次调用完成后 清空栈
+      [STACK_AmapMapFluttify removeAllObjects];
       return polygonRenderer;
   }
     
@@ -3450,11 +3325,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           rgba >>= 8;
       }
       circleRenderer.fillColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+        
+      // 这次调用完成后 清空栈
+      [STACK_AmapMapFluttify removeAllObjects];
       return circleRenderer;
   }
-    
-  // 这次调用完成后 清空栈
-  [STACK_AmapMapFluttify removeAllObjects];
   ////////////////////////////////////////////////////////////////////////////////
   
   return nil;

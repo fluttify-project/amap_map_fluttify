@@ -51,6 +51,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                       snippet: '描述',
 //                      iconUri: _networkIcon,
                       iconUri: _assetsIcon,
+                      draggable: true,
                     );
                   },
                 ),
@@ -60,6 +61,18 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                     _controller?.setMarkerClickListener((marker) async {
                       toast('${await marker.title}, ${await marker.snippet}');
                     });
+                  },
+                ),
+                ListTile(
+                  title: Text('Marker添加拖动事件'),
+                  onTap: () {
+                    _controller?.setMarkerDragListener(
+                      onMarkerDragEnd: (marker) async {
+                        toast(
+                          '${await marker.title}, ${await marker.location}',
+                        );
+                      },
+                    );
                   },
                 ),
               ],

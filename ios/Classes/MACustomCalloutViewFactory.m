@@ -58,8 +58,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 开始调用
           UIView* result = ref.customView;
       
-      
-      
           // 返回值: 引用
           HEAP_AmapMapFluttify[@(result.hash)] = result;
           methodResult(@(result.hash));
