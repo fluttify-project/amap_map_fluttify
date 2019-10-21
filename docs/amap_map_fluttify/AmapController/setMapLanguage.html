@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="description" content="API docs for the operator == method from the AmapController class, for the Dart programming language.">
-  <title>operator == method - AmapController class - amap_map_fluttify library - Dart API</title>
+  <meta name="description" content="API docs for the setMapLanguage method from the AmapController class, for the Dart programming language.">
+  <title>setMapLanguage method - AmapController class - amap_map_fluttify library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
 
@@ -27,9 +27,9 @@
     <li><a href="index.html">amap_map_fluttify</a></li>
     <li><a href="amap_map_fluttify/amap_map_fluttify-library.html">amap_map_fluttify</a></li>
     <li><a href="amap_map_fluttify/AmapController-class.html">AmapController</a></li>
-    <li class="self-crumb">operator == method</li>
+    <li class="self-crumb">setMapLanguage method</li>
   </ol>
-  <div class="self-name">operator ==</div>
+  <div class="self-name">setMapLanguage</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
@@ -48,7 +48,7 @@
       <li><a href="index.html">amap_map_fluttify</a></li>
       <li><a href="amap_map_fluttify/amap_map_fluttify-library.html">amap_map_fluttify</a></li>
       <li><a href="amap_map_fluttify/AmapController-class.html">AmapController</a></li>
-      <li class="self-crumb">operator == method</li>
+      <li class="self-crumb">setMapLanguage method</li>
     </ol>
     
     <h5>AmapController class</h5>
@@ -100,38 +100,42 @@
   </div><!--/.sidebar-offcanvas-->
 
   <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
-      <div><h1><span class="kind-method">operator ==</span> method</h1></div>
+      <div><h1><span class="kind-method">setMapLanguage</span> method</h1></div>
 
     <section class="multi-line-signature">
-      <span class="returntype">bool</span>
-            <span class="name ">operator ==</span>
-(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
-      <div class="features">inherited</div>
+      <span class="returntype">Future</span>
+            <span class="name ">setMapLanguage</span>
+(<wbr><span class="parameter" id="setMapLanguage-param-language"><span class="type-annotation"><a href="amap_map_fluttify/Language-class.html">Language</a></span> <span class="parameter-name">language</span></span>)
+      
     </section>
     <section class="desc markdown">
-      <p>The equality operator.</p>
-<p>The default behavior for all <code>Object</code>s is to return true if and
-only if <code>this</code> and <code>other</code> are the same object.</p>
-<p>Override this method to specify a different equality relation on
-a class. The overriding method must still be an equivalence relation.
-That is, it must be:</p><ul><li>
-<p>Total: It must return a boolean for all arguments. It should never throw
-or return <code>null</code>.</p></li><li>
-<p>Reflexive: For all objects <code>o</code>, <code>o == o</code> must be true.</p></li><li>
-<p>Symmetric: For all objects <code>o1</code> and <code>o2</code>, <code>o1 == o2</code> and <code>o2 == o1</code> must
-either both be true, or both be false.</p></li><li>
-<p>Transitive: For all objects <code>o1</code>, <code>o2</code>, and <code>o3</code>, if <code>o1 == o2</code> and
-<code>o2 == o3</code> are true, then <code>o1 == o3</code> must be true.</p></li></ul>
-<p>The method should also be consistent over time,
-so whether two objects are equal should only change
-if at least one of the objects was modified.</p>
-<p>If a subclass overrides the equality operator it should override
-the <a href="amap_map_fluttify/AmapController/hashCode.html">hashCode</a> method as well to maintain consistency.</p>
+      <p>选择地图语言 (ios未完成)</p>
     </section>
     
     <section class="summary source-code" id="source">
       <h2><span>Implementation</span></h2>
-      <pre class="language-dart"><code class="language-dart">external bool operator ==(other);</code></pre>
+      <pre class="language-dart"><code class="language-dart">Future setMapLanguage(Language language) async {
+  return platform(
+    android: (pool) async {
+      final map = await _androidController.getMap();
+      switch (language) {
+        case Language.Chinese:
+          await map.setMapLanguage(&#39;zh_cn&#39;);
+          break;
+        case Language.English:
+          await map.setMapLanguage(&#39;en&#39;);
+          break;
+      }
+
+      pool..add(map);
+    },
+    ios: (pool) async {
+      &#47;&#47; todo ios端的实现太骚气了, 先放着
+      &#47;&#47; [self.mapView performSelector:NSSelectorFromString(@&quot;setMapLanguage:&quot;) withObject:@(1)];
+      &#47;&#47; [self.mapView performSelector:NSSelectorFromString(@&quot;setMapLanguage:&quot;) withObject:@(0)];
+    },
+  );
+}</code></pre>
     </section>
 
   </div> <!-- /.main-content -->

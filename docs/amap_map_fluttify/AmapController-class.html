@@ -64,6 +64,7 @@
     
     
       <li class="section-title"><a href="amap_map_fluttify/amap_map_fluttify-library.html#enums">Enums</a></li>
+      <li><a href="amap_map_fluttify/Language-class.html">Language</a></li>
       <li><a href="amap_map_fluttify/MapType-class.html">MapType</a></li>
     
     
@@ -133,7 +134,7 @@
                   
 </dd>
         <dt id="addMarker" class="callable">
-          <span class="name"><a href="amap_map_fluttify/AmapController/addMarker.html">addMarker</a></span><span class="signature">(<wbr><span class="parameter" id="addMarker-param-context"><span class="type-annotation">BuildContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="addMarker-param-point"><span class="type-annotation"><a href="amap_map_fluttify/LatLng-class.html">LatLng</a></span> <span class="parameter-name">point</span>, {</span> <span class="parameter" id="addMarker-param-title"><span class="type-annotation">String</span> <span class="parameter-name">title</span>, </span> <span class="parameter" id="addMarker-param-snippet"><span class="type-annotation">String</span> <span class="parameter-name">snippet</span>, </span> <span class="parameter" id="addMarker-param-iconUri"><span class="type-annotation">Uri</span> <span class="parameter-name">iconUri</span></span> })
+          <span class="name"><a href="amap_map_fluttify/AmapController/addMarker.html">addMarker</a></span><span class="signature">(<wbr><span class="parameter" id="addMarker-param-context"><span class="type-annotation">BuildContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="addMarker-param-point"><span class="type-annotation"><a href="amap_map_fluttify/LatLng-class.html">LatLng</a></span> <span class="parameter-name">point</span>, {</span> <span class="parameter" id="addMarker-param-title"><span class="type-annotation">String</span> <span class="parameter-name">title</span>, </span> <span class="parameter" id="addMarker-param-snippet"><span class="type-annotation">String</span> <span class="parameter-name">snippet</span>, </span> <span class="parameter" id="addMarker-param-iconUri"><span class="type-annotation">Uri</span> <span class="parameter-name">iconUri</span>, </span> <span class="parameter" id="addMarker-param-draggable"><span class="type-annotation">bool</span> <span class="parameter-name">draggable</span></span> })
             <span class="returntype parameter">&#8594; Future</span>
           </span>
                   </dt>
@@ -177,6 +178,15 @@
           设置地图中心点
                   
 </dd>
+        <dt id="setMapLanguage" class="callable">
+          <span class="name"><a href="amap_map_fluttify/AmapController/setMapLanguage.html">setMapLanguage</a></span><span class="signature">(<wbr><span class="parameter" id="setMapLanguage-param-language"><span class="type-annotation"><a href="amap_map_fluttify/Language-class.html">Language</a></span> <span class="parameter-name">language</span></span>)
+            <span class="returntype parameter">&#8594; Future</span>
+          </span>
+                  </dt>
+        <dd>
+          选择地图语言 (ios未完成)
+                  
+</dd>
         <dt id="setMapType" class="callable">
           <span class="name"><a href="amap_map_fluttify/AmapController/setMapType.html">setMapType</a></span><span class="signature">(<wbr><span class="parameter" id="setMapType-param-mapType"><span class="type-annotation"><a href="amap_map_fluttify/MapType-class.html">MapType</a></span> <span class="parameter-name">mapType</span></span>)
             <span class="returntype parameter">&#8594; Future</span>
@@ -192,7 +202,16 @@
           </span>
                   </dt>
         <dd>
-          设置marker监听事件
+          设置marker点击监听事件
+                  
+</dd>
+        <dt id="setMarkerDragListener" class="callable">
+          <span class="name"><a href="amap_map_fluttify/AmapController/setMarkerDragListener.html">setMarkerDragListener</a></span><span class="signature">(<wbr>{<span class="parameter" id="setMarkerDragListener-param-onMarkerDragStart"><span class="type-annotation">_OnMarkerDrag</span> <span class="parameter-name">onMarkerDragStart</span>, </span> <span class="parameter" id="setMarkerDragListener-param-onMarkerDragging"><span class="type-annotation">_OnMarkerDrag</span> <span class="parameter-name">onMarkerDragging</span>, </span> <span class="parameter" id="setMarkerDragListener-param-onMarkerDragEnd"><span class="type-annotation">_OnMarkerDrag</span> <span class="parameter-name">onMarkerDragEnd</span></span> })
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          设置marker拖动监听事件
                   
 </dd>
         <dt id="setRotateGesturesEnabled" class="callable">
@@ -381,8 +400,10 @@
       <li><a href="amap_map_fluttify/AmapController/addPolyline.html">addPolyline</a></li>
       <li><a href="amap_map_fluttify/AmapController/setAllGesturesEnabled.html">setAllGesturesEnabled</a></li>
       <li><a href="amap_map_fluttify/AmapController/setCenterCoordinate.html">setCenterCoordinate</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setMapLanguage.html">setMapLanguage</a></li>
       <li><a href="amap_map_fluttify/AmapController/setMapType.html">setMapType</a></li>
       <li><a href="amap_map_fluttify/AmapController/setMarkerClickListener.html">setMarkerClickListener</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setMarkerDragListener.html">setMarkerDragListener</a></li>
       <li><a href="amap_map_fluttify/AmapController/setRotateGesturesEnabled.html">setRotateGesturesEnabled</a></li>
       <li><a href="amap_map_fluttify/AmapController/setScrollGesturesEnabled.html">setScrollGesturesEnabled</a></li>
       <li><a href="amap_map_fluttify/AmapController/setTiltGesturesEnabled.html">setTiltGesturesEnabled</a></li>
@@ -412,7 +433,7 @@
 
 <footer>
   <span class="no-break">
-    amap_map_fluttify 0.2.0
+    amap_map_fluttify 0.2.1
   </span>
 
   

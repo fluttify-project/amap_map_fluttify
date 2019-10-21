@@ -64,9 +64,9 @@
       <li class="inherited"><a href="amap_map_fluttify/LatLng/hashCode.html">hashCode</a></li>
       <li class="inherited"><a href="amap_map_fluttify/LatLng/runtimeType.html">runtimeType</a></li>
     
-      <li class="section-title inherited"><a href="amap_map_fluttify/LatLng-class.html#instance-methods">Methods</a></li>
+      <li class="section-title"><a href="amap_map_fluttify/LatLng-class.html#instance-methods">Methods</a></li>
+      <li><a href="amap_map_fluttify/LatLng/toString.html">toString</a></li>
       <li class="inherited"><a href="amap_map_fluttify/LatLng/noSuchMethod.html">noSuchMethod</a></li>
-      <li class="inherited"><a href="amap_map_fluttify/LatLng/toString.html">toString</a></li>
     
       <li class="section-title inherited"><a href="amap_map_fluttify/LatLng-class.html#operators">Operators</a></li>
       <li class="inherited"><a href="amap_map_fluttify/LatLng/operator_equals.html">operator ==</a></li>
@@ -80,10 +80,15 @@
       <div><h1><span class="kind-method">toString</span> method</h1></div>
 
     <section class="multi-line-signature">
+      <div>
+        <ol class="annotation-list">
+          <li>@override</li>
+        </ol>
+      </div>
       <span class="returntype">String</span>
             <span class="name ">toString</span>
 (<wbr>)
-      <div class="features">inherited</div>
+      
     </section>
     <section class="desc markdown">
       <p>Returns a string representation of this object.</p>
@@ -91,7 +96,10 @@
     
     <section class="summary source-code" id="source">
       <h2><span>Implementation</span></h2>
-      <pre class="language-dart"><code class="language-dart">external String toString();</code></pre>
+      <pre class="language-dart"><code class="language-dart">@override
+String toString() {
+  return &#39;LatLng{lat: $lat, lng: $lng}&#39;;
+}</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -103,7 +111,7 @@
 
 <footer>
   <span class="no-break">
-    amap_map_fluttify 0.2.0
+    amap_map_fluttify 0.2.1
   </span>
 
   

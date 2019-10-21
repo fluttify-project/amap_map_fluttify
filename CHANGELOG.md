@@ -1,3 +1,6 @@
+## 0.2.1
+- feature: marker拖动事件
+
 ## 0.2.0
 - 加强对多fluttify模块的支持
 
