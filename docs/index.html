@@ -53,10 +53,47 @@
 
   <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
       <section class="desc markdown">
-        <h1 id="amap_map_fluttify">amap_map_fluttify</h1>
+        <h1 id="-">高德 <code>地图</code>组件</h1>
 <p><a href="https://pub.Flutter-io.cn/packages/amap_map_fluttify"><img src="https://img.shields.io/pub/v/amap_map_fluttify.svg" alt="pub package"></a>
 <a href="https://codemagic.io/apps/5dab1239813e331c1ca09a1a/5dab1239813e331c1ca09a19/latest_build"><img src="https://api.codemagic.io/apps/5dab1239813e331c1ca09a1a/5dab1239813e331c1ca09a19/status_badge.svg" alt="Codemagic build status"></a></p>
-<p>高德地图<code>地图</code>组件. Dart接口基于<a href="https://github.com/yohom/fluttify-core-example">fluttify</a>引擎生成. dartdoc<a href="https://fluttify-project.github.io/amap_map_fluttify/">接口文档</a>.</p>
+<p>Dart接口基于<a href="https://github.com/yohom/fluttify-core-example">fluttify</a>引擎生成. dartdoc<a href="https://fluttify-project.github.io/amap_map_fluttify/">接口文档</a>.</p>
+<p>安装: </p>
+<pre class="language-yaml"><code class="language-yaml">dependencies:
+  flutter:
+    sdk: flutter
+  amap_map_fluttify: ^x.x.x
+</code></pre>
+<p>导入:</p>
+<pre class="language-dart"><code class="language-dart">import 'package:amap_map_fluttify/amap_map_fluttify.dart';
+</code></pre>
+<p>使用:</p>
+<pre class="language-dart"><code class="language-dart">class AmapWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return AmapView(
+      onMapCreated: (controller) async {
+        if (await requestPermission()) {
+          await controller.showMyLocation(true);
+        }
+      },
+    );
+  }
+}
+</code></pre>
+<h2 id="">请作者喝杯奶茶</h2>
+<p><img src="./other/1557492318.jpg" height="300">  <img src="./other/WechatIMG111.jpeg" height="300"></p>
+<h2 id="license">LICENSE</h2>
+<blockquote>
+<p>Copyright 2019 yohom</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at</p>
+<p>   <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+<p> Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.</p></blockquote>
       </section>
       
         <section class="summary">
@@ -79,7 +116,7 @@
 
 <footer>
   <span class="no-break">
-    amap_map_fluttify 0.2.0
+    amap_map_fluttify 0.2.1
   </span>
 
   

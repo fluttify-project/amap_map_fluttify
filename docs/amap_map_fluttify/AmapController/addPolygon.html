@@ -70,8 +70,10 @@
       <li><a href="amap_map_fluttify/AmapController/addPolyline.html">addPolyline</a></li>
       <li><a href="amap_map_fluttify/AmapController/setAllGesturesEnabled.html">setAllGesturesEnabled</a></li>
       <li><a href="amap_map_fluttify/AmapController/setCenterCoordinate.html">setCenterCoordinate</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setMapLanguage.html">setMapLanguage</a></li>
       <li><a href="amap_map_fluttify/AmapController/setMapType.html">setMapType</a></li>
       <li><a href="amap_map_fluttify/AmapController/setMarkerClickListener.html">setMarkerClickListener</a></li>
+      <li><a href="amap_map_fluttify/AmapController/setMarkerDragListener.html">setMarkerDragListener</a></li>
       <li><a href="amap_map_fluttify/AmapController/setRotateGesturesEnabled.html">setRotateGesturesEnabled</a></li>
       <li><a href="amap_map_fluttify/AmapController/setScrollGesturesEnabled.html">setScrollGesturesEnabled</a></li>
       <li><a href="amap_map_fluttify/AmapController/setTiltGesturesEnabled.html">setTiltGesturesEnabled</a></li>
@@ -159,7 +161,7 @@
         ..addAll(latLngList);
     },
     ios: (pool) async {
-      await _iosController.set_delegate(_IOSMapDelegate());
+      await _iosController.set_delegate(_iosMapDelegate);
 
       &#47;&#47; 构造折线点
       List&lt;CLLocationCoordinate2D&gt; latLngList = [];
@@ -203,7 +205,7 @@
 
 <footer>
   <span class="no-break">
-    amap_map_fluttify 0.2.0
+    amap_map_fluttify 0.2.1
   </span>
 
   
