@@ -3173,6 +3173,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       }
       annotationView.image = icon;
       annotationView.draggable = [draggable boolValue];
+      annotationView.canShowCallout = YES; // 这个参数在android端没有配置, 默认就是可以显示弹窗
 
       // 这次调用完成后 清空栈
       [STACK_AmapMapFluttify removeAllObjects];
