@@ -14,6 +14,7 @@ import 'enums.dart';
 import 'models.dart';
 
 typedef void _OnMarkerClick(Marker marker);
+typedef void _OnMarkerDrag(Marker marker);
 
 /// 地图控制类
 class AmapController {
@@ -766,14 +767,14 @@ class AmapController {
     );
   }
 
-  /// 设置marker监听事件
+  /// 设置marker点击监听事件
   Future<void> setMarkerClickListener(_OnMarkerClick onMarkerClicked) async {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
 
         await map.setOnMarkerClickListener(
-            _androidMapDelegate..onMarkerClicked = onMarkerClicked);
+            _androidMapDelegate.._onMarkerClicked = onMarkerClicked);
 
         pool..add(map);
       },
@@ -783,12 +784,43 @@ class AmapController {
       },
     );
   }
+
+  /// 设置marker拖动监听事件
+  Future<void> setMarkerDragListener({
+    _OnMarkerDrag onMarkerDragStart,
+    _OnMarkerDrag onMarkerDragging,
+    _OnMarkerDrag onMarkerDragEnd,
+  }) async {
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+
+        await map.setOnMarkerDragListener(
+          _androidMapDelegate
+            .._onMarkerDragStart = onMarkerDragStart
+            .._onMarkerDragging = onMarkerDragging
+            .._onMarkerDragEnd = onMarkerDragEnd,
+        );
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        await _iosController.set_delegate(
+          _iosMapDelegate
+            .._onMarkerDragStart = onMarkerDragStart
+            .._onMarkerDragging = onMarkerDragging
+            .._onMarkerDragEnd = onMarkerDragEnd,
+        );
+      },
+    );
+  }
 }
 
 class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   _OnMarkerClick onMarkerClicked;
-
-  _IOSMapDelegate({this.onMarkerClicked});
+  _OnMarkerDrag _onMarkerDragStart;
+  _OnMarkerDrag _onMarkerDragging;
+  _OnMarkerDrag _onMarkerDragEnd;
 
   @override
   Future<void> mapViewDidAnnotationViewTapped(
@@ -803,17 +835,44 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
 }
 
 class _AndroidMapDelegate extends java_lang_Object
-    with com_amap_api_maps_AMap_OnMarkerClickListener {
-  _OnMarkerClick onMarkerClicked;
-
-  _AndroidMapDelegate({this.onMarkerClicked});
+    with
+        com_amap_api_maps_AMap_OnMarkerClickListener,
+        com_amap_api_maps_AMap_OnMarkerDragListener {
+  _OnMarkerClick _onMarkerClicked;
+  _OnMarkerDrag _onMarkerDragStart;
+  _OnMarkerDrag _onMarkerDragging;
+  _OnMarkerDrag _onMarkerDragEnd;
 
   @override
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerClick(var1);
-    if (onMarkerClicked != null) {
-      onMarkerClicked(Marker.android(var1));
+    if (_onMarkerClicked != null) {
+      _onMarkerClicked(Marker.android(var1));
     }
     return true;
+  }
+
+  @mustCallSuper
+  Future<void> onMarkerDragStart(com_amap_api_maps_model_Marker var1) async {
+    super.onMarkerDragStart(var1);
+    if (_onMarkerDragStart != null) {
+      _onMarkerDragStart(Marker.android(var1));
+    }
+  }
+
+  @mustCallSuper
+  Future<void> onMarkerDrag(com_amap_api_maps_model_Marker var1) async {
+    super.onMarkerDrag(var1);
+    if (_onMarkerDragging != null) {
+      _onMarkerDragging(Marker.android(var1));
+    }
+  }
+
+  @mustCallSuper
+  Future<void> onMarkerDragEnd(com_amap_api_maps_model_Marker var1) async {
+    super.onMarkerDragEnd(var1);
+    if (_onMarkerDragEnd != null) {
+      _onMarkerDragEnd(Marker.android(var1));
+    }
   }
 }

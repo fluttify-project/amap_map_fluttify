@@ -63,6 +63,18 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                     });
                   },
                 ),
+                ListTile(
+                  title: Text('Marker添加拖动事件'),
+                  onTap: () {
+                    _controller?.setMarkerDragListener(
+                      onMarkerDragEnd: (marker) async {
+                        toast(
+                          '${await marker.title}, ${await marker.location}',
+                        );
+                      },
+                    );
+                  },
+                ),
               ],
             ),
           ),
