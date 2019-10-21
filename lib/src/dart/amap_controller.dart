@@ -405,6 +405,7 @@ class AmapController {
     String title,
     String snippet,
     Uri iconUri,
+    bool draggable,
   }) {
     Future<Uint8List> _getImageData(Uri iconUri) async {
       Uint8List iconData;
@@ -482,6 +483,8 @@ class AmapController {
 
           pool..add(bitmap)..add(icon);
         }
+        // 是否可拖拽
+        if (draggable != null) await markerOption.draggable(draggable);
 
         final marker = await map.addMarker(markerOption);
 
@@ -521,6 +524,9 @@ class AmapController {
 
           pool..add(icon);
         }
+        // 是否可拖拽
+        if (draggable != null)
+          await ObjectFactory_iOS.pushStackJsonable('draggable', draggable);
 
         await _iosController.addAnnotation(pointAnnotation);
 

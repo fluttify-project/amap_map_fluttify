@@ -3162,6 +3162,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   
   ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
   UIImage* icon = (UIImage*) STACK_AmapMapFluttify[@"icon"];
+  NSNumber* draggable = (NSNumber*) STACK_AmapMapFluttify[@"draggable"];
   if ([annotation isKindOfClass:[MAPointAnnotation class]])
   {
       static NSString *pointReuseIndentifier = @"pointReuseIndentifier";
@@ -3171,6 +3172,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pointReuseIndentifier];
       }
       annotationView.image = icon;
+      annotationView.draggable = [draggable boolValue];
 
       // 这次调用完成后 清空栈
       [STACK_AmapMapFluttify removeAllObjects];
@@ -3397,6 +3399,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           rgba >>= 8;
       }
       polylineRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+        
+      // 这次调用完成后 清空栈
+      [STACK_AmapMapFluttify removeAllObjects];
       return polylineRenderer;
   }
     
@@ -3423,6 +3428,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           rgba >>= 8;
       }
       polygonRenderer.fillColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+        
+      // 这次调用完成后 清空栈
+      [STACK_AmapMapFluttify removeAllObjects];
       return polygonRenderer;
   }
     
@@ -3450,11 +3458,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           rgba >>= 8;
       }
       circleRenderer.fillColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+        
+      // 这次调用完成后 清空栈
+      [STACK_AmapMapFluttify removeAllObjects];
       return circleRenderer;
   }
-    
-  // 这次调用完成后 清空栈
-  [STACK_AmapMapFluttify removeAllObjects];
   ////////////////////////////////////////////////////////////////////////////////
   
   return nil;

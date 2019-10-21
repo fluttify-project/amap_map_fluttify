@@ -51,6 +51,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                       snippet: '描述',
 //                      iconUri: _networkIcon,
                       iconUri: _assetsIcon,
+                      draggable: true,
                     );
                   },
                 ),
