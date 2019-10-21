@@ -15,3 +15,12 @@ enum MapType {
   /// 公交视图
   Bus,
 }
+
+/// 地图语言
+enum Language {
+  /// 中文
+  Chinese,
+
+  /// 英文
+  English,
+}

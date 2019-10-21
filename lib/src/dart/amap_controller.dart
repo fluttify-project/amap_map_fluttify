@@ -112,6 +112,30 @@ class AmapController {
     );
   }
 
+  /// 选择地图语言 (ios未完成)
+  Future setMapLanguage(Language language) async {
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+        switch (language) {
+          case Language.Chinese:
+            await map.setMapLanguage('zh_cn');
+            break;
+          case Language.English:
+            await map.setMapLanguage('en');
+            break;
+        }
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        // todo ios端的实现太骚气了, 先放着
+        // [self.mapView performSelector:NSSelectorFromString(@"setMapLanguage:") withObject:@(1)];
+        // [self.mapView performSelector:NSSelectorFromString(@"setMapLanguage:") withObject:@(0)];
+      },
+    );
+  }
+
   /// 显示路况信息
   Future showTraffic(bool enable) {
     return platform(
