@@ -730,7 +730,7 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP_AmapMapFluttify;
       
               [channel invokeMethod:@"Callback::void|BOOL isFinished::void|BOOL isFinished" arguments:@{@"isFinished": argisFinished}];
       
-          } stepCallback: ^(MAAnnotationMoveAnimation currentAni) {
+          } stepCallback: ^(MAAnnotationMoveAnimation* currentAni) {
               FlutterMethodChannel *channel = [FlutterMethodChannel
                   methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback::Callback"
                         binaryMessenger:[self->_registrar messenger]];
@@ -1407,7 +1407,7 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP_AmapMapFluttify;
           NSLog(@"fluttify-objc: MAOfflineMap@%@::downloadItem(暂未实现参数打印)", @(refId));
       
           // invoke native method
-          [ref downloadItem : item shouldContinueWhenAppEntersBackground: shouldContinueWhenAppEntersBackground downloadBlock: ^(MAOfflineItem *downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
+          [ref downloadItem : item shouldContinueWhenAppEntersBackground: shouldContinueWhenAppEntersBackground downloadBlock: ^(MAOfflineItem* downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
               FlutterMethodChannel *channel = [FlutterMethodChannel
                   methodChannelWithName:@"MAOfflineMap::downloadItemShouldContinueWhenAppEntersBackgrounddownloadBlock::Callback"
                         binaryMessenger:[self->_registrar messenger]];
@@ -12960,7 +12960,7 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP_AmapMapFluttify;
   
 }
 
-- (void)mapView : (MAMapView*)mapView didSingleTappedAtCoordinate: (CLLocationCoordinate2D)coordinate
+- (void)mapView : (MAMapView*)mapView didSingleTappedAtCoordinate: (CLLocationCoordinate2D*)coordinate
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
@@ -12982,7 +12982,7 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP_AmapMapFluttify;
   
 }
 
-- (void)mapView : (MAMapView*)mapView didLongPressedAtCoordinate: (CLLocationCoordinate2D)coordinate
+- (void)mapView : (MAMapView*)mapView didLongPressedAtCoordinate: (CLLocationCoordinate2D*)coordinate
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"

@@ -744,7 +744,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   
 }
 
-- (void)mapView : (MAMapView*)mapView didSingleTappedAtCoordinate: (CLLocationCoordinate2D)coordinate
+- (void)mapView : (MAMapView*)mapView didSingleTappedAtCoordinate: (CLLocationCoordinate2D*)coordinate
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
@@ -766,7 +766,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   
 }
 
-- (void)mapView : (MAMapView*)mapView didLongPressedAtCoordinate: (CLLocationCoordinate2D)coordinate
+- (void)mapView : (MAMapView*)mapView didLongPressedAtCoordinate: (CLLocationCoordinate2D*)coordinate
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
