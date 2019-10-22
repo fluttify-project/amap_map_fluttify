@@ -3142,7 +3142,24 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"暂不支持有返回值的回调方法");
   
   ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
-  
+  UIImage* icon = (UIImage*) STACK_AmapMapFluttify[@"icon"];
+  NSNumber* draggable = (NSNumber*) STACK_AmapMapFluttify[@"draggable"];
+  if ([annotation isKindOfClass:[MAPointAnnotation class]])
+  {
+      static NSString *pointReuseIndentifier = @"pointReuseIndentifier";
+      MAPinAnnotationView*annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndentifier];
+      if (annotationView == nil)
+      {
+          annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pointReuseIndentifier];
+      }
+      annotationView.image = icon;
+      annotationView.draggable = [draggable boolValue];
+      annotationView.canShowCallout = YES; // 这个参数在android端没有配置, 默认就是可以显示弹窗
+
+      // 这次调用完成后 清空栈
+      [STACK_AmapMapFluttify removeAllObjects];
+      return annotationView;
+  }
   ////////////////////////////////////////////////////////////////////////////////
   
   return nil;
@@ -3345,7 +3362,89 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"暂不支持有返回值的回调方法");
   
   ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
-  
+  NSNumber* width = (NSNumber*) STACK_AmapMapFluttify[@"width"];
+  NSNumber* strokeColor = (NSNumber*) STACK_AmapMapFluttify[@"strokeColor"];
+  NSNumber* fillColor = (NSNumber*) STACK_AmapMapFluttify[@"fillColor"];
+
+  // 线
+  if ([overlay isKindOfClass:[MAPolyline class]])
+  {
+      MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:overlay];
+
+      // 宽度 比android端的粗一倍 这里除以2
+      polylineRenderer.lineWidth    = [width doubleValue] / 2;
+      // 描边颜色
+      NSUInteger rgba = [strokeColor unsignedIntegerValue];
+      float components[4];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      polylineRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+
+      // 这次调用完成后 清空栈
+      [STACK_AmapMapFluttify removeAllObjects];
+      return polylineRenderer;
+  }
+
+  // 多边形
+  if ([overlay isKindOfClass:[MAPolygon class]])
+  {
+      MAPolygonRenderer *polygonRenderer = [[MAPolygonRenderer alloc] initWithPolygon:overlay];
+
+      // 宽度 比android端的粗一倍 这里除以2
+      polygonRenderer.lineWidth    = [width doubleValue] / 2;
+      // 描边颜色
+      NSUInteger rgba = [strokeColor unsignedIntegerValue];
+      float components[4];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      polygonRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+
+      // 填充颜色
+      rgba = [fillColor unsignedIntegerValue];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      polygonRenderer.fillColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+
+      // 这次调用完成后 清空栈
+      [STACK_AmapMapFluttify removeAllObjects];
+      return polygonRenderer;
+  }
+
+  // 圆
+  if ([overlay isKindOfClass:[MACircle class]])
+  {
+      MACircleRenderer *circleRenderer = [[MACircleRenderer alloc] initWithCircle:overlay];
+
+      // 宽度
+      circleRenderer.lineWidth    = [width doubleValue] / 2;
+
+      // 描边颜色
+      NSUInteger rgba = [strokeColor unsignedIntegerValue];
+      float components[4];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      circleRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+
+      // 填充颜色
+      rgba = [fillColor unsignedIntegerValue];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      circleRenderer.fillColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+
+      // 这次调用完成后 清空栈
+      [STACK_AmapMapFluttify removeAllObjects];
+      return circleRenderer;
+  }
   ////////////////////////////////////////////////////////////////////////////////
   
   return nil;
