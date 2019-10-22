@@ -7,22 +7,23 @@ import 'dart:io';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 
-typedef Future<T> AndroidFutureCallback<T>(List<Ref_Android> releasePool);
-typedef Future<T> IOSFutureCallback<T>(List<Ref_iOS> releasePool);
+typedef Future<T> _FutureCallback<T>(List<Ref> releasePool);
 
-Future<T> platform<T>({
-  AndroidFutureCallback<T> android,
-  IOSFutureCallback<T> ios,
-}) async {
+Future<T> platform<T>(
+    {_FutureCallback<T> android, _FutureCallback<T> ios}) async {
   if (android != null && Platform.isAndroid) {
-    final releasePool = <Ref_Android>[];
+    final releasePool = <Ref>[];
     final result = await android(releasePool);
-    releasePool..forEach((it) => ObjectFactory_Android.release(it))..clear();
+    releasePool
+      ..forEach((it) => PlatformFactory_Android.release(it))
+      ..clear();
     return result;
   } else if (ios != null && Platform.isIOS) {
-    final releasePool = <Ref_iOS>[];
+    final releasePool = <Ref>[];
     final result = await ios(releasePool);
-    releasePool..forEach((it) => ObjectFactory_iOS.release(it))..clear();
+    releasePool
+      ..forEach((it) => PlatformFactory_iOS.release(it))
+      ..clear();
     return result;
   } else {
     return Future.value();
@@ -31,31 +32,7 @@ Future<T> platform<T>({
 
 Future release(Ref ref) {
   return platform(
-    android: (pool) => ObjectFactory_Android.release(ref),
-    ios: (pool) => ObjectFactory_iOS.release(ref),
+    android: (pool) => PlatformFactory_Android.release(ref),
+    ios: (pool) => PlatformFactory_iOS.release(ref),
   );
 }
-
-class Ref {
-  /// unique id of native side counterpart object
-  int refId;
-
-  /// custom tag
-  String tag;
-
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Ref && runtimeType == other.runtimeType && refId == other.refId;
-
-  @override
-  int get hashCode => refId.hashCode;
-
-  @override
-  String toString() {
-    return '$runtimeType{refId: $refId}';
-  }
-}
-
-/// native object release pool, all objects returned by the native side will be in this set
-final kNativeObjectPool = <Ref>{};

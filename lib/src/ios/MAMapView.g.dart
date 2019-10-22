@@ -299,6 +299,12 @@ class MAMapView extends UIView  {
     return result;
   }
   
+  Future<double> get_headingFilter({bool viewChannel = true}) async {
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_headingFilter", {'refId': refId});
+  
+    return result;
+  }
+  
   Future<bool> get_pausesLocationUpdatesAutomatically({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_pausesLocationUpdatesAutomatically", {'refId': refId});
   
@@ -835,6 +841,12 @@ class MAMapView extends UIView  {
   
   Future<void> set_desiredAccuracy(double desiredAccuracy, {bool viewChannel = true}) async {
     await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_desiredAccuracy', {'refId': refId, "desiredAccuracy": desiredAccuracy});
+  
+  
+  }
+  
+  Future<void> set_headingFilter(double headingFilter, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_headingFilter', {'refId': refId, "headingFilter": headingFilter});
   
   
   }

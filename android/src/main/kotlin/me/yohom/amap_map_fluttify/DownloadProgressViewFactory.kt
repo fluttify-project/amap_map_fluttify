@@ -12,6 +12,7 @@ import io.flutter.plugin.common.PluginRegistry.Registrar
 import io.flutter.plugin.common.StandardMessageCodec
 import io.flutter.plugin.platform.PlatformView
 import io.flutter.plugin.platform.PlatformViewFactory
+import me.yohom.foundation_fluttify
 
 class DownloadProgressViewFactory(private val registrar: Registrar) : PlatformViewFactory(StandardMessageCodec.INSTANCE) {
 
@@ -23,7 +24,7 @@ class DownloadProgressViewFactory(private val registrar: Registrar) : PlatformVi
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.offlinemap.DownloadProgressView
+            val ref = HEAP[refId] as com.amap.api.maps.offlinemap.DownloadProgressView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.offlinemap.DownloadProgressView@$refId::setProgress([\"var1\":$var1])")
@@ -48,8 +49,8 @@ class DownloadProgressViewFactory(private val registrar: Registrar) : PlatformVi
         return object : PlatformView {
             private val view = com.amap.api.maps.offlinemap.DownloadProgressView(registrar.activity())
 
-            // add to HEAP_AmapMapFluttify
-            override fun getView(): View = view.apply { HEAP_AmapMapFluttify[id] = this }
+            // add to HEAP
+            override fun getView(): View = view.apply { HEAP[id] = this }
 
             override fun dispose() {}
         }

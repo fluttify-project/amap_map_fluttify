@@ -54,7 +54,7 @@ class _MAAnnotationView_iOSState extends State<MAAnnotationView_iOS> {
 
   @override
   void dispose() {
-    ObjectFactory_iOS.release(_controller);
+    PlatformFactory_iOS.release(_controller);
     super.dispose();
   }
 }

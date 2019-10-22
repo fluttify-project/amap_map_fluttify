@@ -54,7 +54,7 @@ class _com_amap_api_maps_MapView_AndroidState extends State<com_amap_api_maps_Ma
 
   @override
   void dispose() {
-    ObjectFactory_Android.release(_controller);
+    PlatformFactory_Android.release(_controller);
     super.dispose();
   }
 }

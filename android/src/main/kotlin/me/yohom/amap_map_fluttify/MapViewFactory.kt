@@ -12,6 +12,7 @@ import io.flutter.plugin.common.PluginRegistry.Registrar
 import io.flutter.plugin.common.StandardMessageCodec
 import io.flutter.plugin.platform.PlatformView
 import io.flutter.plugin.platform.PlatformViewFactory
+import me.yohom.foundation_fluttify
 
 class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(StandardMessageCodec.INSTANCE) {
 
@@ -22,7 +23,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
+            val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::getMap([])")
@@ -33,7 +34,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             // result
             if (result != null) {
                 val returnRefId = result.hashCode()
-                HEAP_AmapMapFluttify[returnRefId] = result
+                HEAP[returnRefId] = result
         
                 methodResult.success(returnRefId)
             } else {
@@ -43,11 +44,11 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
         ,"com.amap.api.maps.MapView::onCreate" to { registrar, args, methodResult ->
             // args
             // ref arg
-            val var1 = HEAP_AmapMapFluttify[args["var1"] as Int] as android.os.Bundle
+            val var1 = HEAP[args["var1"] as Int] as android.os.Bundle
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
+            val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onCreate([])")
@@ -64,7 +65,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
+            val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onResume([])")
@@ -81,7 +82,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
+            val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onPause([])")
@@ -98,7 +99,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
+            val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onDestroy([])")
@@ -115,7 +116,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
+            val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onLowMemory([])")
@@ -129,11 +130,11 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
         ,"com.amap.api.maps.MapView::onSaveInstanceState" to { registrar, args, methodResult ->
             // args
             // ref arg
-            val var1 = HEAP_AmapMapFluttify[args["var1"] as Int] as android.os.Bundle
+            val var1 = HEAP[args["var1"] as Int] as android.os.Bundle
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
+            val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onSaveInstanceState([])")
@@ -151,7 +152,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
+            val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::setVisibility([\"var1\":$var1])")
@@ -176,8 +177,8 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
         return object : PlatformView {
             private val view = com.amap.api.maps.MapView(registrar.activity())
 
-            // add to HEAP_AmapMapFluttify
-            override fun getView(): View = view.apply { HEAP_AmapMapFluttify[id] = this }
+            // add to HEAP
+            override fun getView(): View = view.apply { HEAP[id] = this }
 
             override fun dispose() {}
         }

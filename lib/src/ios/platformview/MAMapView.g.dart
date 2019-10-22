@@ -54,7 +54,7 @@ class _MAMapView_iOSState extends State<MAMapView_iOS> {
 
   @override
   void dispose() {
-    ObjectFactory_iOS.release(_controller);
+    PlatformFactory_iOS.release(_controller);
     super.dispose();
   }
 }
