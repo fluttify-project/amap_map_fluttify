@@ -133,9 +133,16 @@ class AmapController {
         pool..add(map);
       },
       ios: (pool) async {
-        // todo ios端的实现太骚气了, 先放着
-        // [self.mapView performSelector:NSSelectorFromString(@"setMapLanguage:") withObject:@(1)];
-        // [self.mapView performSelector:NSSelectorFromString(@"setMapLanguage:") withObject:@(0)];
+        switch (language) {
+          case Language.Chinese:
+            await _iosController.performSelectorWithObject(
+                'setMapLanguage:', 0);
+            break;
+          case Language.English:
+            await _iosController.performSelectorWithObject(
+                'setMapLanguage:', 1);
+            break;
+        }
       },
     );
   }
