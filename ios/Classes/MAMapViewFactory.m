@@ -49,46 +49,46 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   //region handlers
   _handlerMap = @{
       @"MAMapView::setRegionAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* regionValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"region"] integerValue])];
           MACoordinateRegion region;
           [regionValue getValue:&region];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setRegion(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setRegion : region animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::regionThatFits": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* regionValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"region"] integerValue])];
           MACoordinateRegion region;
           [regionValue getValue:&region];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::regionThatFits(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           MACoordinateRegion result = [ref regionThatFits: region];
       
-          // 调用结果
+          // result
           // 返回值: 结构体
           NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
           HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
@@ -96,46 +96,46 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@(resultValue.hash));
       },
       @"MAMapView::setVisibleMapRectAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* mapRectValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"mapRect"] integerValue])];
           MAMapRect mapRect;
           [mapRectValue getValue:&mapRect];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setVisibleMapRect : mapRect animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::mapRectThatFits": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* mapRectValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"mapRect"] integerValue])];
           MAMapRect mapRect;
           [mapRectValue getValue:&mapRect];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           MAMapRect result = [ref mapRectThatFits: mapRect];
       
-          // 调用结果
+          // result
           // 返回值: 结构体
           NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
           HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
@@ -143,27 +143,27 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@(resultValue.hash));
       },
       @"MAMapView::mapRectThatFitsEdgePadding": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* mapRectValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"mapRect"] integerValue])];
           MAMapRect mapRect;
           [mapRectValue getValue:&mapRect];
-          // 结构体参数
+          // struct arg
           NSValue* insetsValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"insets"] integerValue])];
           UIEdgeInsets insets;
           [insetsValue getValue:&insets];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           MAMapRect result = [ref mapRectThatFits: mapRect edgePadding: insets];
       
-          // 调用结果
+          // result
           // 返回值: 结构体
           NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
           HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
@@ -171,249 +171,268 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@(resultValue.hash));
       },
       @"MAMapView::setVisibleMapRectEdgePaddinganimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* mapRectValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"mapRect"] integerValue])];
           MAMapRect mapRect;
           [mapRectValue getValue:&mapRect];
-          // 结构体参数
+          // struct arg
           NSValue* insetsValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"insets"] integerValue])];
           UIEdgeInsets insets;
           [insetsValue getValue:&insets];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setVisibleMapRect : mapRect edgePadding: insets animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::setCenterCoordinateAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* coordinateValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"coordinate"] integerValue])];
           CLLocationCoordinate2D coordinate;
           [coordinateValue getValue:&coordinate];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setCenterCoordinate(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setCenterCoordinate : coordinate animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::setZoomLevelAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setZoomLevel : zoomLevel animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::setZoomLevelAtPivotanimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
-          // 结构体参数
+          // struct arg
           NSValue* pivotValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"pivot"] integerValue])];
           CGPoint pivot;
           [pivotValue getValue:&pivot];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setZoomLevel : zoomLevel atPivot: pivot animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::setRotationDegreeAnimatedduration": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
-          // jsonable参数
+          // jsonable arg
           CFTimeInterval duration = [args[@"duration"] doubleValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setRotationDegree : rotationDegree animated: animated duration: duration];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::setCameraDegreeAnimatedduration": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           CGFloat cameraDegree = [args[@"cameraDegree"] floatValue];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
-          // jsonable参数
+          // jsonable arg
           CFTimeInterval duration = [args[@"duration"] doubleValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setCameraDegree(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setCameraDegree : cameraDegree animated: animated duration: duration];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::getMapStatus": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
+          // args
       
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::getMapStatus(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           MAMapStatus* result = [ref getMapStatus];
       
-          // 调用结果
+          // result
           // 返回值: 引用
           HEAP_AmapMapFluttify[@(result.hash)] = result;
           methodResult(@(result.hash));
       },
       @"MAMapView::setMapStatusAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           MAMapStatus* status = (MAMapStatus*) HEAP_AmapMapFluttify[@([args[@"status"] integerValue])];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setMapStatus : status animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::setMapStatusAnimatedduration": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           MAMapStatus* status = (MAMapStatus*) HEAP_AmapMapFluttify[@([args[@"status"] integerValue])];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
-          // jsonable参数
+          // jsonable arg
           CFTimeInterval duration = [args[@"duration"] doubleValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setMapStatus : status animated: animated duration: duration];
       
-          // 调用结果
+          // result
+          // 无返回值
+          methodResult(@"success");
+      },
+      @"MAMapView::setCompassImage": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // ref arg
+          UIImage* image = (UIImage*) HEAP_AmapMapFluttify[@([args[@"image"] integerValue])];
+      
+          // ref
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapView@%@::setCompassImage(暂未实现参数打印)", @(refId));
+      
+          // invoke native method
+          [ref setCompassImage : image];
+      
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::metersPerPointForZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::metersPerPointForZoomLevel(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           double result = [ref metersPerPointForZoomLevel: zoomLevel];
       
-          // 调用结果
+          // result
           // 返回值: Value
           methodResult(@(result));
       },
       @"MAMapView::convertCoordinateToPointToView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* coordinateValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"coordinate"] integerValue])];
           CLLocationCoordinate2D coordinate;
           [coordinateValue getValue:&coordinate];
-          // 引用参数
+          // ref arg
           UIView* view = (UIView*) HEAP_AmapMapFluttify[@([args[@"view"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::convertCoordinate(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           CGPoint result = [ref convertCoordinate: coordinate toPointToView: view];
       
-          // 调用结果
+          // result
           // 返回值: 结构体
           NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
           HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
@@ -421,25 +440,25 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@(resultValue.hash));
       },
       @"MAMapView::convertPointToCoordinateFromView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* pointValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"point"] integerValue])];
           CGPoint point;
           [pointValue getValue:&point];
-          // 引用参数
+          // ref arg
           UIView* view = (UIView*) HEAP_AmapMapFluttify[@([args[@"view"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::convertPoint(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           CLLocationCoordinate2D result = [ref convertPoint: point toCoordinateFromView: view];
       
-          // 调用结果
+          // result
           // 返回值: 结构体
           NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
           HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
@@ -447,25 +466,25 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@(resultValue.hash));
       },
       @"MAMapView::convertRegionToRectToView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* regionValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"region"] integerValue])];
           MACoordinateRegion region;
           [regionValue getValue:&region];
-          // 引用参数
+          // ref arg
           UIView* view = (UIView*) HEAP_AmapMapFluttify[@([args[@"view"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::convertRegion(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           CGRect result = [ref convertRegion: region toRectToView: view];
       
-          // 调用结果
+          // result
           // 返回值: 结构体
           NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGRect)];
           HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
@@ -473,25 +492,25 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@(resultValue.hash));
       },
       @"MAMapView::convertRectToRegionFromView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* rectValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"rect"] integerValue])];
           CGRect rect;
           [rectValue getValue:&rect];
-          // 引用参数
+          // ref arg
           UIView* view = (UIView*) HEAP_AmapMapFluttify[@([args[@"view"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::convertRect(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           MACoordinateRegion result = [ref convertRect: rect toRegionFromView: view];
       
-          // 调用结果
+          // result
           // 返回值: 结构体
           NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
           HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
@@ -499,135 +518,135 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@(resultValue.hash));
       },
       @"MAMapView::reloadMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
+          // args
       
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::reloadMap(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref reloadMap ];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::clearDisk": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
+          // args
       
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::clearDisk(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref clearDisk ];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::reloadInternalTexture": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
+          // args
       
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::reloadInternalTexture(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref reloadInternalTexture ];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::mapContentApprovalNumber": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
+          // args
       
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::mapContentApprovalNumber(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           NSString* result = [ref mapContentApprovalNumber];
       
-          // 调用结果
+          // result
           // 返回值: jsonable
           methodResult(result);
       },
       @"MAMapView::satelliteImageApprovalNumber": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
+          // args
       
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::satelliteImageApprovalNumber(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           NSString* result = [ref satelliteImageApprovalNumber];
       
-          // 调用结果
+          // result
           // 返回值: jsonable
           methodResult(result);
       },
       @"MAMapView::forceRefresh": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
+          // args
       
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::forceRefresh(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref forceRefresh ];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::addAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP_AmapMapFluttify[@([args[@"annotation"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::addAnnotation(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref addAnnotation : annotation];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::addAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 列表参数
+          // args
+          // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
           for (int i = 0; i < annotations.count; i++) {
@@ -635,42 +654,42 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
               [annotations addObject:item];
           }
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::addAnnotations(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref addAnnotations : annotations];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::removeAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP_AmapMapFluttify[@([args[@"annotation"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotation(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref removeAnnotation : annotation];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::removeAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 列表参数
+          // args
+          // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
           for (int i = 0; i < annotations.count; i++) {
@@ -678,214 +697,214 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
               [annotations addObject:item];
           }
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotations(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref removeAnnotations : annotations];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::viewForAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP_AmapMapFluttify[@([args[@"annotation"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::viewForAnnotation(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           MAAnnotationView* result = [ref viewForAnnotation: annotation];
       
-          // 调用结果
+          // result
           // 返回值: 引用
           HEAP_AmapMapFluttify[@(result.hash)] = result;
           methodResult(@(result.hash));
       },
       @"MAMapView::dequeueReusableAnnotationViewWithIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           NSString* identifier = (NSString*) args[@"identifier"];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::dequeueReusableAnnotationViewWithIdentifier(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           MAAnnotationView* result = [ref dequeueReusableAnnotationViewWithIdentifier: identifier];
       
-          // 调用结果
+          // result
           // 返回值: 引用
           HEAP_AmapMapFluttify[@(result.hash)] = result;
           methodResult(@(result.hash));
       },
       @"MAMapView::selectAnnotationAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP_AmapMapFluttify[@([args[@"annotation"] integerValue])];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::selectAnnotation(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref selectAnnotation : annotation animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::deselectAnnotationAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP_AmapMapFluttify[@([args[@"annotation"] integerValue])];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::deselectAnnotation(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref deselectAnnotation : annotation animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::showAnnotationsAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 列表参数
+          // args
+          // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
           for (int i = 0; i < annotations.count; i++) {
               NSArray* item = (NSArray*) HEAP_AmapMapFluttify[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref showAnnotations : annotations animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::showAnnotationsEdgePaddinganimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 列表参数
+          // args
+          // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
           for (int i = 0; i < annotations.count; i++) {
               NSArray* item = (NSArray*) HEAP_AmapMapFluttify[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
-          // 结构体参数
+          // struct arg
           NSValue* insetsValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"insets"] integerValue])];
           UIEdgeInsets insets;
           [insetsValue getValue:&insets];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref showAnnotations : annotations edgePadding: insets animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::setUserTrackingModeAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 枚举参数
+          // args
+          // enum arg
           MAUserTrackingMode mode = (MAUserTrackingMode) [args[@"mode"] integerValue];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setUserTrackingMode(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setUserTrackingMode : mode animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::updateUserLocationRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           MAUserLocationRepresentation* representation = (MAUserLocationRepresentation*) HEAP_AmapMapFluttify[@([args[@"representation"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::updateUserLocationRepresentation(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref updateUserLocationRepresentation : representation];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::overlaysInLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 枚举参数
+          // args
+          // enum arg
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           NSArray* result = [ref overlaysInLevel: level];
       
-          // 调用结果
+          // result
           // 返回值: 列表
           NSMutableArray* refIdList = [NSMutableArray array];
           for (int i = 0; i < result.count; i++) {
@@ -897,27 +916,27 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(refIdList);
       },
       @"MAMapView::addOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP_AmapMapFluttify[@([args[@"overlay"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref addOverlay : overlay];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::addOverlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 列表参数
+          // args
+          // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
           for (int i = 0; i < overlays.count; i++) {
@@ -925,89 +944,89 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
               [overlays addObject:item];
           }
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref addOverlays : overlays];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::addOverlayLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP_AmapMapFluttify[@([args[@"overlay"] integerValue])];
-          // 枚举参数
+          // enum arg
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref addOverlay : overlay level: level];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::addOverlaysLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 列表参数
+          // args
+          // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
           for (int i = 0; i < overlays.count; i++) {
               NSArray* item = (NSArray*) HEAP_AmapMapFluttify[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
-          // 枚举参数
+          // enum arg
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref addOverlays : overlays level: level];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::removeOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP_AmapMapFluttify[@([args[@"overlay"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::removeOverlay(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref removeOverlay : overlay];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::removeOverlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 列表参数
+          // args
+          // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
           for (int i = 0; i < overlays.count; i++) {
@@ -1015,332 +1034,332 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
               [overlays addObject:item];
           }
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::removeOverlays(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref removeOverlays : overlays];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::insertOverlayAtIndexlevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP_AmapMapFluttify[@([args[@"overlay"] integerValue])];
-          // jsonable参数
+          // jsonable arg
           NSUInteger index = [args[@"index"] unsignedIntegerValue];
-          // 枚举参数
+          // enum arg
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref insertOverlay : overlay atIndex: index level: level];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::insertOverlayAboveOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP_AmapMapFluttify[@([args[@"overlay"] integerValue])];
-          // 引用参数
+          // ref arg
           id<MAOverlay> sibling = (id<MAOverlay>) HEAP_AmapMapFluttify[@([args[@"sibling"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref insertOverlay : overlay aboveOverlay: sibling];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::insertOverlayBelowOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP_AmapMapFluttify[@([args[@"overlay"] integerValue])];
-          // 引用参数
+          // ref arg
           id<MAOverlay> sibling = (id<MAOverlay>) HEAP_AmapMapFluttify[@([args[@"sibling"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref insertOverlay : overlay belowOverlay: sibling];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::insertOverlayAtIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP_AmapMapFluttify[@([args[@"overlay"] integerValue])];
-          // jsonable参数
+          // jsonable arg
           NSUInteger index = [args[@"index"] unsignedIntegerValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref insertOverlay : overlay atIndex: index];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::exchangeOverlayAtIndexWithOverlayAtIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           NSUInteger index1 = [args[@"index1"] unsignedIntegerValue];
-          // jsonable参数
+          // jsonable arg
           NSUInteger index2 = [args[@"index2"] unsignedIntegerValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref exchangeOverlayAtIndex : index1 withOverlayAtIndex: index2];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::exchangeOverlayAtIndexWithOverlayAtIndexatLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           NSUInteger index1 = [args[@"index1"] unsignedIntegerValue];
-          // jsonable参数
+          // jsonable arg
           NSUInteger index2 = [args[@"index2"] unsignedIntegerValue];
-          // 枚举参数
+          // enum arg
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref exchangeOverlayAtIndex : index1 withOverlayAtIndex: index2 atLevel: level];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::exchangeOverlayWithOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAOverlay> overlay1 = (id<MAOverlay>) HEAP_AmapMapFluttify[@([args[@"overlay1"] integerValue])];
-          // 引用参数
+          // ref arg
           id<MAOverlay> overlay2 = (id<MAOverlay>) HEAP_AmapMapFluttify[@([args[@"overlay2"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlay(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref exchangeOverlay : overlay1 withOverlay: overlay2];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::rendererForOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP_AmapMapFluttify[@([args[@"overlay"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::rendererForOverlay(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           MAOverlayRenderer* result = [ref rendererForOverlay: overlay];
       
-          // 调用结果
+          // result
           // 返回值: 引用
           HEAP_AmapMapFluttify[@(result.hash)] = result;
           methodResult(@(result.hash));
       },
       @"MAMapView::showOverlaysAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 列表参数
+          // args
+          // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
           for (int i = 0; i < overlays.count; i++) {
               NSArray* item = (NSArray*) HEAP_AmapMapFluttify[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref showOverlays : overlays animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::showOverlaysEdgePaddinganimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 列表参数
+          // args
+          // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
           for (int i = 0; i < overlays.count; i++) {
               NSArray* item = (NSArray*) HEAP_AmapMapFluttify[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
-          // 结构体参数
+          // struct arg
           NSValue* insetsValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"insets"] integerValue])];
           UIEdgeInsets insets;
           [insetsValue getValue:&insets];
-          // jsonable参数
+          // jsonable arg
           BOOL animated = [args[@"animated"] boolValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref showOverlays : overlays edgePadding: insets animated: animated];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::setIndoorMapControlOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* originValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"origin"] integerValue])];
           CGPoint origin;
           [originValue getValue:&origin];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setIndoorMapControlOrigin(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setIndoorMapControlOrigin : origin];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::setCurrentIndoorMapFloorIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           NSInteger floorIndex = [args[@"floorIndex"] integerValue];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setCurrentIndoorMapFloorIndex(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setCurrentIndoorMapFloorIndex : floorIndex];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::clearIndoorMapCache": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
+          // args
       
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::clearIndoorMapCache(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref clearIndoorMapCache ];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::setCustomMapStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // 引用参数
+          // args
+          // ref arg
           MAMapCustomStyleOptions* styleOptions = (MAMapCustomStyleOptions*) HEAP_AmapMapFluttify[@([args[@"styleOptions"] integerValue])];
       
-          // 调用对象引用
+          // ref
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 日志打印
+          // print log
           NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleOptions(暂未实现参数打印)", @(refId));
       
-          // 开始调用
+          // invoke native method
           [ref setCustomMapStyleOptions : styleOptions];
       
-          // 调用结果
+          // result
           // 无返回值
           methodResult(@"success");
       },
       @"MAMapView::get_mapType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_mapType");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           MAMapType result = ref.mapType;
       
           // 返回值: Value
@@ -1350,11 +1369,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_centerCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_centerCoordinate");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           CLLocationCoordinate2D result = ref.centerCoordinate;
       
           // 返回值: 结构体
@@ -1367,11 +1386,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_region": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_region");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           MACoordinateRegion result = ref.region;
       
           // 返回值: 结构体
@@ -1384,11 +1403,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_visibleMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_visibleMapRect");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           MAMapRect result = ref.visibleMapRect;
       
           // 返回值: 结构体
@@ -1401,11 +1420,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_limitRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_limitRegion");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           MACoordinateRegion result = ref.limitRegion;
       
           // 返回值: 结构体
@@ -1418,11 +1437,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_limitMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_limitMapRect");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           MAMapRect result = ref.limitMapRect;
       
           // 返回值: 结构体
@@ -1435,11 +1454,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_zoomLevel");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           CGFloat result = ref.zoomLevel;
       
           // 返回值: Value
@@ -1449,11 +1468,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_minZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_minZoomLevel");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           CGFloat result = ref.minZoomLevel;
       
           // 返回值: Value
@@ -1463,11 +1482,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_maxZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_maxZoomLevel");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           CGFloat result = ref.maxZoomLevel;
       
           // 返回值: Value
@@ -1477,11 +1496,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_rotationDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_rotationDegree");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           CGFloat result = ref.rotationDegree;
       
           // 返回值: Value
@@ -1491,11 +1510,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_cameraDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_cameraDegree");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           CGFloat result = ref.cameraDegree;
       
           // 返回值: Value
@@ -1505,11 +1524,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_zoomingInPivotsAroundAnchorPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_zoomingInPivotsAroundAnchorPoint");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.zoomingInPivotsAroundAnchorPoint;
       
           // 返回值: Value
@@ -1519,11 +1538,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_isZoomEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_isZoomEnabled");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.zoomEnabled;
       
           // 返回值: Value
@@ -1533,11 +1552,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_isScrollEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_isScrollEnabled");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.scrollEnabled;
       
           // 返回值: Value
@@ -1547,11 +1566,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_isRotateEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_isRotateEnabled");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.rotateEnabled;
       
           // 返回值: Value
@@ -1561,11 +1580,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_isRotateCameraEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_isRotateCameraEnabled");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.rotateCameraEnabled;
       
           // 返回值: Value
@@ -1575,11 +1594,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_isSkyModelEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_isSkyModelEnabled");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.skyModelEnable;
       
           // 返回值: Value
@@ -1589,11 +1608,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_isShowsBuildings": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_isShowsBuildings");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.showsBuildings;
       
           // 返回值: Value
@@ -1603,11 +1622,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_isShowsLabels": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_isShowsLabels");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.showsLabels;
       
           // 返回值: Value
@@ -1617,11 +1636,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_isShowTraffic": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_isShowTraffic");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.showTraffic;
       
           // 返回值: Value
@@ -1631,11 +1650,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_trafficRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_trafficRatio");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           CGFloat result = ref.trafficRatio;
       
           // 返回值: Value
@@ -1645,11 +1664,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_touchPOIEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_touchPOIEnabled");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.touchPOIEnabled;
       
           // 返回值: Value
@@ -1659,11 +1678,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_showsCompass": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_showsCompass");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.showsCompass;
       
           // 返回值: Value
@@ -1673,11 +1692,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_compassOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_compassOrigin");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           CGPoint result = ref.compassOrigin;
       
           // 返回值: 结构体
@@ -1687,14 +1706,31 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@(resultValue.hash));
       },
       
-      @"MAMapView::get_showsScale": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_showsScale");
+      @"MAMapView::get_compassSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_compassSize");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
+          CGSize result = ref.compassSize;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGSize)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MAMapView::get_showsScale": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_showsScale");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
+      
+          // invoke native method
           BOOL result = ref.showsScale;
       
           // 返回值: Value
@@ -1704,11 +1740,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_scaleOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_scaleOrigin");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           CGPoint result = ref.scaleOrigin;
       
           // 返回值: 结构体
@@ -1718,14 +1754,31 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@(resultValue.hash));
       },
       
-      @"MAMapView::get_logoCenter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_logoCenter");
+      @"MAMapView::get_scaleSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_scaleSize");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
+          CGSize result = ref.scaleSize;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGSize)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MAMapView::get_logoCenter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_logoCenter");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
+      
+          // invoke native method
           CGPoint result = ref.logoCenter;
       
           // 返回值: 结构体
@@ -1735,14 +1788,31 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@(resultValue.hash));
       },
       
-      @"MAMapView::get_metersPerPointForCurrentZoom": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_metersPerPointForCurrentZoom");
+      @"MAMapView::get_logoSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_logoSize");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
+          CGSize result = ref.logoSize;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGSize)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MAMapView::get_metersPerPointForCurrentZoom": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_metersPerPointForCurrentZoom");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
+      
+          // invoke native method
           double result = ref.metersPerPointForCurrentZoom;
       
           // 返回值: Value
@@ -1752,11 +1822,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_isAbroad": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_isAbroad");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.isAbroad;
       
           // 返回值: Value
@@ -1766,11 +1836,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_maxRenderFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_maxRenderFrame");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           NSUInteger result = ref.maxRenderFrame;
       
           // 返回值: Value
@@ -1780,11 +1850,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_isAllowDecreaseFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_isAllowDecreaseFrame");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.isAllowDecreaseFrame;
       
           // 返回值: Value
@@ -1794,11 +1864,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_openGLESDisabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_openGLESDisabled");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.openGLESDisabled;
       
           // 返回值: Value
@@ -1808,11 +1878,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_screenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_screenAnchor");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           CGPoint result = ref.screenAnchor;
       
           // 返回值: 结构体
@@ -1825,11 +1895,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_annotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_annotations");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           NSArray* result = ref.annotations;
       
           // 返回值: 列表
@@ -1846,11 +1916,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_selectedAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_selectedAnnotations");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           NSArray* result = ref.selectedAnnotations;
       
           // 返回值: 列表
@@ -1867,11 +1937,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_annotationVisibleRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_annotationVisibleRect");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           CGRect result = ref.annotationVisibleRect;
       
           // 返回值: 结构体
@@ -1884,11 +1954,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_allowsAnnotationViewSorting": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_allowsAnnotationViewSorting");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.allowsAnnotationViewSorting;
       
           // 返回值: Value
@@ -1898,11 +1968,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_showsUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_showsUserLocation");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.showsUserLocation;
       
           // 返回值: Value
@@ -1912,11 +1982,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_userLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_userLocation");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           MAUserLocation* result = ref.userLocation;
       
           // 返回值: 引用
@@ -1927,11 +1997,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_customizeUserLocationAccuracyCircleRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_customizeUserLocationAccuracyCircleRepresentation");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.customizeUserLocationAccuracyCircleRepresentation;
       
           // 返回值: Value
@@ -1941,11 +2011,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_userLocationAccuracyCircle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_userLocationAccuracyCircle");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           MACircle* result = ref.userLocationAccuracyCircle;
       
           // 返回值: 引用
@@ -1956,11 +2026,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_userTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_userTrackingMode");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           MAUserTrackingMode result = ref.userTrackingMode;
       
           // 返回值: Value
@@ -1970,11 +2040,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_isUserLocationVisible": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_isUserLocationVisible");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.userLocationVisible;
       
           // 返回值: Value
@@ -1984,12 +2054,26 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_distanceFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_distanceFilter");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           CLLocationDistance result = ref.distanceFilter;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MAMapView::get_desiredAccuracy": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_desiredAccuracy");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
+      
+          // invoke native method
+          CLLocationAccuracy result = ref.desiredAccuracy;
       
           // 返回值: Value
           methodResult(@(result));
@@ -1998,11 +2082,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_pausesLocationUpdatesAutomatically": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_pausesLocationUpdatesAutomatically");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.pausesLocationUpdatesAutomatically;
       
           // 返回值: Value
@@ -2012,11 +2096,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_allowsBackgroundLocationUpdates": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_allowsBackgroundLocationUpdates");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.allowsBackgroundLocationUpdates;
       
           // 返回值: Value
@@ -2026,11 +2110,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_overlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_overlays");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           NSArray* result = ref.overlays;
       
           // 返回值: 列表
@@ -2047,11 +2131,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_isShowsIndoorMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_isShowsIndoorMap");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.showsIndoorMap;
       
           // 返回值: Value
@@ -2061,25 +2145,42 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::get_isShowsIndoorMapControl": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::get_isShowsIndoorMapControl");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
           BOOL result = ref.showsIndoorMapControl;
       
           // 返回值: Value
           methodResult(@(result));
       },
       
-      @"MAMapView::get_customMapStyleEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_customMapStyleEnabled");
+      @"MAMapView::get_indoorMapControlSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_indoorMapControlSize");
       
-          // 引用对象
+          // ref object
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
       
-          // 开始调用
+          // invoke native method
+          CGSize result = ref.indoorMapControlSize;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGSize)];
+          HEAP_AmapMapFluttify[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MAMapView::get_customMapStyleEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_customMapStyleEnabled");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
+      
+          // invoke native method
           BOOL result = ref.customMapStyleEnabled;
       
           // 返回值: Value
@@ -2089,7 +2190,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_delegate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_delegate");
       
-          // 参数
+          // args
       
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2102,8 +2203,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_mapType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_mapType");
       
-          // 参数
-          // 枚举参数
+          // args
+          // enum arg
           MAMapType mapType = (MAMapType) [args[@"mapType"] integerValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2116,8 +2217,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_centerCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_centerCoordinate");
       
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* centerCoordinateValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"centerCoordinate"] integerValue])];
           CLLocationCoordinate2D centerCoordinate;
           [centerCoordinateValue getValue:&centerCoordinate];
@@ -2132,8 +2233,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_region": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_region");
       
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* regionValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"region"] integerValue])];
           MACoordinateRegion region;
           [regionValue getValue:&region];
@@ -2148,8 +2249,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_visibleMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_visibleMapRect");
       
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* visibleMapRectValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"visibleMapRect"] integerValue])];
           MAMapRect visibleMapRect;
           [visibleMapRectValue getValue:&visibleMapRect];
@@ -2164,8 +2265,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_limitRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_limitRegion");
       
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* limitRegionValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"limitRegion"] integerValue])];
           MACoordinateRegion limitRegion;
           [limitRegionValue getValue:&limitRegion];
@@ -2180,8 +2281,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_limitMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_limitMapRect");
       
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* limitMapRectValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"limitMapRect"] integerValue])];
           MAMapRect limitMapRect;
           [limitMapRectValue getValue:&limitMapRect];
@@ -2196,8 +2297,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_zoomLevel");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2210,8 +2311,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_minZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_minZoomLevel");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           CGFloat minZoomLevel = [args[@"minZoomLevel"] floatValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2224,8 +2325,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_maxZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_maxZoomLevel");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           CGFloat maxZoomLevel = [args[@"maxZoomLevel"] floatValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2238,8 +2339,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_rotationDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_rotationDegree");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2252,8 +2353,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_cameraDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_cameraDegree");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           CGFloat cameraDegree = [args[@"cameraDegree"] floatValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2266,8 +2367,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_zoomingInPivotsAroundAnchorPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_zoomingInPivotsAroundAnchorPoint");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL zoomingInPivotsAroundAnchorPoint = [args[@"zoomingInPivotsAroundAnchorPoint"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2280,8 +2381,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_zoomEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_zoomEnabled");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL zoomEnabled = [args[@"zoomEnabled"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2294,8 +2395,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_scrollEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_scrollEnabled");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL scrollEnabled = [args[@"scrollEnabled"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2308,8 +2409,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_rotateEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_rotateEnabled");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL rotateEnabled = [args[@"rotateEnabled"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2322,8 +2423,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_rotateCameraEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_rotateCameraEnabled");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL rotateCameraEnabled = [args[@"rotateCameraEnabled"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2336,8 +2437,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_skyModelEnable": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_skyModelEnable");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL skyModelEnable = [args[@"skyModelEnable"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2350,8 +2451,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_showsBuildings": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_showsBuildings");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL showsBuildings = [args[@"showsBuildings"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2364,8 +2465,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_showsLabels": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_showsLabels");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL showsLabels = [args[@"showsLabels"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2378,8 +2479,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_showTraffic": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_showTraffic");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL showTraffic = [args[@"showTraffic"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2392,8 +2493,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_trafficRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_trafficRatio");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           CGFloat trafficRatio = [args[@"trafficRatio"] floatValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2406,8 +2507,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_touchPOIEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_touchPOIEnabled");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL touchPOIEnabled = [args[@"touchPOIEnabled"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2420,8 +2521,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_showsCompass": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_showsCompass");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL showsCompass = [args[@"showsCompass"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2434,8 +2535,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_compassOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_compassOrigin");
       
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* compassOriginValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"compassOrigin"] integerValue])];
           CGPoint compassOrigin;
           [compassOriginValue getValue:&compassOrigin];
@@ -2450,8 +2551,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_showsScale": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_showsScale");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL showsScale = [args[@"showsScale"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2464,8 +2565,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_scaleOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_scaleOrigin");
       
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* scaleOriginValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"scaleOrigin"] integerValue])];
           CGPoint scaleOrigin;
           [scaleOriginValue getValue:&scaleOrigin];
@@ -2480,8 +2581,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_logoCenter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_logoCenter");
       
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* logoCenterValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"logoCenter"] integerValue])];
           CGPoint logoCenter;
           [logoCenterValue getValue:&logoCenter];
@@ -2496,8 +2597,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_maxRenderFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_maxRenderFrame");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           NSUInteger maxRenderFrame = [args[@"maxRenderFrame"] unsignedIntegerValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2510,8 +2611,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_isAllowDecreaseFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_isAllowDecreaseFrame");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL isAllowDecreaseFrame = [args[@"isAllowDecreaseFrame"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2524,8 +2625,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_openGLESDisabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_openGLESDisabled");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL openGLESDisabled = [args[@"openGLESDisabled"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2538,8 +2639,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_screenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_screenAnchor");
       
-          // 参数
-          // 结构体参数
+          // args
+          // struct arg
           NSValue* screenAnchorValue = (NSValue*) HEAP_AmapMapFluttify[@([args[@"screenAnchor"] integerValue])];
           CGPoint screenAnchor;
           [screenAnchorValue getValue:&screenAnchor];
@@ -2554,8 +2655,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_selectedAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_selectedAnnotations");
       
-          // 参数
-          // 列表参数
+          // args
+          // list arg
           NSArray<NSNumber*>* selectedAnnotationsRefArray = (NSArray<NSNumber*> *) args[@"selectedAnnotations"];
           NSMutableArray<NSArray*>* selectedAnnotations = [NSMutableArray arrayWithCapacity:selectedAnnotationsRefArray.count];
           for (int i = 0; i < selectedAnnotations.count; i++) {
@@ -2573,8 +2674,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_allowsAnnotationViewSorting": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_allowsAnnotationViewSorting");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL allowsAnnotationViewSorting = [args[@"allowsAnnotationViewSorting"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2587,8 +2688,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_showsUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_showsUserLocation");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL showsUserLocation = [args[@"showsUserLocation"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2601,8 +2702,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_customizeUserLocationAccuracyCircleRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_customizeUserLocationAccuracyCircleRepresentation");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL customizeUserLocationAccuracyCircleRepresentation = [args[@"customizeUserLocationAccuracyCircleRepresentation"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2615,8 +2716,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_userTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_userTrackingMode");
       
-          // 参数
-          // 枚举参数
+          // args
+          // enum arg
           MAUserTrackingMode userTrackingMode = (MAUserTrackingMode) [args[@"userTrackingMode"] integerValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2629,8 +2730,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_distanceFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_distanceFilter");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           CLLocationDistance distanceFilter = [args[@"distanceFilter"] doubleValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2640,11 +2741,25 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@"success");
       },
       
+      @"MAMapView::set_desiredAccuracy": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_desiredAccuracy");
+      
+          // args
+          // jsonable arg
+          CLLocationAccuracy desiredAccuracy = [args[@"desiredAccuracy"] doubleValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView* ref = (MAMapView*) HEAP_AmapMapFluttify[@(refId)];
+      
+          ref.desiredAccuracy = desiredAccuracy;
+          methodResult(@"success");
+      },
+      
       @"MAMapView::set_pausesLocationUpdatesAutomatically": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_pausesLocationUpdatesAutomatically");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL pausesLocationUpdatesAutomatically = [args[@"pausesLocationUpdatesAutomatically"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2657,8 +2772,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_allowsBackgroundLocationUpdates": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_allowsBackgroundLocationUpdates");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL allowsBackgroundLocationUpdates = [args[@"allowsBackgroundLocationUpdates"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2671,8 +2786,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_showsIndoorMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_showsIndoorMap");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL showsIndoorMap = [args[@"showsIndoorMap"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2685,8 +2800,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_showsIndoorMapControl": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_showsIndoorMapControl");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL showsIndoorMapControl = [args[@"showsIndoorMapControl"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2699,8 +2814,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       @"MAMapView::set_customMapStyleEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMapView::set_customMapStyleEnabled");
       
-          // 参数
-          // jsonable参数
+          // args
+          // jsonable arg
           BOOL customMapStyleEnabled = [args[@"customMapStyleEnabled"] boolValue];
       
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2742,31 +2857,31 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MATraceDelegate::traceManagerDidTracecorrectdistancewithError");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmanager = @(manager.hash);
   HEAP_AmapMapFluttify[argmanager] = manager;
-  // 列表回调参数
+  // list callback arg
   NSMutableArray<NSNumber*>* arglocations = [NSMutableArray arrayWithCapacity:locations.count];
   for (int i = 0; i < locations.count; i++) {
       NSObject* item = ((NSObject*) [locations objectAtIndex:i]);
-      // 返回给dart端的数据
+      // return to dart side data
       arglocations[i] = @(item.hash);
-      // 放到HEAP_AmapMapFluttify中的数据
+      // add to HEAP_AmapMapFluttify
       HEAP_AmapMapFluttify[@(item.hash)] = item;
   }
-  // 列表回调参数
+  // list callback arg
   NSMutableArray<NSNumber*>* argtracePoints = [NSMutableArray arrayWithCapacity:tracePoints.count];
   for (int i = 0; i < tracePoints.count; i++) {
       NSObject* item = ((NSObject*) [tracePoints objectAtIndex:i]);
-      // 返回给dart端的数据
+      // return to dart side data
       argtracePoints[i] = @(item.hash);
-      // 放到HEAP_AmapMapFluttify中的数据
+      // add to HEAP_AmapMapFluttify
       HEAP_AmapMapFluttify[@(item.hash)] = item;
   }
-  // primitive回调参数
+  // primitive callback arg
   NSNumber* argdistance = @(distance);
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argerror = @(error.hash);
   HEAP_AmapMapFluttify[argerror] = error;
 
@@ -2782,8 +2897,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MATraceDelegate::mapViewRequireLocationAuth");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* arglocationManager = @(locationManager.hash);
   HEAP_AmapMapFluttify[arglocationManager] = locationManager;
 
@@ -2799,11 +2914,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argrenderer = @(renderer.hash);
   HEAP_AmapMapFluttify[argrenderer] = renderer;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argitem = @(item.hash);
   HEAP_AmapMapFluttify[argitem] = item;
 
@@ -2819,8 +2934,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewRegionChanged");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
 
@@ -2836,11 +2951,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewRegionWillChangeAnimated");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // primitive回调参数
+  // primitive callback arg
   NSNumber* arganimated = @(animated);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionWillChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
@@ -2855,11 +2970,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewRegionDidChangeAnimated");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // primitive回调参数
+  // primitive callback arg
   NSNumber* arganimated = @(animated);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionDidChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
@@ -2874,11 +2989,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewMapWillMoveByUser");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // primitive回调参数
+  // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillMoveByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
@@ -2893,11 +3008,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewMapDidMoveByUser");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // primitive回调参数
+  // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidMoveByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
@@ -2912,11 +3027,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewMapWillZoomByUser");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // primitive回调参数
+  // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillZoomByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
@@ -2931,11 +3046,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewMapDidZoomByUser");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // primitive回调参数
+  // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidZoomByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
@@ -2950,8 +3065,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewWillStartLoadingMap");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
 
@@ -2967,8 +3082,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidFinishLoadingMap");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
 
@@ -2984,11 +3099,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidFailLoadingMapWithError");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argerror = @(error.hash);
   HEAP_AmapMapFluttify[argerror] = error;
 
@@ -3004,7 +3119,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewViewForAnnotation");
 
-  // 构造可以直接传输的参数
+  // convert to jsonable arg
   
 
   // __block #__callback_result_type__# _callbackResult = nil;
@@ -3058,17 +3173,17 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidAddAnnotationViews");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 列表回调参数
+  // list callback arg
   NSMutableArray<NSNumber*>* argviews = [NSMutableArray arrayWithCapacity:views.count];
   for (int i = 0; i < views.count; i++) {
       NSObject* item = ((NSObject*) [views objectAtIndex:i]);
-      // 返回给dart端的数据
+      // return to dart side data
       argviews[i] = @(item.hash);
-      // 放到HEAP_AmapMapFluttify中的数据
+      // add to HEAP_AmapMapFluttify
       HEAP_AmapMapFluttify[@(item.hash)] = item;
   }
 
@@ -3084,11 +3199,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidSelectAnnotationView");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argview = @(view.hash);
   HEAP_AmapMapFluttify[argview] = view;
 
@@ -3104,11 +3219,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidDeselectAnnotationView");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argview = @(view.hash);
   HEAP_AmapMapFluttify[argview] = view;
 
@@ -3124,8 +3239,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewWillStartLocatingUser");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
 
@@ -3141,8 +3256,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidStopLocatingUser");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
 
@@ -3158,14 +3273,14 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* arguserLocation = @(userLocation.hash);
   HEAP_AmapMapFluttify[arguserLocation] = userLocation;
-  // primitive回调参数
+  // primitive callback arg
   NSNumber* argupdatingLocation = @(updatingLocation);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation" arguments:@{@"mapView": argmapView, @"userLocation": arguserLocation, @"updatingLocation": argupdatingLocation}];
@@ -3180,11 +3295,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidFailToLocateUserWithError");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argerror = @(error.hash);
   HEAP_AmapMapFluttify[argerror] = error;
 
@@ -3200,16 +3315,16 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argview = @(view.hash);
   HEAP_AmapMapFluttify[argview] = view;
-  // 枚举回调参数
+  // enum callback arg
   NSNumber* argnewState = @((NSInteger) newState);
-  // 枚举回调参数
+  // enum callback arg
   NSNumber* argoldState = @((NSInteger) oldState);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState" arguments:@{@"mapView": argmapView, @"view": argview, @"newState": argnewState, @"oldState": argoldState}];
@@ -3224,7 +3339,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewRendererForOverlay");
 
-  // 构造可以直接传输的参数
+  // convert to jsonable arg
   
 
   // __block #__callback_result_type__# _callbackResult = nil;
@@ -3250,7 +3365,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSNumber* width = (NSNumber*) STACK_AmapMapFluttify[@"width"];
   NSNumber* strokeColor = (NSNumber*) STACK_AmapMapFluttify[@"strokeColor"];
   NSNumber* fillColor = (NSNumber*) STACK_AmapMapFluttify[@"fillColor"];
-    
+
   // 线
   if ([overlay isKindOfClass:[MAPolyline class]])
   {
@@ -3266,12 +3381,12 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           rgba >>= 8;
       }
       polylineRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
-        
+
       // 这次调用完成后 清空栈
       [STACK_AmapMapFluttify removeAllObjects];
       return polylineRenderer;
   }
-    
+
   // 多边形
   if ([overlay isKindOfClass:[MAPolygon class]])
   {
@@ -3287,7 +3402,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           rgba >>= 8;
       }
       polygonRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
-      
+
       // 填充颜色
       rgba = [fillColor unsignedIntegerValue];
       for (int i = 3; i >= 0; i--) {
@@ -3295,20 +3410,20 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           rgba >>= 8;
       }
       polygonRenderer.fillColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
-        
+
       // 这次调用完成后 清空栈
       [STACK_AmapMapFluttify removeAllObjects];
       return polygonRenderer;
   }
-    
+
   // 圆
   if ([overlay isKindOfClass:[MACircle class]])
   {
       MACircleRenderer *circleRenderer = [[MACircleRenderer alloc] initWithCircle:overlay];
-      
+
       // 宽度
       circleRenderer.lineWidth    = [width doubleValue] / 2;
-      
+
       // 描边颜色
       NSUInteger rgba = [strokeColor unsignedIntegerValue];
       float components[4];
@@ -3317,7 +3432,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           rgba >>= 8;
       }
       circleRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
-      
+
       // 填充颜色
       rgba = [fillColor unsignedIntegerValue];
       for (int i = 3; i >= 0; i--) {
@@ -3325,7 +3440,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           rgba >>= 8;
       }
       circleRenderer.fillColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
-        
+
       // 这次调用完成后 清空栈
       [STACK_AmapMapFluttify removeAllObjects];
       return circleRenderer;
@@ -3343,17 +3458,17 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidAddOverlayRenderers");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 列表回调参数
+  // list callback arg
   NSMutableArray<NSNumber*>* argoverlayRenderers = [NSMutableArray arrayWithCapacity:overlayRenderers.count];
   for (int i = 0; i < overlayRenderers.count; i++) {
       NSObject* item = ((NSObject*) [overlayRenderers objectAtIndex:i]);
-      // 返回给dart端的数据
+      // return to dart side data
       argoverlayRenderers[i] = @(item.hash);
-      // 放到HEAP_AmapMapFluttify中的数据
+      // add to HEAP_AmapMapFluttify
       HEAP_AmapMapFluttify[@(item.hash)] = item;
   }
 
@@ -3369,14 +3484,14 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argview = @(view.hash);
   HEAP_AmapMapFluttify[argview] = view;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argcontrol = @(control.hash);
   HEAP_AmapMapFluttify[argcontrol] = control;
 
@@ -3392,11 +3507,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argview = @(view.hash);
   HEAP_AmapMapFluttify[argview] = view;
 
@@ -3412,11 +3527,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewTapped");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argview = @(view.hash);
   HEAP_AmapMapFluttify[argview] = view;
 
@@ -3432,13 +3547,13 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 枚举回调参数
+  // enum callback arg
   NSNumber* argmode = @((NSInteger) mode);
-  // primitive回调参数
+  // primitive callback arg
   NSNumber* arganimated = @(animated);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated" arguments:@{@"mapView": argmapView, @"mode": argmode, @"animated": arganimated}];
@@ -3453,11 +3568,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // primitive回调参数
+  // primitive callback arg
   NSNumber* argopenGLESDisabled = @(openGLESDisabled);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled" arguments:@{@"mapView": argmapView, @"openGLESDisabled": argopenGLESDisabled}];
@@ -3472,17 +3587,17 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidTouchPois");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 列表回调参数
+  // list callback arg
   NSMutableArray<NSNumber*>* argpois = [NSMutableArray arrayWithCapacity:pois.count];
   for (int i = 0; i < pois.count; i++) {
       NSObject* item = ((NSObject*) [pois objectAtIndex:i]);
-      // 返回给dart端的数据
+      // return to dart side data
       argpois[i] = @(item.hash);
-      // 放到HEAP_AmapMapFluttify中的数据
+      // add to HEAP_AmapMapFluttify
       HEAP_AmapMapFluttify[@(item.hash)] = item;
   }
 
@@ -3490,7 +3605,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   
 }
 
-- (void)mapView : (MAMapView*)mapView didSingleTappedAtCoordinate: (CLLocationCoordinate2D)coordinate
+- (void)mapView : (MAMapView*)mapView didSingleTappedAtCoordinate: (CLLocationCoordinate2D*)coordinate
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
@@ -3498,11 +3613,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 结构体回调参数
+  // struct callback arg
   NSValue* coordinateValue = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
   NSNumber* argcoordinate = @(coordinateValue.hash);
   HEAP_AmapMapFluttify[argcoordinate] = coordinateValue;
@@ -3512,7 +3627,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   
 }
 
-- (void)mapView : (MAMapView*)mapView didLongPressedAtCoordinate: (CLLocationCoordinate2D)coordinate
+- (void)mapView : (MAMapView*)mapView didLongPressedAtCoordinate: (CLLocationCoordinate2D*)coordinate
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
@@ -3520,11 +3635,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidLongPressedAtCoordinate");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 结构体回调参数
+  // struct callback arg
   NSValue* coordinateValue = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
   NSNumber* argcoordinate = @(coordinateValue.hash);
   HEAP_AmapMapFluttify[argcoordinate] = coordinateValue;
@@ -3542,8 +3657,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapInitComplete");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
 
@@ -3559,11 +3674,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapShowed");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP_AmapMapFluttify[argindoorInfo] = indoorInfo;
 
@@ -3579,11 +3694,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP_AmapMapFluttify[argindoorInfo] = indoorInfo;
 
@@ -3599,11 +3714,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapHidden");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
-  // 引用回调参数
+  // ref callback arg
   NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP_AmapMapFluttify[argindoorInfo] = indoorInfo;
 
@@ -3619,8 +3734,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::offlineDataWillReload");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
 
@@ -3636,8 +3751,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   NSLog(@"MAMapViewDelegate::offlineDataDidReload");
 
-  // 构造可以直接传输的参数
-  // 引用回调参数
+  // convert to jsonable arg
+  // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP_AmapMapFluttify[argmapView] = mapView;
 

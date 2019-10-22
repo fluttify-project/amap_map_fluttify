@@ -17,20 +17,20 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
 
     private val handlerMap = mapOf<String, (Registrar, Map<String, Any>, MethodChannel.Result) -> Unit>(
         "com.amap.api.maps.MapView::getMap" to { registrar, args, methodResult ->
-            // 参数
+            // args
         
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
             val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::getMap([])")
         
-            // 开始调用
+            // invoke native method
             val result = ref.getMap()
         
-            // 调用结果
+            // result
             if (result != null) {
                 val returnRefId = result.hashCode()
                 HEAP_AmapMapFluttify[returnRefId] = result
@@ -41,125 +41,125 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             }
         }
         ,"com.amap.api.maps.MapView::onCreate" to { registrar, args, methodResult ->
-            // 参数
-            // 引用参数
+            // args
+            // ref arg
             val var1 = HEAP_AmapMapFluttify[args["var1"] as Int] as android.os.Bundle
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
             val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onCreate([])")
         
-            // 开始调用
+            // invoke native method
             ref.onCreate(var1)
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.MapView::onResume" to { registrar, args, methodResult ->
-            // 参数
+            // args
         
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
             val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onResume([])")
         
-            // 开始调用
+            // invoke native method
             ref.onResume()
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.MapView::onPause" to { registrar, args, methodResult ->
-            // 参数
+            // args
         
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
             val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onPause([])")
         
-            // 开始调用
+            // invoke native method
             ref.onPause()
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.MapView::onDestroy" to { registrar, args, methodResult ->
-            // 参数
+            // args
         
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
             val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onDestroy([])")
         
-            // 开始调用
+            // invoke native method
             ref.onDestroy()
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.MapView::onLowMemory" to { registrar, args, methodResult ->
-            // 参数
+            // args
         
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
             val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onLowMemory([])")
         
-            // 开始调用
+            // invoke native method
             ref.onLowMemory()
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.MapView::onSaveInstanceState" to { registrar, args, methodResult ->
-            // 参数
-            // 引用参数
+            // args
+            // ref arg
             val var1 = HEAP_AmapMapFluttify[args["var1"] as Int] as android.os.Bundle
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
             val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onSaveInstanceState([])")
         
-            // 开始调用
+            // invoke native method
             ref.onSaveInstanceState(var1)
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.MapView::setVisibility" to { registrar, args, methodResult ->
-            // 参数
-            // jsonable参数
+            // args
+            // jsonable arg
             val var1 = args["var1"] as Int
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
             val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.MapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::setVisibility([\"var1\":$var1])")
         
-            // 开始调用
+            // invoke native method
             ref.setVisibility(var1)
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
     )
@@ -176,7 +176,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
         return object : PlatformView {
             private val view = com.amap.api.maps.MapView(registrar.activity())
 
-            // 构造完成后马上加入HEAP_AmapMapFluttify
+            // add to HEAP_AmapMapFluttify
             override fun getView(): View = view.apply { HEAP_AmapMapFluttify[id] = this }
 
             override fun dispose() {}

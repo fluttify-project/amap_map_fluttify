@@ -17,21 +17,21 @@ class DownloadProgressViewFactory(private val registrar: Registrar) : PlatformVi
 
     private val handlerMap = mapOf<String, (Registrar, Map<String, Any>, MethodChannel.Result) -> Unit>(
         "com.amap.api.maps.offlinemap.DownloadProgressView::setProgress" to { registrar, args, methodResult ->
-            // 参数
-            // jsonable参数
+            // args
+            // jsonable arg
             val var1 = args["var1"] as Int
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
             val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.offlinemap.DownloadProgressView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.offlinemap.DownloadProgressView@$refId::setProgress([\"var1\":$var1])")
         
-            // 开始调用
+            // invoke native method
             ref.setProgress(var1)
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
     )
@@ -48,7 +48,7 @@ class DownloadProgressViewFactory(private val registrar: Registrar) : PlatformVi
         return object : PlatformView {
             private val view = com.amap.api.maps.offlinemap.DownloadProgressView(registrar.activity())
 
-            // 构造完成后马上加入HEAP_AmapMapFluttify
+            // add to HEAP_AmapMapFluttify
             override fun getView(): View = view.apply { HEAP_AmapMapFluttify[id] = this }
 
             override fun dispose() {}
