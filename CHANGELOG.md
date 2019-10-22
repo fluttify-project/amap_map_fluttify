@@ -1,3 +1,6 @@
+## 0.2.2
+- roll engine #38df15a 主要增加了对lambda的支持
+
 ## 0.2.1
 - feature: marker拖动事件
 
