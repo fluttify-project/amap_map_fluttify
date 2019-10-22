@@ -12284,6 +12284,18 @@ NSMutableDictionary<NSNumber*, NSObject*>* HEAP_AmapMapFluttify;
 
     methodResult(@(floor.level));
   }
+  // 通过反射调用方法
+  else if ([@"Ref_iOS::performSelectorWithObject" isEqualToString:methodCall.method]) {
+    NSNumber* refId = (NSNumber*) args[@"refId"];
+    NSString* selector = (NSString*) args[@"selector"];
+    NSObject* object = (NSObject*) args[@"object"];
+
+    NSObject* target = (NSObject*) HEAP_AmapMapFluttify[refId];
+
+    [target performSelector: NSSelectorFromString(selector) withObject: object];
+
+    methodResult(@"success");
+  }
   // 创建UIImage
   else if ([@"ObjectFactory::createUIImage" isEqualToString:methodCall.method]) {
     FlutterStandardTypedData* bitmapBytes = (FlutterStandardTypedData*) args[@"bitmapBytes"];

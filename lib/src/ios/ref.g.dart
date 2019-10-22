@@ -10,6 +10,10 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class Ref_iOS extends Ref {
+  Future<void> performSelectorWithObject(String selector, Object object) {
+    return MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('Ref_iOS::performSelectorWithObject', {'refId': refId, 'selector': selector, 'object': object});
+  }
+
   Future<bool> isKindOfMAOfflineCity() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOfflineCity', {'refId': refId});
     return result;
