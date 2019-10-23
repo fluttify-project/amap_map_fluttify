@@ -10,8 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  amap_core_fluttify: ^0.0.6
   foundation_fluttify: ^0.0.3
+  amap_core_fluttify: ^0.0.5
 
 dev_dependencies:
   flutter_test:

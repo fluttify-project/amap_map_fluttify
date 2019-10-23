@@ -44,4 +44,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation fileTree(dir: 'libs', include: '*.jar')
     provided rootProject.findProject(":foundation_fluttify")
+    //  flutter插件依赖
+    provided rootProject.findProject("amap_core_fluttify")
 }
