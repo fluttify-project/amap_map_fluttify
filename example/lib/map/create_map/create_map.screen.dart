@@ -67,6 +67,20 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                     }
                   },
                 ),
+                DiscreteSetting(
+                  head: '切换语言',
+                  options: ['中文', '英文'],
+                  onSelected: (value) {
+                    switch (value) {
+                      case '中文':
+                        _controller?.setMapLanguage(Language.Chinese);
+                        break;
+                      case '英文':
+                        _controller?.setMapLanguage(Language.English);
+                        break;
+                    }
+                  },
+                ),
                 BooleanSetting(
                   head: '是否显示路况信息',
                   onSelected: (value) {

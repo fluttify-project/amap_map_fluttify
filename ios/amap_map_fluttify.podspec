@@ -16,6 +16,7 @@ A new flutter plugin project.
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.dependency 'amap_core_fluttify'
+  s.dependency 'foundation_fluttify'
 
   s.ios.deployment_target = '8.0'
   # 包含工程下的framework

@@ -1,4 +1,4 @@
-export 'ref.g.dart';
+export 'type_op.g.dart';
 export 'object_factory.g.dart';
 export 'platformview/TextureMapView.g.dart';
 export 'platformview/DownloadProgressView.g.dart';
@@ -296,3 +296,4 @@ export 'com/amap/api/trace/TraceOverlay.g.dart';
 export 'com/amap/api/trace/LBSTraceClient.g.dart';
 export 'com/amap/api/mapcore/util/.g.dart';
 export '../utils.g.dart';
+export 'package:foundation_fluttify/foundation_fluttify.dart';

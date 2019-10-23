@@ -133,9 +133,16 @@ class AmapController {
         pool..add(map);
       },
       ios: (pool) async {
-        // todo ios端的实现太骚气了, 先放着
-        // [self.mapView performSelector:NSSelectorFromString(@"setMapLanguage:") withObject:@(1)];
-        // [self.mapView performSelector:NSSelectorFromString(@"setMapLanguage:") withObject:@(0)];
+        switch (language) {
+          case Language.Chinese:
+            await performSelectorWithObject(
+                _iosController, 'setMapLanguage:', 0);
+            break;
+          case Language.English:
+            await performSelectorWithObject(
+                _iosController, 'setMapLanguage:', 1);
+            break;
+        }
       },
     );
   }
@@ -391,7 +398,7 @@ class AmapController {
       },
       ios: (pool) async {
         final latLng =
-            await ObjectFactory_iOS.createCLLocationCoordinate2D(lat, lng);
+            await PlatformFactory_iOS.createCLLocationCoordinate2D(lat, lng);
         await _iosController.setCenterCoordinateAnimated(latLng, animated);
 
         pool..add(latLng);
@@ -479,7 +486,7 @@ class AmapController {
           Uint8List iconData = await _getImageData(iconUri);
 
           final bitmap =
-              await ObjectFactory_Android.createandroid_graphics_Bitmap(
+              await PlatformFactory_Android.createandroid_graphics_Bitmap(
                   iconData);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
@@ -502,7 +509,7 @@ class AmapController {
             await ObjectFactory_iOS.createMAPointAnnotation();
 
         final coordinate =
-            await ObjectFactory_iOS.createCLLocationCoordinate2D(lat, lng);
+            await PlatformFactory_iOS.createCLLocationCoordinate2D(lat, lng);
 
         // 设置经纬度
         await pointAnnotation.set_coordinate(coordinate);
@@ -520,17 +527,17 @@ class AmapController {
         if (iconUri != null) {
           Uint8List iconData = await _getImageData(iconUri);
 
-          final icon = await ObjectFactory_iOS.createUIImage(iconData);
+          final icon = await PlatformFactory_iOS.createUIImage(iconData);
 
           // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
           // 供ios的回调去获取
-          await ObjectFactory_iOS.pushStack('icon', icon);
+          await PlatformFactory_iOS.pushStack('icon', icon);
 
           pool..add(icon);
         }
         // 是否可拖拽
         if (draggable != null)
-          await ObjectFactory_iOS.pushStackJsonable('draggable', draggable);
+          await PlatformFactory_iOS.pushStackJsonable('draggable', draggable);
 
         await _iosController.addAnnotation(pointAnnotation);
 
@@ -588,7 +595,7 @@ class AmapController {
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
         for (final point in points) {
-          final latLng = await ObjectFactory_iOS.createCLLocationCoordinate2D(
+          final latLng = await PlatformFactory_iOS.createCLLocationCoordinate2D(
               point.lat, point.lng);
           latLngList.add(latLng);
         }
@@ -599,9 +606,9 @@ class AmapController {
 
         // 宽度和颜色需要设置到STACK里去
         if (width != null)
-          await ObjectFactory_iOS.pushStackJsonable('width', width);
+          await PlatformFactory_iOS.pushStackJsonable('width', width);
         if (strokeColor != null)
-          await ObjectFactory_iOS.pushStackJsonable(
+          await PlatformFactory_iOS.pushStackJsonable(
               'strokeColor', strokeColor.value);
 
         // 设置参数
@@ -668,7 +675,7 @@ class AmapController {
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
         for (final point in points) {
-          final latLng = await ObjectFactory_iOS.createCLLocationCoordinate2D(
+          final latLng = await PlatformFactory_iOS.createCLLocationCoordinate2D(
               point.lat, point.lng);
           latLngList.add(latLng);
         }
@@ -679,12 +686,12 @@ class AmapController {
 
         // 宽度和颜色需要设置到STACK里去
         if (width != null)
-          await ObjectFactory_iOS.pushStackJsonable('width', width);
+          await PlatformFactory_iOS.pushStackJsonable('width', width);
         if (strokeColor != null)
-          await ObjectFactory_iOS.pushStackJsonable(
+          await PlatformFactory_iOS.pushStackJsonable(
               'strokeColor', strokeColor.value);
         if (fillColor != null)
-          await ObjectFactory_iOS.pushStackJsonable(
+          await PlatformFactory_iOS.pushStackJsonable(
               'fillColor', fillColor.value);
 
         // 设置参数
@@ -742,7 +749,7 @@ class AmapController {
       ios: (pool) async {
         await _iosController.set_delegate(_iosMapDelegate);
 
-        final latLng = await ObjectFactory_iOS.createCLLocationCoordinate2D(
+        final latLng = await PlatformFactory_iOS.createCLLocationCoordinate2D(
             point.lat, point.lng);
 
         // 参数
@@ -751,12 +758,12 @@ class AmapController {
 
         // 宽度和颜色需要设置到STACK里去
         if (width != null)
-          await ObjectFactory_iOS.pushStackJsonable('width', width);
+          await PlatformFactory_iOS.pushStackJsonable('width', width);
         if (strokeColor != null)
-          await ObjectFactory_iOS.pushStackJsonable(
+          await PlatformFactory_iOS.pushStackJsonable(
               'strokeColor', strokeColor.value);
         if (fillColor != null)
-          await ObjectFactory_iOS.pushStackJsonable(
+          await PlatformFactory_iOS.pushStackJsonable(
               'fillColor', fillColor.value);
 
         // 设置参数

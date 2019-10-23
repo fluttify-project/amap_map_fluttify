@@ -6,8 +6,8 @@
 #import <Flutter/Flutter.h>
 #import <MAMapKit/MAMapKit.h>
 
-extern NSMutableDictionary<NSString*, NSObject*> *STACK_AmapMapFluttify;
-extern NSMutableDictionary<NSNumber*, NSObject*> *HEAP_AmapMapFluttify;
+extern NSMutableDictionary<NSString*, NSObject*> *STACK;
+extern NSMutableDictionary<NSNumber*, NSObject*> *HEAP;
 
 @interface MACustomCalloutViewFactory : NSObject <FlutterPlatformViewFactory>
 - (instancetype)initWithRegistrar:(NSObject <FlutterPluginRegistrar> *)registrar;

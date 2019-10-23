@@ -54,7 +54,7 @@ class _MACustomCalloutView_iOSState extends State<MACustomCalloutView_iOS> {
 
   @override
   void dispose() {
-    ObjectFactory_iOS.release(_controller);
+    PlatformFactory_iOS.release(_controller);
     super.dispose();
   }
 }

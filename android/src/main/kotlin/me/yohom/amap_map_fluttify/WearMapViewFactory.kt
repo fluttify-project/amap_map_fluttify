@@ -12,6 +12,7 @@ import io.flutter.plugin.common.PluginRegistry.Registrar
 import io.flutter.plugin.common.StandardMessageCodec
 import io.flutter.plugin.platform.PlatformView
 import io.flutter.plugin.platform.PlatformViewFactory
+import me.yohom.foundation_fluttify.HEAP
 
 class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory(StandardMessageCodec.INSTANCE) {
 
@@ -22,7 +23,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::getMap([])")
@@ -33,7 +34,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             // result
             if (result != null) {
                 val returnRefId = result.hashCode()
-                HEAP_AmapMapFluttify[returnRefId] = result
+                HEAP[returnRefId] = result
         
                 methodResult.success(returnRefId)
             } else {
@@ -43,11 +44,11 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         ,"com.amap.api.maps.WearMapView::onCreate" to { registrar, args, methodResult ->
             // args
             // ref arg
-            val var1 = HEAP_AmapMapFluttify[args["var1"] as Int] as android.os.Bundle
+            val var1 = HEAP[args["var1"] as Int] as android.os.Bundle
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onCreate([])")
@@ -64,7 +65,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onResume([])")
@@ -81,7 +82,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onPause([])")
@@ -98,7 +99,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onDestroy([])")
@@ -115,7 +116,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onLowMemory([])")
@@ -129,11 +130,11 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         ,"com.amap.api.maps.WearMapView::onSaveInstanceState" to { registrar, args, methodResult ->
             // args
             // ref arg
-            val var1 = HEAP_AmapMapFluttify[args["var1"] as Int] as android.os.Bundle
+            val var1 = HEAP[args["var1"] as Int] as android.os.Bundle
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onSaveInstanceState([])")
@@ -151,7 +152,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::setVisibility([\"var1\":$var1])")
@@ -168,7 +169,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener([])")
@@ -228,7 +229,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onDismiss([])")
@@ -242,11 +243,11 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         ,"com.amap.api.maps.WearMapView::onEnterAmbient" to { registrar, args, methodResult ->
             // args
             // ref arg
-            val var1 = HEAP_AmapMapFluttify[args["var1"] as Int] as android.os.Bundle
+            val var1 = HEAP[args["var1"] as Int] as android.os.Bundle
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onEnterAmbient([])")
@@ -263,7 +264,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapMapFluttify[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onExitAmbient([])")
@@ -288,8 +289,8 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         return object : PlatformView {
             private val view = com.amap.api.maps.WearMapView(registrar.activity())
 
-            // add to HEAP_AmapMapFluttify
-            override fun getView(): View = view.apply { HEAP_AmapMapFluttify[id] = this }
+            // add to HEAP
+            override fun getView(): View = view.apply { HEAP[id] = this }
 
             override fun dispose() {}
         }

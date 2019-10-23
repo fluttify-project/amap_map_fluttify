@@ -44,7 +44,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
 - (UIView *)view {
   MACustomCalloutView *view = [[MACustomCalloutView alloc] init];
-  HEAP_AmapMapFluttify[@(_viewId)] = view;
+  HEAP[@(_viewId)] = view;
 
   //region handlers
   _handlerMap = @{
@@ -53,13 +53,13 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP_AmapMapFluttify[@(refId)];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[@(refId)];
       
           // invoke native method
           UIView* result = ref.customView;
       
           // 返回值: 引用
-          HEAP_AmapMapFluttify[@(result.hash)] = result;
+          HEAP[@(result.hash)] = result;
           methodResult(@(result.hash));
       },
       
@@ -98,15 +98,15 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmanager = @(manager.hash);
-  HEAP_AmapMapFluttify[argmanager] = manager;
+  HEAP[argmanager] = manager;
   // list callback arg
   NSMutableArray<NSNumber*>* arglocations = [NSMutableArray arrayWithCapacity:locations.count];
   for (int i = 0; i < locations.count; i++) {
       NSObject* item = ((NSObject*) [locations objectAtIndex:i]);
       // return to dart side data
       arglocations[i] = @(item.hash);
-      // add to HEAP_AmapMapFluttify
-      HEAP_AmapMapFluttify[@(item.hash)] = item;
+      // add to HEAP
+      HEAP[@(item.hash)] = item;
   }
   // list callback arg
   NSMutableArray<NSNumber*>* argtracePoints = [NSMutableArray arrayWithCapacity:tracePoints.count];
@@ -114,14 +114,14 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       NSObject* item = ((NSObject*) [tracePoints objectAtIndex:i]);
       // return to dart side data
       argtracePoints[i] = @(item.hash);
-      // add to HEAP_AmapMapFluttify
-      HEAP_AmapMapFluttify[@(item.hash)] = item;
+      // add to HEAP
+      HEAP[@(item.hash)] = item;
   }
   // primitive callback arg
   NSNumber* argdistance = @(distance);
   // ref callback arg
   NSNumber* argerror = @(error.hash);
-  HEAP_AmapMapFluttify[argerror] = error;
+  HEAP[argerror] = error;
 
   [channel invokeMethod:@"Callback::MATraceDelegate::traceManagerDidTracecorrectdistancewithError" arguments:@{@"manager": argmanager, @"locations": arglocations, @"tracePoints": argtracePoints, @"distance": argdistance, @"error": argerror}];
   
@@ -138,7 +138,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* arglocationManager = @(locationManager.hash);
-  HEAP_AmapMapFluttify[arglocationManager] = locationManager;
+  HEAP[arglocationManager] = locationManager;
 
   [channel invokeMethod:@"Callback::MATraceDelegate::mapViewRequireLocationAuth" arguments:@{@"locationManager": arglocationManager}];
   
@@ -155,10 +155,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argrenderer = @(renderer.hash);
-  HEAP_AmapMapFluttify[argrenderer] = renderer;
+  HEAP[argrenderer] = renderer;
   // ref callback arg
   NSNumber* argitem = @(item.hash);
-  HEAP_AmapMapFluttify[argitem] = item;
+  HEAP[argitem] = item;
 
   [channel invokeMethod:@"Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped" arguments:@{@"renderer": argrenderer, @"item": argitem}];
   
@@ -175,7 +175,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionChanged" arguments:@{@"mapView": argmapView}];
   
@@ -192,7 +192,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* arganimated = @(animated);
 
@@ -211,7 +211,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* arganimated = @(animated);
 
@@ -230,7 +230,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
@@ -249,7 +249,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
@@ -268,7 +268,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
@@ -287,7 +287,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
@@ -306,7 +306,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewWillStartLoadingMap" arguments:@{@"mapView": argmapView}];
   
@@ -323,7 +323,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFinishLoadingMap" arguments:@{@"mapView": argmapView}];
   
@@ -340,10 +340,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // ref callback arg
   NSNumber* argerror = @(error.hash);
-  HEAP_AmapMapFluttify[argerror] = error;
+  HEAP[argerror] = error;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFailLoadingMapWithError" arguments:@{@"mapView": argmapView, @"error": argerror}];
   
@@ -397,15 +397,15 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // list callback arg
   NSMutableArray<NSNumber*>* argviews = [NSMutableArray arrayWithCapacity:views.count];
   for (int i = 0; i < views.count; i++) {
       NSObject* item = ((NSObject*) [views objectAtIndex:i]);
       // return to dart side data
       argviews[i] = @(item.hash);
-      // add to HEAP_AmapMapFluttify
-      HEAP_AmapMapFluttify[@(item.hash)] = item;
+      // add to HEAP
+      HEAP[@(item.hash)] = item;
   }
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAddAnnotationViews" arguments:@{@"mapView": argmapView, @"views": argviews}];
@@ -423,10 +423,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // ref callback arg
   NSNumber* argview = @(view.hash);
-  HEAP_AmapMapFluttify[argview] = view;
+  HEAP[argview] = view;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidSelectAnnotationView" arguments:@{@"mapView": argmapView, @"view": argview}];
   
@@ -443,10 +443,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // ref callback arg
   NSNumber* argview = @(view.hash);
-  HEAP_AmapMapFluttify[argview] = view;
+  HEAP[argview] = view;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidDeselectAnnotationView" arguments:@{@"mapView": argmapView, @"view": argview}];
   
@@ -463,7 +463,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewWillStartLocatingUser" arguments:@{@"mapView": argmapView}];
   
@@ -480,7 +480,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidStopLocatingUser" arguments:@{@"mapView": argmapView}];
   
@@ -497,10 +497,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // ref callback arg
   NSNumber* arguserLocation = @(userLocation.hash);
-  HEAP_AmapMapFluttify[arguserLocation] = userLocation;
+  HEAP[arguserLocation] = userLocation;
   // primitive callback arg
   NSNumber* argupdatingLocation = @(updatingLocation);
 
@@ -519,10 +519,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // ref callback arg
   NSNumber* argerror = @(error.hash);
-  HEAP_AmapMapFluttify[argerror] = error;
+  HEAP[argerror] = error;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFailToLocateUserWithError" arguments:@{@"mapView": argmapView, @"error": argerror}];
   
@@ -539,10 +539,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // ref callback arg
   NSNumber* argview = @(view.hash);
-  HEAP_AmapMapFluttify[argview] = view;
+  HEAP[argview] = view;
   // enum callback arg
   NSNumber* argnewState = @((NSInteger) newState);
   // enum callback arg
@@ -600,15 +600,15 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // list callback arg
   NSMutableArray<NSNumber*>* argoverlayRenderers = [NSMutableArray arrayWithCapacity:overlayRenderers.count];
   for (int i = 0; i < overlayRenderers.count; i++) {
       NSObject* item = ((NSObject*) [overlayRenderers objectAtIndex:i]);
       // return to dart side data
       argoverlayRenderers[i] = @(item.hash);
-      // add to HEAP_AmapMapFluttify
-      HEAP_AmapMapFluttify[@(item.hash)] = item;
+      // add to HEAP
+      HEAP[@(item.hash)] = item;
   }
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAddOverlayRenderers" arguments:@{@"mapView": argmapView, @"overlayRenderers": argoverlayRenderers}];
@@ -626,13 +626,13 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // ref callback arg
   NSNumber* argview = @(view.hash);
-  HEAP_AmapMapFluttify[argview] = view;
+  HEAP[argview] = view;
   // ref callback arg
   NSNumber* argcontrol = @(control.hash);
-  HEAP_AmapMapFluttify[argcontrol] = control;
+  HEAP[argcontrol] = control;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped" arguments:@{@"mapView": argmapView, @"view": argview, @"control": argcontrol}];
   
@@ -649,10 +649,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // ref callback arg
   NSNumber* argview = @(view.hash);
-  HEAP_AmapMapFluttify[argview] = view;
+  HEAP[argview] = view;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped" arguments:@{@"mapView": argmapView, @"view": argview}];
   
@@ -669,10 +669,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // ref callback arg
   NSNumber* argview = @(view.hash);
-  HEAP_AmapMapFluttify[argview] = view;
+  HEAP[argview] = view;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAnnotationViewTapped" arguments:@{@"mapView": argmapView, @"view": argview}];
   
@@ -689,7 +689,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // enum callback arg
   NSNumber* argmode = @((NSInteger) mode);
   // primitive callback arg
@@ -710,7 +710,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* argopenGLESDisabled = @(openGLESDisabled);
 
@@ -729,15 +729,15 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // list callback arg
   NSMutableArray<NSNumber*>* argpois = [NSMutableArray arrayWithCapacity:pois.count];
   for (int i = 0; i < pois.count; i++) {
       NSObject* item = ((NSObject*) [pois objectAtIndex:i]);
       // return to dart side data
       argpois[i] = @(item.hash);
-      // add to HEAP_AmapMapFluttify
-      HEAP_AmapMapFluttify[@(item.hash)] = item;
+      // add to HEAP
+      HEAP[@(item.hash)] = item;
   }
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidTouchPois" arguments:@{@"mapView": argmapView, @"pois": argpois}];
@@ -755,11 +755,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // struct callback arg
   NSValue* coordinateValue = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
   NSNumber* argcoordinate = @(coordinateValue.hash);
-  HEAP_AmapMapFluttify[argcoordinate] = coordinateValue;
+  HEAP[argcoordinate] = coordinateValue;
   
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate" arguments:@{@"mapView": argmapView, @"coordinate": argcoordinate}];
@@ -777,11 +777,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // struct callback arg
   NSValue* coordinateValue = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
   NSNumber* argcoordinate = @(coordinateValue.hash);
-  HEAP_AmapMapFluttify[argcoordinate] = coordinateValue;
+  HEAP[argcoordinate] = coordinateValue;
   
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidLongPressedAtCoordinate" arguments:@{@"mapView": argmapView, @"coordinate": argcoordinate}];
@@ -799,7 +799,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapInitComplete" arguments:@{@"mapView": argmapView}];
   
@@ -816,10 +816,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // ref callback arg
   NSNumber* argindoorInfo = @(indoorInfo.hash);
-  HEAP_AmapMapFluttify[argindoorInfo] = indoorInfo;
+  HEAP[argindoorInfo] = indoorInfo;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidIndoorMapShowed" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
   
@@ -836,10 +836,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // ref callback arg
   NSNumber* argindoorInfo = @(indoorInfo.hash);
-  HEAP_AmapMapFluttify[argindoorInfo] = indoorInfo;
+  HEAP[argindoorInfo] = indoorInfo;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
   
@@ -856,10 +856,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
   // ref callback arg
   NSNumber* argindoorInfo = @(indoorInfo.hash);
-  HEAP_AmapMapFluttify[argindoorInfo] = indoorInfo;
+  HEAP[argindoorInfo] = indoorInfo;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidIndoorMapHidden" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
   
@@ -876,7 +876,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::offlineDataWillReload" arguments:@{@"mapView": argmapView}];
   
@@ -893,7 +893,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // convert to jsonable arg
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
-  HEAP_AmapMapFluttify[argmapView] = mapView;
+  HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::offlineDataDidReload" arguments:@{@"mapView": argmapView}];
   
