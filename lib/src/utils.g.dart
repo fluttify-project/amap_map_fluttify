@@ -4,26 +4,22 @@
 
 import 'dart:io';
 
+import 'package:flutter/services.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 
 typedef Future<T> _FutureCallback<T>(List<Ref> releasePool);
 
-Future<T> platform<T>(
-    {_FutureCallback<T> android, _FutureCallback<T> ios}) async {
+Future<T> platform<T>({_FutureCallback<T> android, _FutureCallback<T> ios}) async {
   if (android != null && Platform.isAndroid) {
     final releasePool = <Ref>[];
     final result = await android(releasePool);
-    releasePool
-      ..forEach((it) => PlatformFactory_Android.release(it))
-      ..clear();
+    releasePool..forEach((it) => PlatformFactory_Android.release(it))..clear();
     return result;
   } else if (ios != null && Platform.isIOS) {
     final releasePool = <Ref>[];
     final result = await ios(releasePool);
-    releasePool
-      ..forEach((it) => PlatformFactory_iOS.release(it))
-      ..clear();
+    releasePool..forEach((it) => PlatformFactory_iOS.release(it))..clear();
     return result;
   } else {
     return Future.value();

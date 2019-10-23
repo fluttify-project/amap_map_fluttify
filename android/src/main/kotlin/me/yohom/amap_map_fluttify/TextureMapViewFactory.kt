@@ -12,7 +12,7 @@ import io.flutter.plugin.common.PluginRegistry.Registrar
 import io.flutter.plugin.common.StandardMessageCodec
 import io.flutter.plugin.platform.PlatformView
 import io.flutter.plugin.platform.PlatformViewFactory
-import me.yohom.foundation_fluttify
+import me.yohom.foundation_fluttify.HEAP
 
 class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFactory(StandardMessageCodec.INSTANCE) {
 

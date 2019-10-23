@@ -9,7 +9,7 @@ import android.util.Log
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.PluginRegistry.Registrar
-import me.yohom.foundation_fluttify
+import me.yohom.foundation_fluttify.HEAP
 
 @Suppress("FunctionName", "UsePropertyAccessSyntax", "RedundantUnitReturnType", "UNUSED_PARAMETER", "SpellCheckingInspection", "ConvertToStringTemplate", "DEPRECATION", "UNUSED_VARIABLE")
 class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.MethodCallHandler {
