@@ -13,8 +13,8 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   // generate getters
   Future<MAGroundOverlay> get_groundOverlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAGroundOverlayRenderer::get_groundOverlay", {'refId': refId});
-    kNativeObjectPool.add(MAGroundOverlay()..refId = result);
-    return MAGroundOverlay()..refId = result;
+    kNativeObjectPool.add(MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify');
+    return MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify';
   }
   
 
@@ -37,8 +37,8 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAGroundOverlayRenderer()..refId = result);
-      return MAGroundOverlayRenderer()..refId = result;
+      kNativeObjectPool.add(MAGroundOverlayRenderer()..refId = result..tag = 'amap_map_fluttify');
+      return MAGroundOverlayRenderer()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

@@ -13,8 +13,8 @@ class MAMultiPointItem extends NSObject with MAAnnotation, NSCopying {
   // generate getters
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointItem::get_coordinate", {'refId': refId});
-    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
-    return CLLocationCoordinate2D()..refId = result;
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
+    return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<String> get_customID() async {

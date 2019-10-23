@@ -13,8 +13,8 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   // generate getters
   Future<MATileOverlay> get_tileOverlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayRenderer::get_tileOverlay", {'refId': refId});
-    kNativeObjectPool.add(MATileOverlay()..refId = result);
-    return MATileOverlay()..refId = result;
+    kNativeObjectPool.add(MATileOverlay()..refId = result..tag = 'amap_map_fluttify');
+    return MATileOverlay()..refId = result..tag = 'amap_map_fluttify';
   }
   
 
@@ -37,8 +37,8 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MATileOverlayRenderer()..refId = result);
-      return MATileOverlayRenderer()..refId = result;
+      kNativeObjectPool.add(MATileOverlayRenderer()..refId = result..tag = 'amap_map_fluttify');
+      return MATileOverlayRenderer()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

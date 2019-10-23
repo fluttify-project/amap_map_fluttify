@@ -49,8 +49,8 @@ class MAIndoorInfo extends NSObject  {
   
   Future<List> get_floorInfo() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorInfo::get_floorInfo", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it).toList());
-    return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
   Future<int> get_numberOfFloor() async {

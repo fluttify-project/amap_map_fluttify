@@ -13,8 +13,8 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   // generate getters
   Future<UIImage> get_icon() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAGroundOverlay::get_icon", {'refId': refId});
-    kNativeObjectPool.add(UIImage()..refId = result);
-    return UIImage()..refId = result;
+    kNativeObjectPool.add(UIImage()..refId = result..tag = 'amap_map_fluttify');
+    return UIImage()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<double> get_alpha() async {
@@ -31,8 +31,8 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   Future<MACoordinateBounds> get_bounds() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAGroundOverlay::get_bounds", {'refId': refId});
-    kNativeObjectPool.add(MACoordinateBounds()..refId = result);
-    return MACoordinateBounds()..refId = result;
+    kNativeObjectPool.add(MACoordinateBounds()..refId = result..tag = 'amap_map_fluttify');
+    return MACoordinateBounds()..refId = result..tag = 'amap_map_fluttify';
   }
   
 
@@ -60,8 +60,8 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAGroundOverlay()..refId = result);
-      return MAGroundOverlay()..refId = result;
+      kNativeObjectPool.add(MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify');
+      return MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -80,8 +80,8 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAGroundOverlay()..refId = result);
-      return MAGroundOverlay()..refId = result;
+      kNativeObjectPool.add(MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify');
+      return MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

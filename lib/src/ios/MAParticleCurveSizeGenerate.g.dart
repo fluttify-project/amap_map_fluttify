@@ -32,8 +32,8 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleCurveSizeGenerate()..refId = result);
-      return MAParticleCurveSizeGenerate()..refId = result;
+      kNativeObjectPool.add(MAParticleCurveSizeGenerate()..refId = result..tag = 'amap_map_fluttify');
+      return MAParticleCurveSizeGenerate()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

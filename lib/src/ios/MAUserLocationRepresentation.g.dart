@@ -37,8 +37,8 @@ class MAUserLocationRepresentation extends NSObject  {
   
   Future<UIImage> get_image() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_image", {'refId': refId});
-    kNativeObjectPool.add(UIImage()..refId = result);
-    return UIImage()..refId = result;
+    kNativeObjectPool.add(UIImage()..refId = result..tag = 'amap_map_fluttify');
+    return UIImage()..refId = result..tag = 'amap_map_fluttify';
   }
   
 

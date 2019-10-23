@@ -1072,8 +1072,8 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = result);
-      return com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

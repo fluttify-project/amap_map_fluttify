@@ -13,8 +13,8 @@ class MAOfflineItemCommonCity extends MAOfflineCity  {
   // generate getters
   Future<MAOfflineItem> get_province() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItemCommonCity::get_province", {'refId': refId});
-    kNativeObjectPool.add(MAOfflineItem()..refId = result);
-    return MAOfflineItem()..refId = result;
+    kNativeObjectPool.add(MAOfflineItem()..refId = result..tag = 'amap_map_fluttify');
+    return MAOfflineItem()..refId = result..tag = 'amap_map_fluttify';
   }
   
 

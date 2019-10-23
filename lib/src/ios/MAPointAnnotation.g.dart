@@ -13,8 +13,8 @@ class MAPointAnnotation extends MAShape  {
   // generate getters
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPointAnnotation::get_coordinate", {'refId': refId});
-    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
-    return CLLocationCoordinate2D()..refId = result;
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
+    return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<bool> get_lockedToScreen() async {
@@ -25,8 +25,8 @@ class MAPointAnnotation extends MAShape  {
   
   Future<CGPoint> get_lockedScreenPoint() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPointAnnotation::get_lockedScreenPoint", {'refId': refId});
-    kNativeObjectPool.add(CGPoint()..refId = result);
-    return CGPoint()..refId = result;
+    kNativeObjectPool.add(CGPoint()..refId = result..tag = 'amap_map_fluttify');
+    return CGPoint()..refId = result..tag = 'amap_map_fluttify';
   }
   
 

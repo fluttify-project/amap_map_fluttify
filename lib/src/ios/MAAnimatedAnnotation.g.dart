@@ -59,8 +59,8 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAAnnotationMoveAnimation()..refId = result);
-      return MAAnnotationMoveAnimation()..refId = result;
+      kNativeObjectPool.add(MAAnnotationMoveAnimation()..refId = result..tag = 'amap_map_fluttify');
+      return MAAnnotationMoveAnimation()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -103,8 +103,8 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAAnnotationMoveAnimation()..refId = result);
-      return MAAnnotationMoveAnimation()..refId = result;
+      kNativeObjectPool.add(MAAnnotationMoveAnimation()..refId = result..tag = 'amap_map_fluttify');
+      return MAAnnotationMoveAnimation()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

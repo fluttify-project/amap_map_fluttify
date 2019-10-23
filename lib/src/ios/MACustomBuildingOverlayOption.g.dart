@@ -66,8 +66,8 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MACustomBuildingOverlayOption()..refId = result);
-      return MACustomBuildingOverlayOption()..refId = result;
+      kNativeObjectPool.add(MACustomBuildingOverlayOption()..refId = result..tag = 'amap_map_fluttify');
+      return MACustomBuildingOverlayOption()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

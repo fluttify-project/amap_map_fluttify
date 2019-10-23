@@ -63,8 +63,8 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -83,8 +83,8 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -103,8 +103,8 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -123,8 +123,8 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -143,8 +143,8 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -163,8 +163,8 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -183,8 +183,8 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -203,8 +203,8 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

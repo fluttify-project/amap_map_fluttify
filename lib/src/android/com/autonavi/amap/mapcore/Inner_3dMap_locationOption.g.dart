@@ -112,8 +112,8 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result);
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -152,8 +152,8 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result);
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -192,8 +192,8 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result);
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -332,8 +332,8 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result);
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -392,8 +392,8 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result);
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -432,8 +432,8 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result);
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -452,8 +452,8 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result);
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -532,8 +532,8 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result);
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

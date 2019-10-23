@@ -13,26 +13,26 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   // generate getters
   Future<UIImage> get_icon() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlayRenderer::get_icon", {'refId': refId});
-    kNativeObjectPool.add(UIImage()..refId = result);
-    return UIImage()..refId = result;
+    kNativeObjectPool.add(UIImage()..refId = result..tag = 'amap_map_fluttify');
+    return UIImage()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<CGSize> get_pointSize() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlayRenderer::get_pointSize", {'refId': refId});
-    kNativeObjectPool.add(CGSize()..refId = result);
-    return CGSize()..refId = result;
+    kNativeObjectPool.add(CGSize()..refId = result..tag = 'amap_map_fluttify');
+    return CGSize()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<CGPoint> get_anchor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlayRenderer::get_anchor", {'refId': refId});
-    kNativeObjectPool.add(CGPoint()..refId = result);
-    return CGPoint()..refId = result;
+    kNativeObjectPool.add(CGPoint()..refId = result..tag = 'amap_map_fluttify');
+    return CGPoint()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<MAMultiPointOverlay> get_multiPointOverlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlayRenderer::get_multiPointOverlay", {'refId': refId});
-    kNativeObjectPool.add(MAMultiPointOverlay()..refId = result);
-    return MAMultiPointOverlay()..refId = result;
+    kNativeObjectPool.add(MAMultiPointOverlay()..refId = result..tag = 'amap_map_fluttify');
+    return MAMultiPointOverlay()..refId = result..tag = 'amap_map_fluttify';
   }
   
 
@@ -95,8 +95,8 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMultiPointOverlayRenderer()..refId = result);
-      return MAMultiPointOverlayRenderer()..refId = result;
+      kNativeObjectPool.add(MAMultiPointOverlayRenderer()..refId = result..tag = 'amap_map_fluttify');
+      return MAMultiPointOverlayRenderer()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

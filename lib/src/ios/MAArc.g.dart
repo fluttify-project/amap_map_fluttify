@@ -13,26 +13,26 @@ class MAArc extends MAShape with MAAnnotation, MAOverlay {
   // generate getters
   Future<CLLocationCoordinate2D> get_startCoordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAArc::get_startCoordinate", {'refId': refId});
-    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
-    return CLLocationCoordinate2D()..refId = result;
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
+    return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<CLLocationCoordinate2D> get_passedCoordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAArc::get_passedCoordinate", {'refId': refId});
-    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
-    return CLLocationCoordinate2D()..refId = result;
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
+    return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<CLLocationCoordinate2D> get_endCoordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAArc::get_endCoordinate", {'refId': refId});
-    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
-    return CLLocationCoordinate2D()..refId = result;
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
+    return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<MAMapRect> get_boundingMapRect() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAArc::get_boundingMapRect", {'refId': refId});
-    kNativeObjectPool.add(MAMapRect()..refId = result);
-    return MAMapRect()..refId = result;
+    kNativeObjectPool.add(MAMapRect()..refId = result..tag = 'amap_map_fluttify');
+    return MAMapRect()..refId = result..tag = 'amap_map_fluttify';
   }
   
 
@@ -72,8 +72,8 @@ class MAArc extends MAShape with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAArc()..refId = result);
-      return MAArc()..refId = result;
+      kNativeObjectPool.add(MAArc()..refId = result..tag = 'amap_map_fluttify');
+      return MAArc()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

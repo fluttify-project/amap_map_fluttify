@@ -13,14 +13,14 @@ class MAOverlayRenderer extends NSObject  {
   // generate getters
   Future<MAOverlay> get_overlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_overlay", {'refId': refId});
-    kNativeObjectPool.add(MAGroundOverlay()..refId = result);
-    return MAGroundOverlay()..refId = result;
+    kNativeObjectPool.add(MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify');
+    return MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<CGPoint> get_glPoints() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_glPoints", {'refId': refId});
-    kNativeObjectPool.add(CGPoint()..refId = result);
-    return CGPoint()..refId = result;
+    kNativeObjectPool.add(CGPoint()..refId = result..tag = 'amap_map_fluttify');
+    return CGPoint()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<int> get_glPointCount() async {
@@ -31,8 +31,8 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<UIImage> get_strokeImage() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_strokeImage", {'refId': refId});
-    kNativeObjectPool.add(UIImage()..refId = result);
-    return UIImage()..refId = result;
+    kNativeObjectPool.add(UIImage()..refId = result..tag = 'amap_map_fluttify');
+    return UIImage()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<double> get_alpha() async {
@@ -90,8 +90,8 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAOverlayRenderer()..refId = result);
-      return MAOverlayRenderer()..refId = result;
+      kNativeObjectPool.add(MAOverlayRenderer()..refId = result..tag = 'amap_map_fluttify');
+      return MAOverlayRenderer()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -110,8 +110,8 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMapPoint()..refId = result);
-      return MAMapPoint()..refId = result;
+      kNativeObjectPool.add(MAMapPoint()..refId = result..tag = 'amap_map_fluttify');
+      return MAMapPoint()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -150,8 +150,8 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(CGPoint()..refId = result);
-      return CGPoint()..refId = result;
+      kNativeObjectPool.add(CGPoint()..refId = result..tag = 'amap_map_fluttify');
+      return CGPoint()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -170,8 +170,8 @@ class MAOverlayRenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(CGPoint()..refId = result);
-      return CGPoint()..refId = result;
+      kNativeObjectPool.add(CGPoint()..refId = result..tag = 'amap_map_fluttify');
+      return CGPoint()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

@@ -554,8 +554,8 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = result);
-      return com_autonavi_amap_mapcore_IPoint()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_IPoint()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -694,8 +694,8 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Rectangle()..refId = result);
-      return com_autonavi_amap_mapcore_Rectangle()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Rectangle()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Rectangle()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -814,8 +814,8 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds()..refId = result);
-      return com_amap_api_maps_model_LatLngBounds()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_LatLngBounds()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

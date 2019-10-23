@@ -54,8 +54,8 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = result);
-      return com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

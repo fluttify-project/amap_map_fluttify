@@ -52,8 +52,8 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_animation_GLAnimationSet()..refId = result);
-      return com_autonavi_amap_mapcore_animation_GLAnimationSet()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_animation_GLAnimationSet()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_animation_GLAnimationSet()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -372,8 +372,8 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends java_lang_Objec
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_autonavi_amap_mapcore_animation_GLAnimation()..refId = it).toList());
-      return (result as List).cast<int>().map((it) => com_autonavi_amap_mapcore_animation_GLAnimation()..refId = it).toList();
+      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_autonavi_amap_mapcore_animation_GLAnimation()..refId = it..tag = 'amap_map_fluttify').toList());
+      return (result as List).cast<int>().map((it) => com_autonavi_amap_mapcore_animation_GLAnimation()..refId = it..tag = 'amap_map_fluttify').toList();
     }
   }
   

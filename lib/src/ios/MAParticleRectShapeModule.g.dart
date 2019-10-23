@@ -32,8 +32,8 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleRectShapeModule()..refId = result);
-      return MAParticleRectShapeModule()..refId = result;
+      kNativeObjectPool.add(MAParticleRectShapeModule()..refId = result..tag = 'amap_map_fluttify');
+      return MAParticleRectShapeModule()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

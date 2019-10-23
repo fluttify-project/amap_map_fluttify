@@ -13,8 +13,8 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   // generate getters
   Future<CGSize> get_tileSize() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlay::get_tileSize", {'refId': refId});
-    kNativeObjectPool.add(CGSize()..refId = result);
-    return CGSize()..refId = result;
+    kNativeObjectPool.add(CGSize()..refId = result..tag = 'amap_map_fluttify');
+    return CGSize()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<int> get_minimumZ() async {
@@ -43,8 +43,8 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   
   Future<MAMapRect> get_boundingMapRect() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlay::get_boundingMapRect", {'refId': refId});
-    kNativeObjectPool.add(MAMapRect()..refId = result);
-    return MAMapRect()..refId = result;
+    kNativeObjectPool.add(MAMapRect()..refId = result..tag = 'amap_map_fluttify');
+    return MAMapRect()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<bool> get_disableOffScreenTileLoading() async {

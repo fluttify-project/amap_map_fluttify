@@ -14,7 +14,7 @@ class ObjectFactory_Android {
 
   static Future<com_autonavi_ae_gmap_maploader_ProcessingTile> createcom_autonavi_ae_gmap_maploader_ProcessingTile__String(String var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_maploader_ProcessingTile__String', {"var1": var1});
-    final object = com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = refId;
+    final object = com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -22,7 +22,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_glinterface_MapLabelItem> createcom_autonavi_ae_gmap_glinterface_MapLabelItem__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glinterface_MapLabelItem__');
-    final object = com_autonavi_ae_gmap_glinterface_MapLabelItem()..refId = refId;
+    final object = com_autonavi_ae_gmap_glinterface_MapLabelItem()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,7 +30,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr> createcom_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr__');
-    final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr()..refId = refId;
+    final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -38,7 +38,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_glanimation_AdglAnimation2V> createcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int(int var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int', {"var1": var1});
-    final object = com_autonavi_ae_gmap_glanimation_AdglAnimation2V()..refId = refId;
+    final object = com_autonavi_ae_gmap_glanimation_AdglAnimation2V()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -46,7 +46,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues> createcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__');
-    final object = com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = refId;
+    final object = com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -54,7 +54,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimFling> createcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int(int var1, int var2, int var3) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int', {"var1": var1, "var2": var2, "var3": var3});
-    final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimFling()..refId = refId;
+    final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimFling()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -62,7 +62,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_glanimation_AdglAnimation1V> createcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__int(int var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__int', {"var1": var1});
-    final object = com_autonavi_ae_gmap_glanimation_AdglAnimation1V()..refId = refId;
+    final object = com_autonavi_ae_gmap_glanimation_AdglAnimation1V()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -70,7 +70,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom> createcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int(int var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int', {"var1": var1});
-    final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom()..refId = refId;
+    final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -78,7 +78,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V> createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__');
-    final object = com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V()..refId = refId;
+    final object = com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -86,7 +86,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup> createcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int(int var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int', {"var1": var1});
-    final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup()..refId = refId;
+    final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -94,7 +94,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V> createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__');
-    final object = com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V()..refId = refId;
+    final object = com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -102,7 +102,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_style_StyleItem> createcom_autonavi_ae_gmap_style_StyleItem__int(int var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_style_StyleItem__int', {"var1": var1});
-    final object = com_autonavi_ae_gmap_style_StyleItem()..refId = refId;
+    final object = com_autonavi_ae_gmap_style_StyleItem()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -110,7 +110,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_style_StyleElement> createcom_autonavi_ae_gmap_style_StyleElement__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_style_StyleElement__');
-    final object = com_autonavi_ae_gmap_style_StyleElement()..refId = refId;
+    final object = com_autonavi_ae_gmap_style_StyleElement()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -118,7 +118,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam> createcom_autonavi_ae_gmap_GLMapEngine_MapViewInitParam__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_MapViewInitParam__');
-    final object = com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam()..refId = refId;
+    final object = com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -126,7 +126,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo> createcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__');
-    final object = com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo()..refId = refId;
+    final object = com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -134,7 +134,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_GLMapState> createcom_autonavi_ae_gmap_GLMapState__int__long(int var1, int var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__int__long', {"var1": var1, "var2": var2});
-    final object = com_autonavi_ae_gmap_GLMapState()..refId = refId;
+    final object = com_autonavi_ae_gmap_GLMapState()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -142,7 +142,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_GLMapState> createcom_autonavi_ae_gmap_GLMapState__long__long(int var1, int var3) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__long__long', {"var1": var1, "var3": var3});
-    final object = com_autonavi_ae_gmap_GLMapState()..refId = refId;
+    final object = com_autonavi_ae_gmap_GLMapState()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -150,7 +150,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_gloverlay_GLTextureProperty> createcom_autonavi_ae_gmap_gloverlay_GLTextureProperty__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLTextureProperty__');
-    final object = com_autonavi_ae_gmap_gloverlay_GLTextureProperty()..refId = refId;
+    final object = com_autonavi_ae_gmap_gloverlay_GLTextureProperty()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -158,7 +158,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits> createcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__');
-    final object = com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits()..refId = refId;
+    final object = com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -166,7 +166,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> createcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__');
-    final object = com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = refId;
+    final object = com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -174,7 +174,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_gloverlay_GLRouteProperty> createcom_autonavi_ae_gmap_gloverlay_GLRouteProperty__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLRouteProperty__');
-    final object = com_autonavi_ae_gmap_gloverlay_GLRouteProperty()..refId = refId;
+    final object = com_autonavi_ae_gmap_gloverlay_GLRouteProperty()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -182,7 +182,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_gloverlay_GLOverlayTexture> createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int(int var1, int var2, int var3, int var4) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
-    final object = com_autonavi_ae_gmap_gloverlay_GLOverlayTexture()..refId = refId;
+    final object = com_autonavi_ae_gmap_gloverlay_GLOverlayTexture()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -190,7 +190,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_gloverlay_GLOverlayTexture> createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int(int var1, int var2, double var3, double var4, int var5, int var6) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
-    final object = com_autonavi_ae_gmap_gloverlay_GLOverlayTexture()..refId = refId;
+    final object = com_autonavi_ae_gmap_gloverlay_GLOverlayTexture()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -198,7 +198,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_ae_gmap_GLMapEngine_InitParam> createcom_autonavi_ae_gmap_GLMapEngine_InitParam__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_InitParam__');
-    final object = com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = refId;
+    final object = com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -206,7 +206,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam> createcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__');
-    final object = com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam()..refId = refId;
+    final object = com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -214,7 +214,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_maploader_NetworkState> createcom_autonavi_amap_mapcore_maploader_NetworkState__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_maploader_NetworkState__');
-    final object = com_autonavi_amap_mapcore_maploader_NetworkState()..refId = refId;
+    final object = com_autonavi_amap_mapcore_maploader_NetworkState()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -222,7 +222,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_MapProjection> createcom_autonavi_amap_mapcore_MapProjection__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_MapProjection__');
-    final object = com_autonavi_amap_mapcore_MapProjection()..refId = refId;
+    final object = com_autonavi_amap_mapcore_MapProjection()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -230,7 +230,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_tools_TextTextureGenerator> createcom_autonavi_amap_mapcore_tools_TextTextureGenerator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_tools_TextTextureGenerator__');
-    final object = com_autonavi_amap_mapcore_tools_TextTextureGenerator()..refId = refId;
+    final object = com_autonavi_amap_mapcore_tools_TextTextureGenerator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -238,7 +238,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_tools_GLFileUtil> createcom_autonavi_amap_mapcore_tools_GLFileUtil__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLFileUtil__');
-    final object = com_autonavi_amap_mapcore_tools_GLFileUtil()..refId = refId;
+    final object = com_autonavi_amap_mapcore_tools_GLFileUtil()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -246,7 +246,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_tools_GlMapUtil> createcom_autonavi_amap_mapcore_tools_GlMapUtil__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_tools_GlMapUtil__');
-    final object = com_autonavi_amap_mapcore_tools_GlMapUtil()..refId = refId;
+    final object = com_autonavi_amap_mapcore_tools_GlMapUtil()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -254,7 +254,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_tools_GLMapStaticValue> createcom_autonavi_amap_mapcore_tools_GLMapStaticValue__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLMapStaticValue__');
-    final object = com_autonavi_amap_mapcore_tools_GLMapStaticValue()..refId = refId;
+    final object = com_autonavi_amap_mapcore_tools_GLMapStaticValue()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -262,7 +262,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_tools_GLConvertUtil> createcom_autonavi_amap_mapcore_tools_GLConvertUtil__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLConvertUtil__');
-    final object = com_autonavi_amap_mapcore_tools_GLConvertUtil()..refId = refId;
+    final object = com_autonavi_amap_mapcore_tools_GLConvertUtil()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -270,7 +270,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_MsgProcessor> createcom_autonavi_amap_mapcore_MsgProcessor__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_MsgProcessor__');
-    final object = com_autonavi_amap_mapcore_MsgProcessor()..refId = refId;
+    final object = com_autonavi_amap_mapcore_MsgProcessor()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -278,7 +278,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake> createcom_autonavi_amap_mapcore_AeUtil_UnZipFileBrake__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil_UnZipFileBrake__');
-    final object = com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake()..refId = refId;
+    final object = com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -286,7 +286,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_AbstractNativeInstance> createcom_autonavi_amap_mapcore_AbstractNativeInstance__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AbstractNativeInstance__');
-    final object = com_autonavi_amap_mapcore_AbstractNativeInstance()..refId = refId;
+    final object = com_autonavi_amap_mapcore_AbstractNativeInstance()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -294,7 +294,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_LinkInfo> createcom_autonavi_amap_mapcore_LinkInfo__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_LinkInfo__');
-    final object = com_autonavi_amap_mapcore_LinkInfo()..refId = refId;
+    final object = com_autonavi_amap_mapcore_LinkInfo()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -302,7 +302,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_AMapNativePolyline> createcom_autonavi_amap_mapcore_AMapNativePolyline__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativePolyline__');
-    final object = com_autonavi_amap_mapcore_AMapNativePolyline()..refId = refId;
+    final object = com_autonavi_amap_mapcore_AMapNativePolyline()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -310,7 +310,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_IPoint> createcom_autonavi_amap_mapcore_IPoint__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__');
-    final object = com_autonavi_amap_mapcore_IPoint()..refId = refId;
+    final object = com_autonavi_amap_mapcore_IPoint()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -318,7 +318,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_IPoint> createcom_autonavi_amap_mapcore_IPoint__int__int(int var1, int var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__int__int', {"var1": var1, "var2": var2});
-    final object = com_autonavi_amap_mapcore_IPoint()..refId = refId;
+    final object = com_autonavi_amap_mapcore_IPoint()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -326,7 +326,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager> createcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__');
-    final object = com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager()..refId = refId;
+    final object = com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -334,7 +334,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_DPoint> createcom_autonavi_amap_mapcore_DPoint__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__');
-    final object = com_autonavi_amap_mapcore_DPoint()..refId = refId;
+    final object = com_autonavi_amap_mapcore_DPoint()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -342,7 +342,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_DPoint> createcom_autonavi_amap_mapcore_DPoint__double__double(double var1, double var3) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__double__double', {"var1": var1, "var3": var3});
-    final object = com_autonavi_amap_mapcore_DPoint()..refId = refId;
+    final object = com_autonavi_amap_mapcore_DPoint()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -350,7 +350,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_AMapNativeRenderer> createcom_autonavi_amap_mapcore_AMapNativeRenderer__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeRenderer__');
-    final object = com_autonavi_amap_mapcore_AMapNativeRenderer()..refId = refId;
+    final object = com_autonavi_amap_mapcore_AMapNativeRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -358,7 +358,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_FileUtil> createcom_autonavi_amap_mapcore_FileUtil__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FileUtil__');
-    final object = com_autonavi_amap_mapcore_FileUtil()..refId = refId;
+    final object = com_autonavi_amap_mapcore_FileUtil()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -366,7 +366,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_animation_GLTranslateAnimation> createcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng', {"var1": var1.refId});
-    final object = com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = refId;
+    final object = com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -374,7 +374,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_animation_GLRotateAnimation> createcom_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float(double var1, double var2, double var3, double var4, double var5) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
-    final object = com_autonavi_amap_mapcore_animation_GLRotateAnimation()..refId = refId;
+    final object = com_autonavi_amap_mapcore_animation_GLRotateAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -382,7 +382,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_animation_GLAlphaAnimation> createcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float(double var1, double var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float', {"var1": var1, "var2": var2});
-    final object = com_autonavi_amap_mapcore_animation_GLAlphaAnimation()..refId = refId;
+    final object = com_autonavi_amap_mapcore_animation_GLAlphaAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -390,7 +390,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_animation_GLScaleAnimation> createcom_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float(double var1, double var2, double var3, double var4) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
-    final object = com_autonavi_amap_mapcore_animation_GLScaleAnimation()..refId = refId;
+    final object = com_autonavi_amap_mapcore_animation_GLScaleAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -398,7 +398,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_animation_GLTransformation> createcom_autonavi_amap_mapcore_animation_GLTransformation__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTransformation__');
-    final object = com_autonavi_amap_mapcore_animation_GLTransformation()..refId = refId;
+    final object = com_autonavi_amap_mapcore_animation_GLTransformation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -406,7 +406,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_animation_GLAnimationSet> createcom_autonavi_amap_mapcore_animation_GLAnimationSet__boolean(bool var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimationSet__boolean', {"var1": var1});
-    final object = com_autonavi_amap_mapcore_animation_GLAnimationSet()..refId = refId;
+    final object = com_autonavi_amap_mapcore_animation_GLAnimationSet()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -414,7 +414,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_animation_GLEmergeAnimation> createcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng', {"var1": var1.refId});
-    final object = com_autonavi_amap_mapcore_animation_GLEmergeAnimation()..refId = refId;
+    final object = com_autonavi_amap_mapcore_animation_GLEmergeAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -422,7 +422,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_animation_GLAnimation> createcom_autonavi_amap_mapcore_animation_GLAnimation__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimation__');
-    final object = com_autonavi_amap_mapcore_animation_GLAnimation()..refId = refId;
+    final object = com_autonavi_amap_mapcore_animation_GLAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -430,7 +430,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_MapConfig> createcom_autonavi_amap_mapcore_MapConfig__boolean(bool var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_MapConfig__boolean', {"var1": var1});
-    final object = com_autonavi_amap_mapcore_MapConfig()..refId = refId;
+    final object = com_autonavi_amap_mapcore_MapConfig()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -438,7 +438,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_message_HoverGestureMapMessage> createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float(int var1, double var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float', {"var1": var1, "var2": var2});
-    final object = com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = refId;
+    final object = com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -446,7 +446,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_message_MoveGestureMapMessage> createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float(int var1, double var2, double var3) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float', {"var1": var1, "var2": var2, "var3": var3});
-    final object = com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = refId;
+    final object = com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -454,7 +454,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_message_ScaleGestureMapMessage> createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int(int var1, double var2, int var3, int var4) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
-    final object = com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = refId;
+    final object = com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -462,7 +462,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_message_RotateGestureMapMessage> createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int(int var1, double var2, int var3, int var4) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
-    final object = com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = refId;
+    final object = com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -470,7 +470,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_FPointBounds> createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint(com_autonavi_amap_mapcore_FPoint var1, com_autonavi_amap_mapcore_FPoint var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint', {"var1": var1.refId, "var2": var2.refId});
-    final object = com_autonavi_amap_mapcore_FPointBounds()..refId = refId;
+    final object = com_autonavi_amap_mapcore_FPointBounds()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -478,7 +478,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_CoordUtil> createcom_autonavi_amap_mapcore_CoordUtil__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_CoordUtil__');
-    final object = com_autonavi_amap_mapcore_CoordUtil()..refId = refId;
+    final object = com_autonavi_amap_mapcore_CoordUtil()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -486,7 +486,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_AeUtil> createcom_autonavi_amap_mapcore_AeUtil__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil__');
-    final object = com_autonavi_amap_mapcore_AeUtil()..refId = refId;
+    final object = com_autonavi_amap_mapcore_AeUtil()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -494,7 +494,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_VirtualEarthProjection> createcom_autonavi_amap_mapcore_VirtualEarthProjection__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_VirtualEarthProjection__');
-    final object = com_autonavi_amap_mapcore_VirtualEarthProjection()..refId = refId;
+    final object = com_autonavi_amap_mapcore_VirtualEarthProjection()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -502,7 +502,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_Rectangle> createcom_autonavi_amap_mapcore_Rectangle__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__');
-    final object = com_autonavi_amap_mapcore_Rectangle()..refId = refId;
+    final object = com_autonavi_amap_mapcore_Rectangle()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -510,7 +510,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_Rectangle> createcom_autonavi_amap_mapcore_Rectangle__float__float__float__float(double var1, double var2, double var3, double var4) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__float__float__float__float', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
-    final object = com_autonavi_amap_mapcore_Rectangle()..refId = refId;
+    final object = com_autonavi_amap_mapcore_Rectangle()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -518,7 +518,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_Inner_3dMap_location> createcom_autonavi_amap_mapcore_Inner_3dMap_location__String(String var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__String', {"var1": var1});
-    final object = com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = refId;
+    final object = com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -526,7 +526,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_Inner_3dMap_location> createcom_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location(android_location_Location var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location', {"var1": var1.refId});
-    final object = com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = refId;
+    final object = com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -534,7 +534,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_AMapEngineUtils> createcom_autonavi_amap_mapcore_AMapEngineUtils__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AMapEngineUtils__');
-    final object = com_autonavi_amap_mapcore_AMapEngineUtils()..refId = refId;
+    final object = com_autonavi_amap_mapcore_AMapEngineUtils()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -542,7 +542,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_FPoint3> createcom_autonavi_amap_mapcore_FPoint3__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__');
-    final object = com_autonavi_amap_mapcore_FPoint3()..refId = refId;
+    final object = com_autonavi_amap_mapcore_FPoint3()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -550,7 +550,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_FPoint3> createcom_autonavi_amap_mapcore_FPoint3__float__float__int(double var1, double var2, int var3) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__float__float__int', {"var1": var1, "var2": var2, "var3": var3});
-    final object = com_autonavi_amap_mapcore_FPoint3()..refId = refId;
+    final object = com_autonavi_amap_mapcore_FPoint3()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -558,7 +558,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_AMapEtaDecoder> createcom_autonavi_amap_mapcore_AMapEtaDecoder__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AMapEtaDecoder__');
-    final object = com_autonavi_amap_mapcore_AMapEtaDecoder()..refId = refId;
+    final object = com_autonavi_amap_mapcore_AMapEtaDecoder()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -566,7 +566,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_FPointBounds_Builder> createcom_autonavi_amap_mapcore_FPointBounds_Builder__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds_Builder__');
-    final object = com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = refId;
+    final object = com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -574,7 +574,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> createcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__');
-    final object = com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = refId;
+    final object = com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -582,7 +582,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_FPoint> createcom_autonavi_amap_mapcore_FPoint__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__');
-    final object = com_autonavi_amap_mapcore_FPoint()..refId = refId;
+    final object = com_autonavi_amap_mapcore_FPoint()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -590,7 +590,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_FPoint> createcom_autonavi_amap_mapcore_FPoint__float__float(double var1, double var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__float__float', {"var1": var1, "var2": var2});
-    final object = com_autonavi_amap_mapcore_FPoint()..refId = refId;
+    final object = com_autonavi_amap_mapcore_FPoint()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -598,7 +598,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_AMapNativeParticleSystem> createcom_autonavi_amap_mapcore_AMapNativeParticleSystem__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeParticleSystem__');
-    final object = com_autonavi_amap_mapcore_AMapNativeParticleSystem()..refId = refId;
+    final object = com_autonavi_amap_mapcore_AMapNativeParticleSystem()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -606,7 +606,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_AMapNativeBuildingRenderer> createcom_autonavi_amap_mapcore_AMapNativeBuildingRenderer__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeBuildingRenderer__');
-    final object = com_autonavi_amap_mapcore_AMapNativeBuildingRenderer()..refId = refId;
+    final object = com_autonavi_amap_mapcore_AMapNativeBuildingRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -614,7 +614,7 @@ class ObjectFactory_Android {
   
   static Future<com_autonavi_amap_mapcore_Convert> createcom_autonavi_amap_mapcore_Convert__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_Convert__');
-    final object = com_autonavi_amap_mapcore_Convert()..refId = refId;
+    final object = com_autonavi_amap_mapcore_Convert()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -622,7 +622,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_offlineservice_AMapPermissionActivity> createcom_amap_api_offlineservice_AMapPermissionActivity__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity__');
-    final object = com_amap_api_offlineservice_AMapPermissionActivity()..refId = refId;
+    final object = com_amap_api_offlineservice_AMapPermissionActivity()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -630,7 +630,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_InfoWindowParams> createcom_amap_api_maps_InfoWindowParams__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_InfoWindowParams__');
-    final object = com_amap_api_maps_InfoWindowParams()..refId = refId;
+    final object = com_amap_api_maps_InfoWindowParams()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -638,7 +638,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_CameraUpdateFactory> createcom_amap_api_maps_CameraUpdateFactory__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_CameraUpdateFactory__');
-    final object = com_amap_api_maps_CameraUpdateFactory()..refId = refId;
+    final object = com_amap_api_maps_CameraUpdateFactory()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -646,7 +646,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_AMapException> createcom_amap_api_maps_AMapException__String(String var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapException__String', {"var1": var1});
-    final object = com_amap_api_maps_AMapException()..refId = refId;
+    final object = com_amap_api_maps_AMapException()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -654,7 +654,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_AMapException> createcom_amap_api_maps_AMapException__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapException__');
-    final object = com_amap_api_maps_AMapException()..refId = refId;
+    final object = com_amap_api_maps_AMapException()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -662,7 +662,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_AMapOptions> createcom_amap_api_maps_AMapOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapOptions__');
-    final object = com_amap_api_maps_AMapOptions()..refId = refId;
+    final object = com_amap_api_maps_AMapOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -670,7 +670,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_AMapOptionsCreator> createcom_amap_api_maps_AMapOptionsCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapOptionsCreator__');
-    final object = com_amap_api_maps_AMapOptionsCreator()..refId = refId;
+    final object = com_amap_api_maps_AMapOptionsCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -678,7 +678,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_CoordinateConverter> createcom_amap_api_maps_CoordinateConverter__android_content_Context(android_content_Context var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_CoordinateConverter__android_content_Context', {"var1": var1.refId});
-    final object = com_amap_api_maps_CoordinateConverter()..refId = refId;
+    final object = com_amap_api_maps_CoordinateConverter()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -686,7 +686,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_utils_SpatialRelationUtil> createcom_amap_api_maps_utils_SpatialRelationUtil__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_utils_SpatialRelationUtil__');
-    final object = com_amap_api_maps_utils_SpatialRelationUtil()..refId = refId;
+    final object = com_amap_api_maps_utils_SpatialRelationUtil()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -694,7 +694,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_SwipeDismissCallBack> createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView(com_amap_api_maps_SwipeDismissView var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView', {"var1": var1.refId});
-    final object = com_amap_api_maps_SwipeDismissCallBack()..refId = refId;
+    final object = com_amap_api_maps_SwipeDismissCallBack()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -702,7 +702,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_SwipeDismissView> createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View(android_content_Context var1, android_view_View var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View', {"var1": var1.refId, "var2": var2.refId});
-    final object = com_amap_api_maps_SwipeDismissView()..refId = refId;
+    final object = com_amap_api_maps_SwipeDismissView()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -710,7 +710,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_MapsInitializer> createcom_amap_api_maps_MapsInitializer__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_MapsInitializer__');
-    final object = com_amap_api_maps_MapsInitializer()..refId = refId;
+    final object = com_amap_api_maps_MapsInitializer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -718,7 +718,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_offlinemap_OfflineMapStatus> createcom_amap_api_maps_offlinemap_OfflineMapStatus__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__');
-    final object = com_amap_api_maps_offlinemap_OfflineMapStatus()..refId = refId;
+    final object = com_amap_api_maps_offlinemap_OfflineMapStatus()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -726,7 +726,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_offlinemap_OfflineMapProvince> createcom_amap_api_maps_offlinemap_OfflineMapProvince__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapProvince__');
-    final object = com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = refId;
+    final object = com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -734,7 +734,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_offlinemap_DownloadProgressView> createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context(android_content_Context var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context', {"var1": var1.refId});
-    final object = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = refId;
+    final object = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -742,7 +742,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_offlinemap_Province> createcom_amap_api_maps_offlinemap_Province__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_Province__');
-    final object = com_amap_api_maps_offlinemap_Province()..refId = refId;
+    final object = com_amap_api_maps_offlinemap_Province()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -750,7 +750,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_offlinemap_OfflineMapCity> createcom_amap_api_maps_offlinemap_OfflineMapCity__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapCity__');
-    final object = com_amap_api_maps_offlinemap_OfflineMapCity()..refId = refId;
+    final object = com_amap_api_maps_offlinemap_OfflineMapCity()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -758,7 +758,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_offlinemap_OfflineMapActivity> createcom_amap_api_maps_offlinemap_OfflineMapActivity__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapActivity__');
-    final object = com_amap_api_maps_offlinemap_OfflineMapActivity()..refId = refId;
+    final object = com_amap_api_maps_offlinemap_OfflineMapActivity()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -766,7 +766,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_offlinemap_City> createcom_amap_api_maps_offlinemap_City__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_City__');
-    final object = com_amap_api_maps_offlinemap_City()..refId = refId;
+    final object = com_amap_api_maps_offlinemap_City()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -774,7 +774,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_PolygonHoleOptions> createcom_amap_api_maps_model_PolygonHoleOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_PolygonHoleOptions__');
-    final object = com_amap_api_maps_model_PolygonHoleOptions()..refId = refId;
+    final object = com_amap_api_maps_model_PolygonHoleOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -782,7 +782,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_TileOverlayOptionsCreator> createcom_amap_api_maps_model_TileOverlayOptionsCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptionsCreator__');
-    final object = com_amap_api_maps_model_TileOverlayOptionsCreator()..refId = refId;
+    final object = com_amap_api_maps_model_TileOverlayOptionsCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -790,7 +790,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_Poi> createcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String(String var1, com_amap_api_maps_model_LatLng var2, String var3) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String', {"var1": var1, "var2": var2.refId, "var3": var3});
-    final object = com_amap_api_maps_model_Poi()..refId = refId;
+    final object = com_amap_api_maps_model_Poi()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -798,7 +798,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_MyLocationStyle> createcom_amap_api_maps_model_MyLocationStyle__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle__');
-    final object = com_amap_api_maps_model_MyLocationStyle()..refId = refId;
+    final object = com_amap_api_maps_model_MyLocationStyle()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -806,7 +806,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_VisibleRegion> createcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds(com_amap_api_maps_model_LatLng var1, com_amap_api_maps_model_LatLng var2, com_amap_api_maps_model_LatLng var3, com_amap_api_maps_model_LatLng var4, com_amap_api_maps_model_LatLngBounds var5) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds', {"var1": var1.refId, "var2": var2.refId, "var3": var3.refId, "var4": var4.refId, "var5": var5.refId});
-    final object = com_amap_api_maps_model_VisibleRegion()..refId = refId;
+    final object = com_amap_api_maps_model_VisibleRegion()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -814,7 +814,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_LatLngCreator> createcom_amap_api_maps_model_LatLngCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_LatLngCreator__');
-    final object = com_amap_api_maps_model_LatLngCreator()..refId = refId;
+    final object = com_amap_api_maps_model_LatLngCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -822,7 +822,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_CircleHoleOptions> createcom_amap_api_maps_model_CircleHoleOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_CircleHoleOptions__');
-    final object = com_amap_api_maps_model_CircleHoleOptions()..refId = refId;
+    final object = com_amap_api_maps_model_CircleHoleOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -830,7 +830,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_LatLngBounds_Builder> createcom_amap_api_maps_model_LatLngBounds_Builder__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_LatLngBounds_Builder__');
-    final object = com_amap_api_maps_model_LatLngBounds_Builder()..refId = refId;
+    final object = com_amap_api_maps_model_LatLngBounds_Builder()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -838,7 +838,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_NavigateArrowOptions> createcom_amap_api_maps_model_NavigateArrowOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptions__');
-    final object = com_amap_api_maps_model_NavigateArrowOptions()..refId = refId;
+    final object = com_amap_api_maps_model_NavigateArrowOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -846,7 +846,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_BitmapDescriptorFactory> createcom_amap_api_maps_model_BitmapDescriptorFactory__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorFactory__');
-    final object = com_amap_api_maps_model_BitmapDescriptorFactory()..refId = refId;
+    final object = com_amap_api_maps_model_BitmapDescriptorFactory()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -854,7 +854,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_MultiPointOverlayOptions> createcom_amap_api_maps_model_MultiPointOverlayOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_MultiPointOverlayOptions__');
-    final object = com_amap_api_maps_model_MultiPointOverlayOptions()..refId = refId;
+    final object = com_amap_api_maps_model_MultiPointOverlayOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -862,7 +862,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_PoiCreator> createcom_amap_api_maps_model_PoiCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_PoiCreator__');
-    final object = com_amap_api_maps_model_PoiCreator()..refId = refId;
+    final object = com_amap_api_maps_model_PoiCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -870,7 +870,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_PolylineOptions> createcom_amap_api_maps_model_PolylineOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__');
-    final object = com_amap_api_maps_model_PolylineOptions()..refId = refId;
+    final object = com_amap_api_maps_model_PolylineOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -878,7 +878,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_Tile> createcom_amap_api_maps_model_Tile__int__int__byteArray(int var1, int var2, List<int> var3) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_Tile__int__int__byteArray', {"var1": var1, "var2": var2, "var3": var3});
-    final object = com_amap_api_maps_model_Tile()..refId = refId;
+    final object = com_amap_api_maps_model_Tile()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -886,7 +886,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_Gradient> createcom_amap_api_maps_model_Gradient__intArray__floatArray(List<int> var1, List<double> var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_Gradient__intArray__floatArray', {"var1": var1, "var2": var2});
-    final object = com_amap_api_maps_model_Gradient()..refId = refId;
+    final object = com_amap_api_maps_model_Gradient()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -894,7 +894,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_NaviPara> createcom_amap_api_maps_model_NaviPara__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_NaviPara__');
-    final object = com_amap_api_maps_model_NaviPara()..refId = refId;
+    final object = com_amap_api_maps_model_NaviPara()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -902,7 +902,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_GroundOverlayOptions> createcom_amap_api_maps_model_GroundOverlayOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptions__');
-    final object = com_amap_api_maps_model_GroundOverlayOptions()..refId = refId;
+    final object = com_amap_api_maps_model_GroundOverlayOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -910,7 +910,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_GL3DModelOptions> createcom_amap_api_maps_model_GL3DModelOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_GL3DModelOptions__');
-    final object = com_amap_api_maps_model_GL3DModelOptions()..refId = refId;
+    final object = com_amap_api_maps_model_GL3DModelOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -918,7 +918,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_MyTrafficStyle> createcom_amap_api_maps_model_MyTrafficStyle__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_MyTrafficStyle__');
-    final object = com_amap_api_maps_model_MyTrafficStyle()..refId = refId;
+    final object = com_amap_api_maps_model_MyTrafficStyle()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -926,7 +926,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_CameraPosition> createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float(com_amap_api_maps_model_LatLng var1, double var2, double var3, double var4) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float', {"var1": var1.refId, "var2": var2, "var3": var3, "var4": var4});
-    final object = com_amap_api_maps_model_CameraPosition()..refId = refId;
+    final object = com_amap_api_maps_model_CameraPosition()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -934,7 +934,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_TextOptionsCreator> createcom_amap_api_maps_model_TextOptionsCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_TextOptionsCreator__');
-    final object = com_amap_api_maps_model_TextOptionsCreator()..refId = refId;
+    final object = com_amap_api_maps_model_TextOptionsCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -942,7 +942,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_PoiPara> createcom_amap_api_maps_model_PoiPara__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_PoiPara__');
-    final object = com_amap_api_maps_model_PoiPara()..refId = refId;
+    final object = com_amap_api_maps_model_PoiPara()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -950,7 +950,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_MarkerOptions> createcom_amap_api_maps_model_MarkerOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_MarkerOptions__');
-    final object = com_amap_api_maps_model_MarkerOptions()..refId = refId;
+    final object = com_amap_api_maps_model_MarkerOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -958,7 +958,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_animation_AnimationSet> createcom_amap_api_maps_model_animation_AnimationSet__boolean(bool var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_animation_AnimationSet__boolean', {"var1": var1});
-    final object = com_amap_api_maps_model_animation_AnimationSet()..refId = refId;
+    final object = com_amap_api_maps_model_animation_AnimationSet()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -966,7 +966,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_animation_RotateAnimation> createcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float(double var1, double var2, double var3, double var4, double var5) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
-    final object = com_amap_api_maps_model_animation_RotateAnimation()..refId = refId;
+    final object = com_amap_api_maps_model_animation_RotateAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -974,7 +974,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_animation_RotateAnimation> createcom_amap_api_maps_model_animation_RotateAnimation__float__float(double var1, double var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float', {"var1": var1, "var2": var2});
-    final object = com_amap_api_maps_model_animation_RotateAnimation()..refId = refId;
+    final object = com_amap_api_maps_model_animation_RotateAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -982,7 +982,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_animation_TranslateAnimation> createcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng', {"var1": var1.refId});
-    final object = com_amap_api_maps_model_animation_TranslateAnimation()..refId = refId;
+    final object = com_amap_api_maps_model_animation_TranslateAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -990,7 +990,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_animation_EmergeAnimation> createcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng', {"var1": var1.refId});
-    final object = com_amap_api_maps_model_animation_EmergeAnimation()..refId = refId;
+    final object = com_amap_api_maps_model_animation_EmergeAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -998,7 +998,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_animation_AlphaAnimation> createcom_amap_api_maps_model_animation_AlphaAnimation__float__float(double var1, double var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_animation_AlphaAnimation__float__float', {"var1": var1, "var2": var2});
-    final object = com_amap_api_maps_model_animation_AlphaAnimation()..refId = refId;
+    final object = com_amap_api_maps_model_animation_AlphaAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1006,7 +1006,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_animation_ScaleAnimation> createcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float(double var1, double var2, double var3, double var4) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
-    final object = com_amap_api_maps_model_animation_ScaleAnimation()..refId = refId;
+    final object = com_amap_api_maps_model_animation_ScaleAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1014,7 +1014,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_LatLngBounds> createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1, com_amap_api_maps_model_LatLng var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng', {"var1": var1.refId, "var2": var2.refId});
-    final object = com_amap_api_maps_model_LatLngBounds()..refId = refId;
+    final object = com_amap_api_maps_model_LatLngBounds()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1022,7 +1022,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_CustomMapStyleOptions> createcom_amap_api_maps_model_CustomMapStyleOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_CustomMapStyleOptions__');
-    final object = com_amap_api_maps_model_CustomMapStyleOptions()..refId = refId;
+    final object = com_amap_api_maps_model_CustomMapStyleOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1030,7 +1030,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_BuildingOverlayOptions> createcom_amap_api_maps_model_BuildingOverlayOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_BuildingOverlayOptions__');
-    final object = com_amap_api_maps_model_BuildingOverlayOptions()..refId = refId;
+    final object = com_amap_api_maps_model_BuildingOverlayOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1038,7 +1038,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_CrossOverlayOptions> createcom_amap_api_maps_model_CrossOverlayOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_CrossOverlayOptions__');
-    final object = com_amap_api_maps_model_CrossOverlayOptions()..refId = refId;
+    final object = com_amap_api_maps_model_CrossOverlayOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1046,7 +1046,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_VisibleRegionCreator> createcom_amap_api_maps_model_VisibleRegionCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_VisibleRegionCreator__');
-    final object = com_amap_api_maps_model_VisibleRegionCreator()..refId = refId;
+    final object = com_amap_api_maps_model_VisibleRegionCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1054,7 +1054,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_LatLng> createcom_amap_api_maps_model_LatLng__double__double(double var1, double var3) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double', {"var1": var1, "var3": var3});
-    final object = com_amap_api_maps_model_LatLng()..refId = refId;
+    final object = com_amap_api_maps_model_LatLng()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1062,7 +1062,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_LatLng> createcom_amap_api_maps_model_LatLng__double__double__boolean(double var1, double var3, bool var5) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double__boolean', {"var1": var1, "var3": var3, "var5": var5});
-    final object = com_amap_api_maps_model_LatLng()..refId = refId;
+    final object = com_amap_api_maps_model_LatLng()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1070,7 +1070,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_TileProjection> createcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int(int var1, int var2, int var3, int var4, int var5, int var6) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
-    final object = com_amap_api_maps_model_TileProjection()..refId = refId;
+    final object = com_amap_api_maps_model_TileProjection()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1078,7 +1078,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_AMapPara> createcom_amap_api_maps_model_AMapPara__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_AMapPara__');
-    final object = com_amap_api_maps_model_AMapPara()..refId = refId;
+    final object = com_amap_api_maps_model_AMapPara()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1086,7 +1086,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_CircleOptionsCreator> createcom_amap_api_maps_model_CircleOptionsCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_CircleOptionsCreator__');
-    final object = com_amap_api_maps_model_CircleOptionsCreator()..refId = refId;
+    final object = com_amap_api_maps_model_CircleOptionsCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1094,7 +1094,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_AMapCameraInfo> createcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float(double var1, double var2, double var3, double var4, double var5, double var6) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
-    final object = com_amap_api_maps_model_AMapCameraInfo()..refId = refId;
+    final object = com_amap_api_maps_model_AMapCameraInfo()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1102,7 +1102,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_PolygonOptions> createcom_amap_api_maps_model_PolygonOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_PolygonOptions__');
-    final object = com_amap_api_maps_model_PolygonOptions()..refId = refId;
+    final object = com_amap_api_maps_model_PolygonOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1110,7 +1110,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_WeightedLatLng> createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double(com_amap_api_maps_model_LatLng var1, double var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double', {"var1": var1.refId, "var2": var2});
-    final object = com_amap_api_maps_model_WeightedLatLng()..refId = refId;
+    final object = com_amap_api_maps_model_WeightedLatLng()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1118,7 +1118,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_WeightedLatLng> createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng', {"var1": var1.refId});
-    final object = com_amap_api_maps_model_WeightedLatLng()..refId = refId;
+    final object = com_amap_api_maps_model_WeightedLatLng()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1126,7 +1126,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_MyLocationStyleCreator> createcom_amap_api_maps_model_MyLocationStyleCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_MyLocationStyleCreator__');
-    final object = com_amap_api_maps_model_MyLocationStyleCreator()..refId = refId;
+    final object = com_amap_api_maps_model_MyLocationStyleCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1134,7 +1134,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_MarkerOptionsCreator> createcom_amap_api_maps_model_MarkerOptionsCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_MarkerOptionsCreator__');
-    final object = com_amap_api_maps_model_MarkerOptionsCreator()..refId = refId;
+    final object = com_amap_api_maps_model_MarkerOptionsCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1142,7 +1142,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_MultiPointItem> createcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng', {"var1": var1.refId});
-    final object = com_amap_api_maps_model_MultiPointItem()..refId = refId;
+    final object = com_amap_api_maps_model_MultiPointItem()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1150,7 +1150,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_LatLngBoundsCreator> createcom_amap_api_maps_model_LatLngBoundsCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_LatLngBoundsCreator__');
-    final object = com_amap_api_maps_model_LatLngBoundsCreator()..refId = refId;
+    final object = com_amap_api_maps_model_LatLngBoundsCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1158,7 +1158,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_ArcOptions> createcom_amap_api_maps_model_ArcOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_ArcOptions__');
-    final object = com_amap_api_maps_model_ArcOptions()..refId = refId;
+    final object = com_amap_api_maps_model_ArcOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1166,7 +1166,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_BitmapDescriptorCreator> createcom_amap_api_maps_model_BitmapDescriptorCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorCreator__');
-    final object = com_amap_api_maps_model_BitmapDescriptorCreator()..refId = refId;
+    final object = com_amap_api_maps_model_BitmapDescriptorCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1174,7 +1174,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_CircleOptions> createcom_amap_api_maps_model_CircleOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_CircleOptions__');
-    final object = com_amap_api_maps_model_CircleOptions()..refId = refId;
+    final object = com_amap_api_maps_model_CircleOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1182,7 +1182,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_NavigateArrowOptionsCreator> createcom_amap_api_maps_model_NavigateArrowOptionsCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptionsCreator__');
-    final object = com_amap_api_maps_model_NavigateArrowOptionsCreator()..refId = refId;
+    final object = com_amap_api_maps_model_NavigateArrowOptionsCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1190,7 +1190,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_RuntimeRemoteException> createcom_amap_api_maps_model_RuntimeRemoteException__String(String var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_RuntimeRemoteException__String', {"var1": var1});
-    final object = com_amap_api_maps_model_RuntimeRemoteException()..refId = refId;
+    final object = com_amap_api_maps_model_RuntimeRemoteException()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1198,7 +1198,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_HeatmapTileProvider_Builder> createcom_amap_api_maps_model_HeatmapTileProvider_Builder__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_HeatmapTileProvider_Builder__');
-    final object = com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = refId;
+    final object = com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1206,7 +1206,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_BaseOptions> createcom_amap_api_maps_model_BaseOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_BaseOptions__');
-    final object = com_amap_api_maps_model_BaseOptions()..refId = refId;
+    final object = com_amap_api_maps_model_BaseOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1214,7 +1214,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_PolylineOptionsCreator> createcom_amap_api_maps_model_PolylineOptionsCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_PolylineOptionsCreator__');
-    final object = com_amap_api_maps_model_PolylineOptionsCreator()..refId = refId;
+    final object = com_amap_api_maps_model_PolylineOptionsCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1222,7 +1222,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_BaseOverlay> createcom_amap_api_maps_model_BaseOverlay__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_BaseOverlay__');
-    final object = com_amap_api_maps_model_BaseOverlay()..refId = refId;
+    final object = com_amap_api_maps_model_BaseOverlay()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1230,7 +1230,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_TileOverlayOptions> createcom_amap_api_maps_model_TileOverlayOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions__');
-    final object = com_amap_api_maps_model_TileOverlayOptions()..refId = refId;
+    final object = com_amap_api_maps_model_TileOverlayOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1238,7 +1238,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_RoutePara> createcom_amap_api_maps_model_RoutePara__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_RoutePara__');
-    final object = com_amap_api_maps_model_RoutePara()..refId = refId;
+    final object = com_amap_api_maps_model_RoutePara()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1246,7 +1246,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_ArcOptionsCreator> createcom_amap_api_maps_model_ArcOptionsCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_ArcOptionsCreator__');
-    final object = com_amap_api_maps_model_ArcOptionsCreator()..refId = refId;
+    final object = com_amap_api_maps_model_ArcOptionsCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1254,7 +1254,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_CameraPositionCreator> createcom_amap_api_maps_model_CameraPositionCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_CameraPositionCreator__');
-    final object = com_amap_api_maps_model_CameraPositionCreator()..refId = refId;
+    final object = com_amap_api_maps_model_CameraPositionCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1262,7 +1262,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_particle_ParticleOverLifeModule> createcom_amap_api_maps_model_particle_ParticleOverLifeModule__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverLifeModule__');
-    final object = com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = refId;
+    final object = com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1270,7 +1270,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_particle_ConstantRotationOverLife> createcom_amap_api_maps_model_particle_ConstantRotationOverLife__float(double var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_ConstantRotationOverLife__float', {"var1": var1});
-    final object = com_amap_api_maps_model_particle_ConstantRotationOverLife()..refId = refId;
+    final object = com_amap_api_maps_model_particle_ConstantRotationOverLife()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1278,7 +1278,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_particle_SinglePointParticleShape> createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean(double var1, double var2, double var3, bool var4) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
-    final object = com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = refId;
+    final object = com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1286,7 +1286,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_particle_SinglePointParticleShape> createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float(double var1, double var2, double var3) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float', {"var1": var1, "var2": var2, "var3": var3});
-    final object = com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = refId;
+    final object = com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1294,7 +1294,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants> createcom_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float(double var1, double var2, double var3, double var4, double var5, double var6) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
-    final object = com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants()..refId = refId;
+    final object = com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1302,7 +1302,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_particle_CurveSizeOverLife> createcom_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float(double var1, double var2, double var3) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float', {"var1": var1, "var2": var2, "var3": var3});
-    final object = com_amap_api_maps_model_particle_CurveSizeOverLife()..refId = refId;
+    final object = com_amap_api_maps_model_particle_CurveSizeOverLife()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1310,7 +1310,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_particle_ParticleEmissionModule> createcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int(int var1, int var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int', {"var1": var1, "var2": var2});
-    final object = com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = refId;
+    final object = com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1318,7 +1318,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_particle_RectParticleShape> createcom_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean(double var1, double var2, double var3, double var4, bool var5) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
-    final object = com_amap_api_maps_model_particle_RectParticleShape()..refId = refId;
+    final object = com_amap_api_maps_model_particle_RectParticleShape()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1326,7 +1326,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants> createcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float(double var1, double var2, double var3, double var4, double var5, double var6, double var7, double var8) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8});
-    final object = com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = refId;
+    final object = com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1334,7 +1334,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory> createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__');
-    final object = com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = refId;
+    final object = com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1342,7 +1342,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> createcom_amap_api_maps_model_particle_ParticleOverlayOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptions__');
-    final object = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = refId;
+    final object = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1350,7 +1350,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_TextOptions> createcom_amap_api_maps_model_TextOptions__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_TextOptions__');
-    final object = com_amap_api_maps_model_TextOptions()..refId = refId;
+    final object = com_amap_api_maps_model_TextOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1358,7 +1358,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_PolygonOptionsCreator> createcom_amap_api_maps_model_PolygonOptionsCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_PolygonOptionsCreator__');
-    final object = com_amap_api_maps_model_PolygonOptionsCreator()..refId = refId;
+    final object = com_amap_api_maps_model_PolygonOptionsCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1366,7 +1366,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_TileProjectionCreator> createcom_amap_api_maps_model_TileProjectionCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_TileProjectionCreator__');
-    final object = com_amap_api_maps_model_TileProjectionCreator()..refId = refId;
+    final object = com_amap_api_maps_model_TileProjectionCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1374,7 +1374,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_GroundOverlayOptionsCreator> createcom_amap_api_maps_model_GroundOverlayOptionsCreator__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptionsCreator__');
-    final object = com_amap_api_maps_model_GroundOverlayOptionsCreator()..refId = refId;
+    final object = com_amap_api_maps_model_GroundOverlayOptionsCreator()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1382,7 +1382,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_model_IndoorBuildingInfo> createcom_amap_api_maps_model_IndoorBuildingInfo__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__');
-    final object = com_amap_api_maps_model_IndoorBuildingInfo()..refId = refId;
+    final object = com_amap_api_maps_model_IndoorBuildingInfo()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1390,7 +1390,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_TextureMapView> createcom_amap_api_maps_TextureMapView__android_content_Context(android_content_Context var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context', {"var1": var1.refId});
-    final object = com_amap_api_maps_TextureMapView()..refId = refId;
+    final object = com_amap_api_maps_TextureMapView()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1398,7 +1398,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_TextureMapView> createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions(android_content_Context var1, com_amap_api_maps_AMapOptions var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions', {"var1": var1.refId, "var2": var2.refId});
-    final object = com_amap_api_maps_TextureMapView()..refId = refId;
+    final object = com_amap_api_maps_TextureMapView()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1406,7 +1406,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_AMapUtils> createcom_amap_api_maps_AMapUtils__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapUtils__');
-    final object = com_amap_api_maps_AMapUtils()..refId = refId;
+    final object = com_amap_api_maps_AMapUtils()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1414,7 +1414,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_WearMapView> createcom_amap_api_maps_WearMapView__android_content_Context(android_content_Context var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context', {"var1": var1.refId});
-    final object = com_amap_api_maps_WearMapView()..refId = refId;
+    final object = com_amap_api_maps_WearMapView()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1422,7 +1422,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_WearMapView> createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions(android_content_Context var1, com_amap_api_maps_AMapOptions var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions', {"var1": var1.refId, "var2": var2.refId});
-    final object = com_amap_api_maps_WearMapView()..refId = refId;
+    final object = com_amap_api_maps_WearMapView()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1430,7 +1430,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_MapView> createcom_amap_api_maps_MapView__android_content_Context(android_content_Context var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context', {"var1": var1.refId});
-    final object = com_amap_api_maps_MapView()..refId = refId;
+    final object = com_amap_api_maps_MapView()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1438,7 +1438,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_maps_MapView> createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions(android_content_Context var1, com_amap_api_maps_AMapOptions var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions', {"var1": var1.refId, "var2": var2.refId});
-    final object = com_amap_api_maps_MapView()..refId = refId;
+    final object = com_amap_api_maps_MapView()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1446,7 +1446,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_trace_TraceLocation> createcom_amap_api_trace_TraceLocation__double__double__float__float__long(double var1, double var3, double var5, double var6, int var7) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_trace_TraceLocation__double__double__float__float__long', {"var1": var1, "var3": var3, "var5": var5, "var6": var6, "var7": var7});
-    final object = com_amap_api_trace_TraceLocation()..refId = refId;
+    final object = com_amap_api_trace_TraceLocation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1454,7 +1454,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_trace_TraceLocation> createcom_amap_api_trace_TraceLocation__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_trace_TraceLocation__');
-    final object = com_amap_api_trace_TraceLocation()..refId = refId;
+    final object = com_amap_api_trace_TraceLocation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -1462,7 +1462,7 @@ class ObjectFactory_Android {
   
   static Future<com_amap_api_trace_LBSTraceClient> createcom_amap_api_trace_LBSTraceClient__android_content_Context(android_content_Context var1) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_trace_LBSTraceClient__android_content_Context', {"var1": var1.refId});
-    final object = com_amap_api_trace_LBSTraceClient()..refId = refId;
+    final object = com_amap_api_trace_LBSTraceClient()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;

@@ -13,8 +13,8 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
   // generate getters
   Future<MAPolyline> get_polyline() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_polyline", {'refId': refId});
-    kNativeObjectPool.add(MAPolyline()..refId = result);
-    return MAPolyline()..refId = result;
+    kNativeObjectPool.add(MAPolyline()..refId = result..tag = 'amap_map_fluttify');
+    return MAPolyline()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<bool> get_is3DArrowLine() async {
@@ -48,8 +48,8 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAPolylineRenderer()..refId = result);
-      return MAPolylineRenderer()..refId = result;
+      kNativeObjectPool.add(MAPolylineRenderer()..refId = result..tag = 'amap_map_fluttify');
+      return MAPolylineRenderer()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

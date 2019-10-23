@@ -13,8 +13,8 @@ class MACustomCalloutView extends UIView  {
   // generate getters
   Future<UIView> get_customView({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod("MACustomCalloutView::get_customView", {'refId': refId});
-    kNativeObjectPool.add(UIView()..refId = result);
-    return UIView()..refId = result;
+    kNativeObjectPool.add(UIView()..refId = result..tag = 'amap_map_fluttify');
+    return UIView()..refId = result..tag = 'amap_map_fluttify';
   }
   
 

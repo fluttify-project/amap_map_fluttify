@@ -25,8 +25,8 @@ Future<MACoordinateBounds> MACoordinateBoundsMake(CLLocationCoordinate2D northEa
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(MACoordinateBounds()..refId = result);
-    return MACoordinateBounds()..refId = result;
+    kNativeObjectPool.add(MACoordinateBounds()..refId = result..tag = 'amap_map_fluttify');
+    return MACoordinateBounds()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 
@@ -45,8 +45,8 @@ Future<MACoordinateSpan> MACoordinateSpanMake(double latitudeDelta, double longi
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(MACoordinateSpan()..refId = result);
-    return MACoordinateSpan()..refId = result;
+    kNativeObjectPool.add(MACoordinateSpan()..refId = result..tag = 'amap_map_fluttify');
+    return MACoordinateSpan()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 
@@ -65,8 +65,8 @@ Future<MACoordinateRegion> MACoordinateRegionMake(CLLocationCoordinate2D centerC
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(MACoordinateRegion()..refId = result);
-    return MACoordinateRegion()..refId = result;
+    kNativeObjectPool.add(MACoordinateRegion()..refId = result..tag = 'amap_map_fluttify');
+    return MACoordinateRegion()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 
@@ -85,8 +85,8 @@ Future<MACoordinateRegion> MACoordinateRegionMakeWithDistance(CLLocationCoordina
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(MACoordinateRegion()..refId = result);
-    return MACoordinateRegion()..refId = result;
+    kNativeObjectPool.add(MACoordinateRegion()..refId = result..tag = 'amap_map_fluttify');
+    return MACoordinateRegion()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 
@@ -105,8 +105,8 @@ Future<MAMapPoint> MAMapPointForCoordinate(CLLocationCoordinate2D coordinate) as
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(MAMapPoint()..refId = result);
-    return MAMapPoint()..refId = result;
+    kNativeObjectPool.add(MAMapPoint()..refId = result..tag = 'amap_map_fluttify');
+    return MAMapPoint()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 
@@ -125,8 +125,8 @@ Future<CLLocationCoordinate2D> MACoordinateForMapPoint(MAMapPoint mapPoint) asyn
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
-    return CLLocationCoordinate2D()..refId = result;
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
+    return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 
@@ -145,8 +145,8 @@ Future<MACoordinateRegion> MACoordinateRegionForMapRect(MAMapRect rect) async {
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(MACoordinateRegion()..refId = result);
-    return MACoordinateRegion()..refId = result;
+    kNativeObjectPool.add(MACoordinateRegion()..refId = result..tag = 'amap_map_fluttify');
+    return MACoordinateRegion()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 
@@ -165,8 +165,8 @@ Future<MAMapRect> MAMapRectForCoordinateRegion(MACoordinateRegion region) async 
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(MAMapRect()..refId = result);
-    return MAMapRect()..refId = result;
+    kNativeObjectPool.add(MAMapRect()..refId = result..tag = 'amap_map_fluttify');
+    return MAMapRect()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 
@@ -265,8 +265,8 @@ Future<MAMapRect> MAMapRectInset(MAMapRect rect, double dx, double dy) async {
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(MAMapRect()..refId = result);
-    return MAMapRect()..refId = result;
+    kNativeObjectPool.add(MAMapRect()..refId = result..tag = 'amap_map_fluttify');
+    return MAMapRect()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 
@@ -285,8 +285,8 @@ Future<MAMapRect> MAMapRectUnion(MAMapRect rect1, MAMapRect rect2) async {
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(MAMapRect()..refId = result);
-    return MAMapRect()..refId = result;
+    kNativeObjectPool.add(MAMapRect()..refId = result..tag = 'amap_map_fluttify');
+    return MAMapRect()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 
@@ -465,8 +465,8 @@ Future<MAMapPoint> MAGetNearestMapPointFromLine(MAMapPoint lineStart, MAMapPoint
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(MAMapPoint()..refId = result);
-    return MAMapPoint()..refId = result;
+    kNativeObjectPool.add(MAMapPoint()..refId = result..tag = 'amap_map_fluttify');
+    return MAMapPoint()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 
@@ -542,8 +542,8 @@ Future<MAMapPoint> MAMapPointMake(double x, double y) async {
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(MAMapPoint()..refId = result);
-    return MAMapPoint()..refId = result;
+    kNativeObjectPool.add(MAMapPoint()..refId = result..tag = 'amap_map_fluttify');
+    return MAMapPoint()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 
@@ -562,8 +562,8 @@ Future<MAMapSize> MAMapSizeMake(double width, double height) async {
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(MAMapSize()..refId = result);
-    return MAMapSize()..refId = result;
+    kNativeObjectPool.add(MAMapSize()..refId = result..tag = 'amap_map_fluttify');
+    return MAMapSize()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 
@@ -582,8 +582,8 @@ Future<MAMapRect> MAMapRectMake(double x, double y, double width, double height)
   if (result == null) {
     return null;
   } else {
-    kNativeObjectPool.add(MAMapRect()..refId = result);
-    return MAMapRect()..refId = result;
+    kNativeObjectPool.add(MAMapRect()..refId = result..tag = 'amap_map_fluttify');
+    return MAMapRect()..refId = result..tag = 'amap_map_fluttify';
   }
 }
 

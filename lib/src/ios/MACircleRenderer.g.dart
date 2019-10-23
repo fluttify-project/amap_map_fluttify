@@ -13,8 +13,8 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
   // generate getters
   Future<MACircle> get_circle() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACircleRenderer::get_circle", {'refId': refId});
-    kNativeObjectPool.add(MACircle()..refId = result);
-    return MACircle()..refId = result;
+    kNativeObjectPool.add(MACircle()..refId = result..tag = 'amap_map_fluttify');
+    return MACircle()..refId = result..tag = 'amap_map_fluttify';
   }
   
 
@@ -37,8 +37,8 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MACircleRenderer()..refId = result);
-      return MACircleRenderer()..refId = result;
+      kNativeObjectPool.add(MACircleRenderer()..refId = result..tag = 'amap_map_fluttify');
+      return MACircleRenderer()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

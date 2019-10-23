@@ -32,8 +32,8 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = result);
-      return com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = result;
+      kNativeObjectPool.add(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -52,8 +52,8 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CrossOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_CrossOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_CrossOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CrossOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -72,8 +72,8 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CrossOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_CrossOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_CrossOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CrossOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -92,8 +92,8 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(android_graphics_Bitmap()..refId = result);
-      return android_graphics_Bitmap()..refId = result;
+      kNativeObjectPool.add(android_graphics_Bitmap()..refId = result..tag = 'amap_map_fluttify');
+      return android_graphics_Bitmap()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

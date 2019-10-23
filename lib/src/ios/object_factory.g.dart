@@ -14,7 +14,7 @@ class ObjectFactory_iOS {
 
   static Future<MAOfflineCity> createMAOfflineCity() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAOfflineCity');
-    final object = MAOfflineCity()..refId = refId;
+    final object = MAOfflineCity()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -22,7 +22,7 @@ class ObjectFactory_iOS {
   
   static Future<MAOfflineItemNationWide> createMAOfflineItemNationWide() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAOfflineItemNationWide');
-    final object = MAOfflineItemNationWide()..refId = refId;
+    final object = MAOfflineItemNationWide()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,7 +30,7 @@ class ObjectFactory_iOS {
   
   static Future<MAMultiPoint> createMAMultiPoint() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAMultiPoint');
-    final object = MAMultiPoint()..refId = refId;
+    final object = MAMultiPoint()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -38,7 +38,7 @@ class ObjectFactory_iOS {
   
   static Future<MAGroundOverlay> createMAGroundOverlay() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAGroundOverlay');
-    final object = MAGroundOverlay()..refId = refId;
+    final object = MAGroundOverlay()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -46,7 +46,7 @@ class ObjectFactory_iOS {
   
   static Future<MAPolygonRenderer> createMAPolygonRenderer() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAPolygonRenderer');
-    final object = MAPolygonRenderer()..refId = refId;
+    final object = MAPolygonRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -54,7 +54,7 @@ class ObjectFactory_iOS {
   
   static Future<MAPinAnnotationView> createMAPinAnnotationView() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAPinAnnotationView');
-    final object = MAPinAnnotationView()..refId = refId;
+    final object = MAPinAnnotationView()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -62,7 +62,7 @@ class ObjectFactory_iOS {
   
   static Future<MAHeatMapNode> createMAHeatMapNode() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAHeatMapNode');
-    final object = MAHeatMapNode()..refId = refId;
+    final object = MAHeatMapNode()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -70,7 +70,7 @@ class ObjectFactory_iOS {
   
   static Future<MAHeatMapGradient> createMAHeatMapGradient() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAHeatMapGradient');
-    final object = MAHeatMapGradient()..refId = refId;
+    final object = MAHeatMapGradient()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -78,7 +78,7 @@ class ObjectFactory_iOS {
   
   static Future<MAHeatMapTileOverlay> createMAHeatMapTileOverlay() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAHeatMapTileOverlay');
-    final object = MAHeatMapTileOverlay()..refId = refId;
+    final object = MAHeatMapTileOverlay()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -86,7 +86,7 @@ class ObjectFactory_iOS {
   
   static Future<MAMapStatus> createMAMapStatus() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAMapStatus');
-    final object = MAMapStatus()..refId = refId;
+    final object = MAMapStatus()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -94,7 +94,7 @@ class ObjectFactory_iOS {
   
   static Future<MAPointAnnotation> createMAPointAnnotation() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAPointAnnotation');
-    final object = MAPointAnnotation()..refId = refId;
+    final object = MAPointAnnotation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -102,7 +102,7 @@ class ObjectFactory_iOS {
   
   static Future<MACircle> createMACircle() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMACircle');
-    final object = MACircle()..refId = refId;
+    final object = MACircle()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -110,7 +110,7 @@ class ObjectFactory_iOS {
   
   static Future<MAArcRenderer> createMAArcRenderer() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAArcRenderer');
-    final object = MAArcRenderer()..refId = refId;
+    final object = MAArcRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -118,7 +118,7 @@ class ObjectFactory_iOS {
   
   static Future<MAMapCustomStyleOptions> createMAMapCustomStyleOptions() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAMapCustomStyleOptions');
-    final object = MAMapCustomStyleOptions()..refId = refId;
+    final object = MAMapCustomStyleOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -126,7 +126,7 @@ class ObjectFactory_iOS {
   
   static Future<MAPolygon> createMAPolygon() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAPolygon');
-    final object = MAPolygon()..refId = refId;
+    final object = MAPolygon()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -134,7 +134,7 @@ class ObjectFactory_iOS {
   
   static Future<MAParticleOverlay> createMAParticleOverlay() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAParticleOverlay');
-    final object = MAParticleOverlay()..refId = refId;
+    final object = MAParticleOverlay()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -142,7 +142,7 @@ class ObjectFactory_iOS {
   
   static Future<MAPolyline> createMAPolyline() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAPolyline');
-    final object = MAPolyline()..refId = refId;
+    final object = MAPolyline()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -150,7 +150,7 @@ class ObjectFactory_iOS {
   
   static Future<MAMultiColoredPolylineRenderer> createMAMultiColoredPolylineRenderer() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAMultiColoredPolylineRenderer');
-    final object = MAMultiColoredPolylineRenderer()..refId = refId;
+    final object = MAMultiColoredPolylineRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -158,7 +158,7 @@ class ObjectFactory_iOS {
   
   static Future<MAAnimatedAnnotation> createMAAnimatedAnnotation() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAAnimatedAnnotation');
-    final object = MAAnimatedAnnotation()..refId = refId;
+    final object = MAAnimatedAnnotation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -166,7 +166,7 @@ class ObjectFactory_iOS {
   
   static Future<MAMultiTexturePolylineRenderer> createMAMultiTexturePolylineRenderer() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAMultiTexturePolylineRenderer');
-    final object = MAMultiTexturePolylineRenderer()..refId = refId;
+    final object = MAMultiTexturePolylineRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -174,7 +174,7 @@ class ObjectFactory_iOS {
   
   static Future<MAOfflineProvince> createMAOfflineProvince() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAOfflineProvince');
-    final object = MAOfflineProvince()..refId = refId;
+    final object = MAOfflineProvince()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -182,7 +182,7 @@ class ObjectFactory_iOS {
   
   static Future<MATileOverlayRenderer> createMATileOverlayRenderer() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMATileOverlayRenderer');
-    final object = MATileOverlayRenderer()..refId = refId;
+    final object = MATileOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -190,7 +190,7 @@ class ObjectFactory_iOS {
   
   static Future<MAOfflineItem> createMAOfflineItem() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAOfflineItem');
-    final object = MAOfflineItem()..refId = refId;
+    final object = MAOfflineItem()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -198,7 +198,7 @@ class ObjectFactory_iOS {
   
   static Future<MAGeodesicPolyline> createMAGeodesicPolyline() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAGeodesicPolyline');
-    final object = MAGeodesicPolyline()..refId = refId;
+    final object = MAGeodesicPolyline()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -206,7 +206,7 @@ class ObjectFactory_iOS {
   
   static Future<MATouchPoi> createMATouchPoi() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMATouchPoi');
-    final object = MATouchPoi()..refId = refId;
+    final object = MATouchPoi()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -214,7 +214,7 @@ class ObjectFactory_iOS {
   
   static Future<MAOfflineItemMunicipality> createMAOfflineItemMunicipality() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAOfflineItemMunicipality');
-    final object = MAOfflineItemMunicipality()..refId = refId;
+    final object = MAOfflineItemMunicipality()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -222,7 +222,7 @@ class ObjectFactory_iOS {
   
   static Future<MAMultiPolyline> createMAMultiPolyline() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAMultiPolyline');
-    final object = MAMultiPolyline()..refId = refId;
+    final object = MAMultiPolyline()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -230,7 +230,7 @@ class ObjectFactory_iOS {
   
   static Future<MATraceManager> createMATraceManager() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMATraceManager');
-    final object = MATraceManager()..refId = refId;
+    final object = MATraceManager()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -238,7 +238,7 @@ class ObjectFactory_iOS {
   
   static Future<MAMultiPointOverlayRenderer> createMAMultiPointOverlayRenderer() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAMultiPointOverlayRenderer');
-    final object = MAMultiPointOverlayRenderer()..refId = refId;
+    final object = MAMultiPointOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -246,7 +246,7 @@ class ObjectFactory_iOS {
   
   static Future<MAIndoorFloorInfo> createMAIndoorFloorInfo() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAIndoorFloorInfo');
-    final object = MAIndoorFloorInfo()..refId = refId;
+    final object = MAIndoorFloorInfo()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -254,7 +254,7 @@ class ObjectFactory_iOS {
   
   static Future<MAIndoorInfo> createMAIndoorInfo() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAIndoorInfo');
-    final object = MAIndoorInfo()..refId = refId;
+    final object = MAIndoorInfo()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -262,7 +262,7 @@ class ObjectFactory_iOS {
   
   static Future<MAPolylineRenderer> createMAPolylineRenderer() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAPolylineRenderer');
-    final object = MAPolylineRenderer()..refId = refId;
+    final object = MAPolylineRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -270,7 +270,7 @@ class ObjectFactory_iOS {
   
   static Future<MAAnnotationMoveAnimation> createMAAnnotationMoveAnimation() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAAnnotationMoveAnimation');
-    final object = MAAnnotationMoveAnimation()..refId = refId;
+    final object = MAAnnotationMoveAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -278,7 +278,7 @@ class ObjectFactory_iOS {
   
   static Future<MAShape> createMAShape() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAShape');
-    final object = MAShape()..refId = refId;
+    final object = MAShape()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -286,7 +286,7 @@ class ObjectFactory_iOS {
   
   static Future<MAAnnotationView> createMAAnnotationView() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAAnnotationView');
-    final object = MAAnnotationView()..refId = refId;
+    final object = MAAnnotationView()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -294,7 +294,7 @@ class ObjectFactory_iOS {
   
   static Future<MATileOverlay> createMATileOverlay() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMATileOverlay');
-    final object = MATileOverlay()..refId = refId;
+    final object = MATileOverlay()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -302,7 +302,7 @@ class ObjectFactory_iOS {
   
   static Future<MATileOverlayPath> createMATileOverlayPath() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMATileOverlayPath');
-    final object = MATileOverlayPath()..refId = refId;
+    final object = MATileOverlayPath()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -310,7 +310,7 @@ class ObjectFactory_iOS {
   
   static Future<MACustomCalloutView> createMACustomCalloutView() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMACustomCalloutView');
-    final object = MACustomCalloutView()..refId = refId;
+    final object = MACustomCalloutView()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -318,7 +318,7 @@ class ObjectFactory_iOS {
   
   static Future<MAOfflineItemCommonCity> createMAOfflineItemCommonCity() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAOfflineItemCommonCity');
-    final object = MAOfflineItemCommonCity()..refId = refId;
+    final object = MAOfflineItemCommonCity()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -326,7 +326,7 @@ class ObjectFactory_iOS {
   
   static Future<MAOfflineMap> createMAOfflineMap() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAOfflineMap');
-    final object = MAOfflineMap()..refId = refId;
+    final object = MAOfflineMap()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -334,7 +334,7 @@ class ObjectFactory_iOS {
   
   static Future<MACircleRenderer> createMACircleRenderer() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMACircleRenderer');
-    final object = MACircleRenderer()..refId = refId;
+    final object = MACircleRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -342,7 +342,7 @@ class ObjectFactory_iOS {
   
   static Future<MAParticleOverlayRenderer> createMAParticleOverlayRenderer() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAParticleOverlayRenderer');
-    final object = MAParticleOverlayRenderer()..refId = refId;
+    final object = MAParticleOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -350,7 +350,7 @@ class ObjectFactory_iOS {
   
   static Future<MACoordinateBounds> createMACoordinateBounds() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMACoordinateBounds');
-    final object = MACoordinateBounds()..refId = refId;
+    final object = MACoordinateBounds()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -358,7 +358,7 @@ class ObjectFactory_iOS {
   
   static Future<MACoordinateSpan> createMACoordinateSpan() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMACoordinateSpan');
-    final object = MACoordinateSpan()..refId = refId;
+    final object = MACoordinateSpan()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -366,7 +366,7 @@ class ObjectFactory_iOS {
   
   static Future<MACoordinateRegion> createMACoordinateRegion() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMACoordinateRegion');
-    final object = MACoordinateRegion()..refId = refId;
+    final object = MACoordinateRegion()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -374,7 +374,7 @@ class ObjectFactory_iOS {
   
   static Future<MAMapPoint> createMAMapPoint() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAMapPoint');
-    final object = MAMapPoint()..refId = refId;
+    final object = MAMapPoint()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -382,7 +382,7 @@ class ObjectFactory_iOS {
   
   static Future<MAMapSize> createMAMapSize() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAMapSize');
-    final object = MAMapSize()..refId = refId;
+    final object = MAMapSize()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -390,7 +390,7 @@ class ObjectFactory_iOS {
   
   static Future<MAMapRect> createMAMapRect() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAMapRect');
-    final object = MAMapRect()..refId = refId;
+    final object = MAMapRect()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -398,7 +398,7 @@ class ObjectFactory_iOS {
   
   static Future<MAParticleRandomVelocityGenerate> createMAParticleRandomVelocityGenerate() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAParticleRandomVelocityGenerate');
-    final object = MAParticleRandomVelocityGenerate()..refId = refId;
+    final object = MAParticleRandomVelocityGenerate()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -406,7 +406,7 @@ class ObjectFactory_iOS {
   
   static Future<MAParticleRandomColorGenerate> createMAParticleRandomColorGenerate() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAParticleRandomColorGenerate');
-    final object = MAParticleRandomColorGenerate()..refId = refId;
+    final object = MAParticleRandomColorGenerate()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -414,7 +414,7 @@ class ObjectFactory_iOS {
   
   static Future<MAParticleConstantRotationGenerate> createMAParticleConstantRotationGenerate() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAParticleConstantRotationGenerate');
-    final object = MAParticleConstantRotationGenerate()..refId = refId;
+    final object = MAParticleConstantRotationGenerate()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -422,7 +422,7 @@ class ObjectFactory_iOS {
   
   static Future<MAParticleCurveSizeGenerate> createMAParticleCurveSizeGenerate() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAParticleCurveSizeGenerate');
-    final object = MAParticleCurveSizeGenerate()..refId = refId;
+    final object = MAParticleCurveSizeGenerate()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -430,7 +430,7 @@ class ObjectFactory_iOS {
   
   static Future<MAParticleEmissionModule> createMAParticleEmissionModule() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAParticleEmissionModule');
-    final object = MAParticleEmissionModule()..refId = refId;
+    final object = MAParticleEmissionModule()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -438,7 +438,7 @@ class ObjectFactory_iOS {
   
   static Future<MAParticleSinglePointShapeModule> createMAParticleSinglePointShapeModule() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAParticleSinglePointShapeModule');
-    final object = MAParticleSinglePointShapeModule()..refId = refId;
+    final object = MAParticleSinglePointShapeModule()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -446,7 +446,7 @@ class ObjectFactory_iOS {
   
   static Future<MAParticleRectShapeModule> createMAParticleRectShapeModule() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAParticleRectShapeModule');
-    final object = MAParticleRectShapeModule()..refId = refId;
+    final object = MAParticleRectShapeModule()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -454,7 +454,7 @@ class ObjectFactory_iOS {
   
   static Future<MAParticleOverLifeModule> createMAParticleOverLifeModule() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAParticleOverLifeModule');
-    final object = MAParticleOverLifeModule()..refId = refId;
+    final object = MAParticleOverLifeModule()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -462,7 +462,7 @@ class ObjectFactory_iOS {
   
   static Future<MAParticleOverlayOptions> createMAParticleOverlayOptions() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAParticleOverlayOptions');
-    final object = MAParticleOverlayOptions()..refId = refId;
+    final object = MAParticleOverlayOptions()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -470,7 +470,7 @@ class ObjectFactory_iOS {
   
   static Future<MAParticleOverlayOptionsFactory> createMAParticleOverlayOptionsFactory() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAParticleOverlayOptionsFactory');
-    final object = MAParticleOverlayOptionsFactory()..refId = refId;
+    final object = MAParticleOverlayOptionsFactory()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -478,7 +478,7 @@ class ObjectFactory_iOS {
   
   static Future<MAOverlayRenderer> createMAOverlayRenderer() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAOverlayRenderer');
-    final object = MAOverlayRenderer()..refId = refId;
+    final object = MAOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -486,7 +486,7 @@ class ObjectFactory_iOS {
   
   static Future<MAUserLocation> createMAUserLocation() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAUserLocation');
-    final object = MAUserLocation()..refId = refId;
+    final object = MAUserLocation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -494,7 +494,7 @@ class ObjectFactory_iOS {
   
   static Future<MAMultiPointItem> createMAMultiPointItem() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAMultiPointItem');
-    final object = MAMultiPointItem()..refId = refId;
+    final object = MAMultiPointItem()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -502,7 +502,7 @@ class ObjectFactory_iOS {
   
   static Future<MAMultiPointOverlay> createMAMultiPointOverlay() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAMultiPointOverlay');
-    final object = MAMultiPointOverlay()..refId = refId;
+    final object = MAMultiPointOverlay()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -510,7 +510,7 @@ class ObjectFactory_iOS {
   
   static Future<MACustomBuildingOverlayOption> createMACustomBuildingOverlayOption() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMACustomBuildingOverlayOption');
-    final object = MACustomBuildingOverlayOption()..refId = refId;
+    final object = MACustomBuildingOverlayOption()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -518,7 +518,7 @@ class ObjectFactory_iOS {
   
   static Future<MACustomBuildingOverlay> createMACustomBuildingOverlay() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMACustomBuildingOverlay');
-    final object = MACustomBuildingOverlay()..refId = refId;
+    final object = MACustomBuildingOverlay()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -526,7 +526,7 @@ class ObjectFactory_iOS {
   
   static Future<MATracePoint> createMATracePoint() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMATracePoint');
-    final object = MATracePoint()..refId = refId;
+    final object = MATracePoint()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -534,7 +534,7 @@ class ObjectFactory_iOS {
   
   static Future<MATraceLocation> createMATraceLocation() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMATraceLocation');
-    final object = MATraceLocation()..refId = refId;
+    final object = MATraceLocation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -542,7 +542,7 @@ class ObjectFactory_iOS {
   
   static Future<MAArc> createMAArc() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAArc');
-    final object = MAArc()..refId = refId;
+    final object = MAArc()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -550,7 +550,7 @@ class ObjectFactory_iOS {
   
   static Future<MAUserLocationRepresentation> createMAUserLocationRepresentation() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAUserLocationRepresentation');
-    final object = MAUserLocationRepresentation()..refId = refId;
+    final object = MAUserLocationRepresentation()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -558,7 +558,7 @@ class ObjectFactory_iOS {
   
   static Future<MAMapView> createMAMapView() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAMapView');
-    final object = MAMapView()..refId = refId;
+    final object = MAMapView()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -566,7 +566,7 @@ class ObjectFactory_iOS {
   
   static Future<MAOverlayPathRenderer> createMAOverlayPathRenderer() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAOverlayPathRenderer');
-    final object = MAOverlayPathRenderer()..refId = refId;
+    final object = MAOverlayPathRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -574,7 +574,7 @@ class ObjectFactory_iOS {
   
   static Future<MAGroundOverlayRenderer> createMAGroundOverlayRenderer() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMAGroundOverlayRenderer');
-    final object = MAGroundOverlayRenderer()..refId = refId;
+    final object = MAGroundOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -582,7 +582,7 @@ class ObjectFactory_iOS {
   
   static Future<MACustomBuildingOverlayRenderer> createMACustomBuildingOverlayRenderer() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createMACustomBuildingOverlayRenderer');
-    final object = MACustomBuildingOverlayRenderer()..refId = refId;
+    final object = MACustomBuildingOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;

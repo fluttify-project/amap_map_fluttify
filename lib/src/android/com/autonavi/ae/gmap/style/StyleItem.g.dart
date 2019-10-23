@@ -54,8 +54,8 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_ae_gmap_style_StyleElement()..refId = result);
-      return com_autonavi_ae_gmap_style_StyleElement()..refId = result;
+      kNativeObjectPool.add(com_autonavi_ae_gmap_style_StyleElement()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_ae_gmap_style_StyleElement()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

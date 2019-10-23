@@ -13,8 +13,8 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
   // generate getters
   Future<com_amap_api_maps_model_LatLng> get_target() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.CameraPosition::get_target", {'refId': refId});
-    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
+    return com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<double> get_zoom() async {
@@ -61,8 +61,8 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition()..refId = result);
-      return com_amap_api_maps_model_CameraPosition()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CameraPosition()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -81,8 +81,8 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition_Builder()..refId = result);
-      return com_amap_api_maps_model_CameraPosition_Builder()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition_Builder()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CameraPosition_Builder()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
