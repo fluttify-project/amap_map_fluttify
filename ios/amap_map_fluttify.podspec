@@ -4,19 +4,20 @@
 Pod::Spec.new do |s|
   s.name             = 'amap_map_fluttify'
   s.version          = '0.0.1'
-  s.summary          = '{{description}}'
+  s.summary          = 'An `Amap` map component, based on `fluttify` engine.'
   s.description      = <<-DESC
 A new flutter plugin project.
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/fluttify-project/amap_map_fluttify'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'yohom' => '382146139@qq.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'amap_core_fluttify'
   s.dependency 'foundation_fluttify'
+  # flutter插件依赖
+  s.dependency 'amap_core_fluttify'
 
   s.ios.deployment_target = '8.0'
   # 包含工程下的framework

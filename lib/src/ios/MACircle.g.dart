@@ -13,14 +13,14 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
   // generate getters
   Future<List<MAOverlay>> get_hollowShapes() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACircle::get_hollowShapes", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it).toList());
-    return (result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it).toList();
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACircle::get_coordinate", {'refId': refId});
-    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
-    return CLLocationCoordinate2D()..refId = result;
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
+    return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<double> get_radius() async {
@@ -31,8 +31,8 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
   
   Future<MAMapRect> get_boundingMapRect() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACircle::get_boundingMapRect", {'refId': refId});
-    kNativeObjectPool.add(MAMapRect()..refId = result);
-    return MAMapRect()..refId = result;
+    kNativeObjectPool.add(MAMapRect()..refId = result..tag = 'amap_map_fluttify');
+    return MAMapRect()..refId = result..tag = 'amap_map_fluttify';
   }
   
 
@@ -72,8 +72,8 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MACircle()..refId = result);
-      return MACircle()..refId = result;
+      kNativeObjectPool.add(MACircle()..refId = result..tag = 'amap_map_fluttify');
+      return MACircle()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -92,8 +92,8 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MACircle()..refId = result);
-      return MACircle()..refId = result;
+      kNativeObjectPool.add(MACircle()..refId = result..tag = 'amap_map_fluttify');
+      return MACircle()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

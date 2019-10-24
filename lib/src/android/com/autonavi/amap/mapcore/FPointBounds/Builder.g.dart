@@ -32,8 +32,8 @@ class com_autonavi_amap_mapcore_FPointBounds_Builder extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_FPointBounds()..refId = result);
-      return com_autonavi_amap_mapcore_FPointBounds()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_FPointBounds()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_FPointBounds()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

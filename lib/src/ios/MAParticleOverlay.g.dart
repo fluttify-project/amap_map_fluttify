@@ -13,8 +13,8 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
   // generate getters
   Future<MAParticleOverlayOptions> get_overlayOption() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlay::get_overlayOption", {'refId': refId});
-    kNativeObjectPool.add(MAParticleOverlayOptions()..refId = result);
-    return MAParticleOverlayOptions()..refId = result;
+    kNativeObjectPool.add(MAParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+    return MAParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
   }
   
 
@@ -37,8 +37,8 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleOverlay()..refId = result);
-      return MAParticleOverlay()..refId = result;
+      kNativeObjectPool.add(MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify');
+      return MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

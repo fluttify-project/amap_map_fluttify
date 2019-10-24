@@ -32,8 +32,8 @@ class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_FPoint()..refId = result);
-      return com_autonavi_amap_mapcore_FPoint()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_FPoint()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_FPoint()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

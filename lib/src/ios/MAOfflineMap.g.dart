@@ -13,26 +13,26 @@ class MAOfflineMap extends NSObject  {
   // generate getters
   Future<List<MAOfflineProvince>> get_provinces() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMap::get_provinces", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAOfflineProvince()..refId = it).toList());
-    return (result as List).cast<int>().map((it) => MAOfflineProvince()..refId = it).toList();
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAOfflineProvince()..refId = it..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((it) => MAOfflineProvince()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
   Future<List<MAOfflineItemMunicipality>> get_municipalities() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMap::get_municipalities", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAOfflineItemMunicipality()..refId = it).toList());
-    return (result as List).cast<int>().map((it) => MAOfflineItemMunicipality()..refId = it).toList();
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAOfflineItemMunicipality()..refId = it..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((it) => MAOfflineItemMunicipality()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
   Future<MAOfflineItemNationWide> get_nationWide() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMap::get_nationWide", {'refId': refId});
-    kNativeObjectPool.add(MAOfflineItemNationWide()..refId = result);
-    return MAOfflineItemNationWide()..refId = result;
+    kNativeObjectPool.add(MAOfflineItemNationWide()..refId = result..tag = 'amap_map_fluttify');
+    return MAOfflineItemNationWide()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<List<MAOfflineCity>> get_cities() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMap::get_cities", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAOfflineCity()..refId = it).toList());
-    return (result as List).cast<int>().map((it) => MAOfflineCity()..refId = it).toList();
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAOfflineCity()..refId = it..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((it) => MAOfflineCity()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
   Future<String> get_version() async {
@@ -43,8 +43,8 @@ class MAOfflineMap extends NSObject  {
   
   Future<List> get_offlineCities() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMap::get_offlineCities", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it).toList());
-    return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
 
@@ -67,8 +67,8 @@ class MAOfflineMap extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAOfflineMap()..refId = result);
-      return MAOfflineMap()..refId = result;
+      kNativeObjectPool.add(MAOfflineMap()..refId = result..tag = 'amap_map_fluttify');
+      return MAOfflineMap()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

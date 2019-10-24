@@ -32,8 +32,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -52,8 +52,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = result);
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -92,8 +92,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -132,8 +132,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -172,8 +172,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -212,8 +212,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -232,8 +232,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -252,8 +252,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -272,8 +272,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -292,8 +292,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -312,8 +312,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -332,8 +332,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -352,8 +352,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -372,8 +372,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -432,8 +432,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -472,8 +472,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

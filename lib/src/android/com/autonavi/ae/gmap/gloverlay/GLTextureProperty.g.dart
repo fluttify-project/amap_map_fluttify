@@ -19,8 +19,8 @@ class com_autonavi_ae_gmap_gloverlay_GLTextureProperty extends java_lang_Object 
   
   Future<android_graphics_Bitmap> get_mBitmap() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::get_mBitmap", {'refId': refId});
-    kNativeObjectPool.add(android_graphics_Bitmap()..refId = result);
-    return android_graphics_Bitmap()..refId = result;
+    kNativeObjectPool.add(android_graphics_Bitmap()..refId = result..tag = 'amap_map_fluttify');
+    return android_graphics_Bitmap()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<List<int>> get_mPngBuffer() async {

@@ -54,8 +54,8 @@ class com_autonavi_ae_gmap_maploader_ProcessingTile extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = result);
-      return com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = result;
+      kNativeObjectPool.add(com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

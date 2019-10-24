@@ -13,32 +13,32 @@ class com_amap_api_maps_model_VisibleRegion extends java_lang_Object with androi
   // generate getters
   Future<com_amap_api_maps_model_LatLng> get_nearLeft() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.VisibleRegion::get_nearLeft", {'refId': refId});
-    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
+    return com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<com_amap_api_maps_model_LatLng> get_nearRight() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.VisibleRegion::get_nearRight", {'refId': refId});
-    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
+    return com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<com_amap_api_maps_model_LatLng> get_farLeft() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.VisibleRegion::get_farLeft", {'refId': refId});
-    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
+    return com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<com_amap_api_maps_model_LatLng> get_farRight() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.VisibleRegion::get_farRight", {'refId': refId});
-    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
+    return com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<com_amap_api_maps_model_LatLngBounds> get_latLngBounds() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.VisibleRegion::get_latLngBounds", {'refId': refId});
-    kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds()..refId = result);
-    return com_amap_api_maps_model_LatLngBounds()..refId = result;
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds()..refId = result..tag = 'amap_map_fluttify');
+    return com_amap_api_maps_model_LatLngBounds()..refId = result..tag = 'amap_map_fluttify';
   }
   
 

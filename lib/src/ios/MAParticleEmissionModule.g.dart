@@ -32,8 +32,8 @@ class MAParticleEmissionModule extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleEmissionModule()..refId = result);
-      return MAParticleEmissionModule()..refId = result;
+      kNativeObjectPool.add(MAParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify');
+      return MAParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

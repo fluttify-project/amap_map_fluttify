@@ -32,8 +32,8 @@ class com_autonavi_amap_mapcore_DPoint extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_DPoint()..refId = result);
-      return com_autonavi_amap_mapcore_DPoint()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_DPoint()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_DPoint()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

@@ -19,14 +19,14 @@ class MAUserLocation extends MAAnimatedAnnotation  {
   
   Future<CLLocation> get_location() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocation::get_location", {'refId': refId});
-    kNativeObjectPool.add(CLLocation()..refId = result);
-    return CLLocation()..refId = result;
+    kNativeObjectPool.add(CLLocation()..refId = result..tag = 'amap_map_fluttify');
+    return CLLocation()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<CLHeading> get_heading() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocation::get_heading", {'refId': refId});
-    kNativeObjectPool.add(CLHeading()..refId = result);
-    return CLHeading()..refId = result;
+    kNativeObjectPool.add(CLHeading()..refId = result..tag = 'amap_map_fluttify');
+    return CLHeading()..refId = result..tag = 'amap_map_fluttify';
   }
   
 

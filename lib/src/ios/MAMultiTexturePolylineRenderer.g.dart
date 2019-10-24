@@ -13,14 +13,14 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
   // generate getters
   Future<MAMultiPolyline> get_multiPolyline() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_multiPolyline", {'refId': refId});
-    kNativeObjectPool.add(MAMultiPolyline()..refId = result);
-    return MAMultiPolyline()..refId = result;
+    kNativeObjectPool.add(MAMultiPolyline()..refId = result..tag = 'amap_map_fluttify');
+    return MAMultiPolyline()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<List> get_strokeTextureImages() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_strokeTextureImages", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it).toList());
-    return (result as List).cast<int>().map((it) => NSObject()..refId = it).toList();
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
 
@@ -48,8 +48,8 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMultiTexturePolylineRenderer()..refId = result);
-      return MAMultiTexturePolylineRenderer()..refId = result;
+      kNativeObjectPool.add(MAMultiTexturePolylineRenderer()..refId = result..tag = 'amap_map_fluttify');
+      return MAMultiTexturePolylineRenderer()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

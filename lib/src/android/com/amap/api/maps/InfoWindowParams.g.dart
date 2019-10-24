@@ -112,8 +112,8 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(android_view_View()..refId = result);
-      return android_view_View()..refId = result;
+      kNativeObjectPool.add(android_view_View()..refId = result..tag = 'amap_map_fluttify');
+      return android_view_View()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -172,8 +172,8 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(android_view_View()..refId = result);
-      return android_view_View()..refId = result;
+      kNativeObjectPool.add(android_view_View()..refId = result..tag = 'amap_map_fluttify');
+      return android_view_View()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

@@ -61,8 +61,8 @@ class MATraceManager extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MATraceManager()..refId = result);
-      return MATraceManager()..refId = result;
+      kNativeObjectPool.add(MATraceManager()..refId = result..tag = 'amap_map_fluttify');
+      return MATraceManager()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

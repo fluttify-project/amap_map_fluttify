@@ -32,8 +32,8 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result);
-      return com_amap_api_maps_AMapOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -52,8 +52,8 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result);
-      return com_amap_api_maps_AMapOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -72,8 +72,8 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result);
-      return com_amap_api_maps_AMapOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -92,8 +92,8 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result);
-      return com_amap_api_maps_AMapOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -112,8 +112,8 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result);
-      return com_amap_api_maps_AMapOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -132,8 +132,8 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result);
-      return com_amap_api_maps_AMapOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -152,8 +152,8 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result);
-      return com_amap_api_maps_AMapOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -172,8 +172,8 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result);
-      return com_amap_api_maps_AMapOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -192,8 +192,8 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result);
-      return com_amap_api_maps_AMapOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -212,8 +212,8 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result);
-      return com_amap_api_maps_AMapOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -232,8 +232,8 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result);
-      return com_amap_api_maps_AMapOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_AMapOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -312,8 +312,8 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition()..refId = result);
-      return com_amap_api_maps_model_CameraPosition()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CameraPosition()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

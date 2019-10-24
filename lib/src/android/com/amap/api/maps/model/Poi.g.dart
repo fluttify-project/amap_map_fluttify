@@ -52,8 +52,8 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
-      return com_amap_api_maps_model_LatLng()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

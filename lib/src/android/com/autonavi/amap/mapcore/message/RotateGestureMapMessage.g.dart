@@ -66,8 +66,8 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = result);
-      return com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = result;
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

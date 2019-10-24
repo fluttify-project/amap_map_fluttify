@@ -13,8 +13,8 @@ class MAMapStatus extends NSObject  {
   // generate getters
   Future<CLLocationCoordinate2D> get_centerCoordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_centerCoordinate", {'refId': refId});
-    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
-    return CLLocationCoordinate2D()..refId = result;
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
+    return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<double> get_zoomLevel() async {
@@ -37,8 +37,8 @@ class MAMapStatus extends NSObject  {
   
   Future<CGPoint> get_screenAnchor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_screenAnchor", {'refId': refId});
-    kNativeObjectPool.add(CGPoint()..refId = result);
-    return CGPoint()..refId = result;
+    kNativeObjectPool.add(CGPoint()..refId = result..tag = 'amap_map_fluttify');
+    return CGPoint()..refId = result..tag = 'amap_map_fluttify';
   }
   
 
@@ -90,8 +90,8 @@ class MAMapStatus extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMapStatus()..refId = result);
-      return MAMapStatus()..refId = result;
+      kNativeObjectPool.add(MAMapStatus()..refId = result..tag = 'amap_map_fluttify');
+      return MAMapStatus()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

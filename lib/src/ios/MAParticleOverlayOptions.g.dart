@@ -31,44 +31,44 @@ class MAParticleOverlayOptions extends NSObject  {
   
   Future<UIImage> get_icon() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_icon", {'refId': refId});
-    kNativeObjectPool.add(UIImage()..refId = result);
-    return UIImage()..refId = result;
+    kNativeObjectPool.add(UIImage()..refId = result..tag = 'amap_map_fluttify');
+    return UIImage()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<CGSize> get_startParticleSize() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_startParticleSize", {'refId': refId});
-    kNativeObjectPool.add(CGSize()..refId = result);
-    return CGSize()..refId = result;
+    kNativeObjectPool.add(CGSize()..refId = result..tag = 'amap_map_fluttify');
+    return CGSize()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<MAParticleColorGenerate> get_particleStartColor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_particleStartColor", {'refId': refId});
-    kNativeObjectPool.add(MAParticleRandomColorGenerate()..refId = result);
-    return MAParticleRandomColorGenerate()..refId = result;
+    kNativeObjectPool.add(MAParticleRandomColorGenerate()..refId = result..tag = 'amap_map_fluttify');
+    return MAParticleRandomColorGenerate()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<MAParticleVelocityGenerate> get_particleStartSpeed() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_particleStartSpeed", {'refId': refId});
-    kNativeObjectPool.add(MAParticleRandomVelocityGenerate()..refId = result);
-    return MAParticleRandomVelocityGenerate()..refId = result;
+    kNativeObjectPool.add(MAParticleRandomVelocityGenerate()..refId = result..tag = 'amap_map_fluttify');
+    return MAParticleRandomVelocityGenerate()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<MAParticleEmissionModule> get_particleEmissionModule() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_particleEmissionModule", {'refId': refId});
-    kNativeObjectPool.add(MAParticleEmissionModule()..refId = result);
-    return MAParticleEmissionModule()..refId = result;
+    kNativeObjectPool.add(MAParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify');
+    return MAParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<MAParticleShapeModule> get_particleShapeModule() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_particleShapeModule", {'refId': refId});
-    kNativeObjectPool.add(MAParticleSinglePointShapeModule()..refId = result);
-    return MAParticleSinglePointShapeModule()..refId = result;
+    kNativeObjectPool.add(MAParticleSinglePointShapeModule()..refId = result..tag = 'amap_map_fluttify');
+    return MAParticleSinglePointShapeModule()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<MAParticleOverLifeModule> get_particleOverLifeModule() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_particleOverLifeModule", {'refId': refId});
-    kNativeObjectPool.add(MAParticleOverLifeModule()..refId = result);
-    return MAParticleOverLifeModule()..refId = result;
+    kNativeObjectPool.add(MAParticleOverLifeModule()..refId = result..tag = 'amap_map_fluttify');
+    return MAParticleOverLifeModule()..refId = result..tag = 'amap_map_fluttify';
   }
   
 

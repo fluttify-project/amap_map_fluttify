@@ -13,14 +13,14 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
   // generate getters
   Future<MACustomBuildingOverlayOption> get_defaultOption() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlay::get_defaultOption", {'refId': refId});
-    kNativeObjectPool.add(MACustomBuildingOverlayOption()..refId = result);
-    return MACustomBuildingOverlayOption()..refId = result;
+    kNativeObjectPool.add(MACustomBuildingOverlayOption()..refId = result..tag = 'amap_map_fluttify');
+    return MACustomBuildingOverlayOption()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<List<MACustomBuildingOverlayOption>> get_customOptions() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlay::get_customOptions", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MACustomBuildingOverlayOption()..refId = it).toList());
-    return (result as List).cast<int>().map((it) => MACustomBuildingOverlayOption()..refId = it).toList();
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MACustomBuildingOverlayOption()..refId = it..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((it) => MACustomBuildingOverlayOption()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
 

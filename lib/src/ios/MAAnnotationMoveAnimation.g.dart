@@ -52,8 +52,8 @@ class MAAnnotationMoveAnimation extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result);
-      return CLLocationCoordinate2D()..refId = result;
+      kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
+      return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

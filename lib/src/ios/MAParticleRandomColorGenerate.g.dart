@@ -32,8 +32,8 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleRandomColorGenerate()..refId = result);
-      return MAParticleRandomColorGenerate()..refId = result;
+      kNativeObjectPool.add(MAParticleRandomColorGenerate()..refId = result..tag = 'amap_map_fluttify');
+      return MAParticleRandomColorGenerate()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

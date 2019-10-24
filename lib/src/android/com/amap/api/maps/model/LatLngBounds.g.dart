@@ -13,14 +13,14 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   // generate getters
   Future<com_amap_api_maps_model_LatLng> get_southwest() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.LatLngBounds::get_southwest", {'refId': refId});
-    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
+    return com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<com_amap_api_maps_model_LatLng> get_northeast() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.LatLngBounds::get_northeast", {'refId': refId});
-    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
+    return com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify';
   }
   
 
@@ -43,8 +43,8 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds_Builder()..refId = result);
-      return com_amap_api_maps_model_LatLngBounds_Builder()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds_Builder()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_LatLngBounds_Builder()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -103,8 +103,8 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds()..refId = result);
-      return com_amap_api_maps_model_LatLngBounds()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_LatLngBounds()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

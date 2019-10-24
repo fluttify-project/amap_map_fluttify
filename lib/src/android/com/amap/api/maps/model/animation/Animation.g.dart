@@ -13,8 +13,8 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   // generate getters
   Future<com_autonavi_amap_mapcore_animation_GLAnimation> get_glAnimation() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.animation.Animation::get_glAnimation", {'refId': refId});
-    kNativeObjectPool.add(com_autonavi_amap_mapcore_animation_GLAnimation()..refId = result);
-    return com_autonavi_amap_mapcore_animation_GLAnimation()..refId = result;
+    kNativeObjectPool.add(com_autonavi_amap_mapcore_animation_GLAnimation()..refId = result..tag = 'amap_map_fluttify');
+    return com_autonavi_amap_mapcore_animation_GLAnimation()..refId = result..tag = 'amap_map_fluttify';
   }
   
 

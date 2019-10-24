@@ -13,8 +13,8 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   // generate getters
   Future<List<MAOverlay>> get_hollowShapes() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygon::get_hollowShapes", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it).toList());
-    return (result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it).toList();
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
 
@@ -42,8 +42,8 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAPolygon()..refId = result);
-      return MAPolygon()..refId = result;
+      kNativeObjectPool.add(MAPolygon()..refId = result..tag = 'amap_map_fluttify');
+      return MAPolygon()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -62,8 +62,8 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAPolygon()..refId = result);
-      return MAPolygon()..refId = result;
+      kNativeObjectPool.add(MAPolygon()..refId = result..tag = 'amap_map_fluttify');
+      return MAPolygon()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

@@ -32,8 +32,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition()..refId = result);
-      return com_amap_api_maps_model_CameraPosition()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CameraPosition()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -152,8 +152,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_NavigateArrow()..refId = result);
-      return com_amap_api_maps_model_NavigateArrow()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_NavigateArrow()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_NavigateArrow()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -172,8 +172,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_Polyline()..refId = result);
-      return com_amap_api_maps_model_Polyline()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_Polyline()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_Polyline()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -192,8 +192,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BuildingOverlay()..refId = result);
-      return com_amap_api_maps_model_BuildingOverlay()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_BuildingOverlay()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_BuildingOverlay()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -212,8 +212,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_Circle()..refId = result);
-      return com_amap_api_maps_model_Circle()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_Circle()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_Circle()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -232,8 +232,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_Arc()..refId = result);
-      return com_amap_api_maps_model_Arc()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_Arc()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_Arc()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -252,8 +252,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_Polygon()..refId = result);
-      return com_amap_api_maps_model_Polygon()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_Polygon()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_Polygon()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -272,8 +272,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlay()..refId = result);
-      return com_amap_api_maps_model_GroundOverlay()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlay()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_GroundOverlay()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -292,8 +292,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_Marker()..refId = result);
-      return com_amap_api_maps_model_Marker()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_Marker()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_Marker()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -312,8 +312,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GL3DModel()..refId = result);
-      return com_amap_api_maps_model_GL3DModel()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_GL3DModel()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_GL3DModel()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -332,8 +332,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_Text()..refId = result);
-      return com_amap_api_maps_model_Text()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_Text()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_Text()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -352,8 +352,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_model_Marker()..refId = it).toList());
-      return (result as List).cast<int>().map((it) => com_amap_api_maps_model_Marker()..refId = it).toList();
+      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_model_Marker()..refId = it..tag = 'amap_map_fluttify').toList());
+      return (result as List).cast<int>().map((it) => com_amap_api_maps_model_Marker()..refId = it..tag = 'amap_map_fluttify').toList();
     }
   }
   
@@ -372,8 +372,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_model_Marker()..refId = it).toList());
-      return (result as List).cast<int>().map((it) => com_amap_api_maps_model_Marker()..refId = it).toList();
+      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_model_Marker()..refId = it..tag = 'amap_map_fluttify').toList());
+      return (result as List).cast<int>().map((it) => com_amap_api_maps_model_Marker()..refId = it..tag = 'amap_map_fluttify').toList();
     }
   }
   
@@ -392,8 +392,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlay()..refId = result);
-      return com_amap_api_maps_model_TileOverlay()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlay()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_TileOverlay()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -412,8 +412,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MultiPointOverlay()..refId = result);
-      return com_amap_api_maps_model_MultiPointOverlay()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_MultiPointOverlay()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_MultiPointOverlay()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -432,8 +432,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlay()..refId = result);
-      return com_amap_api_maps_model_particle_ParticleOverlay()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlay()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_ParticleOverlay()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -632,8 +632,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MyTrafficStyle()..refId = result);
-      return com_amap_api_maps_model_MyTrafficStyle()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_MyTrafficStyle()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_MyTrafficStyle()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -692,8 +692,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(android_location_Location()..refId = result);
-      return android_location_Location()..refId = result;
+      kNativeObjectPool.add(android_location_Location()..refId = result..tag = 'amap_map_fluttify');
+      return android_location_Location()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -769,8 +769,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MyLocationStyle()..refId = result);
-      return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_MyLocationStyle()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_MyLocationStyle()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -829,8 +829,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_UiSettings()..refId = result);
-      return com_amap_api_maps_UiSettings()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_UiSettings()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_UiSettings()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -849,8 +849,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_Projection()..refId = result);
-      return com_amap_api_maps_Projection()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_Projection()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_Projection()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -1822,8 +1822,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_InfoWindowAnimationManager()..refId = result);
-      return com_amap_api_maps_InfoWindowAnimationManager()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_InfoWindowAnimationManager()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_InfoWindowAnimationManager()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -1942,8 +1942,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CrossOverlay()..refId = result);
-      return com_amap_api_maps_model_CrossOverlay()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_CrossOverlay()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CrossOverlay()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -1962,8 +1962,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_RouteOverlay()..refId = result);
-      return com_amap_api_maps_model_RouteOverlay()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_RouteOverlay()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_RouteOverlay()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

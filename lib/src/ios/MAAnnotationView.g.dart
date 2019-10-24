@@ -25,32 +25,32 @@ class MAAnnotationView extends UIView  {
   
   Future<MAAnnotation> get_annotation({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAAnnotationView::get_annotation", {'refId': refId});
-    kNativeObjectPool.add(MAGroundOverlay()..refId = result);
-    return MAGroundOverlay()..refId = result;
+    kNativeObjectPool.add(MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify');
+    return MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<UIImage> get_image({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAAnnotationView::get_image", {'refId': refId});
-    kNativeObjectPool.add(UIImage()..refId = result);
-    return UIImage()..refId = result;
+    kNativeObjectPool.add(UIImage()..refId = result..tag = 'amap_map_fluttify');
+    return UIImage()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<MACustomCalloutView> get_customCalloutView({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAAnnotationView::get_customCalloutView", {'refId': refId});
-    kNativeObjectPool.add(MACustomCalloutView()..refId = result);
-    return MACustomCalloutView()..refId = result;
+    kNativeObjectPool.add(MACustomCalloutView()..refId = result..tag = 'amap_map_fluttify');
+    return MACustomCalloutView()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<CGPoint> get_centerOffset({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAAnnotationView::get_centerOffset", {'refId': refId});
-    kNativeObjectPool.add(CGPoint()..refId = result);
-    return CGPoint()..refId = result;
+    kNativeObjectPool.add(CGPoint()..refId = result..tag = 'amap_map_fluttify');
+    return CGPoint()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<CGPoint> get_calloutOffset({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAAnnotationView::get_calloutOffset", {'refId': refId});
-    kNativeObjectPool.add(CGPoint()..refId = result);
-    return CGPoint()..refId = result;
+    kNativeObjectPool.add(CGPoint()..refId = result..tag = 'amap_map_fluttify');
+    return CGPoint()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<bool> get_enabled({bool viewChannel = true}) async {
@@ -79,14 +79,14 @@ class MAAnnotationView extends UIView  {
   
   Future<UIView> get_leftCalloutAccessoryView({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAAnnotationView::get_leftCalloutAccessoryView", {'refId': refId});
-    kNativeObjectPool.add(UIView()..refId = result);
-    return UIView()..refId = result;
+    kNativeObjectPool.add(UIView()..refId = result..tag = 'amap_map_fluttify');
+    return UIView()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<UIView> get_rightCalloutAccessoryView({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAAnnotationView::get_rightCalloutAccessoryView", {'refId': refId});
-    kNativeObjectPool.add(UIView()..refId = result);
-    return UIView()..refId = result;
+    kNativeObjectPool.add(UIView()..refId = result..tag = 'amap_map_fluttify');
+    return UIView()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<bool> get_draggable({bool viewChannel = true}) async {

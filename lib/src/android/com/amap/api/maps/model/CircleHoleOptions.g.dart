@@ -32,8 +32,8 @@ class com_amap_api_maps_model_CircleHoleOptions extends java_lang_Object with an
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CircleHoleOptions()..refId = result);
-      return com_amap_api_maps_model_CircleHoleOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_CircleHoleOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CircleHoleOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -52,8 +52,8 @@ class com_amap_api_maps_model_CircleHoleOptions extends java_lang_Object with an
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CircleHoleOptions()..refId = result);
-      return com_amap_api_maps_model_CircleHoleOptions()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_CircleHoleOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CircleHoleOptions()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -72,8 +72,8 @@ class com_amap_api_maps_model_CircleHoleOptions extends java_lang_Object with an
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result);
-      return com_amap_api_maps_model_LatLng()..refId = result;
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
