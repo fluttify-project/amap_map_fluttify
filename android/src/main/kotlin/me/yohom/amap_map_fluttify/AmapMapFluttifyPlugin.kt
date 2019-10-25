@@ -403,7 +403,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLTextureProperty
         
-            methodResult.success(ref.mBitmap)
+            methodResult.success(ref.mBitmap.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.autonavi.ae.gmap.gloverlay.GLTextureProperty::get_mPngBuffer" to { registrar, args, methodResult ->
             // ref object
@@ -515,7 +515,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
         
-            methodResult.success(ref.euRouteTexture)
+            methodResult.success(ref.euRouteTexture.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mFilledResId" to { registrar, args, methodResult ->
             // ref object
@@ -963,7 +963,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLEmergeAnimation
         
-            methodResult.success(ref.mStartPoint)
+            methodResult.success(ref.mStartPoint.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.autonavi.amap.mapcore.MapConfig::get_maxZoomLevel" to { registrar, args, methodResult ->
             // ref object
@@ -1089,14 +1089,14 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.FPointBounds
         
-            methodResult.success(ref.southwest)
+            methodResult.success(ref.southwest.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.autonavi.amap.mapcore.FPointBounds::get_northeast" to { registrar, args, methodResult ->
             // ref object
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.FPointBounds
         
-            methodResult.success(ref.northeast)
+            methodResult.success(ref.northeast.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.autonavi.amap.mapcore.Rectangle::get_left" to { registrar, args, methodResult ->
             // ref object
@@ -1138,7 +1138,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
         
-            methodResult.success(ref.nowType)
+            methodResult.success(ref.nowType.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_xPixel" to { registrar, args, methodResult ->
             // ref object
@@ -1166,21 +1166,21 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
         
-            methodResult.success(ref.cameraPosition)
+            methodResult.success(ref.cameraPosition.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_bounds" to { registrar, args, methodResult ->
             // ref object
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
         
-            methodResult.success(ref.bounds)
+            methodResult.success(ref.bounds.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_focus" to { registrar, args, methodResult ->
             // ref object
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
         
-            methodResult.success(ref.focus)
+            methodResult.success(ref.focus.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_zoom" to { registrar, args, methodResult ->
             // ref object
@@ -1208,7 +1208,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
         
-            methodResult.success(ref.geoPoint)
+            methodResult.success(ref.geoPoint.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_isUseAnchor" to { registrar, args, methodResult ->
             // ref object
@@ -1243,7 +1243,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
         
-            methodResult.success(ref.mapConfig)
+            methodResult.success(ref.mapConfig.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_paddingLeft" to { registrar, args, methodResult ->
             // ref object
@@ -1299,35 +1299,35 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.amap.api.maps.model.VisibleRegion
         
-            methodResult.success(ref.nearLeft)
+            methodResult.success(ref.nearLeft.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.amap.api.maps.model.VisibleRegion::get_nearRight" to { registrar, args, methodResult ->
             // ref object
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.amap.api.maps.model.VisibleRegion
         
-            methodResult.success(ref.nearRight)
+            methodResult.success(ref.nearRight.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.amap.api.maps.model.VisibleRegion::get_farLeft" to { registrar, args, methodResult ->
             // ref object
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.amap.api.maps.model.VisibleRegion
         
-            methodResult.success(ref.farLeft)
+            methodResult.success(ref.farLeft.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.amap.api.maps.model.VisibleRegion::get_farRight" to { registrar, args, methodResult ->
             // ref object
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.amap.api.maps.model.VisibleRegion
         
-            methodResult.success(ref.farRight)
+            methodResult.success(ref.farRight.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.amap.api.maps.model.VisibleRegion::get_latLngBounds" to { registrar, args, methodResult ->
             // ref object
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.amap.api.maps.model.VisibleRegion
         
-            methodResult.success(ref.latLngBounds)
+            methodResult.success(ref.latLngBounds.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.amap.api.maps.model.Tile::get_width" to { registrar, args, methodResult ->
             // ref object
@@ -1355,7 +1355,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.amap.api.maps.model.CameraPosition
         
-            methodResult.success(ref.target)
+            methodResult.success(ref.target.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.amap.api.maps.model.CameraPosition::get_zoom" to { registrar, args, methodResult ->
             // ref object
@@ -1390,21 +1390,21 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.Animation
         
-            methodResult.success(ref.glAnimation)
+            methodResult.success(ref.glAnimation.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.amap.api.maps.model.LatLngBounds::get_southwest" to { registrar, args, methodResult ->
             // ref object
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.amap.api.maps.model.LatLngBounds
         
-            methodResult.success(ref.southwest)
+            methodResult.success(ref.southwest.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.amap.api.maps.model.LatLngBounds::get_northeast" to { registrar, args, methodResult ->
             // ref object
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.amap.api.maps.model.LatLngBounds
         
-            methodResult.success(ref.northeast)
+            methodResult.success(ref.northeast.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.amap.api.maps.model.LatLng::get_latitude" to { registrar, args, methodResult ->
             // ref object
@@ -1474,7 +1474,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val refId = args["refId"] as Int
             val ref = HEAP[refId] as com.amap.api.maps.model.WeightedLatLng
         
-            methodResult.success(ref.latLng)
+            methodResult.success(ref.latLng.run { HEAP[hashCode()] = this; hashCode() })
         },
         "com.amap.api.maps.model.particle.SizeOverLife::get_DEFAULT_SIZE" to { registrar, args, methodResult ->
             // ref object
