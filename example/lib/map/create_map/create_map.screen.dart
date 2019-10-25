@@ -31,6 +31,7 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
           ),
           Flexible(
             child: DecoratedColumn(
+              scrollable: true,
               children: <Widget>[
                 BooleanSetting(
                   head: '是否显示地图',
@@ -87,6 +88,13 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                     _controller?.showTraffic(value);
                   },
                 ),
+                ListTile(
+                  title: Text('获取地图中心点'),
+                  onTap: () async {
+                    final center = await _controller?.getCenterCoordinate();
+                    toast('center: lat: ${center.lat}, lng: ${center.lng}');
+                  },
+                )
               ],
             ),
           ),
