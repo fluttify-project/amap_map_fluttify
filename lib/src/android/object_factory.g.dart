@@ -9,7 +9,7 @@ import 'package:flutter/services.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class ObjectFactory_Android {
+class AmapMapFluttifyFactoryAndroid {
   static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
 
   static Future<com_autonavi_ae_gmap_maploader_ProcessingTile> createcom_autonavi_ae_gmap_maploader_ProcessingTile__String(String var1) async {

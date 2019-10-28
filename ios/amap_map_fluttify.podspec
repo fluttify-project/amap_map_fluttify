@@ -21,7 +21,9 @@ A new flutter plugin project.
 
   s.ios.deployment_target = '8.0'
   # 包含工程下的framework
-  s.vendored_frameworks = '*.framework'
+  s.vendored_frameworks = '**/*.framework'
+  # 包含工程下的.a
+  s.vendored_libraries = '**/*.a'
   # 默认使用静态framework
   s.static_framework = true
   # 系统framework
@@ -33,8 +35,6 @@ A new flutter plugin project.
         "z", "c++"
   ]
   # 需要添加的资源文件
-  s.resources = [
-        "MAMapKit.framework/AMap.bundle"
-  ]
+  s.resources = '*.framework/*.bundle'
 end
 

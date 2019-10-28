@@ -9,7 +9,7 @@ import 'package:flutter/services.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class ObjectFactory_iOS {
+class AmapMapFluttifyFactoryIOS {
   static final _channel = MethodChannel('me.yohom/amap_map_fluttify');
 
   static Future<MAOfflineCity> createMAOfflineCity() async {
