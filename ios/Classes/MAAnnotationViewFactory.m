@@ -44,7 +44,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
 - (UIView *)view {
   MAAnnotationView *view = [[MAAnnotationView alloc] init];
-  HEAP[@(_viewId)] = view;
+  // 这里viewId加1是为了防止往HEAP里放了nil的key, 把HEAP内原先viewId为0的覆盖掉了, 因为nil实际上就是0
+  HEAP[@(_viewId + 1)] = view;
 
   //region handlers
   _handlerMap = @{
@@ -56,11 +57,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setSelected : selected animated: animated];
@@ -74,11 +74,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationView@%@::prepareForReuse(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationView@%@::prepareForReuse(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref prepareForReuse ];
@@ -95,11 +94,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setDragState : newDragState animated: animated];
@@ -1009,10 +1007,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // ref callback arg
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
-  // primitive callback arg
-  NSNumber* argnewState = @(newState);
-  // primitive callback arg
-  NSNumber* argoldState = @(oldState);
+  // enum callback arg
+  NSNumber* argnewState = @((NSInteger) newState);
+  // enum callback arg
+  NSNumber* argoldState = @((NSInteger) oldState);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState" arguments:@{@"mapView": argmapView, @"view": argview, @"newState": argnewState, @"oldState": argoldState}];
   
@@ -1156,8 +1154,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  // primitive callback arg
-  NSNumber* argmode = @(mode);
+  // enum callback arg
+  NSNumber* argmode = @((NSInteger) mode);
   // primitive callback arg
   NSNumber* arganimated = @(animated);
 

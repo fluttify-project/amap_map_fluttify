@@ -44,7 +44,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
 - (UIView *)view {
   MACustomCalloutView *view = [[MACustomCalloutView alloc] init];
-  HEAP[@(_viewId)] = view;
+  // 这里viewId加1是为了防止往HEAP里放了nil的key, 把HEAP内原先viewId为0的覆盖掉了, 因为nil实际上就是0
+  HEAP[@(_viewId + 1)] = view;
 
   //region handlers
   _handlerMap = @{
@@ -543,10 +544,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // ref callback arg
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
-  // primitive callback arg
-  NSNumber* argnewState = @(newState);
-  // primitive callback arg
-  NSNumber* argoldState = @(oldState);
+  // enum callback arg
+  NSNumber* argnewState = @((NSInteger) newState);
+  // enum callback arg
+  NSNumber* argoldState = @((NSInteger) oldState);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState" arguments:@{@"mapView": argmapView, @"view": argview, @"newState": argnewState, @"oldState": argoldState}];
   
@@ -690,8 +691,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  // primitive callback arg
-  NSNumber* argmode = @(mode);
+  // enum callback arg
+  NSNumber* argmode = @((NSInteger) mode);
   // primitive callback arg
   NSNumber* arganimated = @(animated);
 
