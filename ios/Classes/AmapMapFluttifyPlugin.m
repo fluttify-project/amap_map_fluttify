@@ -1418,8 +1418,8 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
               // ref callback arg
               NSNumber* argdownloadItem = @(downloadItem.hash);
               HEAP[argdownloadItem] = downloadItem;
-              // enum callback arg
-              NSNumber* argdownloadStatus = @((NSInteger) downloadStatus);
+              // primitive callback arg
+              NSNumber* argdownloadStatus = @(downloadStatus);
               // ref callback arg
               NSNumber* arginfo = @(((NSObject*) info).hash);
               HEAP[arginfo] = info;
@@ -12665,10 +12665,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   // ref callback arg
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
-  // enum callback arg
-  NSNumber* argnewState = @((NSInteger) newState);
-  // enum callback arg
-  NSNumber* argoldState = @((NSInteger) oldState);
+  // primitive callback arg
+  NSNumber* argnewState = @(newState);
+  // primitive callback arg
+  NSNumber* argoldState = @(oldState);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState" arguments:@{@"mapView": argmapView, @"view": argview, @"newState": argnewState, @"oldState": argoldState}];
   
@@ -12812,8 +12812,8 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  // enum callback arg
-  NSNumber* argmode = @((NSInteger) mode);
+  // primitive callback arg
+  NSNumber* argmode = @(mode);
   // primitive callback arg
   NSNumber* arganimated = @(animated);
 

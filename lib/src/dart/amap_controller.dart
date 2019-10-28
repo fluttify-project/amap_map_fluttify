@@ -35,7 +35,7 @@ class AmapController {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
-        final locationStyle = await ObjectFactory_Android
+        final locationStyle = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_MyLocationStyle__();
         await locationStyle?.showMyLocation(show);
         await map.setMyLocationStyle(locationStyle);
@@ -116,7 +116,7 @@ class AmapController {
     );
   }
 
-  /// 选择地图语言 (ios未完成)
+  /// 选择地图语言
   Future setMapLanguage(Language language) async {
     return platform(
       android: (pool) async {
@@ -385,9 +385,9 @@ class AmapController {
       android: (pool) async {
         final map = await _androidController.getMap();
 
-        final latLng = await ObjectFactory_Android
+        final latLng = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
-        final cameraPosition = await ObjectFactory_Android
+        final cameraPosition = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float(
                 latLng, zoomLevel, 0, 0);
         final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
@@ -489,11 +489,11 @@ class AmapController {
         final map = await _androidController.getMap();
 
         // marker经纬度
-        final latLng = await ObjectFactory_Android
+        final latLng = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
 
         // marker配置
-        final markerOption = await ObjectFactory_Android
+        final markerOption = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_MarkerOptions__();
 
         // 设置marker经纬度
@@ -531,7 +531,7 @@ class AmapController {
 
         // 创建marker
         final pointAnnotation =
-            await ObjectFactory_iOS.createMAPointAnnotation();
+            await AmapMapFluttifyFactoryIOS.createMAPointAnnotation();
 
         final coordinate =
             await PlatformFactory_iOS.createCLLocationCoordinate2D(lat, lng);
@@ -586,14 +586,14 @@ class AmapController {
         // 构造折线点
         List<com_amap_api_maps_model_LatLng> latLngList = [];
         for (final point in points) {
-          final latLng = await ObjectFactory_Android
+          final latLng = await AmapMapFluttifyFactoryAndroid
               .createcom_amap_api_maps_model_LatLng__double__double(
                   point.lat, point.lng);
           latLngList.add(latLng);
         }
 
         // 构造折线参数
-        final polylineOptions = await ObjectFactory_Android
+        final polylineOptions = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_PolylineOptions__();
 
         // 添加参数
@@ -662,14 +662,14 @@ class AmapController {
         // 构造折线点
         List<com_amap_api_maps_model_LatLng> latLngList = [];
         for (final point in points) {
-          final latLng = await ObjectFactory_Android
+          final latLng = await AmapMapFluttifyFactoryAndroid
               .createcom_amap_api_maps_model_LatLng__double__double(
                   point.lat, point.lng);
           latLngList.add(latLng);
         }
 
         // 构造参数
-        final polygonOptions = await ObjectFactory_Android
+        final polygonOptions = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_PolygonOptions__();
 
         // 添加参数
@@ -744,12 +744,12 @@ class AmapController {
         final map = await _androidController.getMap();
 
         // 构造点
-        final latLng = await ObjectFactory_Android
+        final latLng = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_LatLng__double__double(
                 point.lat, point.lng);
 
         // 构造参数
-        final circleOptions = await ObjectFactory_Android
+        final circleOptions = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_CircleOptions__();
 
         // 添加参数
