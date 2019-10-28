@@ -46,7 +46,8 @@ class _MAMapView_iOSState extends State<MAMapView_iOS> {
   }
 
   void _onViewCreated(int id) {
-    _controller = MAMapView()..refId = id;
+    // 这里id+1是为了和iOS端对齐, 因为objc里nil==0的缘故, 0和nil会混淆, 所以这里从1开始
+    _controller = MAMapView()..refId = id + 1;
     if (widget.onViewCreated != null) {
       widget.onViewCreated(_controller);
     }

@@ -80,11 +80,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           UIImage* icon = (UIImage*) HEAP[@([args[@"icon"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[@(refId)];
+          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAGroundOverlay@%@::setGroundOverlayWithBounds(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAGroundOverlay@%@::setGroundOverlayWithBounds(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref setGroundOverlayWithBounds: bounds icon: icon];
@@ -105,11 +104,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           UIImage* icon = (UIImage*) HEAP[@([args[@"icon"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[@(refId)];
+          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAGroundOverlay@%@::setGroundOverlayWithCoordinate(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAGroundOverlay@%@::setGroundOverlayWithCoordinate(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref setGroundOverlayWithCoordinate: coordinate zoomLevel: zoomLevel icon: icon];
@@ -124,11 +122,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAPolygon* polygon = (MAPolygon*) HEAP[@([args[@"polygon"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolygonRenderer* ref = (MAPolygonRenderer*) HEAP[@(refId)];
+          MAPolygonRenderer* ref = (MAPolygonRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAPolygonRenderer@%@::initWithPolygon(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAPolygonRenderer@%@::initWithPolygon(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAPolygonRenderer* result = [ref initWithPolygon: polygon];
@@ -223,11 +220,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           CLLocationDistance radius = [args[@"radius"] doubleValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACircle* ref = (MACircle*) HEAP[@(refId)];
+          MACircle* ref = (MACircle*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MACircle@%@::setCircleWithCenterCoordinate(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MACircle@%@::setCircleWithCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref setCircleWithCenterCoordinate: coord radius: radius];
@@ -242,11 +238,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAArc* arc = (MAArc*) HEAP[@([args[@"arc"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAArcRenderer* ref = (MAArcRenderer*) HEAP[@(refId)];
+          MAArcRenderer* ref = (MAArcRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAArcRenderer@%@::initWithArc(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAArcRenderer@%@::initWithArc(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAArcRenderer* result = [ref initWithArc: arc];
@@ -264,11 +259,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           [newCoordinateValue getValue:&newCoordinate];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[@(refId)];
+          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotation@%@::setCoordinate(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotation@%@::setCoordinate(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setCoordinate : newCoordinate];
@@ -283,11 +277,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           CGFloat timeDelta = [args[@"timeDelta"] floatValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[@(refId)];
+          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::step(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::step(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref step : timeDelta];
@@ -301,11 +294,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[@(refId)];
+          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::isAnimationFinished(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::isAnimationFinished(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref isAnimationFinished];
@@ -319,11 +311,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[@(refId)];
+          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::shouldAnimationStart(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::shouldAnimationStart(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref shouldAnimationStart];
@@ -337,11 +328,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[@(refId)];
+          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::rotateDegree(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::rotateDegree(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CLLocationDirection result = [ref rotateDegree];
@@ -424,11 +414,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSInteger count = [args[@"count"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolygon* ref = (MAPolygon*) HEAP[@(refId)];
+          MAPolygon* ref = (MAPolygon*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAPolygon@%@::setPolygonWithPoints(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAPolygon@%@::setPolygonWithPoints(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref setPolygonWithPoints: points count: count];
@@ -453,11 +442,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSInteger count = [args[@"count"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolygon* ref = (MAPolygon*) HEAP[@(refId)];
+          MAPolygon* ref = (MAPolygon*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAPolygon@%@::setPolygonWithCoordinates(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAPolygon@%@::setPolygonWithCoordinates(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref setPolygonWithCoordinates: coords count: count];
@@ -491,11 +479,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleOverlayOptions* overlayOption = (MAParticleOverlayOptions*) HEAP[@([args[@"overlayOption"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlay* ref = (MAParticleOverlay*) HEAP[@(refId)];
+          MAParticleOverlay* ref = (MAParticleOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleOverlay@%@::updateOverlayOption(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleOverlay@%@::updateOverlayOption(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref updateOverlayOption : overlayOption];
@@ -578,11 +565,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSInteger count = [args[@"count"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolyline* ref = (MAPolyline*) HEAP[@(refId)];
+          MAPolyline* ref = (MAPolyline*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAPolyline@%@::setPolylineWithPoints(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAPolyline@%@::setPolylineWithPoints(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref setPolylineWithPoints: points count: count];
@@ -607,11 +593,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSInteger count = [args[@"count"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolyline* ref = (MAPolyline*) HEAP[@(refId)];
+          MAPolyline* ref = (MAPolyline*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAPolyline@%@::setPolylineWithCoordinates(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAPolyline@%@::setPolylineWithCoordinates(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref setPolylineWithCoordinates: coords count: count];
@@ -626,11 +611,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMultiPolyline* multiPolyline = (MAMultiPolyline*) HEAP[@([args[@"multiPolyline"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[@(refId)];
+          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMultiColoredPolylineRenderer@%@::initWithMultiPolyline(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMultiColoredPolylineRenderer@%@::initWithMultiPolyline(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAMultiColoredPolylineRenderer* result = [ref initWithMultiPolyline: multiPolyline];
@@ -661,11 +645,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[@(refId)];
+          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::addMoveAnimationWithKeyCoordinates(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::addMoveAnimationWithKeyCoordinates(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
@@ -710,11 +693,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[@(refId)];
+          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::addMoveAnimationWithKeyCoordinates(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::addMoveAnimationWithKeyCoordinates(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
@@ -756,11 +738,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[@(refId)];
+          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::setNeedsStart(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::setNeedsStart(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setNeedsStart ];
@@ -775,11 +756,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMultiPolyline* multiPolyline = (MAMultiPolyline*) HEAP[@([args[@"multiPolyline"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[@(refId)];
+          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMultiTexturePolylineRenderer@%@::initWithMultiPolyline(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMultiTexturePolylineRenderer@%@::initWithMultiPolyline(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAMultiTexturePolylineRenderer* result = [ref initWithMultiPolyline: multiPolyline];
@@ -795,11 +775,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MATileOverlay* tileOverlay = (MATileOverlay*) HEAP[@([args[@"tileOverlay"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[@(refId)];
+          MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATileOverlayRenderer@%@::initWithTileOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MATileOverlayRenderer@%@::initWithTileOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MATileOverlayRenderer* result = [ref initWithTileOverlay: tileOverlay];
@@ -814,11 +793,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[@(refId)];
+          MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATileOverlayRenderer@%@::reloadData(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MATileOverlayRenderer@%@::reloadData(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref reloadData ];
@@ -901,11 +879,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSInteger count = [args[@"count"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAGeodesicPolyline* ref = (MAGeodesicPolyline*) HEAP[@(refId)];
+          MAGeodesicPolyline* ref = (MAGeodesicPolyline*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAGeodesicPolyline@%@::setPolylineWithPoints(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAGeodesicPolyline@%@::setPolylineWithPoints(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref setPolylineWithPoints: points count: count];
@@ -930,11 +907,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSInteger count = [args[@"count"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAGeodesicPolyline* ref = (MAGeodesicPolyline*) HEAP[@(refId)];
+          MAGeodesicPolyline* ref = (MAGeodesicPolyline*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAGeodesicPolyline@%@::setPolylineWithCoordinates(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAGeodesicPolyline@%@::setPolylineWithCoordinates(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref setPolylineWithCoordinates: coords count: count];
@@ -967,11 +943,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSError* error = (NSError*) HEAP[@([args[@"error"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MATraceDelegate> ref = (id<MATraceDelegate>) HEAP[@(refId)];
+          id<MATraceDelegate> ref = (id<MATraceDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATraceDelegate@%@::traceManager(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MATraceDelegate@%@::traceManager(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref traceManager : manager didTrace: locations correct: tracePoints distance: distance withError: error];
@@ -986,11 +961,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           CLLocationManager* locationManager = (CLLocationManager*) HEAP[@([args[@"locationManager"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MATraceDelegate> ref = (id<MATraceDelegate>) HEAP[@(refId)];
+          id<MATraceDelegate> ref = (id<MATraceDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATraceDelegate@%@::mapViewRequireLocationAuth(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MATraceDelegate@%@::mapViewRequireLocationAuth(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapViewRequireLocationAuth : locationManager];
@@ -1022,11 +996,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATraceManager* ref = (MATraceManager*) HEAP[@(refId)];
+          MATraceManager* ref = (MATraceManager*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATraceManager@%@::start(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MATraceManager@%@::start(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref start ];
@@ -1040,11 +1013,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATraceManager* ref = (MATraceManager*) HEAP[@(refId)];
+          MATraceManager* ref = (MATraceManager*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATraceManager@%@::stop(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MATraceManager@%@::stop(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref stop ];
@@ -1061,11 +1033,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMultiPointItem* item = (MAMultiPointItem*) HEAP[@([args[@"item"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMultiPointOverlayRendererDelegate> ref = (id<MAMultiPointOverlayRendererDelegate>) HEAP[@(refId)];
+          id<MAMultiPointOverlayRendererDelegate> ref = (id<MAMultiPointOverlayRendererDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMultiPointOverlayRendererDelegate@%@::multiPointOverlayRenderer(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMultiPointOverlayRendererDelegate@%@::multiPointOverlayRenderer(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref multiPointOverlayRenderer : renderer didItemTapped: item];
@@ -1080,11 +1051,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMultiPointOverlay* multiPointOverlay = (MAMultiPointOverlay*) HEAP[@([args[@"multiPointOverlay"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[@(refId)];
+          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMultiPointOverlayRenderer@%@::initWithMultiPointOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMultiPointOverlayRenderer@%@::initWithMultiPointOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAMultiPointOverlayRenderer* result = [ref initWithMultiPointOverlay: multiPointOverlay];
@@ -1100,11 +1070,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAPolyline* polyline = (MAPolyline*) HEAP[@([args[@"polyline"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[@(refId)];
+          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAPolylineRenderer@%@::initWithPolyline(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAPolylineRenderer@%@::initWithPolyline(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAPolylineRenderer* result = [ref initWithPolyline: polyline];
@@ -1119,11 +1088,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[@(refId)];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::name(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::name(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           NSString* result = [ref name];
@@ -1137,11 +1105,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[@(refId)];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::coordinates(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::coordinates(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CLLocationCoordinate2D* result = [ref coordinates];
@@ -1158,11 +1125,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[@(refId)];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::count(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::count(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           NSUInteger result = [ref count];
@@ -1176,11 +1142,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[@(refId)];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::duration(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::duration(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CGFloat result = [ref duration];
@@ -1194,11 +1159,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[@(refId)];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::elapsedTime(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::elapsedTime(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CGFloat result = [ref elapsedTime];
@@ -1212,11 +1176,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[@(refId)];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::cancel(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::cancel(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref cancel ];
@@ -1230,11 +1193,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[@(refId)];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::isCancelled(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::isCancelled(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref isCancelled];
@@ -1248,11 +1210,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[@(refId)];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::passedPointCount(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::passedPointCount(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           NSInteger result = [ref passedPointCount];
@@ -1269,11 +1230,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setSelected : selected animated: animated];
@@ -1287,11 +1247,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationView@%@::prepareForReuse(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationView@%@::prepareForReuse(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref prepareForReuse ];
@@ -1308,11 +1267,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setDragState : newDragState animated: animated];
@@ -1329,11 +1287,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           [pathValue getValue:&path];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          MATileOverlay* ref = (MATileOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATileOverlay@%@::cancelLoadOfTileAtPath(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MATileOverlay@%@::cancelLoadOfTileAtPath(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref cancelLoadOfTileAtPath : path];
@@ -1365,11 +1322,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::setupWithCompletionBlock(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOfflineMap@%@::setupWithCompletionBlock(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setupWithCompletionBlock : ^(BOOL setupSuccess) {
@@ -1400,11 +1356,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::downloadItem(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOfflineMap@%@::downloadItem(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref downloadItem : item shouldContinueWhenAppEntersBackground: shouldContinueWhenAppEntersBackground downloadBlock: ^(MAOfflineItem* downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
@@ -1418,8 +1373,8 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
               // ref callback arg
               NSNumber* argdownloadItem = @(downloadItem.hash);
               HEAP[argdownloadItem] = downloadItem;
-              // primitive callback arg
-              NSNumber* argdownloadStatus = @(downloadStatus);
+              // enum callback arg
+              NSNumber* argdownloadStatus = @((NSInteger) downloadStatus);
               // ref callback arg
               NSNumber* arginfo = @(((NSObject*) info).hash);
               HEAP[arginfo] = info;
@@ -1438,11 +1393,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOfflineItem* item = (MAOfflineItem*) HEAP[@([args[@"item"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::isDownloadingForItem(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOfflineMap@%@::isDownloadingForItem(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref isDownloadingForItem: item];
@@ -1457,11 +1411,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOfflineItem* item = (MAOfflineItem*) HEAP[@([args[@"item"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::pauseItem(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOfflineMap@%@::pauseItem(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref pauseItem: item];
@@ -1476,11 +1429,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOfflineItem* item = (MAOfflineItem*) HEAP[@([args[@"item"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::deleteItem(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOfflineMap@%@::deleteItem(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref deleteItem : item];
@@ -1494,11 +1446,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::cancelAll(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOfflineMap@%@::cancelAll(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref cancelAll ];
@@ -1512,11 +1463,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::clearDisk(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOfflineMap@%@::clearDisk(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref clearDisk ];
@@ -1530,11 +1480,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::checkNewestVersion(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOfflineMap@%@::checkNewestVersion(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref checkNewestVersion : ^(BOOL hasNewestVersion) {
@@ -1562,11 +1511,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MACircle* circle = (MACircle*) HEAP[@([args[@"circle"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACircleRenderer* ref = (MACircleRenderer*) HEAP[@(refId)];
+          MACircleRenderer* ref = (MACircleRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MACircleRenderer@%@::initWithCircle(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MACircleRenderer@%@::initWithCircle(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MACircleRenderer* result = [ref initWithCircle: circle];
@@ -1582,11 +1530,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleOverlay* particleOverlay = (MAParticleOverlay*) HEAP[@([args[@"particleOverlay"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayRenderer* ref = (MAParticleOverlayRenderer*) HEAP[@(refId)];
+          MAParticleOverlayRenderer* ref = (MAParticleOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleOverlayRenderer@%@::initWithParticleOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleOverlayRenderer@%@::initWithParticleOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAParticleOverlayRenderer* result = [ref initWithParticleOverlay: particleOverlay];
@@ -1601,11 +1548,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[@(refId)];
+          id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getX(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getX(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CGFloat result = [ref getX];
@@ -1619,11 +1565,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[@(refId)];
+          id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getY(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getY(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CGFloat result = [ref getY];
@@ -1637,11 +1582,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[@(refId)];
+          id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getZ(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getZ(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CGFloat result = [ref getZ];
@@ -1666,11 +1610,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           float z2 = [args[@"z2"] floatValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleRandomVelocityGenerate* ref = (MAParticleRandomVelocityGenerate*) HEAP[@(refId)];
+          MAParticleRandomVelocityGenerate* ref = (MAParticleRandomVelocityGenerate*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleRandomVelocityGenerate@%@::initWithBoundaryValueX1(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleRandomVelocityGenerate@%@::initWithBoundaryValueX1(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAParticleRandomVelocityGenerate* result = [ref initWithBoundaryValueX1: x1 Y1: y1 Z1: z1 X2: x2 Y2: y2 Z2: z2];
@@ -1700,11 +1643,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           float a2 = [args[@"a2"] floatValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleRandomColorGenerate* ref = (MAParticleRandomColorGenerate*) HEAP[@(refId)];
+          MAParticleRandomColorGenerate* ref = (MAParticleRandomColorGenerate*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleRandomColorGenerate@%@::initWithBoundaryColorR1(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleRandomColorGenerate@%@::initWithBoundaryColorR1(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAParticleRandomColorGenerate* result = [ref initWithBoundaryColorR1: r1 G1: g1 B1: b1 A1: a1 R2: r2 G2: g2 B2: b2 A2: a2];
@@ -1719,11 +1661,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAParticleRotationGenerate> ref = (id<MAParticleRotationGenerate>) HEAP[@(refId)];
+          id<MAParticleRotationGenerate> ref = (id<MAParticleRotationGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleRotationGenerate@%@::getRotate(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleRotationGenerate@%@::getRotate(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           float result = [ref getRotate];
@@ -1738,11 +1679,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           float rotate = [args[@"rotate"] floatValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleConstantRotationGenerate* ref = (MAParticleConstantRotationGenerate*) HEAP[@(refId)];
+          MAParticleConstantRotationGenerate* ref = (MAParticleConstantRotationGenerate*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleConstantRotationGenerate@%@::initWithRotate(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleConstantRotationGenerate@%@::initWithRotate(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAParticleConstantRotationGenerate* result = [ref initWithRotate: rotate];
@@ -1758,11 +1698,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           float timeFrame = [args[@"timeFrame"] floatValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[@(refId)];
+          id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeX(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeX(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           float result = [ref getSizeX: timeFrame];
@@ -1777,11 +1716,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           float timeFrame = [args[@"timeFrame"] floatValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[@(refId)];
+          id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeY(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeY(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           float result = [ref getSizeY: timeFrame];
@@ -1796,11 +1734,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           float timeFrame = [args[@"timeFrame"] floatValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[@(refId)];
+          id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeZ(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeZ(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           float result = [ref getSizeZ: timeFrame];
@@ -1819,11 +1756,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           float z = [args[@"z"] floatValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleCurveSizeGenerate* ref = (MAParticleCurveSizeGenerate*) HEAP[@(refId)];
+          MAParticleCurveSizeGenerate* ref = (MAParticleCurveSizeGenerate*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleCurveSizeGenerate@%@::initWithCurveX(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleCurveSizeGenerate@%@::initWithCurveX(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAParticleCurveSizeGenerate* result = [ref initWithCurveX: x Y: y Z: z];
@@ -1841,11 +1777,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           int rateTime = [args[@"rateTime"] intValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleEmissionModule* ref = (MAParticleEmissionModule*) HEAP[@(refId)];
+          MAParticleEmissionModule* ref = (MAParticleEmissionModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleEmissionModule@%@::initWithEmissionRate(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleEmissionModule@%@::initWithEmissionRate(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAParticleEmissionModule* result = [ref initWithEmissionRate: rate rateTime: rateTime];
@@ -1860,11 +1795,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAParticleShapeModule> ref = (id<MAParticleShapeModule>) HEAP[@(refId)];
+          id<MAParticleShapeModule> ref = (id<MAParticleShapeModule>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleShapeModule@%@::isRatioEnable(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleShapeModule@%@::isRatioEnable(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref isRatioEnable];
@@ -1885,11 +1819,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL isUseRatio = [args[@"isUseRatio"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleSinglePointShapeModule* ref = (MAParticleSinglePointShapeModule*) HEAP[@(refId)];
+          MAParticleSinglePointShapeModule* ref = (MAParticleSinglePointShapeModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleSinglePointShapeModule@%@::initWithShapeX(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleSinglePointShapeModule@%@::initWithShapeX(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAParticleSinglePointShapeModule* result = [ref initWithShapeX: x Y: y Z: z useRatio: isUseRatio];
@@ -1913,11 +1846,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL isUseRatio = [args[@"isUseRatio"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleRectShapeModule* ref = (MAParticleRectShapeModule*) HEAP[@(refId)];
+          MAParticleRectShapeModule* ref = (MAParticleRectShapeModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleRectShapeModule@%@::initWithLeft(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleRectShapeModule@%@::initWithLeft(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAParticleRectShapeModule* result = [ref initWithLeft: left top: top right: right bottom: bottom useRatio: isUseRatio];
@@ -1933,11 +1865,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAParticleVelocityGenerate> velocity = (id<MAParticleVelocityGenerate>) HEAP[@([args[@"velocity"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[@(refId)];
+          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setVelocityOverLife(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setVelocityOverLife(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setVelocityOverLife : velocity];
@@ -1952,11 +1883,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAParticleRotationGenerate> rotation = (id<MAParticleRotationGenerate>) HEAP[@([args[@"rotation"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[@(refId)];
+          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setRotationOverLife(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setRotationOverLife(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setRotationOverLife : rotation];
@@ -1971,11 +1901,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAParticleSizeGenerate> size = (id<MAParticleSizeGenerate>) HEAP[@([args[@"size"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[@(refId)];
+          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setSizeOverLife(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setSizeOverLife(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setSizeOverLife : size];
@@ -1990,11 +1919,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAParticleColorGenerate> color = (id<MAParticleColorGenerate>) HEAP[@([args[@"color"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[@(refId)];
+          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setColorOverLife(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setColorOverLife(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setColorOverLife : color];
@@ -2009,11 +1937,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::initWithOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::initWithOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAOverlayRenderer* result = [ref initWithOverlay: overlay];
@@ -2028,11 +1955,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::getOffsetPoint(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::getOffsetPoint(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAMapPoint result = [ref getOffsetPoint];
@@ -2049,11 +1975,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::getMapZoomLevel(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::getMapZoomLevel(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CGFloat result = [ref getMapZoomLevel];
@@ -2070,11 +1995,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           [mapPointValue getValue:&mapPoint];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glPointForMapPoint(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glPointForMapPoint(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CGPoint result = [ref glPointForMapPoint: mapPoint];
@@ -2102,11 +2026,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSUInteger count = [args[@"count"] unsignedIntegerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glPointsForMapPoints(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glPointsForMapPoints(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CGPoint* result = [ref glPointsForMapPoints: mapPoints count: count];
@@ -2124,11 +2047,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           CGFloat windowWidth = [args[@"windowWidth"] floatValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glWidthForWindowWidth(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glWidthForWindowWidth(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CGFloat result = [ref glWidthForWindowWidth: windowWidth];
@@ -2171,11 +2093,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL looped = [args[@"looped"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderTexturedLinesWithPoints(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderTexturedLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref renderTexturedLinesWithPoints : points pointCount: pointCount lineWidth: lineWidth textureIDs: textureIDs drawStyleIndexes: drawStyleIndexes looped: looped];
@@ -2226,11 +2147,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MALineDashType lineDash = (MALineDashType) [args[@"lineDash"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref renderLinesWithPoints : points pointCount: pointCount strokeColors: strokeColors drawStyleIndexes: drawStyleIndexes isGradient: isGradient lineWidth: lineWidth looped: looped LineJoinType: lineJoinType LineCapType: lineCapType lineDash: lineDash];
@@ -2244,11 +2164,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glRender(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glRender(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref glRender ];
@@ -2262,11 +2181,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::setNeedsUpdate(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::setNeedsUpdate(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setNeedsUpdate ];
@@ -2286,11 +2204,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           }
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointOverlay* ref = (MAMultiPointOverlay*) HEAP[@(refId)];
+          MAMultiPointOverlay* ref = (MAMultiPointOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMultiPointOverlay@%@::initWithMultiPointItems(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMultiPointOverlay@%@::initWithMultiPointItems(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAMultiPointOverlay* result = [ref initWithMultiPointItems: items];
@@ -2345,11 +2262,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSUInteger count = [args[@"count"] unsignedIntegerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MACustomBuildingOverlayOption@%@::setOptionWithCoordinates(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MACustomBuildingOverlayOption@%@::setOptionWithCoordinates(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           BOOL result = [ref setOptionWithCoordinates: coords count: count];
@@ -2364,11 +2280,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MACustomBuildingOverlayOption* option = (MACustomBuildingOverlayOption*) HEAP[@([args[@"option"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[@(refId)];
+          MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MACustomBuildingOverlay@%@::addCustomOption(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MACustomBuildingOverlay@%@::addCustomOption(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref addCustomOption : option];
@@ -2383,11 +2298,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MACustomBuildingOverlayOption* option = (MACustomBuildingOverlayOption*) HEAP[@([args[@"option"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[@(refId)];
+          MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MACustomBuildingOverlay@%@::removeCustomOption(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MACustomBuildingOverlay@%@::removeCustomOption(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref removeCustomOption : option];
@@ -2435,11 +2349,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setRegion(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setRegion(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setRegion : region animated: animated];
@@ -2456,11 +2369,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           [regionValue getValue:&region];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::regionThatFits(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::regionThatFits(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MACoordinateRegion result = [ref regionThatFits: region];
@@ -2482,11 +2394,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setVisibleMapRect : mapRect animated: animated];
@@ -2503,11 +2414,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           [mapRectValue getValue:&mapRect];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAMapRect result = [ref mapRectThatFits: mapRect];
@@ -2531,11 +2441,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           [insetsValue getValue:&insets];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAMapRect result = [ref mapRectThatFits: mapRect edgePadding: insets];
@@ -2561,11 +2470,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setVisibleMapRect : mapRect edgePadding: insets animated: animated];
@@ -2584,11 +2492,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCenterCoordinate(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setCenterCoordinate : coordinate animated: animated];
@@ -2605,11 +2512,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setZoomLevel : zoomLevel animated: animated];
@@ -2630,11 +2536,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setZoomLevel : zoomLevel atPivot: pivot animated: animated];
@@ -2653,11 +2558,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           CFTimeInterval duration = [args[@"duration"] doubleValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setRotationDegree : rotationDegree animated: animated duration: duration];
@@ -2676,11 +2580,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           CFTimeInterval duration = [args[@"duration"] doubleValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCameraDegree(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setCameraDegree(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setCameraDegree : cameraDegree animated: animated duration: duration];
@@ -2694,11 +2597,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::getMapStatus(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::getMapStatus(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAMapStatus* result = [ref getMapStatus];
@@ -2716,11 +2618,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setMapStatus : status animated: animated];
@@ -2739,11 +2640,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           CFTimeInterval duration = [args[@"duration"] doubleValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setMapStatus : status animated: animated duration: duration];
@@ -2758,11 +2658,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           UIImage* image = (UIImage*) HEAP[@([args[@"image"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCompassImage(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setCompassImage(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setCompassImage : image];
@@ -2777,11 +2676,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::metersPerPointForZoomLevel(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::metersPerPointForZoomLevel(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           double result = [ref metersPerPointForZoomLevel: zoomLevel];
@@ -2800,11 +2698,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           UIView* view = (UIView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::convertCoordinate(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::convertCoordinate(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CGPoint result = [ref convertCoordinate: coordinate toPointToView: view];
@@ -2826,11 +2723,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           UIView* view = (UIView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::convertPoint(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::convertPoint(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CLLocationCoordinate2D result = [ref convertPoint: point toCoordinateFromView: view];
@@ -2852,11 +2748,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           UIView* view = (UIView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::convertRegion(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::convertRegion(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           CGRect result = [ref convertRegion: region toRectToView: view];
@@ -2878,11 +2773,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           UIView* view = (UIView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::convertRect(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::convertRect(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MACoordinateRegion result = [ref convertRect: rect toRegionFromView: view];
@@ -2899,11 +2793,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::reloadMap(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::reloadMap(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref reloadMap ];
@@ -2917,11 +2810,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::clearDisk(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::clearDisk(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref clearDisk ];
@@ -2935,11 +2827,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::reloadInternalTexture(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::reloadInternalTexture(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref reloadInternalTexture ];
@@ -2953,11 +2844,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::mapContentApprovalNumber(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::mapContentApprovalNumber(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           NSString* result = [ref mapContentApprovalNumber];
@@ -2971,11 +2861,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::satelliteImageApprovalNumber(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::satelliteImageApprovalNumber(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           NSString* result = [ref satelliteImageApprovalNumber];
@@ -2989,11 +2878,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::forceRefresh(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::forceRefresh(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref forceRefresh ];
@@ -3008,11 +2896,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addAnnotation(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::addAnnotation(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref addAnnotation : annotation];
@@ -3032,11 +2919,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           }
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addAnnotations(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::addAnnotations(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref addAnnotations : annotations];
@@ -3051,11 +2937,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotation(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotation(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref removeAnnotation : annotation];
@@ -3075,11 +2960,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           }
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotations(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotations(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref removeAnnotations : annotations];
@@ -3094,11 +2978,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::viewForAnnotation(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::viewForAnnotation(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAAnnotationView* result = [ref viewForAnnotation: annotation];
@@ -3114,11 +2997,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSString* identifier = (NSString*) args[@"identifier"];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::dequeueReusableAnnotationViewWithIdentifier(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::dequeueReusableAnnotationViewWithIdentifier(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAAnnotationView* result = [ref dequeueReusableAnnotationViewWithIdentifier: identifier];
@@ -3136,11 +3018,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::selectAnnotation(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::selectAnnotation(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref selectAnnotation : annotation animated: animated];
@@ -3157,11 +3038,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::deselectAnnotation(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::deselectAnnotation(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref deselectAnnotation : annotation animated: animated];
@@ -3183,11 +3063,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref showAnnotations : annotations animated: animated];
@@ -3213,11 +3092,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref showAnnotations : annotations edgePadding: insets animated: animated];
@@ -3234,11 +3112,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setUserTrackingMode(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setUserTrackingMode(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setUserTrackingMode : mode animated: animated];
@@ -3253,11 +3130,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAUserLocationRepresentation* representation = (MAUserLocationRepresentation*) HEAP[@([args[@"representation"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::updateUserLocationRepresentation(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::updateUserLocationRepresentation(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref updateUserLocationRepresentation : representation];
@@ -3272,11 +3148,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           NSArray* result = [ref overlaysInLevel: level];
@@ -3298,11 +3173,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref addOverlay : overlay];
@@ -3322,11 +3196,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           }
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref addOverlays : overlays];
@@ -3343,11 +3216,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref addOverlay : overlay level: level];
@@ -3369,11 +3241,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref addOverlays : overlays level: level];
@@ -3388,11 +3259,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::removeOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::removeOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref removeOverlay : overlay];
@@ -3412,11 +3282,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           }
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::removeOverlays(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::removeOverlays(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref removeOverlays : overlays];
@@ -3435,11 +3304,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref insertOverlay : overlay atIndex: index level: level];
@@ -3456,11 +3324,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAOverlay> sibling = (id<MAOverlay>) HEAP[@([args[@"sibling"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref insertOverlay : overlay aboveOverlay: sibling];
@@ -3477,11 +3344,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAOverlay> sibling = (id<MAOverlay>) HEAP[@([args[@"sibling"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref insertOverlay : overlay belowOverlay: sibling];
@@ -3498,11 +3364,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSUInteger index = [args[@"index"] unsignedIntegerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref insertOverlay : overlay atIndex: index];
@@ -3519,11 +3384,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSUInteger index2 = [args[@"index2"] unsignedIntegerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref exchangeOverlayAtIndex : index1 withOverlayAtIndex: index2];
@@ -3542,11 +3406,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref exchangeOverlayAtIndex : index1 withOverlayAtIndex: index2 atLevel: level];
@@ -3563,11 +3426,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAOverlay> overlay2 = (id<MAOverlay>) HEAP[@([args[@"overlay2"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref exchangeOverlay : overlay1 withOverlay: overlay2];
@@ -3582,11 +3444,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::rendererForOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::rendererForOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAOverlayRenderer* result = [ref rendererForOverlay: overlay];
@@ -3609,11 +3470,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref showOverlays : overlays animated: animated];
@@ -3639,11 +3499,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref showOverlays : overlays edgePadding: insets animated: animated];
@@ -3660,11 +3519,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           [originValue getValue:&origin];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setIndoorMapControlOrigin(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setIndoorMapControlOrigin(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setIndoorMapControlOrigin : origin];
@@ -3679,11 +3537,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSInteger floorIndex = [args[@"floorIndex"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCurrentIndoorMapFloorIndex(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setCurrentIndoorMapFloorIndex(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setCurrentIndoorMapFloorIndex : floorIndex];
@@ -3697,11 +3554,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::clearIndoorMapCache(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::clearIndoorMapCache(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref clearIndoorMapCache ];
@@ -3716,11 +3572,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapCustomStyleOptions* styleOptions = (MAMapCustomStyleOptions*) HEAP[@([args[@"styleOptions"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleOptions(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleOptions(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref setCustomMapStyleOptions : styleOptions];
@@ -3735,11 +3590,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewRegionChanged(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewRegionChanged(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapViewRegionChanged : mapView];
@@ -3756,11 +3610,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView regionWillChangeAnimated: animated];
@@ -3777,11 +3630,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView regionDidChangeAnimated: animated];
@@ -3798,11 +3650,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL wasUserAction = [args[@"wasUserAction"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView mapWillMoveByUser: wasUserAction];
@@ -3819,11 +3670,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL wasUserAction = [args[@"wasUserAction"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView mapDidMoveByUser: wasUserAction];
@@ -3840,11 +3690,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL wasUserAction = [args[@"wasUserAction"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView mapWillZoomByUser: wasUserAction];
@@ -3861,11 +3710,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL wasUserAction = [args[@"wasUserAction"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView mapDidZoomByUser: wasUserAction];
@@ -3880,11 +3728,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewWillStartLoadingMap(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewWillStartLoadingMap(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapViewWillStartLoadingMap : mapView];
@@ -3899,11 +3746,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidFinishLoadingMap(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidFinishLoadingMap(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapViewDidFinishLoadingMap : mapView];
@@ -3920,11 +3766,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSError* error = (NSError*) HEAP[@([args[@"error"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidFailLoadingMap(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidFailLoadingMap(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapViewDidFailLoadingMap : mapView withError: error];
@@ -3941,11 +3786,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAAnnotationView* result = [ref mapView: mapView viewForAnnotation: annotation];
@@ -3968,11 +3812,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           }
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didAddAnnotationViews: views];
@@ -3989,11 +3832,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didSelectAnnotationView: view];
@@ -4010,11 +3852,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didDeselectAnnotationView: view];
@@ -4029,11 +3870,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewWillStartLocatingUser(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewWillStartLocatingUser(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapViewWillStartLocatingUser : mapView];
@@ -4048,11 +3888,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidStopLocatingUser(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidStopLocatingUser(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapViewDidStopLocatingUser : mapView];
@@ -4071,11 +3910,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL updatingLocation = [args[@"updatingLocation"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didUpdateUserLocation: userLocation updatingLocation: updatingLocation];
@@ -4090,11 +3928,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           CLLocationManager* locationManager = (CLLocationManager*) HEAP[@([args[@"locationManager"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewRequireLocationAuth(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewRequireLocationAuth(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapViewRequireLocationAuth : locationManager];
@@ -4111,11 +3948,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSError* error = (NSError*) HEAP[@([args[@"error"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didFailToLocateUserWithError: error];
@@ -4136,11 +3972,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationViewDragState oldState = (MAAnnotationViewDragState) [args[@"oldState"] integerValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView annotationView: view didChangeDragState: newState fromOldState: oldState];
@@ -4157,11 +3992,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAOverlayRenderer* result = [ref mapView: mapView rendererForOverlay: overlay];
@@ -4184,11 +4018,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           }
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didAddOverlayRenderers: overlayRenderers];
@@ -4207,11 +4040,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           UIControl* control = (UIControl*) HEAP[@([args[@"control"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView annotationView: view calloutAccessoryControlTapped: control];
@@ -4228,11 +4060,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didAnnotationViewCalloutTapped: view];
@@ -4249,11 +4080,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didAnnotationViewTapped: view];
@@ -4272,11 +4102,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didChangeUserTrackingMode: mode animated: animated];
@@ -4293,11 +4122,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           BOOL openGLESDisabled = [args[@"openGLESDisabled"] boolValue];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didChangeOpenGLESDisabled: openGLESDisabled];
@@ -4319,11 +4147,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           }
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didTouchPois: pois];
@@ -4342,11 +4169,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           [coordinateValue getValue:&coordinate];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didSingleTappedAtCoordinate: coordinate];
@@ -4365,11 +4191,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           [coordinateValue getValue:&coordinate];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didLongPressedAtCoordinate: coordinate];
@@ -4384,11 +4209,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapInitComplete(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapInitComplete(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapInitComplete : mapView];
@@ -4405,11 +4229,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAIndoorInfo* indoorInfo = (MAIndoorInfo*) HEAP[@([args[@"indoorInfo"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didIndoorMapShowed: indoorInfo];
@@ -4426,11 +4249,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAIndoorInfo* indoorInfo = (MAIndoorInfo*) HEAP[@([args[@"indoorInfo"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didIndoorMapFloorIndexChanged: indoorInfo];
@@ -4447,11 +4269,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAIndoorInfo* indoorInfo = (MAIndoorInfo*) HEAP[@([args[@"indoorInfo"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref mapView : mapView didIndoorMapHidden: indoorInfo];
@@ -4466,11 +4287,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::offlineDataWillReload(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::offlineDataWillReload(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref offlineDataWillReload : mapView];
@@ -4485,11 +4305,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[@(refId)];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::offlineDataDidReload(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::offlineDataDidReload(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           [ref offlineDataDidReload : mapView];
@@ -4504,11 +4323,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAGroundOverlay* groundOverlay = (MAGroundOverlay*) HEAP[@([args[@"groundOverlay"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAGroundOverlayRenderer* ref = (MAGroundOverlayRenderer*) HEAP[@(refId)];
+          MAGroundOverlayRenderer* ref = (MAGroundOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAGroundOverlayRenderer@%@::initWithGroundOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MAGroundOverlayRenderer@%@::initWithGroundOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MAGroundOverlayRenderer* result = [ref initWithGroundOverlay: groundOverlay];
@@ -4524,11 +4342,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MACustomBuildingOverlay* customBuildingOverlay = (MACustomBuildingOverlay*) HEAP[@([args[@"customBuildingOverlay"] integerValue])];
       
           // ref
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlayRenderer* ref = (MACustomBuildingOverlayRenderer*) HEAP[@(refId)];
+          MACustomBuildingOverlayRenderer* ref = (MACustomBuildingOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MACustomBuildingOverlayRenderer@%@::initWithCustomBuildingOverlay(暂未实现参数打印)", @(refId));
+          NSLog(@"fluttify-objc: MACustomBuildingOverlayRenderer@%@::initWithCustomBuildingOverlay(暂未实现参数打印)", args[@"refId"]);
       
           // invoke native method
           MACustomBuildingOverlayRenderer* result = [ref initWithCustomBuildingOverlay: customBuildingOverlay];
@@ -12665,10 +12482,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   // ref callback arg
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
-  // primitive callback arg
-  NSNumber* argnewState = @(newState);
-  // primitive callback arg
-  NSNumber* argoldState = @(oldState);
+  // enum callback arg
+  NSNumber* argnewState = @((NSInteger) newState);
+  // enum callback arg
+  NSNumber* argoldState = @((NSInteger) oldState);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState" arguments:@{@"mapView": argmapView, @"view": argview, @"newState": argnewState, @"oldState": argoldState}];
   
@@ -12812,8 +12629,8 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   // ref callback arg
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  // primitive callback arg
-  NSNumber* argmode = @(mode);
+  // enum callback arg
+  NSNumber* argmode = @((NSInteger) mode);
   // primitive callback arg
   NSNumber* arganimated = @(animated);
 
