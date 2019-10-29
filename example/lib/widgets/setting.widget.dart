@@ -1,7 +1,5 @@
+import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:flutter/material.dart';
-
-const SPACE_NORMAL = const SizedBox(width: 8, height: 8);
-const kDividerTiny = const Divider(height: 1);
 
 /// 连续设置
 class ContinuousSetting extends StatefulWidget {

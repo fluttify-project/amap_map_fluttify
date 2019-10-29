@@ -14,6 +14,7 @@ import 'enums.dart';
 import 'models.dart';
 
 typedef void _OnMarkerClick(Marker marker);
+typedef void _OnMapClick(LatLng latLng);
 typedef void _OnMarkerDrag(Marker marker);
 
 /// 地图控制类
@@ -846,6 +847,26 @@ class AmapController {
       },
     );
   }
+
+  /// 设置地图点击监听事件
+  Future<void> setMapClickListener(_OnMapClick onMapClick) async {
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+
+        await map.setOnMapClickListener(
+          _androidMapDelegate.._onMapClick = onMapClick,
+        );
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        await _iosController.set_delegate(
+          _iosMapDelegate.._onMapClick = onMapClick,
+        );
+      },
+    );
+  }
 }
 
 class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
@@ -853,6 +874,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   _OnMarkerDrag _onMarkerDragStart;
   _OnMarkerDrag _onMarkerDragging;
   _OnMarkerDrag _onMarkerDragEnd;
+  _OnMapClick _onMapClick;
 
   @override
   Future<void> mapViewDidAnnotationViewTapped(
@@ -895,16 +917,31 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       _onMarkerDragEnd(Marker.ios(view));
     }
   }
+
+  @override
+  Future<void> mapViewDidSingleTappedAtCoordinate(
+      MAMapView mapView, CLLocationCoordinate2D coordinate) async {
+    super.mapViewDidSingleTappedAtCoordinate(mapView, coordinate);
+
+    if (_onMapClick != null) {
+      _onMapClick(LatLng(
+        await coordinate.latitude,
+        await coordinate.longitude,
+      ));
+    }
+  }
 }
 
 class _AndroidMapDelegate extends java_lang_Object
     with
         com_amap_api_maps_AMap_OnMarkerClickListener,
-        com_amap_api_maps_AMap_OnMarkerDragListener {
+        com_amap_api_maps_AMap_OnMarkerDragListener,
+        com_amap_api_maps_AMap_OnMapClickListener {
   _OnMarkerClick _onMarkerClicked;
   _OnMarkerDrag _onMarkerDragStart;
   _OnMarkerDrag _onMarkerDragging;
   _OnMarkerDrag _onMarkerDragEnd;
+  _OnMapClick _onMapClick;
 
   @override
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
@@ -936,6 +973,17 @@ class _AndroidMapDelegate extends java_lang_Object
     super.onMarkerDragEnd(var1);
     if (_onMarkerDragEnd != null) {
       _onMarkerDragEnd(Marker.android(var1));
+    }
+  }
+
+  @override
+  Future<void> onMapClick(com_amap_api_maps_model_LatLng var1) async {
+    super.onMapClick(var1);
+    if (_onMapClick != null) {
+      _onMapClick(LatLng(
+        await var1.get_latitude(),
+        await var1.get_longitude(),
+      ));
     }
   }
 }
