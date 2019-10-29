@@ -658,28 +658,28 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
               print('fluttify-dart-callback: afterDrawFrame([\'var1\':$args[var1]])');
         
               // handle the native call
-              var1?.afterDrawFrame(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2']));
+              var1?.afterDrawFrame(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2'])..tag = 'amap_map_fluttify');
               break;
             case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawLabel':
               // print log
               print('fluttify-dart-callback: afterDrawLabel([\'var1\':$args[var1]])');
         
               // handle the native call
-              var1?.afterDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2']));
+              var1?.afterDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2'])..tag = 'amap_map_fluttify');
               break;
             case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::beforeDrawLabel':
               // print log
               print('fluttify-dart-callback: beforeDrawLabel([\'var1\':$args[var1]])');
         
               // handle the native call
-              var1?.beforeDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2']));
+              var1?.beforeDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2'])..tag = 'amap_map_fluttify');
               break;
             case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterRendererOver':
               // print log
               print('fluttify-dart-callback: afterRendererOver([\'var1\':$args[var1]])');
         
               // handle the native call
-              var1?.afterRendererOver(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2']));
+              var1?.afterRendererOver(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2'])..tag = 'amap_map_fluttify');
               break;
             case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterAnimation':
               // print log

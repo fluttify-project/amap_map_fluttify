@@ -38,7 +38,7 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
               print('fluttify-dart-callback: networkStateChanged([])');
         
               // handle the native call
-              var1?.networkStateChanged(android_content_Context()..refId = (args['var1']));
+              var1?.networkStateChanged(android_content_Context()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;

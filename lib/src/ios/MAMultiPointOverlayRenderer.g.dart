@@ -52,7 +52,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
             print('fluttify-dart-callback: multiPointOverlayRendererDidItemTapped([])');
         
             // handle the native call
-            delegate?.multiPointOverlayRendererDidItemTapped(MAMultiPointOverlayRenderer()..refId = (args['renderer']), MAMultiPointItem()..refId = (args['item']));
+            delegate?.multiPointOverlayRendererDidItemTapped(MAMultiPointOverlayRenderer()..refId = (args['renderer'])..tag = 'amap_map_fluttify', MAMultiPointItem()..refId = (args['item'])..tag = 'amap_map_fluttify');
             break;
           default:
             break;
