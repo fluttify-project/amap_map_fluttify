@@ -130,7 +130,7 @@ class MAOfflineMap extends NSObject  {
         
         
               // handle the native call
-              downloadBlock(MAOfflineItem()..refId = (args['downloadItem']), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], NSObject()..refId = (args['info']));
+              downloadBlock(MAOfflineItem()..refId = (args['downloadItem'])..tag = 'amap_map_fluttify', MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], NSObject()..refId = (args['info'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;

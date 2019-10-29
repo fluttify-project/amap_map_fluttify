@@ -14,6 +14,7 @@ import 'enums.dart';
 import 'models.dart';
 
 typedef void _OnMarkerClick(Marker marker);
+typedef void _OnMapClick(LatLng latLng);
 typedef void _OnMarkerDrag(Marker marker);
 
 /// 地图控制类
@@ -435,7 +436,7 @@ class AmapController {
   ///
   /// 在纬度[lat], 经度[lng]的位置添加marker, 并设置标题[title]和副标题[snippet], [iconUri]
   /// 可以是图片url, asset路径或者文件路径
-  Future addMarker(
+  Future<Marker> addMarker(
     BuildContext context,
     LatLng point, {
     String title,
@@ -524,10 +525,15 @@ class AmapController {
 
         final marker = await map.addMarker(markerOption);
 
-        pool..add(map)..add(latLng)..add(markerOption)..add(marker);
+        // marker不释放, 还有用
+        pool..add(map)..add(latLng)..add(markerOption);
+
+        return Marker.android(marker);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_iosMapDelegate);
+        await _iosController.set_delegate(
+          _iosMapDelegate.._iosController = _iosController,
+        );
 
         // 创建marker
         final pointAnnotation =
@@ -566,9 +572,32 @@ class AmapController {
 
         await _iosController.addAnnotation(pointAnnotation);
 
-        pool..add(pointAnnotation)..add(coordinate);
+        // pointAnnotation不释放, 还有用
+        pool..add(coordinate);
+
+        return Marker.ios(pointAnnotation, _iosController);
       },
     );
+  }
+
+  Future<void> clearMarkers() async {
+    return platform(android: (pool) async {
+      final map = await _androidController.getMap();
+      final markers = await map.getMapScreenMarkers();
+
+      for (final marker in markers) {
+        marker.remove();
+      }
+
+      pool
+        ..add(map)
+        ..addAll(markers);
+    }, ios: (pool) async {
+      final markers = await _iosController.get_annotations();
+      await _iosController.removeAnnotations(markers);
+
+      pool..addAll(markers as List<Ref>);
+    });
   }
 
   /// 添加线
@@ -846,6 +875,26 @@ class AmapController {
       },
     );
   }
+
+  /// 设置地图点击监听事件
+  Future<void> setMapClickListener(_OnMapClick onMapClick) async {
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+
+        await map.setOnMapClickListener(
+          _androidMapDelegate.._onMapClick = onMapClick,
+        );
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        await _iosController.set_delegate(
+          _iosMapDelegate.._onMapClick = onMapClick,
+        );
+      },
+    );
+  }
 }
 
 class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
@@ -853,6 +902,8 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   _OnMarkerDrag _onMarkerDragStart;
   _OnMarkerDrag _onMarkerDragging;
   _OnMarkerDrag _onMarkerDragEnd;
+  _OnMapClick _onMapClick;
+  MAMapView _iosController;
 
   @override
   Future<void> mapViewDidAnnotationViewTapped(
@@ -861,7 +912,12 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   ) async {
     super.mapViewDidAnnotationViewTapped(mapView, view);
     if (onMarkerClicked != null) {
-      onMarkerClicked(Marker.ios(view));
+      onMarkerClicked(
+        Marker.ios(
+          await view.get_annotation(viewChannel: false),
+          _iosController,
+        ),
+      );
     }
   }
 
@@ -881,18 +937,45 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
     if (_onMarkerDragStart != null &&
         newState ==
             MAAnnotationViewDragState.MAAnnotationViewDragStateStarting) {
-      _onMarkerDragStart(Marker.ios(view));
+      _onMarkerDragStart(
+        Marker.ios(
+          await view.get_annotation(viewChannel: false),
+          _iosController,
+        ),
+      );
     }
 
     if (_onMarkerDragging != null &&
         newState ==
             MAAnnotationViewDragState.MAAnnotationViewDragStateDragging) {
-      _onMarkerDragging(Marker.ios(view));
+      _onMarkerDragging(
+        Marker.ios(
+          await view.get_annotation(viewChannel: false),
+          _iosController,
+        ),
+      );
     }
 
     if (_onMarkerDragEnd != null &&
         newState == MAAnnotationViewDragState.MAAnnotationViewDragStateEnding) {
-      _onMarkerDragEnd(Marker.ios(view));
+      _onMarkerDragEnd(
+        Marker.ios(
+          await view.get_annotation(viewChannel: false),
+          _iosController,
+        ),
+      );
+    }
+  }
+
+  @override
+  Future<void> mapViewDidSingleTappedAtCoordinate(
+      MAMapView mapView, CLLocationCoordinate2D coordinate) async {
+    super.mapViewDidSingleTappedAtCoordinate(mapView, coordinate);
+    if (_onMapClick != null) {
+      _onMapClick(LatLng(
+        await coordinate.latitude,
+        await coordinate.longitude,
+      ));
     }
   }
 }
@@ -900,11 +983,13 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
 class _AndroidMapDelegate extends java_lang_Object
     with
         com_amap_api_maps_AMap_OnMarkerClickListener,
-        com_amap_api_maps_AMap_OnMarkerDragListener {
+        com_amap_api_maps_AMap_OnMarkerDragListener,
+        com_amap_api_maps_AMap_OnMapClickListener {
   _OnMarkerClick _onMarkerClicked;
   _OnMarkerDrag _onMarkerDragStart;
   _OnMarkerDrag _onMarkerDragging;
   _OnMarkerDrag _onMarkerDragEnd;
+  _OnMapClick _onMapClick;
 
   @override
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
@@ -936,6 +1021,17 @@ class _AndroidMapDelegate extends java_lang_Object
     super.onMarkerDragEnd(var1);
     if (_onMarkerDragEnd != null) {
       _onMarkerDragEnd(Marker.android(var1));
+    }
+  }
+
+  @override
+  Future<void> onMapClick(com_amap_api_maps_model_LatLng var1) async {
+    super.onMapClick(var1);
+    if (_onMapClick != null) {
+      _onMapClick(LatLng(
+        await var1.get_latitude(),
+        await var1.get_longitude(),
+      ));
     }
   }
 }

@@ -7,28 +7,23 @@ import '../ios/ios.export.g.dart';
 class Marker {
   Marker.android(this._androidModel);
 
-  Marker.ios(this._iosModel);
+  Marker.ios(this._iosModel, this._iosController);
 
   com_amap_api_maps_model_Marker _androidModel;
-  MAAnnotationView _iosModel;
+  MAPointAnnotation _iosModel;
+  MAMapView _iosController;
 
   Future<String> get title {
     return platform(
       android: (_) => _androidModel.getTitle(),
-      ios: (_) async {
-        final annotation = await _iosModel.get_annotation(viewChannel: false);
-        return annotation.get_title();
-      },
+      ios: (_) => _iosModel.get_title(),
     );
   }
 
   Future<String> get snippet {
     return platform(
       android: (_) => _androidModel.getSnippet(),
-      ios: (_) async {
-        final annotation = await _iosModel.get_annotation(viewChannel: false);
-        return annotation.get_subtitle();
-      },
+      ios: (_) => _iosModel.get_subtitle(),
     );
   }
 
@@ -42,10 +37,16 @@ class Marker {
         );
       },
       ios: (_) async {
-        final _annotation = await _iosModel.get_annotation(viewChannel: false);
-        final _location = await _annotation.get_coordinate();
-        return LatLng(await _location.latitude, await _location.longitude);
+        final location = await _iosModel.get_coordinate();
+        return LatLng(await location.latitude, await location.longitude);
       },
+    );
+  }
+
+  Future<void> remove() async {
+    return platform(
+      android: (_) => _androidModel.remove(),
+      ios: (_) => _iosController?.removeAnnotation(_iosModel),
     );
   }
 }

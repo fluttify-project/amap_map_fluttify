@@ -364,252 +364,252 @@ class MAMapView extends UIView  {
             print('fluttify-dart-callback: mapViewRegionChanged([])');
         
             // handle the native call
-            delegate?.mapViewRegionChanged(MAMapView()..refId = (args['mapView']));
+            delegate?.mapViewRegionChanged(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewRegionWillChangeAnimated':
             // print log
             print('fluttify-dart-callback: mapViewRegionWillChangeAnimated([\'animated\':$args[animated]])');
         
             // handle the native call
-            delegate?.mapViewRegionWillChangeAnimated(MAMapView()..refId = (args['mapView']), args['animated']);
+            delegate?.mapViewRegionWillChangeAnimated(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['animated']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewRegionDidChangeAnimated':
             // print log
             print('fluttify-dart-callback: mapViewRegionDidChangeAnimated([\'animated\':$args[animated]])');
         
             // handle the native call
-            delegate?.mapViewRegionDidChangeAnimated(MAMapView()..refId = (args['mapView']), args['animated']);
+            delegate?.mapViewRegionDidChangeAnimated(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['animated']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewMapWillMoveByUser':
             // print log
             print('fluttify-dart-callback: mapViewMapWillMoveByUser([\'wasUserAction\':$args[wasUserAction]])');
         
             // handle the native call
-            delegate?.mapViewMapWillMoveByUser(MAMapView()..refId = (args['mapView']), args['wasUserAction']);
+            delegate?.mapViewMapWillMoveByUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewMapDidMoveByUser':
             // print log
             print('fluttify-dart-callback: mapViewMapDidMoveByUser([\'wasUserAction\':$args[wasUserAction]])');
         
             // handle the native call
-            delegate?.mapViewMapDidMoveByUser(MAMapView()..refId = (args['mapView']), args['wasUserAction']);
+            delegate?.mapViewMapDidMoveByUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewMapWillZoomByUser':
             // print log
             print('fluttify-dart-callback: mapViewMapWillZoomByUser([\'wasUserAction\':$args[wasUserAction]])');
         
             // handle the native call
-            delegate?.mapViewMapWillZoomByUser(MAMapView()..refId = (args['mapView']), args['wasUserAction']);
+            delegate?.mapViewMapWillZoomByUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewMapDidZoomByUser':
             // print log
             print('fluttify-dart-callback: mapViewMapDidZoomByUser([\'wasUserAction\':$args[wasUserAction]])');
         
             // handle the native call
-            delegate?.mapViewMapDidZoomByUser(MAMapView()..refId = (args['mapView']), args['wasUserAction']);
+            delegate?.mapViewMapDidZoomByUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLoadingMap':
             // print log
             print('fluttify-dart-callback: mapViewWillStartLoadingMap([])');
         
             // handle the native call
-            delegate?.mapViewWillStartLoadingMap(MAMapView()..refId = (args['mapView']));
+            delegate?.mapViewWillStartLoadingMap(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidFinishLoadingMap':
             // print log
             print('fluttify-dart-callback: mapViewDidFinishLoadingMap([])');
         
             // handle the native call
-            delegate?.mapViewDidFinishLoadingMap(MAMapView()..refId = (args['mapView']));
+            delegate?.mapViewDidFinishLoadingMap(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidFailLoadingMapWithError':
             // print log
             print('fluttify-dart-callback: mapViewDidFailLoadingMapWithError([])');
         
             // handle the native call
-            delegate?.mapViewDidFailLoadingMapWithError(MAMapView()..refId = (args['mapView']), NSError()..refId = (args['error']));
+            delegate?.mapViewDidFailLoadingMapWithError(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', NSError()..refId = (args['error'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewViewForAnnotation':
             // print log
             print('fluttify-dart-callback: mapViewViewForAnnotation([])');
         
             // handle the native call
-            delegate?.mapViewViewForAnnotation(MAMapView()..refId = (args['mapView']), MAGroundOverlay()..refId = (args['annotation']));
+            delegate?.mapViewViewForAnnotation(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAGroundOverlay()..refId = (args['annotation'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidAddAnnotationViews':
             // print log
             print('fluttify-dart-callback: mapViewDidAddAnnotationViews([])');
         
             // handle the native call
-            delegate?.mapViewDidAddAnnotationViews(MAMapView()..refId = (args['mapView']), (args['views'] as List).cast<int>().map((it) => NSObject()..refId = it).toList());
+            delegate?.mapViewDidAddAnnotationViews(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', (args['views'] as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidSelectAnnotationView':
             // print log
             print('fluttify-dart-callback: mapViewDidSelectAnnotationView([])');
         
             // handle the native call
-            delegate?.mapViewDidSelectAnnotationView(MAMapView()..refId = (args['mapView']), MAAnnotationView()..refId = (args['view']));
+            delegate?.mapViewDidSelectAnnotationView(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidDeselectAnnotationView':
             // print log
             print('fluttify-dart-callback: mapViewDidDeselectAnnotationView([])');
         
             // handle the native call
-            delegate?.mapViewDidDeselectAnnotationView(MAMapView()..refId = (args['mapView']), MAAnnotationView()..refId = (args['view']));
+            delegate?.mapViewDidDeselectAnnotationView(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLocatingUser':
             // print log
             print('fluttify-dart-callback: mapViewWillStartLocatingUser([])');
         
             // handle the native call
-            delegate?.mapViewWillStartLocatingUser(MAMapView()..refId = (args['mapView']));
+            delegate?.mapViewWillStartLocatingUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidStopLocatingUser':
             // print log
             print('fluttify-dart-callback: mapViewDidStopLocatingUser([])');
         
             // handle the native call
-            delegate?.mapViewDidStopLocatingUser(MAMapView()..refId = (args['mapView']));
+            delegate?.mapViewDidStopLocatingUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation':
             // print log
             print('fluttify-dart-callback: mapViewDidUpdateUserLocationupdatingLocation([\'updatingLocation\':$args[updatingLocation]])');
         
             // handle the native call
-            delegate?.mapViewDidUpdateUserLocationupdatingLocation(MAMapView()..refId = (args['mapView']), MAUserLocation()..refId = (args['userLocation']), args['updatingLocation']);
+            delegate?.mapViewDidUpdateUserLocationupdatingLocation(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAUserLocation()..refId = (args['userLocation'])..tag = 'amap_map_fluttify', args['updatingLocation']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewRequireLocationAuth':
             // print log
             print('fluttify-dart-callback: mapViewRequireLocationAuth([])');
         
             // handle the native call
-            delegate?.mapViewRequireLocationAuth(CLLocationManager()..refId = (args['locationManager']));
+            delegate?.mapViewRequireLocationAuth(CLLocationManager()..refId = (args['locationManager'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidFailToLocateUserWithError':
             // print log
             print('fluttify-dart-callback: mapViewDidFailToLocateUserWithError([])');
         
             // handle the native call
-            delegate?.mapViewDidFailToLocateUserWithError(MAMapView()..refId = (args['mapView']), NSError()..refId = (args['error']));
+            delegate?.mapViewDidFailToLocateUserWithError(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', NSError()..refId = (args['error'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState':
             // print log
             print('fluttify-dart-callback: mapViewAnnotationViewdidChangeDragStatefromOldState([])');
         
             // handle the native call
-            delegate?.mapViewAnnotationViewdidChangeDragStatefromOldState(MAMapView()..refId = (args['mapView']), MAAnnotationView()..refId = (args['view']), MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
+            delegate?.mapViewAnnotationViewdidChangeDragStatefromOldState(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify', MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
             break;
           case 'Callback::MAMapViewDelegate::mapViewRendererForOverlay':
             // print log
             print('fluttify-dart-callback: mapViewRendererForOverlay([])');
         
             // handle the native call
-            delegate?.mapViewRendererForOverlay(MAMapView()..refId = (args['mapView']), MAGroundOverlay()..refId = (args['overlay']));
+            delegate?.mapViewRendererForOverlay(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAGroundOverlay()..refId = (args['overlay'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidAddOverlayRenderers':
             // print log
             print('fluttify-dart-callback: mapViewDidAddOverlayRenderers([])');
         
             // handle the native call
-            delegate?.mapViewDidAddOverlayRenderers(MAMapView()..refId = (args['mapView']), (args['overlayRenderers'] as List).cast<int>().map((it) => NSObject()..refId = it).toList());
+            delegate?.mapViewDidAddOverlayRenderers(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', (args['overlayRenderers'] as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
             break;
           case 'Callback::MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped':
             // print log
             print('fluttify-dart-callback: mapViewAnnotationViewcalloutAccessoryControlTapped([])');
         
             // handle the native call
-            delegate?.mapViewAnnotationViewcalloutAccessoryControlTapped(MAMapView()..refId = (args['mapView']), MAAnnotationView()..refId = (args['view']), UIControl()..refId = (args['control']));
+            delegate?.mapViewAnnotationViewcalloutAccessoryControlTapped(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify', UIControl()..refId = (args['control'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped':
             // print log
             print('fluttify-dart-callback: mapViewDidAnnotationViewCalloutTapped([])');
         
             // handle the native call
-            delegate?.mapViewDidAnnotationViewCalloutTapped(MAMapView()..refId = (args['mapView']), MAAnnotationView()..refId = (args['view']));
+            delegate?.mapViewDidAnnotationViewCalloutTapped(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidAnnotationViewTapped':
             // print log
             print('fluttify-dart-callback: mapViewDidAnnotationViewTapped([])');
         
             // handle the native call
-            delegate?.mapViewDidAnnotationViewTapped(MAMapView()..refId = (args['mapView']), MAAnnotationView()..refId = (args['view']));
+            delegate?.mapViewDidAnnotationViewTapped(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated':
             // print log
             print('fluttify-dart-callback: mapViewDidChangeUserTrackingModeanimated([\'animated\':$args[animated]])');
         
             // handle the native call
-            delegate?.mapViewDidChangeUserTrackingModeanimated(MAMapView()..refId = (args['mapView']), MAUserTrackingMode.values[(args['mode'])], args['animated']);
+            delegate?.mapViewDidChangeUserTrackingModeanimated(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAUserTrackingMode.values[(args['mode'])], args['animated']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled':
             // print log
             print('fluttify-dart-callback: mapViewDidChangeOpenGLESDisabled([\'openGLESDisabled\':$args[openGLESDisabled]])');
         
             // handle the native call
-            delegate?.mapViewDidChangeOpenGLESDisabled(MAMapView()..refId = (args['mapView']), args['openGLESDisabled']);
+            delegate?.mapViewDidChangeOpenGLESDisabled(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['openGLESDisabled']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidTouchPois':
             // print log
             print('fluttify-dart-callback: mapViewDidTouchPois([])');
         
             // handle the native call
-            delegate?.mapViewDidTouchPois(MAMapView()..refId = (args['mapView']), (args['pois'] as List).cast<int>().map((it) => NSObject()..refId = it).toList());
+            delegate?.mapViewDidTouchPois(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', (args['pois'] as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate':
             // print log
             print('fluttify-dart-callback: mapViewDidSingleTappedAtCoordinate([])');
         
             // handle the native call
-            delegate?.mapViewDidSingleTappedAtCoordinate(MAMapView()..refId = (args['mapView']), CLLocationCoordinate2D()..refId = (args['coordinate']));
+            delegate?.mapViewDidSingleTappedAtCoordinate(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', CLLocationCoordinate2D()..refId = (args['coordinate'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidLongPressedAtCoordinate':
             // print log
             print('fluttify-dart-callback: mapViewDidLongPressedAtCoordinate([])');
         
             // handle the native call
-            delegate?.mapViewDidLongPressedAtCoordinate(MAMapView()..refId = (args['mapView']), CLLocationCoordinate2D()..refId = (args['coordinate']));
+            delegate?.mapViewDidLongPressedAtCoordinate(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', CLLocationCoordinate2D()..refId = (args['coordinate'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapInitComplete':
             // print log
             print('fluttify-dart-callback: mapInitComplete([])');
         
             // handle the native call
-            delegate?.mapInitComplete(MAMapView()..refId = (args['mapView']));
+            delegate?.mapInitComplete(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidIndoorMapShowed':
             // print log
             print('fluttify-dart-callback: mapViewDidIndoorMapShowed([])');
         
             // handle the native call
-            delegate?.mapViewDidIndoorMapShowed(MAMapView()..refId = (args['mapView']), MAIndoorInfo()..refId = (args['indoorInfo']));
+            delegate?.mapViewDidIndoorMapShowed(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAIndoorInfo()..refId = (args['indoorInfo'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged':
             // print log
             print('fluttify-dart-callback: mapViewDidIndoorMapFloorIndexChanged([])');
         
             // handle the native call
-            delegate?.mapViewDidIndoorMapFloorIndexChanged(MAMapView()..refId = (args['mapView']), MAIndoorInfo()..refId = (args['indoorInfo']));
+            delegate?.mapViewDidIndoorMapFloorIndexChanged(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAIndoorInfo()..refId = (args['indoorInfo'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidIndoorMapHidden':
             // print log
             print('fluttify-dart-callback: mapViewDidIndoorMapHidden([])');
         
             // handle the native call
-            delegate?.mapViewDidIndoorMapHidden(MAMapView()..refId = (args['mapView']), MAIndoorInfo()..refId = (args['indoorInfo']));
+            delegate?.mapViewDidIndoorMapHidden(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAIndoorInfo()..refId = (args['indoorInfo'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::offlineDataWillReload':
             // print log
             print('fluttify-dart-callback: offlineDataWillReload([])');
         
             // handle the native call
-            delegate?.offlineDataWillReload(MAMapView()..refId = (args['mapView']));
+            delegate?.offlineDataWillReload(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::offlineDataDidReload':
             // print log
             print('fluttify-dart-callback: offlineDataDidReload([])');
         
             // handle the native call
-            delegate?.offlineDataDidReload(MAMapView()..refId = (args['mapView']));
+            delegate?.offlineDataDidReload(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify');
             break;
           default:
             break;

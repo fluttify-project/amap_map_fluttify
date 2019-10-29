@@ -1,3 +1,5 @@
+![Logo](other/Logo-Landscape.png)
+
 # 高德 `地图`组件
 
 [![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify)

@@ -926,14 +926,14 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* locationsRefArray = (NSArray<NSNumber*> *) args[@"locations"];
           NSMutableArray<CLLocation*>* locations = [NSMutableArray arrayWithCapacity:locationsRefArray.count];
-          for (int i = 0; i < locations.count; i++) {
+          for (int i = 0; i < locationsRefArray.count; i++) {
               CLLocation* item = (CLLocation*) HEAP[[locationsRefArray objectAtIndex:i]];
               [locations addObject:item];
           }
           // list arg
           NSArray<NSNumber*>* tracePointsRefArray = (NSArray<NSNumber*> *) args[@"tracePoints"];
           NSMutableArray<MATracePoint*>* tracePoints = [NSMutableArray arrayWithCapacity:tracePointsRefArray.count];
-          for (int i = 0; i < tracePoints.count; i++) {
+          for (int i = 0; i < tracePointsRefArray.count; i++) {
               MATracePoint* item = (MATracePoint*) HEAP[[tracePointsRefArray objectAtIndex:i]];
               [tracePoints addObject:item];
           }
@@ -2078,14 +2078,14 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* textureIDsRefArray = (NSArray<NSNumber*> *) args[@"textureIDs"];
           NSMutableArray<NSArray*>* textureIDs = [NSMutableArray arrayWithCapacity:textureIDsRefArray.count];
-          for (int i = 0; i < textureIDs.count; i++) {
+          for (int i = 0; i < textureIDsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[textureIDsRefArray objectAtIndex:i]];
               [textureIDs addObject:item];
           }
           // list arg
           NSArray<NSNumber*>* drawStyleIndexesRefArray = (NSArray<NSNumber*> *) args[@"drawStyleIndexes"];
           NSMutableArray<NSArray*>* drawStyleIndexes = [NSMutableArray arrayWithCapacity:drawStyleIndexesRefArray.count];
-          for (int i = 0; i < drawStyleIndexes.count; i++) {
+          for (int i = 0; i < drawStyleIndexesRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[drawStyleIndexesRefArray objectAtIndex:i]];
               [drawStyleIndexes addObject:item];
           }
@@ -2122,14 +2122,14 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* strokeColorsRefArray = (NSArray<NSNumber*> *) args[@"strokeColors"];
           NSMutableArray<NSArray*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
-          for (int i = 0; i < strokeColors.count; i++) {
+          for (int i = 0; i < strokeColorsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[strokeColorsRefArray objectAtIndex:i]];
               [strokeColors addObject:item];
           }
           // list arg
           NSArray<NSNumber*>* drawStyleIndexesRefArray = (NSArray<NSNumber*> *) args[@"drawStyleIndexes"];
           NSMutableArray<NSArray*>* drawStyleIndexes = [NSMutableArray arrayWithCapacity:drawStyleIndexesRefArray.count];
-          for (int i = 0; i < drawStyleIndexes.count; i++) {
+          for (int i = 0; i < drawStyleIndexesRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[drawStyleIndexesRefArray objectAtIndex:i]];
               [drawStyleIndexes addObject:item];
           }
@@ -2198,7 +2198,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* itemsRefArray = (NSArray<NSNumber*> *) args[@"items"];
           NSMutableArray<MAMultiPointItem*>* items = [NSMutableArray arrayWithCapacity:itemsRefArray.count];
-          for (int i = 0; i < items.count; i++) {
+          for (int i = 0; i < itemsRefArray.count; i++) {
               MAMultiPointItem* item = (MAMultiPointItem*) HEAP[[itemsRefArray objectAtIndex:i]];
               [items addObject:item];
           }
@@ -2913,7 +2913,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-          for (int i = 0; i < annotations.count; i++) {
+          for (int i = 0; i < annotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
@@ -2954,7 +2954,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-          for (int i = 0; i < annotations.count; i++) {
+          for (int i = 0; i < annotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
@@ -3055,7 +3055,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-          for (int i = 0; i < annotations.count; i++) {
+          for (int i = 0; i < annotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
@@ -3080,7 +3080,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-          for (int i = 0; i < annotations.count; i++) {
+          for (int i = 0; i < annotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
@@ -3190,7 +3190,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -3233,7 +3233,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -3276,7 +3276,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -3462,7 +3462,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -3487,7 +3487,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -3806,7 +3806,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* viewsRefArray = (NSArray<NSNumber*> *) args[@"views"];
           NSMutableArray<NSArray*>* views = [NSMutableArray arrayWithCapacity:viewsRefArray.count];
-          for (int i = 0; i < views.count; i++) {
+          for (int i = 0; i < viewsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[viewsRefArray objectAtIndex:i]];
               [views addObject:item];
           }
@@ -4012,7 +4012,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* overlayRenderersRefArray = (NSArray<NSNumber*> *) args[@"overlayRenderers"];
           NSMutableArray<NSArray*>* overlayRenderers = [NSMutableArray arrayWithCapacity:overlayRenderersRefArray.count];
-          for (int i = 0; i < overlayRenderers.count; i++) {
+          for (int i = 0; i < overlayRenderersRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlayRenderersRefArray objectAtIndex:i]];
               [overlayRenderers addObject:item];
           }
@@ -4141,7 +4141,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* poisRefArray = (NSArray<NSNumber*> *) args[@"pois"];
           NSMutableArray<NSArray*>* pois = [NSMutableArray arrayWithCapacity:poisRefArray.count];
-          for (int i = 0; i < pois.count; i++) {
+          for (int i = 0; i < poisRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[poisRefArray objectAtIndex:i]];
               [pois addObject:item];
           }
@@ -7751,7 +7751,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* dataRefArray = (NSArray<NSNumber*> *) args[@"data"];
           NSMutableArray<MAHeatMapNode*>* data = [NSMutableArray arrayWithCapacity:dataRefArray.count];
-          for (int i = 0; i < data.count; i++) {
+          for (int i = 0; i < dataRefArray.count; i++) {
               MAHeatMapNode* item = (MAHeatMapNode*) HEAP[[dataRefArray objectAtIndex:i]];
               [data addObject:item];
           }
@@ -7946,7 +7946,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* hollowShapesRefArray = (NSArray<NSNumber*> *) args[@"hollowShapes"];
           NSMutableArray<id<MAOverlay>>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
-          for (int i = 0; i < hollowShapes.count; i++) {
+          for (int i = 0; i < hollowShapesRefArray.count; i++) {
               id<MAOverlay> item = (id<MAOverlay>) HEAP[[hollowShapesRefArray objectAtIndex:i]];
               [hollowShapes addObject:item];
           }
@@ -8037,7 +8037,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* hollowShapesRefArray = (NSArray<NSNumber*> *) args[@"hollowShapes"];
           NSMutableArray<id<MAOverlay>>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
-          for (int i = 0; i < hollowShapes.count; i++) {
+          for (int i = 0; i < hollowShapesRefArray.count; i++) {
               id<MAOverlay> item = (id<MAOverlay>) HEAP[[hollowShapesRefArray objectAtIndex:i]];
               [hollowShapes addObject:item];
           }
@@ -8084,7 +8084,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* strokeTextureImagesRefArray = (NSArray<NSNumber*> *) args[@"strokeTextureImages"];
           NSMutableArray<NSArray*>* strokeTextureImages = [NSMutableArray arrayWithCapacity:strokeTextureImagesRefArray.count];
-          for (int i = 0; i < strokeTextureImages.count; i++) {
+          for (int i = 0; i < strokeTextureImagesRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[strokeTextureImagesRefArray objectAtIndex:i]];
               [strokeTextureImages addObject:item];
           }
@@ -9494,7 +9494,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* selectedAnnotationsRefArray = (NSArray<NSNumber*> *) args[@"selectedAnnotations"];
           NSMutableArray<NSArray*>* selectedAnnotations = [NSMutableArray arrayWithCapacity:selectedAnnotationsRefArray.count];
-          for (int i = 0; i < selectedAnnotations.count; i++) {
+          for (int i = 0; i < selectedAnnotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[selectedAnnotationsRefArray objectAtIndex:i]];
               [selectedAnnotations addObject:item];
           }
@@ -11994,6 +11994,1092 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           NSLog(@"HEAP: %@", HEAP);
       },
       
+      @"MACoordinateBoundsMake::MACoordinateBoundsMake": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* northEastValue = (NSValue*) HEAP[@([args[@"northEast"] integerValue])];
+          CLLocationCoordinate2D northEast;
+          [northEastValue getValue:&northEast];
+          // struct arg
+          NSValue* southWestValue = (NSValue*) HEAP[@([args[@"southWest"] integerValue])];
+          CLLocationCoordinate2D southWest;
+          [southWestValue getValue:&southWest];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MACoordinateBoundsMake::MACoordinateBoundsMake(暂未实现参数打印)");
+      
+          // invoke native method
+          MACoordinateBounds result = MACoordinateBoundsMake(northEast, southWest);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateBounds)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MACoordinateSpanMake::MACoordinateSpanMake": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // jsonable arg
+          CLLocationDegrees latitudeDelta = [args[@"latitudeDelta"] doubleValue];
+          // jsonable arg
+          CLLocationDegrees longitudeDelta = [args[@"longitudeDelta"] doubleValue];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MACoordinateSpanMake::MACoordinateSpanMake(暂未实现参数打印)");
+      
+          // invoke native method
+          MACoordinateSpan result = MACoordinateSpanMake(latitudeDelta, longitudeDelta);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateSpan)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MACoordinateRegionMake::MACoordinateRegionMake": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* centerCoordinateValue = (NSValue*) HEAP[@([args[@"centerCoordinate"] integerValue])];
+          CLLocationCoordinate2D centerCoordinate;
+          [centerCoordinateValue getValue:&centerCoordinate];
+          // struct arg
+          NSValue* spanValue = (NSValue*) HEAP[@([args[@"span"] integerValue])];
+          MACoordinateSpan span;
+          [spanValue getValue:&span];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MACoordinateRegionMake::MACoordinateRegionMake(暂未实现参数打印)");
+      
+          // invoke native method
+          MACoordinateRegion result = MACoordinateRegionMake(centerCoordinate, span);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* centerCoordinateValue = (NSValue*) HEAP[@([args[@"centerCoordinate"] integerValue])];
+          CLLocationCoordinate2D centerCoordinate;
+          [centerCoordinateValue getValue:&centerCoordinate];
+          // jsonable arg
+          CLLocationDistance latitudinalMeters = [args[@"latitudinalMeters"] doubleValue];
+          // jsonable arg
+          CLLocationDistance longitudinalMeters = [args[@"longitudinalMeters"] doubleValue];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance(暂未实现参数打印)");
+      
+          // invoke native method
+          MACoordinateRegion result = MACoordinateRegionMakeWithDistance(centerCoordinate, latitudinalMeters, longitudinalMeters);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MAMapPointForCoordinate::MAMapPointForCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+          CLLocationCoordinate2D coordinate;
+          [coordinateValue getValue:&coordinate];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapPointForCoordinate::MAMapPointForCoordinate(暂未实现参数打印)");
+      
+          // invoke native method
+          MAMapPoint result = MAMapPointForCoordinate(coordinate);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MACoordinateForMapPoint::MACoordinateForMapPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* mapPointValue = (NSValue*) HEAP[@([args[@"mapPoint"] integerValue])];
+          MAMapPoint mapPoint;
+          [mapPointValue getValue:&mapPoint];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MACoordinateForMapPoint::MACoordinateForMapPoint(暂未实现参数打印)");
+      
+          // invoke native method
+          CLLocationCoordinate2D result = MACoordinateForMapPoint(mapPoint);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MACoordinateRegionForMapRect::MACoordinateRegionForMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MACoordinateRegionForMapRect::MACoordinateRegionForMapRect(暂未实现参数打印)");
+      
+          // invoke native method
+          MACoordinateRegion result = MACoordinateRegionForMapRect(rect);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MAMapRectForCoordinateRegion::MAMapRectForCoordinateRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* regionValue = (NSValue*) HEAP[@([args[@"region"] integerValue])];
+          MACoordinateRegion region;
+          [regionValue getValue:&region];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectForCoordinateRegion::MAMapRectForCoordinateRegion(暂未实现参数打印)");
+      
+          // invoke native method
+          MAMapRect result = MAMapRectForCoordinateRegion(region);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MAMetersPerMapPointAtLatitude::MAMetersPerMapPointAtLatitude": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // jsonable arg
+          CLLocationDegrees latitude = [args[@"latitude"] doubleValue];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMetersPerMapPointAtLatitude::MAMetersPerMapPointAtLatitude(暂未实现参数打印)");
+      
+          // invoke native method
+          CLLocationDistance result = MAMetersPerMapPointAtLatitude(latitude);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapPointsPerMeterAtLatitude::MAMapPointsPerMeterAtLatitude": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // jsonable arg
+          CLLocationDegrees latitude = [args[@"latitude"] doubleValue];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapPointsPerMeterAtLatitude::MAMapPointsPerMeterAtLatitude(暂未实现参数打印)");
+      
+          // invoke native method
+          double result = MAMapPointsPerMeterAtLatitude(latitude);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMetersBetweenMapPoints::MAMetersBetweenMapPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* aValue = (NSValue*) HEAP[@([args[@"a"] integerValue])];
+          MAMapPoint a;
+          [aValue getValue:&a];
+          // struct arg
+          NSValue* bValue = (NSValue*) HEAP[@([args[@"b"] integerValue])];
+          MAMapPoint b;
+          [bValue getValue:&b];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMetersBetweenMapPoints::MAMetersBetweenMapPoints(暂未实现参数打印)");
+      
+          // invoke native method
+          CLLocationDistance result = MAMetersBetweenMapPoints(a, b);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAAreaBetweenCoordinates::MAAreaBetweenCoordinates": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* northEastValue = (NSValue*) HEAP[@([args[@"northEast"] integerValue])];
+          CLLocationCoordinate2D northEast;
+          [northEastValue getValue:&northEast];
+          // struct arg
+          NSValue* southWestValue = (NSValue*) HEAP[@([args[@"southWest"] integerValue])];
+          CLLocationCoordinate2D southWest;
+          [southWestValue getValue:&southWest];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAAreaBetweenCoordinates::MAAreaBetweenCoordinates(暂未实现参数打印)");
+      
+          // invoke native method
+          double result = MAAreaBetweenCoordinates(northEast, southWest);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectInset::MAMapRectInset": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+          // jsonable arg
+          double dx = [args[@"dx"] doubleValue];
+          // jsonable arg
+          double dy = [args[@"dy"] doubleValue];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectInset::MAMapRectInset(暂未实现参数打印)");
+      
+          // invoke native method
+          MAMapRect result = MAMapRectInset(rect, dx, dy);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MAMapRectUnion::MAMapRectUnion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rect1Value = (NSValue*) HEAP[@([args[@"rect1"] integerValue])];
+          MAMapRect rect1;
+          [rect1Value getValue:&rect1];
+          // struct arg
+          NSValue* rect2Value = (NSValue*) HEAP[@([args[@"rect2"] integerValue])];
+          MAMapRect rect2;
+          [rect2Value getValue:&rect2];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectUnion::MAMapRectUnion(暂未实现参数打印)");
+      
+          // invoke native method
+          MAMapRect result = MAMapRectUnion(rect1, rect2);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MAMapSizeContainsSize::MAMapSizeContainsSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* size1Value = (NSValue*) HEAP[@([args[@"size1"] integerValue])];
+          MAMapSize size1;
+          [size1Value getValue:&size1];
+          // struct arg
+          NSValue* size2Value = (NSValue*) HEAP[@([args[@"size2"] integerValue])];
+          MAMapSize size2;
+          [size2Value getValue:&size2];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapSizeContainsSize::MAMapSizeContainsSize(暂未实现参数打印)");
+      
+          // invoke native method
+          BOOL result = MAMapSizeContainsSize(size1, size2);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectContainsPoint::MAMapRectContainsPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+          // struct arg
+          NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+          MAMapPoint point;
+          [pointValue getValue:&point];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectContainsPoint::MAMapRectContainsPoint(暂未实现参数打印)");
+      
+          // invoke native method
+          BOOL result = MAMapRectContainsPoint(rect, point);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectIntersectsRect::MAMapRectIntersectsRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rect1Value = (NSValue*) HEAP[@([args[@"rect1"] integerValue])];
+          MAMapRect rect1;
+          [rect1Value getValue:&rect1];
+          // struct arg
+          NSValue* rect2Value = (NSValue*) HEAP[@([args[@"rect2"] integerValue])];
+          MAMapRect rect2;
+          [rect2Value getValue:&rect2];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectIntersectsRect::MAMapRectIntersectsRect(暂未实现参数打印)");
+      
+          // invoke native method
+          BOOL result = MAMapRectIntersectsRect(rect1, rect2);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectContainsRect::MAMapRectContainsRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rect1Value = (NSValue*) HEAP[@([args[@"rect1"] integerValue])];
+          MAMapRect rect1;
+          [rect1Value getValue:&rect1];
+          // struct arg
+          NSValue* rect2Value = (NSValue*) HEAP[@([args[@"rect2"] integerValue])];
+          MAMapRect rect2;
+          [rect2Value getValue:&rect2];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectContainsRect::MAMapRectContainsRect(暂未实现参数打印)");
+      
+          // invoke native method
+          BOOL result = MAMapRectContainsRect(rect1, rect2);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MACircleContainsPoint::MACircleContainsPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+          MAMapPoint point;
+          [pointValue getValue:&point];
+          // struct arg
+          NSValue* centerValue = (NSValue*) HEAP[@([args[@"center"] integerValue])];
+          MAMapPoint center;
+          [centerValue getValue:&center];
+          // jsonable arg
+          double radius = [args[@"radius"] doubleValue];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MACircleContainsPoint::MACircleContainsPoint(暂未实现参数打印)");
+      
+          // invoke native method
+          BOOL result = MACircleContainsPoint(point, center, radius);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MACircleContainsCoordinate::MACircleContainsCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+          CLLocationCoordinate2D point;
+          [pointValue getValue:&point];
+          // struct arg
+          NSValue* centerValue = (NSValue*) HEAP[@([args[@"center"] integerValue])];
+          CLLocationCoordinate2D center;
+          [centerValue getValue:&center];
+          // jsonable arg
+          double radius = [args[@"radius"] doubleValue];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MACircleContainsCoordinate::MACircleContainsCoordinate(暂未实现参数打印)");
+      
+          // invoke native method
+          BOOL result = MACircleContainsCoordinate(point, center, radius);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAPolygonContainsPoint::MAPolygonContainsPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+          MAMapPoint point;
+          [pointValue getValue:&point];
+          // list arg
+          NSArray* polygonRefIdArray = (NSArray*) args[@"polygon"];
+          MAMapPoint polygon[polygonRefIdArray.count];
+      
+          for (int i = 0; i < polygonRefIdArray.count; i++) {
+              NSValue* polygonValue = (NSValue*) HEAP[[polygonRefIdArray objectAtIndex:i]];
+              MAMapPoint polygonItem;
+              [polygonValue getValue:&polygonItem];
+              polygon[i] = polygonItem;
+          }
+          // jsonable arg
+          NSUInteger count = [args[@"count"] unsignedIntegerValue];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAPolygonContainsPoint::MAPolygonContainsPoint(暂未实现参数打印)");
+      
+          // invoke native method
+          BOOL result = MAPolygonContainsPoint(point, polygon, count);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAPolygonContainsCoordinate::MAPolygonContainsCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+          CLLocationCoordinate2D point;
+          [pointValue getValue:&point];
+          // list arg
+          NSArray* polygonRefIdArray = (NSArray*) args[@"polygon"];
+          CLLocationCoordinate2D polygon[polygonRefIdArray.count];
+      
+          for (int i = 0; i < polygonRefIdArray.count; i++) {
+              NSValue* polygonValue = (NSValue*) HEAP[[polygonRefIdArray objectAtIndex:i]];
+              CLLocationCoordinate2D polygonItem;
+              [polygonValue getValue:&polygonItem];
+              polygon[i] = polygonItem;
+          }
+          // jsonable arg
+          NSUInteger count = [args[@"count"] unsignedIntegerValue];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAPolygonContainsCoordinate::MAPolygonContainsCoordinate(暂未实现参数打印)");
+      
+          // invoke native method
+          BOOL result = MAPolygonContainsCoordinate(point, polygon, count);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAGetNearestMapPointFromLine::MAGetNearestMapPointFromLine": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* lineStartValue = (NSValue*) HEAP[@([args[@"lineStart"] integerValue])];
+          MAMapPoint lineStart;
+          [lineStartValue getValue:&lineStart];
+          // struct arg
+          NSValue* lineEndValue = (NSValue*) HEAP[@([args[@"lineEnd"] integerValue])];
+          MAMapPoint lineEnd;
+          [lineEndValue getValue:&lineEnd];
+          // struct arg
+          NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+          MAMapPoint point;
+          [pointValue getValue:&point];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAGetNearestMapPointFromLine::MAGetNearestMapPointFromLine(暂未实现参数打印)");
+      
+          // invoke native method
+          MAMapPoint result = MAGetNearestMapPointFromLine(lineStart, lineEnd, point);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MAAreaForPolygon::MAAreaForPolygon": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // list arg
+          NSArray* coordinatesRefIdArray = (NSArray*) args[@"coordinates"];
+          CLLocationCoordinate2D coordinates[coordinatesRefIdArray.count];
+      
+          for (int i = 0; i < coordinatesRefIdArray.count; i++) {
+              NSValue* coordinatesValue = (NSValue*) HEAP[[coordinatesRefIdArray objectAtIndex:i]];
+              CLLocationCoordinate2D coordinatesItem;
+              [coordinatesValue getValue:&coordinatesItem];
+              coordinates[i] = coordinatesItem;
+          }
+          // jsonable arg
+          int count = [args[@"count"] intValue];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAAreaForPolygon::MAAreaForPolygon(暂未实现参数打印)");
+      
+          // invoke native method
+          double result = MAAreaForPolygon(coordinates, count);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapPointMake::MAMapPointMake": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // jsonable arg
+          double x = [args[@"x"] doubleValue];
+          // jsonable arg
+          double y = [args[@"y"] doubleValue];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapPointMake::MAMapPointMake(暂未实现参数打印)");
+      
+          // invoke native method
+          MAMapPoint result = MAMapPointMake(x, y);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MAMapSizeMake::MAMapSizeMake": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // jsonable arg
+          double width = [args[@"width"] doubleValue];
+          // jsonable arg
+          double height = [args[@"height"] doubleValue];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapSizeMake::MAMapSizeMake(暂未实现参数打印)");
+      
+          // invoke native method
+          MAMapSize result = MAMapSizeMake(width, height);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapSize)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MAMapRectMake::MAMapRectMake": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // jsonable arg
+          double x = [args[@"x"] doubleValue];
+          // jsonable arg
+          double y = [args[@"y"] doubleValue];
+          // jsonable arg
+          double width = [args[@"width"] doubleValue];
+          // jsonable arg
+          double height = [args[@"height"] doubleValue];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectMake::MAMapRectMake(暂未实现参数打印)");
+      
+          // invoke native method
+          MAMapRect result = MAMapRectMake(x, y, width, height);
+      
+          // result
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      @"MAMapRectGetMinX::MAMapRectGetMinX": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectGetMinX::MAMapRectGetMinX(暂未实现参数打印)");
+      
+          // invoke native method
+          double result = MAMapRectGetMinX(rect);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectGetMinY::MAMapRectGetMinY": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectGetMinY::MAMapRectGetMinY(暂未实现参数打印)");
+      
+          // invoke native method
+          double result = MAMapRectGetMinY(rect);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectGetMidX::MAMapRectGetMidX": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectGetMidX::MAMapRectGetMidX(暂未实现参数打印)");
+      
+          // invoke native method
+          double result = MAMapRectGetMidX(rect);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectGetMidY::MAMapRectGetMidY": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectGetMidY::MAMapRectGetMidY(暂未实现参数打印)");
+      
+          // invoke native method
+          double result = MAMapRectGetMidY(rect);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectGetMaxX::MAMapRectGetMaxX": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectGetMaxX::MAMapRectGetMaxX(暂未实现参数打印)");
+      
+          // invoke native method
+          double result = MAMapRectGetMaxX(rect);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectGetMaxY::MAMapRectGetMaxY": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectGetMaxY::MAMapRectGetMaxY(暂未实现参数打印)");
+      
+          // invoke native method
+          double result = MAMapRectGetMaxY(rect);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectGetWidth::MAMapRectGetWidth": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectGetWidth::MAMapRectGetWidth(暂未实现参数打印)");
+      
+          // invoke native method
+          double result = MAMapRectGetWidth(rect);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectGetHeight::MAMapRectGetHeight": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectGetHeight::MAMapRectGetHeight(暂未实现参数打印)");
+      
+          // invoke native method
+          double result = MAMapRectGetHeight(rect);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapPointEqualToPoint::MAMapPointEqualToPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* point1Value = (NSValue*) HEAP[@([args[@"point1"] integerValue])];
+          MAMapPoint point1;
+          [point1Value getValue:&point1];
+          // struct arg
+          NSValue* point2Value = (NSValue*) HEAP[@([args[@"point2"] integerValue])];
+          MAMapPoint point2;
+          [point2Value getValue:&point2];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapPointEqualToPoint::MAMapPointEqualToPoint(暂未实现参数打印)");
+      
+          // invoke native method
+          BOOL result = MAMapPointEqualToPoint(point1, point2);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapSizeEqualToSize::MAMapSizeEqualToSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* size1Value = (NSValue*) HEAP[@([args[@"size1"] integerValue])];
+          MAMapSize size1;
+          [size1Value getValue:&size1];
+          // struct arg
+          NSValue* size2Value = (NSValue*) HEAP[@([args[@"size2"] integerValue])];
+          MAMapSize size2;
+          [size2Value getValue:&size2];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapSizeEqualToSize::MAMapSizeEqualToSize(暂未实现参数打印)");
+      
+          // invoke native method
+          BOOL result = MAMapSizeEqualToSize(size1, size2);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectEqualToRect::MAMapRectEqualToRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rect1Value = (NSValue*) HEAP[@([args[@"rect1"] integerValue])];
+          MAMapRect rect1;
+          [rect1Value getValue:&rect1];
+          // struct arg
+          NSValue* rect2Value = (NSValue*) HEAP[@([args[@"rect2"] integerValue])];
+          MAMapRect rect2;
+          [rect2Value getValue:&rect2];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectEqualToRect::MAMapRectEqualToRect(暂未实现参数打印)");
+      
+          // invoke native method
+          BOOL result = MAMapRectEqualToRect(rect1, rect2);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectIsNull::MAMapRectIsNull": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectIsNull::MAMapRectIsNull(暂未实现参数打印)");
+      
+          // invoke native method
+          BOOL result = MAMapRectIsNull(rect);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAMapRectIsEmpty::MAMapRectIsEmpty": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAMapRectIsEmpty::MAMapRectIsEmpty(暂未实现参数打印)");
+      
+          // invoke native method
+          BOOL result = MAMapRectIsEmpty(rect);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAStringFromMapPoint::MAStringFromMapPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+          MAMapPoint point;
+          [pointValue getValue:&point];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAStringFromMapPoint::MAStringFromMapPoint(暂未实现参数打印)");
+      
+          // invoke native method
+          NSString* result = MAStringFromMapPoint(point);
+      
+          // result
+          // 返回值: jsonable
+          methodResult(result);
+      },
+      @"MAStringFromMapSize::MAStringFromMapSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* sizeValue = (NSValue*) HEAP[@([args[@"size"] integerValue])];
+          MAMapSize size;
+          [sizeValue getValue:&size];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAStringFromMapSize::MAStringFromMapSize(暂未实现参数打印)");
+      
+          // invoke native method
+          NSString* result = MAStringFromMapSize(size);
+      
+          // result
+          // 返回值: jsonable
+          methodResult(result);
+      },
+      @"MAStringFromMapRect::MAStringFromMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          MAMapRect rect;
+          [rectValue getValue:&rect];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAStringFromMapRect::MAStringFromMapRect(暂未实现参数打印)");
+      
+          // invoke native method
+          NSString* result = MAStringFromMapRect(rect);
+      
+          // result
+          // 返回值: jsonable
+          methodResult(result);
+      },
+      @"MAGetDirectionFromCoords::MAGetDirectionFromCoords": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* fromCoordValue = (NSValue*) HEAP[@([args[@"fromCoord"] integerValue])];
+          CLLocationCoordinate2D fromCoord;
+          [fromCoordValue getValue:&fromCoord];
+          // struct arg
+          NSValue* toCoordValue = (NSValue*) HEAP[@([args[@"toCoord"] integerValue])];
+          CLLocationCoordinate2D toCoord;
+          [toCoordValue getValue:&toCoord];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAGetDirectionFromCoords::MAGetDirectionFromCoords(暂未实现参数打印)");
+      
+          // invoke native method
+          CLLocationDirection result = MAGetDirectionFromCoords(fromCoord, toCoord);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAGetDirectionFromPoints::MAGetDirectionFromPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* fromPointValue = (NSValue*) HEAP[@([args[@"fromPoint"] integerValue])];
+          MAMapPoint fromPoint;
+          [fromPointValue getValue:&fromPoint];
+          // struct arg
+          NSValue* toPointValue = (NSValue*) HEAP[@([args[@"toPoint"] integerValue])];
+          MAMapPoint toPoint;
+          [toPointValue getValue:&toPoint];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAGetDirectionFromPoints::MAGetDirectionFromPoints(暂未实现参数打印)");
+      
+          // invoke native method
+          CLLocationDirection result = MAGetDirectionFromPoints(fromPoint, toPoint);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      @"MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+          MAMapPoint point;
+          [pointValue getValue:&point];
+          // struct arg
+          NSValue* lineBeginValue = (NSValue*) HEAP[@([args[@"lineBegin"] integerValue])];
+          MAMapPoint lineBegin;
+          [lineBeginValue getValue:&lineBegin];
+          // struct arg
+          NSValue* lineEndValue = (NSValue*) HEAP[@([args[@"lineEnd"] integerValue])];
+          MAMapPoint lineEnd;
+          [lineEndValue getValue:&lineEnd];
+      
+          // ref
+      
+      
+          // print log
+          NSLog(@"fluttify-objc: MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine(暂未实现参数打印)");
+      
+          // invoke native method
+          double result = MAGetDistanceFromPointToLine(point, lineBegin, lineEnd);
+      
+          // result
+          // 返回值: Value
+          methodResult(@(result));
+      },
     };
   }
 
@@ -12683,7 +13769,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   
 }
 
-- (void)mapView : (MAMapView*)mapView didSingleTappedAtCoordinate: (CLLocationCoordinate2D*)coordinate
+- (void)mapView : (MAMapView*)mapView didSingleTappedAtCoordinate: (CLLocationCoordinate2D)coordinate
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
@@ -12705,7 +13791,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   
 }
 
-- (void)mapView : (MAMapView*)mapView didLongPressedAtCoordinate: (CLLocationCoordinate2D*)coordinate
+- (void)mapView : (MAMapView*)mapView didLongPressedAtCoordinate: (CLLocationCoordinate2D)coordinate
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"

@@ -65,14 +65,14 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
               print('fluttify-dart-callback: onTraceProcessing([\'var1\':$args[var1], \'var2\':$args[var2]])');
         
               // handle the native call
-              var4?.onTraceProcessing(args['var1'], args['var2'], (args['var3'] as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it).toList());
+              var4?.onTraceProcessing(args['var1'], args['var2'], (args['var3'] as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it..tag = 'amap_map_fluttify').toList());
               break;
             case 'Callback::com.amap.api.trace.TraceListener::onFinished':
               // print log
               print('fluttify-dart-callback: onFinished([\'var1\':$args[var1], \'var3\':$args[var3], \'var4\':$args[var4]])');
         
               // handle the native call
-              var4?.onFinished(args['var1'], (args['var2'] as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it).toList(), args['var3'], args['var4']);
+              var4?.onFinished(args['var1'], (args['var2'] as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it..tag = 'amap_map_fluttify').toList(), args['var3'], args['var4']);
               break;
             default:
               break;
@@ -109,7 +109,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
               print('fluttify-dart-callback: onTraceStatus([\'var3\':$args[var3]])');
         
               // handle the native call
-              var1?.onTraceStatus((args['var1'] as List).cast<int>().map((it) => com_amap_api_trace_TraceLocation()..refId = it).toList(), (args['var2'] as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it).toList(), args['var3']);
+              var1?.onTraceStatus((args['var1'] as List).cast<int>().map((it) => com_amap_api_trace_TraceLocation()..refId = it..tag = 'amap_map_fluttify').toList(), (args['var2'] as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it..tag = 'amap_map_fluttify').toList(), args['var3']);
               break;
             default:
               break;

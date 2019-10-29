@@ -29,14 +29,14 @@ class MATraceManager extends NSObject  {
             print('fluttify-dart-callback: traceManagerDidTracecorrectdistancewithError([\'distance\':$args[distance]])');
         
             // handle the native call
-            delegate?.traceManagerDidTracecorrectdistancewithError(MATraceManager()..refId = (args['manager']), (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it).toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it).toList(), args['distance'], NSError()..refId = (args['error']));
+            delegate?.traceManagerDidTracecorrectdistancewithError(MATraceManager()..refId = (args['manager'])..tag = 'amap_map_fluttify', (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag = 'amap_map_fluttify').toList(), args['distance'], NSError()..refId = (args['error'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MATraceDelegate::mapViewRequireLocationAuth':
             // print log
             print('fluttify-dart-callback: mapViewRequireLocationAuth([])');
         
             // handle the native call
-            delegate?.mapViewRequireLocationAuth(CLLocationManager()..refId = (args['locationManager']));
+            delegate?.mapViewRequireLocationAuth(CLLocationManager()..refId = (args['locationManager'])..tag = 'amap_map_fluttify');
             break;
           default:
             break;

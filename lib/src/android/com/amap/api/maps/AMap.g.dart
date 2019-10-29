@@ -875,14 +875,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: onCameraChange([])');
         
               // handle the native call
-              var1?.onCameraChange(com_amap_api_maps_model_CameraPosition()..refId = (args['var1']));
+              var1?.onCameraChange(com_amap_api_maps_model_CameraPosition()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish':
               // print log
               print('fluttify-dart-callback: onCameraChangeFinish([])');
         
               // handle the native call
-              var1?.onCameraChangeFinish(com_amap_api_maps_model_CameraPosition()..refId = (args['var1']));
+              var1?.onCameraChangeFinish(com_amap_api_maps_model_CameraPosition()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -919,7 +919,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: onMapClick([])');
         
               // handle the native call
-              var1?.onMapClick(com_amap_api_maps_model_LatLng()..refId = (args['var1']));
+              var1?.onMapClick(com_amap_api_maps_model_LatLng()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -956,7 +956,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: onTouch([])');
         
               // handle the native call
-              var1?.onTouch(android_view_MotionEvent()..refId = (args['var1']));
+              var1?.onTouch(android_view_MotionEvent()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -993,7 +993,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: onPOIClick([])');
         
               // handle the native call
-              var1?.onPOIClick(com_amap_api_maps_model_Poi()..refId = (args['var1']));
+              var1?.onPOIClick(com_amap_api_maps_model_Poi()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -1030,7 +1030,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: onMyLocationChange([])');
         
               // handle the native call
-              var1?.onMyLocationChange(android_location_Location()..refId = (args['var1']));
+              var1?.onMyLocationChange(android_location_Location()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -1067,7 +1067,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: onMapLongClick([])');
         
               // handle the native call
-              var1?.onMapLongClick(com_amap_api_maps_model_LatLng()..refId = (args['var1']));
+              var1?.onMapLongClick(com_amap_api_maps_model_LatLng()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -1104,7 +1104,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: onMarkerClick([])');
         
               // handle the native call
-              var1?.onMarkerClick(com_amap_api_maps_model_Marker()..refId = (args['var1']));
+              var1?.onMarkerClick(com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -1141,7 +1141,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: onPolylineClick([])');
         
               // handle the native call
-              var1?.onPolylineClick(com_amap_api_maps_model_Polyline()..refId = (args['var1']));
+              var1?.onPolylineClick(com_amap_api_maps_model_Polyline()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -1178,21 +1178,21 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: onMarkerDragStart([])');
         
               // handle the native call
-              var1?.onMarkerDragStart(com_amap_api_maps_model_Marker()..refId = (args['var1']));
+              var1?.onMarkerDragStart(com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag':
               // print log
               print('fluttify-dart-callback: onMarkerDrag([])');
         
               // handle the native call
-              var1?.onMarkerDrag(com_amap_api_maps_model_Marker()..refId = (args['var1']));
+              var1?.onMarkerDrag(com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd':
               // print log
               print('fluttify-dart-callback: onMarkerDragEnd([])');
         
               // handle the native call
-              var1?.onMarkerDragEnd(com_amap_api_maps_model_Marker()..refId = (args['var1']));
+              var1?.onMarkerDragEnd(com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -1229,7 +1229,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: onInfoWindowClick([])');
         
               // handle the native call
-              var1?.onInfoWindowClick(com_amap_api_maps_model_Marker()..refId = (args['var1']));
+              var1?.onInfoWindowClick(com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -1354,7 +1354,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: OnIndoorBuilding([])');
         
               // handle the native call
-              var1?.OnIndoorBuilding(com_amap_api_maps_model_IndoorBuildingInfo()..refId = (args['var1']));
+              var1?.OnIndoorBuilding(com_amap_api_maps_model_IndoorBuildingInfo()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -1391,7 +1391,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: onPointClick([])');
         
               // handle the native call
-              var1?.onPointClick(com_amap_api_maps_model_MultiPointItem()..refId = (args['var1']));
+              var1?.onPointClick(com_amap_api_maps_model_MultiPointItem()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -1428,7 +1428,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: onMapPrint([])');
         
               // handle the native call
-              var1?.onMapPrint(android_graphics_drawable_Drawable()..refId = (args['var1']));
+              var1?.onMapPrint(android_graphics_drawable_Drawable()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -1465,7 +1465,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               print('fluttify-dart-callback: onMapScreenShot([])');
         
               // handle the native call
-              var1?.onMapScreenShot(android_graphics_Bitmap()..refId = (args['var1']));
+              var1?.onMapScreenShot(android_graphics_Bitmap()..refId = (args['var1'])..tag = 'amap_map_fluttify');
               break;
             default:
               break;

@@ -89,13 +89,26 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   },
                 ),
                 ListTile(
-                  title: Text('获取地图中心点'),
+                  title: Center(child: Text('获取地图中心点')),
                   onTap: () async {
                     final center = await _controller?.getCenterCoordinate();
                     toast(
                         'center: lat: ${center.latitude}, lng: ${center.longitude}');
                   },
-                )
+                ),
+                kDividerTiny,
+                ListTile(
+                  title: Center(child: Text('添加点击地图监听')),
+                  onTap: () {
+                    _controller?.setMapClickListener(
+                      (latLng) {
+                        toast(
+                          '点击: lat: ${latLng.latitude}, lng: ${latLng.longitude}',
+                        );
+                      },
+                    );
+                  },
+                ),
               ],
             ),
           ),

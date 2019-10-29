@@ -623,7 +623,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-          for (int i = 0; i < annotations.count; i++) {
+          for (int i = 0; i < annotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
@@ -664,7 +664,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-          for (int i = 0; i < annotations.count; i++) {
+          for (int i = 0; i < annotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
@@ -765,7 +765,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-          for (int i = 0; i < annotations.count; i++) {
+          for (int i = 0; i < annotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
@@ -790,7 +790,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-          for (int i = 0; i < annotations.count; i++) {
+          for (int i = 0; i < annotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
@@ -900,7 +900,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -943,7 +943,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -986,7 +986,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -1172,7 +1172,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -1197,7 +1197,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -2615,7 +2615,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // list arg
           NSArray<NSNumber*>* selectedAnnotationsRefArray = (NSArray<NSNumber*> *) args[@"selectedAnnotations"];
           NSMutableArray<NSArray*>* selectedAnnotations = [NSMutableArray arrayWithCapacity:selectedAnnotationsRefArray.count];
-          for (int i = 0; i < selectedAnnotations.count; i++) {
+          for (int i = 0; i < selectedAnnotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[selectedAnnotationsRefArray objectAtIndex:i]];
               [selectedAnnotations addObject:item];
           }
@@ -3575,7 +3575,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   
 }
 
-- (void)mapView : (MAMapView*)mapView didSingleTappedAtCoordinate: (CLLocationCoordinate2D*)coordinate
+- (void)mapView : (MAMapView*)mapView didSingleTappedAtCoordinate: (CLLocationCoordinate2D)coordinate
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
@@ -3597,7 +3597,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   
 }
 
-- (void)mapView : (MAMapView*)mapView didLongPressedAtCoordinate: (CLLocationCoordinate2D*)coordinate
+- (void)mapView : (MAMapView*)mapView didLongPressedAtCoordinate: (CLLocationCoordinate2D)coordinate
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
