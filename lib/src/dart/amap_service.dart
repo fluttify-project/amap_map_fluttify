@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
+import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -40,6 +41,105 @@ class AmapService {
       },
       ios: (pool) async {
         AmapCore.init(iosKey);
+      },
+    );
+  }
+
+  /// 计算两点间的直线距离
+  ///
+  /// 计算点1[point1]和点2[point2]的距离
+  static Future<double> calculateDistance(LatLng point1, LatLng point2) async {
+    return platform(
+      android: (pool) async {
+        // 点1
+        final _location1 = await AmapMapFluttifyFactoryAndroid
+            .createcom_amap_api_maps_model_LatLng__double__double(
+                point1.latitude, point1.longitude);
+        // 点2
+        final _location2 = await AmapMapFluttifyFactoryAndroid
+            .createcom_amap_api_maps_model_LatLng__double__double(
+                point2.latitude, point2.longitude);
+
+        // 计算结果
+        final result = await com_amap_api_maps_AMapUtils.calculateLineDistance(
+            _location1, _location2);
+
+        // 释放两个点
+        pool..add(_location1)..add(_location2);
+
+        return result;
+      },
+      ios: (pool) async {
+        // 点1
+        final _location1 =
+            await PlatformFactory_iOS.createCLLocationCoordinate2D(
+                point1.latitude, point1.longitude);
+        final mapPoint1 = await MAMapPointForCoordinate(_location1);
+
+        // 点2
+        final _location2 =
+            await PlatformFactory_iOS.createCLLocationCoordinate2D(
+                point2.latitude, point2.longitude);
+        final mapPoint2 = await MAMapPointForCoordinate(_location2);
+
+        // 计算结果
+        final result = await MAMetersBetweenMapPoints(mapPoint1, mapPoint2);
+
+        // 释放两个点相关的数据
+        pool..add(_location1)..add(_location2)..add(mapPoint1)..add(mapPoint2);
+
+        return result;
+      },
+    );
+  }
+
+  /// 计算面积 (iOS未完成)
+  ///
+  /// 计算指定左上角[leftTop]和右下角[rightBottom]的矩形的面积
+  static Future<double> calculateArea(
+    LatLng leftTop,
+    LatLng rightBottom,
+  ) async {
+    return platform(
+      android: (pool) async {
+        // 点1
+        final _location1 = await AmapMapFluttifyFactoryAndroid
+            .createcom_amap_api_maps_model_LatLng__double__double(
+                leftTop.latitude, leftTop.longitude);
+        // 点2
+        final _location2 = await AmapMapFluttifyFactoryAndroid
+            .createcom_amap_api_maps_model_LatLng__double__double(
+                rightBottom.latitude, rightBottom.longitude);
+
+        // 计算结果
+        final result = await com_amap_api_maps_AMapUtils.calculateArea(
+            _location1, _location2);
+
+        // 释放两个点
+        pool..add(_location1)..add(_location2);
+
+        return result;
+      },
+      ios: (pool) async {
+        // 点1
+        final _location1 =
+            await PlatformFactory_iOS.createCLLocationCoordinate2D(
+                leftTop.latitude, leftTop.longitude);
+        final mapPoint1 = await MAMapPointForCoordinate(_location1);
+
+        // 点2
+        final _location2 =
+            await PlatformFactory_iOS.createCLLocationCoordinate2D(
+                rightBottom.latitude, rightBottom.longitude);
+        final mapPoint2 = await MAMapPointForCoordinate(_location2);
+
+        // 计算结果
+        final result = await MAMetersBetweenMapPoints(mapPoint1, mapPoint2);
+
+        // 释放两个点相关的数据
+        pool..add(_location1)..add(_location2)..add(mapPoint1)..add(mapPoint2);
+
+        return result;
       },
     );
   }
