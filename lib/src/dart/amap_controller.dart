@@ -971,7 +971,6 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   Future<void> mapViewDidSingleTappedAtCoordinate(
       MAMapView mapView, CLLocationCoordinate2D coordinate) async {
     super.mapViewDidSingleTappedAtCoordinate(mapView, coordinate);
-
     if (_onMapClick != null) {
       _onMapClick(LatLng(
         await coordinate.latitude,
