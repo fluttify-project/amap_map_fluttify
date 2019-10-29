@@ -926,14 +926,14 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* locationsRefArray = (NSArray<NSNumber*> *) args[@"locations"];
           NSMutableArray<CLLocation*>* locations = [NSMutableArray arrayWithCapacity:locationsRefArray.count];
-          for (int i = 0; i < locations.count; i++) {
+          for (int i = 0; i < locationsRefArray.count; i++) {
               CLLocation* item = (CLLocation*) HEAP[[locationsRefArray objectAtIndex:i]];
               [locations addObject:item];
           }
           // list arg
           NSArray<NSNumber*>* tracePointsRefArray = (NSArray<NSNumber*> *) args[@"tracePoints"];
           NSMutableArray<MATracePoint*>* tracePoints = [NSMutableArray arrayWithCapacity:tracePointsRefArray.count];
-          for (int i = 0; i < tracePoints.count; i++) {
+          for (int i = 0; i < tracePointsRefArray.count; i++) {
               MATracePoint* item = (MATracePoint*) HEAP[[tracePointsRefArray objectAtIndex:i]];
               [tracePoints addObject:item];
           }
@@ -2078,14 +2078,14 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* textureIDsRefArray = (NSArray<NSNumber*> *) args[@"textureIDs"];
           NSMutableArray<NSArray*>* textureIDs = [NSMutableArray arrayWithCapacity:textureIDsRefArray.count];
-          for (int i = 0; i < textureIDs.count; i++) {
+          for (int i = 0; i < textureIDsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[textureIDsRefArray objectAtIndex:i]];
               [textureIDs addObject:item];
           }
           // list arg
           NSArray<NSNumber*>* drawStyleIndexesRefArray = (NSArray<NSNumber*> *) args[@"drawStyleIndexes"];
           NSMutableArray<NSArray*>* drawStyleIndexes = [NSMutableArray arrayWithCapacity:drawStyleIndexesRefArray.count];
-          for (int i = 0; i < drawStyleIndexes.count; i++) {
+          for (int i = 0; i < drawStyleIndexesRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[drawStyleIndexesRefArray objectAtIndex:i]];
               [drawStyleIndexes addObject:item];
           }
@@ -2122,14 +2122,14 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* strokeColorsRefArray = (NSArray<NSNumber*> *) args[@"strokeColors"];
           NSMutableArray<NSArray*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
-          for (int i = 0; i < strokeColors.count; i++) {
+          for (int i = 0; i < strokeColorsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[strokeColorsRefArray objectAtIndex:i]];
               [strokeColors addObject:item];
           }
           // list arg
           NSArray<NSNumber*>* drawStyleIndexesRefArray = (NSArray<NSNumber*> *) args[@"drawStyleIndexes"];
           NSMutableArray<NSArray*>* drawStyleIndexes = [NSMutableArray arrayWithCapacity:drawStyleIndexesRefArray.count];
-          for (int i = 0; i < drawStyleIndexes.count; i++) {
+          for (int i = 0; i < drawStyleIndexesRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[drawStyleIndexesRefArray objectAtIndex:i]];
               [drawStyleIndexes addObject:item];
           }
@@ -2198,7 +2198,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* itemsRefArray = (NSArray<NSNumber*> *) args[@"items"];
           NSMutableArray<MAMultiPointItem*>* items = [NSMutableArray arrayWithCapacity:itemsRefArray.count];
-          for (int i = 0; i < items.count; i++) {
+          for (int i = 0; i < itemsRefArray.count; i++) {
               MAMultiPointItem* item = (MAMultiPointItem*) HEAP[[itemsRefArray objectAtIndex:i]];
               [items addObject:item];
           }
@@ -2913,7 +2913,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-          for (int i = 0; i < annotations.count; i++) {
+          for (int i = 0; i < annotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
@@ -2954,7 +2954,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-          for (int i = 0; i < annotations.count; i++) {
+          for (int i = 0; i < annotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
@@ -3055,7 +3055,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-          for (int i = 0; i < annotations.count; i++) {
+          for (int i = 0; i < annotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
@@ -3080,7 +3080,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
           NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-          for (int i = 0; i < annotations.count; i++) {
+          for (int i = 0; i < annotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
               [annotations addObject:item];
           }
@@ -3190,7 +3190,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -3233,7 +3233,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -3276,7 +3276,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -3462,7 +3462,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -3487,7 +3487,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
           NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-          for (int i = 0; i < overlays.count; i++) {
+          for (int i = 0; i < overlaysRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
               [overlays addObject:item];
           }
@@ -3806,7 +3806,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* viewsRefArray = (NSArray<NSNumber*> *) args[@"views"];
           NSMutableArray<NSArray*>* views = [NSMutableArray arrayWithCapacity:viewsRefArray.count];
-          for (int i = 0; i < views.count; i++) {
+          for (int i = 0; i < viewsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[viewsRefArray objectAtIndex:i]];
               [views addObject:item];
           }
@@ -4012,7 +4012,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* overlayRenderersRefArray = (NSArray<NSNumber*> *) args[@"overlayRenderers"];
           NSMutableArray<NSArray*>* overlayRenderers = [NSMutableArray arrayWithCapacity:overlayRenderersRefArray.count];
-          for (int i = 0; i < overlayRenderers.count; i++) {
+          for (int i = 0; i < overlayRenderersRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[overlayRenderersRefArray objectAtIndex:i]];
               [overlayRenderers addObject:item];
           }
@@ -4141,7 +4141,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* poisRefArray = (NSArray<NSNumber*> *) args[@"pois"];
           NSMutableArray<NSArray*>* pois = [NSMutableArray arrayWithCapacity:poisRefArray.count];
-          for (int i = 0; i < pois.count; i++) {
+          for (int i = 0; i < poisRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[poisRefArray objectAtIndex:i]];
               [pois addObject:item];
           }
@@ -7751,7 +7751,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* dataRefArray = (NSArray<NSNumber*> *) args[@"data"];
           NSMutableArray<MAHeatMapNode*>* data = [NSMutableArray arrayWithCapacity:dataRefArray.count];
-          for (int i = 0; i < data.count; i++) {
+          for (int i = 0; i < dataRefArray.count; i++) {
               MAHeatMapNode* item = (MAHeatMapNode*) HEAP[[dataRefArray objectAtIndex:i]];
               [data addObject:item];
           }
@@ -7946,7 +7946,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* hollowShapesRefArray = (NSArray<NSNumber*> *) args[@"hollowShapes"];
           NSMutableArray<id<MAOverlay>>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
-          for (int i = 0; i < hollowShapes.count; i++) {
+          for (int i = 0; i < hollowShapesRefArray.count; i++) {
               id<MAOverlay> item = (id<MAOverlay>) HEAP[[hollowShapesRefArray objectAtIndex:i]];
               [hollowShapes addObject:item];
           }
@@ -8037,7 +8037,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* hollowShapesRefArray = (NSArray<NSNumber*> *) args[@"hollowShapes"];
           NSMutableArray<id<MAOverlay>>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
-          for (int i = 0; i < hollowShapes.count; i++) {
+          for (int i = 0; i < hollowShapesRefArray.count; i++) {
               id<MAOverlay> item = (id<MAOverlay>) HEAP[[hollowShapesRefArray objectAtIndex:i]];
               [hollowShapes addObject:item];
           }
@@ -8084,7 +8084,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* strokeTextureImagesRefArray = (NSArray<NSNumber*> *) args[@"strokeTextureImages"];
           NSMutableArray<NSArray*>* strokeTextureImages = [NSMutableArray arrayWithCapacity:strokeTextureImagesRefArray.count];
-          for (int i = 0; i < strokeTextureImages.count; i++) {
+          for (int i = 0; i < strokeTextureImagesRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[strokeTextureImagesRefArray objectAtIndex:i]];
               [strokeTextureImages addObject:item];
           }
@@ -9494,7 +9494,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // list arg
           NSArray<NSNumber*>* selectedAnnotationsRefArray = (NSArray<NSNumber*> *) args[@"selectedAnnotations"];
           NSMutableArray<NSArray*>* selectedAnnotations = [NSMutableArray arrayWithCapacity:selectedAnnotationsRefArray.count];
-          for (int i = 0; i < selectedAnnotations.count; i++) {
+          for (int i = 0; i < selectedAnnotationsRefArray.count; i++) {
               NSArray* item = (NSArray*) HEAP[[selectedAnnotationsRefArray objectAtIndex:i]];
               [selectedAnnotations addObject:item];
           }
