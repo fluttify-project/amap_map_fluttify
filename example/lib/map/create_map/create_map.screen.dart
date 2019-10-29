@@ -92,7 +92,8 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   title: Text('获取地图中心点'),
                   onTap: () async {
                     final center = await _controller?.getCenterCoordinate();
-                    toast('center: lat: ${center.lat}, lng: ${center.lng}');
+                    toast(
+                        'center: lat: ${center.latitude}, lng: ${center.longitude}');
                   },
                 )
               ],
