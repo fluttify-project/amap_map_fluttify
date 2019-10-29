@@ -18,6 +18,7 @@ class DrawPointScreen extends StatefulWidget {
 
 class DrawPointScreenState extends State<DrawPointScreen> {
   AmapController _controller;
+  List<Marker> _markers = [];
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +43,9 @@ class DrawPointScreenState extends State<DrawPointScreen> {
               divider: kDividerTiny,
               children: <Widget>[
                 ListTile(
-                  title: Text('添加Marker'),
+                  title: Center(child: Text('添加Marker')),
                   onTap: () async {
-                    await _controller?.addMarker(
+                    final marker = await _controller?.addMarker(
                       context,
                       _getNextLatLng(),
                       title: '北京',
@@ -53,10 +54,26 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                       iconUri: _assetsIcon,
                       draggable: true,
                     );
+                    _markers.add(marker);
                   },
                 ),
                 ListTile(
-                  title: Text('Marker添加点击事件'),
+                  title: Center(child: Text('删除Marker')),
+                  onTap: () async {
+                    if (_markers.isNotEmpty) {
+                      await _markers[0].remove();
+                      _markers.removeAt(0);
+                    }
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('清除所有Marker')),
+                  onTap: () async {
+                    await _controller.clearMarkers();
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('Marker添加点击事件')),
                   onTap: () {
                     _controller?.setMarkerClickListener((marker) async {
                       toast('${await marker.title}, ${await marker.snippet}');
@@ -64,7 +81,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                   },
                 ),
                 ListTile(
-                  title: Text('Marker添加拖动事件'),
+                  title: Center(child: Text('Marker添加拖动事件')),
                   onTap: () {
                     _controller?.setMarkerDragListener(
                       onMarkerDragEnd: (marker) async {

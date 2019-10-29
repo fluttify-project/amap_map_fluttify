@@ -436,7 +436,7 @@ class AmapController {
   ///
   /// 在纬度[lat], 经度[lng]的位置添加marker, 并设置标题[title]和副标题[snippet], [iconUri]
   /// 可以是图片url, asset路径或者文件路径
-  Future addMarker(
+  Future<Marker> addMarker(
     BuildContext context,
     LatLng point, {
     String title,
@@ -525,10 +525,15 @@ class AmapController {
 
         final marker = await map.addMarker(markerOption);
 
-        pool..add(map)..add(latLng)..add(markerOption)..add(marker);
+        // marker不释放, 还有用
+        pool..add(map)..add(latLng)..add(markerOption);
+
+        return Marker.android(marker);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_iosMapDelegate);
+        await _iosController.set_delegate(
+          _iosMapDelegate.._iosController = _iosController,
+        );
 
         // 创建marker
         final pointAnnotation =
@@ -567,9 +572,32 @@ class AmapController {
 
         await _iosController.addAnnotation(pointAnnotation);
 
-        pool..add(pointAnnotation)..add(coordinate);
+        // pointAnnotation不释放, 还有用
+        pool..add(coordinate);
+
+        return Marker.ios(pointAnnotation, _iosController);
       },
     );
+  }
+
+  Future<void> clearMarkers() async {
+    return platform(android: (pool) async {
+      final map = await _androidController.getMap();
+      final markers = await map.getMapScreenMarkers();
+
+      for (final marker in markers) {
+        marker.remove();
+      }
+
+      pool
+        ..add(map)
+        ..addAll(markers);
+    }, ios: (pool) async {
+      final markers = await _iosController.get_annotations();
+      await _iosController.removeAnnotations(markers);
+
+      pool..addAll(markers as List<Ref>);
+    });
   }
 
   /// 添加线
@@ -875,6 +903,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   _OnMarkerDrag _onMarkerDragging;
   _OnMarkerDrag _onMarkerDragEnd;
   _OnMapClick _onMapClick;
+  MAMapView _iosController;
 
   @override
   Future<void> mapViewDidAnnotationViewTapped(
@@ -883,7 +912,12 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   ) async {
     super.mapViewDidAnnotationViewTapped(mapView, view);
     if (onMarkerClicked != null) {
-      onMarkerClicked(Marker.ios(view));
+      onMarkerClicked(
+        Marker.ios(
+          await view.get_annotation(viewChannel: false),
+          _iosController,
+        ),
+      );
     }
   }
 
@@ -903,18 +937,33 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
     if (_onMarkerDragStart != null &&
         newState ==
             MAAnnotationViewDragState.MAAnnotationViewDragStateStarting) {
-      _onMarkerDragStart(Marker.ios(view));
+      _onMarkerDragStart(
+        Marker.ios(
+          await view.get_annotation(viewChannel: false),
+          _iosController,
+        ),
+      );
     }
 
     if (_onMarkerDragging != null &&
         newState ==
             MAAnnotationViewDragState.MAAnnotationViewDragStateDragging) {
-      _onMarkerDragging(Marker.ios(view));
+      _onMarkerDragging(
+        Marker.ios(
+          await view.get_annotation(viewChannel: false),
+          _iosController,
+        ),
+      );
     }
 
     if (_onMarkerDragEnd != null &&
         newState == MAAnnotationViewDragState.MAAnnotationViewDragStateEnding) {
-      _onMarkerDragEnd(Marker.ios(view));
+      _onMarkerDragEnd(
+        Marker.ios(
+          await view.get_annotation(viewChannel: false),
+          _iosController,
+        ),
+      );
     }
   }
 
