@@ -1,3 +1,8 @@
+## 0.2.7
+- feat: 添加地图点击监听
+- feat: 删除单个marker和删除所有marker
+- feat: 增加calculateDistance方法
+
 ## 0.2.6
 - enhancement: 使用amap_core的LatLng
 
