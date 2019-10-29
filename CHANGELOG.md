@@ -1,3 +1,6 @@
+## 0.2.6
+- enhancement: 使用amap_core的LatLng
+
 ## 0.2.5
 - feat: 增加获取地图中心点的功能
 

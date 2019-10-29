@@ -1,5 +1,6 @@
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:amap_core_fluttify/amap_core_fluttify.dart';
 
+import '../android/android.export.g.dart';
 import '../ios/ios.export.g.dart';
 
 /// 地图标记
@@ -46,18 +47,5 @@ class Marker {
         return LatLng(await _location.latitude, await _location.longitude);
       },
     );
-  }
-}
-
-/// 经纬度model
-class LatLng {
-  LatLng(this.lat, this.lng);
-
-  final double lat;
-  final double lng;
-
-  @override
-  String toString() {
-    return 'LatLng{lat: $lat, lng: $lng}';
   }
 }

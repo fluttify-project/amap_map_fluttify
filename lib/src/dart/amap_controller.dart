@@ -481,8 +481,8 @@ class AmapController {
       return iconData;
     }
 
-    final lat = point.lat;
-    final lng = point.lng;
+    final lat = point.latitude;
+    final lng = point.longitude;
     return platform(
       android: (pool) async {
         // 获取地图
@@ -588,7 +588,7 @@ class AmapController {
         for (final point in points) {
           final latLng = await AmapMapFluttifyFactoryAndroid
               .createcom_amap_api_maps_model_LatLng__double__double(
-                  point.lat, point.lng);
+                  point.latitude, point.longitude);
           latLngList.add(latLng);
         }
 
@@ -621,7 +621,7 @@ class AmapController {
         List<CLLocationCoordinate2D> latLngList = [];
         for (final point in points) {
           final latLng = await PlatformFactory_iOS.createCLLocationCoordinate2D(
-              point.lat, point.lng);
+              point.latitude, point.longitude);
           latLngList.add(latLng);
         }
 
@@ -664,7 +664,7 @@ class AmapController {
         for (final point in points) {
           final latLng = await AmapMapFluttifyFactoryAndroid
               .createcom_amap_api_maps_model_LatLng__double__double(
-                  point.lat, point.lng);
+                  point.latitude, point.longitude);
           latLngList.add(latLng);
         }
 
@@ -701,7 +701,7 @@ class AmapController {
         List<CLLocationCoordinate2D> latLngList = [];
         for (final point in points) {
           final latLng = await PlatformFactory_iOS.createCLLocationCoordinate2D(
-              point.lat, point.lng);
+              point.latitude, point.longitude);
           latLngList.add(latLng);
         }
 
@@ -746,7 +746,7 @@ class AmapController {
         // 构造点
         final latLng = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_LatLng__double__double(
-                point.lat, point.lng);
+                point.latitude, point.longitude);
 
         // 构造参数
         final circleOptions = await AmapMapFluttifyFactoryAndroid
@@ -775,7 +775,7 @@ class AmapController {
         await _iosController.set_delegate(_iosMapDelegate);
 
         final latLng = await PlatformFactory_iOS.createCLLocationCoordinate2D(
-            point.lat, point.lng);
+            point.latitude, point.longitude);
 
         // 参数
         final circle =
