@@ -1,3 +1,6 @@
+## 0.2.8
+- doc: git-lfs超额说明
+
 ## 0.2.7
 - feat: 添加地图点击监听
 - feat: 删除单个marker和删除所有marker
