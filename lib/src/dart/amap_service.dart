@@ -13,6 +13,8 @@ export 'package:amap_core_fluttify/amap_core_fluttify.dart';
 
 /// 除了地图以外的功能放在这里, 比如说sdk初始化
 class AmapService {
+  AmapService._();
+
   static Map<String, List<String>> _assetManifest;
 
   /// 设置ios端的key, android端需要在manifest里面设置, 无法通过代码设置
@@ -144,6 +146,7 @@ class AmapService {
     );
   }
 
+  /// 将asset转换为对应分辨率密度的asset
   static String toResolutionAware(BuildContext context, String assetName) {
     final RegExp _extractRatioRegExp = RegExp(r'/?(\d+(\.\d*)?)x$');
     const double _naturalResolution = 1.0;

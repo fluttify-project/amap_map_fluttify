@@ -580,6 +580,7 @@ class AmapController {
     );
   }
 
+  /// 清除所有marker
   Future<void> clearMarkers() async {
     return platform(android: (pool) async {
       final map = await _androidController.getMap();
