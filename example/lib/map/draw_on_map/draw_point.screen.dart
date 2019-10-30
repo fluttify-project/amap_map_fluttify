@@ -40,6 +40,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
           ),
           Flexible(
             child: DecoratedColumn(
+              scrollable: true,
               divider: kDividerTiny,
               children: <Widget>[
                 ListTile(
@@ -47,14 +48,34 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                   onTap: () async {
                     final marker = await _controller?.addMarker(
                       context,
-                      _getNextLatLng(),
-                      title: '北京',
-                      snippet: '描述',
-//                      iconUri: _networkIcon,
-                      iconUri: _assetsIcon,
-                      draggable: true,
+                      MarkerOption(
+                        coord: _getNextLatLng(),
+                        title: '北京',
+                        snippet: '描述',
+                        iconUri: _assetsIcon,
+                        draggable: true,
+                      ),
                     );
                     _markers.add(marker);
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('批量添加Marker')),
+                  onTap: () async {
+                    final markers = await _controller?.addMarkers(
+                      context,
+                      [
+                        for (int i = 0; i < 10; i++)
+                          MarkerOption(
+                            coord: _getNextLatLng(),
+                            title: '北京',
+                            snippet: '描述',
+                            iconUri: _assetsIcon,
+                            draggable: true,
+                          ),
+                      ],
+                    );
+                    _markers.addAll(markers);
                   },
                 ),
                 ListTile(

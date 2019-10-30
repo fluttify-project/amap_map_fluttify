@@ -3125,9 +3125,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       annotationView.image = icon;
       annotationView.draggable = [draggable boolValue];
       annotationView.canShowCallout = YES; // 这个参数在android端没有配置, 默认就是可以显示弹窗
-
-      // 这次调用完成后 清空栈
-      [STACK removeAllObjects];
       return annotationView;
   }
   ////////////////////////////////////////////////////////////////////////////////
@@ -3158,7 +3155,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   }
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAddAnnotationViews" arguments:@{@"mapView": argmapView, @"views": argviews}];
-  
+
+  // 添加annotation完成后, 不管是批量还是单个, 都会回调此方法, 所以不能在viewForAnnotation里清空, 需要在这里清空栈, 到这里才算一个方法调用完成
+  [STACK removeAllObjects];
 }
 
 - (void)mapView : (MAMapView*)mapView didSelectAnnotationView: (MAAnnotationView*)view
