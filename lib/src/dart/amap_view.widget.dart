@@ -22,6 +22,8 @@ class AmapView extends StatefulWidget {
 }
 
 class _AmapViewState extends State<AmapView> {
+  AmapController _controller;
+
   @override
   Widget build(BuildContext context) {
     if (Platform.isAndroid) {
@@ -30,7 +32,8 @@ class _AmapViewState extends State<AmapView> {
           await controller.onCreate(
               await PlatformFactory_Android.createandroid_os_Bundle());
           if (widget.onMapCreated != null) {
-            widget.onMapCreated(AmapController.android(controller));
+            _controller = AmapController.android(controller);
+            widget.onMapCreated(_controller);
           }
         },
       );
@@ -38,7 +41,8 @@ class _AmapViewState extends State<AmapView> {
       return MAMapView_iOS(
         onViewCreated: (controller) {
           if (widget.onMapCreated != null) {
-            widget.onMapCreated(AmapController.ios(controller));
+            _controller = AmapController.ios(controller);
+            widget.onMapCreated(_controller);
           }
         },
       );
@@ -53,6 +57,8 @@ class _AmapViewState extends State<AmapView> {
     kNativeObjectPool
       ..where(isCurrentPlugin).forEach(release)
       ..removeWhere(isCurrentPlugin);
+
+    _controller?.dispose();
     super.dispose();
   }
 }

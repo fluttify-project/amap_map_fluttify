@@ -1,7 +1,39 @@
 import 'package:amap_core_fluttify/amap_core_fluttify.dart';
+import 'package:flutter/cupertino.dart';
 
 import '../android/android.export.g.dart';
 import '../ios/ios.export.g.dart';
+
+/// Marker创建参数
+class MarkerOption {
+  /// 经纬度
+  final LatLng latLng;
+
+  /// 标题
+  final String title;
+
+  /// 副标题
+  final String snippet;
+
+  /// 图片uri 可以是url, asset路径或者文件路径
+  final Uri iconUri;
+
+  /// 是否可拖动
+  final bool draggable;
+
+  MarkerOption({
+    @required this.latLng,
+    this.title,
+    this.snippet,
+    this.iconUri,
+    this.draggable,
+  });
+
+  @override
+  String toString() {
+    return 'MarkerOptions{point: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, draggable: $draggable}';
+  }
+}
 
 /// 地图标记
 class Marker {

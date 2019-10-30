@@ -3,7 +3,6 @@
 # 高德 `地图`组件
 
 [![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify)
-[![Codemagic build status](https://api.codemagic.io/apps/5dab1239813e331c1ca09a1a/5dab1239813e331c1ca09a19/status_badge.svg)](https://codemagic.io/apps/5dab1239813e331c1ca09a1a/5dab1239813e331c1ca09a19/latest_build)
 
 Dart接口基于[fluttify](https://github.com/yohom/fluttify-core-example)引擎生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/).
 
@@ -53,6 +52,9 @@ class AmapWidget extends StatelessWidget {
 
 ## 请作者喝杯奶茶
 <img src="./other/1557492318.jpg" height="300">  <img src="./other/WechatIMG111.jpeg" height="300">
+
+## qq群
+<img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/QQ%E7%BE%A4.png?raw=true" height="250">
 
 ## LICENSE
 > Copyright 2019 yohom

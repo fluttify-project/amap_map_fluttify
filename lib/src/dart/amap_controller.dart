@@ -18,12 +18,16 @@ typedef void _OnMapClick(LatLng latLng);
 typedef void _OnMarkerDrag(Marker marker);
 
 /// 地图控制类
-class AmapController {
+class AmapController with WidgetsBindingObserver, _Private {
   /// Android构造器
-  AmapController.android(this._androidController);
+  AmapController.android(this._androidController) {
+    WidgetsBinding.instance.addObserver(this);
+  }
 
   /// iOS构造器
-  AmapController.ios(this._iosController);
+  AmapController.ios(this._iosController) {
+    WidgetsBinding.instance.addObserver(this);
+  }
 
   com_amap_api_maps_MapView _androidController;
   MAMapView _iosController;
@@ -436,54 +440,9 @@ class AmapController {
   ///
   /// 在纬度[lat], 经度[lng]的位置添加marker, 并设置标题[title]和副标题[snippet], [iconUri]
   /// 可以是图片url, asset路径或者文件路径
-  Future<Marker> addMarker(
-    BuildContext context,
-    LatLng point, {
-    String title,
-    String snippet,
-    Uri iconUri,
-    bool draggable,
-  }) {
-    Future<Uint8List> _getImageData(Uri iconUri) async {
-      Uint8List iconData;
-      switch (iconUri.scheme) {
-        // 网络图片
-        case 'https':
-        case 'http':
-          HttpClient httpClient = HttpClient();
-          var request = await httpClient.getUrl(iconUri);
-          var response = await request.close();
-          iconData = await consolidateHttpClientResponseBytes(response);
-          break;
-        // 文件图片
-        case 'file':
-          final imageFile = File.fromUri(iconUri);
-          iconData = imageFile.readAsBytesSync();
-          break;
-        // asset图片
-        default:
-          // asset的bug描述(https://github.com/flutter/flutter/issues/24865):
-          // android和ios平台上都取了1.0密度的图片, android上就显示了1.0密度的图片, 而ios
-          // 平台上使用的图片也是1.0密度, 但是根据设备密度进行了对应的放大, 导致了android和ios
-          // 两端的图片的大小不一致, 这里只对android根据密度选择原始图片, ios原封不动
-          // 这样做android端能够保证完美, ios端的话图片会有点糊, 因为原始图片是1.0密度, 但是这样
-          // 的话两端大小是一致的, 如果要求再高一点的话, ios这边对图片根据设备密度选择好图片后, 再进行对应密度
-          // 的缩小, 就是完美的了, 但是处理起来比较麻烦, 这里就不去处理了
-          if (Platform.isAndroid) {
-            final byteData = await rootBundle
-                .load(AmapService.toResolutionAware(context, iconUri.path));
-            iconData = byteData.buffer.asUint8List();
-          } else {
-            final byteData = await rootBundle.load(iconUri.path);
-            iconData = byteData.buffer.asUint8List();
-          }
-          break;
-      }
-      return iconData;
-    }
-
-    final lat = point.latitude;
-    final lng = point.longitude;
+  Future<Marker> addMarker(BuildContext context, MarkerOption option) {
+    final lat = option.latLng.latitude;
+    final lng = option.latLng.longitude;
     return platform(
       android: (pool) async {
         // 获取地图
@@ -500,16 +459,16 @@ class AmapController {
         // 设置marker经纬度
         await markerOption.position(latLng);
         // 设置marker标题
-        if (title != null) {
-          await markerOption.title(title);
+        if (option.title != null) {
+          await markerOption.title(option.title);
         }
         // 设置marker副标题
-        if (snippet != null) {
-          await markerOption.snippet(snippet);
+        if (option.snippet != null) {
+          await markerOption.snippet(option.snippet);
         }
         // 设置marker图标
-        if (iconUri != null) {
-          Uint8List iconData = await _getImageData(iconUri);
+        if (option.iconUri != null) {
+          Uint8List iconData = await _getImageData(context, option.iconUri);
 
           final bitmap =
               await PlatformFactory_Android.createandroid_graphics_Bitmap(
@@ -521,7 +480,8 @@ class AmapController {
           pool..add(bitmap)..add(icon);
         }
         // 是否可拖拽
-        if (draggable != null) await markerOption.draggable(draggable);
+        if (option.draggable != null)
+          await markerOption.draggable(option.draggable);
 
         final marker = await map.addMarker(markerOption);
 
@@ -546,17 +506,17 @@ class AmapController {
         await pointAnnotation.set_coordinate(coordinate);
 
         // 设置标题
-        if (title != null) {
-          await pointAnnotation.set_title(title);
+        if (option.title != null) {
+          await pointAnnotation.set_title(option.title);
         }
         // 设置副标题
-        if (snippet != null) {
-          await pointAnnotation.set_subtitle(snippet);
+        if (option.snippet != null) {
+          await pointAnnotation.set_subtitle(option.snippet);
         }
         // 设置图片
         // 设置marker图标
-        if (iconUri != null) {
-          Uint8List iconData = await _getImageData(iconUri);
+        if (option.iconUri != null) {
+          Uint8List iconData = await _getImageData(context, option.iconUri);
 
           final icon = await PlatformFactory_iOS.createUIImage(iconData);
 
@@ -567,8 +527,9 @@ class AmapController {
           pool..add(icon);
         }
         // 是否可拖拽
-        if (draggable != null)
-          await PlatformFactory_iOS.pushStackJsonable('draggable', draggable);
+        if (option.draggable != null)
+          await PlatformFactory_iOS.pushStackJsonable(
+              'draggable', option.draggable);
 
         await _iosController.addAnnotation(pointAnnotation);
 
@@ -580,6 +541,136 @@ class AmapController {
     );
   }
 
+  /// 批量添加marker
+  ///
+  /// 根据[options]批量创建Marker, 目前iOS端所有的marker的icon和draggable参数都只能一样
+  Future<List<Marker>> addMarkers(
+    BuildContext context,
+    List<MarkerOption> options,
+  ) {
+    assert(context != null);
+    assert(options != null);
+
+    if (options.isEmpty) return Future.value([]);
+    return platform(
+      android: (pool) async {
+        // 获取地图
+        final map = await _androidController.getMap();
+
+        final androidOptions = <com_amap_api_maps_model_MarkerOptions>[];
+        for (final option in options) {
+          final lat = option.latLng.latitude;
+          final lng = option.latLng.longitude;
+
+          // marker经纬度
+          final latLng = await AmapMapFluttifyFactoryAndroid
+              .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
+
+          // marker配置
+          final markerOption = await AmapMapFluttifyFactoryAndroid
+              .createcom_amap_api_maps_model_MarkerOptions__();
+
+          // 设置marker经纬度
+          await markerOption.position(latLng);
+          // 设置marker标题
+          if (option.title != null) {
+            await markerOption.title(option.title);
+          }
+          // 设置marker副标题
+          if (option.snippet != null) {
+            await markerOption.snippet(option.snippet);
+          }
+          // 设置marker图标
+          if (option.iconUri != null) {
+            Uint8List iconData = await _getImageData(context, option.iconUri);
+
+            final bitmap =
+                await PlatformFactory_Android.createandroid_graphics_Bitmap(
+                    iconData);
+            final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
+                .fromBitmap(bitmap);
+            await markerOption.icon(icon);
+
+            androidOptions.add(markerOption);
+
+            pool..add(bitmap)..add(icon);
+          }
+
+          // 是否可拖拽
+          if (option.draggable != null)
+            await markerOption.draggable(option.draggable);
+
+          pool..add(latLng);
+        }
+
+        final markers = await map.addMarkers(androidOptions, false);
+
+        // marker不释放, 还有用
+        pool
+          ..add(map)
+          ..addAll(androidOptions);
+        return markers.map((it) => Marker.android(it)).toList();
+      },
+      ios: (pool) async {
+        await _iosController.set_delegate(
+          _iosMapDelegate.._iosController = _iosController,
+        );
+
+        final iosOptions = <NSObject>[];
+        for (final option in options) {
+          final lat = option.latLng.latitude;
+          final lng = option.latLng.longitude;
+
+          // 创建marker
+          final pointAnnotation =
+              await AmapMapFluttifyFactoryIOS.createMAPointAnnotation();
+
+          final coordinate =
+              await PlatformFactory_iOS.createCLLocationCoordinate2D(lat, lng);
+
+          // 设置经纬度
+          await pointAnnotation.set_coordinate(coordinate);
+
+          // 设置标题
+          if (option.title != null) {
+            await pointAnnotation.set_title(option.title);
+          }
+          // 设置副标题
+          if (option.snippet != null) {
+            await pointAnnotation.set_subtitle(option.snippet);
+          }
+          // 设置图片
+          // 设置marker图标
+          if (option.iconUri != null) {
+            Uint8List iconData = await _getImageData(context, option.iconUri);
+
+            final icon = await PlatformFactory_iOS.createUIImage(iconData);
+
+            // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
+            // 供ios的回调去获取
+            await PlatformFactory_iOS.pushStack('icon', icon);
+
+            pool..add(icon);
+          }
+          // 是否可拖拽
+          if (option.draggable != null)
+            await PlatformFactory_iOS.pushStackJsonable(
+                'draggable', option.draggable);
+
+          iosOptions.add(pointAnnotation);
+
+          // pointAnnotation不释放, 还有用
+          pool..add(coordinate);
+        }
+
+        await _iosController.addAnnotations(iosOptions);
+
+        return iosOptions.map((it) => Marker.ios(it, _iosController)).toList();
+      },
+    );
+  }
+
+  /// 清除所有marker
   Future<void> clearMarkers() async {
     return platform(android: (pool) async {
       final map = await _androidController.getMap();
@@ -841,7 +932,7 @@ class AmapController {
       },
       ios: (pool) async {
         await _iosController
-            .set_delegate(_iosMapDelegate..onMarkerClicked = onMarkerClicked);
+            .set_delegate(_iosMapDelegate.._onMarkerClicked = onMarkerClicked);
       },
     );
   }
@@ -895,10 +986,32 @@ class AmapController {
       },
     );
   }
+
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    debugPrint('didChangeAppLifecycleState: $state');
+    switch (state) {
+      case AppLifecycleState.resumed:
+        _androidController.onResume();
+        break;
+      case AppLifecycleState.inactive:
+        break;
+      case AppLifecycleState.paused:
+        _androidController.onPause();
+        break;
+      case AppLifecycleState.suspending:
+        break;
+    }
+  }
 }
 
 class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
-  _OnMarkerClick onMarkerClicked;
+  _OnMarkerClick _onMarkerClicked;
   _OnMarkerDrag _onMarkerDragStart;
   _OnMarkerDrag _onMarkerDragging;
   _OnMarkerDrag _onMarkerDragEnd;
@@ -911,10 +1024,16 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
     MAAnnotationView view,
   ) async {
     super.mapViewDidAnnotationViewTapped(mapView, view);
-    if (onMarkerClicked != null) {
-      onMarkerClicked(
+    if (_onMarkerClicked != null) {
+      _onMarkerClicked(
         Marker.ios(
-          await view.get_annotation(viewChannel: false),
+          // 这里由于传入的类型是MAAnnotation, 而fluttify对于抽象类的实体子类的处理方式是找到sdk
+          // 内的第一个实体子类进行实例化, 这里如果放任不管取第一个实体子类的话是MAGroundOverlay
+          // 跟当前需要的MAPointAnnotation类是冲突的.
+          //
+          // 解决办法很简单, 把refId取出来放到目标实体类里就行了
+          MAPointAnnotation()
+            ..refId = (await view.get_annotation(viewChannel: false)).refId,
           _iosController,
         ),
       );
@@ -1000,7 +1119,7 @@ class _AndroidMapDelegate extends java_lang_Object
     return true;
   }
 
-  @mustCallSuper
+  @override
   Future<void> onMarkerDragStart(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerDragStart(var1);
     if (_onMarkerDragStart != null) {
@@ -1008,7 +1127,7 @@ class _AndroidMapDelegate extends java_lang_Object
     }
   }
 
-  @mustCallSuper
+  @override
   Future<void> onMarkerDrag(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerDrag(var1);
     if (_onMarkerDragging != null) {
@@ -1016,7 +1135,7 @@ class _AndroidMapDelegate extends java_lang_Object
     }
   }
 
-  @mustCallSuper
+  @override
   Future<void> onMarkerDragEnd(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerDragEnd(var1);
     if (_onMarkerDragEnd != null) {
@@ -1033,5 +1152,45 @@ class _AndroidMapDelegate extends java_lang_Object
         await var1.get_longitude(),
       ));
     }
+  }
+}
+
+mixin _Private {
+  Future<Uint8List> _getImageData(BuildContext context, Uri iconUri) async {
+    Uint8List iconData;
+    switch (iconUri.scheme) {
+      // 网络图片
+      case 'https':
+      case 'http':
+        HttpClient httpClient = HttpClient();
+        var request = await httpClient.getUrl(iconUri);
+        var response = await request.close();
+        iconData = await consolidateHttpClientResponseBytes(response);
+        break;
+      // 文件图片
+      case 'file':
+        final imageFile = File.fromUri(iconUri);
+        iconData = imageFile.readAsBytesSync();
+        break;
+      // asset图片
+      default:
+        // asset的bug描述(https://github.com/flutter/flutter/issues/24865):
+        // android和ios平台上都取了1.0密度的图片, android上就显示了1.0密度的图片, 而ios
+        // 平台上使用的图片也是1.0密度, 但是根据设备密度进行了对应的放大, 导致了android和ios
+        // 两端的图片的大小不一致, 这里只对android根据密度选择原始图片, ios原封不动
+        // 这样做android端能够保证完美, ios端的话图片会有点糊, 因为原始图片是1.0密度, 但是这样
+        // 的话两端大小是一致的, 如果要求再高一点的话, ios这边对图片根据设备密度选择好图片后, 再进行对应密度
+        // 的缩小, 就是完美的了, 但是处理起来比较麻烦, 这里就不去处理了
+        if (Platform.isAndroid) {
+          final byteData = await rootBundle
+              .load(AmapService.toResolutionAware(context, iconUri.path));
+          iconData = byteData.buffer.asUint8List();
+        } else {
+          final byteData = await rootBundle.load(iconUri.path);
+          iconData = byteData.buffer.asUint8List();
+        }
+        break;
+    }
+    return iconData;
   }
 }

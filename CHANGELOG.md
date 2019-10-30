@@ -1,3 +1,8 @@
+## 0.3.0
+- feat: 批量添加marker
+- enhancement: 增加生命周期回调
+- fix: #16 ios marker点击事件修复
+
 ## 0.2.8
 - doc: git-lfs超额说明
 
