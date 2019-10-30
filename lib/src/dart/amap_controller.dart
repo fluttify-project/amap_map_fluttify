@@ -18,12 +18,16 @@ typedef void _OnMapClick(LatLng latLng);
 typedef void _OnMarkerDrag(Marker marker);
 
 /// 地图控制类
-class AmapController {
+class AmapController with WidgetsBindingObserver, _Private {
   /// Android构造器
-  AmapController.android(this._androidController);
+  AmapController.android(this._androidController) {
+    WidgetsBinding.instance.addObserver(this);
+  }
 
   /// iOS构造器
-  AmapController.ios(this._iosController);
+  AmapController.ios(this._iosController) {
+    WidgetsBinding.instance.addObserver(this);
+  }
 
   com_amap_api_maps_MapView _androidController;
   MAMapView _iosController;
@@ -983,42 +987,26 @@ class AmapController {
     );
   }
 
-  Future<Uint8List> _getImageData(BuildContext context, Uri iconUri) async {
-    Uint8List iconData;
-    switch (iconUri.scheme) {
-      // 网络图片
-      case 'https':
-      case 'http':
-        HttpClient httpClient = HttpClient();
-        var request = await httpClient.getUrl(iconUri);
-        var response = await request.close();
-        iconData = await consolidateHttpClientResponseBytes(response);
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    debugPrint('didChangeAppLifecycleState: $state');
+    switch (state) {
+      case AppLifecycleState.resumed:
+        _androidController.onResume();
         break;
-      // 文件图片
-      case 'file':
-        final imageFile = File.fromUri(iconUri);
-        iconData = imageFile.readAsBytesSync();
+      case AppLifecycleState.inactive:
         break;
-      // asset图片
-      default:
-        // asset的bug描述(https://github.com/flutter/flutter/issues/24865):
-        // android和ios平台上都取了1.0密度的图片, android上就显示了1.0密度的图片, 而ios
-        // 平台上使用的图片也是1.0密度, 但是根据设备密度进行了对应的放大, 导致了android和ios
-        // 两端的图片的大小不一致, 这里只对android根据密度选择原始图片, ios原封不动
-        // 这样做android端能够保证完美, ios端的话图片会有点糊, 因为原始图片是1.0密度, 但是这样
-        // 的话两端大小是一致的, 如果要求再高一点的话, ios这边对图片根据设备密度选择好图片后, 再进行对应密度
-        // 的缩小, 就是完美的了, 但是处理起来比较麻烦, 这里就不去处理了
-        if (Platform.isAndroid) {
-          final byteData = await rootBundle
-              .load(AmapService.toResolutionAware(context, iconUri.path));
-          iconData = byteData.buffer.asUint8List();
-        } else {
-          final byteData = await rootBundle.load(iconUri.path);
-          iconData = byteData.buffer.asUint8List();
-        }
+      case AppLifecycleState.paused:
+        _androidController.onPause();
+        break;
+      case AppLifecycleState.suspending:
         break;
     }
-    return iconData;
   }
 }
 
@@ -1158,5 +1146,45 @@ class _AndroidMapDelegate extends java_lang_Object
         await var1.get_longitude(),
       ));
     }
+  }
+}
+
+mixin _Private {
+  Future<Uint8List> _getImageData(BuildContext context, Uri iconUri) async {
+    Uint8List iconData;
+    switch (iconUri.scheme) {
+      // 网络图片
+      case 'https':
+      case 'http':
+        HttpClient httpClient = HttpClient();
+        var request = await httpClient.getUrl(iconUri);
+        var response = await request.close();
+        iconData = await consolidateHttpClientResponseBytes(response);
+        break;
+      // 文件图片
+      case 'file':
+        final imageFile = File.fromUri(iconUri);
+        iconData = imageFile.readAsBytesSync();
+        break;
+      // asset图片
+      default:
+        // asset的bug描述(https://github.com/flutter/flutter/issues/24865):
+        // android和ios平台上都取了1.0密度的图片, android上就显示了1.0密度的图片, 而ios
+        // 平台上使用的图片也是1.0密度, 但是根据设备密度进行了对应的放大, 导致了android和ios
+        // 两端的图片的大小不一致, 这里只对android根据密度选择原始图片, ios原封不动
+        // 这样做android端能够保证完美, ios端的话图片会有点糊, 因为原始图片是1.0密度, 但是这样
+        // 的话两端大小是一致的, 如果要求再高一点的话, ios这边对图片根据设备密度选择好图片后, 再进行对应密度
+        // 的缩小, 就是完美的了, 但是处理起来比较麻烦, 这里就不去处理了
+        if (Platform.isAndroid) {
+          final byteData = await rootBundle
+              .load(AmapService.toResolutionAware(context, iconUri.path));
+          iconData = byteData.buffer.asUint8List();
+        } else {
+          final byteData = await rootBundle.load(iconUri.path);
+          iconData = byteData.buffer.asUint8List();
+        }
+        break;
+    }
+    return iconData;
   }
 }
