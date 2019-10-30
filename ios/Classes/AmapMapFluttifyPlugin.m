@@ -11196,7 +11196,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAOfflineItemNationWide": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11207,7 +11209,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAMultiPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11218,7 +11222,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAGroundOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11229,7 +11235,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAPolygonRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11240,7 +11248,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAPinAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11251,7 +11261,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAHeatMapNode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11262,7 +11274,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAHeatMapGradient": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11273,7 +11287,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAHeatMapTileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11284,7 +11300,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAMapStatus": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11295,7 +11313,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAPointAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11306,7 +11326,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMACircle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11317,7 +11339,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAArcRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11328,7 +11352,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAMapCustomStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11339,7 +11365,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAPolygon": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11350,7 +11378,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAParticleOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11361,7 +11391,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11372,7 +11404,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAMultiColoredPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11383,7 +11417,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAAnimatedAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11394,7 +11430,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAMultiTexturePolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11405,7 +11443,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAOfflineProvince": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11416,7 +11456,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMATileOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11427,7 +11469,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAOfflineItem": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11438,7 +11482,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAGeodesicPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11449,7 +11495,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMATouchPoi": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11460,7 +11508,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAOfflineItemMunicipality": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11471,7 +11521,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAMultiPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11482,7 +11534,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMATraceManager": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11493,7 +11547,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAMultiPointOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11504,7 +11560,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAIndoorFloorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11515,7 +11573,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAIndoorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11526,7 +11586,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11537,7 +11599,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAAnnotationMoveAnimation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11548,7 +11612,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAShape": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11559,7 +11625,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11570,7 +11638,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMATileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11581,7 +11651,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMATileOverlayPath": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11594,7 +11666,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMACustomCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11605,7 +11679,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAOfflineItemCommonCity": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11616,7 +11692,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAOfflineMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11627,7 +11705,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMACircleRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11638,7 +11718,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAParticleOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11649,7 +11731,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMACoordinateBounds": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11662,7 +11746,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMACoordinateSpan": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11675,7 +11761,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMACoordinateRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11688,7 +11776,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAMapPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11701,7 +11791,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAMapSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11714,7 +11806,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11727,7 +11821,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAParticleRandomVelocityGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11738,7 +11834,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAParticleRandomColorGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11749,7 +11847,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAParticleConstantRotationGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11760,7 +11860,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAParticleCurveSizeGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11771,7 +11873,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAParticleEmissionModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11782,7 +11886,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAParticleSinglePointShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11793,7 +11899,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAParticleRectShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11804,7 +11912,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAParticleOverLifeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11815,7 +11925,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAParticleOverlayOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11826,7 +11938,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAParticleOverlayOptionsFactory": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11837,7 +11951,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11848,7 +11964,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11859,7 +11977,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAMultiPointItem": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11870,7 +11990,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAMultiPointOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11881,7 +12003,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMACustomBuildingOverlayOption": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11892,7 +12016,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMACustomBuildingOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11903,7 +12029,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMATracePoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11914,7 +12042,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMATraceLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11925,7 +12055,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAArc": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11936,7 +12068,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAUserLocationRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11947,7 +12081,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAMapView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11958,7 +12094,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAOverlayPathRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11969,7 +12107,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMAGroundOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11980,7 +12120,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"ObjectFactory::createMACustomBuildingOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -11991,7 +12133,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(ref.hash));
       
+      #ifdef DEBUG
           NSLog(@"HEAP: %@", HEAP);
+      #endif
       },
       
       @"MACoordinateBoundsMake::MACoordinateBoundsMake": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {

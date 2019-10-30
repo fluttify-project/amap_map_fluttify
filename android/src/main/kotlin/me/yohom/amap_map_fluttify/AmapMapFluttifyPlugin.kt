@@ -47656,7 +47656,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47671,7 +47673,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47686,7 +47690,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47702,7 +47708,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47717,7 +47725,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47737,7 +47747,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47753,7 +47765,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47769,7 +47783,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47784,7 +47800,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47800,7 +47818,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47815,7 +47835,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47831,7 +47853,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47846,7 +47870,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47861,7 +47887,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47876,7 +47904,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47894,7 +47924,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47912,7 +47944,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47927,7 +47961,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47942,7 +47978,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47957,7 +47995,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47972,7 +48012,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -47994,7 +48036,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48020,7 +48064,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48035,7 +48081,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48050,7 +48098,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48065,7 +48115,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48080,7 +48132,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48095,7 +48149,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48110,7 +48166,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48125,7 +48183,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48140,7 +48200,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48155,7 +48217,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48170,7 +48234,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48185,7 +48251,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48200,7 +48268,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48215,7 +48285,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48230,7 +48302,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48245,7 +48319,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48263,7 +48339,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48278,7 +48356,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48293,7 +48373,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48311,7 +48393,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48326,7 +48410,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48341,7 +48427,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48357,7 +48445,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48381,7 +48471,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48399,7 +48491,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48421,7 +48515,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48436,7 +48532,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48452,7 +48550,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48468,7 +48568,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48483,7 +48585,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48499,7 +48603,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48517,7 +48623,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48537,7 +48645,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48559,7 +48669,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48581,7 +48693,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48599,7 +48713,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48614,7 +48730,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48629,7 +48747,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48644,7 +48764,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48659,7 +48781,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48681,7 +48805,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48697,7 +48823,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48713,7 +48841,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48728,7 +48858,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48743,7 +48875,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48763,7 +48897,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48778,7 +48914,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48793,7 +48931,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48808,7 +48948,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48823,7 +48965,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48841,7 +48985,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48856,7 +49002,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48871,7 +49019,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48886,7 +49036,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48901,7 +49053,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48916,7 +49070,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48931,7 +49087,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48947,7 +49105,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48962,7 +49122,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48977,7 +49139,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -48992,7 +49156,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49008,7 +49174,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49023,7 +49191,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49039,7 +49209,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49057,7 +49229,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49072,7 +49246,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49087,7 +49263,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49102,7 +49280,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49118,7 +49298,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49133,7 +49315,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49148,7 +49332,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49163,7 +49349,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49178,7 +49366,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49193,7 +49383,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49208,7 +49400,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49228,7 +49422,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49243,7 +49439,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49267,7 +49465,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49282,7 +49482,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49297,7 +49499,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49312,7 +49516,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49327,7 +49533,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49342,7 +49550,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49357,7 +49567,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49372,7 +49584,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49387,7 +49601,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49407,7 +49623,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49425,7 +49643,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49440,7 +49660,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49455,7 +49677,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49470,7 +49694,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49485,7 +49711,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49507,7 +49735,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49522,7 +49752,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49537,7 +49769,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49552,7 +49786,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49568,7 +49804,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49592,7 +49830,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49610,7 +49850,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49626,7 +49868,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49642,7 +49886,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49660,7 +49906,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49682,7 +49930,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49700,7 +49950,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49715,7 +49967,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49730,7 +49984,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49745,7 +50001,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49760,7 +50018,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49778,7 +50038,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49798,7 +50060,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49824,7 +50088,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49839,7 +50105,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49854,7 +50122,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49880,7 +50150,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49895,7 +50167,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49913,7 +50187,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49929,7 +50205,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49944,7 +50222,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49959,7 +50239,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49975,7 +50257,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -49990,7 +50274,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50005,7 +50291,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50020,7 +50308,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50035,7 +50325,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50050,7 +50342,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50066,7 +50360,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50081,7 +50377,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50096,7 +50394,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50111,7 +50411,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50126,7 +50428,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50141,7 +50445,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50156,7 +50462,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50171,7 +50479,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50186,7 +50496,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50201,7 +50513,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50217,7 +50531,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50239,7 +50555,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50259,7 +50577,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50285,7 +50605,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50305,7 +50627,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50323,7 +50647,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50347,7 +50673,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50377,7 +50705,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50392,7 +50722,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50407,7 +50739,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50422,7 +50756,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50437,7 +50773,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50452,7 +50790,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50467,7 +50807,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50482,7 +50824,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50498,7 +50842,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50516,7 +50862,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50531,7 +50879,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50547,7 +50897,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50565,7 +50917,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50581,7 +50935,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50599,7 +50955,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50623,7 +50981,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50638,7 +50998,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         },
@@ -50654,7 +51016,9 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             // print current HEAP
-            Log.d("ObjectFactory", "HEAP: $HEAP")
+            if (BuildConfig.DEBUG) {
+                Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
         
             methodResult.success(obj.hashCode())
         }
