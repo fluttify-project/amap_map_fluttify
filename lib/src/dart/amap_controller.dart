@@ -1027,7 +1027,13 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
     if (_onMarkerClicked != null) {
       _onMarkerClicked(
         Marker.ios(
-          await view.get_annotation(viewChannel: false),
+          // 这里由于传入的类型是MAAnnotation, 而fluttify对于抽象类的实体子类的处理方式是找到sdk
+          // 内的第一个实体子类进行实例化, 这里如果放任不管取第一个实体子类的话是MAGroundOverlay
+          // 跟当前需要的MAPointAnnotation类是冲突的.
+          //
+          // 解决办法很简单, 把refId取出来放到目标实体类里就行了
+          MAPointAnnotation()
+            ..refId = (await view.get_annotation(viewChannel: false)).refId,
           _iosController,
         ),
       );
