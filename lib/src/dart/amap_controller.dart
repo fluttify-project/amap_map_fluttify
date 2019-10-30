@@ -928,7 +928,7 @@ class AmapController {
       },
       ios: (pool) async {
         await _iosController
-            .set_delegate(_iosMapDelegate..onMarkerClicked = onMarkerClicked);
+            .set_delegate(_iosMapDelegate.._onMarkerClicked = onMarkerClicked);
       },
     );
   }
@@ -1023,7 +1023,7 @@ class AmapController {
 }
 
 class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
-  _OnMarkerClick onMarkerClicked;
+  _OnMarkerClick _onMarkerClicked;
   _OnMarkerDrag _onMarkerDragStart;
   _OnMarkerDrag _onMarkerDragging;
   _OnMarkerDrag _onMarkerDragEnd;
@@ -1036,8 +1036,8 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
     MAAnnotationView view,
   ) async {
     super.mapViewDidAnnotationViewTapped(mapView, view);
-    if (onMarkerClicked != null) {
-      onMarkerClicked(
+    if (_onMarkerClicked != null) {
+      _onMarkerClicked(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
           _iosController,
@@ -1125,7 +1125,7 @@ class _AndroidMapDelegate extends java_lang_Object
     return true;
   }
 
-  @mustCallSuper
+  @override
   Future<void> onMarkerDragStart(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerDragStart(var1);
     if (_onMarkerDragStart != null) {
@@ -1133,7 +1133,7 @@ class _AndroidMapDelegate extends java_lang_Object
     }
   }
 
-  @mustCallSuper
+  @override
   Future<void> onMarkerDrag(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerDrag(var1);
     if (_onMarkerDragging != null) {
@@ -1141,7 +1141,7 @@ class _AndroidMapDelegate extends java_lang_Object
     }
   }
 
-  @mustCallSuper
+  @override
   Future<void> onMarkerDragEnd(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerDragEnd(var1);
     if (_onMarkerDragEnd != null) {
