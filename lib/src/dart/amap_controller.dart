@@ -988,6 +988,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   void dispose() {
+    _androidController?.onDestroy();
     WidgetsBinding.instance.removeObserver(this);
   }
 
@@ -997,12 +998,12 @@ class AmapController with WidgetsBindingObserver, _Private {
     debugPrint('didChangeAppLifecycleState: $state');
     switch (state) {
       case AppLifecycleState.resumed:
-        _androidController.onResume();
+        _androidController?.onResume();
         break;
       case AppLifecycleState.inactive:
         break;
       case AppLifecycleState.paused:
-        _androidController.onPause();
+        _androidController?.onPause();
         break;
       case AppLifecycleState.suspending:
         break;
