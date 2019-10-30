@@ -437,8 +437,8 @@ class AmapController {
   /// 在纬度[lat], 经度[lng]的位置添加marker, 并设置标题[title]和副标题[snippet], [iconUri]
   /// 可以是图片url, asset路径或者文件路径
   Future<Marker> addMarker(BuildContext context, MarkerOption option) {
-    final lat = option.coord.latitude;
-    final lng = option.coord.longitude;
+    final lat = option.latLng.latitude;
+    final lng = option.latLng.longitude;
     return platform(
       android: (pool) async {
         // 获取地图
@@ -555,8 +555,8 @@ class AmapController {
 
         final androidOptions = <com_amap_api_maps_model_MarkerOptions>[];
         for (final option in options) {
-          final lat = option.coord.latitude;
-          final lng = option.coord.longitude;
+          final lat = option.latLng.latitude;
+          final lng = option.latLng.longitude;
 
           // marker经纬度
           final latLng = await AmapMapFluttifyFactoryAndroid
@@ -614,8 +614,8 @@ class AmapController {
 
         final iosOptions = <NSObject>[];
         for (final option in options) {
-          final lat = option.coord.latitude;
-          final lng = option.coord.longitude;
+          final lat = option.latLng.latitude;
+          final lng = option.latLng.longitude;
 
           // 创建marker
           final pointAnnotation =

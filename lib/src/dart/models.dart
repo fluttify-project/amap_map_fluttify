@@ -7,7 +7,7 @@ import '../ios/ios.export.g.dart';
 /// Marker创建参数
 class MarkerOption {
   /// 经纬度
-  final LatLng coord;
+  final LatLng latLng;
 
   /// 标题
   final String title;
@@ -22,7 +22,7 @@ class MarkerOption {
   final bool draggable;
 
   MarkerOption({
-    @required this.coord,
+    @required this.latLng,
     this.title,
     this.snippet,
     this.iconUri,
@@ -31,7 +31,7 @@ class MarkerOption {
 
   @override
   String toString() {
-    return 'MarkerOptions{point: $coord, title: $title, snippet: $snippet, iconUri: $iconUri, draggable: $draggable}';
+    return 'MarkerOptions{point: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, draggable: $draggable}';
   }
 }
 

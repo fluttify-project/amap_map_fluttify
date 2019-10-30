@@ -49,7 +49,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                     final marker = await _controller?.addMarker(
                       context,
                       MarkerOption(
-                        coord: _getNextLatLng(),
+                        latLng: _getNextLatLng(),
                         title: '北京',
                         snippet: '描述',
                         iconUri: _assetsIcon,
@@ -67,7 +67,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                       [
                         for (int i = 0; i < 10; i++)
                           MarkerOption(
-                            coord: _getNextLatLng(),
+                            latLng: _getNextLatLng(),
                             title: '北京',
                             snippet: '描述',
                             iconUri: _assetsIcon,
