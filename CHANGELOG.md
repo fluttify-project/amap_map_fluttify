@@ -1,3 +1,8 @@
+## 0.3.1
+- enhancement: 完善android端生命周期回调
+- feat: 不通过定位组件直接获取经纬度
+- feat: 监听地图移动
+
 ## 0.3.0
 - feat: 批量添加marker
 - enhancement: 增加生命周期回调
