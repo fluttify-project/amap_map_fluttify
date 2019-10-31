@@ -35,6 +35,27 @@ class AmapController with WidgetsBindingObserver, _Private {
   final _iosMapDelegate = _IOSMapDelegate();
   final _androidMapDelegate = _AndroidMapDelegate();
 
+  Future<LatLng> getLocation() async {
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+        final location = await map.getMyLocation();
+
+        final result = LatLng(
+          await location.latitude,
+          await location.longitude,
+        );
+        pool..add(map)..add(location);
+        return result;
+      },
+      ios: (pool) async {
+        final location = await _iosController.get_userLocation();
+        final coord = await location.get_coordinate();
+        return LatLng(await coord.latitude, await coord.longitude);
+      },
+    );
+  }
+
   /// 是否显示我的位置
   Future<void> showMyLocation(bool show) async {
     return platform(
@@ -43,8 +64,12 @@ class AmapController with WidgetsBindingObserver, _Private {
         final locationStyle = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_MyLocationStyle__();
         await locationStyle?.showMyLocation(show);
-        await map.setMyLocationStyle(locationStyle);
         await map.setMyLocationEnabled(show);
+        if (show) {
+          // 默认只定位一次
+          await locationStyle?.myLocationType(1);
+          await map.setMyLocationStyle(locationStyle);
+        }
 
         pool..add(map)..add(locationStyle);
       },
@@ -53,7 +78,9 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         if (show) {
           await _iosController.setUserTrackingModeAnimated(
-              MAUserTrackingMode.MAUserTrackingModeFollow, true);
+            MAUserTrackingMode.MAUserTrackingModeFollow,
+            true,
+          );
         }
       },
     );
@@ -988,7 +1015,6 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   void dispose() {
-    _androidController?.onDestroy();
     WidgetsBinding.instance.removeObserver(this);
   }
 

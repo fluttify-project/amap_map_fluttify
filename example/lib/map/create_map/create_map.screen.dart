@@ -34,11 +34,19 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
               scrollable: true,
               children: <Widget>[
                 BooleanSetting(
-                  head: '是否显示地图',
+                  head: '是否显示定位',
                   onSelected: (value) {
                     _controller?.showMyLocation(value);
                   },
                 ),
+                ListTile(
+                  title: Center(child: Text('获取当前位置经纬度')),
+                  onTap: () async {
+                    final latLng = await _controller?.getLocation();
+                    toast('当前经纬度: ${latLng.toString()}');
+                  },
+                ),
+                kDividerTiny,
                 BooleanSetting(
                   head: '是否显示室内地图',
                   onSelected: (value) {
