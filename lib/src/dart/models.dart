@@ -82,3 +82,17 @@ class Marker {
     );
   }
 }
+
+class MapDrag {
+  final LatLng latLng;
+  final double zoom;
+  final double tilt;
+  final bool isAbroad;
+
+  MapDrag({this.latLng, this.zoom, this.tilt, this.isAbroad});
+
+  @override
+  String toString() {
+    return 'MapDrag{latLng: $latLng, zoom: $zoom, tilt: $tilt, isAbroad: $isAbroad}';
+  }
+}

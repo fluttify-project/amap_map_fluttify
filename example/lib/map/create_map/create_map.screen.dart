@@ -106,6 +106,15 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                 ),
                 kDividerTiny,
                 ListTile(
+                  title: Center(child: Text('监听地图移动')),
+                  onTap: () {
+                    _controller?.setMapDragListener((drag) {
+                      toast('移动: $drag');
+                    });
+                  },
+                ),
+                kDividerTiny,
+                ListTile(
                   title: Center(child: Text('添加点击地图监听')),
                   onTap: () {
                     _controller?.setMapClickListener(

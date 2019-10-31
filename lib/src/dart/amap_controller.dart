@@ -15,6 +15,7 @@ import 'models.dart';
 
 typedef void _OnMarkerClick(Marker marker);
 typedef void _OnMapClick(LatLng latLng);
+typedef void _OnMapDrag(MapDrag latLng);
 typedef void _OnMarkerDrag(Marker marker);
 
 /// 地图控制类
@@ -1014,6 +1015,26 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 设置地图拖动监听事件
+  Future<void> setMapDragListener(_OnMapDrag onMapDrag) async {
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+
+        await map.setOnCameraChangeListener(
+          _androidMapDelegate.._onMapDrag = onMapDrag,
+        );
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        await _iosController.set_delegate(
+          _iosMapDelegate.._onMapDrag = onMapDrag,
+        );
+      },
+    );
+  }
+
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
   }
@@ -1043,6 +1064,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   _OnMarkerDrag _onMarkerDragging;
   _OnMarkerDrag _onMarkerDragEnd;
   _OnMapClick _onMapClick;
+  _OnMapDrag _onMapDrag;
   MAMapView _iosController;
 
   @override
@@ -1115,12 +1137,32 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
 
   @override
   Future<void> mapViewDidSingleTappedAtCoordinate(
-      MAMapView mapView, CLLocationCoordinate2D coordinate) async {
+    MAMapView mapView,
+    CLLocationCoordinate2D coordinate,
+  ) async {
     super.mapViewDidSingleTappedAtCoordinate(mapView, coordinate);
     if (_onMapClick != null) {
       _onMapClick(LatLng(
         await coordinate.latitude,
         await coordinate.longitude,
+      ));
+    }
+  }
+
+  @override
+  Future<void> mapViewMapDidMoveByUser(
+    MAMapView mapView,
+    bool wasUserAction,
+  ) async {
+    super.mapViewMapDidMoveByUser(mapView, wasUserAction);
+    if (_onMapDrag != null && wasUserAction) {
+      final location = await mapView.get_userLocation();
+      final coord = await location.get_coordinate();
+      _onMapDrag(MapDrag(
+        latLng: LatLng(await coord.latitude, await coord.longitude),
+        zoom: await mapView.get_zoomLevel(),
+        tilt: await mapView.get_cameraDegree(),
+        isAbroad: await mapView.get_isAbroad(),
       ));
     }
   }
@@ -1130,11 +1172,13 @@ class _AndroidMapDelegate extends java_lang_Object
     with
         com_amap_api_maps_AMap_OnMarkerClickListener,
         com_amap_api_maps_AMap_OnMarkerDragListener,
-        com_amap_api_maps_AMap_OnMapClickListener {
+        com_amap_api_maps_AMap_OnMapClickListener,
+        com_amap_api_maps_AMap_OnCameraChangeListener {
   _OnMarkerClick _onMarkerClicked;
   _OnMarkerDrag _onMarkerDragStart;
   _OnMarkerDrag _onMarkerDragging;
   _OnMarkerDrag _onMarkerDragEnd;
+  _OnMapDrag _onMapDrag;
   _OnMapClick _onMapClick;
 
   @override
@@ -1177,6 +1221,25 @@ class _AndroidMapDelegate extends java_lang_Object
       _onMapClick(LatLng(
         await var1.get_latitude(),
         await var1.get_longitude(),
+      ));
+    }
+  }
+
+  @override
+  Future<void> onCameraChangeFinish(
+    com_amap_api_maps_model_CameraPosition var1,
+  ) async {
+    super.onCameraChangeFinish(var1);
+    if (_onMapDrag != null) {
+      final location = await var1.get_target();
+      _onMapDrag(MapDrag(
+        latLng: LatLng(
+          await location.get_latitude(),
+          await location.get_longitude(),
+        ),
+        zoom: await var1.get_zoom(),
+        tilt: await var1.get_tilt(),
+        isAbroad: await var1.get_isAbroad(),
       ));
     }
   }
