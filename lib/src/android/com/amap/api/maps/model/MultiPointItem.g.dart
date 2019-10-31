@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   // generate methods
   Future<com_amap_api_maps_model_LatLng> getLatLng() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getLatLng([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getLatLng([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::getLatLng', {"refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   
   Future<void> setLatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setLatLng([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setLatLng([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setLatLng', {"var1": var1.refId, "refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   
   Future<String> getCustomerId() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getCustomerId([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getCustomerId([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::getCustomerId', {"refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   
   Future<void> setCustomerId(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setCustomerId([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setCustomerId([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setCustomerId', {"var1": var1, "refId": refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   
   Future<String> getSnippet() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getSnippet([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getSnippet([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::getSnippet', {"refId": refId});
@@ -119,7 +130,9 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   
   Future<void> setSnippet(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setSnippet([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setSnippet([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setSnippet', {"var1": var1, "refId": refId});
@@ -139,7 +152,9 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   
   Future<String> getTitle() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getTitle([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getTitle([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::getTitle', {"refId": refId});
@@ -159,7 +174,9 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   
   Future<void> setTitle(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setTitle([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setTitle([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setTitle', {"var1": var1, "refId": refId});
@@ -179,7 +196,9 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   
   Future<com_autonavi_amap_mapcore_IPoint> getIPoint() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getIPoint([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getIPoint([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::getIPoint', {"refId": refId});
@@ -199,7 +218,9 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   
   Future<void> setIPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setIPoint([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setIPoint([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setIPoint', {"var1": var1.refId, "refId": refId});

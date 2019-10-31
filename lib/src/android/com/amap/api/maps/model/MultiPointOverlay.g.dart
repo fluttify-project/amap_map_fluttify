@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   // generate methods
   Future<void> setItems(List<com_amap_api_maps_model_MultiPointItem> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setItems([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setItems([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlay::setItems', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   
   Future<void> setAnchor(double var1, double var2) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlay::setAnchor', {"var1": var1, "var2": var2, "refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   
   Future<void> setEnable(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setEnable([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setEnable([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlay::setEnable', {"var1": var1, "refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   
   Future<void> remove() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::remove([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::remove([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlay::remove', {"refId": refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   
   Future<void> destroy() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::destroy([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::destroy([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlay::destroy', {"refId": refId});

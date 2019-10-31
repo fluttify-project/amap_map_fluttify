@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -26,14 +27,18 @@ class MATraceManager extends NSObject  {
         switch (methodCall.method) {
           case 'Callback::MATraceDelegate::traceManagerDidTracecorrectdistancewithError':
             // print log
-            print('fluttify-dart-callback: traceManagerDidTracecorrectdistancewithError([\'distance\':$args[distance]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: traceManagerDidTracecorrectdistancewithError([\'distance\':$args[distance]])');
+            }
         
             // handle the native call
             delegate?.traceManagerDidTracecorrectdistancewithError(MATraceManager()..refId = (args['manager'])..tag = 'amap_map_fluttify', (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag = 'amap_map_fluttify').toList(), args['distance'], NSError()..refId = (args['error'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MATraceDelegate::mapViewRequireLocationAuth':
             // print log
-            print('fluttify-dart-callback: mapViewRequireLocationAuth([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: mapViewRequireLocationAuth([])');
+            }
         
             // handle the native call
             delegate?.mapViewRequireLocationAuth(CLLocationManager()..refId = (args['locationManager'])..tag = 'amap_map_fluttify');
@@ -48,7 +53,9 @@ class MATraceManager extends NSObject  {
   // generate methods
   static Future<MATraceManager> sharedInstance() async {
     // print log
-    print('fluttify-dart: MATraceManager::sharedInstance([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MATraceManager::sharedInstance([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::sharedInstance', );
@@ -68,7 +75,9 @@ class MATraceManager extends NSObject  {
   
   Future<void> start() async {
     // print log
-    print('fluttify-dart: MATraceManager@$refId::start([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MATraceManager@$refId::start([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::start', {"refId": refId});
@@ -88,7 +97,9 @@ class MATraceManager extends NSObject  {
   
   Future<void> stop() async {
     // print log
-    print('fluttify-dart: MATraceManager@$refId::stop([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MATraceManager@$refId::stop([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::stop', {"refId": refId});

@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -59,7 +60,9 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
   // generate methods
   static Future<MACircle> circleWithCenterCoordinateRadius(CLLocationCoordinate2D coord, double radius) async {
     // print log
-    print('fluttify-dart: MACircle::circleWithCenterCoordinate([\'radius\':$radius])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MACircle::circleWithCenterCoordinate([\'radius\':$radius])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithCenterCoordinateRadius', {"coord": coord.refId, "radius": radius});
@@ -79,7 +82,9 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
   
   static Future<MACircle> circleWithMapRect(MAMapRect mapRect) async {
     // print log
-    print('fluttify-dart: MACircle::circleWithMapRect([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MACircle::circleWithMapRect([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithMapRect', {"mapRect": mapRect.refId});
@@ -99,7 +104,9 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
   
   Future<bool> setCircleWithCenterCoordinateRadius(CLLocationCoordinate2D coord, double radius) async {
     // print log
-    print('fluttify-dart: MACircle@$refId::setCircleWithCenterCoordinate([\'radius\':$radius])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MACircle@$refId::setCircleWithCenterCoordinate([\'radius\':$radius])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::setCircleWithCenterCoordinateRadius', {"coord": coord.refId, "radius": radius, "refId": refId});

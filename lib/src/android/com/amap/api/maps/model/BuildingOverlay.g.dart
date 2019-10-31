@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   // generate methods
   Future<void> setDefaultOptions(com_amap_api_maps_model_BuildingOverlayOptions var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setDefaultOptions([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setDefaultOptions([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setDefaultOptions', {"var1": var1.refId, "refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_BuildingOverlayOptions> getDefaultOptions() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getDefaultOptions([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getDefaultOptions([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getDefaultOptions', {"refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<void> setCustomOptions(List<com_amap_api_maps_model_BuildingOverlayOptions> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setCustomOptions([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setCustomOptions([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setCustomOptions', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<List<com_amap_api_maps_model_BuildingOverlayOptions>> getCustomOptions() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getCustomOptions([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getCustomOptions([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getCustomOptions', {"refId": refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<void> destroy() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::destroy([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::destroy([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::destroy', {"refId": refId});
@@ -119,7 +130,9 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<String> getId() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getId([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getId([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getId', {"refId": refId});
@@ -139,7 +152,9 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<void> setZIndex(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setZIndex([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setZIndex([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setZIndex', {"var1": var1, "refId": refId});
@@ -159,7 +174,9 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<double> getZIndex() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getZIndex([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getZIndex([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getZIndex', {"refId": refId});
@@ -179,7 +196,9 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setVisible([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setVisible([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setVisible', {"var1": var1, "refId": refId});
@@ -199,7 +218,9 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::isVisible([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::isVisible([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::isVisible', {"refId": refId});

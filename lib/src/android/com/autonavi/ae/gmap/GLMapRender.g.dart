@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -31,686 +32,882 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
         switch (methodCall.method) {
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getCameraPosition':
             // print log
-            print('fluttify-dart-callback: getCameraPosition([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getCameraPosition([])');
+            }
         
             // handle the native call
             mGLMapView?.getCameraPosition();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMaxZoomLevel':
             // print log
-            print('fluttify-dart-callback: getMaxZoomLevel([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getMaxZoomLevel([])');
+            }
         
             // handle the native call
             mGLMapView?.getMaxZoomLevel();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMinZoomLevel':
             // print log
-            print('fluttify-dart-callback: getMinZoomLevel([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getMinZoomLevel([])');
+            }
         
             // handle the native call
             mGLMapView?.getMinZoomLevel();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::moveCamera':
             // print log
-            print('fluttify-dart-callback: moveCamera([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: moveCamera([])');
+            }
         
             // handle the native call
             mGLMapView?.moveCamera(com_amap_api_maps_CameraUpdate()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::animateCamera':
             // print log
-            print('fluttify-dart-callback: animateCamera([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: animateCamera([])');
+            }
         
             // handle the native call
             mGLMapView?.animateCamera(com_amap_api_maps_CameraUpdate()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::stopAnimation':
             // print log
-            print('fluttify-dart-callback: stopAnimation([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: stopAnimation([])');
+            }
         
             // handle the native call
             mGLMapView?.stopAnimation();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addNavigateArrow':
             // print log
-            print('fluttify-dart-callback: addNavigateArrow([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addNavigateArrow([])');
+            }
         
             // handle the native call
             mGLMapView?.addNavigateArrow(com_amap_api_maps_model_NavigateArrowOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addPolyline':
             // print log
-            print('fluttify-dart-callback: addPolyline([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addPolyline([])');
+            }
         
             // handle the native call
             mGLMapView?.addPolyline(com_amap_api_maps_model_PolylineOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addCircle':
             // print log
-            print('fluttify-dart-callback: addCircle([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addCircle([])');
+            }
         
             // handle the native call
             mGLMapView?.addCircle(com_amap_api_maps_model_CircleOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addArc':
             // print log
-            print('fluttify-dart-callback: addArc([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addArc([])');
+            }
         
             // handle the native call
             mGLMapView?.addArc(com_amap_api_maps_model_ArcOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addPolygon':
             // print log
-            print('fluttify-dart-callback: addPolygon([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addPolygon([])');
+            }
         
             // handle the native call
             mGLMapView?.addPolygon(com_amap_api_maps_model_PolygonOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addGroundOverlay':
             // print log
-            print('fluttify-dart-callback: addGroundOverlay([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addGroundOverlay([])');
+            }
         
             // handle the native call
             mGLMapView?.addGroundOverlay(com_amap_api_maps_model_GroundOverlayOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addMultiPointOverlay':
             // print log
-            print('fluttify-dart-callback: addMultiPointOverlay([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addMultiPointOverlay([])');
+            }
         
             // handle the native call
             mGLMapView?.addMultiPointOverlay(com_amap_api_maps_model_MultiPointOverlayOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addMarker':
             // print log
-            print('fluttify-dart-callback: addMarker([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addMarker([])');
+            }
         
             // handle the native call
             mGLMapView?.addMarker(com_amap_api_maps_model_MarkerOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addMarkers':
             // print log
-            print('fluttify-dart-callback: addMarkers([\'var2\':$args[var2]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addMarkers([\'var2\':$args[var2]])');
+            }
         
             // handle the native call
             mGLMapView?.addMarkers((args['var1'] as List).cast<int>().map((it) => com_amap_api_maps_model_MarkerOptions()..refId = it..tag = 'amap_map_fluttify').toList(), args['var2']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addText':
             // print log
-            print('fluttify-dart-callback: addText([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addText([])');
+            }
         
             // handle the native call
             mGLMapView?.addText(com_amap_api_maps_model_TextOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addTileOverlay':
             // print log
-            print('fluttify-dart-callback: addTileOverlay([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addTileOverlay([])');
+            }
         
             // handle the native call
             mGLMapView?.addTileOverlay(com_amap_api_maps_model_TileOverlayOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::clear':
             // print log
-            print('fluttify-dart-callback: clear([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: clear([])');
+            }
         
             // handle the native call
             mGLMapView?.clear();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapType':
             // print log
-            print('fluttify-dart-callback: getMapType([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getMapType([])');
+            }
         
             // handle the native call
             mGLMapView?.getMapType();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMapType':
             // print log
-            print('fluttify-dart-callback: setMapType([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMapType([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setMapType(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::isTrafficEnabled':
             // print log
-            print('fluttify-dart-callback: isTrafficEnabled([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: isTrafficEnabled([])');
+            }
         
             // handle the native call
             mGLMapView?.isTrafficEnabled();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setTrafficEnabled':
             // print log
-            print('fluttify-dart-callback: setTrafficEnabled([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setTrafficEnabled([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setTrafficEnabled(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::isIndoorEnabled':
             // print log
-            print('fluttify-dart-callback: isIndoorEnabled([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: isIndoorEnabled([])');
+            }
         
             // handle the native call
             mGLMapView?.isIndoorEnabled();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setIndoorEnabled':
             // print log
-            print('fluttify-dart-callback: setIndoorEnabled([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setIndoorEnabled([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setIndoorEnabled(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::set3DBuildingEnabled':
             // print log
-            print('fluttify-dart-callback: set3DBuildingEnabled([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: set3DBuildingEnabled([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.set3DBuildingEnabled(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::isMyLocationEnabled':
             // print log
-            print('fluttify-dart-callback: isMyLocationEnabled([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: isMyLocationEnabled([])');
+            }
         
             // handle the native call
             mGLMapView?.isMyLocationEnabled();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMyLocationEnabled':
             // print log
-            print('fluttify-dart-callback: setMyLocationEnabled([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMyLocationEnabled([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setMyLocationEnabled(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setLoadOfflineData':
             // print log
-            print('fluttify-dart-callback: setLoadOfflineData([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setLoadOfflineData([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setLoadOfflineData(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMyLocationStyle':
             // print log
-            print('fluttify-dart-callback: setMyLocationStyle([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMyLocationStyle([])');
+            }
         
             // handle the native call
             mGLMapView?.setMyLocationStyle(com_amap_api_maps_model_MyLocationStyle()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMyLocationType':
             // print log
-            print('fluttify-dart-callback: setMyLocationType([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMyLocationType([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setMyLocationType(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapScreenMarkers':
             // print log
-            print('fluttify-dart-callback: getMapScreenMarkers([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getMapScreenMarkers([])');
+            }
         
             // handle the native call
             mGLMapView?.getMapScreenMarkers();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMapTextEnable':
             // print log
-            print('fluttify-dart-callback: setMapTextEnable([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMapTextEnable([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setMapTextEnable(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setRoadArrowEnable':
             // print log
-            print('fluttify-dart-callback: setRoadArrowEnable([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setRoadArrowEnable([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setRoadArrowEnable(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMyTrafficStyle':
             // print log
-            print('fluttify-dart-callback: setMyTrafficStyle([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMyTrafficStyle([])');
+            }
         
             // handle the native call
             mGLMapView?.setMyTrafficStyle(com_amap_api_maps_model_MyTrafficStyle()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMyLocation':
             // print log
-            print('fluttify-dart-callback: getMyLocation([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getMyLocation([])');
+            }
         
             // handle the native call
             mGLMapView?.getMyLocation();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMyLocationRotateAngle':
             // print log
-            print('fluttify-dart-callback: setMyLocationRotateAngle([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMyLocationRotateAngle([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setMyLocationRotateAngle(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getAMapUiSettings':
             // print log
-            print('fluttify-dart-callback: getAMapUiSettings([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getAMapUiSettings([])');
+            }
         
             // handle the native call
             mGLMapView?.getAMapUiSettings();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getAMapProjection':
             // print log
-            print('fluttify-dart-callback: getAMapProjection([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getAMapProjection([])');
+            }
         
             // handle the native call
             mGLMapView?.getAMapProjection();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getScalePerPixel':
             // print log
-            print('fluttify-dart-callback: getScalePerPixel([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getScalePerPixel([])');
+            }
         
             // handle the native call
             mGLMapView?.getScalePerPixel();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setRunLowFrame':
             // print log
-            print('fluttify-dart-callback: setRunLowFrame([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setRunLowFrame([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setRunLowFrame(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::removecache':
             // print log
-            print('fluttify-dart-callback: removecache([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: removecache([])');
+            }
         
             // handle the native call
             mGLMapView?.removecache();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setCenterToPixel':
             // print log
-            print('fluttify-dart-callback: setCenterToPixel([\'var1\':$args[var1], \'var2\':$args[var2]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setCenterToPixel([\'var1\':$args[var1], \'var2\':$args[var2]])');
+            }
         
             // handle the native call
             mGLMapView?.setCenterToPixel(args['var1'], args['var2']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMapTextZIndex':
             // print log
-            print('fluttify-dart-callback: setMapTextZIndex([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMapTextZIndex([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setMapTextZIndex(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapTextZIndex':
             // print log
-            print('fluttify-dart-callback: getMapTextZIndex([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getMapTextZIndex([])');
+            }
         
             // handle the native call
             mGLMapView?.getMapTextZIndex();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::reloadMap':
             // print log
-            print('fluttify-dart-callback: reloadMap([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: reloadMap([])');
+            }
         
             // handle the native call
             mGLMapView?.reloadMap();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setRenderFps':
             // print log
-            print('fluttify-dart-callback: setRenderFps([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setRenderFps([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setRenderFps(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setIndoorBuildingInfo':
             // print log
-            print('fluttify-dart-callback: setIndoorBuildingInfo([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setIndoorBuildingInfo([])');
+            }
         
             // handle the native call
             mGLMapView?.setIndoorBuildingInfo(com_amap_api_maps_model_IndoorBuildingInfo()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getZoomToSpanLevel':
             // print log
-            print('fluttify-dart-callback: getZoomToSpanLevel([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getZoomToSpanLevel([])');
+            }
         
             // handle the native call
             mGLMapView?.getZoomToSpanLevel(com_amap_api_maps_model_LatLng()..refId = (args['var1'])..tag = 'amap_map_fluttify', com_amap_api_maps_model_LatLng()..refId = (args['var2'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getInfoWindowAnimationManager':
             // print log
-            print('fluttify-dart-callback: getInfoWindowAnimationManager([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getInfoWindowAnimationManager([])');
+            }
         
             // handle the native call
             mGLMapView?.getInfoWindowAnimationManager();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMaskLayerParams':
             // print log
-            print('fluttify-dart-callback: setMaskLayerParams([\'var1\':$args[var1], \'var2\':$args[var2], \'var3\':$args[var3], \'var4\':$args[var4], \'var5\':$args[var5], \'var6\':$args[var6]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMaskLayerParams([\'var1\':$args[var1], \'var2\':$args[var2], \'var3\':$args[var3], \'var4\':$args[var4], \'var5\':$args[var5], \'var6\':$args[var6]])');
+            }
         
             // handle the native call
             mGLMapView?.setMaskLayerParams(args['var1'], args['var2'], args['var3'], args['var4'], args['var5'], args['var6']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMaxZoomLevel':
             // print log
-            print('fluttify-dart-callback: setMaxZoomLevel([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMaxZoomLevel([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setMaxZoomLevel(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMinZoomLevel':
             // print log
-            print('fluttify-dart-callback: setMinZoomLevel([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMinZoomLevel([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setMinZoomLevel(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::resetMinMaxZoomPreference':
             // print log
-            print('fluttify-dart-callback: resetMinMaxZoomPreference([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: resetMinMaxZoomPreference([])');
+            }
         
             // handle the native call
             mGLMapView?.resetMinMaxZoomPreference();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMapStatusLimits':
             // print log
-            print('fluttify-dart-callback: setMapStatusLimits([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMapStatusLimits([])');
+            }
         
             // handle the native call
             mGLMapView?.setMapStatusLimits(com_amap_api_maps_model_LatLngBounds()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setCustomMapStylePath':
             // print log
-            print('fluttify-dart-callback: setCustomMapStylePath([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setCustomMapStylePath([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setCustomMapStylePath(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMapCustomEnable':
             // print log
-            print('fluttify-dart-callback: setMapCustomEnable([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMapCustomEnable([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setMapCustomEnable(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::onChangeFinish':
             // print log
-            print('fluttify-dart-callback: onChangeFinish([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: onChangeFinish([])');
+            }
         
             // handle the native call
             mGLMapView?.onChangeFinish();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setZoomScaleParam':
             // print log
-            print('fluttify-dart-callback: setZoomScaleParam([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setZoomScaleParam([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setZoomScaleParam(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::onFling':
             // print log
-            print('fluttify-dart-callback: onFling([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: onFling([])');
+            }
         
             // handle the native call
             mGLMapView?.onFling();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapWidth':
             // print log
-            print('fluttify-dart-callback: getMapWidth([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getMapWidth([])');
+            }
         
             // handle the native call
             mGLMapView?.getMapWidth();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapHeight':
             // print log
-            print('fluttify-dart-callback: getMapHeight([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getMapHeight([])');
+            }
         
             // handle the native call
             mGLMapView?.getMapHeight();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getCameraAngle':
             // print log
-            print('fluttify-dart-callback: getCameraAngle([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getCameraAngle([])');
+            }
         
             // handle the native call
             mGLMapView?.getCameraAngle();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getSkyHeight':
             // print log
-            print('fluttify-dart-callback: getSkyHeight([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getSkyHeight([])');
+            }
         
             // handle the native call
             mGLMapView?.getSkyHeight();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::isMaploaded':
             // print log
-            print('fluttify-dart-callback: isMaploaded([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: isMaploaded([])');
+            }
         
             // handle the native call
             mGLMapView?.isMaploaded();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapConfig':
             // print log
-            print('fluttify-dart-callback: getMapConfig([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getMapConfig([])');
+            }
         
             // handle the native call
             mGLMapView?.getMapConfig();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getView':
             // print log
-            print('fluttify-dart-callback: getView([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getView([])');
+            }
         
             // handle the native call
             mGLMapView?.getView();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setZOrderOnTop':
             // print log
-            print('fluttify-dart-callback: setZOrderOnTop([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setZOrderOnTop([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setZOrderOnTop(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::destroy':
             // print log
-            print('fluttify-dart-callback: destroy([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: destroy([])');
+            }
         
             // handle the native call
             mGLMapView?.destroy();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setVisibilityEx':
             // print log
-            print('fluttify-dart-callback: setVisibilityEx([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setVisibilityEx([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setVisibilityEx(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::onActivityPause':
             // print log
-            print('fluttify-dart-callback: onActivityPause([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: onActivityPause([])');
+            }
         
             // handle the native call
             mGLMapView?.onActivityPause();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::onActivityResume':
             // print log
-            print('fluttify-dart-callback: onActivityResume([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: onActivityResume([])');
+            }
         
             // handle the native call
             mGLMapView?.onActivityResume();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::createGLOverlay':
             // print log
-            print('fluttify-dart-callback: createGLOverlay([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: createGLOverlay([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.createGLOverlay(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getGlOverlayMgrPtr':
             // print log
-            print('fluttify-dart-callback: getGlOverlayMgrPtr([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getGlOverlayMgrPtr([])');
+            }
         
             // handle the native call
             mGLMapView?.getGlOverlayMgrPtr();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addCrossVector':
             // print log
-            print('fluttify-dart-callback: addCrossVector([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addCrossVector([])');
+            }
         
             // handle the native call
             mGLMapView?.addCrossVector(com_amap_api_maps_model_CrossOverlayOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addNaviRouteOverlay':
             // print log
-            print('fluttify-dart-callback: addNaviRouteOverlay([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addNaviRouteOverlay([])');
+            }
         
             // handle the native call
             mGLMapView?.addNaviRouteOverlay();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getViewMatrix':
             // print log
-            print('fluttify-dart-callback: getViewMatrix([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getViewMatrix([])');
+            }
         
             // handle the native call
             mGLMapView?.getViewMatrix();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getProjectionMatrix':
             // print log
-            print('fluttify-dart-callback: getProjectionMatrix([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getProjectionMatrix([])');
+            }
         
             // handle the native call
             mGLMapView?.getProjectionMatrix();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addOverlayTexture':
             // print log
-            print('fluttify-dart-callback: addOverlayTexture([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addOverlayTexture([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.addOverlayTexture(args['var1'], com_autonavi_ae_gmap_gloverlay_GLTextureProperty()..refId = (args['var2'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::onTouchEvent':
             // print log
-            print('fluttify-dart-callback: onTouchEvent([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: onTouchEvent([])');
+            }
         
             // handle the native call
             mGLMapView?.onTouchEvent(android_view_MotionEvent()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::canStopMapRender':
             // print log
-            print('fluttify-dart-callback: canStopMapRender([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: canStopMapRender([])');
+            }
         
             // handle the native call
             mGLMapView?.canStopMapRender();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setCustomTextureResourcePath':
             // print log
-            print('fluttify-dart-callback: setCustomTextureResourcePath([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setCustomTextureResourcePath([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setCustomTextureResourcePath(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMyLocationStyle':
             // print log
-            print('fluttify-dart-callback: getMyLocationStyle([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getMyLocationStyle([])');
+            }
         
             // handle the native call
             mGLMapView?.getMyLocationStyle();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getRenderMode':
             // print log
-            print('fluttify-dart-callback: getRenderMode([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getRenderMode([])');
+            }
         
             // handle the native call
             mGLMapView?.getRenderMode();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::destroySurface':
             // print log
-            print('fluttify-dart-callback: destroySurface([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: destroySurface([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.destroySurface(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::requestRender':
             // print log
-            print('fluttify-dart-callback: requestRender([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: requestRender([])');
+            }
         
             // handle the native call
             mGLMapView?.requestRender();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::resetRenderTime':
             // print log
-            print('fluttify-dart-callback: resetRenderTime([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: resetRenderTime([])');
+            }
         
             // handle the native call
             mGLMapView?.resetRenderTime();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::onIndoorBuildingActivity':
             // print log
-            print('fluttify-dart-callback: onIndoorBuildingActivity([\'var1\':$args[var1], \'var2\':$args[var2]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: onIndoorBuildingActivity([\'var1\':$args[var1], \'var2\':$args[var2]])');
+            }
         
             // handle the native call
             mGLMapView?.onIndoorBuildingActivity(args['var1'], args['var2']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getCamerInfo':
             // print log
-            print('fluttify-dart-callback: getCamerInfo([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getCamerInfo([])');
+            }
         
             // handle the native call
             mGLMapView?.getCamerInfo();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::checkMapState':
             // print log
-            print('fluttify-dart-callback: checkMapState([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: checkMapState([])');
+            }
         
             // handle the native call
             mGLMapView?.checkMapState(com_autonavi_ae_gmap_GLMapState()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setRenderMode':
             // print log
-            print('fluttify-dart-callback: setRenderMode([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setRenderMode([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setRenderMode(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapContentApprovalNumber':
             // print log
-            print('fluttify-dart-callback: getMapContentApprovalNumber([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getMapContentApprovalNumber([])');
+            }
         
             // handle the native call
             mGLMapView?.getMapContentApprovalNumber();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getSatelliteImageApprovalNumber':
             // print log
-            print('fluttify-dart-callback: getSatelliteImageApprovalNumber([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: getSatelliteImageApprovalNumber([])');
+            }
         
             // handle the native call
             mGLMapView?.getSatelliteImageApprovalNumber();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMapLanguage':
             // print log
-            print('fluttify-dart-callback: setMapLanguage([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setMapLanguage([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setMapLanguage(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setCustomMapStyleID':
             // print log
-            print('fluttify-dart-callback: setCustomMapStyleID([\'var1\':$args[var1]])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setCustomMapStyleID([\'var1\':$args[var1]])');
+            }
         
             // handle the native call
             mGLMapView?.setCustomMapStyleID(args['var1']);
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addBuildingOverlay':
             // print log
-            print('fluttify-dart-callback: addBuildingOverlay([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addBuildingOverlay([])');
+            }
         
             // handle the native call
             mGLMapView?.addBuildingOverlay();
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addGLModel':
             // print log
-            print('fluttify-dart-callback: addGLModel([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addGLModel([])');
+            }
         
             // handle the native call
             mGLMapView?.addGLModel(com_amap_api_maps_model_GL3DModelOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addParticleOverlay':
             // print log
-            print('fluttify-dart-callback: addParticleOverlay([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: addParticleOverlay([])');
+            }
         
             // handle the native call
             mGLMapView?.addParticleOverlay(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setCustomMapStyle':
             // print log
-            print('fluttify-dart-callback: setCustomMapStyle([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: setCustomMapStyle([])');
+            }
         
             // handle the native call
             mGLMapView?.setCustomMapStyle(com_amap_api_maps_model_CustomMapStyleOptions()..refId = (args['var1'])..tag = 'amap_map_fluttify');
@@ -731,7 +928,9 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   // generate methods
   Future<void> setTrafficMode(bool var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::setTrafficMode([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::setTrafficMode([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapRender::setTrafficMode', {"var1": var1, "refId": refId});
@@ -751,7 +950,9 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> resetTickCount(int var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::resetTickCount([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::resetTickCount([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapRender::resetTickCount', {"var1": var1, "refId": refId});
@@ -771,7 +972,9 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<bool> isRenderPause() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::isRenderPause([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::isRenderPause([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapRender::isRenderPause', {"refId": refId});
@@ -791,7 +994,9 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> setRenderFps(double var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::setRenderFps([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::setRenderFps([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapRender::setRenderFps', {"var1": var1, "refId": refId});
@@ -811,7 +1016,9 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> renderPause() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::renderPause([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::renderPause([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapRender::renderPause', {"refId": refId});
@@ -831,7 +1038,9 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> renderResume() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::renderResume([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::renderResume([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapRender::renderResume', {"refId": refId});
@@ -851,7 +1060,9 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> onAttachedToWindow() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onAttachedToWindow([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onAttachedToWindow([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapRender::onAttachedToWindow', {"refId": refId});
@@ -871,7 +1082,9 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> onDetachedFromWindow() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onDetachedFromWindow([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onDetachedFromWindow([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapRender::onDetachedFromWindow', {"refId": refId});
@@ -891,7 +1104,9 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> onSurfaceDestory() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onSurfaceDestory([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onSurfaceDestory([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapRender::onSurfaceDestory', {"refId": refId});

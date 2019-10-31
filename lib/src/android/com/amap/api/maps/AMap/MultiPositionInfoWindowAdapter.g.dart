@@ -18,19 +18,28 @@ mixin com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter on com_amap_api_maps
   @mustCallSuper
   Future<android_view_View> getInfoWindowClick(com_amap_api_maps_model_Marker var1) {
   
-    debugPrint('getInfoWindowClick::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getInfoWindowClick::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<android_view_View> getOverturnInfoWindow(com_amap_api_maps_model_Marker var1) {
   
-    debugPrint('getOverturnInfoWindow::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getOverturnInfoWindow::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<android_view_View> getOverturnInfoWindowClick(com_amap_api_maps_model_Marker var1) {
   
-    debugPrint('getOverturnInfoWindowClick::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getOverturnInfoWindowClick::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

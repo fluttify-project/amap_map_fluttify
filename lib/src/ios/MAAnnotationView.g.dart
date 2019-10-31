@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -191,7 +192,9 @@ class MAAnnotationView extends UIView  {
   // generate methods
   Future<void> setSelectedAnimated(bool selected, bool animated, {bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: MAAnnotationView@$refId::setSelected([\'selected\':$selected, \'animated\':$animated])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnnotationView@$refId::setSelected([\'selected\':$selected, \'animated\':$animated])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setSelectedAnimated', {"selected": selected, "animated": animated, "refId": refId});
@@ -211,7 +214,9 @@ class MAAnnotationView extends UIView  {
   
   Future<void> prepareForReuse({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: MAAnnotationView@$refId::prepareForReuse([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnnotationView@$refId::prepareForReuse([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::prepareForReuse', {"refId": refId});
@@ -231,7 +236,9 @@ class MAAnnotationView extends UIView  {
   
   Future<void> setDragStateAnimated(MAAnnotationViewDragState newDragState, bool animated, {bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: MAAnnotationView@$refId::setDragState([\'animated\':$animated])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnnotationView@$refId::setDragState([\'animated\':$animated])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setDragStateAnimated', {"newDragState": newDragState.index, "animated": animated, "refId": refId});

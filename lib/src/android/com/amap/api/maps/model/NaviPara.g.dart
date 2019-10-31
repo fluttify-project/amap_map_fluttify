@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_NaviPara extends java_lang_Object  {
   // generate methods
   Future<void> setTargetPoint(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::setTargetPoint([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::setTargetPoint([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NaviPara::setTargetPoint', {"var1": var1.refId, "refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_NaviPara extends java_lang_Object  {
   
   Future<void> setNaviStyle(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::setNaviStyle([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::setNaviStyle([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NaviPara::setNaviStyle', {"var1": var1, "refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_NaviPara extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getTargetPoint() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::getTargetPoint([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::getTargetPoint([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NaviPara::getTargetPoint', {"refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_model_NaviPara extends java_lang_Object  {
   
   Future<int> getNaviStyle() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::getNaviStyle([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::getNaviStyle([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NaviPara::getNaviStyle', {"refId": refId});

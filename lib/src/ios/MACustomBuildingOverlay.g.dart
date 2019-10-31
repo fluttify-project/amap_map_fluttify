@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -30,7 +31,9 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
   // generate methods
   Future<void> addCustomOption(MACustomBuildingOverlayOption option) async {
     // print log
-    print('fluttify-dart: MACustomBuildingOverlay@$refId::addCustomOption([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MACustomBuildingOverlay@$refId::addCustomOption([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::addCustomOption', {"option": option.refId, "refId": refId});
@@ -50,7 +53,9 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   Future<void> removeCustomOption(MACustomBuildingOverlayOption option) async {
     // print log
-    print('fluttify-dart: MACustomBuildingOverlay@$refId::removeCustomOption([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MACustomBuildingOverlay@$refId::removeCustomOption([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::removeCustomOption', {"option": option.refId, "refId": refId});

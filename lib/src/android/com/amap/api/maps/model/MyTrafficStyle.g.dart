@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   // generate methods
   Future<int> getSmoothColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getSmoothColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getSmoothColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::getSmoothColor', {"refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<void> setSmoothColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSmoothColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSmoothColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::setSmoothColor', {"var1": var1, "refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<int> getSlowColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getSlowColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getSlowColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::getSlowColor', {"refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<void> setSlowColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSlowColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSlowColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::setSlowColor', {"var1": var1, "refId": refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<int> getCongestedColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getCongestedColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getCongestedColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::getCongestedColor', {"refId": refId});
@@ -119,7 +130,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<void> setCongestedColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setCongestedColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setCongestedColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::setCongestedColor', {"var1": var1, "refId": refId});
@@ -139,7 +152,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<int> getSeriousCongestedColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getSeriousCongestedColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getSeriousCongestedColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::getSeriousCongestedColor', {"refId": refId});
@@ -159,7 +174,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<void> setSeriousCongestedColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSeriousCongestedColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSeriousCongestedColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::setSeriousCongestedColor', {"var1": var1, "refId": refId});
@@ -179,7 +196,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<double> getRatio() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getRatio([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getRatio([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::getRatio', {"refId": refId});
@@ -199,7 +218,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<void> setRatio(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setRatio([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setRatio([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::setRatio', {"var1": var1, "refId": refId});
@@ -219,7 +240,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<int> getTrafficRoadBackgroundColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getTrafficRoadBackgroundColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getTrafficRoadBackgroundColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::getTrafficRoadBackgroundColor', {"refId": refId});
@@ -239,7 +262,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<void> setTrafficRoadBackgroundColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setTrafficRoadBackgroundColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setTrafficRoadBackgroundColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::setTrafficRoadBackgroundColor', {"var1": var1, "refId": refId});

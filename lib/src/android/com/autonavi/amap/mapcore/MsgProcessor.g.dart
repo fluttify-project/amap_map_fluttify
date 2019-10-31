@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
   // generate methods
   Future<void> nativeInitMsg() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeInitMsg([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeInitMsg([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeInitMsg', {"refId": refId});
@@ -39,7 +42,9 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
   
   Future<void> nativeInit(int var1, String var2) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeInit([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeInit([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeInit', {"var1": var1, "var2": var2, "refId": refId});
@@ -59,7 +64,9 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
   
   Future<void> nativeMsgProcessor(String var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeMsgProcessor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeMsgProcessor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeMsgProcessor', {"var1": var1, "refId": refId});
@@ -79,7 +86,9 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
   
   Future<void> nativeCall() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeCall([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeCall([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeCall', {"refId": refId});

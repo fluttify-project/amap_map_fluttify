@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   // generate methods
   Future<void> remove() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::remove([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::remove([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::remove', {"refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<void> destroy() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::destroy([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::destroy([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::destroy', {"refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<String> getId() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getId([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getId([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::getId', {"refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setPosition([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setPosition([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::setPosition', {"var1": var1.refId, "refId": refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getPosition([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getPosition([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::getPosition', {"refId": refId});
@@ -119,7 +130,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<void> setText(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setText([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setText([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::setText', {"var1": var1, "refId": refId});
@@ -139,7 +152,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<String> getText() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getText([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getText([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::getText', {"refId": refId});
@@ -159,7 +174,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<void> setBackgroundColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setBackgroundColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setBackgroundColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::setBackgroundColor', {"var1": var1, "refId": refId});
@@ -179,7 +196,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<int> getBackgroundColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getBackgroundColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getBackgroundColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::getBackgroundColor', {"refId": refId});
@@ -199,7 +218,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<void> setFontColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setFontColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setFontColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::setFontColor', {"var1": var1, "refId": refId});
@@ -219,7 +240,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<int> getFontColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getFontColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getFontColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::getFontColor', {"refId": refId});
@@ -239,7 +262,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<void> setFontSize(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setFontSize([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setFontSize([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::setFontSize', {"var1": var1, "refId": refId});
@@ -259,7 +284,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<int> getFontSize() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getFontSize([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getFontSize([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::getFontSize', {"refId": refId});
@@ -279,7 +306,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<void> setAlign(int var1, int var2) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setAlign([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setAlign([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::setAlign', {"var1": var1, "var2": var2, "refId": refId});
@@ -299,7 +328,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<int> getAlignX() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getAlignX([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getAlignX([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::getAlignX', {"refId": refId});
@@ -319,7 +350,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<int> getAlignY() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getAlignY([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getAlignY([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::getAlignY', {"refId": refId});
@@ -339,7 +372,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setVisible([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setVisible([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::setVisible', {"var1": var1, "refId": refId});
@@ -359,7 +394,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::isVisible([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::isVisible([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::isVisible', {"refId": refId});
@@ -379,7 +416,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<void> setRotate(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setRotate([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setRotate([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::setRotate', {"var1": var1, "refId": refId});
@@ -399,7 +438,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<double> getRotate() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getRotate([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getRotate([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::getRotate', {"refId": refId});
@@ -419,7 +460,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<void> setZIndex(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setZIndex([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setZIndex([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::setZIndex', {"var1": var1, "refId": refId});
@@ -439,7 +482,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   
   Future<double> getZIndex() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getZIndex([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getZIndex([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Text::getZIndex', {"refId": refId});

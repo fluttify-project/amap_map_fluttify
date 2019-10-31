@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   // generate methods
   Future<String> getId() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getId([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getId([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptor::getId', {"refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   
   Future<com_amap_api_maps_model_BitmapDescriptor> clone() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::clone([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::clone([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptor::clone', {"refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   
   Future<android_graphics_Bitmap> getBitmap() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getBitmap([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getBitmap([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptor::getBitmap', {"refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   
   Future<int> getWidth() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getWidth([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getWidth([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptor::getWidth', {"refId": refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   
   Future<int> getHeight() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getHeight([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getHeight([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptor::getHeight', {"refId": refId});

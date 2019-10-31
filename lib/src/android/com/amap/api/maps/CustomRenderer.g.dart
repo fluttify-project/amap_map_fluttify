@@ -18,7 +18,10 @@ mixin com_amap_api_maps_CustomRenderer on java_lang_Object {
   @mustCallSuper
   Future<void> OnMapReferencechanged() {
   
-    debugPrint('OnMapReferencechanged::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('OnMapReferencechanged::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

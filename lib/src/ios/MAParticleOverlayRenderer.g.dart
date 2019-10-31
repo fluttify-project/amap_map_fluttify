@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -24,7 +25,9 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
   // generate methods
   Future<MAParticleOverlayRenderer> initWithParticleOverlay(MAParticleOverlay particleOverlay) async {
     // print log
-    print('fluttify-dart: MAParticleOverlayRenderer@$refId::initWithParticleOverlay([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAParticleOverlayRenderer@$refId::initWithParticleOverlay([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayRenderer::initWithParticleOverlay', {"particleOverlay": particleOverlay.refId, "refId": refId});

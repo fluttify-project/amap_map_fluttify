@@ -18,19 +18,28 @@ mixin com_autonavi_amap_mapcore_interfaces_IAnimation on java_lang_Object {
   @mustCallSuper
   Future<void> setAnimation(com_autonavi_amap_mapcore_animation_GLAnimation var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('setAnimation::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setAnimation::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<bool> startAnimation() {
   
-    debugPrint('startAnimation::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('startAnimation::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('setAnimationListener::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setAnimationListener::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

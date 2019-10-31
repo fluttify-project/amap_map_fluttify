@@ -18,61 +18,91 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   @mustCallSuper
   Future<List<int>> requireMapResource(int var1, String var2) {
   
-    debugPrint('requireMapResource::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('requireMapResource::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> reloadMapResource(int var1, String var2, int var3) {
   
-    debugPrint('reloadMapResource::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('reloadMapResource::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> requireMapData(int var1, List<int> var2) {
   
-    debugPrint('requireMapData::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('requireMapData::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<List<int>> requireCharBitmap(int var1, int var2, int var3) {
   
-    debugPrint('requireCharBitmap::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('requireCharBitmap::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<List<int>> requireCharsWidths(int var1, List<int> var2, int var3, int var4) {
   
-    debugPrint('requireCharsWidths::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('requireCharsWidths::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> requireMapRender(int var1, int var2, int var3) {
   
-    debugPrint('requireMapRender::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('requireMapRender::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onMapRender(int var1, int var2) {
   
-    debugPrint('onMapRender::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onMapRender::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> OnIndoorBuildingActivity(int var1, List<int> var2) {
   
-    debugPrint('OnIndoorBuildingActivity::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('OnIndoorBuildingActivity::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<int> generateRequestId() {
   
-    debugPrint('generateRequestId::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('generateRequestId::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<int> requireMapDataAsyn(int var1, List<int> var2) {
   
-    debugPrint('requireMapDataAsyn::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('requireMapDataAsyn::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

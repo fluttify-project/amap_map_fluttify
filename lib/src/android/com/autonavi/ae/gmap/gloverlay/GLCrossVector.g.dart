@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   // generate methods
   Future<int> addVectorItem(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1, List<int> var2, int var3) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorItem([\'var2\':$var2, \'var3\':$var3])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorItem([\'var2\':$var2, \'var3\':$var3])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorItem', {"var1": var1.refId, "var2": var2, "var3": var3, "refId": refId});
@@ -39,7 +42,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> addVectorRemainDis(int var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorRemainDis([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorRemainDis([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorRemainDis', {"var1": var1, "refId": refId});
@@ -59,7 +64,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> addVectorCar(int var1, int var2, int var3) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorCar([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorCar([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorCar', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
@@ -79,7 +86,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> setRoadResId(bool var1, int var2) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setRoadResId([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setRoadResId([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::setRoadResId', {"var1": var1, "var2": var2, "refId": refId});
@@ -99,7 +108,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> setArrowResId(bool var1, int var2) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setArrowResId([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setArrowResId([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::setArrowResId', {"var1": var1, "var2": var2, "refId": refId});
@@ -119,7 +130,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> setCarResId(int var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setCarResId([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setCarResId([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::setCarResId', {"var1": var1, "refId": refId});
@@ -139,7 +152,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> setBackgroundResId(int var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setBackgroundResId([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setBackgroundResId([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::setBackgroundResId', {"var1": var1, "refId": refId});
@@ -159,7 +174,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> setSkyResId(bool var1, int var2) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setSkyResId([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setSkyResId([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::setSkyResId', {"var1": var1, "var2": var2, "refId": refId});
@@ -179,7 +196,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<int> getFBOTextureId() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::getFBOTextureId([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::getFBOTextureId([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::getFBOTextureId', {"refId": refId});
@@ -199,7 +218,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> initFBOTexture(int var1, int var2) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::initFBOTexture([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::initFBOTexture([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::initFBOTexture', {"var1": var1, "var2": var2, "refId": refId});

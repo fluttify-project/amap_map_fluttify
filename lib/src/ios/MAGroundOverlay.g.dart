@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -47,7 +48,9 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   // generate methods
   static Future<MAGroundOverlay> groundOverlayWithBoundsIcon(MACoordinateBounds bounds, UIImage icon) async {
     // print log
-    print('fluttify-dart: MAGroundOverlay::groundOverlayWithBounds([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAGroundOverlay::groundOverlayWithBounds([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithBoundsIcon', {"bounds": bounds.refId, "icon": icon.refId});
@@ -67,7 +70,9 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   static Future<MAGroundOverlay> groundOverlayWithCoordinateZoomLevelicon(CLLocationCoordinate2D coordinate, double zoomLevel, UIImage icon) async {
     // print log
-    print('fluttify-dart: MAGroundOverlay::groundOverlayWithCoordinate([\'zoomLevel\':$zoomLevel])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAGroundOverlay::groundOverlayWithCoordinate([\'zoomLevel\':$zoomLevel])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithCoordinateZoomLevelicon', {"coordinate": coordinate.refId, "zoomLevel": zoomLevel, "icon": icon.refId});
@@ -87,7 +92,9 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   Future<bool> setGroundOverlayWithBoundsIcon(MACoordinateBounds bounds, UIImage icon) async {
     // print log
-    print('fluttify-dart: MAGroundOverlay@$refId::setGroundOverlayWithBounds([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAGroundOverlay@$refId::setGroundOverlayWithBounds([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithBoundsIcon', {"bounds": bounds.refId, "icon": icon.refId, "refId": refId});
@@ -107,7 +114,9 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   Future<bool> setGroundOverlayWithCoordinateZoomLevelicon(CLLocationCoordinate2D coordinate, double zoomLevel, UIImage icon) async {
     // print log
-    print('fluttify-dart: MAGroundOverlay@$refId::setGroundOverlayWithCoordinate([\'zoomLevel\':$zoomLevel])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAGroundOverlay@$refId::setGroundOverlayWithCoordinate([\'zoomLevel\':$zoomLevel])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithCoordinateZoomLevelicon', {"coordinate": coordinate.refId, "zoomLevel": zoomLevel, "icon": icon.refId, "refId": refId});

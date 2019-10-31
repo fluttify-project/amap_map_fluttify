@@ -18,13 +18,19 @@ mixin com_amap_api_maps_model_animation_Animation_AnimationListener on java_lang
   @mustCallSuper
   Future<void> onAnimationStart() {
   
-    debugPrint('onAnimationStart::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onAnimationStart::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onAnimationEnd() {
   
-    debugPrint('onAnimationEnd::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onAnimationEnd::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

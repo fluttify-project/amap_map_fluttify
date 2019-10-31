@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   // generate methods
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setPoints([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setPoints([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setPoints', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> resetIndex() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::resetIndex([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::resetIndex([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::resetIndex', {"refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> setTotalDuration(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setTotalDuration([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setTotalDuration([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setTotalDuration', {"var1": var1, "refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> startSmoothMove() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::startSmoothMove([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::startSmoothMove([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::startSmoothMove', {"refId": refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> stopMove() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::stopMove([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::stopMove([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::stopMove', {"refId": refId});
@@ -119,7 +130,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getPosition([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getPosition([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getPosition', {"refId": refId});
@@ -139,7 +152,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<int> getIndex() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getIndex([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getIndex([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getIndex', {"refId": refId});
@@ -159,7 +174,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> destroy() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::destroy([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::destroy([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::destroy', {"refId": refId});
@@ -179,7 +196,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> removeMarker() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::removeMarker([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::removeMarker([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::removeMarker', {"refId": refId});
@@ -199,7 +218,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setPosition([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setPosition([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setPosition', {"var1": var1.refId, "refId": refId});
@@ -219,7 +240,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> setRotate(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setRotate([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setRotate([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setRotate', {"var1": var1, "refId": refId});
@@ -239,7 +262,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> setVisible(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setVisible([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setVisible([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setVisible', {"var1": var1, "refId": refId});
@@ -259,7 +284,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> setMoveListener(com_amap_api_maps_utils_overlay_MovingPointOverlay_MoveListener var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setMoveListener([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setMoveListener([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener', {"refId": refId});
@@ -275,7 +302,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener::move':
               // print log
-              print('fluttify-dart-callback: move([\'var1\':$args[var1]])');
+              if (!kReleaseMode) {
+                print('fluttify-dart-callback: move([\'var1\':$args[var1]])');
+              }
         
               // handle the native call
               var1?.move(args['var1']);

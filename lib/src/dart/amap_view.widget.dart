@@ -29,12 +29,15 @@ class _AmapViewState extends State<AmapView> {
     if (Platform.isAndroid) {
       return com_amap_api_maps_MapView_Android(
         onViewCreated: (controller) async {
-          await controller.onCreate(
-              await PlatformFactory_Android.createandroid_os_Bundle());
+          final bundle =
+              await PlatformFactory_Android.createandroid_os_Bundle();
+
+          await controller.onCreate(bundle);
           if (widget.onMapCreated != null) {
             _controller = AmapController.android(controller);
             widget.onMapCreated(_controller);
           }
+          release(bundle);
         },
       );
     } else if (Platform.isIOS) {
@@ -53,12 +56,12 @@ class _AmapViewState extends State<AmapView> {
 
   @override
   void dispose() {
+    _controller?.dispose();
+
     final isCurrentPlugin = (it) => it.tag == 'amap_map_fluttify';
     kNativeObjectPool
       ..where(isCurrentPlugin).forEach(release)
       ..removeWhere(isCurrentPlugin);
-
-    _controller?.dispose();
     super.dispose();
   }
 }

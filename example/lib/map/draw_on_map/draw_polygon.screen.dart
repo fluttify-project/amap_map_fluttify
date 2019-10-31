@@ -37,7 +37,7 @@ class _DrawPolygonScreenState extends State<DrawPolygonScreen> {
               divider: kDividerTiny,
               children: <Widget>[
                 ListTile(
-                  title: Text('添加多边形'),
+                  title: Center(child: Text('添加多边形')),
                   onTap: () async {
                     await _controller?.addPolygon(
                       [

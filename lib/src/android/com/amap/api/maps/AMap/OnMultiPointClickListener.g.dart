@@ -18,7 +18,10 @@ mixin com_amap_api_maps_AMap_OnMultiPointClickListener on java_lang_Object {
   @mustCallSuper
   Future<bool> onPointClick(com_amap_api_maps_model_MultiPointItem var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('onPointClick::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onPointClick::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

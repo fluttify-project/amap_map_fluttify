@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   // generate methods
   static Future<double> calculateLineDistance(com_amap_api_maps_model_LatLng var0, com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.AMapUtils::calculateLineDistance([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.AMapUtils::calculateLineDistance([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::calculateLineDistance', {"var0": var0.refId, "var1": var1.refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   
   static Future<double> calculateArea(com_amap_api_maps_model_LatLng var0, com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.AMapUtils::calculateArea([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.AMapUtils::calculateArea([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::calculateArea', {"var0": var0.refId, "var1": var1.refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   
   static Future<void> getLatestAMapApp(android_content_Context var0) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.AMapUtils::getLatestAMapApp([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.AMapUtils::getLatestAMapApp([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::getLatestAMapApp', {"var0": var0.refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   
   static Future<void> openAMapNavi(com_amap_api_maps_model_NaviPara var0, android_content_Context var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapNavi([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapNavi([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapNavi', {"var0": var0.refId, "var1": var1.refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   
   static Future<void> openAMapPoiNearbySearch(com_amap_api_maps_model_PoiPara var0, android_content_Context var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapPoiNearbySearch([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapPoiNearbySearch([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapPoiNearbySearch', {"var0": var0.refId, "var1": var1.refId});
@@ -119,7 +130,9 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   
   static Future<void> openAMapDrivingRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapDrivingRoute([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapDrivingRoute([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapDrivingRoute', {"var0": var0.refId, "var1": var1.refId});
@@ -139,7 +152,9 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   
   static Future<void> openAMapTransitRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapTransitRoute([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapTransitRoute([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapTransitRoute', {"var0": var0.refId, "var1": var1.refId});
@@ -159,7 +174,9 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   
   static Future<void> openAMapWalkingRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapWalkingRoute([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapWalkingRoute([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapWalkingRoute', {"var0": var0.refId, "var1": var1.refId});

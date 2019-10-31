@@ -18,13 +18,19 @@ mixin com_amap_api_maps_LocationSource on java_lang_Object {
   @mustCallSuper
   Future<void> activate(com_amap_api_maps_LocationSource_OnLocationChangedListener var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('activate::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('activate::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> deactivate() {
   
-    debugPrint('deactivate::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('deactivate::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

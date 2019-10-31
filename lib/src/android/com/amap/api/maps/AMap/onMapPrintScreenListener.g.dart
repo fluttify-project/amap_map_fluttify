@@ -18,7 +18,10 @@ mixin com_amap_api_maps_AMap_onMapPrintScreenListener on java_lang_Object {
   @mustCallSuper
   Future<void> onMapPrint(android_graphics_drawable_Drawable var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('onMapPrint::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onMapPrint::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

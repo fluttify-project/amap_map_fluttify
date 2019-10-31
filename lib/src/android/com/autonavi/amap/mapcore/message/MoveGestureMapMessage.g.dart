@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -41,7 +42,9 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
   // generate methods
   static Future<com_autonavi_amap_mapcore_message_MoveGestureMapMessage> obtain(int var0, double var1, double var2) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::obtain([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::obtain([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::obtain', {"var0": var0, "var1": var1, "var2": var2});
@@ -61,7 +64,9 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
   
   static Future<void> destory() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::destory([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::destory([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::destory', );
@@ -81,7 +86,9 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
   
   Future<int> getType() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage@$refId::getType([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage@$refId::getType([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::getType', {"refId": refId});
@@ -101,7 +108,9 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends java_lang_
   
   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage@$refId::runCameraUpdate([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage@$refId::runCameraUpdate([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::runCameraUpdate', {"var1": var1.refId, "refId": refId});

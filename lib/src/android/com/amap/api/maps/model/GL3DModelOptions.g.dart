@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_GL3DModelOptions extends java_lang_Object  {
   // generate methods
   Future<com_amap_api_maps_model_GL3DModelOptions> textureDrawable(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::textureDrawable([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::textureDrawable([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::textureDrawable', {"var1": var1.refId, "refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_GL3DModelOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_GL3DModelOptions> vertexData(List<double> var1, List<double> var2) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::vertexData([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::vertexData([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::vertexData', {"var1": var1, "var2": var2, "refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_GL3DModelOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_GL3DModelOptions> position(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::position([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::position([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::position', {"var1": var1.refId, "refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_model_GL3DModelOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_GL3DModelOptions> angle(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::angle([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::angle([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::angle', {"var1": var1, "refId": refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_model_GL3DModelOptions extends java_lang_Object  {
   
   Future<List<double>> getVertext() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getVertext([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getVertext([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getVertext', {"refId": refId});
@@ -119,7 +130,9 @@ class com_amap_api_maps_model_GL3DModelOptions extends java_lang_Object  {
   
   Future<List<double>> getTextrue() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getTextrue([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getTextrue([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getTextrue', {"refId": refId});
@@ -139,7 +152,9 @@ class com_amap_api_maps_model_GL3DModelOptions extends java_lang_Object  {
   
   Future<double> getAngle() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getAngle([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getAngle([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getAngle', {"refId": refId});
@@ -159,7 +174,9 @@ class com_amap_api_maps_model_GL3DModelOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getLatLng() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getLatLng([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getLatLng([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getLatLng', {"refId": refId});
@@ -179,7 +196,9 @@ class com_amap_api_maps_model_GL3DModelOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_BitmapDescriptor> getBitmapDescriptor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getBitmapDescriptor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getBitmapDescriptor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getBitmapDescriptor', {"refId": refId});
@@ -199,7 +218,9 @@ class com_amap_api_maps_model_GL3DModelOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_GL3DModelOptions> setModelFixedLength(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::setModelFixedLength([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::setModelFixedLength([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::setModelFixedLength', {"var1": var1, "refId": refId});
@@ -219,7 +240,9 @@ class com_amap_api_maps_model_GL3DModelOptions extends java_lang_Object  {
   
   Future<int> getModelFixedLength() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getModelFixedLength([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getModelFixedLength([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getModelFixedLength', {"refId": refId});

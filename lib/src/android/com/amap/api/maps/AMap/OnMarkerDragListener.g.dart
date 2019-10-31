@@ -18,19 +18,28 @@ mixin com_amap_api_maps_AMap_OnMarkerDragListener on java_lang_Object {
   @mustCallSuper
   Future<void> onMarkerDragStart(com_amap_api_maps_model_Marker var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('onMarkerDragStart::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onMarkerDragStart::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onMarkerDrag(com_amap_api_maps_model_Marker var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('onMarkerDrag::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onMarkerDrag::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onMarkerDragEnd(com_amap_api_maps_model_Marker var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('onMarkerDragEnd::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onMarkerDragEnd::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

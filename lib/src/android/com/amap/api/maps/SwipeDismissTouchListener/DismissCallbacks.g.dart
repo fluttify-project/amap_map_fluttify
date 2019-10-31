@@ -18,7 +18,10 @@ mixin com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks on java_lang_
   @mustCallSuper
   Future<void> onNotifySwipe() {
   
-    debugPrint('onNotifySwipe::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onNotifySwipe::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

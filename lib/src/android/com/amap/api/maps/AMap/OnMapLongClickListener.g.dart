@@ -18,7 +18,10 @@ mixin com_amap_api_maps_AMap_OnMapLongClickListener on java_lang_Object {
   @mustCallSuper
   Future<void> onMapLongClick(com_amap_api_maps_model_LatLng var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('onMapLongClick::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onMapLongClick::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

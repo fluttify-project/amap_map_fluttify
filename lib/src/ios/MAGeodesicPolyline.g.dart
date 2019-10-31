@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class MAGeodesicPolyline extends MAPolyline  {
   // generate methods
   static Future<MAGeodesicPolyline> polylineWithPointsCount(List<MAMapPoint> points, int count) async {
     // print log
-    print('fluttify-dart: MAGeodesicPolyline::polylineWithPoints([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAGeodesicPolyline::polylineWithPoints([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGeodesicPolyline::polylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count});
@@ -39,7 +42,9 @@ class MAGeodesicPolyline extends MAPolyline  {
   
   static Future<MAGeodesicPolyline> polylineWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
-    print('fluttify-dart: MAGeodesicPolyline::polylineWithCoordinates([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAGeodesicPolyline::polylineWithCoordinates([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGeodesicPolyline::polylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count});
@@ -59,7 +64,9 @@ class MAGeodesicPolyline extends MAPolyline  {
   
   Future<bool> setPolylineWithPointsCount(List<MAMapPoint> points, int count) async {
     // print log
-    print('fluttify-dart: MAGeodesicPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAGeodesicPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGeodesicPolyline::setPolylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count, "refId": refId});
@@ -79,7 +86,9 @@ class MAGeodesicPolyline extends MAPolyline  {
   
   Future<bool> setPolylineWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
-    print('fluttify-dart: MAGeodesicPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAGeodesicPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGeodesicPolyline::setPolylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});

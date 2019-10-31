@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_PolygonHoleOptions extends java_lang_Object with a
   // generate methods
   Future<com_amap_api_maps_model_PolygonHoleOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonHoleOptions@$refId::addAll([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonHoleOptions@$refId::addAll([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonHoleOptions::addAll', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_PolygonHoleOptions extends java_lang_Object with a
   
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonHoleOptions@$refId::getPoints([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonHoleOptions@$refId::getPoints([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonHoleOptions::getPoints', {"refId": refId});

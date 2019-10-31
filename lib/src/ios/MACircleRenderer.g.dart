@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -24,7 +25,9 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
   // generate methods
   Future<MACircleRenderer> initWithCircle(MACircle circle) async {
     // print log
-    print('fluttify-dart: MACircleRenderer@$refId::initWithCircle([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MACircleRenderer@$refId::initWithCircle([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleRenderer::initWithCircle', {"circle": circle.refId, "refId": refId});

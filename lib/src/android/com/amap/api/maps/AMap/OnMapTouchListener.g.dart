@@ -18,7 +18,10 @@ mixin com_amap_api_maps_AMap_OnMapTouchListener on java_lang_Object {
   @mustCallSuper
   Future<void> onTouch(android_view_MotionEvent var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('onTouch::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onTouch::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

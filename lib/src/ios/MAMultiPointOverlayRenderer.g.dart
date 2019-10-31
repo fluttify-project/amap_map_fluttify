@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -49,7 +50,9 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
         switch (methodCall.method) {
           case 'Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped':
             // print log
-            print('fluttify-dart-callback: multiPointOverlayRendererDidItemTapped([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: multiPointOverlayRendererDidItemTapped([])');
+            }
         
             // handle the native call
             delegate?.multiPointOverlayRendererDidItemTapped(MAMultiPointOverlayRenderer()..refId = (args['renderer'])..tag = 'amap_map_fluttify', MAMultiPointItem()..refId = (args['item'])..tag = 'amap_map_fluttify');
@@ -82,7 +85,9 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   // generate methods
   Future<MAMultiPointOverlayRenderer> initWithMultiPointOverlay(MAMultiPointOverlay multiPointOverlay) async {
     // print log
-    print('fluttify-dart: MAMultiPointOverlayRenderer@$refId::initWithMultiPointOverlay([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAMultiPointOverlayRenderer@$refId::initWithMultiPointOverlay([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::initWithMultiPointOverlay', {"multiPointOverlay": multiPointOverlay.refId, "refId": refId});

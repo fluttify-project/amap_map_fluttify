@@ -20,73 +20,109 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     kNativeObjectPool.add(var1);
     kNativeObjectPool.add(var2);
     kNativeObjectPool.add(var3);
-    debugPrint('onInflate::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onInflate::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setContext(android_content_Context var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('setContext::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setContext::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setOptions(com_amap_api_maps_AMapOptions var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('setOptions::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setOptions::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onCreate(android_os_Bundle var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('onCreate::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onCreate::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onResume() {
   
-    debugPrint('onResume::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onResume::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onPause() {
   
-    debugPrint('onPause::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onPause::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onDestroyView() {
   
-    debugPrint('onDestroyView::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onDestroyView::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onDestroy() {
   
-    debugPrint('onDestroy::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onDestroy::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onLowMemory() {
   
-    debugPrint('onLowMemory::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onLowMemory::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onSaveInstanceState(android_os_Bundle var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('onSaveInstanceState::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onSaveInstanceState::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<bool> isReady() {
   
-    debugPrint('isReady::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('isReady::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setVisibility(int var1) {
   
-    debugPrint('setVisibility::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setVisibility::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

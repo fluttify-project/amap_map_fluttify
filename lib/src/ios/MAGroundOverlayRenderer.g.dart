@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -24,7 +25,9 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   // generate methods
   Future<MAGroundOverlayRenderer> initWithGroundOverlay(MAGroundOverlay groundOverlay) async {
     // print log
-    print('fluttify-dart: MAGroundOverlayRenderer@$refId::initWithGroundOverlay([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAGroundOverlayRenderer@$refId::initWithGroundOverlay([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlayRenderer::initWithGroundOverlay', {"groundOverlay": groundOverlay.refId, "refId": refId});

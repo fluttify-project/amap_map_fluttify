@@ -18,13 +18,19 @@ mixin com_autonavi_custom_IUnityCallback on java_lang_Object {
   @mustCallSuper
   Future<void> UnitySetGraphicsDevice(int var1) {
   
-    debugPrint('UnitySetGraphicsDevice::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('UnitySetGraphicsDevice::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> UnityRenderEvent(int var1) {
   
-    debugPrint('UnityRenderEvent::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('UnityRenderEvent::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

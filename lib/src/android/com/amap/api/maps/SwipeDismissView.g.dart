@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
   // generate methods
   Future<void> setCallback(com_amap_api_maps_WearMapView_OnDismissCallback var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.SwipeDismissView@$refId::setCallback([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.SwipeDismissView@$refId::setCallback([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.SwipeDismissView::setCallback', {"refId": refId});
@@ -35,14 +38,18 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss':
               // print log
-              print('fluttify-dart-callback: onDismiss([])');
+              if (!kReleaseMode) {
+                print('fluttify-dart-callback: onDismiss([])');
+              }
         
               // handle the native call
               var1?.onDismiss();
               break;
             case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe':
               // print log
-              print('fluttify-dart-callback: onNotifySwipe([])');
+              if (!kReleaseMode) {
+                print('fluttify-dart-callback: onNotifySwipe([])');
+              }
         
               // handle the native call
               var1?.onNotifySwipe();

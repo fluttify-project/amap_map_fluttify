@@ -18,7 +18,10 @@ mixin com_amap_api_maps_AMap_OnMarkerClickListener on java_lang_Object {
   @mustCallSuper
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('onMarkerClick::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onMarkerClick::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

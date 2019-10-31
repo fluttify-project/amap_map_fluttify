@@ -26,7 +26,9 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::getMap([])")
+            if (BuildConfig.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::getMap()")
+            }
         
             // invoke native method
             val result = ref.getMap()
@@ -51,7 +53,9 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onCreate([])")
+            if (BuildConfig.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onCreate()")
+            }
         
             // invoke native method
             ref.onCreate(var1)
@@ -68,7 +72,9 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onResume([])")
+            if (BuildConfig.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onResume()")
+            }
         
             // invoke native method
             ref.onResume()
@@ -85,7 +91,9 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onPause([])")
+            if (BuildConfig.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onPause()")
+            }
         
             // invoke native method
             ref.onPause()
@@ -102,7 +110,9 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onDestroy([])")
+            if (BuildConfig.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onDestroy()")
+            }
         
             // invoke native method
             ref.onDestroy()
@@ -119,7 +129,9 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onLowMemory([])")
+            if (BuildConfig.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onLowMemory()")
+            }
         
             // invoke native method
             ref.onLowMemory()
@@ -137,7 +149,9 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onSaveInstanceState([])")
+            if (BuildConfig.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onSaveInstanceState()")
+            }
         
             // invoke native method
             ref.onSaveInstanceState(var1)
@@ -155,7 +169,9 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::setVisibility([\"var1\":$var1])")
+            if (BuildConfig.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::setVisibility(\"var1\":$var1)")
+            }
         
             // invoke native method
             ref.setVisibility(var1)

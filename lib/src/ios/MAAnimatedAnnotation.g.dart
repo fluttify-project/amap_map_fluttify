@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -29,7 +30,9 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   // generate methods
   Future<MAAnnotationMoveAnimation> addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback(List<CLLocationCoordinate2D> coordinates, int count, double duration, String name, void completeCallback(bool isFinished)) async {
     // print log
-    print('fluttify-dart: MAAnimatedAnnotation@$refId::addMoveAnimationWithKeyCoordinates([\'count\':$count, \'duration\':$duration, \'name\':$name])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnimatedAnnotation@$refId::addMoveAnimationWithKeyCoordinates([\'count\':$count, \'duration\':$duration, \'name\':$name])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback', {"coordinates": coordinates.map((it) => it.refId).toList(), "count": count, "duration": duration, "name": name, "refId": refId});
@@ -45,7 +48,9 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
           switch (methodCall.method) {
             case 'Callback::void|BOOL isFinished::void|BOOL isFinished':
               // print log
+              if (!kReleaseMode) {
         
+              }
         
               // handle the native call
               completeCallback(args['isFinished']);
@@ -66,7 +71,9 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   
   Future<MAAnnotationMoveAnimation> addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback(List<CLLocationCoordinate2D> coordinates, int count, double duration, String name, void completeCallback(bool isFinished), void stepCallback(MAAnnotationMoveAnimation currentAni)) async {
     // print log
-    print('fluttify-dart: MAAnimatedAnnotation@$refId::addMoveAnimationWithKeyCoordinates([\'count\':$count, \'duration\':$duration, \'name\':$name])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnimatedAnnotation@$refId::addMoveAnimationWithKeyCoordinates([\'count\':$count, \'duration\':$duration, \'name\':$name])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback', {"coordinates": coordinates.map((it) => it.refId).toList(), "count": count, "duration": duration, "name": name, "refId": refId});
@@ -82,14 +89,18 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
           switch (methodCall.method) {
             case 'Callback::void|BOOL isFinished::void|BOOL isFinished':
               // print log
+              if (!kReleaseMode) {
         
+              }
         
               // handle the native call
               completeCallback(args['isFinished']);
               break;
             case 'Callback::void|MAAnnotationMoveAnimation currentAni::void|MAAnnotationMoveAnimation currentAni':
               // print log
+              if (!kReleaseMode) {
         
+              }
         
               // handle the native call
               stepCallback(MAAnnotationMoveAnimation()..refId = (args['currentAni'])..tag = 'amap_map_fluttify');
@@ -110,7 +121,9 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   
   Future<void> setNeedsStart() async {
     // print log
-    print('fluttify-dart: MAAnimatedAnnotation@$refId::setNeedsStart([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnimatedAnnotation@$refId::setNeedsStart([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::setNeedsStart', {"refId": refId});

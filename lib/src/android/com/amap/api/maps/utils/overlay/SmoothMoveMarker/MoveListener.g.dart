@@ -18,7 +18,10 @@ mixin com_amap_api_maps_utils_overlay_SmoothMoveMarker_MoveListener on java_lang
   @mustCallSuper
   Future<void> move(double var1) {
   
-    debugPrint('move::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('move::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

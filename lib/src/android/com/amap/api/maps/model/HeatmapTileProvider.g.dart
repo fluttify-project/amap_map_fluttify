@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object  {
   // generate methods
   Future<com_amap_api_maps_model_Tile> getTile(int var1, int var2, int var3) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTile([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTile([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider::getTile', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object  {
   
   Future<int> getTileHeight() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTileHeight([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTileHeight([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider::getTileHeight', {"refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object  {
   
   Future<int> getTileWidth() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTileWidth([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTileWidth([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider::getTileWidth', {"refId": refId});

@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   // generate methods
   Future<void> remove() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::remove([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::remove([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::remove', {"refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<String> getId() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getId([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getId([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::getId', {"refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setPoints([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setPoints([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::setPoints', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getPoints([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getPoints([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::getPoints', {"refId": refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<void> setWidth(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setWidth([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setWidth([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::setWidth', {"var1": var1, "refId": refId});
@@ -119,7 +130,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<double> getWidth() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getWidth([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getWidth([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::getWidth', {"refId": refId});
@@ -139,7 +152,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<void> setTopColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setTopColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setTopColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::setTopColor', {"var1": var1, "refId": refId});
@@ -159,7 +174,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<int> getTopColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getTopColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getTopColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::getTopColor', {"refId": refId});
@@ -179,7 +196,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<void> setSideColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setSideColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setSideColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::setSideColor', {"var1": var1, "refId": refId});
@@ -199,7 +218,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<void> setZIndex(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setZIndex([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setZIndex([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::setZIndex', {"var1": var1, "refId": refId});
@@ -219,7 +240,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<double> getZIndex() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getZIndex([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getZIndex([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::getZIndex', {"refId": refId});
@@ -239,7 +262,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setVisible([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setVisible([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::setVisible', {"var1": var1, "refId": refId});
@@ -259,7 +284,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::isVisible([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::isVisible([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::isVisible', {"refId": refId});
@@ -279,7 +306,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<void> set3DModel(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::set3DModel([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::set3DModel([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::set3DModel', {"var1": var1, "refId": refId});
@@ -299,7 +328,9 @@ class com_amap_api_maps_model_NavigateArrow extends java_lang_Object  {
   
   Future<bool> is3DModel() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::is3DModel([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::is3DModel([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::is3DModel', {"refId": refId});

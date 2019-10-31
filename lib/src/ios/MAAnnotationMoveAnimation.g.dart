@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class MAAnnotationMoveAnimation extends NSObject  {
   // generate methods
   Future<String> name() async {
     // print log
-    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::name([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::name([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::name', {"refId": refId});
@@ -39,7 +42,9 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<CLLocationCoordinate2D> coordinates() async {
     // print log
-    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::coordinates([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::coordinates([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::coordinates', {"refId": refId});
@@ -59,7 +64,9 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<int> count() async {
     // print log
-    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::count([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::count([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::count', {"refId": refId});
@@ -79,7 +86,9 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<double> duration() async {
     // print log
-    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::duration([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::duration([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::duration', {"refId": refId});
@@ -99,7 +108,9 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<double> elapsedTime() async {
     // print log
-    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::elapsedTime([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::elapsedTime([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::elapsedTime', {"refId": refId});
@@ -119,7 +130,9 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<void> cancel() async {
     // print log
-    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::cancel([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::cancel([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::cancel', {"refId": refId});
@@ -139,7 +152,9 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<bool> isCancelled() async {
     // print log
-    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::isCancelled([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::isCancelled([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::isCancelled', {"refId": refId});
@@ -159,7 +174,9 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<int> passedPointCount() async {
     // print log
-    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::passedPointCount([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::passedPointCount([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::passedPointCount', {"refId": refId});

@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   // generate methods
   Future<void> remove() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::remove([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::remove([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::remove', {"refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<String> getId() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getId([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getId([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getId', {"refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPosition([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPosition([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setPosition', {"var1": var1.refId, "refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getPosition([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getPosition([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getPosition', {"refId": refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setDimensions(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setDimensions([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setDimensions([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setDimensions', {"var1": var1, "refId": refId});
@@ -119,7 +130,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setImage(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setImage([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setImage([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setImage', {"var1": var1.refId, "refId": refId});
@@ -139,7 +152,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<double> getWidth() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getWidth([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getWidth([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getWidth', {"refId": refId});
@@ -159,7 +174,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<double> getHeight() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getHeight([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getHeight([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getHeight', {"refId": refId});
@@ -179,7 +196,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setPositionFromBounds(com_amap_api_maps_model_LatLngBounds var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPositionFromBounds([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPositionFromBounds([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setPositionFromBounds', {"var1": var1.refId, "refId": refId});
@@ -199,7 +218,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLngBounds> getBounds() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBounds([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBounds([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getBounds', {"refId": refId});
@@ -219,7 +240,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setBearing(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setBearing([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setBearing([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setBearing', {"var1": var1, "refId": refId});
@@ -239,7 +262,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<double> getBearing() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBearing([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBearing([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getBearing', {"refId": refId});
@@ -259,7 +284,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setZIndex(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setZIndex([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setZIndex([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setZIndex', {"var1": var1, "refId": refId});
@@ -279,7 +306,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<double> getZIndex() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getZIndex([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getZIndex([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getZIndex', {"refId": refId});
@@ -299,7 +328,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setVisible([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setVisible([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setVisible', {"var1": var1, "refId": refId});
@@ -319,7 +350,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::isVisible([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::isVisible([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::isVisible', {"refId": refId});
@@ -339,7 +372,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setTransparency(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setTransparency([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setTransparency([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setTransparency', {"var1": var1, "refId": refId});
@@ -359,7 +394,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<double> getTransparency() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getTransparency([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getTransparency([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::getTransparency', {"refId": refId});
@@ -379,7 +416,9 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> destroy() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::destroy([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::destroy([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::destroy', {"refId": refId});

@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   // generate methods
   Future<void> setPeriod(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPeriod([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPeriod([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setPeriod', {"var1": var1, "refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<int> getPeriod() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getPeriod([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getPeriod([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getPeriod', {"refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setIcons(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setIcons([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setIcons([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setIcons', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getIcons() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getIcons([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getIcons([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getIcons', {"refId": refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> remove() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::remove([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::remove([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::remove', {"refId": refId});
@@ -119,7 +130,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> destroy() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::destroy([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::destroy([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::destroy', {"refId": refId});
@@ -139,7 +152,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<String> getId() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getId([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getId([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getId', {"refId": refId});
@@ -159,7 +174,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setPerspective(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPerspective([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPerspective([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setPerspective', {"var1": var1, "refId": refId});
@@ -179,7 +196,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<bool> isPerspective() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isPerspective([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isPerspective([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isPerspective', {"refId": refId});
@@ -199,7 +218,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPosition([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPosition([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setPosition', {"var1": var1.refId, "refId": refId});
@@ -219,7 +240,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getPosition([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getPosition([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getPosition', {"refId": refId});
@@ -239,7 +262,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setTitle(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setTitle([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setTitle([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setTitle', {"var1": var1, "refId": refId});
@@ -259,7 +284,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<String> getTitle() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getTitle([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getTitle([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getTitle', {"refId": refId});
@@ -279,7 +306,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setSnippet(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setSnippet([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setSnippet([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setSnippet', {"var1": var1, "refId": refId});
@@ -299,7 +328,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<String> getSnippet() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getSnippet([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getSnippet([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getSnippet', {"refId": refId});
@@ -319,7 +350,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setIcon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setIcon([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setIcon([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setIcon', {"var1": var1.refId, "refId": refId});
@@ -339,7 +372,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setAnchor(double var1, double var2) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setAnchor', {"var1": var1, "var2": var2, "refId": refId});
@@ -359,7 +394,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setDraggable(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setDraggable([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setDraggable([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setDraggable', {"var1": var1, "refId": refId});
@@ -379,7 +416,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<bool> isDraggable() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isDraggable([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isDraggable([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isDraggable', {"refId": refId});
@@ -399,7 +438,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> showInfoWindow() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::showInfoWindow([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::showInfoWindow([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::showInfoWindow', {"refId": refId});
@@ -419,7 +460,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> hideInfoWindow() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::hideInfoWindow([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::hideInfoWindow([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::hideInfoWindow', {"refId": refId});
@@ -439,7 +482,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<bool> isInfoWindowShown() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowShown([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowShown([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isInfoWindowShown', {"refId": refId});
@@ -459,7 +504,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setVisible([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setVisible([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setVisible', {"var1": var1, "refId": refId});
@@ -479,7 +526,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isVisible([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isVisible([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isVisible', {"refId": refId});
@@ -499,7 +548,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setRotateAngle(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setRotateAngle([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setRotateAngle([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setRotateAngle', {"var1": var1, "refId": refId});
@@ -519,7 +570,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<double> getRotateAngle() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getRotateAngle([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getRotateAngle([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getRotateAngle', {"refId": refId});
@@ -539,7 +592,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setToTop() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setToTop([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setToTop([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setToTop', {"refId": refId});
@@ -559,7 +614,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setGeoPoint([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setGeoPoint([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setGeoPoint', {"var1": var1.refId, "refId": refId});
@@ -579,7 +636,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<com_autonavi_amap_mapcore_IPoint> getGeoPoint() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getGeoPoint([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getGeoPoint([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getGeoPoint', {"refId": refId});
@@ -599,7 +658,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setFlat(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setFlat([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setFlat([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setFlat', {"var1": var1, "refId": refId});
@@ -619,7 +680,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<bool> isFlat() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isFlat([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isFlat([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isFlat', {"refId": refId});
@@ -639,7 +702,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setPositionByPixels(int var1, int var2) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPositionByPixels([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPositionByPixels([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setPositionByPixels', {"var1": var1, "var2": var2, "refId": refId});
@@ -659,7 +724,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setZIndex(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setZIndex([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setZIndex([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setZIndex', {"var1": var1, "refId": refId});
@@ -679,7 +746,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<double> getZIndex() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getZIndex([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getZIndex([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getZIndex', {"refId": refId});
@@ -699,7 +768,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnimation([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnimation([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setAnimation', {"var1": var1.refId, "refId": refId});
@@ -719,7 +790,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<bool> startAnimation() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::startAnimation([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::startAnimation([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::startAnimation', {"refId": refId});
@@ -739,7 +812,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnimationListener([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnimationListener([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setAnimationListener', {"refId": refId});
@@ -755,14 +830,18 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart':
               // print log
-              print('fluttify-dart-callback: onAnimationStart([])');
+              if (!kReleaseMode) {
+                print('fluttify-dart-callback: onAnimationStart([])');
+              }
         
               // handle the native call
               var1?.onAnimationStart();
               break;
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd':
               // print log
-              print('fluttify-dart-callback: onAnimationEnd([])');
+              if (!kReleaseMode) {
+                print('fluttify-dart-callback: onAnimationEnd([])');
+              }
         
               // handle the native call
               var1?.onAnimationEnd();
@@ -783,7 +862,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<double> getAlpha() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAlpha([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAlpha([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getAlpha', {"refId": refId});
@@ -803,7 +884,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setAlpha(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAlpha([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAlpha([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setAlpha', {"var1": var1, "refId": refId});
@@ -823,7 +906,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<int> getDisplayLevel() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getDisplayLevel([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getDisplayLevel([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getDisplayLevel', {"refId": refId});
@@ -843,7 +928,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_MarkerOptions> getOptions() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getOptions([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getOptions([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getOptions', {"refId": refId});
@@ -863,7 +950,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<bool> isClickable() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isClickable([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isClickable([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isClickable', {"refId": refId});
@@ -883,7 +972,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<bool> isInfoWindowAutoOverturn() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowAutoOverturn([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowAutoOverturn([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isInfoWindowAutoOverturn', {"refId": refId});
@@ -903,7 +994,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<bool> isInfoWindowEnable() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowEnable([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowEnable([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isInfoWindowEnable', {"refId": refId});
@@ -923,7 +1016,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setInfoWindowEnable(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setInfoWindowEnable([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setInfoWindowEnable([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setInfoWindowEnable', {"var1": var1, "refId": refId});
@@ -943,7 +1038,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setMarkerOptions(com_amap_api_maps_model_MarkerOptions var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setMarkerOptions([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setMarkerOptions([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setMarkerOptions', {"var1": var1.refId, "refId": refId});
@@ -963,7 +1060,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setAutoOverturnInfoWindow(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAutoOverturnInfoWindow([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAutoOverturnInfoWindow([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setAutoOverturnInfoWindow', {"var1": var1, "refId": refId});
@@ -983,7 +1082,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setClickable(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setClickable([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setClickable([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setClickable', {"var1": var1, "refId": refId});
@@ -1003,7 +1104,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setDisplayLevel(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setDisplayLevel([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setDisplayLevel([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setDisplayLevel', {"var1": var1, "refId": refId});
@@ -1023,7 +1126,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setFixingPointEnable(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setFixingPointEnable([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setFixingPointEnable([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setFixingPointEnable', {"var1": var1, "refId": refId});
@@ -1043,7 +1148,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<bool> isRemoved() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isRemoved([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isRemoved([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isRemoved', {"refId": refId});
@@ -1063,7 +1170,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setPositionNotUpdate(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPositionNotUpdate([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPositionNotUpdate([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setPositionNotUpdate', {"var1": var1.refId, "refId": refId});
@@ -1083,7 +1192,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setRotateAngleNotUpdate(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setRotateAngleNotUpdate([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setRotateAngleNotUpdate([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setRotateAngleNotUpdate', {"var1": var1, "refId": refId});
@@ -1103,7 +1214,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<void> setBelowMaskLayer(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setBelowMaskLayer([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setBelowMaskLayer([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setBelowMaskLayer', {"var1": var1, "refId": refId});
@@ -1123,7 +1236,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<double> getAnchorU() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAnchorU([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAnchorU([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getAnchorU', {"refId": refId});
@@ -1143,7 +1258,9 @@ class com_amap_api_maps_model_Marker extends java_lang_Object  {
   
   Future<double> getAnchorV() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAnchorV([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAnchorV([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getAnchorV', {"refId": refId});

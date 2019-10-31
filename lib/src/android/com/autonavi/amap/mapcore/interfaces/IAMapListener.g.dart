@@ -18,31 +18,46 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMapListener on java_lang_Object {
   @mustCallSuper
   Future<void> afterDrawFrame(int var1, com_autonavi_ae_gmap_GLMapState var2) {
     kNativeObjectPool.add(var2);
-    debugPrint('afterDrawFrame::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('afterDrawFrame::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> afterDrawLabel(int var1, com_autonavi_ae_gmap_GLMapState var2) {
     kNativeObjectPool.add(var2);
-    debugPrint('afterDrawLabel::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('afterDrawLabel::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> beforeDrawLabel(int var1, com_autonavi_ae_gmap_GLMapState var2) {
     kNativeObjectPool.add(var2);
-    debugPrint('beforeDrawLabel::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('beforeDrawLabel::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> afterRendererOver(int var1, com_autonavi_ae_gmap_GLMapState var2) {
     kNativeObjectPool.add(var2);
-    debugPrint('afterRendererOver::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('afterRendererOver::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> afterAnimation() {
   
-    debugPrint('afterAnimation::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('afterAnimation::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

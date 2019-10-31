@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -24,7 +25,9 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   // generate methods
   Future<MATileOverlayRenderer> initWithTileOverlay(MATileOverlay tileOverlay) async {
     // print log
-    print('fluttify-dart: MATileOverlayRenderer@$refId::initWithTileOverlay([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MATileOverlayRenderer@$refId::initWithTileOverlay([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::initWithTileOverlay', {"tileOverlay": tileOverlay.refId, "refId": refId});
@@ -44,7 +47,9 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   
   Future<void> reloadData() async {
     // print log
-    print('fluttify-dart: MATileOverlayRenderer@$refId::reloadData([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MATileOverlayRenderer@$refId::reloadData([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::reloadData', {"refId": refId});

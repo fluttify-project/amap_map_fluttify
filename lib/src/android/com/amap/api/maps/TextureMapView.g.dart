@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   // generate methods
   Future<com_amap_api_maps_AMap> getMap({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::getMap([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::getMap([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::getMap', {"refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> onCreate(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onCreate([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onCreate([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onCreate', {"var1": var1.refId, "refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> onResume({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onResume([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onResume([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onResume', {"refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> onPause({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onPause([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onPause([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onPause', {"refId": refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> onDestroy({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onDestroy([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onDestroy([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onDestroy', {"refId": refId});
@@ -119,7 +130,9 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> onLowMemory({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onLowMemory([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onLowMemory([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onLowMemory', {"refId": refId});
@@ -139,7 +152,9 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> onSaveInstanceState(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onSaveInstanceState([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onSaveInstanceState([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onSaveInstanceState', {"var1": var1.refId, "refId": refId});
@@ -159,7 +174,9 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> setVisibility(int var1, {bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::setVisibility([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::setVisibility([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::setVisibility', {"var1": var1, "refId": refId});

@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
   // generate methods
   Future<String> getName() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getName([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getName([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getName', {"refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
   
   Future<com_amap_api_maps_model_LatLng> getCoordinate() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getCoordinate([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getCoordinate([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getCoordinate', {"refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
   
   Future<String> getPoiId() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getPoiId([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getPoiId([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getPoiId', {"refId": refId});

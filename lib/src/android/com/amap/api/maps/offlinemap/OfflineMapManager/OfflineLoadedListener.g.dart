@@ -18,7 +18,10 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener on ja
   @mustCallSuper
   Future<void> onVerifyComplete() {
   
-    debugPrint('onVerifyComplete::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onVerifyComplete::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

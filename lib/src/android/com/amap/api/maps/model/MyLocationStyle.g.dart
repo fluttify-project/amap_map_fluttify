@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   // generate methods
   Future<com_amap_api_maps_model_MyLocationStyle> myLocationIcon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::myLocationIcon([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::myLocationIcon([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::myLocationIcon', {"var1": var1.refId, "refId": refId});
@@ -39,7 +42,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> anchor(double var1, double var2) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::anchor([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::anchor([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::anchor', {"var1": var1, "var2": var2, "refId": refId});
@@ -59,7 +64,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> radiusFillColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::radiusFillColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::radiusFillColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::radiusFillColor', {"var1": var1, "refId": refId});
@@ -79,7 +86,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> strokeColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::strokeColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::strokeColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::strokeColor', {"var1": var1, "refId": refId});
@@ -99,7 +108,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> strokeWidth(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::strokeWidth([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::strokeWidth([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::strokeWidth', {"var1": var1, "refId": refId});
@@ -119,7 +130,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> myLocationType(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::myLocationType([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::myLocationType([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::myLocationType', {"var1": var1, "refId": refId});
@@ -139,7 +152,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> interval(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::interval([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::interval([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::interval', {"var1": var1, "refId": refId});
@@ -159,7 +174,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> showMyLocation(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::showMyLocation([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::showMyLocation([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::showMyLocation', {"var1": var1, "refId": refId});
@@ -179,7 +196,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_BitmapDescriptor> getMyLocationIcon() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getMyLocationIcon([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getMyLocationIcon([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getMyLocationIcon', {"refId": refId});
@@ -199,7 +218,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<double> getAnchorU() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getAnchorU([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getAnchorU([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getAnchorU', {"refId": refId});
@@ -219,7 +240,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<double> getAnchorV() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getAnchorV([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getAnchorV([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getAnchorV', {"refId": refId});
@@ -239,7 +262,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<int> getRadiusFillColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getRadiusFillColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getRadiusFillColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getRadiusFillColor', {"refId": refId});
@@ -259,7 +284,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<int> getStrokeColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getStrokeColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getStrokeColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getStrokeColor', {"refId": refId});
@@ -279,7 +306,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<double> getStrokeWidth() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getStrokeWidth([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getStrokeWidth([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getStrokeWidth', {"refId": refId});
@@ -299,7 +328,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<int> getMyLocationType() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getMyLocationType([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getMyLocationType([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getMyLocationType', {"refId": refId});
@@ -319,7 +350,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<int> getInterval() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getInterval([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getInterval([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::getInterval', {"refId": refId});
@@ -339,7 +372,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<bool> isMyLocationShowing() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::isMyLocationShowing([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::isMyLocationShowing([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::isMyLocationShowing', {"refId": refId});

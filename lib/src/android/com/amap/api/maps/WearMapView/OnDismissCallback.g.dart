@@ -18,13 +18,19 @@ mixin com_amap_api_maps_WearMapView_OnDismissCallback on java_lang_Object {
   @mustCallSuper
   Future<void> onDismiss() {
   
-    debugPrint('onDismiss::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onDismiss::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onNotifySwipe() {
   
-    debugPrint('onNotifySwipe::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onNotifySwipe::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

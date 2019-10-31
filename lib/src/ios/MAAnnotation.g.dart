@@ -46,7 +46,10 @@ mixin MAAnnotation on NSObject {
   @mustCallSuper
   Future<void> setCoordinate(CLLocationCoordinate2D newCoordinate) {
   
-    debugPrint('setCoordinate::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setCoordinate::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

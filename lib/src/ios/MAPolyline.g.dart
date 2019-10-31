@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
   // generate methods
   static Future<MAPolyline> polylineWithPointsCount(List<MAMapPoint> points, int count) async {
     // print log
-    print('fluttify-dart: MAPolyline::polylineWithPoints([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAPolyline::polylineWithPoints([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::polylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count});
@@ -39,7 +42,9 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   static Future<MAPolyline> polylineWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
-    print('fluttify-dart: MAPolyline::polylineWithCoordinates([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAPolyline::polylineWithCoordinates([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::polylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count});
@@ -59,7 +64,9 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   Future<bool> setPolylineWithPointsCount(List<MAMapPoint> points, int count) async {
     // print log
-    print('fluttify-dart: MAPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::setPolylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count, "refId": refId});
@@ -79,7 +86,9 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   Future<bool> setPolylineWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
-    print('fluttify-dart: MAPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::setPolylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});
