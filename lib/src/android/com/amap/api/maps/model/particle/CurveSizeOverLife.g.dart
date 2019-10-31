@@ -19,7 +19,9 @@ class com_amap_api_maps_model_particle_CurveSizeOverLife extends java_lang_Objec
   // generate methods
   Future<void> createNativeInstace() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::createNativeInstace([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::createNativeInstace([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.CurveSizeOverLife::createNativeInstace', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_particle_CurveSizeOverLife extends java_lang_Objec
   
   Future<double> getSizeX(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeX([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeX([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.CurveSizeOverLife::getSizeX', {"var1": var1, "refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_model_particle_CurveSizeOverLife extends java_lang_Objec
   
   Future<double> getSizeY(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeY([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeY([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.CurveSizeOverLife::getSizeY', {"var1": var1, "refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_model_particle_CurveSizeOverLife extends java_lang_Objec
   
   Future<double> getSizeZ(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeZ([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeZ([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.CurveSizeOverLife::getSizeZ', {"var1": var1, "refId": refId});

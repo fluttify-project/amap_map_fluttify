@@ -26,7 +26,9 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::getMap([])")
+            if (BuildConfigs.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::getMap()")
+            }
         
             // invoke native method
             val result = ref.getMap()
@@ -51,7 +53,9 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onCreate([])")
+            if (BuildConfigs.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onCreate()")
+            }
         
             // invoke native method
             ref.onCreate(var1)
@@ -68,7 +72,9 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onResume([])")
+            if (BuildConfigs.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onResume()")
+            }
         
             // invoke native method
             ref.onResume()
@@ -85,7 +91,9 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onPause([])")
+            if (BuildConfigs.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onPause()")
+            }
         
             // invoke native method
             ref.onPause()
@@ -102,7 +110,9 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onDestroy([])")
+            if (BuildConfigs.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onDestroy()")
+            }
         
             // invoke native method
             ref.onDestroy()
@@ -119,7 +129,9 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onLowMemory([])")
+            if (BuildConfigs.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onLowMemory()")
+            }
         
             // invoke native method
             ref.onLowMemory()
@@ -137,7 +149,9 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onSaveInstanceState([])")
+            if (BuildConfigs.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onSaveInstanceState()")
+            }
         
             // invoke native method
             ref.onSaveInstanceState(var1)
@@ -155,7 +169,9 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::setVisibility([\"var1\":$var1])")
+            if (BuildConfigs.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::setVisibility(\"var1\":$var1)")
+            }
         
             // invoke native method
             ref.setVisibility(var1)
@@ -172,7 +188,9 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener([])")
+            if (BuildConfigs.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener()")
+            }
         
             // invoke native method
             ref.setOnDismissCallbackListener(object : com.amap.api.maps.WearMapView.OnDismissCallback {
@@ -232,7 +250,9 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onDismiss([])")
+            if (BuildConfigs.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onDismiss()")
+            }
         
             // invoke native method
             ref.onDismiss()
@@ -250,7 +270,9 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onEnterAmbient([])")
+            if (BuildConfigs.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onEnterAmbient()")
+            }
         
             // invoke native method
             ref.onEnterAmbient(var1)
@@ -267,7 +289,9 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onExitAmbient([])")
+            if (BuildConfigs.DEBUG) {
+                println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onExitAmbient()")
+            }
         
             // invoke native method
             ref.onExitAmbient()

@@ -19,7 +19,9 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends java_lang_Object  {
   // generate methods
   Future<String> getUrl() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getUrl([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getUrl([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::getUrl', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends java_lang_Object  {
   
   Future<void> setUrl(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setUrl([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setUrl([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::setUrl', {"var1": var1, "refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends java_lang_Object  {
   
   Future<int> getSize() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getSize([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getSize([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::getSize', {"refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends java_lang_Object  {
   
   Future<void> setSize(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setSize([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setSize([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::setSize', {"var1": var1, "refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends java_lang_Object  {
   
   Future<int> getState() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getState([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getState([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::getState', {"refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends java_lang_Object  {
   
   Future<void> setState(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setState([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setState([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::setState', {"var1": var1, "refId": refId});
@@ -139,7 +151,9 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends java_lang_Object  {
   
   Future<String> getVersion() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getVersion([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getVersion([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::getVersion', {"refId": refId});
@@ -159,7 +173,9 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends java_lang_Object  {
   
   Future<void> setVersion(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setVersion([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setVersion([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::setVersion', {"var1": var1, "refId": refId});
@@ -179,7 +195,9 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends java_lang_Object  {
   
   Future<int> getcompleteCode() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getcompleteCode([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getcompleteCode([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::getcompleteCode', {"refId": refId});
@@ -199,7 +217,9 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends java_lang_Object  {
   
   Future<void> setCompleteCode(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setCompleteCode([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setCompleteCode([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::setCompleteCode', {"var1": var1, "refId": refId});

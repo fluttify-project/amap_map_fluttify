@@ -18,13 +18,19 @@ mixin com_amap_api_maps_AMap_CancelableCallback on java_lang_Object {
   @mustCallSuper
   Future<void> onFinish() {
   
-    debugPrint('onFinish::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onFinish::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onCancel() {
   
-    debugPrint('onCancel::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onCancel::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

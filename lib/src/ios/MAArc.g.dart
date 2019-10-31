@@ -59,7 +59,9 @@ class MAArc extends MAShape with MAAnnotation, MAOverlay {
   // generate methods
   static Future<MAArc> arcWithStartCoordinatePassedCoordinateendCoordinate(CLLocationCoordinate2D startCoordinate, CLLocationCoordinate2D passedCoordinate, CLLocationCoordinate2D endCoordinate) async {
     // print log
-    print('fluttify-dart: MAArc::arcWithStartCoordinate([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAArc::arcWithStartCoordinate([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::arcWithStartCoordinatePassedCoordinateendCoordinate', {"startCoordinate": startCoordinate.refId, "passedCoordinate": passedCoordinate.refId, "endCoordinate": endCoordinate.refId});

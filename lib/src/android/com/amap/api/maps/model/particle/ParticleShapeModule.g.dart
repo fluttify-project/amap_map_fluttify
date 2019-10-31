@@ -19,7 +19,9 @@ class com_amap_api_maps_model_particle_ParticleShapeModule extends com_autonavi_
   // generate methods
   Future<bool> isUseRatio() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.ParticleShapeModule@$refId::isUseRatio([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleShapeModule@$refId::isUseRatio([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleShapeModule::isUseRatio', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_particle_ParticleShapeModule extends com_autonavi_
   
   Future<List<double>> getPoint() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.ParticleShapeModule@$refId::getPoint([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleShapeModule@$refId::getPoint([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleShapeModule::getPoint', {"refId": refId});

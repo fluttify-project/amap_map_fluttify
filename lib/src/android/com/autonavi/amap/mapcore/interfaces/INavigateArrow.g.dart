@@ -18,61 +18,91 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   @mustCallSuper
   Future<void> setTopColor(int var1) {
   
-    debugPrint('setTopColor::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setTopColor::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setSideColor(int var1) {
   
-    debugPrint('setSideColor::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setSideColor::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<int> getTopColor() {
   
-    debugPrint('getTopColor::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getTopColor::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<int> getSideColor() {
   
-    debugPrint('getSideColor::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getSideColor::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) {
   
-    debugPrint('setPoints::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setPoints::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() {
   
-    debugPrint('getPoints::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getPoints::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setWidth(double var1) {
   
-    debugPrint('setWidth::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setWidth::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<double> getWidth() {
   
-    debugPrint('getWidth::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getWidth::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> set3DModel(bool var1) {
   
-    debugPrint('set3DModel::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('set3DModel::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<bool> is3DModel() {
   
-    debugPrint('is3DModel::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('is3DModel::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

@@ -18,49 +18,73 @@ mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
   @mustCallSuper
   Future<void> onDoubleTap(double var1, double var2) {
   
-    debugPrint('onDoubleTap::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onDoubleTap::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onSingleTap(double var1, double var2) {
   
-    debugPrint('onSingleTap::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onSingleTap::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onFling(double var1, double var2) {
   
-    debugPrint('onFling::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onFling::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onScroll(double var1, double var2) {
   
-    debugPrint('onScroll::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onScroll::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onLongPress(double var1, double var2) {
   
-    debugPrint('onLongPress::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onLongPress::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onDown(double var1, double var2) {
   
-    debugPrint('onDown::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onDown::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onUp(double var1, double var2) {
   
-    debugPrint('onUp::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onUp::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> onMapStable() {
   
-    debugPrint('onMapStable::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onMapStable::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

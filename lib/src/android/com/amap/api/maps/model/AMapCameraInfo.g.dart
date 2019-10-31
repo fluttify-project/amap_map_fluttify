@@ -19,7 +19,9 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   // generate methods
   Future<double> getFov() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getFov([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getFov([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getFov', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   
   Future<double> getAspectRatio() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getAspectRatio([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getAspectRatio([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getAspectRatio', {"refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   
   Future<double> getRotate() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getRotate([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getRotate([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getRotate', {"refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   
   Future<double> getX() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getX([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getX([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getX', {"refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   
   Future<double> getY() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getY([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getY([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getY', {"refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   
   Future<double> getZ() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getZ([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getZ([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getZ', {"refId": refId});

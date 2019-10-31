@@ -19,7 +19,9 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
   // generate methods
   Future<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> getAttribute() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::getAttribute([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::getAttribute([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CrossOverlayOptions::getAttribute', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CrossOverlayOptions> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::setAttribute([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::setAttribute([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CrossOverlayOptions::setAttribute', {"var1": var1.refId, "refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CrossOverlayOptions> setRes(android_graphics_Bitmap var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::setRes([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::setRes([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CrossOverlayOptions::setRes', {"var1": var1.refId, "refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
   
   Future<android_graphics_Bitmap> getRes() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::getRes([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::getRes([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CrossOverlayOptions::getRes', {"refId": refId});

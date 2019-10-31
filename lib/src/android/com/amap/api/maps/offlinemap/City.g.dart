@@ -19,7 +19,9 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   // generate methods
   Future<void> setCity(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setCity([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setCity([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.City::setCity', {"var1": var1, "refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<String> getCity() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getCity([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getCity([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.City::getCity', {"refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<void> setCode(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setCode([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setCode([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.City::setCode', {"var1": var1, "refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<String> getCode() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getCode([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getCode([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.City::getCode', {"refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<String> getJianpin() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getJianpin([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getJianpin([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.City::getJianpin', {"refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<void> setJianpin(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setJianpin([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setJianpin([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.City::setJianpin', {"var1": var1, "refId": refId});
@@ -139,7 +151,9 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<String> getPinyin() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getPinyin([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getPinyin([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.City::getPinyin', {"refId": refId});
@@ -159,7 +173,9 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<void> setPinyin(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setPinyin([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setPinyin([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.City::setPinyin', {"var1": var1, "refId": refId});
@@ -179,7 +195,9 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<String> getAdcode() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getAdcode([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getAdcode([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.City::getAdcode', {"refId": refId});
@@ -199,7 +217,9 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<void> setAdcode(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setAdcode([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setAdcode([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.City::setAdcode', {"var1": var1, "refId": refId});

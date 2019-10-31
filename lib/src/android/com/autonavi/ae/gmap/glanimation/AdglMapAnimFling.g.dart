@@ -19,7 +19,9 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends java_lang_Object
   // generate methods
   Future<void> reset() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::reset([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::reset([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimFling::reset', {"refId": refId});
@@ -39,7 +41,9 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends java_lang_Object
   
   Future<void> setPositionAndVelocity(double var1, double var2) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::setPositionAndVelocity([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::setPositionAndVelocity([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimFling::setPositionAndVelocity', {"var1": var1, "var2": var2, "refId": refId});

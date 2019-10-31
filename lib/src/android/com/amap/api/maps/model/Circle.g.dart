@@ -19,7 +19,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   // generate methods
   Future<void> remove() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::remove([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::remove([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::remove', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<String> getId() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getId([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getId([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::getId', {"refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setCenter(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setCenter([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setCenter([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::setCenter', {"var1": var1.refId, "refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getCenter() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getCenter([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getCenter([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::getCenter', {"refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setRadius(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setRadius([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setRadius([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::setRadius', {"var1": var1, "refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<double> getRadius() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getRadius([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getRadius([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::getRadius', {"refId": refId});
@@ -139,7 +151,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setStrokeWidth(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setStrokeWidth([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setStrokeWidth([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::setStrokeWidth', {"var1": var1, "refId": refId});
@@ -159,7 +173,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<double> getStrokeWidth() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getStrokeWidth([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getStrokeWidth([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::getStrokeWidth', {"refId": refId});
@@ -179,7 +195,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setStrokeColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setStrokeColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setStrokeColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::setStrokeColor', {"var1": var1, "refId": refId});
@@ -199,7 +217,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<int> getStrokeColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getStrokeColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getStrokeColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::getStrokeColor', {"refId": refId});
@@ -219,7 +239,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setFillColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setFillColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setFillColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::setFillColor', {"var1": var1, "refId": refId});
@@ -239,7 +261,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<int> getFillColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getFillColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getFillColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::getFillColor', {"refId": refId});
@@ -259,7 +283,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setZIndex(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setZIndex([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setZIndex([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::setZIndex', {"var1": var1, "refId": refId});
@@ -279,7 +305,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<double> getZIndex() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getZIndex([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getZIndex([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::getZIndex', {"refId": refId});
@@ -299,7 +327,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setVisible([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setVisible([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::setVisible', {"var1": var1, "refId": refId});
@@ -319,7 +349,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::isVisible([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::isVisible([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::isVisible', {"refId": refId});
@@ -339,7 +371,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<bool> contains(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::contains([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::contains([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::contains', {"var1": var1.refId, "refId": refId});
@@ -359,7 +393,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setHoleOptions([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setHoleOptions([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::setHoleOptions', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
@@ -379,7 +415,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setStrokeDottedLineType(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setStrokeDottedLineType([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setStrokeDottedLineType([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::setStrokeDottedLineType', {"var1": var1, "refId": refId});
@@ -399,7 +437,9 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<int> getStrokeDottedLineType() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getStrokeDottedLineType([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getStrokeDottedLineType([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Circle::getStrokeDottedLineType', {"refId": refId});

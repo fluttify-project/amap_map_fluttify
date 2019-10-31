@@ -48,7 +48,9 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
   // generate methods
   static Future<com_amap_api_maps_model_CameraPosition> fromLatLngZoom(com_amap_api_maps_model_LatLng var0, double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CameraPosition::fromLatLngZoom([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CameraPosition::fromLatLngZoom([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CameraPosition::fromLatLngZoom', {"var0": var0.refId, "var1": var1});
@@ -68,7 +70,9 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
   
   static Future<com_amap_api_maps_model_CameraPosition_Builder> builder() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CameraPosition::builder([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CameraPosition::builder([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CameraPosition::builder', );

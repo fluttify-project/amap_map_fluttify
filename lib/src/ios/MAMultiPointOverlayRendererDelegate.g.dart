@@ -19,7 +19,10 @@ mixin MAMultiPointOverlayRendererDelegate on NSObject {
   Future<void> multiPointOverlayRendererDidItemTapped(MAMultiPointOverlayRenderer renderer, MAMultiPointItem item) {
     kNativeObjectPool.add(renderer);
     kNativeObjectPool.add(item);
-    debugPrint('multiPointOverlayRendererDidItemTapped::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('multiPointOverlayRendererDidItemTapped::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

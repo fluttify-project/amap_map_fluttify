@@ -19,7 +19,9 @@ class MAParticleEmissionModule extends NSObject  {
   // generate methods
   Future<MAParticleEmissionModule> initWithEmissionRateRateTime(int rate, int rateTime) async {
     // print log
-    print('fluttify-dart: MAParticleEmissionModule@$refId::initWithEmissionRate([\'rate\':$rate, \'rateTime\':$rateTime])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAParticleEmissionModule@$refId::initWithEmissionRate([\'rate\':$rate, \'rateTime\':$rateTime])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleEmissionModule::initWithEmissionRateRateTime', {"rate": rate, "rateTime": rateTime, "refId": refId});

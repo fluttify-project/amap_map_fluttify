@@ -18,61 +18,91 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   @mustCallSuper
   Future<void> remove() {
   
-    debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> destroy(bool var1) {
   
-    debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> clearTileCache() {
   
-    debugPrint('clearTileCache::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('clearTileCache::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<String> getId() {
   
-    debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setZIndex(double var1) {
   
-    debugPrint('setZIndex::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setZIndex::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<double> getZIndex() {
   
-    debugPrint('getZIndex::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getZIndex::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setVisible(bool var1) {
   
-    debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<bool> isVisible() {
   
-    debugPrint('isVisible::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('isVisible::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_ITileOverlay var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('equalsRemote::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('equalsRemote::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<int> hashCodeRemote() {
   
-    debugPrint('hashCodeRemote::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('hashCodeRemote::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

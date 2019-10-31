@@ -19,7 +19,9 @@ class com_amap_api_maps_model_particle_ConstantRotationOverLife extends java_lan
   // generate methods
   Future<void> createNativeInstace() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.ConstantRotationOverLife@$refId::createNativeInstace([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.ConstantRotationOverLife@$refId::createNativeInstace([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ConstantRotationOverLife::createNativeInstace', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_particle_ConstantRotationOverLife extends java_lan
   
   Future<double> getRotate() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.ConstantRotationOverLife@$refId::getRotate([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.ConstantRotationOverLife@$refId::getRotate([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ConstantRotationOverLife::getRotate', {"refId": refId});

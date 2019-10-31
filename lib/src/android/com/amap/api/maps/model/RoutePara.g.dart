@@ -19,7 +19,9 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   // generate methods
   Future<int> getDrivingRouteStyle() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getDrivingRouteStyle([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getDrivingRouteStyle([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::getDrivingRouteStyle', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<void> setDrivingRouteStyle(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setDrivingRouteStyle([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setDrivingRouteStyle([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::setDrivingRouteStyle', {"var1": var1, "refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<int> getTransitRouteStyle() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getTransitRouteStyle([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getTransitRouteStyle([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::getTransitRouteStyle', {"refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<void> setTransitRouteStyle(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setTransitRouteStyle([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setTransitRouteStyle([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::setTransitRouteStyle', {"var1": var1, "refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getStartPoint() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getStartPoint([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getStartPoint([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::getStartPoint', {"refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<void> setStartPoint(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setStartPoint([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setStartPoint([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::setStartPoint', {"var1": var1.refId, "refId": refId});
@@ -139,7 +151,9 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getEndPoint() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getEndPoint([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getEndPoint([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::getEndPoint', {"refId": refId});
@@ -159,7 +173,9 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<void> setEndPoint(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setEndPoint([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setEndPoint([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::setEndPoint', {"var1": var1.refId, "refId": refId});
@@ -179,7 +195,9 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<String> getEndName() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getEndName([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getEndName([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::getEndName', {"refId": refId});
@@ -199,7 +217,9 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<void> setEndName(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setEndName([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setEndName([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::setEndName', {"var1": var1, "refId": refId});
@@ -219,7 +239,9 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<String> getStartName() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getStartName([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getStartName([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::getStartName', {"refId": refId});
@@ -239,7 +261,9 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<void> setStartName(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setStartName([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setStartName([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.RoutePara::setStartName', {"var1": var1, "refId": refId});

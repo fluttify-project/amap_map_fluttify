@@ -19,7 +19,9 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   // generate methods
   Future<void> remove() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::remove([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::remove([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileOverlay::remove', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   
   Future<void> clearTileCache() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::clearTileCache([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::clearTileCache([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileOverlay::clearTileCache', {"refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   
   Future<String> getId() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::getId([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::getId([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileOverlay::getId', {"refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   
   Future<void> setZIndex(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setZIndex([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setZIndex([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileOverlay::setZIndex', {"var1": var1, "refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   
   Future<double> getZIndex() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::getZIndex([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::getZIndex([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileOverlay::getZIndex', {"refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setVisible([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setVisible([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileOverlay::setVisible', {"var1": var1, "refId": refId});
@@ -139,7 +151,9 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::isVisible([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::isVisible([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileOverlay::isVisible', {"refId": refId});

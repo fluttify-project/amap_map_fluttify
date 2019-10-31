@@ -18,25 +18,37 @@ mixin com_autonavi_ae_gmap_listener_AMapWidgetListener on java_lang_Object {
   @mustCallSuper
   Future<void> invalidateScaleView() {
   
-    debugPrint('invalidateScaleView::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('invalidateScaleView::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> invalidateCompassView() {
   
-    debugPrint('invalidateCompassView::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('invalidateCompassView::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> invalidateZoomController(double var1) {
   
-    debugPrint('invalidateZoomController::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('invalidateZoomController::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setFrontViewVisibility(bool var1) {
   
-    debugPrint('setFrontViewVisibility::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setFrontViewVisibility::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

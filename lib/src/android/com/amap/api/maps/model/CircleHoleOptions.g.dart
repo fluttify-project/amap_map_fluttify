@@ -19,7 +19,9 @@ class com_amap_api_maps_model_CircleHoleOptions extends java_lang_Object with an
   // generate methods
   Future<com_amap_api_maps_model_CircleHoleOptions> center(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::center([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::center([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleHoleOptions::center', {"var1": var1.refId, "refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_CircleHoleOptions extends java_lang_Object with an
   
   Future<com_amap_api_maps_model_CircleHoleOptions> radius(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::radius([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::radius([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleHoleOptions::radius', {"var1": var1, "refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_model_CircleHoleOptions extends java_lang_Object with an
   
   Future<com_amap_api_maps_model_LatLng> getCenter() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::getCenter([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::getCenter([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleHoleOptions::getCenter', {"refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_model_CircleHoleOptions extends java_lang_Object with an
   
   Future<double> getRadius() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::getRadius([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::getRadius([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleHoleOptions::getRadius', {"refId": refId});

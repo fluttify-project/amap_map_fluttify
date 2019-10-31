@@ -29,7 +29,9 @@ class com_autonavi_amap_mapcore_FPoint3 extends java_lang_Object  {
   // generate methods
   Future<void> setColorIndex(int var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.FPoint3@$refId::setColorIndex([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.FPoint3@$refId::setColorIndex([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPoint3::setColorIndex', {"var1": var1, "refId": refId});

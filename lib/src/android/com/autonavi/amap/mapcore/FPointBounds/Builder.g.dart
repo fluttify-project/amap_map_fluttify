@@ -19,7 +19,9 @@ class com_autonavi_amap_mapcore_FPointBounds_Builder extends java_lang_Object  {
   // generate methods
   Future<com_autonavi_amap_mapcore_FPointBounds> build() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds.Builder@$refId::build([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds.Builder@$refId::build([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPointBounds.Builder::build', {"refId": refId});

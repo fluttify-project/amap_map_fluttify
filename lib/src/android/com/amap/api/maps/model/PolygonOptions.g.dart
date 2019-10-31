@@ -19,7 +19,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   // generate methods
   Future<com_amap_api_maps_model_PolygonOptions> add(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::add([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::add([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::add', {"var1": var1.refId, "refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addAll([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addAll([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::addAll', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setPoints([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setPoints([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::setPoints', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setHoleOptions([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setHoleOptions([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::setHoleOptions', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> addHoles(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addHoles([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addHoles([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::addHoles', {"var1": var1.refId, "refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> strokeWidth(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeWidth([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeWidth([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::strokeWidth', {"var1": var1, "refId": refId});
@@ -139,7 +151,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> strokeColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::strokeColor', {"var1": var1, "refId": refId});
@@ -159,7 +173,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> fillColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::fillColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::fillColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::fillColor', {"var1": var1, "refId": refId});
@@ -179,7 +195,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> zIndex(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::zIndex([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::zIndex([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::zIndex', {"var1": var1, "refId": refId});
@@ -199,7 +217,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> visible(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::visible([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::visible([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::visible', {"var1": var1, "refId": refId});
@@ -219,7 +239,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getPoints([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getPoints([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::getPoints', {"refId": refId});
@@ -239,7 +261,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<double> getStrokeWidth() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeWidth([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeWidth([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::getStrokeWidth', {"refId": refId});
@@ -259,7 +283,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<int> getStrokeColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::getStrokeColor', {"refId": refId});
@@ -279,7 +305,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<int> getFillColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getFillColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getFillColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::getFillColor', {"refId": refId});
@@ -299,7 +327,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<double> getZIndex() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getZIndex([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getZIndex([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::getZIndex', {"refId": refId});
@@ -319,7 +349,9 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<bool> isVisible() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::isVisible([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::isVisible([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::isVisible', {"refId": refId});

@@ -18,7 +18,10 @@ mixin com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr_MapAnimationListener 
   @mustCallSuper
   Future<void> onMapAnimationFinish(com_amap_api_maps_AMap_CancelableCallback var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('onMapAnimationFinish::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onMapAnimationFinish::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

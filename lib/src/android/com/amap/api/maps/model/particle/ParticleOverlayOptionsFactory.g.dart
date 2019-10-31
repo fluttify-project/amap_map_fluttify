@@ -19,7 +19,9 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends jav
   // generate methods
   static Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> defaultOptions(int var0) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory::defaultOptions([\'var0\':$var0])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory::defaultOptions([\'var0\':$var0])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory::defaultOptions', {"var0": var0});

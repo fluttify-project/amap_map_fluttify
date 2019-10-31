@@ -18,67 +18,100 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   @mustCallSuper
   Future<void> remove() {
   
-    debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<String> getId() {
   
-    debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setZIndex(double var1) {
   
-    debugPrint('setZIndex::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setZIndex::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<double> getZIndex() {
   
-    debugPrint('getZIndex::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getZIndex::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setVisible(bool var1) {
   
-    debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<bool> isVisible() {
   
-    debugPrint('isVisible::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('isVisible::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_IOverlay var1) {
   
-    debugPrint('equalsRemote::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('equalsRemote::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<int> hashCodeRemote() {
   
-    debugPrint('hashCodeRemote::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('hashCodeRemote::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> destroy() {
   
-    debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<bool> isAboveMaskLayer() {
   
-    debugPrint('isAboveMaskLayer::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('isAboveMaskLayer::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setAboveMaskLayer(bool var1) {
   
-    debugPrint('setAboveMaskLayer::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setAboveMaskLayer::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

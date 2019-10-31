@@ -19,7 +19,9 @@ class com_amap_api_maps_model_particle_RectParticleShape extends java_lang_Objec
   // generate methods
   Future<void> createNativeInstace() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.RectParticleShape@$refId::createNativeInstace([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.RectParticleShape@$refId::createNativeInstace([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.RectParticleShape::createNativeInstace', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_particle_RectParticleShape extends java_lang_Objec
   
   Future<List<double>> getPoint() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.RectParticleShape@$refId::getPoint([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.RectParticleShape@$refId::getPoint([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.RectParticleShape::getPoint', {"refId": refId});

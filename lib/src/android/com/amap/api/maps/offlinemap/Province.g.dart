@@ -19,7 +19,9 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   // generate methods
   Future<String> getProvinceName() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::getProvinceName([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::getProvinceName([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.Province::getProvinceName', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<String> getJianpin() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::getJianpin([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::getJianpin([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.Province::getJianpin', {"refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<String> getPinyin() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::getPinyin([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::getPinyin([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.Province::getPinyin', {"refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<void> setProvinceName(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setProvinceName([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setProvinceName([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.Province::setProvinceName', {"var1": var1, "refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<void> setJianpin(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setJianpin([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setJianpin([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.Province::setJianpin', {"var1": var1, "refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<void> setPinyin(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setPinyin([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setPinyin([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.Province::setPinyin', {"var1": var1, "refId": refId});
@@ -139,7 +151,9 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<void> setProvinceCode(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setProvinceCode([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setProvinceCode([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.Province::setProvinceCode', {"var1": var1, "refId": refId});
@@ -159,7 +173,9 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<String> getProvinceCode() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::getProvinceCode([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::getProvinceCode([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.Province::getProvinceCode', {"refId": refId});

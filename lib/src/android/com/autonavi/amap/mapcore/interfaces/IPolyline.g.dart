@@ -18,121 +18,181 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   @mustCallSuper
   Future<void> setWidth(double var1) {
   
-    debugPrint('setWidth::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setWidth::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<double> getWidth() {
   
-    debugPrint('getWidth::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getWidth::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setColor(int var1) {
   
-    debugPrint('setColor::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setColor::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<int> getColor() {
   
-    debugPrint('getColor::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getColor::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) {
   
-    debugPrint('setPoints::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setPoints::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() {
   
-    debugPrint('getPoints::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getPoints::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<bool> isGeodesic() {
   
-    debugPrint('isGeodesic::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('isGeodesic::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setGeodesic(bool var1) {
   
-    debugPrint('setGeodesic::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setGeodesic::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setDottedLine(bool var1) {
   
-    debugPrint('setDottedLine::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setDottedLine::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<bool> isDottedLine() {
   
-    debugPrint('isDottedLine::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('isDottedLine::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<com_amap_api_maps_model_LatLng> getNearestLatLng(com_amap_api_maps_model_LatLng var1) {
   
-    debugPrint('getNearestLatLng::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getNearestLatLng::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setTransparency(double var1) {
   
-    debugPrint('setTransparency::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setTransparency::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setCustomTexture(com_amap_api_maps_model_BitmapDescriptor var1) {
   
-    debugPrint('setCustomTexture::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setCustomTexture::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setOptions(com_amap_api_maps_model_PolylineOptions var1) {
   
-    debugPrint('setOptions::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setOptions::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<com_amap_api_maps_model_PolylineOptions> getOptions() {
   
-    debugPrint('getOptions::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getOptions::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setCustemTextureIndex(List<int> var1) {
   
-    debugPrint('setCustemTextureIndex::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setCustemTextureIndex::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setShownRatio(double var1) {
   
-    debugPrint('setShownRatio::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setShownRatio::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setShowRange(double var1, double var2) {
   
-    debugPrint('setShowRange::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setShowRange::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<double> getShownRatio() {
   
-    debugPrint('getShownRatio::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getShownRatio::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setCustomTextureList(List<com_amap_api_maps_model_BitmapDescriptor> var1) {
   
-    debugPrint('setCustomTextureList::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setCustomTextureList::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

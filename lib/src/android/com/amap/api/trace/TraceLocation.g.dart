@@ -19,7 +19,9 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   // generate methods
   Future<double> getLatitude() async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getLatitude([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getLatitude([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getLatitude', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<void> setLatitude(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setLatitude([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setLatitude([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setLatitude', {"var1": var1, "refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<double> getLongitude() async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getLongitude([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getLongitude([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getLongitude', {"refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<void> setLongitude(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setLongitude([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setLongitude([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setLongitude', {"var1": var1, "refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<double> getSpeed() async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getSpeed([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getSpeed([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getSpeed', {"refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<void> setSpeed(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setSpeed([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setSpeed([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setSpeed', {"var1": var1, "refId": refId});
@@ -139,7 +151,9 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<double> getBearing() async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getBearing([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getBearing([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getBearing', {"refId": refId});
@@ -159,7 +173,9 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<void> setBearing(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setBearing([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setBearing([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setBearing', {"var1": var1, "refId": refId});
@@ -179,7 +195,9 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<int> getTime() async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getTime([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getTime([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getTime', {"refId": refId});
@@ -199,7 +217,9 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<void> setTime(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setTime([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setTime([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setTime', {"var1": var1, "refId": refId});
@@ -219,7 +239,9 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<com_amap_api_trace_TraceLocation> copy() async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::copy([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::copy([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::copy', {"refId": refId});

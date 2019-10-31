@@ -24,7 +24,9 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   // generate methods
   Future<MATileOverlayRenderer> initWithTileOverlay(MATileOverlay tileOverlay) async {
     // print log
-    print('fluttify-dart: MATileOverlayRenderer@$refId::initWithTileOverlay([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MATileOverlayRenderer@$refId::initWithTileOverlay([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::initWithTileOverlay', {"tileOverlay": tileOverlay.refId, "refId": refId});
@@ -44,7 +46,9 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   
   Future<void> reloadData() async {
     // print log
-    print('fluttify-dart: MATileOverlayRenderer@$refId::reloadData([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MATileOverlayRenderer@$refId::reloadData([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::reloadData', {"refId": refId});

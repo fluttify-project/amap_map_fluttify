@@ -19,7 +19,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   // generate methods
   Future<String> getStyleDataPath() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleDataPath([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleDataPath([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleDataPath', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleDataPath(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleDataPath([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleDataPath([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleDataPath', {"var1": var1, "refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<String> getStyleTexturePath() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleTexturePath([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleTexturePath([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleTexturePath', {"refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleTexturePath(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleTexturePath([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleTexturePath([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleTexturePath', {"var1": var1, "refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<List<int>> getStyleData() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleData([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleData([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleData', {"refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleData(List<int> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleData([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleData([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleData', {"var1": var1, "refId": refId});
@@ -139,7 +151,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<List<int>> getStyleTextureData() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleTextureData([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleTextureData([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleTextureData', {"refId": refId});
@@ -159,7 +173,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleTextureData(List<int> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleTextureData([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleTextureData([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleTextureData', {"var1": var1, "refId": refId});
@@ -179,7 +195,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<String> getStyleId() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleId([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleId([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleId', {"refId": refId});
@@ -199,7 +217,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleId(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleId([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleId([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleId', {"var1": var1, "refId": refId});
@@ -219,7 +239,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<bool> isEnable() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::isEnable([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::isEnable([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::isEnable', {"refId": refId});
@@ -239,7 +261,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setEnable(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setEnable([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setEnable([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setEnable', {"var1": var1, "refId": refId});
@@ -259,7 +283,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<List<int>> getStyleExtraData() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleExtraData([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleExtraData([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleExtraData', {"refId": refId});
@@ -279,7 +305,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleExtraData(List<int> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleExtraData([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleExtraData([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleExtraData', {"var1": var1, "refId": refId});
@@ -299,7 +327,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<String> getStyleExtraPath() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleExtraPath([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleExtraPath([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleExtraPath', {"refId": refId});
@@ -319,7 +349,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleExtraPath(String var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleExtraPath([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleExtraPath([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleExtraPath', {"var1": var1, "refId": refId});

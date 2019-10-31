@@ -19,7 +19,9 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
   // generate methods
   static Future<void> loadLib(android_content_Context var0) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.AeUtil::loadLib([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.AeUtil::loadLib([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AeUtil::loadLib', {"var0": var0.refId});
@@ -39,7 +41,9 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
   
   static Future<com_autonavi_ae_gmap_GLMapEngine_InitParam> initResource(android_content_Context var0) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.AeUtil::initResource([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.AeUtil::initResource([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AeUtil::initResource', {"var0": var0.refId});
@@ -59,7 +63,9 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
   
   static Future<void> readAssetsFileAndSave(String var0, String var1, android_content_Context var2) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.AeUtil::readAssetsFileAndSave([\'var0\':$var0, \'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.AeUtil::readAssetsFileAndSave([\'var0\':$var0, \'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AeUtil::readAssetsFileAndSave', {"var0": var0, "var1": var1, "var2": var2.refId});

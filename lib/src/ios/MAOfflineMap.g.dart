@@ -54,7 +54,9 @@ class MAOfflineMap extends NSObject  {
   // generate methods
   static Future<MAOfflineMap> sharedOfflineMap() async {
     // print log
-    print('fluttify-dart: MAOfflineMap::sharedOfflineMap([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAOfflineMap::sharedOfflineMap([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::sharedOfflineMap', );
@@ -74,7 +76,9 @@ class MAOfflineMap extends NSObject  {
   
   Future<void> setupWithCompletionBlock(void block(bool setupSuccess)) async {
     // print log
-    print('fluttify-dart: MAOfflineMap@$refId::setupWithCompletionBlock([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAOfflineMap@$refId::setupWithCompletionBlock([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::setupWithCompletionBlock', {"refId": refId});
@@ -90,7 +94,9 @@ class MAOfflineMap extends NSObject  {
           switch (methodCall.method) {
             case 'Callback::void|BOOL setupSuccess::void|BOOL setupSuccess':
               // print log
+              if (!kReleaseMode) {
         
+              }
         
               // handle the native call
               block(args['setupSuccess']);
@@ -111,7 +117,9 @@ class MAOfflineMap extends NSObject  {
   
   Future<void> downloadItemShouldContinueWhenAppEntersBackgrounddownloadBlock(MAOfflineItem item, bool shouldContinueWhenAppEntersBackground, void downloadBlock(MAOfflineItem downloadItem, MAOfflineMapDownloadStatus downloadStatus, NSObject info)) async {
     // print log
-    print('fluttify-dart: MAOfflineMap@$refId::downloadItem([\'shouldContinueWhenAppEntersBackground\':$shouldContinueWhenAppEntersBackground])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAOfflineMap@$refId::downloadItem([\'shouldContinueWhenAppEntersBackground\':$shouldContinueWhenAppEntersBackground])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::downloadItemShouldContinueWhenAppEntersBackgrounddownloadBlock', {"item": item.refId, "shouldContinueWhenAppEntersBackground": shouldContinueWhenAppEntersBackground, "refId": refId});
@@ -127,7 +135,9 @@ class MAOfflineMap extends NSObject  {
           switch (methodCall.method) {
             case 'Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock':
               // print log
+              if (!kReleaseMode) {
         
+              }
         
               // handle the native call
               downloadBlock(MAOfflineItem()..refId = (args['downloadItem'])..tag = 'amap_map_fluttify', MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], NSObject()..refId = (args['info'])..tag = 'amap_map_fluttify');
@@ -148,7 +158,9 @@ class MAOfflineMap extends NSObject  {
   
   Future<bool> isDownloadingForItem(MAOfflineItem item) async {
     // print log
-    print('fluttify-dart: MAOfflineMap@$refId::isDownloadingForItem([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAOfflineMap@$refId::isDownloadingForItem([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::isDownloadingForItem', {"item": item.refId, "refId": refId});
@@ -168,7 +180,9 @@ class MAOfflineMap extends NSObject  {
   
   Future<bool> pauseItem(MAOfflineItem item) async {
     // print log
-    print('fluttify-dart: MAOfflineMap@$refId::pauseItem([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAOfflineMap@$refId::pauseItem([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::pauseItem', {"item": item.refId, "refId": refId});
@@ -188,7 +202,9 @@ class MAOfflineMap extends NSObject  {
   
   Future<void> deleteItem(MAOfflineItem item) async {
     // print log
-    print('fluttify-dart: MAOfflineMap@$refId::deleteItem([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAOfflineMap@$refId::deleteItem([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::deleteItem', {"item": item.refId, "refId": refId});
@@ -208,7 +224,9 @@ class MAOfflineMap extends NSObject  {
   
   Future<void> cancelAll() async {
     // print log
-    print('fluttify-dart: MAOfflineMap@$refId::cancelAll([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAOfflineMap@$refId::cancelAll([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::cancelAll', {"refId": refId});
@@ -228,7 +246,9 @@ class MAOfflineMap extends NSObject  {
   
   Future<void> clearDisk() async {
     // print log
-    print('fluttify-dart: MAOfflineMap@$refId::clearDisk([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAOfflineMap@$refId::clearDisk([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::clearDisk', {"refId": refId});
@@ -248,7 +268,9 @@ class MAOfflineMap extends NSObject  {
   
   Future<void> checkNewestVersion(void newestVersionBlock(bool hasNewestVersion)) async {
     // print log
-    print('fluttify-dart: MAOfflineMap@$refId::checkNewestVersion([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAOfflineMap@$refId::checkNewestVersion([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::checkNewestVersion', {"refId": refId});
@@ -264,7 +286,9 @@ class MAOfflineMap extends NSObject  {
           switch (methodCall.method) {
             case 'Callback::MAOfflineMapNewestVersionBlock::MAOfflineMapNewestVersionBlock':
               // print log
+              if (!kReleaseMode) {
         
+              }
         
               // handle the native call
               newestVersionBlock(args['hasNewestVersion']);

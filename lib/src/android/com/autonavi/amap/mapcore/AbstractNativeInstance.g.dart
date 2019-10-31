@@ -19,7 +19,9 @@ class com_autonavi_amap_mapcore_AbstractNativeInstance extends java_lang_Object 
   // generate methods
   Future<int> getNativeInstance() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.AbstractNativeInstance@$refId::getNativeInstance([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.AbstractNativeInstance@$refId::getNativeInstance([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractNativeInstance::getNativeInstance', {"refId": refId});
@@ -39,7 +41,9 @@ class com_autonavi_amap_mapcore_AbstractNativeInstance extends java_lang_Object 
   
   Future<void> createNativeInstace() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.AbstractNativeInstance@$refId::createNativeInstace([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.AbstractNativeInstance@$refId::createNativeInstace([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractNativeInstance::createNativeInstace', {"refId": refId});

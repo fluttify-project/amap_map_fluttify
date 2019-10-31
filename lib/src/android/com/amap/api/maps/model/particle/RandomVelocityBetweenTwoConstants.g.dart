@@ -19,7 +19,9 @@ class com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants extends
   // generate methods
   Future<void> createNativeInstace() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::createNativeInstace([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::createNativeInstace([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants::createNativeInstace', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants extends
   
   Future<double> getX() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::getX([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::getX([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants::getX', {"refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants extends
   
   Future<double> getY() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::getY([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::getY([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants::getY', {"refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants extends
   
   Future<double> getZ() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::getZ([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::getZ([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants::getZ', {"refId": refId});

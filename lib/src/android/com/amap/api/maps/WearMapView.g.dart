@@ -19,7 +19,9 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   // generate methods
   Future<com_amap_api_maps_AMap> getMap({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::getMap([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::getMap([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::getMap', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onCreate(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onCreate([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onCreate([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onCreate', {"var1": var1.refId, "refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onResume({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onResume([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onResume([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onResume', {"refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onPause({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onPause([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onPause([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onPause', {"refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onDestroy({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDestroy([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDestroy([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onDestroy', {"refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onLowMemory({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onLowMemory([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onLowMemory([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onLowMemory', {"refId": refId});
@@ -139,7 +151,9 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onSaveInstanceState(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onSaveInstanceState([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onSaveInstanceState([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onSaveInstanceState', {"var1": var1.refId, "refId": refId});
@@ -159,7 +173,9 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> setVisibility(int var1, {bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setVisibility([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setVisibility([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::setVisibility', {"var1": var1, "refId": refId});
@@ -179,7 +195,9 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> setOnDismissCallbackListener(com_amap_api_maps_WearMapView_OnDismissCallback var1, {bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::setOnDismissCallbackListener', {"refId": refId});
@@ -195,14 +213,18 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss':
               // print log
-              print('fluttify-dart-callback: onDismiss([])');
+              if (!kReleaseMode) {
+                print('fluttify-dart-callback: onDismiss([])');
+              }
         
               // handle the native call
               var1?.onDismiss();
               break;
             case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe':
               // print log
-              print('fluttify-dart-callback: onNotifySwipe([])');
+              if (!kReleaseMode) {
+                print('fluttify-dart-callback: onNotifySwipe([])');
+              }
         
               // handle the native call
               var1?.onNotifySwipe();
@@ -223,7 +245,9 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onDismiss({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDismiss([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDismiss([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onDismiss', {"refId": refId});
@@ -243,7 +267,9 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onEnterAmbient(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onEnterAmbient([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onEnterAmbient([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onEnterAmbient', {"var1": var1.refId, "refId": refId});
@@ -263,7 +289,9 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onExitAmbient({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onExitAmbient([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onExitAmbient([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onExitAmbient', {"refId": refId});

@@ -35,7 +35,9 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
   // generate methods
   Future<MAPolylineRenderer> initWithPolyline(MAPolyline polyline) async {
     // print log
-    print('fluttify-dart: MAPolylineRenderer@$refId::initWithPolyline([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAPolylineRenderer@$refId::initWithPolyline([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline', {"polyline": polyline.refId, "refId": refId});

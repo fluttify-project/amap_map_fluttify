@@ -19,7 +19,9 @@ class com_amap_api_maps_model_particle_ColorGenerate extends com_autonavi_amap_m
   // generate methods
   Future<List<double>> getColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.ColorGenerate@$refId::getColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.ColorGenerate@$refId::getColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ColorGenerate::getColor', {"refId": refId});

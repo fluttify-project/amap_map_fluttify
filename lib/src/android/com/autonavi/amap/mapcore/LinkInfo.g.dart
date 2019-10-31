@@ -19,7 +19,9 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   // generate methods
   Future<int> getState() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::getState([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::getState([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.LinkInfo::getState', {"refId": refId});
@@ -39,7 +41,9 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   
   Future<void> setState(int var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::setState([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::setState([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.LinkInfo::setState', {"var1": var1, "refId": refId});
@@ -59,7 +63,9 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   
   Future<int> getTime() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::getTime([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::getTime([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.LinkInfo::getTime', {"refId": refId});
@@ -79,7 +85,9 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   
   Future<void> setTime(int var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::setTime([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::setTime([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.LinkInfo::setTime', {"var1": var1, "refId": refId});
@@ -99,7 +107,9 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   
   Future<int> getLength() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::getLength([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::getLength([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.LinkInfo::getLength', {"refId": refId});
@@ -119,7 +129,9 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   
   Future<void> setLength(int var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::setLength([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::setLength([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.LinkInfo::setLength', {"var1": var1, "refId": refId});

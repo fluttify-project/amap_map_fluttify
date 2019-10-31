@@ -19,7 +19,9 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
   // generate methods
   Future<com_amap_api_maps_model_HeatmapTileProvider> build() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::build([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::build([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::build', {"refId": refId});

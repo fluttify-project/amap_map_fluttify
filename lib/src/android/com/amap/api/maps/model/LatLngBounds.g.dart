@@ -30,7 +30,9 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   // generate methods
   static Future<com_amap_api_maps_model_LatLngBounds_Builder> builder() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.LatLngBounds::builder([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.LatLngBounds::builder([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::builder', );
@@ -50,7 +52,9 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   
   Future<bool> contains(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::contains([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::contains([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::contains', {"var1": var1.refId, "refId": refId});
@@ -70,7 +74,9 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   
   Future<bool> intersects(com_amap_api_maps_model_LatLngBounds var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::intersects([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::intersects([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::intersects', {"var1": var1.refId, "refId": refId});
@@ -90,7 +96,9 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   
   Future<com_amap_api_maps_model_LatLngBounds> including(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::including([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::including([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::including', {"var1": var1.refId, "refId": refId});

@@ -95,7 +95,9 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   // generate methods
   Future<void> cancelLoadOfTileAtPath(MATileOverlayPath path) async {
     // print log
-    print('fluttify-dart: MATileOverlay@$refId::cancelLoadOfTileAtPath([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MATileOverlay@$refId::cancelLoadOfTileAtPath([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::cancelLoadOfTileAtPath', {"path": path.refId, "refId": refId});

@@ -19,7 +19,10 @@ mixin com_amap_api_trace_TraceStatusListener on java_lang_Object {
   Future<void> onTraceStatus(List<com_amap_api_trace_TraceLocation> var1, List<com_amap_api_maps_model_LatLng> var2, String var3) {
     kNativeObjectPool.addAll(var1);
     kNativeObjectPool.addAll(var2);
-    debugPrint('onTraceStatus::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onTraceStatus::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

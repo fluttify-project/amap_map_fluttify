@@ -29,7 +29,9 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   // generate methods
   static Future<MAPolygon> polygonWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
-    print('fluttify-dart: MAPolygon::polygonWithCoordinates([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAPolygon::polygonWithCoordinates([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count});
@@ -49,7 +51,9 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   static Future<MAPolygon> polygonWithPointsCount(List<MAMapPoint> points, int count) async {
     // print log
-    print('fluttify-dart: MAPolygon::polygonWithPoints([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAPolygon::polygonWithPoints([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count});
@@ -69,7 +73,9 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   Future<bool> setPolygonWithPointsCount(List<MAMapPoint> points, int count) async {
     // print log
-    print('fluttify-dart: MAPolygon@$refId::setPolygonWithPoints([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAPolygon@$refId::setPolygonWithPoints([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count, "refId": refId});
@@ -89,7 +95,9 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   Future<bool> setPolygonWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
-    print('fluttify-dart: MAPolygon@$refId::setPolygonWithCoordinates([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAPolygon@$refId::setPolygonWithCoordinates([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});

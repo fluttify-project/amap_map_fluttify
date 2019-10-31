@@ -41,7 +41,9 @@ class com_autonavi_ae_gmap_maploader_ProcessingTile extends java_lang_Object  {
   // generate methods
   static Future<com_autonavi_ae_gmap_maploader_ProcessingTile> obtain(String var0) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.maploader.ProcessingTile::obtain([\'var0\':$var0])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.maploader.ProcessingTile::obtain([\'var0\':$var0])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.maploader.ProcessingTile::obtain', {"var0": var0});

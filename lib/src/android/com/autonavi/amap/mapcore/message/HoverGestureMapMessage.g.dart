@@ -29,7 +29,9 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang
   // generate methods
   static Future<com_autonavi_amap_mapcore_message_HoverGestureMapMessage> obtain(int var0, double var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain([\'var0\':$var0, \'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain([\'var0\':$var0, \'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain', {"var0": var0, "var1": var1});
@@ -49,7 +51,9 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang
   
   static Future<void> destory() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory', );
@@ -69,7 +73,9 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang
   
   Future<int> getType() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage@$refId::getType([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage@$refId::getType([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::getType', {"refId": refId});
@@ -89,7 +95,9 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends java_lang
   
   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage@$refId::runCameraUpdate([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage@$refId::runCameraUpdate([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::runCameraUpdate', {"var1": var1.refId, "refId": refId});

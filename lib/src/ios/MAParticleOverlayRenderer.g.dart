@@ -24,7 +24,9 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
   // generate methods
   Future<MAParticleOverlayRenderer> initWithParticleOverlay(MAParticleOverlay particleOverlay) async {
     // print log
-    print('fluttify-dart: MAParticleOverlayRenderer@$refId::initWithParticleOverlay([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAParticleOverlayRenderer@$refId::initWithParticleOverlay([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayRenderer::initWithParticleOverlay', {"particleOverlay": particleOverlay.refId, "refId": refId});

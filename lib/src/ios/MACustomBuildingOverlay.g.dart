@@ -30,7 +30,9 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
   // generate methods
   Future<void> addCustomOption(MACustomBuildingOverlayOption option) async {
     // print log
-    print('fluttify-dart: MACustomBuildingOverlay@$refId::addCustomOption([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MACustomBuildingOverlay@$refId::addCustomOption([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::addCustomOption', {"option": option.refId, "refId": refId});
@@ -50,7 +52,9 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   Future<void> removeCustomOption(MACustomBuildingOverlayOption option) async {
     // print log
-    print('fluttify-dart: MACustomBuildingOverlay@$refId::removeCustomOption([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MACustomBuildingOverlay@$refId::removeCustomOption([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::removeCustomOption', {"option": option.refId, "refId": refId});

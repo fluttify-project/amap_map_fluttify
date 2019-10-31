@@ -19,7 +19,9 @@ class com_amap_api_maps_model_particle_SinglePointParticleShape extends java_lan
   // generate methods
   Future<void> createNativeInstace() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.SinglePointParticleShape@$refId::createNativeInstace([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.SinglePointParticleShape@$refId::createNativeInstace([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.SinglePointParticleShape::createNativeInstace', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_particle_SinglePointParticleShape extends java_lan
   
   Future<List<double>> getPoint() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.SinglePointParticleShape@$refId::getPoint([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.SinglePointParticleShape@$refId::getPoint([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.SinglePointParticleShape::getPoint', {"refId": refId});

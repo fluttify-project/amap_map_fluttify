@@ -24,7 +24,9 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
   // generate methods
   Future<MACircleRenderer> initWithCircle(MACircle circle) async {
     // print log
-    print('fluttify-dart: MACircleRenderer@$refId::initWithCircle([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MACircleRenderer@$refId::initWithCircle([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleRenderer::initWithCircle', {"circle": circle.refId, "refId": refId});

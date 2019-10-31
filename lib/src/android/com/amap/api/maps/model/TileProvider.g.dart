@@ -18,19 +18,28 @@ mixin com_amap_api_maps_model_TileProvider on java_lang_Object {
   @mustCallSuper
   Future<com_amap_api_maps_model_Tile> getTile(int var1, int var2, int var3) {
   
-    debugPrint('getTile::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getTile::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<int> getTileWidth() {
   
-    debugPrint('getTileWidth::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getTileWidth::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<int> getTileHeight() {
   
-    debugPrint('getTileHeight::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getTileHeight::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

@@ -19,7 +19,9 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   // generate methods
   Future<com_amap_api_maps_model_ArcOptions> point(com_amap_api_maps_model_LatLng var1, com_amap_api_maps_model_LatLng var2, com_amap_api_maps_model_LatLng var3) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::point([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::point([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::point', {"var1": var1.refId, "var2": var2.refId, "var3": var3.refId, "refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_ArcOptions> strokeWidth(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::strokeWidth([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::strokeWidth([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::strokeWidth', {"var1": var1, "refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_ArcOptions> strokeColor(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::strokeColor([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::strokeColor([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::strokeColor', {"var1": var1, "refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_ArcOptions> zIndex(double var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::zIndex([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::zIndex([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::zIndex', {"var1": var1, "refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_ArcOptions> visible(bool var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::visible([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::visible([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::visible', {"var1": var1, "refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<double> getStrokeWidth() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStrokeWidth([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStrokeWidth([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getStrokeWidth', {"refId": refId});
@@ -139,7 +151,9 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<int> getStrokeColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStrokeColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStrokeColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getStrokeColor', {"refId": refId});
@@ -159,7 +173,9 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<double> getZIndex() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getZIndex([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getZIndex([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getZIndex', {"refId": refId});
@@ -179,7 +195,9 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<bool> isVisible() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::isVisible([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::isVisible([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::isVisible', {"refId": refId});
@@ -199,7 +217,9 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_LatLng> getStart() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStart([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStart([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getStart', {"refId": refId});
@@ -219,7 +239,9 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_LatLng> getPassed() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getPassed([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getPassed([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getPassed', {"refId": refId});
@@ -239,7 +261,9 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_LatLng> getEnd() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getEnd([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getEnd([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getEnd', {"refId": refId});

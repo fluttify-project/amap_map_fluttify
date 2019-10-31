@@ -19,7 +19,9 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   // generate methods
   Future<com_amap_api_maps_AMap> getMap({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.MapView@$refId::getMap([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.MapView@$refId::getMap([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::getMap', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   
   Future<void> onCreate(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.MapView@$refId::onCreate([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.MapView@$refId::onCreate([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onCreate', {"var1": var1.refId, "refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   
   Future<void> onResume({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.MapView@$refId::onResume([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.MapView@$refId::onResume([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onResume', {"refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   
   Future<void> onPause({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.MapView@$refId::onPause([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.MapView@$refId::onPause([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onPause', {"refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   
   Future<void> onDestroy({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.MapView@$refId::onDestroy([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.MapView@$refId::onDestroy([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onDestroy', {"refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   
   Future<void> onLowMemory({bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.MapView@$refId::onLowMemory([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.MapView@$refId::onLowMemory([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onLowMemory', {"refId": refId});
@@ -139,7 +151,9 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   
   Future<void> onSaveInstanceState(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.MapView@$refId::onSaveInstanceState([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.MapView@$refId::onSaveInstanceState([])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onSaveInstanceState', {"var1": var1.refId, "refId": refId});
@@ -159,7 +173,9 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   
   Future<void> setVisibility(int var1, {bool viewChannel = true}) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.MapView@$refId::setVisibility([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.MapView@$refId::setVisibility([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::setVisibility', {"var1": var1, "refId": refId});

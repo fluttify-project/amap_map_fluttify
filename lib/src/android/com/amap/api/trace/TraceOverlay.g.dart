@@ -19,7 +19,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   // generate methods
   Future<void> add(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::add([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::add([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::add', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<void> remove() async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::remove([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::remove([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::remove', {"refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<void> setProperCamera(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setProperCamera([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setProperCamera([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::setProperCamera', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
@@ -79,7 +85,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<void> zoopToSpan() async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::zoopToSpan([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::zoopToSpan([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::zoopToSpan', {"refId": refId});
@@ -99,7 +107,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<int> getTraceStatus() async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getTraceStatus([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getTraceStatus([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::getTraceStatus', {"refId": refId});
@@ -119,7 +129,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<void> setTraceStatus(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setTraceStatus([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setTraceStatus([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::setTraceStatus', {"var1": var1, "refId": refId});
@@ -139,7 +151,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<int> getDistance() async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getDistance([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getDistance([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::getDistance', {"refId": refId});
@@ -159,7 +173,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<void> setDistance(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setDistance([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setDistance([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::setDistance', {"var1": var1, "refId": refId});
@@ -179,7 +195,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<int> getWaitTime() async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getWaitTime([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getWaitTime([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::getWaitTime', {"refId": refId});
@@ -199,7 +217,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<void> setWaitTime(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setWaitTime([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setWaitTime([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::setWaitTime', {"var1": var1, "refId": refId});

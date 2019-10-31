@@ -19,7 +19,9 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
   // generate methods
   Future<MAParticleCurveSizeGenerate> initWithCurveXYZ(double x, double y, double z) async {
     // print log
-    print('fluttify-dart: MAParticleCurveSizeGenerate@$refId::initWithCurveX([\'x\':$x, \'y\':$y, \'z\':$z])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAParticleCurveSizeGenerate@$refId::initWithCurveX([\'x\':$x, \'y\':$y, \'z\':$z])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleCurveSizeGenerate::initWithCurveXYZ', {"x": x, "y": y, "z": z, "refId": refId});

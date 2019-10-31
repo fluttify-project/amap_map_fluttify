@@ -18,7 +18,10 @@ mixin com_amap_api_maps_AMap_CommonInfoWindowAdapter on java_lang_Object {
   @mustCallSuper
   Future<com_amap_api_maps_InfoWindowParams> getInfoWindowParams(com_amap_api_maps_model_BasePointOverlay var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('getInfoWindowParams::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getInfoWindowParams::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

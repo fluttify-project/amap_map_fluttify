@@ -19,7 +19,9 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
   // generate methods
   Future<double> getX() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getX([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getX([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.VelocityGenerate::getX', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
   
   Future<double> getY() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getY([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getY([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.VelocityGenerate::getY', {"refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
   
   Future<double> getZ() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getZ([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getZ([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.VelocityGenerate::getZ', {"refId": refId});

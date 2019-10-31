@@ -19,7 +19,9 @@ class com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants extends ja
   // generate methods
   Future<void> createNativeInstace() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants@$refId::createNativeInstace([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants@$refId::createNativeInstace([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants::createNativeInstace', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants extends ja
   
   Future<List<double>> getColor() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants@$refId::getColor([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants@$refId::getColor([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants::getColor', {"refId": refId});

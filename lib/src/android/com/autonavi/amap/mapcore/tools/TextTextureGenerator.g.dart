@@ -19,7 +19,9 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
   // generate methods
   static Future<int> getNearstSize2N(int var0) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator::getNearstSize2N([\'var0\':$var0])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator::getNearstSize2N([\'var0\':$var0])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.TextTextureGenerator::getNearstSize2N', {"var0": var0});
@@ -39,7 +41,9 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
   
   Future<List<int>> getTextPixelBuffer(int var1, int var2) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getTextPixelBuffer([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getTextPixelBuffer([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.TextTextureGenerator::getTextPixelBuffer', {"var1": var1, "var2": var2, "refId": refId});
@@ -59,7 +63,9 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
   
   Future<List<int>> getCharsWidths(List<int> var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getCharsWidths([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getCharsWidths([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.TextTextureGenerator::getCharsWidths', {"var1": var1, "refId": refId});

@@ -19,7 +19,9 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   // generate methods
   static Future<String> getMapBaseStorage(android_content_Context var0) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::getMapBaseStorage([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::getMapBaseStorage([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::getMapBaseStorage', {"var0": var0.refId});
@@ -39,7 +41,9 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   
   static Future<String> getExternalStroragePath(android_content_Context var0) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::getExternalStroragePath([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::getExternalStroragePath([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::getExternalStroragePath', {"var0": var0.refId});
@@ -59,7 +63,9 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   
   static Future<void> writeDatasToFile(String var0, List<int> var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::writeDatasToFile([\'var0\':$var0, \'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::writeDatasToFile([\'var0\':$var0, \'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::writeDatasToFile', {"var0": var0, "var1": var1});
@@ -79,7 +85,9 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   
   static Future<List<int>> readFileContents(String var0) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::readFileContents([\'var0\':$var0])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::readFileContents([\'var0\':$var0])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::readFileContents', {"var0": var0});
@@ -99,7 +107,9 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   
   static Future<void> createNoMediaFileIfNotExist(String var0) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::createNoMediaFileIfNotExist([\'var0\':$var0])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::createNoMediaFileIfNotExist([\'var0\':$var0])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::createNoMediaFileIfNotExist', {"var0": var0});
@@ -119,7 +129,9 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   
   static Future<void> saveFile(String var0, String var1, bool var2) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::saveFile([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::saveFile([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::saveFile', {"var0": var0, "var1": var1, "var2": var2});
@@ -139,7 +151,9 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   
   static Future<List<int>> readFileContentsFromAssets(android_content_Context var0, String var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::readFileContentsFromAssets([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::readFileContentsFromAssets([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::readFileContentsFromAssets', {"var0": var0.refId, "var1": var1});
@@ -159,7 +173,9 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   
   static Future<String> getName(String var0) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::getName([\'var0\':$var0])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::getName([\'var0\':$var0])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::getName', {"var0": var0});
@@ -179,7 +195,9 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   
   static Future<int> indexOfLastSeparator(String var0) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::indexOfLastSeparator([\'var0\':$var0])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::indexOfLastSeparator([\'var0\':$var0])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::indexOfLastSeparator', {"var0": var0});

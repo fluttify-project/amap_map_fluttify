@@ -19,7 +19,9 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends java_lang_Object 
   // generate methods
   Future<void> reset() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::reset([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::reset([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation1V::reset', {"refId": refId});
@@ -39,7 +41,9 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends java_lang_Object 
   
   Future<void> setAnimationValue(double var1, double var2, int var3) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::setAnimationValue([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::setAnimationValue([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation1V::setAnimationValue', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
@@ -59,7 +63,9 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends java_lang_Object 
   
   Future<double> getCurValue() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getCurValue([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getCurValue([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation1V::getCurValue', {"refId": refId});
@@ -79,7 +85,9 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends java_lang_Object 
   
   Future<double> getStartValue() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getStartValue([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getStartValue([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation1V::getStartValue', {"refId": refId});
@@ -99,7 +107,9 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends java_lang_Object 
   
   Future<double> getEndValue() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getEndValue([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getEndValue([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation1V::getEndValue', {"refId": refId});

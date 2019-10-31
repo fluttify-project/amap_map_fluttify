@@ -24,7 +24,9 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   // generate methods
   Future<MAGroundOverlayRenderer> initWithGroundOverlay(MAGroundOverlay groundOverlay) async {
     // print log
-    print('fluttify-dart: MAGroundOverlayRenderer@$refId::initWithGroundOverlay([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAGroundOverlayRenderer@$refId::initWithGroundOverlay([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlayRenderer::initWithGroundOverlay', {"groundOverlay": groundOverlay.refId, "refId": refId});

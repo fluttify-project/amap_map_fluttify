@@ -19,7 +19,9 @@ class com_autonavi_ae_gmap_AbstractMapMessage extends java_lang_Object  {
   // generate methods
   Future<int> getType() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.AbstractMapMessage@$refId::getType([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.AbstractMapMessage@$refId::getType([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.AbstractMapMessage::getType', {"refId": refId});

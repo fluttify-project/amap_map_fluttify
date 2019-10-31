@@ -18,61 +18,91 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   @mustCallSuper
   Future<void> setStrokeWidth(double var1) {
   
-    debugPrint('setStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<double> getStrokeWidth() {
   
-    debugPrint('getStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setFillColor(int var1) {
   
-    debugPrint('setFillColor::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setFillColor::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<int> getFillColor() {
   
-    debugPrint('getFillColor::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getFillColor::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setStrokeColor(int var1) {
   
-    debugPrint('setStrokeColor::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setStrokeColor::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) {
   
-    debugPrint('setPoints::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setPoints::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() {
   
-    debugPrint('getPoints::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getPoints::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<int> getStrokeColor() {
   
-    debugPrint('getStrokeColor::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getStrokeColor::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<bool> contains(com_amap_api_maps_model_LatLng var1) {
   
-    debugPrint('contains::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('contains::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) {
   
-    debugPrint('setHoleOptions::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setHoleOptions::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

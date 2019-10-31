@@ -18,7 +18,10 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationListener on java_lang_Object
   @mustCallSuper
   Future<void> onLocationChanged(com_autonavi_amap_mapcore_Inner_3dMap_location var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('onLocationChanged::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onLocationChanged::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

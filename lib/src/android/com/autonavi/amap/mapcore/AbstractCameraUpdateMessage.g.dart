@@ -283,14 +283,18 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
         switch (methodCall.method) {
           case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish':
             // print log
-            print('fluttify-dart-callback: onFinish([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: onFinish([])');
+            }
         
             // handle the native call
             mCallback?.onFinish();
             break;
           case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel':
             // print log
-            print('fluttify-dart-callback: onCancel([])');
+            if (!kReleaseMode) {
+              print('fluttify-dart-callback: onCancel([])');
+            }
         
             // handle the native call
             mCallback?.onCancel();
@@ -323,7 +327,9 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
   // generate methods
   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::runCameraUpdate([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::runCameraUpdate([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::runCameraUpdate', {"var1": var1.refId, "refId": refId});
@@ -343,7 +349,9 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
   
   Future<void> mergeCameraUpdateDelegate(com_autonavi_amap_mapcore_AbstractCameraUpdateMessage var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::mergeCameraUpdateDelegate([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::mergeCameraUpdateDelegate([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::mergeCameraUpdateDelegate', {"var1": var1.refId, "refId": refId});
@@ -363,7 +371,9 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
   
   Future<void> generateMapAnimation(com_autonavi_ae_gmap_GLMapEngine var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::generateMapAnimation([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::generateMapAnimation([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::generateMapAnimation', {"var1": var1.refId, "refId": refId});

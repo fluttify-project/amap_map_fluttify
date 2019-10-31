@@ -19,7 +19,9 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
   // generate methods
   Future<void> setNetworkListener(com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState@$refId::setNetworkListener([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState@$refId::setNetworkListener([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener', {"refId": refId});
@@ -35,7 +37,9 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
           switch (methodCall.method) {
             case 'Callback::com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener::networkStateChanged':
               // print log
-              print('fluttify-dart-callback: networkStateChanged([])');
+              if (!kReleaseMode) {
+                print('fluttify-dart-callback: networkStateChanged([])');
+              }
         
               // handle the native call
               var1?.networkStateChanged(android_content_Context()..refId = (args['var1'])..tag = 'amap_map_fluttify');
@@ -56,7 +60,9 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
   
   Future<void> registerNetChangeReceiver(android_content_Context var1, bool var2) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState@$refId::registerNetChangeReceiver([\'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState@$refId::registerNetChangeReceiver([\'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.NetworkState::registerNetChangeReceiver', {"var1": var1.refId, "var2": var2, "refId": refId});
@@ -76,7 +82,9 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
   
   static Future<bool> isNetworkConnected(android_content_Context var0) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState::isNetworkConnected([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState::isNetworkConnected([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.NetworkState::isNetworkConnected', {"var0": var0.refId});

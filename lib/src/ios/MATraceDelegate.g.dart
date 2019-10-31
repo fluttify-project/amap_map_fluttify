@@ -21,13 +21,19 @@ mixin MATraceDelegate on NSObject {
     kNativeObjectPool.addAll(locations);
     kNativeObjectPool.addAll(tracePoints);
     kNativeObjectPool.add(error);
-    debugPrint('traceManagerDidTracecorrectdistancewithError::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('traceManagerDidTracecorrectdistancewithError::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> mapViewRequireLocationAuth(CLLocationManager locationManager) {
     kNativeObjectPool.add(locationManager);
-    debugPrint('mapViewRequireLocationAuth::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('mapViewRequireLocationAuth::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

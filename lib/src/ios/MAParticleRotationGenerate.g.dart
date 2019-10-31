@@ -18,7 +18,10 @@ mixin MAParticleRotationGenerate on NSObject {
   @mustCallSuper
   Future<double> getRotate() {
   
-    debugPrint('getRotate::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getRotate::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

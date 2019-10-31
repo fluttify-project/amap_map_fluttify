@@ -19,7 +19,9 @@ class com_amap_api_maps_model_animation_AnimationSet extends java_lang_Object  {
   // generate methods
   Future<void> setDuration(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::setDuration([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::setDuration([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.AnimationSet::setDuration', {"var1": var1, "refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_model_animation_AnimationSet extends java_lang_Object  {
   
   Future<void> addAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::addAnimation([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::addAnimation([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.AnimationSet::addAnimation', {"var1": var1.refId, "refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_model_animation_AnimationSet extends java_lang_Object  {
   
   Future<void> cleanAnimation() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::cleanAnimation([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::cleanAnimation([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.AnimationSet::cleanAnimation', {"refId": refId});

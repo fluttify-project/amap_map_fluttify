@@ -19,7 +19,9 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
   // generate methods
   Future<void> showScr() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::showScr([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::showScr([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::showScr', {"refId": refId});
@@ -39,7 +41,9 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
   
   Future<void> closeScr() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::closeScr([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::closeScr([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::closeScr', {"refId": refId});
@@ -59,7 +63,9 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
   
   Future<void> onClick(android_view_View var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::onClick([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::onClick([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::onClick', {"var1": var1.refId, "refId": refId});

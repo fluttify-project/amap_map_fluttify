@@ -24,7 +24,9 @@ class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
   // generate methods
   Future<MAMultiPointOverlay> initWithMultiPointItems(List<MAMultiPointItem> items) async {
     // print log
-    print('fluttify-dart: MAMultiPointOverlay@$refId::initWithMultiPointItems([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAMultiPointOverlay@$refId::initWithMultiPointItems([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlay::initWithMultiPointItems', {"items": items.map((it) => it.refId).toList(), "refId": refId});

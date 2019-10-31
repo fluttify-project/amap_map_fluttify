@@ -30,7 +30,9 @@ class com_amap_api_maps_model_LatLng extends java_lang_Object with android_os_Pa
   // generate methods
   Future<com_amap_api_maps_model_LatLng> clone() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.LatLng@$refId::clone([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.LatLng@$refId::clone([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLng::clone', {"refId": refId});

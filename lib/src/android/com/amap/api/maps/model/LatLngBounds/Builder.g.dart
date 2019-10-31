@@ -19,7 +19,9 @@ class com_amap_api_maps_model_LatLngBounds_Builder extends java_lang_Object  {
   // generate methods
   Future<com_amap_api_maps_model_LatLngBounds> build() async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.LatLngBounds.Builder@$refId::build([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.LatLngBounds.Builder@$refId::build([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds.Builder::build', {"refId": refId});

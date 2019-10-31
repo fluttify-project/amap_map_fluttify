@@ -19,7 +19,9 @@ class com_amap_api_maps_model_animation_TranslateAnimation extends java_lang_Obj
   // generate methods
   Future<void> setDuration(int var1) async {
     // print log
-    print('fluttify-dart: com.amap.api.maps.model.animation.TranslateAnimation@$refId::setDuration([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.amap.api.maps.model.animation.TranslateAnimation@$refId::setDuration([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.TranslateAnimation::setDuration', {"var1": var1, "refId": refId});

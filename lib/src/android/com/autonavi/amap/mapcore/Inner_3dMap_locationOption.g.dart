@@ -19,7 +19,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   // generate methods
   static Future<String> getAPIKEY() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY', );
@@ -39,7 +41,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<bool> isMockEnable() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isMockEnable([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isMockEnable([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isMockEnable', {"refId": refId});
@@ -59,7 +63,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<void> setMockEnable(bool var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setMockEnable([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setMockEnable([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setMockEnable', {"var1": var1, "refId": refId});
@@ -79,7 +85,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<int> getInterval() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getInterval([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getInterval([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getInterval', {"refId": refId});
@@ -99,7 +107,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setInterval(int var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setInterval([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setInterval([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setInterval', {"var1": var1, "refId": refId});
@@ -119,7 +129,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<bool> isOnceLocation() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocation([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocation([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocation', {"refId": refId});
@@ -139,7 +151,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setOnceLocation(bool var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocation([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocation([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocation', {"var1": var1, "refId": refId});
@@ -159,7 +173,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<bool> isNeedAddress() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isNeedAddress([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isNeedAddress([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isNeedAddress', {"refId": refId});
@@ -179,7 +195,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setNeedAddress(bool var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setNeedAddress([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setNeedAddress([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setNeedAddress', {"var1": var1, "refId": refId});
@@ -199,7 +217,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<bool> isWifiActiveScan() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiActiveScan([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiActiveScan([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiActiveScan', {"refId": refId});
@@ -219,7 +239,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<void> setWifiActiveScan(bool var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiActiveScan([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiActiveScan([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiActiveScan', {"var1": var1, "refId": refId});
@@ -239,7 +261,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<bool> isWifiScan() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiScan([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiScan([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiScan', {"refId": refId});
@@ -259,7 +283,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<void> setWifiScan(bool var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiScan([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiScan([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiScan', {"var1": var1, "refId": refId});
@@ -279,7 +305,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode> getLocationMode() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationMode([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationMode([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationMode', {"refId": refId});
@@ -299,7 +327,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol> getLocationProtocol() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationProtocol([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationProtocol([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationProtocol', {"refId": refId});
@@ -319,7 +349,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setLocationMode(com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationMode([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationMode([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationMode', {"var1": var1.index, "refId": refId});
@@ -339,7 +371,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   static Future<void> setLocationProtocol(com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol var0) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol', {"var0": var0.index});
@@ -359,7 +393,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<bool> isKillProcess() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isKillProcess([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isKillProcess([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isKillProcess', {"refId": refId});
@@ -379,7 +415,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setKillProcess(bool var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setKillProcess([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setKillProcess([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setKillProcess', {"var1": var1, "refId": refId});
@@ -399,7 +437,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<bool> isGpsFirst() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isGpsFirst([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isGpsFirst([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isGpsFirst', {"refId": refId});
@@ -419,7 +459,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setGpsFirst(bool var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setGpsFirst([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setGpsFirst([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setGpsFirst', {"var1": var1, "refId": refId});
@@ -439,7 +481,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> clone() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::clone([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::clone([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::clone', {"refId": refId});
@@ -459,7 +503,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<int> getHttpTimeOut() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getHttpTimeOut([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getHttpTimeOut([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getHttpTimeOut', {"refId": refId});
@@ -479,7 +525,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<void> setHttpTimeOut(int var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setHttpTimeOut([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setHttpTimeOut([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setHttpTimeOut', {"var1": var1, "refId": refId});
@@ -499,7 +547,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<bool> isOffset() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOffset([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOffset([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOffset', {"refId": refId});
@@ -519,7 +569,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setOffset(bool var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOffset([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOffset([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOffset', {"var1": var1, "refId": refId});
@@ -539,7 +591,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<bool> isLocationCacheEnable() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isLocationCacheEnable([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isLocationCacheEnable([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isLocationCacheEnable', {"refId": refId});
@@ -559,7 +613,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<void> setLocationCacheEnable(bool var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationCacheEnable([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationCacheEnable([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationCacheEnable', {"var1": var1, "refId": refId});
@@ -579,7 +635,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<bool> isOnceLocationLatest() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocationLatest([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocationLatest([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocationLatest', {"refId": refId});
@@ -599,7 +657,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<void> setOnceLocationLatest(bool var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocationLatest([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocationLatest([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocationLatest', {"var1": var1, "refId": refId});
@@ -619,7 +679,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<bool> isSensorEnable() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isSensorEnable([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isSensorEnable([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isSensorEnable', {"refId": refId});
@@ -639,7 +701,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   
   Future<void> setSensorEnable(bool var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setSensorEnable([\'var1\':$var1])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setSensorEnable([\'var1\':$var1])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setSensorEnable', {"var1": var1, "refId": refId});

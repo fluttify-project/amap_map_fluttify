@@ -19,7 +19,9 @@ class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
   // generate methods
   static Future<com_autonavi_amap_mapcore_IPoint> obtain() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.IPoint::obtain([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.IPoint::obtain([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IPoint::obtain', );

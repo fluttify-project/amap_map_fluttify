@@ -19,7 +19,9 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
   // generate methods
   Future<void> setMapCoreListener() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::setMapCoreListener([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::setMapCoreListener([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapCoreListener', {"refId": refId});
@@ -39,7 +41,9 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
   
   Future<void> clearAnimations() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::clearAnimations([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::clearAnimations([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::clearAnimations', {"refId": refId});
@@ -59,7 +63,9 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
   
   Future<int> getAnimationsCount() async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::getAnimationsCount([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::getAnimationsCount([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::getAnimationsCount', {"refId": refId});
@@ -79,7 +85,9 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
   
   Future<void> doAnimations(com_autonavi_ae_gmap_GLMapState var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::doAnimations([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::doAnimations([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::doAnimations', {"var1": var1.refId, "refId": refId});
@@ -99,7 +107,9 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
   
   Future<void> addAnimation(com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation var1, com_amap_api_maps_AMap_CancelableCallback var2) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::addAnimation([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::addAnimation([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation', {"var1": var1.refId, "refId": refId});
@@ -115,14 +125,18 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish':
               // print log
-              print('fluttify-dart-callback: onFinish([])');
+              if (!kReleaseMode) {
+                print('fluttify-dart-callback: onFinish([])');
+              }
         
               // handle the native call
               var2?.onFinish();
               break;
             case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel':
               // print log
-              print('fluttify-dart-callback: onCancel([])');
+              if (!kReleaseMode) {
+                print('fluttify-dart-callback: onCancel([])');
+              }
         
               // handle the native call
               var2?.onCancel();
@@ -143,7 +157,9 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
   
   Future<void> setMapAnimationListener(com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr_MapAnimationListener var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::setMapAnimationListener([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::setMapAnimationListener([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener', {"refId": refId});

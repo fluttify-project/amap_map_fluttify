@@ -18,55 +18,82 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
   @mustCallSuper
   Future<void> addItems(List<com_amap_api_maps_model_MultiPointItem> var1) {
     kNativeObjectPool.addAll(var1);
-    debugPrint('addItems::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('addItems::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> addItem(com_amap_api_maps_model_MultiPointItem var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('addItem::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('addItem::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> destroy(bool var1) {
   
-    debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setVisible(bool var1) {
   
-    debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> draw(com_autonavi_amap_mapcore_MapConfig var1, List<double> var2, List<double> var3) {
     kNativeObjectPool.add(var1);
-    debugPrint('draw::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('draw::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<com_amap_api_maps_model_MultiPointItem> onClick(com_autonavi_amap_mapcore_IPoint var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('onClick::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onClick::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> setAnchor(double var1, double var2) {
   
-    debugPrint('setAnchor::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('setAnchor::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<String> getId() {
   
-    debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
   @mustCallSuper
   Future<void> remove(bool var1) {
   
-    debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

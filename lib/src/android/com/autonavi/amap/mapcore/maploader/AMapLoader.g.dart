@@ -29,7 +29,9 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
   // generate methods
   Future<void> onDownload(List<int> var1, int var2) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onDownload([\'var1\':$var1, \'var2\':$var2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onDownload([\'var1\':$var1, \'var2\':$var2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::onDownload', {"var1": var1, "var2": var2, "refId": refId});
@@ -49,7 +51,9 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
   
   Future<void> onStop() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onStop([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onStop([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::onStop', {"refId": refId});
@@ -69,7 +73,9 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
   
   Future<void> onFinish() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onFinish([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onFinish([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::onFinish', {"refId": refId});
@@ -89,7 +95,9 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
   
   Future<void> doRequest() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::doRequest([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::doRequest([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::doRequest', {"refId": refId});
@@ -109,7 +117,9 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
   
   Future<void> doCancel() async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::doCancel([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::doCancel([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::doCancel', {"refId": refId});
@@ -129,7 +139,9 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
   
   Future<String> getDeviceId(android_content_Context var1) async {
     // print log
-    print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::getDeviceId([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::getDeviceId([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::getDeviceId', {"var1": var1.refId, "refId": refId});

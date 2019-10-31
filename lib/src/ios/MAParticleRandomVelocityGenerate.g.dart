@@ -19,7 +19,9 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
   // generate methods
   Future<MAParticleRandomVelocityGenerate> initWithBoundaryValueX1Y1Z1X2Y2Z2(double x1, double y1, double z1, double x2, double y2, double z2) async {
     // print log
-    print('fluttify-dart: MAParticleRandomVelocityGenerate@$refId::initWithBoundaryValueX1([\'x1\':$x1, \'y1\':$y1, \'z1\':$z1, \'x2\':$x2, \'y2\':$y2, \'z2\':$z2])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAParticleRandomVelocityGenerate@$refId::initWithBoundaryValueX1([\'x1\':$x1, \'y1\':$y1, \'z1\':$z1, \'x2\':$x2, \'y2\':$y2, \'z2\':$z2])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1Y1Z1X2Y2Z2', {"x1": x1, "y1": y1, "z1": z1, "x2": x2, "y2": y2, "z2": z2, "refId": refId});

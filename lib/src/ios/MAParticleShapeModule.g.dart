@@ -18,7 +18,10 @@ mixin MAParticleShapeModule on NSObject {
   @mustCallSuper
   Future<bool> isRatioEnable() {
   
-    debugPrint('isRatioEnable::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('isRatioEnable::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

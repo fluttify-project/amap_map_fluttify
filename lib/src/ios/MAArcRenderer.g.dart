@@ -24,7 +24,9 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
   // generate methods
   Future<MAArcRenderer> initWithArc(MAArc arc) async {
     // print log
-    print('fluttify-dart: MAArcRenderer@$refId::initWithArc([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAArcRenderer@$refId::initWithArc([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArcRenderer::initWithArc', {"arc": arc.refId, "refId": refId});

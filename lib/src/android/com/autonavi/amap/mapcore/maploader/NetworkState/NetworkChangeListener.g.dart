@@ -18,7 +18,10 @@ mixin com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener on 
   @mustCallSuper
   Future<void> networkStateChanged(android_content_Context var1) {
     kNativeObjectPool.add(var1);
-    debugPrint('networkStateChanged::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('networkStateChanged::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }

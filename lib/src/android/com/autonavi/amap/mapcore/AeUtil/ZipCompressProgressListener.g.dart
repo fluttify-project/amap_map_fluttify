@@ -18,7 +18,10 @@ mixin com_autonavi_amap_mapcore_AeUtil_ZipCompressProgressListener on java_lang_
   @mustCallSuper
   Future<void> onFinishProgress(int var1) {
   
-    debugPrint('onFinishProgress::kNativeObjectPool: $kNativeObjectPool');
+  
+    if (!kReleaseMode) {
+      debugPrint('onFinishProgress::kNativeObjectPool: $kNativeObjectPool');
+    }
   }
   
 }
