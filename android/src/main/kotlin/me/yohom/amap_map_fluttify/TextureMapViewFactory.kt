@@ -26,7 +26,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::getMap()")
             }
         
@@ -53,7 +53,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onCreate()")
             }
         
@@ -72,7 +72,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onResume()")
             }
         
@@ -91,7 +91,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onPause()")
             }
         
@@ -110,7 +110,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onDestroy()")
             }
         
@@ -129,7 +129,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onLowMemory()")
             }
         
@@ -149,7 +149,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onSaveInstanceState()")
             }
         
@@ -169,7 +169,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::setVisibility(\"var1\":$var1)")
             }
         

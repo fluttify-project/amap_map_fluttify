@@ -3176,7 +3176,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.maploader.ProcessingTile::obtain(\"var0\":$var0)")
             }
         
@@ -3205,7 +3205,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapResource(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -3229,7 +3229,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::reloadMapResource(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -3248,7 +3248,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::generateRequestId()")
             }
         
@@ -3270,7 +3270,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapDataAsyn(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -3292,7 +3292,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapData(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -3316,7 +3316,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::requireCharBitmap(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -3342,7 +3342,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::requireCharsWidths(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -3366,7 +3366,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapRender(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -3388,7 +3388,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::onMapRender(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -3410,7 +3410,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::OnIndoorBuildingActivity(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -3436,7 +3436,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::receiveNetData(\"var1\":$var1, \"var2\":$var2, \"var4\":$var4, \"var5\":$var5)")
             }
         
@@ -3458,7 +3458,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getMapDataTaskIsCancel(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -3480,7 +3480,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::finishDownLoad(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -3504,7 +3504,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::netError(\"var1\":$var1, \"var2\":$var2, \"var4\":$var4)")
             }
         
@@ -3528,7 +3528,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setMapLoaderToTask(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -3547,7 +3547,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getContext()")
             }
         
@@ -3573,7 +3573,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getUserAgent()")
             }
         
@@ -3603,7 +3603,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setParamater(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6)")
             }
         
@@ -3623,7 +3623,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::onClearCache(\"var1\":$var1)")
             }
         
@@ -3643,7 +3643,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::isInMapAction(\"var1\":$var1)")
             }
         
@@ -3662,7 +3662,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getNativeInstance()")
             }
         
@@ -3682,7 +3682,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::canStopMapRender(\"var1\":$var1)")
             }
         
@@ -3702,7 +3702,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getEngineIDWithType(\"var1\":$var1)")
             }
         
@@ -3722,7 +3722,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::isEngineCreated(\"var1\":$var1)")
             }
         
@@ -3742,7 +3742,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getMapStateInstance(\"var1\":$var1)")
             }
         
@@ -3762,7 +3762,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getEngineIDWithGestureInfo()")
             }
         
@@ -3794,7 +3794,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setServiceViewRect(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7)")
             }
         
@@ -3818,7 +3818,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setSrvViewStateBoolValue(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -3840,7 +3840,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getSrvViewStateBoolValue(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -3860,7 +3860,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getIsProcessBuildingMark(\"var1\":$var1)")
             }
         
@@ -3886,7 +3886,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setIndoorBuildingToBeActive(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -3905,7 +3905,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setMapListener()")
             }
         
@@ -4037,7 +4037,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setInternaltexture(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -4057,7 +4057,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getMapState(\"var1\":$var1)")
             }
         
@@ -4084,7 +4084,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getNewMapState(\"var1\":$var1)")
             }
         
@@ -4110,7 +4110,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getCloneMapState()")
             }
         
@@ -4139,7 +4139,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setMapState(\"var1\":$var1)")
             }
         
@@ -4167,7 +4167,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::addGestureMessage(\"var1\":$var1, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5)")
             }
         
@@ -4186,7 +4186,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::interruptAnimation()")
             }
         
@@ -4218,7 +4218,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::addGroupAnimation(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7)")
             }
         
@@ -4281,7 +4281,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::isInMapAnimation(\"var1\":$var1)")
             }
         
@@ -4300,7 +4300,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getAnimateionsCount()")
             }
         
@@ -4320,7 +4320,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::clearAllMessages(\"var1\":$var1)")
             }
         
@@ -4342,7 +4342,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::clearAnimations(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -4368,7 +4368,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::startMapSlidAnim(\"var1\":$var1, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -4396,7 +4396,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::startPivotZoomRotateAnim(\"var1\":$var1, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5)")
             }
         
@@ -4415,7 +4415,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getStateMessageCount()")
             }
         
@@ -4437,7 +4437,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::addMessage(\"var2\":$var2)")
             }
         
@@ -4457,7 +4457,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setMapOpenLayer(\"var1\":$var1)")
             }
         
@@ -4476,7 +4476,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::pushRendererState()")
             }
         
@@ -4495,7 +4495,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::popRendererState()")
             }
         
@@ -4517,7 +4517,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getMapModeState(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -4539,7 +4539,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::putResourceData(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -4559,7 +4559,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::networkStateChanged()")
             }
         
@@ -4585,7 +4585,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getLabelBuffer(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -4607,7 +4607,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::createOverlay(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -4631,7 +4631,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::addNativeOverlay(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -4651,7 +4651,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getGlOverlayMgrPtr(\"var1\":$var1)")
             }
         
@@ -4673,7 +4673,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::addOverlayTexture(\"var1\":$var1)")
             }
         
@@ -4694,7 +4694,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine::destroyOverlay(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -4716,7 +4716,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setSimple3DEnable(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -4738,7 +4738,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setRoadArrowEnable(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -4760,7 +4760,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setSkyTexture(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -4782,7 +4782,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setBackgroundTexture(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -4804,7 +4804,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setCustomStyleTexture(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -4828,7 +4828,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setCustomStyleData(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -4850,7 +4850,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setTrafficEnable(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -4872,7 +4872,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setBuildingEnable(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -4894,7 +4894,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setLabelEnable(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -4916,7 +4916,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setAllContentEnable(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -4940,7 +4940,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setProjectionCenter(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -4970,7 +4970,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setTrafficStyle(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6)")
             }
         
@@ -4989,7 +4989,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::startCheckEngineRenderComplete()")
             }
         
@@ -5011,7 +5011,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getCurTileIDs(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -5033,7 +5033,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setIndoorEnable(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -5055,7 +5055,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setOfflineDataEnable(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -5077,7 +5077,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setHighlightSubwayEnable(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -5099,7 +5099,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::setBuildingTextureEnable(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -5119,7 +5119,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::initNativeTexture(\"var1\":$var1)")
             }
         
@@ -5145,7 +5145,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::AddOverlayTexture(\"var1\":$var1, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -5187,7 +5187,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::updateNativeArrowOverlay(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8, \"var9\":$var9, \"var10\":$var10, \"var11\":$var11, \"var12\":$var12)")
             }
         
@@ -5209,7 +5209,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::removeNativeOverlay(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -5229,7 +5229,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::removeNativeAllOverlay(\"var1\":$var1)")
             }
         
@@ -5249,7 +5249,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::createAMapInstance()")
             }
         
@@ -5269,7 +5269,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::createAMapEngineWithFrame()")
             }
         
@@ -5291,7 +5291,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::changeSurface(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -5310,7 +5310,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::renderAMap()")
             }
         
@@ -5329,7 +5329,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::releaseNetworkState()")
             }
         
@@ -5348,7 +5348,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::cancelAllAMapDownload()")
             }
         
@@ -5367,7 +5367,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::destroyAMapEngine()")
             }
         
@@ -5386,7 +5386,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine::nativeGetMapEngineVersion(\"var0\":$var0)")
             }
         
@@ -5405,7 +5405,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.listener.AMapWidgetListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.listener.AMapWidgetListener@$refId::invalidateScaleView()")
             }
         
@@ -5424,7 +5424,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.listener.AMapWidgetListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.listener.AMapWidgetListener@$refId::invalidateCompassView()")
             }
         
@@ -5444,7 +5444,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.listener.AMapWidgetListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.listener.AMapWidgetListener@$refId::invalidateZoomController(\"var1\":$var1)")
             }
         
@@ -5464,7 +5464,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.listener.AMapWidgetListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.listener.AMapWidgetListener@$refId::setFrontViewVisibility(\"var1\":$var1)")
             }
         
@@ -5483,7 +5483,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.AbstractMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.AbstractMapMessage@$refId::getType()")
             }
         
@@ -5502,7 +5502,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::setMapCoreListener()")
             }
         
@@ -5521,7 +5521,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::clearAnimations()")
             }
         
@@ -5540,7 +5540,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::getAnimationsCount()")
             }
         
@@ -5560,7 +5560,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::doAnimations()")
             }
         
@@ -5580,7 +5580,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::addAnimation()")
             }
         
@@ -5642,7 +5642,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::setMapAnimationListener()")
             }
         
@@ -5685,7 +5685,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener@$refId::onMapAnimationFinish()")
             }
         
@@ -5747,7 +5747,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglAnimation2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@$refId::reset()")
             }
         
@@ -5767,7 +5767,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglAnimation2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@$refId::getCurValue(\"var1\":$var1)")
             }
         
@@ -5787,7 +5787,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglAnimation2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@$refId::getStartValue(\"var1\":$var1)")
             }
         
@@ -5807,7 +5807,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglAnimation2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@$refId::getEndValue(\"var1\":$var1)")
             }
         
@@ -5826,7 +5826,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimFling
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::reset()")
             }
         
@@ -5848,7 +5848,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimFling
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::setPositionAndVelocity(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -5867,7 +5867,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::isOver()")
             }
         
@@ -5886,7 +5886,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::isValid()")
             }
         
@@ -5905,7 +5905,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglAnimation1V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::reset()")
             }
         
@@ -5929,7 +5929,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglAnimation1V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::setAnimationValue(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -5948,7 +5948,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglAnimation1V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getCurValue()")
             }
         
@@ -5967,7 +5967,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglAnimation1V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getStartValue()")
             }
         
@@ -5986,7 +5986,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglAnimation1V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getEndValue()")
             }
         
@@ -6005,7 +6005,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@$refId::reset()")
             }
         
@@ -6029,7 +6029,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@$refId::setToMapZoomAndPivot(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -6048,7 +6048,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::reset()")
             }
         
@@ -6067,7 +6067,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::needToCaculate()")
             }
         
@@ -6086,7 +6086,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::getCurMult()")
             }
         
@@ -6106,7 +6106,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::setNormalizedTime(\"var1\":$var1)")
             }
         
@@ -6128,7 +6128,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::setInterpolatorType(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -6147,7 +6147,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::getInterpolatorType()")
             }
         
@@ -6166,7 +6166,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::checkParam()")
             }
         
@@ -6185,7 +6185,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::reset()")
             }
         
@@ -6205,7 +6205,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::setFromValue(\"var1\":$var1)")
             }
         
@@ -6225,7 +6225,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::setToValue(\"var1\":$var1)")
             }
         
@@ -6244,7 +6244,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::getFromValue()")
             }
         
@@ -6263,7 +6263,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::getToValue()")
             }
         
@@ -6282,7 +6282,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::getCurValue()")
             }
         
@@ -6301,7 +6301,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::checkParam()")
             }
         
@@ -6321,7 +6321,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setDuration(\"var1\":$var1)")
             }
         
@@ -6340,7 +6340,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::reset()")
             }
         
@@ -6359,7 +6359,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::isValid()")
             }
         
@@ -6381,7 +6381,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToMapAngle(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -6405,7 +6405,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToMapCenterGeo(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -6427,7 +6427,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToMapLevel(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -6449,7 +6449,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToCameraDegree(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -6468,7 +6468,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::checkLevel(\"var0\":$var0)")
             }
         
@@ -6488,7 +6488,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::typeEqueal()")
             }
         
@@ -6507,7 +6507,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::reset()")
             }
         
@@ -6529,7 +6529,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::setFromValue(\"var1\":$var1, \"var3\":$var3)")
             }
         
@@ -6551,7 +6551,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::setToValue(\"var1\":$var1, \"var3\":$var3)")
             }
         
@@ -6570,7 +6570,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getFromXValue()")
             }
         
@@ -6589,7 +6589,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getFromYValue()")
             }
         
@@ -6608,7 +6608,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getToXValue()")
             }
         
@@ -6627,7 +6627,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getToYValue()")
             }
         
@@ -6646,7 +6646,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getCurXValue()")
             }
         
@@ -6665,7 +6665,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getCurYValue()")
             }
         
@@ -6684,7 +6684,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::checkParam()")
             }
         
@@ -6704,7 +6704,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.style.StyleItem
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.style.StyleItem@$refId::get(\"var1\":$var1)")
             }
         
@@ -6733,7 +6733,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.style.StyleItem
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.style.StyleItem@$refId::put(\"var1\":$var1)")
             }
         
@@ -6752,7 +6752,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.style.StyleItem
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.style.StyleItem@$refId::isValid()")
             }
         
@@ -6772,7 +6772,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapRender
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapRender@$refId::setTrafficMode(\"var1\":$var1)")
             }
         
@@ -6792,7 +6792,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapRender
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapRender@$refId::resetTickCount(\"var1\":$var1)")
             }
         
@@ -6811,7 +6811,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapRender
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapRender@$refId::isRenderPause()")
             }
         
@@ -6831,7 +6831,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapRender
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapRender@$refId::setRenderFps(\"var1\":$var1)")
             }
         
@@ -6850,7 +6850,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapRender
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapRender@$refId::renderPause()")
             }
         
@@ -6869,7 +6869,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapRender
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapRender@$refId::renderResume()")
             }
         
@@ -6888,7 +6888,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapRender
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapRender@$refId::onAttachedToWindow()")
             }
         
@@ -6907,7 +6907,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapRender
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapRender@$refId::onDetachedFromWindow()")
             }
         
@@ -6926,7 +6926,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapRender
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapRender@$refId::onSurfaceDestory()")
             }
         
@@ -6949,7 +6949,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::lonlat2Geo(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -6972,7 +6972,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::geo2LonLat(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -6996,7 +6996,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::screenToP20Point(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -7020,7 +7020,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::p20ToScreenPoint(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -7040,7 +7040,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::getMapGeoCenter()")
             }
         
@@ -7062,7 +7062,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::setMapGeoCenter(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -7082,7 +7082,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::setCameraDegree(\"var1\":$var1)")
             }
         
@@ -7102,7 +7102,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::setMapAngle(\"var1\":$var1)")
             }
         
@@ -7122,7 +7122,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::setMapZoomer(\"var1\":$var1)")
             }
         
@@ -7141,7 +7141,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::getMapZoomer()")
             }
         
@@ -7160,7 +7160,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::getCameraDegree()")
             }
         
@@ -7179,7 +7179,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::getMapAngle()")
             }
         
@@ -7198,7 +7198,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::recalculate()")
             }
         
@@ -7217,7 +7217,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::reset()")
             }
         
@@ -7237,7 +7237,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::getMapLenWithWin(\"var1\":$var1)")
             }
         
@@ -7257,7 +7257,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::getGLUnitWithWin(\"var1\":$var1)")
             }
         
@@ -7276,7 +7276,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::getNativeInstance()")
             }
         
@@ -7296,7 +7296,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::getViewMatrix(\"var1\":$var1)")
             }
         
@@ -7316,7 +7316,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::getProjectionMatrix(\"var1\":$var1)")
             }
         
@@ -7335,7 +7335,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::getSkyHeight()")
             }
         
@@ -7357,7 +7357,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::setNativeMapengineState(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -7380,7 +7380,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::calMapZoomScalefactor(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -7401,7 +7401,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeNewInstance(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -7426,7 +7426,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point(\"var0\":$var0, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -7453,7 +7453,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint(\"var0\":$var0, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -7476,7 +7476,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter(\"var0\":$var0, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -7497,7 +7497,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter(\"var0\":$var0)")
             }
         
@@ -7516,7 +7516,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeGetMapZoomer(\"var0\":$var0)")
             }
         
@@ -7537,7 +7537,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -7558,7 +7558,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -7577,7 +7577,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree(\"var0\":$var0)")
             }
         
@@ -7596,7 +7596,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle(\"var0\":$var0)")
             }
         
@@ -7617,7 +7617,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -7636,7 +7636,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeRecalculate(\"var0\":$var0)")
             }
         
@@ -7655,7 +7655,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeStateDestroy(\"var0\":$var0)")
             }
         
@@ -7676,7 +7676,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -7697,7 +7697,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -7716,7 +7716,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight(\"var0\":$var0)")
             }
         
@@ -7737,7 +7737,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -7760,7 +7760,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeCalMapZoomScalefactor(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -7780,7 +7780,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::resumeMarker()")
             }
         
@@ -7799,7 +7799,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::removeRouteName()")
             }
         
@@ -7818,7 +7818,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::remove()")
             }
         
@@ -7842,7 +7842,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLCrossVector
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorItem(\"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -7862,7 +7862,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLCrossVector
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorRemainDis(\"var1\":$var1)")
             }
         
@@ -7886,7 +7886,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLCrossVector
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorCar(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -7908,7 +7908,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLCrossVector
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setRoadResId(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -7930,7 +7930,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLCrossVector
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setArrowResId(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -7950,7 +7950,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLCrossVector
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setCarResId(\"var1\":$var1)")
             }
         
@@ -7970,7 +7970,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLCrossVector
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setBackgroundResId(\"var1\":$var1)")
             }
         
@@ -7992,7 +7992,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLCrossVector
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setSkyResId(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -8011,7 +8011,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLCrossVector
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::getFBOTextureId()")
             }
         
@@ -8033,7 +8033,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLCrossVector
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::initFBOTexture(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -8053,7 +8053,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::resumeMarker()")
             }
         
@@ -8077,7 +8077,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::AddOverlayTexture(\"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -8099,7 +8099,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::dipToPixel(\"var2\":$var2)")
             }
         
@@ -8119,7 +8119,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setAttribute()")
             }
         
@@ -8139,7 +8139,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setData(\"var1\":$var1)")
             }
         
@@ -8158,7 +8158,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::remove()")
             }
         
@@ -8178,7 +8178,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setImageMode(\"var1\":$var1)")
             }
         
@@ -8197,7 +8197,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setGenerateCrossImageListener()")
             }
         
@@ -8242,7 +8242,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::getTextureID()")
             }
         
@@ -8261,7 +8261,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getNativeInstatnce()")
             }
         
@@ -8280,7 +8280,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getCode()")
             }
         
@@ -8299,7 +8299,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getType()")
             }
         
@@ -8318,7 +8318,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getSubType()")
             }
         
@@ -8338,7 +8338,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::removeItem(\"var1\":$var1)")
             }
         
@@ -8357,7 +8357,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::removeAll()")
             }
         
@@ -8376,7 +8376,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getSize()")
             }
         
@@ -8396,7 +8396,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -8415,7 +8415,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::isVisible()")
             }
         
@@ -8435,7 +8435,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setClickable(\"var1\":$var1)")
             }
         
@@ -8454,7 +8454,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::isClickable()")
             }
         
@@ -8473,7 +8473,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::clearFocus()")
             }
         
@@ -8492,7 +8492,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getIsInBundle()")
             }
         
@@ -8512,7 +8512,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMaxCountShown(\"var1\":$var1)")
             }
         
@@ -8532,7 +8532,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayOnTop(\"var1\":$var1)")
             }
         
@@ -8552,7 +8552,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMinDisplayLevel(\"var1\":$var1)")
             }
         
@@ -8572,7 +8572,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMaxDisplayLevel(\"var1\":$var1)")
             }
         
@@ -8592,7 +8592,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayPriority(\"var1\":$var1)")
             }
         
@@ -8611,7 +8611,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getOverlayPriority()")
             }
         
@@ -8631,7 +8631,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayItemPriority(\"var1\":$var1)")
             }
         
@@ -8651,7 +8651,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::useNightStyle(\"var1\":$var1)")
             }
         
@@ -8670,7 +8670,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.maploader.NetworkState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.maploader.NetworkState@$refId::setNetworkListener()")
             }
         
@@ -8716,7 +8716,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.maploader.NetworkState
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.maploader.NetworkState@$refId::registerNetChangeReceiver(\"var2\":$var2)")
             }
         
@@ -8735,7 +8735,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.maploader.NetworkState::isNetworkConnected()")
             }
         
@@ -8755,7 +8755,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener@$refId::networkStateChanged()")
             }
         
@@ -8777,7 +8777,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.maploader.AMapLoader
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onDownload(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -8796,7 +8796,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.maploader.AMapLoader
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onStop()")
             }
         
@@ -8815,7 +8815,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.maploader.AMapLoader
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onFinish()")
             }
         
@@ -8834,7 +8834,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.maploader.AMapLoader
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::doRequest()")
             }
         
@@ -8853,7 +8853,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.maploader.AMapLoader
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::doCancel()")
             }
         
@@ -8873,7 +8873,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.maploader.AMapLoader
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::getDeviceId()")
             }
         
@@ -8896,7 +8896,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapProjection::lonlat2Geo(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -8919,7 +8919,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapProjection::geo2LonLat(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -8938,7 +8938,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption.Inner_3dMap_Enum_LocationProtocol
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption.Inner_3dMap_Enum_LocationProtocol@$refId::getValue()")
             }
         
@@ -8957,7 +8957,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.TextTextureGenerator::getNearstSize2N(\"var0\":$var0)")
             }
         
@@ -8979,7 +8979,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.tools.TextTextureGenerator
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getTextPixelBuffer(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -8999,7 +8999,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.tools.TextTextureGenerator
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getCharsWidths(\"var1\":$var1)")
             }
         
@@ -9020,7 +9020,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLFileUtil::writeDatasToFile(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -9039,7 +9039,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLFileUtil::readFileContents(\"var0\":$var0)")
             }
         
@@ -9060,7 +9060,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GlMapUtil::decodeAssetResData(\"var1\":$var1)")
             }
         
@@ -9081,7 +9081,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GlMapUtil::dipToPixel(\"var1\":$var1)")
             }
         
@@ -9102,7 +9102,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GlMapUtil::spToPixel(\"var1\":$var1)")
             }
         
@@ -9123,7 +9123,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GlMapUtil::getString(\"var1\":$var1)")
             }
         
@@ -9142,7 +9142,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GlMapUtil::isAssic(\"var0\":$var0)")
             }
         
@@ -9161,7 +9161,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GlMapUtil::getAppVersionName()")
             }
         
@@ -9182,7 +9182,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -9203,7 +9203,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLConvertUtil::getLong(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -9224,7 +9224,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt2(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -9245,7 +9245,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLConvertUtil::getUShort(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -9264,7 +9264,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLConvertUtil::convertInt(\"var0\":$var0)")
             }
         
@@ -9283,7 +9283,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLConvertUtil::convertShort(\"var0\":$var0)")
             }
         
@@ -9304,7 +9304,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLConvertUtil::convertDouble(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -9327,7 +9327,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLConvertUtil::writeInt(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -9354,7 +9354,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLConvertUtil::moveArray(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -9373,7 +9373,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLConvertUtil::get1BString(\"var0\":$var0)")
             }
         
@@ -9396,7 +9396,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLConvertUtil::getString(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -9419,7 +9419,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.tools.GLConvertUtil::getSubBytes(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -9438,7 +9438,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MsgProcessor
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeInitMsg()")
             }
         
@@ -9460,7 +9460,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MsgProcessor
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeInit(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -9480,7 +9480,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MsgProcessor
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeMsgProcessor(\"var1\":$var1)")
             }
         
@@ -9499,7 +9499,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MsgProcessor
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeCall()")
             }
         
@@ -9518,7 +9518,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractNativeInstance
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AbstractNativeInstance@$refId::getNativeInstance()")
             }
         
@@ -9537,7 +9537,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractNativeInstance
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AbstractNativeInstance@$refId::createNativeInstace()")
             }
         
@@ -9556,7 +9556,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.LinkInfo
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.LinkInfo@$refId::getState()")
             }
         
@@ -9576,7 +9576,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.LinkInfo
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.LinkInfo@$refId::setState(\"var1\":$var1)")
             }
         
@@ -9595,7 +9595,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.LinkInfo
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.LinkInfo@$refId::getTime()")
             }
         
@@ -9615,7 +9615,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.LinkInfo
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.LinkInfo@$refId::setTime(\"var1\":$var1)")
             }
         
@@ -9634,7 +9634,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.LinkInfo
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.LinkInfo@$refId::getLength()")
             }
         
@@ -9654,7 +9654,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.LinkInfo
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.LinkInfo@$refId::setLength(\"var1\":$var1)")
             }
         
@@ -9672,7 +9672,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativePolyline::nativeCreate()")
             }
         
@@ -9693,7 +9693,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativePolyline::nativeSetGLShaderManager(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -9742,7 +9742,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativePolyline::nativeDrawLineByTextureID(\"var0\":$var0, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8, \"var9\":$var9, \"var10\":$var10, \"var11\":$var11, \"var12\":$var12, \"var13\":$var13, \"var14\":$var14, \"var15\":$var15, \"var16\":$var16)")
             }
         
@@ -9761,7 +9761,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativePolyline::nativeDestroy(\"var0\":$var0)")
             }
         
@@ -9781,7 +9781,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::setLocationOption()")
             }
         
@@ -9800,7 +9800,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::setLocationListener()")
             }
         
@@ -9843,7 +9843,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::startLocation()")
             }
         
@@ -9862,7 +9862,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::stopLocation()")
             }
         
@@ -9881,7 +9881,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::unRegisterLocationListener()")
             }
         
@@ -9924,7 +9924,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::getLastKnownLocation()")
             }
         
@@ -9950,7 +9950,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::destroy()")
             }
         
@@ -9968,7 +9968,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.IPoint::obtain()")
             }
         
@@ -9993,7 +9993,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeCreateGLShaderManager()")
             }
         
@@ -10012,7 +10012,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeDestroyGLShaderManager(\"var0\":$var0)")
             }
         
@@ -10032,7 +10032,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationListener@$refId::onLocationChanged()")
             }
         
@@ -10050,7 +10050,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.DPoint::obtain()")
             }
         
@@ -10096,7 +10096,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByMultiTextureID(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8, \"var9\":$var9, \"var10\":$var10)")
             }
         
@@ -10135,7 +10135,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByMultiColor(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8, \"var9\":$var9, \"var10\":$var10)")
             }
         
@@ -10174,7 +10174,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawGradientColorLine(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8, \"var9\":$var9, \"var10\":$var10)")
             }
         
@@ -10192,7 +10192,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineInit()")
             }
         
@@ -10239,7 +10239,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByTextureID(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8, \"var9\":$var9, \"var10\":$var10, \"var11\":$var11, \"var12\":$var12, \"var13\":$var13, \"var14\":$var14)")
             }
         
@@ -10258,7 +10258,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FileUtil::getMapBaseStorage()")
             }
         
@@ -10277,7 +10277,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FileUtil::getExternalStroragePath()")
             }
         
@@ -10298,7 +10298,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FileUtil::writeDatasToFile(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -10317,7 +10317,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FileUtil::readFileContents(\"var0\":$var0)")
             }
         
@@ -10336,7 +10336,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FileUtil::createNoMediaFileIfNotExist(\"var0\":$var0)")
             }
         
@@ -10359,7 +10359,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FileUtil::saveFile(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -10380,7 +10380,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FileUtil::readFileContentsFromAssets(\"var1\":$var1)")
             }
         
@@ -10399,7 +10399,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FileUtil::getName(\"var0\":$var0)")
             }
         
@@ -10418,7 +10418,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FileUtil::indexOfLastSeparator(\"var0\":$var0)")
             }
         
@@ -10440,7 +10440,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.IAMapEngineCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapResource(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -10464,7 +10464,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.IAMapEngineCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::reloadMapResource(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -10486,7 +10486,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.IAMapEngineCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapData(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -10510,7 +10510,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.IAMapEngineCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireCharBitmap(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -10536,7 +10536,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.IAMapEngineCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireCharsWidths(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -10560,7 +10560,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.IAMapEngineCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapRender(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -10582,7 +10582,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.IAMapEngineCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::onMapRender(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -10604,7 +10604,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.IAMapEngineCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::OnIndoorBuildingActivity(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -10623,7 +10623,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.IAMapEngineCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::generateRequestId()")
             }
         
@@ -10645,7 +10645,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.IAMapEngineCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapDataAsyn(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -10665,7 +10665,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLTranslateAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLTranslateAnimation@$refId::setFromPoint()")
             }
         
@@ -10684,7 +10684,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLTransformation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLTransformation@$refId::clear()")
             }
         
@@ -10703,7 +10703,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::initialize()")
             }
         
@@ -10722,7 +10722,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::clone()")
             }
         
@@ -10749,7 +10749,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::setFillAfter(\"var1\":$var1)")
             }
         
@@ -10769,7 +10769,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::setFillBefore(\"var1\":$var1)")
             }
         
@@ -10789,7 +10789,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::setRepeatMode(\"var1\":$var1)")
             }
         
@@ -10809,7 +10809,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::setStartOffset(\"var1\":$var1)")
             }
         
@@ -10828,7 +10828,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::hasAlpha()")
             }
         
@@ -10848,7 +10848,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::setDuration(\"var1\":$var1)")
             }
         
@@ -10868,7 +10868,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::addAnimation()")
             }
         
@@ -10888,7 +10888,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::setStartTime(\"var1\":$var1)")
             }
         
@@ -10907,7 +10907,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::getStartTime()")
             }
         
@@ -10927,7 +10927,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::restrictDuration(\"var1\":$var1)")
             }
         
@@ -10946,7 +10946,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::getDuration()")
             }
         
@@ -10965,7 +10965,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::computeDurationHint()")
             }
         
@@ -10987,7 +10987,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::getTransformation(\"var1\":$var1)")
             }
         
@@ -11007,7 +11007,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::scaleCurrentDuration(\"var1\":$var1)")
             }
         
@@ -11026,7 +11026,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::reset()")
             }
         
@@ -11045,7 +11045,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::getAnimations()")
             }
         
@@ -11071,7 +11071,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::willChangeTransformationMatrix()")
             }
         
@@ -11090,7 +11090,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::willChangeBounds()")
             }
         
@@ -11109,7 +11109,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::cleanAnimation()")
             }
         
@@ -11128,7 +11128,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::clone()")
             }
         
@@ -11154,7 +11154,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::reset()")
             }
         
@@ -11173,7 +11173,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::cancel()")
             }
         
@@ -11192,7 +11192,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::detach()")
             }
         
@@ -11211,7 +11211,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::isInitialized()")
             }
         
@@ -11230,7 +11230,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::initialize()")
             }
         
@@ -11252,7 +11252,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setInterpolator(\"var2\":$var2)")
             }
         
@@ -11272,7 +11272,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setStartOffset(\"var1\":$var1)")
             }
         
@@ -11292,7 +11292,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setDuration(\"var1\":$var1)")
             }
         
@@ -11312,7 +11312,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::restrictDuration(\"var1\":$var1)")
             }
         
@@ -11332,7 +11332,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::scaleCurrentDuration(\"var1\":$var1)")
             }
         
@@ -11352,7 +11352,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setStartTime(\"var1\":$var1)")
             }
         
@@ -11371,7 +11371,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::start()")
             }
         
@@ -11390,7 +11390,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::startNow()")
             }
         
@@ -11410,7 +11410,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setRepeatMode(\"var1\":$var1)")
             }
         
@@ -11430,7 +11430,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setRepeatCount(\"var1\":$var1)")
             }
         
@@ -11449,7 +11449,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::isFillEnabled()")
             }
         
@@ -11469,7 +11469,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setFillEnabled(\"var1\":$var1)")
             }
         
@@ -11489,7 +11489,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setFillBefore(\"var1\":$var1)")
             }
         
@@ -11509,7 +11509,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setFillAfter(\"var1\":$var1)")
             }
         
@@ -11529,7 +11529,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setZAdjustment(\"var1\":$var1)")
             }
         
@@ -11549,7 +11549,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setBackgroundColor(\"var1\":$var1)")
             }
         
@@ -11569,7 +11569,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setDetachWallpaper(\"var1\":$var1)")
             }
         
@@ -11588,7 +11588,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getStartTime()")
             }
         
@@ -11607,7 +11607,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getDuration()")
             }
         
@@ -11626,7 +11626,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getStartOffset()")
             }
         
@@ -11645,7 +11645,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getRepeatMode()")
             }
         
@@ -11664,7 +11664,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getRepeatCount()")
             }
         
@@ -11683,7 +11683,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getFillBefore()")
             }
         
@@ -11702,7 +11702,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getFillAfter()")
             }
         
@@ -11721,7 +11721,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getZAdjustment()")
             }
         
@@ -11740,7 +11740,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getBackgroundColor()")
             }
         
@@ -11759,7 +11759,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getDetachWallpaper()")
             }
         
@@ -11778,7 +11778,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::willChangeTransformationMatrix()")
             }
         
@@ -11797,7 +11797,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::willChangeBounds()")
             }
         
@@ -11816,7 +11816,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setAnimationListener()")
             }
         
@@ -11878,7 +11878,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::computeDurationHint()")
             }
         
@@ -11900,7 +11900,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getTransformation(\"var1\":$var1)")
             }
         
@@ -11919,7 +11919,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::hasEnded()")
             }
         
@@ -11945,7 +11945,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::initializeInvalidateRegion(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -11964,7 +11964,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.animation.GLAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::hasAlpha()")
             }
         
@@ -11983,7 +11983,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getAnchorY()")
             }
         
@@ -12003,7 +12003,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setAnchorY(\"var1\":$var1)")
             }
         
@@ -12022,7 +12022,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getAnchorX()")
             }
         
@@ -12042,7 +12042,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setAnchorX(\"var1\":$var1)")
             }
         
@@ -12061,7 +12061,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getChangedCounter()")
             }
         
@@ -12080,7 +12080,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::resetChangedCounter()")
             }
         
@@ -12099,7 +12099,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isMapStateChange()")
             }
         
@@ -12118,7 +12118,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getChangeRatio()")
             }
         
@@ -12137,7 +12137,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getChangeGridRatio()")
             }
         
@@ -12156,7 +12156,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isZoomChanged()")
             }
         
@@ -12175,7 +12175,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isTiltChanged()")
             }
         
@@ -12194,7 +12194,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isBearingChanged()")
             }
         
@@ -12213,7 +12213,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isIndoorEnable()")
             }
         
@@ -12233,7 +12233,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setIndoorEnable(\"var1\":$var1)")
             }
         
@@ -12252,7 +12252,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isBuildingEnable()")
             }
         
@@ -12272,7 +12272,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setBuildingEnable(\"var1\":$var1)")
             }
         
@@ -12291,7 +12291,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isMapTextEnable()")
             }
         
@@ -12311,7 +12311,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMapTextEnable(\"var1\":$var1)")
             }
         
@@ -12330,7 +12330,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isTrafficEnabled()")
             }
         
@@ -12350,7 +12350,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setTrafficEnabled(\"var1\":$var1)")
             }
         
@@ -12369,7 +12369,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isNeedUpdateZoomControllerState()")
             }
         
@@ -12388,7 +12388,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getSX()")
             }
         
@@ -12408,7 +12408,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setSX(\"var1\":$var1)")
             }
         
@@ -12427,7 +12427,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getSY()")
             }
         
@@ -12447,7 +12447,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setSY(\"var1\":$var1)")
             }
         
@@ -12466,7 +12466,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getMapGeoCenter()")
             }
         
@@ -12492,7 +12492,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getSZ()")
             }
         
@@ -12512,7 +12512,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setSZ(\"var1\":$var1)")
             }
         
@@ -12531,7 +12531,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getSC()")
             }
         
@@ -12551,7 +12551,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setSC(\"var1\":$var1)")
             }
         
@@ -12570,7 +12570,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getSR()")
             }
         
@@ -12590,7 +12590,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setSR(\"var1\":$var1)")
             }
         
@@ -12609,7 +12609,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getGeoRectangle()")
             }
         
@@ -12636,7 +12636,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMaxZoomLevel(\"var1\":$var1)")
             }
         
@@ -12656,7 +12656,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMinZoomLevel(\"var1\":$var1)")
             }
         
@@ -12675,7 +12675,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getMaxZoomLevel()")
             }
         
@@ -12694,7 +12694,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getMinZoomLevel()")
             }
         
@@ -12713,7 +12713,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isSetLimitZoomLevel()")
             }
         
@@ -12732,7 +12732,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getLimitLatLngBounds()")
             }
         
@@ -12759,7 +12759,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setLimitLatLngBounds()")
             }
         
@@ -12778,7 +12778,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::resetMinMaxZoomPreference()")
             }
         
@@ -12798,7 +12798,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::updateMapRectNextFrame(\"var1\":$var1)")
             }
         
@@ -12818,7 +12818,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMapPerPixelUnitLength(\"var1\":$var1)")
             }
         
@@ -12837,7 +12837,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getMapPerPixelUnitLength()")
             }
         
@@ -12857,7 +12857,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomStylePath(\"var1\":$var1)")
             }
         
@@ -12876,7 +12876,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getCustomStylePath()")
             }
         
@@ -12895,7 +12895,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getCustomStyleID()")
             }
         
@@ -12915,7 +12915,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomStyleID(\"var1\":$var1)")
             }
         
@@ -12935,7 +12935,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomStyleEnable(\"var1\":$var1)")
             }
         
@@ -12954,7 +12954,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isCustomStyleEnable()")
             }
         
@@ -12973,7 +12973,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getMapStyleTime()")
             }
         
@@ -12993,7 +12993,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMapStyleTime(\"var1\":$var1)")
             }
         
@@ -13012,7 +13012,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getMapStyleMode()")
             }
         
@@ -13032,7 +13032,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMapStyleMode(\"var1\":$var1)")
             }
         
@@ -13051,7 +13051,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getMapStyleState()")
             }
         
@@ -13071,7 +13071,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMapStyleState(\"var1\":$var1)")
             }
         
@@ -13091,7 +13091,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomTextureResourcePath(\"var1\":$var1)")
             }
         
@@ -13110,7 +13110,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getCustomTextureResourcePath()")
             }
         
@@ -13129,7 +13129,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isProFunctionAuthEnable()")
             }
         
@@ -13149,7 +13149,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setProFunctionAuthEnable(\"var1\":$var1)")
             }
         
@@ -13168,7 +13168,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isUseProFunction()")
             }
         
@@ -13188,7 +13188,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setUseProFunction(\"var1\":$var1)")
             }
         
@@ -13208,7 +13208,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomBackgroundColor(\"var1\":$var1)")
             }
         
@@ -13227,7 +13227,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getCustomBackgroundColor()")
             }
         
@@ -13247,7 +13247,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMapZoomScale(\"var1\":$var1)")
             }
         
@@ -13266,7 +13266,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getMapZoomScale()")
             }
         
@@ -13286,7 +13286,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMapWidth(\"var1\":$var1)")
             }
         
@@ -13305,7 +13305,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getMapWidth()")
             }
         
@@ -13325,7 +13325,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMapHeight(\"var1\":$var1)")
             }
         
@@ -13344,7 +13344,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getMapHeight()")
             }
         
@@ -13364,7 +13364,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMapLanguage(\"var1\":$var1)")
             }
         
@@ -13383,7 +13383,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getMapLanguage()")
             }
         
@@ -13403,7 +13403,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setHideLogoEnble(\"var1\":$var1)")
             }
         
@@ -13422,7 +13422,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isHideLogoEnable()")
             }
         
@@ -13442,7 +13442,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setWorldMapEnable(\"var1\":$var1)")
             }
         
@@ -13461,7 +13461,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::isWorldMapEnable()")
             }
         
@@ -13480,7 +13480,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getSkyHeight()")
             }
         
@@ -13500,7 +13500,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setSkyHeight(\"var1\":$var1)")
             }
         
@@ -13519,7 +13519,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getViewMatrix()")
             }
         
@@ -13538,7 +13538,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getProjectionMatrix()")
             }
         
@@ -13557,7 +13557,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getMvpMatrix()")
             }
         
@@ -13576,7 +13576,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::updateFinalMatrix()")
             }
         
@@ -13595,7 +13595,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.MapConfig
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::getCurTileIds()")
             }
         
@@ -13616,7 +13616,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -13641,7 +13641,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory()")
             }
         
@@ -13660,7 +13660,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.message.HoverGestureMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.HoverGestureMapMessage@$refId::getType()")
             }
         
@@ -13680,7 +13680,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.message.HoverGestureMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.HoverGestureMapMessage@$refId::runCameraUpdate()")
             }
         
@@ -13703,7 +13703,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::obtain(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -13728,7 +13728,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::destory()")
             }
         
@@ -13747,7 +13747,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.message.MoveGestureMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.MoveGestureMapMessage@$refId::getType()")
             }
         
@@ -13767,7 +13767,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.message.MoveGestureMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.MoveGestureMapMessage@$refId::runCameraUpdate()")
             }
         
@@ -13792,7 +13792,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::obtain(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -13817,7 +13817,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::destory()")
             }
         
@@ -13836,7 +13836,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.message.ScaleGestureMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.ScaleGestureMapMessage@$refId::getType()")
             }
         
@@ -13856,7 +13856,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.message.ScaleGestureMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.ScaleGestureMapMessage@$refId::runCameraUpdate()")
             }
         
@@ -13875,7 +13875,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.message.AbstractGestureMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::getType()")
             }
         
@@ -13895,7 +13895,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.message.AbstractGestureMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::setState(\"var1\":$var1)")
             }
         
@@ -13914,7 +13914,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.message.AbstractGestureMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::reset()")
             }
         
@@ -13934,7 +13934,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.message.AbstractGestureMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::runCameraUpdate()")
             }
         
@@ -13953,7 +13953,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.message.AbstractGestureMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::getMapGestureState()")
             }
         
@@ -13978,7 +13978,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.RotateGestureMapMessage::obtain(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -14003,7 +14003,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.RotateGestureMapMessage::destory()")
             }
         
@@ -14022,7 +14022,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.message.RotateGestureMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.RotateGestureMapMessage@$refId::getType()")
             }
         
@@ -14042,7 +14042,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.message.RotateGestureMapMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.message.RotateGestureMapMessage@$refId::runCameraUpdate()")
             }
         
@@ -14060,7 +14060,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FPointBounds::builder()")
             }
         
@@ -14087,7 +14087,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.FPointBounds
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FPointBounds@$refId::contains()")
             }
         
@@ -14107,7 +14107,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.FPointBounds
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FPointBounds@$refId::intersects()")
             }
         
@@ -14128,7 +14128,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.CoordUtil::convertToGcj(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -14147,7 +14147,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AeUtil::loadLib()")
             }
         
@@ -14166,7 +14166,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AeUtil::initResource()")
             }
         
@@ -14196,7 +14196,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AeUtil::readAssetsFileAndSave(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -14219,7 +14219,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.VirtualEarthProjection::clip(\"var0\":$var0, \"var2\":$var2, \"var4\":$var4)")
             }
         
@@ -14242,7 +14242,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.VirtualEarthProjection::latLongToPixels(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -14272,7 +14272,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.VirtualEarthProjection::pixelsToLatLong(\"var0\":$var0, \"var2\":$var2, \"var4\":$var4)")
             }
         
@@ -14298,7 +14298,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Rectangle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Rectangle@$refId::getBeyond180Mode()")
             }
         
@@ -14320,7 +14320,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Rectangle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Rectangle@$refId::contains(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -14346,7 +14346,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Rectangle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Rectangle@$refId::isOverlap(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -14365,7 +14365,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getGpsAccuracyStatus()")
             }
         
@@ -14385,7 +14385,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setGpsAccuracyStatus(\"var1\":$var1)")
             }
         
@@ -14404,7 +14404,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getLocationType()")
             }
         
@@ -14424,7 +14424,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLocationType(\"var1\":$var1)")
             }
         
@@ -14443,7 +14443,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getLocationDetail()")
             }
         
@@ -14463,7 +14463,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLocationDetail(\"var1\":$var1)")
             }
         
@@ -14482,7 +14482,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getErrorCode()")
             }
         
@@ -14502,7 +14502,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setErrorCode(\"var1\":$var1)")
             }
         
@@ -14521,7 +14521,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getErrorInfo()")
             }
         
@@ -14541,7 +14541,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setErrorInfo(\"var1\":$var1)")
             }
         
@@ -14560,7 +14560,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getCountry()")
             }
         
@@ -14580,7 +14580,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setCountry(\"var1\":$var1)")
             }
         
@@ -14599,7 +14599,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getRoad()")
             }
         
@@ -14619,7 +14619,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setRoad(\"var1\":$var1)")
             }
         
@@ -14638,7 +14638,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAddress()")
             }
         
@@ -14658,7 +14658,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setAddress(\"var1\":$var1)")
             }
         
@@ -14677,7 +14677,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getProvince()")
             }
         
@@ -14697,7 +14697,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setProvince(\"var1\":$var1)")
             }
         
@@ -14716,7 +14716,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getCity()")
             }
         
@@ -14736,7 +14736,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setCity(\"var1\":$var1)")
             }
         
@@ -14755,7 +14755,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getDistrict()")
             }
         
@@ -14775,7 +14775,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setDistrict(\"var1\":$var1)")
             }
         
@@ -14794,7 +14794,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getCityCode()")
             }
         
@@ -14814,7 +14814,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setCityCode(\"var1\":$var1)")
             }
         
@@ -14833,7 +14833,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAdCode()")
             }
         
@@ -14853,7 +14853,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setAdCode(\"var1\":$var1)")
             }
         
@@ -14872,7 +14872,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getPoiName()")
             }
         
@@ -14892,7 +14892,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setPoiName(\"var1\":$var1)")
             }
         
@@ -14911,7 +14911,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getLatitude()")
             }
         
@@ -14931,7 +14931,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLatitude(\"var1\":$var1)")
             }
         
@@ -14950,7 +14950,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getLongitude()")
             }
         
@@ -14970,7 +14970,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLongitude(\"var1\":$var1)")
             }
         
@@ -14989,7 +14989,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getSatellites()")
             }
         
@@ -15009,7 +15009,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setSatellites(\"var1\":$var1)")
             }
         
@@ -15028,7 +15028,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getStreet()")
             }
         
@@ -15048,7 +15048,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setStreet(\"var1\":$var1)")
             }
         
@@ -15067,7 +15067,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getStreetNum()")
             }
         
@@ -15087,7 +15087,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setNumber(\"var1\":$var1)")
             }
         
@@ -15107,7 +15107,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setOffset(\"var1\":$var1)")
             }
         
@@ -15126,7 +15126,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::isOffset()")
             }
         
@@ -15145,7 +15145,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAoiName()")
             }
         
@@ -15165,7 +15165,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setAoiName(\"var1\":$var1)")
             }
         
@@ -15184,7 +15184,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getBuildingId()")
             }
         
@@ -15204,7 +15204,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setBuildingId(\"var1\":$var1)")
             }
         
@@ -15223,7 +15223,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getFloor()")
             }
         
@@ -15243,7 +15243,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setFloor(\"var1\":$var1)")
             }
         
@@ -15262,7 +15262,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::toStr()")
             }
         
@@ -15281,7 +15281,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAccuracy()")
             }
         
@@ -15300,7 +15300,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getBearing()")
             }
         
@@ -15319,7 +15319,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAltitude()")
             }
         
@@ -15338,7 +15338,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getSpeed()")
             }
         
@@ -15357,7 +15357,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getProvider()")
             }
         
@@ -15376,7 +15376,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_location
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::clone()")
             }
         
@@ -15403,7 +15403,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.FPoint3
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FPoint3@$refId::setColorIndex(\"var1\":$var1)")
             }
         
@@ -15422,7 +15422,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.FPointBounds.Builder
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FPointBounds.Builder@$refId::build()")
             }
         
@@ -15447,7 +15447,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY()")
             }
         
@@ -15466,7 +15466,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isMockEnable()")
             }
         
@@ -15486,7 +15486,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setMockEnable(\"var1\":$var1)")
             }
         
@@ -15505,7 +15505,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getInterval()")
             }
         
@@ -15525,7 +15525,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setInterval(\"var1\":$var1)")
             }
         
@@ -15551,7 +15551,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocation()")
             }
         
@@ -15571,7 +15571,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocation(\"var1\":$var1)")
             }
         
@@ -15597,7 +15597,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isNeedAddress()")
             }
         
@@ -15617,7 +15617,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setNeedAddress(\"var1\":$var1)")
             }
         
@@ -15643,7 +15643,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiActiveScan()")
             }
         
@@ -15663,7 +15663,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiActiveScan(\"var1\":$var1)")
             }
         
@@ -15682,7 +15682,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiScan()")
             }
         
@@ -15702,7 +15702,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiScan(\"var1\":$var1)")
             }
         
@@ -15721,7 +15721,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationMode()")
             }
         
@@ -15747,7 +15747,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationProtocol()")
             }
         
@@ -15774,7 +15774,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationMode()")
             }
         
@@ -15800,7 +15800,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol()")
             }
         
@@ -15819,7 +15819,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isKillProcess()")
             }
         
@@ -15839,7 +15839,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setKillProcess(\"var1\":$var1)")
             }
         
@@ -15865,7 +15865,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isGpsFirst()")
             }
         
@@ -15885,7 +15885,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setGpsFirst(\"var1\":$var1)")
             }
         
@@ -15911,7 +15911,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::clone()")
             }
         
@@ -15937,7 +15937,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getHttpTimeOut()")
             }
         
@@ -15957,7 +15957,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setHttpTimeOut(\"var1\":$var1)")
             }
         
@@ -15976,7 +15976,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOffset()")
             }
         
@@ -15996,7 +15996,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOffset(\"var1\":$var1)")
             }
         
@@ -16022,7 +16022,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isLocationCacheEnable()")
             }
         
@@ -16042,7 +16042,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationCacheEnable(\"var1\":$var1)")
             }
         
@@ -16061,7 +16061,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocationLatest()")
             }
         
@@ -16081,7 +16081,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocationLatest(\"var1\":$var1)")
             }
         
@@ -16100,7 +16100,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isSensorEnable()")
             }
         
@@ -16120,7 +16120,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setSensorEnable(\"var1\":$var1)")
             }
         
@@ -16138,7 +16138,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.FPoint::obtain()")
             }
         
@@ -16163,7 +16163,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreate()")
             }
         
@@ -16184,7 +16184,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetGLShaderManager(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -16203,7 +16203,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeDestroy(\"var0\":$var0)")
             }
         
@@ -16236,7 +16236,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeRender(\"var0\":$var0, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8)")
             }
         
@@ -16259,7 +16259,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartParticleSize(\"var0\":$var0, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -16280,7 +16280,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setMaxParticles(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -16301,7 +16301,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setDuration(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -16322,7 +16322,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleLifeTime(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -16343,7 +16343,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleStartSpeed(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -16364,7 +16364,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setLoop(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -16385,7 +16385,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleShapeModule(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -16406,7 +16406,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleEmission(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -16425,7 +16425,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::getCurrentParticleNum(\"var0\":$var0)")
             }
         
@@ -16446,7 +16446,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleOverLifeModule(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -16467,7 +16467,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setPreWram(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -16488,7 +16488,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartColor(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -16509,7 +16509,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetTextureId(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -16530,7 +16530,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleEmissionModule(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -16555,7 +16555,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateSinglePointParticleShape(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -16582,7 +16582,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRectParticleShape(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -16615,7 +16615,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomColorBetWeenTwoConstants(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7)")
             }
         
@@ -16633,7 +16633,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleOverLifeModule()")
             }
         
@@ -16652,7 +16652,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateConstantRotationOverLife(\"var0\":$var0)")
             }
         
@@ -16681,7 +16681,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomVelocityBetweenTwoConstants(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5)")
             }
         
@@ -16704,7 +16704,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateCurveSizeOverLife(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -16727,7 +16727,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetOverLifeItem(\"var0\":$var0, \"var2\":$var2, \"var4\":$var4)")
             }
         
@@ -16746,7 +16746,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseVelocityOverLife(\"var0\":$var0)")
             }
         
@@ -16765,7 +16765,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseColorGenerate(\"var0\":$var0)")
             }
         
@@ -16784,7 +16784,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleEmissonModule(\"var0\":$var0)")
             }
         
@@ -16803,7 +16803,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleOverLifeModule(\"var0\":$var0)")
             }
         
@@ -16822,7 +16822,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleShapeModule(\"var0\":$var0)")
             }
         
@@ -16841,7 +16841,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseRotationOverLife(\"var0\":$var0)")
             }
         
@@ -16860,7 +16860,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseSizeOverLife(\"var0\":$var0)")
             }
         
@@ -16880,7 +16880,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.AeUtil.ZipCompressProgressListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AeUtil.ZipCompressProgressListener@$refId::onFinishProgress(\"var1\":$var1)")
             }
         
@@ -16900,7 +16900,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::runCameraUpdate()")
             }
         
@@ -16920,7 +16920,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::mergeCameraUpdateDelegate()")
             }
         
@@ -16940,7 +16940,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::generateMapAnimation()")
             }
         
@@ -16958,7 +16958,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeCreate()")
             }
         
@@ -16979,7 +16979,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::setCurTileIDs(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -16998,7 +16998,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeClearBuildingOptions(\"var0\":$var0)")
             }
         
@@ -17019,7 +17019,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::addBuildingOptions(\"var0\":$var0)")
             }
         
@@ -17050,7 +17050,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::render(\"var0\":$var0, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7)")
             }
         
@@ -17069,7 +17069,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeDestory(\"var0\":$var0)")
             }
         
@@ -17090,7 +17090,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeSetGLShaderManager(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -17111,7 +17111,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::getInt(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -17132,7 +17132,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::getUShort(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -17153,7 +17153,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::getBit(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -17176,7 +17176,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::copyString(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -17195,7 +17195,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::covertBytes(\"var0\":$var0)")
             }
         
@@ -17214,7 +17214,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::convertInt(\"var0\":$var0)")
             }
         
@@ -17237,7 +17237,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::getNum(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -17256,7 +17256,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::convertShort(\"var0\":$var0)")
             }
         
@@ -17279,7 +17279,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::writeInt(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -17306,7 +17306,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::moveArray(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -17329,7 +17329,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::getString(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -17352,7 +17352,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::getSubBytes(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -17371,7 +17371,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::get1BString(\"var0\":$var0)")
             }
         
@@ -17390,7 +17390,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::get2BString(\"var0\":$var0)")
             }
         
@@ -17411,7 +17411,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::convertDouble(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -17430,7 +17430,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::getDouble(\"var0\":$var0)")
             }
         
@@ -17449,7 +17449,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.Convert::bytesToHexString(\"var0\":$var0)")
             }
         
@@ -17469,7 +17469,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::addItems()")
             }
         
@@ -17489,7 +17489,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::addItem()")
             }
         
@@ -17509,7 +17509,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::destroy(\"var1\":$var1)")
             }
         
@@ -17529,7 +17529,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -17553,7 +17553,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::draw(\"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -17573,7 +17573,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::onClick()")
             }
         
@@ -17602,7 +17602,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::setAnchor(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -17621,7 +17621,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::getId()")
             }
         
@@ -17641,7 +17641,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::remove(\"var1\":$var1)")
             }
         
@@ -17660,7 +17660,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::remove()")
             }
         
@@ -17679,7 +17679,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::getId()")
             }
         
@@ -17699,7 +17699,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -17718,7 +17718,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::getZIndex()")
             }
         
@@ -17738,7 +17738,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -17757,7 +17757,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::isVisible()")
             }
         
@@ -17777,7 +17777,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::equalsRemote()")
             }
         
@@ -17796,7 +17796,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::hashCodeRemote()")
             }
         
@@ -17815,7 +17815,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::destroy()")
             }
         
@@ -17834,7 +17834,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::isAboveMaskLayer()")
             }
         
@@ -17854,7 +17854,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::setAboveMaskLayer(\"var1\":$var1)")
             }
         
@@ -17874,7 +17874,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IText
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IText@$refId::setText(\"var1\":$var1)")
             }
         
@@ -17893,7 +17893,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IText
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IText@$refId::getText()")
             }
         
@@ -17913,7 +17913,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IText
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IText@$refId::setBackgroundColor(\"var1\":$var1)")
             }
         
@@ -17932,7 +17932,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IText
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IText@$refId::getBackgroundColor()")
             }
         
@@ -17952,7 +17952,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IText
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IText@$refId::setFontColor(\"var1\":$var1)")
             }
         
@@ -17971,7 +17971,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IText
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IText@$refId::getFontColor()")
             }
         
@@ -17991,7 +17991,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IText
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IText@$refId::setFontSize(\"var1\":$var1)")
             }
         
@@ -18010,7 +18010,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IText
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IText@$refId::getFontSize()")
             }
         
@@ -18032,7 +18032,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IText
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IText@$refId::setAlign(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -18051,7 +18051,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IText
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IText@$refId::getAlignX()")
             }
         
@@ -18070,7 +18070,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IText
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IText@$refId::getAlignY()")
             }
         
@@ -18090,7 +18090,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAnimation@$refId::setAnimation()")
             }
         
@@ -18109,7 +18109,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAnimation@$refId::startAnimation()")
             }
         
@@ -18128,7 +18128,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAnimation@$refId::setAnimationListener()")
             }
         
@@ -18190,7 +18190,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getTitle()")
             }
         
@@ -18209,7 +18209,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getSnippet()")
             }
         
@@ -18228,7 +18228,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getId()")
             }
         
@@ -18248,7 +18248,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setPosition()")
             }
         
@@ -18268,7 +18268,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setRotateAngle(\"var1\":$var1)")
             }
         
@@ -18287,7 +18287,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getRotateAngle()")
             }
         
@@ -18306,7 +18306,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getPosition()")
             }
         
@@ -18333,7 +18333,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setAnimation()")
             }
         
@@ -18352,7 +18352,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::startAnimation()")
             }
         
@@ -18371,7 +18371,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::remove()")
             }
         
@@ -18391,7 +18391,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -18410,7 +18410,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::isVisible()")
             }
         
@@ -18430,7 +18430,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setZoomLimit(\"var1\":$var1)")
             }
         
@@ -18449,7 +18449,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::destroy()")
             }
         
@@ -18469,7 +18469,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setGeoPoint()")
             }
         
@@ -18488,7 +18488,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::showInfoWindow()")
             }
         
@@ -18508,7 +18508,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setTitle(\"var1\":$var1)")
             }
         
@@ -18528,7 +18528,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setSnippet(\"var1\":$var1)")
             }
         
@@ -18548,7 +18548,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IglModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setModelFixedLength(\"var1\":$var1)")
             }
         
@@ -18568,7 +18568,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IArc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IArc@$refId::setStrokeWidth(\"var1\":$var1)")
             }
         
@@ -18587,7 +18587,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IArc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IArc@$refId::getStrokeWidth()")
             }
         
@@ -18607,7 +18607,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IArc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IArc@$refId::setStrokeColor(\"var1\":$var1)")
             }
         
@@ -18626,7 +18626,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IArc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IArc@$refId::getStrokeColor()")
             }
         
@@ -18645,7 +18645,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isIndoorSwitchEnabled()")
             }
         
@@ -18665,7 +18665,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setIndoorSwitchEnabled(\"var1\":$var1)")
             }
         
@@ -18685,7 +18685,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setScaleControlsEnabled(\"var1\":$var1)")
             }
         
@@ -18705,7 +18705,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setZoomControlsEnabled(\"var1\":$var1)")
             }
         
@@ -18725,7 +18725,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setCompassEnabled(\"var1\":$var1)")
             }
         
@@ -18745,7 +18745,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setMyLocationButtonEnabled(\"var1\":$var1)")
             }
         
@@ -18765,7 +18765,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setScrollGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -18785,7 +18785,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setZoomGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -18805,7 +18805,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setTiltGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -18825,7 +18825,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setRotateGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -18845,7 +18845,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setAllGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -18865,7 +18865,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoPosition(\"var1\":$var1)")
             }
         
@@ -18885,7 +18885,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setZoomPosition(\"var1\":$var1)")
             }
         
@@ -18904,7 +18904,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isScaleControlsEnabled()")
             }
         
@@ -18923,7 +18923,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isZoomControlsEnabled()")
             }
         
@@ -18942,7 +18942,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isCompassEnabled()")
             }
         
@@ -18961,7 +18961,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isMyLocationButtonEnabled()")
             }
         
@@ -18980,7 +18980,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isScrollGesturesEnabled()")
             }
         
@@ -18999,7 +18999,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isZoomGesturesEnabled()")
             }
         
@@ -19018,7 +19018,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isTiltGesturesEnabled()")
             }
         
@@ -19037,7 +19037,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isRotateGesturesEnabled()")
             }
         
@@ -19056,7 +19056,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::getLogoPosition()")
             }
         
@@ -19075,7 +19075,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::getZoomPosition()")
             }
         
@@ -19095,7 +19095,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setZoomInByScreenCenter(\"var1\":$var1)")
             }
         
@@ -19114,7 +19114,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isZoomInByScreenCenter()")
             }
         
@@ -19134,7 +19134,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoBottomMargin(\"var1\":$var1)")
             }
         
@@ -19154,7 +19154,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoLeftMargin(\"var1\":$var1)")
             }
         
@@ -19174,7 +19174,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::getLogoMarginRate(\"var1\":$var1)")
             }
         
@@ -19196,7 +19196,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoMarginRate(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -19216,7 +19216,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setGestureScaleByMapCenter(\"var1\":$var1)")
             }
         
@@ -19235,7 +19235,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isGestureScaleByMapCenter()")
             }
         
@@ -19255,7 +19255,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoEnable(\"var1\":$var1)")
             }
         
@@ -19274,7 +19274,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::requestRefreshLogo()")
             }
         
@@ -19293,7 +19293,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IUiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isLogoEnable()")
             }
         
@@ -19312,7 +19312,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::remove()")
             }
         
@@ -19332,7 +19332,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::destroy(\"var1\":$var1)")
             }
         
@@ -19352,7 +19352,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setRotateAngle(\"var1\":$var1)")
             }
         
@@ -19371,7 +19371,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getRotateAngle()")
             }
         
@@ -19391,7 +19391,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -19410,7 +19410,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getZIndex()")
             }
         
@@ -19429,7 +19429,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getId()")
             }
         
@@ -19448,7 +19448,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getPosition()")
             }
         
@@ -19475,7 +19475,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setPosition()")
             }
         
@@ -19495,7 +19495,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -19514,7 +19514,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::isVisible()")
             }
         
@@ -19534,7 +19534,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::equalsRemote()")
             }
         
@@ -19553,7 +19553,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::hashCodeRemote()")
             }
         
@@ -19575,7 +19575,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setAnchor(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -19594,7 +19594,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getAnchorU()")
             }
         
@@ -19613,7 +19613,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getAnchorV()")
             }
         
@@ -19633,7 +19633,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.INavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::setTopColor(\"var1\":$var1)")
             }
         
@@ -19653,7 +19653,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.INavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::setSideColor(\"var1\":$var1)")
             }
         
@@ -19672,7 +19672,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.INavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::getTopColor()")
             }
         
@@ -19691,7 +19691,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.INavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::getSideColor()")
             }
         
@@ -19711,7 +19711,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.INavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::setPoints()")
             }
         
@@ -19730,7 +19730,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.INavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::getPoints()")
             }
         
@@ -19757,7 +19757,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.INavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::setWidth(\"var1\":$var1)")
             }
         
@@ -19776,7 +19776,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.INavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::getWidth()")
             }
         
@@ -19796,7 +19796,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.INavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::set3DModel(\"var1\":$var1)")
             }
         
@@ -19815,7 +19815,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.INavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::is3DModel()")
             }
         
@@ -19835,7 +19835,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IGroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setPosition()")
             }
         
@@ -19854,7 +19854,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IGroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getPosition()")
             }
         
@@ -19881,7 +19881,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IGroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setDimensions(\"var1\":$var1)")
             }
         
@@ -19900,7 +19900,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IGroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getWidth()")
             }
         
@@ -19919,7 +19919,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IGroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getHeight()")
             }
         
@@ -19939,7 +19939,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IGroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setPositionFromBounds()")
             }
         
@@ -19958,7 +19958,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IGroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getBounds()")
             }
         
@@ -19985,7 +19985,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IGroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setBearing(\"var1\":$var1)")
             }
         
@@ -20004,7 +20004,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IGroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getBearing()")
             }
         
@@ -20024,7 +20024,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IGroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setTransparency(\"var1\":$var1)")
             }
         
@@ -20043,7 +20043,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IGroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getTransparency()")
             }
         
@@ -20063,7 +20063,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IGroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setImage()")
             }
         
@@ -20083,7 +20083,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setWidth(\"var1\":$var1)")
             }
         
@@ -20102,7 +20102,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getWidth()")
             }
         
@@ -20122,7 +20122,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setColor(\"var1\":$var1)")
             }
         
@@ -20141,7 +20141,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getColor()")
             }
         
@@ -20161,7 +20161,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setPoints()")
             }
         
@@ -20180,7 +20180,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getPoints()")
             }
         
@@ -20206,7 +20206,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::isGeodesic()")
             }
         
@@ -20226,7 +20226,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setGeodesic(\"var1\":$var1)")
             }
         
@@ -20246,7 +20246,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setDottedLine(\"var1\":$var1)")
             }
         
@@ -20265,7 +20265,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::isDottedLine()")
             }
         
@@ -20285,7 +20285,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getNearestLatLng()")
             }
         
@@ -20312,7 +20312,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setTransparency(\"var1\":$var1)")
             }
         
@@ -20332,7 +20332,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setCustomTexture()")
             }
         
@@ -20352,7 +20352,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setOptions()")
             }
         
@@ -20371,7 +20371,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getOptions()")
             }
         
@@ -20398,7 +20398,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setCustemTextureIndex(\"var1\":$var1)")
             }
         
@@ -20418,7 +20418,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setShownRatio(\"var1\":$var1)")
             }
         
@@ -20440,7 +20440,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setShowRange(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -20459,7 +20459,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getShownRatio()")
             }
         
@@ -20479,7 +20479,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setCustomTextureList()")
             }
         
@@ -20499,7 +20499,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setPeriod(\"var1\":$var1)")
             }
         
@@ -20518,7 +20518,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getPeriod()")
             }
         
@@ -20538,7 +20538,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setIcons()")
             }
         
@@ -20557,7 +20557,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getIcons()")
             }
         
@@ -20583,7 +20583,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::set2Top()")
             }
         
@@ -20603,7 +20603,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setFlat(\"var1\":$var1)")
             }
         
@@ -20622,7 +20622,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isFlat()")
             }
         
@@ -20642,7 +20642,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setPerspective(\"var1\":$var1)")
             }
         
@@ -20661,7 +20661,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isPerspective()")
             }
         
@@ -20681,7 +20681,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setTitle(\"var1\":$var1)")
             }
         
@@ -20700,7 +20700,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getTitle()")
             }
         
@@ -20720,7 +20720,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setIcon()")
             }
         
@@ -20740,7 +20740,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setSnippet(\"var1\":$var1)")
             }
         
@@ -20759,7 +20759,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getSnippet()")
             }
         
@@ -20779,7 +20779,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setDraggable(\"var1\":$var1)")
             }
         
@@ -20798,7 +20798,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isDraggable()")
             }
         
@@ -20817,7 +20817,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isRemoved()")
             }
         
@@ -20836,7 +20836,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::showInfoWindow()")
             }
         
@@ -20855,7 +20855,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::hideInfoWindow()")
             }
         
@@ -20874,7 +20874,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isInfoWindowShown()")
             }
         
@@ -20894,7 +20894,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setGeoPoint()")
             }
         
@@ -20913,7 +20913,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getGeoPoint()")
             }
         
@@ -20942,7 +20942,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setPositionByPixels(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -20962,7 +20962,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setBelowMaskLayer(\"var1\":$var1)")
             }
         
@@ -20982,7 +20982,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setAnimation()")
             }
         
@@ -21001,7 +21001,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::startAnimation()")
             }
         
@@ -21020,7 +21020,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setAnimationListener()")
             }
         
@@ -21085,7 +21085,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMapListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::afterDrawFrame(\"var1\":$var1)")
             }
         
@@ -21107,7 +21107,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMapListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::afterDrawLabel(\"var1\":$var1)")
             }
         
@@ -21129,7 +21129,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMapListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::beforeDrawLabel(\"var1\":$var1)")
             }
         
@@ -21151,7 +21151,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMapListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::afterRendererOver(\"var1\":$var1)")
             }
         
@@ -21170,7 +21170,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMapListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::afterAnimation()")
             }
         
@@ -21190,7 +21190,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IInfoWindowManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@$refId::setInfoWindowAnimation()")
             }
         
@@ -21253,7 +21253,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IInfoWindowManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@$refId::setInfoWindowAppearAnimation()")
             }
         
@@ -21273,7 +21273,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IInfoWindowManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@$refId::setInfoWindowBackColor(\"var1\":$var1)")
             }
         
@@ -21293,7 +21293,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IInfoWindowManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@$refId::setInfoWindowBackEnable(\"var1\":$var1)")
             }
         
@@ -21315,7 +21315,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IInfoWindowManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@$refId::setInfoWindowBackScale(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -21335,7 +21335,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IInfoWindowManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@$refId::setInfoWindowDisappearAnimation()")
             }
         
@@ -21355,7 +21355,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IInfoWindowManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@$refId::setInfoWindowMovingAnimation()")
             }
         
@@ -21374,7 +21374,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IInfoWindowManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@$refId::startAnimation()")
             }
         
@@ -21393,7 +21393,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ITileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::remove()")
             }
         
@@ -21413,7 +21413,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ITileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::destroy(\"var1\":$var1)")
             }
         
@@ -21432,7 +21432,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ITileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::clearTileCache()")
             }
         
@@ -21451,7 +21451,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ITileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::getId()")
             }
         
@@ -21471,7 +21471,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ITileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -21490,7 +21490,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ITileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::getZIndex()")
             }
         
@@ -21510,7 +21510,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ITileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -21529,7 +21529,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ITileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::isVisible()")
             }
         
@@ -21548,7 +21548,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ITileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::equalsRemote()")
             }
         
@@ -21762,7 +21762,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ITileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::hashCodeRemote()")
             }
         
@@ -21782,7 +21782,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IProjection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::fromScreenLocation()")
             }
         
@@ -21809,7 +21809,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IProjection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::toScreenLocation()")
             }
         
@@ -21836,7 +21836,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IProjection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::toMapLocation()")
             }
         
@@ -21862,7 +21862,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IProjection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::getVisibleRegion()")
             }
         
@@ -21889,7 +21889,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IProjection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::toMapLenWithWin(\"var1\":$var1)")
             }
         
@@ -21913,7 +21913,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IProjection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::fromBoundsToTile(\"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -21942,7 +21942,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IProjection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::getMapBounds(\"var2\":$var2)")
             }
         
@@ -21968,7 +21968,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IProjection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::getCameraInfo()")
             }
         
@@ -21995,7 +21995,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setCenter()")
             }
         
@@ -22014,7 +22014,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getCenter()")
             }
         
@@ -22041,7 +22041,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setRadius(\"var1\":$var1)")
             }
         
@@ -22060,7 +22060,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getRadius()")
             }
         
@@ -22080,7 +22080,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setStrokeWidth(\"var1\":$var1)")
             }
         
@@ -22099,7 +22099,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getStrokeWidth()")
             }
         
@@ -22119,7 +22119,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setStrokeColor(\"var1\":$var1)")
             }
         
@@ -22138,7 +22138,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getStrokeColor()")
             }
         
@@ -22158,7 +22158,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setFillColor(\"var1\":$var1)")
             }
         
@@ -22177,7 +22177,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getFillColor()")
             }
         
@@ -22197,7 +22197,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::contains()")
             }
         
@@ -22217,7 +22217,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setHoleOptions()")
             }
         
@@ -22236,7 +22236,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getDottedLineType()")
             }
         
@@ -22256,7 +22256,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setDottedLineType(\"var1\":$var1)")
             }
         
@@ -22275,7 +22275,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getCameraPosition()")
             }
         
@@ -22301,7 +22301,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMaxZoomLevel()")
             }
         
@@ -22320,7 +22320,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMinZoomLevel()")
             }
         
@@ -22340,7 +22340,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::moveCamera()")
             }
         
@@ -22360,7 +22360,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::animateCamera()")
             }
         
@@ -22380,7 +22380,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::animateCameraWithCallback()")
             }
         
@@ -22445,7 +22445,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::animateCameraWithDurationAndCallback(\"var2\":$var2)")
             }
         
@@ -22507,7 +22507,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::stopAnimation()")
             }
         
@@ -22527,7 +22527,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addNavigateArrow()")
             }
         
@@ -22554,7 +22554,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addPolyline()")
             }
         
@@ -22581,7 +22581,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addCircle()")
             }
         
@@ -22608,7 +22608,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addArc()")
             }
         
@@ -22635,7 +22635,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addPolygon()")
             }
         
@@ -22662,7 +22662,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addGroundOverlay()")
             }
         
@@ -22689,7 +22689,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addMultiPointOverlay()")
             }
         
@@ -22716,7 +22716,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addMarker()")
             }
         
@@ -22745,7 +22745,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addMarkers(\"var2\":$var2)")
             }
         
@@ -22772,7 +22772,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addText()")
             }
         
@@ -22799,7 +22799,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addTileOverlay()")
             }
         
@@ -22825,7 +22825,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::clear()")
             }
         
@@ -22844,7 +22844,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapType()")
             }
         
@@ -22864,7 +22864,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapType(\"var1\":$var1)")
             }
         
@@ -22883,7 +22883,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::isTrafficEnabled()")
             }
         
@@ -22903,7 +22903,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setTrafficEnabled(\"var1\":$var1)")
             }
         
@@ -22922,7 +22922,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::isIndoorEnabled()")
             }
         
@@ -22942,7 +22942,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setIndoorEnabled(\"var1\":$var1)")
             }
         
@@ -22962,7 +22962,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::set3DBuildingEnabled(\"var1\":$var1)")
             }
         
@@ -22981,7 +22981,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::isMyLocationEnabled()")
             }
         
@@ -23001,7 +23001,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyLocationEnabled(\"var1\":$var1)")
             }
         
@@ -23021,7 +23021,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setLoadOfflineData(\"var1\":$var1)")
             }
         
@@ -23041,7 +23041,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyLocationStyle()")
             }
         
@@ -23061,7 +23061,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyLocationType(\"var1\":$var1)")
             }
         
@@ -23080,7 +23080,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapScreenMarkers()")
             }
         
@@ -23107,7 +23107,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapTextEnable(\"var1\":$var1)")
             }
         
@@ -23127,7 +23127,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setRoadArrowEnable(\"var1\":$var1)")
             }
         
@@ -23147,7 +23147,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyTrafficStyle()")
             }
         
@@ -23166,7 +23166,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMyLocation()")
             }
         
@@ -23192,7 +23192,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setLocationSource()")
             }
         
@@ -23255,7 +23255,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyLocationRotateAngle(\"var1\":$var1)")
             }
         
@@ -23274,7 +23274,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getAMapUiSettings()")
             }
         
@@ -23300,7 +23300,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getAMapProjection()")
             }
         
@@ -23326,7 +23326,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnCameraChangeListener()")
             }
         
@@ -23388,7 +23388,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMapClickListener()")
             }
         
@@ -23431,7 +23431,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMapTouchListener()")
             }
         
@@ -23474,7 +23474,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMapLongClickListener()")
             }
         
@@ -23517,7 +23517,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMarkerClickListener()")
             }
         
@@ -23560,7 +23560,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnPolylineClickListener()")
             }
         
@@ -23603,7 +23603,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMarkerDragListener()")
             }
         
@@ -23684,7 +23684,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMaploadedListener()")
             }
         
@@ -23727,7 +23727,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnInfoWindowClickListener()")
             }
         
@@ -23770,7 +23770,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMyLocationChangeListener()")
             }
         
@@ -23813,7 +23813,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnPOIClickListener()")
             }
         
@@ -23857,7 +23857,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setInfoWindowAdapter()")
             }
         
@@ -23876,7 +23876,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnIndoorBuildingActiveListener()")
             }
         
@@ -23919,7 +23919,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapPrintScreen()")
             }
         
@@ -23962,7 +23962,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapScreenShot()")
             }
         
@@ -24026,7 +24026,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getScalePerPixel()")
             }
         
@@ -24046,7 +24046,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setRunLowFrame(\"var1\":$var1)")
             }
         
@@ -24065,7 +24065,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::removecache()")
             }
         
@@ -24085,7 +24085,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomRenderer()")
             }
         
@@ -24107,7 +24107,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCenterToPixel(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -24127,7 +24127,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapTextZIndex(\"var1\":$var1)")
             }
         
@@ -24146,7 +24146,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapTextZIndex()")
             }
         
@@ -24165,7 +24165,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::reloadMap()")
             }
         
@@ -24185,7 +24185,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setRenderFps(\"var1\":$var1)")
             }
         
@@ -24205,7 +24205,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setIndoorBuildingInfo()")
             }
         
@@ -24224,7 +24224,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setAMapGestureListener()")
             }
         
@@ -24417,7 +24417,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getZoomToSpanLevel()")
             }
         
@@ -24436,7 +24436,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getInfoWindowAnimationManager()")
             }
         
@@ -24473,7 +24473,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMaskLayerParams(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6)")
             }
         
@@ -24493,7 +24493,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMaxZoomLevel(\"var1\":$var1)")
             }
         
@@ -24513,7 +24513,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMinZoomLevel(\"var1\":$var1)")
             }
         
@@ -24532,7 +24532,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::resetMinMaxZoomPreference()")
             }
         
@@ -24552,7 +24552,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapStatusLimits()")
             }
         
@@ -24572,7 +24572,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomMapStylePath(\"var1\":$var1)")
             }
         
@@ -24592,7 +24592,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapCustomEnable(\"var1\":$var1)")
             }
         
@@ -24611,7 +24611,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onChangeFinish()")
             }
         
@@ -24631,7 +24631,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setZoomScaleParam(\"var1\":$var1)")
             }
         
@@ -24650,7 +24650,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onFling()")
             }
         
@@ -24669,7 +24669,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapWidth()")
             }
         
@@ -24688,7 +24688,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapHeight()")
             }
         
@@ -24707,7 +24707,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getCameraAngle()")
             }
         
@@ -24726,7 +24726,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getSkyHeight()")
             }
         
@@ -24745,7 +24745,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::isMaploaded()")
             }
         
@@ -24764,7 +24764,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapConfig()")
             }
         
@@ -24790,7 +24790,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getView()")
             }
         
@@ -24817,7 +24817,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setZOrderOnTop(\"var1\":$var1)")
             }
         
@@ -24836,7 +24836,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::destroy()")
             }
         
@@ -24856,7 +24856,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setVisibilityEx(\"var1\":$var1)")
             }
         
@@ -24875,7 +24875,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onActivityPause()")
             }
         
@@ -24894,7 +24894,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onActivityResume()")
             }
         
@@ -24914,7 +24914,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::createGLOverlay(\"var1\":$var1)")
             }
         
@@ -24933,7 +24933,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getGlOverlayMgrPtr()")
             }
         
@@ -24953,7 +24953,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addCrossVector()")
             }
         
@@ -24979,7 +24979,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addNaviRouteOverlay()")
             }
         
@@ -25005,7 +25005,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getViewMatrix()")
             }
         
@@ -25024,7 +25024,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getProjectionMatrix()")
             }
         
@@ -25046,7 +25046,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addOverlayTexture(\"var1\":$var1)")
             }
         
@@ -25066,7 +25066,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onTouchEvent()")
             }
         
@@ -25085,7 +25085,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::canStopMapRender()")
             }
         
@@ -25105,7 +25105,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomTextureResourcePath(\"var1\":$var1)")
             }
         
@@ -25124,7 +25124,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMyLocationStyle()")
             }
         
@@ -25150,7 +25150,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getRenderMode()")
             }
         
@@ -25170,7 +25170,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::destroySurface(\"var1\":$var1)")
             }
         
@@ -25189,7 +25189,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::requestRender()")
             }
         
@@ -25208,7 +25208,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::resetRenderTime()")
             }
         
@@ -25230,7 +25230,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onIndoorBuildingActivity(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -25249,7 +25249,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getCamerInfo()")
             }
         
@@ -25276,7 +25276,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::checkMapState()")
             }
         
@@ -25296,7 +25296,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setRenderMode(\"var1\":$var1)")
             }
         
@@ -25315,7 +25315,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMultiPointClickListener()")
             }
         
@@ -25358,7 +25358,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapContentApprovalNumber()")
             }
         
@@ -25377,7 +25377,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getSatelliteImageApprovalNumber()")
             }
         
@@ -25397,7 +25397,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapLanguage(\"var1\":$var1)")
             }
         
@@ -25417,7 +25417,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomMapStyleID(\"var1\":$var1)")
             }
         
@@ -25436,7 +25436,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addBuildingOverlay()")
             }
         
@@ -25463,7 +25463,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addGLModel()")
             }
         
@@ -25490,7 +25490,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addParticleOverlay()")
             }
         
@@ -25517,7 +25517,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IAMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomMapStyle()")
             }
         
@@ -25541,7 +25541,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onInflate()")
             }
         
@@ -25561,7 +25561,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::setContext()")
             }
         
@@ -25581,7 +25581,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::setOptions()")
             }
         
@@ -25601,7 +25601,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onCreate()")
             }
         
@@ -25620,7 +25620,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onResume()")
             }
         
@@ -25639,7 +25639,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onPause()")
             }
         
@@ -25658,7 +25658,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onDestroyView()")
             }
         
@@ -25677,7 +25677,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onDestroy()")
             }
         
@@ -25696,7 +25696,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onLowMemory()")
             }
         
@@ -25716,7 +25716,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onSaveInstanceState()")
             }
         
@@ -25735,7 +25735,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::isReady()")
             }
         
@@ -25755,7 +25755,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::setVisibility(\"var1\":$var1)")
             }
         
@@ -25774,7 +25774,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::getAlpha()")
             }
         
@@ -25794,7 +25794,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setAlpha(\"var1\":$var1)")
             }
         
@@ -25813,7 +25813,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::getDisplayLevel()")
             }
         
@@ -25832,7 +25832,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::getOptions()")
             }
         
@@ -25858,7 +25858,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::isClickable()")
             }
         
@@ -25877,7 +25877,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::isInfoWindowAutoOverturn()")
             }
         
@@ -25896,7 +25896,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::isInfoWindowEnable()")
             }
         
@@ -25916,7 +25916,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setInfoWindowEnable(\"var1\":$var1)")
             }
         
@@ -25936,7 +25936,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setMarkerOptions()")
             }
         
@@ -25956,7 +25956,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setAutoOverturnInfoWindow(\"var1\":$var1)")
             }
         
@@ -25976,7 +25976,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setClickable(\"var1\":$var1)")
             }
         
@@ -25996,7 +25996,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setDisplayLevel(\"var1\":$var1)")
             }
         
@@ -26016,7 +26016,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setFixingPointEnable(\"var1\":$var1)")
             }
         
@@ -26036,7 +26036,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setPositionNotUpdate()")
             }
         
@@ -26056,7 +26056,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setRotateAngleNotUpdate(\"var1\":$var1)")
             }
         
@@ -26076,7 +26076,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setSnippet(\"var1\":$var1)")
             }
         
@@ -26096,7 +26096,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IMarkerAction
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setTitle(\"var1\":$var1)")
             }
         
@@ -26116,7 +26116,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setStrokeWidth(\"var1\":$var1)")
             }
         
@@ -26135,7 +26135,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getStrokeWidth()")
             }
         
@@ -26155,7 +26155,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setFillColor(\"var1\":$var1)")
             }
         
@@ -26174,7 +26174,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getFillColor()")
             }
         
@@ -26194,7 +26194,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setStrokeColor(\"var1\":$var1)")
             }
         
@@ -26214,7 +26214,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setPoints()")
             }
         
@@ -26233,7 +26233,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getPoints()")
             }
         
@@ -26259,7 +26259,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getStrokeColor()")
             }
         
@@ -26279,7 +26279,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::contains()")
             }
         
@@ -26299,7 +26299,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setHoleOptions()")
             }
         
@@ -26319,7 +26319,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.custom.IUnityCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.custom.IUnityCallback@$refId::UnitySetGraphicsDevice(\"var1\":$var1)")
             }
         
@@ -26339,7 +26339,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.custom.IUnityCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.autonavi.custom.IUnityCallback@$refId::UnityRenderEvent(\"var1\":$var1)")
             }
         
@@ -26359,7 +26359,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.CommonInfoWindowAdapter
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.CommonInfoWindowAdapter@$refId::getInfoWindowParams()")
             }
         
@@ -26386,7 +26386,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnCameraChangeListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnCameraChangeListener@$refId::onCameraChange()")
             }
         
@@ -26406,7 +26406,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnCameraChangeListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnCameraChangeListener@$refId::onCameraChangeFinish()")
             }
         
@@ -26425,7 +26425,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.LocationSource
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.LocationSource@$refId::activate()")
             }
         
@@ -26468,7 +26468,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.LocationSource
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.LocationSource@$refId::deactivate()")
             }
         
@@ -26488,7 +26488,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnCacheRemoveListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnCacheRemoveListener@$refId::onRemoveCacheFinish(\"var1\":$var1)")
             }
         
@@ -26508,7 +26508,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnMultiPointClickListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnMultiPointClickListener@$refId::onPointClick()")
             }
         
@@ -26528,7 +26528,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setScaleControlsEnabled(\"var1\":$var1)")
             }
         
@@ -26548,7 +26548,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setZoomControlsEnabled(\"var1\":$var1)")
             }
         
@@ -26568,7 +26568,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setCompassEnabled(\"var1\":$var1)")
             }
         
@@ -26588,7 +26588,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setMyLocationButtonEnabled(\"var1\":$var1)")
             }
         
@@ -26608,7 +26608,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setScrollGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -26628,7 +26628,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setZoomGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -26648,7 +26648,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setTiltGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -26668,7 +26668,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setRotateGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -26688,7 +26688,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setAllGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -26708,7 +26708,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setLogoPosition(\"var1\":$var1)")
             }
         
@@ -26728,7 +26728,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setZoomPosition(\"var1\":$var1)")
             }
         
@@ -26747,7 +26747,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::getZoomPosition()")
             }
         
@@ -26766,7 +26766,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::isScaleControlsEnabled()")
             }
         
@@ -26785,7 +26785,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::isZoomControlsEnabled()")
             }
         
@@ -26804,7 +26804,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::isCompassEnabled()")
             }
         
@@ -26823,7 +26823,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::isMyLocationButtonEnabled()")
             }
         
@@ -26842,7 +26842,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::isScrollGesturesEnabled()")
             }
         
@@ -26861,7 +26861,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::isZoomGesturesEnabled()")
             }
         
@@ -26880,7 +26880,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::isTiltGesturesEnabled()")
             }
         
@@ -26899,7 +26899,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::isRotateGesturesEnabled()")
             }
         
@@ -26918,7 +26918,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::getLogoPosition()")
             }
         
@@ -26937,7 +26937,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::isIndoorSwitchEnabled()")
             }
         
@@ -26957,7 +26957,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setIndoorSwitchEnabled(\"var1\":$var1)")
             }
         
@@ -26979,7 +26979,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setLogoMarginRate(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -26999,7 +26999,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::getLogoMarginRate(\"var1\":$var1)")
             }
         
@@ -27019,7 +27019,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setLogoLeftMargin(\"var1\":$var1)")
             }
         
@@ -27039,7 +27039,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setLogoBottomMargin(\"var1\":$var1)")
             }
         
@@ -27059,7 +27059,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setZoomInByScreenCenter(\"var1\":$var1)")
             }
         
@@ -27079,7 +27079,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setGestureScaleByMapCenter(\"var1\":$var1)")
             }
         
@@ -27098,7 +27098,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.UiSettings
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::isGestureScaleByMapCenter()")
             }
         
@@ -27117,7 +27117,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView.OnDismissCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView.OnDismissCallback@$refId::onDismiss()")
             }
         
@@ -27136,7 +27136,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView.OnDismissCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView.OnDismissCallback@$refId::onNotifySwipe()")
             }
         
@@ -27158,7 +27158,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.SwipeDismissTouchListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.SwipeDismissTouchListener@$refId::onTouch()")
             }
         
@@ -27178,7 +27178,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowParams
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindowUpdateTime(\"var1\":$var1)")
             }
         
@@ -27197,7 +27197,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowParams
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowParams@$refId::getInfoWindowUpdateTime()")
             }
         
@@ -27217,7 +27217,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowParams
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindowType(\"var1\":$var1)")
             }
         
@@ -27236,7 +27236,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowParams
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowParams@$refId::getInfoWindowType()")
             }
         
@@ -27255,7 +27255,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowParams
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowParams@$refId::getInfoWindow()")
             }
         
@@ -27282,7 +27282,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowParams
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowParams@$refId::setInfoContent()")
             }
         
@@ -27302,7 +27302,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowParams
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindow()")
             }
         
@@ -27321,7 +27321,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowParams
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowParams@$refId::getInfoContents()")
             }
         
@@ -27346,7 +27346,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::zoomIn()")
             }
         
@@ -27371,7 +27371,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::zoomOut()")
             }
         
@@ -27399,7 +27399,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::scrollBy(\"var0\":$var0, \"var1\":$var1)")
             }
         
@@ -27425,7 +27425,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::zoomTo(\"var0\":$var0)")
             }
         
@@ -27451,7 +27451,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::zoomBy(\"var0\":$var0)")
             }
         
@@ -27477,7 +27477,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::newCameraPosition()")
             }
         
@@ -27503,7 +27503,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::newLatLng()")
             }
         
@@ -27531,7 +27531,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::newLatLngZoom(\"var1\":$var1)")
             }
         
@@ -27559,7 +27559,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::newLatLngBounds(\"var1\":$var1)")
             }
         
@@ -27585,7 +27585,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::changeLatLng()")
             }
         
@@ -27611,7 +27611,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::changeBearing(\"var0\":$var0)")
             }
         
@@ -27639,7 +27639,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter(\"var0\":$var0)")
             }
         
@@ -27665,7 +27665,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::changeTilt(\"var0\":$var0)")
             }
         
@@ -27699,7 +27699,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -27725,7 +27725,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.CancelableCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.CancelableCallback@$refId::onFinish()")
             }
         
@@ -27744,7 +27744,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.CancelableCallback
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.CancelableCallback@$refId::onCancel()")
             }
         
@@ -27763,7 +27763,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapException
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapException@$refId::getErrorMessage()")
             }
         
@@ -27783,7 +27783,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnMapScreenShotListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnMapScreenShotListener@$refId::onMapScreenShot()")
             }
         
@@ -27803,7 +27803,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::logoPosition(\"var1\":$var1)")
             }
         
@@ -27830,7 +27830,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::zOrderOnTop(\"var1\":$var1)")
             }
         
@@ -27857,7 +27857,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::mapType(\"var1\":$var1)")
             }
         
@@ -27884,7 +27884,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::camera()")
             }
         
@@ -27911,7 +27911,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::scaleControlsEnabled(\"var1\":$var1)")
             }
         
@@ -27938,7 +27938,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::zoomControlsEnabled(\"var1\":$var1)")
             }
         
@@ -27965,7 +27965,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::compassEnabled(\"var1\":$var1)")
             }
         
@@ -27992,7 +27992,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::scrollGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -28019,7 +28019,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::zoomGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -28046,7 +28046,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::tiltGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -28073,7 +28073,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::rotateGesturesEnabled(\"var1\":$var1)")
             }
         
@@ -28099,7 +28099,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::getLogoPosition()")
             }
         
@@ -28118,7 +28118,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::getZOrderOnTop()")
             }
         
@@ -28137,7 +28137,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::getMapType()")
             }
         
@@ -28156,7 +28156,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::getCamera()")
             }
         
@@ -28182,7 +28182,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::getScaleControlsEnabled()")
             }
         
@@ -28201,7 +28201,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::getZoomControlsEnabled()")
             }
         
@@ -28220,7 +28220,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::getCompassEnabled()")
             }
         
@@ -28239,7 +28239,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::getScrollGesturesEnabled()")
             }
         
@@ -28258,7 +28258,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::getZoomGesturesEnabled()")
             }
         
@@ -28277,7 +28277,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::getTiltGesturesEnabled()")
             }
         
@@ -28296,7 +28296,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMapOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapOptions@$refId::getRotateGesturesEnabled()")
             }
         
@@ -28315,7 +28315,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnMapLoadedListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnMapLoadedListener@$refId::onMapLoaded()")
             }
         
@@ -28335,7 +28335,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnMarkerClickListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnMarkerClickListener@$refId::onMarkerClick()")
             }
         
@@ -28355,7 +28355,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.CoordinateConverter
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CoordinateConverter@$refId::from()")
             }
         
@@ -28382,7 +28382,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.CoordinateConverter
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CoordinateConverter@$refId::coord()")
             }
         
@@ -28408,7 +28408,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.CoordinateConverter
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CoordinateConverter@$refId::convert()")
             }
         
@@ -28436,7 +28436,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CoordinateConverter::isAMapDataAvailable(\"var0\":$var0, \"var2\":$var2)")
             }
         
@@ -28456,7 +28456,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.InfoWindowAdapter
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.InfoWindowAdapter@$refId::getInfoWindow()")
             }
         
@@ -28483,7 +28483,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.InfoWindowAdapter
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.InfoWindowAdapter@$refId::getInfoContents()")
             }
         
@@ -28510,7 +28510,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnMyLocationChangeListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnMyLocationChangeListener@$refId::onMyLocationChange()")
             }
         
@@ -28530,7 +28530,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.onMapPrintScreenListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.onMapPrintScreenListener@$refId::onMapPrint()")
             }
         
@@ -28549,7 +28549,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.ImageInfoWindowAdapter
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.ImageInfoWindowAdapter@$refId::getInfoWindowUpdateTime()")
             }
         
@@ -28569,7 +28569,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnMarkerDragListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnMarkerDragListener@$refId::onMarkerDragStart()")
             }
         
@@ -28589,7 +28589,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnMarkerDragListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnMarkerDragListener@$refId::onMarkerDrag()")
             }
         
@@ -28609,7 +28609,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnMarkerDragListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnMarkerDragListener@$refId::onMarkerDragEnd()")
             }
         
@@ -28629,7 +28629,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener@$refId::move(\"var1\":$var1)")
             }
         
@@ -28649,7 +28649,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setPoints()")
             }
         
@@ -28668,7 +28668,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::resetIndex()")
             }
         
@@ -28688,7 +28688,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setTotalDuration(\"var1\":$var1)")
             }
         
@@ -28707,7 +28707,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::startSmoothMove()")
             }
         
@@ -28726,7 +28726,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::stopMove()")
             }
         
@@ -28745,7 +28745,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getPosition()")
             }
         
@@ -28771,7 +28771,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getIndex()")
             }
         
@@ -28790,7 +28790,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::destroy()")
             }
         
@@ -28809,7 +28809,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::removeMarker()")
             }
         
@@ -28829,7 +28829,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setPosition()")
             }
         
@@ -28849,7 +28849,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setRotate(\"var1\":$var1)")
             }
         
@@ -28869,7 +28869,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -28888,7 +28888,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setMoveListener()")
             }
         
@@ -28932,7 +28932,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener@$refId::move(\"var1\":$var1)")
             }
         
@@ -28952,7 +28952,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setPoints()")
             }
         
@@ -28972,7 +28972,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setTotalDuration(\"var1\":$var1)")
             }
         
@@ -28991,7 +28991,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::startSmoothMove()")
             }
         
@@ -29010,7 +29010,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::stopMove()")
             }
         
@@ -29029,7 +29029,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::getMarker()")
             }
         
@@ -29055,7 +29055,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::getPosition()")
             }
         
@@ -29081,7 +29081,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::getIndex()")
             }
         
@@ -29100,7 +29100,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::resetIndex()")
             }
         
@@ -29119,7 +29119,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::destroy()")
             }
         
@@ -29138,7 +29138,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::removeMarker()")
             }
         
@@ -29158,7 +29158,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setPosition()")
             }
         
@@ -29178,7 +29178,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setDescriptor()")
             }
         
@@ -29198,7 +29198,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setRotate(\"var1\":$var1)")
             }
         
@@ -29218,7 +29218,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -29237,7 +29237,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.SmoothMoveMarker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setMoveListener()")
             }
         
@@ -29280,7 +29280,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.CustomRenderer
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.CustomRenderer@$refId::OnMapReferencechanged()")
             }
         
@@ -29299,7 +29299,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.SwipeDismissCallBack
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.SwipeDismissCallBack@$refId::onNotifySwipe()")
             }
         
@@ -29319,7 +29319,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.LocationSource.OnLocationChangedListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.LocationSource.OnLocationChangedListener@$refId::onLocationChanged()")
             }
         
@@ -29338,7 +29338,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.SwipeDismissView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.SwipeDismissView@$refId::setCallback()")
             }
         
@@ -29400,7 +29400,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::initialize()")
             }
         
@@ -29419,7 +29419,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::setNetWorkEnable(\"var0\":$var0)")
             }
         
@@ -29437,7 +29437,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::getNetWorkEnable()")
             }
         
@@ -29456,7 +29456,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::setApiKey(\"var0\":$var0)")
             }
         
@@ -29474,7 +29474,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::getVersion()")
             }
         
@@ -29493,7 +29493,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::loadWorldGridMap(\"var0\":$var0)")
             }
         
@@ -29511,7 +29511,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::isLoadWorldGridMap()")
             }
         
@@ -29530,7 +29530,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::setBuildingHeight(\"var0\":$var0)")
             }
         
@@ -29549,7 +29549,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary(\"var0\":$var0)")
             }
         
@@ -29567,7 +29567,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary()")
             }
         
@@ -29586,7 +29586,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::setHost(\"var0\":$var0)")
             }
         
@@ -29605,7 +29605,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::setProtocol(\"var0\":$var0)")
             }
         
@@ -29623,7 +29623,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::getProtocol()")
             }
         
@@ -29642,7 +29642,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::closeTileOverlay(\"var0\":$var0)")
             }
         
@@ -29660,7 +29660,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapsInitializer::isTileOverlayClosed()")
             }
         
@@ -29679,7 +29679,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapProvince
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getUrl()")
             }
         
@@ -29699,7 +29699,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapProvince
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::setUrl(\"var1\":$var1)")
             }
         
@@ -29718,7 +29718,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapProvince
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getState()")
             }
         
@@ -29738,7 +29738,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapProvince
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::setState(\"var1\":$var1)")
             }
         
@@ -29757,7 +29757,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapProvince
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getSize()")
             }
         
@@ -29777,7 +29777,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapProvince
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::setSize(\"var1\":$var1)")
             }
         
@@ -29796,7 +29796,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapProvince
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getVersion()")
             }
         
@@ -29816,7 +29816,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapProvince
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::setVersion(\"var1\":$var1)")
             }
         
@@ -29835,7 +29835,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapProvince
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getcompleteCode()")
             }
         
@@ -29855,7 +29855,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapProvince
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::setCompleteCode(\"var1\":$var1)")
             }
         
@@ -29874,7 +29874,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapProvince
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getCityList()")
             }
         
@@ -29900,7 +29900,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapProvince
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getDownloadedCityList()")
             }
         
@@ -29927,7 +29927,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapProvince
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::setCityList()")
             }
         
@@ -29951,7 +29951,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener@$refId::onDownload(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -29973,7 +29973,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener@$refId::onCheckUpdate(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -29997,7 +29997,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener@$refId::onRemove(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -30017,7 +30017,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.DownloadProgressView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.DownloadProgressView@$refId::setProgress(\"var1\":$var1)")
             }
         
@@ -30036,7 +30036,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.Province
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.Province@$refId::getProvinceName()")
             }
         
@@ -30055,7 +30055,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.Province
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.Province@$refId::getJianpin()")
             }
         
@@ -30074,7 +30074,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.Province
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.Province@$refId::getPinyin()")
             }
         
@@ -30094,7 +30094,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.Province
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.Province@$refId::setProvinceName(\"var1\":$var1)")
             }
         
@@ -30114,7 +30114,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.Province
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.Province@$refId::setJianpin(\"var1\":$var1)")
             }
         
@@ -30134,7 +30134,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.Province
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.Province@$refId::setPinyin(\"var1\":$var1)")
             }
         
@@ -30154,7 +30154,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.Province
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.Province@$refId::setProvinceCode(\"var1\":$var1)")
             }
         
@@ -30173,7 +30173,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.Province
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.Province@$refId::getProvinceCode()")
             }
         
@@ -30193,7 +30193,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::downloadByCityCode(\"var1\":$var1)")
             }
         
@@ -30213,7 +30213,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::downloadByCityName(\"var1\":$var1)")
             }
         
@@ -30233,7 +30233,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::downloadByProvinceName(\"var1\":$var1)")
             }
         
@@ -30253,7 +30253,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::remove(\"var1\":$var1)")
             }
         
@@ -30272,7 +30272,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::getOfflineMapProvinceList()")
             }
         
@@ -30299,7 +30299,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::getItemByCityCode(\"var1\":$var1)")
             }
         
@@ -30326,7 +30326,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::getItemByCityName(\"var1\":$var1)")
             }
         
@@ -30353,7 +30353,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::getItemByProvinceName(\"var1\":$var1)")
             }
         
@@ -30379,7 +30379,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::getOfflineMapCityList()")
             }
         
@@ -30405,7 +30405,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::getDownloadingCityList()")
             }
         
@@ -30431,7 +30431,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::getDownloadingProvinceList()")
             }
         
@@ -30457,7 +30457,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::getDownloadOfflineMapCityList()")
             }
         
@@ -30483,7 +30483,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::getDownloadOfflineMapProvinceList()")
             }
         
@@ -30510,7 +30510,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::updateOfflineCityByCode(\"var1\":$var1)")
             }
         
@@ -30530,7 +30530,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::updateOfflineCityByName(\"var1\":$var1)")
             }
         
@@ -30550,7 +30550,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::updateOfflineMapProvinceByName(\"var1\":$var1)")
             }
         
@@ -30569,7 +30569,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::restart()")
             }
         
@@ -30588,7 +30588,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::stop()")
             }
         
@@ -30607,7 +30607,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::pause()")
             }
         
@@ -30626,7 +30626,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::destroy()")
             }
         
@@ -30645,7 +30645,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::setOnOfflineLoadedListener()")
             }
         
@@ -30688,7 +30688,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapCity
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getUrl()")
             }
         
@@ -30708,7 +30708,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapCity
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setUrl(\"var1\":$var1)")
             }
         
@@ -30727,7 +30727,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapCity
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getSize()")
             }
         
@@ -30747,7 +30747,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapCity
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setSize(\"var1\":$var1)")
             }
         
@@ -30766,7 +30766,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapCity
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getState()")
             }
         
@@ -30786,7 +30786,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapCity
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setState(\"var1\":$var1)")
             }
         
@@ -30805,7 +30805,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapCity
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getVersion()")
             }
         
@@ -30825,7 +30825,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapCity
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setVersion(\"var1\":$var1)")
             }
         
@@ -30844,7 +30844,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapCity
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getcompleteCode()")
             }
         
@@ -30864,7 +30864,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapCity
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setCompleteCode(\"var1\":$var1)")
             }
         
@@ -30883,7 +30883,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapActivity
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::showScr()")
             }
         
@@ -30902,7 +30902,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapActivity
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::closeScr()")
             }
         
@@ -30922,7 +30922,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapActivity
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::onClick()")
             }
         
@@ -30942,7 +30942,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.City
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.City@$refId::setCity(\"var1\":$var1)")
             }
         
@@ -30961,7 +30961,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.City
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.City@$refId::getCity()")
             }
         
@@ -30981,7 +30981,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.City
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.City@$refId::setCode(\"var1\":$var1)")
             }
         
@@ -31000,7 +31000,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.City
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.City@$refId::getCode()")
             }
         
@@ -31019,7 +31019,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.City
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.City@$refId::getJianpin()")
             }
         
@@ -31039,7 +31039,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.City
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.City@$refId::setJianpin(\"var1\":$var1)")
             }
         
@@ -31058,7 +31058,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.City
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.City@$refId::getPinyin()")
             }
         
@@ -31078,7 +31078,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.City
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.City@$refId::setPinyin(\"var1\":$var1)")
             }
         
@@ -31097,7 +31097,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.City
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.City@$refId::getAdcode()")
             }
         
@@ -31117,7 +31117,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.City
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.City@$refId::setAdcode(\"var1\":$var1)")
             }
         
@@ -31136,7 +31136,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener@$refId::onVerifyComplete()")
             }
         
@@ -31156,7 +31156,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnIndoorBuildingActiveListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnIndoorBuildingActiveListener@$refId::OnIndoorBuilding()")
             }
         
@@ -31176,7 +31176,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnMapTouchListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnMapTouchListener@$refId::onTouch()")
             }
         
@@ -31196,7 +31196,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.Projection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.Projection@$refId::fromScreenLocation()")
             }
         
@@ -31223,7 +31223,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.Projection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.Projection@$refId::toScreenLocation()")
             }
         
@@ -31250,7 +31250,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.Projection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.Projection@$refId::toOpenGLLocation()")
             }
         
@@ -31277,7 +31277,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.Projection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.Projection@$refId::toOpenGLWidth(\"var1\":$var1)")
             }
         
@@ -31296,7 +31296,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.Projection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.Projection@$refId::getVisibleRegion()")
             }
         
@@ -31327,7 +31327,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.Projection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.Projection@$refId::fromBoundsToTile(\"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -31356,7 +31356,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.Projection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.Projection@$refId::getMapBounds(\"var2\":$var2)")
             }
         
@@ -31382,7 +31382,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.Projection
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.Projection@$refId::getCameraInfo()")
             }
         
@@ -31409,7 +31409,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@$refId::getInfoWindowClick()")
             }
         
@@ -31436,7 +31436,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@$refId::getOverturnInfoWindow()")
             }
         
@@ -31463,7 +31463,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@$refId::getOverturnInfoWindowClick()")
             }
         
@@ -31489,7 +31489,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::remove()")
             }
         
@@ -31508,7 +31508,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::getId()")
             }
         
@@ -31528,7 +31528,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::setPoints()")
             }
         
@@ -31547,7 +31547,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::getPoints()")
             }
         
@@ -31574,7 +31574,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::setHoleOptions()")
             }
         
@@ -31594,7 +31594,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::setStrokeWidth(\"var1\":$var1)")
             }
         
@@ -31613,7 +31613,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::getStrokeWidth()")
             }
         
@@ -31633,7 +31633,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::setStrokeColor(\"var1\":$var1)")
             }
         
@@ -31652,7 +31652,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::getStrokeColor()")
             }
         
@@ -31672,7 +31672,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::setFillColor(\"var1\":$var1)")
             }
         
@@ -31691,7 +31691,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::getFillColor()")
             }
         
@@ -31711,7 +31711,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -31730,7 +31730,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::getZIndex()")
             }
         
@@ -31750,7 +31750,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -31769,7 +31769,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::isVisible()")
             }
         
@@ -31789,7 +31789,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::contains()")
             }
         
@@ -31808,7 +31808,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BitmapDescriptor
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptor@$refId::getId()")
             }
         
@@ -31827,7 +31827,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BitmapDescriptor
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptor@$refId::clone()")
             }
         
@@ -31853,7 +31853,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BitmapDescriptor
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptor@$refId::getBitmap()")
             }
         
@@ -31879,7 +31879,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BitmapDescriptor
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptor@$refId::getWidth()")
             }
         
@@ -31898,7 +31898,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BitmapDescriptor
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptor@$refId::getHeight()")
             }
         
@@ -31918,7 +31918,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonHoleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonHoleOptions@$refId::addAll()")
             }
         
@@ -31944,7 +31944,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonHoleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonHoleOptions@$refId::getPoints()")
             }
         
@@ -31970,7 +31970,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Poi
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Poi@$refId::getName()")
             }
         
@@ -31989,7 +31989,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Poi
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Poi@$refId::getCoordinate()")
             }
         
@@ -32015,7 +32015,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Poi
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Poi@$refId::getPoiId()")
             }
         
@@ -32035,7 +32035,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::myLocationIcon()")
             }
         
@@ -32064,7 +32064,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::anchor(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -32091,7 +32091,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::radiusFillColor(\"var1\":$var1)")
             }
         
@@ -32118,7 +32118,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::strokeColor(\"var1\":$var1)")
             }
         
@@ -32145,7 +32145,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::strokeWidth(\"var1\":$var1)")
             }
         
@@ -32172,7 +32172,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::myLocationType(\"var1\":$var1)")
             }
         
@@ -32199,7 +32199,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::interval(\"var1\":$var1)")
             }
         
@@ -32226,7 +32226,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::showMyLocation(\"var1\":$var1)")
             }
         
@@ -32252,7 +32252,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::getMyLocationIcon()")
             }
         
@@ -32278,7 +32278,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::getAnchorU()")
             }
         
@@ -32297,7 +32297,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::getAnchorV()")
             }
         
@@ -32316,7 +32316,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::getRadiusFillColor()")
             }
         
@@ -32335,7 +32335,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::getStrokeColor()")
             }
         
@@ -32354,7 +32354,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::getStrokeWidth()")
             }
         
@@ -32373,7 +32373,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::getMyLocationType()")
             }
         
@@ -32392,7 +32392,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::getInterval()")
             }
         
@@ -32411,7 +32411,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyLocationStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::isMyLocationShowing()")
             }
         
@@ -32430,7 +32430,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RouteOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RouteOverlay@$refId::removeRouteName()")
             }
         
@@ -32449,7 +32449,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RouteOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RouteOverlay@$refId::remove()")
             }
         
@@ -32469,7 +32469,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleHoleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleHoleOptions@$refId::center()")
             }
         
@@ -32496,7 +32496,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleHoleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleHoleOptions@$refId::radius(\"var1\":$var1)")
             }
         
@@ -32522,7 +32522,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleHoleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleHoleOptions@$refId::getCenter()")
             }
         
@@ -32548,7 +32548,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleHoleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleHoleOptions@$refId::getRadius()")
             }
         
@@ -32567,7 +32567,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::remove()")
             }
         
@@ -32586,7 +32586,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::destroy()")
             }
         
@@ -32605,7 +32605,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::getId()")
             }
         
@@ -32625,7 +32625,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::setPosition()")
             }
         
@@ -32644,7 +32644,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::getPosition()")
             }
         
@@ -32671,7 +32671,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::setText(\"var1\":$var1)")
             }
         
@@ -32690,7 +32690,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::getText()")
             }
         
@@ -32710,7 +32710,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::setBackgroundColor(\"var1\":$var1)")
             }
         
@@ -32729,7 +32729,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::getBackgroundColor()")
             }
         
@@ -32749,7 +32749,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::setFontColor(\"var1\":$var1)")
             }
         
@@ -32768,7 +32768,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::getFontColor()")
             }
         
@@ -32788,7 +32788,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::setFontSize(\"var1\":$var1)")
             }
         
@@ -32807,7 +32807,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::getFontSize()")
             }
         
@@ -32829,7 +32829,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::setAlign(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -32848,7 +32848,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::getAlignX()")
             }
         
@@ -32867,7 +32867,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::getAlignY()")
             }
         
@@ -32887,7 +32887,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -32906,7 +32906,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::isVisible()")
             }
         
@@ -32926,7 +32926,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::setRotate(\"var1\":$var1)")
             }
         
@@ -32945,7 +32945,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::getRotate()")
             }
         
@@ -32965,7 +32965,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -32984,7 +32984,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Text
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::getZIndex()")
             }
         
@@ -33003,7 +33003,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.LatLngBounds.Builder
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.LatLngBounds.Builder@$refId::build()")
             }
         
@@ -33030,7 +33030,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::add()")
             }
         
@@ -33057,7 +33057,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::addAll()")
             }
         
@@ -33084,7 +33084,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::width(\"var1\":$var1)")
             }
         
@@ -33111,7 +33111,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::topColor(\"var1\":$var1)")
             }
         
@@ -33138,7 +33138,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::sideColor(\"var1\":$var1)")
             }
         
@@ -33165,7 +33165,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::zIndex(\"var1\":$var1)")
             }
         
@@ -33192,7 +33192,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::visible(\"var1\":$var1)")
             }
         
@@ -33219,7 +33219,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::set3DModel(\"var1\":$var1)")
             }
         
@@ -33245,7 +33245,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::getPoints()")
             }
         
@@ -33271,7 +33271,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::getWidth()")
             }
         
@@ -33290,7 +33290,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::getTopColor()")
             }
         
@@ -33309,7 +33309,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::getSideColor()")
             }
         
@@ -33328,7 +33328,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::getZIndex()")
             }
         
@@ -33347,7 +33347,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::isVisible()")
             }
         
@@ -33366,7 +33366,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::is3DModel()")
             }
         
@@ -33386,7 +33386,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrowOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::setPoints()")
             }
         
@@ -33405,7 +33405,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptorFactory::fromResource(\"var0\":$var0)")
             }
         
@@ -33431,7 +33431,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptorFactory::fromView()")
             }
         
@@ -33457,7 +33457,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptorFactory::fromPath(\"var0\":$var0)")
             }
         
@@ -33483,7 +33483,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptorFactory::fromAsset(\"var0\":$var0)")
             }
         
@@ -33509,7 +33509,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptorFactory::fromFile(\"var0\":$var0)")
             }
         
@@ -33534,7 +33534,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker()")
             }
         
@@ -33560,7 +33560,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptorFactory::fromBitmap()")
             }
         
@@ -33585,7 +33585,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptorFactory::getContext()")
             }
         
@@ -33614,7 +33614,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener@$refId::onGenerateComplete(\"var2\":$var2)")
             }
         
@@ -33638,7 +33638,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.UrlTileProvider
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.UrlTileProvider@$refId::getTile(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -33664,7 +33664,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.UrlTileProvider
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.UrlTileProvider@$refId::getTileWidth()")
             }
         
@@ -33683,7 +33683,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.UrlTileProvider
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.UrlTileProvider@$refId::getTileHeight()")
             }
         
@@ -33705,7 +33705,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::anchor(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -33731,7 +33731,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getAnchorU()")
             }
         
@@ -33750,7 +33750,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getAnchorV()")
             }
         
@@ -33770,7 +33770,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::icon()")
             }
         
@@ -33796,7 +33796,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getIcon()")
             }
         
@@ -33823,7 +33823,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::setUseTexture(\"var1\":$var1)")
             }
         
@@ -33850,7 +33850,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::setCustomTexture()")
             }
         
@@ -33876,7 +33876,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getCustomTexture()")
             }
         
@@ -33903,7 +33903,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::setCustomTextureList()")
             }
         
@@ -33929,7 +33929,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getCustomTextureList()")
             }
         
@@ -33956,7 +33956,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::setCustomTextureIndex(\"var1\":$var1)")
             }
         
@@ -33982,7 +33982,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getCustomTextureIndex()")
             }
         
@@ -34002,7 +34002,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::colorValues(\"var1\":$var1)")
             }
         
@@ -34028,7 +34028,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getColorValues()")
             }
         
@@ -34048,7 +34048,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::useGradient(\"var1\":$var1)")
             }
         
@@ -34074,7 +34074,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::isUseGradient()")
             }
         
@@ -34093,7 +34093,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::isUseTexture()")
             }
         
@@ -34112,7 +34112,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::isGeodesic()")
             }
         
@@ -34132,7 +34132,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::add()")
             }
         
@@ -34159,7 +34159,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::addAll()")
             }
         
@@ -34186,7 +34186,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::width(\"var1\":$var1)")
             }
         
@@ -34213,7 +34213,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::color(\"var1\":$var1)")
             }
         
@@ -34240,7 +34240,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::zIndex(\"var1\":$var1)")
             }
         
@@ -34267,7 +34267,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::visible(\"var1\":$var1)")
             }
         
@@ -34294,7 +34294,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::geodesic(\"var1\":$var1)")
             }
         
@@ -34321,7 +34321,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::setDottedLine(\"var1\":$var1)")
             }
         
@@ -34347,7 +34347,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::isDottedLine()")
             }
         
@@ -34367,7 +34367,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::setDottedLineType(\"var1\":$var1)")
             }
         
@@ -34394,7 +34394,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::lineCapType()")
             }
         
@@ -34421,7 +34421,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::lineJoinType()")
             }
         
@@ -34447,7 +34447,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getLineCapType()")
             }
         
@@ -34473,7 +34473,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getLineJoinType()")
             }
         
@@ -34499,7 +34499,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getDottedLineType()")
             }
         
@@ -34518,7 +34518,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getPoints()")
             }
         
@@ -34544,7 +34544,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getWidth()")
             }
         
@@ -34563,7 +34563,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getColor()")
             }
         
@@ -34582,7 +34582,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getZIndex()")
             }
         
@@ -34601,7 +34601,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::isVisible()")
             }
         
@@ -34621,7 +34621,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::transparency(\"var1\":$var1)")
             }
         
@@ -34647,7 +34647,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getTransparency()")
             }
         
@@ -34667,7 +34667,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::aboveMaskLayer(\"var1\":$var1)")
             }
         
@@ -34693,7 +34693,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::isAboveMaskLayer()")
             }
         
@@ -34713,7 +34713,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::setPoints()")
             }
         
@@ -34732,7 +34732,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getShownRatio()")
             }
         
@@ -34752,7 +34752,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::setShownRatio(\"var1\":$var1)")
             }
         
@@ -34781,7 +34781,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::setShownRange(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -34807,7 +34807,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getShownRangeBegin()")
             }
         
@@ -34826,7 +34826,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::getShownRangeEnd()")
             }
         
@@ -34849,7 +34849,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Tile::obtain(\"var0\":$var0, \"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -34876,7 +34876,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::setPosition()")
             }
         
@@ -34896,7 +34896,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::setAngle(\"var1\":$var1)")
             }
         
@@ -34915,7 +34915,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::getAngle()")
             }
         
@@ -34934,7 +34934,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::getPosition()")
             }
         
@@ -34960,7 +34960,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::getId()")
             }
         
@@ -34980,7 +34980,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::setAnimation()")
             }
         
@@ -34999,7 +34999,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::startAnimation()")
             }
         
@@ -35019,7 +35019,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::setModelFixedLength(\"var1\":$var1)")
             }
         
@@ -35038,7 +35038,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::remove()")
             }
         
@@ -35057,7 +35057,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::isVisible()")
             }
         
@@ -35077,7 +35077,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -35097,7 +35097,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::setRotateAngle(\"var1\":$var1)")
             }
         
@@ -35116,7 +35116,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::getRotateAngle()")
             }
         
@@ -35136,7 +35136,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::setZoomLimit(\"var1\":$var1)")
             }
         
@@ -35155,7 +35155,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::destroy()")
             }
         
@@ -35175,7 +35175,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::setGeoPoint()")
             }
         
@@ -35195,7 +35195,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::setTitle(\"var1\":$var1)")
             }
         
@@ -35214,7 +35214,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::getTitle()")
             }
         
@@ -35233,7 +35233,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::getSnippet()")
             }
         
@@ -35253,7 +35253,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::setSnippet(\"var1\":$var1)")
             }
         
@@ -35272,7 +35272,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModel
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::showInfoWindow()")
             }
         
@@ -35296,7 +35296,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileProvider
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileProvider@$refId::getTile(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -35322,7 +35322,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileProvider
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileProvider@$refId::getTileWidth()")
             }
         
@@ -35341,7 +35341,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileProvider
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileProvider@$refId::getTileHeight()")
             }
         
@@ -35361,7 +35361,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NaviPara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NaviPara@$refId::setTargetPoint()")
             }
         
@@ -35381,7 +35381,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NaviPara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NaviPara@$refId::setNaviStyle(\"var1\":$var1)")
             }
         
@@ -35400,7 +35400,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NaviPara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NaviPara@$refId::getTargetPoint()")
             }
         
@@ -35426,7 +35426,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NaviPara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NaviPara@$refId::getNaviStyle()")
             }
         
@@ -35446,7 +35446,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::image()")
             }
         
@@ -35475,7 +35475,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::anchor(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -35504,7 +35504,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::position(\"var2\":$var2)")
             }
         
@@ -35531,7 +35531,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::positionFromBounds()")
             }
         
@@ -35558,7 +35558,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::bearing(\"var1\":$var1)")
             }
         
@@ -35585,7 +35585,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::zIndex(\"var1\":$var1)")
             }
         
@@ -35612,7 +35612,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::visible(\"var1\":$var1)")
             }
         
@@ -35639,7 +35639,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::transparency(\"var1\":$var1)")
             }
         
@@ -35665,7 +35665,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::getImage()")
             }
         
@@ -35691,7 +35691,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::getLocation()")
             }
         
@@ -35717,7 +35717,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::getWidth()")
             }
         
@@ -35736,7 +35736,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::getHeight()")
             }
         
@@ -35755,7 +35755,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::getBounds()")
             }
         
@@ -35781,7 +35781,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::getBearing()")
             }
         
@@ -35800,7 +35800,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::getZIndex()")
             }
         
@@ -35819,7 +35819,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::getTransparency()")
             }
         
@@ -35838,7 +35838,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::getAnchorU()")
             }
         
@@ -35857,7 +35857,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::getAnchorV()")
             }
         
@@ -35876,7 +35876,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::isVisible()")
             }
         
@@ -35896,7 +35896,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModelOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModelOptions@$refId::textureDrawable()")
             }
         
@@ -35925,7 +35925,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModelOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModelOptions@$refId::vertexData(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -35952,7 +35952,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModelOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModelOptions@$refId::position()")
             }
         
@@ -35979,7 +35979,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModelOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModelOptions@$refId::angle(\"var1\":$var1)")
             }
         
@@ -36005,7 +36005,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModelOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModelOptions@$refId::getVertext()")
             }
         
@@ -36024,7 +36024,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModelOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModelOptions@$refId::getTextrue()")
             }
         
@@ -36043,7 +36043,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModelOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModelOptions@$refId::getAngle()")
             }
         
@@ -36062,7 +36062,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModelOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModelOptions@$refId::getLatLng()")
             }
         
@@ -36088,7 +36088,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModelOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModelOptions@$refId::getBitmapDescriptor()")
             }
         
@@ -36115,7 +36115,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModelOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModelOptions@$refId::setModelFixedLength(\"var1\":$var1)")
             }
         
@@ -36141,7 +36141,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GL3DModelOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GL3DModelOptions@$refId::getModelFixedLength()")
             }
         
@@ -36160,7 +36160,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::remove()")
             }
         
@@ -36179,7 +36179,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::getId()")
             }
         
@@ -36199,7 +36199,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::setPosition()")
             }
         
@@ -36218,7 +36218,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::getPosition()")
             }
         
@@ -36245,7 +36245,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::setDimensions(\"var1\":$var1)")
             }
         
@@ -36265,7 +36265,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::setImage()")
             }
         
@@ -36284,7 +36284,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::getWidth()")
             }
         
@@ -36303,7 +36303,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::getHeight()")
             }
         
@@ -36323,7 +36323,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::setPositionFromBounds()")
             }
         
@@ -36342,7 +36342,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::getBounds()")
             }
         
@@ -36369,7 +36369,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::setBearing(\"var1\":$var1)")
             }
         
@@ -36388,7 +36388,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::getBearing()")
             }
         
@@ -36408,7 +36408,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -36427,7 +36427,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::getZIndex()")
             }
         
@@ -36447,7 +36447,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -36466,7 +36466,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::isVisible()")
             }
         
@@ -36486,7 +36486,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::setTransparency(\"var1\":$var1)")
             }
         
@@ -36505,7 +36505,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::getTransparency()")
             }
         
@@ -36524,7 +36524,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.GroundOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::destroy()")
             }
         
@@ -36543,7 +36543,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyTrafficStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyTrafficStyle@$refId::getSmoothColor()")
             }
         
@@ -36563,7 +36563,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyTrafficStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyTrafficStyle@$refId::setSmoothColor(\"var1\":$var1)")
             }
         
@@ -36582,7 +36582,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyTrafficStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyTrafficStyle@$refId::getSlowColor()")
             }
         
@@ -36602,7 +36602,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyTrafficStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyTrafficStyle@$refId::setSlowColor(\"var1\":$var1)")
             }
         
@@ -36621,7 +36621,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyTrafficStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyTrafficStyle@$refId::getCongestedColor()")
             }
         
@@ -36641,7 +36641,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyTrafficStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyTrafficStyle@$refId::setCongestedColor(\"var1\":$var1)")
             }
         
@@ -36660,7 +36660,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyTrafficStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyTrafficStyle@$refId::getSeriousCongestedColor()")
             }
         
@@ -36680,7 +36680,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyTrafficStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyTrafficStyle@$refId::setSeriousCongestedColor(\"var1\":$var1)")
             }
         
@@ -36699,7 +36699,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyTrafficStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyTrafficStyle@$refId::getRatio()")
             }
         
@@ -36719,7 +36719,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyTrafficStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyTrafficStyle@$refId::setRatio(\"var1\":$var1)")
             }
         
@@ -36738,7 +36738,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyTrafficStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyTrafficStyle@$refId::getTrafficRoadBackgroundColor()")
             }
         
@@ -36758,7 +36758,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MyTrafficStyle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MyTrafficStyle@$refId::setTrafficRoadBackgroundColor(\"var1\":$var1)")
             }
         
@@ -36779,7 +36779,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CameraPosition::fromLatLngZoom(\"var1\":$var1)")
             }
         
@@ -36804,7 +36804,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CameraPosition::builder()")
             }
         
@@ -36830,7 +36830,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PoiPara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PoiPara@$refId::getCenter()")
             }
         
@@ -36857,7 +36857,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PoiPara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PoiPara@$refId::setCenter()")
             }
         
@@ -36876,7 +36876,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PoiPara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PoiPara@$refId::getKeywords()")
             }
         
@@ -36896,7 +36896,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PoiPara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PoiPara@$refId::setKeywords(\"var1\":$var1)")
             }
         
@@ -36916,7 +36916,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::icons()")
             }
         
@@ -36945,7 +36945,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::rotatingIcons(\"var2\":$var2)")
             }
         
@@ -36971,7 +36971,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getAngleOffset()")
             }
         
@@ -36990,7 +36990,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::isRotatingMode()")
             }
         
@@ -37009,7 +37009,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getIcons()")
             }
         
@@ -37036,7 +37036,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::period(\"var1\":$var1)")
             }
         
@@ -37062,7 +37062,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getPeriod()")
             }
         
@@ -37081,7 +37081,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::isPerspective()")
             }
         
@@ -37101,7 +37101,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::perspective(\"var1\":$var1)")
             }
         
@@ -37128,7 +37128,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::position()")
             }
         
@@ -37155,7 +37155,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::setFlat(\"var1\":$var1)")
             }
         
@@ -37182,7 +37182,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::icon()")
             }
         
@@ -37211,7 +37211,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::anchor(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -37240,7 +37240,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::setInfoWindowOffset(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -37267,7 +37267,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::title(\"var1\":$var1)")
             }
         
@@ -37294,7 +37294,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::snippet(\"var1\":$var1)")
             }
         
@@ -37321,7 +37321,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::draggable(\"var1\":$var1)")
             }
         
@@ -37348,7 +37348,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::visible(\"var1\":$var1)")
             }
         
@@ -37375,7 +37375,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::setGps(\"var1\":$var1)")
             }
         
@@ -37401,7 +37401,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getPosition()")
             }
         
@@ -37427,7 +37427,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getTitle()")
             }
         
@@ -37446,7 +37446,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getSnippet()")
             }
         
@@ -37465,7 +37465,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getIcon()")
             }
         
@@ -37491,7 +37491,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getAnchorU()")
             }
         
@@ -37510,7 +37510,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getInfoWindowOffsetX()")
             }
         
@@ -37529,7 +37529,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getInfoWindowOffsetY()")
             }
         
@@ -37548,7 +37548,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getAnchorV()")
             }
         
@@ -37567,7 +37567,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::isDraggable()")
             }
         
@@ -37586,7 +37586,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::isVisible()")
             }
         
@@ -37605,7 +37605,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::isGps()")
             }
         
@@ -37624,7 +37624,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::isFlat()")
             }
         
@@ -37644,7 +37644,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::zIndex(\"var1\":$var1)")
             }
         
@@ -37670,7 +37670,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getZIndex()")
             }
         
@@ -37690,7 +37690,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::alpha(\"var1\":$var1)")
             }
         
@@ -37716,7 +37716,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getAlpha()")
             }
         
@@ -37736,7 +37736,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::autoOverturnInfoWindow(\"var1\":$var1)")
             }
         
@@ -37762,7 +37762,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::isInfoWindowAutoOverturn()")
             }
         
@@ -37782,7 +37782,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::displayLevel(\"var1\":$var1)")
             }
         
@@ -37808,7 +37808,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getDisplayLevel()")
             }
         
@@ -37828,7 +37828,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::rotateAngle(\"var1\":$var1)")
             }
         
@@ -37854,7 +37854,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::getRotateAngle()")
             }
         
@@ -37874,7 +37874,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::infoWindowEnable(\"var1\":$var1)")
             }
         
@@ -37900,7 +37900,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::isInfoWindowEnable()")
             }
         
@@ -37920,7 +37920,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::belowMaskLayer(\"var1\":$var1)")
             }
         
@@ -37946,7 +37946,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MarkerOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::isBelowMaskLayer()")
             }
         
@@ -37970,7 +37970,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.HeatmapTileProvider
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTile(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3)")
             }
         
@@ -37996,7 +37996,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.HeatmapTileProvider
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTileHeight()")
             }
         
@@ -38015,7 +38015,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.HeatmapTileProvider
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTileWidth()")
             }
         
@@ -38034,7 +38034,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::remove()")
             }
         
@@ -38053,7 +38053,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::getId()")
             }
         
@@ -38073,7 +38073,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::setPoints()")
             }
         
@@ -38092,7 +38092,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::getPoints()")
             }
         
@@ -38119,7 +38119,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::setWidth(\"var1\":$var1)")
             }
         
@@ -38138,7 +38138,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::getWidth()")
             }
         
@@ -38158,7 +38158,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::setTopColor(\"var1\":$var1)")
             }
         
@@ -38177,7 +38177,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::getTopColor()")
             }
         
@@ -38197,7 +38197,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::setSideColor(\"var1\":$var1)")
             }
         
@@ -38217,7 +38217,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -38236,7 +38236,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::getZIndex()")
             }
         
@@ -38256,7 +38256,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -38275,7 +38275,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::isVisible()")
             }
         
@@ -38295,7 +38295,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::set3DModel(\"var1\":$var1)")
             }
         
@@ -38314,7 +38314,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.NavigateArrow
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::is3DModel()")
             }
         
@@ -38334,7 +38334,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.AnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.AnimationSet@$refId::setDuration(\"var1\":$var1)")
             }
         
@@ -38354,7 +38354,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.AnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.AnimationSet@$refId::addAnimation()")
             }
         
@@ -38373,7 +38373,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.AnimationSet
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.AnimationSet@$refId::cleanAnimation()")
             }
         
@@ -38393,7 +38393,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.RotateAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.RotateAnimation@$refId::setDuration(\"var1\":$var1)")
             }
         
@@ -38413,7 +38413,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.TranslateAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.TranslateAnimation@$refId::setDuration(\"var1\":$var1)")
             }
         
@@ -38432,7 +38432,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.Animation.AnimationListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.Animation.AnimationListener@$refId::onAnimationStart()")
             }
         
@@ -38451,7 +38451,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.Animation.AnimationListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.Animation.AnimationListener@$refId::onAnimationEnd()")
             }
         
@@ -38470,7 +38470,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.Animation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.Animation@$refId::setAnimationListener()")
             }
         
@@ -38533,7 +38533,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.Animation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.Animation@$refId::setDuration(\"var1\":$var1)")
             }
         
@@ -38553,7 +38553,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.Animation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.Animation@$refId::setFillMode(\"var1\":$var1)")
             }
         
@@ -38572,7 +38572,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.Animation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.Animation@$refId::getFillMode()")
             }
         
@@ -38592,7 +38592,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.Animation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.Animation@$refId::setRepeatCount(\"var1\":$var1)")
             }
         
@@ -38612,7 +38612,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.Animation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.Animation@$refId::setRepeatMode(\"var1\":$var1)")
             }
         
@@ -38631,7 +38631,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.Animation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.Animation@$refId::getRepeatMode()")
             }
         
@@ -38650,7 +38650,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.Animation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.Animation@$refId::getRepeatCount()")
             }
         
@@ -38670,7 +38670,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.EmergeAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.EmergeAnimation@$refId::setDuration(\"var1\":$var1)")
             }
         
@@ -38690,7 +38690,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.AlphaAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.AlphaAnimation@$refId::setDuration(\"var1\":$var1)")
             }
         
@@ -38710,7 +38710,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.ScaleAnimation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.animation.ScaleAnimation@$refId::setDuration(\"var1\":$var1)")
             }
         
@@ -38728,7 +38728,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.LatLngBounds::builder()")
             }
         
@@ -38755,7 +38755,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.LatLngBounds
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.LatLngBounds@$refId::contains()")
             }
         
@@ -38775,7 +38775,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.LatLngBounds
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.LatLngBounds@$refId::intersects()")
             }
         
@@ -38795,7 +38795,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.LatLngBounds
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.LatLngBounds@$refId::including()")
             }
         
@@ -38821,7 +38821,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleDataPath()")
             }
         
@@ -38841,7 +38841,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleDataPath(\"var1\":$var1)")
             }
         
@@ -38867,7 +38867,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleTexturePath()")
             }
         
@@ -38887,7 +38887,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleTexturePath(\"var1\":$var1)")
             }
         
@@ -38913,7 +38913,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleData()")
             }
         
@@ -38933,7 +38933,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleData(\"var1\":$var1)")
             }
         
@@ -38959,7 +38959,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleTextureData()")
             }
         
@@ -38979,7 +38979,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleTextureData(\"var1\":$var1)")
             }
         
@@ -39005,7 +39005,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleId()")
             }
         
@@ -39025,7 +39025,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleId(\"var1\":$var1)")
             }
         
@@ -39051,7 +39051,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::isEnable()")
             }
         
@@ -39071,7 +39071,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setEnable(\"var1\":$var1)")
             }
         
@@ -39097,7 +39097,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleExtraData()")
             }
         
@@ -39117,7 +39117,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleExtraData(\"var1\":$var1)")
             }
         
@@ -39143,7 +39143,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleExtraPath()")
             }
         
@@ -39163,7 +39163,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CustomMapStyleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleExtraPath(\"var1\":$var1)")
             }
         
@@ -39189,7 +39189,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getZIndex()")
             }
         
@@ -39209,7 +39209,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -39229,7 +39229,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -39248,7 +39248,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::isVisible()")
             }
         
@@ -39268,7 +39268,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setBuildingHeightScale(\"var1\":$var1)")
             }
         
@@ -39294,7 +39294,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getBuildingHeightScale()")
             }
         
@@ -39314,7 +39314,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setBuildingTopColor(\"var1\":$var1)")
             }
         
@@ -39341,7 +39341,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setBuildingSideColor(\"var1\":$var1)")
             }
         
@@ -39367,7 +39367,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getBuildingSideColor()")
             }
         
@@ -39386,7 +39386,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getBuildingTopColor()")
             }
         
@@ -39406,7 +39406,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setBuildingHeight(\"var1\":$var1)")
             }
         
@@ -39432,7 +39432,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getBuildingHeight()")
             }
         
@@ -39451,7 +39451,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getBuildingLatlngs()")
             }
         
@@ -39477,7 +39477,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getPoints()")
             }
         
@@ -39497,7 +39497,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setBuildingLatlngs()")
             }
         
@@ -39523,7 +39523,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CrossOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CrossOverlayOptions@$refId::getAttribute()")
             }
         
@@ -39550,7 +39550,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CrossOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CrossOverlayOptions@$refId::setAttribute()")
             }
         
@@ -39577,7 +39577,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CrossOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CrossOverlayOptions@$refId::setRes()")
             }
         
@@ -39603,7 +39603,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CrossOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CrossOverlayOptions@$refId::getRes()")
             }
         
@@ -39629,7 +39629,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.LatLng
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.LatLng@$refId::clone()")
             }
         
@@ -39655,7 +39655,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions.LineCapType::valueOf(\"var0\":$var0)")
             }
         
@@ -39681,7 +39681,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions.LineCapType
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions.LineCapType@$refId::getTypeValue()")
             }
         
@@ -39700,7 +39700,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::getPosition()")
             }
         
@@ -39726,7 +39726,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::getId()")
             }
         
@@ -39746,7 +39746,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::setPosition()")
             }
         
@@ -39766,7 +39766,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::setTitle(\"var1\":$var1)")
             }
         
@@ -39785,7 +39785,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::getTitle()")
             }
         
@@ -39804,7 +39804,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::getSnippet()")
             }
         
@@ -39824,7 +39824,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::setSnippet(\"var1\":$var1)")
             }
         
@@ -39844,7 +39844,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -39863,7 +39863,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::isVisible()")
             }
         
@@ -39883,7 +39883,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::setRotateAngle(\"var1\":$var1)")
             }
         
@@ -39902,7 +39902,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::getRotateAngle()")
             }
         
@@ -39922,7 +39922,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::setAnimation()")
             }
         
@@ -39942,7 +39942,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::setGeoPoint()")
             }
         
@@ -39961,7 +39961,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::destroy()")
             }
         
@@ -39980,7 +39980,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::remove()")
             }
         
@@ -39999,7 +39999,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::startAnimation()")
             }
         
@@ -40018,7 +40018,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BasePointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::showInfoWindow()")
             }
         
@@ -40037,7 +40037,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Arc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Arc@$refId::remove()")
             }
         
@@ -40056,7 +40056,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Arc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Arc@$refId::getId()")
             }
         
@@ -40076,7 +40076,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Arc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Arc@$refId::setStrokeWidth(\"var1\":$var1)")
             }
         
@@ -40095,7 +40095,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Arc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Arc@$refId::getStrokeWidth()")
             }
         
@@ -40115,7 +40115,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Arc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Arc@$refId::setStrokeColor(\"var1\":$var1)")
             }
         
@@ -40134,7 +40134,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Arc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Arc@$refId::getStrokeColor()")
             }
         
@@ -40154,7 +40154,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Arc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Arc@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -40173,7 +40173,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Arc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Arc@$refId::getZIndex()")
             }
         
@@ -40193,7 +40193,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Arc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Arc@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -40212,7 +40212,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Arc
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Arc@$refId::isVisible()")
             }
         
@@ -40231,7 +40231,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapCameraInfo
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapCameraInfo@$refId::getFov()")
             }
         
@@ -40250,7 +40250,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapCameraInfo
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapCameraInfo@$refId::getAspectRatio()")
             }
         
@@ -40269,7 +40269,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapCameraInfo
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapCameraInfo@$refId::getRotate()")
             }
         
@@ -40288,7 +40288,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapCameraInfo
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapCameraInfo@$refId::getX()")
             }
         
@@ -40307,7 +40307,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapCameraInfo
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapCameraInfo@$refId::getY()")
             }
         
@@ -40326,7 +40326,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapCameraInfo
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapCameraInfo@$refId::getZ()")
             }
         
@@ -40345,7 +40345,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::remove()")
             }
         
@@ -40364,7 +40364,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::getId()")
             }
         
@@ -40384,7 +40384,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::setCenter()")
             }
         
@@ -40403,7 +40403,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::getCenter()")
             }
         
@@ -40430,7 +40430,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::setRadius(\"var1\":$var1)")
             }
         
@@ -40449,7 +40449,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::getRadius()")
             }
         
@@ -40469,7 +40469,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::setStrokeWidth(\"var1\":$var1)")
             }
         
@@ -40488,7 +40488,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::getStrokeWidth()")
             }
         
@@ -40508,7 +40508,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::setStrokeColor(\"var1\":$var1)")
             }
         
@@ -40527,7 +40527,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::getStrokeColor()")
             }
         
@@ -40547,7 +40547,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::setFillColor(\"var1\":$var1)")
             }
         
@@ -40566,7 +40566,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::getFillColor()")
             }
         
@@ -40586,7 +40586,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -40605,7 +40605,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::getZIndex()")
             }
         
@@ -40625,7 +40625,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -40644,7 +40644,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::isVisible()")
             }
         
@@ -40664,7 +40664,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::contains()")
             }
         
@@ -40684,7 +40684,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::setHoleOptions()")
             }
         
@@ -40704,7 +40704,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::setStrokeDottedLineType(\"var1\":$var1)")
             }
         
@@ -40723,7 +40723,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Circle
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::getStrokeDottedLineType()")
             }
         
@@ -40743,7 +40743,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::add()")
             }
         
@@ -40770,7 +40770,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::addAll()")
             }
         
@@ -40797,7 +40797,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::setPoints()")
             }
         
@@ -40817,7 +40817,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::setHoleOptions()")
             }
         
@@ -40837,7 +40837,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::addHoles()")
             }
         
@@ -40864,7 +40864,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::strokeWidth(\"var1\":$var1)")
             }
         
@@ -40891,7 +40891,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::strokeColor(\"var1\":$var1)")
             }
         
@@ -40918,7 +40918,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::fillColor(\"var1\":$var1)")
             }
         
@@ -40945,7 +40945,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::zIndex(\"var1\":$var1)")
             }
         
@@ -40972,7 +40972,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::visible(\"var1\":$var1)")
             }
         
@@ -40998,7 +40998,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::getPoints()")
             }
         
@@ -41024,7 +41024,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeWidth()")
             }
         
@@ -41043,7 +41043,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeColor()")
             }
         
@@ -41062,7 +41062,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::getFillColor()")
             }
         
@@ -41081,7 +41081,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::getZIndex()")
             }
         
@@ -41100,7 +41100,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::isVisible()")
             }
         
@@ -41119,7 +41119,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointItem
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointItem@$refId::getLatLng()")
             }
         
@@ -41146,7 +41146,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointItem
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointItem@$refId::setLatLng()")
             }
         
@@ -41165,7 +41165,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointItem
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointItem@$refId::getCustomerId()")
             }
         
@@ -41185,7 +41185,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointItem
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointItem@$refId::setCustomerId(\"var1\":$var1)")
             }
         
@@ -41204,7 +41204,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointItem
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointItem@$refId::getSnippet()")
             }
         
@@ -41224,7 +41224,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointItem
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointItem@$refId::setSnippet(\"var1\":$var1)")
             }
         
@@ -41243,7 +41243,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointItem
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointItem@$refId::getTitle()")
             }
         
@@ -41263,7 +41263,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointItem
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointItem@$refId::setTitle(\"var1\":$var1)")
             }
         
@@ -41282,7 +41282,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointItem
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointItem@$refId::getIPoint()")
             }
         
@@ -41309,7 +41309,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointItem
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointItem@$refId::setIPoint()")
             }
         
@@ -41333,7 +41333,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.ArcOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::point()")
             }
         
@@ -41360,7 +41360,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.ArcOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::strokeWidth(\"var1\":$var1)")
             }
         
@@ -41387,7 +41387,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.ArcOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::strokeColor(\"var1\":$var1)")
             }
         
@@ -41414,7 +41414,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.ArcOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::zIndex(\"var1\":$var1)")
             }
         
@@ -41441,7 +41441,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.ArcOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::visible(\"var1\":$var1)")
             }
         
@@ -41467,7 +41467,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.ArcOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::getStrokeWidth()")
             }
         
@@ -41486,7 +41486,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.ArcOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::getStrokeColor()")
             }
         
@@ -41505,7 +41505,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.ArcOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::getZIndex()")
             }
         
@@ -41524,7 +41524,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.ArcOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::isVisible()")
             }
         
@@ -41543,7 +41543,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.ArcOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::getStart()")
             }
         
@@ -41569,7 +41569,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.ArcOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::getPassed()")
             }
         
@@ -41595,7 +41595,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.ArcOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::getEnd()")
             }
         
@@ -41622,7 +41622,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::center()")
             }
         
@@ -41649,7 +41649,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::radius(\"var1\":$var1)")
             }
         
@@ -41676,7 +41676,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::strokeWidth(\"var1\":$var1)")
             }
         
@@ -41703,7 +41703,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::strokeColor(\"var1\":$var1)")
             }
         
@@ -41730,7 +41730,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::fillColor(\"var1\":$var1)")
             }
         
@@ -41757,7 +41757,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::zIndex(\"var1\":$var1)")
             }
         
@@ -41784,7 +41784,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::visible(\"var1\":$var1)")
             }
         
@@ -41810,7 +41810,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::getCenter()")
             }
         
@@ -41836,7 +41836,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::getRadius()")
             }
         
@@ -41855,7 +41855,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::getStrokeWidth()")
             }
         
@@ -41874,7 +41874,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::getStrokeColor()")
             }
         
@@ -41893,7 +41893,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::getFillColor()")
             }
         
@@ -41912,7 +41912,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::getZIndex()")
             }
         
@@ -41931,7 +41931,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::isVisible()")
             }
         
@@ -41951,7 +41951,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::addHoles()")
             }
         
@@ -41978,7 +41978,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::setStrokeDottedLineType(\"var1\":$var1)")
             }
         
@@ -42004,7 +42004,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::getStrokeDottedLineType()")
             }
         
@@ -42026,7 +42026,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapGestureListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapGestureListener@$refId::onDoubleTap(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -42048,7 +42048,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapGestureListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapGestureListener@$refId::onSingleTap(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -42070,7 +42070,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapGestureListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapGestureListener@$refId::onFling(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -42092,7 +42092,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapGestureListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapGestureListener@$refId::onScroll(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -42114,7 +42114,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapGestureListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapGestureListener@$refId::onLongPress(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -42136,7 +42136,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapGestureListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapGestureListener@$refId::onDown(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -42158,7 +42158,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapGestureListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapGestureListener@$refId::onUp(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -42177,7 +42177,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.AMapGestureListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.AMapGestureListener@$refId::onMapStable()")
             }
         
@@ -42196,7 +42196,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.PolylineOptions.LineJoinType
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions.LineJoinType@$refId::getTypeValue()")
             }
         
@@ -42215,7 +42215,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions.LineJoinType::valueOf(\"var0\":$var0)")
             }
         
@@ -42241,7 +42241,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.HeatmapTileProvider.Builder
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::build()")
             }
         
@@ -42268,7 +42268,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointOverlay@$refId::setItems()")
             }
         
@@ -42290,7 +42290,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointOverlay@$refId::setAnchor(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -42310,7 +42310,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointOverlay@$refId::setEnable(\"var1\":$var1)")
             }
         
@@ -42329,7 +42329,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointOverlay@$refId::remove()")
             }
         
@@ -42348,7 +42348,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.MultiPointOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.MultiPointOverlay@$refId::destroy()")
             }
         
@@ -42368,7 +42368,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setPeriod(\"var1\":$var1)")
             }
         
@@ -42387,7 +42387,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getPeriod()")
             }
         
@@ -42407,7 +42407,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setIcons()")
             }
         
@@ -42426,7 +42426,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getIcons()")
             }
         
@@ -42452,7 +42452,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::remove()")
             }
         
@@ -42471,7 +42471,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::destroy()")
             }
         
@@ -42490,7 +42490,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getId()")
             }
         
@@ -42510,7 +42510,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setPerspective(\"var1\":$var1)")
             }
         
@@ -42529,7 +42529,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::isPerspective()")
             }
         
@@ -42549,7 +42549,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setPosition()")
             }
         
@@ -42568,7 +42568,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getPosition()")
             }
         
@@ -42595,7 +42595,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setTitle(\"var1\":$var1)")
             }
         
@@ -42614,7 +42614,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getTitle()")
             }
         
@@ -42634,7 +42634,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setSnippet(\"var1\":$var1)")
             }
         
@@ -42653,7 +42653,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getSnippet()")
             }
         
@@ -42673,7 +42673,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setIcon()")
             }
         
@@ -42695,7 +42695,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setAnchor(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -42715,7 +42715,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setDraggable(\"var1\":$var1)")
             }
         
@@ -42734,7 +42734,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::isDraggable()")
             }
         
@@ -42753,7 +42753,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::showInfoWindow()")
             }
         
@@ -42772,7 +42772,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::hideInfoWindow()")
             }
         
@@ -42791,7 +42791,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::isInfoWindowShown()")
             }
         
@@ -42811,7 +42811,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -42830,7 +42830,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::isVisible()")
             }
         
@@ -42850,7 +42850,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setRotateAngle(\"var1\":$var1)")
             }
         
@@ -42869,7 +42869,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getRotateAngle()")
             }
         
@@ -42888,7 +42888,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setToTop()")
             }
         
@@ -42908,7 +42908,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setGeoPoint()")
             }
         
@@ -42927,7 +42927,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getGeoPoint()")
             }
         
@@ -42954,7 +42954,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setFlat(\"var1\":$var1)")
             }
         
@@ -42973,7 +42973,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::isFlat()")
             }
         
@@ -42995,7 +42995,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setPositionByPixels(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -43015,7 +43015,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -43034,7 +43034,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getZIndex()")
             }
         
@@ -43054,7 +43054,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setAnimation()")
             }
         
@@ -43073,7 +43073,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::startAnimation()")
             }
         
@@ -43092,7 +43092,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setAnimationListener()")
             }
         
@@ -43154,7 +43154,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getAlpha()")
             }
         
@@ -43174,7 +43174,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setAlpha(\"var1\":$var1)")
             }
         
@@ -43193,7 +43193,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getDisplayLevel()")
             }
         
@@ -43212,7 +43212,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getOptions()")
             }
         
@@ -43238,7 +43238,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::isClickable()")
             }
         
@@ -43257,7 +43257,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::isInfoWindowAutoOverturn()")
             }
         
@@ -43276,7 +43276,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::isInfoWindowEnable()")
             }
         
@@ -43296,7 +43296,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setInfoWindowEnable(\"var1\":$var1)")
             }
         
@@ -43316,7 +43316,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setMarkerOptions()")
             }
         
@@ -43336,7 +43336,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setAutoOverturnInfoWindow(\"var1\":$var1)")
             }
         
@@ -43356,7 +43356,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setClickable(\"var1\":$var1)")
             }
         
@@ -43376,7 +43376,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setDisplayLevel(\"var1\":$var1)")
             }
         
@@ -43396,7 +43396,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setFixingPointEnable(\"var1\":$var1)")
             }
         
@@ -43415,7 +43415,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::isRemoved()")
             }
         
@@ -43435,7 +43435,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setPositionNotUpdate()")
             }
         
@@ -43455,7 +43455,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setRotateAngleNotUpdate(\"var1\":$var1)")
             }
         
@@ -43475,7 +43475,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setBelowMaskLayer(\"var1\":$var1)")
             }
         
@@ -43494,7 +43494,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getAnchorU()")
             }
         
@@ -43513,7 +43513,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Marker
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::getAnchorV()")
             }
         
@@ -43532,7 +43532,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::tileProvider()")
             }
         
@@ -43625,7 +43625,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::zIndex(\"var1\":$var1)")
             }
         
@@ -43652,7 +43652,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::visible(\"var1\":$var1)")
             }
         
@@ -43679,7 +43679,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::memCacheSize(\"var1\":$var1)")
             }
         
@@ -43706,7 +43706,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::diskCacheSize(\"var1\":$var1)")
             }
         
@@ -43733,7 +43733,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::diskCacheDir(\"var1\":$var1)")
             }
         
@@ -43760,7 +43760,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::memoryCacheEnabled(\"var1\":$var1)")
             }
         
@@ -43787,7 +43787,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::diskCacheEnabled(\"var1\":$var1)")
             }
         
@@ -43813,7 +43813,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::getZIndex()")
             }
         
@@ -43832,7 +43832,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::isVisible()")
             }
         
@@ -43851,7 +43851,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::getMemCacheSize()")
             }
         
@@ -43870,7 +43870,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::getDiskCacheSize()")
             }
         
@@ -43889,7 +43889,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::getDiskCacheDir()")
             }
         
@@ -43908,7 +43908,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::getMemoryCacheEnabled()")
             }
         
@@ -43927,7 +43927,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::getDiskCacheEnabled()")
             }
         
@@ -43946,7 +43946,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RoutePara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RoutePara@$refId::getDrivingRouteStyle()")
             }
         
@@ -43966,7 +43966,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RoutePara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RoutePara@$refId::setDrivingRouteStyle(\"var1\":$var1)")
             }
         
@@ -43985,7 +43985,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RoutePara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RoutePara@$refId::getTransitRouteStyle()")
             }
         
@@ -44005,7 +44005,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RoutePara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RoutePara@$refId::setTransitRouteStyle(\"var1\":$var1)")
             }
         
@@ -44024,7 +44024,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RoutePara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RoutePara@$refId::getStartPoint()")
             }
         
@@ -44051,7 +44051,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RoutePara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RoutePara@$refId::setStartPoint()")
             }
         
@@ -44070,7 +44070,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RoutePara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RoutePara@$refId::getEndPoint()")
             }
         
@@ -44097,7 +44097,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RoutePara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RoutePara@$refId::setEndPoint()")
             }
         
@@ -44116,7 +44116,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RoutePara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RoutePara@$refId::getEndName()")
             }
         
@@ -44136,7 +44136,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RoutePara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RoutePara@$refId::setEndName(\"var1\":$var1)")
             }
         
@@ -44155,7 +44155,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RoutePara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RoutePara@$refId::getStartName()")
             }
         
@@ -44175,7 +44175,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.RoutePara
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.RoutePara@$refId::setStartName(\"var1\":$var1)")
             }
         
@@ -44195,7 +44195,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CrossOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CrossOverlay@$refId::setData(\"var1\":$var1)")
             }
         
@@ -44215,7 +44215,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CrossOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CrossOverlay@$refId::setAttribute()")
             }
         
@@ -44235,7 +44235,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CrossOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CrossOverlay@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -44254,7 +44254,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CrossOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CrossOverlay@$refId::remove()")
             }
         
@@ -44274,7 +44274,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CrossOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CrossOverlay@$refId::setImageMode(\"var1\":$var1)")
             }
         
@@ -44293,7 +44293,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.CrossOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.CrossOverlay@$refId::setGenerateCrossImageListener()")
             }
         
@@ -44338,7 +44338,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverLifeModule
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::createNativeInstace()")
             }
         
@@ -44358,7 +44358,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverLifeModule
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::setVelocityOverLife()")
             }
         
@@ -44378,7 +44378,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverLifeModule
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::setRotateOverLife()")
             }
         
@@ -44398,7 +44398,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverLifeModule
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::setSizeOverLife()")
             }
         
@@ -44418,7 +44418,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverLifeModule
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::setColorGenerate()")
             }
         
@@ -44437,7 +44437,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ConstantRotationOverLife
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ConstantRotationOverLife@$refId::createNativeInstace()")
             }
         
@@ -44456,7 +44456,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ConstantRotationOverLife
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ConstantRotationOverLife@$refId::getRotate()")
             }
         
@@ -44475,7 +44475,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.SinglePointParticleShape
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.SinglePointParticleShape@$refId::createNativeInstace()")
             }
         
@@ -44494,7 +44494,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.SinglePointParticleShape
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.SinglePointParticleShape@$refId::getPoint()")
             }
         
@@ -44513,7 +44513,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::createNativeInstace()")
             }
         
@@ -44532,7 +44532,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::getX()")
             }
         
@@ -44551,7 +44551,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::getY()")
             }
         
@@ -44570,7 +44570,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::getZ()")
             }
         
@@ -44589,7 +44589,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.CurveSizeOverLife
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::createNativeInstace()")
             }
         
@@ -44609,7 +44609,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.CurveSizeOverLife
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeX(\"var1\":$var1)")
             }
         
@@ -44629,7 +44629,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.CurveSizeOverLife
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeY(\"var1\":$var1)")
             }
         
@@ -44649,7 +44649,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.CurveSizeOverLife
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeZ(\"var1\":$var1)")
             }
         
@@ -44668,7 +44668,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleEmissionModule
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleEmissionModule@$refId::createNativeInstace()")
             }
         
@@ -44688,7 +44688,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.SizeOverLife
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.SizeOverLife@$refId::getSizeX(\"var1\":$var1)")
             }
         
@@ -44708,7 +44708,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.SizeOverLife
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.SizeOverLife@$refId::getSizeY(\"var1\":$var1)")
             }
         
@@ -44728,7 +44728,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.SizeOverLife
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.SizeOverLife@$refId::getSizeZ(\"var1\":$var1)")
             }
         
@@ -44747,7 +44747,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.RectParticleShape
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.RectParticleShape@$refId::createNativeInstace()")
             }
         
@@ -44766,7 +44766,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.RectParticleShape
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.RectParticleShape@$refId::getPoint()")
             }
         
@@ -44785,7 +44785,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ColorGenerate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ColorGenerate@$refId::getColor()")
             }
         
@@ -44804,7 +44804,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.VelocityGenerate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getX()")
             }
         
@@ -44823,7 +44823,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.VelocityGenerate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getY()")
             }
         
@@ -44842,7 +44842,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.VelocityGenerate
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getZ()")
             }
         
@@ -44861,7 +44861,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.RotationOverLife
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.RotationOverLife@$refId::getRotate()")
             }
         
@@ -44880,7 +44880,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants@$refId::createNativeInstace()")
             }
         
@@ -44899,7 +44899,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants@$refId::getColor()")
             }
         
@@ -44918,7 +44918,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleShapeModule
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleShapeModule@$refId::isUseRatio()")
             }
         
@@ -44937,7 +44937,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleShapeModule
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleShapeModule@$refId::getPoint()")
             }
         
@@ -44956,7 +44956,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory::defaultOptions(\"var0\":$var0)")
             }
         
@@ -44983,7 +44983,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::icon()")
             }
         
@@ -45009,7 +45009,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getIcon()")
             }
         
@@ -45035,7 +45035,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getMaxParticles()")
             }
         
@@ -45055,7 +45055,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setMaxParticles(\"var1\":$var1)")
             }
         
@@ -45081,7 +45081,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::isLoop()")
             }
         
@@ -45101,7 +45101,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setLoop(\"var1\":$var1)")
             }
         
@@ -45127,7 +45127,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getDuration()")
             }
         
@@ -45147,7 +45147,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setDuration(\"var1\":$var1)")
             }
         
@@ -45173,7 +45173,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleLifeTime()")
             }
         
@@ -45193,7 +45193,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleLifeTime(\"var1\":$var1)")
             }
         
@@ -45219,7 +45219,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleEmissionModule()")
             }
         
@@ -45246,7 +45246,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleEmissionModule()")
             }
         
@@ -45273,7 +45273,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleShapeModule()")
             }
         
@@ -45300,7 +45300,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleStartSpeed()")
             }
         
@@ -45327,7 +45327,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleStartColor()")
             }
         
@@ -45354,7 +45354,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleOverLifeModule()")
             }
         
@@ -45380,7 +45380,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleOverLifeModule()")
             }
         
@@ -45409,7 +45409,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setStartParticleSize(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -45435,7 +45435,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getStartParticleW()")
             }
         
@@ -45454,7 +45454,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getstartParticleH()")
             }
         
@@ -45474,7 +45474,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::zIndex(\"var1\":$var1)")
             }
         
@@ -45500,7 +45500,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getZIndex()")
             }
         
@@ -45520,7 +45520,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -45546,7 +45546,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::isVisibile()")
             }
         
@@ -45566,7 +45566,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -45585,7 +45585,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlay@$refId::destroy()")
             }
         
@@ -45607,7 +45607,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setStartParticleSize(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -45627,7 +45627,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setMaxParticles(\"var1\":$var1)")
             }
         
@@ -45647,7 +45647,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setDuration(\"var1\":$var1)")
             }
         
@@ -45667,7 +45667,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleLifeTime(\"var1\":$var1)")
             }
         
@@ -45687,7 +45687,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleStartSpeed()")
             }
         
@@ -45707,7 +45707,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setLoop(\"var1\":$var1)")
             }
         
@@ -45727,7 +45727,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleShapeModule()")
             }
         
@@ -45747,7 +45747,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleEmission()")
             }
         
@@ -45766,7 +45766,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlay@$refId::getCurrentParticleNum()")
             }
         
@@ -45786,7 +45786,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleOverLifeModule()")
             }
         
@@ -45806,7 +45806,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setStartColor()")
             }
         
@@ -45826,7 +45826,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::position()")
             }
         
@@ -45853,7 +45853,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::text(\"var1\":$var1)")
             }
         
@@ -45880,7 +45880,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::visible(\"var1\":$var1)")
             }
         
@@ -45907,7 +45907,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::zIndex(\"var1\":$var1)")
             }
         
@@ -45934,7 +45934,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::rotate(\"var1\":$var1)")
             }
         
@@ -45963,7 +45963,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::align(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -45990,7 +45990,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::backgroundColor(\"var1\":$var1)")
             }
         
@@ -46017,7 +46017,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::fontColor(\"var1\":$var1)")
             }
         
@@ -46044,7 +46044,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::fontSize(\"var1\":$var1)")
             }
         
@@ -46070,7 +46070,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::getPosition()")
             }
         
@@ -46096,7 +46096,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::getText()")
             }
         
@@ -46115,7 +46115,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::getRotate()")
             }
         
@@ -46134,7 +46134,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::getAlignX()")
             }
         
@@ -46153,7 +46153,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::getAlignY()")
             }
         
@@ -46172,7 +46172,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::getBackgroundColor()")
             }
         
@@ -46191,7 +46191,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::getFontColor()")
             }
         
@@ -46210,7 +46210,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::getFontSize()")
             }
         
@@ -46229,7 +46229,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::getZIndex()")
             }
         
@@ -46248,7 +46248,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TextOptions
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::isVisible()")
             }
         
@@ -46267,7 +46267,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlay@$refId::remove()")
             }
         
@@ -46286,7 +46286,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlay@$refId::clearTileCache()")
             }
         
@@ -46305,7 +46305,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlay@$refId::getId()")
             }
         
@@ -46325,7 +46325,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlay@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -46344,7 +46344,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlay@$refId::getZIndex()")
             }
         
@@ -46364,7 +46364,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlay@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -46383,7 +46383,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.TileOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.TileOverlay@$refId::isVisible()")
             }
         
@@ -46402,7 +46402,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::remove()")
             }
         
@@ -46421,7 +46421,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::getId()")
             }
         
@@ -46441,7 +46441,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setPoints()")
             }
         
@@ -46460,7 +46460,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::getPoints()")
             }
         
@@ -46487,7 +46487,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setGeodesic(\"var1\":$var1)")
             }
         
@@ -46506,7 +46506,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::isGeodesic()")
             }
         
@@ -46526,7 +46526,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setDottedLine(\"var1\":$var1)")
             }
         
@@ -46545,7 +46545,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::isDottedLine()")
             }
         
@@ -46565,7 +46565,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setWidth(\"var1\":$var1)")
             }
         
@@ -46584,7 +46584,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::getWidth()")
             }
         
@@ -46604,7 +46604,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setColor(\"var1\":$var1)")
             }
         
@@ -46623,7 +46623,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::getColor()")
             }
         
@@ -46643,7 +46643,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -46662,7 +46662,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::getZIndex()")
             }
         
@@ -46682,7 +46682,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -46701,7 +46701,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::isVisible()")
             }
         
@@ -46721,7 +46721,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::getNearestLatLng()")
             }
         
@@ -46748,7 +46748,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setTransparency(\"var1\":$var1)")
             }
         
@@ -46768,7 +46768,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setAboveMaskLayer(\"var1\":$var1)")
             }
         
@@ -46788,7 +46788,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setCustomTexture()")
             }
         
@@ -46808,7 +46808,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setOptions()")
             }
         
@@ -46827,7 +46827,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::getOptions()")
             }
         
@@ -46854,7 +46854,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setCustemTextureIndex(\"var1\":$var1)")
             }
         
@@ -46874,7 +46874,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setShownRatio(\"var1\":$var1)")
             }
         
@@ -46896,7 +46896,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setShownRange(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -46915,7 +46915,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::getShownRatio()")
             }
         
@@ -46935,7 +46935,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Polyline
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setCustomTextureList()")
             }
         
@@ -46955,7 +46955,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlay@$refId::setDefaultOptions()")
             }
         
@@ -46974,7 +46974,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlay@$refId::getDefaultOptions()")
             }
         
@@ -47001,7 +47001,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlay@$refId::setCustomOptions()")
             }
         
@@ -47020,7 +47020,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlay@$refId::getCustomOptions()")
             }
         
@@ -47046,7 +47046,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlay@$refId::destroy()")
             }
         
@@ -47065,7 +47065,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlay@$refId::getId()")
             }
         
@@ -47085,7 +47085,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlay@$refId::setZIndex(\"var1\":$var1)")
             }
         
@@ -47104,7 +47104,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlay@$refId::getZIndex()")
             }
         
@@ -47124,7 +47124,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlay@$refId::setVisible(\"var1\":$var1)")
             }
         
@@ -47143,7 +47143,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.BuildingOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlay@$refId::isVisible()")
             }
         
@@ -47162,7 +47162,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks@$refId::onNotifySwipe()")
             }
         
@@ -47181,7 +47181,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::getMap()")
             }
         
@@ -47208,7 +47208,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onCreate()")
             }
         
@@ -47227,7 +47227,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onResume()")
             }
         
@@ -47246,7 +47246,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onPause()")
             }
         
@@ -47265,7 +47265,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onDestroy()")
             }
         
@@ -47284,7 +47284,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onLowMemory()")
             }
         
@@ -47304,7 +47304,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onSaveInstanceState()")
             }
         
@@ -47324,7 +47324,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::setVisibility(\"var1\":$var1)")
             }
         
@@ -47345,7 +47345,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapUtils::calculateLineDistance()")
             }
         
@@ -47366,7 +47366,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapUtils::calculateArea()")
             }
         
@@ -47385,7 +47385,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapUtils::getLatestAMapApp()")
             }
         
@@ -47406,7 +47406,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapUtils::openAMapNavi()")
             }
         
@@ -47427,7 +47427,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapUtils::openAMapPoiNearbySearch()")
             }
         
@@ -47448,7 +47448,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapUtils::openAMapDrivingRoute()")
             }
         
@@ -47469,7 +47469,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapUtils::openAMapTransitRoute()")
             }
         
@@ -47490,7 +47490,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMapUtils::openAMapWalkingRoute()")
             }
         
@@ -47510,7 +47510,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnPOIClickListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnPOIClickListener@$refId::onPOIClick()")
             }
         
@@ -47530,7 +47530,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnInfoWindowClickListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnInfoWindowClickListener@$refId::onInfoWindowClick()")
             }
         
@@ -47550,7 +47550,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnMapClickListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnMapClickListener@$refId::onMapClick()")
             }
         
@@ -47570,7 +47570,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowAnimationManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowAnimation()")
             }
         
@@ -47633,7 +47633,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowAnimationManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowAppearAnimation()")
             }
         
@@ -47653,7 +47653,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowAnimationManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackColor(\"var1\":$var1)")
             }
         
@@ -47673,7 +47673,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowAnimationManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackEnable(\"var1\":$var1)")
             }
         
@@ -47695,7 +47695,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowAnimationManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackScale(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -47715,7 +47715,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowAnimationManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowDisappearAnimation()")
             }
         
@@ -47735,7 +47735,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowAnimationManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowMovingAnimation()")
             }
         
@@ -47754,7 +47754,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.InfoWindowAnimationManager
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.InfoWindowAnimationManager@$refId::startAnimation()")
             }
         
@@ -47774,7 +47774,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnPolylineClickListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnPolylineClickListener@$refId::onPolylineClick()")
             }
         
@@ -47793,7 +47793,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::getMap()")
             }
         
@@ -47820,7 +47820,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onCreate()")
             }
         
@@ -47839,7 +47839,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onResume()")
             }
         
@@ -47858,7 +47858,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onPause()")
             }
         
@@ -47877,7 +47877,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onDestroy()")
             }
         
@@ -47896,7 +47896,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onLowMemory()")
             }
         
@@ -47916,7 +47916,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onSaveInstanceState()")
             }
         
@@ -47936,7 +47936,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::setVisibility(\"var1\":$var1)")
             }
         
@@ -47955,7 +47955,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener()")
             }
         
@@ -48017,7 +48017,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onDismiss()")
             }
         
@@ -48037,7 +48037,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onEnterAmbient()")
             }
         
@@ -48056,7 +48056,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onExitAmbient()")
             }
         
@@ -48076,7 +48076,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap.OnMapLongClickListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap.OnMapLongClickListener@$refId::onMapLongClick()")
             }
         
@@ -48095,7 +48095,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getCameraPosition()")
             }
         
@@ -48121,7 +48121,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMaxZoomLevel()")
             }
         
@@ -48140,7 +48140,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMinZoomLevel()")
             }
         
@@ -48160,7 +48160,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::moveCamera()")
             }
         
@@ -48180,7 +48180,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::animateCamera()")
             }
         
@@ -48199,7 +48199,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::stopAnimation()")
             }
         
@@ -48219,7 +48219,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addNavigateArrow()")
             }
         
@@ -48246,7 +48246,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addPolyline()")
             }
         
@@ -48272,7 +48272,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addBuildingOverlay()")
             }
         
@@ -48299,7 +48299,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addCircle()")
             }
         
@@ -48326,7 +48326,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addArc()")
             }
         
@@ -48353,7 +48353,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addPolygon()")
             }
         
@@ -48380,7 +48380,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addGroundOverlay()")
             }
         
@@ -48407,7 +48407,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addMarker()")
             }
         
@@ -48434,7 +48434,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addGL3DModel()")
             }
         
@@ -48461,7 +48461,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addText()")
             }
         
@@ -48490,7 +48490,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addMarkers(\"var2\":$var2)")
             }
         
@@ -48516,7 +48516,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMapScreenMarkers()")
             }
         
@@ -48543,7 +48543,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addTileOverlay()")
             }
         
@@ -48570,7 +48570,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addMultiPointOverlay()")
             }
         
@@ -48597,7 +48597,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addParticleOverlay()")
             }
         
@@ -48623,7 +48623,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::clear()")
             }
         
@@ -48642,7 +48642,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMapType()")
             }
         
@@ -48662,7 +48662,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMapType(\"var1\":$var1)")
             }
         
@@ -48681,7 +48681,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::isTrafficEnabled()")
             }
         
@@ -48701,7 +48701,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setTrafficEnabled(\"var1\":$var1)")
             }
         
@@ -48721,7 +48721,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::showMapText(\"var1\":$var1)")
             }
         
@@ -48741,7 +48741,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::showIndoorMap(\"var1\":$var1)")
             }
         
@@ -48761,7 +48761,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::showBuildings(\"var1\":$var1)")
             }
         
@@ -48781,7 +48781,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMyTrafficStyle()")
             }
         
@@ -48800,7 +48800,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMyTrafficStyle()")
             }
         
@@ -48826,7 +48826,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::isMyLocationEnabled()")
             }
         
@@ -48846,7 +48846,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMyLocationEnabled(\"var1\":$var1)")
             }
         
@@ -48865,7 +48865,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMyLocation()")
             }
         
@@ -48891,7 +48891,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setLocationSource()")
             }
         
@@ -48954,7 +48954,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMyLocationStyle()")
             }
         
@@ -48973,7 +48973,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMyLocationStyle()")
             }
         
@@ -49000,7 +49000,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMyLocationType(\"var1\":$var1)")
             }
         
@@ -49020,7 +49020,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMyLocationRotateAngle(\"var1\":$var1)")
             }
         
@@ -49039,7 +49039,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getUiSettings()")
             }
         
@@ -49065,7 +49065,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getProjection()")
             }
         
@@ -49091,7 +49091,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnCameraChangeListener()")
             }
         
@@ -49153,7 +49153,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMapClickListener()")
             }
         
@@ -49196,7 +49196,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMapTouchListener()")
             }
         
@@ -49239,7 +49239,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnPOIClickListener()")
             }
         
@@ -49282,7 +49282,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMyLocationChangeListener()")
             }
         
@@ -49325,7 +49325,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMapLongClickListener()")
             }
         
@@ -49368,7 +49368,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMarkerClickListener()")
             }
         
@@ -49411,7 +49411,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnPolylineClickListener()")
             }
         
@@ -49454,7 +49454,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMarkerDragListener()")
             }
         
@@ -49535,7 +49535,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnInfoWindowClickListener()")
             }
         
@@ -49579,7 +49579,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setInfoWindowAdapter()")
             }
         
@@ -49598,7 +49598,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setCommonInfoWindowAdapter()")
             }
         
@@ -49641,7 +49641,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMapLoadedListener()")
             }
         
@@ -49684,7 +49684,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnIndoorBuildingActiveListener()")
             }
         
@@ -49727,7 +49727,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMultiPointClickListener()")
             }
         
@@ -49770,7 +49770,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMapPrintScreen()")
             }
         
@@ -49813,7 +49813,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMapScreenShot()")
             }
         
@@ -49877,7 +49877,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getScalePerPixel()")
             }
         
@@ -49896,7 +49896,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::runOnDrawFrame()")
             }
         
@@ -49915,7 +49915,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::removecache()")
             }
         
@@ -49935,7 +49935,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setCustomRenderer()")
             }
         
@@ -49957,7 +49957,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setPointToCenter(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -49977,7 +49977,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMapTextZIndex(\"var1\":$var1)")
             }
         
@@ -49997,7 +49997,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setLoadOfflineData(\"var1\":$var1)")
             }
         
@@ -50016,7 +50016,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMapTextZIndex()")
             }
         
@@ -50035,7 +50035,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::reloadMap()")
             }
         
@@ -50055,7 +50055,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setRenderFps(\"var1\":$var1)")
             }
         
@@ -50075,7 +50075,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setIndoorBuildingInfo()")
             }
         
@@ -50094,7 +50094,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setAMapGestureListener()")
             }
         
@@ -50287,7 +50287,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getZoomToSpanLevel()")
             }
         
@@ -50306,7 +50306,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getInfoWindowAnimationManager()")
             }
         
@@ -50343,7 +50343,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMaskLayerParams(\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6)")
             }
         
@@ -50363,7 +50363,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMaxZoomLevel(\"var1\":$var1)")
             }
         
@@ -50383,7 +50383,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMinZoomLevel(\"var1\":$var1)")
             }
         
@@ -50402,7 +50402,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::resetMinMaxZoomPreference()")
             }
         
@@ -50422,7 +50422,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMapStatusLimits()")
             }
         
@@ -50442,7 +50442,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addCrossOverlay()")
             }
         
@@ -50468,7 +50468,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addRouteOverlay()")
             }
         
@@ -50494,7 +50494,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getViewMatrix()")
             }
         
@@ -50513,7 +50513,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getProjectionMatrix()")
             }
         
@@ -50533,7 +50533,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMapCustomEnable(\"var1\":$var1)")
             }
         
@@ -50553,7 +50553,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setCustomMapStylePath(\"var1\":$var1)")
             }
         
@@ -50573,7 +50573,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setCustomMapStyle()")
             }
         
@@ -50593,7 +50593,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setCustomMapStyleID(\"var1\":$var1)")
             }
         
@@ -50613,7 +50613,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setCustomTextureResourcePath(\"var1\":$var1)")
             }
         
@@ -50633,7 +50633,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setRenderMode(\"var1\":$var1)")
             }
         
@@ -50653,7 +50653,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getP20MapCenter()")
             }
         
@@ -50672,7 +50672,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMapContentApprovalNumber()")
             }
         
@@ -50691,7 +50691,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getSatelliteImageApprovalNumber()")
             }
         
@@ -50711,7 +50711,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMapLanguage(\"var1\":$var1)")
             }
         
@@ -50731,7 +50731,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.AMap
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setRoadArrowEnable(\"var1\":$var1)")
             }
         
@@ -50751,7 +50751,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.interfaces.IGlOverlayLayer
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::removeOverlay(\"var1\":$var1)")
             }
         
@@ -50771,7 +50771,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.interfaces.IGlOverlayLayer
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::getCurrentParticleNum(\"var1\":$var1)")
             }
         
@@ -50793,7 +50793,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.interfaces.IGlOverlayLayer
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::getNearestLatLng()")
             }
         
@@ -50822,7 +50822,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.interfaces.IGlOverlayLayer
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::IsPolygonContainsPoint()")
             }
         
@@ -50842,7 +50842,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.interfaces.IGlOverlayLayer
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::processPolygonHoleOption()")
             }
         
@@ -50864,7 +50864,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.interfaces.IGlOverlayLayer
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::IsCircleContainPoint()")
             }
         
@@ -50884,7 +50884,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.interfaces.IGlOverlayLayer
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::processCircleHoleOption()")
             }
         
@@ -50903,7 +50903,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::getMap()")
             }
         
@@ -50930,7 +50930,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onCreate()")
             }
         
@@ -50949,7 +50949,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onResume()")
             }
         
@@ -50968,7 +50968,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onPause()")
             }
         
@@ -50987,7 +50987,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onDestroy()")
             }
         
@@ -51006,7 +51006,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onLowMemory()")
             }
         
@@ -51026,7 +51026,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onSaveInstanceState()")
             }
         
@@ -51046,7 +51046,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::setVisibility(\"var1\":$var1)")
             }
         
@@ -51070,7 +51070,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.LBSTraceBase
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.LBSTraceBase@$refId::queryProcessedTrace(\"var1\":$var1, \"var3\":$var3)")
             }
         
@@ -51164,7 +51164,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.LBSTraceBase
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.LBSTraceBase@$refId::setLocationInterval(\"var1\":$var1)")
             }
         
@@ -51184,7 +51184,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.LBSTraceBase
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.LBSTraceBase@$refId::setTraceStatusInterval(\"var1\":$var1)")
             }
         
@@ -51203,7 +51203,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.LBSTraceBase
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.LBSTraceBase@$refId::startTrace()")
             }
         
@@ -51250,7 +51250,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.LBSTraceBase
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.LBSTraceBase@$refId::stopTrace()")
             }
         
@@ -51269,7 +51269,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.LBSTraceBase
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.LBSTraceBase@$refId::destroy()")
             }
         
@@ -51293,7 +51293,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceStatusListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceStatusListener@$refId::onTraceStatus(\"var3\":$var3)")
             }
         
@@ -51315,7 +51315,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceListener@$refId::onRequestFailed(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -51339,7 +51339,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceListener@$refId::onTraceProcessing(\"var1\":$var1, \"var2\":$var2)")
             }
         
@@ -51365,7 +51365,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceListener
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceListener@$refId::onFinished(\"var1\":$var1, \"var3\":$var3, \"var4\":$var4)")
             }
         
@@ -51384,7 +51384,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceLocation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceLocation@$refId::getLatitude()")
             }
         
@@ -51404,7 +51404,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceLocation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceLocation@$refId::setLatitude(\"var1\":$var1)")
             }
         
@@ -51423,7 +51423,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceLocation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceLocation@$refId::getLongitude()")
             }
         
@@ -51443,7 +51443,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceLocation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceLocation@$refId::setLongitude(\"var1\":$var1)")
             }
         
@@ -51462,7 +51462,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceLocation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceLocation@$refId::getSpeed()")
             }
         
@@ -51482,7 +51482,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceLocation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceLocation@$refId::setSpeed(\"var1\":$var1)")
             }
         
@@ -51501,7 +51501,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceLocation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceLocation@$refId::getBearing()")
             }
         
@@ -51521,7 +51521,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceLocation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceLocation@$refId::setBearing(\"var1\":$var1)")
             }
         
@@ -51540,7 +51540,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceLocation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceLocation@$refId::getTime()")
             }
         
@@ -51560,7 +51560,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceLocation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceLocation@$refId::setTime(\"var1\":$var1)")
             }
         
@@ -51579,7 +51579,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceLocation
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceLocation@$refId::copy()")
             }
         
@@ -51605,7 +51605,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
         
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.LBSTraceClient::getInstance()")
             }
         
@@ -51636,7 +51636,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.LBSTraceClient
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.LBSTraceClient@$refId::queryProcessedTrace(\"var1\":$var1, \"var3\":$var3)")
             }
         
@@ -51729,7 +51729,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.LBSTraceClient
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.LBSTraceClient@$refId::startTrace()")
             }
         
@@ -51776,7 +51776,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.LBSTraceClient
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.LBSTraceClient@$refId::stopTrace()")
             }
         
@@ -51795,7 +51795,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.LBSTraceClient
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.LBSTraceClient@$refId::destroy()")
             }
         
@@ -51815,7 +51815,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceOverlay@$refId::add()")
             }
         
@@ -51834,7 +51834,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceOverlay@$refId::remove()")
             }
         
@@ -51854,7 +51854,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceOverlay@$refId::setProperCamera()")
             }
         
@@ -51873,7 +51873,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceOverlay@$refId::zoopToSpan()")
             }
         
@@ -51892,7 +51892,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceOverlay@$refId::getTraceStatus()")
             }
         
@@ -51912,7 +51912,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceOverlay@$refId::setTraceStatus(\"var1\":$var1)")
             }
         
@@ -51931,7 +51931,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceOverlay@$refId::getDistance()")
             }
         
@@ -51951,7 +51951,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceOverlay@$refId::setDistance(\"var1\":$var1)")
             }
         
@@ -51970,7 +51970,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceOverlay@$refId::getWaitTime()")
             }
         
@@ -51990,7 +51990,7 @@ class AmapMapFluttifyPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.trace.TraceOverlay
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.trace.TraceOverlay@$refId::setWaitTime(\"var1\":$var1)")
             }
         

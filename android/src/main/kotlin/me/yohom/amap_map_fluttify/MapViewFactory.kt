@@ -26,7 +26,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::getMap()")
             }
         
@@ -53,7 +53,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onCreate()")
             }
         
@@ -72,7 +72,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onResume()")
             }
         
@@ -91,7 +91,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onPause()")
             }
         
@@ -110,7 +110,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onDestroy()")
             }
         
@@ -129,7 +129,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onLowMemory()")
             }
         
@@ -149,7 +149,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::onSaveInstanceState()")
             }
         
@@ -169,7 +169,7 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
             val ref = HEAP[refId] as com.amap.api.maps.MapView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.MapView@$refId::setVisibility(\"var1\":$var1)")
             }
         

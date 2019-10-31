@@ -27,7 +27,7 @@ class DownloadProgressViewFactory(private val registrar: Registrar) : PlatformVi
             val ref = HEAP[refId] as com.amap.api.maps.offlinemap.DownloadProgressView
         
             // print log
-            if (BuildConfigs.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 println("fluttify-kotlin: com.amap.api.maps.offlinemap.DownloadProgressView@$refId::setProgress(\"var1\":$var1)")
             }
         
