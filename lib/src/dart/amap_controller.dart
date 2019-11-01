@@ -428,7 +428,11 @@ class AmapController with WidgetsBindingObserver, _Private {
                 latLng, zoomLevel, 0, 0);
         final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
             .newCameraPosition(cameraPosition);
-        await map.moveCamera(cameraUpdate);
+        if (animated) {
+          await map.animateCamera(cameraUpdate);
+        } else {
+          await map.moveCamera(cameraUpdate);
+        }
 
         pool..add(map)..add(latLng)..add(cameraUpdate);
       },
