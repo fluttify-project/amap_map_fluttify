@@ -3124,7 +3124,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       }
       if (icon != nil) annotationView.image = icon;
       if (draggable != nil) annotationView.draggable = [draggable boolValue];
-      annotationView.canShowCallout = YES; // 这个参数在android端没有配置, 默认就是可以显示弹窗
+      annotationView.canShowCallout = annotation.title != nil; // title不为空就能显示弹窗
       return annotationView;
   }
   ////////////////////////////////////////////////////////////////////////////////

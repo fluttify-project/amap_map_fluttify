@@ -520,6 +520,9 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         final marker = await map.addMarker(markerOption);
 
+        // 如果标题不为空就设置可以弹窗
+        await marker.setInfoWindowEnable(option.title != null);
+
         // marker不释放, 还有用
         pool..add(map)..add(latLng)..add(markerOption);
 
