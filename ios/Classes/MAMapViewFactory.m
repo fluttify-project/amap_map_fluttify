@@ -3117,13 +3117,13 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   if ([annotation isKindOfClass:[MAPointAnnotation class]])
   {
       static NSString *pointReuseIndentifier = @"pointReuseIndentifier";
-      MAPinAnnotationView*annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndentifier];
+      MAPinAnnotationView* annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndentifier];
       if (annotationView == nil)
       {
           annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pointReuseIndentifier];
       }
-      annotationView.image = icon;
-      annotationView.draggable = [draggable boolValue];
+      if (icon != nil) annotationView.image = icon;
+      if (draggable != nil) annotationView.draggable = [draggable boolValue];
       annotationView.canShowCallout = YES; // 这个参数在android端没有配置, 默认就是可以显示弹窗
       return annotationView;
   }
