@@ -36,6 +36,9 @@ class AmapController with WidgetsBindingObserver, _Private {
   final _iosMapDelegate = _IOSMapDelegate();
   final _androidMapDelegate = _AndroidMapDelegate();
 
+  /// 获取当前位置
+  ///
+  /// 返回的是经纬度, 如果需要进一步的数据, 可以配合[https://github.com/fluttify-project/amap_search_fluttify]进行逆地理搜索
   Future<LatLng> getLocation() async {
     return platform(
       android: (pool) async {
@@ -1185,6 +1188,7 @@ class _AndroidMapDelegate extends java_lang_Object
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerClick(var1);
     if (_onMarkerClicked != null) {
+      await var1.showInfoWindow();
       _onMarkerClicked(Marker.android(var1));
     }
     return true;
