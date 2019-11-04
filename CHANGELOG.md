@@ -1,3 +1,9 @@
+## 0.3.2
+- fix: #18 android的marker设置了点击之后, 仍然显示弹窗
+- fix: #22.1 解决annotation划出屏幕后被回收重新回到屏幕后消失的bug
+- fix: #24 android端setCenterCoordinate animated参数无效的bug
+- fix: 根据标题是否为null来判断marker是否可以显示弹窗
+
 ## 0.3.1
 - enhancement: 完善android端生命周期回调
 - feat: 不通过定位组件直接获取经纬度
