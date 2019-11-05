@@ -28,7 +28,7 @@ packages:
       name: asn1lib
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.11"
+    version: "0.5.12"
   async:
     dependency: transitive
     description:
@@ -281,7 +281,7 @@ packages:
       name: rxdart
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.22.4"
+    version: "0.22.5"
   sky_engine:
     dependency: transitive
     description: flutter
