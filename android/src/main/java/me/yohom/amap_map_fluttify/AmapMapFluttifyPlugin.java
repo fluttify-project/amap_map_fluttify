@@ -4,7 +4,6 @@
 
 package me.yohom.amap_map_fluttify;
 
-import android.os.Bundle;
 import android.util.Log;
 
 import java.util.ArrayList;
@@ -12,12 +11,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import androidx.annotation.NonNull;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
-import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
 import me.yohom.foundation_fluttify.BuildConfig;
-import androidx.annotation.NonNull;
+
+import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
 
 @SuppressWarnings("ALL")
 public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
