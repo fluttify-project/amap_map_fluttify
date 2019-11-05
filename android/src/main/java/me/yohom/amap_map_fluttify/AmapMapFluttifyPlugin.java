@@ -599,7 +599,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::get_mPngBuffer", (args, methodResult) -> {
             // ref object
@@ -775,7 +775,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mFilledResId", (args, methodResult) -> {
             // ref object
@@ -1479,7 +1479,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.autonavi.amap.mapcore.MapConfig::get_maxZoomLevel", (args, methodResult) -> {
             // ref object
@@ -1677,7 +1677,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.autonavi.amap.mapcore.FPointBounds::get_northeast", (args, methodResult) -> {
             // ref object
@@ -1688,7 +1688,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.autonavi.amap.mapcore.Rectangle::get_left", (args, methodResult) -> {
             // ref object
@@ -1754,7 +1754,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_xPixel", (args, methodResult) -> {
             // ref object
@@ -1798,7 +1798,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_bounds", (args, methodResult) -> {
             // ref object
@@ -1809,7 +1809,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_focus", (args, methodResult) -> {
             // ref object
@@ -1820,7 +1820,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_zoom", (args, methodResult) -> {
             // ref object
@@ -1864,7 +1864,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_isUseAnchor", (args, methodResult) -> {
             // ref object
@@ -1919,7 +1919,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_paddingLeft", (args, methodResult) -> {
             // ref object
@@ -2007,7 +2007,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.amap.api.maps.model.VisibleRegion::get_nearRight", (args, methodResult) -> {
             // ref object
@@ -2018,7 +2018,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.amap.api.maps.model.VisibleRegion::get_farLeft", (args, methodResult) -> {
             // ref object
@@ -2029,7 +2029,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.amap.api.maps.model.VisibleRegion::get_farRight", (args, methodResult) -> {
             // ref object
@@ -2040,7 +2040,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.amap.api.maps.model.VisibleRegion::get_latLngBounds", (args, methodResult) -> {
             // ref object
@@ -2051,7 +2051,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.amap.api.maps.model.Tile::get_width", (args, methodResult) -> {
             // ref object
@@ -2095,7 +2095,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.amap.api.maps.model.CameraPosition::get_zoom", (args, methodResult) -> {
             // ref object
@@ -2150,7 +2150,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.amap.api.maps.model.LatLngBounds::get_southwest", (args, methodResult) -> {
             // ref object
@@ -2161,7 +2161,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.amap.api.maps.model.LatLngBounds::get_northeast", (args, methodResult) -> {
             // ref object
@@ -2172,7 +2172,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.amap.api.maps.model.LatLng::get_latitude", (args, methodResult) -> {
             // ref object
@@ -2282,7 +2282,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             getHEAP().put(result.hashCode(), result);
         
-            methodResult.success(result);
+            methodResult.success(result.hashCode());
         });
         put("com.amap.api.maps.model.particle.SizeOverLife::get_DEFAULT_SIZE", (args, methodResult) -> {
             // ref object
@@ -53262,8 +53262,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // result
             methodResult.success("success");
         });
-        put("ObjectFactory::createcom_autonavi_ae_gmap_maploader_ProcessingTile__Parameter(named=, variable=Variable(typeName=String, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_maploader_ProcessingTile__Parameter(named=, variable=Variable(typeName=String, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_ae_gmap_maploader_ProcessingTile__String", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_maploader_ProcessingTile__String");
         
             // args
             // jsonable arg
@@ -53314,8 +53314,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglAnimation2V__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglAnimation2V__int");
         
             // args
             // jsonable arg
@@ -53349,8 +53349,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglMapAnimFling__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int");
         
             // args
             // jsonable arg
@@ -53371,8 +53371,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglAnimation1V__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglAnimation1V__int");
         
             // args
             // jsonable arg
@@ -53389,8 +53389,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int");
         
             // args
             // jsonable arg
@@ -53424,8 +53424,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int");
         
             // args
             // jsonable arg
@@ -53459,8 +53459,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_ae_gmap_style_StyleItem__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_style_StyleItem__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_ae_gmap_style_StyleItem__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_style_StyleItem__int");
         
             // args
             // jsonable arg
@@ -53528,8 +53528,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=long, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_GLMapState__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=long, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__int__long", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_GLMapState__int__long");
         
             // args
             // jsonable arg
@@ -53548,8 +53548,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__Parameter(named=, variable=Variable(typeName=long, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=long, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_GLMapState__Parameter(named=, variable=Variable(typeName=long, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=long, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__long__long", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_GLMapState__long__long");
         
             // args
             // jsonable arg
@@ -53636,8 +53636,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLOverlayTexture__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int");
         
             // args
             // jsonable arg
@@ -53660,8 +53660,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var6, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLOverlayTexture__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var6, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int");
         
             // args
             // jsonable arg
@@ -53943,8 +53943,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_IPoint__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__int__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_IPoint__int__int");
         
             // args
             // jsonable arg
@@ -53997,8 +53997,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__Parameter(named=, variable=Variable(typeName=double, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=double, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_DPoint__Parameter(named=, variable=Variable(typeName=double, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=double, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__double__double", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_DPoint__double__double");
         
             // args
             // jsonable arg
@@ -54051,8 +54051,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLTranslateAnimation__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng");
         
             // args
             // ref arg
@@ -54069,8 +54069,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLRotateAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLRotateAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float");
         
             // args
             // jsonable arg
@@ -54095,8 +54095,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLAlphaAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float");
         
             // args
             // jsonable arg
@@ -54115,8 +54115,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLScaleAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLScaleAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float");
         
             // args
             // jsonable arg
@@ -54156,8 +54156,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimationSet__Parameter(named=, variable=Variable(typeName=boolean, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLAnimationSet__Parameter(named=, variable=Variable(typeName=boolean, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimationSet__boolean", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLAnimationSet__boolean");
         
             // args
             // jsonable arg
@@ -54174,8 +54174,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLEmergeAnimation__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng");
         
             // args
             // ref arg
@@ -54209,8 +54209,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_MapConfig__Parameter(named=, variable=Variable(typeName=boolean, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_MapConfig__Parameter(named=, variable=Variable(typeName=boolean, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_MapConfig__boolean", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_MapConfig__boolean");
         
             // args
             // jsonable arg
@@ -54227,8 +54227,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_HoverGestureMapMessage__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float");
         
             // args
             // jsonable arg
@@ -54247,8 +54247,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_MoveGestureMapMessage__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float");
         
             // args
             // jsonable arg
@@ -54269,8 +54269,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_ScaleGestureMapMessage__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int");
         
             // args
             // jsonable arg
@@ -54293,8 +54293,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_RotateGestureMapMessage__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int");
         
             // args
             // jsonable arg
@@ -54317,8 +54317,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds__Parameter(named=, variable=Variable(typeName=com.autonavi.amap.mapcore.FPoint, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.autonavi.amap.mapcore.FPoint, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPointBounds__Parameter(named=, variable=Variable(typeName=com.autonavi.amap.mapcore.FPoint, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.autonavi.amap.mapcore.FPoint, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint");
         
             // args
             // ref arg
@@ -54405,8 +54405,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Rectangle__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__float__float__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Rectangle__float__float__float__float");
         
             // args
             // jsonable arg
@@ -54429,8 +54429,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__Parameter(named=, variable=Variable(typeName=String, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Inner_3dMap_location__Parameter(named=, variable=Variable(typeName=String, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__String", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Inner_3dMap_location__String");
         
             // args
             // jsonable arg
@@ -54447,8 +54447,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__Parameter(named=, variable=Variable(typeName=android.location.Location, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Inner_3dMap_location__Parameter(named=, variable=Variable(typeName=android.location.Location, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location");
         
             // args
             // ref arg
@@ -54499,8 +54499,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint3__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__float__float__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint3__float__float__int");
         
             // args
             // jsonable arg
@@ -54589,8 +54589,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint__float__float");
         
             // args
             // jsonable arg
@@ -54711,8 +54711,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_AMapException__Parameter(named=, variable=Variable(typeName=String, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapException__Parameter(named=, variable=Variable(typeName=String, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_AMapException__String", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapException__String");
         
             // args
             // jsonable arg
@@ -54780,8 +54780,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_CoordinateConverter__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_CoordinateConverter__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_CoordinateConverter__android_content_Context", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_CoordinateConverter__android_content_Context");
         
             // args
             // ref arg
@@ -54815,8 +54815,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_SwipeDismissCallBack__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.SwipeDismissView, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissCallBack__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.SwipeDismissView, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView");
         
             // args
             // ref arg
@@ -54833,8 +54833,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_SwipeDismissView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=android.view.View, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=android.view.View, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View");
         
             // args
             // ref arg
@@ -54904,8 +54904,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_DownloadProgressView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context");
         
             // args
             // ref arg
@@ -55024,8 +55024,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_Poi__Parameter(named=, variable=Variable(typeName=String, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=String, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Poi__Parameter(named=, variable=Variable(typeName=String, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=String, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String");
         
             // args
             // jsonable arg
@@ -55063,8 +55063,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegion__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLngBounds, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_VisibleRegion__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLngBounds, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds");
         
             // args
             // ref arg
@@ -55225,8 +55225,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_Tile__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=byte[], name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Tile__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=byte[], name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_Tile__int__int__byteArray", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Tile__int__int__byteArray");
         
             // args
             // jsonable arg
@@ -55247,8 +55247,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_Gradient__Parameter(named=, variable=Variable(typeName=int[], name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float[], name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Gradient__Parameter(named=, variable=Variable(typeName=int[], name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float[], name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_Gradient__intArray__floatArray", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Gradient__intArray__floatArray");
         
             // args
             // jsonable arg
@@ -55335,8 +55335,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_CameraPosition__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CameraPosition__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float");
         
             // args
             // ref arg
@@ -55410,8 +55410,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_animation_AnimationSet__Parameter(named=, variable=Variable(typeName=boolean, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_AnimationSet__Parameter(named=, variable=Variable(typeName=boolean, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_animation_AnimationSet__boolean", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_AnimationSet__boolean");
         
             // args
             // jsonable arg
@@ -55428,8 +55428,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_RotateAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float");
         
             // args
             // jsonable arg
@@ -55454,8 +55454,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_RotateAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_RotateAnimation__float__float");
         
             // args
             // jsonable arg
@@ -55474,8 +55474,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_animation_TranslateAnimation__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_TranslateAnimation__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng");
         
             // args
             // ref arg
@@ -55492,8 +55492,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_animation_EmergeAnimation__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_EmergeAnimation__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng");
         
             // args
             // ref arg
@@ -55510,8 +55510,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_animation_AlphaAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_AlphaAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_animation_AlphaAnimation__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_AlphaAnimation__float__float");
         
             // args
             // jsonable arg
@@ -55530,8 +55530,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_animation_ScaleAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_ScaleAnimation__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float");
         
             // args
             // jsonable arg
@@ -55554,8 +55554,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBounds__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng");
         
             // args
             // ref arg
@@ -55642,8 +55642,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_LatLng__Parameter(named=, variable=Variable(typeName=double, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=double, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLng__Parameter(named=, variable=Variable(typeName=double, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=double, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLng__double__double");
         
             // args
             // jsonable arg
@@ -55662,8 +55662,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_LatLng__Parameter(named=, variable=Variable(typeName=double, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=double, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=boolean, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLng__Parameter(named=, variable=Variable(typeName=double, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=double, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=boolean, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double__boolean", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLng__double__double__boolean");
         
             // args
             // jsonable arg
@@ -55684,8 +55684,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_TileProjection__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var6, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileProjection__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var6, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileProjection__int__int__int__int__int__int");
         
             // args
             // jsonable arg
@@ -55746,8 +55746,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_AMapCameraInfo__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var6, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_AMapCameraInfo__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var6, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float");
         
             // args
             // jsonable arg
@@ -55791,8 +55791,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=double, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_WeightedLatLng__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=double, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double");
         
             // args
             // ref arg
@@ -55811,8 +55811,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_WeightedLatLng__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng");
         
             // args
             // ref arg
@@ -55863,8 +55863,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_MultiPointItem__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MultiPointItem__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.model.LatLng, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng");
         
             // args
             // ref arg
@@ -55966,8 +55966,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_RuntimeRemoteException__Parameter(named=, variable=Variable(typeName=String, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_RuntimeRemoteException__Parameter(named=, variable=Variable(typeName=String, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_RuntimeRemoteException__String", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_RuntimeRemoteException__String");
         
             // args
             // jsonable arg
@@ -56137,8 +56137,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_particle_ConstantRotationOverLife__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ConstantRotationOverLife__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_particle_ConstantRotationOverLife__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ConstantRotationOverLife__float");
         
             // args
             // jsonable arg
@@ -56155,8 +56155,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=boolean, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_SinglePointParticleShape__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=boolean, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean");
         
             // args
             // jsonable arg
@@ -56179,8 +56179,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_SinglePointParticleShape__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float");
         
             // args
             // jsonable arg
@@ -56201,8 +56201,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var6, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var6, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float");
         
             // args
             // jsonable arg
@@ -56229,8 +56229,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_particle_CurveSizeOverLife__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_CurveSizeOverLife__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float");
         
             // args
             // jsonable arg
@@ -56251,8 +56251,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleEmissionModule__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleEmissionModule__Parameter(named=, variable=Variable(typeName=int, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=int, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleEmissionModule__int__int");
         
             // args
             // jsonable arg
@@ -56271,8 +56271,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_particle_RectParticleShape__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=boolean, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RectParticleShape__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=boolean, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean");
         
             // args
             // jsonable arg
@@ -56297,8 +56297,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var6, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var7, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var8, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__Parameter(named=, variable=Variable(typeName=float, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var4, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var6, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var7, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var8, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float");
         
             // args
             // jsonable arg
@@ -56448,8 +56448,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_TextureMapView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_TextureMapView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_TextureMapView__android_content_Context");
         
             // args
             // ref arg
@@ -56466,8 +56466,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_TextureMapView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.AMapOptions, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_TextureMapView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.AMapOptions, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions");
         
             // args
             // ref arg
@@ -56503,8 +56503,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_WearMapView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_WearMapView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_WearMapView__android_content_Context");
         
             // args
             // ref arg
@@ -56521,8 +56521,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_WearMapView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.AMapOptions, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_WearMapView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.AMapOptions, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions");
         
             // args
             // ref arg
@@ -56541,8 +56541,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_MapView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapView__android_content_Context");
         
             // args
             // ref arg
@@ -56559,8 +56559,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_maps_MapView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.AMapOptions, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapView__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=com.amap.api.maps.AMapOptions, name=var2, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions");
         
             // args
             // ref arg
@@ -56579,8 +56579,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_trace_TraceLocation__Parameter(named=, variable=Variable(typeName=double, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=double, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var6, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=long, name=var7, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceLocation__Parameter(named=, variable=Variable(typeName=double, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=double, name=var3, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var5, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=float, name=var6, isList=false, genericLevel=0, platform=Android), platform=Android)__Parameter(named=, variable=Variable(typeName=long, name=var7, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_trace_TraceLocation__double__double__float__float__long", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceLocation__double__double__float__float__long");
         
             // args
             // jsonable arg
@@ -56622,8 +56622,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        put("ObjectFactory::createcom_amap_api_trace_LBSTraceClient__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_trace_LBSTraceClient__Parameter(named=, variable=Variable(typeName=android.content.Context, name=var1, isList=false, genericLevel=0, platform=Android), platform=Android)");
+        put("ObjectFactory::createcom_amap_api_trace_LBSTraceClient__android_content_Context", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_trace_LBSTraceClient__android_content_Context");
         
             // args
             // ref arg
