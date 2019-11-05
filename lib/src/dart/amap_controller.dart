@@ -1166,10 +1166,9 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   ) async {
     super.mapViewMapDidMoveByUser(mapView, wasUserAction);
     if (_onMapDrag != null && wasUserAction) {
-      final location = await mapView.get_userLocation();
-      final coord = await location.get_coordinate();
+      final location = await mapView.get_centerCoordinate();
       _onMapDrag(MapDrag(
-        latLng: LatLng(await coord.latitude, await coord.longitude),
+        latLng: LatLng(await location.latitude, await location.longitude),
         zoom: await mapView.get_zoomLevel(),
         tilt: await mapView.get_cameraDegree(),
         isAbroad: await mapView.get_isAbroad(),
