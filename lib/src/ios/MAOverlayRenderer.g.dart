@@ -208,6 +208,50 @@ class MAOverlayRenderer extends NSObject  {
     }
   }
   
+  Future<void> renderLinesWithPointsPointCountstrokeColorlineWidthlooped(List<CGPoint> points, int pointCount, UIColor strokeColor, double lineWidth, bool looped) async {
+    // print log
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAOverlayRenderer@$refId::renderLinesWithPoints([\'pointCount\':$pointCount, \'lineWidth\':$lineWidth, \'looped\':$looped])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthlooped', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor.refId, "lineWidth": lineWidth, "looped": looped, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> renderLinesWithPointsPointCountstrokeColorlineWidthloopedLineJoinTypeLineCapTypelineDash(List<CGPoint> points, int pointCount, UIColor strokeColor, double lineWidth, bool looped, MALineJoinType lineJoinType, MALineCapType lineCapType, MALineDashType lineDash) async {
+    // print log
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAOverlayRenderer@$refId::renderLinesWithPoints([\'pointCount\':$pointCount, \'lineWidth\':$lineWidth, \'looped\':$looped])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthloopedLineJoinTypeLineCapTypelineDash', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor.refId, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index, "lineCapType": lineCapType.index, "lineDash": lineDash.index, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<void> renderTexturedLinesWithPointsPointCountlineWidthtextureIDsdrawStyleIndexeslooped(List<CGPoint> points, int pointCount, double lineWidth, List<NSObject> textureIDs, List<NSObject> drawStyleIndexes, bool looped) async {
     // print log
     if (!kReleaseMode) {
@@ -238,6 +282,50 @@ class MAOverlayRenderer extends NSObject  {
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorsdrawStyleIndexesisGradientlineWidthloopedLineJoinTypeLineCapTypelineDash', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "strokeColors": strokeColors.map((it) => it.refId).toList(), "drawStyleIndexes": drawStyleIndexes.map((it) => it.refId).toList(), "isGradient": isGradient, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index, "lineCapType": lineCapType.index, "lineDash": lineDash.index, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> renderRegionWithPointsPointCountfillColorusingTriangleFan(List<CGPoint> points, int pointCount, UIColor fillColor, bool usingTriangleFan) async {
+    // print log
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAOverlayRenderer@$refId::renderRegionWithPoints([\'pointCount\':$pointCount, \'usingTriangleFan\':$usingTriangleFan])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderRegionWithPointsPointCountfillColorusingTriangleFan', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "fillColor": fillColor.refId, "usingTriangleFan": usingTriangleFan, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> renderStrokedRegionWithPointsPointCountfillColorstrokeColorstrokeLineWidthstrokeLineJoinTypestrokeLineDashusingTriangleFan(List<CGPoint> points, int pointCount, UIColor fillColor, UIColor strokeColor, double strokeLineWidth, MALineJoinType strokeLineJoinType, MALineDashType strokeLineDash, bool usingTriangleFan) async {
+    // print log
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAOverlayRenderer@$refId::renderStrokedRegionWithPoints([\'pointCount\':$pointCount, \'strokeLineWidth\':$strokeLineWidth, \'usingTriangleFan\':$usingTriangleFan])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPointsPointCountfillColorstrokeColorstrokeLineWidthstrokeLineJoinTypestrokeLineDashusingTriangleFan', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "fillColor": fillColor.refId, "strokeColor": strokeColor.refId, "strokeLineWidth": strokeLineWidth, "strokeLineJoinType": strokeLineJoinType.index, "strokeLineDash": strokeLineDash.index, "usingTriangleFan": usingTriangleFan, "refId": refId});
   
   
     // handle native call

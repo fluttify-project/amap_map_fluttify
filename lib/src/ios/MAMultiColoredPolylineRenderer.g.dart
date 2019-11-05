@@ -18,6 +18,12 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
     return MAMultiPolyline()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  Future<List<UIColor>> get_strokeColors() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiColoredPolylineRenderer::get_strokeColors", {'refId': refId});
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => UIColor()..refId = it..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((it) => UIColor()..refId = it..tag = 'amap_map_fluttify').toList();
+  }
+  
   Future<bool> get_gradient() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiColoredPolylineRenderer::get_isGradient", {'refId': refId});
   
@@ -26,6 +32,12 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   
 
   // generate setters
+  Future<void> set_strokeColors(List<UIColor> strokeColors) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::set_strokeColors', {'refId': refId, "strokeColors": strokeColors.map((it) => it.refId).toList()});
+  
+  
+  }
+  
   Future<void> set_gradient(bool gradient) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::set_gradient', {'refId': refId, "gradient": gradient});
   

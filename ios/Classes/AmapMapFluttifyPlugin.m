@@ -2059,6 +2059,80 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // 返回值: Value
           methodResult(@(result));
       },
+      @"MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthlooped": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // list arg
+          NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
+          CGPoint points[pointsRefIdArray.count];
+      
+          for (int i = 0; i < pointsRefIdArray.count; i++) {
+              NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+              CGPoint pointsItem;
+              [pointsValue getValue:&pointsItem];
+              points[i] = pointsItem;
+          }
+          // jsonable arg
+          NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
+          // ref arg
+          UIColor* strokeColor = (UIColor*) HEAP[@([args[@"strokeColor"] integerValue])];
+          // jsonable arg
+          CGFloat lineWidth = [args[@"lineWidth"] floatValue];
+          // jsonable arg
+          BOOL looped = [args[@"looped"] boolValue];
+      
+          // ref
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+      
+          // print log
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+      
+          // invoke native method
+          [ref renderLinesWithPoints : points pointCount: pointCount strokeColor: strokeColor lineWidth: lineWidth looped: looped];
+      
+          // result
+          // 无返回值
+          methodResult(@"success");
+      },
+      @"MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthloopedLineJoinTypeLineCapTypelineDash": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // list arg
+          NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
+          CGPoint points[pointsRefIdArray.count];
+      
+          for (int i = 0; i < pointsRefIdArray.count; i++) {
+              NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+              CGPoint pointsItem;
+              [pointsValue getValue:&pointsItem];
+              points[i] = pointsItem;
+          }
+          // jsonable arg
+          NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
+          // ref arg
+          UIColor* strokeColor = (UIColor*) HEAP[@([args[@"strokeColor"] integerValue])];
+          // jsonable arg
+          CGFloat lineWidth = [args[@"lineWidth"] floatValue];
+          // jsonable arg
+          BOOL looped = [args[@"looped"] boolValue];
+          // enum arg
+          MALineJoinType lineJoinType = (MALineJoinType) [args[@"lineJoinType"] integerValue];
+          // enum arg
+          MALineCapType lineCapType = (MALineCapType) [args[@"lineCapType"] integerValue];
+          // enum arg
+          MALineDashType lineDash = (MALineDashType) [args[@"lineDash"] integerValue];
+      
+          // ref
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+      
+          // print log
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+      
+          // invoke native method
+          [ref renderLinesWithPoints : points pointCount: pointCount strokeColor: strokeColor lineWidth: lineWidth looped: looped LineJoinType: lineJoinType LineCapType: lineCapType lineDash: lineDash];
+      
+          // result
+          // 无返回值
+          methodResult(@"success");
+      },
       @"MAOverlayRenderer::renderTexturedLinesWithPointsPointCountlineWidthtextureIDsdrawStyleIndexeslooped": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
           // list arg
@@ -2154,6 +2228,78 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           // invoke native method
           [ref renderLinesWithPoints : points pointCount: pointCount strokeColors: strokeColors drawStyleIndexes: drawStyleIndexes isGradient: isGradient lineWidth: lineWidth looped: looped LineJoinType: lineJoinType LineCapType: lineCapType lineDash: lineDash];
+      
+          // result
+          // 无返回值
+          methodResult(@"success");
+      },
+      @"MAOverlayRenderer::renderRegionWithPointsPointCountfillColorusingTriangleFan": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // list arg
+          NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
+          CGPoint points[pointsRefIdArray.count];
+      
+          for (int i = 0; i < pointsRefIdArray.count; i++) {
+              NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+              CGPoint pointsItem;
+              [pointsValue getValue:&pointsItem];
+              points[i] = pointsItem;
+          }
+          // jsonable arg
+          NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
+          // ref arg
+          UIColor* fillColor = (UIColor*) HEAP[@([args[@"fillColor"] integerValue])];
+          // jsonable arg
+          BOOL usingTriangleFan = [args[@"usingTriangleFan"] boolValue];
+      
+          // ref
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+      
+          // print log
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderRegionWithPoints(暂未实现参数打印)", args[@"refId"]);
+      
+          // invoke native method
+          [ref renderRegionWithPoints : points pointCount: pointCount fillColor: fillColor usingTriangleFan: usingTriangleFan];
+      
+          // result
+          // 无返回值
+          methodResult(@"success");
+      },
+      @"MAOverlayRenderer::renderStrokedRegionWithPointsPointCountfillColorstrokeColorstrokeLineWidthstrokeLineJoinTypestrokeLineDashusingTriangleFan": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // list arg
+          NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
+          CGPoint points[pointsRefIdArray.count];
+      
+          for (int i = 0; i < pointsRefIdArray.count; i++) {
+              NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+              CGPoint pointsItem;
+              [pointsValue getValue:&pointsItem];
+              points[i] = pointsItem;
+          }
+          // jsonable arg
+          NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
+          // ref arg
+          UIColor* fillColor = (UIColor*) HEAP[@([args[@"fillColor"] integerValue])];
+          // ref arg
+          UIColor* strokeColor = (UIColor*) HEAP[@([args[@"strokeColor"] integerValue])];
+          // jsonable arg
+          CGFloat strokeLineWidth = [args[@"strokeLineWidth"] floatValue];
+          // enum arg
+          MALineJoinType strokeLineJoinType = (MALineJoinType) [args[@"strokeLineJoinType"] integerValue];
+          // enum arg
+          MALineDashType strokeLineDash = (MALineDashType) [args[@"strokeLineDash"] integerValue];
+          // jsonable arg
+          BOOL usingTriangleFan = [args[@"usingTriangleFan"] boolValue];
+      
+          // ref
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+      
+          // print log
+          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderStrokedRegionWithPoints(暂未实现参数打印)", args[@"refId"]);
+      
+          // invoke native method
+          [ref renderStrokedRegionWithPoints : points pointCount: pointCount fillColor: fillColor strokeColor: strokeColor strokeLineWidth: strokeLineWidth strokeLineJoinType: strokeLineJoinType strokeLineDash: strokeLineDash usingTriangleFan: usingTriangleFan];
       
           // result
           // 无返回值
@@ -4590,6 +4736,27 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@(result));
       },
       
+      @"MAHeatMapGradient::get_colors": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAHeatMapGradient::get_colors");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAHeatMapGradient* ref = (MAHeatMapGradient*) HEAP[@(refId)];
+      
+          // invoke native method
+          NSArray<UIColor*>* result = ref.colors;
+      
+          // 返回值: 列表
+          NSMutableArray* refIdList = [NSMutableArray array];
+          for (int i = 0; i < result.count; i++) {
+              NSObject* object = [result objectAtIndex:i];
+              [refIdList addObject: @(object.hash)];
+              HEAP[@([object hash])] = object;
+          }
+      
+          methodResult(refIdList);
+      },
+      
       @"MAHeatMapTileOverlay::get_data": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAHeatMapTileOverlay::get_data");
       
@@ -4984,6 +5151,27 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           // 返回值: 引用
           HEAP[@(result.hash)] = result;
           methodResult(@(result.hash));
+      },
+      
+      @"MAMultiColoredPolylineRenderer::get_strokeColors": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMultiColoredPolylineRenderer::get_strokeColors");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[@(refId)];
+      
+          // invoke native method
+          NSArray<UIColor*>* result = ref.strokeColors;
+      
+          // 返回值: 列表
+          NSMutableArray* refIdList = [NSMutableArray array];
+          for (int i = 0; i < result.count; i++) {
+              NSObject* object = [result objectAtIndex:i];
+              [refIdList addObject: @(object.hash)];
+              HEAP[@([object hash])] = object;
+          }
+      
+          methodResult(refIdList);
       },
       
       @"MAMultiColoredPolylineRenderer::get_isGradient": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -5515,6 +5703,21 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           // 返回值: Value
           methodResult(@(result));
+      },
+      
+      @"MAPolylineRenderer::get_sideColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAPolylineRenderer::get_sideColor");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[@(refId)];
+      
+          // invoke native method
+          UIColor* result = ref.sideColor;
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
       },
       
       @"MAShape::get_title": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -6433,6 +6636,36 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@(result));
       },
       
+      @"MACustomBuildingOverlayOption::get_topColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MACustomBuildingOverlayOption::get_topColor");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+      
+          // invoke native method
+          UIColor* result = ref.topColor;
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
+      @"MACustomBuildingOverlayOption::get_sideColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MACustomBuildingOverlayOption::get_sideColor");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+      
+          // invoke native method
+          UIColor* result = ref.sideColor;
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
       @"MACustomBuildingOverlayOption::get_visibile": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MACustomBuildingOverlayOption::get_visibile");
       
@@ -6666,6 +6899,36 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@(result));
       },
       
+      @"MAUserLocationRepresentation::get_fillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAUserLocationRepresentation::get_fillColor");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+      
+          // invoke native method
+          UIColor* result = ref.fillColor;
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
+      @"MAUserLocationRepresentation::get_strokeColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAUserLocationRepresentation::get_strokeColor");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+      
+          // invoke native method
+          UIColor* result = ref.strokeColor;
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
       @"MAUserLocationRepresentation::get_lineWidth": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAUserLocationRepresentation::get_lineWidth");
       
@@ -6678,6 +6941,36 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           // 返回值: Value
           methodResult(@(result));
+      },
+      
+      @"MAUserLocationRepresentation::get_locationDotBgColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAUserLocationRepresentation::get_locationDotBgColor");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+      
+          // invoke native method
+          UIColor* result = ref.locationDotBgColor;
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
+      @"MAUserLocationRepresentation::get_locationDotFillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAUserLocationRepresentation::get_locationDotFillColor");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+      
+          // invoke native method
+          UIColor* result = ref.locationDotFillColor;
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
       },
       
       @"MAUserLocationRepresentation::get_enablePulseAnnimation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7558,6 +7851,36 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@(result));
       },
       
+      @"MAOverlayPathRenderer::get_fillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAOverlayPathRenderer::get_fillColor");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+      
+          // invoke native method
+          UIColor* result = ref.fillColor;
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
+      @"MAOverlayPathRenderer::get_strokeColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAOverlayPathRenderer::get_strokeColor");
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+      
+          // invoke native method
+          UIColor* result = ref.strokeColor;
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
       @"MAOverlayPathRenderer::get_lineWidth": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAOverlayPathRenderer::get_lineWidth");
       
@@ -8049,6 +8372,25 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@"success");
       },
       
+      @"MAMultiColoredPolylineRenderer::set_strokeColors": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMultiColoredPolylineRenderer::set_strokeColors");
+      
+          // args
+          // list arg
+          NSArray<NSNumber*>* strokeColorsRefArray = (NSArray<NSNumber*> *) args[@"strokeColors"];
+          NSMutableArray<UIColor*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
+          for (int i = 0; i < strokeColorsRefArray.count; i++) {
+              UIColor* item = (UIColor*) HEAP[[strokeColorsRefArray objectAtIndex:i]];
+              [strokeColors addObject:item];
+          }
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[@(refId)];
+      
+          ref.strokeColors = strokeColors;
+          methodResult(@"success");
+      },
+      
       @"MAMultiColoredPolylineRenderer::set_gradient": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAMultiColoredPolylineRenderer::set_gradient");
       
@@ -8179,6 +8521,20 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[@(refId)];
       
           ref.is3DArrowLine = is3DArrowLine;
+          methodResult(@"success");
+      },
+      
+      @"MAPolylineRenderer::set_sideColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAPolylineRenderer::set_sideColor");
+      
+          // args
+          // ref arg
+          UIColor* sideColor = (UIColor*) HEAP[@([args[@"sideColor"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[@(refId)];
+      
+          ref.sideColor = sideColor;
           methodResult(@"success");
       },
       
@@ -8804,6 +9160,34 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@"success");
       },
       
+      @"MACustomBuildingOverlayOption::set_topColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MACustomBuildingOverlayOption::set_topColor");
+      
+          // args
+          // ref arg
+          UIColor* topColor = (UIColor*) HEAP[@([args[@"topColor"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+      
+          ref.topColor = topColor;
+          methodResult(@"success");
+      },
+      
+      @"MACustomBuildingOverlayOption::set_sideColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MACustomBuildingOverlayOption::set_sideColor");
+      
+          // args
+          // ref arg
+          UIColor* sideColor = (UIColor*) HEAP[@([args[@"sideColor"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+      
+          ref.sideColor = sideColor;
+          methodResult(@"success");
+      },
+      
       @"MACustomBuildingOverlayOption::set_visibile": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MACustomBuildingOverlayOption::set_visibile");
       
@@ -8980,6 +9364,34 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@"success");
       },
       
+      @"MAUserLocationRepresentation::set_fillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAUserLocationRepresentation::set_fillColor");
+      
+          // args
+          // ref arg
+          UIColor* fillColor = (UIColor*) HEAP[@([args[@"fillColor"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+      
+          ref.fillColor = fillColor;
+          methodResult(@"success");
+      },
+      
+      @"MAUserLocationRepresentation::set_strokeColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAUserLocationRepresentation::set_strokeColor");
+      
+          // args
+          // ref arg
+          UIColor* strokeColor = (UIColor*) HEAP[@([args[@"strokeColor"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+      
+          ref.strokeColor = strokeColor;
+          methodResult(@"success");
+      },
+      
       @"MAUserLocationRepresentation::set_lineWidth": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAUserLocationRepresentation::set_lineWidth");
       
@@ -8991,6 +9403,34 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
       
           ref.lineWidth = lineWidth;
+          methodResult(@"success");
+      },
+      
+      @"MAUserLocationRepresentation::set_locationDotBgColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAUserLocationRepresentation::set_locationDotBgColor");
+      
+          // args
+          // ref arg
+          UIColor* locationDotBgColor = (UIColor*) HEAP[@([args[@"locationDotBgColor"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+      
+          ref.locationDotBgColor = locationDotBgColor;
+          methodResult(@"success");
+      },
+      
+      @"MAUserLocationRepresentation::set_locationDotFillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAUserLocationRepresentation::set_locationDotFillColor");
+      
+          // args
+          // ref arg
+          UIColor* locationDotFillColor = (UIColor*) HEAP[@([args[@"locationDotFillColor"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+      
+          ref.locationDotFillColor = locationDotFillColor;
           methodResult(@"success");
       },
       
@@ -9671,6 +10111,34 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[@(refId)];
       
           ref.customMapStyleEnabled = customMapStyleEnabled;
+          methodResult(@"success");
+      },
+      
+      @"MAOverlayPathRenderer::set_fillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAOverlayPathRenderer::set_fillColor");
+      
+          // args
+          // ref arg
+          UIColor* fillColor = (UIColor*) HEAP[@([args[@"fillColor"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+      
+          ref.fillColor = fillColor;
+          methodResult(@"success");
+      },
+      
+      @"MAOverlayPathRenderer::set_strokeColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAOverlayPathRenderer::set_strokeColor");
+      
+          // args
+          // ref arg
+          UIColor* strokeColor = (UIColor*) HEAP[@([args[@"strokeColor"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+      
+          ref.strokeColor = strokeColor;
           methodResult(@"success");
       },
       

@@ -24,10 +24,34 @@ class MAUserLocationRepresentation extends NSObject  {
     return result;
   }
   
+  Future<UIColor> get_fillColor() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_fillColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
+    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
+  Future<UIColor> get_strokeColor() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_strokeColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
+    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
   Future<double> get_lineWidth() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_lineWidth", {'refId': refId});
   
     return result;
+  }
+  
+  Future<UIColor> get_locationDotBgColor() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_locationDotBgColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
+    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
+  Future<UIColor> get_locationDotFillColor() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_locationDotFillColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
+    return UIColor()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<bool> get_enablePulseAnnimation() async {
@@ -56,8 +80,32 @@ class MAUserLocationRepresentation extends NSObject  {
   
   }
   
+  Future<void> set_fillColor(UIColor fillColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_fillColor', {'refId': refId, "fillColor": fillColor.refId});
+  
+  
+  }
+  
+  Future<void> set_strokeColor(UIColor strokeColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_strokeColor', {'refId': refId, "strokeColor": strokeColor.refId});
+  
+  
+  }
+  
   Future<void> set_lineWidth(double lineWidth) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_lineWidth', {'refId': refId, "lineWidth": lineWidth});
+  
+  
+  }
+  
+  Future<void> set_locationDotBgColor(UIColor locationDotBgColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_locationDotBgColor', {'refId': refId, "locationDotBgColor": locationDotBgColor.refId});
+  
+  
+  }
+  
+  Future<void> set_locationDotFillColor(UIColor locationDotFillColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_locationDotFillColor', {'refId': refId, "locationDotFillColor": locationDotFillColor.refId});
   
   
   }

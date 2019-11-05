@@ -24,6 +24,18 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
     return result;
   }
   
+  Future<UIColor> get_topColor() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayOption::get_topColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
+    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
+  Future<UIColor> get_sideColor() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayOption::get_sideColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
+    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
   Future<bool> get_visibile() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayOption::get_visibile", {'refId': refId});
   
@@ -40,6 +52,18 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
   
   Future<void> set_heightScale(double heightScale) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_heightScale', {'refId': refId, "heightScale": heightScale});
+  
+  
+  }
+  
+  Future<void> set_topColor(UIColor topColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_topColor', {'refId': refId, "topColor": topColor.refId});
+  
+  
+  }
+  
+  Future<void> set_sideColor(UIColor sideColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_sideColor', {'refId': refId, "sideColor": sideColor.refId});
   
   
   }

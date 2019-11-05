@@ -24,10 +24,22 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     return result;
   }
   
+  Future<UIColor> get_sideColor() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_sideColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
+    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
 
   // generate setters
   Future<void> set_is3DArrowLine(bool is3DArrowLine) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_is3DArrowLine', {'refId': refId, "is3DArrowLine": is3DArrowLine});
+  
+  
+  }
+  
+  Future<void> set_sideColor(UIColor sideColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_sideColor', {'refId': refId, "sideColor": sideColor.refId});
   
   
   }

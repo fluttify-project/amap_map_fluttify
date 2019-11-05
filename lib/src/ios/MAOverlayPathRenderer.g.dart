@@ -12,6 +12,18 @@ import 'package:flutter/services.dart';
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAOverlayPathRenderer extends MAOverlayRenderer  {
   // generate getters
+  Future<UIColor> get_fillColor() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_fillColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
+    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
+  Future<UIColor> get_strokeColor() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_strokeColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
+    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
   Future<double> get_lineWidth() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineWidth", {'refId': refId});
   
@@ -50,6 +62,18 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   
 
   // generate setters
+  Future<void> set_fillColor(UIColor fillColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_fillColor', {'refId': refId, "fillColor": fillColor.refId});
+  
+  
+  }
+  
+  Future<void> set_strokeColor(UIColor strokeColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_strokeColor', {'refId': refId, "strokeColor": strokeColor.refId});
+  
+  
+  }
+  
   Future<void> set_lineWidth(double lineWidth) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineWidth', {'refId': refId, "lineWidth": lineWidth});
   
