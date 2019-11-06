@@ -13,10 +13,10 @@ import 'package:flutter/services.dart';
 import 'enums.dart';
 import 'models.dart';
 
-typedef void _OnMarkerClick(Marker marker);
-typedef void _OnMapClick(LatLng latLng);
-typedef void _OnMapDrag(MapDrag latLng);
-typedef void _OnMarkerDrag(Marker marker);
+typedef void OnMarkerClick(Marker marker);
+typedef void OnMapClick(LatLng latLng);
+typedef void OnMapDrag(MapDrag latLng);
+typedef void OnMarkerDrag(Marker marker);
 
 /// 地图控制类
 class AmapController with WidgetsBindingObserver, _Private {
@@ -1002,7 +1002,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置marker点击监听事件
-  Future<void> setMarkerClickListener(_OnMarkerClick onMarkerClicked) async {
+  Future<void> setMarkerClickListener(OnMarkerClick onMarkerClicked) async {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
@@ -1021,9 +1021,9 @@ class AmapController with WidgetsBindingObserver, _Private {
 
   /// 设置marker拖动监听事件
   Future<void> setMarkerDragListener({
-    _OnMarkerDrag onMarkerDragStart,
-    _OnMarkerDrag onMarkerDragging,
-    _OnMarkerDrag onMarkerDragEnd,
+    OnMarkerDrag onMarkerDragStart,
+    OnMarkerDrag onMarkerDragging,
+    OnMarkerDrag onMarkerDragEnd,
   }) async {
     return platform(
       android: (pool) async {
@@ -1050,7 +1050,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置地图点击监听事件
-  Future<void> setMapClickListener(_OnMapClick onMapClick) async {
+  Future<void> setMapClickListener(OnMapClick onMapClick) async {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
@@ -1070,7 +1070,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置地图拖动监听事件
-  Future<void> setMapDragListener(_OnMapDrag onMapDrag) async {
+  Future<void> setMapDragListener(OnMapDrag onMapDrag) async {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
@@ -1113,12 +1113,12 @@ class AmapController with WidgetsBindingObserver, _Private {
 }
 
 class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
-  _OnMarkerClick _onMarkerClicked;
-  _OnMarkerDrag _onMarkerDragStart;
-  _OnMarkerDrag _onMarkerDragging;
-  _OnMarkerDrag _onMarkerDragEnd;
-  _OnMapClick _onMapClick;
-  _OnMapDrag _onMapDrag;
+  OnMarkerClick _onMarkerClicked;
+  OnMarkerDrag _onMarkerDragStart;
+  OnMarkerDrag _onMarkerDragging;
+  OnMarkerDrag _onMarkerDragEnd;
+  OnMapClick _onMapClick;
+  OnMapDrag _onMapDrag;
   MAMapView _iosController;
 
   @override
@@ -1227,12 +1227,12 @@ class _AndroidMapDelegate extends java_lang_Object
         com_amap_api_maps_AMap_OnMarkerDragListener,
         com_amap_api_maps_AMap_OnMapClickListener,
         com_amap_api_maps_AMap_OnCameraChangeListener {
-  _OnMarkerClick _onMarkerClicked;
-  _OnMarkerDrag _onMarkerDragStart;
-  _OnMarkerDrag _onMarkerDragging;
-  _OnMarkerDrag _onMarkerDragEnd;
-  _OnMapDrag _onMapDrag;
-  _OnMapClick _onMapClick;
+  OnMarkerClick _onMarkerClicked;
+  OnMarkerDrag _onMarkerDragStart;
+  OnMarkerDrag _onMarkerDragging;
+  OnMarkerDrag _onMarkerDragEnd;
+  OnMapDrag _onMapDrag;
+  OnMapClick _onMapClick;
 
   @override
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
