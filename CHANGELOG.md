@@ -1,3 +1,7 @@
+## 0.3.3
+- enhancement: showMyLocation增加精度圈边框宽度, 颜色以及填充颜色的设置
+- fix: ios移动地图应该回调地图中心点的坐标而不是用户所在坐标
+
 ## 0.3.2
 - fix: #18 android的marker设置了点击之后, 仍然显示弹窗
 - fix: #22.1 解决annotation划出屏幕后被回收重新回到屏幕后消失的bug

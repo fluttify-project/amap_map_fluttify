@@ -14,7 +14,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.3.2+22ede1a"
+    version: "0.3.3+10e2842"
   args:
     dependency: transitive
     description:
@@ -28,7 +28,7 @@ packages:
       name: asn1lib
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.12"
+    version: "0.5.13"
   async:
     dependency: transitive
     description:
@@ -155,7 +155,7 @@ packages:
       name: foundation_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.7"
+    version: "0.0.8+1"
   http:
     dependency: transitive
     description:

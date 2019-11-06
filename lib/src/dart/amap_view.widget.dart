@@ -29,8 +29,7 @@ class _AmapViewState extends State<AmapView> {
     if (Platform.isAndroid) {
       return com_amap_api_maps_MapView_Android(
         onViewCreated: (controller) async {
-          final bundle =
-              await PlatformFactory_Android.createandroid_os_Bundle();
+          final bundle = await PlatformFactoryAndroid.createandroid_os_Bundle();
 
           await controller.onCreate(bundle);
           if (widget.onMapCreated != null) {

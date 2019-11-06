@@ -74,13 +74,13 @@ class AmapService {
       ios: (pool) async {
         // 点1
         final _location1 =
-            await PlatformFactory_iOS.createCLLocationCoordinate2D(
+            await PlatformFactoryIOS.createCLLocationCoordinate2D(
                 point1.latitude, point1.longitude);
         final mapPoint1 = await MAMapPointForCoordinate(_location1);
 
         // 点2
         final _location2 =
-            await PlatformFactory_iOS.createCLLocationCoordinate2D(
+            await PlatformFactoryIOS.createCLLocationCoordinate2D(
                 point2.latitude, point2.longitude);
         final mapPoint2 = await MAMapPointForCoordinate(_location2);
 
@@ -125,13 +125,13 @@ class AmapService {
       ios: (pool) async {
         // 点1
         final _location1 =
-            await PlatformFactory_iOS.createCLLocationCoordinate2D(
+            await PlatformFactoryIOS.createCLLocationCoordinate2D(
                 leftTop.latitude, leftTop.longitude);
         final mapPoint1 = await MAMapPointForCoordinate(_location1);
 
         // 点2
         final _location2 =
-            await PlatformFactory_iOS.createCLLocationCoordinate2D(
+            await PlatformFactoryIOS.createCLLocationCoordinate2D(
                 rightBottom.latitude, rightBottom.longitude);
         final mapPoint2 = await MAMapPointForCoordinate(_location2);
 

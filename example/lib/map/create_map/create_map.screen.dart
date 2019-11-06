@@ -90,6 +90,81 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                     }
                   },
                 ),
+                DiscreteSetting(
+                  head: '精度圈边框颜色',
+                  options: ['红色', '绿色', '蓝色'],
+                  onSelected: (value) {
+                    switch (value) {
+                      case '红色':
+                        _controller?.showMyLocation(
+                          true,
+                          strokeColor: Colors.red,
+                          strokeWidth: 2,
+                        );
+                        break;
+                      case '绿色':
+                        _controller?.showMyLocation(
+                          true,
+                          strokeColor: Colors.green,
+                          strokeWidth: 2,
+                        );
+                        break;
+                      case '蓝色':
+                        _controller?.showMyLocation(
+                          true,
+                          strokeColor: Colors.blue,
+                          strokeWidth: 2,
+                        );
+                        break;
+                    }
+                  },
+                ),
+                DiscreteSetting(
+                  head: '精度圈填充颜色',
+                  options: ['红色', '绿色', '蓝色'],
+                  onSelected: (value) {
+                    switch (value) {
+                      case '红色':
+                        _controller?.showMyLocation(
+                          true,
+                          fillColor: Colors.red,
+                          strokeWidth: 2,
+                        );
+                        break;
+                      case '绿色':
+                        _controller?.showMyLocation(
+                          true,
+                          fillColor: Colors.green,
+                          strokeWidth: 2,
+                        );
+                        break;
+                      case '蓝色':
+                        _controller?.showMyLocation(
+                          true,
+                          fillColor: Colors.blue,
+                          strokeWidth: 2,
+                        );
+                        break;
+                    }
+                  },
+                ),
+                DiscreteSetting(
+                  head: '精度圈边框宽度',
+                  options: ['2', '4', '8'],
+                  onSelected: (value) {
+                    switch (value) {
+                      case '2':
+                        _controller?.showMyLocation(true, strokeWidth: 2);
+                        break;
+                      case '4':
+                        _controller?.showMyLocation(true, strokeWidth: 4);
+                        break;
+                      case '8':
+                        _controller?.showMyLocation(true, strokeWidth: 8);
+                        break;
+                    }
+                  },
+                ),
                 BooleanSetting(
                   head: '是否显示路况信息',
                   onSelected: (value) {
