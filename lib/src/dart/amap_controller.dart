@@ -61,17 +61,41 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 是否显示我的位置
-  Future<void> showMyLocation(bool show) async {
+  ///
+  /// [strokeColor]精度圈边框颜色, [strokeWidth]精度圈边框宽度, [fillColor]精度圈填充颜色
+  Future<void> showMyLocation(
+    bool show, {
+    Color strokeColor,
+    Color fillColor,
+    double strokeWidth,
+  }) async {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final locationStyle = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_MyLocationStyle__();
-        await locationStyle?.showMyLocation(show);
+        await locationStyle.showMyLocation(show);
         await map.setMyLocationEnabled(show);
         if (show) {
           // 默认只定位一次
-          await locationStyle?.myLocationType(1);
+          await locationStyle.myLocationType(1);
+
+          // 边框颜色
+          if (strokeColor != null) {
+            await locationStyle
+                .strokeColor(Int32List.fromList([strokeColor.value])[0]);
+          }
+          // 填充颜色
+          if (fillColor != null) {
+            await locationStyle
+                .radiusFillColor(Int32List.fromList([fillColor.value])[0]);
+          }
+          // 边框宽度
+          if (strokeWidth != null) {
+            await locationStyle.strokeWidth(strokeWidth);
+          }
+
+          // 设置样式
           await map.setMyLocationStyle(locationStyle);
         }
 
@@ -85,6 +109,26 @@ class AmapController with WidgetsBindingObserver, _Private {
             MAUserTrackingMode.MAUserTrackingModeFollow,
             true,
           );
+
+          final style = await AmapMapFluttifyFactoryIOS
+              .createMAUserLocationRepresentation();
+
+          // 边框颜色
+          if (strokeColor != null) {
+            final color = await PlatformFactoryIOS.createUIColor(strokeColor);
+            await style.set_strokeColor(color);
+          }
+          // 填充颜色
+          if (fillColor != null) {
+            final color = await PlatformFactoryIOS.createUIColor(fillColor);
+            await style.set_fillColor(color);
+          }
+          // 边框宽度
+          if (strokeWidth != null) {
+            await style.set_lineWidth(strokeWidth);
+          }
+
+          await _iosController.updateUserLocationRepresentation(style);
         }
       },
     );
@@ -438,7 +482,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       },
       ios: (pool) async {
         final latLng =
-            await PlatformFactory_iOS.createCLLocationCoordinate2D(lat, lng);
+            await PlatformFactoryIOS.createCLLocationCoordinate2D(lat, lng);
         await _iosController.setCenterCoordinateAnimated(latLng, animated);
 
         pool..add(latLng);
@@ -506,7 +550,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           Uint8List iconData = await _getImageData(context, option.iconUri);
 
           final bitmap =
-              await PlatformFactory_Android.createandroid_graphics_Bitmap(
+              await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
                   iconData);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
@@ -538,7 +582,7 @@ class AmapController with WidgetsBindingObserver, _Private {
             await AmapMapFluttifyFactoryIOS.createMAPointAnnotation();
 
         final coordinate =
-            await PlatformFactory_iOS.createCLLocationCoordinate2D(lat, lng);
+            await PlatformFactoryIOS.createCLLocationCoordinate2D(lat, lng);
 
         // 设置经纬度
         await pointAnnotation.set_coordinate(coordinate);
@@ -556,17 +600,17 @@ class AmapController with WidgetsBindingObserver, _Private {
         if (option.iconUri != null) {
           Uint8List iconData = await _getImageData(context, option.iconUri);
 
-          final icon = await PlatformFactory_iOS.createUIImage(iconData);
+          final icon = await PlatformFactoryIOS.createUIImage(iconData);
 
           // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
           // 供ios的回调去获取
-          await PlatformFactory_iOS.pushStack('icon', icon);
+          await PlatformFactoryIOS.pushStack('icon', icon);
 
           pool..add(icon);
         }
         // 是否可拖拽
         if (option.draggable != null)
-          await PlatformFactory_iOS.pushStackJsonable(
+          await PlatformFactoryIOS.pushStackJsonable(
               'draggable', option.draggable);
 
         await _iosController.addAnnotation(pointAnnotation);
@@ -623,7 +667,7 @@ class AmapController with WidgetsBindingObserver, _Private {
             Uint8List iconData = await _getImageData(context, option.iconUri);
 
             final bitmap =
-                await PlatformFactory_Android.createandroid_graphics_Bitmap(
+                await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
                     iconData);
             final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
                 .fromBitmap(bitmap);
@@ -664,7 +708,7 @@ class AmapController with WidgetsBindingObserver, _Private {
               await AmapMapFluttifyFactoryIOS.createMAPointAnnotation();
 
           final coordinate =
-              await PlatformFactory_iOS.createCLLocationCoordinate2D(lat, lng);
+              await PlatformFactoryIOS.createCLLocationCoordinate2D(lat, lng);
 
           // 设置经纬度
           await pointAnnotation.set_coordinate(coordinate);
@@ -682,17 +726,17 @@ class AmapController with WidgetsBindingObserver, _Private {
           if (option.iconUri != null) {
             Uint8List iconData = await _getImageData(context, option.iconUri);
 
-            final icon = await PlatformFactory_iOS.createUIImage(iconData);
+            final icon = await PlatformFactoryIOS.createUIImage(iconData);
 
             // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
             // 供ios的回调去获取
-            await PlatformFactory_iOS.pushStack('icon', icon);
+            await PlatformFactoryIOS.pushStack('icon', icon);
 
             pool..add(icon);
           }
           // 是否可拖拽
           if (option.draggable != null)
-            await PlatformFactory_iOS.pushStackJsonable(
+            await PlatformFactoryIOS.pushStackJsonable(
                 'draggable', option.draggable);
 
           iosOptions.add(pointAnnotation);
@@ -778,7 +822,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
         for (final point in points) {
-          final latLng = await PlatformFactory_iOS.createCLLocationCoordinate2D(
+          final latLng = await PlatformFactoryIOS.createCLLocationCoordinate2D(
               point.latitude, point.longitude);
           latLngList.add(latLng);
         }
@@ -789,9 +833,9 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 宽度和颜色需要设置到STACK里去
         if (width != null)
-          await PlatformFactory_iOS.pushStackJsonable('width', width);
+          await PlatformFactoryIOS.pushStackJsonable('width', width);
         if (strokeColor != null)
-          await PlatformFactory_iOS.pushStackJsonable(
+          await PlatformFactoryIOS.pushStackJsonable(
               'strokeColor', strokeColor.value);
 
         // 设置参数
@@ -858,7 +902,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
         for (final point in points) {
-          final latLng = await PlatformFactory_iOS.createCLLocationCoordinate2D(
+          final latLng = await PlatformFactoryIOS.createCLLocationCoordinate2D(
               point.latitude, point.longitude);
           latLngList.add(latLng);
         }
@@ -869,12 +913,12 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 宽度和颜色需要设置到STACK里去
         if (width != null)
-          await PlatformFactory_iOS.pushStackJsonable('width', width);
+          await PlatformFactoryIOS.pushStackJsonable('width', width);
         if (strokeColor != null)
-          await PlatformFactory_iOS.pushStackJsonable(
+          await PlatformFactoryIOS.pushStackJsonable(
               'strokeColor', strokeColor.value);
         if (fillColor != null)
-          await PlatformFactory_iOS.pushStackJsonable(
+          await PlatformFactoryIOS.pushStackJsonable(
               'fillColor', fillColor.value);
 
         // 设置参数
@@ -932,7 +976,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         await _iosController.set_delegate(_iosMapDelegate);
 
-        final latLng = await PlatformFactory_iOS.createCLLocationCoordinate2D(
+        final latLng = await PlatformFactoryIOS.createCLLocationCoordinate2D(
             point.latitude, point.longitude);
 
         // 参数
@@ -941,12 +985,12 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 宽度和颜色需要设置到STACK里去
         if (width != null)
-          await PlatformFactory_iOS.pushStackJsonable('width', width);
+          await PlatformFactoryIOS.pushStackJsonable('width', width);
         if (strokeColor != null)
-          await PlatformFactory_iOS.pushStackJsonable(
+          await PlatformFactoryIOS.pushStackJsonable(
               'strokeColor', strokeColor.value);
         if (fillColor != null)
-          await PlatformFactory_iOS.pushStackJsonable(
+          await PlatformFactoryIOS.pushStackJsonable(
               'fillColor', fillColor.value);
 
         // 设置参数
