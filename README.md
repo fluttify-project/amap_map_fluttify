@@ -27,6 +27,7 @@ import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 
 使用:
 ```dart 
+/// !注意: 只要是返回Future的方法, 一律使用`await`修饰, 确保当前方法执行完成后再执行下一行, 在不能使用`await`修饰的环境下, 在`then`方法中执行下一步.
 /// 初始化 iOS在init方法中设置, android需要去AndroidManifest.xml里去设置, 详见 https://lbs.amap.com/api/android-sdk/gettingstarted
 /// 和其他fluttify高德插件不一样的是, 这里需要使用`AmapService`去初始化, `AmapService`内部调用的依然是`AmapCore`, 只不过地图插件在初始化的会话需要做些其他事.
 AmapService.init('7a04506d15fdb7585707f7091d715ef4');
@@ -35,6 +36,45 @@ class AmapWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AmapView(
+      // 是否显示室内地图
+      showIndoorMap: true,
+      // 地图类型
+      mapType: MapType.Standard,
+      // 地图语言
+      language: Language.Chinese,
+      // 是否显示交通情况
+      showTraffic: true,
+      // 是否显示缩放控件
+      showZoomControl: true,
+      // 是否显示指南针控件
+      showCompass: true,
+      // 是否显示定位控件
+      showLocateControl: true,
+      // 是否显示比例尺控件
+      showScaleControl: true,
+      // 是否使能缩放手势
+      zoomGesturesEnabled: true,
+      // 是否使能滚动手势
+      scrollGesturesEnabled: true,
+      // 是否使能旋转手势
+      rotateGestureEnabled: true,
+      // 是否使能倾斜手势
+      tiltGestureEnabled: true,
+      // 是否使能所有手势
+      allGesturesEnabled: true,
+      // 缩放级别
+      zoomLevel: 10, 
+      // 中心点坐标
+      centerCoordinate: LatLng(39, 120),
+      // 标记
+      markers: <MarkerOptions>[], 
+      // 标识点击回调
+      onMarkerClick: (Marker marker) {},
+      // 地图点击回调
+      onMapClick: (LatLng coord) {},
+      // 地图拖动回调
+      onMapDrag: (MapDrag drag) {},
+      // 地图创建完成回调
       onMapCreated: (controller) async {
         if (await requestPermission()) {
           await controller.showMyLocation(true);

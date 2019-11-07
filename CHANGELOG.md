@@ -1,3 +1,8 @@
+## 0.3.4
+- feat: 增加坐标转换方法AmapService::convertCoord
+- fix: ios获取定位后释放对应对象
+- enhancement: AmapView增加初始化参数 简化创建过程
+
 ## 0.3.3
 - enhancement: showMyLocation增加精度圈边框宽度, 颜色以及填充颜色的设置
 - fix: ios移动地图应该回调地图中心点的坐标而不是用户所在坐标

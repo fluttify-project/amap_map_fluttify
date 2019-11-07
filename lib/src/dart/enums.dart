@@ -24,3 +24,14 @@ enum Language {
   /// 英文
   English,
 }
+
+/// 坐标类型
+enum CoordType {
+  GPS,
+  Google,
+  MapBar,
+  Baidu,
+  MapABC,
+  SosoMap,
+  Aliyun,
+}

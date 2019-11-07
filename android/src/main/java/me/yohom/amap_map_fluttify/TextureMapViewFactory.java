@@ -56,7 +56,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.TextureMapView@" + refId + "::getMap()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::getMap(" + "" + ")");
             }
         
             // invoke native method
@@ -83,7 +83,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.TextureMapView@" + refId + "::onCreate()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onCreate(" + var1 + ")");
             }
         
             // invoke native method
@@ -102,7 +102,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.TextureMapView@" + refId + "::onResume()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onResume(" + "" + ")");
             }
         
             // invoke native method
@@ -121,7 +121,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.TextureMapView@" + refId + "::onPause()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onPause(" + "" + ")");
             }
         
             // invoke native method
@@ -140,7 +140,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.TextureMapView@" + refId + "::onDestroy()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onDestroy(" + "" + ")");
             }
         
             // invoke native method
@@ -159,7 +159,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.TextureMapView@" + refId + "::onLowMemory()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onLowMemory(" + "" + ")");
             }
         
             // invoke native method
@@ -179,7 +179,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.TextureMapView@" + refId + "::onSaveInstanceState()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onSaveInstanceState(" + var1 + ")");
             }
         
             // invoke native method
@@ -199,7 +199,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.TextureMapView@" + refId + "::setVisibility(\"var1\":$var1)");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::setVisibility(" + var1 + ")");
             }
         
             // invoke native method

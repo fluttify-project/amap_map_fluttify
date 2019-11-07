@@ -13,6 +13,7 @@ import 'interact_with_map/code_interaction.screen.dart';
 import 'interact_with_map/control_interaction.screen.dart';
 import 'interact_with_map/gesture_interaction.screen.dart';
 import 'tools/calcute_distance_screen.dart';
+import 'tools/coordinate_transformation_screen.dart';
 
 class MapDemo extends StatelessWidget {
   @override
@@ -87,13 +88,13 @@ class MapDemo extends StatelessWidget {
           children: <Widget>[
             FunctionItem(
               label: "坐标转换",
-              sublabel: "CalculateDistanceScreen",
-              target: CalculateDistanceScreen(),
+              sublabel: "CoordinateTransformationScreen",
+              target: CoordinateTransformationScreen(),
             ),
             FunctionItem(
               label: "两点间距离计算",
-              sublabel: "TODO",
-              target: TODOScreen(),
+              sublabel: "CalculateDistanceScreen",
+              target: CalculateDistanceScreen(),
             ),
           ],
         ),

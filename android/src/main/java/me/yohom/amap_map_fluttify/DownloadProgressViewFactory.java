@@ -57,7 +57,7 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.offlinemap.DownloadProgressView@" + refId + "::setProgress(\"var1\":$var1)");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.DownloadProgressView@" + refId + "::setProgress(" + var1 + ")");
             }
         
             // invoke native method
