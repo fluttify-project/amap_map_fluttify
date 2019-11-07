@@ -55,7 +55,11 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         final location = await _iosController.get_userLocation();
         final coord = await location.get_coordinate();
-        return LatLng(await coord.latitude, await coord.longitude);
+
+        final result = LatLng(await coord.latitude, await coord.longitude);
+
+        pool..add(location)..add(coord);
+        return result;
       },
     );
   }
