@@ -56,7 +56,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.WearMapView@" + refId + "::getMap()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::getMap(" + "" + ")");
             }
         
             // invoke native method
@@ -83,7 +83,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.WearMapView@" + refId + "::onCreate()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onCreate(" + var1 + ")");
             }
         
             // invoke native method
@@ -102,7 +102,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.WearMapView@" + refId + "::onResume()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onResume(" + "" + ")");
             }
         
             // invoke native method
@@ -121,7 +121,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.WearMapView@" + refId + "::onPause()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onPause(" + "" + ")");
             }
         
             // invoke native method
@@ -140,7 +140,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.WearMapView@" + refId + "::onDestroy()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onDestroy(" + "" + ")");
             }
         
             // invoke native method
@@ -159,7 +159,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.WearMapView@" + refId + "::onLowMemory()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onLowMemory(" + "" + ")");
             }
         
             // invoke native method
@@ -179,7 +179,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.WearMapView@" + refId + "::onSaveInstanceState()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onSaveInstanceState(" + var1 + ")");
             }
         
             // invoke native method
@@ -199,7 +199,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.WearMapView@" + refId + "::setVisibility(\"var1\":$var1)");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::setVisibility(" + var1 + ")");
             }
         
             // invoke native method
@@ -218,7 +218,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.WearMapView@" + refId + "::setOnDismissCallbackListener()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::setOnDismissCallbackListener(" + "" + ")");
             }
         
             // invoke native method
@@ -230,7 +230,7 @@ class WearMapViewFactory extends PlatformViewFactory {
                 @Override
                 public void onDismiss() {
                     // print log
-                    Log.d("kotlin-callback", "fluttify-kotlin-callback: onDismiss([])");
+                    Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
         
                     // convert to jsonable data
         
@@ -250,7 +250,7 @@ class WearMapViewFactory extends PlatformViewFactory {
                 @Override
                 public void onNotifySwipe() {
                     // print log
-                    Log.d("kotlin-callback", "fluttify-kotlin-callback: onNotifySwipe([])");
+                    Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
         
                     // convert to jsonable data
         
@@ -282,7 +282,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.WearMapView@" + refId + "::onDismiss()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onDismiss(" + "" + ")");
             }
         
             // invoke native method
@@ -302,7 +302,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.WearMapView@" + refId + "::onEnterAmbient()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onEnterAmbient(" + var1 + ")");
             }
         
             // invoke native method
@@ -321,7 +321,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.WearMapView@" + refId + "::onExitAmbient()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onExitAmbient(" + "" + ")");
             }
         
             // invoke native method

@@ -56,7 +56,7 @@ class MapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.MapView@" + refId + "::getMap()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::getMap(" + "" + ")");
             }
         
             // invoke native method
@@ -83,7 +83,7 @@ class MapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.MapView@" + refId + "::onCreate()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onCreate(" + var1 + ")");
             }
         
             // invoke native method
@@ -102,7 +102,7 @@ class MapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.MapView@" + refId + "::onResume()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onResume(" + "" + ")");
             }
         
             // invoke native method
@@ -121,7 +121,7 @@ class MapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.MapView@" + refId + "::onPause()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onPause(" + "" + ")");
             }
         
             // invoke native method
@@ -140,7 +140,7 @@ class MapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.MapView@" + refId + "::onDestroy()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onDestroy(" + "" + ")");
             }
         
             // invoke native method
@@ -159,7 +159,7 @@ class MapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.MapView@" + refId + "::onLowMemory()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onLowMemory(" + "" + ")");
             }
         
             // invoke native method
@@ -179,7 +179,7 @@ class MapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.MapView@" + refId + "::onSaveInstanceState()");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onSaveInstanceState(" + var1 + ")");
             }
         
             // invoke native method
@@ -199,7 +199,7 @@ class MapViewFactory extends PlatformViewFactory {
         
             // print log
             if (BuildConfig.DEBUG) {
-                Log.d("fluttify-kotlin", "fluttify-kotlin: com.amap.api.maps.MapView@" + refId + "::setVisibility(\"var1\":$var1)");
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::setVisibility(" + var1 + ")");
             }
         
             // invoke native method
