@@ -249,7 +249,7 @@ class AmapService {
   }
 
   /// 将asset转换为对应分辨率密度的asset
-  static String toResolutionAware(BuildContext context, String assetName) {
+  static String toResolutionAware(ImageConfiguration config, String assetName) {
     final RegExp _extractRatioRegExp = RegExp(r'/?(\d+(\.\d*)?)x$');
     const double _naturalResolution = 1.0;
 
@@ -279,11 +279,7 @@ class AmapService {
         return candidates[lower];
     }
 
-    String _chooseVariant(
-      String main,
-      ImageConfiguration config,
-      List<String> candidates,
-    ) {
+    String _chooseVariant(String main, List<String> candidates) {
       if (config.devicePixelRatio == null ||
           candidates == null ||
           candidates.isEmpty) return main;
@@ -294,12 +290,8 @@ class AmapService {
       return _findNearest(mapping, config.devicePixelRatio);
     }
 
-    final _devicePixelRatio = MediaQuery.of(context).devicePixelRatio;
     final String chosenName = _chooseVariant(
-        assetName,
-        ImageConfiguration(devicePixelRatio: _devicePixelRatio),
-        _assetManifest == null ? null : _assetManifest[assetName]);
-    debugPrint('设备devicePixelRatio: $_devicePixelRatio, 选中的图片: $chosenName');
+        assetName, _assetManifest == null ? null : _assetManifest[assetName]);
     return chosenName;
   }
 }

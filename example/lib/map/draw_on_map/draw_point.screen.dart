@@ -47,13 +47,13 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                   title: Center(child: Text('添加Marker')),
                   onTap: () async {
                     final marker = await _controller?.addMarker(
-                      context,
                       MarkerOption(
                         latLng: _getNextLatLng(),
                         title: '北京',
                         snippet: '描述',
                         iconUri: _assetsIcon,
                         draggable: true,
+                        imageConfig: createLocalImageConfiguration(context),
                       ),
                     );
                     _markers.add(marker);
@@ -63,7 +63,6 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                   title: Center(child: Text('批量添加Marker')),
                   onTap: () async {
                     final markers = await _controller?.addMarkers(
-                      context,
                       [
                         for (int i = 0; i < 10; i++)
                           MarkerOption(
@@ -72,6 +71,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                             snippet: '描述',
                             iconUri: _assetsIcon,
                             draggable: true,
+                            imageConfig: createLocalImageConfiguration(context),
                           ),
                       ],
                     );
