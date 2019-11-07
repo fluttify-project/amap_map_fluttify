@@ -7,7 +7,7 @@ packages:
       name: amap_core_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.9+025550b"
+    version: "0.0.11+a9797a4"
   amap_map_fluttify:
     dependency: "direct dev"
     description:
@@ -281,7 +281,7 @@ packages:
       name: rxdart
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.22.5"
+    version: "0.22.6"
   sky_engine:
     dependency: transitive
     description: flutter

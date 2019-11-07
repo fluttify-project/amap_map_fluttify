@@ -95,6 +95,108 @@ class AmapService {
     );
   }
 
+  /// 转换其他坐标系到高德坐标系
+  ///
+  /// [coord]待转换坐标, [fromType]待转换坐标的坐标系
+  static Future<LatLng> convertCoord(LatLng coord, CoordType fromType) async {
+    return platform(
+      android: (pool) async {
+        final context = await PlatformFactoryAndroid.getandroid_app_Activity();
+
+        // 待转换坐标
+        final targetCoord = await AmapMapFluttifyFactoryAndroid
+            .createcom_amap_api_maps_model_LatLng__double__double(
+                coord.latitude, coord.longitude);
+
+        // 转换器
+        final converter = await AmapMapFluttifyFactoryAndroid
+            .createcom_amap_api_maps_CoordinateConverter__android_content_Context(
+                context);
+
+        switch (fromType) {
+          case CoordType.GPS:
+            await converter
+                .from(com_amap_api_maps_CoordinateConverter_CoordType.GPS);
+            break;
+          case CoordType.Google:
+            await converter
+                .from(com_amap_api_maps_CoordinateConverter_CoordType.GOOGLE);
+            break;
+          case CoordType.MapBar:
+            await converter
+                .from(com_amap_api_maps_CoordinateConverter_CoordType.MAPBAR);
+            break;
+          case CoordType.Baidu:
+            await converter
+                .from(com_amap_api_maps_CoordinateConverter_CoordType.BAIDU);
+            break;
+          case CoordType.MapABC:
+            await converter
+                .from(com_amap_api_maps_CoordinateConverter_CoordType.MAPABC);
+            break;
+          case CoordType.SosoMap:
+            await converter
+                .from(com_amap_api_maps_CoordinateConverter_CoordType.SOSOMAP);
+            break;
+          case CoordType.Aliyun:
+            await converter
+                .from(com_amap_api_maps_CoordinateConverter_CoordType.ALIYUN);
+            break;
+        }
+
+        await converter.coord(targetCoord);
+
+        final result = await converter.convert();
+
+        // 释放两个点
+        pool..add(targetCoord)..add(context)..add(converter)..add(result);
+
+        return LatLng(
+          await result.get_latitude(),
+          await result.get_longitude(),
+        );
+      },
+      ios: (pool) async {
+        // 待转换坐标
+        final targetCoord =
+            await PlatformFactoryIOS.createCLLocationCoordinate2D(
+                coord.latitude, coord.longitude);
+
+        AMapCoordinateType type;
+        switch (fromType) {
+          case CoordType.GPS:
+            type = AMapCoordinateType.AMapCoordinateTypeGPS;
+            break;
+          case CoordType.Google:
+            type = AMapCoordinateType.AMapCoordinateTypeGoogle;
+            break;
+          case CoordType.MapBar:
+            type = AMapCoordinateType.AMapCoordinateTypeMapBar;
+            break;
+          case CoordType.Baidu:
+            type = AMapCoordinateType.AMapCoordinateTypeBaidu;
+            break;
+          case CoordType.MapABC:
+            type = AMapCoordinateType.AMapCoordinateTypeMapABC;
+            break;
+          case CoordType.SosoMap:
+            type = AMapCoordinateType.AMapCoordinateTypeSoSoMap;
+            break;
+          case CoordType.Aliyun:
+            type = AMapCoordinateType.AMapCoordinateTypeAliYun;
+            break;
+        }
+
+        final result = await AMapCoordinateConvert(targetCoord, type);
+
+        // 释放两个点相关的数据
+        pool..add(targetCoord)..add(result);
+
+        return LatLng(await result.latitude, await result.longitude);
+      },
+    );
+  }
+
   /// 计算面积 (iOS未完成)
   ///
   /// 计算指定左上角[leftTop]和右下角[rightBottom]的矩形的面积
