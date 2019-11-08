@@ -1,3 +1,7 @@
+## 0.5.0
+- feat: 画线添加自定义纹理参数;
+- enhancement: [breaking change] 抽取画圆画多边形的参数
+
 ## 0.4.1
 - chore: export文件增加library指令
 - enhancement: 加强assert失败的提示
