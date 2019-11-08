@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../android/android.export.g.dart';
 import '../ios/ios.export.g.dart';
+import 'enums.dart';
 
 /// Marker创建参数
 class MarkerOption {
@@ -63,12 +64,20 @@ class PolylineOption {
   /// 图片参数
   final ImageConfiguration imageConfig;
 
+  /// 线段末端样式
+  final LineCapType lineCapType;
+
+  /// 线段连接处样式
+  final LineJoinType lineJoinType;
+
   PolylineOption({
     @required this.latLngList,
     this.width,
     this.strokeColor,
     this.customTexture,
     this.imageConfig,
+    this.lineCapType,
+    this.lineJoinType,
   }) : assert(
           (customTexture != null && imageConfig != null) ||
               customTexture == null,
@@ -77,7 +86,7 @@ class PolylineOption {
 
   @override
   String toString() {
-    return 'PolylineOption{latLngList: $latLngList, width: $width, strokeColor: $strokeColor, customTexture: $customTexture, imageConfig: $imageConfig}';
+    return 'PolylineOption{latLngList: $latLngList, width: $width, strokeColor: $strokeColor, customTexture: $customTexture, imageConfig: $imageConfig, lineCapType: $lineCapType, lineJoinType: $lineJoinType}';
   }
 }
 
@@ -184,6 +193,24 @@ class Marker {
     return platform(
       android: (_) => _androidModel.remove(),
       ios: (_) => _iosController?.removeAnnotation(_iosModel),
+    );
+  }
+}
+
+/// 折线
+class Polyline {
+  Polyline.android(this._androidModel);
+
+  Polyline.ios(this._iosModel, this._iosController);
+
+  com_amap_api_maps_model_Polyline _androidModel;
+  MAPolyline _iosModel;
+  MAMapView _iosController;
+
+  Future<void> remove() async {
+    return platform(
+      android: (_) => _androidModel.remove(),
+      ios: (_) => _iosController?.removeOverlay(_iosModel),
     );
   }
 }
