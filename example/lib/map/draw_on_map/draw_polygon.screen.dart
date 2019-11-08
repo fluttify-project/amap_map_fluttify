@@ -39,8 +39,8 @@ class _DrawPolygonScreenState extends State<DrawPolygonScreen> {
                 ListTile(
                   title: Center(child: Text('添加多边形')),
                   onTap: () async {
-                    await _controller?.addPolygon(
-                      [
+                    await _controller?.addPolygon(PolygonOption(
+                      latLngList: [
                         LatLng(39.999391, 116.135972),
                         LatLng(39.898323, 116.057694),
                         LatLng(39.900430, 116.265061),
@@ -48,7 +48,7 @@ class _DrawPolygonScreenState extends State<DrawPolygonScreen> {
                       ],
                       width: 10,
                       strokeColor: Colors.green,
-                    );
+                    ));
                   },
                 ),
               ],

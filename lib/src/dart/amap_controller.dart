@@ -554,9 +554,9 @@ class AmapController with WidgetsBindingObserver, _Private {
           await markerOption.snippet(option.snippet);
         }
         // 设置marker图标
-        if (option.iconUri != null) {
+        if (option.iconUri != null && option.imageConfig != null) {
           Uint8List iconData =
-              await _getImageData(option.imageConfig, option.iconUri);
+              await _uri2ImageData(option.imageConfig, option.iconUri);
 
           final bitmap =
               await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
@@ -608,7 +608,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 设置marker图标
         if (option.iconUri != null) {
           Uint8List iconData =
-              await _getImageData(option.imageConfig, option.iconUri);
+              await _uri2ImageData(option.imageConfig, option.iconUri);
 
           final icon = await PlatformFactoryIOS.createUIImage(iconData);
 
@@ -671,7 +671,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           // 设置marker图标
           if (option.iconUri != null) {
             Uint8List iconData =
-                await _getImageData(option.imageConfig, option.iconUri);
+                await _uri2ImageData(option.imageConfig, option.iconUri);
 
             final bitmap =
                 await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
@@ -732,7 +732,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           // 设置marker图标
           if (option.iconUri != null) {
             Uint8List iconData =
-                await _getImageData(option.imageConfig, option.iconUri);
+                await _uri2ImageData(option.imageConfig, option.iconUri);
 
             final icon = await PlatformFactoryIOS.createUIImage(iconData);
 
@@ -783,19 +783,15 @@ class AmapController with WidgetsBindingObserver, _Private {
 
   /// 添加线
   ///
-  /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[strokeColor]
-  Future<void> addPolyline(
-    List<LatLng> points, {
-    double width,
-    Color strokeColor = Colors.black,
-  }) {
+  /// 可配置参数详见[PolylineOption]
+  Future<void> addPolyline(PolylineOption option) {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
 
         // 构造折线点
         List<com_amap_api_maps_model_LatLng> latLngList = [];
-        for (final point in points) {
+        for (final point in option.latLngList) {
           final latLng = await AmapMapFluttifyFactoryAndroid
               .createcom_amap_api_maps_model_LatLng__double__double(
                   point.latitude, point.longitude);
@@ -806,14 +802,29 @@ class AmapController with WidgetsBindingObserver, _Private {
         final polylineOptions = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_PolylineOptions__();
 
-        // 添加参数
+        // 添加经纬度列表
         await polylineOptions.addAll(latLngList);
-        if (width != null) {
-          await polylineOptions.width(width);
+        if (option.width != null) {
+          await polylineOptions.width(option.width);
         }
-        if (strokeColor != null) {
+        // 颜色
+        if (option.strokeColor != null) {
           await polylineOptions
-              .color(Int32List.fromList([strokeColor.value])[0]);
+              .color(Int32List.fromList([option.strokeColor.value])[0]);
+        }
+        // 自定义贴图
+        if (option.customTexture != null && option.imageConfig != null) {
+          Uint8List iconData =
+              await _uri2ImageData(option.imageConfig, option.customTexture);
+          final bitmap =
+              await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
+                  iconData);
+          final texture = await com_amap_api_maps_model_BitmapDescriptorFactory
+              .fromBitmap(bitmap);
+          await polylineOptions.setCustomTexture(texture);
+          await polylineOptions.setUseTexture(true);
+
+          pool..add(bitmap)..add(texture);
         }
 
         // 设置参数
@@ -829,7 +840,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
-        for (final point in points) {
+        for (final point in option.latLngList) {
           final latLng = await PlatformFactoryIOS.createCLLocationCoordinate2D(
               point.latitude, point.longitude);
           latLngList.add(latLng);
@@ -840,12 +851,25 @@ class AmapController with WidgetsBindingObserver, _Private {
             latLngList, latLngList.length);
 
         // 宽度和颜色需要设置到STACK里去
-        if (width != null)
-          await PlatformFactoryIOS.pushStackJsonable('width', width);
-        if (strokeColor != null)
+        if (option.width != null) {
+          await PlatformFactoryIOS.pushStackJsonable('width', option.width);
+        }
+        // 颜色
+        if (option.strokeColor != null) {
           await PlatformFactoryIOS.pushStackJsonable(
-              'strokeColor', strokeColor.value);
+              'strokeColor', option.strokeColor.value);
+        }
+        // 设置图片
+        if (option.customTexture != null && option.imageConfig != null) {
+          Uint8List textureData =
+              await _uri2ImageData(option.imageConfig, option.customTexture);
 
+          final texture = await PlatformFactoryIOS.createUIImage(textureData);
+
+          await PlatformFactoryIOS.pushStack('texture', texture);
+
+          pool..add(texture);
+        }
         // 设置参数
         await _iosController.addOverlay(polyline);
 
@@ -859,19 +883,16 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// 添加多边形
   ///
   /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[strokeColor]
-  Future<void> addPolygon(
-    List<LatLng> points, {
-    double width = 5,
-    Color fillColor = Colors.white,
-    Color strokeColor = Colors.black,
-  }) {
+  Future<void> addPolygon(PolygonOption option) {
+    assert(option != null, 'option不能为null');
+
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
 
         // 构造折线点
         List<com_amap_api_maps_model_LatLng> latLngList = [];
-        for (final point in points) {
+        for (final point in option.latLngList) {
           final latLng = await AmapMapFluttifyFactoryAndroid
               .createcom_amap_api_maps_model_LatLng__double__double(
                   point.latitude, point.longitude);
@@ -884,16 +905,19 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 添加参数
         await polygonOptions.addAll(latLngList);
-        if (width != null) {
-          await polygonOptions.strokeWidth(width);
+        // 宽度
+        if (option.width != null) {
+          await polygonOptions.strokeWidth(option.width);
         }
-        if (strokeColor != null) {
+        // 边框颜色
+        if (option.strokeColor != null) {
           await polygonOptions
-              .strokeColor(Int32List.fromList([strokeColor.value])[0]);
+              .strokeColor(Int32List.fromList([option.strokeColor.value])[0]);
         }
-        if (fillColor != null) {
+        // 填充颜色
+        if (option.fillColor != null) {
           await polygonOptions
-              .fillColor(Int32List.fromList([fillColor.value])[0]);
+              .fillColor(Int32List.fromList([option.fillColor.value])[0]);
         }
 
         // 设置参数
@@ -909,7 +933,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
-        for (final point in points) {
+        for (final point in option.latLngList) {
           final latLng = await PlatformFactoryIOS.createCLLocationCoordinate2D(
               point.latitude, point.longitude);
           latLngList.add(latLng);
@@ -920,14 +944,14 @@ class AmapController with WidgetsBindingObserver, _Private {
             latLngList, latLngList.length);
 
         // 宽度和颜色需要设置到STACK里去
-        if (width != null)
-          await PlatformFactoryIOS.pushStackJsonable('width', width);
-        if (strokeColor != null)
+        if (option.width != null)
+          await PlatformFactoryIOS.pushStackJsonable('width', option.width);
+        if (option.strokeColor != null)
           await PlatformFactoryIOS.pushStackJsonable(
-              'strokeColor', strokeColor.value);
-        if (fillColor != null)
+              'strokeColor', option.strokeColor.value);
+        if (option.fillColor != null)
           await PlatformFactoryIOS.pushStackJsonable(
-              'fillColor', fillColor.value);
+              'fillColor', option.fillColor.value);
 
         // 设置参数
         await _iosController.addOverlay(polygon);
@@ -942,13 +966,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// 添加圆
   ///
   /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[strokeColor]
-  Future<void> addCircle(
-    LatLng point,
-    double radius, {
-    double width = 5,
-    Color fillColor = Colors.white,
-    Color strokeColor = Colors.black,
-  }) {
+  Future<void> addCircle(CircleOption option) {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
@@ -956,25 +974,32 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 构造点
         final latLng = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_LatLng__double__double(
-                point.latitude, point.longitude);
+          option.center.latitude,
+          option.center.longitude,
+        );
 
         // 构造参数
         final circleOptions = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_CircleOptions__();
 
-        // 添加参数
+        // 中心点
         await circleOptions.center(latLng);
-        await circleOptions.radius(radius);
-        if (width != null) {
-          await circleOptions.strokeWidth(width);
+        // 半径
+        await circleOptions.radius(option.radius);
+        // 宽度
+        if (option.width != null) {
+          await circleOptions.strokeWidth(option.width);
         }
-        if (strokeColor != null) {
+        // 边框颜色
+        if (option.strokeColor != null) {
           await circleOptions
-              .strokeColor(Int32List.fromList([strokeColor.value])[0]);
+              .strokeColor(Int32List.fromList([option.strokeColor.value])[0]);
         }
-        if (fillColor != null)
+        // 填充颜色
+        if (option.fillColor != null) {
           await circleOptions
-              .fillColor(Int32List.fromList([fillColor.value])[0]);
+              .fillColor(Int32List.fromList([option.fillColor.value])[0]);
+        }
 
         // 设置参数
         await map.addCircle(circleOptions);
@@ -985,21 +1010,25 @@ class AmapController with WidgetsBindingObserver, _Private {
         await _iosController.set_delegate(_iosMapDelegate);
 
         final latLng = await PlatformFactoryIOS.createCLLocationCoordinate2D(
-            point.latitude, point.longitude);
+          option.center.latitude,
+          option.center.longitude,
+        );
 
         // 参数
-        final circle =
-            await MACircle.circleWithCenterCoordinateRadius(latLng, radius);
+        final circle = await MACircle.circleWithCenterCoordinateRadius(
+          latLng,
+          option.radius,
+        );
 
         // 宽度和颜色需要设置到STACK里去
-        if (width != null)
-          await PlatformFactoryIOS.pushStackJsonable('width', width);
-        if (strokeColor != null)
+        if (option.width != null)
+          await PlatformFactoryIOS.pushStackJsonable('width', option.width);
+        if (option.strokeColor != null)
           await PlatformFactoryIOS.pushStackJsonable(
-              'strokeColor', strokeColor.value);
-        if (fillColor != null)
+              'strokeColor', option.strokeColor.value);
+        if (option.fillColor != null)
           await PlatformFactoryIOS.pushStackJsonable(
-              'fillColor', fillColor.value);
+              'fillColor', option.fillColor.value);
 
         // 设置参数
         await _iosController.addOverlay(circle);
@@ -1334,7 +1363,7 @@ class _AndroidMapDelegate extends java_lang_Object
 }
 
 mixin _Private {
-  Future<Uint8List> _getImageData(
+  Future<Uint8List> _uri2ImageData(
     ImageConfiguration config,
     Uri iconUri,
   ) async {

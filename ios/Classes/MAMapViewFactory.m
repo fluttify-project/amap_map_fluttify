@@ -3334,6 +3334,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSNumber* width = (NSNumber*) STACK[@"width"];
   NSNumber* strokeColor = (NSNumber*) STACK[@"strokeColor"];
   NSNumber* fillColor = (NSNumber*) STACK[@"fillColor"];
+  UIImage* texture = (UIImage*) STACK[@"texture"];
 
   // 线
   if ([overlay isKindOfClass:[MAPolyline class]])
@@ -3350,6 +3351,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           rgba >>= 8;
       }
       polylineRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+      polylineRenderer.strokeImage = texture;
 
       // 这次调用完成后 清空栈
       [STACK removeAllObjects];
