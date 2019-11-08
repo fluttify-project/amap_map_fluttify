@@ -17,6 +17,7 @@ typedef void OnMarkerClick(Marker marker);
 typedef void OnMapClick(LatLng latLng);
 typedef void OnMapDrag(MapDrag latLng);
 typedef void OnMarkerDrag(Marker marker);
+typedef void _OnRequireAlwaysAuth(CLLocationManager manager);
 
 /// 地图控制类
 class AmapController with WidgetsBindingObserver, _Private {
@@ -522,8 +523,11 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// 添加marker
   ///
   /// 在纬度[lat], 经度[lng]的位置添加marker, 并设置标题[title]和副标题[snippet], [iconUri]
-  /// 可以是图片url, asset路径或者文件路径
-  Future<Marker> addMarker(BuildContext context, MarkerOption option) {
+  /// 可以是图片url, asset路径或者文件路径.
+  /// 其中图片参数[imageConfig]如果不知道怎么创建, 那么就直接调用flutter sdk内提供的[createLocalImageConfiguration]方法创建
+  Future<Marker> addMarker(MarkerOption option) {
+    assert(option != null);
+
     final lat = option.latLng.latitude;
     final lng = option.latLng.longitude;
     return platform(
@@ -551,7 +555,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         }
         // 设置marker图标
         if (option.iconUri != null) {
-          Uint8List iconData = await _getImageData(context, option.iconUri);
+          Uint8List iconData =
+              await _getImageData(option.imageConfig, option.iconUri);
 
           final bitmap =
               await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
@@ -602,7 +607,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 设置图片
         // 设置marker图标
         if (option.iconUri != null) {
-          Uint8List iconData = await _getImageData(context, option.iconUri);
+          Uint8List iconData =
+              await _getImageData(option.imageConfig, option.iconUri);
 
           final icon = await PlatformFactoryIOS.createUIImage(iconData);
 
@@ -630,11 +636,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// 批量添加marker
   ///
   /// 根据[options]批量创建Marker, 目前iOS端所有的marker的icon和draggable参数都只能一样
-  Future<List<Marker>> addMarkers(
-    BuildContext context,
-    List<MarkerOption> options,
-  ) {
-    assert(context != null);
+  Future<List<Marker>> addMarkers(List<MarkerOption> options) {
     assert(options != null);
 
     if (options.isEmpty) return Future.value([]);
@@ -668,7 +670,8 @@ class AmapController with WidgetsBindingObserver, _Private {
           }
           // 设置marker图标
           if (option.iconUri != null) {
-            Uint8List iconData = await _getImageData(context, option.iconUri);
+            Uint8List iconData =
+                await _getImageData(option.imageConfig, option.iconUri);
 
             final bitmap =
                 await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
@@ -728,7 +731,8 @@ class AmapController with WidgetsBindingObserver, _Private {
           // 设置图片
           // 设置marker图标
           if (option.iconUri != null) {
-            Uint8List iconData = await _getImageData(context, option.iconUri);
+            Uint8List iconData =
+                await _getImageData(option.imageConfig, option.iconUri);
 
             final icon = await PlatformFactoryIOS.createUIImage(iconData);
 
@@ -1093,6 +1097,21 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 请求后台定位 *仅iOS
+  Future<void> requireAlwaysAuth() {
+    return platform(
+      android: (pool) async {},
+      ios: (pool) async {
+        final onRequireAuth = (CLLocationManager manager) async {
+          await manager?.requestAlwaysAuthorization();
+        };
+        await _iosController.set_delegate(
+          _iosMapDelegate.._onRequireAlwaysAuth = onRequireAuth,
+        );
+      },
+    );
+  }
+
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
   }
@@ -1123,6 +1142,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   OnMarkerDrag _onMarkerDragEnd;
   OnMapClick _onMapClick;
   OnMapDrag _onMapDrag;
+  _OnRequireAlwaysAuth _onRequireAlwaysAuth;
   MAMapView _iosController;
 
   @override
@@ -1223,6 +1243,16 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       ));
     }
   }
+
+  @override
+  Future<void> mapViewRequireLocationAuth(
+    CLLocationManager locationManager,
+  ) async {
+    super.mapViewRequireLocationAuth(locationManager);
+    if (_onRequireAlwaysAuth != null) {
+      _onRequireAlwaysAuth(locationManager);
+    }
+  }
 }
 
 class _AndroidMapDelegate extends java_lang_Object
@@ -1304,7 +1334,10 @@ class _AndroidMapDelegate extends java_lang_Object
 }
 
 mixin _Private {
-  Future<Uint8List> _getImageData(BuildContext context, Uri iconUri) async {
+  Future<Uint8List> _getImageData(
+    ImageConfiguration config,
+    Uri iconUri,
+  ) async {
     Uint8List iconData;
     switch (iconUri.scheme) {
       // 网络图片
@@ -1331,7 +1364,7 @@ mixin _Private {
         // 的缩小, 就是完美的了, 但是处理起来比较麻烦, 这里就不去处理了
         if (Platform.isAndroid) {
           final byteData = await rootBundle
-              .load(AmapService.toResolutionAware(context, iconUri.path));
+              .load(AmapService.toResolutionAware(config, iconUri.path));
           iconData = byteData.buffer.asUint8List();
         } else {
           final byteData = await rootBundle.load(iconUri.path);

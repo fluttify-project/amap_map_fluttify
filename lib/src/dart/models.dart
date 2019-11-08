@@ -16,7 +16,13 @@ class MarkerOption {
   final String snippet;
 
   /// 图片uri 可以是url, asset路径或者文件路径
+  ///
+  /// 如果设置了[iconUri], 那么必须同时设置[imageConfig], 否则图片大小会不一致, 这是flutter
+  /// 的bug
   final Uri iconUri;
+
+  /// 图片参数
+  final ImageConfiguration imageConfig;
 
   /// 是否可拖动
   final bool draggable;
@@ -26,12 +32,13 @@ class MarkerOption {
     this.title,
     this.snippet,
     this.iconUri,
+    this.imageConfig,
     this.draggable,
-  });
+  }) : assert((iconUri != null && imageConfig != null) || iconUri == null);
 
   @override
   String toString() {
-    return 'MarkerOptions{point: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, draggable: $draggable}';
+    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, configuration: $imageConfig, draggable: $draggable}';
   }
 }
 
