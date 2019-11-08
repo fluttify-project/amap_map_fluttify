@@ -1,3 +1,7 @@
+## 0.4.1
+- chore: export文件增加library指令
+- enhancement: 加强assert失败的提示
+
 ## 0.4.0
 - [breaking change] enhancement: addMarker(s)方法去除BuildContext参数
 - feat: 增加requireAlwaysAuth方法 申请后台定位
