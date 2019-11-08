@@ -34,7 +34,10 @@ class MarkerOption {
     this.iconUri,
     this.imageConfig,
     this.draggable,
-  }) : assert((iconUri != null && imageConfig != null) || iconUri == null);
+  }) : assert(
+          (iconUri != null && imageConfig != null) || iconUri == null,
+          'iconUri和imageConfig必须同时设置! 如果想要一个默认的imageConfig, 那么就直接调用[createLocalImageConfiguration]方法来创建!',
+        );
 
   @override
   String toString() {
