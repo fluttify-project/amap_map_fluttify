@@ -17,6 +17,7 @@ typedef void OnMarkerClick(Marker marker);
 typedef void OnMapClick(LatLng latLng);
 typedef void OnMapDrag(MapDrag latLng);
 typedef void OnMarkerDrag(Marker marker);
+typedef void _OnRequireAlwaysAuth(CLLocationManager manager);
 
 /// 地图控制类
 class AmapController with WidgetsBindingObserver, _Private {
@@ -1096,6 +1097,21 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 请求后台定位 *仅iOS
+  Future<void> requireAlwaysAuth() {
+    return platform(
+      android: (pool) async {},
+      ios: (pool) async {
+        final onRequireAuth = (CLLocationManager manager) async {
+          await manager?.requestAlwaysAuthorization();
+        };
+        await _iosController.set_delegate(
+          _iosMapDelegate.._onRequireAlwaysAuth = onRequireAuth,
+        );
+      },
+    );
+  }
+
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
   }
@@ -1126,6 +1142,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   OnMarkerDrag _onMarkerDragEnd;
   OnMapClick _onMapClick;
   OnMapDrag _onMapDrag;
+  _OnRequireAlwaysAuth _onRequireAlwaysAuth;
   MAMapView _iosController;
 
   @override
@@ -1224,6 +1241,16 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
         tilt: await mapView.get_cameraDegree(),
         isAbroad: await mapView.get_isAbroad(),
       ));
+    }
+  }
+
+  @override
+  Future<void> mapViewRequireLocationAuth(
+    CLLocationManager locationManager,
+  ) async {
+    super.mapViewRequireLocationAuth(locationManager);
+    if (_onRequireAlwaysAuth != null) {
+      _onRequireAlwaysAuth(locationManager);
     }
   }
 }
