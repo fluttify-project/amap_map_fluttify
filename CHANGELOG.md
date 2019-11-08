@@ -1,3 +1,7 @@
+## 0.4.0
+- [breaking change] enhancement: addMarker(s)方法去除BuildContext参数
+- feat: 增加requireAlwaysAuth方法 申请后台定位
+
 ## 0.3.4
 - feat: 增加坐标转换方法AmapService::convertCoord
 - fix: ios获取定位后释放对应对象
