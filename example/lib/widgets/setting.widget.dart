@@ -54,7 +54,6 @@ class _ContinuousSettingState extends State<ContinuousSetting> {
               });
             },
           ),
-          kDividerTiny,
         ],
       ),
     );
@@ -76,25 +75,20 @@ class DiscreteSetting extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        PopupMenuButton<String>(
-          onSelected: onSelected,
-          child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Text(head, style: Theme.of(context).textTheme.subhead),
-          ),
-          itemBuilder: (context) {
-            return options
-                .map((value) => PopupMenuItem<String>(
-                      child: Text(value),
-                      value: value,
-                    ))
-                .toList();
-          },
-        ),
-        kDividerTiny,
-      ],
+    return PopupMenuButton<String>(
+      onSelected: onSelected,
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Text(head, style: Theme.of(context).textTheme.subhead),
+      ),
+      itemBuilder: (context) {
+        return options
+            .map((value) => PopupMenuItem<String>(
+                  child: Text(value),
+                  value: value,
+                ))
+            .toList();
+      },
     );
   }
 }
@@ -164,20 +158,15 @@ class _BooleanSettingState extends State<BooleanSetting> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        SwitchListTile(
-          title: Text(widget.head),
-          value: _selected,
-          onChanged: (selected) {
-            setState(() {
-              _selected = selected;
-              widget.onSelected(selected);
-            });
-          },
-        ),
-        kDividerTiny,
-      ],
+    return SwitchListTile(
+      title: Text(widget.head),
+      value: _selected,
+      onChanged: (selected) {
+        setState(() {
+          _selected = selected;
+          widget.onSelected(selected);
+        });
+      },
     );
   }
 }

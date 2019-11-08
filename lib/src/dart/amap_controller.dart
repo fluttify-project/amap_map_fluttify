@@ -781,10 +781,10 @@ class AmapController with WidgetsBindingObserver, _Private {
     });
   }
 
-  /// 添加线
+  /// 添加折线
   ///
   /// 可配置参数详见[PolylineOption]
-  Future<void> addPolyline(PolylineOption option) {
+  Future<Polyline> addPolyline(PolylineOption option) {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
@@ -826,14 +826,28 @@ class AmapController with WidgetsBindingObserver, _Private {
 
           pool..add(bitmap)..add(texture);
         }
-
+        // 线段始末端样式, 由于两端的枚举顺序是一样的, 所以这里直接从索引获取枚举
+        if (option.lineCapType != null) {
+          await polylineOptions.lineCapType(
+            com_amap_api_maps_model_PolylineOptions_LineCapType
+                .values[option.lineCapType.index],
+          );
+        }
+        // 线段连接处样式, 由于两端的枚举顺序是一样的, 所以这里直接从索引获取枚举
+        if (option.lineJoinType != null) {
+          await polylineOptions.lineJoinType(
+              com_amap_api_maps_model_PolylineOptions_LineJoinType
+                  .values[option.lineJoinType.index]);
+        }
         // 设置参数
-        await map.addPolyline(polylineOptions);
+        final polyline = await map.addPolyline(polylineOptions);
 
         pool
           ..add(map)
           ..add(polylineOptions)
           ..addAll(latLngList);
+
+        return Polyline.android(polyline);
       },
       ios: (pool) async {
         await _iosController.set_delegate(_iosMapDelegate);
@@ -870,12 +884,27 @@ class AmapController with WidgetsBindingObserver, _Private {
 
           pool..add(texture);
         }
+        // 线段始末端样式, 由于两端的枚举顺序是一样的, 所以这里直接从索引获取枚举
+        if (option.lineCapType != null) {
+          await PlatformFactoryIOS.pushStackJsonable(
+            'lineCapType',
+            option.lineCapType.index,
+          );
+        }
+        // 线段连接处样式, 由于两端的枚举顺序是一样的, 所以这里直接从索引获取枚举
+        if (option.lineJoinType != null) {
+          await PlatformFactoryIOS.pushStackJsonable(
+            'lineJoinType',
+            option.lineJoinType.index,
+          );
+        }
+
         // 设置参数
         await _iosController.addOverlay(polyline);
 
-        pool
-          ..add(polyline)
-          ..addAll(latLngList);
+        pool..addAll(latLngList);
+
+        return Polyline.ios(polyline, _iosController);
       },
     );
   }

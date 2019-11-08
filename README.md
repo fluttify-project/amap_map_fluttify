@@ -6,6 +6,8 @@
 
 Dart接口基于[fluttify](https://github.com/yohom/fluttify-core-example)引擎生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/).
 
+> **!!`git clone`失败看这里!!**
+>
 > 由于高德地图的iOS端的二进制文件`MAMapKit`有**128.1MB**, 超出了GitHub上传文件限制的大小(100MB), 而GitHub免费版的git-lfs限额流量(1G)已经用完, 所以`git clone`的时候会失败, 就算直接下载repo, `MAMapKit`也已经转换成了git-lfs的一个指针文件, 无法使用.
 >
 > 这里提供一个变通方法, 随便在一个flutter工程内依赖`amap_map_fluttify`, 然后`flutter packages get`下载flutter插件后, 去flutter的pub缓存文件夹`$flutter_root/.pub-cache/hosted/pub.dartlang.org/`(`$flutter_root`是你的flutter安装文件夹)下找到`amap_map_fluttify`的包, 这是一个完整的插件工程, 里面含有`example`工程, 可以正常运行.
@@ -27,6 +29,7 @@ import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 
 使用:
 ```dart 
+/// !!使用真机调试!!
 /// !注意: 只要是返回Future的方法, 一律使用`await`修饰, 确保当前方法执行完成后再执行下一行, 在不能使用`await`修饰的环境下, 在`then`方法中执行下一步.
 /// 初始化 iOS在init方法中设置, android需要去AndroidManifest.xml里去设置, 详见 https://lbs.amap.com/api/android-sdk/gettingstarted
 /// 和其他fluttify高德插件不一样的是, 这里需要使用`AmapService`去初始化, `AmapService`内部调用的依然是`AmapCore`, 只不过地图插件在初始化的会话需要做些其他事.

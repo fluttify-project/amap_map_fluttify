@@ -35,3 +35,30 @@ enum CoordType {
   SosoMap,
   Aliyun,
 }
+
+/// 线段末端处样式
+enum LineCapType {
+  /// 普通头
+  Butt,
+
+  /// 扩展头
+  Square,
+
+  /// 箭头
+  Arrow,
+
+  /// 圆形头
+  Round,
+}
+
+/// 线段连接处样式
+enum LineJoinType {
+  /// 斜面连接点
+  Bevel,
+
+  /// 斜接连接点
+  Miter,
+
+  /// 圆角连接点
+  Round,
+}

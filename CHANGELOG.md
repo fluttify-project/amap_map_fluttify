@@ -1,3 +1,9 @@
+## 0.5.1
+- doc: git clone失败的提示
+- doc: 使用真机调试
+- feat: 画折线添加尾部样式和连接点样式的参数
+- feat: 新增删除polyline的方法Polyline::remove
+
 ## 0.5.0
 - feat: 画线添加自定义纹理参数;
 - enhancement: [breaking change] 抽取画圆画多边形的参数
