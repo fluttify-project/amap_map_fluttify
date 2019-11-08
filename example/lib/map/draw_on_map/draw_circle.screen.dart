@@ -37,14 +37,14 @@ class _DrawCircleScreenState extends State<DrawCircleScreen> {
               divider: kDividerTiny,
               children: <Widget>[
                 ListTile(
-                  title: Text('添加圆'),
+                  title: Center(child: Text('添加圆')),
                   onTap: () async {
-                    await _controller?.addCircle(
-                      LatLng(39.999391, 116.135972),
-                      10000,
+                    await _controller?.addCircle(CircleOption(
+                      center: LatLng(39.999391, 116.135972),
+                      radius: 10000,
                       width: 10,
                       strokeColor: Colors.green,
-                    );
+                    ));
                   },
                 ),
               ],
@@ -53,10 +53,5 @@ class _DrawCircleScreenState extends State<DrawCircleScreen> {
         ],
       ),
     );
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
   }
 }

@@ -1,5 +1,6 @@
 import 'package:amap_core_fluttify/amap_core_fluttify.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 import '../android/android.export.g.dart';
 import '../ios/ios.export.g.dart';
@@ -42,6 +43,100 @@ class MarkerOption {
   @override
   String toString() {
     return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, configuration: $imageConfig, draggable: $draggable}';
+  }
+}
+
+/// Polyline创建参数
+class PolylineOption {
+  /// 经纬度列表
+  final List<LatLng> latLngList;
+
+  /// 宽度
+  final double width;
+
+  /// 颜色
+  final Color strokeColor;
+
+  /// 自定义纹理
+  final Uri customTexture;
+
+  /// 图片参数
+  final ImageConfiguration imageConfig;
+
+  PolylineOption({
+    @required this.latLngList,
+    this.width,
+    this.strokeColor,
+    this.customTexture,
+    this.imageConfig,
+  }) : assert(
+          (customTexture != null && imageConfig != null) ||
+              customTexture == null,
+          'customTexture和imageConfig必须同时设置! 如果想要一个默认的imageConfig, 那么就直接调用[createLocalImageConfiguration]方法来创建!',
+        );
+
+  @override
+  String toString() {
+    return 'PolylineOption{latLngList: $latLngList, width: $width, strokeColor: $strokeColor, customTexture: $customTexture, imageConfig: $imageConfig}';
+  }
+}
+
+/// Polygon创建参数
+class PolygonOption {
+  /// 经纬度列表
+  final List<LatLng> latLngList;
+
+  /// 宽度
+  final double width;
+
+  /// 边框颜色
+  final Color strokeColor;
+
+  /// 填充颜色
+  final Color fillColor;
+
+  PolygonOption({
+    @required this.latLngList,
+    this.width,
+    this.strokeColor,
+    this.fillColor = Colors.transparent,
+  });
+
+  @override
+  String toString() {
+    return 'PolygonOption{latLngList: $latLngList, width: $width, strokeColor: $strokeColor, fillColor: $fillColor}';
+  }
+}
+
+/// Circle创建参数
+class CircleOption {
+  /// 中心点经纬度
+  final LatLng center;
+
+  /// 宽度
+  final double radius;
+
+  /// 宽度
+  final double width;
+
+  /// 边框颜色
+  final Color strokeColor;
+
+  /// 填充颜色
+  final Color fillColor;
+
+  CircleOption({
+    @required this.center,
+    @required this.radius,
+    this.width,
+    this.strokeColor,
+    this.fillColor,
+  })  : assert(center != null),
+        assert(radius != null);
+
+  @override
+  String toString() {
+    return 'CircleOption{center: $center, radius: $radius, width: $width, strokeColor: $strokeColor, fillColor: $fillColor}';
   }
 }
 
