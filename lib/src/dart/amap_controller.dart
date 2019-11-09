@@ -488,6 +488,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         final latLng =
             await PlatformFactoryIOS.createCLLocationCoordinate2D(lat, lng);
+        await _iosController.setZoomLevelAnimated(zoomLevel, animated);
         await _iosController.setCenterCoordinateAnimated(latLng, animated);
 
         pool..add(latLng);
