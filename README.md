@@ -79,6 +79,8 @@ class AmapWidget extends StatelessWidget {
       onMapDrag: (MapDrag drag) {},
       // 地图创建完成回调
       onMapCreated: (controller) async {
+        // requestPermission是权限请求方法, 需要你自己实现 
+        // 如果不知道怎么处理, 可以参考example工程的实现
         if (await requestPermission()) {
           await controller.showMyLocation(true);
         }
