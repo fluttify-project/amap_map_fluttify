@@ -14,6 +14,7 @@ import 'interact_with_map/control_interaction.screen.dart';
 import 'interact_with_map/gesture_interaction.screen.dart';
 import 'tools/calcute_distance_screen.dart';
 import 'tools/coordinate_transformation_screen.dart';
+import 'tools/launch_amap_screen.dart';
 
 class MapDemo extends StatelessWidget {
   @override
@@ -95,6 +96,11 @@ class MapDemo extends StatelessWidget {
               label: "两点间距离计算",
               sublabel: "CalculateDistanceScreen",
               target: CalculateDistanceScreen(),
+            ),
+            FunctionItem(
+              label: "调用高德地图",
+              sublabel: "LaunchAmapScreen",
+              target: LaunchAmapScreen(),
             ),
           ],
         ),

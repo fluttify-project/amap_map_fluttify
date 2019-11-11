@@ -1,3 +1,7 @@
+## 0.5.3
+- doc: 加入版本规划说明
+- feat: 增加调用高德地图app导航的功能
+
 ## 0.5.2
 - fix: 设置地图中心点时, ios端的zoomLevel未调用
 - doc: requestPermission方法说明

@@ -8,6 +8,7 @@ import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 export 'package:amap_core_fluttify/amap_core_fluttify.dart';
 
@@ -244,6 +245,37 @@ class AmapService {
         pool..add(_location1)..add(_location2)..add(mapPoint1)..add(mapPoint2);
 
         return result;
+      },
+    );
+  }
+
+  /// 调用高德地图导航
+  ///
+  /// [target]目的地, [appName]当前应用名称, [dev]是否偏移(0:lat和lon是已经加密后的,不需要国测加密;1:需要国测加密)
+  /// !注意: iOS端需要在Info.plist配置白名单, 可以参考example工程的配置(LSApplicationQueriesSchemes), 具体文档详见 https://lbs.amap.com/api/amap-mobile/guide/ios/ios-uri-information
+  static Future navigateDrive(
+    LatLng target, {
+    String appName = 'appname',
+    int dev = 1,
+  }) async {
+    return platform(
+      android: (_) async {
+        final urlScheme =
+            'androidamap://navi?sourceApplication=$appName&lat=${target.latitude}&lon=${target.longitude}&dev=$dev&style=2';
+        if (await canLaunch(urlScheme)) {
+          return launch(urlScheme);
+        } else {
+          return Future.error('无法调起高德地图');
+        }
+      },
+      ios: (_) async {
+        final urlScheme =
+            'iosamap://navi?sourceApplication=$appName&lat=${target.latitude}&lon=${target.longitude}&dev=$dev&style=2';
+        if (await canLaunch(urlScheme)) {
+          return launch(urlScheme);
+        } else {
+          return Future.error('无法调起高德地图');
+        }
       },
     );
   }
