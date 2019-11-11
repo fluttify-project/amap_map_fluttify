@@ -1,3 +1,7 @@
+## 0.5.2
+- fix: 设置地图中心点时, ios端的zoomLevel未调用
+- doc: requestPermission方法说明
+
 ## 0.5.1
 - doc: git clone失败的提示
 - doc: 使用真机调试
