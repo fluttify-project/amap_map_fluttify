@@ -88,6 +88,19 @@ class AmapWidget extends StatelessWidget {
     );
   }
 }
+
+/// iOS Info.plist配置
+/// 使用PlatformView的声明
+<key>io.flutter.embedded_views_preview</key>
+<string>YES</string>
+/// 定位权限声明
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>需要定位权限</string>
+/// 高德地图app白名单 打开高德地图时使用
+<key>LSApplicationQueriesSchemes</key>
+<array>
+	<string>iosamap</string>
+</array>
 ```
 
 ## 版本规划
