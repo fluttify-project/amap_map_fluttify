@@ -3114,6 +3114,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
   UIImage* icon = (UIImage*) STACK[@"icon"];
   NSNumber* draggable = (NSNumber*) STACK[@"draggable"];
+  NSNumber* rotateAngle = (NSNumber*) STACK[@"rotateAngle"];
+  NSNumber* anchorU = (NSNumber*) STACK[@"anchorU"];
+  NSNumber* anchorV = (NSNumber*) STACK[@"anchorV"];
   if ([annotation isKindOfClass:[MAPointAnnotation class]])
   {
       static NSString *pointReuseIndentifier = @"pointReuseIndentifier";
@@ -3125,6 +3128,14 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       if (icon != nil) annotationView.image = icon;
       if (draggable != nil) annotationView.draggable = [draggable boolValue];
       annotationView.canShowCallout = annotation.title != nil; // title不为空就能显示弹窗
+      // 旋转角度
+      if (rotateAngle != nil) {
+          annotationView.transform = CGAffineTransformRotate(CGAffineTransformIdentity, -[rotateAngle doubleValue] / 180.0 * M_PI);
+      }
+      // 锚点
+      if (anchorU != nil && anchorV != nil) {
+          annotationView.layer.anchorPoint = CGPointMake([anchorU doubleValue], [anchorV doubleValue]);
+      }
       return annotationView;
   }
   ////////////////////////////////////////////////////////////////////////////////

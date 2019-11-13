@@ -4,7 +4,7 @@
 
 [![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify)
 
-Dart接口基于[fluttify](https://github.com/yohom/fluttify-core-example)引擎生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/).
+Dart接口基于[fluttify](https://github.com/yohom/fluttify-core-example)引擎生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/). [CHANGELOG](https://github.com/fluttify-project/amap_map_fluttify/blob/master/CHANGELOG.md).
 
 > **!!`git clone`失败看这里!!**
 >
@@ -88,6 +88,19 @@ class AmapWidget extends StatelessWidget {
     );
   }
 }
+
+/// iOS Info.plist配置
+/// 使用PlatformView的声明
+<key>io.flutter.embedded_views_preview</key>
+<string>YES</string>
+/// 定位权限声明
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>需要定位权限</string>
+/// 高德地图app白名单 打开高德地图时使用
+<key>LSApplicationQueriesSchemes</key>
+<array>
+	<string>iosamap</string>
+</array>
 ```
 
 ## 版本规划

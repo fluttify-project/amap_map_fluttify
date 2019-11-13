@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 import 'package:amap_map_fluttify_example/utils/misc.dart';
+import 'package:amap_map_fluttify_example/widgets/setting.widget.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:flutter/material.dart';
 
@@ -54,6 +55,26 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                         iconUri: _assetsIcon,
                         draggable: true,
                         imageConfig: createLocalImageConfiguration(context),
+                      ),
+                    );
+                    _markers.add(marker);
+                  },
+                ),
+                ContinuousSetting(
+                  head: '添加旋转角度的Marker',
+                  onChanged: (value) async {
+                    await _controller?.clearMarkers();
+                    final marker = await _controller?.addMarker(
+                      MarkerOption(
+                        latLng: LatLng(39.90960, 116.397228),
+                        title: '北京',
+                        snippet: '描述',
+                        iconUri: _assetsIcon,
+                        draggable: true,
+                        imageConfig: createLocalImageConfiguration(context),
+                        rotateAngle: 360 * value,
+                        anchorU: 0,
+                        anchorV: 0,
                       ),
                     );
                     _markers.add(marker);
