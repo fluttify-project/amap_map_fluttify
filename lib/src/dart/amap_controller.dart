@@ -569,8 +569,15 @@ class AmapController with WidgetsBindingObserver, _Private {
           pool..add(bitmap)..add(icon);
         }
         // 是否可拖拽
-        if (option.draggable != null)
+        if (option.draggable != null) {
           await markerOption.draggable(option.draggable);
+        }
+        // 旋转角度
+        if (option.rotateAngle != null) {
+          await markerOption.rotateAngle(option.rotateAngle);
+        }
+        // 锚点 和ios端统一为默认0.5
+        await markerOption.anchor(option.anchorU ?? 0.5, option.anchorV ?? 0.5);
 
         final marker = await map.addMarker(markerOption);
 
@@ -620,9 +627,20 @@ class AmapController with WidgetsBindingObserver, _Private {
           pool..add(icon);
         }
         // 是否可拖拽
-        if (option.draggable != null)
+        if (option.draggable != null) {
           await PlatformFactoryIOS.pushStackJsonable(
               'draggable', option.draggable);
+        }
+        // 旋转角度
+        if (option.rotateAngle != null) {
+          await PlatformFactoryIOS.pushStackJsonable(
+              'rotateAngle', option.rotateAngle);
+        }
+        // 锚点
+        if (option.anchorU != null || option.anchorV != null) {
+          await PlatformFactoryIOS.pushStackJsonable('anchorU', option.anchorU);
+          await PlatformFactoryIOS.pushStackJsonable('anchorV', option.anchorV);
+        }
 
         await _iosController.addAnnotation(pointAnnotation);
 

@@ -29,6 +29,15 @@ class MarkerOption {
   /// 是否可拖动
   final bool draggable;
 
+  /// 旋转角度 单位为度(°)
+  final double rotateAngle;
+
+  /// 横轴锚点
+  final double anchorU;
+
+  /// 纵轴锚点
+  final double anchorV;
+
   MarkerOption({
     @required this.latLng,
     this.title,
@@ -36,6 +45,9 @@ class MarkerOption {
     this.iconUri,
     this.imageConfig,
     this.draggable,
+    this.rotateAngle,
+    this.anchorU,
+    this.anchorV,
   }) : assert(
           (iconUri != null && imageConfig != null) || iconUri == null,
           'iconUri和imageConfig必须同时设置! 如果想要一个默认的imageConfig, 那么就直接调用[createLocalImageConfiguration]方法来创建!',
@@ -43,7 +55,7 @@ class MarkerOption {
 
   @override
   String toString() {
-    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, configuration: $imageConfig, draggable: $draggable}';
+    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, imageConfig: $imageConfig, draggable: $draggable, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV}';
   }
 }
 
