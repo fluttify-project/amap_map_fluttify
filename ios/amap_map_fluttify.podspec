@@ -25,7 +25,7 @@ A new flutter plugin project.
   # 包含工程下的.a
   s.vendored_libraries = '**/*.a'
   # 默认使用静态framework
-  s.static_framework = true
+  # s.static_framework = true
   # 系统framework
   s.frameworks = [
         "QuartzCore", "CoreLocation", "SystemConfiguration", "CoreTelephony", "Security", "OpenGLES", "CoreText", "CoreGraphics", "GLKit"
