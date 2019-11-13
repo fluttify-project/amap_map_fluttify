@@ -32,6 +32,7 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
           Flexible(
             child: DecoratedColumn(
               scrollable: true,
+              divider: kDividerZero,
               children: <Widget>[
                 BooleanSetting(
                   head: '是否显示定位',
@@ -46,7 +47,6 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                     toast('当前经纬度: ${latLng.toString()}');
                   },
                 ),
-                kDividerTiny,
                 BooleanSetting(
                   head: '是否显示室内地图',
                   onSelected: (value) {
@@ -179,7 +179,6 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                         'center: lat: ${center.latitude}, lng: ${center.longitude}');
                   },
                 ),
-                kDividerTiny,
                 ListTile(
                   title: Center(child: Text('监听地图移动')),
                   onTap: () {
@@ -188,7 +187,6 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                     });
                   },
                 ),
-                kDividerTiny,
                 ListTile(
                   title: Center(child: Text('添加点击地图监听')),
                   onTap: () {

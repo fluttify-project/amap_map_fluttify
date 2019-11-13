@@ -40,6 +40,7 @@ class _CodeInteractionScreenState extends State<CodeInteractionScreen> {
           Flexible(
             child: DecoratedColumn(
               scrollable: true,
+              divider: kDividerZero,
               children: <Widget>[
                 ContinuousSetting(
                   head: '缩放大小',
