@@ -88,8 +88,10 @@ class AmapWidget extends StatelessWidget {
     );
   }
 }
+```
 
-/// iOS Info.plist配置
+iOS `Info.plist`配置:
+```xml
 /// 使用PlatformView的声明
 <key>io.flutter.embedded_views_preview</key>
 <string>YES</string>
