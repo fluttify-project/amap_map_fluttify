@@ -24,6 +24,11 @@ class MarkerOption {
   final Uri iconUri;
 
   /// 图片参数
+  ///
+  /// 目前利用到的信息只有[devicePixelRatio], 使用[devicePixelRatio]获取当前设备
+  /// 对应分辨率的图片(Android), iOS使用1.0x的图片. 所以[size]设置了是没用的, 这是flutter
+  /// 的PlatformView的bug, 参考https://github.com/flutter/flutter/issues/24865.
+  /// 这个bug彻底解决之后才能保证marker是完美的.
   final ImageConfiguration imageConfig;
 
   /// 是否可拖动
