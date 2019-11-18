@@ -463,7 +463,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future setCenterCoordinate(
     double lat,
     double lng, {
-    double zoomLevel = 15,
+    double zoomLevel,
     bool animated = true,
   }) {
     return platform(
@@ -472,9 +472,20 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         final latLng = await AmapMapFluttifyFactoryAndroid
             .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
-        final cameraPosition = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float(
-                latLng, zoomLevel, 0, 0);
+        com_amap_api_maps_model_CameraPosition cameraPosition;
+        if (zoomLevel == null) {
+          // 如果没有设置zoomLevel, 那么就使用当前的zoomLevel
+          final camera = await map.getCameraPosition();
+          final currentZoomLevel = await camera.get_zoom();
+          cameraPosition = await AmapMapFluttifyFactoryAndroid
+              .createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float(
+                  latLng, currentZoomLevel, 0, 0);
+        } else {
+          cameraPosition = await AmapMapFluttifyFactoryAndroid
+              .createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float(
+                  latLng, zoomLevel, 0, 0);
+        }
+
         final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
             .newCameraPosition(cameraPosition);
         if (animated) {
@@ -488,7 +499,9 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         final latLng =
             await PlatformFactoryIOS.createCLLocationCoordinate2D(lat, lng);
-        await _iosController.setZoomLevelAnimated(zoomLevel, animated);
+        if (zoomLevel != null) {
+          await _iosController.setZoomLevelAnimated(zoomLevel, animated);
+        }
         await _iosController.setCenterCoordinateAnimated(latLng, animated);
 
         pool..add(latLng);

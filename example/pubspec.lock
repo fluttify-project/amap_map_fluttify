@@ -7,14 +7,14 @@ packages:
       name: amap_core_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.11+a9797a4"
+    version: "0.0.12+d2eb645"
   amap_map_fluttify:
     dependency: "direct dev"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.5.4+d2eb645"
+    version: "0.5.5+d2eb645"
   args:
     dependency: transitive
     description:
@@ -28,7 +28,7 @@ packages:
       name: asn1lib
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.13"
+    version: "0.5.14"
   async:
     dependency: transitive
     description:
@@ -70,7 +70,7 @@ packages:
       name: connectivity
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.5+2"
+    version: "0.4.5+3"
   convert:
     dependency: transitive
     description:
@@ -232,7 +232,7 @@ packages:
       name: path_provider
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.4.0"
+    version: "1.4.2"
   pedantic:
     dependency: transitive
     description:
@@ -267,7 +267,7 @@ packages:
       name: pointycastle
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.1"
+    version: "1.0.2"
   quiver:
     dependency: transitive
     description:
