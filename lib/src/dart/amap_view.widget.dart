@@ -106,11 +106,12 @@ class _AmapViewState extends State<AmapView> {
     if (Platform.isAndroid) {
       return com_amap_api_maps_MapView_Android(
         onViewCreated: (controller) async {
-          final bundle = await PlatformFactoryAndroid.createandroid_os_Bundle();
+          _controller = AmapController.android(controller);
 
+          final bundle = await PlatformFactoryAndroid.createandroid_os_Bundle();
           await controller.onCreate(bundle);
+
           if (widget.onMapCreated != null) {
-            _controller = AmapController.android(controller);
             widget.onMapCreated(_controller);
           }
           await _initMap();
@@ -120,11 +121,12 @@ class _AmapViewState extends State<AmapView> {
     } else if (Platform.isIOS) {
       return MAMapView_iOS(
         onViewCreated: (controller) async {
+          _controller = AmapController.ios(controller);
+
           if (widget.onMapCreated != null) {
-            _controller = AmapController.ios(controller);
             widget.onMapCreated(_controller);
-            await _initMap();
           }
+          await _initMap();
         },
       );
     } else {
@@ -145,65 +147,65 @@ class _AmapViewState extends State<AmapView> {
 
   Future<void> _initMap() async {
     if (widget.showIndoorMap != null) {
-      await _controller.showIndoorMap(widget.showIndoorMap);
+      await _controller?.showIndoorMap(widget.showIndoorMap);
     }
     if (widget.mapType != null) {
-      await _controller.setMapType(widget.mapType);
+      await _controller?.setMapType(widget.mapType);
     }
     if (widget.language != null) {
-      await _controller.setMapLanguage(widget.language);
+      await _controller?.setMapLanguage(widget.language);
     }
     if (widget.showTraffic != null) {
-      await _controller.showTraffic(widget.showTraffic);
+      await _controller?.showTraffic(widget.showTraffic);
     }
     if (widget.showZoomControl != null) {
-      await _controller.showZoomControl(widget.showZoomControl);
+      await _controller?.showZoomControl(widget.showZoomControl);
     }
     if (widget.showCompass != null) {
-      await _controller.showCompass(widget.showCompass);
+      await _controller?.showCompass(widget.showCompass);
     }
     if (widget.showLocateControl != null) {
-      await _controller.showLocateControl(widget.showLocateControl);
+      await _controller?.showLocateControl(widget.showLocateControl);
     }
     if (widget.showScaleControl != null) {
-      await _controller.showScaleControl(widget.showScaleControl);
+      await _controller?.showScaleControl(widget.showScaleControl);
     }
     if (widget.zoomGesturesEnabled != null) {
-      await _controller.setZoomGesturesEnabled(widget.zoomGesturesEnabled);
+      await _controller?.setZoomGesturesEnabled(widget.zoomGesturesEnabled);
     }
     if (widget.scrollGesturesEnabled != null) {
-      await _controller.setScrollGesturesEnabled(widget.scrollGesturesEnabled);
+      await _controller?.setScrollGesturesEnabled(widget.scrollGesturesEnabled);
     }
     if (widget.rotateGestureEnabled != null) {
-      await _controller.setRotateGesturesEnabled(widget.rotateGestureEnabled);
+      await _controller?.setRotateGesturesEnabled(widget.rotateGestureEnabled);
     }
     if (widget.tiltGestureEnabled != null) {
-      await _controller.setTiltGesturesEnabled(widget.tiltGestureEnabled);
+      await _controller?.setTiltGesturesEnabled(widget.tiltGestureEnabled);
     }
     if (widget.allGesturesEnabled != null) {
-      await _controller.setAllGesturesEnabled(widget.allGesturesEnabled);
+      await _controller?.setAllGesturesEnabled(widget.allGesturesEnabled);
     }
     if (widget.zoomLevel != null) {
-      await _controller.setZoomLevel(widget.zoomLevel, animated: false);
+      await _controller?.setZoomLevel(widget.zoomLevel, animated: false);
     }
     if (widget.centerCoordinate != null) {
-      await _controller.setCenterCoordinate(
+      await _controller?.setCenterCoordinate(
         widget.centerCoordinate.latitude,
         widget.centerCoordinate.longitude,
         animated: false,
       );
     }
     if (widget.markers != null && widget.markers.isNotEmpty) {
-      await _controller.addMarkers(widget.markers);
+      await _controller?.addMarkers(widget.markers);
     }
     if (widget.onMarkerClick != null) {
-      await _controller.setMarkerClickListener(widget.onMarkerClick);
+      await _controller?.setMarkerClickListener(widget.onMarkerClick);
     }
     if (widget.onMapClick != null) {
-      await _controller.setMapClickListener(widget.onMapClick);
+      await _controller?.setMapClickListener(widget.onMapClick);
     }
     if (widget.onMapDrag != null) {
-      await _controller.setMapDragListener(widget.onMapDrag);
+      await _controller?.setMapDragListener(widget.onMapDrag);
     }
   }
 }
