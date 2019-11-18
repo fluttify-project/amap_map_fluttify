@@ -1,3 +1,6 @@
+## 0.5.6
+- fix: 未配置onMapCreated时, 初始化参数不应该无效
+
 ## 0.5.5
 - doc: 调整plist说明
 - fix: setCenterCoordinate不设置默认的zoomLevel为15, 如果没有传入zoomLevel就使用当前的zoomLevel.
