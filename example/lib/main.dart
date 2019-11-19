@@ -5,7 +5,7 @@ import 'package:oktoast/oktoast.dart';
 import 'map/map.screen.dart';
 
 void main() async {
-  await enableFluttifyLog(false);
+//  await enableFluttifyLog(false); // 关闭log
   await AmapService.init('7a04506d15fdb7585707f7091d715ef4');
 
   runApp(MyApp());

@@ -30,16 +30,6 @@ class DrawPointScreenState extends State<DrawPointScreen> {
           Flexible(
             flex: 1,
             child: AmapView(
-              markers: [
-                MarkerOption(
-                  latLng: _getNextLatLng(),
-                  title: '北京',
-                  snippet: '描述',
-                  iconUri: _assetsIcon,
-                  draggable: true,
-                  imageConfig: createLocalImageConfiguration(context),
-                ),
-              ],
               onMapCreated: (controller) async {
                 _controller = controller;
                 if (await requestPermission()) {
@@ -65,6 +55,24 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                       ),
                     );
                     _markers.add(marker);
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('调用方法开启弹窗')),
+                  onTap: () async {
+                    if (_markers.isNotEmpty) {
+                      final marker = _markers[0];
+                      marker.showInfoWindow();
+                    }
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('调用方法关闭弹窗')),
+                  onTap: () async {
+                    if (_markers.isNotEmpty) {
+                      final marker = _markers[0];
+                      marker.hideInfoWindow();
+                    }
                   },
                 ),
                 ContinuousSetting(
