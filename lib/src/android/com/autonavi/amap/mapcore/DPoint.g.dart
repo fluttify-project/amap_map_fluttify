@@ -20,7 +20,7 @@ class com_autonavi_amap_mapcore_DPoint extends java_lang_Object  {
   // generate methods
   static Future<com_autonavi_amap_mapcore_DPoint> obtain() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.DPoint::obtain([])');
     }
   

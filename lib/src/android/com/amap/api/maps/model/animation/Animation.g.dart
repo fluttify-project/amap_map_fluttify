@@ -30,7 +30,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   // generate methods
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setAnimationListener([])');
     }
   
@@ -80,7 +80,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   
   Future<void> setDuration(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setDuration([\'var1\':$var1])');
     }
   
@@ -102,7 +102,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   
   Future<void> setFillMode(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setFillMode([\'var1\':$var1])');
     }
   
@@ -124,7 +124,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   
   Future<int> getFillMode() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getFillMode([])');
     }
   
@@ -146,7 +146,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   
   Future<void> setRepeatCount(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setRepeatCount([\'var1\':$var1])');
     }
   
@@ -168,7 +168,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   
   Future<void> setRepeatMode(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setRepeatMode([\'var1\':$var1])');
     }
   
@@ -190,7 +190,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   
   Future<int> getRepeatMode() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getRepeatMode([])');
     }
   
@@ -212,7 +212,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   
   Future<int> getRepeatCount() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getRepeatCount([])');
     }
   

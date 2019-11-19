@@ -25,7 +25,7 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
   // generate methods
   Future<MAPolygonRenderer> initWithPolygon(MAPolygon polygon) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAPolygonRenderer@$refId::initWithPolygon([])');
     }
   

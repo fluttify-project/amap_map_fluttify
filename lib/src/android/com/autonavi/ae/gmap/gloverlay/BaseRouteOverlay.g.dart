@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay extends java_lang_Object  
   // generate methods
   Future<void> resumeMarker(android_graphics_Bitmap var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::resumeMarker([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay extends java_lang_Object  
   
   Future<void> removeRouteName() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::removeRouteName([])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay extends java_lang_Object  
   
   Future<void> remove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::remove([])');
     }
   

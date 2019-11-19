@@ -20,7 +20,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   // generate methods
   Future<int> getDrivingRouteStyle() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getDrivingRouteStyle([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<void> setDrivingRouteStyle(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setDrivingRouteStyle([\'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<int> getTransitRouteStyle() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getTransitRouteStyle([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<void> setTransitRouteStyle(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setTransitRouteStyle([\'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getStartPoint() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getStartPoint([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<void> setStartPoint(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setStartPoint([])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getEndPoint() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getEndPoint([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<void> setEndPoint(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setEndPoint([])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<String> getEndName() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getEndName([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<void> setEndName(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setEndName([\'var1\':$var1])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<String> getStartName() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getStartName([])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   
   Future<void> setStartName(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setStartName([\'var1\':$var1])');
     }
   

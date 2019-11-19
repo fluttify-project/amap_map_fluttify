@@ -20,7 +20,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
   // generate methods
   Future<com_amap_api_maps_model_MultiPointOverlayOptions> anchor(double var1, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::anchor([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
   
   Future<double> getAnchorU() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getAnchorU([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
   
   Future<double> getAnchorV() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getAnchorV([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
   
   Future<com_amap_api_maps_model_MultiPointOverlayOptions> icon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::icon([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
   
   Future<com_amap_api_maps_model_BitmapDescriptor> getIcon() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getIcon([])');
     }
   

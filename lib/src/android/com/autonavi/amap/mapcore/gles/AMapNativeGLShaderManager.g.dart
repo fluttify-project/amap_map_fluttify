@@ -20,7 +20,7 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
   // generate methods
   static Future<int> nativeCreateGLShaderManager() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeCreateGLShaderManager([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
   
   static Future<void> nativeDestroyGLShaderManager(int var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeDestroyGLShaderManager([\'var0\':$var0])');
     }
   

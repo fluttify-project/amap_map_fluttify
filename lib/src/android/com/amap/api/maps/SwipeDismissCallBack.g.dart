@@ -20,7 +20,7 @@ class com_amap_api_maps_SwipeDismissCallBack extends java_lang_Object  {
   // generate methods
   Future<void> onNotifySwipe() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.SwipeDismissCallBack@$refId::onNotifySwipe([])');
     }
   

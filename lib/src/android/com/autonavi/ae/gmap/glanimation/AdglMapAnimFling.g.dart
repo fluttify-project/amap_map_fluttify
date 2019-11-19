@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends java_lang_Object
   // generate methods
   Future<void> reset() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::reset([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends java_lang_Object
   
   Future<void> setPositionAndVelocity(double var1, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::setPositionAndVelocity([\'var1\':$var1, \'var2\':$var2])');
     }
   

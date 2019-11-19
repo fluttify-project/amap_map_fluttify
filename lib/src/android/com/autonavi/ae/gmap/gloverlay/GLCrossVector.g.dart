@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   // generate methods
   Future<int> addVectorItem(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1, List<int> var2, int var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorItem([\'var2\':$var2, \'var3\':$var3])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> addVectorRemainDis(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorRemainDis([\'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> addVectorCar(int var1, int var2, int var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorCar([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
@@ -86,7 +86,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> setRoadResId(bool var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setRoadResId([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -108,7 +108,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> setArrowResId(bool var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setArrowResId([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -130,7 +130,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> setCarResId(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setCarResId([\'var1\':$var1])');
     }
   
@@ -152,7 +152,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> setBackgroundResId(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setBackgroundResId([\'var1\':$var1])');
     }
   
@@ -174,7 +174,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> setSkyResId(bool var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setSkyResId([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -196,7 +196,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<int> getFBOTextureId() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::getFBOTextureId([])');
     }
   
@@ -218,7 +218,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends java_lang_Object  {
   
   Future<void> initFBOTexture(int var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::initFBOTexture([\'var1\':$var1, \'var2\':$var2])');
     }
   

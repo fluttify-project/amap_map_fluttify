@@ -18,6 +18,7 @@ import io.flutter.plugin.platform.PlatformView;
 import io.flutter.plugin.platform.PlatformViewFactory;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
+import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
 
 @SuppressWarnings("ALL")
 class TextureMapViewFactory extends PlatformViewFactory {
@@ -55,7 +56,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::getMap(" + "" + ")");
             }
         
@@ -82,7 +83,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onCreate(" + var1 + ")");
             }
         
@@ -101,7 +102,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onResume(" + "" + ")");
             }
         
@@ -120,7 +121,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onPause(" + "" + ")");
             }
         
@@ -139,7 +140,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onDestroy(" + "" + ")");
             }
         
@@ -158,7 +159,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onLowMemory(" + "" + ")");
             }
         
@@ -178,7 +179,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onSaveInstanceState(" + var1 + ")");
             }
         
@@ -198,7 +199,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::setVisibility(" + var1 + ")");
             }
         

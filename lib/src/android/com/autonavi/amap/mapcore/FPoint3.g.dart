@@ -30,7 +30,7 @@ class com_autonavi_amap_mapcore_FPoint3 extends java_lang_Object  {
   // generate methods
   Future<void> setColorIndex(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.FPoint3@$refId::setColorIndex([\'var1\':$var1])');
     }
   

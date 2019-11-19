@@ -20,7 +20,7 @@ class com_amap_api_maps_model_animation_AnimationSet extends java_lang_Object  {
   // generate methods
   Future<void> setDuration(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::setDuration([\'var1\':$var1])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_animation_AnimationSet extends java_lang_Object  {
   
   Future<void> addAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::addAnimation([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_animation_AnimationSet extends java_lang_Object  {
   
   Future<void> cleanAnimation() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::cleanAnimation([])');
     }
   

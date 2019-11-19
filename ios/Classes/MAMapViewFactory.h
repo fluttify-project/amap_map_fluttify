@@ -64,9 +64,6 @@
 #import <MAMapKit/MAGroundOverlayRenderer.h>
 #import <MAMapKit/MACustomBuildingOverlayRenderer.h>
 
-extern NSMutableDictionary<NSString*, NSObject*> *STACK;
-extern NSMutableDictionary<NSNumber*, NSObject*> *HEAP;
-
 @interface MAMapViewFactory : NSObject <FlutterPlatformViewFactory>
 - (instancetype)initWithRegistrar:(NSObject <FlutterPluginRegistrar> *)registrar;
 @end

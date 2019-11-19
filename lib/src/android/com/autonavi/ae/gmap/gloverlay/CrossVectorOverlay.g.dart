@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
   // generate methods
   Future<void> resumeMarker(android_graphics_Bitmap var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::resumeMarker([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
   
   Future<void> AddOverlayTexture(android_graphics_Bitmap var1, int var2, int var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::AddOverlayTexture([\'var2\':$var2, \'var3\':$var3])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
   
   Future<int> dipToPixel(android_content_Context var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::dipToPixel([\'var2\':$var2])');
     }
   
@@ -86,7 +86,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
   
   Future<void> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setAttribute([])');
     }
   
@@ -108,7 +108,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
   
   Future<int> setData(List<int> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setData([\'var1\':$var1])');
     }
   
@@ -130,7 +130,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
   
   Future<void> remove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::remove([])');
     }
   
@@ -152,7 +152,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
   
   Future<void> setImageMode(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setImageMode([\'var1\':$var1])');
     }
   
@@ -174,7 +174,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
   
   Future<void> setGenerateCrossImageListener(com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setGenerateCrossImageListener([])');
     }
   
@@ -215,7 +215,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
   
   Future<int> getTextureID() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::getTextureID([])');
     }
   

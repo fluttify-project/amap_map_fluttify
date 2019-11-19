@@ -20,7 +20,7 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
   // generate methods
   Future<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> getAttribute() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::getAttribute([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CrossOverlayOptions> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::setAttribute([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CrossOverlayOptions> setRes(android_graphics_Bitmap var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::setRes([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
   
   Future<android_graphics_Bitmap> getRes() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::getRes([])');
     }
   

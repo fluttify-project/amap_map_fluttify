@@ -20,7 +20,7 @@ class MAParticleConstantRotationGenerate extends NSObject with MAParticleRotatio
   // generate methods
   Future<MAParticleConstantRotationGenerate> initWithRotate(double rotate) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleConstantRotationGenerate@$refId::initWithRotate([\'rotate\':$rotate])');
     }
   

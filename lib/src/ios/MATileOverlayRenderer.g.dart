@@ -25,7 +25,7 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   // generate methods
   Future<MATileOverlayRenderer> initWithTileOverlay(MATileOverlay tileOverlay) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MATileOverlayRenderer@$refId::initWithTileOverlay([])');
     }
   
@@ -47,7 +47,7 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   
   Future<void> reloadData() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MATileOverlayRenderer@$refId::reloadData([])');
     }
   

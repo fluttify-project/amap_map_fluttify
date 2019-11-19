@@ -20,7 +20,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
   // generate methods
   Future<void> setInfoWindowUpdateTime(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindowUpdateTime([\'var1\':$var1])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
   
   Future<int> getInfoWindowUpdateTime() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::getInfoWindowUpdateTime([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
   
   Future<void> setInfoWindowType(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindowType([\'var1\':$var1])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
   
   Future<int> getInfoWindowType() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::getInfoWindowType([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
   
   Future<android_view_View> getInfoWindow() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::getInfoWindow([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
   
   Future<void> setInfoContent(android_view_View var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoContent([])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
   
   Future<void> setInfoWindow(android_view_View var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindow([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
   
   Future<android_view_View> getInfoContents() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::getInfoContents([])');
     }
   

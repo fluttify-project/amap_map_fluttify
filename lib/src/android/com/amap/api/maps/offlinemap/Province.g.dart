@@ -20,7 +20,7 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   // generate methods
   Future<String> getProvinceName() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::getProvinceName([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<String> getJianpin() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::getJianpin([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<String> getPinyin() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::getPinyin([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<void> setProvinceName(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setProvinceName([\'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<void> setJianpin(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setJianpin([\'var1\':$var1])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<void> setPinyin(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setPinyin([\'var1\':$var1])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<void> setProvinceCode(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setProvinceCode([\'var1\':$var1])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   
   Future<String> getProvinceCode() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::getProvinceCode([])');
     }
   

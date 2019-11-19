@@ -20,7 +20,7 @@ class com_amap_api_maps_model_PolygonHoleOptions extends java_lang_Object with a
   // generate methods
   Future<com_amap_api_maps_model_PolygonHoleOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonHoleOptions@$refId::addAll([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_PolygonHoleOptions extends java_lang_Object with a
   
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonHoleOptions@$refId::getPoints([])');
     }
   

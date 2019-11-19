@@ -25,7 +25,7 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
   // generate methods
   static Future<MAParticleOverlay> particleOverlayWithOption(MAParticleOverlayOptions option) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleOverlay::particleOverlayWithOption([])');
     }
   
@@ -47,7 +47,7 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   Future<void> updateOverlayOption(MAParticleOverlayOptions overlayOption) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleOverlay@$refId::updateOverlayOption([])');
     }
   

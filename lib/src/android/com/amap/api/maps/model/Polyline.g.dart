@@ -20,7 +20,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   // generate methods
   Future<void> remove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::remove([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<String> getId() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getId([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setPoints([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getPoints([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setGeodesic(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setGeodesic([\'var1\':$var1])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<bool> isGeodesic() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::isGeodesic([])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setDottedLine(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setDottedLine([\'var1\':$var1])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<bool> isDottedLine() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::isDottedLine([])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setWidth(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setWidth([\'var1\':$var1])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<double> getWidth() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getWidth([])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setColor([\'var1\':$var1])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<int> getColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getColor([])');
     }
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setZIndex(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setZIndex([\'var1\':$var1])');
     }
   
@@ -306,7 +306,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<double> getZIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getZIndex([])');
     }
   
@@ -328,7 +328,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setVisible([\'var1\':$var1])');
     }
   
@@ -350,7 +350,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::isVisible([])');
     }
   
@@ -372,7 +372,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getNearestLatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getNearestLatLng([])');
     }
   
@@ -394,7 +394,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setTransparency(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setTransparency([\'var1\':$var1])');
     }
   
@@ -416,7 +416,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setAboveMaskLayer(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setAboveMaskLayer([\'var1\':$var1])');
     }
   
@@ -438,7 +438,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setCustomTexture(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setCustomTexture([])');
     }
   
@@ -460,7 +460,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setOptions(com_amap_api_maps_model_PolylineOptions var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setOptions([])');
     }
   
@@ -482,7 +482,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_PolylineOptions> getOptions() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getOptions([])');
     }
   
@@ -504,7 +504,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setCustemTextureIndex(List<int> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setCustemTextureIndex([\'var1\':$var1])');
     }
   
@@ -526,7 +526,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setShownRatio(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setShownRatio([\'var1\':$var1])');
     }
   
@@ -548,7 +548,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setShownRange(double var1, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setShownRange([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -570,7 +570,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<double> getShownRatio() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::getShownRatio([])');
     }
   
@@ -592,7 +592,7 @@ class com_amap_api_maps_model_Polyline extends java_lang_Object  {
   
   Future<void> setCustomTextureList(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setCustomTextureList([])');
     }
   

@@ -20,7 +20,7 @@ class com_amap_api_maps_model_particle_ConstantRotationOverLife extends java_lan
   // generate methods
   Future<void> createNativeInstace() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ConstantRotationOverLife@$refId::createNativeInstace([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_particle_ConstantRotationOverLife extends java_lan
   
   Future<double> getRotate() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ConstantRotationOverLife@$refId::getRotate([])');
     }
   

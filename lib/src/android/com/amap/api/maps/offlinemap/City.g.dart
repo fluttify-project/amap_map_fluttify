@@ -20,7 +20,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   // generate methods
   Future<void> setCity(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setCity([\'var1\':$var1])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<String> getCity() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getCity([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<void> setCode(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setCode([\'var1\':$var1])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<String> getCode() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getCode([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<String> getJianpin() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getJianpin([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<void> setJianpin(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setJianpin([\'var1\':$var1])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<String> getPinyin() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getPinyin([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<void> setPinyin(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setPinyin([\'var1\':$var1])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<String> getAdcode() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getAdcode([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   
   Future<void> setAdcode(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setAdcode([\'var1\':$var1])');
     }
   

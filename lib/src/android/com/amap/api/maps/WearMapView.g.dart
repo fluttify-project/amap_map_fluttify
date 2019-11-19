@@ -20,7 +20,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   // generate methods
   Future<com_amap_api_maps_AMap> getMap({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::getMap([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onCreate(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onCreate([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onResume({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onResume([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onPause({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onPause([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onDestroy({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDestroy([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onLowMemory({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onLowMemory([])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onSaveInstanceState(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onSaveInstanceState([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> setVisibility(int var1, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setVisibility([\'var1\':$var1])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> setOnDismissCallbackListener(com_amap_api_maps_WearMapView_OnDismissCallback var1, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener([])');
     }
   
@@ -246,7 +246,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onDismiss({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDismiss([])');
     }
   
@@ -268,7 +268,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onEnterAmbient(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onEnterAmbient([])');
     }
   
@@ -290,7 +290,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   Future<void> onExitAmbient({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onExitAmbient([])');
     }
   

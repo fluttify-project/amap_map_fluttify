@@ -20,7 +20,7 @@ class com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants extends ja
   // generate methods
   Future<void> createNativeInstace() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants@$refId::createNativeInstace([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants extends ja
   
   Future<List<double>> getColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants@$refId::getColor([])');
     }
   

@@ -155,7 +155,7 @@ packages:
       name: foundation_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.9"
+    version: "0.0.10+1"
   http:
     dependency: transitive
     description:

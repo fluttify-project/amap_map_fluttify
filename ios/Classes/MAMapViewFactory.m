@@ -5,6 +5,13 @@
 #import "MAMapViewFactory.h"
 #import "AmapMapFluttifyPlugin.h"
 
+// Dart端一次方法调用所存在的栈, 只有当MethodChannel传递参数受限时, 再启用这个容器
+extern NSMutableDictionary<NSString*, NSObject*>* STACK;
+// Dart端随机存取对象的容器
+extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
+// 日志打印开关
+extern BOOL enableLog;
+
 typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSString *, NSObject *> *, FlutterResult);
 
 @implementation MAMapViewFactory {
@@ -62,7 +69,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setRegion(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setRegion(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setRegion : region animated: animated];
@@ -82,7 +91,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::regionThatFits(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::regionThatFits(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MACoordinateRegion result = [ref regionThatFits: region];
@@ -107,7 +118,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setVisibleMapRect : mapRect animated: animated];
@@ -127,7 +140,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAMapRect result = [ref mapRectThatFits: mapRect];
@@ -154,7 +169,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAMapRect result = [ref mapRectThatFits: mapRect edgePadding: insets];
@@ -183,7 +200,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setVisibleMapRect : mapRect edgePadding: insets animated: animated];
@@ -205,7 +224,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setCenterCoordinate : coordinate animated: animated];
@@ -225,7 +246,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setZoomLevel : zoomLevel animated: animated];
@@ -249,7 +272,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setZoomLevel : zoomLevel atPivot: pivot animated: animated];
@@ -271,7 +296,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setRotationDegree : rotationDegree animated: animated duration: duration];
@@ -293,7 +320,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCameraDegree(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCameraDegree(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setCameraDegree : cameraDegree animated: animated duration: duration];
@@ -310,7 +339,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::getMapStatus(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::getMapStatus(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAMapStatus* result = [ref getMapStatus];
@@ -331,7 +362,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setMapStatus : status animated: animated];
@@ -353,7 +386,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setMapStatus : status animated: animated duration: duration];
@@ -371,7 +406,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCompassImage(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCompassImage(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setCompassImage : image];
@@ -389,7 +426,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::metersPerPointForZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::metersPerPointForZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           double result = [ref metersPerPointForZoomLevel: zoomLevel];
@@ -411,7 +450,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::convertCoordinate(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::convertCoordinate(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CGPoint result = [ref convertCoordinate: coordinate toPointToView: view];
@@ -436,7 +477,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::convertPoint(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::convertPoint(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CLLocationCoordinate2D result = [ref convertPoint: point toCoordinateFromView: view];
@@ -461,7 +504,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::convertRegion(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::convertRegion(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CGRect result = [ref convertRegion: region toRectToView: view];
@@ -486,7 +531,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::convertRect(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::convertRect(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MACoordinateRegion result = [ref convertRect: rect toRegionFromView: view];
@@ -506,7 +553,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::reloadMap(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::reloadMap(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref reloadMap ];
@@ -523,7 +572,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::clearDisk(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::clearDisk(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref clearDisk ];
@@ -540,7 +591,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::reloadInternalTexture(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::reloadInternalTexture(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref reloadInternalTexture ];
@@ -557,7 +610,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::mapContentApprovalNumber(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::mapContentApprovalNumber(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           NSString* result = [ref mapContentApprovalNumber];
@@ -574,7 +629,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::satelliteImageApprovalNumber(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::satelliteImageApprovalNumber(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           NSString* result = [ref satelliteImageApprovalNumber];
@@ -591,7 +648,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::forceRefresh(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::forceRefresh(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref forceRefresh ];
@@ -609,7 +668,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addAnnotation(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::addAnnotation(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref addAnnotation : annotation];
@@ -632,7 +693,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addAnnotations(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::addAnnotations(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref addAnnotations : annotations];
@@ -650,7 +713,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotation(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotation(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref removeAnnotation : annotation];
@@ -673,7 +738,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotations(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotations(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref removeAnnotations : annotations];
@@ -691,7 +758,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::viewForAnnotation(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::viewForAnnotation(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAAnnotationView* result = [ref viewForAnnotation: annotation];
@@ -710,7 +779,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::dequeueReusableAnnotationViewWithIdentifier(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::dequeueReusableAnnotationViewWithIdentifier(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAAnnotationView* result = [ref dequeueReusableAnnotationViewWithIdentifier: identifier];
@@ -731,7 +802,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::selectAnnotation(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::selectAnnotation(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref selectAnnotation : annotation animated: animated];
@@ -751,7 +824,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::deselectAnnotation(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::deselectAnnotation(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref deselectAnnotation : annotation animated: animated];
@@ -776,7 +851,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref showAnnotations : annotations animated: animated];
@@ -805,7 +882,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref showAnnotations : annotations edgePadding: insets animated: animated];
@@ -825,7 +904,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setUserTrackingMode(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setUserTrackingMode(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setUserTrackingMode : mode animated: animated];
@@ -843,7 +924,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::updateUserLocationRepresentation(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::updateUserLocationRepresentation(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref updateUserLocationRepresentation : representation];
@@ -861,7 +944,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           NSArray* result = [ref overlaysInLevel: level];
@@ -886,7 +971,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref addOverlay : overlay];
@@ -909,7 +996,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref addOverlays : overlays];
@@ -929,7 +1018,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref addOverlay : overlay level: level];
@@ -954,7 +1045,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref addOverlays : overlays level: level];
@@ -972,7 +1065,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::removeOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::removeOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref removeOverlay : overlay];
@@ -995,7 +1090,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::removeOverlays(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::removeOverlays(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref removeOverlays : overlays];
@@ -1017,7 +1114,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref insertOverlay : overlay atIndex: index level: level];
@@ -1037,7 +1136,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref insertOverlay : overlay aboveOverlay: sibling];
@@ -1057,7 +1158,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref insertOverlay : overlay belowOverlay: sibling];
@@ -1077,7 +1180,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref insertOverlay : overlay atIndex: index];
@@ -1097,7 +1202,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref exchangeOverlayAtIndex : index1 withOverlayAtIndex: index2];
@@ -1119,7 +1226,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref exchangeOverlayAtIndex : index1 withOverlayAtIndex: index2 atLevel: level];
@@ -1139,7 +1248,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref exchangeOverlay : overlay1 withOverlay: overlay2];
@@ -1157,7 +1268,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::rendererForOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::rendererForOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAOverlayRenderer* result = [ref rendererForOverlay: overlay];
@@ -1183,7 +1296,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref showOverlays : overlays animated: animated];
@@ -1212,7 +1327,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref showOverlays : overlays edgePadding: insets animated: animated];
@@ -1232,7 +1349,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setIndoorMapControlOrigin(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setIndoorMapControlOrigin(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setIndoorMapControlOrigin : origin];
@@ -1250,7 +1369,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCurrentIndoorMapFloorIndex(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCurrentIndoorMapFloorIndex(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setCurrentIndoorMapFloorIndex : floorIndex];
@@ -1267,7 +1388,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::clearIndoorMapCache(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::clearIndoorMapCache(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref clearIndoorMapCache ];
@@ -1285,7 +1408,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleOptions(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleOptions(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setCustomMapStyleOptions : styleOptions];
@@ -1295,7 +1420,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@"success");
       },
       @"MAMapView::get_mapType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_mapType");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_mapType");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1309,7 +1437,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_centerCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_centerCoordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_centerCoordinate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1326,7 +1457,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_region": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_region");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_region");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1343,7 +1477,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_visibleMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_visibleMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_visibleMapRect");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1360,7 +1497,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_limitRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_limitRegion");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_limitRegion");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1377,7 +1517,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_limitMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_limitMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_limitMapRect");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1394,7 +1537,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_zoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_zoomLevel");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1408,7 +1554,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_minZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_minZoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_minZoomLevel");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1422,7 +1571,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_maxZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_maxZoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_maxZoomLevel");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1436,7 +1588,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_rotationDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_rotationDegree");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_rotationDegree");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1450,7 +1605,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_cameraDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_cameraDegree");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_cameraDegree");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1464,7 +1622,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_zoomingInPivotsAroundAnchorPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_zoomingInPivotsAroundAnchorPoint");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_zoomingInPivotsAroundAnchorPoint");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1478,7 +1639,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isZoomEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isZoomEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isZoomEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1492,7 +1656,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isScrollEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isScrollEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isScrollEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1506,7 +1673,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isRotateEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isRotateEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isRotateEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1520,7 +1690,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isRotateCameraEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isRotateCameraEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isRotateCameraEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1534,7 +1707,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isSkyModelEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isSkyModelEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isSkyModelEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1548,7 +1724,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isShowsBuildings": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isShowsBuildings");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isShowsBuildings");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1562,7 +1741,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isShowsLabels": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isShowsLabels");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isShowsLabels");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1576,7 +1758,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isShowTraffic": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isShowTraffic");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isShowTraffic");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1590,7 +1775,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_trafficRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_trafficRatio");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_trafficRatio");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1604,7 +1792,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_touchPOIEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_touchPOIEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_touchPOIEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1618,7 +1809,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_showsCompass": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_showsCompass");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_showsCompass");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1632,7 +1826,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_compassOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_compassOrigin");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_compassOrigin");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1649,7 +1846,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_compassSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_compassSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_compassSize");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1666,7 +1866,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_showsScale": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_showsScale");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_showsScale");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1680,7 +1883,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_scaleOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_scaleOrigin");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_scaleOrigin");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1697,7 +1903,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_scaleSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_scaleSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_scaleSize");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1714,7 +1923,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_logoCenter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_logoCenter");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_logoCenter");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1731,7 +1943,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_logoSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_logoSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_logoSize");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1748,7 +1963,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_metersPerPointForCurrentZoom": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_metersPerPointForCurrentZoom");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_metersPerPointForCurrentZoom");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1762,7 +1980,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isAbroad": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isAbroad");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isAbroad");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1776,7 +1997,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_maxRenderFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_maxRenderFrame");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_maxRenderFrame");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1790,7 +2014,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isAllowDecreaseFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isAllowDecreaseFrame");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isAllowDecreaseFrame");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1804,7 +2031,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_openGLESDisabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_openGLESDisabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_openGLESDisabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1818,7 +2048,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_screenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_screenAnchor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_screenAnchor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1835,7 +2068,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_annotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_annotations");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_annotations");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1856,7 +2092,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_selectedAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_selectedAnnotations");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_selectedAnnotations");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1877,7 +2116,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_annotationVisibleRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_annotationVisibleRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_annotationVisibleRect");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1894,7 +2136,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_allowsAnnotationViewSorting": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_allowsAnnotationViewSorting");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_allowsAnnotationViewSorting");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1908,7 +2153,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_showsUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_showsUserLocation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_showsUserLocation");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1922,7 +2170,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_userLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_userLocation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_userLocation");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1937,7 +2188,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_customizeUserLocationAccuracyCircleRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_customizeUserLocationAccuracyCircleRepresentation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_customizeUserLocationAccuracyCircleRepresentation");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1951,7 +2205,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_userLocationAccuracyCircle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_userLocationAccuracyCircle");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_userLocationAccuracyCircle");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1966,7 +2223,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_userTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_userTrackingMode");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_userTrackingMode");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1980,7 +2240,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isUserLocationVisible": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isUserLocationVisible");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isUserLocationVisible");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -1994,7 +2257,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_distanceFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_distanceFilter");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_distanceFilter");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2008,7 +2274,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_desiredAccuracy": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_desiredAccuracy");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_desiredAccuracy");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2022,7 +2291,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_headingFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_headingFilter");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_headingFilter");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2036,7 +2308,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_pausesLocationUpdatesAutomatically": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_pausesLocationUpdatesAutomatically");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_pausesLocationUpdatesAutomatically");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2050,7 +2325,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_allowsBackgroundLocationUpdates": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_allowsBackgroundLocationUpdates");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_allowsBackgroundLocationUpdates");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2064,7 +2342,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_overlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_overlays");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_overlays");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2085,7 +2366,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isShowsIndoorMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isShowsIndoorMap");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isShowsIndoorMap");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2099,7 +2383,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isShowsIndoorMapControl": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isShowsIndoorMapControl");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isShowsIndoorMapControl");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2113,7 +2400,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_indoorMapControlSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_indoorMapControlSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_indoorMapControlSize");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2130,7 +2420,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_customMapStyleEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_customMapStyleEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_customMapStyleEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -2144,7 +2437,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_delegate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_delegate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_delegate");
+          }
       
           // args
       
@@ -2157,7 +2453,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_mapType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_mapType");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_mapType");
+          }
       
           // args
           // enum arg
@@ -2171,7 +2470,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_centerCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_centerCoordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_centerCoordinate");
+          }
       
           // args
           // struct arg
@@ -2187,7 +2489,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_region": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_region");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_region");
+          }
       
           // args
           // struct arg
@@ -2203,7 +2508,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_visibleMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_visibleMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_visibleMapRect");
+          }
       
           // args
           // struct arg
@@ -2219,7 +2527,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_limitRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_limitRegion");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_limitRegion");
+          }
       
           // args
           // struct arg
@@ -2235,7 +2546,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_limitMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_limitMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_limitMapRect");
+          }
       
           // args
           // struct arg
@@ -2251,7 +2565,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_zoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_zoomLevel");
+          }
       
           // args
           // jsonable arg
@@ -2265,7 +2582,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_minZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_minZoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_minZoomLevel");
+          }
       
           // args
           // jsonable arg
@@ -2279,7 +2599,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_maxZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_maxZoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_maxZoomLevel");
+          }
       
           // args
           // jsonable arg
@@ -2293,7 +2616,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_rotationDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_rotationDegree");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_rotationDegree");
+          }
       
           // args
           // jsonable arg
@@ -2307,7 +2633,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_cameraDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_cameraDegree");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_cameraDegree");
+          }
       
           // args
           // jsonable arg
@@ -2321,7 +2650,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_zoomingInPivotsAroundAnchorPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_zoomingInPivotsAroundAnchorPoint");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_zoomingInPivotsAroundAnchorPoint");
+          }
       
           // args
           // jsonable arg
@@ -2335,7 +2667,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_zoomEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_zoomEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_zoomEnabled");
+          }
       
           // args
           // jsonable arg
@@ -2349,7 +2684,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_scrollEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_scrollEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_scrollEnabled");
+          }
       
           // args
           // jsonable arg
@@ -2363,7 +2701,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_rotateEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_rotateEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_rotateEnabled");
+          }
       
           // args
           // jsonable arg
@@ -2377,7 +2718,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_rotateCameraEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_rotateCameraEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_rotateCameraEnabled");
+          }
       
           // args
           // jsonable arg
@@ -2391,7 +2735,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_skyModelEnable": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_skyModelEnable");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_skyModelEnable");
+          }
       
           // args
           // jsonable arg
@@ -2405,7 +2752,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsBuildings": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsBuildings");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsBuildings");
+          }
       
           // args
           // jsonable arg
@@ -2419,7 +2769,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsLabels": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsLabels");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsLabels");
+          }
       
           // args
           // jsonable arg
@@ -2433,7 +2786,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showTraffic": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showTraffic");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showTraffic");
+          }
       
           // args
           // jsonable arg
@@ -2447,7 +2803,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_trafficRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_trafficRatio");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_trafficRatio");
+          }
       
           // args
           // jsonable arg
@@ -2461,7 +2820,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_touchPOIEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_touchPOIEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_touchPOIEnabled");
+          }
       
           // args
           // jsonable arg
@@ -2475,7 +2837,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsCompass": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsCompass");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsCompass");
+          }
       
           // args
           // jsonable arg
@@ -2489,7 +2854,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_compassOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_compassOrigin");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_compassOrigin");
+          }
       
           // args
           // struct arg
@@ -2505,7 +2873,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsScale": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsScale");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsScale");
+          }
       
           // args
           // jsonable arg
@@ -2519,7 +2890,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_scaleOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_scaleOrigin");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_scaleOrigin");
+          }
       
           // args
           // struct arg
@@ -2535,7 +2909,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_logoCenter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_logoCenter");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_logoCenter");
+          }
       
           // args
           // struct arg
@@ -2551,7 +2928,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_maxRenderFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_maxRenderFrame");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_maxRenderFrame");
+          }
       
           // args
           // jsonable arg
@@ -2565,7 +2945,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_isAllowDecreaseFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_isAllowDecreaseFrame");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_isAllowDecreaseFrame");
+          }
       
           // args
           // jsonable arg
@@ -2579,7 +2962,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_openGLESDisabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_openGLESDisabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_openGLESDisabled");
+          }
       
           // args
           // jsonable arg
@@ -2593,7 +2979,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_screenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_screenAnchor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_screenAnchor");
+          }
       
           // args
           // struct arg
@@ -2609,7 +2998,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_selectedAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_selectedAnnotations");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_selectedAnnotations");
+          }
       
           // args
           // list arg
@@ -2628,7 +3020,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_allowsAnnotationViewSorting": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_allowsAnnotationViewSorting");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_allowsAnnotationViewSorting");
+          }
       
           // args
           // jsonable arg
@@ -2642,7 +3037,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsUserLocation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsUserLocation");
+          }
       
           // args
           // jsonable arg
@@ -2656,7 +3054,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_customizeUserLocationAccuracyCircleRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_customizeUserLocationAccuracyCircleRepresentation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_customizeUserLocationAccuracyCircleRepresentation");
+          }
       
           // args
           // jsonable arg
@@ -2670,7 +3071,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_userTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_userTrackingMode");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_userTrackingMode");
+          }
       
           // args
           // enum arg
@@ -2684,7 +3088,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_distanceFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_distanceFilter");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_distanceFilter");
+          }
       
           // args
           // jsonable arg
@@ -2698,7 +3105,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_desiredAccuracy": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_desiredAccuracy");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_desiredAccuracy");
+          }
       
           // args
           // jsonable arg
@@ -2712,7 +3122,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_headingFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_headingFilter");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_headingFilter");
+          }
       
           // args
           // jsonable arg
@@ -2726,7 +3139,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_pausesLocationUpdatesAutomatically": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_pausesLocationUpdatesAutomatically");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_pausesLocationUpdatesAutomatically");
+          }
       
           // args
           // jsonable arg
@@ -2740,7 +3156,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_allowsBackgroundLocationUpdates": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_allowsBackgroundLocationUpdates");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_allowsBackgroundLocationUpdates");
+          }
       
           // args
           // jsonable arg
@@ -2754,7 +3173,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsIndoorMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsIndoorMap");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsIndoorMap");
+          }
       
           // args
           // jsonable arg
@@ -2768,7 +3190,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsIndoorMapControl": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsIndoorMapControl");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsIndoorMapControl");
+          }
       
           // args
           // jsonable arg
@@ -2782,7 +3207,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_customMapStyleEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_customMapStyleEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_customMapStyleEnabled");
+          }
       
           // args
           // jsonable arg
@@ -2824,8 +3252,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MATraceDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MATraceDelegate::traceManagerDidTracecorrectdistancewithError");
+  // print log
+  if (enableLog) {
+    NSLog(@"MATraceDelegate::traceManagerDidTracecorrectdistancewithError");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -2864,8 +3294,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MATraceDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MATraceDelegate::mapViewRequireLocationAuth");
+  // print log
+  if (enableLog) {
+    NSLog(@"MATraceDelegate::mapViewRequireLocationAuth");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -2881,8 +3313,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMultiPointOverlayRendererDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -2901,8 +3335,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewRegionChanged");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewRegionChanged");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -2918,8 +3354,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewRegionWillChangeAnimated");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewRegionWillChangeAnimated");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -2937,8 +3375,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewRegionDidChangeAnimated");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewRegionDidChangeAnimated");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -2956,8 +3396,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewMapWillMoveByUser");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewMapWillMoveByUser");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -2975,8 +3417,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewMapDidMoveByUser");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewMapDidMoveByUser");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -2994,8 +3438,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewMapWillZoomByUser");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewMapWillZoomByUser");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3013,8 +3459,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewMapDidZoomByUser");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewMapDidZoomByUser");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3032,8 +3480,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewWillStartLoadingMap");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewWillStartLoadingMap");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3049,8 +3499,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidFinishLoadingMap");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidFinishLoadingMap");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3066,8 +3518,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidFailLoadingMapWithError");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidFailLoadingMapWithError");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3086,8 +3540,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewViewForAnnotation");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewViewForAnnotation");
+  }
 
   // convert to jsonable arg
   
@@ -3148,8 +3604,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidAddAnnotationViews");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidAddAnnotationViews");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3176,8 +3634,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidSelectAnnotationView");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidSelectAnnotationView");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3196,8 +3656,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidDeselectAnnotationView");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidDeselectAnnotationView");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3216,8 +3678,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewWillStartLocatingUser");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewWillStartLocatingUser");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3233,8 +3697,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidStopLocatingUser");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidStopLocatingUser");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3250,8 +3716,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3272,8 +3740,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidFailToLocateUserWithError");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidFailToLocateUserWithError");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3292,8 +3762,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3316,8 +3788,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewRendererForOverlay");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewRendererForOverlay");
+  }
 
   // convert to jsonable arg
   
@@ -3441,8 +3915,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidAddOverlayRenderers");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidAddOverlayRenderers");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3467,8 +3943,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3490,8 +3968,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3510,8 +3990,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewTapped");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewTapped");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3530,8 +4012,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3551,8 +4035,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3570,8 +4056,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidTouchPois");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidTouchPois");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3596,8 +4084,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3618,8 +4108,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidLongPressedAtCoordinate");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidLongPressedAtCoordinate");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3640,8 +4132,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapInitComplete");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapInitComplete");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3657,8 +4151,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapShowed");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapShowed");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3677,8 +4173,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3697,8 +4195,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapHidden");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapHidden");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3717,8 +4217,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::offlineDataWillReload");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::offlineDataWillReload");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -3734,8 +4236,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::offlineDataDidReload");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::offlineDataDidReload");
+  }
 
   // convert to jsonable arg
   // ref callback arg

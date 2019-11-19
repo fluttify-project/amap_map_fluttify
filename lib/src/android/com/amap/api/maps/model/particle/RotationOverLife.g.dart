@@ -20,7 +20,7 @@ class com_amap_api_maps_model_particle_RotationOverLife extends com_autonavi_ama
   // generate methods
   Future<double> getRotate() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.RotationOverLife@$refId::getRotate([])');
     }
   

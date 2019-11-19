@@ -20,7 +20,7 @@ class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object  {
   // generate methods
   Future<com_amap_api_maps_model_Tile> getTile(int var1, int var2, int var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTile([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object  {
   
   Future<int> getTileHeight() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTileHeight([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object  {
   
   Future<int> getTileWidth() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTileWidth([])');
     }
   

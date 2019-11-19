@@ -25,7 +25,7 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
   // generate methods
   Future<double> getSizeX(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.SizeOverLife@$refId::getSizeX([\'var1\':$var1])');
     }
   
@@ -47,7 +47,7 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
   
   Future<double> getSizeY(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.SizeOverLife@$refId::getSizeY([\'var1\':$var1])');
     }
   
@@ -69,7 +69,7 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
   
   Future<double> getSizeZ(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.SizeOverLife@$refId::getSizeZ([\'var1\':$var1])');
     }
   

@@ -20,7 +20,7 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
   // generate methods
   Future<com_amap_api_maps_model_HeatmapTileProvider> build() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::build([])');
     }
   

@@ -20,7 +20,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   // generate methods
   Future<com_amap_api_maps_model_MyLocationStyle> myLocationIcon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::myLocationIcon([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> anchor(double var1, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::anchor([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> radiusFillColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::radiusFillColor([\'var1\':$var1])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> strokeColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::strokeColor([\'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> strokeWidth(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::strokeWidth([\'var1\':$var1])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> myLocationType(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::myLocationType([\'var1\':$var1])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> interval(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::interval([\'var1\':$var1])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_MyLocationStyle> showMyLocation(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::showMyLocation([\'var1\':$var1])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<com_amap_api_maps_model_BitmapDescriptor> getMyLocationIcon() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getMyLocationIcon([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<double> getAnchorU() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getAnchorU([])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<double> getAnchorV() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getAnchorV([])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<int> getRadiusFillColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getRadiusFillColor([])');
     }
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<int> getStrokeColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getStrokeColor([])');
     }
   
@@ -306,7 +306,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<double> getStrokeWidth() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getStrokeWidth([])');
     }
   
@@ -328,7 +328,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<int> getMyLocationType() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getMyLocationType([])');
     }
   
@@ -350,7 +350,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<int> getInterval() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getInterval([])');
     }
   
@@ -372,7 +372,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   
   Future<bool> isMyLocationShowing() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::isMyLocationShowing([])');
     }
   

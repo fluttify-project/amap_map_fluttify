@@ -958,7 +958,7 @@ class MAMapView extends UIView  {
   // generate methods
   Future<void> setRegionAnimated(MACoordinateRegion region, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setRegion([\'animated\':$animated])');
     }
   
@@ -980,7 +980,7 @@ class MAMapView extends UIView  {
   
   Future<MACoordinateRegion> regionThatFits(MACoordinateRegion region, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::regionThatFits([])');
     }
   
@@ -1002,7 +1002,7 @@ class MAMapView extends UIView  {
   
   Future<void> setVisibleMapRectAnimated(MAMapRect mapRect, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setVisibleMapRect([\'animated\':$animated])');
     }
   
@@ -1024,7 +1024,7 @@ class MAMapView extends UIView  {
   
   Future<MAMapRect> mapRectThatFits(MAMapRect mapRect, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::mapRectThatFits([])');
     }
   
@@ -1046,7 +1046,7 @@ class MAMapView extends UIView  {
   
   Future<MAMapRect> mapRectThatFitsEdgePadding(MAMapRect mapRect, UIEdgeInsets insets, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::mapRectThatFits([])');
     }
   
@@ -1068,7 +1068,7 @@ class MAMapView extends UIView  {
   
   Future<void> setVisibleMapRectEdgePaddinganimated(MAMapRect mapRect, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setVisibleMapRect([\'animated\':$animated])');
     }
   
@@ -1090,7 +1090,7 @@ class MAMapView extends UIView  {
   
   Future<void> setCenterCoordinateAnimated(CLLocationCoordinate2D coordinate, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setCenterCoordinate([\'animated\':$animated])');
     }
   
@@ -1112,7 +1112,7 @@ class MAMapView extends UIView  {
   
   Future<void> setZoomLevelAnimated(double zoomLevel, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setZoomLevel([\'zoomLevel\':$zoomLevel, \'animated\':$animated])');
     }
   
@@ -1134,7 +1134,7 @@ class MAMapView extends UIView  {
   
   Future<void> setZoomLevelAtPivotanimated(double zoomLevel, CGPoint pivot, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setZoomLevel([\'zoomLevel\':$zoomLevel, \'animated\':$animated])');
     }
   
@@ -1156,7 +1156,7 @@ class MAMapView extends UIView  {
   
   Future<void> setRotationDegreeAnimatedduration(double rotationDegree, bool animated, double duration, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setRotationDegree([\'rotationDegree\':$rotationDegree, \'animated\':$animated, \'duration\':$duration])');
     }
   
@@ -1178,7 +1178,7 @@ class MAMapView extends UIView  {
   
   Future<void> setCameraDegreeAnimatedduration(double cameraDegree, bool animated, double duration, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setCameraDegree([\'cameraDegree\':$cameraDegree, \'animated\':$animated, \'duration\':$duration])');
     }
   
@@ -1200,7 +1200,7 @@ class MAMapView extends UIView  {
   
   Future<MAMapStatus> getMapStatus({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::getMapStatus([])');
     }
   
@@ -1222,7 +1222,7 @@ class MAMapView extends UIView  {
   
   Future<void> setMapStatusAnimated(MAMapStatus status, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setMapStatus([\'animated\':$animated])');
     }
   
@@ -1244,7 +1244,7 @@ class MAMapView extends UIView  {
   
   Future<void> setMapStatusAnimatedduration(MAMapStatus status, bool animated, double duration, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setMapStatus([\'animated\':$animated, \'duration\':$duration])');
     }
   
@@ -1266,7 +1266,7 @@ class MAMapView extends UIView  {
   
   Future<void> setCompassImage(UIImage image, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setCompassImage([])');
     }
   
@@ -1288,7 +1288,7 @@ class MAMapView extends UIView  {
   
   Future<double> metersPerPointForZoomLevel(double zoomLevel, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::metersPerPointForZoomLevel([\'zoomLevel\':$zoomLevel])');
     }
   
@@ -1310,7 +1310,7 @@ class MAMapView extends UIView  {
   
   Future<CGPoint> convertCoordinateToPointToView(CLLocationCoordinate2D coordinate, UIView view, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::convertCoordinate([])');
     }
   
@@ -1332,7 +1332,7 @@ class MAMapView extends UIView  {
   
   Future<CLLocationCoordinate2D> convertPointToCoordinateFromView(CGPoint point, UIView view, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::convertPoint([])');
     }
   
@@ -1354,7 +1354,7 @@ class MAMapView extends UIView  {
   
   Future<CGRect> convertRegionToRectToView(MACoordinateRegion region, UIView view, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::convertRegion([])');
     }
   
@@ -1376,7 +1376,7 @@ class MAMapView extends UIView  {
   
   Future<MACoordinateRegion> convertRectToRegionFromView(CGRect rect, UIView view, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::convertRect([])');
     }
   
@@ -1398,7 +1398,7 @@ class MAMapView extends UIView  {
   
   Future<void> reloadMap({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::reloadMap([])');
     }
   
@@ -1420,7 +1420,7 @@ class MAMapView extends UIView  {
   
   Future<void> clearDisk({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::clearDisk([])');
     }
   
@@ -1442,7 +1442,7 @@ class MAMapView extends UIView  {
   
   Future<void> reloadInternalTexture({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::reloadInternalTexture([])');
     }
   
@@ -1464,7 +1464,7 @@ class MAMapView extends UIView  {
   
   Future<String> mapContentApprovalNumber({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::mapContentApprovalNumber([])');
     }
   
@@ -1486,7 +1486,7 @@ class MAMapView extends UIView  {
   
   Future<String> satelliteImageApprovalNumber({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::satelliteImageApprovalNumber([])');
     }
   
@@ -1508,7 +1508,7 @@ class MAMapView extends UIView  {
   
   Future<void> forceRefresh({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::forceRefresh([])');
     }
   
@@ -1530,7 +1530,7 @@ class MAMapView extends UIView  {
   
   Future<void> addAnnotation(MAAnnotation annotation, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::addAnnotation([])');
     }
   
@@ -1552,7 +1552,7 @@ class MAMapView extends UIView  {
   
   Future<void> addAnnotations(List<NSObject> annotations, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::addAnnotations([])');
     }
   
@@ -1574,7 +1574,7 @@ class MAMapView extends UIView  {
   
   Future<void> removeAnnotation(MAAnnotation annotation, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::removeAnnotation([])');
     }
   
@@ -1596,7 +1596,7 @@ class MAMapView extends UIView  {
   
   Future<void> removeAnnotations(List<NSObject> annotations, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::removeAnnotations([])');
     }
   
@@ -1618,7 +1618,7 @@ class MAMapView extends UIView  {
   
   Future<MAAnnotationView> viewForAnnotation(MAAnnotation annotation, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::viewForAnnotation([])');
     }
   
@@ -1640,7 +1640,7 @@ class MAMapView extends UIView  {
   
   Future<MAAnnotationView> dequeueReusableAnnotationViewWithIdentifier(String identifier, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::dequeueReusableAnnotationViewWithIdentifier([\'identifier\':$identifier])');
     }
   
@@ -1662,7 +1662,7 @@ class MAMapView extends UIView  {
   
   Future<void> selectAnnotationAnimated(MAAnnotation annotation, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::selectAnnotation([\'animated\':$animated])');
     }
   
@@ -1684,7 +1684,7 @@ class MAMapView extends UIView  {
   
   Future<void> deselectAnnotationAnimated(MAAnnotation annotation, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::deselectAnnotation([\'animated\':$animated])');
     }
   
@@ -1706,7 +1706,7 @@ class MAMapView extends UIView  {
   
   Future<void> showAnnotationsAnimated(List<NSObject> annotations, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::showAnnotations([\'animated\':$animated])');
     }
   
@@ -1728,7 +1728,7 @@ class MAMapView extends UIView  {
   
   Future<void> showAnnotationsEdgePaddinganimated(List<NSObject> annotations, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::showAnnotations([\'animated\':$animated])');
     }
   
@@ -1750,7 +1750,7 @@ class MAMapView extends UIView  {
   
   Future<void> setUserTrackingModeAnimated(MAUserTrackingMode mode, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setUserTrackingMode([\'animated\':$animated])');
     }
   
@@ -1772,7 +1772,7 @@ class MAMapView extends UIView  {
   
   Future<void> updateUserLocationRepresentation(MAUserLocationRepresentation representation, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::updateUserLocationRepresentation([])');
     }
   
@@ -1794,7 +1794,7 @@ class MAMapView extends UIView  {
   
   Future<List> overlaysInLevel(MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::overlaysInLevel([])');
     }
   
@@ -1816,7 +1816,7 @@ class MAMapView extends UIView  {
   
   Future<void> addOverlay(MAOverlay overlay, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::addOverlay([])');
     }
   
@@ -1838,7 +1838,7 @@ class MAMapView extends UIView  {
   
   Future<void> addOverlays(List<NSObject> overlays, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::addOverlays([])');
     }
   
@@ -1860,7 +1860,7 @@ class MAMapView extends UIView  {
   
   Future<void> addOverlayLevel(MAOverlay overlay, MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::addOverlay([])');
     }
   
@@ -1882,7 +1882,7 @@ class MAMapView extends UIView  {
   
   Future<void> addOverlaysLevel(List<NSObject> overlays, MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::addOverlays([])');
     }
   
@@ -1904,7 +1904,7 @@ class MAMapView extends UIView  {
   
   Future<void> removeOverlay(MAOverlay overlay, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::removeOverlay([])');
     }
   
@@ -1926,7 +1926,7 @@ class MAMapView extends UIView  {
   
   Future<void> removeOverlays(List<NSObject> overlays, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::removeOverlays([])');
     }
   
@@ -1948,7 +1948,7 @@ class MAMapView extends UIView  {
   
   Future<void> insertOverlayAtIndexlevel(MAOverlay overlay, int index, MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::insertOverlay([\'index\':$index])');
     }
   
@@ -1970,7 +1970,7 @@ class MAMapView extends UIView  {
   
   Future<void> insertOverlayAboveOverlay(MAOverlay overlay, MAOverlay sibling, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::insertOverlay([])');
     }
   
@@ -1992,7 +1992,7 @@ class MAMapView extends UIView  {
   
   Future<void> insertOverlayBelowOverlay(MAOverlay overlay, MAOverlay sibling, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::insertOverlay([])');
     }
   
@@ -2014,7 +2014,7 @@ class MAMapView extends UIView  {
   
   Future<void> insertOverlayAtIndex(MAOverlay overlay, int index, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::insertOverlay([\'index\':$index])');
     }
   
@@ -2036,7 +2036,7 @@ class MAMapView extends UIView  {
   
   Future<void> exchangeOverlayAtIndexWithOverlayAtIndex(int index1, int index2, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::exchangeOverlayAtIndex([\'index1\':$index1, \'index2\':$index2])');
     }
   
@@ -2058,7 +2058,7 @@ class MAMapView extends UIView  {
   
   Future<void> exchangeOverlayAtIndexWithOverlayAtIndexatLevel(int index1, int index2, MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::exchangeOverlayAtIndex([\'index1\':$index1, \'index2\':$index2])');
     }
   
@@ -2080,7 +2080,7 @@ class MAMapView extends UIView  {
   
   Future<void> exchangeOverlayWithOverlay(MAOverlay overlay1, MAOverlay overlay2, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::exchangeOverlay([])');
     }
   
@@ -2102,7 +2102,7 @@ class MAMapView extends UIView  {
   
   Future<MAOverlayRenderer> rendererForOverlay(MAOverlay overlay, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::rendererForOverlay([])');
     }
   
@@ -2124,7 +2124,7 @@ class MAMapView extends UIView  {
   
   Future<void> showOverlaysAnimated(List<NSObject> overlays, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::showOverlays([\'animated\':$animated])');
     }
   
@@ -2146,7 +2146,7 @@ class MAMapView extends UIView  {
   
   Future<void> showOverlaysEdgePaddinganimated(List<NSObject> overlays, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::showOverlays([\'animated\':$animated])');
     }
   
@@ -2168,7 +2168,7 @@ class MAMapView extends UIView  {
   
   Future<void> setIndoorMapControlOrigin(CGPoint origin, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setIndoorMapControlOrigin([])');
     }
   
@@ -2190,7 +2190,7 @@ class MAMapView extends UIView  {
   
   Future<void> setCurrentIndoorMapFloorIndex(int floorIndex, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setCurrentIndoorMapFloorIndex([\'floorIndex\':$floorIndex])');
     }
   
@@ -2212,7 +2212,7 @@ class MAMapView extends UIView  {
   
   Future<void> clearIndoorMapCache({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::clearIndoorMapCache([])');
     }
   
@@ -2234,7 +2234,7 @@ class MAMapView extends UIView  {
   
   Future<void> setCustomMapStyleOptions(MAMapCustomStyleOptions styleOptions, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setCustomMapStyleOptions([])');
     }
   

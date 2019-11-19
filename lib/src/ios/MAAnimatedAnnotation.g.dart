@@ -30,7 +30,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   // generate methods
   Future<MAAnnotationMoveAnimation> addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback(List<CLLocationCoordinate2D> coordinates, int count, double duration, String name, void completeCallback(bool isFinished)) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnimatedAnnotation@$refId::addMoveAnimationWithKeyCoordinates([\'count\':$count, \'duration\':$duration, \'name\':$name])');
     }
   
@@ -71,7 +71,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   
   Future<MAAnnotationMoveAnimation> addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback(List<CLLocationCoordinate2D> coordinates, int count, double duration, String name, void completeCallback(bool isFinished), void stepCallback(MAAnnotationMoveAnimation currentAni)) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnimatedAnnotation@$refId::addMoveAnimationWithKeyCoordinates([\'count\':$count, \'duration\':$duration, \'name\':$name])');
     }
   
@@ -121,7 +121,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   
   Future<void> setNeedsStart() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnimatedAnnotation@$refId::setNeedsStart([])');
     }
   

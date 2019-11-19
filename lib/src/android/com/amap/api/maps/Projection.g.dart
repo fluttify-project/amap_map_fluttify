@@ -20,7 +20,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   // generate methods
   Future<com_amap_api_maps_model_LatLng> fromScreenLocation(android_graphics_Point var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.Projection@$refId::fromScreenLocation([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   
   Future<android_graphics_Point> toScreenLocation(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.Projection@$refId::toScreenLocation([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   
   Future<android_graphics_PointF> toOpenGLLocation(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.Projection@$refId::toOpenGLLocation([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   
   Future<double> toOpenGLWidth(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.Projection@$refId::toOpenGLWidth([\'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_VisibleRegion> getVisibleRegion() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.Projection@$refId::getVisibleRegion([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_TileProjection> fromBoundsToTile(com_amap_api_maps_model_LatLngBounds var1, int var2, int var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.Projection@$refId::fromBoundsToTile([\'var2\':$var2, \'var3\':$var3])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLngBounds> getMapBounds(com_amap_api_maps_model_LatLng var1, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.Projection@$refId::getMapBounds([\'var2\':$var2])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_AMapCameraInfo> getCameraInfo() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.Projection@$refId::getCameraInfo([])');
     }
   

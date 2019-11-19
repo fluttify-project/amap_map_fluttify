@@ -20,7 +20,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   // generate methods
   Future<void> add(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::add([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<void> remove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::remove([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<void> setProperCamera(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setProperCamera([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<void> zoopToSpan() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::zoopToSpan([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<int> getTraceStatus() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getTraceStatus([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<void> setTraceStatus(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setTraceStatus([\'var1\':$var1])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<int> getDistance() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getDistance([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<void> setDistance(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setDistance([\'var1\':$var1])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<int> getWaitTime() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getWaitTime([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   
   Future<void> setWaitTime(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setWaitTime([\'var1\':$var1])');
     }
   

@@ -192,7 +192,7 @@ class MAAnnotationView extends UIView  {
   // generate methods
   Future<void> setSelectedAnimated(bool selected, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationView@$refId::setSelected([\'selected\':$selected, \'animated\':$animated])');
     }
   
@@ -214,7 +214,7 @@ class MAAnnotationView extends UIView  {
   
   Future<void> prepareForReuse({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationView@$refId::prepareForReuse([])');
     }
   
@@ -236,7 +236,7 @@ class MAAnnotationView extends UIView  {
   
   Future<void> setDragStateAnimated(MAAnnotationViewDragState newDragState, bool animated, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationView@$refId::setDragState([\'animated\':$animated])');
     }
   

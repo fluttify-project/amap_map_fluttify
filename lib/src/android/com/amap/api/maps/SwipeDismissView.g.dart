@@ -20,7 +20,7 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
   // generate methods
   Future<void> setCallback(com_amap_api_maps_WearMapView_OnDismissCallback var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.SwipeDismissView@$refId::setCallback([])');
     }
   

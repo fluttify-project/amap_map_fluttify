@@ -45,6 +45,7 @@
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/foundation_fluttify/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/foundation_fluttify/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/foundation_fluttify/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/path_provider/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/path_provider/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/path_provider/build" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/path_provider/example/.dart_tool" />

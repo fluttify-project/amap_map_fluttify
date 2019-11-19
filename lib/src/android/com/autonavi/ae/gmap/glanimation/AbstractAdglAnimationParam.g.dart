@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   // generate methods
   Future<void> reset() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::reset([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   
   Future<bool> needToCaculate() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::needToCaculate([])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   
   Future<double> getCurMult() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::getCurMult([])');
     }
   
@@ -86,7 +86,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   
   Future<void> setNormalizedTime(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::setNormalizedTime([\'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   
   Future<void> setInterpolatorType(int var1, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::setInterpolatorType([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -130,7 +130,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   
   Future<int> getInterpolatorType() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::getInterpolatorType([])');
     }
   
@@ -152,7 +152,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   
   Future<void> checkParam() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::checkParam([])');
     }
   

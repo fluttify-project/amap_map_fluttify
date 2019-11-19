@@ -48,7 +48,7 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   // generate methods
   static Future<MAGroundOverlay> groundOverlayWithBoundsIcon(MACoordinateBounds bounds, UIImage icon) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAGroundOverlay::groundOverlayWithBounds([])');
     }
   
@@ -70,7 +70,7 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   static Future<MAGroundOverlay> groundOverlayWithCoordinateZoomLevelicon(CLLocationCoordinate2D coordinate, double zoomLevel, UIImage icon) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAGroundOverlay::groundOverlayWithCoordinate([\'zoomLevel\':$zoomLevel])');
     }
   
@@ -92,7 +92,7 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   Future<bool> setGroundOverlayWithBoundsIcon(MACoordinateBounds bounds, UIImage icon) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAGroundOverlay@$refId::setGroundOverlayWithBounds([])');
     }
   
@@ -114,7 +114,7 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   Future<bool> setGroundOverlayWithCoordinateZoomLevelicon(CLLocationCoordinate2D coordinate, double zoomLevel, UIImage icon) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAGroundOverlay@$refId::setGroundOverlayWithCoordinate([\'zoomLevel\':$zoomLevel])');
     }
   

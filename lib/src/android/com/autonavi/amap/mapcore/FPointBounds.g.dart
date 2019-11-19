@@ -31,7 +31,7 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
   // generate methods
   static Future<com_autonavi_amap_mapcore_FPointBounds_Builder> builder() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds::builder([])');
     }
   
@@ -53,7 +53,7 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
   
   Future<bool> contains(com_autonavi_amap_mapcore_FPoint var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds@$refId::contains([])');
     }
   
@@ -75,7 +75,7 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
   
   Future<bool> intersects(com_autonavi_amap_mapcore_FPointBounds var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds@$refId::intersects([])');
     }
   

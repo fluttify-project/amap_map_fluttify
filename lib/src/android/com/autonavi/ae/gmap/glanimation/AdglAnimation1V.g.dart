@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends java_lang_Object 
   // generate methods
   Future<void> reset() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::reset([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends java_lang_Object 
   
   Future<void> setAnimationValue(double var1, double var2, int var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::setAnimationValue([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends java_lang_Object 
   
   Future<double> getCurValue() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getCurValue([])');
     }
   
@@ -86,7 +86,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends java_lang_Object 
   
   Future<double> getStartValue() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getStartValue([])');
     }
   
@@ -108,7 +108,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends java_lang_Object 
   
   Future<double> getEndValue() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getEndValue([])');
     }
   

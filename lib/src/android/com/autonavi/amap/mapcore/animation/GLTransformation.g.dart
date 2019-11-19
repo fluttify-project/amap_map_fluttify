@@ -66,7 +66,7 @@ class com_autonavi_amap_mapcore_animation_GLTransformation extends java_lang_Obj
   // generate methods
   Future<void> clear() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLTransformation@$refId::clear([])');
     }
   

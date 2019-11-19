@@ -20,7 +20,7 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
   // generate methods
   Future<double> getX() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getX([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
   
   Future<double> getY() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getY([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
   
   Future<double> getZ() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getZ([])');
     }
   

@@ -20,7 +20,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   // generate methods
   Future<void> remove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::remove([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   
   Future<void> clearTileCache() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::clearTileCache([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   
   Future<String> getId() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::getId([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   
   Future<void> setZIndex(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setZIndex([\'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   
   Future<double> getZIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::getZIndex([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::isVisible([])');
     }
   

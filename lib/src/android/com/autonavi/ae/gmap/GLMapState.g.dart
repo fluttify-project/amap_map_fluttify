@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   // generate methods
   static Future<void> lonlat2Geo(double var0, double var2, com_autonavi_amap_mapcore_IPoint var4) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::lonlat2Geo([\'var0\':$var0, \'var2\':$var2])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<void> geo2LonLat(int var0, int var1, com_autonavi_amap_mapcore_DPoint var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::geo2LonLat([\'var0\':$var0, \'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<void> screenToP20Point(int var1, int var2, android_graphics_Point var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::screenToP20Point([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -86,7 +86,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<void> p20ToScreenPoint(int var1, int var2, com_autonavi_amap_mapcore_FPoint var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::p20ToScreenPoint([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -108,7 +108,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<void> getMapGeoCenter(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapGeoCenter([])');
     }
   
@@ -130,7 +130,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<void> setMapGeoCenter(int var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setMapGeoCenter([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -152,7 +152,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<void> setCameraDegree(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setCameraDegree([\'var1\':$var1])');
     }
   
@@ -174,7 +174,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<void> setMapAngle(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setMapAngle([\'var1\':$var1])');
     }
   
@@ -196,7 +196,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<void> setMapZoomer(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setMapZoomer([\'var1\':$var1])');
     }
   
@@ -218,7 +218,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<double> getMapZoomer() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapZoomer([])');
     }
   
@@ -240,7 +240,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<double> getCameraDegree() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getCameraDegree([])');
     }
   
@@ -262,7 +262,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<double> getMapAngle() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapAngle([])');
     }
   
@@ -284,7 +284,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<void> recalculate() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::recalculate([])');
     }
   
@@ -306,7 +306,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<void> reset() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::reset([])');
     }
   
@@ -328,7 +328,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<double> getMapLenWithWin(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapLenWithWin([\'var1\':$var1])');
     }
   
@@ -350,7 +350,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<double> getGLUnitWithWin(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getGLUnitWithWin([\'var1\':$var1])');
     }
   
@@ -372,7 +372,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<int> getNativeInstance() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getNativeInstance([])');
     }
   
@@ -394,7 +394,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<void> getViewMatrix(List<double> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getViewMatrix([\'var1\':$var1])');
     }
   
@@ -416,7 +416,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<void> getProjectionMatrix(List<double> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getProjectionMatrix([\'var1\':$var1])');
     }
   
@@ -438,7 +438,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<double> getSkyHeight() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getSkyHeight([])');
     }
   
@@ -460,7 +460,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   Future<void> setNativeMapengineState(int var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setNativeMapengineState([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -482,7 +482,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<double> calMapZoomScalefactor(int var0, int var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::calMapZoomScalefactor([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -504,7 +504,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<int> nativeNewInstance(int var0, int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeNewInstance([\'var0\':$var0, \'var1\':$var1])');
     }
   
@@ -526,7 +526,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<void> nativeScreenToP20Point(int var0, double var2, double var3, android_graphics_Point var4) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
     }
   
@@ -548,7 +548,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<void> nativeP20ToScreenPoint(int var0, int var2, int var3, int var4, android_graphics_PointF var5) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
     }
   
@@ -570,7 +570,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<void> nativeSetMapCenter(int var0, int var2, int var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
     }
   
@@ -592,7 +592,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<void> nativeGetMapCenter(int var0, android_graphics_Point var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter([\'var0\':$var0])');
     }
   
@@ -614,7 +614,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<double> nativeGetMapZoomer(int var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetMapZoomer([\'var0\':$var0])');
     }
   
@@ -636,7 +636,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<void> nativeSetMapZoomer(int var0, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer([\'var0\':$var0, \'var2\':$var2])');
     }
   
@@ -658,7 +658,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<void> nativeSetMapAngle(int var0, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle([\'var0\':$var0, \'var2\':$var2])');
     }
   
@@ -680,7 +680,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<double> nativeGetCameraDegree(int var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree([\'var0\':$var0])');
     }
   
@@ -702,7 +702,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<double> nativeGetMapAngle(int var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle([\'var0\':$var0])');
     }
   
@@ -724,7 +724,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<void> nativeSetCameraDegree(int var0, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree([\'var0\':$var0, \'var2\':$var2])');
     }
   
@@ -746,7 +746,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<void> nativeRecalculate(int var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeRecalculate([\'var0\':$var0])');
     }
   
@@ -768,7 +768,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<void> nativeStateDestroy(int var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeStateDestroy([\'var0\':$var0])');
     }
   
@@ -790,7 +790,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<void> nativeGetViewMatrix(int var0, List<double> var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix([\'var0\':$var0, \'var2\':$var2])');
     }
   
@@ -812,7 +812,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<void> nativeGetProjectionMatrix(int var0, List<double> var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix([\'var0\':$var0, \'var2\':$var2])');
     }
   
@@ -834,7 +834,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<double> nativeGetSkyHeight(int var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight([\'var0\':$var0])');
     }
   
@@ -856,7 +856,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<double> nativeGetGLUnitWithWin(int var0, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin([\'var0\':$var0, \'var2\':$var2])');
     }
   
@@ -878,7 +878,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
   static Future<double> nativeCalMapZoomScalefactor(int var0, int var1, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeCalMapZoomScalefactor([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   

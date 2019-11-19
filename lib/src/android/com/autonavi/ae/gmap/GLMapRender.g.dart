@@ -928,7 +928,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   // generate methods
   Future<void> setTrafficMode(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::setTrafficMode([\'var1\':$var1])');
     }
   
@@ -950,7 +950,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> resetTickCount(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::resetTickCount([\'var1\':$var1])');
     }
   
@@ -972,7 +972,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<bool> isRenderPause() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::isRenderPause([])');
     }
   
@@ -994,7 +994,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> setRenderFps(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::setRenderFps([\'var1\':$var1])');
     }
   
@@ -1016,7 +1016,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> renderPause() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::renderPause([])');
     }
   
@@ -1038,7 +1038,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> renderResume() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::renderResume([])');
     }
   
@@ -1060,7 +1060,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> onAttachedToWindow() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onAttachedToWindow([])');
     }
   
@@ -1082,7 +1082,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> onDetachedFromWindow() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onDetachedFromWindow([])');
     }
   
@@ -1104,7 +1104,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   Future<void> onSurfaceDestory() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onSurfaceDestory([])');
     }
   

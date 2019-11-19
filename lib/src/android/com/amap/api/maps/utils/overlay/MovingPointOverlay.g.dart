@@ -20,7 +20,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   // generate methods
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setPoints([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> resetIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::resetIndex([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> setTotalDuration(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setTotalDuration([\'var1\':$var1])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> startSmoothMove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::startSmoothMove([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> stopMove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::stopMove([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getPosition([])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<int> getIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getIndex([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> destroy() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::destroy([])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> removeMarker() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::removeMarker([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setPosition([])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> setRotate(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setRotate([\'var1\':$var1])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> setVisible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   
   Future<void> setMoveListener(com_amap_api_maps_utils_overlay_MovingPointOverlay_MoveListener var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setMoveListener([])');
     }
   

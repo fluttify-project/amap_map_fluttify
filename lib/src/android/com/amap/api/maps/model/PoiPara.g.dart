@@ -20,7 +20,7 @@ class com_amap_api_maps_model_PoiPara extends java_lang_Object  {
   // generate methods
   Future<com_amap_api_maps_model_LatLng> getCenter() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PoiPara@$refId::getCenter([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_PoiPara extends java_lang_Object  {
   
   Future<void> setCenter(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PoiPara@$refId::setCenter([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_PoiPara extends java_lang_Object  {
   
   Future<String> getKeywords() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PoiPara@$refId::getKeywords([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_PoiPara extends java_lang_Object  {
   
   Future<void> setKeywords(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PoiPara@$refId::setKeywords([\'var1\':$var1])');
     }
   

@@ -20,7 +20,7 @@ class com_amap_api_maps_model_CircleHoleOptions extends java_lang_Object with an
   // generate methods
   Future<com_amap_api_maps_model_CircleHoleOptions> center(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::center([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_CircleHoleOptions extends java_lang_Object with an
   
   Future<com_amap_api_maps_model_CircleHoleOptions> radius(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::radius([\'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_CircleHoleOptions extends java_lang_Object with an
   
   Future<com_amap_api_maps_model_LatLng> getCenter() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::getCenter([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_CircleHoleOptions extends java_lang_Object with an
   
   Future<double> getRadius() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::getRadius([])');
     }
   

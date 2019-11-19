@@ -20,7 +20,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   // generate methods
   Future<double> getFov() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getFov([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   
   Future<double> getAspectRatio() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getAspectRatio([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   
   Future<double> getRotate() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getRotate([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   
   Future<double> getX() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getX([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   
   Future<double> getY() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getY([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   
   Future<double> getZ() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getZ([])');
     }
   

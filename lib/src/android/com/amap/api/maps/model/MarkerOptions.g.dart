@@ -20,7 +20,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   // generate methods
   Future<com_amap_api_maps_model_MarkerOptions> icons(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::icons([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> rotatingIcons(List<com_amap_api_maps_model_BitmapDescriptor> var1, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::rotatingIcons([\'var2\':$var2])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<double> getAngleOffset() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getAngleOffset([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<bool> isRotatingMode() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::isRotatingMode([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getIcons() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getIcons([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> period(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::period([\'var1\':$var1])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<int> getPeriod() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getPeriod([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<bool> isPerspective() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::isPerspective([])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> perspective(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::perspective([\'var1\':$var1])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> position(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::position([])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> setFlat(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::setFlat([\'var1\':$var1])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> icon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::icon([])');
     }
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> anchor(double var1, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::anchor([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -306,7 +306,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> setInfoWindowOffset(int var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::setInfoWindowOffset([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -328,7 +328,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> title(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::title([\'var1\':$var1])');
     }
   
@@ -350,7 +350,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> snippet(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::snippet([\'var1\':$var1])');
     }
   
@@ -372,7 +372,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> draggable(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::draggable([\'var1\':$var1])');
     }
   
@@ -394,7 +394,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> visible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::visible([\'var1\':$var1])');
     }
   
@@ -416,7 +416,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> setGps(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::setGps([\'var1\':$var1])');
     }
   
@@ -438,7 +438,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getPosition([])');
     }
   
@@ -460,7 +460,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<String> getTitle() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getTitle([])');
     }
   
@@ -482,7 +482,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<String> getSnippet() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getSnippet([])');
     }
   
@@ -504,7 +504,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_BitmapDescriptor> getIcon() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getIcon([])');
     }
   
@@ -526,7 +526,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<double> getAnchorU() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getAnchorU([])');
     }
   
@@ -548,7 +548,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<int> getInfoWindowOffsetX() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getInfoWindowOffsetX([])');
     }
   
@@ -570,7 +570,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<int> getInfoWindowOffsetY() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getInfoWindowOffsetY([])');
     }
   
@@ -592,7 +592,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<double> getAnchorV() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getAnchorV([])');
     }
   
@@ -614,7 +614,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<bool> isDraggable() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::isDraggable([])');
     }
   
@@ -636,7 +636,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<bool> isVisible() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::isVisible([])');
     }
   
@@ -658,7 +658,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<bool> isGps() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::isGps([])');
     }
   
@@ -680,7 +680,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<bool> isFlat() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::isFlat([])');
     }
   
@@ -702,7 +702,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> zIndex(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::zIndex([\'var1\':$var1])');
     }
   
@@ -724,7 +724,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<double> getZIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getZIndex([])');
     }
   
@@ -746,7 +746,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> alpha(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::alpha([\'var1\':$var1])');
     }
   
@@ -768,7 +768,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<double> getAlpha() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getAlpha([])');
     }
   
@@ -790,7 +790,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> autoOverturnInfoWindow(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::autoOverturnInfoWindow([\'var1\':$var1])');
     }
   
@@ -812,7 +812,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<bool> isInfoWindowAutoOverturn() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::isInfoWindowAutoOverturn([])');
     }
   
@@ -834,7 +834,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> displayLevel(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::displayLevel([\'var1\':$var1])');
     }
   
@@ -856,7 +856,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<int> getDisplayLevel() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getDisplayLevel([])');
     }
   
@@ -878,7 +878,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> rotateAngle(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::rotateAngle([\'var1\':$var1])');
     }
   
@@ -900,7 +900,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<double> getRotateAngle() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::getRotateAngle([])');
     }
   
@@ -922,7 +922,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> infoWindowEnable(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::infoWindowEnable([\'var1\':$var1])');
     }
   
@@ -944,7 +944,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<bool> isInfoWindowEnable() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::isInfoWindowEnable([])');
     }
   
@@ -966,7 +966,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_MarkerOptions> belowMaskLayer(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::belowMaskLayer([\'var1\':$var1])');
     }
   
@@ -988,7 +988,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   
   Future<bool> isBelowMaskLayer() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::isBelowMaskLayer([])');
     }
   

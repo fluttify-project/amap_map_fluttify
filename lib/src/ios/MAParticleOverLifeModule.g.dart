@@ -20,7 +20,7 @@ class MAParticleOverLifeModule extends NSObject  {
   // generate methods
   Future<void> setVelocityOverLife(MAParticleVelocityGenerate velocity) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleOverLifeModule@$refId::setVelocityOverLife([])');
     }
   
@@ -42,7 +42,7 @@ class MAParticleOverLifeModule extends NSObject  {
   
   Future<void> setRotationOverLife(MAParticleRotationGenerate rotation) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleOverLifeModule@$refId::setRotationOverLife([])');
     }
   
@@ -64,7 +64,7 @@ class MAParticleOverLifeModule extends NSObject  {
   
   Future<void> setSizeOverLife(MAParticleSizeGenerate size) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleOverLifeModule@$refId::setSizeOverLife([])');
     }
   
@@ -86,7 +86,7 @@ class MAParticleOverLifeModule extends NSObject  {
   
   Future<void> setColorOverLife(MAParticleColorGenerate color) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleOverLifeModule@$refId::setColorOverLife([])');
     }
   

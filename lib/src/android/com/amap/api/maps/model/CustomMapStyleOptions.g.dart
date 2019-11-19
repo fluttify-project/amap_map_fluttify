@@ -20,7 +20,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   // generate methods
   Future<String> getStyleDataPath() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleDataPath([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleDataPath(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleDataPath([\'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<String> getStyleTexturePath() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleTexturePath([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleTexturePath(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleTexturePath([\'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<List<int>> getStyleData() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleData([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleData(List<int> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleData([\'var1\':$var1])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<List<int>> getStyleTextureData() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleTextureData([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleTextureData(List<int> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleTextureData([\'var1\':$var1])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<String> getStyleId() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleId([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleId(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleId([\'var1\':$var1])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<bool> isEnable() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::isEnable([])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setEnable(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setEnable([\'var1\':$var1])');
     }
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<List<int>> getStyleExtraData() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleExtraData([])');
     }
   
@@ -306,7 +306,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleExtraData(List<int> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleExtraData([\'var1\':$var1])');
     }
   
@@ -328,7 +328,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<String> getStyleExtraPath() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleExtraPath([])');
     }
   
@@ -350,7 +350,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleExtraPath(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleExtraPath([\'var1\':$var1])');
     }
   

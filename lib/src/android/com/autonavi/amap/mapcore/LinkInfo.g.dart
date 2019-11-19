@@ -20,7 +20,7 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   // generate methods
   Future<int> getState() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::getState([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   
   Future<void> setState(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::setState([\'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   
   Future<int> getTime() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::getTime([])');
     }
   
@@ -86,7 +86,7 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   
   Future<void> setTime(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::setTime([\'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   
   Future<int> getLength() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::getLength([])');
     }
   
@@ -130,7 +130,7 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   
   Future<void> setLength(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::setLength([\'var1\':$var1])');
     }
   

@@ -20,7 +20,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   // generate methods
   Future<void> setItems(List<com_amap_api_maps_model_MultiPointItem> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setItems([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   
   Future<void> setAnchor(double var1, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   
   Future<void> setEnable(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setEnable([\'var1\':$var1])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   
   Future<void> remove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::remove([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   
   Future<void> destroy() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::destroy([])');
     }
   
