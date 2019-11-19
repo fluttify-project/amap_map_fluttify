@@ -13,11 +13,11 @@ import 'package:flutter/services.dart';
 import 'enums.dart';
 import 'models.dart';
 
-typedef void OnMarkerClick(Marker marker);
-typedef void OnMapClick(LatLng latLng);
-typedef void OnMapDrag(MapDrag latLng);
-typedef void OnMarkerDrag(Marker marker);
-typedef void _OnRequireAlwaysAuth(CLLocationManager manager);
+typedef Future<void> OnMarkerClick(Marker marker);
+typedef Future<void> OnMapClick(LatLng latLng);
+typedef Future<void> OnMapDrag(MapDrag latLng);
+typedef Future<void> OnMarkerDrag(Marker marker);
+typedef Future<void> _OnRequireAlwaysAuth(CLLocationManager manager);
 
 /// 地图控制类
 class AmapController with WidgetsBindingObserver, _Private {
@@ -1242,7 +1242,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   ) async {
     super.mapViewDidAnnotationViewTapped(mapView, view);
     if (_onMarkerClicked != null) {
-      _onMarkerClicked(
+      await _onMarkerClicked(
         Marker.ios(
           // 这里由于传入的类型是MAAnnotation, 而fluttify对于抽象类的实体子类的处理方式是找到sdk
           // 内的第一个实体子类进行实例化, 这里如果放任不管取第一个实体子类的话是MAGroundOverlay
@@ -1273,7 +1273,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
     if (_onMarkerDragStart != null &&
         newState ==
             MAAnnotationViewDragState.MAAnnotationViewDragStateStarting) {
-      _onMarkerDragStart(
+      await _onMarkerDragStart(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
           _iosController,
@@ -1284,7 +1284,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
     if (_onMarkerDragging != null &&
         newState ==
             MAAnnotationViewDragState.MAAnnotationViewDragStateDragging) {
-      _onMarkerDragging(
+      await _onMarkerDragging(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
           _iosController,
@@ -1294,7 +1294,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
 
     if (_onMarkerDragEnd != null &&
         newState == MAAnnotationViewDragState.MAAnnotationViewDragStateEnding) {
-      _onMarkerDragEnd(
+      await _onMarkerDragEnd(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
           _iosController,
@@ -1310,7 +1310,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   ) async {
     super.mapViewDidSingleTappedAtCoordinate(mapView, coordinate);
     if (_onMapClick != null) {
-      _onMapClick(LatLng(
+      await _onMapClick(LatLng(
         await coordinate.latitude,
         await coordinate.longitude,
       ));
@@ -1325,7 +1325,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
     super.mapViewMapDidMoveByUser(mapView, wasUserAction);
     if (_onMapDrag != null && wasUserAction) {
       final location = await mapView.get_centerCoordinate();
-      _onMapDrag(MapDrag(
+      await _onMapDrag(MapDrag(
         latLng: LatLng(await location.latitude, await location.longitude),
         zoom: await mapView.get_zoomLevel(),
         tilt: await mapView.get_cameraDegree(),
@@ -1340,7 +1340,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   ) async {
     super.mapViewRequireLocationAuth(locationManager);
     if (_onRequireAlwaysAuth != null) {
-      _onRequireAlwaysAuth(locationManager);
+      await _onRequireAlwaysAuth(locationManager);
     }
   }
 }
@@ -1363,7 +1363,7 @@ class _AndroidMapDelegate extends java_lang_Object
     super.onMarkerClick(var1);
     if (_onMarkerClicked != null) {
       await var1.showInfoWindow();
-      _onMarkerClicked(Marker.android(var1));
+      await _onMarkerClicked(Marker.android(var1));
     }
     return true;
   }
@@ -1372,7 +1372,7 @@ class _AndroidMapDelegate extends java_lang_Object
   Future<void> onMarkerDragStart(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerDragStart(var1);
     if (_onMarkerDragStart != null) {
-      _onMarkerDragStart(Marker.android(var1));
+      await _onMarkerDragStart(Marker.android(var1));
     }
   }
 
@@ -1380,7 +1380,7 @@ class _AndroidMapDelegate extends java_lang_Object
   Future<void> onMarkerDrag(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerDrag(var1);
     if (_onMarkerDragging != null) {
-      _onMarkerDragging(Marker.android(var1));
+      await _onMarkerDragging(Marker.android(var1));
     }
   }
 
@@ -1388,7 +1388,7 @@ class _AndroidMapDelegate extends java_lang_Object
   Future<void> onMarkerDragEnd(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerDragEnd(var1);
     if (_onMarkerDragEnd != null) {
-      _onMarkerDragEnd(Marker.android(var1));
+      await _onMarkerDragEnd(Marker.android(var1));
     }
   }
 
@@ -1396,7 +1396,7 @@ class _AndroidMapDelegate extends java_lang_Object
   Future<void> onMapClick(com_amap_api_maps_model_LatLng var1) async {
     super.onMapClick(var1);
     if (_onMapClick != null) {
-      _onMapClick(LatLng(
+      await _onMapClick(LatLng(
         await var1.get_latitude(),
         await var1.get_longitude(),
       ));
@@ -1410,7 +1410,7 @@ class _AndroidMapDelegate extends java_lang_Object
     super.onCameraChangeFinish(var1);
     if (_onMapDrag != null) {
       final location = await var1.get_target();
-      _onMapDrag(MapDrag(
+      await _onMapDrag(MapDrag(
         latLng: LatLng(
           await location.get_latitude(),
           await location.get_longitude(),
