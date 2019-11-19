@@ -20,7 +20,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   // generate methods
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setPoints([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<void> setTotalDuration(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setTotalDuration([\'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<void> startSmoothMove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::startSmoothMove([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<void> stopMove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::stopMove([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<com_amap_api_maps_model_Marker> getMarker() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::getMarker([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::getPosition([])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<int> getIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::getIndex([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<void> resetIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::resetIndex([])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<void> destroy() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::destroy([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<void> removeMarker() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::removeMarker([])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setPosition([])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<void> setDescriptor(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setDescriptor([])');
     }
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<void> setRotate(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setRotate([\'var1\':$var1])');
     }
   
@@ -306,7 +306,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<void> setVisible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setVisible([\'var1\':$var1])');
     }
   
@@ -328,7 +328,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   Future<void> setMoveListener(com_amap_api_maps_utils_overlay_SmoothMoveMarker_MoveListener var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setMoveListener([])');
     }
   

@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends java
   // generate methods
   Future<void> reset() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::reset([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends java
   
   Future<void> setFromValue(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::setFromValue([\'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends java
   
   Future<void> setToValue(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::setToValue([\'var1\':$var1])');
     }
   
@@ -86,7 +86,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends java
   
   Future<double> getFromValue() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::getFromValue([])');
     }
   
@@ -108,7 +108,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends java
   
   Future<double> getToValue() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::getToValue([])');
     }
   
@@ -130,7 +130,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends java
   
   Future<double> getCurValue() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::getCurValue([])');
     }
   
@@ -152,7 +152,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends java
   
   Future<void> checkParam() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::checkParam([])');
     }
   

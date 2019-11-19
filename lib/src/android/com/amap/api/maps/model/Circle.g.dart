@@ -20,7 +20,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   // generate methods
   Future<void> remove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::remove([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<String> getId() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getId([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setCenter(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setCenter([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getCenter() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getCenter([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setRadius(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setRadius([\'var1\':$var1])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<double> getRadius() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getRadius([])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setStrokeWidth(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setStrokeWidth([\'var1\':$var1])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<double> getStrokeWidth() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getStrokeWidth([])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setStrokeColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setStrokeColor([\'var1\':$var1])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<int> getStrokeColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getStrokeColor([])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setFillColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setFillColor([\'var1\':$var1])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<int> getFillColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getFillColor([])');
     }
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setZIndex(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setZIndex([\'var1\':$var1])');
     }
   
@@ -306,7 +306,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<double> getZIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getZIndex([])');
     }
   
@@ -328,7 +328,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setVisible([\'var1\':$var1])');
     }
   
@@ -350,7 +350,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::isVisible([])');
     }
   
@@ -372,7 +372,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<bool> contains(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::contains([])');
     }
   
@@ -394,7 +394,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setHoleOptions([])');
     }
   
@@ -416,7 +416,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<void> setStrokeDottedLineType(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setStrokeDottedLineType([\'var1\':$var1])');
     }
   
@@ -438,7 +438,7 @@ class com_amap_api_maps_model_Circle extends java_lang_Object  {
   
   Future<int> getStrokeDottedLineType() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::getStrokeDottedLineType([])');
     }
   

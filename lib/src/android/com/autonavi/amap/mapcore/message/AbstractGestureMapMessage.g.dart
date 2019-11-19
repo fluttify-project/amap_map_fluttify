@@ -90,7 +90,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
   // generate methods
   Future<int> getType() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::getType([])');
     }
   
@@ -112,7 +112,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
   
   Future<void> setState(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::setState([\'var1\':$var1])');
     }
   
@@ -134,7 +134,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
   
   Future<void> reset() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::reset([])');
     }
   
@@ -156,7 +156,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
   
   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::runCameraUpdate([])');
     }
   
@@ -178,7 +178,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
   
   Future<int> getMapGestureState() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::getMapGestureState([])');
     }
   

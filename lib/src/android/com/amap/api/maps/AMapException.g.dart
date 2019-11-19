@@ -20,7 +20,7 @@ class com_amap_api_maps_AMapException extends java_lang_Object  {
   // generate methods
   Future<String> getErrorMessage() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.AMapException@$refId::getErrorMessage([])');
     }
   

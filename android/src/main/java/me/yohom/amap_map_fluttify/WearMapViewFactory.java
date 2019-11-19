@@ -18,6 +18,7 @@ import io.flutter.plugin.platform.PlatformView;
 import io.flutter.plugin.platform.PlatformViewFactory;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
+import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
 
 @SuppressWarnings("ALL")
 class WearMapViewFactory extends PlatformViewFactory {
@@ -55,7 +56,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::getMap(" + "" + ")");
             }
         
@@ -82,7 +83,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onCreate(" + var1 + ")");
             }
         
@@ -101,7 +102,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onResume(" + "" + ")");
             }
         
@@ -120,7 +121,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onPause(" + "" + ")");
             }
         
@@ -139,7 +140,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onDestroy(" + "" + ")");
             }
         
@@ -158,7 +159,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onLowMemory(" + "" + ")");
             }
         
@@ -178,7 +179,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onSaveInstanceState(" + var1 + ")");
             }
         
@@ -198,7 +199,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::setVisibility(" + var1 + ")");
             }
         
@@ -217,7 +218,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::setOnDismissCallbackListener(" + "" + ")");
             }
         
@@ -281,7 +282,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onDismiss(" + "" + ")");
             }
         
@@ -301,7 +302,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onEnterAmbient(" + var1 + ")");
             }
         
@@ -320,7 +321,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.WearMapView@" + refId + "::onExitAmbient(" + "" + ")");
             }
         

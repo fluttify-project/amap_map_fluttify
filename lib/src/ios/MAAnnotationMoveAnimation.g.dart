@@ -20,7 +20,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   // generate methods
   Future<String> name() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationMoveAnimation@$refId::name([])');
     }
   
@@ -42,7 +42,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<CLLocationCoordinate2D> coordinates() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationMoveAnimation@$refId::coordinates([])');
     }
   
@@ -64,7 +64,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<int> count() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationMoveAnimation@$refId::count([])');
     }
   
@@ -86,7 +86,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<double> duration() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationMoveAnimation@$refId::duration([])');
     }
   
@@ -108,7 +108,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<double> elapsedTime() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationMoveAnimation@$refId::elapsedTime([])');
     }
   
@@ -130,7 +130,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<void> cancel() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationMoveAnimation@$refId::cancel([])');
     }
   
@@ -152,7 +152,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<bool> isCancelled() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationMoveAnimation@$refId::isCancelled([])');
     }
   
@@ -174,7 +174,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   Future<int> passedPointCount() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationMoveAnimation@$refId::passedPointCount([])');
     }
   

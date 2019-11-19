@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom extends java_lang_Ob
   // generate methods
   Future<void> reset() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@$refId::reset([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom extends java_lang_Ob
   
   Future<void> setToMapZoomAndPivot(double var1, int var2, android_graphics_Point var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@$refId::setToMapZoomAndPivot([\'var1\':$var1, \'var2\':$var2])');
     }
   

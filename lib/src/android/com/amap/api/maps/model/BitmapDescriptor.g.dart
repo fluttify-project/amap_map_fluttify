@@ -20,7 +20,7 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   // generate methods
   Future<String> getId() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getId([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   
   Future<com_amap_api_maps_model_BitmapDescriptor> clone() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::clone([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   
   Future<android_graphics_Bitmap> getBitmap() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getBitmap([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   
   Future<int> getWidth() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getWidth([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   
   Future<int> getHeight() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getHeight([])');
     }
   

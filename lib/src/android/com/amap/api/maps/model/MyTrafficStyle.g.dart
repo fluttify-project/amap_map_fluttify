@@ -20,7 +20,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   // generate methods
   Future<int> getSmoothColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getSmoothColor([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<void> setSmoothColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSmoothColor([\'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<int> getSlowColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getSlowColor([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<void> setSlowColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSlowColor([\'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<int> getCongestedColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getCongestedColor([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<void> setCongestedColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setCongestedColor([\'var1\':$var1])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<int> getSeriousCongestedColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getSeriousCongestedColor([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<void> setSeriousCongestedColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSeriousCongestedColor([\'var1\':$var1])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<double> getRatio() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getRatio([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<void> setRatio(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setRatio([\'var1\':$var1])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<int> getTrafficRoadBackgroundColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getTrafficRoadBackgroundColor([])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   
   Future<void> setTrafficRoadBackgroundColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setTrafficRoadBackgroundColor([\'var1\':$var1])');
     }
   

@@ -20,7 +20,7 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
   // generate methods
   Future<void> setNetworkListener(com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState@$refId::setNetworkListener([])');
     }
   
@@ -61,7 +61,7 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
   
   Future<void> registerNetChangeReceiver(android_content_Context var1, bool var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState@$refId::registerNetChangeReceiver([\'var2\':$var2])');
     }
   
@@ -83,7 +83,7 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
   
   static Future<bool> isNetworkConnected(android_content_Context var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState::isNetworkConnected([])');
     }
   

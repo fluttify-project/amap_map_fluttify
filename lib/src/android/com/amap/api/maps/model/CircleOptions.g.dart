@@ -20,7 +20,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   // generate methods
   Future<com_amap_api_maps_model_CircleOptions> center(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::center([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_CircleOptions> radius(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::radius([\'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_CircleOptions> strokeWidth(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::strokeWidth([\'var1\':$var1])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_CircleOptions> strokeColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::strokeColor([\'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_CircleOptions> fillColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::fillColor([\'var1\':$var1])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_CircleOptions> zIndex(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::zIndex([\'var1\':$var1])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_CircleOptions> visible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::visible([\'var1\':$var1])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_LatLng> getCenter() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getCenter([])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<double> getRadius() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getRadius([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<double> getStrokeWidth() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeWidth([])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<int> getStrokeColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeColor([])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<int> getFillColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getFillColor([])');
     }
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<double> getZIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getZIndex([])');
     }
   
@@ -306,7 +306,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<bool> isVisible() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::isVisible([])');
     }
   
@@ -328,7 +328,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_CircleOptions> addHoles(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::addHoles([])');
     }
   
@@ -350,7 +350,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<com_amap_api_maps_model_CircleOptions> setStrokeDottedLineType(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::setStrokeDottedLineType([\'var1\':$var1])');
     }
   
@@ -372,7 +372,7 @@ class com_amap_api_maps_model_CircleOptions extends java_lang_Object with androi
   
   Future<int> getStrokeDottedLineType() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeDottedLineType([])');
     }
   

@@ -25,7 +25,7 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
   // generate methods
   Future<MAParticleOverlayRenderer> initWithParticleOverlay(MAParticleOverlay particleOverlay) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleOverlayRenderer@$refId::initWithParticleOverlay([])');
     }
   

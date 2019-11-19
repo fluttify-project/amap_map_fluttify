@@ -20,7 +20,7 @@ class com_amap_api_maps_CoordinateConverter extends java_lang_Object  {
   // generate methods
   Future<com_amap_api_maps_CoordinateConverter> from(com_amap_api_maps_CoordinateConverter_CoordType var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.CoordinateConverter@$refId::from([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_CoordinateConverter extends java_lang_Object  {
   
   Future<com_amap_api_maps_CoordinateConverter> coord(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.CoordinateConverter@$refId::coord([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_CoordinateConverter extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> convert() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.CoordinateConverter@$refId::convert([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_CoordinateConverter extends java_lang_Object  {
   
   static Future<bool> isAMapDataAvailable(double var0, double var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.CoordinateConverter::isAMapDataAvailable([\'var0\':$var0, \'var2\':$var2])');
     }
   

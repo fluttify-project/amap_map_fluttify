@@ -25,7 +25,7 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   // generate methods
   Future<MAGroundOverlayRenderer> initWithGroundOverlay(MAGroundOverlay groundOverlay) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAGroundOverlayRenderer@$refId::initWithGroundOverlay([])');
     }
   

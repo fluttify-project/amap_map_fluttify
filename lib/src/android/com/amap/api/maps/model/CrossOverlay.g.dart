@@ -20,7 +20,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   // generate methods
   Future<int> setData(List<int> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setData([\'var1\':$var1])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   
   Future<void> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setAttribute([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   
   Future<void> remove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::remove([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   
   Future<void> setImageMode(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setImageMode([\'var1\':$var1])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   
   Future<void> setGenerateCrossImageListener(com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setGenerateCrossImageListener([])');
     }
   

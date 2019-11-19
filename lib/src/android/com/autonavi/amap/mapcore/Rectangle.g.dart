@@ -66,7 +66,7 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
   // generate methods
   Future<int> getBeyond180Mode() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.Rectangle@$refId::getBeyond180Mode([])');
     }
   
@@ -88,7 +88,7 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
   
   Future<bool> contains(int var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.Rectangle@$refId::contains([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -110,7 +110,7 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
   
   Future<bool> isOverlap(int var1, int var2, int var3, int var4) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.Rectangle@$refId::isOverlap([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
     }
   

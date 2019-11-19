@@ -20,7 +20,7 @@ class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
   // generate methods
   static Future<com_autonavi_amap_mapcore_FPoint> obtain() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.FPoint::obtain([])');
     }
   

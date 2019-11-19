@@ -20,7 +20,7 @@ class com_amap_api_maps_model_LatLngBounds_Builder extends java_lang_Object  {
   // generate methods
   Future<com_amap_api_maps_model_LatLngBounds> build() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.LatLngBounds.Builder@$refId::build([])');
     }
   

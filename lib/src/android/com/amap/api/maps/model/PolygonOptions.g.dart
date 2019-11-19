@@ -20,7 +20,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   // generate methods
   Future<com_amap_api_maps_model_PolygonOptions> add(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::add([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addAll([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setPoints([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setHoleOptions([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> addHoles(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addHoles([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> strokeWidth(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeWidth([\'var1\':$var1])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> strokeColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeColor([\'var1\':$var1])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> fillColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::fillColor([\'var1\':$var1])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> zIndex(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::zIndex([\'var1\':$var1])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<com_amap_api_maps_model_PolygonOptions> visible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::visible([\'var1\':$var1])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getPoints([])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<double> getStrokeWidth() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeWidth([])');
     }
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<int> getStrokeColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeColor([])');
     }
   
@@ -306,7 +306,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<int> getFillColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getFillColor([])');
     }
   
@@ -328,7 +328,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<double> getZIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getZIndex([])');
     }
   
@@ -350,7 +350,7 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
   
   Future<bool> isVisible() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::isVisible([])');
     }
   

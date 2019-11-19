@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
   // generate methods
   Future<bool> isOver() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::isOver([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
   
   Future<bool> isValid() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::isValid([])');
     }
   

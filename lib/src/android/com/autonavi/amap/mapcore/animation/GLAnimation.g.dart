@@ -20,7 +20,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   // generate methods
   Future<com_autonavi_amap_mapcore_animation_GLAnimation> clone() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::clone([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> reset() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::reset([])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> cancel() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::cancel([])');
     }
   
@@ -86,7 +86,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> detach() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::detach([])');
     }
   
@@ -108,7 +108,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<bool> isInitialized() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::isInitialized([])');
     }
   
@@ -130,7 +130,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> initialize() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::initialize([])');
     }
   
@@ -152,7 +152,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> setInterpolator(android_content_Context var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setInterpolator([\'var2\':$var2])');
     }
   
@@ -174,7 +174,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> setStartOffset(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setStartOffset([\'var1\':$var1])');
     }
   
@@ -196,7 +196,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> setDuration(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setDuration([\'var1\':$var1])');
     }
   
@@ -218,7 +218,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> restrictDuration(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::restrictDuration([\'var1\':$var1])');
     }
   
@@ -240,7 +240,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> scaleCurrentDuration(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::scaleCurrentDuration([\'var1\':$var1])');
     }
   
@@ -262,7 +262,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> setStartTime(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setStartTime([\'var1\':$var1])');
     }
   
@@ -284,7 +284,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> start() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::start([])');
     }
   
@@ -306,7 +306,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> startNow() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::startNow([])');
     }
   
@@ -328,7 +328,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> setRepeatMode(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setRepeatMode([\'var1\':$var1])');
     }
   
@@ -350,7 +350,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> setRepeatCount(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setRepeatCount([\'var1\':$var1])');
     }
   
@@ -372,7 +372,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<bool> isFillEnabled() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::isFillEnabled([])');
     }
   
@@ -394,7 +394,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> setFillEnabled(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setFillEnabled([\'var1\':$var1])');
     }
   
@@ -416,7 +416,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> setFillBefore(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setFillBefore([\'var1\':$var1])');
     }
   
@@ -438,7 +438,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> setFillAfter(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setFillAfter([\'var1\':$var1])');
     }
   
@@ -460,7 +460,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> setZAdjustment(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setZAdjustment([\'var1\':$var1])');
     }
   
@@ -482,7 +482,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> setBackgroundColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setBackgroundColor([\'var1\':$var1])');
     }
   
@@ -504,7 +504,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> setDetachWallpaper(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setDetachWallpaper([\'var1\':$var1])');
     }
   
@@ -526,7 +526,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<int> getStartTime() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getStartTime([])');
     }
   
@@ -548,7 +548,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<int> getDuration() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getDuration([])');
     }
   
@@ -570,7 +570,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<int> getStartOffset() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getStartOffset([])');
     }
   
@@ -592,7 +592,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<int> getRepeatMode() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getRepeatMode([])');
     }
   
@@ -614,7 +614,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<int> getRepeatCount() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getRepeatCount([])');
     }
   
@@ -636,7 +636,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<bool> getFillBefore() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getFillBefore([])');
     }
   
@@ -658,7 +658,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<bool> getFillAfter() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getFillAfter([])');
     }
   
@@ -680,7 +680,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<int> getZAdjustment() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getZAdjustment([])');
     }
   
@@ -702,7 +702,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<int> getBackgroundColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getBackgroundColor([])');
     }
   
@@ -724,7 +724,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<bool> getDetachWallpaper() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getDetachWallpaper([])');
     }
   
@@ -746,7 +746,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<bool> willChangeTransformationMatrix() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::willChangeTransformationMatrix([])');
     }
   
@@ -768,7 +768,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<bool> willChangeBounds() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::willChangeBounds([])');
     }
   
@@ -790,7 +790,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setAnimationListener([])');
     }
   
@@ -840,7 +840,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<int> computeDurationHint() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::computeDurationHint([])');
     }
   
@@ -862,7 +862,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<bool> getTransformation(int var1, com_autonavi_amap_mapcore_animation_GLTransformation var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getTransformation([\'var1\':$var1])');
     }
   
@@ -884,7 +884,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<bool> hasEnded() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::hasEnded([])');
     }
   
@@ -906,7 +906,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<void> initializeInvalidateRegion(int var1, int var2, int var3, int var4) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::initializeInvalidateRegion([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
     }
   
@@ -928,7 +928,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   
   Future<bool> hasAlpha() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::hasAlpha([])');
     }
   

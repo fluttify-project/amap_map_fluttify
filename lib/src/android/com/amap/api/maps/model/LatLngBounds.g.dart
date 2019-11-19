@@ -31,7 +31,7 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   // generate methods
   static Future<com_amap_api_maps_model_LatLngBounds_Builder> builder() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.LatLngBounds::builder([])');
     }
   
@@ -53,7 +53,7 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   
   Future<bool> contains(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::contains([])');
     }
   
@@ -75,7 +75,7 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   
   Future<bool> intersects(com_amap_api_maps_model_LatLngBounds var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::intersects([])');
     }
   
@@ -97,7 +97,7 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   
   Future<com_amap_api_maps_model_LatLngBounds> including(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::including([])');
     }
   

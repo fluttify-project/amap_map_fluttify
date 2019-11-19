@@ -66,7 +66,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
   // generate methods
   Future<void> reset() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::reset([])');
     }
   
@@ -88,7 +88,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
   
   Future<void> setFromValue(double var1, double var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::setFromValue([\'var1\':$var1, \'var3\':$var3])');
     }
   
@@ -110,7 +110,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
   
   Future<void> setToValue(double var1, double var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::setToValue([\'var1\':$var1, \'var3\':$var3])');
     }
   
@@ -132,7 +132,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
   
   Future<double> getFromXValue() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getFromXValue([])');
     }
   
@@ -154,7 +154,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
   
   Future<double> getFromYValue() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getFromYValue([])');
     }
   
@@ -176,7 +176,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
   
   Future<double> getToXValue() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getToXValue([])');
     }
   
@@ -198,7 +198,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
   
   Future<double> getToYValue() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getToYValue([])');
     }
   
@@ -220,7 +220,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
   
   Future<double> getCurXValue() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getCurXValue([])');
     }
   
@@ -242,7 +242,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
   
   Future<double> getCurYValue() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getCurYValue([])');
     }
   
@@ -264,7 +264,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java
   
   Future<void> checkParam() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::checkParam([])');
     }
   

@@ -20,7 +20,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   // generate methods
   static Future<int> getInt(List<int> var0, int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt([\'var0\':$var0, \'var1\':$var1])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   
   static Future<int> getLong(List<int> var0, int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::getLong([\'var0\':$var0, \'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   
   static Future<int> getInt2(List<int> var0, int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt2([\'var0\':$var0, \'var1\':$var1])');
     }
   
@@ -86,7 +86,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   
   static Future<int> getUShort(List<int> var0, int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::getUShort([\'var0\':$var0, \'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   
   static Future<List<int>> convertInt(int var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::convertInt([\'var0\':$var0])');
     }
   
@@ -130,7 +130,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   
   static Future<List<int>> convertShort(int var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::convertShort([\'var0\':$var0])');
     }
   
@@ -152,7 +152,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   
   static Future<double> convertDouble(List<int> var0, int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::convertDouble([\'var0\':$var0, \'var1\':$var1])');
     }
   
@@ -174,7 +174,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   
   static Future<void> writeInt(List<int> var0, int var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::writeInt([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -196,7 +196,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   
   static Future<void> moveArray(List<int> var0, int var1, List<int> var2, int var3, int var4) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::moveArray([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
     }
   
@@ -218,7 +218,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   
   static Future<List<int>> get1BString(String var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::get1BString([\'var0\':$var0])');
     }
   
@@ -240,7 +240,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   
   static Future<String> getString(List<int> var0, int var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::getString([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -262,7 +262,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   
   static Future<List<int>> getSubBytes(List<int> var0, int var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLConvertUtil::getSubBytes([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   

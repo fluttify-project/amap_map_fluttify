@@ -20,7 +20,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   // generate methods
   Future<void> remove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::remove([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<String> getId() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getId([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPosition([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getPosition([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setDimensions(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setDimensions([\'var1\':$var1])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setImage(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setImage([])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<double> getWidth() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getWidth([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<double> getHeight() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getHeight([])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setPositionFromBounds(com_amap_api_maps_model_LatLngBounds var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPositionFromBounds([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLngBounds> getBounds() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBounds([])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setBearing(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setBearing([\'var1\':$var1])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<double> getBearing() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBearing([])');
     }
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setZIndex(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setZIndex([\'var1\':$var1])');
     }
   
@@ -306,7 +306,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<double> getZIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getZIndex([])');
     }
   
@@ -328,7 +328,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
@@ -350,7 +350,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::isVisible([])');
     }
   
@@ -372,7 +372,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> setTransparency(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setTransparency([\'var1\':$var1])');
     }
   
@@ -394,7 +394,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<double> getTransparency() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getTransparency([])');
     }
   
@@ -416,7 +416,7 @@ class com_amap_api_maps_model_GroundOverlay extends java_lang_Object  {
   
   Future<void> destroy() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::destroy([])');
     }
   

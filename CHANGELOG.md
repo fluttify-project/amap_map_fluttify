@@ -1,3 +1,8 @@
+## 0.5.7
+- doc: ImageConfiguration的说明
+- fix: onMapCreated返回Future并用await修饰
+- feat: Marker增加显示弹窗和关闭弹窗的方法 #61
+
 ## 0.5.6
 - fix: 未配置onMapCreated时, 初始化参数不应该无效
 

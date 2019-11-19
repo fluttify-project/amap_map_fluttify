@@ -20,7 +20,7 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
   // generate methods
   Future<void> nativeInitMsg() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeInitMsg([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
   
   Future<void> nativeInit(int var1, String var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeInit([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
   
   Future<void> nativeMsgProcessor(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeMsgProcessor([\'var1\':$var1])');
     }
   
@@ -86,7 +86,7 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
   
   Future<void> nativeCall() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeCall([])');
     }
   

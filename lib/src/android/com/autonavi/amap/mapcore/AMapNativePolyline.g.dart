@@ -20,7 +20,7 @@ class com_autonavi_amap_mapcore_AMapNativePolyline extends java_lang_Object  {
   // generate methods
   static Future<int> nativeCreate() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativePolyline::nativeCreate([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_amap_mapcore_AMapNativePolyline extends java_lang_Object  {
   
   static Future<void> nativeSetGLShaderManager(int var0, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativePolyline::nativeSetGLShaderManager([\'var0\':$var0, \'var2\':$var2])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_amap_mapcore_AMapNativePolyline extends java_lang_Object  {
   
   static Future<void> nativeDrawLineByTextureID(int var0, List<double> var2, int var3, double var4, int var5, double var6, double var7, double var8, double var9, double var10, bool var11, bool var12, bool var13, List<double> var14, int var15, int var16) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativePolyline::nativeDrawLineByTextureID([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9, \'var10\':$var10, \'var11\':$var11, \'var12\':$var12, \'var13\':$var13, \'var14\':$var14, \'var15\':$var15, \'var16\':$var16])');
     }
   
@@ -86,7 +86,7 @@ class com_autonavi_amap_mapcore_AMapNativePolyline extends java_lang_Object  {
   
   static Future<int> nativeDestroy(int var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativePolyline::nativeDestroy([\'var0\':$var0])');
     }
   

@@ -85,7 +85,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   // generate methods
   Future<MAMultiPointOverlayRenderer> initWithMultiPointOverlay(MAMultiPointOverlay multiPointOverlay) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMultiPointOverlayRenderer@$refId::initWithMultiPointOverlay([])');
     }
   

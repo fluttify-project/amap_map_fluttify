@@ -36,7 +36,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
   // generate methods
   Future<MAMultiTexturePolylineRenderer> initWithMultiPolyline(MAMultiPolyline multiPolyline) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMultiTexturePolylineRenderer@$refId::initWithMultiPolyline([])');
     }
   

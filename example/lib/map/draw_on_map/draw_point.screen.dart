@@ -52,12 +52,27 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                         latLng: _getNextLatLng(),
                         title: '北京',
                         snippet: '描述',
-                        iconUri: _assetsIcon,
-                        draggable: true,
-                        imageConfig: createLocalImageConfiguration(context),
                       ),
                     );
                     _markers.add(marker);
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('调用方法开启弹窗')),
+                  onTap: () async {
+                    if (_markers.isNotEmpty) {
+                      final marker = _markers[0];
+                      marker.showInfoWindow();
+                    }
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('调用方法关闭弹窗')),
+                  onTap: () async {
+                    if (_markers.isNotEmpty) {
+                      final marker = _markers[0];
+                      marker.hideInfoWindow();
+                    }
                   },
                 ),
                 ContinuousSetting(

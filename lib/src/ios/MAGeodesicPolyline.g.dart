@@ -20,7 +20,7 @@ class MAGeodesicPolyline extends MAPolyline  {
   // generate methods
   static Future<MAGeodesicPolyline> polylineWithPointsCount(List<MAMapPoint> points, int count) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAGeodesicPolyline::polylineWithPoints([\'count\':$count])');
     }
   
@@ -42,7 +42,7 @@ class MAGeodesicPolyline extends MAPolyline  {
   
   static Future<MAGeodesicPolyline> polylineWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAGeodesicPolyline::polylineWithCoordinates([\'count\':$count])');
     }
   
@@ -64,7 +64,7 @@ class MAGeodesicPolyline extends MAPolyline  {
   
   Future<bool> setPolylineWithPointsCount(List<MAMapPoint> points, int count) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAGeodesicPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
     }
   
@@ -86,7 +86,7 @@ class MAGeodesicPolyline extends MAPolyline  {
   
   Future<bool> setPolylineWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAGeodesicPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
     }
   

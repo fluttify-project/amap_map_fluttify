@@ -37,7 +37,7 @@ class com_amap_api_maps_model_Tile extends java_lang_Object with android_os_Parc
   // generate methods
   static Future<com_amap_api_maps_model_Tile> obtain(int var0, int var1, List<int> var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.Tile::obtain([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   

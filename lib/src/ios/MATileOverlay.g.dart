@@ -96,7 +96,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   // generate methods
   Future<void> cancelLoadOfTileAtPath(MATileOverlayPath path) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MATileOverlay@$refId::cancelLoadOfTileAtPath([])');
     }
   

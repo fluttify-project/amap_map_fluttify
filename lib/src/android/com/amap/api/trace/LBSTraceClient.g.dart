@@ -20,7 +20,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   // generate methods
   static Future<com_amap_api_trace_LBSTraceClient> getInstance(android_content_Context var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.LBSTraceClient::getInstance([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   
   Future<void> queryProcessedTrace(int var1, List<com_amap_api_trace_TraceLocation> var2, int var3, com_amap_api_trace_TraceListener var4) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::queryProcessedTrace([\'var1\':$var1, \'var3\':$var3])');
     }
   
@@ -101,7 +101,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   
   Future<void> startTrace(com_amap_api_trace_TraceStatusListener var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::startTrace([])');
     }
   
@@ -142,7 +142,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   
   Future<void> stopTrace() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::stopTrace([])');
     }
   
@@ -164,7 +164,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   
   Future<void> destroy() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::destroy([])');
     }
   

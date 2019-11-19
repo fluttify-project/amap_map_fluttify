@@ -10,6 +10,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 extern NSMutableDictionary<NSString*, NSObject*>* STACK;
 // Dart端随机存取对象的容器
 extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
+// 日志打印开关
+extern BOOL enableLog;
 
 @implementation AmapMapFluttifyPlugin {
   NSObject <FlutterPluginRegistrar> * _registrar;
@@ -35,7 +37,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAGroundOverlay::groundOverlayWithBounds(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAGroundOverlay::groundOverlayWithBounds(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAGroundOverlay* result = [MAGroundOverlay groundOverlayWithBounds: bounds icon: icon];
@@ -60,7 +64,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAGroundOverlay::groundOverlayWithCoordinate(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAGroundOverlay::groundOverlayWithCoordinate(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAGroundOverlay* result = [MAGroundOverlay groundOverlayWithCoordinate: coordinate zoomLevel: zoomLevel icon: icon];
@@ -83,7 +89,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAGroundOverlay@%@::setGroundOverlayWithBounds(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAGroundOverlay@%@::setGroundOverlayWithBounds(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref setGroundOverlayWithBounds: bounds icon: icon];
@@ -107,7 +115,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAGroundOverlay@%@::setGroundOverlayWithCoordinate(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAGroundOverlay@%@::setGroundOverlayWithCoordinate(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref setGroundOverlayWithCoordinate: coordinate zoomLevel: zoomLevel icon: icon];
@@ -125,7 +135,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAPolygonRenderer* ref = (MAPolygonRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAPolygonRenderer@%@::initWithPolygon(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAPolygonRenderer@%@::initWithPolygon(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAPolygonRenderer* result = [ref initWithPolygon: polygon];
@@ -156,7 +168,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapStatus::statusWithCenterCoordinate(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapStatus::statusWithCenterCoordinate(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAMapStatus* result = [MAMapStatus statusWithCenterCoordinate: coordinate zoomLevel: zoomLevel rotationDegree: rotationDegree cameraDegree: cameraDegree screenAnchor: screenAnchor];
@@ -179,7 +193,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MACircle::circleWithCenterCoordinate(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACircle::circleWithCenterCoordinate(暂未实现参数打印)");
+          }
       
           // invoke native method
           MACircle* result = [MACircle circleWithCenterCoordinate: coord radius: radius];
@@ -200,7 +216,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MACircle::circleWithMapRect(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACircle::circleWithMapRect(暂未实现参数打印)");
+          }
       
           // invoke native method
           MACircle* result = [MACircle circleWithMapRect: mapRect];
@@ -223,7 +241,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MACircle* ref = (MACircle*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MACircle@%@::setCircleWithCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACircle@%@::setCircleWithCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref setCircleWithCenterCoordinate: coord radius: radius];
@@ -241,7 +261,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAArcRenderer* ref = (MAArcRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAArcRenderer@%@::initWithArc(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAArcRenderer@%@::initWithArc(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAArcRenderer* result = [ref initWithArc: arc];
@@ -262,7 +284,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotation@%@::setCoordinate(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotation@%@::setCoordinate(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setCoordinate : newCoordinate];
@@ -280,7 +304,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::step(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::step(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref step : timeDelta];
@@ -297,7 +323,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::isAnimationFinished(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::isAnimationFinished(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref isAnimationFinished];
@@ -314,7 +342,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::shouldAnimationStart(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::shouldAnimationStart(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref shouldAnimationStart];
@@ -331,7 +361,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::rotateDegree(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::rotateDegree(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CLLocationDirection result = [ref rotateDegree];
@@ -359,7 +391,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAPolygon::polygonWithCoordinates(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAPolygon::polygonWithCoordinates(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAPolygon* result = [MAPolygon polygonWithCoordinates: coords count: count];
@@ -388,7 +422,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAPolygon::polygonWithPoints(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAPolygon::polygonWithPoints(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAPolygon* result = [MAPolygon polygonWithPoints: points count: count];
@@ -417,7 +453,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAPolygon* ref = (MAPolygon*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAPolygon@%@::setPolygonWithPoints(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAPolygon@%@::setPolygonWithPoints(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref setPolygonWithPoints: points count: count];
@@ -445,7 +483,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAPolygon* ref = (MAPolygon*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAPolygon@%@::setPolygonWithCoordinates(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAPolygon@%@::setPolygonWithCoordinates(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref setPolygonWithCoordinates: coords count: count];
@@ -463,7 +503,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleOverlay::particleOverlayWithOption(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleOverlay::particleOverlayWithOption(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAParticleOverlay* result = [MAParticleOverlay particleOverlayWithOption: option];
@@ -482,7 +524,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleOverlay* ref = (MAParticleOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleOverlay@%@::updateOverlayOption(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleOverlay@%@::updateOverlayOption(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref updateOverlayOption : overlayOption];
@@ -510,7 +554,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAPolyline::polylineWithPoints(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAPolyline::polylineWithPoints(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAPolyline* result = [MAPolyline polylineWithPoints: points count: count];
@@ -539,7 +585,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAPolyline::polylineWithCoordinates(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAPolyline::polylineWithCoordinates(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAPolyline* result = [MAPolyline polylineWithCoordinates: coords count: count];
@@ -568,7 +616,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAPolyline* ref = (MAPolyline*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAPolyline@%@::setPolylineWithPoints(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAPolyline@%@::setPolylineWithPoints(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref setPolylineWithPoints: points count: count];
@@ -596,7 +646,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAPolyline* ref = (MAPolyline*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAPolyline@%@::setPolylineWithCoordinates(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAPolyline@%@::setPolylineWithCoordinates(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref setPolylineWithCoordinates: coords count: count];
@@ -614,7 +666,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMultiColoredPolylineRenderer@%@::initWithMultiPolyline(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMultiColoredPolylineRenderer@%@::initWithMultiPolyline(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAMultiColoredPolylineRenderer* result = [ref initWithMultiPolyline: multiPolyline];
@@ -648,7 +702,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::addMoveAnimationWithKeyCoordinates(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::addMoveAnimationWithKeyCoordinates(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
@@ -656,7 +712,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
                   methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback::Callback"
                         binaryMessenger:[self->_registrar messenger]];
       
-              NSLog(@"");
+              // print log
+              if (enableLog) {
+                  NSLog(@"");
+              }
       
               // 构造可以直接传输的参数
               // primitive callback arg
@@ -696,7 +755,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::addMoveAnimationWithKeyCoordinates(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::addMoveAnimationWithKeyCoordinates(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
@@ -704,7 +765,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
                   methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback::Callback"
                         binaryMessenger:[self->_registrar messenger]];
       
-              NSLog(@"");
+              // print log
+              if (enableLog) {
+                  NSLog(@"");
+              }
       
               // 构造可以直接传输的参数
               // primitive callback arg
@@ -717,7 +781,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
                   methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback::Callback"
                         binaryMessenger:[self->_registrar messenger]];
       
-              NSLog(@"");
+              // print log
+              if (enableLog) {
+                  NSLog(@"");
+              }
       
               // 构造可以直接传输的参数
               // ref callback arg
@@ -741,7 +808,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::setNeedsStart(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::setNeedsStart(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setNeedsStart ];
@@ -759,7 +828,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMultiTexturePolylineRenderer@%@::initWithMultiPolyline(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMultiTexturePolylineRenderer@%@::initWithMultiPolyline(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAMultiTexturePolylineRenderer* result = [ref initWithMultiPolyline: multiPolyline];
@@ -778,7 +849,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATileOverlayRenderer@%@::initWithTileOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MATileOverlayRenderer@%@::initWithTileOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MATileOverlayRenderer* result = [ref initWithTileOverlay: tileOverlay];
@@ -796,7 +869,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATileOverlayRenderer@%@::reloadData(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MATileOverlayRenderer@%@::reloadData(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref reloadData ];
@@ -824,7 +899,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAGeodesicPolyline::polylineWithPoints(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAGeodesicPolyline::polylineWithPoints(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAGeodesicPolyline* result = [MAGeodesicPolyline polylineWithPoints: points count: count];
@@ -853,7 +930,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAGeodesicPolyline::polylineWithCoordinates(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAGeodesicPolyline::polylineWithCoordinates(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAGeodesicPolyline* result = [MAGeodesicPolyline polylineWithCoordinates: coords count: count];
@@ -882,7 +961,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAGeodesicPolyline* ref = (MAGeodesicPolyline*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAGeodesicPolyline@%@::setPolylineWithPoints(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAGeodesicPolyline@%@::setPolylineWithPoints(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref setPolylineWithPoints: points count: count];
@@ -910,7 +991,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAGeodesicPolyline* ref = (MAGeodesicPolyline*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAGeodesicPolyline@%@::setPolylineWithCoordinates(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAGeodesicPolyline@%@::setPolylineWithCoordinates(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref setPolylineWithCoordinates: coords count: count];
@@ -946,7 +1029,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MATraceDelegate> ref = (id<MATraceDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATraceDelegate@%@::traceManager(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MATraceDelegate@%@::traceManager(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref traceManager : manager didTrace: locations correct: tracePoints distance: distance withError: error];
@@ -964,7 +1049,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MATraceDelegate> ref = (id<MATraceDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATraceDelegate@%@::mapViewRequireLocationAuth(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MATraceDelegate@%@::mapViewRequireLocationAuth(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapViewRequireLocationAuth : locationManager];
@@ -981,7 +1068,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MATraceManager::sharedInstance(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MATraceManager::sharedInstance(暂未实现参数打印)");
+          }
       
           // invoke native method
           MATraceManager* result = [MATraceManager sharedInstance];
@@ -999,7 +1088,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MATraceManager* ref = (MATraceManager*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATraceManager@%@::start(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MATraceManager@%@::start(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref start ];
@@ -1016,7 +1107,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MATraceManager* ref = (MATraceManager*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATraceManager@%@::stop(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MATraceManager@%@::stop(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref stop ];
@@ -1036,7 +1129,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMultiPointOverlayRendererDelegate> ref = (id<MAMultiPointOverlayRendererDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMultiPointOverlayRendererDelegate@%@::multiPointOverlayRenderer(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMultiPointOverlayRendererDelegate@%@::multiPointOverlayRenderer(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref multiPointOverlayRenderer : renderer didItemTapped: item];
@@ -1054,7 +1149,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMultiPointOverlayRenderer@%@::initWithMultiPointOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMultiPointOverlayRenderer@%@::initWithMultiPointOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAMultiPointOverlayRenderer* result = [ref initWithMultiPointOverlay: multiPointOverlay];
@@ -1073,7 +1170,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAPolylineRenderer@%@::initWithPolyline(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAPolylineRenderer@%@::initWithPolyline(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAPolylineRenderer* result = [ref initWithPolyline: polyline];
@@ -1091,7 +1190,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::name(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::name(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           NSString* result = [ref name];
@@ -1108,7 +1209,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::coordinates(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::coordinates(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CLLocationCoordinate2D* result = [ref coordinates];
@@ -1128,7 +1231,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::count(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::count(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           NSUInteger result = [ref count];
@@ -1145,7 +1250,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::duration(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::duration(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CGFloat result = [ref duration];
@@ -1162,7 +1269,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::elapsedTime(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::elapsedTime(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CGFloat result = [ref elapsedTime];
@@ -1179,7 +1288,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::cancel(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::cancel(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref cancel ];
@@ -1196,7 +1307,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::isCancelled(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::isCancelled(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref isCancelled];
@@ -1213,7 +1326,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::passedPointCount(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::passedPointCount(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           NSInteger result = [ref passedPointCount];
@@ -1233,7 +1348,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setSelected : selected animated: animated];
@@ -1250,7 +1367,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationView@%@::prepareForReuse(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::prepareForReuse(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref prepareForReuse ];
@@ -1270,7 +1389,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setDragState : newDragState animated: animated];
@@ -1290,7 +1411,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MATileOverlay* ref = (MATileOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MATileOverlay@%@::cancelLoadOfTileAtPath(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MATileOverlay@%@::cancelLoadOfTileAtPath(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref cancelLoadOfTileAtPath : path];
@@ -1307,7 +1430,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap::sharedOfflineMap(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOfflineMap::sharedOfflineMap(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAOfflineMap* result = [MAOfflineMap sharedOfflineMap];
@@ -1325,7 +1450,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::setupWithCompletionBlock(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::setupWithCompletionBlock(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setupWithCompletionBlock : ^(BOOL setupSuccess) {
@@ -1333,7 +1460,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
                   methodChannelWithName:@"MAOfflineMap::setupWithCompletionBlock::Callback"
                         binaryMessenger:[self->_registrar messenger]];
       
-              NSLog(@"");
+              // print log
+              if (enableLog) {
+                  NSLog(@"");
+              }
       
               // 构造可以直接传输的参数
               // primitive callback arg
@@ -1359,7 +1489,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::downloadItem(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::downloadItem(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref downloadItem : item shouldContinueWhenAppEntersBackground: shouldContinueWhenAppEntersBackground downloadBlock: ^(MAOfflineItem* downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
@@ -1367,7 +1499,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
                   methodChannelWithName:@"MAOfflineMap::downloadItemShouldContinueWhenAppEntersBackgrounddownloadBlock::Callback"
                         binaryMessenger:[self->_registrar messenger]];
       
-              NSLog(@"");
+              // print log
+              if (enableLog) {
+                  NSLog(@"");
+              }
       
               // 构造可以直接传输的参数
               // ref callback arg
@@ -1396,7 +1531,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::isDownloadingForItem(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::isDownloadingForItem(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref isDownloadingForItem: item];
@@ -1414,7 +1551,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::pauseItem(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::pauseItem(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref pauseItem: item];
@@ -1432,7 +1571,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::deleteItem(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::deleteItem(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref deleteItem : item];
@@ -1449,7 +1590,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::cancelAll(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::cancelAll(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref cancelAll ];
@@ -1466,7 +1609,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::clearDisk(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::clearDisk(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref clearDisk ];
@@ -1483,7 +1628,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOfflineMap@%@::checkNewestVersion(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::checkNewestVersion(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref checkNewestVersion : ^(BOOL hasNewestVersion) {
@@ -1491,7 +1638,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
                   methodChannelWithName:@"MAOfflineMap::checkNewestVersion::Callback"
                         binaryMessenger:[self->_registrar messenger]];
       
-              NSLog(@"");
+              // print log
+              if (enableLog) {
+                  NSLog(@"");
+              }
       
               // 构造可以直接传输的参数
               // primitive callback arg
@@ -1514,7 +1664,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MACircleRenderer* ref = (MACircleRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MACircleRenderer@%@::initWithCircle(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACircleRenderer@%@::initWithCircle(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MACircleRenderer* result = [ref initWithCircle: circle];
@@ -1533,7 +1685,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleOverlayRenderer* ref = (MAParticleOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleOverlayRenderer@%@::initWithParticleOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleOverlayRenderer@%@::initWithParticleOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAParticleOverlayRenderer* result = [ref initWithParticleOverlay: particleOverlay];
@@ -1551,7 +1705,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getX(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getX(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CGFloat result = [ref getX];
@@ -1568,7 +1724,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getY(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getY(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CGFloat result = [ref getY];
@@ -1585,7 +1743,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getZ(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getZ(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CGFloat result = [ref getZ];
@@ -1613,7 +1773,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleRandomVelocityGenerate* ref = (MAParticleRandomVelocityGenerate*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleRandomVelocityGenerate@%@::initWithBoundaryValueX1(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleRandomVelocityGenerate@%@::initWithBoundaryValueX1(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAParticleRandomVelocityGenerate* result = [ref initWithBoundaryValueX1: x1 Y1: y1 Z1: z1 X2: x2 Y2: y2 Z2: z2];
@@ -1646,7 +1808,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleRandomColorGenerate* ref = (MAParticleRandomColorGenerate*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleRandomColorGenerate@%@::initWithBoundaryColorR1(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleRandomColorGenerate@%@::initWithBoundaryColorR1(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAParticleRandomColorGenerate* result = [ref initWithBoundaryColorR1: r1 G1: g1 B1: b1 A1: a1 R2: r2 G2: g2 B2: b2 A2: a2];
@@ -1664,7 +1828,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAParticleRotationGenerate> ref = (id<MAParticleRotationGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleRotationGenerate@%@::getRotate(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleRotationGenerate@%@::getRotate(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           float result = [ref getRotate];
@@ -1682,7 +1848,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleConstantRotationGenerate* ref = (MAParticleConstantRotationGenerate*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleConstantRotationGenerate@%@::initWithRotate(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleConstantRotationGenerate@%@::initWithRotate(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAParticleConstantRotationGenerate* result = [ref initWithRotate: rotate];
@@ -1701,7 +1869,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeX(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeX(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           float result = [ref getSizeX: timeFrame];
@@ -1719,7 +1889,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeY(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeY(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           float result = [ref getSizeY: timeFrame];
@@ -1737,7 +1909,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeZ(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeZ(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           float result = [ref getSizeZ: timeFrame];
@@ -1759,7 +1933,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleCurveSizeGenerate* ref = (MAParticleCurveSizeGenerate*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleCurveSizeGenerate@%@::initWithCurveX(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleCurveSizeGenerate@%@::initWithCurveX(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAParticleCurveSizeGenerate* result = [ref initWithCurveX: x Y: y Z: z];
@@ -1780,7 +1956,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleEmissionModule* ref = (MAParticleEmissionModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleEmissionModule@%@::initWithEmissionRate(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleEmissionModule@%@::initWithEmissionRate(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAParticleEmissionModule* result = [ref initWithEmissionRate: rate rateTime: rateTime];
@@ -1798,7 +1976,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAParticleShapeModule> ref = (id<MAParticleShapeModule>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleShapeModule@%@::isRatioEnable(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleShapeModule@%@::isRatioEnable(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref isRatioEnable];
@@ -1822,7 +2002,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleSinglePointShapeModule* ref = (MAParticleSinglePointShapeModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleSinglePointShapeModule@%@::initWithShapeX(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleSinglePointShapeModule@%@::initWithShapeX(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAParticleSinglePointShapeModule* result = [ref initWithShapeX: x Y: y Z: z useRatio: isUseRatio];
@@ -1849,7 +2031,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleRectShapeModule* ref = (MAParticleRectShapeModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleRectShapeModule@%@::initWithLeft(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleRectShapeModule@%@::initWithLeft(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAParticleRectShapeModule* result = [ref initWithLeft: left top: top right: right bottom: bottom useRatio: isUseRatio];
@@ -1868,7 +2052,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setVelocityOverLife(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setVelocityOverLife(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setVelocityOverLife : velocity];
@@ -1886,7 +2072,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setRotationOverLife(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setRotationOverLife(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setRotationOverLife : rotation];
@@ -1904,7 +2092,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setSizeOverLife(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setSizeOverLife(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setSizeOverLife : size];
@@ -1922,7 +2112,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setColorOverLife(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setColorOverLife(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setColorOverLife : color];
@@ -1940,7 +2132,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::initWithOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::initWithOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAOverlayRenderer* result = [ref initWithOverlay: overlay];
@@ -1958,7 +2152,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::getOffsetPoint(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::getOffsetPoint(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAMapPoint result = [ref getOffsetPoint];
@@ -1978,7 +2174,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::getMapZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::getMapZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CGFloat result = [ref getMapZoomLevel];
@@ -1998,7 +2196,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glPointForMapPoint(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glPointForMapPoint(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CGPoint result = [ref glPointForMapPoint: mapPoint];
@@ -2029,7 +2229,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glPointsForMapPoints(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glPointsForMapPoints(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CGPoint* result = [ref glPointsForMapPoints: mapPoints count: count];
@@ -2050,7 +2252,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glWidthForWindowWidth(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glWidthForWindowWidth(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CGFloat result = [ref glWidthForWindowWidth: windowWidth];
@@ -2084,7 +2288,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref renderLinesWithPoints : points pointCount: pointCount strokeColor: strokeColor lineWidth: lineWidth looped: looped];
@@ -2124,7 +2330,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref renderLinesWithPoints : points pointCount: pointCount strokeColor: strokeColor lineWidth: lineWidth looped: looped LineJoinType: lineJoinType LineCapType: lineCapType lineDash: lineDash];
@@ -2170,7 +2378,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderTexturedLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderTexturedLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref renderTexturedLinesWithPoints : points pointCount: pointCount lineWidth: lineWidth textureIDs: textureIDs drawStyleIndexes: drawStyleIndexes looped: looped];
@@ -2224,7 +2434,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref renderLinesWithPoints : points pointCount: pointCount strokeColors: strokeColors drawStyleIndexes: drawStyleIndexes isGradient: isGradient lineWidth: lineWidth looped: looped LineJoinType: lineJoinType LineCapType: lineCapType lineDash: lineDash];
@@ -2256,7 +2468,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderRegionWithPoints(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderRegionWithPoints(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref renderRegionWithPoints : points pointCount: pointCount fillColor: fillColor usingTriangleFan: usingTriangleFan];
@@ -2296,7 +2510,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderStrokedRegionWithPoints(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderStrokedRegionWithPoints(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref renderStrokedRegionWithPoints : points pointCount: pointCount fillColor: fillColor strokeColor: strokeColor strokeLineWidth: strokeLineWidth strokeLineJoinType: strokeLineJoinType strokeLineDash: strokeLineDash usingTriangleFan: usingTriangleFan];
@@ -2313,7 +2529,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glRender(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glRender(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref glRender ];
@@ -2330,7 +2548,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAOverlayRenderer@%@::setNeedsUpdate(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::setNeedsUpdate(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setNeedsUpdate ];
@@ -2353,7 +2573,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMultiPointOverlay* ref = (MAMultiPointOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMultiPointOverlay@%@::initWithMultiPointItems(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMultiPointOverlay@%@::initWithMultiPointItems(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAMultiPointOverlay* result = [ref initWithMultiPointItems: items];
@@ -2382,7 +2604,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MACustomBuildingOverlayOption::optionWithCoordinates(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACustomBuildingOverlayOption::optionWithCoordinates(暂未实现参数打印)");
+          }
       
           // invoke native method
           MACustomBuildingOverlayOption* result = [MACustomBuildingOverlayOption optionWithCoordinates: coords count: count];
@@ -2411,7 +2635,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MACustomBuildingOverlayOption@%@::setOptionWithCoordinates(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACustomBuildingOverlayOption@%@::setOptionWithCoordinates(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           BOOL result = [ref setOptionWithCoordinates: coords count: count];
@@ -2429,7 +2655,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MACustomBuildingOverlay@%@::addCustomOption(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACustomBuildingOverlay@%@::addCustomOption(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref addCustomOption : option];
@@ -2447,7 +2675,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MACustomBuildingOverlay@%@::removeCustomOption(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACustomBuildingOverlay@%@::removeCustomOption(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref removeCustomOption : option];
@@ -2475,7 +2705,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAArc::arcWithStartCoordinate(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAArc::arcWithStartCoordinate(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAArc* result = [MAArc arcWithStartCoordinate: startCoordinate passedCoordinate: passedCoordinate endCoordinate: endCoordinate];
@@ -2498,7 +2730,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setRegion(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setRegion(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setRegion : region animated: animated];
@@ -2518,7 +2752,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::regionThatFits(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::regionThatFits(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MACoordinateRegion result = [ref regionThatFits: region];
@@ -2543,7 +2779,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setVisibleMapRect : mapRect animated: animated];
@@ -2563,7 +2801,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAMapRect result = [ref mapRectThatFits: mapRect];
@@ -2590,7 +2830,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAMapRect result = [ref mapRectThatFits: mapRect edgePadding: insets];
@@ -2619,7 +2861,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setVisibleMapRect : mapRect edgePadding: insets animated: animated];
@@ -2641,7 +2885,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setCenterCoordinate : coordinate animated: animated];
@@ -2661,7 +2907,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setZoomLevel : zoomLevel animated: animated];
@@ -2685,7 +2933,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setZoomLevel : zoomLevel atPivot: pivot animated: animated];
@@ -2707,7 +2957,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setRotationDegree : rotationDegree animated: animated duration: duration];
@@ -2729,7 +2981,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCameraDegree(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCameraDegree(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setCameraDegree : cameraDegree animated: animated duration: duration];
@@ -2746,7 +3000,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::getMapStatus(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::getMapStatus(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAMapStatus* result = [ref getMapStatus];
@@ -2767,7 +3023,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setMapStatus : status animated: animated];
@@ -2789,7 +3047,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setMapStatus : status animated: animated duration: duration];
@@ -2807,7 +3067,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCompassImage(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCompassImage(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setCompassImage : image];
@@ -2825,7 +3087,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::metersPerPointForZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::metersPerPointForZoomLevel(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           double result = [ref metersPerPointForZoomLevel: zoomLevel];
@@ -2847,7 +3111,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::convertCoordinate(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::convertCoordinate(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CGPoint result = [ref convertCoordinate: coordinate toPointToView: view];
@@ -2872,7 +3138,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::convertPoint(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::convertPoint(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CLLocationCoordinate2D result = [ref convertPoint: point toCoordinateFromView: view];
@@ -2897,7 +3165,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::convertRegion(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::convertRegion(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           CGRect result = [ref convertRegion: region toRectToView: view];
@@ -2922,7 +3192,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::convertRect(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::convertRect(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MACoordinateRegion result = [ref convertRect: rect toRegionFromView: view];
@@ -2942,7 +3214,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::reloadMap(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::reloadMap(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref reloadMap ];
@@ -2959,7 +3233,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::clearDisk(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::clearDisk(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref clearDisk ];
@@ -2976,7 +3252,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::reloadInternalTexture(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::reloadInternalTexture(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref reloadInternalTexture ];
@@ -2993,7 +3271,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::mapContentApprovalNumber(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::mapContentApprovalNumber(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           NSString* result = [ref mapContentApprovalNumber];
@@ -3010,7 +3290,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::satelliteImageApprovalNumber(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::satelliteImageApprovalNumber(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           NSString* result = [ref satelliteImageApprovalNumber];
@@ -3027,7 +3309,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::forceRefresh(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::forceRefresh(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref forceRefresh ];
@@ -3045,7 +3329,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addAnnotation(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::addAnnotation(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref addAnnotation : annotation];
@@ -3068,7 +3354,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addAnnotations(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::addAnnotations(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref addAnnotations : annotations];
@@ -3086,7 +3374,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotation(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotation(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref removeAnnotation : annotation];
@@ -3109,7 +3399,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotations(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotations(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref removeAnnotations : annotations];
@@ -3127,7 +3419,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::viewForAnnotation(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::viewForAnnotation(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAAnnotationView* result = [ref viewForAnnotation: annotation];
@@ -3146,7 +3440,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::dequeueReusableAnnotationViewWithIdentifier(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::dequeueReusableAnnotationViewWithIdentifier(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAAnnotationView* result = [ref dequeueReusableAnnotationViewWithIdentifier: identifier];
@@ -3167,7 +3463,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::selectAnnotation(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::selectAnnotation(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref selectAnnotation : annotation animated: animated];
@@ -3187,7 +3485,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::deselectAnnotation(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::deselectAnnotation(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref deselectAnnotation : annotation animated: animated];
@@ -3212,7 +3512,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref showAnnotations : annotations animated: animated];
@@ -3241,7 +3543,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref showAnnotations : annotations edgePadding: insets animated: animated];
@@ -3261,7 +3565,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setUserTrackingMode(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setUserTrackingMode(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setUserTrackingMode : mode animated: animated];
@@ -3279,7 +3585,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::updateUserLocationRepresentation(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::updateUserLocationRepresentation(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref updateUserLocationRepresentation : representation];
@@ -3297,7 +3605,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           NSArray* result = [ref overlaysInLevel: level];
@@ -3322,7 +3632,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref addOverlay : overlay];
@@ -3345,7 +3657,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref addOverlays : overlays];
@@ -3365,7 +3679,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref addOverlay : overlay level: level];
@@ -3390,7 +3706,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref addOverlays : overlays level: level];
@@ -3408,7 +3726,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::removeOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::removeOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref removeOverlay : overlay];
@@ -3431,7 +3751,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::removeOverlays(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::removeOverlays(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref removeOverlays : overlays];
@@ -3453,7 +3775,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref insertOverlay : overlay atIndex: index level: level];
@@ -3473,7 +3797,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref insertOverlay : overlay aboveOverlay: sibling];
@@ -3493,7 +3819,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref insertOverlay : overlay belowOverlay: sibling];
@@ -3513,7 +3841,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref insertOverlay : overlay atIndex: index];
@@ -3533,7 +3863,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref exchangeOverlayAtIndex : index1 withOverlayAtIndex: index2];
@@ -3555,7 +3887,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref exchangeOverlayAtIndex : index1 withOverlayAtIndex: index2 atLevel: level];
@@ -3575,7 +3909,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref exchangeOverlay : overlay1 withOverlay: overlay2];
@@ -3593,7 +3929,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::rendererForOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::rendererForOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAOverlayRenderer* result = [ref rendererForOverlay: overlay];
@@ -3619,7 +3957,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref showOverlays : overlays animated: animated];
@@ -3648,7 +3988,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref showOverlays : overlays edgePadding: insets animated: animated];
@@ -3668,7 +4010,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setIndoorMapControlOrigin(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setIndoorMapControlOrigin(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setIndoorMapControlOrigin : origin];
@@ -3686,7 +4030,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCurrentIndoorMapFloorIndex(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCurrentIndoorMapFloorIndex(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setCurrentIndoorMapFloorIndex : floorIndex];
@@ -3703,7 +4049,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::clearIndoorMapCache(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::clearIndoorMapCache(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref clearIndoorMapCache ];
@@ -3721,7 +4069,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleOptions(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleOptions(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref setCustomMapStyleOptions : styleOptions];
@@ -3739,7 +4089,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewRegionChanged(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewRegionChanged(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapViewRegionChanged : mapView];
@@ -3759,7 +4111,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView regionWillChangeAnimated: animated];
@@ -3779,7 +4133,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView regionDidChangeAnimated: animated];
@@ -3799,7 +4155,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView mapWillMoveByUser: wasUserAction];
@@ -3819,7 +4177,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView mapDidMoveByUser: wasUserAction];
@@ -3839,7 +4199,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView mapWillZoomByUser: wasUserAction];
@@ -3859,7 +4221,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView mapDidZoomByUser: wasUserAction];
@@ -3877,7 +4241,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewWillStartLoadingMap(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewWillStartLoadingMap(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapViewWillStartLoadingMap : mapView];
@@ -3895,7 +4261,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidFinishLoadingMap(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidFinishLoadingMap(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapViewDidFinishLoadingMap : mapView];
@@ -3915,7 +4283,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidFailLoadingMap(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidFailLoadingMap(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapViewDidFailLoadingMap : mapView withError: error];
@@ -3935,7 +4305,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAAnnotationView* result = [ref mapView: mapView viewForAnnotation: annotation];
@@ -3961,7 +4333,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didAddAnnotationViews: views];
@@ -3981,7 +4355,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didSelectAnnotationView: view];
@@ -4001,7 +4377,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didDeselectAnnotationView: view];
@@ -4019,7 +4397,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewWillStartLocatingUser(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewWillStartLocatingUser(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapViewWillStartLocatingUser : mapView];
@@ -4037,7 +4417,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidStopLocatingUser(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidStopLocatingUser(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapViewDidStopLocatingUser : mapView];
@@ -4059,7 +4441,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didUpdateUserLocation: userLocation updatingLocation: updatingLocation];
@@ -4077,7 +4461,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewRequireLocationAuth(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewRequireLocationAuth(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapViewRequireLocationAuth : locationManager];
@@ -4097,7 +4483,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didFailToLocateUserWithError: error];
@@ -4121,7 +4509,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView annotationView: view didChangeDragState: newState fromOldState: oldState];
@@ -4141,7 +4531,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAOverlayRenderer* result = [ref mapView: mapView rendererForOverlay: overlay];
@@ -4167,7 +4559,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didAddOverlayRenderers: overlayRenderers];
@@ -4189,7 +4583,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView annotationView: view calloutAccessoryControlTapped: control];
@@ -4209,7 +4605,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didAnnotationViewCalloutTapped: view];
@@ -4229,7 +4627,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didAnnotationViewTapped: view];
@@ -4251,7 +4651,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didChangeUserTrackingMode: mode animated: animated];
@@ -4271,7 +4673,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didChangeOpenGLESDisabled: openGLESDisabled];
@@ -4296,7 +4700,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didTouchPois: pois];
@@ -4318,7 +4724,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didSingleTappedAtCoordinate: coordinate];
@@ -4340,7 +4748,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didLongPressedAtCoordinate: coordinate];
@@ -4358,7 +4768,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapInitComplete(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapInitComplete(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapInitComplete : mapView];
@@ -4378,7 +4790,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didIndoorMapShowed: indoorInfo];
@@ -4398,7 +4812,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didIndoorMapFloorIndexChanged: indoorInfo];
@@ -4418,7 +4834,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref mapView : mapView didIndoorMapHidden: indoorInfo];
@@ -4436,7 +4854,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::offlineDataWillReload(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::offlineDataWillReload(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref offlineDataWillReload : mapView];
@@ -4454,7 +4874,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAMapViewDelegate@%@::offlineDataDidReload(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::offlineDataDidReload(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           [ref offlineDataDidReload : mapView];
@@ -4472,7 +4894,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MAGroundOverlayRenderer* ref = (MAGroundOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MAGroundOverlayRenderer@%@::initWithGroundOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAGroundOverlayRenderer@%@::initWithGroundOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MAGroundOverlayRenderer* result = [ref initWithGroundOverlay: groundOverlay];
@@ -4491,7 +4915,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           MACustomBuildingOverlayRenderer* ref = (MACustomBuildingOverlayRenderer*) HEAP[args[@"refId"]];
       
           // print log
-          NSLog(@"fluttify-objc: MACustomBuildingOverlayRenderer@%@::initWithCustomBuildingOverlay(暂未实现参数打印)", args[@"refId"]);
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACustomBuildingOverlayRenderer@%@::initWithCustomBuildingOverlay(暂未实现参数打印)", args[@"refId"]);
+          }
       
           // invoke native method
           MACustomBuildingOverlayRenderer* result = [ref initWithCustomBuildingOverlay: customBuildingOverlay];
@@ -4502,7 +4928,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
           methodResult(@(result.hash));
       },
       @"MAOfflineCity::get_cityCode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineCity::get_cityCode");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineCity::get_cityCode");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4516,7 +4945,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineCity::get_cityName": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineCity::get_cityName");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineCity::get_cityName");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4530,7 +4962,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineCity::get_urlString": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineCity::get_urlString");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineCity::get_urlString");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4544,7 +4979,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineCity::get_status": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineCity::get_status");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineCity::get_status");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4558,7 +4996,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPoint::get_points": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPoint::get_points");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPoint::get_points");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4575,7 +5016,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPoint::get_pointCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPoint::get_pointCount");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPoint::get_pointCount");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4589,7 +5033,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPoint::get_cross180Longitude": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPoint::get_cross180Longitude");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPoint::get_cross180Longitude");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4603,7 +5050,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAGroundOverlay::get_icon": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAGroundOverlay::get_icon");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAGroundOverlay::get_icon");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4618,7 +5068,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAGroundOverlay::get_alpha": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAGroundOverlay::get_alpha");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAGroundOverlay::get_alpha");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4632,7 +5085,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAGroundOverlay::get_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAGroundOverlay::get_zoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAGroundOverlay::get_zoomLevel");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4646,7 +5102,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAGroundOverlay::get_bounds": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAGroundOverlay::get_bounds");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAGroundOverlay::get_bounds");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4663,7 +5122,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPolygonRenderer::get_polygon": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPolygonRenderer::get_polygon");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPolygonRenderer::get_polygon");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4678,7 +5140,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPinAnnotationView::get_pinColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPinAnnotationView::get_pinColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPinAnnotationView::get_pinColor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4692,7 +5157,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPinAnnotationView::get_animatesDrop": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPinAnnotationView::get_animatesDrop");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPinAnnotationView::get_animatesDrop");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4706,7 +5174,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapNode::get_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapNode::get_coordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapNode::get_coordinate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4723,7 +5194,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapNode::get_intensity": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapNode::get_intensity");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapNode::get_intensity");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4737,7 +5211,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapGradient::get_colors": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapGradient::get_colors");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapGradient::get_colors");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4758,7 +5235,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapTileOverlay::get_data": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapTileOverlay::get_data");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapTileOverlay::get_data");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4779,7 +5259,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapTileOverlay::get_radius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapTileOverlay::get_radius");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapTileOverlay::get_radius");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4793,7 +5276,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapTileOverlay::get_opacity": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapTileOverlay::get_opacity");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapTileOverlay::get_opacity");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4807,7 +5293,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapTileOverlay::get_gradient": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapTileOverlay::get_gradient");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapTileOverlay::get_gradient");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4822,7 +5311,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapTileOverlay::get_allowRetinaAdapting": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapTileOverlay::get_allowRetinaAdapting");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapTileOverlay::get_allowRetinaAdapting");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4836,7 +5328,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapStatus::get_centerCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapStatus::get_centerCoordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapStatus::get_centerCoordinate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4853,7 +5348,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapStatus::get_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapStatus::get_zoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapStatus::get_zoomLevel");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4867,7 +5365,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapStatus::get_rotationDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapStatus::get_rotationDegree");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapStatus::get_rotationDegree");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4881,7 +5382,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapStatus::get_cameraDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapStatus::get_cameraDegree");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapStatus::get_cameraDegree");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4895,7 +5399,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapStatus::get_screenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapStatus::get_screenAnchor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapStatus::get_screenAnchor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4912,7 +5419,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPointAnnotation::get_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPointAnnotation::get_coordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPointAnnotation::get_coordinate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4929,7 +5439,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPointAnnotation::get_isLockedToScreen": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPointAnnotation::get_isLockedToScreen");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPointAnnotation::get_isLockedToScreen");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4943,7 +5456,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPointAnnotation::get_lockedScreenPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPointAnnotation::get_lockedScreenPoint");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPointAnnotation::get_lockedScreenPoint");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4960,7 +5476,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACircle::get_hollowShapes": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACircle::get_hollowShapes");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACircle::get_hollowShapes");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4981,7 +5500,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACircle::get_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACircle::get_coordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACircle::get_coordinate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -4998,7 +5520,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACircle::get_radius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACircle::get_radius");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACircle::get_radius");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5012,7 +5537,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACircle::get_boundingMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACircle::get_boundingMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACircle::get_boundingMapRect");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5029,7 +5557,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAArcRenderer::get_arc": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAArcRenderer::get_arc");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAArcRenderer::get_arc");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5044,7 +5575,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotation::get_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotation::get_coordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotation::get_coordinate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5061,7 +5595,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotation::get_title": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotation::get_title");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotation::get_title");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5075,7 +5612,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotation::get_subtitle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotation::get_subtitle");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotation::get_subtitle");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5089,7 +5629,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapCustomStyleOptions::get_styleId": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapCustomStyleOptions::get_styleId");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapCustomStyleOptions::get_styleId");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5103,7 +5646,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPolygon::get_hollowShapes": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPolygon::get_hollowShapes");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPolygon::get_hollowShapes");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5124,7 +5670,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlay::get_overlayOption": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlay::get_overlayOption");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlay::get_overlayOption");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5139,7 +5688,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiColoredPolylineRenderer::get_multiPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiColoredPolylineRenderer::get_multiPolyline");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiColoredPolylineRenderer::get_multiPolyline");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5154,7 +5706,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiColoredPolylineRenderer::get_strokeColors": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiColoredPolylineRenderer::get_strokeColors");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiColoredPolylineRenderer::get_strokeColors");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5175,7 +5730,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiColoredPolylineRenderer::get_isGradient": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiColoredPolylineRenderer::get_isGradient");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiColoredPolylineRenderer::get_isGradient");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5189,7 +5747,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnimatedAnnotation::get_movingDirection": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnimatedAnnotation::get_movingDirection");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnimatedAnnotation::get_movingDirection");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5203,7 +5764,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlay::get_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlay::get_coordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlay::get_coordinate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5220,7 +5784,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlay::get_boundingMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlay::get_boundingMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlay::get_boundingMapRect");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5237,7 +5804,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiTexturePolylineRenderer::get_multiPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiTexturePolylineRenderer::get_multiPolyline");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiTexturePolylineRenderer::get_multiPolyline");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5252,7 +5822,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiTexturePolylineRenderer::get_strokeTextureImages": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiTexturePolylineRenderer::get_strokeTextureImages");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiTexturePolylineRenderer::get_strokeTextureImages");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5273,7 +5846,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineProvince::get_cities": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineProvince::get_cities");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineProvince::get_cities");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5294,7 +5870,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlayRenderer::get_tileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlayRenderer::get_tileOverlay");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayRenderer::get_tileOverlay");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5309,7 +5888,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineItem::get_name": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineItem::get_name");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineItem::get_name");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5323,7 +5905,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineItem::get_jianpin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineItem::get_jianpin");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineItem::get_jianpin");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5337,7 +5922,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineItem::get_pinyin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineItem::get_pinyin");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineItem::get_pinyin");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5351,7 +5939,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineItem::get_adcode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineItem::get_adcode");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineItem::get_adcode");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5365,7 +5956,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineItem::get_itemStatus": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineItem::get_itemStatus");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineItem::get_itemStatus");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5379,7 +5973,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATouchPoi::get_name": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATouchPoi::get_name");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATouchPoi::get_name");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5393,7 +5990,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATouchPoi::get_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATouchPoi::get_coordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATouchPoi::get_coordinate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5410,7 +6010,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATouchPoi::get_uid": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATouchPoi::get_uid");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATouchPoi::get_uid");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5424,7 +6027,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointOverlayRenderer::get_icon": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointOverlayRenderer::get_icon");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointOverlayRenderer::get_icon");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5439,7 +6045,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointOverlayRenderer::get_pointSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointOverlayRenderer::get_pointSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointOverlayRenderer::get_pointSize");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5456,7 +6065,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointOverlayRenderer::get_anchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointOverlayRenderer::get_anchor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointOverlayRenderer::get_anchor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5473,7 +6085,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointOverlayRenderer::get_multiPointOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointOverlayRenderer::get_multiPointOverlay");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointOverlayRenderer::get_multiPointOverlay");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5488,7 +6103,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAIndoorFloorInfo::get_floorName": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorFloorInfo::get_floorName");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAIndoorFloorInfo::get_floorName");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5502,7 +6120,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAIndoorFloorInfo::get_floorIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorFloorInfo::get_floorIndex");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAIndoorFloorInfo::get_floorIndex");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5516,7 +6137,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAIndoorFloorInfo::get_floorNona": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorFloorInfo::get_floorNona");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAIndoorFloorInfo::get_floorNona");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5530,7 +6154,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAIndoorFloorInfo::get_isPark": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorFloorInfo::get_isPark");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAIndoorFloorInfo::get_isPark");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5544,7 +6171,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAIndoorInfo::get_cnName": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorInfo::get_cnName");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAIndoorInfo::get_cnName");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5558,7 +6188,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAIndoorInfo::get_enName": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorInfo::get_enName");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAIndoorInfo::get_enName");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5572,7 +6205,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAIndoorInfo::get_poiID": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorInfo::get_poiID");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAIndoorInfo::get_poiID");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5586,7 +6222,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAIndoorInfo::get_buildingType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorInfo::get_buildingType");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAIndoorInfo::get_buildingType");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5600,7 +6239,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAIndoorInfo::get_activeFloorIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorInfo::get_activeFloorIndex");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAIndoorInfo::get_activeFloorIndex");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5614,7 +6256,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAIndoorInfo::get_activeFloorInfoIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorInfo::get_activeFloorInfoIndex");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAIndoorInfo::get_activeFloorInfoIndex");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5628,7 +6273,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAIndoorInfo::get_floorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorInfo::get_floorInfo");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAIndoorInfo::get_floorInfo");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5649,7 +6297,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAIndoorInfo::get_numberOfFloor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorInfo::get_numberOfFloor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAIndoorInfo::get_numberOfFloor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5663,7 +6314,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAIndoorInfo::get_numberOfParkFloor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorInfo::get_numberOfParkFloor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAIndoorInfo::get_numberOfParkFloor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5677,7 +6331,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPolylineRenderer::get_polyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPolylineRenderer::get_polyline");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPolylineRenderer::get_polyline");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5692,7 +6349,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPolylineRenderer::get_is3DArrowLine": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPolylineRenderer::get_is3DArrowLine");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPolylineRenderer::get_is3DArrowLine");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5706,7 +6366,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPolylineRenderer::get_sideColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPolylineRenderer::get_sideColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPolylineRenderer::get_sideColor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5721,7 +6384,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAShape::get_title": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAShape::get_title");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAShape::get_title");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5735,7 +6401,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAShape::get_subtitle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAShape::get_subtitle");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAShape::get_subtitle");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5749,7 +6418,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_reuseIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_reuseIdentifier");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_reuseIdentifier");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5763,7 +6435,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_zIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_zIndex");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_zIndex");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5777,7 +6452,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_annotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_annotation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_annotation");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5792,7 +6470,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_image": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_image");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_image");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5807,7 +6488,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_customCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_customCalloutView");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_customCalloutView");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5822,7 +6506,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_centerOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_centerOffset");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_centerOffset");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5839,7 +6526,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_calloutOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_calloutOffset");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_calloutOffset");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5856,7 +6546,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_isEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_isEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_isEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5870,7 +6563,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_isHighlighted": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_isHighlighted");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_isHighlighted");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5884,7 +6580,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_isSelected": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_isSelected");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_isSelected");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5898,7 +6597,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_canShowCallout": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_canShowCallout");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_canShowCallout");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5912,7 +6614,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_leftCalloutAccessoryView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_leftCalloutAccessoryView");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_leftCalloutAccessoryView");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5927,7 +6632,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_rightCalloutAccessoryView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_rightCalloutAccessoryView");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_rightCalloutAccessoryView");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5942,7 +6650,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_isDraggable": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_isDraggable");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_isDraggable");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5956,7 +6667,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::get_dragState": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::get_dragState");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_dragState");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5970,7 +6684,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlay::get_tileSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlay::get_tileSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlay::get_tileSize");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -5987,7 +6704,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlay::get_minimumZ": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlay::get_minimumZ");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlay::get_minimumZ");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6001,7 +6721,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlay::get_maximumZ": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlay::get_maximumZ");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlay::get_maximumZ");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6015,7 +6738,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlay::get_URLTemplate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlay::get_URLTemplate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlay::get_URLTemplate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6029,7 +6755,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlay::get_canReplaceMapContent": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlay::get_canReplaceMapContent");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlay::get_canReplaceMapContent");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6043,7 +6772,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlay::get_boundingMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlay::get_boundingMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlay::get_boundingMapRect");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6060,7 +6792,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlay::get_disableOffScreenTileLoading": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlay::get_disableOffScreenTileLoading");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlay::get_disableOffScreenTileLoading");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6074,7 +6809,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomCalloutView::get_customView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomCalloutView::get_customView");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomCalloutView::get_customView");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6089,7 +6827,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineItemCommonCity::get_province": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineItemCommonCity::get_province");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineItemCommonCity::get_province");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6104,7 +6845,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineMap::get_provinces": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineMap::get_provinces");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineMap::get_provinces");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6125,7 +6869,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineMap::get_municipalities": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineMap::get_municipalities");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineMap::get_municipalities");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6146,7 +6893,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineMap::get_nationWide": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineMap::get_nationWide");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineMap::get_nationWide");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6161,7 +6911,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineMap::get_cities": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineMap::get_cities");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineMap::get_cities");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6182,7 +6935,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineMap::get_version": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineMap::get_version");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineMap::get_version");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6196,7 +6952,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineMap::get_offlineCities": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineMap::get_offlineCities");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineMap::get_offlineCities");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6217,7 +6976,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACircleRenderer::get_circle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACircleRenderer::get_circle");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACircleRenderer::get_circle");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6232,7 +6994,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayRenderer::get_particleOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayRenderer::get_particleOverlay");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayRenderer::get_particleOverlay");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6247,7 +7012,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::get_visibile": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::get_visibile");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::get_visibile");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6261,7 +7029,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::get_loop": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::get_loop");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::get_loop");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6275,7 +7046,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::get_maxParticles": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::get_maxParticles");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::get_maxParticles");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6289,7 +7063,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::get_icon": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::get_icon");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::get_icon");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6304,7 +7081,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::get_startParticleSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::get_startParticleSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::get_startParticleSize");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6321,7 +7101,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::get_particleStartColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::get_particleStartColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::get_particleStartColor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6336,7 +7119,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::get_particleStartSpeed": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::get_particleStartSpeed");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::get_particleStartSpeed");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6351,7 +7137,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::get_particleEmissionModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::get_particleEmissionModule");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::get_particleEmissionModule");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6366,7 +7155,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::get_particleShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::get_particleShapeModule");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::get_particleShapeModule");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6381,7 +7173,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::get_particleOverLifeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::get_particleOverLifeModule");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::get_particleOverLifeModule");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6396,7 +7191,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayRenderer::get_overlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayRenderer::get_overlay");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayRenderer::get_overlay");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6411,7 +7209,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayRenderer::get_glPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayRenderer::get_glPoints");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayRenderer::get_glPoints");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6428,7 +7229,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayRenderer::get_glPointCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayRenderer::get_glPointCount");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayRenderer::get_glPointCount");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6442,7 +7246,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayRenderer::get_strokeImage": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayRenderer::get_strokeImage");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayRenderer::get_strokeImage");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6457,7 +7264,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayRenderer::get_alpha": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayRenderer::get_alpha");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayRenderer::get_alpha");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6471,7 +7281,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayRenderer::get_contentScale": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayRenderer::get_contentScale");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayRenderer::get_contentScale");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6485,7 +7298,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocation::get_isUpdating": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocation::get_isUpdating");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocation::get_isUpdating");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6499,7 +7315,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocation::get_location": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocation::get_location");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocation::get_location");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6514,7 +7333,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocation::get_heading": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocation::get_heading");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocation::get_heading");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6529,7 +7351,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointItem::get_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointItem::get_coordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointItem::get_coordinate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6546,7 +7371,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointItem::get_customID": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointItem::get_customID");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointItem::get_customID");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6560,7 +7388,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointItem::get_title": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointItem::get_title");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointItem::get_title");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6574,7 +7405,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointItem::get_subtitle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointItem::get_subtitle");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointItem::get_subtitle");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6588,7 +7422,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointOverlay::get_items": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointOverlay::get_items");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointOverlay::get_items");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6609,7 +7446,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomBuildingOverlayOption::get_height": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomBuildingOverlayOption::get_height");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomBuildingOverlayOption::get_height");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6623,7 +7463,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomBuildingOverlayOption::get_heightScale": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomBuildingOverlayOption::get_heightScale");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomBuildingOverlayOption::get_heightScale");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6637,7 +7480,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomBuildingOverlayOption::get_topColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomBuildingOverlayOption::get_topColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomBuildingOverlayOption::get_topColor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6652,7 +7498,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomBuildingOverlayOption::get_sideColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomBuildingOverlayOption::get_sideColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomBuildingOverlayOption::get_sideColor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6667,7 +7516,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomBuildingOverlayOption::get_visibile": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomBuildingOverlayOption::get_visibile");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomBuildingOverlayOption::get_visibile");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6681,7 +7533,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomBuildingOverlay::get_defaultOption": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomBuildingOverlay::get_defaultOption");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomBuildingOverlay::get_defaultOption");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6696,7 +7551,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomBuildingOverlay::get_customOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomBuildingOverlay::get_customOptions");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomBuildingOverlay::get_customOptions");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6717,7 +7575,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATracePoint::get_latitude": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATracePoint::get_latitude");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATracePoint::get_latitude");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6731,7 +7592,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATracePoint::get_longitude": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATracePoint::get_longitude");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATracePoint::get_longitude");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6745,7 +7609,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATraceLocation::get_loc": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATraceLocation::get_loc");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATraceLocation::get_loc");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6762,7 +7629,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATraceLocation::get_angle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATraceLocation::get_angle");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATraceLocation::get_angle");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6776,7 +7646,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATraceLocation::get_speed": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATraceLocation::get_speed");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATraceLocation::get_speed");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6790,7 +7663,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATraceLocation::get_time": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATraceLocation::get_time");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATraceLocation::get_time");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6804,7 +7680,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAArc::get_startCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAArc::get_startCoordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAArc::get_startCoordinate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6821,7 +7700,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAArc::get_passedCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAArc::get_passedCoordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAArc::get_passedCoordinate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6838,7 +7720,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAArc::get_endCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAArc::get_endCoordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAArc::get_endCoordinate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6855,7 +7740,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAArc::get_boundingMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAArc::get_boundingMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAArc::get_boundingMapRect");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6872,7 +7760,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::get_showsAccuracyRing": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::get_showsAccuracyRing");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::get_showsAccuracyRing");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6886,7 +7777,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::get_showsHeadingIndicator": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::get_showsHeadingIndicator");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::get_showsHeadingIndicator");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6900,7 +7794,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::get_fillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::get_fillColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::get_fillColor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6915,7 +7812,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::get_strokeColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::get_strokeColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::get_strokeColor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6930,7 +7830,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::get_lineWidth": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::get_lineWidth");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::get_lineWidth");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6944,7 +7847,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::get_locationDotBgColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::get_locationDotBgColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::get_locationDotBgColor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6959,7 +7865,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::get_locationDotFillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::get_locationDotFillColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::get_locationDotFillColor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6974,7 +7883,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::get_enablePulseAnnimation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::get_enablePulseAnnimation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::get_enablePulseAnnimation");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -6988,7 +7900,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::get_image": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::get_image");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::get_image");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7003,7 +7918,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_mapType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_mapType");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_mapType");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7017,7 +7935,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_centerCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_centerCoordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_centerCoordinate");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7034,7 +7955,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_region": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_region");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_region");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7051,7 +7975,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_visibleMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_visibleMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_visibleMapRect");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7068,7 +7995,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_limitRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_limitRegion");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_limitRegion");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7085,7 +8015,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_limitMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_limitMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_limitMapRect");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7102,7 +8035,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_zoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_zoomLevel");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7116,7 +8052,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_minZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_minZoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_minZoomLevel");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7130,7 +8069,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_maxZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_maxZoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_maxZoomLevel");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7144,7 +8086,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_rotationDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_rotationDegree");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_rotationDegree");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7158,7 +8103,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_cameraDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_cameraDegree");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_cameraDegree");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7172,7 +8120,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_zoomingInPivotsAroundAnchorPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_zoomingInPivotsAroundAnchorPoint");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_zoomingInPivotsAroundAnchorPoint");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7186,7 +8137,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_isZoomEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isZoomEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isZoomEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7200,7 +8154,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_isScrollEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isScrollEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isScrollEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7214,7 +8171,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_isRotateEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isRotateEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isRotateEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7228,7 +8188,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_isRotateCameraEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isRotateCameraEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isRotateCameraEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7242,7 +8205,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_isSkyModelEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isSkyModelEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isSkyModelEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7256,7 +8222,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_isShowsBuildings": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isShowsBuildings");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isShowsBuildings");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7270,7 +8239,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_isShowsLabels": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isShowsLabels");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isShowsLabels");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7284,7 +8256,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_isShowTraffic": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isShowTraffic");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isShowTraffic");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7298,7 +8273,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_trafficRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_trafficRatio");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_trafficRatio");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7312,7 +8290,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_touchPOIEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_touchPOIEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_touchPOIEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7326,7 +8307,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_showsCompass": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_showsCompass");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_showsCompass");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7340,7 +8324,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_compassOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_compassOrigin");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_compassOrigin");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7357,7 +8344,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_compassSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_compassSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_compassSize");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7374,7 +8364,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_showsScale": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_showsScale");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_showsScale");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7388,7 +8381,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_scaleOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_scaleOrigin");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_scaleOrigin");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7405,7 +8401,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_scaleSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_scaleSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_scaleSize");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7422,7 +8421,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_logoCenter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_logoCenter");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_logoCenter");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7439,7 +8441,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_logoSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_logoSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_logoSize");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7456,7 +8461,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_metersPerPointForCurrentZoom": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_metersPerPointForCurrentZoom");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_metersPerPointForCurrentZoom");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7470,7 +8478,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_isAbroad": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isAbroad");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isAbroad");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7484,7 +8495,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_maxRenderFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_maxRenderFrame");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_maxRenderFrame");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7498,7 +8512,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_isAllowDecreaseFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isAllowDecreaseFrame");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isAllowDecreaseFrame");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7512,7 +8529,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_openGLESDisabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_openGLESDisabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_openGLESDisabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7526,7 +8546,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_screenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_screenAnchor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_screenAnchor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7543,7 +8566,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_annotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_annotations");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_annotations");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7564,7 +8590,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_selectedAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_selectedAnnotations");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_selectedAnnotations");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7585,7 +8614,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_annotationVisibleRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_annotationVisibleRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_annotationVisibleRect");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7602,7 +8634,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_allowsAnnotationViewSorting": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_allowsAnnotationViewSorting");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_allowsAnnotationViewSorting");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7616,7 +8651,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_showsUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_showsUserLocation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_showsUserLocation");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7630,7 +8668,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_userLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_userLocation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_userLocation");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7645,7 +8686,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_customizeUserLocationAccuracyCircleRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_customizeUserLocationAccuracyCircleRepresentation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_customizeUserLocationAccuracyCircleRepresentation");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7659,7 +8703,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_userLocationAccuracyCircle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_userLocationAccuracyCircle");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_userLocationAccuracyCircle");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7674,7 +8721,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_userTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_userTrackingMode");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_userTrackingMode");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7688,7 +8738,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_isUserLocationVisible": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isUserLocationVisible");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isUserLocationVisible");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7702,7 +8755,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_distanceFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_distanceFilter");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_distanceFilter");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7716,7 +8772,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_desiredAccuracy": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_desiredAccuracy");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_desiredAccuracy");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7730,7 +8789,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_headingFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_headingFilter");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_headingFilter");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7744,7 +8806,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_pausesLocationUpdatesAutomatically": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_pausesLocationUpdatesAutomatically");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_pausesLocationUpdatesAutomatically");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7758,7 +8823,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_allowsBackgroundLocationUpdates": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_allowsBackgroundLocationUpdates");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_allowsBackgroundLocationUpdates");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7772,7 +8840,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_overlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_overlays");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_overlays");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7793,7 +8864,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_isShowsIndoorMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isShowsIndoorMap");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isShowsIndoorMap");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7807,7 +8881,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_isShowsIndoorMapControl": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_isShowsIndoorMapControl");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isShowsIndoorMapControl");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7821,7 +8898,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_indoorMapControlSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_indoorMapControlSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_indoorMapControlSize");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7838,7 +8918,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::get_customMapStyleEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::get_customMapStyleEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_customMapStyleEnabled");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7852,7 +8935,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::get_fillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::get_fillColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::get_fillColor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7867,7 +8953,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::get_strokeColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::get_strokeColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::get_strokeColor");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7882,7 +8971,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::get_lineWidth": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::get_lineWidth");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::get_lineWidth");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7896,7 +8988,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::get_lineJoinType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::get_lineJoinType");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::get_lineJoinType");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7910,7 +9005,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::get_lineCapType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::get_lineCapType");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::get_lineCapType");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7924,7 +9022,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::get_miterLimit": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::get_miterLimit");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::get_miterLimit");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7938,7 +9039,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::get_lineDash": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::get_lineDash");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::get_lineDash");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7952,7 +9056,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::get_lineDashType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::get_lineDashType");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::get_lineDashType");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7966,7 +9073,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAGroundOverlayRenderer::get_groundOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAGroundOverlayRenderer::get_groundOverlay");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAGroundOverlayRenderer::get_groundOverlay");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7981,7 +9091,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomBuildingOverlayRenderer::get_customBuildingOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomBuildingOverlayRenderer::get_customBuildingOverlay");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomBuildingOverlayRenderer::get_customBuildingOverlay");
+          }
       
           // ref object
           NSInteger refId = [args[@"refId"] integerValue];
@@ -7996,7 +9109,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAGroundOverlay::set_alpha": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAGroundOverlay::set_alpha");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAGroundOverlay::set_alpha");
+          }
       
           // args
           // jsonable arg
@@ -8010,7 +9126,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPinAnnotationView::set_pinColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPinAnnotationView::set_pinColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPinAnnotationView::set_pinColor");
+          }
       
           // args
           // enum arg
@@ -8024,7 +9143,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPinAnnotationView::set_animatesDrop": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPinAnnotationView::set_animatesDrop");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPinAnnotationView::set_animatesDrop");
+          }
       
           // args
           // jsonable arg
@@ -8038,7 +9160,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapNode::set_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapNode::set_coordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapNode::set_coordinate");
+          }
       
           // args
           // struct arg
@@ -8054,7 +9179,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapNode::set_intensity": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapNode::set_intensity");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapNode::set_intensity");
+          }
       
           // args
           // jsonable arg
@@ -8068,7 +9196,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapTileOverlay::set_data": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapTileOverlay::set_data");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapTileOverlay::set_data");
+          }
       
           // args
           // list arg
@@ -8087,7 +9218,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapTileOverlay::set_radius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapTileOverlay::set_radius");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapTileOverlay::set_radius");
+          }
       
           // args
           // jsonable arg
@@ -8101,7 +9235,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapTileOverlay::set_opacity": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapTileOverlay::set_opacity");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapTileOverlay::set_opacity");
+          }
       
           // args
           // jsonable arg
@@ -8115,7 +9252,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapTileOverlay::set_gradient": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapTileOverlay::set_gradient");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapTileOverlay::set_gradient");
+          }
       
           // args
           // ref arg
@@ -8129,7 +9269,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAHeatMapTileOverlay::set_allowRetinaAdapting": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAHeatMapTileOverlay::set_allowRetinaAdapting");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapTileOverlay::set_allowRetinaAdapting");
+          }
       
           // args
           // jsonable arg
@@ -8143,7 +9286,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapStatus::set_centerCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapStatus::set_centerCoordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapStatus::set_centerCoordinate");
+          }
       
           // args
           // struct arg
@@ -8159,7 +9305,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapStatus::set_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapStatus::set_zoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapStatus::set_zoomLevel");
+          }
       
           // args
           // jsonable arg
@@ -8173,7 +9322,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapStatus::set_rotationDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapStatus::set_rotationDegree");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapStatus::set_rotationDegree");
+          }
       
           // args
           // jsonable arg
@@ -8187,7 +9339,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapStatus::set_cameraDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapStatus::set_cameraDegree");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapStatus::set_cameraDegree");
+          }
       
           // args
           // jsonable arg
@@ -8201,7 +9356,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapStatus::set_screenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapStatus::set_screenAnchor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapStatus::set_screenAnchor");
+          }
       
           // args
           // struct arg
@@ -8217,7 +9375,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPointAnnotation::set_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPointAnnotation::set_coordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPointAnnotation::set_coordinate");
+          }
       
           // args
           // struct arg
@@ -8233,7 +9394,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPointAnnotation::set_lockedToScreen": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPointAnnotation::set_lockedToScreen");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPointAnnotation::set_lockedToScreen");
+          }
       
           // args
           // jsonable arg
@@ -8247,7 +9411,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPointAnnotation::set_lockedScreenPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPointAnnotation::set_lockedScreenPoint");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPointAnnotation::set_lockedScreenPoint");
+          }
       
           // args
           // struct arg
@@ -8263,7 +9430,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACircle::set_hollowShapes": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACircle::set_hollowShapes");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACircle::set_hollowShapes");
+          }
       
           // args
           // list arg
@@ -8282,7 +9452,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACircle::set_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACircle::set_coordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACircle::set_coordinate");
+          }
       
           // args
           // struct arg
@@ -8298,7 +9471,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACircle::set_radius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACircle::set_radius");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACircle::set_radius");
+          }
       
           // args
           // jsonable arg
@@ -8312,7 +9488,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotation::set_title": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotation::set_title");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotation::set_title");
+          }
       
           // args
           // jsonable arg
@@ -8326,7 +9505,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotation::set_subtitle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotation::set_subtitle");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotation::set_subtitle");
+          }
       
           // args
           // jsonable arg
@@ -8340,7 +9522,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapCustomStyleOptions::set_styleId": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapCustomStyleOptions::set_styleId");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapCustomStyleOptions::set_styleId");
+          }
       
           // args
           // jsonable arg
@@ -8354,7 +9539,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPolygon::set_hollowShapes": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPolygon::set_hollowShapes");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPolygon::set_hollowShapes");
+          }
       
           // args
           // list arg
@@ -8373,7 +9561,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiColoredPolylineRenderer::set_strokeColors": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiColoredPolylineRenderer::set_strokeColors");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiColoredPolylineRenderer::set_strokeColors");
+          }
       
           // args
           // list arg
@@ -8392,7 +9583,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiColoredPolylineRenderer::set_gradient": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiColoredPolylineRenderer::set_gradient");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiColoredPolylineRenderer::set_gradient");
+          }
       
           // args
           // jsonable arg
@@ -8406,7 +9600,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnimatedAnnotation::set_movingDirection": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnimatedAnnotation::set_movingDirection");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnimatedAnnotation::set_movingDirection");
+          }
       
           // args
           // jsonable arg
@@ -8420,7 +9617,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiTexturePolylineRenderer::set_strokeTextureImages": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiTexturePolylineRenderer::set_strokeTextureImages");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiTexturePolylineRenderer::set_strokeTextureImages");
+          }
       
           // args
           // list arg
@@ -8439,7 +9639,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATraceManager::set_delegate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATraceManager::set_delegate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATraceManager::set_delegate");
+          }
       
           // args
       
@@ -8452,7 +9655,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointOverlayRenderer::set_delegate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointOverlayRenderer::set_delegate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointOverlayRenderer::set_delegate");
+          }
       
           // args
       
@@ -8465,7 +9671,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointOverlayRenderer::set_icon": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointOverlayRenderer::set_icon");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointOverlayRenderer::set_icon");
+          }
       
           // args
           // ref arg
@@ -8479,7 +9688,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointOverlayRenderer::set_pointSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointOverlayRenderer::set_pointSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointOverlayRenderer::set_pointSize");
+          }
       
           // args
           // struct arg
@@ -8495,7 +9707,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointOverlayRenderer::set_anchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointOverlayRenderer::set_anchor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointOverlayRenderer::set_anchor");
+          }
       
           // args
           // struct arg
@@ -8511,7 +9726,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPolylineRenderer::set_is3DArrowLine": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPolylineRenderer::set_is3DArrowLine");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPolylineRenderer::set_is3DArrowLine");
+          }
       
           // args
           // jsonable arg
@@ -8525,7 +9743,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAPolylineRenderer::set_sideColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAPolylineRenderer::set_sideColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPolylineRenderer::set_sideColor");
+          }
       
           // args
           // ref arg
@@ -8539,7 +9760,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAShape::set_title": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAShape::set_title");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAShape::set_title");
+          }
       
           // args
           // jsonable arg
@@ -8553,7 +9777,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAShape::set_subtitle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAShape::set_subtitle");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAShape::set_subtitle");
+          }
       
           // args
           // jsonable arg
@@ -8567,7 +9794,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_zIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_zIndex");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_zIndex");
+          }
       
           // args
           // jsonable arg
@@ -8581,7 +9811,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_annotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_annotation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_annotation");
+          }
       
           // args
           // ref arg
@@ -8595,7 +9828,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_image": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_image");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_image");
+          }
       
           // args
           // ref arg
@@ -8609,7 +9845,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_customCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_customCalloutView");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_customCalloutView");
+          }
       
           // args
           // ref arg
@@ -8623,7 +9862,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_centerOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_centerOffset");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_centerOffset");
+          }
       
           // args
           // struct arg
@@ -8639,7 +9881,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_calloutOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_calloutOffset");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_calloutOffset");
+          }
       
           // args
           // struct arg
@@ -8655,7 +9900,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_enabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_enabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_enabled");
+          }
       
           // args
           // jsonable arg
@@ -8669,7 +9917,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_highlighted": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_highlighted");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_highlighted");
+          }
       
           // args
           // jsonable arg
@@ -8683,7 +9934,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_selected": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_selected");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_selected");
+          }
       
           // args
           // jsonable arg
@@ -8697,7 +9951,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_canShowCallout": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_canShowCallout");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_canShowCallout");
+          }
       
           // args
           // jsonable arg
@@ -8711,7 +9968,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_leftCalloutAccessoryView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_leftCalloutAccessoryView");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_leftCalloutAccessoryView");
+          }
       
           // args
           // ref arg
@@ -8725,7 +9985,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_rightCalloutAccessoryView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_rightCalloutAccessoryView");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_rightCalloutAccessoryView");
+          }
       
           // args
           // ref arg
@@ -8739,7 +10002,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_draggable": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_draggable");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_draggable");
+          }
       
           // args
           // jsonable arg
@@ -8753,7 +10019,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAAnnotationView::set_dragState": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAAnnotationView::set_dragState");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_dragState");
+          }
       
           // args
           // enum arg
@@ -8767,7 +10036,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlay::set_tileSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlay::set_tileSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlay::set_tileSize");
+          }
       
           // args
           // struct arg
@@ -8783,7 +10055,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlay::set_minimumZ": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlay::set_minimumZ");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlay::set_minimumZ");
+          }
       
           // args
           // jsonable arg
@@ -8797,7 +10072,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlay::set_maximumZ": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlay::set_maximumZ");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlay::set_maximumZ");
+          }
       
           // args
           // jsonable arg
@@ -8811,7 +10089,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlay::set_canReplaceMapContent": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlay::set_canReplaceMapContent");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlay::set_canReplaceMapContent");
+          }
       
           // args
           // jsonable arg
@@ -8825,7 +10106,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlay::set_boundingMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlay::set_boundingMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlay::set_boundingMapRect");
+          }
       
           // args
           // struct arg
@@ -8841,7 +10125,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATileOverlay::set_disableOffScreenTileLoading": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATileOverlay::set_disableOffScreenTileLoading");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlay::set_disableOffScreenTileLoading");
+          }
       
           // args
           // jsonable arg
@@ -8855,7 +10142,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOfflineItemCommonCity::set_province": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineItemCommonCity::set_province");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOfflineItemCommonCity::set_province");
+          }
       
           // args
           // ref arg
@@ -8869,7 +10159,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::set_visibile": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::set_visibile");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::set_visibile");
+          }
       
           // args
           // jsonable arg
@@ -8883,7 +10176,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::set_loop": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::set_loop");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::set_loop");
+          }
       
           // args
           // jsonable arg
@@ -8897,7 +10193,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::set_maxParticles": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::set_maxParticles");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::set_maxParticles");
+          }
       
           // args
           // jsonable arg
@@ -8911,7 +10210,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::set_icon": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::set_icon");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::set_icon");
+          }
       
           // args
           // ref arg
@@ -8925,7 +10227,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::set_startParticleSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::set_startParticleSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::set_startParticleSize");
+          }
       
           // args
           // struct arg
@@ -8941,7 +10246,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::set_particleStartColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::set_particleStartColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::set_particleStartColor");
+          }
       
           // args
           // ref arg
@@ -8955,7 +10263,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::set_particleStartSpeed": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::set_particleStartSpeed");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::set_particleStartSpeed");
+          }
       
           // args
           // ref arg
@@ -8969,7 +10280,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::set_particleEmissionModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::set_particleEmissionModule");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::set_particleEmissionModule");
+          }
       
           // args
           // ref arg
@@ -8983,7 +10297,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::set_particleShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::set_particleShapeModule");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::set_particleShapeModule");
+          }
       
           // args
           // ref arg
@@ -8997,7 +10314,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAParticleOverlayOptions::set_particleOverLifeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAParticleOverlayOptions::set_particleOverLifeModule");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::set_particleOverLifeModule");
+          }
       
           // args
           // ref arg
@@ -9011,7 +10331,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayRenderer::set_glPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayRenderer::set_glPoints");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayRenderer::set_glPoints");
+          }
       
           // args
           // list arg
@@ -9033,7 +10356,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayRenderer::set_glPointCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayRenderer::set_glPointCount");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayRenderer::set_glPointCount");
+          }
       
           // args
           // jsonable arg
@@ -9047,7 +10373,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayRenderer::set_strokeImage": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayRenderer::set_strokeImage");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayRenderer::set_strokeImage");
+          }
       
           // args
           // ref arg
@@ -9061,7 +10390,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayRenderer::set_alpha": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayRenderer::set_alpha");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayRenderer::set_alpha");
+          }
       
           // args
           // jsonable arg
@@ -9075,7 +10407,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointItem::set_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointItem::set_coordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointItem::set_coordinate");
+          }
       
           // args
           // struct arg
@@ -9091,7 +10426,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointItem::set_customID": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointItem::set_customID");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointItem::set_customID");
+          }
       
           // args
           // jsonable arg
@@ -9105,7 +10443,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointItem::set_title": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointItem::set_title");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointItem::set_title");
+          }
       
           // args
           // jsonable arg
@@ -9119,7 +10460,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMultiPointItem::set_subtitle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiPointItem::set_subtitle");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPointItem::set_subtitle");
+          }
       
           // args
           // jsonable arg
@@ -9133,7 +10477,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomBuildingOverlayOption::set_height": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomBuildingOverlayOption::set_height");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomBuildingOverlayOption::set_height");
+          }
       
           // args
           // jsonable arg
@@ -9147,7 +10494,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomBuildingOverlayOption::set_heightScale": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomBuildingOverlayOption::set_heightScale");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomBuildingOverlayOption::set_heightScale");
+          }
       
           // args
           // jsonable arg
@@ -9161,7 +10511,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomBuildingOverlayOption::set_topColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomBuildingOverlayOption::set_topColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomBuildingOverlayOption::set_topColor");
+          }
       
           // args
           // ref arg
@@ -9175,7 +10528,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomBuildingOverlayOption::set_sideColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomBuildingOverlayOption::set_sideColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomBuildingOverlayOption::set_sideColor");
+          }
       
           // args
           // ref arg
@@ -9189,7 +10545,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MACustomBuildingOverlayOption::set_visibile": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MACustomBuildingOverlayOption::set_visibile");
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomBuildingOverlayOption::set_visibile");
+          }
       
           // args
           // jsonable arg
@@ -9203,7 +10562,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATracePoint::set_latitude": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATracePoint::set_latitude");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATracePoint::set_latitude");
+          }
       
           // args
           // jsonable arg
@@ -9217,7 +10579,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATracePoint::set_longitude": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATracePoint::set_longitude");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATracePoint::set_longitude");
+          }
       
           // args
           // jsonable arg
@@ -9231,7 +10596,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATraceLocation::set_loc": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATraceLocation::set_loc");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATraceLocation::set_loc");
+          }
       
           // args
           // struct arg
@@ -9247,7 +10615,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATraceLocation::set_angle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATraceLocation::set_angle");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATraceLocation::set_angle");
+          }
       
           // args
           // jsonable arg
@@ -9261,7 +10632,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATraceLocation::set_speed": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATraceLocation::set_speed");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATraceLocation::set_speed");
+          }
       
           // args
           // jsonable arg
@@ -9275,7 +10649,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MATraceLocation::set_time": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MATraceLocation::set_time");
+          // print log
+          if (enableLog) {
+              NSLog(@"MATraceLocation::set_time");
+          }
       
           // args
           // jsonable arg
@@ -9289,7 +10666,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAArc::set_startCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAArc::set_startCoordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAArc::set_startCoordinate");
+          }
       
           // args
           // struct arg
@@ -9305,7 +10685,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAArc::set_passedCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAArc::set_passedCoordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAArc::set_passedCoordinate");
+          }
       
           // args
           // struct arg
@@ -9321,7 +10704,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAArc::set_endCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAArc::set_endCoordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAArc::set_endCoordinate");
+          }
       
           // args
           // struct arg
@@ -9337,7 +10723,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::set_showsAccuracyRing": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::set_showsAccuracyRing");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::set_showsAccuracyRing");
+          }
       
           // args
           // jsonable arg
@@ -9351,7 +10740,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::set_showsHeadingIndicator": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::set_showsHeadingIndicator");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::set_showsHeadingIndicator");
+          }
       
           // args
           // jsonable arg
@@ -9365,7 +10757,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::set_fillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::set_fillColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::set_fillColor");
+          }
       
           // args
           // ref arg
@@ -9379,7 +10774,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::set_strokeColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::set_strokeColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::set_strokeColor");
+          }
       
           // args
           // ref arg
@@ -9393,7 +10791,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::set_lineWidth": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::set_lineWidth");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::set_lineWidth");
+          }
       
           // args
           // jsonable arg
@@ -9407,7 +10808,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::set_locationDotBgColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::set_locationDotBgColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::set_locationDotBgColor");
+          }
       
           // args
           // ref arg
@@ -9421,7 +10825,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::set_locationDotFillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::set_locationDotFillColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::set_locationDotFillColor");
+          }
       
           // args
           // ref arg
@@ -9435,7 +10842,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::set_enablePulseAnnimation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::set_enablePulseAnnimation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::set_enablePulseAnnimation");
+          }
       
           // args
           // jsonable arg
@@ -9449,7 +10859,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAUserLocationRepresentation::set_image": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAUserLocationRepresentation::set_image");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAUserLocationRepresentation::set_image");
+          }
       
           // args
           // ref arg
@@ -9463,7 +10876,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_delegate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_delegate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_delegate");
+          }
       
           // args
       
@@ -9476,7 +10892,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_mapType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_mapType");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_mapType");
+          }
       
           // args
           // enum arg
@@ -9490,7 +10909,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_centerCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_centerCoordinate");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_centerCoordinate");
+          }
       
           // args
           // struct arg
@@ -9506,7 +10928,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_region": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_region");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_region");
+          }
       
           // args
           // struct arg
@@ -9522,7 +10947,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_visibleMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_visibleMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_visibleMapRect");
+          }
       
           // args
           // struct arg
@@ -9538,7 +10966,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_limitRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_limitRegion");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_limitRegion");
+          }
       
           // args
           // struct arg
@@ -9554,7 +10985,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_limitMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_limitMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_limitMapRect");
+          }
       
           // args
           // struct arg
@@ -9570,7 +11004,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_zoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_zoomLevel");
+          }
       
           // args
           // jsonable arg
@@ -9584,7 +11021,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_minZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_minZoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_minZoomLevel");
+          }
       
           // args
           // jsonable arg
@@ -9598,7 +11038,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_maxZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_maxZoomLevel");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_maxZoomLevel");
+          }
       
           // args
           // jsonable arg
@@ -9612,7 +11055,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_rotationDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_rotationDegree");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_rotationDegree");
+          }
       
           // args
           // jsonable arg
@@ -9626,7 +11072,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_cameraDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_cameraDegree");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_cameraDegree");
+          }
       
           // args
           // jsonable arg
@@ -9640,7 +11089,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_zoomingInPivotsAroundAnchorPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_zoomingInPivotsAroundAnchorPoint");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_zoomingInPivotsAroundAnchorPoint");
+          }
       
           // args
           // jsonable arg
@@ -9654,7 +11106,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_zoomEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_zoomEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_zoomEnabled");
+          }
       
           // args
           // jsonable arg
@@ -9668,7 +11123,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_scrollEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_scrollEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_scrollEnabled");
+          }
       
           // args
           // jsonable arg
@@ -9682,7 +11140,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_rotateEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_rotateEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_rotateEnabled");
+          }
       
           // args
           // jsonable arg
@@ -9696,7 +11157,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_rotateCameraEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_rotateCameraEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_rotateCameraEnabled");
+          }
       
           // args
           // jsonable arg
@@ -9710,7 +11174,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_skyModelEnable": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_skyModelEnable");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_skyModelEnable");
+          }
       
           // args
           // jsonable arg
@@ -9724,7 +11191,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_showsBuildings": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsBuildings");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsBuildings");
+          }
       
           // args
           // jsonable arg
@@ -9738,7 +11208,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_showsLabels": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsLabels");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsLabels");
+          }
       
           // args
           // jsonable arg
@@ -9752,7 +11225,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_showTraffic": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showTraffic");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showTraffic");
+          }
       
           // args
           // jsonable arg
@@ -9766,7 +11242,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_trafficRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_trafficRatio");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_trafficRatio");
+          }
       
           // args
           // jsonable arg
@@ -9780,7 +11259,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_touchPOIEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_touchPOIEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_touchPOIEnabled");
+          }
       
           // args
           // jsonable arg
@@ -9794,7 +11276,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_showsCompass": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsCompass");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsCompass");
+          }
       
           // args
           // jsonable arg
@@ -9808,7 +11293,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_compassOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_compassOrigin");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_compassOrigin");
+          }
       
           // args
           // struct arg
@@ -9824,7 +11312,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_showsScale": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsScale");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsScale");
+          }
       
           // args
           // jsonable arg
@@ -9838,7 +11329,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_scaleOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_scaleOrigin");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_scaleOrigin");
+          }
       
           // args
           // struct arg
@@ -9854,7 +11348,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_logoCenter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_logoCenter");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_logoCenter");
+          }
       
           // args
           // struct arg
@@ -9870,7 +11367,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_maxRenderFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_maxRenderFrame");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_maxRenderFrame");
+          }
       
           // args
           // jsonable arg
@@ -9884,7 +11384,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_isAllowDecreaseFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_isAllowDecreaseFrame");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_isAllowDecreaseFrame");
+          }
       
           // args
           // jsonable arg
@@ -9898,7 +11401,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_openGLESDisabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_openGLESDisabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_openGLESDisabled");
+          }
       
           // args
           // jsonable arg
@@ -9912,7 +11418,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_screenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_screenAnchor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_screenAnchor");
+          }
       
           // args
           // struct arg
@@ -9928,7 +11437,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_selectedAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_selectedAnnotations");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_selectedAnnotations");
+          }
       
           // args
           // list arg
@@ -9947,7 +11459,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_allowsAnnotationViewSorting": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_allowsAnnotationViewSorting");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_allowsAnnotationViewSorting");
+          }
       
           // args
           // jsonable arg
@@ -9961,7 +11476,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_showsUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsUserLocation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsUserLocation");
+          }
       
           // args
           // jsonable arg
@@ -9975,7 +11493,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_customizeUserLocationAccuracyCircleRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_customizeUserLocationAccuracyCircleRepresentation");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_customizeUserLocationAccuracyCircleRepresentation");
+          }
       
           // args
           // jsonable arg
@@ -9989,7 +11510,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_userTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_userTrackingMode");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_userTrackingMode");
+          }
       
           // args
           // enum arg
@@ -10003,7 +11527,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_distanceFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_distanceFilter");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_distanceFilter");
+          }
       
           // args
           // jsonable arg
@@ -10017,7 +11544,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_desiredAccuracy": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_desiredAccuracy");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_desiredAccuracy");
+          }
       
           // args
           // jsonable arg
@@ -10031,7 +11561,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_headingFilter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_headingFilter");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_headingFilter");
+          }
       
           // args
           // jsonable arg
@@ -10045,7 +11578,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_pausesLocationUpdatesAutomatically": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_pausesLocationUpdatesAutomatically");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_pausesLocationUpdatesAutomatically");
+          }
       
           // args
           // jsonable arg
@@ -10059,7 +11595,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_allowsBackgroundLocationUpdates": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_allowsBackgroundLocationUpdates");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_allowsBackgroundLocationUpdates");
+          }
       
           // args
           // jsonable arg
@@ -10073,7 +11612,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_showsIndoorMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsIndoorMap");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsIndoorMap");
+          }
       
           // args
           // jsonable arg
@@ -10087,7 +11629,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_showsIndoorMapControl": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_showsIndoorMapControl");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsIndoorMapControl");
+          }
       
           // args
           // jsonable arg
@@ -10101,7 +11646,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAMapView::set_customMapStyleEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMapView::set_customMapStyleEnabled");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_customMapStyleEnabled");
+          }
       
           // args
           // jsonable arg
@@ -10115,7 +11663,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::set_fillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::set_fillColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::set_fillColor");
+          }
       
           // args
           // ref arg
@@ -10129,7 +11680,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::set_strokeColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::set_strokeColor");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::set_strokeColor");
+          }
       
           // args
           // ref arg
@@ -10143,7 +11697,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::set_lineWidth": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::set_lineWidth");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::set_lineWidth");
+          }
       
           // args
           // jsonable arg
@@ -10157,7 +11714,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::set_lineJoinType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::set_lineJoinType");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::set_lineJoinType");
+          }
       
           // args
           // enum arg
@@ -10171,7 +11731,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::set_lineCapType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::set_lineCapType");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::set_lineCapType");
+          }
       
           // args
           // enum arg
@@ -10185,7 +11748,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::set_miterLimit": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::set_miterLimit");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::set_miterLimit");
+          }
       
           // args
           // jsonable arg
@@ -10199,7 +11765,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::set_lineDash": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::set_lineDash");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::set_lineDash");
+          }
       
           // args
           // jsonable arg
@@ -10213,7 +11782,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"MAOverlayPathRenderer::set_lineDashType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOverlayPathRenderer::set_lineDashType");
+          // print log
+          if (enableLog) {
+              NSLog(@"MAOverlayPathRenderer::set_lineDashType");
+          }
       
           // args
           // enum arg
@@ -11657,475 +13229,514 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       },
       
       @"ObjectFactory::createMAOfflineCity": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAOfflineCity");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAOfflineCity");
+          }
       
           MAOfflineCity* ref = [[MAOfflineCity alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAOfflineItemNationWide": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAOfflineItemNationWide");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAOfflineItemNationWide");
+          }
       
           MAOfflineItemNationWide* ref = [[MAOfflineItemNationWide alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMultiPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAMultiPoint");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAMultiPoint");
+          }
       
           MAMultiPoint* ref = [[MAMultiPoint alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAGroundOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAGroundOverlay");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAGroundOverlay");
+          }
       
           MAGroundOverlay* ref = [[MAGroundOverlay alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAPolygonRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAPolygonRenderer");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAPolygonRenderer");
+          }
       
           MAPolygonRenderer* ref = [[MAPolygonRenderer alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAPinAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAPinAnnotationView");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAPinAnnotationView");
+          }
       
           MAPinAnnotationView* ref = [[MAPinAnnotationView alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAHeatMapNode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAHeatMapNode");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAHeatMapNode");
+          }
       
           MAHeatMapNode* ref = [[MAHeatMapNode alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAHeatMapGradient": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAHeatMapGradient");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAHeatMapGradient");
+          }
       
           MAHeatMapGradient* ref = [[MAHeatMapGradient alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAHeatMapTileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAHeatMapTileOverlay");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAHeatMapTileOverlay");
+          }
       
           MAHeatMapTileOverlay* ref = [[MAHeatMapTileOverlay alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMapStatus": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAMapStatus");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAMapStatus");
+          }
       
           MAMapStatus* ref = [[MAMapStatus alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAPointAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAPointAnnotation");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAPointAnnotation");
+          }
       
           MAPointAnnotation* ref = [[MAPointAnnotation alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMACircle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMACircle");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMACircle");
+          }
       
           MACircle* ref = [[MACircle alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAArcRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAArcRenderer");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAArcRenderer");
+          }
       
           MAArcRenderer* ref = [[MAArcRenderer alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMapCustomStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAMapCustomStyleOptions");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAMapCustomStyleOptions");
+          }
       
           MAMapCustomStyleOptions* ref = [[MAMapCustomStyleOptions alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAPolygon": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAPolygon");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAPolygon");
+          }
       
           MAPolygon* ref = [[MAPolygon alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAParticleOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAParticleOverlay");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAParticleOverlay");
+          }
       
           MAParticleOverlay* ref = [[MAParticleOverlay alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAPolyline");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAPolyline");
+          }
       
           MAPolyline* ref = [[MAPolyline alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMultiColoredPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAMultiColoredPolylineRenderer");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAMultiColoredPolylineRenderer");
+          }
       
           MAMultiColoredPolylineRenderer* ref = [[MAMultiColoredPolylineRenderer alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAAnimatedAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAAnimatedAnnotation");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAAnimatedAnnotation");
+          }
       
           MAAnimatedAnnotation* ref = [[MAAnimatedAnnotation alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMultiTexturePolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAMultiTexturePolylineRenderer");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAMultiTexturePolylineRenderer");
+          }
       
           MAMultiTexturePolylineRenderer* ref = [[MAMultiTexturePolylineRenderer alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAOfflineProvince": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAOfflineProvince");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAOfflineProvince");
+          }
       
           MAOfflineProvince* ref = [[MAOfflineProvince alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMATileOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMATileOverlayRenderer");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMATileOverlayRenderer");
+          }
       
           MATileOverlayRenderer* ref = [[MATileOverlayRenderer alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAOfflineItem": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAOfflineItem");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAOfflineItem");
+          }
       
           MAOfflineItem* ref = [[MAOfflineItem alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAGeodesicPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAGeodesicPolyline");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAGeodesicPolyline");
+          }
       
           MAGeodesicPolyline* ref = [[MAGeodesicPolyline alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMATouchPoi": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMATouchPoi");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMATouchPoi");
+          }
       
           MATouchPoi* ref = [[MATouchPoi alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAOfflineItemMunicipality": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAOfflineItemMunicipality");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAOfflineItemMunicipality");
+          }
       
           MAOfflineItemMunicipality* ref = [[MAOfflineItemMunicipality alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMultiPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAMultiPolyline");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAMultiPolyline");
+          }
       
           MAMultiPolyline* ref = [[MAMultiPolyline alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMATraceManager": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMATraceManager");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMATraceManager");
+          }
       
           MATraceManager* ref = [[MATraceManager alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMultiPointOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAMultiPointOverlayRenderer");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAMultiPointOverlayRenderer");
+          }
       
           MAMultiPointOverlayRenderer* ref = [[MAMultiPointOverlayRenderer alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAIndoorFloorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAIndoorFloorInfo");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAIndoorFloorInfo");
+          }
       
           MAIndoorFloorInfo* ref = [[MAIndoorFloorInfo alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAIndoorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAIndoorInfo");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAIndoorInfo");
+          }
       
           MAIndoorInfo* ref = [[MAIndoorInfo alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAPolylineRenderer");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAPolylineRenderer");
+          }
       
           MAPolylineRenderer* ref = [[MAPolylineRenderer alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAAnnotationMoveAnimation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAAnnotationMoveAnimation");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAAnnotationMoveAnimation");
+          }
       
           MAAnnotationMoveAnimation* ref = [[MAAnnotationMoveAnimation alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAShape": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAShape");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAShape");
+          }
       
           MAShape* ref = [[MAShape alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAAnnotationView");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAAnnotationView");
+          }
       
           MAAnnotationView* ref = [[MAAnnotationView alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMATileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMATileOverlay");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMATileOverlay");
+          }
       
           MATileOverlay* ref = [[MATileOverlay alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMATileOverlayPath": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMATileOverlayPath");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMATileOverlayPath");
+          }
       
           MATileOverlayPath data;
       
@@ -12134,78 +13745,84 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMACustomCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMACustomCalloutView");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMACustomCalloutView");
+          }
       
           MACustomCalloutView* ref = [[MACustomCalloutView alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAOfflineItemCommonCity": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAOfflineItemCommonCity");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAOfflineItemCommonCity");
+          }
       
           MAOfflineItemCommonCity* ref = [[MAOfflineItemCommonCity alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAOfflineMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAOfflineMap");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAOfflineMap");
+          }
       
           MAOfflineMap* ref = [[MAOfflineMap alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMACircleRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMACircleRenderer");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMACircleRenderer");
+          }
       
           MACircleRenderer* ref = [[MACircleRenderer alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAParticleOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAParticleOverlayRenderer");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAParticleOverlayRenderer");
+          }
       
           MAParticleOverlayRenderer* ref = [[MAParticleOverlayRenderer alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMACoordinateBounds": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMACoordinateBounds");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMACoordinateBounds");
+          }
       
           MACoordinateBounds data;
       
@@ -12214,13 +13831,14 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMACoordinateSpan": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMACoordinateSpan");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMACoordinateSpan");
+          }
       
           MACoordinateSpan data;
       
@@ -12229,13 +13847,14 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMACoordinateRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMACoordinateRegion");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMACoordinateRegion");
+          }
       
           MACoordinateRegion data;
       
@@ -12244,13 +13863,14 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMapPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAMapPoint");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAMapPoint");
+          }
       
           MAMapPoint data;
       
@@ -12259,13 +13879,14 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMapSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAMapSize");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAMapSize");
+          }
       
           MAMapSize data;
       
@@ -12274,13 +13895,14 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAMapRect");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAMapRect");
+          }
       
           MAMapRect data;
       
@@ -12289,321 +13911,343 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
           methodResult(@(dataValue.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAParticleRandomVelocityGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAParticleRandomVelocityGenerate");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAParticleRandomVelocityGenerate");
+          }
       
           MAParticleRandomVelocityGenerate* ref = [[MAParticleRandomVelocityGenerate alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAParticleRandomColorGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAParticleRandomColorGenerate");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAParticleRandomColorGenerate");
+          }
       
           MAParticleRandomColorGenerate* ref = [[MAParticleRandomColorGenerate alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAParticleConstantRotationGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAParticleConstantRotationGenerate");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAParticleConstantRotationGenerate");
+          }
       
           MAParticleConstantRotationGenerate* ref = [[MAParticleConstantRotationGenerate alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAParticleCurveSizeGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAParticleCurveSizeGenerate");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAParticleCurveSizeGenerate");
+          }
       
           MAParticleCurveSizeGenerate* ref = [[MAParticleCurveSizeGenerate alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAParticleEmissionModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAParticleEmissionModule");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAParticleEmissionModule");
+          }
       
           MAParticleEmissionModule* ref = [[MAParticleEmissionModule alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAParticleSinglePointShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAParticleSinglePointShapeModule");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAParticleSinglePointShapeModule");
+          }
       
           MAParticleSinglePointShapeModule* ref = [[MAParticleSinglePointShapeModule alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAParticleRectShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAParticleRectShapeModule");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAParticleRectShapeModule");
+          }
       
           MAParticleRectShapeModule* ref = [[MAParticleRectShapeModule alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAParticleOverLifeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAParticleOverLifeModule");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAParticleOverLifeModule");
+          }
       
           MAParticleOverLifeModule* ref = [[MAParticleOverLifeModule alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAParticleOverlayOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAParticleOverlayOptions");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAParticleOverlayOptions");
+          }
       
           MAParticleOverlayOptions* ref = [[MAParticleOverlayOptions alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAParticleOverlayOptionsFactory": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAParticleOverlayOptionsFactory");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAParticleOverlayOptionsFactory");
+          }
       
           MAParticleOverlayOptionsFactory* ref = [[MAParticleOverlayOptionsFactory alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAOverlayRenderer");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAOverlayRenderer");
+          }
       
           MAOverlayRenderer* ref = [[MAOverlayRenderer alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAUserLocation");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAUserLocation");
+          }
       
           MAUserLocation* ref = [[MAUserLocation alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMultiPointItem": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAMultiPointItem");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAMultiPointItem");
+          }
       
           MAMultiPointItem* ref = [[MAMultiPointItem alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMultiPointOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAMultiPointOverlay");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAMultiPointOverlay");
+          }
       
           MAMultiPointOverlay* ref = [[MAMultiPointOverlay alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMACustomBuildingOverlayOption": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMACustomBuildingOverlayOption");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMACustomBuildingOverlayOption");
+          }
       
           MACustomBuildingOverlayOption* ref = [[MACustomBuildingOverlayOption alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMACustomBuildingOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMACustomBuildingOverlay");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMACustomBuildingOverlay");
+          }
       
           MACustomBuildingOverlay* ref = [[MACustomBuildingOverlay alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMATracePoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMATracePoint");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMATracePoint");
+          }
       
           MATracePoint* ref = [[MATracePoint alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMATraceLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMATraceLocation");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMATraceLocation");
+          }
       
           MATraceLocation* ref = [[MATraceLocation alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAArc": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAArc");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAArc");
+          }
       
           MAArc* ref = [[MAArc alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAUserLocationRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAUserLocationRepresentation");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAUserLocationRepresentation");
+          }
       
           MAUserLocationRepresentation* ref = [[MAUserLocationRepresentation alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMapView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAMapView");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAMapView");
+          }
       
           MAMapView* ref = [[MAMapView alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAOverlayPathRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAOverlayPathRenderer");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAOverlayPathRenderer");
+          }
       
           MAOverlayPathRenderer* ref = [[MAOverlayPathRenderer alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAGroundOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMAGroundOverlayRenderer");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMAGroundOverlayRenderer");
+          }
       
           MAGroundOverlayRenderer* ref = [[MAGroundOverlayRenderer alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMACustomBuildingOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"ObjectFactory::createMACustomBuildingOverlayRenderer");
+          // print log
+          if (enableLog) {
+              NSLog(@"ObjectFactory::createMACustomBuildingOverlayRenderer");
+          }
       
           MACustomBuildingOverlayRenderer* ref = [[MACustomBuildingOverlayRenderer alloc] init];
           HEAP[@(ref.hash)] = ref;
       
           methodResult(@(ref.hash));
       
-      #ifdef DEBUG
-          NSLog(@"HEAP: %@", HEAP);
-      #endif
+          if (enableLog) NSLog(@"HEAP: %@", HEAP);
       },
       
       @"MACoordinateBoundsMake::MACoordinateBoundsMake": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -12621,7 +14265,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MACoordinateBoundsMake::MACoordinateBoundsMake(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACoordinateBoundsMake::MACoordinateBoundsMake(暂未实现参数打印)");
+          }
       
           // invoke native method
           MACoordinateBounds result = MACoordinateBoundsMake(northEast, southWest);
@@ -12644,7 +14290,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MACoordinateSpanMake::MACoordinateSpanMake(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACoordinateSpanMake::MACoordinateSpanMake(暂未实现参数打印)");
+          }
       
           // invoke native method
           MACoordinateSpan result = MACoordinateSpanMake(latitudeDelta, longitudeDelta);
@@ -12671,7 +14319,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MACoordinateRegionMake::MACoordinateRegionMake(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACoordinateRegionMake::MACoordinateRegionMake(暂未实现参数打印)");
+          }
       
           // invoke native method
           MACoordinateRegion result = MACoordinateRegionMake(centerCoordinate, span);
@@ -12698,7 +14348,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance(暂未实现参数打印)");
+          }
       
           // invoke native method
           MACoordinateRegion result = MACoordinateRegionMakeWithDistance(centerCoordinate, latitudinalMeters, longitudinalMeters);
@@ -12721,7 +14373,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapPointForCoordinate::MAMapPointForCoordinate(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapPointForCoordinate::MAMapPointForCoordinate(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAMapPoint result = MAMapPointForCoordinate(coordinate);
@@ -12744,7 +14398,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MACoordinateForMapPoint::MACoordinateForMapPoint(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACoordinateForMapPoint::MACoordinateForMapPoint(暂未实现参数打印)");
+          }
       
           // invoke native method
           CLLocationCoordinate2D result = MACoordinateForMapPoint(mapPoint);
@@ -12767,7 +14423,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MACoordinateRegionForMapRect::MACoordinateRegionForMapRect(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACoordinateRegionForMapRect::MACoordinateRegionForMapRect(暂未实现参数打印)");
+          }
       
           // invoke native method
           MACoordinateRegion result = MACoordinateRegionForMapRect(rect);
@@ -12790,7 +14448,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectForCoordinateRegion::MAMapRectForCoordinateRegion(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectForCoordinateRegion::MAMapRectForCoordinateRegion(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAMapRect result = MAMapRectForCoordinateRegion(region);
@@ -12811,7 +14471,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMetersPerMapPointAtLatitude::MAMetersPerMapPointAtLatitude(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMetersPerMapPointAtLatitude::MAMetersPerMapPointAtLatitude(暂未实现参数打印)");
+          }
       
           // invoke native method
           CLLocationDistance result = MAMetersPerMapPointAtLatitude(latitude);
@@ -12829,7 +14491,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapPointsPerMeterAtLatitude::MAMapPointsPerMeterAtLatitude(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapPointsPerMeterAtLatitude::MAMapPointsPerMeterAtLatitude(暂未实现参数打印)");
+          }
       
           // invoke native method
           double result = MAMapPointsPerMeterAtLatitude(latitude);
@@ -12853,7 +14517,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMetersBetweenMapPoints::MAMetersBetweenMapPoints(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMetersBetweenMapPoints::MAMetersBetweenMapPoints(暂未实现参数打印)");
+          }
       
           // invoke native method
           CLLocationDistance result = MAMetersBetweenMapPoints(a, b);
@@ -12877,7 +14543,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAAreaBetweenCoordinates::MAAreaBetweenCoordinates(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAreaBetweenCoordinates::MAAreaBetweenCoordinates(暂未实现参数打印)");
+          }
       
           // invoke native method
           double result = MAAreaBetweenCoordinates(northEast, southWest);
@@ -12901,7 +14569,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectInset::MAMapRectInset(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectInset::MAMapRectInset(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAMapRect result = MAMapRectInset(rect, dx, dy);
@@ -12928,7 +14598,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectUnion::MAMapRectUnion(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectUnion::MAMapRectUnion(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAMapRect result = MAMapRectUnion(rect1, rect2);
@@ -12955,7 +14627,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapSizeContainsSize::MAMapSizeContainsSize(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapSizeContainsSize::MAMapSizeContainsSize(暂未实现参数打印)");
+          }
       
           // invoke native method
           BOOL result = MAMapSizeContainsSize(size1, size2);
@@ -12979,7 +14653,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectContainsPoint::MAMapRectContainsPoint(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectContainsPoint::MAMapRectContainsPoint(暂未实现参数打印)");
+          }
       
           // invoke native method
           BOOL result = MAMapRectContainsPoint(rect, point);
@@ -13003,7 +14679,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectIntersectsRect::MAMapRectIntersectsRect(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectIntersectsRect::MAMapRectIntersectsRect(暂未实现参数打印)");
+          }
       
           // invoke native method
           BOOL result = MAMapRectIntersectsRect(rect1, rect2);
@@ -13027,7 +14705,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectContainsRect::MAMapRectContainsRect(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectContainsRect::MAMapRectContainsRect(暂未实现参数打印)");
+          }
       
           // invoke native method
           BOOL result = MAMapRectContainsRect(rect1, rect2);
@@ -13053,7 +14733,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MACircleContainsPoint::MACircleContainsPoint(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACircleContainsPoint::MACircleContainsPoint(暂未实现参数打印)");
+          }
       
           // invoke native method
           BOOL result = MACircleContainsPoint(point, center, radius);
@@ -13079,7 +14761,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MACircleContainsCoordinate::MACircleContainsCoordinate(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACircleContainsCoordinate::MACircleContainsCoordinate(暂未实现参数打印)");
+          }
       
           // invoke native method
           BOOL result = MACircleContainsCoordinate(point, center, radius);
@@ -13111,7 +14795,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAPolygonContainsPoint::MAPolygonContainsPoint(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAPolygonContainsPoint::MAPolygonContainsPoint(暂未实现参数打印)");
+          }
       
           // invoke native method
           BOOL result = MAPolygonContainsPoint(point, polygon, count);
@@ -13143,7 +14829,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAPolygonContainsCoordinate::MAPolygonContainsCoordinate(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAPolygonContainsCoordinate::MAPolygonContainsCoordinate(暂未实现参数打印)");
+          }
       
           // invoke native method
           BOOL result = MAPolygonContainsCoordinate(point, polygon, count);
@@ -13171,7 +14859,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAGetNearestMapPointFromLine::MAGetNearestMapPointFromLine(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAGetNearestMapPointFromLine::MAGetNearestMapPointFromLine(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAMapPoint result = MAGetNearestMapPointFromLine(lineStart, lineEnd, point);
@@ -13202,7 +14892,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAAreaForPolygon::MAAreaForPolygon(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAreaForPolygon::MAAreaForPolygon(暂未实现参数打印)");
+          }
       
           // invoke native method
           double result = MAAreaForPolygon(coordinates, count);
@@ -13222,7 +14914,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapPointMake::MAMapPointMake(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapPointMake::MAMapPointMake(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAMapPoint result = MAMapPointMake(x, y);
@@ -13245,7 +14939,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapSizeMake::MAMapSizeMake(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapSizeMake::MAMapSizeMake(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAMapSize result = MAMapSizeMake(width, height);
@@ -13272,7 +14968,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectMake::MAMapRectMake(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectMake::MAMapRectMake(暂未实现参数打印)");
+          }
       
           // invoke native method
           MAMapRect result = MAMapRectMake(x, y, width, height);
@@ -13295,7 +14993,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectGetMinX::MAMapRectGetMinX(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectGetMinX::MAMapRectGetMinX(暂未实现参数打印)");
+          }
       
           // invoke native method
           double result = MAMapRectGetMinX(rect);
@@ -13315,7 +15015,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectGetMinY::MAMapRectGetMinY(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectGetMinY::MAMapRectGetMinY(暂未实现参数打印)");
+          }
       
           // invoke native method
           double result = MAMapRectGetMinY(rect);
@@ -13335,7 +15037,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectGetMidX::MAMapRectGetMidX(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectGetMidX::MAMapRectGetMidX(暂未实现参数打印)");
+          }
       
           // invoke native method
           double result = MAMapRectGetMidX(rect);
@@ -13355,7 +15059,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectGetMidY::MAMapRectGetMidY(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectGetMidY::MAMapRectGetMidY(暂未实现参数打印)");
+          }
       
           // invoke native method
           double result = MAMapRectGetMidY(rect);
@@ -13375,7 +15081,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectGetMaxX::MAMapRectGetMaxX(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectGetMaxX::MAMapRectGetMaxX(暂未实现参数打印)");
+          }
       
           // invoke native method
           double result = MAMapRectGetMaxX(rect);
@@ -13395,7 +15103,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectGetMaxY::MAMapRectGetMaxY(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectGetMaxY::MAMapRectGetMaxY(暂未实现参数打印)");
+          }
       
           // invoke native method
           double result = MAMapRectGetMaxY(rect);
@@ -13415,7 +15125,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectGetWidth::MAMapRectGetWidth(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectGetWidth::MAMapRectGetWidth(暂未实现参数打印)");
+          }
       
           // invoke native method
           double result = MAMapRectGetWidth(rect);
@@ -13435,7 +15147,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectGetHeight::MAMapRectGetHeight(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectGetHeight::MAMapRectGetHeight(暂未实现参数打印)");
+          }
       
           // invoke native method
           double result = MAMapRectGetHeight(rect);
@@ -13459,7 +15173,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapPointEqualToPoint::MAMapPointEqualToPoint(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapPointEqualToPoint::MAMapPointEqualToPoint(暂未实现参数打印)");
+          }
       
           // invoke native method
           BOOL result = MAMapPointEqualToPoint(point1, point2);
@@ -13483,7 +15199,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapSizeEqualToSize::MAMapSizeEqualToSize(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapSizeEqualToSize::MAMapSizeEqualToSize(暂未实现参数打印)");
+          }
       
           // invoke native method
           BOOL result = MAMapSizeEqualToSize(size1, size2);
@@ -13507,7 +15225,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectEqualToRect::MAMapRectEqualToRect(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectEqualToRect::MAMapRectEqualToRect(暂未实现参数打印)");
+          }
       
           // invoke native method
           BOOL result = MAMapRectEqualToRect(rect1, rect2);
@@ -13527,7 +15247,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectIsNull::MAMapRectIsNull(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectIsNull::MAMapRectIsNull(暂未实现参数打印)");
+          }
       
           // invoke native method
           BOOL result = MAMapRectIsNull(rect);
@@ -13547,7 +15269,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAMapRectIsEmpty::MAMapRectIsEmpty(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapRectIsEmpty::MAMapRectIsEmpty(暂未实现参数打印)");
+          }
       
           // invoke native method
           BOOL result = MAMapRectIsEmpty(rect);
@@ -13567,7 +15291,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAStringFromMapPoint::MAStringFromMapPoint(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAStringFromMapPoint::MAStringFromMapPoint(暂未实现参数打印)");
+          }
       
           // invoke native method
           NSString* result = MAStringFromMapPoint(point);
@@ -13587,7 +15313,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAStringFromMapSize::MAStringFromMapSize(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAStringFromMapSize::MAStringFromMapSize(暂未实现参数打印)");
+          }
       
           // invoke native method
           NSString* result = MAStringFromMapSize(size);
@@ -13607,7 +15335,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAStringFromMapRect::MAStringFromMapRect(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAStringFromMapRect::MAStringFromMapRect(暂未实现参数打印)");
+          }
       
           // invoke native method
           NSString* result = MAStringFromMapRect(rect);
@@ -13631,7 +15361,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAGetDirectionFromCoords::MAGetDirectionFromCoords(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAGetDirectionFromCoords::MAGetDirectionFromCoords(暂未实现参数打印)");
+          }
       
           // invoke native method
           CLLocationDirection result = MAGetDirectionFromCoords(fromCoord, toCoord);
@@ -13655,7 +15387,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAGetDirectionFromPoints::MAGetDirectionFromPoints(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAGetDirectionFromPoints::MAGetDirectionFromPoints(暂未实现参数打印)");
+          }
       
           // invoke native method
           CLLocationDirection result = MAGetDirectionFromPoints(fromPoint, toPoint);
@@ -13683,7 +15417,9 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
       
       
           // print log
-          NSLog(@"fluttify-objc: MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine(暂未实现参数打印)");
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine(暂未实现参数打印)");
+          }
       
           // invoke native method
           double result = MAGetDistanceFromPointToLine(point, lineBegin, lineEnd);
@@ -13729,8 +15465,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MATraceDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MATraceDelegate::traceManagerDidTracecorrectdistancewithError");
+  // print log
+  if (enableLog) {
+    NSLog(@"MATraceDelegate::traceManagerDidTracecorrectdistancewithError");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -13769,8 +15507,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MATraceDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MATraceDelegate::mapViewRequireLocationAuth");
+  // print log
+  if (enableLog) {
+    NSLog(@"MATraceDelegate::mapViewRequireLocationAuth");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -13786,8 +15526,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMultiPointOverlayRendererDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -13806,8 +15548,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewRegionChanged");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewRegionChanged");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -13823,8 +15567,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewRegionWillChangeAnimated");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewRegionWillChangeAnimated");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -13842,8 +15588,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewRegionDidChangeAnimated");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewRegionDidChangeAnimated");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -13861,8 +15609,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewMapWillMoveByUser");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewMapWillMoveByUser");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -13880,8 +15630,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewMapDidMoveByUser");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewMapDidMoveByUser");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -13899,8 +15651,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewMapWillZoomByUser");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewMapWillZoomByUser");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -13918,8 +15672,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewMapDidZoomByUser");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewMapDidZoomByUser");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -13937,8 +15693,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewWillStartLoadingMap");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewWillStartLoadingMap");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -13954,8 +15712,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidFinishLoadingMap");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidFinishLoadingMap");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -13971,8 +15731,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidFailLoadingMapWithError");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidFailLoadingMapWithError");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -13991,8 +15753,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewViewForAnnotation");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewViewForAnnotation");
+  }
 
   // convert to jsonable arg
   
@@ -14028,8 +15792,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidAddAnnotationViews");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidAddAnnotationViews");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14054,8 +15820,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidSelectAnnotationView");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidSelectAnnotationView");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14074,8 +15842,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidDeselectAnnotationView");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidDeselectAnnotationView");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14094,8 +15864,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewWillStartLocatingUser");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewWillStartLocatingUser");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14111,8 +15883,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidStopLocatingUser");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidStopLocatingUser");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14128,8 +15902,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14150,8 +15926,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidFailToLocateUserWithError");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidFailToLocateUserWithError");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14170,8 +15948,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14194,8 +15974,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewRendererForOverlay");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewRendererForOverlay");
+  }
 
   // convert to jsonable arg
   
@@ -14231,8 +16013,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidAddOverlayRenderers");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidAddOverlayRenderers");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14257,8 +16041,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14280,8 +16066,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14300,8 +16088,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewTapped");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewTapped");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14320,8 +16110,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14341,8 +16133,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14360,8 +16154,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidTouchPois");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidTouchPois");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14386,8 +16182,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14408,8 +16206,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidLongPressedAtCoordinate");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidLongPressedAtCoordinate");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14430,8 +16230,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapInitComplete");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapInitComplete");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14447,8 +16249,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapShowed");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapShowed");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14467,8 +16271,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14487,8 +16293,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapHidden");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapHidden");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14507,8 +16315,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::offlineDataWillReload");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::offlineDataWillReload");
+  }
 
   // convert to jsonable arg
   // ref callback arg
@@ -14524,8 +16334,10 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
-
-  NSLog(@"MAMapViewDelegate::offlineDataDidReload");
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::offlineDataDidReload");
+  }
 
   // convert to jsonable arg
   // ref callback arg

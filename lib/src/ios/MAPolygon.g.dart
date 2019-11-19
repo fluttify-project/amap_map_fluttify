@@ -30,7 +30,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   // generate methods
   static Future<MAPolygon> polygonWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAPolygon::polygonWithCoordinates([\'count\':$count])');
     }
   
@@ -52,7 +52,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   static Future<MAPolygon> polygonWithPointsCount(List<MAMapPoint> points, int count) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAPolygon::polygonWithPoints([\'count\':$count])');
     }
   
@@ -74,7 +74,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   Future<bool> setPolygonWithPointsCount(List<MAMapPoint> points, int count) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAPolygon@$refId::setPolygonWithPoints([\'count\':$count])');
     }
   
@@ -96,7 +96,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   Future<bool> setPolygonWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAPolygon@$refId::setPolygonWithCoordinates([\'count\':$count])');
     }
   

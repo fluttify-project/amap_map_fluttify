@@ -20,7 +20,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   // generate methods
   Future<void> setDefaultOptions(com_amap_api_maps_model_BuildingOverlayOptions var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setDefaultOptions([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_BuildingOverlayOptions> getDefaultOptions() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getDefaultOptions([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<void> setCustomOptions(List<com_amap_api_maps_model_BuildingOverlayOptions> var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setCustomOptions([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<List<com_amap_api_maps_model_BuildingOverlayOptions>> getCustomOptions() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getCustomOptions([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<void> destroy() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::destroy([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<String> getId() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getId([])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<void> setZIndex(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setZIndex([\'var1\':$var1])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<double> getZIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getZIndex([])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_BuildingOverlay extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::isVisible([])');
     }
   

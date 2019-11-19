@@ -42,7 +42,7 @@ class com_autonavi_ae_gmap_maploader_ProcessingTile extends java_lang_Object  {
   // generate methods
   static Future<com_autonavi_ae_gmap_maploader_ProcessingTile> obtain(String var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.maploader.ProcessingTile::obtain([\'var0\':$var0])');
     }
   

@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   // generate methods
   Future<int> getNativeInstatnce() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getNativeInstatnce([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<int> getCode() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getCode([])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<int> getType() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getType([])');
     }
   
@@ -86,7 +86,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<int> getSubType() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getSubType([])');
     }
   
@@ -108,7 +108,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<void> removeItem(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::removeItem([\'var1\':$var1])');
     }
   
@@ -130,7 +130,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<void> removeAll() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::removeAll([])');
     }
   
@@ -152,7 +152,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<int> getSize() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getSize([])');
     }
   
@@ -174,7 +174,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
@@ -196,7 +196,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::isVisible([])');
     }
   
@@ -218,7 +218,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<void> setClickable(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setClickable([\'var1\':$var1])');
     }
   
@@ -240,7 +240,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<bool> isClickable() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::isClickable([])');
     }
   
@@ -262,7 +262,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<void> clearFocus() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::clearFocus([])');
     }
   
@@ -284,7 +284,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<bool> getIsInBundle() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getIsInBundle([])');
     }
   
@@ -306,7 +306,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<void> setMaxCountShown(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMaxCountShown([\'var1\':$var1])');
     }
   
@@ -328,7 +328,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<void> setOverlayOnTop(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayOnTop([\'var1\':$var1])');
     }
   
@@ -350,7 +350,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<void> setMinDisplayLevel(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMinDisplayLevel([\'var1\':$var1])');
     }
   
@@ -372,7 +372,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<void> setMaxDisplayLevel(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMaxDisplayLevel([\'var1\':$var1])');
     }
   
@@ -394,7 +394,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<void> setOverlayPriority(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayPriority([\'var1\':$var1])');
     }
   
@@ -416,7 +416,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<int> getOverlayPriority() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getOverlayPriority([])');
     }
   
@@ -438,7 +438,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<void> setOverlayItemPriority(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayItemPriority([\'var1\':$var1])');
     }
   
@@ -460,7 +460,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   
   Future<void> useNightStyle(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::useNightStyle([\'var1\':$var1])');
     }
   

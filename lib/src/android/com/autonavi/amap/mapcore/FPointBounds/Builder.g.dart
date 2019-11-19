@@ -20,7 +20,7 @@ class com_autonavi_amap_mapcore_FPointBounds_Builder extends java_lang_Object  {
   // generate methods
   Future<com_autonavi_amap_mapcore_FPointBounds> build() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds.Builder@$refId::build([])');
     }
   

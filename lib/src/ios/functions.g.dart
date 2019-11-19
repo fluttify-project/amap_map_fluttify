@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 Future<MACoordinateBounds> MACoordinateBoundsMake(CLLocationCoordinate2D northEast, CLLocationCoordinate2D southWest) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MACoordinateBoundsMake::MACoordinateBoundsMake([])');
   }
 
@@ -34,7 +34,7 @@ Future<MACoordinateBounds> MACoordinateBoundsMake(CLLocationCoordinate2D northEa
 
 Future<MACoordinateSpan> MACoordinateSpanMake(double latitudeDelta, double longitudeDelta) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MACoordinateSpanMake::MACoordinateSpanMake([\'latitudeDelta\':$latitudeDelta, \'longitudeDelta\':$longitudeDelta])');
   }
 
@@ -56,7 +56,7 @@ Future<MACoordinateSpan> MACoordinateSpanMake(double latitudeDelta, double longi
 
 Future<MACoordinateRegion> MACoordinateRegionMake(CLLocationCoordinate2D centerCoordinate, MACoordinateSpan span) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MACoordinateRegionMake::MACoordinateRegionMake([])');
   }
 
@@ -78,7 +78,7 @@ Future<MACoordinateRegion> MACoordinateRegionMake(CLLocationCoordinate2D centerC
 
 Future<MACoordinateRegion> MACoordinateRegionMakeWithDistance(CLLocationCoordinate2D centerCoordinate, double latitudinalMeters, double longitudinalMeters) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance([\'latitudinalMeters\':$latitudinalMeters, \'longitudinalMeters\':$longitudinalMeters])');
   }
 
@@ -100,7 +100,7 @@ Future<MACoordinateRegion> MACoordinateRegionMakeWithDistance(CLLocationCoordina
 
 Future<MAMapPoint> MAMapPointForCoordinate(CLLocationCoordinate2D coordinate) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapPointForCoordinate::MAMapPointForCoordinate([])');
   }
 
@@ -122,7 +122,7 @@ Future<MAMapPoint> MAMapPointForCoordinate(CLLocationCoordinate2D coordinate) as
 
 Future<CLLocationCoordinate2D> MACoordinateForMapPoint(MAMapPoint mapPoint) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MACoordinateForMapPoint::MACoordinateForMapPoint([])');
   }
 
@@ -144,7 +144,7 @@ Future<CLLocationCoordinate2D> MACoordinateForMapPoint(MAMapPoint mapPoint) asyn
 
 Future<MACoordinateRegion> MACoordinateRegionForMapRect(MAMapRect rect) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MACoordinateRegionForMapRect::MACoordinateRegionForMapRect([])');
   }
 
@@ -166,7 +166,7 @@ Future<MACoordinateRegion> MACoordinateRegionForMapRect(MAMapRect rect) async {
 
 Future<MAMapRect> MAMapRectForCoordinateRegion(MACoordinateRegion region) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectForCoordinateRegion::MAMapRectForCoordinateRegion([])');
   }
 
@@ -188,7 +188,7 @@ Future<MAMapRect> MAMapRectForCoordinateRegion(MACoordinateRegion region) async 
 
 Future<double> MAMetersPerMapPointAtLatitude(double latitude) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMetersPerMapPointAtLatitude::MAMetersPerMapPointAtLatitude([\'latitude\':$latitude])');
   }
 
@@ -210,7 +210,7 @@ Future<double> MAMetersPerMapPointAtLatitude(double latitude) async {
 
 Future<double> MAMapPointsPerMeterAtLatitude(double latitude) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapPointsPerMeterAtLatitude::MAMapPointsPerMeterAtLatitude([\'latitude\':$latitude])');
   }
 
@@ -232,7 +232,7 @@ Future<double> MAMapPointsPerMeterAtLatitude(double latitude) async {
 
 Future<double> MAMetersBetweenMapPoints(MAMapPoint a, MAMapPoint b) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMetersBetweenMapPoints::MAMetersBetweenMapPoints([])');
   }
 
@@ -254,7 +254,7 @@ Future<double> MAMetersBetweenMapPoints(MAMapPoint a, MAMapPoint b) async {
 
 Future<double> MAAreaBetweenCoordinates(CLLocationCoordinate2D northEast, CLLocationCoordinate2D southWest) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAAreaBetweenCoordinates::MAAreaBetweenCoordinates([])');
   }
 
@@ -276,7 +276,7 @@ Future<double> MAAreaBetweenCoordinates(CLLocationCoordinate2D northEast, CLLoca
 
 Future<MAMapRect> MAMapRectInset(MAMapRect rect, double dx, double dy) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectInset::MAMapRectInset([\'dx\':$dx, \'dy\':$dy])');
   }
 
@@ -298,7 +298,7 @@ Future<MAMapRect> MAMapRectInset(MAMapRect rect, double dx, double dy) async {
 
 Future<MAMapRect> MAMapRectUnion(MAMapRect rect1, MAMapRect rect2) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectUnion::MAMapRectUnion([])');
   }
 
@@ -320,7 +320,7 @@ Future<MAMapRect> MAMapRectUnion(MAMapRect rect1, MAMapRect rect2) async {
 
 Future<bool> MAMapSizeContainsSize(MAMapSize size1, MAMapSize size2) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapSizeContainsSize::MAMapSizeContainsSize([])');
   }
 
@@ -342,7 +342,7 @@ Future<bool> MAMapSizeContainsSize(MAMapSize size1, MAMapSize size2) async {
 
 Future<bool> MAMapRectContainsPoint(MAMapRect rect, MAMapPoint point) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectContainsPoint::MAMapRectContainsPoint([])');
   }
 
@@ -364,7 +364,7 @@ Future<bool> MAMapRectContainsPoint(MAMapRect rect, MAMapPoint point) async {
 
 Future<bool> MAMapRectIntersectsRect(MAMapRect rect1, MAMapRect rect2) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectIntersectsRect::MAMapRectIntersectsRect([])');
   }
 
@@ -386,7 +386,7 @@ Future<bool> MAMapRectIntersectsRect(MAMapRect rect1, MAMapRect rect2) async {
 
 Future<bool> MAMapRectContainsRect(MAMapRect rect1, MAMapRect rect2) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectContainsRect::MAMapRectContainsRect([])');
   }
 
@@ -408,7 +408,7 @@ Future<bool> MAMapRectContainsRect(MAMapRect rect1, MAMapRect rect2) async {
 
 Future<bool> MACircleContainsPoint(MAMapPoint point, MAMapPoint center, double radius) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MACircleContainsPoint::MACircleContainsPoint([\'radius\':$radius])');
   }
 
@@ -430,7 +430,7 @@ Future<bool> MACircleContainsPoint(MAMapPoint point, MAMapPoint center, double r
 
 Future<bool> MACircleContainsCoordinate(CLLocationCoordinate2D point, CLLocationCoordinate2D center, double radius) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MACircleContainsCoordinate::MACircleContainsCoordinate([\'radius\':$radius])');
   }
 
@@ -452,7 +452,7 @@ Future<bool> MACircleContainsCoordinate(CLLocationCoordinate2D point, CLLocation
 
 Future<bool> MAPolygonContainsPoint(MAMapPoint point, List<MAMapPoint> polygon, int count) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAPolygonContainsPoint::MAPolygonContainsPoint([\'count\':$count])');
   }
 
@@ -474,7 +474,7 @@ Future<bool> MAPolygonContainsPoint(MAMapPoint point, List<MAMapPoint> polygon, 
 
 Future<bool> MAPolygonContainsCoordinate(CLLocationCoordinate2D point, List<CLLocationCoordinate2D> polygon, int count) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAPolygonContainsCoordinate::MAPolygonContainsCoordinate([\'count\':$count])');
   }
 
@@ -496,7 +496,7 @@ Future<bool> MAPolygonContainsCoordinate(CLLocationCoordinate2D point, List<CLLo
 
 Future<MAMapPoint> MAGetNearestMapPointFromLine(MAMapPoint lineStart, MAMapPoint lineEnd, MAMapPoint point) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAGetNearestMapPointFromLine::MAGetNearestMapPointFromLine([])');
   }
 
@@ -518,7 +518,7 @@ Future<MAMapPoint> MAGetNearestMapPointFromLine(MAMapPoint lineStart, MAMapPoint
 
 Future<void> MAGetTileProjectionFromBounds(MACoordinateBounds bounds, int levelOfDetails, void tileProjection(int offsetX, int offsetY, int minX, int maxX, int minY, int maxY)) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAGetTileProjectionFromBounds::MAGetTileProjectionFromBounds([\'levelOfDetails\':$levelOfDetails])');
   }
 
@@ -559,7 +559,7 @@ Future<void> MAGetTileProjectionFromBounds(MACoordinateBounds bounds, int levelO
 
 Future<double> MAAreaForPolygon(List<CLLocationCoordinate2D> coordinates, int count) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAAreaForPolygon::MAAreaForPolygon([\'count\':$count])');
   }
 
@@ -581,7 +581,7 @@ Future<double> MAAreaForPolygon(List<CLLocationCoordinate2D> coordinates, int co
 
 Future<MAMapPoint> MAMapPointMake(double x, double y) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapPointMake::MAMapPointMake([\'x\':$x, \'y\':$y])');
   }
 
@@ -603,7 +603,7 @@ Future<MAMapPoint> MAMapPointMake(double x, double y) async {
 
 Future<MAMapSize> MAMapSizeMake(double width, double height) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapSizeMake::MAMapSizeMake([\'width\':$width, \'height\':$height])');
   }
 
@@ -625,7 +625,7 @@ Future<MAMapSize> MAMapSizeMake(double width, double height) async {
 
 Future<MAMapRect> MAMapRectMake(double x, double y, double width, double height) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectMake::MAMapRectMake([\'x\':$x, \'y\':$y, \'width\':$width, \'height\':$height])');
   }
 
@@ -647,7 +647,7 @@ Future<MAMapRect> MAMapRectMake(double x, double y, double width, double height)
 
 Future<double> MAMapRectGetMinX(MAMapRect rect) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectGetMinX::MAMapRectGetMinX([])');
   }
 
@@ -669,7 +669,7 @@ Future<double> MAMapRectGetMinX(MAMapRect rect) async {
 
 Future<double> MAMapRectGetMinY(MAMapRect rect) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectGetMinY::MAMapRectGetMinY([])');
   }
 
@@ -691,7 +691,7 @@ Future<double> MAMapRectGetMinY(MAMapRect rect) async {
 
 Future<double> MAMapRectGetMidX(MAMapRect rect) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectGetMidX::MAMapRectGetMidX([])');
   }
 
@@ -713,7 +713,7 @@ Future<double> MAMapRectGetMidX(MAMapRect rect) async {
 
 Future<double> MAMapRectGetMidY(MAMapRect rect) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectGetMidY::MAMapRectGetMidY([])');
   }
 
@@ -735,7 +735,7 @@ Future<double> MAMapRectGetMidY(MAMapRect rect) async {
 
 Future<double> MAMapRectGetMaxX(MAMapRect rect) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectGetMaxX::MAMapRectGetMaxX([])');
   }
 
@@ -757,7 +757,7 @@ Future<double> MAMapRectGetMaxX(MAMapRect rect) async {
 
 Future<double> MAMapRectGetMaxY(MAMapRect rect) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectGetMaxY::MAMapRectGetMaxY([])');
   }
 
@@ -779,7 +779,7 @@ Future<double> MAMapRectGetMaxY(MAMapRect rect) async {
 
 Future<double> MAMapRectGetWidth(MAMapRect rect) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectGetWidth::MAMapRectGetWidth([])');
   }
 
@@ -801,7 +801,7 @@ Future<double> MAMapRectGetWidth(MAMapRect rect) async {
 
 Future<double> MAMapRectGetHeight(MAMapRect rect) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectGetHeight::MAMapRectGetHeight([])');
   }
 
@@ -823,7 +823,7 @@ Future<double> MAMapRectGetHeight(MAMapRect rect) async {
 
 Future<bool> MAMapPointEqualToPoint(MAMapPoint point1, MAMapPoint point2) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapPointEqualToPoint::MAMapPointEqualToPoint([])');
   }
 
@@ -845,7 +845,7 @@ Future<bool> MAMapPointEqualToPoint(MAMapPoint point1, MAMapPoint point2) async 
 
 Future<bool> MAMapSizeEqualToSize(MAMapSize size1, MAMapSize size2) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapSizeEqualToSize::MAMapSizeEqualToSize([])');
   }
 
@@ -867,7 +867,7 @@ Future<bool> MAMapSizeEqualToSize(MAMapSize size1, MAMapSize size2) async {
 
 Future<bool> MAMapRectEqualToRect(MAMapRect rect1, MAMapRect rect2) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectEqualToRect::MAMapRectEqualToRect([])');
   }
 
@@ -889,7 +889,7 @@ Future<bool> MAMapRectEqualToRect(MAMapRect rect1, MAMapRect rect2) async {
 
 Future<bool> MAMapRectIsNull(MAMapRect rect) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectIsNull::MAMapRectIsNull([])');
   }
 
@@ -911,7 +911,7 @@ Future<bool> MAMapRectIsNull(MAMapRect rect) async {
 
 Future<bool> MAMapRectIsEmpty(MAMapRect rect) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAMapRectIsEmpty::MAMapRectIsEmpty([])');
   }
 
@@ -933,7 +933,7 @@ Future<bool> MAMapRectIsEmpty(MAMapRect rect) async {
 
 Future<String> MAStringFromMapPoint(MAMapPoint point) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAStringFromMapPoint::MAStringFromMapPoint([])');
   }
 
@@ -955,7 +955,7 @@ Future<String> MAStringFromMapPoint(MAMapPoint point) async {
 
 Future<String> MAStringFromMapSize(MAMapSize size) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAStringFromMapSize::MAStringFromMapSize([])');
   }
 
@@ -977,7 +977,7 @@ Future<String> MAStringFromMapSize(MAMapSize size) async {
 
 Future<String> MAStringFromMapRect(MAMapRect rect) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAStringFromMapRect::MAStringFromMapRect([])');
   }
 
@@ -999,7 +999,7 @@ Future<String> MAStringFromMapRect(MAMapRect rect) async {
 
 Future<double> MAGetDirectionFromCoords(CLLocationCoordinate2D fromCoord, CLLocationCoordinate2D toCoord) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAGetDirectionFromCoords::MAGetDirectionFromCoords([])');
   }
 
@@ -1021,7 +1021,7 @@ Future<double> MAGetDirectionFromCoords(CLLocationCoordinate2D fromCoord, CLLoca
 
 Future<double> MAGetDirectionFromPoints(MAMapPoint fromPoint, MAMapPoint toPoint) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAGetDirectionFromPoints::MAGetDirectionFromPoints([])');
   }
 
@@ -1043,7 +1043,7 @@ Future<double> MAGetDirectionFromPoints(MAMapPoint fromPoint, MAMapPoint toPoint
 
 Future<double> MAGetDistanceFromPointToLine(MAMapPoint point, MAMapPoint lineBegin, MAMapPoint lineEnd) async {
   // print log
-  if (!kReleaseMode) {
+  if (fluttifyLogEnabled) {
     print('fluttify-dart: MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine([])');
   }
 

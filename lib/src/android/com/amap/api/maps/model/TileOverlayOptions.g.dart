@@ -20,7 +20,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   // generate methods
   Future<com_amap_api_maps_model_TileOverlayOptions> tileProvider(com_amap_api_maps_model_TileProvider var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::tileProvider([])');
     }
   
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<com_amap_api_maps_model_TileOverlayOptions> zIndex(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::zIndex([\'var1\':$var1])');
     }
   
@@ -101,7 +101,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<com_amap_api_maps_model_TileOverlayOptions> visible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::visible([\'var1\':$var1])');
     }
   
@@ -123,7 +123,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<com_amap_api_maps_model_TileOverlayOptions> memCacheSize(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::memCacheSize([\'var1\':$var1])');
     }
   
@@ -145,7 +145,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<com_amap_api_maps_model_TileOverlayOptions> diskCacheSize(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::diskCacheSize([\'var1\':$var1])');
     }
   
@@ -167,7 +167,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<com_amap_api_maps_model_TileOverlayOptions> diskCacheDir(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::diskCacheDir([\'var1\':$var1])');
     }
   
@@ -189,7 +189,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<com_amap_api_maps_model_TileOverlayOptions> memoryCacheEnabled(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::memoryCacheEnabled([\'var1\':$var1])');
     }
   
@@ -211,7 +211,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<com_amap_api_maps_model_TileOverlayOptions> diskCacheEnabled(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::diskCacheEnabled([\'var1\':$var1])');
     }
   
@@ -233,7 +233,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<double> getZIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getZIndex([])');
     }
   
@@ -255,7 +255,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<bool> isVisible() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::isVisible([])');
     }
   
@@ -277,7 +277,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<int> getMemCacheSize() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getMemCacheSize([])');
     }
   
@@ -299,7 +299,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<int> getDiskCacheSize() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getDiskCacheSize([])');
     }
   
@@ -321,7 +321,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<String> getDiskCacheDir() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getDiskCacheDir([])');
     }
   
@@ -343,7 +343,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<bool> getMemoryCacheEnabled() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getMemoryCacheEnabled([])');
     }
   
@@ -365,7 +365,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   
   Future<bool> getDiskCacheEnabled() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getDiskCacheEnabled([])');
     }
   

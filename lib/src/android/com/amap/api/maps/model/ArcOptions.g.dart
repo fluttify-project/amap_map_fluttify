@@ -20,7 +20,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   // generate methods
   Future<com_amap_api_maps_model_ArcOptions> point(com_amap_api_maps_model_LatLng var1, com_amap_api_maps_model_LatLng var2, com_amap_api_maps_model_LatLng var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::point([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_ArcOptions> strokeWidth(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::strokeWidth([\'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_ArcOptions> strokeColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::strokeColor([\'var1\':$var1])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_ArcOptions> zIndex(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::zIndex([\'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_ArcOptions> visible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::visible([\'var1\':$var1])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<double> getStrokeWidth() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStrokeWidth([])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<int> getStrokeColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStrokeColor([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<double> getZIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getZIndex([])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<bool> isVisible() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::isVisible([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_LatLng> getStart() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStart([])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_LatLng> getPassed() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getPassed([])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_model_ArcOptions extends java_lang_Object with android_o
   
   Future<com_amap_api_maps_model_LatLng> getEnd() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getEnd([])');
     }
   

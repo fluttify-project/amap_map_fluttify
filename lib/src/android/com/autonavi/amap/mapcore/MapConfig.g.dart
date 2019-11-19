@@ -42,7 +42,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   // generate methods
   Future<int> getAnchorY() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getAnchorY([])');
     }
   
@@ -64,7 +64,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setAnchorY(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setAnchorY([\'var1\':$var1])');
     }
   
@@ -86,7 +86,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<int> getAnchorX() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getAnchorX([])');
     }
   
@@ -108,7 +108,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setAnchorX(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setAnchorX([\'var1\':$var1])');
     }
   
@@ -130,7 +130,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<int> getChangedCounter() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getChangedCounter([])');
     }
   
@@ -152,7 +152,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> resetChangedCounter() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::resetChangedCounter([])');
     }
   
@@ -174,7 +174,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isMapStateChange() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isMapStateChange([])');
     }
   
@@ -196,7 +196,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<double> getChangeRatio() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getChangeRatio([])');
     }
   
@@ -218,7 +218,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<double> getChangeGridRatio() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getChangeGridRatio([])');
     }
   
@@ -240,7 +240,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isZoomChanged() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isZoomChanged([])');
     }
   
@@ -262,7 +262,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isTiltChanged() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isTiltChanged([])');
     }
   
@@ -284,7 +284,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isBearingChanged() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isBearingChanged([])');
     }
   
@@ -306,7 +306,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isIndoorEnable() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isIndoorEnable([])');
     }
   
@@ -328,7 +328,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setIndoorEnable(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setIndoorEnable([\'var1\':$var1])');
     }
   
@@ -350,7 +350,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isBuildingEnable() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isBuildingEnable([])');
     }
   
@@ -372,7 +372,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setBuildingEnable(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setBuildingEnable([\'var1\':$var1])');
     }
   
@@ -394,7 +394,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isMapTextEnable() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isMapTextEnable([])');
     }
   
@@ -416,7 +416,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setMapTextEnable(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapTextEnable([\'var1\':$var1])');
     }
   
@@ -438,7 +438,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isTrafficEnabled() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isTrafficEnabled([])');
     }
   
@@ -460,7 +460,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setTrafficEnabled(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setTrafficEnabled([\'var1\':$var1])');
     }
   
@@ -482,7 +482,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isNeedUpdateZoomControllerState() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isNeedUpdateZoomControllerState([])');
     }
   
@@ -504,7 +504,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<int> getSX() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getSX([])');
     }
   
@@ -526,7 +526,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setSX(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSX([\'var1\':$var1])');
     }
   
@@ -548,7 +548,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<int> getSY() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getSY([])');
     }
   
@@ -570,7 +570,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setSY(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSY([\'var1\':$var1])');
     }
   
@@ -592,7 +592,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<com_autonavi_amap_mapcore_IPoint> getMapGeoCenter() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapGeoCenter([])');
     }
   
@@ -614,7 +614,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<double> getSZ() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getSZ([])');
     }
   
@@ -636,7 +636,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setSZ(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSZ([\'var1\':$var1])');
     }
   
@@ -658,7 +658,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<double> getSC() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getSC([])');
     }
   
@@ -680,7 +680,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setSC(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSC([\'var1\':$var1])');
     }
   
@@ -702,7 +702,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<double> getSR() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getSR([])');
     }
   
@@ -724,7 +724,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setSR(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSR([\'var1\':$var1])');
     }
   
@@ -746,7 +746,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<com_autonavi_amap_mapcore_Rectangle> getGeoRectangle() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getGeoRectangle([])');
     }
   
@@ -768,7 +768,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setMaxZoomLevel(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMaxZoomLevel([\'var1\':$var1])');
     }
   
@@ -790,7 +790,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setMinZoomLevel(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMinZoomLevel([\'var1\':$var1])');
     }
   
@@ -812,7 +812,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<double> getMaxZoomLevel() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMaxZoomLevel([])');
     }
   
@@ -834,7 +834,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<double> getMinZoomLevel() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMinZoomLevel([])');
     }
   
@@ -856,7 +856,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isSetLimitZoomLevel() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isSetLimitZoomLevel([])');
     }
   
@@ -878,7 +878,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLngBounds> getLimitLatLngBounds() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getLimitLatLngBounds([])');
     }
   
@@ -900,7 +900,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setLimitLatLngBounds(com_amap_api_maps_model_LatLngBounds var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setLimitLatLngBounds([])');
     }
   
@@ -922,7 +922,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> resetMinMaxZoomPreference() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::resetMinMaxZoomPreference([])');
     }
   
@@ -944,7 +944,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> updateMapRectNextFrame(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::updateMapRectNextFrame([\'var1\':$var1])');
     }
   
@@ -966,7 +966,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setMapPerPixelUnitLength(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapPerPixelUnitLength([\'var1\':$var1])');
     }
   
@@ -988,7 +988,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<double> getMapPerPixelUnitLength() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapPerPixelUnitLength([])');
     }
   
@@ -1010,7 +1010,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setCustomStylePath(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomStylePath([\'var1\':$var1])');
     }
   
@@ -1032,7 +1032,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<String> getCustomStylePath() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getCustomStylePath([])');
     }
   
@@ -1054,7 +1054,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<String> getCustomStyleID() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getCustomStyleID([])');
     }
   
@@ -1076,7 +1076,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setCustomStyleID(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomStyleID([\'var1\':$var1])');
     }
   
@@ -1098,7 +1098,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setCustomStyleEnable(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomStyleEnable([\'var1\':$var1])');
     }
   
@@ -1120,7 +1120,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isCustomStyleEnable() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isCustomStyleEnable([])');
     }
   
@@ -1142,7 +1142,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<int> getMapStyleTime() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapStyleTime([])');
     }
   
@@ -1164,7 +1164,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setMapStyleTime(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapStyleTime([\'var1\':$var1])');
     }
   
@@ -1186,7 +1186,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<int> getMapStyleMode() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapStyleMode([])');
     }
   
@@ -1208,7 +1208,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setMapStyleMode(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapStyleMode([\'var1\':$var1])');
     }
   
@@ -1230,7 +1230,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<int> getMapStyleState() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapStyleState([])');
     }
   
@@ -1252,7 +1252,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setMapStyleState(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapStyleState([\'var1\':$var1])');
     }
   
@@ -1274,7 +1274,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setCustomTextureResourcePath(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomTextureResourcePath([\'var1\':$var1])');
     }
   
@@ -1296,7 +1296,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<String> getCustomTextureResourcePath() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getCustomTextureResourcePath([])');
     }
   
@@ -1318,7 +1318,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isProFunctionAuthEnable() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isProFunctionAuthEnable([])');
     }
   
@@ -1340,7 +1340,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setProFunctionAuthEnable(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setProFunctionAuthEnable([\'var1\':$var1])');
     }
   
@@ -1362,7 +1362,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isUseProFunction() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isUseProFunction([])');
     }
   
@@ -1384,7 +1384,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setUseProFunction(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setUseProFunction([\'var1\':$var1])');
     }
   
@@ -1406,7 +1406,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setCustomBackgroundColor(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomBackgroundColor([\'var1\':$var1])');
     }
   
@@ -1428,7 +1428,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<int> getCustomBackgroundColor() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getCustomBackgroundColor([])');
     }
   
@@ -1450,7 +1450,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setMapZoomScale(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapZoomScale([\'var1\':$var1])');
     }
   
@@ -1472,7 +1472,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<double> getMapZoomScale() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapZoomScale([])');
     }
   
@@ -1494,7 +1494,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setMapWidth(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapWidth([\'var1\':$var1])');
     }
   
@@ -1516,7 +1516,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<int> getMapWidth() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapWidth([])');
     }
   
@@ -1538,7 +1538,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setMapHeight(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapHeight([\'var1\':$var1])');
     }
   
@@ -1560,7 +1560,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<int> getMapHeight() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapHeight([])');
     }
   
@@ -1582,7 +1582,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setMapLanguage(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapLanguage([\'var1\':$var1])');
     }
   
@@ -1604,7 +1604,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<String> getMapLanguage() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMapLanguage([])');
     }
   
@@ -1626,7 +1626,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setHideLogoEnble(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setHideLogoEnble([\'var1\':$var1])');
     }
   
@@ -1648,7 +1648,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isHideLogoEnable() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isHideLogoEnable([])');
     }
   
@@ -1670,7 +1670,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setWorldMapEnable(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setWorldMapEnable([\'var1\':$var1])');
     }
   
@@ -1692,7 +1692,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<bool> isWorldMapEnable() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::isWorldMapEnable([])');
     }
   
@@ -1714,7 +1714,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<double> getSkyHeight() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getSkyHeight([])');
     }
   
@@ -1736,7 +1736,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> setSkyHeight(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSkyHeight([\'var1\':$var1])');
     }
   
@@ -1758,7 +1758,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<List<double>> getViewMatrix() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getViewMatrix([])');
     }
   
@@ -1780,7 +1780,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<List<double>> getProjectionMatrix() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getProjectionMatrix([])');
     }
   
@@ -1802,7 +1802,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<List<double>> getMvpMatrix() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMvpMatrix([])');
     }
   
@@ -1824,7 +1824,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<void> updateFinalMatrix() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::updateFinalMatrix([])');
     }
   
@@ -1846,7 +1846,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   Future<List<int>> getCurTileIds() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getCurTileIds([])');
     }
   

@@ -18,6 +18,7 @@ import io.flutter.plugin.platform.PlatformView;
 import io.flutter.plugin.platform.PlatformViewFactory;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
+import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
 
 @SuppressWarnings("ALL")
 class MapViewFactory extends PlatformViewFactory {
@@ -55,7 +56,7 @@ class MapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::getMap(" + "" + ")");
             }
         
@@ -82,7 +83,7 @@ class MapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onCreate(" + var1 + ")");
             }
         
@@ -101,7 +102,7 @@ class MapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onResume(" + "" + ")");
             }
         
@@ -120,7 +121,7 @@ class MapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onPause(" + "" + ")");
             }
         
@@ -139,7 +140,7 @@ class MapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onDestroy(" + "" + ")");
             }
         
@@ -158,7 +159,7 @@ class MapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onLowMemory(" + "" + ")");
             }
         
@@ -178,7 +179,7 @@ class MapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::onSaveInstanceState(" + var1 + ")");
             }
         
@@ -198,7 +199,7 @@ class MapViewFactory extends PlatformViewFactory {
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
-            if (BuildConfig.DEBUG) {
+            if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapView@" + refId + "::setVisibility(" + var1 + ")");
             }
         

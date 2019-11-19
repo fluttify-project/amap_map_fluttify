@@ -55,7 +55,7 @@ class MAOfflineMap extends NSObject  {
   // generate methods
   static Future<MAOfflineMap> sharedOfflineMap() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOfflineMap::sharedOfflineMap([])');
     }
   
@@ -77,7 +77,7 @@ class MAOfflineMap extends NSObject  {
   
   Future<void> setupWithCompletionBlock(void block(bool setupSuccess)) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOfflineMap@$refId::setupWithCompletionBlock([])');
     }
   
@@ -118,7 +118,7 @@ class MAOfflineMap extends NSObject  {
   
   Future<void> downloadItemShouldContinueWhenAppEntersBackgrounddownloadBlock(MAOfflineItem item, bool shouldContinueWhenAppEntersBackground, void downloadBlock(MAOfflineItem downloadItem, MAOfflineMapDownloadStatus downloadStatus, NSObject info)) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOfflineMap@$refId::downloadItem([\'shouldContinueWhenAppEntersBackground\':$shouldContinueWhenAppEntersBackground])');
     }
   
@@ -159,7 +159,7 @@ class MAOfflineMap extends NSObject  {
   
   Future<bool> isDownloadingForItem(MAOfflineItem item) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOfflineMap@$refId::isDownloadingForItem([])');
     }
   
@@ -181,7 +181,7 @@ class MAOfflineMap extends NSObject  {
   
   Future<bool> pauseItem(MAOfflineItem item) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOfflineMap@$refId::pauseItem([])');
     }
   
@@ -203,7 +203,7 @@ class MAOfflineMap extends NSObject  {
   
   Future<void> deleteItem(MAOfflineItem item) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOfflineMap@$refId::deleteItem([])');
     }
   
@@ -225,7 +225,7 @@ class MAOfflineMap extends NSObject  {
   
   Future<void> cancelAll() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOfflineMap@$refId::cancelAll([])');
     }
   
@@ -247,7 +247,7 @@ class MAOfflineMap extends NSObject  {
   
   Future<void> clearDisk() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOfflineMap@$refId::clearDisk([])');
     }
   
@@ -269,7 +269,7 @@ class MAOfflineMap extends NSObject  {
   
   Future<void> checkNewestVersion(void newestVersionBlock(bool hasNewestVersion)) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOfflineMap@$refId::checkNewestVersion([])');
     }
   

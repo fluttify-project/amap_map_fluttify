@@ -20,7 +20,7 @@ class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
   // generate methods
   static Future<com_autonavi_amap_mapcore_IPoint> obtain() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.IPoint::obtain([])');
     }
   

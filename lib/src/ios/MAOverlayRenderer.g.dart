@@ -78,7 +78,7 @@ class MAOverlayRenderer extends NSObject  {
   // generate methods
   Future<MAOverlayRenderer> initWithOverlay(MAOverlay overlay) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::initWithOverlay([])');
     }
   
@@ -100,7 +100,7 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<MAMapPoint> getOffsetPoint() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::getOffsetPoint([])');
     }
   
@@ -122,7 +122,7 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<double> getMapZoomLevel() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::getMapZoomLevel([])');
     }
   
@@ -144,7 +144,7 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<CGPoint> glPointForMapPoint(MAMapPoint mapPoint) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::glPointForMapPoint([])');
     }
   
@@ -166,7 +166,7 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<CGPoint> glPointsForMapPointsCount(List<MAMapPoint> mapPoints, int count) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::glPointsForMapPoints([\'count\':$count])');
     }
   
@@ -188,7 +188,7 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<double> glWidthForWindowWidth(double windowWidth) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::glWidthForWindowWidth([\'windowWidth\':$windowWidth])');
     }
   
@@ -210,7 +210,7 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<void> renderLinesWithPointsPointCountstrokeColorlineWidthlooped(List<CGPoint> points, int pointCount, UIColor strokeColor, double lineWidth, bool looped) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::renderLinesWithPoints([\'pointCount\':$pointCount, \'lineWidth\':$lineWidth, \'looped\':$looped])');
     }
   
@@ -232,7 +232,7 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<void> renderLinesWithPointsPointCountstrokeColorlineWidthloopedLineJoinTypeLineCapTypelineDash(List<CGPoint> points, int pointCount, UIColor strokeColor, double lineWidth, bool looped, MALineJoinType lineJoinType, MALineCapType lineCapType, MALineDashType lineDash) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::renderLinesWithPoints([\'pointCount\':$pointCount, \'lineWidth\':$lineWidth, \'looped\':$looped])');
     }
   
@@ -254,7 +254,7 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<void> renderTexturedLinesWithPointsPointCountlineWidthtextureIDsdrawStyleIndexeslooped(List<CGPoint> points, int pointCount, double lineWidth, List<NSObject> textureIDs, List<NSObject> drawStyleIndexes, bool looped) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::renderTexturedLinesWithPoints([\'pointCount\':$pointCount, \'lineWidth\':$lineWidth, \'looped\':$looped])');
     }
   
@@ -276,7 +276,7 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<void> renderLinesWithPointsPointCountstrokeColorsdrawStyleIndexesisGradientlineWidthloopedLineJoinTypeLineCapTypelineDash(List<CGPoint> points, int pointCount, List<NSObject> strokeColors, List<NSObject> drawStyleIndexes, bool isGradient, double lineWidth, bool looped, MALineJoinType lineJoinType, MALineCapType lineCapType, MALineDashType lineDash) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::renderLinesWithPoints([\'pointCount\':$pointCount, \'isGradient\':$isGradient, \'lineWidth\':$lineWidth, \'looped\':$looped])');
     }
   
@@ -298,7 +298,7 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<void> renderRegionWithPointsPointCountfillColorusingTriangleFan(List<CGPoint> points, int pointCount, UIColor fillColor, bool usingTriangleFan) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::renderRegionWithPoints([\'pointCount\':$pointCount, \'usingTriangleFan\':$usingTriangleFan])');
     }
   
@@ -320,7 +320,7 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<void> renderStrokedRegionWithPointsPointCountfillColorstrokeColorstrokeLineWidthstrokeLineJoinTypestrokeLineDashusingTriangleFan(List<CGPoint> points, int pointCount, UIColor fillColor, UIColor strokeColor, double strokeLineWidth, MALineJoinType strokeLineJoinType, MALineDashType strokeLineDash, bool usingTriangleFan) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::renderStrokedRegionWithPoints([\'pointCount\':$pointCount, \'strokeLineWidth\':$strokeLineWidth, \'usingTriangleFan\':$usingTriangleFan])');
     }
   
@@ -342,7 +342,7 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<void> glRender() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::glRender([])');
     }
   
@@ -364,7 +364,7 @@ class MAOverlayRenderer extends NSObject  {
   
   Future<void> setNeedsUpdate() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::setNeedsUpdate([])');
     }
   

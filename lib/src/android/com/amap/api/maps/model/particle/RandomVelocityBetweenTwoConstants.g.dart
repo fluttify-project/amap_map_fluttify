@@ -20,7 +20,7 @@ class com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants extends
   // generate methods
   Future<void> createNativeInstace() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::createNativeInstace([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants extends
   
   Future<double> getX() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::getX([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants extends
   
   Future<double> getY() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::getY([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants extends
   
   Future<double> getZ() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::getZ([])');
     }
   

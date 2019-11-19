@@ -20,7 +20,7 @@ class com_amap_api_maps_model_particle_RectParticleShape extends java_lang_Objec
   // generate methods
   Future<void> createNativeInstace() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.RectParticleShape@$refId::createNativeInstace([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_particle_RectParticleShape extends java_lang_Objec
   
   Future<List<double>> getPoint() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.RectParticleShape@$refId::getPoint([])');
     }
   

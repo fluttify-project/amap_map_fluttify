@@ -90,7 +90,7 @@ class com_autonavi_amap_mapcore_animation_GLTranslateAnimation extends java_lang
   // generate methods
   Future<void> setFromPoint(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLTranslateAnimation@$refId::setFromPoint([])');
     }
   

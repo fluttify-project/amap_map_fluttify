@@ -20,7 +20,7 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   // generate methods
   Future<com_amap_api_maps_AMap> getMap({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::getMap([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> onCreate(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onCreate([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> onResume({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onResume([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> onPause({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onPause([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> onDestroy({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onDestroy([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> onLowMemory({bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onLowMemory([])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> onSaveInstanceState(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::onSaveInstanceState([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   
   Future<void> setVisibility(int var1, {bool viewChannel = true}) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.TextureMapView@$refId::setVisibility([\'var1\':$var1])');
     }
   

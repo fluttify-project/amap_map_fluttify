@@ -53,7 +53,7 @@ class MATraceManager extends NSObject  {
   // generate methods
   static Future<MATraceManager> sharedInstance() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MATraceManager::sharedInstance([])');
     }
   
@@ -75,7 +75,7 @@ class MATraceManager extends NSObject  {
   
   Future<void> start() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MATraceManager@$refId::start([])');
     }
   
@@ -97,7 +97,7 @@ class MATraceManager extends NSObject  {
   
   Future<void> stop() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MATraceManager@$refId::stop([])');
     }
   

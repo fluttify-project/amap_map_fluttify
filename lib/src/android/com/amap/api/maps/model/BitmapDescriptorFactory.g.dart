@@ -20,7 +20,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   // generate methods
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromResource(int var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromResource([\'var0\':$var0])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromView(android_view_View var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromView([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromPath(String var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromPath([\'var0\':$var0])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromAsset(String var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromAsset([\'var0\':$var0])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromFile(String var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromFile([\'var0\':$var0])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> defaultMarker() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker([])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromBitmap(android_graphics_Bitmap var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromBitmap([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   
   static Future<android_content_Context> getContext() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::getContext([])');
     }
   

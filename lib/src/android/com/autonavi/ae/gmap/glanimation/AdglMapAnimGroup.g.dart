@@ -30,7 +30,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
   // generate methods
   Future<void> setDuration(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setDuration([\'var1\':$var1])');
     }
   
@@ -52,7 +52,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
   
   Future<void> reset() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::reset([])');
     }
   
@@ -74,7 +74,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
   
   Future<bool> isValid() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::isValid([])');
     }
   
@@ -96,7 +96,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
   
   Future<void> setToMapAngle(double var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToMapAngle([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -118,7 +118,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
   
   Future<void> setToMapCenterGeo(int var1, int var2, int var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToMapCenterGeo([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
@@ -140,7 +140,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
   
   Future<void> setToMapLevel(double var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToMapLevel([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -162,7 +162,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
   
   Future<void> setToCameraDegree(double var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToCameraDegree([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -184,7 +184,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
   
   static Future<bool> checkLevel(double var0) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::checkLevel([\'var0\':$var0])');
     }
   
@@ -206,7 +206,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object
   
   Future<bool> typeEqueal(com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::typeEqueal([])');
     }
   

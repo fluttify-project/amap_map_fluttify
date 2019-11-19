@@ -20,7 +20,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   // generate methods
   Future<double> getLatitude() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getLatitude([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<void> setLatitude(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setLatitude([\'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<double> getLongitude() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getLongitude([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<void> setLongitude(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setLongitude([\'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<double> getSpeed() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getSpeed([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<void> setSpeed(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setSpeed([\'var1\':$var1])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<double> getBearing() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getBearing([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<void> setBearing(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setBearing([\'var1\':$var1])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<int> getTime() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getTime([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<void> setTime(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setTime([\'var1\':$var1])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   Future<com_amap_api_trace_TraceLocation> copy() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::copy([])');
     }
   

@@ -20,7 +20,7 @@ class com_amap_api_maps_model_particle_CurveSizeOverLife extends java_lang_Objec
   // generate methods
   Future<void> createNativeInstace() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::createNativeInstace([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_particle_CurveSizeOverLife extends java_lang_Objec
   
   Future<double> getSizeX(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeX([\'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_particle_CurveSizeOverLife extends java_lang_Objec
   
   Future<double> getSizeY(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeY([\'var1\':$var1])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_particle_CurveSizeOverLife extends java_lang_Objec
   
   Future<double> getSizeZ(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeZ([\'var1\':$var1])');
     }
   

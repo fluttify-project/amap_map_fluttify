@@ -20,7 +20,7 @@ class MAParticleEmissionModule extends NSObject  {
   // generate methods
   Future<MAParticleEmissionModule> initWithEmissionRateRateTime(int rate, int rateTime) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleEmissionModule@$refId::initWithEmissionRate([\'rate\':$rate, \'rateTime\':$rateTime])');
     }
   

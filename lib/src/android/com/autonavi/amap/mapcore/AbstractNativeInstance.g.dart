@@ -20,7 +20,7 @@ class com_autonavi_amap_mapcore_AbstractNativeInstance extends java_lang_Object 
   // generate methods
   Future<int> getNativeInstance() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.AbstractNativeInstance@$refId::getNativeInstance([])');
     }
   
@@ -42,7 +42,7 @@ class com_autonavi_amap_mapcore_AbstractNativeInstance extends java_lang_Object 
   
   Future<void> createNativeInstace() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.AbstractNativeInstance@$refId::createNativeInstace([])');
     }
   

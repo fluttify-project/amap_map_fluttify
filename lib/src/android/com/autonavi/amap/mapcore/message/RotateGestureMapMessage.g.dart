@@ -54,7 +54,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
   // generate methods
   static Future<com_autonavi_amap_mapcore_message_RotateGestureMapMessage> obtain(int var0, double var1, int var2, int var3) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.message.RotateGestureMapMessage::obtain([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
@@ -76,7 +76,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
   
   static Future<void> destory() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.message.RotateGestureMapMessage::destory([])');
     }
   
@@ -98,7 +98,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
   
   Future<int> getType() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.message.RotateGestureMapMessage@$refId::getType([])');
     }
   
@@ -120,7 +120,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lan
   
   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.message.RotateGestureMapMessage@$refId::runCameraUpdate([])');
     }
   

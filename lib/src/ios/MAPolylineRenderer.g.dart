@@ -48,7 +48,7 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
   // generate methods
   Future<MAPolylineRenderer> initWithPolyline(MAPolyline polyline) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: MAPolylineRenderer@$refId::initWithPolyline([])');
     }
   

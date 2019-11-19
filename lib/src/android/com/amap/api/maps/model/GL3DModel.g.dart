@@ -20,7 +20,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   // generate methods
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setPosition([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<void> setAngle(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setAngle([\'var1\':$var1])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<double> getAngle() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::getAngle([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::getPosition([])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<String> getId() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::getId([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setAnimation([])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<bool> startAnimation() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::startAnimation([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<void> setModelFixedLength(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setModelFixedLength([\'var1\':$var1])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<void> remove() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::remove([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<bool> isVisible() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::isVisible([])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<void> setVisible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setVisible([\'var1\':$var1])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<void> setRotateAngle(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setRotateAngle([\'var1\':$var1])');
     }
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<double> getRotateAngle() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::getRotateAngle([])');
     }
   
@@ -306,7 +306,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<void> setZoomLimit(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setZoomLimit([\'var1\':$var1])');
     }
   
@@ -328,7 +328,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<void> destroy() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::destroy([])');
     }
   
@@ -350,7 +350,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setGeoPoint([])');
     }
   
@@ -372,7 +372,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<void> setTitle(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setTitle([\'var1\':$var1])');
     }
   
@@ -394,7 +394,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<String> getTitle() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::getTitle([])');
     }
   
@@ -416,7 +416,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<String> getSnippet() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::getSnippet([])');
     }
   
@@ -438,7 +438,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<void> setSnippet(String var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setSnippet([\'var1\':$var1])');
     }
   
@@ -460,7 +460,7 @@ class com_amap_api_maps_model_GL3DModel extends java_lang_Object  {
   
   Future<void> showInfoWindow() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::showInfoWindow([])');
     }
   

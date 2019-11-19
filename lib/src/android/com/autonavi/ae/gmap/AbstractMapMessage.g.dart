@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_AbstractMapMessage extends java_lang_Object  {
   // generate methods
   Future<int> getType() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.AbstractMapMessage@$refId::getType([])');
     }
   

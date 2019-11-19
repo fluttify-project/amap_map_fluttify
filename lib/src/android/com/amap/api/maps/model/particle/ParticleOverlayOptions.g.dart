@@ -20,7 +20,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   // generate methods
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> icon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::icon([])');
     }
   
@@ -42,7 +42,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_BitmapDescriptor> getIcon() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getIcon([])');
     }
   
@@ -64,7 +64,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<int> getMaxParticles() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getMaxParticles([])');
     }
   
@@ -86,7 +86,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setMaxParticles(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setMaxParticles([\'var1\':$var1])');
     }
   
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<bool> isLoop() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::isLoop([])');
     }
   
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setLoop(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setLoop([\'var1\':$var1])');
     }
   
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<int> getDuration() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getDuration([])');
     }
   
@@ -174,7 +174,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setDuration(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setDuration([\'var1\':$var1])');
     }
   
@@ -196,7 +196,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<int> getParticleLifeTime() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleLifeTime([])');
     }
   
@@ -218,7 +218,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleLifeTime(int var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleLifeTime([\'var1\':$var1])');
     }
   
@@ -240,7 +240,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleEmissionModule> getParticleEmissionModule() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleEmissionModule([])');
     }
   
@@ -262,7 +262,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleEmissionModule(com_amap_api_maps_model_particle_ParticleEmissionModule var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleEmissionModule([])');
     }
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleShapeModule(com_amap_api_maps_model_particle_ParticleShapeModule var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleShapeModule([])');
     }
   
@@ -306,7 +306,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleStartSpeed(com_amap_api_maps_model_particle_VelocityGenerate var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleStartSpeed([])');
     }
   
@@ -328,7 +328,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleStartColor(com_amap_api_maps_model_particle_ColorGenerate var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleStartColor([])');
     }
   
@@ -350,7 +350,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleOverLifeModule(com_amap_api_maps_model_particle_ParticleOverLifeModule var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleOverLifeModule([])');
     }
   
@@ -372,7 +372,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleOverLifeModule> getParticleOverLifeModule() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleOverLifeModule([])');
     }
   
@@ -394,7 +394,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setStartParticleSize(int var1, int var2) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setStartParticleSize([\'var1\':$var1, \'var2\':$var2])');
     }
   
@@ -416,7 +416,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<int> getStartParticleW() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getStartParticleW([])');
     }
   
@@ -438,7 +438,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<int> getstartParticleH() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getstartParticleH([])');
     }
   
@@ -460,7 +460,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> zIndex(double var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::zIndex([\'var1\':$var1])');
     }
   
@@ -482,7 +482,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<double> getZIndex() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getZIndex([])');
     }
   
@@ -504,7 +504,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setVisible(bool var1) async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setVisible([\'var1\':$var1])');
     }
   
@@ -526,7 +526,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   Future<bool> isVisibile() async {
     // print log
-    if (!kReleaseMode) {
+    if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::isVisibile([])');
     }
   
