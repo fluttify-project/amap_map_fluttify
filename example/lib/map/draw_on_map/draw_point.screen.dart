@@ -30,6 +30,16 @@ class DrawPointScreenState extends State<DrawPointScreen> {
           Flexible(
             flex: 1,
             child: AmapView(
+              markers: [
+                MarkerOption(
+                  latLng: _getNextLatLng(),
+                  title: '北京',
+                  snippet: '描述',
+                  iconUri: _assetsIcon,
+                  draggable: true,
+                  imageConfig: createLocalImageConfiguration(context),
+                ),
+              ],
               onMapCreated: (controller) async {
                 _controller = controller;
                 if (await requestPermission()) {
@@ -52,9 +62,6 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                         latLng: _getNextLatLng(),
                         title: '北京',
                         snippet: '描述',
-                        iconUri: _assetsIcon,
-                        draggable: true,
-                        imageConfig: createLocalImageConfiguration(context),
                       ),
                     );
                     _markers.add(marker);

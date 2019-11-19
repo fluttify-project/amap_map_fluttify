@@ -6,7 +6,7 @@ import 'package:amap_map_fluttify/src/dart/amap_controller.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:flutter/material.dart';
 
-typedef void _OnMapCreated(AmapController controller);
+typedef Future<void> _OnMapCreated(AmapController controller);
 
 /// 高德地图 Widget
 class AmapView extends StatefulWidget {
@@ -112,7 +112,7 @@ class _AmapViewState extends State<AmapView> {
           await controller.onCreate(bundle);
 
           if (widget.onMapCreated != null) {
-            widget.onMapCreated(_controller);
+            await widget.onMapCreated(_controller);
           }
           await _initMap();
           release(bundle);
@@ -124,7 +124,7 @@ class _AmapViewState extends State<AmapView> {
           _controller = AmapController.ios(controller);
 
           if (widget.onMapCreated != null) {
-            widget.onMapCreated(_controller);
+            await widget.onMapCreated(_controller);
           }
           await _initMap();
         },
