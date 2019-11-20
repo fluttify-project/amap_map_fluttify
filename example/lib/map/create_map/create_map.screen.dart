@@ -21,6 +21,8 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
           Flexible(
             flex: 1,
             child: AmapView(
+              showZoomControl: false,
+              maskDelay: Duration(milliseconds: 500),
               onMapCreated: (controller) async {
                 _controller = controller;
                 if (await requestPermission()) {
