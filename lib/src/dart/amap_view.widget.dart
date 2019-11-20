@@ -1,9 +1,11 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:amap_map_fluttify/src/dart/amap_controller.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 typedef Future<void> _OnMapCreated(AmapController controller);
@@ -32,6 +34,8 @@ class AmapView extends StatefulWidget {
     this.onMarkerClick,
     this.onMapClick,
     this.onMapDrag,
+    this.maskDelay = const Duration(seconds: 0),
+    this.mask,
   }) : super(key: key);
 
   /// 地图创建完成回调
@@ -94,6 +98,13 @@ class AmapView extends StatefulWidget {
   /// 地图拖动回调
   final OnMapDrag onMapDrag;
 
+  /// [PlatformView]创建时, 会有一下的黑屏, 这里提供一个在[PlatformView]初始化时, 盖住其黑屏
+  /// 的遮罩, [maskDelay]配置延迟多少时间之后再显示地图, 默认不延迟, 即0.
+  final Duration maskDelay;
+
+  /// 遮盖地图层的widget
+  final Widget mask;
+
   @override
   _AmapViewState createState() => _AmapViewState();
 }
@@ -103,31 +114,56 @@ class _AmapViewState extends State<AmapView> {
 
   @override
   Widget build(BuildContext context) {
+    final mask = FutureBuilder<bool>(
+      future: Future.delayed(widget.maskDelay, () => false),
+      initialData: true,
+      builder: (context, snapshot) {
+        return Visibility(
+          visible: snapshot.data,
+          child: widget.mask ??
+              Container(
+                color: Colors.white,
+                child: Center(child: CupertinoActivityIndicator()),
+              ),
+        );
+      },
+    );
     if (Platform.isAndroid) {
-      return com_amap_api_maps_MapView_Android(
-        onViewCreated: (controller) async {
-          _controller = AmapController.android(controller);
+      return Stack(
+        children: <Widget>[
+          com_amap_api_maps_MapView_Android(
+            onViewCreated: (controller) async {
+              _controller = AmapController.android(controller);
 
-          final bundle = await PlatformFactoryAndroid.createandroid_os_Bundle();
-          await controller.onCreate(bundle);
+              final bundle =
+                  await PlatformFactoryAndroid.createandroid_os_Bundle();
+              await controller.onCreate(bundle);
 
-          if (widget.onMapCreated != null) {
-            await widget.onMapCreated(_controller);
-          }
-          await _initMap();
-          release(bundle);
-        },
+              if (widget.onMapCreated != null) {
+                await widget.onMapCreated(_controller);
+              }
+              await _initMap();
+              release(bundle);
+            },
+          ),
+          mask,
+        ],
       );
     } else if (Platform.isIOS) {
-      return MAMapView_iOS(
-        onViewCreated: (controller) async {
-          _controller = AmapController.ios(controller);
+      return Stack(
+        children: <Widget>[
+          MAMapView_iOS(
+            onViewCreated: (controller) async {
+              _controller = AmapController.ios(controller);
 
-          if (widget.onMapCreated != null) {
-            await widget.onMapCreated(_controller);
-          }
-          await _initMap();
-        },
+              if (widget.onMapCreated != null) {
+                await widget.onMapCreated(_controller);
+              }
+              await _initMap();
+            },
+          ),
+          mask,
+        ],
       );
     } else {
       return Center(child: Text('未实现的平台'));
