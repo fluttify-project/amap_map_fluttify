@@ -1,6 +1,6 @@
 name: amap_map_fluttify
 description: An `Amap` map component, based on `fluttify` engine.
-version: 0.5.7+c454dd5
+version: 0.6.0+c454dd5
 author: yohom <382146139@qq.com>
 homepage: https://github.com/fluttify-project/amap_map_fluttify
 

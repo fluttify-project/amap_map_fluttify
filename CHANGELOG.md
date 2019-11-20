@@ -1,3 +1,7 @@
+## 0.6.0
+- fix: [breaking change] 所有的回调都返回Future, 并且调用时都加await
+- enhance: 提供一个盖住PlatformView黑屏的途径
+
 ## 0.5.7
 - doc: ImageConfiguration的说明
 - fix: onMapCreated返回Future并用await修饰
