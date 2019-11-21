@@ -1286,6 +1286,47 @@ class MAMapView extends UIView  {
     }
   }
   
+  Future<void> takeSnapshotInRectWithCompletionBlock(CGRect rect, void block(UIImage resultImage, int state), {bool viewChannel = true}) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAMapView@$refId::takeSnapshotInRect([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::takeSnapshotInRectWithCompletionBlock', {"rect": rect.refId, "refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('MAMapView::takeSnapshotInRectWithCompletionBlock::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
+  
+          switch (methodCall.method) {
+            case 'Callback::void|UIImage resultImage, NSInteger state::void|UIImage resultImage, NSInteger state':
+              // print log
+              if (!kReleaseMode) {
+        
+              }
+        
+              // handle the native call
+              block(UIImage()..refId = (args['resultImage'])..tag = 'amap_map_fluttify', args['state']);
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<double> metersPerPointForZoomLevel(double zoomLevel, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {

@@ -1,7 +1,6 @@
 import 'package:amap_map_fluttify_example/widgets/dimens.dart';
 import 'package:amap_map_fluttify_example/widgets/function_group.widget.dart';
 import 'package:amap_map_fluttify_example/widgets/function_item.widget.dart';
-import 'package:amap_map_fluttify_example/widgets/todo.screen.dart';
 import 'package:flutter/material.dart';
 
 import 'create_map/create_map.screen.dart';
@@ -12,6 +11,7 @@ import 'draw_on_map/draw_polyline.screen.dart';
 import 'interact_with_map/code_interaction.screen.dart';
 import 'interact_with_map/control_interaction.screen.dart';
 import 'interact_with_map/gesture_interaction.screen.dart';
+import 'interact_with_map/screen_shot_screen.dart';
 import 'tools/calcute_distance_screen.dart';
 import 'tools/coordinate_transformation_screen.dart';
 import 'tools/launch_amap_screen.dart';
@@ -52,8 +52,8 @@ class MapDemo extends StatelessWidget {
             ),
             FunctionItem(
               label: '截图',
-              sublabel: 'TODO',
-              target: TODOScreen(),
+              sublabel: 'ScreenShotScreen',
+              target: ScreenShotScreen(),
             ),
           ],
         ),

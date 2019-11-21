@@ -1,3 +1,7 @@
+## 0.6.1
+- doc: Troubleshooting更新
+- feat: 增加截图功能
+
 ## 0.6.0
 - fix: [breaking change] 所有的回调都返回Future, 并且调用时都加await
 - enhance: 提供一个盖住PlatformView黑屏的途径
