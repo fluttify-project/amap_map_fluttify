@@ -33,8 +33,9 @@ A new flutter plugin project.
         "z", "c++"
   ]
   # resources
-  s.resource_bundles = {
-    'amap_map_fluttify' => ['*.framework/*.bundle']
-  }
+  s.resources = '*.framework/*.bundle'
+  # s.resource_bundles = {
+  #   'amap_map_fluttify' => ['*.framework/*.bundle']
+  # }
 end
 
