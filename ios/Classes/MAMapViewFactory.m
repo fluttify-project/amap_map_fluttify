@@ -417,6 +417,48 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 无返回值
           methodResult(@"success");
       },
+      @"MAMapView::takeSnapshotInRectWithCompletionBlock": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          CGRect rect;
+          [rectValue getValue:&rect];
+      
+      
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::takeSnapshotInRect(暂未实现参数打印)", args[@"refId"]);
+          }
+      
+          // invoke native method
+          [ref takeSnapshotInRect : rect withCompletionBlock: ^(UIImage* resultImage, NSInteger state) {
+              FlutterMethodChannel *channel = [FlutterMethodChannel
+                  methodChannelWithName:@"MAMapView::takeSnapshotInRectWithCompletionBlock::Callback"
+                        binaryMessenger:[self->_registrar messenger]];
+      
+              // print log
+              if (enableLog) {
+                  NSLog(@"");
+              }
+      
+              // 构造可以直接传输的参数
+              // ref callback arg
+              NSNumber* argresultImage = @(resultImage.hash);
+              HEAP[argresultImage] = resultImage;
+              // primitive callback arg
+              NSNumber* argstate = @(state);
+      
+              [channel invokeMethod:@"Callback::void|UIImage resultImage, NSInteger state::void|UIImage resultImage, NSInteger state" arguments:@{@"resultImage": argresultImage, @"state": argstate}];
+      
+          }];
+      
+          // result
+          // 无返回值
+          methodResult(@"success");
+      },
       @"MAMapView::metersPerPointForZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
           // jsonable arg

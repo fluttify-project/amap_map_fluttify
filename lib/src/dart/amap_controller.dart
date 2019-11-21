@@ -18,6 +18,7 @@ typedef Future<void> OnMapClick(LatLng latLng);
 typedef Future<void> OnMapDrag(MapDrag latLng);
 typedef Future<void> OnMarkerDrag(Marker marker);
 typedef Future<void> _OnRequireAlwaysAuth(CLLocationManager manager);
+typedef Future<void> OnScreenShot(Uint8List imageData);
 
 /// 地图控制类
 class AmapController with WidgetsBindingObserver, _Private {
@@ -1202,6 +1203,33 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 截图
+  Future<void> screenShot(OnScreenShot onScreenShot) {
+    assert(onScreenShot != null);
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+        await map.getMapScreenShot(
+          _androidMapDelegate.._onSnapshot = onScreenShot,
+        );
+
+        pool.add(map);
+      },
+      ios: (pool) async {
+        final rect = await _iosController.frame;
+        await _iosController.takeSnapshotInRectWithCompletionBlock(
+          rect,
+          (image, state) async {
+            await onScreenShot(await image.data);
+            pool.add(image);
+          },
+        );
+
+        pool.add(rect);
+      },
+    );
+  }
+
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
   }
@@ -1350,13 +1378,15 @@ class _AndroidMapDelegate extends java_lang_Object
         com_amap_api_maps_AMap_OnMarkerClickListener,
         com_amap_api_maps_AMap_OnMarkerDragListener,
         com_amap_api_maps_AMap_OnMapClickListener,
-        com_amap_api_maps_AMap_OnCameraChangeListener {
+        com_amap_api_maps_AMap_OnCameraChangeListener,
+        com_amap_api_maps_AMap_OnMapScreenShotListener {
   OnMarkerClick _onMarkerClicked;
   OnMarkerDrag _onMarkerDragStart;
   OnMarkerDrag _onMarkerDragging;
   OnMarkerDrag _onMarkerDragEnd;
   OnMapDrag _onMapDrag;
   OnMapClick _onMapClick;
+  OnScreenShot _onSnapshot;
 
   @override
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
@@ -1419,6 +1449,15 @@ class _AndroidMapDelegate extends java_lang_Object
         tilt: await var1.get_tilt(),
         isAbroad: await var1.get_isAbroad(),
       ));
+    }
+  }
+
+  @override
+  Future<void> onMapScreenShot(android_graphics_Bitmap var1) async {
+    super.onMapScreenShot(var1);
+    if (_onSnapshot != null) {
+      await _onSnapshot(await var1.data);
+      var1.recycle(); // 回收原生的Bitmap, 由于没有后续操作, 异步执行也无妨.
     }
   }
 }
