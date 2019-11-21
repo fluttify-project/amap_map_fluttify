@@ -10,7 +10,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends java_lang_Object  {
+class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation  {
   // generate getters
   Future<bool> get_needMove() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::get_needMove", {'refId': refId});

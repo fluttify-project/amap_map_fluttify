@@ -282,6 +282,28 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     }
   }
   
+  Future<com_amap_api_maps_model_particle_ParticleShapeModule> getParticleShapeModule() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleShapeModule([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlayOptions::getParticleShapeModule', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleShapeModule(com_amap_api_maps_model_particle_ParticleShapeModule var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -301,6 +323,28 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     } else {
       kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  Future<com_amap_api_maps_model_particle_VelocityGenerate> getParticleStartSpeed() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleStartSpeed([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlayOptions::getParticleStartSpeed', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   
@@ -345,6 +389,28 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     } else {
       kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
       return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  Future<com_amap_api_maps_model_particle_ColorGenerate> getParticleStartColor() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleStartColor([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlayOptions::getParticleStartColor', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

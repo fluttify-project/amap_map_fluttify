@@ -10,7 +10,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends java_lang_Object  {
+class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam  {
   // generate getters
   Future<double> get_fromXValue() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::get_fromXValue", {'refId': refId});

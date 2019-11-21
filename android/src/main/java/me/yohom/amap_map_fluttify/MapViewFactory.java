@@ -47,6 +47,7 @@ class MapViewFactory extends PlatformViewFactory {
     private Registrar registrar;
 
     private final Map<String, AmapMapFluttifyPlugin.Handler> handlerMap = new HashMap<String, AmapMapFluttifyPlugin.Handler>() {{
+        // method
         put("com.amap.api.maps.MapView::getMap", (args, methodResult) -> {
             // args
         
@@ -73,6 +74,7 @@ class MapViewFactory extends PlatformViewFactory {
                 methodResult.success(null);
             }
         });
+        // method
         put("com.amap.api.maps.MapView::onCreate", (args, methodResult) -> {
             // args
             // ref arg
@@ -93,6 +95,7 @@ class MapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.MapView::onResume", (args, methodResult) -> {
             // args
         
@@ -112,6 +115,7 @@ class MapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.MapView::onPause", (args, methodResult) -> {
             // args
         
@@ -131,6 +135,7 @@ class MapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.MapView::onDestroy", (args, methodResult) -> {
             // args
         
@@ -150,6 +155,7 @@ class MapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.MapView::onLowMemory", (args, methodResult) -> {
             // args
         
@@ -169,6 +175,7 @@ class MapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.MapView::onSaveInstanceState", (args, methodResult) -> {
             // args
             // ref arg
@@ -189,6 +196,7 @@ class MapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.MapView::setVisibility", (args, methodResult) -> {
             // args
             // jsonable arg

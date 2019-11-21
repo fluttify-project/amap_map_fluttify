@@ -1416,7 +1416,15 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           // if (refId != this.refId) return;
   
           switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.CommonInfoWindowAdapter::getInfoWindowParams':
+              // print log
+              if (!kReleaseMode) {
+                print('fluttify-dart-callback: getInfoWindowParams([])');
+              }
         
+              // handle the native call
+              var1?.getInfoWindowParams(com_amap_api_maps_model_GL3DModel()..refId = (args['var1'])..tag = 'amap_map_fluttify');
+              break;
             default:
               break;
           }

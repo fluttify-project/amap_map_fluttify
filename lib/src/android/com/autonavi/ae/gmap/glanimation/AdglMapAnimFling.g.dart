@@ -10,7 +10,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends java_lang_Object  {
+class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation  {
   // generate getters
   
 

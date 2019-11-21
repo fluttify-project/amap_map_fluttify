@@ -47,6 +47,7 @@ class WearMapViewFactory extends PlatformViewFactory {
     private Registrar registrar;
 
     private final Map<String, AmapMapFluttifyPlugin.Handler> handlerMap = new HashMap<String, AmapMapFluttifyPlugin.Handler>() {{
+        // method
         put("com.amap.api.maps.WearMapView::getMap", (args, methodResult) -> {
             // args
         
@@ -73,6 +74,7 @@ class WearMapViewFactory extends PlatformViewFactory {
                 methodResult.success(null);
             }
         });
+        // method
         put("com.amap.api.maps.WearMapView::onCreate", (args, methodResult) -> {
             // args
             // ref arg
@@ -93,6 +95,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.WearMapView::onResume", (args, methodResult) -> {
             // args
         
@@ -112,6 +115,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.WearMapView::onPause", (args, methodResult) -> {
             // args
         
@@ -131,6 +135,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.WearMapView::onDestroy", (args, methodResult) -> {
             // args
         
@@ -150,6 +155,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.WearMapView::onLowMemory", (args, methodResult) -> {
             // args
         
@@ -169,6 +175,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.WearMapView::onSaveInstanceState", (args, methodResult) -> {
             // args
             // ref arg
@@ -189,6 +196,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.WearMapView::setVisibility", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -209,6 +217,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.WearMapView::setOnDismissCallbackListener", (args, methodResult) -> {
             // args
         
@@ -273,6 +282,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.WearMapView::onDismiss", (args, methodResult) -> {
             // args
         
@@ -292,6 +302,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.WearMapView::onEnterAmbient", (args, methodResult) -> {
             // args
             // ref arg
@@ -312,6 +323,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.WearMapView::onExitAmbient", (args, methodResult) -> {
             // args
         
