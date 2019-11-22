@@ -7,7 +7,7 @@ packages:
       name: amap_core_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.12+d2eb645"
+    version: "0.1.0+4f403aa"
   async:
     dependency: transitive
     description:
@@ -52,7 +52,7 @@ packages:
       name: foundation_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.12+2"
+    version: "0.1.0"
   matcher:
     dependency: transitive
     description:
