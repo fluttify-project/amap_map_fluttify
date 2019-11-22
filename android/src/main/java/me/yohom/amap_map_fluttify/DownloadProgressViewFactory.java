@@ -47,6 +47,7 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
     private Registrar registrar;
 
     private final Map<String, AmapMapFluttifyPlugin.Handler> handlerMap = new HashMap<String, AmapMapFluttifyPlugin.Handler>() {{
+        // method
         put("com.amap.api.maps.offlinemap.DownloadProgressView::setProgress", (args, methodResult) -> {
             // args
             // jsonable arg

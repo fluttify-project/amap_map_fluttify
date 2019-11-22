@@ -124,6 +124,15 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   }
   
   @mustCallSuper
+  Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() {
+  
+  
+    if (!kReleaseMode) {
+      debugPrint('getHoleOptions::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
   Future<int> getDottedLineType() {
   
   

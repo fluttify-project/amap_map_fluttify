@@ -10,7 +10,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lang_Object  {
+class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends com_autonavi_amap_mapcore_message_AbstractGestureMapMessage  {
   // generate getters
   Future<int> get_pivotX() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotX", {'refId': refId});

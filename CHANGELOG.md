@@ -1,3 +1,6 @@
+## 0.7.0
+- 底层更新
+
 ## 0.6.1
 - doc: Troubleshooting更新
 - feat: 增加截图功能

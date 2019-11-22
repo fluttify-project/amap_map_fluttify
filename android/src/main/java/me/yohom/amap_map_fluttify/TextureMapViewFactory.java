@@ -47,6 +47,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
     private Registrar registrar;
 
     private final Map<String, AmapMapFluttifyPlugin.Handler> handlerMap = new HashMap<String, AmapMapFluttifyPlugin.Handler>() {{
+        // method
         put("com.amap.api.maps.TextureMapView::getMap", (args, methodResult) -> {
             // args
         
@@ -73,6 +74,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 methodResult.success(null);
             }
         });
+        // method
         put("com.amap.api.maps.TextureMapView::onCreate", (args, methodResult) -> {
             // args
             // ref arg
@@ -93,6 +95,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.TextureMapView::onResume", (args, methodResult) -> {
             // args
         
@@ -112,6 +115,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.TextureMapView::onPause", (args, methodResult) -> {
             // args
         
@@ -131,6 +135,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.TextureMapView::onDestroy", (args, methodResult) -> {
             // args
         
@@ -150,6 +155,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.TextureMapView::onLowMemory", (args, methodResult) -> {
             // args
         
@@ -169,6 +175,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.TextureMapView::onSaveInstanceState", (args, methodResult) -> {
             // args
             // ref arg
@@ -189,6 +196,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             // result
             methodResult.success("success");
         });
+        // method
         put("com.amap.api.maps.TextureMapView::setVisibility", (args, methodResult) -> {
             // args
             // jsonable arg

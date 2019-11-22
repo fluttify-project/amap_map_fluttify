@@ -25,48 +25,11 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileOverlayOptions::tileProvider', {"refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileOverlayOptions::tileProvider', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.model.TileOverlayOptions::tileProvider::Callback')
-        .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
   
-          switch (methodCall.method) {
-            case 'Callback::com.amap.api.maps.model.TileProvider::getTile':
-              // print log
-              if (!kReleaseMode) {
-                print('fluttify-dart-callback: getTile([\'var1\':$args[var1], \'var2\':$args[var2], \'var3\':$args[var3]])');
-              }
-        
-              // handle the native call
-              var1?.getTile(args['var1'], args['var2'], args['var3']);
-              break;
-            case 'Callback::com.amap.api.maps.model.TileProvider::getTileWidth':
-              // print log
-              if (!kReleaseMode) {
-                print('fluttify-dart-callback: getTileWidth([])');
-              }
-        
-              // handle the native call
-              var1?.getTileWidth();
-              break;
-            case 'Callback::com.amap.api.maps.model.TileProvider::getTileHeight':
-              // print log
-              if (!kReleaseMode) {
-                print('fluttify-dart-callback: getTileHeight([])');
-              }
-        
-              // handle the native call
-              var1?.getTileHeight();
-              break;
-            default:
-              break;
-          }
-        });
   
     // convert native result to dart side object
     if (result == null) {

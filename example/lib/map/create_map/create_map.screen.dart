@@ -22,6 +22,7 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
             flex: 1,
             child: AmapView(
               showZoomControl: false,
+              centerCoordinate: LatLng(23.170117, 113.438926),
               maskDelay: Duration(milliseconds: 500),
               onMapCreated: (controller) async {
                 _controller = controller;

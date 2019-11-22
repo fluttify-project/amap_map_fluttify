@@ -10,7 +10,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with android_os_Parcelable {
+class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_BaseOptions with android_os_Parcelable {
   // generate getters
   
 
@@ -367,6 +367,28 @@ class com_amap_api_maps_model_PolygonOptions extends java_lang_Object with andro
     } else {
     
       return result;
+    }
+  }
+  
+  Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getHoleOptions([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::getHoleOptions', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_model_PolygonHoleOptions()..refId = it..tag = 'amap_map_fluttify').toList());
+      return (result as List).cast<int>().map((it) => com_amap_api_maps_model_PolygonHoleOptions()..refId = it..tag = 'amap_map_fluttify').toList();
     }
   }
   

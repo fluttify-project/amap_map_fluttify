@@ -128,6 +128,28 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     }
   }
   
+  Future<com_amap_api_maps_model_BasePointOverlay> getObject() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getObject([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getObject', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_GL3DModel()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_GL3DModel()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
     if (fluttifyLogEnabled) {
