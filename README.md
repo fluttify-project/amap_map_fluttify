@@ -70,7 +70,7 @@ class AmapWidget extends StatelessWidget {
       // 中心点坐标
       centerCoordinate: LatLng(39, 120),
       // 标记
-      markers: <MarkerOptions>[], 
+      markers: <MarkerOption>[], 
       // 标识点击回调
       onMarkerClick: (Marker marker) {},
       // 地图点击回调
