@@ -22,12 +22,14 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
             flex: 1,
             child: AmapView(
               showZoomControl: false,
-              centerCoordinate: LatLng(23.170117, 113.438926),
               maskDelay: Duration(milliseconds: 500),
               onMapCreated: (controller) async {
                 _controller = controller;
                 if (await requestPermission()) {
-                  await controller.showMyLocation(false);
+                  await controller.showMyLocation(true);
+                  final latLng = await _controller?.getLocation(
+                      delay: Duration(seconds: 1));
+                  toast('当前经纬度: ${latLng.toString()}');
                 }
               },
             ),

@@ -40,28 +40,38 @@ class AmapController with WidgetsBindingObserver, _Private {
 
   /// 获取当前位置
   ///
+  /// 由于定位需要时间, 如果进入地图后马上获取位置信息, 获取到的会是null, 加入参数[delay]指定
+  /// 进入地图后一段时间后再获取定位. 具体数值可以自行尝试判断.
+  /// 另外一个解决方案是使用[amap_location_fluttify](https://pub.flutter-io.cn/packages/amap_location_fluttify)
   /// 返回的是经纬度, 如果需要进一步的数据, 可以配合[https://github.com/fluttify-project/amap_search_fluttify]进行逆地理搜索
-  Future<LatLng> getLocation() async {
+  Future<LatLng> getLocation({Duration delay = Duration.zero}) async {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
-        final location = await map.getMyLocation();
+        return Future.delayed(
+          delay,
+          () async {
+            final map = await _androidController.getMap();
+            final location = await map.getMyLocation();
 
-        final result = LatLng(
-          await location.latitude,
-          await location.longitude,
+            final result = LatLng(
+              await location.latitude,
+              await location.longitude,
+            );
+            return result;
+          },
         );
-        pool..add(map)..add(location);
-        return result;
       },
       ios: (pool) async {
-        final location = await _iosController.get_userLocation();
-        final coord = await location.get_coordinate();
+        return Future.delayed(
+          delay,
+          () async {
+            final location = await _iosController.get_userLocation();
+            final coord = await location.get_coordinate();
 
-        final result = LatLng(await coord.latitude, await coord.longitude);
-
-        pool..add(location)..add(coord);
-        return result;
+            final result = LatLng(await coord.latitude, await coord.longitude);
+            return result;
+          },
+        );
       },
     );
   }
