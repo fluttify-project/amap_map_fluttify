@@ -12,16 +12,52 @@ import 'package:flutter/services.dart';
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMapCustomStyleOptions extends NSObject  {
   // generate getters
+  Future<NSData> get_styleData() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleData", {'refId': refId});
+    kNativeObjectPool.add(NSData()..refId = result..tag = 'amap_map_fluttify');
+    return NSData()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
   Future<String> get_styleId() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleId", {'refId': refId});
   
     return result;
   }
   
+  Future<NSData> get_styleTextureData() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleTextureData", {'refId': refId});
+    kNativeObjectPool.add(NSData()..refId = result..tag = 'amap_map_fluttify');
+    return NSData()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
+  Future<NSData> get_styleExtraData() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleExtraData", {'refId': refId});
+    kNativeObjectPool.add(NSData()..refId = result..tag = 'amap_map_fluttify');
+    return NSData()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
 
   // generate setters
+  Future<void> set_styleData(NSData styleData) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleData', {'refId': refId, "styleData": styleData.refId});
+  
+  
+  }
+  
   Future<void> set_styleId(String styleId) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleId', {'refId': refId, "styleId": styleId});
+  
+  
+  }
+  
+  Future<void> set_styleTextureData(NSData styleTextureData) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleTextureData', {'refId': refId, "styleTextureData": styleTextureData.refId});
+  
+  
+  }
+  
+  Future<void> set_styleExtraData(NSData styleExtraData) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleExtraData', {'refId': refId, "styleExtraData": styleExtraData.refId});
   
   
   }
