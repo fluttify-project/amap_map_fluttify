@@ -185,7 +185,7 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                 ListTile(
                   title: Center(child: Text('监听地图移动')),
                   onTap: () {
-                    _controller?.setMapDragListener((drag) {
+                    _controller?.setMapDragListener((drag) async {
                       toast('移动: $drag');
                     });
                   },
@@ -194,11 +194,20 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   title: Center(child: Text('添加点击地图监听')),
                   onTap: () {
                     _controller?.setMapClickListener(
-                      (latLng) {
+                      (latLng) async {
                         toast(
                           '点击: lat: ${latLng.latitude}, lng: ${latLng.longitude}',
                         );
                       },
+                    );
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('自定义地图')),
+                  onTap: () {
+                    _controller?.setCustomMapStyle(
+                      styleDataPath: 'raw/style.data',
+                      styleExtraPath: 'raw/style_extra.data',
                     );
                   },
                 ),

@@ -5670,6 +5670,24 @@ extern BOOL enableLog;
           methodResult(result);
       },
       
+      @"MAMapCustomStyleOptions::get_styleData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapCustomStyleOptions::get_styleData");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+      
+          // invoke native method
+          NSData* result = ref.styleData;
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
       @"MAMapCustomStyleOptions::get_styleId": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -5685,6 +5703,42 @@ extern BOOL enableLog;
       
           // 返回值: jsonable
           methodResult(result);
+      },
+      
+      @"MAMapCustomStyleOptions::get_styleTextureData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapCustomStyleOptions::get_styleTextureData");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+      
+          // invoke native method
+          NSData* result = ref.styleTextureData;
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
+      @"MAMapCustomStyleOptions::get_styleExtraData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapCustomStyleOptions::get_styleExtraData");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+      
+          // invoke native method
+          NSData* result = ref.styleExtraData;
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
       },
       
       @"MAPolygon::get_hollowShapes": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -9563,6 +9617,23 @@ extern BOOL enableLog;
           methodResult(@"success");
       },
       
+      @"MAMapCustomStyleOptions::set_styleData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapCustomStyleOptions::set_styleData");
+          }
+      
+          // args
+          // ref arg
+          NSData* styleData = (NSData*) HEAP[@([args[@"styleData"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+      
+          ref.styleData = styleData;
+          methodResult(@"success");
+      },
+      
       @"MAMapCustomStyleOptions::set_styleId": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -9577,6 +9648,40 @@ extern BOOL enableLog;
           MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
       
           ref.styleId = styleId;
+          methodResult(@"success");
+      },
+      
+      @"MAMapCustomStyleOptions::set_styleTextureData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapCustomStyleOptions::set_styleTextureData");
+          }
+      
+          // args
+          // ref arg
+          NSData* styleTextureData = (NSData*) HEAP[@([args[@"styleTextureData"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+      
+          ref.styleTextureData = styleTextureData;
+          methodResult(@"success");
+      },
+      
+      @"MAMapCustomStyleOptions::set_styleExtraData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapCustomStyleOptions::set_styleExtraData");
+          }
+      
+          // args
+          // ref arg
+          NSData* styleExtraData = (NSData*) HEAP[@([args[@"styleExtraData"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+      
+          ref.styleExtraData = styleExtraData;
           methodResult(@"success");
       },
       

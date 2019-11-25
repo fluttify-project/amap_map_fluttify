@@ -1230,6 +1230,80 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 自定义地图
+  ///
+  /// 三个参数对应自定义地图压缩包内的三个文件
+  Future<void> setCustomMapStyle({
+    String styleDataPath,
+    String styleExtraPath,
+    String texturePath,
+  }) async {
+    Uint8List styleData;
+    if (styleDataPath != null) {
+      styleData = await rootBundle
+          .load(styleDataPath)
+          .then((byteData) => byteData.buffer.asUint8List());
+    }
+    Uint8List styleExtra;
+    if (styleExtraPath != null) {
+      styleExtra = await rootBundle
+          .load(styleExtraPath)
+          .then((byteData) => byteData.buffer.asUint8List());
+    }
+    Uint8List texture;
+    if (texturePath != null) {
+      texture = await rootBundle
+          .load(texturePath)
+          .then((byteData) => byteData.buffer.asUint8List());
+    }
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+
+        // 构造选项
+        final option = await AmapMapFluttifyFactoryAndroid
+            .createcom_amap_api_maps_model_CustomMapStyleOptions__();
+        await option.setEnable(true);
+        if (styleData != null) await option.setStyleData(styleData);
+        if (styleExtra != null) await option.setStyleExtraData(styleExtra);
+        if (texture != null) await option.setStyleTextureData(texture);
+
+        await map.setCustomMapStyle(option);
+
+        pool..add(map)..add(option);
+      },
+      ios: (pool) async {
+        // 构造选项
+        final option =
+            await AmapMapFluttifyFactoryIOS.createMAMapCustomStyleOptions();
+
+        if (styleData != null) {
+          final styleDataNSData =
+              await PlatformFactoryIOS.createNSDataWithUint8List(styleData);
+          await option.set_styleData(styleDataNSData);
+          pool.add(styleDataNSData);
+        }
+        if (styleExtra != null) {
+          final styleExtraNSData =
+              await PlatformFactoryIOS.createNSDataWithUint8List(styleExtra);
+          await option.set_styleExtraData(styleExtraNSData);
+          pool.add(styleExtraNSData);
+        }
+        if (texture != null) {
+          final textureNSData =
+              await PlatformFactoryIOS.createNSDataWithUint8List(texture);
+          await option.set_styleTextureData(textureNSData);
+          pool.add(textureNSData);
+        }
+
+        await _iosController.setCustomMapStyleOptions(option);
+        await _iosController.set_customMapStyleEnabled(true);
+
+        pool.add(option);
+      },
+    );
+  }
+
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
   }
