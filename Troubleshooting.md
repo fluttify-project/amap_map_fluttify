@@ -17,5 +17,5 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 ## Android端报`INVALID_USER_SCODE`
 1. 检查申请的高德key是否正确
-2. 检查key是否配置在<application>标签下, 有的人是配置到<activity>下了, 导致SDK没有取到值
+2. 检查key是否配置在`<application>`标签下, 有的人是配置到`<activity>`下了, 导致SDK没有取到值
  
