@@ -15,19 +15,14 @@ class AmapView extends StatefulWidget {
   const AmapView({
     Key key,
     this.onMapCreated,
-    this.showIndoorMap,
     this.mapType,
-    this.language,
-    this.showTraffic,
     this.showZoomControl,
     this.showCompass,
-    this.showLocateControl,
     this.showScaleControl,
     this.zoomGesturesEnabled,
     this.scrollGesturesEnabled,
     this.rotateGestureEnabled,
     this.tiltGestureEnabled,
-    this.allGesturesEnabled,
     this.zoomLevel,
     this.centerCoordinate,
     this.markers,
@@ -41,26 +36,14 @@ class AmapView extends StatefulWidget {
   /// 地图创建完成回调
   final _OnMapCreated onMapCreated;
 
-  /// 是否显示室内地图
-  final bool showIndoorMap;
-
   /// 地图类型
   final MapType mapType;
-
-  /// 地图语言
-  final Language language;
-
-  /// 是否显示交通情况
-  final bool showTraffic;
 
   /// 是否显示缩放控件
   final bool showZoomControl;
 
   /// 是否显示指南针控件
   final bool showCompass;
-
-  /// 是否显示定位控件
-  final bool showLocateControl;
 
   /// 是否显示比例尺控件
   final bool showScaleControl;
@@ -76,9 +59,6 @@ class AmapView extends StatefulWidget {
 
   /// 是否使能倾斜手势
   final bool tiltGestureEnabled;
-
-  /// 是否使能所有手势
-  final bool allGesturesEnabled;
 
   /// 缩放级别
   final double zoomLevel;
@@ -131,19 +111,29 @@ class _AmapViewState extends State<AmapView> {
     if (Platform.isAndroid) {
       return Stack(
         children: <Widget>[
-          com_amap_api_maps_MapView_Android(
-            onViewCreated: (controller) async {
-              _controller = AmapController.android(controller);
+          FutureBuilder<com_amap_api_maps_AMapOptions>(
+            future: _androidOptions(),
+            builder: (context, snapshot) {
+              if (snapshot.hasData) {
+                return com_amap_api_maps_MapView_Android(
+                  var2: snapshot.data,
+                  onViewCreated: (controller) async {
+                    _controller = AmapController.android(controller);
 
-              final bundle =
-                  await PlatformFactoryAndroid.createandroid_os_Bundle();
-              await controller.onCreate(bundle);
+                    final bundle =
+                        await PlatformFactoryAndroid.createandroid_os_Bundle();
+                    await controller.onCreate(bundle);
 
-              if (widget.onMapCreated != null) {
-                await widget.onMapCreated(_controller);
+                    if (widget.onMapCreated != null) {
+                      await widget.onMapCreated(_controller);
+                    }
+                    await _initAndroid();
+                    release(bundle);
+                  },
+                );
+              } else {
+                return Center();
               }
-              await _initMap();
-              release(bundle);
             },
           ),
           mask,
@@ -159,7 +149,7 @@ class _AmapViewState extends State<AmapView> {
               if (widget.onMapCreated != null) {
                 await widget.onMapCreated(_controller);
               }
-              await _initMap();
+              await _initIOS();
             },
           ),
           mask,
@@ -181,27 +171,70 @@ class _AmapViewState extends State<AmapView> {
     super.dispose();
   }
 
-  Future<void> _initMap() async {
-    if (widget.showIndoorMap != null) {
-      await _controller?.showIndoorMap(widget.showIndoorMap);
+  Future<com_amap_api_maps_AMapOptions> _androidOptions() async {
+    final option = await AmapMapFluttifyFactoryAndroid
+        .createcom_amap_api_maps_AMapOptions__();
+    if (widget.mapType != null) {
+      await option.mapType(widget.mapType.index);
     }
+    if (widget.showZoomControl != null) {
+      await option.zoomControlsEnabled(widget.showZoomControl);
+    }
+    if (widget.showCompass != null) {
+      await option.compassEnabled(widget.showCompass);
+    }
+    if (widget.showScaleControl != null) {
+      await option.scaleControlsEnabled(widget.showScaleControl);
+    }
+    if (widget.zoomGesturesEnabled != null) {
+      await option.zoomGesturesEnabled(widget.zoomGesturesEnabled);
+    }
+    if (widget.scrollGesturesEnabled != null) {
+      await option.scrollGesturesEnabled(widget.scrollGesturesEnabled);
+    }
+    if (widget.rotateGestureEnabled != null) {
+      await option.rotateGesturesEnabled(widget.rotateGestureEnabled);
+    }
+    if (widget.tiltGestureEnabled != null) {
+      await option.tiltGesturesEnabled(widget.tiltGestureEnabled);
+    }
+    if (widget.centerCoordinate != null) {
+      final latLng = await AmapMapFluttifyFactoryAndroid
+          .createcom_amap_api_maps_model_LatLng__double__double(
+        widget.centerCoordinate.latitude,
+        widget.centerCoordinate.longitude,
+      );
+      final cameraUpdate = await com_amap_api_maps_model_CameraPosition
+          .fromLatLngZoom(latLng, widget.zoomLevel ?? 10);
+      await option.camera(cameraUpdate);
+    }
+    return option;
+  }
+
+  Future<void> _initAndroid() async {
+    if (widget.markers != null && widget.markers.isNotEmpty) {
+      await _controller?.addMarkers(widget.markers);
+    }
+    if (widget.onMarkerClick != null) {
+      await _controller?.setMarkerClickListener(widget.onMarkerClick);
+    }
+    if (widget.onMapClick != null) {
+      await _controller?.setMapClickListener(widget.onMapClick);
+    }
+    if (widget.onMapDrag != null) {
+      await _controller?.setMapDragListener(widget.onMapDrag);
+    }
+  }
+
+  Future<void> _initIOS() async {
     if (widget.mapType != null) {
       await _controller?.setMapType(widget.mapType);
-    }
-    if (widget.language != null) {
-      await _controller?.setMapLanguage(widget.language);
-    }
-    if (widget.showTraffic != null) {
-      await _controller?.showTraffic(widget.showTraffic);
     }
     if (widget.showZoomControl != null) {
       await _controller?.showZoomControl(widget.showZoomControl);
     }
     if (widget.showCompass != null) {
       await _controller?.showCompass(widget.showCompass);
-    }
-    if (widget.showLocateControl != null) {
-      await _controller?.showLocateControl(widget.showLocateControl);
     }
     if (widget.showScaleControl != null) {
       await _controller?.showScaleControl(widget.showScaleControl);
@@ -217,9 +250,6 @@ class _AmapViewState extends State<AmapView> {
     }
     if (widget.tiltGestureEnabled != null) {
       await _controller?.setTiltGesturesEnabled(widget.tiltGestureEnabled);
-    }
-    if (widget.allGesturesEnabled != null) {
-      await _controller?.setAllGesturesEnabled(widget.allGesturesEnabled);
     }
     if (widget.zoomLevel != null) {
       await _controller?.setZoomLevel(widget.zoomLevel, animated: false);
