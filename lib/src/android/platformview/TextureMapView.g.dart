@@ -44,7 +44,7 @@ class _com_amap_api_maps_TextureMapView_AndroidState extends State<com_amap_api_
       gestureRecognizers: gestureRecognizers,
       onPlatformViewCreated: _onViewCreated,
       creationParamsCodec: messageCodec,
-      creationParams: {"var2": widget.var2.refId},
+      creationParams: {"var2": widget.var2?.refId ?? -1},
     );
   }
 
@@ -57,7 +57,7 @@ class _com_amap_api_maps_TextureMapView_AndroidState extends State<com_amap_api_
 
   @override
   void dispose() {
-    PlatformFactory_Android.release(_controller);
+    PlatformFactoryAndroid.release(_controller);
     super.dispose();
   }
 }
