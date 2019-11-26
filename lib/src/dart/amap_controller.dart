@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
@@ -1550,7 +1551,7 @@ mixin _Private {
     ImageConfiguration config,
     Uri iconUri,
   ) async {
-    Uint8List iconData;
+    final imageData = Completer<Uint8List>();
     switch (iconUri.scheme) {
       // 网络图片
       case 'https':
@@ -1558,12 +1559,12 @@ mixin _Private {
         HttpClient httpClient = HttpClient();
         var request = await httpClient.getUrl(iconUri);
         var response = await request.close();
-        iconData = await consolidateHttpClientResponseBytes(response);
+        imageData.complete(await consolidateHttpClientResponseBytes(response));
         break;
       // 文件图片
       case 'file':
         final imageFile = File.fromUri(iconUri);
-        iconData = imageFile.readAsBytesSync();
+        imageData.complete(imageFile.readAsBytesSync());
         break;
       // asset图片
       default:
@@ -1575,15 +1576,19 @@ mixin _Private {
         // 的话两端大小是一致的, 如果要求再高一点的话, ios这边对图片根据设备密度选择好图片后, 再进行对应密度
         // 的缩小, 就是完美的了, 但是处理起来比较麻烦, 这里就不去处理了
         if (Platform.isAndroid) {
-          final byteData = await rootBundle
-              .load(AmapService.toResolutionAware(config, iconUri.path));
-          iconData = byteData.buffer.asUint8List();
+          AssetImage(iconUri.path)
+              .resolve(config)
+              .addListener(ImageStreamListener((imageInfo, sync) async {
+            final byteData =
+                await imageInfo.image.toByteData(format: ImageByteFormat.png);
+            imageData.complete(byteData.buffer.asUint8List());
+          }));
         } else {
           final byteData = await rootBundle.load(iconUri.path);
-          iconData = byteData.buffer.asUint8List();
+          imageData.complete(byteData.buffer.asUint8List());
         }
         break;
     }
-    return iconData;
+    return imageData.future;
   }
 }
