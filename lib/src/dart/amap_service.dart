@@ -55,12 +55,12 @@ class AmapService {
     return platform(
       android: (pool) async {
         // 点1
-        final _location1 = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_LatLng__double__double(
+        final _location1 =
+            await createcom_amap_api_maps_model_LatLng__double__double(
                 point1.latitude, point1.longitude);
         // 点2
-        final _location2 = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_LatLng__double__double(
+        final _location2 =
+            await createcom_amap_api_maps_model_LatLng__double__double(
                 point2.latitude, point2.longitude);
 
         // 计算结果
@@ -105,13 +105,13 @@ class AmapService {
         final context = await PlatformFactoryAndroid.getandroid_app_Activity();
 
         // 待转换坐标
-        final targetCoord = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_LatLng__double__double(
+        final targetCoord =
+            await createcom_amap_api_maps_model_LatLng__double__double(
                 coord.latitude, coord.longitude);
 
         // 转换器
-        final converter = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_CoordinateConverter__android_content_Context(
+        final converter =
+            await createcom_amap_api_maps_CoordinateConverter__android_content_Context(
                 context);
 
         switch (fromType) {
@@ -208,12 +208,12 @@ class AmapService {
     return platform(
       android: (pool) async {
         // 点1
-        final _location1 = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_LatLng__double__double(
+        final _location1 =
+            await createcom_amap_api_maps_model_LatLng__double__double(
                 leftTop.latitude, leftTop.longitude);
         // 点2
-        final _location2 = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_LatLng__double__double(
+        final _location2 =
+            await createcom_amap_api_maps_model_LatLng__double__double(
                 rightBottom.latitude, rightBottom.longitude);
 
         // 计算结果

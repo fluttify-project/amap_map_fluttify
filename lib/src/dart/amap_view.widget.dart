@@ -172,8 +172,7 @@ class _AmapViewState extends State<AmapView> {
   }
 
   Future<com_amap_api_maps_AMapOptions> _androidOptions() async {
-    final option = await AmapMapFluttifyFactoryAndroid
-        .createcom_amap_api_maps_AMapOptions__();
+    final option = await createcom_amap_api_maps_AMapOptions__();
     if (widget.mapType != null) {
       await option.mapType(widget.mapType.index);
     }
@@ -199,8 +198,7 @@ class _AmapViewState extends State<AmapView> {
       await option.tiltGesturesEnabled(widget.tiltGestureEnabled);
     }
     if (widget.centerCoordinate != null) {
-      final latLng = await AmapMapFluttifyFactoryAndroid
-          .createcom_amap_api_maps_model_LatLng__double__double(
+      final latLng = await createcom_amap_api_maps_model_LatLng__double__double(
         widget.centerCoordinate.latitude,
         widget.centerCoordinate.longitude,
       );

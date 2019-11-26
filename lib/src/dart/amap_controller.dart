@@ -88,8 +88,8 @@ class AmapController with WidgetsBindingObserver, _Private {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
-        final locationStyle = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_MyLocationStyle__();
+        final locationStyle =
+            await createcom_amap_api_maps_model_MyLocationStyle__();
         await locationStyle.showMyLocation(show);
         await map.setMyLocationEnabled(show);
         if (show) {
@@ -126,8 +126,7 @@ class AmapController with WidgetsBindingObserver, _Private {
             true,
           );
 
-          final style = await AmapMapFluttifyFactoryIOS
-              .createMAUserLocationRepresentation();
+          final style = await createMAUserLocationRepresentation();
 
           // 边框颜色
           if (strokeColor != null) {
@@ -481,19 +480,20 @@ class AmapController with WidgetsBindingObserver, _Private {
       android: (pool) async {
         final map = await _androidController.getMap();
 
-        final latLng = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
+        final latLng =
+            await createcom_amap_api_maps_model_LatLng__double__double(
+                lat, lng);
         com_amap_api_maps_model_CameraPosition cameraPosition;
         if (zoomLevel == null) {
           // 如果没有设置zoomLevel, 那么就使用当前的zoomLevel
           final camera = await map.getCameraPosition();
           final currentZoomLevel = await camera.get_zoom();
-          cameraPosition = await AmapMapFluttifyFactoryAndroid
-              .createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float(
+          cameraPosition =
+              await createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float(
                   latLng, currentZoomLevel, 0, 0);
         } else {
-          cameraPosition = await AmapMapFluttifyFactoryAndroid
-              .createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float(
+          cameraPosition =
+              await createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float(
                   latLng, zoomLevel, 0, 0);
         }
 
@@ -561,12 +561,13 @@ class AmapController with WidgetsBindingObserver, _Private {
         final map = await _androidController.getMap();
 
         // marker经纬度
-        final latLng = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
+        final latLng =
+            await createcom_amap_api_maps_model_LatLng__double__double(
+                lat, lng);
 
         // marker配置
-        final markerOption = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_MarkerOptions__();
+        final markerOption =
+            await createcom_amap_api_maps_model_MarkerOptions__();
 
         // 设置marker经纬度
         await markerOption.position(latLng);
@@ -619,8 +620,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         );
 
         // 创建marker
-        final pointAnnotation =
-            await AmapMapFluttifyFactoryIOS.createMAPointAnnotation();
+        final pointAnnotation = await createMAPointAnnotation();
 
         final coordinate =
             await PlatformFactoryIOS.createCLLocationCoordinate2D(lat, lng);
@@ -694,12 +694,13 @@ class AmapController with WidgetsBindingObserver, _Private {
           final lng = option.latLng.longitude;
 
           // marker经纬度
-          final latLng = await AmapMapFluttifyFactoryAndroid
-              .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
+          final latLng =
+              await createcom_amap_api_maps_model_LatLng__double__double(
+                  lat, lng);
 
           // marker配置
-          final markerOption = await AmapMapFluttifyFactoryAndroid
-              .createcom_amap_api_maps_model_MarkerOptions__();
+          final markerOption =
+              await createcom_amap_api_maps_model_MarkerOptions__();
 
           // 设置marker经纬度
           await markerOption.position(latLng);
@@ -754,8 +755,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           final lng = option.latLng.longitude;
 
           // 创建marker
-          final pointAnnotation =
-              await AmapMapFluttifyFactoryIOS.createMAPointAnnotation();
+          final pointAnnotation = await createMAPointAnnotation();
 
           final coordinate =
               await PlatformFactoryIOS.createCLLocationCoordinate2D(lat, lng);
@@ -835,15 +835,15 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 构造折线点
         List<com_amap_api_maps_model_LatLng> latLngList = [];
         for (final point in option.latLngList) {
-          final latLng = await AmapMapFluttifyFactoryAndroid
-              .createcom_amap_api_maps_model_LatLng__double__double(
+          final latLng =
+              await createcom_amap_api_maps_model_LatLng__double__double(
                   point.latitude, point.longitude);
           latLngList.add(latLng);
         }
 
         // 构造折线参数
-        final polylineOptions = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_PolylineOptions__();
+        final polylineOptions =
+            await createcom_amap_api_maps_model_PolylineOptions__();
 
         // 添加经纬度列表
         await polylineOptions.addAll(latLngList);
@@ -965,15 +965,15 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 构造折线点
         List<com_amap_api_maps_model_LatLng> latLngList = [];
         for (final point in option.latLngList) {
-          final latLng = await AmapMapFluttifyFactoryAndroid
-              .createcom_amap_api_maps_model_LatLng__double__double(
+          final latLng =
+              await createcom_amap_api_maps_model_LatLng__double__double(
                   point.latitude, point.longitude);
           latLngList.add(latLng);
         }
 
         // 构造参数
-        final polygonOptions = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_PolygonOptions__();
+        final polygonOptions =
+            await createcom_amap_api_maps_model_PolygonOptions__();
 
         // 添加参数
         await polygonOptions.addAll(latLngList);
@@ -1044,15 +1044,15 @@ class AmapController with WidgetsBindingObserver, _Private {
         final map = await _androidController.getMap();
 
         // 构造点
-        final latLng = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_LatLng__double__double(
+        final latLng =
+            await createcom_amap_api_maps_model_LatLng__double__double(
           option.center.latitude,
           option.center.longitude,
         );
 
         // 构造参数
-        final circleOptions = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_CircleOptions__();
+        final circleOptions =
+            await createcom_amap_api_maps_model_CircleOptions__();
 
         // 中心点
         await circleOptions.center(latLng);
@@ -1271,8 +1271,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         final map = await _androidController.getMap();
 
         // 构造选项
-        final option = await AmapMapFluttifyFactoryAndroid
-            .createcom_amap_api_maps_model_CustomMapStyleOptions__();
+        final option =
+            await createcom_amap_api_maps_model_CustomMapStyleOptions__();
         await option.setEnable(true);
         if (styleData != null) await option.setStyleData(styleData);
         if (styleExtra != null) await option.setStyleExtraData(styleExtra);
@@ -1284,8 +1284,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       },
       ios: (pool) async {
         // 构造选项
-        final option =
-            await AmapMapFluttifyFactoryIOS.createMAMapCustomStyleOptions();
+        final option = await createMAMapCustomStyleOptions();
 
         if (styleData != null) {
           final styleDataNSData =
