@@ -40,7 +40,7 @@ class com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants extends co
     }
   }
   
-  Future<List<double>> getColor() async {
+  Future<Float64List> getColor() async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants@$refId::getColor([])');
@@ -58,7 +58,7 @@ class com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants extends co
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<double>();
     }
   }
   

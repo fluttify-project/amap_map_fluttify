@@ -18,7 +18,7 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
   
 
   // generate methods
-  static Future<List<int>> decodeAssetResData(android_content_Context var0, String var1) async {
+  static Future<Uint8List> decodeAssetResData(android_content_Context var0, String var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::decodeAssetResData([\'var1\':$var1])');
@@ -36,7 +36,7 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   

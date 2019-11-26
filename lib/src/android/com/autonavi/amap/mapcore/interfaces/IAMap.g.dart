@@ -874,7 +874,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   }
   
   @mustCallSuper
-  Future<List<double>> getViewMatrix() {
+  Future<Float64List> getViewMatrix() {
   
   
     if (!kReleaseMode) {
@@ -883,7 +883,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   }
   
   @mustCallSuper
-  Future<List<double>> getProjectionMatrix() {
+  Future<Float64List> getProjectionMatrix() {
   
   
     if (!kReleaseMode) {
@@ -973,7 +973,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   }
   
   @mustCallSuper
-  Future<void> onIndoorBuildingActivity(int var1, List<int> var2) {
+  Future<void> onIndoorBuildingActivity(int var1, Uint8List var2) {
   
   
     if (!kReleaseMode) {

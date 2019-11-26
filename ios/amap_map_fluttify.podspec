@@ -18,6 +18,7 @@ A new flutter plugin project.
   s.dependency 'foundation_fluttify'
   # flutter plugin dependency
   s.dependency 'amap_core_fluttify'
+  s.dependency 'url_launcher'
 
   s.ios.deployment_target = '8.0'
   # include project framework

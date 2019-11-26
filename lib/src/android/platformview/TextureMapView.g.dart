@@ -19,9 +19,11 @@ class com_amap_api_maps_TextureMapView_Android extends StatefulWidget {
   const com_amap_api_maps_TextureMapView_Android({
     Key key,
     this.onViewCreated,
+    this.var2,
   }) : super(key: key);
 
   final TextureMapViewCreatedCallback onViewCreated;
+  final com_amap_api_maps_AMapOptions var2;
 
   @override
   _com_amap_api_maps_TextureMapView_AndroidState createState() => _com_amap_api_maps_TextureMapView_AndroidState();
@@ -42,6 +44,7 @@ class _com_amap_api_maps_TextureMapView_AndroidState extends State<com_amap_api_
       gestureRecognizers: gestureRecognizers,
       onPlatformViewCreated: _onViewCreated,
       creationParamsCodec: messageCodec,
+      creationParams: {"var2": widget.var2?.refId ?? -1},
     );
   }
 
@@ -54,7 +57,7 @@ class _com_amap_api_maps_TextureMapView_AndroidState extends State<com_amap_api_
 
   @override
   void dispose() {
-    PlatformFactory_Android.release(_controller);
+    PlatformFactoryAndroid.release(_controller);
     super.dispose();
   }
 }

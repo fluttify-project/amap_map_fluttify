@@ -877,7 +877,7 @@ class AmapMapFluttifyFactoryAndroid {
     return object;
   }
   
-  static Future<com_amap_api_maps_model_Tile> createcom_amap_api_maps_model_Tile__int__int__byteArray(int var1, int var2, List<int> var3) async {
+  static Future<com_amap_api_maps_model_Tile> createcom_amap_api_maps_model_Tile__int__int__byteArray(int var1, int var2, Uint8List var3) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_Tile__int__int__byteArray', {"var1": var1, "var2": var2, "var3": var3});
     final object = com_amap_api_maps_model_Tile()..refId = refId..tag = 'amap_map_fluttify';
   
@@ -885,7 +885,7 @@ class AmapMapFluttifyFactoryAndroid {
     return object;
   }
   
-  static Future<com_amap_api_maps_model_Gradient> createcom_amap_api_maps_model_Gradient__intArray__floatArray(List<int> var1, List<double> var2) async {
+  static Future<com_amap_api_maps_model_Gradient> createcom_amap_api_maps_model_Gradient__intArray__floatArray(Int32List var1, Float64List var2) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_Gradient__intArray__floatArray', {"var1": var1, "var2": var2});
     final object = com_amap_api_maps_model_Gradient()..refId = refId..tag = 'amap_map_fluttify';
   

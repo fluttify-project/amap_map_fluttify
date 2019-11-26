@@ -16,7 +16,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   
 
   @mustCallSuper
-  Future<List<int>> requireMapResource(int var1, String var2) {
+  Future<Uint8List> requireMapResource(int var1, String var2) {
   
   
     if (!kReleaseMode) {
@@ -34,7 +34,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   }
   
   @mustCallSuper
-  Future<void> requireMapData(int var1, List<int> var2) {
+  Future<void> requireMapData(int var1, Uint8List var2) {
   
   
     if (!kReleaseMode) {
@@ -43,7 +43,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   }
   
   @mustCallSuper
-  Future<List<int>> requireCharBitmap(int var1, int var2, int var3) {
+  Future<Uint8List> requireCharBitmap(int var1, int var2, int var3) {
   
   
     if (!kReleaseMode) {
@@ -52,7 +52,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   }
   
   @mustCallSuper
-  Future<List<int>> requireCharsWidths(int var1, List<int> var2, int var3, int var4) {
+  Future<Uint8List> requireCharsWidths(int var1, Int32List var2, int var3, int var4) {
   
   
     if (!kReleaseMode) {
@@ -79,7 +79,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   }
   
   @mustCallSuper
-  Future<void> OnIndoorBuildingActivity(int var1, List<int> var2) {
+  Future<void> OnIndoorBuildingActivity(int var1, Uint8List var2) {
   
   
     if (!kReleaseMode) {
@@ -97,7 +97,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   }
   
   @mustCallSuper
-  Future<int> requireMapDataAsyn(int var1, List<int> var2) {
+  Future<int> requireMapDataAsyn(int var1, Uint8List var2) {
   
   
     if (!kReleaseMode) {

@@ -40,7 +40,7 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends java_lang_Obj
     }
   }
   
-  static Future<void> setCurTileIDs(int var0, List<int> var2) async {
+  static Future<void> setCurTileIDs(int var0, Int32List var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::setCurTileIDs([\'var0\':$var0, \'var2\':$var2])');
@@ -106,7 +106,7 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends java_lang_Obj
     }
   }
   
-  static Future<void> render(int var0, List<double> var2, List<double> var3, int var4, int var5, double var6, List<int> var7) async {
+  static Future<void> render(int var0, Float64List var2, Float64List var3, int var4, int var5, double var6, Int32List var7) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::render([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7])');

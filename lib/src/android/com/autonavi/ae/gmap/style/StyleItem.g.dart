@@ -18,7 +18,7 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
     return result;
   }
   
-  Future<List<int>> get_subKey() async {
+  Future<Int32List> get_subKey() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_subKey", {'refId': refId});
   
     return result;
@@ -32,7 +32,7 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
   
   }
   
-  Future<void> set_subKey(List<int> subKey) async {
+  Future<void> set_subKey(Int32List subKey) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::set_subKey', {'refId': refId, "subKey": subKey});
   
   

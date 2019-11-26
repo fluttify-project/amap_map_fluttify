@@ -304,7 +304,7 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     }
   }
   
-  Future<List<int>> getPoints() async {
+  Future<Int32List> getPoints() async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getPoints([])');
@@ -322,7 +322,7 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   

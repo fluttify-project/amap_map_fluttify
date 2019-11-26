@@ -24,7 +24,7 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo extends java_lang_Ob
     return result;
   }
   
-  Future<List<double>> get_mLocation() async {
+  Future<Float64List> get_mLocation() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mLocation", {'refId': refId});
   
     return result;
@@ -48,7 +48,7 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo extends java_lang_Ob
     return result;
   }
   
-  Future<List<double>> get_mVelocityPoint() async {
+  Future<Float64List> get_mVelocityPoint() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mVelocityPoint", {'refId': refId});
   
     return result;
@@ -68,7 +68,7 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo extends java_lang_Ob
   
   }
   
-  Future<void> set_mLocation(List<double> mLocation) async {
+  Future<void> set_mLocation(Float64List mLocation) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mLocation', {'refId': refId, "mLocation": mLocation});
   
   
@@ -92,7 +92,7 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo extends java_lang_Ob
   
   }
   
-  Future<void> set_mVelocityPoint(List<double> mVelocityPoint) async {
+  Future<void> set_mVelocityPoint(Float64List mVelocityPoint) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVelocityPoint', {'refId': refId, "mVelocityPoint": mVelocityPoint});
   
   

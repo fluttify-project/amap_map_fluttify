@@ -18,7 +18,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends com_autonavi_ae_gmap_
   
 
   // generate methods
-  Future<int> addVectorItem(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1, List<int> var2, int var3) async {
+  Future<int> addVectorItem(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1, Uint8List var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorItem([\'var2\':$var2, \'var3\':$var3])');

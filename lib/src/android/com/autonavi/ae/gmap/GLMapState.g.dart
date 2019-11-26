@@ -392,7 +392,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     }
   }
   
-  Future<void> getViewMatrix(List<double> var1) async {
+  Future<void> getViewMatrix(Float64List var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getViewMatrix([\'var1\':$var1])');
@@ -414,7 +414,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     }
   }
   
-  Future<void> getProjectionMatrix(List<double> var1) async {
+  Future<void> getProjectionMatrix(Float64List var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getProjectionMatrix([\'var1\':$var1])');
@@ -788,7 +788,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     }
   }
   
-  static Future<void> nativeGetViewMatrix(int var0, List<double> var2) async {
+  static Future<void> nativeGetViewMatrix(int var0, Float64List var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix([\'var0\':$var0, \'var2\':$var2])');
@@ -810,7 +810,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     }
   }
   
-  static Future<void> nativeGetProjectionMatrix(int var0, List<double> var2) async {
+  static Future<void> nativeGetProjectionMatrix(int var0, Float64List var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix([\'var0\':$var0, \'var2\':$var2])');

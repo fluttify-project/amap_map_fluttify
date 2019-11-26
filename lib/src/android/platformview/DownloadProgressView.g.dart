@@ -19,9 +19,11 @@ class com_amap_api_maps_offlinemap_DownloadProgressView_Android extends Stateful
   const com_amap_api_maps_offlinemap_DownloadProgressView_Android({
     Key key,
     this.onViewCreated,
+    
   }) : super(key: key);
 
   final DownloadProgressViewCreatedCallback onViewCreated;
+  
 
   @override
   _com_amap_api_maps_offlinemap_DownloadProgressView_AndroidState createState() => _com_amap_api_maps_offlinemap_DownloadProgressView_AndroidState();
@@ -42,6 +44,7 @@ class _com_amap_api_maps_offlinemap_DownloadProgressView_AndroidState extends St
       gestureRecognizers: gestureRecognizers,
       onPlatformViewCreated: _onViewCreated,
       creationParamsCodec: messageCodec,
+      
     );
   }
 
@@ -54,7 +57,7 @@ class _com_amap_api_maps_offlinemap_DownloadProgressView_AndroidState extends St
 
   @override
   void dispose() {
-    PlatformFactory_Android.release(_controller);
+    PlatformFactoryAndroid.release(_controller);
     super.dispose();
   }
 }
