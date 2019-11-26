@@ -1,3 +1,6 @@
+## 0.8.0
+- enhance: [breaking change] android端的初始化使用构造器初始化，而不是间接调用方法，防止偶尔出现的初始化错误
+
 ## 0.7.2
 - `getLocation`增加一个可选的delay参数, 指定延迟多少时间再获取定位
 
