@@ -52,7 +52,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
   }
   
   @mustCallSuper
-  Future<void> draw(com_autonavi_amap_mapcore_MapConfig var1, List<double> var2, List<double> var3) {
+  Future<void> draw(com_autonavi_amap_mapcore_MapConfig var1, Float64List var2, Float64List var3) {
     kNativeObjectPool.add(var1);
   
     if (!kReleaseMode) {

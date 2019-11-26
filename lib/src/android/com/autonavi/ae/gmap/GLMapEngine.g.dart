@@ -18,7 +18,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
   
 
   // generate methods
-  Future<List<int>> requireMapResource(int var1, String var2) async {
+  Future<Uint8List> requireMapResource(int var1, String var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapResource([\'var1\':$var1, \'var2\':$var2])');
@@ -36,7 +36,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   
@@ -84,7 +84,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<int> requireMapDataAsyn(int var1, List<int> var2) async {
+  Future<int> requireMapDataAsyn(int var1, Uint8List var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapDataAsyn([\'var1\':$var1, \'var2\':$var2])');
@@ -106,7 +106,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<void> requireMapData(int var1, List<int> var2) async {
+  Future<void> requireMapData(int var1, Uint8List var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapData([\'var1\':$var1, \'var2\':$var2])');
@@ -128,7 +128,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<List<int>> requireCharBitmap(int var1, int var2, int var3) async {
+  Future<Uint8List> requireCharBitmap(int var1, int var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireCharBitmap([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
@@ -146,11 +146,11 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   
-  Future<List<int>> requireCharsWidths(int var1, List<int> var2, int var3, int var4) async {
+  Future<Uint8List> requireCharsWidths(int var1, Int32List var2, int var3, int var4) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireCharsWidths([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
@@ -168,7 +168,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   
@@ -216,7 +216,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<void> OnIndoorBuildingActivity(int var1, List<int> var2) async {
+  Future<void> OnIndoorBuildingActivity(int var1, Uint8List var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::OnIndoorBuildingActivity([\'var1\':$var1, \'var2\':$var2])');
@@ -238,7 +238,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<void> receiveNetData(int var1, int var2, List<int> var4, int var5) async {
+  Future<void> receiveNetData(int var1, int var2, Uint8List var4, int var5) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::receiveNetData([\'var1\':$var1, \'var2\':$var2, \'var4\':$var4, \'var5\':$var5])');
@@ -777,7 +777,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<void> setInternaltexture(int var1, List<int> var2, int var3) async {
+  Future<void> setInternaltexture(int var1, Uint8List var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setInternaltexture([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
@@ -1223,7 +1223,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<List<int>> getMapModeState(int var1, bool var2) async {
+  Future<Int32List> getMapModeState(int var1, bool var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::getMapModeState([\'var1\':$var1, \'var2\':$var2])');
@@ -1241,11 +1241,11 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   
-  Future<void> putResourceData(int var1, List<int> var2) async {
+  Future<void> putResourceData(int var1, Uint8List var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::putResourceData([\'var1\':$var1, \'var2\':$var2])');
@@ -1289,7 +1289,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<List<int>> getLabelBuffer(int var1, int var2, int var3, int var4) async {
+  Future<Uint8List> getLabelBuffer(int var1, int var2, int var3, int var4) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::getLabelBuffer([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
@@ -1307,7 +1307,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   
@@ -1465,7 +1465,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<void> setSkyTexture(int var1, List<int> var2) async {
+  Future<void> setSkyTexture(int var1, Uint8List var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setSkyTexture([\'var1\':$var1, \'var2\':$var2])');
@@ -1487,7 +1487,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<void> setBackgroundTexture(int var1, List<int> var2) async {
+  Future<void> setBackgroundTexture(int var1, Uint8List var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setBackgroundTexture([\'var1\':$var1, \'var2\':$var2])');
@@ -1509,7 +1509,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<void> setCustomStyleTexture(int var1, List<int> var2) async {
+  Future<void> setCustomStyleTexture(int var1, Uint8List var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setCustomStyleTexture([\'var1\':$var1, \'var2\':$var2])');
@@ -1531,7 +1531,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<void> setCustomStyleData(int var1, List<int> var2, List<int> var3) async {
+  Future<void> setCustomStyleData(int var1, Uint8List var2, Uint8List var3) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setCustomStyleData([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
@@ -1707,7 +1707,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<void> getCurTileIDs(int var1, List<int> var2) async {
+  Future<void> getCurTileIDs(int var1, Int32List var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::getCurTileIDs([\'var1\':$var1, \'var2\':$var2])');
@@ -1861,7 +1861,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<void> updateNativeArrowOverlay(int var1, String var2, List<int> var3, List<int> var4, int var5, int var6, int var7, double var8, int var9, int var10, int var11, bool var12) async {
+  Future<void> updateNativeArrowOverlay(int var1, String var2, Int32List var3, Int32List var4, int var5, int var6, int var7, double var8, int var9, int var10, int var11, bool var12) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::updateNativeArrowOverlay([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9, \'var10\':$var10, \'var11\':$var11, \'var12\':$var12])');

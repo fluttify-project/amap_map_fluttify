@@ -40,7 +40,7 @@ class com_amap_api_maps_model_particle_RectParticleShape extends com_amap_api_ma
     }
   }
   
-  Future<List<double>> getPoint() async {
+  Future<Float64List> getPoint() async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.particle.RectParticleShape@$refId::getPoint([])');
@@ -58,7 +58,7 @@ class com_amap_api_maps_model_particle_RectParticleShape extends com_amap_api_ma
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<double>();
     }
   }
   

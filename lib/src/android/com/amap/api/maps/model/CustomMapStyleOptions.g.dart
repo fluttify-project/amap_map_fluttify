@@ -106,7 +106,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   }
   
-  Future<List<int>> getStyleData() async {
+  Future<Uint8List> getStyleData() async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleData([])');
@@ -124,11 +124,11 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   
-  Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleData(List<int> var1) async {
+  Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleData(Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleData([\'var1\':$var1])');
@@ -150,7 +150,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   }
   
-  Future<List<int>> getStyleTextureData() async {
+  Future<Uint8List> getStyleTextureData() async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleTextureData([])');
@@ -168,11 +168,11 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   
-  Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleTextureData(List<int> var1) async {
+  Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleTextureData(Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleTextureData([\'var1\':$var1])');
@@ -282,7 +282,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   }
   
-  Future<List<int>> getStyleExtraData() async {
+  Future<Uint8List> getStyleExtraData() async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleExtraData([])');
@@ -300,11 +300,11 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   
-  Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleExtraData(List<int> var1) async {
+  Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleExtraData(Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleExtraData([\'var1\':$var1])');

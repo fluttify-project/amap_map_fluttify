@@ -30,10 +30,16 @@ class com_amap_api_maps_model_IndoorBuildingInfo extends java_lang_Object  {
     return result;
   }
   
-  Future<List<int>> get_floor_indexs() async {
+  Future<Int32List> get_floor_indexs() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_indexs", {'refId': refId});
   
     return result;
+  }
+  
+  Future<List<String>> get_floor_names() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_names", {'refId': refId});
+  
+    return (result as List).cast<String>();
   }
   
 
@@ -56,8 +62,14 @@ class com_amap_api_maps_model_IndoorBuildingInfo extends java_lang_Object  {
   
   }
   
-  Future<void> set_floor_indexs(List<int> floor_indexs) async {
+  Future<void> set_floor_indexs(Int32List floor_indexs) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_floor_indexs', {'refId': refId, "floor_indexs": floor_indexs});
+  
+  
+  }
+  
+  Future<void> set_floor_names(List<String> floor_names) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_floor_names', {'refId': refId, "floor_names": floor_names});
   
   
   }

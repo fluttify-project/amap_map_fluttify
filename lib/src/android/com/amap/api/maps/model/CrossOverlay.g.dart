@@ -18,7 +18,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   
 
   // generate methods
-  Future<int> setData(List<int> var1) async {
+  Future<int> setData(Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setData([\'var1\':$var1])');

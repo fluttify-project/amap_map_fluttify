@@ -30,7 +30,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam extends j
     return result;
   }
   
-  Future<List<int>> get_enCodeString() async {
+  Future<Uint8List> get_enCodeString() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_enCodeString", {'refId': refId});
   
     return result;
@@ -68,7 +68,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam extends j
   
   }
   
-  Future<void> set_enCodeString(List<int> enCodeString) async {
+  Future<void> set_enCodeString(Uint8List enCodeString) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_enCodeString', {'refId': refId, "enCodeString": enCodeString});
   
   

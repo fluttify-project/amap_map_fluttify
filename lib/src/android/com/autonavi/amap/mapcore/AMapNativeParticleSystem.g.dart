@@ -84,7 +84,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     }
   }
   
-  static Future<void> nativeRender(int var0, List<double> var2, List<double> var3, int var4, int var5, double var6, double var7, double var8) async {
+  static Future<void> nativeRender(int var0, Float64List var2, Float64List var3, int var4, int var5, double var6, double var7, double var8) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeRender([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8])');

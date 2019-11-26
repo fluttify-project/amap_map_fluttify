@@ -106,7 +106,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
     }
   }
   
-  Future<int> setData(List<int> var1) async {
+  Future<int> setData(Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setData([\'var1\':$var1])');

@@ -2549,6 +2549,18 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(result);
         });
+        // getter
+        put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_names", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+        
+            String[] result = ref.floor_names;
+        
+        
+        
+            methodResult.success(result);
+        });
         // setter
         put("com.autonavi.ae.gmap.maploader.ProcessingTile::set_mKeyName", (args, methodResult) -> {
             // jsonable arg
@@ -4573,6 +4585,17 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             ref.floor_indexs = floor_indexs;
             methodResult.success("success");
         });
+        // setter
+        put("com.amap.api.maps.model.IndoorBuildingInfo::set_floor_names", (args, methodResult) -> {
+            // jsonable arg
+            List<String> floor_names = (List<String>) args.get("floor_names");
+        
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+        
+            ref.floor_names = floor_names.toArray(new String[floor_names.size()]);
+            methodResult.success("success");
+        });
         // method
         put("com.autonavi.ae.gmap.maploader.ProcessingTile::obtain", (args, methodResult) -> {
             // args
@@ -5687,7 +5710,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.addGroupAnimation(var1, var2, var3.floatValue(), var4, var5, var6, var7, new com.amap.api.maps.AMap.CancelableCallback() {
+            ref.addGroupAnimation(var1, var2, new Double(var3).floatValue(), var4, var5, var6, var7, new com.amap.api.maps.AMap.CancelableCallback() {
                 // method channel
                 MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation::Callback");
         
@@ -5844,7 +5867,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.startMapSlidAnim(var1, var2, var3.floatValue(), var4.floatValue());
+            ref.startMapSlidAnim(var1, var2, new Double(var3).floatValue(), new Double(var4).floatValue());
         
             // result
             methodResult.success("success");
@@ -5873,7 +5896,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.startPivotZoomRotateAnim(var1, var2, var3.floatValue(), var4, var5);
+            ref.startPivotZoomRotateAnim(var1, var2, new Double(var3).floatValue(), var4, var5);
         
             // result
             methodResult.success("success");
@@ -6699,7 +6722,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.updateNativeArrowOverlay(var1, var2, var3, var4, var5, var6, var7, var8.floatValue(), var9, var10, var11, var12);
+            ref.updateNativeArrowOverlay(var1, var2, var3, var4, var5, var6, var7, new Double(var8).floatValue(), var9, var10, var11, var12);
         
             // result
             methodResult.success("success");
@@ -6969,7 +6992,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.invalidateZoomController(var1.floatValue());
+            ref.invalidateZoomController(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -7395,7 +7418,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setPositionAndVelocity(var1.floatValue(), var2.floatValue());
+            ref.setPositionAndVelocity(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -7480,7 +7503,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setAnimationValue(var1.floatValue(), var2.floatValue(), var3);
+            ref.setAnimationValue(new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
         
             // result
             methodResult.success("success");
@@ -7585,7 +7608,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setToMapZoomAndPivot(var1.floatValue(), var2, var3);
+            ref.setToMapZoomAndPivot(new Double(var1).floatValue(), var2, var3);
         
             // result
             methodResult.success("success");
@@ -7666,7 +7689,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setNormalizedTime(var1.floatValue());
+            ref.setNormalizedTime(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -7689,7 +7712,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setInterpolatorType(var1, var2.floatValue());
+            ref.setInterpolatorType(var1, new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -7770,7 +7793,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setFromValue(var1.floatValue());
+            ref.setFromValue(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -7791,7 +7814,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setToValue(var1.floatValue());
+            ref.setToValue(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -7955,7 +7978,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setToMapAngle(var1.floatValue(), var2);
+            ref.setToMapAngle(new Double(var1).floatValue(), var2);
         
             // result
             methodResult.success("success");
@@ -8003,7 +8026,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setToMapLevel(var1.floatValue(), var2);
+            ref.setToMapLevel(new Double(var1).floatValue(), var2);
         
             // result
             methodResult.success("success");
@@ -8026,7 +8049,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setToCameraDegree(var1.floatValue(), var2);
+            ref.setToCameraDegree(new Double(var1).floatValue(), var2);
         
             // result
             methodResult.success("success");
@@ -8046,7 +8069,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            boolean result = com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup.checkLevel(var0.floatValue());
+            boolean result = com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup.checkLevel(new Double(var0).floatValue());
         
             // result
             methodResult.success(result);
@@ -8427,7 +8450,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setRenderFps(var1.floatValue());
+            ref.setRenderFps(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -8690,7 +8713,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setCameraDegree(var1.floatValue());
+            ref.setCameraDegree(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -8711,7 +8734,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMapAngle(var1.floatValue());
+            ref.setMapAngle(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -8732,7 +8755,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMapZoomer(var1.floatValue());
+            ref.setMapZoomer(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -9051,7 +9074,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.ae.gmap.GLMapState.nativeScreenToP20Point(var0, var2.floatValue(), var3.floatValue(), var4);
+            com.autonavi.ae.gmap.GLMapState.nativeScreenToP20Point(var0, new Double(var2).floatValue(), new Double(var3).floatValue(), var4);
         
             // result
             methodResult.success("success");
@@ -9167,7 +9190,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.ae.gmap.GLMapState.nativeSetMapZoomer(var0, var2.floatValue());
+            com.autonavi.ae.gmap.GLMapState.nativeSetMapZoomer(var0, new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -9189,7 +9212,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.ae.gmap.GLMapState.nativeSetMapAngle(var0, var2.floatValue());
+            com.autonavi.ae.gmap.GLMapState.nativeSetMapAngle(var0, new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -9251,7 +9274,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.ae.gmap.GLMapState.nativeSetCameraDegree(var0, var2.floatValue());
+            com.autonavi.ae.gmap.GLMapState.nativeSetCameraDegree(var0, new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -9401,7 +9424,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            float result = com.autonavi.ae.gmap.GLMapState.nativeCalMapZoomScalefactor(var0, var1, var2.floatValue());
+            float result = com.autonavi.ae.gmap.GLMapState.nativeCalMapZoomScalefactor(var0, var1, new Double(var2).floatValue());
         
             // result
             methodResult.success(result);
@@ -10235,7 +10258,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMinDisplayLevel(var1.floatValue());
+            ref.setMinDisplayLevel(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -10256,7 +10279,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMaxDisplayLevel(var1.floatValue());
+            ref.setMaxDisplayLevel(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -11484,7 +11507,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.amap.mapcore.AMapNativePolyline.nativeDrawLineByTextureID(var0, var2, var3, var4.floatValue(), var5, var6.floatValue(), var7.floatValue(), var8.floatValue(), var9.floatValue(), var10.floatValue(), var11, var12, var13, var14, var15, var16);
+            com.autonavi.amap.mapcore.AMapNativePolyline.nativeDrawLineByTextureID(var0, var2, var3, new Double(var4).floatValue(), var5, new Double(var6).floatValue(), new Double(var7).floatValue(), new Double(var8).floatValue(), new Double(var9).floatValue(), new Double(var10).floatValue(), var11, var12, var13, var14, var15, var16);
         
             // result
             methodResult.success("success");
@@ -11858,7 +11881,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawLineByMultiTextureID(var0, var1, var2.floatValue(), var3, var4, var5, var6, var7.floatValue(), var8, var9, var10);
+            com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawLineByMultiTextureID(var0, var1, new Double(var2).floatValue(), var3, var4, var5, var6, new Double(var7).floatValue(), var8, var9, var10);
         
             // result
             methodResult.success("success");
@@ -11898,7 +11921,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawLineByMultiColor(var0, var1, var2.floatValue(), var3, var4, var5, var6, var7, var8, var9, var10);
+            com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawLineByMultiColor(var0, var1, new Double(var2).floatValue(), var3, var4, var5, var6, var7, var8, var9, var10);
         
             // result
             methodResult.success("success");
@@ -11938,7 +11961,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawGradientColorLine(var0, var1, var2.floatValue(), var3, var4, var5, var6, var7, var8, var9, var10);
+            com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawGradientColorLine(var0, var1, new Double(var2).floatValue(), var3, var4, var5, var6, var7, var8, var9, var10);
         
             // result
             methodResult.success("success");
@@ -12005,7 +12028,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawLineByTextureID(var0, var1, var2.floatValue(), var3, var4.floatValue(), var5.floatValue(), var6.floatValue(), var7.floatValue(), var8.floatValue(), var9, var10, var11, var12, var13, var14);
+            com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawLineByTextureID(var0, var1, new Double(var2).floatValue(), var3, new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue(), new Double(var7).floatValue(), new Double(var8).floatValue(), var9, var10, var11, var12, var13, var14);
         
             // result
             methodResult.success("success");
@@ -12810,7 +12833,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.scaleCurrentDuration(var1.floatValue());
+            ref.scaleCurrentDuration(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -13153,7 +13176,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.scaleCurrentDuration(var1.floatValue());
+            ref.scaleCurrentDuration(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -14393,7 +14416,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setSZ(var1.floatValue());
+            ref.setSZ(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -14434,7 +14457,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setSC(var1.floatValue());
+            ref.setSC(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -14475,7 +14498,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setSR(var1.floatValue());
+            ref.setSR(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -14523,7 +14546,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMaxZoomLevel(var1.floatValue());
+            ref.setMaxZoomLevel(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -14544,7 +14567,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMinZoomLevel(var1.floatValue());
+            ref.setMinZoomLevel(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -14714,7 +14737,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMapPerPixelUnitLength(var1.floatValue());
+            ref.setMapPerPixelUnitLength(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -15165,7 +15188,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMapZoomScale(var1.floatValue());
+            ref.setMapZoomScale(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -15431,7 +15454,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setSkyHeight(var1.floatValue());
+            ref.setSkyHeight(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -15553,7 +15576,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.amap.mapcore.message.HoverGestureMapMessage result = com.autonavi.amap.mapcore.message.HoverGestureMapMessage.obtain(var0, var1.floatValue());
+            com.autonavi.amap.mapcore.message.HoverGestureMapMessage result = com.autonavi.amap.mapcore.message.HoverGestureMapMessage.obtain(var0, new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -15644,7 +15667,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.amap.mapcore.message.MoveGestureMapMessage result = com.autonavi.amap.mapcore.message.MoveGestureMapMessage.obtain(var0, var1.floatValue(), var2.floatValue());
+            com.autonavi.amap.mapcore.message.MoveGestureMapMessage result = com.autonavi.amap.mapcore.message.MoveGestureMapMessage.obtain(var0, new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             if (result != null) {
@@ -15737,7 +15760,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.amap.mapcore.message.ScaleGestureMapMessage result = com.autonavi.amap.mapcore.message.ScaleGestureMapMessage.obtain(var0, var1.floatValue(), var2, var3);
+            com.autonavi.amap.mapcore.message.ScaleGestureMapMessage result = com.autonavi.amap.mapcore.message.ScaleGestureMapMessage.obtain(var0, new Double(var1).floatValue(), var2, var3);
         
             // result
             if (result != null) {
@@ -15932,7 +15955,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.amap.mapcore.message.RotateGestureMapMessage result = com.autonavi.amap.mapcore.message.RotateGestureMapMessage.obtain(var0, var1.floatValue(), var2, var3);
+            com.autonavi.amap.mapcore.message.RotateGestureMapMessage result = com.autonavi.amap.mapcore.message.RotateGestureMapMessage.obtain(var0, new Double(var1).floatValue(), var2, var3);
         
             // result
             if (result != null) {
@@ -18298,7 +18321,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeRender(var0, var2, var3, var4, var5, var6.floatValue(), var7.floatValue(), var8.floatValue());
+            com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeRender(var0, var2, var3, var4, var5, new Double(var6).floatValue(), new Double(var7).floatValue(), new Double(var8).floatValue());
         
             // result
             methodResult.success("success");
@@ -18322,7 +18345,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.amap.mapcore.AMapNativeParticleSystem.setStartParticleSize(var0, var2.floatValue(), var3.floatValue());
+            com.autonavi.amap.mapcore.AMapNativeParticleSystem.setStartParticleSize(var0, new Double(var2).floatValue(), new Double(var3).floatValue());
         
             // result
             methodResult.success("success");
@@ -18632,7 +18655,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            long result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateSinglePointParticleShape(var0.floatValue(), var1.floatValue(), var2.floatValue(), var3);
+            long result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateSinglePointParticleShape(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
         
             // result
             methodResult.success(result);
@@ -18660,7 +18683,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            long result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRectParticleShape(var0.floatValue(), var1.floatValue(), var2.floatValue(), var3.floatValue(), var4);
+            long result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRectParticleShape(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), var4);
         
             // result
             methodResult.success(result);
@@ -18694,7 +18717,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            long result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRandomColorBetWeenTwoConstants(var0.floatValue(), var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue(), var5.floatValue(), var6.floatValue(), var7.floatValue());
+            long result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRandomColorBetWeenTwoConstants(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue(), new Double(var7).floatValue());
         
             // result
             methodResult.success(result);
@@ -18733,7 +18756,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            long result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateConstantRotationOverLife(var0.floatValue());
+            long result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateConstantRotationOverLife(new Double(var0).floatValue());
         
             // result
             methodResult.success(result);
@@ -18763,7 +18786,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            long result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRandomVelocityBetweenTwoConstants(var0.floatValue(), var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue(), var5.floatValue());
+            long result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRandomVelocityBetweenTwoConstants(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
         
             // result
             methodResult.success(result);
@@ -18787,7 +18810,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            long result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateCurveSizeOverLife(var0.floatValue(), var1.floatValue(), var2.floatValue());
+            long result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateCurveSizeOverLife(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success(result);
@@ -19150,7 +19173,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.autonavi.amap.mapcore.AMapNativeBuildingRenderer.render(var0, var2, var3, var4, var5, var6.floatValue(), var7);
+            com.autonavi.amap.mapcore.AMapNativeBuildingRenderer.render(var0, var2, var3, var4, var5, new Double(var6).floatValue(), var7);
         
             // result
             methodResult.success("success");
@@ -19732,7 +19755,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setAnchor(var1.floatValue(), var2.floatValue());
+            ref.setAnchor(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -19834,7 +19857,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -20432,7 +20455,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setRotateAngle(var1.floatValue());
+            ref.setRotateAngle(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -20602,7 +20625,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZoomLimit(var1.floatValue());
+            ref.setZoomLimit(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -20747,7 +20770,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setStrokeWidth(var1.floatValue());
+            ref.setStrokeWidth(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -21407,7 +21430,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setLogoMarginRate(var1, var2.floatValue());
+            ref.setLogoMarginRate(var1, new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -21571,7 +21594,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setRotateAngle(var1.floatValue());
+            ref.setRotateAngle(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -21612,7 +21635,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -21805,7 +21828,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setAnchor(var1.floatValue(), var2.floatValue());
+            ref.setAnchor(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -22002,7 +22025,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setWidth(var1.floatValue());
+            ref.setWidth(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -22132,7 +22155,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setDimensions(var1.floatValue());
+            ref.setDimensions(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -22241,7 +22264,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setBearing(var1.floatValue());
+            ref.setBearing(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -22282,7 +22305,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setTransparency(var1.floatValue());
+            ref.setTransparency(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -22344,7 +22367,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setWidth(var1.floatValue());
+            ref.setWidth(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -22590,7 +22613,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setTransparency(var1.floatValue());
+            ref.setTransparency(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -22701,7 +22724,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setShownRatio(var1.floatValue());
+            ref.setShownRatio(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -22724,7 +22747,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setShowRange(var1.floatValue(), var2.floatValue());
+            ref.setShowRange(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -23652,7 +23675,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setInfoWindowBackScale(var1.floatValue(), var2.floatValue());
+            ref.setInfoWindowBackScale(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -23816,7 +23839,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -24314,7 +24337,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.LatLngBounds result = ref.getMapBounds(var1, var2.floatValue());
+            com.amap.api.maps.model.LatLngBounds result = ref.getMapBounds(var1, new Double(var2).floatValue());
         
             // result
             if (result != null) {
@@ -24458,7 +24481,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setStrokeWidth(var1.floatValue());
+            ref.setStrokeWidth(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -25730,7 +25753,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMyLocationRotateAngle(var1.floatValue());
+            ref.setMyLocationRotateAngle(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -27075,7 +27098,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMaxZoomLevel(var1.floatValue());
+            ref.setMaxZoomLevel(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -27096,7 +27119,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMinZoomLevel(var1.floatValue());
+            ref.setMinZoomLevel(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -27220,7 +27243,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZoomScaleParam(var1.floatValue());
+            ref.setZoomScaleParam(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -28441,7 +28464,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setAlpha(var1.floatValue());
+            ref.setAlpha(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -28716,7 +28739,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setRotateAngleNotUpdate(var1.floatValue());
+            ref.setRotateAngleNotUpdate(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -28779,7 +28802,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setStrokeWidth(var1.floatValue());
+            ref.setStrokeWidth(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -29053,6 +29076,31 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // invoke native method
             ref.UnityRenderEvent(var1);
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.api.offlineservice.AMapPermissionActivity::onRequestPermissionsResult", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            List<String> var2 = (List<String>) args.get("var2");
+            // jsonable arg
+            int[] var3 = (int[]) args.get("var3");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.offlineservice.AMapPermissionActivity ref = (com.amap.api.offlineservice.AMapPermissionActivity) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.offlineservice.AMapPermissionActivity@" + refId + "::onRequestPermissionsResult(" + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            ref.onRequestPermissionsResult(var1, var2.toArray(new String[var2.size()]), var3);
         
             // result
             methodResult.success("success");
@@ -29726,7 +29774,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setLogoMarginRate(var1, var2.floatValue());
+            ref.setLogoMarginRate(var1, new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -30166,7 +30214,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.scrollBy(var0.floatValue(), var1.floatValue());
+            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.scrollBy(new Double(var0).floatValue(), new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -30193,7 +30241,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.zoomTo(var0.floatValue());
+            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.zoomTo(new Double(var0).floatValue());
         
             // result
             if (result != null) {
@@ -30220,7 +30268,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.zoomBy(var0.floatValue());
+            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.zoomBy(new Double(var0).floatValue());
         
             // result
             if (result != null) {
@@ -30303,7 +30351,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.newLatLngZoom(var0, var1.floatValue());
+            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.newLatLngZoom(var0, new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -30386,7 +30434,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.changeBearing(var0.floatValue());
+            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.changeBearing(new Double(var0).floatValue());
         
             // result
             if (result != null) {
@@ -30415,7 +30463,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.changeBearingGeoCenter(var0.floatValue(), var1);
+            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.changeBearingGeoCenter(new Double(var0).floatValue(), var1);
         
             // result
             if (result != null) {
@@ -30442,7 +30490,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.changeTilt(var0.floatValue());
+            com.amap.api.maps.CameraUpdate result = com.amap.api.maps.CameraUpdateFactory.changeTilt(new Double(var0).floatValue());
         
             // result
             if (result != null) {
@@ -31710,7 +31758,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setRotate(var1.floatValue());
+            ref.setRotate(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -32081,7 +32129,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setRotate(var1.floatValue());
+            ref.setRotate(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -34364,7 +34412,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.LatLngBounds result = ref.getMapBounds(var1, var2.floatValue());
+            com.amap.api.maps.model.LatLngBounds result = ref.getMapBounds(var1, new Double(var2).floatValue());
         
             // result
             if (result != null) {
@@ -34651,7 +34699,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setStrokeWidth(var1.floatValue());
+            ref.setStrokeWidth(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -34774,7 +34822,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -35149,7 +35197,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.MyLocationStyle result = ref.anchor(var1.floatValue(), var2.floatValue());
+            com.amap.api.maps.model.MyLocationStyle result = ref.anchor(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             if (result != null) {
@@ -35233,7 +35281,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.MyLocationStyle result = ref.strokeWidth(var1.floatValue());
+            com.amap.api.maps.model.MyLocationStyle result = ref.strokeWidth(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -36051,7 +36099,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setRotate(var1.floatValue());
+            ref.setRotate(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -36092,7 +36140,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -36220,7 +36268,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.NavigateArrowOptions result = ref.width(var1.floatValue());
+            com.amap.api.maps.model.NavigateArrowOptions result = ref.width(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -36304,7 +36352,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.NavigateArrowOptions result = ref.zIndex(var1.floatValue());
+            com.amap.api.maps.model.NavigateArrowOptions result = ref.zIndex(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -36873,7 +36921,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.MultiPointOverlayOptions result = ref.anchor(var1.floatValue(), var2.floatValue());
+            com.amap.api.maps.model.MultiPointOverlayOptions result = ref.anchor(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             if (result != null) {
@@ -37384,7 +37432,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.PolylineOptions result = ref.width(var1.floatValue());
+            com.amap.api.maps.model.PolylineOptions result = ref.width(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -37440,7 +37488,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.PolylineOptions result = ref.zIndex(var1.floatValue());
+            com.amap.api.maps.model.PolylineOptions result = ref.zIndex(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -37839,7 +37887,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.PolylineOptions result = ref.transparency(var1.floatValue());
+            com.amap.api.maps.model.PolylineOptions result = ref.transparency(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -37980,7 +38028,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.PolylineOptions result = ref.setShownRatio(var1.floatValue());
+            com.amap.api.maps.model.PolylineOptions result = ref.setShownRatio(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -38010,7 +38058,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.PolylineOptions result = ref.setShownRange(var1.floatValue(), var2.floatValue());
+            com.amap.api.maps.model.PolylineOptions result = ref.setShownRange(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             if (result != null) {
@@ -38130,7 +38178,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setAngle(var1.floatValue());
+            ref.setAngle(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -38341,7 +38389,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setRotateAngle(var1.floatValue());
+            ref.setRotateAngle(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -38382,7 +38430,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZoomLimit(var1.floatValue());
+            ref.setZoomLimit(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -38737,7 +38785,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.GroundOverlayOptions result = ref.anchor(var1.floatValue(), var2.floatValue());
+            com.amap.api.maps.model.GroundOverlayOptions result = ref.anchor(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             if (result != null) {
@@ -38767,7 +38815,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.GroundOverlayOptions result = ref.position(var1, var2.floatValue());
+            com.amap.api.maps.model.GroundOverlayOptions result = ref.position(var1, new Double(var2).floatValue());
         
             // result
             if (result != null) {
@@ -38823,7 +38871,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.GroundOverlayOptions result = ref.bearing(var1.floatValue());
+            com.amap.api.maps.model.GroundOverlayOptions result = ref.bearing(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -38851,7 +38899,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.GroundOverlayOptions result = ref.zIndex(var1.floatValue());
+            com.amap.api.maps.model.GroundOverlayOptions result = ref.zIndex(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -38907,7 +38955,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.GroundOverlayOptions result = ref.transparency(var1.floatValue());
+            com.amap.api.maps.model.GroundOverlayOptions result = ref.transparency(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -39262,7 +39310,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.GL3DModelOptions result = ref.angle(var1.floatValue());
+            com.amap.api.maps.model.GL3DModelOptions result = ref.angle(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -39540,7 +39588,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setDimensions(var1.floatValue());
+            ref.setDimensions(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -39670,7 +39718,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setBearing(var1.floatValue());
+            ref.setBearing(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -39711,7 +39759,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -39793,7 +39841,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setTransparency(var1.floatValue());
+            ref.setTransparency(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -40038,7 +40086,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setRatio(var1.floatValue());
+            ref.setRatio(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -40101,7 +40149,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.CameraPosition result = com.amap.api.maps.model.CameraPosition.fromLatLngZoom(var0, var1.floatValue());
+            com.amap.api.maps.model.CameraPosition result = com.amap.api.maps.model.CameraPosition.fromLatLngZoom(var0, new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -40282,7 +40330,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.MarkerOptions result = ref.rotatingIcons(new ArrayList(var1), var2.floatValue());
+            com.amap.api.maps.model.MarkerOptions result = ref.rotatingIcons(new ArrayList(var1), new Double(var2).floatValue());
         
             // result
             if (result != null) {
@@ -40561,7 +40609,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.MarkerOptions result = ref.anchor(var1.floatValue(), var2.floatValue());
+            com.amap.api.maps.model.MarkerOptions result = ref.anchor(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             if (result != null) {
@@ -41013,7 +41061,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.MarkerOptions result = ref.zIndex(var1.floatValue());
+            com.amap.api.maps.model.MarkerOptions result = ref.zIndex(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -41061,7 +41109,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.MarkerOptions result = ref.alpha(var1.floatValue());
+            com.amap.api.maps.model.MarkerOptions result = ref.alpha(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -41205,7 +41253,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.MarkerOptions result = ref.rotateAngle(var1.floatValue());
+            com.amap.api.maps.model.MarkerOptions result = ref.rotateAngle(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -41515,7 +41563,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setWidth(var1.floatValue());
+            ref.setWidth(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -41618,7 +41666,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -42657,7 +42705,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -43367,7 +43415,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setRotateAngle(var1.floatValue());
+            ref.setRotateAngle(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -43570,7 +43618,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setStrokeWidth(var1.floatValue());
+            ref.setStrokeWidth(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -43652,7 +43700,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -43983,7 +44031,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setStrokeWidth(var1.floatValue());
+            ref.setStrokeWidth(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -44106,7 +44154,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -44442,7 +44490,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.PolygonOptions result = ref.strokeWidth(var1.floatValue());
+            com.amap.api.maps.model.PolygonOptions result = ref.strokeWidth(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -44526,7 +44574,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.PolygonOptions result = ref.zIndex(var1.floatValue());
+            com.amap.api.maps.model.PolygonOptions result = ref.zIndex(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -44991,7 +45039,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.ArcOptions result = ref.strokeWidth(var1.floatValue());
+            com.amap.api.maps.model.ArcOptions result = ref.strokeWidth(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -45047,7 +45095,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.ArcOptions result = ref.zIndex(var1.floatValue());
+            com.amap.api.maps.model.ArcOptions result = ref.zIndex(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -45320,7 +45368,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.CircleOptions result = ref.strokeWidth(var1.floatValue());
+            com.amap.api.maps.model.CircleOptions result = ref.strokeWidth(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -45404,7 +45452,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.CircleOptions result = ref.zIndex(var1.floatValue());
+            com.amap.api.maps.model.CircleOptions result = ref.zIndex(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -45714,7 +45762,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.onDoubleTap(var1.floatValue(), var2.floatValue());
+            ref.onDoubleTap(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -45737,7 +45785,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.onSingleTap(var1.floatValue(), var2.floatValue());
+            ref.onSingleTap(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -45760,7 +45808,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.onFling(var1.floatValue(), var2.floatValue());
+            ref.onFling(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -45783,7 +45831,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.onScroll(var1.floatValue(), var2.floatValue());
+            ref.onScroll(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -45806,7 +45854,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.onLongPress(var1.floatValue(), var2.floatValue());
+            ref.onLongPress(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -45829,7 +45877,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.onDown(var1.floatValue(), var2.floatValue());
+            ref.onDown(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -45852,7 +45900,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.onUp(var1.floatValue(), var2.floatValue());
+            ref.onUp(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -45994,7 +46042,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setAnchor(var1.floatValue(), var2.floatValue());
+            ref.setAnchor(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -46425,7 +46473,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setAnchor(var1.floatValue(), var2.floatValue());
+            ref.setAnchor(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -46588,7 +46636,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setRotateAngle(var1.floatValue());
+            ref.setRotateAngle(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -46761,7 +46809,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -46928,7 +46976,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setAlpha(var1.floatValue());
+            ref.setAlpha(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -47223,7 +47271,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setRotateAngleNotUpdate(var1.floatValue());
+            ref.setRotateAngleNotUpdate(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -47333,7 +47381,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.TileOverlayOptions result = ref.zIndex(var1.floatValue());
+            com.amap.api.maps.model.TileOverlayOptions result = ref.zIndex(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -48367,7 +48415,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            float result = ref.getSizeX(var1.floatValue());
+            float result = ref.getSizeX(new Double(var1).floatValue());
         
             // result
             methodResult.success(result);
@@ -48388,7 +48436,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            float result = ref.getSizeY(var1.floatValue());
+            float result = ref.getSizeY(new Double(var1).floatValue());
         
             // result
             methodResult.success(result);
@@ -48409,7 +48457,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            float result = ref.getSizeZ(var1.floatValue());
+            float result = ref.getSizeZ(new Double(var1).floatValue());
         
             // result
             methodResult.success(result);
@@ -48450,7 +48498,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            float result = ref.getSizeX(var1.floatValue());
+            float result = ref.getSizeX(new Double(var1).floatValue());
         
             // result
             methodResult.success(result);
@@ -48471,7 +48519,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            float result = ref.getSizeY(var1.floatValue());
+            float result = ref.getSizeY(new Double(var1).floatValue());
         
             // result
             methodResult.success(result);
@@ -48492,7 +48540,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            float result = ref.getSizeZ(var1.floatValue());
+            float result = ref.getSizeZ(new Double(var1).floatValue());
         
             // result
             methodResult.success(result);
@@ -49354,7 +49402,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.particle.ParticleOverlayOptions result = ref.zIndex(var1.floatValue());
+            com.amap.api.maps.model.particle.ParticleOverlayOptions result = ref.zIndex(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -49807,7 +49855,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.TextOptions result = ref.zIndex(var1.floatValue());
+            com.amap.api.maps.model.TextOptions result = ref.zIndex(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -49835,7 +49883,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            com.amap.api.maps.model.TextOptions result = ref.rotate(var1.floatValue());
+            com.amap.api.maps.model.TextOptions result = ref.rotate(new Double(var1).floatValue());
         
             // result
             if (result != null) {
@@ -50244,7 +50292,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -50502,7 +50550,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setWidth(var1.floatValue());
+            ref.setWidth(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -50584,7 +50632,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -50694,7 +50742,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setTransparency(var1.floatValue());
+            ref.setTransparency(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -50826,7 +50874,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setShownRatio(var1.floatValue());
+            ref.setShownRatio(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -50849,7 +50897,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setShownRange(var1.floatValue(), var2.floatValue());
+            ref.setShownRange(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -51057,7 +51105,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setZIndex(var1.floatValue());
+            ref.setZIndex(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -51697,7 +51745,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setInfoWindowBackScale(var1.floatValue(), var2.floatValue());
+            ref.setInfoWindowBackScale(new Double(var1).floatValue(), new Double(var2).floatValue());
         
             // result
             methodResult.success("success");
@@ -53092,7 +53140,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMyLocationRotateAngle(var1.floatValue());
+            ref.setMyLocationRotateAngle(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -54551,7 +54599,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMaxZoomLevel(var1.floatValue());
+            ref.setMaxZoomLevel(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -54572,7 +54620,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setMinZoomLevel(var1.floatValue());
+            ref.setMinZoomLevel(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -55771,7 +55819,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setSpeed(var1.floatValue());
+            ref.setSpeed(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -55812,7 +55860,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // invoke native method
-            ref.setBearing(var1.floatValue());
+            ref.setBearing(new Double(var1).floatValue());
         
             // result
             methodResult.success("success");
@@ -56787,7 +56835,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             int var6 = (int) args.get("var6");
         
             // create target object
-            com.autonavi.ae.gmap.gloverlay.GLOverlayTexture obj = new com.autonavi.ae.gmap.gloverlay.GLOverlayTexture(var1, var2, var3.floatValue(), var4.floatValue(), var5, var6);
+            com.autonavi.ae.gmap.gloverlay.GLOverlayTexture obj = new com.autonavi.ae.gmap.gloverlay.GLOverlayTexture(var1, var2, new Double(var3).floatValue(), new Double(var4).floatValue(), var5, var6);
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -57217,7 +57265,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var5 = (Double) args.get("var5");
         
             // create target object
-            com.autonavi.amap.mapcore.animation.GLRotateAnimation obj = new com.autonavi.amap.mapcore.animation.GLRotateAnimation(var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue(), var5.floatValue());
+            com.autonavi.amap.mapcore.animation.GLRotateAnimation obj = new com.autonavi.amap.mapcore.animation.GLRotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -57238,7 +57286,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var2 = (Double) args.get("var2");
         
             // create target object
-            com.autonavi.amap.mapcore.animation.GLAlphaAnimation obj = new com.autonavi.amap.mapcore.animation.GLAlphaAnimation(var1.floatValue(), var2.floatValue());
+            com.autonavi.amap.mapcore.animation.GLAlphaAnimation obj = new com.autonavi.amap.mapcore.animation.GLAlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -57263,7 +57311,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var4 = (Double) args.get("var4");
         
             // create target object
-            com.autonavi.amap.mapcore.animation.GLScaleAnimation obj = new com.autonavi.amap.mapcore.animation.GLScaleAnimation(var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue());
+            com.autonavi.amap.mapcore.animation.GLScaleAnimation obj = new com.autonavi.amap.mapcore.animation.GLScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -57377,7 +57425,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var2 = (Double) args.get("var2");
         
             // create target object
-            com.autonavi.amap.mapcore.message.HoverGestureMapMessage obj = new com.autonavi.amap.mapcore.message.HoverGestureMapMessage(var1, var2.floatValue());
+            com.autonavi.amap.mapcore.message.HoverGestureMapMessage obj = new com.autonavi.amap.mapcore.message.HoverGestureMapMessage(var1, new Double(var2).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -57400,7 +57448,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var3 = (Double) args.get("var3");
         
             // create target object
-            com.autonavi.amap.mapcore.message.MoveGestureMapMessage obj = new com.autonavi.amap.mapcore.message.MoveGestureMapMessage(var1, var2.floatValue(), var3.floatValue());
+            com.autonavi.amap.mapcore.message.MoveGestureMapMessage obj = new com.autonavi.amap.mapcore.message.MoveGestureMapMessage(var1, new Double(var2).floatValue(), new Double(var3).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -57425,7 +57473,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             int var4 = (int) args.get("var4");
         
             // create target object
-            com.autonavi.amap.mapcore.message.ScaleGestureMapMessage obj = new com.autonavi.amap.mapcore.message.ScaleGestureMapMessage(var1, var2.floatValue(), var3, var4);
+            com.autonavi.amap.mapcore.message.ScaleGestureMapMessage obj = new com.autonavi.amap.mapcore.message.ScaleGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -57450,7 +57498,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             int var4 = (int) args.get("var4");
         
             // create target object
-            com.autonavi.amap.mapcore.message.RotateGestureMapMessage obj = new com.autonavi.amap.mapcore.message.RotateGestureMapMessage(var1, var2.floatValue(), var3, var4);
+            com.autonavi.amap.mapcore.message.RotateGestureMapMessage obj = new com.autonavi.amap.mapcore.message.RotateGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -57568,7 +57616,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var4 = (Double) args.get("var4");
         
             // create target object
-            com.autonavi.amap.mapcore.Rectangle obj = new com.autonavi.amap.mapcore.Rectangle(var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue());
+            com.autonavi.amap.mapcore.Rectangle obj = new com.autonavi.amap.mapcore.Rectangle(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -57665,7 +57713,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             int var3 = (int) args.get("var3");
         
             // create target object
-            com.autonavi.amap.mapcore.FPoint3 obj = new com.autonavi.amap.mapcore.FPoint3(var1.floatValue(), var2.floatValue(), var3);
+            com.autonavi.amap.mapcore.FPoint3 obj = new com.autonavi.amap.mapcore.FPoint3(new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -57758,7 +57806,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var2 = (Double) args.get("var2");
         
             // create target object
-            com.autonavi.amap.mapcore.FPoint obj = new com.autonavi.amap.mapcore.FPoint(var1.floatValue(), var2.floatValue());
+            com.autonavi.amap.mapcore.FPoint obj = new com.autonavi.amap.mapcore.FPoint(new Double(var1).floatValue(), new Double(var2).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -58550,7 +58598,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var4 = (Double) args.get("var4");
         
             // create target object
-            com.amap.api.maps.model.CameraPosition obj = new com.amap.api.maps.model.CameraPosition(var1, var2.floatValue(), var3.floatValue(), var4.floatValue());
+            com.amap.api.maps.model.CameraPosition obj = new com.amap.api.maps.model.CameraPosition(var1, new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -58650,7 +58698,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var5 = (Double) args.get("var5");
         
             // create target object
-            com.amap.api.maps.model.animation.RotateAnimation obj = new com.amap.api.maps.model.animation.RotateAnimation(var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue(), var5.floatValue());
+            com.amap.api.maps.model.animation.RotateAnimation obj = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -58671,7 +58719,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var2 = (Double) args.get("var2");
         
             // create target object
-            com.amap.api.maps.model.animation.RotateAnimation obj = new com.amap.api.maps.model.animation.RotateAnimation(var1.floatValue(), var2.floatValue());
+            com.amap.api.maps.model.animation.RotateAnimation obj = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -58730,7 +58778,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var2 = (Double) args.get("var2");
         
             // create target object
-            com.amap.api.maps.model.animation.AlphaAnimation obj = new com.amap.api.maps.model.animation.AlphaAnimation(var1.floatValue(), var2.floatValue());
+            com.amap.api.maps.model.animation.AlphaAnimation obj = new com.amap.api.maps.model.animation.AlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -58755,7 +58803,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var4 = (Double) args.get("var4");
         
             // create target object
-            com.amap.api.maps.model.animation.ScaleAnimation obj = new com.amap.api.maps.model.animation.ScaleAnimation(var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue());
+            com.amap.api.maps.model.animation.ScaleAnimation obj = new com.amap.api.maps.model.animation.ScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -58986,7 +59034,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var6 = (Double) args.get("var6");
         
             // create target object
-            com.amap.api.maps.model.AMapCameraInfo obj = new com.amap.api.maps.model.AMapCameraInfo(var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue(), var5.floatValue(), var6.floatValue());
+            com.amap.api.maps.model.AMapCameraInfo obj = new com.amap.api.maps.model.AMapCameraInfo(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -59389,7 +59437,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var1 = (Double) args.get("var1");
         
             // create target object
-            com.amap.api.maps.model.particle.ConstantRotationOverLife obj = new com.amap.api.maps.model.particle.ConstantRotationOverLife(var1.floatValue());
+            com.amap.api.maps.model.particle.ConstantRotationOverLife obj = new com.amap.api.maps.model.particle.ConstantRotationOverLife(new Double(var1).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -59414,7 +59462,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             boolean var4 = (boolean) args.get("var4");
         
             // create target object
-            com.amap.api.maps.model.particle.SinglePointParticleShape obj = new com.amap.api.maps.model.particle.SinglePointParticleShape(var1.floatValue(), var2.floatValue(), var3.floatValue(), var4);
+            com.amap.api.maps.model.particle.SinglePointParticleShape obj = new com.amap.api.maps.model.particle.SinglePointParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), var4);
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -59437,7 +59485,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var3 = (Double) args.get("var3");
         
             // create target object
-            com.amap.api.maps.model.particle.SinglePointParticleShape obj = new com.amap.api.maps.model.particle.SinglePointParticleShape(var1.floatValue(), var2.floatValue(), var3.floatValue());
+            com.amap.api.maps.model.particle.SinglePointParticleShape obj = new com.amap.api.maps.model.particle.SinglePointParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -59466,7 +59514,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var6 = (Double) args.get("var6");
         
             // create target object
-            com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants obj = new com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants(var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue(), var5.floatValue(), var6.floatValue());
+            com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants obj = new com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -59489,7 +59537,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var3 = (Double) args.get("var3");
         
             // create target object
-            com.amap.api.maps.model.particle.CurveSizeOverLife obj = new com.amap.api.maps.model.particle.CurveSizeOverLife(var1.floatValue(), var2.floatValue(), var3.floatValue());
+            com.amap.api.maps.model.particle.CurveSizeOverLife obj = new com.amap.api.maps.model.particle.CurveSizeOverLife(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -59537,7 +59585,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             boolean var5 = (boolean) args.get("var5");
         
             // create target object
-            com.amap.api.maps.model.particle.RectParticleShape obj = new com.amap.api.maps.model.particle.RectParticleShape(var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue(), var5);
+            com.amap.api.maps.model.particle.RectParticleShape obj = new com.amap.api.maps.model.particle.RectParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), var5);
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -59570,7 +59618,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             Double var8 = (Double) args.get("var8");
         
             // create target object
-            com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants obj = new com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants(var1.floatValue(), var2.floatValue(), var3.floatValue(), var4.floatValue(), var5.floatValue(), var6.floatValue(), var7.floatValue(), var8.floatValue());
+            com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants obj = new com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue(), new Double(var7).floatValue(), new Double(var8).floatValue());
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -59861,7 +59909,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             long var7 = (long) args.get("var7");
         
             // create target object
-            com.amap.api.trace.TraceLocation obj = new com.amap.api.trace.TraceLocation(var1, var3, var5.floatValue(), var6.floatValue(), var7);
+            com.amap.api.trace.TraceLocation obj = new com.amap.api.trace.TraceLocation(var1, var3, new Double(var5).floatValue(), new Double(var6).floatValue(), var7);
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP

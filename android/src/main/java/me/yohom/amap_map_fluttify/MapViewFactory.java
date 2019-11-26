@@ -221,7 +221,11 @@ class MapViewFactory extends PlatformViewFactory {
 
     @Override
     public PlatformView create(Context context, int id, Object params) {
-        com.amap.api.maps.MapView view = new com.amap.api.maps.MapView(registrar.activity());
+        Map<String, Object> args = (Map<String, Object>) params;
+        // ref arg
+        com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) args.get("var2"));
+
+        com.amap.api.maps.MapView view = new com.amap.api.maps.MapView(registrar.activity(), var2);
         getHEAP().put(id, view);
         return new PlatformView() {
 

@@ -40,7 +40,7 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
     }
   }
   
-  Future<List<int>> getTextPixelBuffer(int var1, int var2) async {
+  Future<Uint8List> getTextPixelBuffer(int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getTextPixelBuffer([\'var1\':$var1, \'var2\':$var2])');
@@ -58,11 +58,11 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   
-  Future<List<int>> getCharsWidths(List<int> var1) async {
+  Future<Uint8List> getCharsWidths(Int32List var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getCharsWidths([\'var1\':$var1])');
@@ -80,7 +80,7 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   

@@ -24,7 +24,7 @@ class com_autonavi_ae_gmap_gloverlay_GLTextureProperty extends java_lang_Object 
     return android_graphics_Bitmap()..refId = result..tag = 'amap_map_fluttify';
   }
   
-  Future<List<int>> get_mPngBuffer() async {
+  Future<Uint8List> get_mPngBuffer() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::get_mPngBuffer", {'refId': refId});
   
     return result;
@@ -74,7 +74,7 @@ class com_autonavi_ae_gmap_gloverlay_GLTextureProperty extends java_lang_Object 
   
   }
   
-  Future<void> set_mPngBuffer(List<int> mPngBuffer) async {
+  Future<void> set_mPngBuffer(Uint8List mPngBuffer) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mPngBuffer', {'refId': refId, "mPngBuffer": mPngBuffer});
   
   

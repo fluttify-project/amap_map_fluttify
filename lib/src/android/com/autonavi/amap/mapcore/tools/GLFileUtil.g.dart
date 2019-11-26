@@ -18,7 +18,7 @@ class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
   
 
   // generate methods
-  static Future<void> writeDatasToFile(String var0, List<int> var1) async {
+  static Future<void> writeDatasToFile(String var0, Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLFileUtil::writeDatasToFile([\'var0\':$var0, \'var1\':$var1])');
@@ -40,7 +40,7 @@ class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
     }
   }
   
-  static Future<List<int>> readFileContents(String var0) async {
+  static Future<Uint8List> readFileContents(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.tools.GLFileUtil::readFileContents([\'var0\':$var0])');
@@ -58,7 +58,7 @@ class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   

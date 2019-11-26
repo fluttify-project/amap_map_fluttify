@@ -28,7 +28,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
   
 
   // generate methods
-  Future<void> onDownload(List<int> var1, int var2) async {
+  Future<void> onDownload(Uint8List var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onDownload([\'var1\':$var1, \'var2\':$var2])');

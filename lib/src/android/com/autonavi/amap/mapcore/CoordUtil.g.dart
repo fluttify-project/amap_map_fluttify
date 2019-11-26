@@ -18,7 +18,7 @@ class com_autonavi_amap_mapcore_CoordUtil extends java_lang_Object  {
   
 
   // generate methods
-  static Future<int> convertToGcj(List<double> var0, List<double> var1) async {
+  static Future<int> convertToGcj(Float64List var0, Float64List var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.CoordUtil::convertToGcj([\'var0\':$var0, \'var1\':$var1])');

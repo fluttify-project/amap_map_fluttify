@@ -2188,7 +2188,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   }
   
-  Future<List<double>> getViewMatrix() async {
+  Future<Float64List> getViewMatrix() async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.AMap@$refId::getViewMatrix([])');
@@ -2206,11 +2206,11 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<double>();
     }
   }
   
-  Future<List<double>> getProjectionMatrix() async {
+  Future<Float64List> getProjectionMatrix() async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.AMap@$refId::getProjectionMatrix([])');
@@ -2228,7 +2228,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<double>();
     }
   }
   

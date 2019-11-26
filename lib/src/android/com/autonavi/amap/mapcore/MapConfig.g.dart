@@ -1756,7 +1756,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     }
   }
   
-  Future<List<double>> getViewMatrix() async {
+  Future<Float64List> getViewMatrix() async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getViewMatrix([])');
@@ -1774,11 +1774,11 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<double>();
     }
   }
   
-  Future<List<double>> getProjectionMatrix() async {
+  Future<Float64List> getProjectionMatrix() async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getProjectionMatrix([])');
@@ -1796,11 +1796,11 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<double>();
     }
   }
   
-  Future<List<double>> getMvpMatrix() async {
+  Future<Float64List> getMvpMatrix() async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMvpMatrix([])');
@@ -1818,7 +1818,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<double>();
     }
   }
   
@@ -1844,7 +1844,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     }
   }
   
-  Future<List<int>> getCurTileIds() async {
+  Future<Int32List> getCurTileIds() async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getCurTileIds([])');
@@ -1862,7 +1862,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
       return null;
     } else {
     
-      return result;
+      return (result as List).cast<int>();
     }
   }
   

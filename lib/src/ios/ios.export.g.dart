@@ -104,3 +104,4 @@ export 'MACustomBuildingOverlay.g.dart';
 export 'MAOfflineItemMunicipality.g.dart';
 export 'package:foundation_fluttify/foundation_fluttify.dart';
 export 'package:amap_core_fluttify/amap_core_fluttify.dart';
+export 'package:url_launcher/url_launcher.dart';
