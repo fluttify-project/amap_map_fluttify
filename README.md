@@ -32,8 +32,9 @@ import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 /// !!使用真机调试!!
 /// !注意: 只要是返回Future的方法, 一律使用`await`修饰, 确保当前方法执行完成后再执行下一行, 在不能使用`await`修饰的环境下, 在`then`方法中执行下一步.
 /// 初始化 iOS在init方法中设置, android需要去AndroidManifest.xml里去设置, 详见 https://lbs.amap.com/api/android-sdk/gettingstarted
-/// 和其他fluttify高德插件不一样的是, 这里需要使用`AmapService`去初始化, `AmapService`内部调用的依然是`AmapCore`, 只不过地图插件在初始化的会话需要做些其他事.
-AmapService.init('7a04506d15fdb7585707f7091d715ef4');
+await AmapCore.init('7a04506d15fdb7585707f7091d715ef4');
+/// 如果你觉得引擎的日志太多, 可以关闭Fluttify引擎的日志
+await enableFluttifyLog(false); // 关闭log
 
 class AmapWidget extends StatelessWidget {
   @override
