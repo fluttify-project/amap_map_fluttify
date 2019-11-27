@@ -1,3 +1,9 @@
+## 0.8.1
+- doc: README更新 初始化方法替换, 关闭日志的方法
+- enhance: 不再需要拷贝系统的图片分辨率算法
+- enhance: 简化_uri2ImageData逻辑
+- roll engine #286db79
+
 ## 0.8.0
 - enhance: [breaking change] android端的初始化使用构造器初始化，而不是间接调用方法，防止偶尔出现的初始化错误
 
