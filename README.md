@@ -4,7 +4,7 @@
 
 [![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify)
 
-Dart接口基于[fluttify](https://github.com/yohom/fluttify-core-example)引擎生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/). [CHANGELOG](https://github.com/fluttify-project/amap_map_fluttify/blob/master/CHANGELOG.md). [常见问题对应手册](https://github.com/fluttify-project/amap_map_fluttify/blob/master/Troubleshooting.md).
+Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)引擎生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/). [CHANGELOG](https://github.com/fluttify-project/amap_map_fluttify/blob/master/CHANGELOG.md). [常见问题对应手册](https://github.com/fluttify-project/amap_map_fluttify/blob/master/Troubleshooting.md).
 
 > **!!`git clone`失败看这里!!**
 >
@@ -32,8 +32,9 @@ import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 /// !!使用真机调试!!
 /// !注意: 只要是返回Future的方法, 一律使用`await`修饰, 确保当前方法执行完成后再执行下一行, 在不能使用`await`修饰的环境下, 在`then`方法中执行下一步.
 /// 初始化 iOS在init方法中设置, android需要去AndroidManifest.xml里去设置, 详见 https://lbs.amap.com/api/android-sdk/gettingstarted
-/// 和其他fluttify高德插件不一样的是, 这里需要使用`AmapService`去初始化, `AmapService`内部调用的依然是`AmapCore`, 只不过地图插件在初始化的会话需要做些其他事.
-AmapService.init('7a04506d15fdb7585707f7091d715ef4');
+await AmapCore.init('7a04506d15fdb7585707f7091d715ef4');
+/// 如果你觉得引擎的日志太多, 可以关闭Fluttify引擎的日志
+await enableFluttifyLog(false); // 关闭log
 
 class AmapWidget extends StatelessWidget {
   @override
@@ -70,7 +71,7 @@ class AmapWidget extends StatelessWidget {
       // 地图创建完成回调
       onMapCreated: (controller) async {
         // requestPermission是权限请求方法, 需要你自己实现 
-        // 如果不知道怎么处理, 可以参考example工程的实现
+        // 如果不知道怎么处理, 可以参考example工程的实现, example过程依赖了`permission_handler`插件.
         if (await requestPermission()) {
           await controller.showMyLocation(true);
         }
