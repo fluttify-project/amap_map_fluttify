@@ -73,9 +73,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           id result = [ref initWithCustomView: customView];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@(((NSObject*) result).hash)] = result;
+          methodResult(@(((NSObject*) result).hash));
       },
       @"MACustomCalloutView::get_customView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // print log
@@ -90,9 +90,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // invoke native method
           UIView* result = ref.customView;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MACustomCalloutView::get_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -108,9 +108,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // invoke native method
           NSObject* result = ref.userData;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@(((NSObject*) result).hash)] = result;
+          methodResult(@(((NSObject*) result).hash));
       },
       
       @"MACustomCalloutView::set_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
