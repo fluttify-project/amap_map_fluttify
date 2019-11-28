@@ -178,7 +178,7 @@ class AmapViewState extends State<AmapView> {
     }
   }
 
-  Future<Uint8List> updateMarkerLayer(Widget marker) {
+  Future<Uint8List> widgetToImageData(Widget marker) {
     final completer = Completer<Uint8List>();
     setState(() {
       _widgetLayer = marker;
