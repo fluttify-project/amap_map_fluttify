@@ -3613,19 +3613,18 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   UIImage* icon = (UIImage*) STACK[@"icon"];
   NSNumber* draggable = (NSNumber*) STACK[@"draggable"];
   NSNumber* rotateAngle = (NSNumber*) STACK[@"rotateAngle"];
+  NSNumber* infoWindowEnabled = (NSNumber*) STACK[@"infoWindowEnabled"];
   NSNumber* anchorU = (NSNumber*) STACK[@"anchorU"];
   NSNumber* anchorV = (NSNumber*) STACK[@"anchorV"];
-  if ([annotation isKindOfClass:[MAPointAnnotation class]])
-  {
+  if ([annotation isKindOfClass:[MAPointAnnotation class]]) {
       static NSString *pointReuseIndentifier = @"pointReuseIndentifier";
       MAPinAnnotationView* annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndentifier];
-      if (annotationView == nil)
-      {
+      if (annotationView == nil) {
           annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pointReuseIndentifier];
       }
       if (icon != nil) annotationView.image = icon;
       if (draggable != nil) annotationView.draggable = [draggable boolValue];
-      annotationView.canShowCallout = annotation.title != nil; // title不为空就能显示弹窗
+      if (infoWindowEnabled != nil) annotationView.canShowCallout = [infoWindowEnabled boolValue];
       // 旋转角度
       if (rotateAngle != nil) {
           annotationView.transform = CGAffineTransformRotate(CGAffineTransformIdentity, -[rotateAngle doubleValue] / 180.0 * M_PI);

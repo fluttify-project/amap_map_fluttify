@@ -40,6 +40,9 @@ class MarkerOption {
   /// 是否可拖动
   final bool draggable;
 
+  /// 是否允许弹窗
+  final bool infoWindowEnabled;
+
   /// 旋转角度 单位为度(°)
   final double rotateAngle;
 
@@ -57,6 +60,7 @@ class MarkerOption {
     this.widget,
     this.imageConfig,
     this.draggable,
+    this.infoWindowEnabled,
     this.rotateAngle,
     this.anchorU,
     this.anchorV,
@@ -68,7 +72,7 @@ class MarkerOption {
 
   @override
   String toString() {
-    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, widget: $widget, imageConfig: $imageConfig, draggable: $draggable, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV}';
+    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, imageConfig: $imageConfig, widget: $widget, draggable: $draggable, infoWindowEnabled: $infoWindowEnabled, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV}';
   }
 }
 
