@@ -31,7 +31,15 @@ import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 ```dart 
 /// !!使用真机调试!!
 /// !注意: 只要是返回Future的方法, 一律使用`await`修饰, 确保当前方法执行完成后再执行下一行, 在不能使用`await`修饰的环境下, 在`then`方法中执行下一步.
-/// 初始化 iOS在init方法中设置, android需要去AndroidManifest.xml里去设置, 详见 https://lbs.amap.com/api/android-sdk/gettingstarted
+/// 
+/// 初始化:
+///   1. iOS在init方法中设置
+///   2. Android需要在AndroidManifest.xml里去设置, 详见 https://lbs.amap.com/api/android-sdk/gettingstarted
+///     <application>
+///       <meta-data
+///         android:name="com.amap.api.v2.apikey"
+///         android:value="您的Key"/>
+///     </application>
 await AmapCore.init('7a04506d15fdb7585707f7091d715ef4');
 /// 如果你觉得引擎的日志太多, 可以关闭Fluttify引擎的日志
 await enableFluttifyLog(false); // 关闭log

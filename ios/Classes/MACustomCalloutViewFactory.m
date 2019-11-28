@@ -56,6 +56,27 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   //region handlers
   _handlerMap = @{
+      @"MACustomCalloutView::initWithCustomView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // ref arg
+          UIView* customView = (UIView*) HEAP[@([args[@"customView"] integerValue])];
+      
+          // ref
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[args[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACustomCalloutView@%@::initWithCustomView(暂未实现参数打印)", args[@"refId"]);
+          }
+      
+          // invoke native method
+          id result = [ref initWithCustomView: customView];
+      
+          // result
+          // return a ref
+          HEAP[@(((NSObject*) result).hash)] = result;
+          methodResult(@(((NSObject*) result).hash));
+      },
       @"MACustomCalloutView::get_customView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -69,9 +90,44 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // invoke native method
           UIView* result = ref.customView;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
+      },
+      
+      @"MACustomCalloutView::get_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomCalloutView::get_userData");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[@(refId)];
+      
+          // invoke native method
+          NSObject* result = ref.userData;
+      
+          // return a ref
+          HEAP[@(((NSObject*) result).hash)] = result;
+          methodResult(@(((NSObject*) result).hash));
+      },
+      
+      @"MACustomCalloutView::set_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomCalloutView::set_userData");
+          }
+      
+          // args
+          // ref arg
+          id userData = (id) HEAP[@([args[@"userData"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[@(refId)];
+      
+          ref.userData = userData;
+          methodResult(@"success");
       },
       
   };

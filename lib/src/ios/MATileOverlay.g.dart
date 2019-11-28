@@ -94,6 +94,28 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   
 
   // generate methods
+  Future<NSObject> initWithURLTemplate(String URLTemplate) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MATileOverlay@$refId::initWithURLTemplate([\'URLTemplate\':$URLTemplate])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::initWithURLTemplate', {"URLTemplate": URLTemplate, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSObject()..refId = result..tag = 'amap_map_fluttify');
+      return NSObject()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
   Future<void> cancelLoadOfTileAtPath(MATileOverlayPath path) async {
     // print log
     if (fluttifyLogEnabled) {

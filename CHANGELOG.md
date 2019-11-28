@@ -1,3 +1,7 @@
+## 0.8.2
+- feat: 增加widget as marker功能
+- doc: Android设置key的说明
+
 ## 0.8.1
 - doc: README更新 初始化方法替换, 关闭日志的方法
 - enhance: 不再需要拷贝系统的图片分辨率算法

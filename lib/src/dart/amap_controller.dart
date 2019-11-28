@@ -24,17 +24,19 @@ typedef Future<void> OnScreenShot(Uint8List imageData);
 /// 地图控制类
 class AmapController with WidgetsBindingObserver, _Private {
   /// Android构造器
-  AmapController.android(this._androidController) {
+  AmapController.android(this._androidController, this._state) {
     WidgetsBinding.instance.addObserver(this);
   }
 
   /// iOS构造器
-  AmapController.ios(this._iosController) {
+  AmapController.ios(this._iosController, this._state) {
     WidgetsBinding.instance.addObserver(this);
   }
 
   com_amap_api_maps_MapView _androidController;
   MAMapView _iosController;
+
+  AmapViewState _state;
 
   final _iosMapDelegate = _IOSMapDelegate();
   final _androidMapDelegate = _AndroidMapDelegate();
@@ -581,9 +583,23 @@ class AmapController with WidgetsBindingObserver, _Private {
           await markerOption.snippet(option.snippet);
         }
         // 设置marker图标
+        // 普通图片
         if (option.iconUri != null && option.imageConfig != null) {
           Uint8List iconData =
               await _uri2ImageData(option.imageConfig, option.iconUri);
+
+          final bitmap =
+              await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
+                  iconData);
+          final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
+              .fromBitmap(bitmap);
+          await markerOption.icon(icon);
+
+          pool..add(bitmap)..add(icon);
+        }
+        // widget as marker
+        else if (option.widget != null) {
+          Uint8List iconData = await _state.updateMarkerLayer(option.widget);
 
           final bitmap =
               await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
@@ -638,10 +654,22 @@ class AmapController with WidgetsBindingObserver, _Private {
           await pointAnnotation.set_subtitle(option.snippet);
         }
         // 设置图片
-        // 设置marker图标
-        if (option.iconUri != null) {
+        // 普通图片
+        if (option.iconUri != null && option.imageConfig != null) {
           Uint8List iconData =
               await _uri2ImageData(option.imageConfig, option.iconUri);
+
+          final icon = await PlatformFactoryIOS.createUIImage(iconData);
+
+          // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
+          // 供ios的回调去获取
+          await PlatformFactoryIOS.pushStack('icon', icon);
+
+          pool..add(icon);
+        }
+        // widget as marker
+        else if (option.widget != null) {
+          Uint8List iconData = await _state.updateMarkerLayer(option.widget);
 
           final icon = await PlatformFactoryIOS.createUIImage(iconData);
 

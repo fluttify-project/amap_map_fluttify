@@ -45,9 +45,9 @@ extern BOOL enableLog;
           MAGroundOverlay* result = [MAGroundOverlay groundOverlayWithBounds: bounds icon: icon];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAGroundOverlay::groundOverlayWithCoordinateZoomLevelicon": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -72,9 +72,9 @@ extern BOOL enableLog;
           MAGroundOverlay* result = [MAGroundOverlay groundOverlayWithCoordinate: coordinate zoomLevel: zoomLevel icon: icon];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAGroundOverlay::setGroundOverlayWithBoundsIcon": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -143,9 +143,9 @@ extern BOOL enableLog;
           MAPolygonRenderer* result = [ref initWithPolygon: polygon];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAMapStatus::statusWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -176,9 +176,42 @@ extern BOOL enableLog;
           MAMapStatus* result = [MAMapStatus statusWithCenterCoordinate: coordinate zoomLevel: zoomLevel rotationDegree: rotationDegree cameraDegree: cameraDegree screenAnchor: screenAnchor];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
+      },
+      @"MAMapStatus::initWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+          CLLocationCoordinate2D coordinate;
+          [coordinateValue getValue:&coordinate];
+          // jsonable arg
+          CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
+          // jsonable arg
+          CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
+          // jsonable arg
+          CGFloat cameraDegree = [args[@"cameraDegree"] floatValue];
+          // struct arg
+          NSValue* screenAnchorValue = (NSValue*) HEAP[@([args[@"screenAnchor"] integerValue])];
+          CGPoint screenAnchor;
+          [screenAnchorValue getValue:&screenAnchor];
+      
+          // ref
+          MAMapStatus* ref = (MAMapStatus*) HEAP[args[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapStatus@%@::initWithCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
+          }
+      
+          // invoke native method
+          id result = [ref initWithCenterCoordinate: coordinate zoomLevel: zoomLevel rotationDegree: rotationDegree cameraDegree: cameraDegree screenAnchor: screenAnchor];
+      
+          // result
+          // return a ref
+          HEAP[@(((NSObject*) result).hash)] = result;
+          methodResult(@(((NSObject*) result).hash));
       },
       @"MACircle::circleWithCenterCoordinateRadius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -201,9 +234,9 @@ extern BOOL enableLog;
           MACircle* result = [MACircle circleWithCenterCoordinate: coord radius: radius];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MACircle::circleWithMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -224,9 +257,9 @@ extern BOOL enableLog;
           MACircle* result = [MACircle circleWithMapRect: mapRect];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MACircle::setCircleWithCenterCoordinateRadius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -269,9 +302,9 @@ extern BOOL enableLog;
           MAArcRenderer* result = [ref initWithArc: arc];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAAnnotation::setCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -399,9 +432,9 @@ extern BOOL enableLog;
           MAPolygon* result = [MAPolygon polygonWithCoordinates: coords count: count];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAPolygon::polygonWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -430,9 +463,9 @@ extern BOOL enableLog;
           MAPolygon* result = [MAPolygon polygonWithPoints: points count: count];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAPolygon::setPolygonWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -511,9 +544,9 @@ extern BOOL enableLog;
           MAParticleOverlay* result = [MAParticleOverlay particleOverlayWithOption: option];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAParticleOverlay::updateOverlayOption": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -562,9 +595,9 @@ extern BOOL enableLog;
           MAPolyline* result = [MAPolyline polylineWithPoints: points count: count];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAPolyline::polylineWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -593,9 +626,9 @@ extern BOOL enableLog;
           MAPolyline* result = [MAPolyline polylineWithCoordinates: coords count: count];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAPolyline::setPolylineWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -674,9 +707,9 @@ extern BOOL enableLog;
           MAMultiColoredPolylineRenderer* result = [ref initWithMultiPolyline: multiPolyline];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -726,9 +759,9 @@ extern BOOL enableLog;
           }];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -796,9 +829,9 @@ extern BOOL enableLog;
           }];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAAnimatedAnnotation::setNeedsStart": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -836,9 +869,9 @@ extern BOOL enableLog;
           MAMultiTexturePolylineRenderer* result = [ref initWithMultiPolyline: multiPolyline];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MATileOverlayRenderer::initWithTileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -857,9 +890,9 @@ extern BOOL enableLog;
           MATileOverlayRenderer* result = [ref initWithTileOverlay: tileOverlay];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MATileOverlayRenderer::reloadData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -907,9 +940,9 @@ extern BOOL enableLog;
           MAGeodesicPolyline* result = [MAGeodesicPolyline polylineWithPoints: points count: count];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAGeodesicPolyline::polylineWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -938,9 +971,9 @@ extern BOOL enableLog;
           MAGeodesicPolyline* result = [MAGeodesicPolyline polylineWithCoordinates: coords count: count];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAGeodesicPolyline::setPolylineWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -1076,9 +1109,9 @@ extern BOOL enableLog;
           MATraceManager* result = [MATraceManager sharedInstance];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MATraceManager::start": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -1157,9 +1190,9 @@ extern BOOL enableLog;
           MAMultiPointOverlayRenderer* result = [ref initWithMultiPointOverlay: multiPointOverlay];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAPolylineRenderer::initWithPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -1178,9 +1211,9 @@ extern BOOL enableLog;
           MAPolylineRenderer* result = [ref initWithPolyline: polyline];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAAnnotationMoveAnimation::name": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -1359,6 +1392,29 @@ extern BOOL enableLog;
           // 无返回值
           methodResult(@"success");
       },
+      @"MAAnnotationView::initWithAnnotationReuseIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // ref arg
+          id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
+          // jsonable arg
+          NSString* reuseIdentifier = (NSString*) args[@"reuseIdentifier"];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::initWithAnnotation(暂未实现参数打印)", args[@"refId"]);
+          }
+      
+          // invoke native method
+          id result = [ref initWithAnnotation: annotation reuseIdentifier: reuseIdentifier];
+      
+          // result
+          // return a ref
+          HEAP[@(((NSObject*) result).hash)] = result;
+          methodResult(@(((NSObject*) result).hash));
+      },
       @"MAAnnotationView::prepareForReuse": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
       
@@ -1400,6 +1456,27 @@ extern BOOL enableLog;
           // 无返回值
           methodResult(@"success");
       },
+      @"MATileOverlay::initWithURLTemplate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // jsonable arg
+          NSString* URLTemplate = (NSString*) args[@"URLTemplate"];
+      
+          // ref
+          MATileOverlay* ref = (MATileOverlay*) HEAP[args[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MATileOverlay@%@::initWithURLTemplate(暂未实现参数打印)", args[@"refId"]);
+          }
+      
+          // invoke native method
+          id result = [ref initWithURLTemplate: URLTemplate];
+      
+          // result
+          // return a ref
+          HEAP[@(((NSObject*) result).hash)] = result;
+          methodResult(@(((NSObject*) result).hash));
+      },
       @"MATileOverlay::cancelLoadOfTileAtPath": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
           // struct arg
@@ -1422,6 +1499,27 @@ extern BOOL enableLog;
           // 无返回值
           methodResult(@"success");
       },
+      @"MACustomCalloutView::initWithCustomView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // ref arg
+          UIView* customView = (UIView*) HEAP[@([args[@"customView"] integerValue])];
+      
+          // ref
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[args[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACustomCalloutView@%@::initWithCustomView(暂未实现参数打印)", args[@"refId"]);
+          }
+      
+          // invoke native method
+          id result = [ref initWithCustomView: customView];
+      
+          // result
+          // return a ref
+          HEAP[@(((NSObject*) result).hash)] = result;
+          methodResult(@(((NSObject*) result).hash));
+      },
       @"MAOfflineMap::sharedOfflineMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
       
@@ -1438,9 +1536,9 @@ extern BOOL enableLog;
           MAOfflineMap* result = [MAOfflineMap sharedOfflineMap];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAOfflineMap::setupWithCompletionBlock": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -1672,9 +1770,9 @@ extern BOOL enableLog;
           MACircleRenderer* result = [ref initWithCircle: circle];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAParticleOverlayRenderer::initWithParticleOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -1693,9 +1791,9 @@ extern BOOL enableLog;
           MAParticleOverlayRenderer* result = [ref initWithParticleOverlay: particleOverlay];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAParticleVelocityGenerate::getX": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -1781,9 +1879,9 @@ extern BOOL enableLog;
           MAParticleRandomVelocityGenerate* result = [ref initWithBoundaryValueX1: x1 Y1: y1 Z1: z1 X2: x2 Y2: y2 Z2: z2];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAParticleRandomColorGenerate::initWithBoundaryColorR1G1B1A1R2G2B2A2": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -1816,9 +1914,9 @@ extern BOOL enableLog;
           MAParticleRandomColorGenerate* result = [ref initWithBoundaryColorR1: r1 G1: g1 B1: b1 A1: a1 R2: r2 G2: g2 B2: b2 A2: a2];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAParticleRotationGenerate::getRotate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -1856,9 +1954,9 @@ extern BOOL enableLog;
           MAParticleConstantRotationGenerate* result = [ref initWithRotate: rotate];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAParticleSizeGenerate::getSizeX": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -1941,9 +2039,9 @@ extern BOOL enableLog;
           MAParticleCurveSizeGenerate* result = [ref initWithCurveX: x Y: y Z: z];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAParticleEmissionModule::initWithEmissionRateRateTime": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -1964,9 +2062,9 @@ extern BOOL enableLog;
           MAParticleEmissionModule* result = [ref initWithEmissionRate: rate rateTime: rateTime];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAParticleShapeModule::isRatioEnable": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -2010,9 +2108,9 @@ extern BOOL enableLog;
           MAParticleSinglePointShapeModule* result = [ref initWithShapeX: x Y: y Z: z useRatio: isUseRatio];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAParticleRectShapeModule::initWithLeftToprightbottomuseRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -2039,9 +2137,9 @@ extern BOOL enableLog;
           MAParticleRectShapeModule* result = [ref initWithLeft: left top: top right: right bottom: bottom useRatio: isUseRatio];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAParticleOverLifeModule::setVelocityOverLife": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -2140,9 +2238,9 @@ extern BOOL enableLog;
           MAOverlayRenderer* result = [ref initWithOverlay: overlay];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAOverlayRenderer::getOffsetPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -2581,9 +2679,9 @@ extern BOOL enableLog;
           MAMultiPointOverlay* result = [ref initWithMultiPointItems: items];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MACustomBuildingOverlayOption::optionWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -2612,9 +2710,9 @@ extern BOOL enableLog;
           MACustomBuildingOverlayOption* result = [MACustomBuildingOverlayOption optionWithCoordinates: coords count: count];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MACustomBuildingOverlayOption::setOptionWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -2713,9 +2811,9 @@ extern BOOL enableLog;
           MAArc* result = [MAArc arcWithStartCoordinate: startCoordinate passedCoordinate: passedCoordinate endCoordinate: endCoordinate];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAMapView::setRegionAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -3008,9 +3106,9 @@ extern BOOL enableLog;
           MAMapStatus* result = [ref getMapStatus];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAMapView::setMapStatusAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -3469,9 +3567,9 @@ extern BOOL enableLog;
           MAAnnotationView* result = [ref viewForAnnotation: annotation];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAMapView::dequeueReusableAnnotationViewWithIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -3490,9 +3588,9 @@ extern BOOL enableLog;
           MAAnnotationView* result = [ref dequeueReusableAnnotationViewWithIdentifier: identifier];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAMapView::selectAnnotationAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -3979,9 +4077,9 @@ extern BOOL enableLog;
           MAOverlayRenderer* result = [ref rendererForOverlay: overlay];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAMapView::showOverlaysAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -4355,9 +4453,9 @@ extern BOOL enableLog;
           MAAnnotationView* result = [ref mapView: mapView viewForAnnotation: annotation];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAMapViewDelegate::mapViewDidAddAnnotationViews": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -4581,9 +4679,9 @@ extern BOOL enableLog;
           MAOverlayRenderer* result = [ref mapView: mapView rendererForOverlay: overlay];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAMapViewDelegate::mapViewDidAddOverlayRenderers": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -4944,9 +5042,9 @@ extern BOOL enableLog;
           MAGroundOverlayRenderer* result = [ref initWithGroundOverlay: groundOverlay];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -4965,9 +5063,9 @@ extern BOOL enableLog;
           MACustomBuildingOverlayRenderer* result = [ref initWithCustomBuildingOverlay: customBuildingOverlay];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAOfflineCity::get_cityCode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // print log
@@ -5104,9 +5202,9 @@ extern BOOL enableLog;
           // invoke native method
           UIImage* result = ref.icon;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAGroundOverlay::get_alpha": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -5176,9 +5274,9 @@ extern BOOL enableLog;
           // invoke native method
           MAPolygon* result = ref.polygon;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAPinAnnotationView::get_pinColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -5347,9 +5445,9 @@ extern BOOL enableLog;
           // invoke native method
           MAHeatMapGradient* result = ref.gradient;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAHeatMapTileOverlay::get_allowRetinaAdapting": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -5611,9 +5709,9 @@ extern BOOL enableLog;
           // invoke native method
           MAArc* result = ref.arc;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAAnnotation::get_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -5683,9 +5781,9 @@ extern BOOL enableLog;
           // invoke native method
           NSData* result = ref.styleData;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAMapCustomStyleOptions::get_styleId": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -5718,9 +5816,9 @@ extern BOOL enableLog;
           // invoke native method
           NSData* result = ref.styleTextureData;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAMapCustomStyleOptions::get_styleExtraData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -5736,9 +5834,9 @@ extern BOOL enableLog;
           // invoke native method
           NSData* result = ref.styleExtraData;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAPolygon::get_hollowShapes": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -5778,9 +5876,9 @@ extern BOOL enableLog;
           // invoke native method
           MAParticleOverlayOptions* result = ref.overlayOption;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAMultiColoredPolylineRenderer::get_multiPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -5796,9 +5894,9 @@ extern BOOL enableLog;
           // invoke native method
           MAMultiPolyline* result = ref.multiPolyline;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAMultiColoredPolylineRenderer::get_strokeColors": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -5912,9 +6010,9 @@ extern BOOL enableLog;
           // invoke native method
           MAMultiPolyline* result = ref.multiPolyline;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAMultiTexturePolylineRenderer::get_strokeTextureImages": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -5978,9 +6076,9 @@ extern BOOL enableLog;
           // invoke native method
           MATileOverlay* result = ref.tileOverlay;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAOfflineItem::get_name": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -6135,9 +6233,9 @@ extern BOOL enableLog;
           // invoke native method
           UIImage* result = ref.icon;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAMultiPointOverlayRenderer::get_pointSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -6193,9 +6291,9 @@ extern BOOL enableLog;
           // invoke native method
           MAMultiPointOverlay* result = ref.multiPointOverlay;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAIndoorFloorInfo::get_floorName": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -6439,9 +6537,9 @@ extern BOOL enableLog;
           // invoke native method
           MAPolyline* result = ref.polyline;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAPolylineRenderer::get_is3DArrowLine": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -6474,9 +6572,9 @@ extern BOOL enableLog;
           // invoke native method
           UIColor* result = ref.sideColor;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAShape::get_title": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -6560,9 +6658,9 @@ extern BOOL enableLog;
           // invoke native method
           id<MAAnnotation> result = ref.annotation;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAAnnotationView::get_image": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -6578,9 +6676,9 @@ extern BOOL enableLog;
           // invoke native method
           UIImage* result = ref.image;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAAnnotationView::get_customCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -6596,9 +6694,9 @@ extern BOOL enableLog;
           // invoke native method
           MACustomCalloutView* result = ref.customCalloutView;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAAnnotationView::get_centerOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -6722,9 +6820,9 @@ extern BOOL enableLog;
           // invoke native method
           UIView* result = ref.leftCalloutAccessoryView;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAAnnotationView::get_rightCalloutAccessoryView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -6740,9 +6838,9 @@ extern BOOL enableLog;
           // invoke native method
           UIView* result = ref.rightCalloutAccessoryView;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAAnnotationView::get_isDraggable": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -6917,9 +7015,27 @@ extern BOOL enableLog;
           // invoke native method
           UIView* result = ref.customView;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
+      },
+      
+      @"MACustomCalloutView::get_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomCalloutView::get_userData");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[@(refId)];
+      
+          // invoke native method
+          NSObject* result = ref.userData;
+      
+          // return a ref
+          HEAP[@(((NSObject*) result).hash)] = result;
+          methodResult(@(((NSObject*) result).hash));
       },
       
       @"MAOfflineItemCommonCity::get_province": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -6935,9 +7051,9 @@ extern BOOL enableLog;
           // invoke native method
           MAOfflineItem* result = ref.province;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAOfflineMap::get_provinces": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7001,9 +7117,9 @@ extern BOOL enableLog;
           // invoke native method
           MAOfflineItemNationWide* result = ref.nationWide;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAOfflineMap::get_cities": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7084,9 +7200,9 @@ extern BOOL enableLog;
           // invoke native method
           MACircle* result = ref.circle;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAParticleOverlayRenderer::get_particleOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7102,9 +7218,9 @@ extern BOOL enableLog;
           // invoke native method
           MAParticleOverlay* result = ref.particleOverlay;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAParticleOverlayOptions::get_visibile": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7171,9 +7287,9 @@ extern BOOL enableLog;
           // invoke native method
           UIImage* result = ref.icon;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAParticleOverlayOptions::get_startParticleSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7209,9 +7325,9 @@ extern BOOL enableLog;
           // invoke native method
           id<MAParticleColorGenerate> result = ref.particleStartColor;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAParticleOverlayOptions::get_particleStartSpeed": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7227,9 +7343,9 @@ extern BOOL enableLog;
           // invoke native method
           id<MAParticleVelocityGenerate> result = ref.particleStartSpeed;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAParticleOverlayOptions::get_particleEmissionModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7245,9 +7361,9 @@ extern BOOL enableLog;
           // invoke native method
           MAParticleEmissionModule* result = ref.particleEmissionModule;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAParticleOverlayOptions::get_particleShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7263,9 +7379,9 @@ extern BOOL enableLog;
           // invoke native method
           id<MAParticleShapeModule> result = ref.particleShapeModule;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAParticleOverlayOptions::get_particleOverLifeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7281,9 +7397,9 @@ extern BOOL enableLog;
           // invoke native method
           MAParticleOverLifeModule* result = ref.particleOverLifeModule;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAOverlayRenderer::get_overlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7299,9 +7415,9 @@ extern BOOL enableLog;
           // invoke native method
           id<MAOverlay> result = ref.overlay;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAOverlayRenderer::get_glPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7354,9 +7470,9 @@ extern BOOL enableLog;
           // invoke native method
           UIImage* result = ref.strokeImage;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAOverlayRenderer::get_alpha": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7423,9 +7539,9 @@ extern BOOL enableLog;
           // invoke native method
           CLLocation* result = ref.location;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAUserLocation::get_heading": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7441,9 +7557,9 @@ extern BOOL enableLog;
           // invoke native method
           CLHeading* result = ref.heading;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAMultiPointItem::get_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7588,9 +7704,9 @@ extern BOOL enableLog;
           // invoke native method
           UIColor* result = ref.topColor;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MACustomBuildingOverlayOption::get_sideColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7606,9 +7722,9 @@ extern BOOL enableLog;
           // invoke native method
           UIColor* result = ref.sideColor;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MACustomBuildingOverlayOption::get_visibile": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7641,9 +7757,9 @@ extern BOOL enableLog;
           // invoke native method
           MACustomBuildingOverlayOption* result = ref.defaultOption;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MACustomBuildingOverlay::get_customOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7902,9 +8018,9 @@ extern BOOL enableLog;
           // invoke native method
           UIColor* result = ref.fillColor;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAUserLocationRepresentation::get_strokeColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7920,9 +8036,9 @@ extern BOOL enableLog;
           // invoke native method
           UIColor* result = ref.strokeColor;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAUserLocationRepresentation::get_lineWidth": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7955,9 +8071,9 @@ extern BOOL enableLog;
           // invoke native method
           UIColor* result = ref.locationDotBgColor;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAUserLocationRepresentation::get_locationDotFillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -7973,9 +8089,9 @@ extern BOOL enableLog;
           // invoke native method
           UIColor* result = ref.locationDotFillColor;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAUserLocationRepresentation::get_enablePulseAnnimation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -8008,9 +8124,9 @@ extern BOOL enableLog;
           // invoke native method
           UIImage* result = ref.image;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAMapView::get_mapType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -8776,9 +8892,9 @@ extern BOOL enableLog;
           // invoke native method
           MAUserLocation* result = ref.userLocation;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAMapView::get_customizeUserLocationAccuracyCircleRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -8811,9 +8927,9 @@ extern BOOL enableLog;
           // invoke native method
           MACircle* result = ref.userLocationAccuracyCircle;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAMapView::get_userTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -9043,9 +9159,9 @@ extern BOOL enableLog;
           // invoke native method
           UIColor* result = ref.fillColor;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAOverlayPathRenderer::get_strokeColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -9061,9 +9177,9 @@ extern BOOL enableLog;
           // invoke native method
           UIColor* result = ref.strokeColor;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAOverlayPathRenderer::get_lineWidth": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -9181,9 +9297,9 @@ extern BOOL enableLog;
           // invoke native method
           MAGroundOverlay* result = ref.groundOverlay;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MACustomBuildingOverlayRenderer::get_customBuildingOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -9199,9 +9315,9 @@ extern BOOL enableLog;
           // invoke native method
           MACustomBuildingOverlay* result = ref.customBuildingOverlay;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAGroundOverlay::set_alpha": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -10285,6 +10401,23 @@ extern BOOL enableLog;
           MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
       
           ref.disableOffScreenTileLoading = disableOffScreenTileLoading;
+          methodResult(@"success");
+      },
+      
+      @"MACustomCalloutView::set_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomCalloutView::set_userData");
+          }
+      
+          // args
+          // ref arg
+          id userData = (id) HEAP[@([args[@"userData"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[@(refId)];
+      
+          ref.userData = userData;
           methodResult(@"success");
       },
       

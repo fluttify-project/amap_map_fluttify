@@ -45,6 +45,27 @@ class DrawPointScreenState extends State<DrawPointScreen> {
               divider: kDividerTiny,
               children: <Widget>[
                 ListTile(
+                  title: Center(child: Text('添加Widget Marker')),
+                  onTap: () async {
+                    final marker = await _controller?.addMarker(
+                      MarkerOption(
+                        latLng: _getNextLatLng(),
+                        widget: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Text('使用Widget作为Marker'),
+                            FlutterLogo(size: 80),
+                          ],
+                        ),
+                        imageConfig: createLocalImageConfiguration(context),
+                        title: '北京',
+                        snippet: '描述',
+                      ),
+                    );
+                    _markers.add(marker);
+                  },
+                ),
+                ListTile(
                   title: Center(child: Text('添加Marker')),
                   onTap: () async {
                     final marker = await _controller?.addMarker(

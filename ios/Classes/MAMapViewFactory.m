@@ -347,9 +347,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapStatus* result = [ref getMapStatus];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAMapView::setMapStatusAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -808,9 +808,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAAnnotationView* result = [ref viewForAnnotation: annotation];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAMapView::dequeueReusableAnnotationViewWithIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -829,9 +829,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAAnnotationView* result = [ref dequeueReusableAnnotationViewWithIdentifier: identifier];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAMapView::selectAnnotationAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -1318,9 +1318,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAOverlayRenderer* result = [ref rendererForOverlay: overlay];
       
           // result
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       @"MAMapView::showOverlaysAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -2224,9 +2224,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // invoke native method
           MAUserLocation* result = ref.userLocation;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAMapView::get_customizeUserLocationAccuracyCircleRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -2259,9 +2259,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // invoke native method
           MACircle* result = ref.userLocationAccuracyCircle;
       
-          // 返回值: 引用
-          HEAP[@(result.hash)] = result;
-          methodResult(@(result.hash));
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          methodResult(@((result).hash));
       },
       
       @"MAMapView::get_userTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {

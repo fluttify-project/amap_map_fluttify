@@ -31,6 +31,12 @@ class MarkerOption {
   /// 这个bug彻底解决之后才能保证marker是完美的.
   final ImageConfiguration imageConfig;
 
+  /// Widget形式的Marker
+  ///
+  /// 不能和[iconUri]一起用.
+  /// 注意控制Widget的大小, 比如Column默认是max, 会使用地图的高度, 那么此时需要设置成min.
+  final Widget widget;
+
   /// 是否可拖动
   final bool draggable;
 
@@ -48,19 +54,21 @@ class MarkerOption {
     this.title,
     this.snippet,
     this.iconUri,
+    this.widget,
     this.imageConfig,
     this.draggable,
     this.rotateAngle,
     this.anchorU,
     this.anchorV,
-  }) : assert(
+  })  : assert(
           (iconUri != null && imageConfig != null) || iconUri == null,
           'iconUri和imageConfig必须同时设置! 如果想要一个默认的imageConfig, 那么就直接调用[createLocalImageConfiguration]方法来创建!',
-        );
+        ),
+        assert(!(widget != null && iconUri != null), 'widget和iconUri不能同时设置! ');
 
   @override
   String toString() {
-    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, imageConfig: $imageConfig, draggable: $draggable, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV}';
+    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, widget: $widget, imageConfig: $imageConfig, draggable: $draggable, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV}';
   }
 }
 

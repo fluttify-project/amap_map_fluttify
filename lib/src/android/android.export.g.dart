@@ -294,6 +294,7 @@ export 'com/amap/api/trace/TraceStatusListener.g.dart';
 export 'com/amap/api/trace/TraceListener.g.dart';
 export 'com/amap/api/trace/TraceOverlay.g.dart';
 export 'com/amap/api/trace/LBSTraceClient.g.dart';
+export 'com/amap/api/mapcore/util/id.g.dart';
 export 'com/amap/api/mapcore/util/.g.dart';
 export 'package:foundation_fluttify/foundation_fluttify.dart';
 export 'package:amap_core_fluttify/amap_core_fluttify.dart';
