@@ -180,6 +180,39 @@ extern BOOL enableLog;
           HEAP[@(result.hash)] = result;
           methodResult(@(result.hash));
       },
+      @"MAMapStatus::initWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+          CLLocationCoordinate2D coordinate;
+          [coordinateValue getValue:&coordinate];
+          // jsonable arg
+          CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
+          // jsonable arg
+          CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
+          // jsonable arg
+          CGFloat cameraDegree = [args[@"cameraDegree"] floatValue];
+          // struct arg
+          NSValue* screenAnchorValue = (NSValue*) HEAP[@([args[@"screenAnchor"] integerValue])];
+          CGPoint screenAnchor;
+          [screenAnchorValue getValue:&screenAnchor];
+      
+          // ref
+          MAMapStatus* ref = (MAMapStatus*) HEAP[args[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapStatus@%@::initWithCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
+          }
+      
+          // invoke native method
+          id result = [ref initWithCenterCoordinate: coordinate zoomLevel: zoomLevel rotationDegree: rotationDegree cameraDegree: cameraDegree screenAnchor: screenAnchor];
+      
+          // result
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
       @"MACircle::circleWithCenterCoordinateRadius": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
           // struct arg
@@ -1359,6 +1392,29 @@ extern BOOL enableLog;
           // 无返回值
           methodResult(@"success");
       },
+      @"MAAnnotationView::initWithAnnotationReuseIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // ref arg
+          id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
+          // jsonable arg
+          NSString* reuseIdentifier = (NSString*) args[@"reuseIdentifier"];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::initWithAnnotation(暂未实现参数打印)", args[@"refId"]);
+          }
+      
+          // invoke native method
+          id result = [ref initWithAnnotation: annotation reuseIdentifier: reuseIdentifier];
+      
+          // result
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
       @"MAAnnotationView::prepareForReuse": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
       
@@ -1400,6 +1456,27 @@ extern BOOL enableLog;
           // 无返回值
           methodResult(@"success");
       },
+      @"MATileOverlay::initWithURLTemplate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // jsonable arg
+          NSString* URLTemplate = (NSString*) args[@"URLTemplate"];
+      
+          // ref
+          MATileOverlay* ref = (MATileOverlay*) HEAP[args[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MATileOverlay@%@::initWithURLTemplate(暂未实现参数打印)", args[@"refId"]);
+          }
+      
+          // invoke native method
+          id result = [ref initWithURLTemplate: URLTemplate];
+      
+          // result
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
       @"MATileOverlay::cancelLoadOfTileAtPath": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
           // struct arg
@@ -1421,6 +1498,27 @@ extern BOOL enableLog;
           // result
           // 无返回值
           methodResult(@"success");
+      },
+      @"MACustomCalloutView::initWithCustomView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // ref arg
+          UIView* customView = (UIView*) HEAP[@([args[@"customView"] integerValue])];
+      
+          // ref
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[args[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MACustomCalloutView@%@::initWithCustomView(暂未实现参数打印)", args[@"refId"]);
+          }
+      
+          // invoke native method
+          id result = [ref initWithCustomView: customView];
+      
+          // result
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
       },
       @"MAOfflineMap::sharedOfflineMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
@@ -6922,6 +7020,24 @@ extern BOOL enableLog;
           methodResult(@(result.hash));
       },
       
+      @"MACustomCalloutView::get_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomCalloutView::get_userData");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[@(refId)];
+      
+          // invoke native method
+          NSObject* result = ref.userData;
+      
+          // 返回值: 引用
+          HEAP[@(result.hash)] = result;
+          methodResult(@(result.hash));
+      },
+      
       @"MAOfflineItemCommonCity::get_province": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -10285,6 +10401,23 @@ extern BOOL enableLog;
           MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
       
           ref.disableOffScreenTileLoading = disableOffScreenTileLoading;
+          methodResult(@"success");
+      },
+      
+      @"MACustomCalloutView::set_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACustomCalloutView::set_userData");
+          }
+      
+          // args
+          // ref arg
+          id userData = (id) HEAP[@([args[@"userData"] integerValue])];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[@(refId)];
+      
+          ref.userData = userData;
           methodResult(@"success");
       },
       

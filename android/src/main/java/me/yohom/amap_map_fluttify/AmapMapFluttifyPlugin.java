@@ -59956,6 +59956,27 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
+        // factory
+        put("ObjectFactory::createcom_amap_api_mapcore_util_id__android_content_Context__boolean", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_mapcore_util_id__android_content_Context__boolean");
+        
+            // args
+            // ref arg
+            android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
+            // jsonable arg
+            boolean var2 = (boolean) args.get("var2");
+        
+            // create target object
+            com.amap.api.mapcore.util.id obj = new com.amap.api.mapcore.util.id(var1, var2);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
     }};
 
     public static void registerWith(Registrar registrar) {

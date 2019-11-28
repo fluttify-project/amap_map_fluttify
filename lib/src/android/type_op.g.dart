@@ -1085,6 +1085,11 @@ Future<bool> isKindOfcom_amap_api_trace_TraceOverlay(Ref ref) async {
   return result;
 }
 
+Future<bool> isKindOfcom_amap_api_mapcore_util_id(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_mapcore_util_id', {'refId': ref.refId});
+  return result;
+}
+
 Future<bool> isKindOfcom_amap_api_mapcore_util_(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_mapcore_util_', {'refId': ref.refId});
   return result;
@@ -2164,6 +2169,11 @@ Future<com_amap_api_trace_LBSTraceClient> ascom_amap_api_trace_LBSTraceClient(Re
 Future<com_amap_api_trace_TraceOverlay> ascom_amap_api_trace_TraceOverlay(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_amap_api_trace_TraceOverlay', {'refId': ref.refId});
   return com_amap_api_trace_TraceOverlay()..refId = result;
+}
+
+Future<com_amap_api_mapcore_util_id> ascom_amap_api_mapcore_util_id(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_amap_api_mapcore_util_id', {'refId': ref.refId});
+  return com_amap_api_mapcore_util_id()..refId = result;
 }
 
 Future<com_amap_api_mapcore_util_> ascom_amap_api_mapcore_util_(Ref ref) async {

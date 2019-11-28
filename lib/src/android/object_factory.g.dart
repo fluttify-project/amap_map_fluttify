@@ -1468,4 +1468,12 @@ Future<com_amap_api_trace_LBSTraceClient> createcom_amap_api_trace_LBSTraceClien
   return object;
 }
 
+Future<com_amap_api_mapcore_util_id> createcom_amap_api_mapcore_util_id__android_content_Context__boolean(android_content_Context var1, bool var2) async {
+  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_mapcore_util_id__android_content_Context__boolean', {"var1": var1.refId, "var2": var2});
+  final object = com_amap_api_mapcore_util_id()..refId = refId..tag = 'amap_map_fluttify';
+
+  kNativeObjectPool.add(object);
+  return object;
+}
+
 

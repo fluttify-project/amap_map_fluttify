@@ -18,10 +18,42 @@ class MACustomCalloutView extends UIView  {
     return UIView()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  Future<NSObject> get_userData({bool viewChannel = true}) async {
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod("MACustomCalloutView::get_userData", {'refId': refId});
+    kNativeObjectPool.add(NSObject()..refId = result..tag = 'amap_map_fluttify');
+    return NSObject()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
 
   // generate setters
+  Future<void> set_userData(NSObject userData, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod('MACustomCalloutView::set_userData', {'refId': refId, "userData": userData.refId});
+  
+  
+  }
   
 
   // generate methods
+  Future<NSObject> initWithCustomView(UIView customView, {bool viewChannel = true}) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MACustomCalloutView@$refId::initWithCustomView([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod('MACustomCalloutView::initWithCustomView', {"customView": customView.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSObject()..refId = result..tag = 'amap_map_fluttify');
+      return NSObject()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
   
 }

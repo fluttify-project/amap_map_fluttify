@@ -212,6 +212,28 @@ class MAAnnotationView extends UIView  {
     }
   }
   
+  Future<NSObject> initWithAnnotationReuseIdentifier(MAAnnotation annotation, String reuseIdentifier, {bool viewChannel = true}) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAAnnotationView@$refId::initWithAnnotation([\'reuseIdentifier\':$reuseIdentifier])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::initWithAnnotationReuseIdentifier', {"annotation": annotation.refId, "reuseIdentifier": reuseIdentifier, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSObject()..refId = result..tag = 'amap_map_fluttify');
+      return NSObject()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
   Future<void> prepareForReuse({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
