@@ -1,3 +1,6 @@
+## 0.8.4
+- fix: 用来获取MarkerLayer的GlobalKey在State中创建，防止出现多个MapView使用一个GlobalKey的情况
+
 ## 0.8.3
 - feat: MarkerOption增加是否可以显示弹窗的选项 
 - enhance: 批量Marker实现widget as marker
