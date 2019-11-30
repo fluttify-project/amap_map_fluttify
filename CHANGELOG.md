@@ -1,3 +1,8 @@
+## 0.8.3
+- feat: MarkerOption增加是否可以显示弹窗的选项 
+- enhance: 批量Marker实现widget as marker
+- feat: 增加经纬度坐标和屏幕坐标互转的方法
+
 ## 0.8.2
 - feat: 增加widget as marker功能
 - doc: Android设置key的说明
