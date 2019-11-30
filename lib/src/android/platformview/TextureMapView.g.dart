@@ -57,7 +57,7 @@ class _com_amap_api_maps_TextureMapView_AndroidState extends State<com_amap_api_
 
   @override
   void dispose() {
-    PlatformFactoryAndroid.release(_controller);
+    release(_controller);
     super.dispose();
   }
 }
