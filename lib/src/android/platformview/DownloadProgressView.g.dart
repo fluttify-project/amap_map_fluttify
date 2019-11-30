@@ -57,7 +57,7 @@ class _com_amap_api_maps_offlinemap_DownloadProgressView_AndroidState extends St
 
   @override
   void dispose() {
-    PlatformFactoryAndroid.release(_controller);
+    release(_controller);
     super.dispose();
   }
 }

@@ -7,6 +7,7 @@ import '../ios/ios.export.g.dart';
 import 'enums.dart';
 
 /// Marker创建参数
+@immutable
 class MarkerOption {
   /// 经纬度
   final LatLng latLng;
@@ -40,6 +41,9 @@ class MarkerOption {
   /// 是否可拖动
   final bool draggable;
 
+  /// 是否允许弹窗
+  final bool infoWindowEnabled;
+
   /// 旋转角度 单位为度(°)
   final double rotateAngle;
 
@@ -57,6 +61,7 @@ class MarkerOption {
     this.widget,
     this.imageConfig,
     this.draggable,
+    this.infoWindowEnabled,
     this.rotateAngle,
     this.anchorU,
     this.anchorV,
@@ -68,11 +73,12 @@ class MarkerOption {
 
   @override
   String toString() {
-    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, widget: $widget, imageConfig: $imageConfig, draggable: $draggable, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV}';
+    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, imageConfig: $imageConfig, widget: $widget, draggable: $draggable, infoWindowEnabled: $infoWindowEnabled, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV}';
   }
 }
 
 /// Polyline创建参数
+@immutable
 class PolylineOption {
   /// 经纬度列表
   final List<LatLng> latLngList;
@@ -116,6 +122,7 @@ class PolylineOption {
 }
 
 /// Polygon创建参数
+@immutable
 class PolygonOption {
   /// 经纬度列表
   final List<LatLng> latLngList;
@@ -143,6 +150,7 @@ class PolygonOption {
 }
 
 /// Circle创建参数
+@immutable
 class CircleOption {
   /// 中心点经纬度
   final LatLng center;
@@ -254,6 +262,7 @@ class Polyline {
   }
 }
 
+@immutable
 class MapDrag {
   final LatLng latLng;
   final double zoom;
@@ -265,5 +274,18 @@ class MapDrag {
   @override
   String toString() {
     return 'MapDrag{latLng: $latLng, zoom: $zoom, tilt: $tilt, isAbroad: $isAbroad}';
+  }
+}
+
+@immutable
+class Point {
+  final double x;
+  final double y;
+
+  Point(this.x, this.y);
+
+  @override
+  String toString() {
+    return 'Point{x: $x, y: $y}';
   }
 }
