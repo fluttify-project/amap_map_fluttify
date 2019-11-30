@@ -137,8 +137,7 @@ class AmapViewState extends State<AmapView> {
                   onViewCreated: (controller) async {
                     _controller = AmapController.android(controller, this);
 
-                    final bundle =
-                        await PlatformFactoryAndroid.createandroid_os_Bundle();
+                    final bundle = await createandroid_os_Bundle();
                     await controller.onCreate(bundle);
 
                     if (widget.onMapCreated != null) {

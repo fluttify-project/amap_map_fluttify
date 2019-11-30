@@ -7,6 +7,7 @@ import '../ios/ios.export.g.dart';
 import 'enums.dart';
 
 /// Marker创建参数
+@immutable
 class MarkerOption {
   /// 经纬度
   final LatLng latLng;
@@ -77,6 +78,7 @@ class MarkerOption {
 }
 
 /// Polyline创建参数
+@immutable
 class PolylineOption {
   /// 经纬度列表
   final List<LatLng> latLngList;
@@ -120,6 +122,7 @@ class PolylineOption {
 }
 
 /// Polygon创建参数
+@immutable
 class PolygonOption {
   /// 经纬度列表
   final List<LatLng> latLngList;
@@ -147,6 +150,7 @@ class PolygonOption {
 }
 
 /// Circle创建参数
+@immutable
 class CircleOption {
   /// 中心点经纬度
   final LatLng center;
@@ -258,6 +262,7 @@ class Polyline {
   }
 }
 
+@immutable
 class MapDrag {
   final LatLng latLng;
   final double zoom;
@@ -269,5 +274,18 @@ class MapDrag {
   @override
   String toString() {
     return 'MapDrag{latLng: $latLng, zoom: $zoom, tilt: $tilt, isAbroad: $isAbroad}';
+  }
+}
+
+@immutable
+class Point {
+  final double x;
+  final double y;
+
+  Point(this.x, this.y);
+
+  @override
+  String toString() {
+    return 'Point{x: $x, y: $y}';
   }
 }

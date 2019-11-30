@@ -133,12 +133,12 @@ class AmapController with WidgetsBindingObserver, _Private {
 
           // 边框颜色
           if (strokeColor != null) {
-            final color = await PlatformFactoryIOS.createUIColor(strokeColor);
+            final color = await createUIColor(strokeColor);
             await style.set_strokeColor(color);
           }
           // 填充颜色
           if (fillColor != null) {
-            final color = await PlatformFactoryIOS.createUIColor(fillColor);
+            final color = await createUIColor(fillColor);
             await style.set_fillColor(color);
           }
           // 边框宽度
@@ -511,8 +511,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool..add(map)..add(latLng)..add(cameraUpdate);
       },
       ios: (pool) async {
-        final latLng =
-            await PlatformFactoryIOS.createCLLocationCoordinate2D(lat, lng);
+        final latLng = await createCLLocationCoordinate2D(lat, lng);
         if (zoomLevel != null) {
           await _iosController.setZoomLevelAnimated(zoomLevel, animated);
         }
@@ -588,9 +587,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           Uint8List iconData =
               await _uri2ImageData(option.imageConfig, option.iconUri);
 
-          final bitmap =
-              await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
-                  iconData);
+          final bitmap = await createandroid_graphics_Bitmap(iconData);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
           await markerOption.icon(icon);
@@ -601,9 +598,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         else if (option.widget != null) {
           Uint8List iconData = await _state.widgetToImageData(option.widget);
 
-          final bitmap =
-              await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
-                  iconData);
+          final bitmap = await createandroid_graphics_Bitmap(iconData);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
           await markerOption.icon(icon);
@@ -641,8 +636,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 创建marker
         final pointAnnotation = await createMAPointAnnotation();
 
-        final coordinate =
-            await PlatformFactoryIOS.createCLLocationCoordinate2D(lat, lng);
+        final coordinate = await createCLLocationCoordinate2D(lat, lng);
 
         // 设置经纬度
         await pointAnnotation.set_coordinate(coordinate);
@@ -661,11 +655,11 @@ class AmapController with WidgetsBindingObserver, _Private {
           Uint8List iconData =
               await _uri2ImageData(option.imageConfig, option.iconUri);
 
-          final icon = await PlatformFactoryIOS.createUIImage(iconData);
+          final icon = await createUIImage(iconData);
 
           // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
           // 供ios的回调去获取
-          await PlatformFactoryIOS.pushStack('icon', icon);
+          await pushStack('icon', icon);
 
           pool..add(icon);
         }
@@ -673,33 +667,31 @@ class AmapController with WidgetsBindingObserver, _Private {
         else if (option.widget != null) {
           Uint8List iconData = await _state.widgetToImageData(option.widget);
 
-          final icon = await PlatformFactoryIOS.createUIImage(iconData);
+          final icon = await createUIImage(iconData);
 
           // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
           // 供ios的回调去获取
-          await PlatformFactoryIOS.pushStack('icon', icon);
+          await pushStack('icon', icon);
 
           pool..add(icon);
         }
         // 是否可拖拽
         if (option.draggable != null) {
-          await PlatformFactoryIOS.pushStackJsonable(
-              'draggable', option.draggable);
+          await pushStackJsonable('draggable', option.draggable);
         }
         // 旋转角度
         if (option.rotateAngle != null) {
-          await PlatformFactoryIOS.pushStackJsonable(
-              'rotateAngle', option.rotateAngle);
+          await pushStackJsonable('rotateAngle', option.rotateAngle);
         }
         // 是否允许弹窗
         if (option.infoWindowEnabled != null) {
-          await PlatformFactoryIOS.pushStackJsonable(
+          await pushStackJsonable(
               'infoWindowEnabled', option.infoWindowEnabled);
         }
         // 锚点
         if (option.anchorU != null || option.anchorV != null) {
-          await PlatformFactoryIOS.pushStackJsonable('anchorU', option.anchorU);
-          await PlatformFactoryIOS.pushStackJsonable('anchorV', option.anchorV);
+          await pushStackJsonable('anchorU', option.anchorU);
+          await pushStackJsonable('anchorV', option.anchorV);
         }
 
         await _iosController.addAnnotation(pointAnnotation);
@@ -754,9 +746,7 @@ class AmapController with WidgetsBindingObserver, _Private {
             Uint8List iconData =
                 await _uri2ImageData(option.imageConfig, option.iconUri);
 
-            final bitmap =
-                await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
-                    iconData);
+            final bitmap = await createandroid_graphics_Bitmap(iconData);
             final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
                 .fromBitmap(bitmap);
             await markerOption.icon(icon);
@@ -767,9 +757,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           else if (option.widget != null) {
             Uint8List iconData = await _state.widgetToImageData(option.widget);
 
-            final bitmap =
-                await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
-                    iconData);
+            final bitmap = await createandroid_graphics_Bitmap(iconData);
             final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
                 .fromBitmap(bitmap);
             await markerOption.icon(icon);
@@ -808,8 +796,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           // 创建marker
           final pointAnnotation = await createMAPointAnnotation();
 
-          final coordinate =
-              await PlatformFactoryIOS.createCLLocationCoordinate2D(lat, lng);
+          final coordinate = await createCLLocationCoordinate2D(lat, lng);
 
           // 设置经纬度
           await pointAnnotation.set_coordinate(coordinate);
@@ -828,11 +815,11 @@ class AmapController with WidgetsBindingObserver, _Private {
             Uint8List iconData =
                 await _uri2ImageData(option.imageConfig, option.iconUri);
 
-            final icon = await PlatformFactoryIOS.createUIImage(iconData);
+            final icon = await createUIImage(iconData);
 
             // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
             // 供ios的回调去获取
-            await PlatformFactoryIOS.pushStack('icon', icon);
+            await pushStack('icon', icon);
 
             pool..add(icon);
           }
@@ -840,18 +827,17 @@ class AmapController with WidgetsBindingObserver, _Private {
           else if (option.widget != null) {
             Uint8List iconData = await _state.widgetToImageData(option.widget);
 
-            final icon = await PlatformFactoryIOS.createUIImage(iconData);
+            final icon = await createUIImage(iconData);
 
             // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
             // 供ios的回调去获取
-            await PlatformFactoryIOS.pushStack('icon', icon);
+            await pushStack('icon', icon);
 
             pool..add(icon);
           }
           // 是否可拖拽
           if (option.draggable != null) {
-            await PlatformFactoryIOS.pushStackJsonable(
-                'draggable', option.draggable);
+            await pushStackJsonable('draggable', option.draggable);
           }
 
           iosOptions.add(pointAnnotation);
@@ -869,23 +855,83 @@ class AmapController with WidgetsBindingObserver, _Private {
 
   /// 清除所有marker
   Future<void> clearMarkers() async {
-    return platform(android: (pool) async {
-      final map = await _androidController.getMap();
-      final markers = await map.getMapScreenMarkers();
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+        final markers = await map.getMapScreenMarkers();
 
-      for (final marker in markers) {
-        marker.remove();
-      }
+        for (final marker in markers) {
+          marker.remove();
+        }
 
-      pool
-        ..add(map)
-        ..addAll(markers);
-    }, ios: (pool) async {
-      final markers = await _iosController.get_annotations();
-      await _iosController.removeAnnotations(markers);
+        pool
+          ..add(map)
+          ..addAll(markers);
+      },
+      ios: (pool) async {
+        final markers = await _iosController.get_annotations();
+        await _iosController.removeAnnotations(markers);
 
-      pool..addAll(markers as List<Ref>);
-    });
+        pool..addAll(markers as List<Ref>);
+      },
+    );
+  }
+
+  /// 屏幕坐标转经纬度坐标
+  Future<LatLng> fromScreenLocation(Point point) async {
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+        final projection = await map.getProjection();
+
+        final androidPoint = await createandroid_graphics_Point(
+            point.x.toInt(), point.y.toInt());
+
+        final latLng = await projection.fromScreenLocation(androidPoint);
+
+        pool..add(map)..add(projection)..add(androidPoint)..add(latLng);
+        return LatLng(
+          await latLng.get_latitude(),
+          await latLng.get_longitude(),
+        );
+      },
+      ios: (pool) async {
+        final cgPoint = await createCGPoint(point.x, point.y);
+        final coord2d = await _iosController.convertPointToCoordinateFromView(
+            cgPoint, _iosController);
+
+        pool..add(cgPoint)..add(coord2d);
+        return LatLng(await coord2d.latitude, await coord2d.longitude);
+      },
+    );
+  }
+
+  /// 经纬度坐标转屏幕坐标
+  Future<Point> toScreenLocation(LatLng coord) async {
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+        final projection = await map.getProjection();
+
+        final latLng =
+            await createcom_amap_api_maps_model_LatLng__double__double(
+                coord.latitude, coord.longitude);
+
+        final point = await projection.toScreenLocation(latLng);
+
+        pool..add(map)..add(projection)..add(latLng)..add(point);
+        return Point((await point.x).toDouble(), (await point.y).toDouble());
+      },
+      ios: (pool) async {
+        final latLng =
+            await createCLLocationCoordinate2D(coord.latitude, coord.longitude);
+        final point = await _iosController.convertCoordinateToPointToView(
+            latLng, _iosController);
+
+        pool..add(latLng)..add(point);
+        return Point((await point.x).toDouble(), (await point.y).toDouble());
+      },
+    );
   }
 
   /// 添加折线
@@ -923,9 +969,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         if (option.customTexture != null && option.imageConfig != null) {
           Uint8List iconData =
               await _uri2ImageData(option.imageConfig, option.customTexture);
-          final bitmap =
-              await PlatformFactoryAndroid.createandroid_graphics_Bitmap(
-                  iconData);
+          final bitmap = await createandroid_graphics_Bitmap(iconData);
           final texture = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
           await polylineOptions.setCustomTexture(texture);
@@ -962,7 +1006,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
         for (final point in option.latLngList) {
-          final latLng = await PlatformFactoryIOS.createCLLocationCoordinate2D(
+          final latLng = await createCLLocationCoordinate2D(
               point.latitude, point.longitude);
           latLngList.add(latLng);
         }
@@ -973,34 +1017,33 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 宽度和颜色需要设置到STACK里去
         if (option.width != null) {
-          await PlatformFactoryIOS.pushStackJsonable('width', option.width);
+          await pushStackJsonable('width', option.width);
         }
         // 颜色
         if (option.strokeColor != null) {
-          await PlatformFactoryIOS.pushStackJsonable(
-              'strokeColor', option.strokeColor.value);
+          await pushStackJsonable('strokeColor', option.strokeColor.value);
         }
         // 设置图片
         if (option.customTexture != null && option.imageConfig != null) {
           Uint8List textureData =
               await _uri2ImageData(option.imageConfig, option.customTexture);
 
-          final texture = await PlatformFactoryIOS.createUIImage(textureData);
+          final texture = await createUIImage(textureData);
 
-          await PlatformFactoryIOS.pushStack('texture', texture);
+          await pushStack('texture', texture);
 
           pool..add(texture);
         }
         // 线段始末端样式, 由于两端的枚举顺序是一样的, 所以这里直接从索引获取枚举
         if (option.lineCapType != null) {
-          await PlatformFactoryIOS.pushStackJsonable(
+          await pushStackJsonable(
             'lineCapType',
             option.lineCapType.index,
           );
         }
         // 线段连接处样式, 由于两端的枚举顺序是一样的, 所以这里直接从索引获取枚举
         if (option.lineJoinType != null) {
-          await PlatformFactoryIOS.pushStackJsonable(
+          await pushStackJsonable(
             'lineJoinType',
             option.lineJoinType.index,
           );
@@ -1070,7 +1113,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
         for (final point in option.latLngList) {
-          final latLng = await PlatformFactoryIOS.createCLLocationCoordinate2D(
+          final latLng = await createCLLocationCoordinate2D(
               point.latitude, point.longitude);
           latLngList.add(latLng);
         }
@@ -1081,13 +1124,11 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 宽度和颜色需要设置到STACK里去
         if (option.width != null)
-          await PlatformFactoryIOS.pushStackJsonable('width', option.width);
+          await pushStackJsonable('width', option.width);
         if (option.strokeColor != null)
-          await PlatformFactoryIOS.pushStackJsonable(
-              'strokeColor', option.strokeColor.value);
+          await pushStackJsonable('strokeColor', option.strokeColor.value);
         if (option.fillColor != null)
-          await PlatformFactoryIOS.pushStackJsonable(
-              'fillColor', option.fillColor.value);
+          await pushStackJsonable('fillColor', option.fillColor.value);
 
         // 设置参数
         await _iosController.addOverlay(polygon);
@@ -1145,7 +1186,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         await _iosController.set_delegate(_iosMapDelegate);
 
-        final latLng = await PlatformFactoryIOS.createCLLocationCoordinate2D(
+        final latLng = await createCLLocationCoordinate2D(
           option.center.latitude,
           option.center.longitude,
         );
@@ -1158,13 +1199,11 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 宽度和颜色需要设置到STACK里去
         if (option.width != null)
-          await PlatformFactoryIOS.pushStackJsonable('width', option.width);
+          await pushStackJsonable('width', option.width);
         if (option.strokeColor != null)
-          await PlatformFactoryIOS.pushStackJsonable(
-              'strokeColor', option.strokeColor.value);
+          await pushStackJsonable('strokeColor', option.strokeColor.value);
         if (option.fillColor != null)
-          await PlatformFactoryIOS.pushStackJsonable(
-              'fillColor', option.fillColor.value);
+          await pushStackJsonable('fillColor', option.fillColor.value);
 
         // 设置参数
         await _iosController.addOverlay(circle);
@@ -1351,20 +1390,17 @@ class AmapController with WidgetsBindingObserver, _Private {
         final option = await createMAMapCustomStyleOptions();
 
         if (styleData != null) {
-          final styleDataNSData =
-              await PlatformFactoryIOS.createNSDataWithUint8List(styleData);
+          final styleDataNSData = await createNSDataWithUint8List(styleData);
           await option.set_styleData(styleDataNSData);
           pool.add(styleDataNSData);
         }
         if (styleExtra != null) {
-          final styleExtraNSData =
-              await PlatformFactoryIOS.createNSDataWithUint8List(styleExtra);
+          final styleExtraNSData = await createNSDataWithUint8List(styleExtra);
           await option.set_styleExtraData(styleExtraNSData);
           pool.add(styleExtraNSData);
         }
         if (texture != null) {
-          final textureNSData =
-              await PlatformFactoryIOS.createNSDataWithUint8List(texture);
+          final textureNSData = await createNSDataWithUint8List(texture);
           await option.set_styleTextureData(textureNSData);
           pool.add(textureNSData);
         }

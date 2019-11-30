@@ -48,15 +48,13 @@ class AmapService {
       },
       ios: (pool) async {
         // 点1
-        final _location1 =
-            await PlatformFactoryIOS.createCLLocationCoordinate2D(
-                point1.latitude, point1.longitude);
+        final _location1 = await createCLLocationCoordinate2D(
+            point1.latitude, point1.longitude);
         final mapPoint1 = await MAMapPointForCoordinate(_location1);
 
         // 点2
-        final _location2 =
-            await PlatformFactoryIOS.createCLLocationCoordinate2D(
-                point2.latitude, point2.longitude);
+        final _location2 = await createCLLocationCoordinate2D(
+            point2.latitude, point2.longitude);
         final mapPoint2 = await MAMapPointForCoordinate(_location2);
 
         // 计算结果
@@ -76,7 +74,7 @@ class AmapService {
   static Future<LatLng> convertCoord(LatLng coord, CoordType fromType) async {
     return platform(
       android: (pool) async {
-        final context = await PlatformFactoryAndroid.getandroid_app_Activity();
+        final context = await getandroid_app_Activity();
 
         // 待转换坐标
         final targetCoord =
@@ -134,8 +132,7 @@ class AmapService {
       ios: (pool) async {
         // 待转换坐标
         final targetCoord =
-            await PlatformFactoryIOS.createCLLocationCoordinate2D(
-                coord.latitude, coord.longitude);
+            await createCLLocationCoordinate2D(coord.latitude, coord.longitude);
 
         AMapCoordinateType type;
         switch (fromType) {
@@ -201,15 +198,13 @@ class AmapService {
       },
       ios: (pool) async {
         // 点1
-        final _location1 =
-            await PlatformFactoryIOS.createCLLocationCoordinate2D(
-                leftTop.latitude, leftTop.longitude);
+        final _location1 = await createCLLocationCoordinate2D(
+            leftTop.latitude, leftTop.longitude);
         final mapPoint1 = await MAMapPointForCoordinate(_location1);
 
         // 点2
-        final _location2 =
-            await PlatformFactoryIOS.createCLLocationCoordinate2D(
-                rightBottom.latitude, rightBottom.longitude);
+        final _location2 = await createCLLocationCoordinate2D(
+            rightBottom.latitude, rightBottom.longitude);
         final mapPoint2 = await MAMapPointForCoordinate(_location2);
 
         // 计算结果
