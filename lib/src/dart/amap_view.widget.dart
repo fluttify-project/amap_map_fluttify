@@ -14,7 +14,6 @@ import 'package:flutter/rendering.dart';
 typedef Future<void> _OnMapCreated(AmapController controller);
 
 final mapKeyContainer = <GlobalKey>[];
-final _markerKey = GlobalKey();
 
 /// 高德地图 Widget
 class AmapView extends StatefulWidget {
@@ -100,8 +99,9 @@ class AmapViewState extends State<AmapView> {
   // _widgetLayer的存在是为了实现widget作为marker(或其他)而存在的. 添加widget作为marker后,
   // 会调用AmapViewState::setState, 然后等待一帧结束确认widget已经被渲染后再通过RepaintBoundary::toImage
   // 获取图片数据, 后面的流程和普通添加marker一样了.
-  Widget _widgetLayer = Container();
   Widget _mask = Container();
+  Widget _widgetLayer = Container();
+  final _markerKey = GlobalKey();
 
   @override
   void initState() {
