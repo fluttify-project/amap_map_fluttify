@@ -61,7 +61,7 @@ class MarkerOption {
     this.widget,
     this.imageConfig,
     this.draggable,
-    this.infoWindowEnabled,
+    this.infoWindowEnabled = true,
     this.rotateAngle,
     this.anchorU,
     this.anchorV,
