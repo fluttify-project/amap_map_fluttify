@@ -1,18 +1,4 @@
-import 'dart:async';
-import 'dart:io';
-import 'dart:typed_data';
-import 'dart:ui';
-
-import 'package:amap_map_fluttify/amap_map_fluttify.dart';
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
-import 'enums.dart';
-import 'models.dart';
+part of 'amap_view.widget.dart';
 
 typedef Future<void> OnMarkerClick(Marker marker);
 typedef Future<void> OnMapClick(LatLng latLng);
@@ -36,7 +22,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   com_amap_api_maps_MapView _androidController;
   MAMapView _iosController;
 
-  AmapViewState _state;
+  _AmapViewState _state;
 
   final _iosMapDelegate = _IOSMapDelegate();
   final _androidMapDelegate = _AndroidMapDelegate();

@@ -5,15 +5,19 @@ import 'dart:ui';
 
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
-import 'package:amap_map_fluttify/src/dart/amap_controller.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
+
+import 'enums.dart';
+import 'models.dart';
+
+part 'amap_controller.dart';
 
 typedef Future<void> _OnMapCreated(AmapController controller);
-
-final mapKeyContainer = <GlobalKey>[];
 
 /// 高德地图 Widget
 class AmapView extends StatefulWidget {
@@ -91,10 +95,10 @@ class AmapView extends StatefulWidget {
   final Widget mask;
 
   @override
-  AmapViewState createState() => AmapViewState();
+  _AmapViewState createState() => _AmapViewState();
 }
 
-class AmapViewState extends State<AmapView> {
+class _AmapViewState extends State<AmapView> {
   AmapController _controller;
   // _widgetLayer的存在是为了实现widget作为marker(或其他)而存在的. 添加widget作为marker后,
   // 会调用AmapViewState::setState, 然后等待一帧结束确认widget已经被渲染后再通过RepaintBoundary::toImage
