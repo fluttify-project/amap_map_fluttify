@@ -73,6 +73,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                         latLng: _getNextLatLng(),
                         title: '北京',
                         snippet: '描述',
+                        infoWindowEnabled: false,
                       ),
                     );
                     _markers.add(marker);
