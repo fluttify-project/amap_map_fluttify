@@ -214,6 +214,25 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                     );
                   },
                 ),
+                ListTile(
+                  title: Center(child: Text('经纬度坐标转屏幕坐标')),
+                  onTap: () async {
+                    final centerLatLng =
+                        await _controller.getCenterCoordinate();
+                    final screenPoint =
+                        await _controller?.toScreenLocation(centerLatLng);
+                    toast('地图中心点对应的屏幕坐标为: $screenPoint');
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('屏幕坐标转经纬度坐标')),
+                  onTap: () async {
+                    final screenPoint = Point(250, 250);
+                    final latLng =
+                        await _controller?.fromScreenLocation(screenPoint);
+                    toast('屏幕坐标(250, 250)对应的经纬度坐标为: $latLng');
+                  },
+                ),
               ],
             ),
           ),
