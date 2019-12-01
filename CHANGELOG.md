@@ -1,3 +1,6 @@
+## 0.9.1
+- enhance: ios端地图移动加入开始移动的回调, 使之和android端行为保持一致.
+
 ## 0.9.0
 - enhance: amap_controller作为amap_view的part, 防止AmapViewState被外部访问
 - enhance: infoWindowEnabled默认true
