@@ -32,12 +32,12 @@ class AmapView extends StatefulWidget {
     this.scrollGesturesEnabled,
     this.rotateGestureEnabled,
     this.tiltGestureEnabled,
-    this.zoomLevel,
+    this.zoomLevel, // todo 初始化没用
     this.centerCoordinate,
     this.markers,
-    this.onMarkerClick,
-    this.onMapClick,
-    this.onMapDrag,
+    this.onMarkerClicked,
+    this.onMapClicked,
+    this.onMapMoved,
     this.maskDelay = const Duration(seconds: 0),
     this.mask,
   }) : super(key: key);
@@ -79,13 +79,13 @@ class AmapView extends StatefulWidget {
   final List<MarkerOption> markers;
 
   /// 标识点击回调
-  final OnMarkerClick onMarkerClick;
+  final OnMarkerClicked onMarkerClicked;
 
   /// 地图点击回调
-  final OnMapClick onMapClick;
+  final OnMapClicked onMapClicked;
 
   /// 地图拖动回调
-  final OnMapDrag onMapDrag;
+  final OnMapMoved onMapMoved;
 
   /// [PlatformView]创建时, 会有一下的黑屏, 这里提供一个在[PlatformView]初始化时, 盖住其黑屏
   /// 的遮罩, [maskDelay]配置延迟多少时间之后再显示地图, 默认不延迟, 即0.
@@ -263,14 +263,14 @@ class _AmapViewState extends State<AmapView> {
     if (widget.markers != null && widget.markers.isNotEmpty) {
       await _controller?.addMarkers(widget.markers);
     }
-    if (widget.onMarkerClick != null) {
-      await _controller?.setMarkerClickListener(widget.onMarkerClick);
+    if (widget.onMarkerClicked != null) {
+      await _controller?.setMarkerClickListener(widget.onMarkerClicked);
     }
-    if (widget.onMapClick != null) {
-      await _controller?.setMapClickListener(widget.onMapClick);
+    if (widget.onMapClicked != null) {
+      await _controller?.setMapClickListener(widget.onMapClicked);
     }
-    if (widget.onMapDrag != null) {
-      await _controller?.setMapDragListener(widget.onMapDrag);
+    if (widget.onMapMoved != null) {
+      await _controller?.setMapDragListener(widget.onMapMoved);
     }
   }
 
@@ -312,14 +312,14 @@ class _AmapViewState extends State<AmapView> {
     if (widget.markers != null && widget.markers.isNotEmpty) {
       await _controller?.addMarkers(widget.markers);
     }
-    if (widget.onMarkerClick != null) {
-      await _controller?.setMarkerClickListener(widget.onMarkerClick);
+    if (widget.onMarkerClicked != null) {
+      await _controller?.setMarkerClickListener(widget.onMarkerClicked);
     }
-    if (widget.onMapClick != null) {
-      await _controller?.setMapClickListener(widget.onMapClick);
+    if (widget.onMapClicked != null) {
+      await _controller?.setMapClickListener(widget.onMapClicked);
     }
-    if (widget.onMapDrag != null) {
-      await _controller?.setMapDragListener(widget.onMapDrag);
+    if (widget.onMapMoved != null) {
+      await _controller?.setMapDragListener(widget.onMapMoved);
     }
   }
 }
