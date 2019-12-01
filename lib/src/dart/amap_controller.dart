@@ -1532,6 +1532,23 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   }
 
   @override
+  Future<void> mapViewMapWillMoveByUser(
+    MAMapView mapView,
+    bool wasUserAction,
+  ) async {
+    super.mapViewMapWillMoveByUser(mapView, wasUserAction);
+    if (_onMapMoved != null) {
+      final location = await mapView.get_centerCoordinate();
+      await _onMapMoved(MapMove(
+        latLng: LatLng(await location.latitude, await location.longitude),
+        zoom: await mapView.get_zoomLevel(),
+        tilt: await mapView.get_cameraDegree(),
+        isAbroad: await mapView.get_isAbroad(),
+      ));
+    }
+  }
+
+  @override
   Future<void> mapViewRequireLocationAuth(
     CLLocationManager locationManager,
   ) async {
