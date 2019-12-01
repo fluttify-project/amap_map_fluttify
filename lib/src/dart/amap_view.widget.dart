@@ -37,7 +37,8 @@ class AmapView extends StatefulWidget {
     this.markers,
     this.onMarkerClicked,
     this.onMapClicked,
-    this.onMapMoved,
+    this.onMapMoveStart,
+    this.onMapMoveEnd,
     this.maskDelay = const Duration(seconds: 0),
     this.mask,
   }) : super(key: key);
@@ -84,8 +85,11 @@ class AmapView extends StatefulWidget {
   /// 地图点击回调
   final OnMapClicked onMapClicked;
 
-  /// 地图拖动回调
-  final OnMapMoved onMapMoved;
+  /// 地图开始移动回调
+  final OnMapMove onMapMoveStart;
+
+  /// 地图结束移动回调
+  final OnMapMove onMapMoveEnd;
 
   /// [PlatformView]创建时, 会有一下的黑屏, 这里提供一个在[PlatformView]初始化时, 盖住其黑屏
   /// 的遮罩, [maskDelay]配置延迟多少时间之后再显示地图, 默认不延迟, 即0.
@@ -269,8 +273,11 @@ class _AmapViewState extends State<AmapView> {
     if (widget.onMapClicked != null) {
       await _controller?.setMapClickedListener(widget.onMapClicked);
     }
-    if (widget.onMapMoved != null) {
-      await _controller?.setMapMovedListener(widget.onMapMoved);
+    if (widget.onMapMoveStart != null || widget.onMapMoveEnd != null) {
+      await _controller?.setMapMoveListener(
+        onMapMoveStart: widget.onMapMoveStart,
+        onMapMoveEnd: widget.onMapMoveEnd,
+      );
     }
   }
 
@@ -318,8 +325,11 @@ class _AmapViewState extends State<AmapView> {
     if (widget.onMapClicked != null) {
       await _controller?.setMapClickedListener(widget.onMapClicked);
     }
-    if (widget.onMapMoved != null) {
-      await _controller?.setMapMovedListener(widget.onMapMoved);
+    if (widget.onMapMoveStart != null || widget.onMapMoveEnd != null) {
+      await _controller?.setMapMoveListener(
+        onMapMoveStart: widget.onMapMoveStart,
+        onMapMoveEnd: widget.onMapMoveEnd,
+      );
     }
   }
 }

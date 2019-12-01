@@ -22,7 +22,6 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
             flex: 1,
             child: AmapView(
               showZoomControl: false,
-              centerCoordinate: LatLng(39, 110),
               maskDelay: Duration(milliseconds: 500),
               onMapCreated: (controller) async {
                 _controller = controller;
@@ -188,9 +187,10 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                 ListTile(
                   title: Center(child: Text('监听地图移动')),
                   onTap: () {
-                    _controller?.setMapMovedListener((drag) async {
-                      toast('移动: $drag');
-                    });
+                    _controller?.setMapMoveListener(
+                      onMapMoveStart: (move) async => toast('开始移动: $move'),
+                      onMapMoveEnd: (move) async => toast('结束移动: $move'),
+                    );
                   },
                 ),
                 ListTile(

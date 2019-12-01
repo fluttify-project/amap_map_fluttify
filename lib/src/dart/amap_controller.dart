@@ -2,7 +2,7 @@ part of 'amap_view.widget.dart';
 
 typedef Future<void> OnMarkerClicked(Marker marker);
 typedef Future<void> OnMapClicked(LatLng latLng);
-typedef Future<void> OnMapMoved(MapMove move);
+typedef Future<void> OnMapMove(MapMove move);
 typedef Future<void> OnMarkerDrag(Marker marker);
 typedef Future<void> _OnRequireAlwaysAuth(CLLocationManager manager);
 typedef Future<void> OnScreenShot(Uint8List imageData);
@@ -1200,25 +1200,6 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置marker点击监听事件
-  @Deprecated('使用setMarkerClickedListener代替')
-  Future<void> setMarkerClickListener(OnMarkerClicked onMarkerClicked) async {
-    return platform(
-      android: (pool) async {
-        final map = await _androidController.getMap();
-
-        await map.setOnMarkerClickListener(
-            _androidMapDelegate.._onMarkerClicked = onMarkerClicked);
-
-        pool..add(map);
-      },
-      ios: (pool) async {
-        await _iosController
-            .set_delegate(_iosMapDelegate.._onMarkerClicked = onMarkerClicked);
-      },
-    );
-  }
-
-  /// 设置marker点击监听事件
   Future<void> setMarkerClickedListener(OnMarkerClicked onMarkerClicked) async {
     return platform(
       android: (pool) async {
@@ -1267,27 +1248,6 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置地图点击监听事件
-  @Deprecated('使用setMapClickedListener代替')
-  Future<void> setMapClickListener(OnMapClicked onMapClick) async {
-    return platform(
-      android: (pool) async {
-        final map = await _androidController.getMap();
-
-        await map.setOnMapClickListener(
-          _androidMapDelegate.._onMapClick = onMapClick,
-        );
-
-        pool..add(map);
-      },
-      ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate.._onMapClick = onMapClick,
-        );
-      },
-    );
-  }
-
-  /// 设置地图点击监听事件
   Future<void> setMapClickedListener(OnMapClicked onMapClick) async {
     return platform(
       android: (pool) async {
@@ -1307,42 +1267,28 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
-  /// 设置地图拖动监听事件
-  @Deprecated('使用setMapMovedListener代替')
-  Future<void> setMapDragListener(OnMapMoved onMapMoved) async {
-    return platform(
-      android: (pool) async {
-        final map = await _androidController.getMap();
-
-        await map.setOnCameraChangeListener(
-          _androidMapDelegate.._onMapMoved = onMapMoved,
-        );
-
-        pool..add(map);
-      },
-      ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate.._onMapMoved = onMapMoved,
-        );
-      },
-    );
-  }
-
   /// 设置地图移动监听事件
-  Future<void> setMapMovedListener(OnMapMoved onMapMoved) async {
+  Future<void> setMapMoveListener({
+    OnMapMove onMapMoveStart,
+    OnMapMove onMapMoveEnd,
+  }) async {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
 
         await map.setOnCameraChangeListener(
-          _androidMapDelegate.._onMapMoved = onMapMoved,
+          _androidMapDelegate
+            .._onMapMoveStart = onMapMoveStart
+            .._onMapMoveEnd = onMapMoveEnd,
         );
 
         pool..add(map);
       },
       ios: (pool) async {
         await _iosController.set_delegate(
-          _iosMapDelegate.._onMapMoved = onMapMoved,
+          _iosMapDelegate
+            .._onMapMoveStart = onMapMoveStart
+            .._onMapMoveEnd = onMapMoveEnd,
         );
       },
     );
@@ -1489,7 +1435,8 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   OnMarkerDrag _onMarkerDragging;
   OnMarkerDrag _onMarkerDragEnd;
   OnMapClicked _onMapClick;
-  OnMapMoved _onMapMoved;
+  OnMapMove _onMapMoveStart;
+  OnMapMove _onMapMoveEnd;
   _OnRequireAlwaysAuth _onRequireAlwaysAuth;
   MAMapView _iosController;
 
@@ -1576,14 +1523,14 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   }
 
   @override
-  Future<void> mapViewMapDidMoveByUser(
+  Future<void> mapViewMapWillMoveByUser(
     MAMapView mapView,
     bool wasUserAction,
   ) async {
-    super.mapViewMapDidMoveByUser(mapView, wasUserAction);
-    if (_onMapMoved != null) {
+    super.mapViewMapWillMoveByUser(mapView, wasUserAction);
+    if (_onMapMoveStart != null) {
       final location = await mapView.get_centerCoordinate();
-      await _onMapMoved(MapMove(
+      await _onMapMoveStart(MapMove(
         latLng: LatLng(await location.latitude, await location.longitude),
         zoom: await mapView.get_zoomLevel(),
         tilt: await mapView.get_cameraDegree(),
@@ -1593,14 +1540,14 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   }
 
   @override
-  Future<void> mapViewMapWillMoveByUser(
+  Future<void> mapViewMapDidMoveByUser(
     MAMapView mapView,
     bool wasUserAction,
   ) async {
-    super.mapViewMapWillMoveByUser(mapView, wasUserAction);
-    if (_onMapMoved != null) {
+    super.mapViewMapDidMoveByUser(mapView, wasUserAction);
+    if (_onMapMoveEnd != null) {
       final location = await mapView.get_centerCoordinate();
-      await _onMapMoved(MapMove(
+      await _onMapMoveEnd(MapMove(
         latLng: LatLng(await location.latitude, await location.longitude),
         zoom: await mapView.get_zoomLevel(),
         tilt: await mapView.get_cameraDegree(),
@@ -1631,9 +1578,13 @@ class _AndroidMapDelegate extends java_lang_Object
   OnMarkerDrag _onMarkerDragStart;
   OnMarkerDrag _onMarkerDragging;
   OnMarkerDrag _onMarkerDragEnd;
-  OnMapMoved _onMapMoved;
+  OnMapMove _onMapMoveStart;
+  OnMapMove _onMapMoveEnd;
   OnMapClicked _onMapClick;
   OnScreenShot _onSnapshot;
+
+  // 为了和ios端行为保持一致, 需要屏蔽掉移动过程中的回调
+  bool _moveStarted = false;
 
   @override
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
@@ -1681,13 +1632,35 @@ class _AndroidMapDelegate extends java_lang_Object
   }
 
   @override
+  Future<void> onCameraChange(
+    com_amap_api_maps_model_CameraPosition var1,
+  ) async {
+    super.onCameraChange(var1);
+    if (_onMapMoveStart != null && !_moveStarted) {
+      final location = await var1.get_target();
+      await _onMapMoveStart(MapMove(
+        latLng: LatLng(
+          await location.get_latitude(),
+          await location.get_longitude(),
+        ),
+        zoom: await var1.get_zoom(),
+        tilt: await var1.get_tilt(),
+        isAbroad: await var1.get_isAbroad(),
+      ));
+      // 由于ios端只有`开始`和`结束`的回调, 而android这边是只要改变就有回调, 这里回调过
+      // 第一次之后就把标记记为已经触发, 在移动结束后再置回来
+      _moveStarted = true;
+    }
+  }
+
+  @override
   Future<void> onCameraChangeFinish(
     com_amap_api_maps_model_CameraPosition var1,
   ) async {
     super.onCameraChangeFinish(var1);
-    if (_onMapMoved != null) {
+    if (_onMapMoveEnd != null) {
       final location = await var1.get_target();
-      await _onMapMoved(MapMove(
+      await _onMapMoveEnd(MapMove(
         latLng: LatLng(
           await location.get_latitude(),
           await location.get_longitude(),
@@ -1697,6 +1670,8 @@ class _AndroidMapDelegate extends java_lang_Object
         isAbroad: await var1.get_isAbroad(),
       ));
     }
+    // 无论有没有设置过回调, 这里都给它置回来
+    _moveStarted = false;
   }
 
   @override
