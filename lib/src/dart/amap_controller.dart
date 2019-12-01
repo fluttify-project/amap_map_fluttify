@@ -1200,7 +1200,26 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置marker点击监听事件
+  @Deprecated('使用setMarkerClickedListener代替')
   Future<void> setMarkerClickListener(OnMarkerClicked onMarkerClicked) async {
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+
+        await map.setOnMarkerClickListener(
+            _androidMapDelegate.._onMarkerClicked = onMarkerClicked);
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        await _iosController
+            .set_delegate(_iosMapDelegate.._onMarkerClicked = onMarkerClicked);
+      },
+    );
+  }
+
+  /// 设置marker点击监听事件
+  Future<void> setMarkerClickedListener(OnMarkerClicked onMarkerClicked) async {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
@@ -1248,6 +1267,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置地图点击监听事件
+  @Deprecated('使用setMapClickedListener代替')
   Future<void> setMapClickListener(OnMapClicked onMapClick) async {
     return platform(
       android: (pool) async {
@@ -1267,8 +1287,49 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 设置地图点击监听事件
+  Future<void> setMapClickedListener(OnMapClicked onMapClick) async {
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+
+        await map.setOnMapClickListener(
+          _androidMapDelegate.._onMapClick = onMapClick,
+        );
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        await _iosController.set_delegate(
+          _iosMapDelegate.._onMapClick = onMapClick,
+        );
+      },
+    );
+  }
+
   /// 设置地图拖动监听事件
+  @Deprecated('使用setMapMovedListener代替')
   Future<void> setMapDragListener(OnMapMoved onMapMoved) async {
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+
+        await map.setOnCameraChangeListener(
+          _androidMapDelegate.._onMapMoved = onMapMoved,
+        );
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        await _iosController.set_delegate(
+          _iosMapDelegate.._onMapMoved = onMapMoved,
+        );
+      },
+    );
+  }
+
+  /// 设置地图移动监听事件
+  Future<void> setMapMovedListener(OnMapMoved onMapMoved) async {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
