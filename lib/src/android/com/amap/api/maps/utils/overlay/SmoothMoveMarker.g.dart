@@ -346,7 +346,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener::move':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
                 print('fluttify-dart-callback: move([\'var1\':$args[var1]])');
               }
         

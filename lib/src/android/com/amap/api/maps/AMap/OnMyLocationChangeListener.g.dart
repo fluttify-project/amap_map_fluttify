@@ -19,7 +19,7 @@ mixin com_amap_api_maps_AMap_OnMyLocationChangeListener on java_lang_Object {
   Future<void> onMyLocationChange(android_location_Location var1) {
     kNativeObjectPool.add(var1);
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('onMyLocationChange::kNativeObjectPool: $kNativeObjectPool');
     }
   }

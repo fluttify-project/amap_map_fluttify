@@ -20,7 +20,7 @@ mixin com_amap_api_trace_TraceStatusListener on java_lang_Object {
     kNativeObjectPool.addAll(var1);
     kNativeObjectPool.addAll(var2);
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('onTraceStatus::kNativeObjectPool: $kNativeObjectPool');
     }
   }

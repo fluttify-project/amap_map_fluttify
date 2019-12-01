@@ -19,7 +19,7 @@ mixin com_amap_api_maps_AMap_onMapPrintScreenListener on java_lang_Object {
   Future<void> onMapPrint(android_graphics_drawable_Drawable var1) {
     kNativeObjectPool.add(var1);
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('onMapPrint::kNativeObjectPool: $kNativeObjectPool');
     }
   }

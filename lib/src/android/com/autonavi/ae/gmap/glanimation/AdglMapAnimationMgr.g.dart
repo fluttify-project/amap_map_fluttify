@@ -126,7 +126,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onFinish([])');
               }
         
@@ -135,7 +135,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
               break;
             case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onCancel([])');
               }
         

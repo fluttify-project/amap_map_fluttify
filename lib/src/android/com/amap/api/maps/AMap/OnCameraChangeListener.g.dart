@@ -19,7 +19,7 @@ mixin com_amap_api_maps_AMap_OnCameraChangeListener on java_lang_Object {
   Future<void> onCameraChange(com_amap_api_maps_model_CameraPosition var1) {
     kNativeObjectPool.add(var1);
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('onCameraChange::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_amap_api_maps_AMap_OnCameraChangeListener on java_lang_Object {
   Future<void> onCameraChangeFinish(com_amap_api_maps_model_CameraPosition var1) {
     kNativeObjectPool.add(var1);
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('onCameraChangeFinish::kNativeObjectPool: $kNativeObjectPool');
     }
   }

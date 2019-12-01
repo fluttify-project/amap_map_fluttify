@@ -22,7 +22,7 @@ mixin MATraceDelegate on NSObject {
     kNativeObjectPool.addAll(tracePoints);
     kNativeObjectPool.add(error);
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('traceManagerDidTracecorrectdistancewithError::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -31,7 +31,7 @@ mixin MATraceDelegate on NSObject {
   Future<void> mapViewRequireLocationAuth(CLLocationManager locationManager) {
     kNativeObjectPool.add(locationManager);
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('mapViewRequireLocationAuth::kNativeObjectPool: $kNativeObjectPool');
     }
   }

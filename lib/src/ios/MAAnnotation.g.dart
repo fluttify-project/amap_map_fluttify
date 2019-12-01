@@ -47,7 +47,7 @@ mixin MAAnnotation on NSObject {
   Future<void> setCoordinate(CLLocationCoordinate2D newCoordinate) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setCoordinate::kNativeObjectPool: $kNativeObjectPool');
     }
   }

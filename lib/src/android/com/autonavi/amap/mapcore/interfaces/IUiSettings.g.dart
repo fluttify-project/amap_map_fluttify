@@ -19,7 +19,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isIndoorSwitchEnabled() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isIndoorSwitchEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setIndoorSwitchEnabled(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setIndoorSwitchEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setScaleControlsEnabled(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setScaleControlsEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -46,7 +46,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setZoomControlsEnabled(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setZoomControlsEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -55,7 +55,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setCompassEnabled(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setCompassEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -64,7 +64,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setMyLocationButtonEnabled(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setMyLocationButtonEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -73,7 +73,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setScrollGesturesEnabled(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setScrollGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -82,7 +82,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setZoomGesturesEnabled(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setZoomGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -91,7 +91,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setTiltGesturesEnabled(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setTiltGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -100,7 +100,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setRotateGesturesEnabled(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setRotateGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -109,7 +109,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setAllGesturesEnabled(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setAllGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -118,7 +118,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setLogoPosition(int var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setLogoPosition::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -127,7 +127,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setZoomPosition(int var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setZoomPosition::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -136,7 +136,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isScaleControlsEnabled() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isScaleControlsEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -145,7 +145,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isZoomControlsEnabled() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isZoomControlsEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -154,7 +154,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isCompassEnabled() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isCompassEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -163,7 +163,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isMyLocationButtonEnabled() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isMyLocationButtonEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -172,7 +172,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isScrollGesturesEnabled() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isScrollGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -181,7 +181,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isZoomGesturesEnabled() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isZoomGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -190,7 +190,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isTiltGesturesEnabled() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isTiltGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -199,7 +199,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isRotateGesturesEnabled() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isRotateGesturesEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -208,7 +208,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<int> getLogoPosition() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('getLogoPosition::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -217,7 +217,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<int> getZoomPosition() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('getZoomPosition::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -226,7 +226,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setZoomInByScreenCenter(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setZoomInByScreenCenter::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -235,7 +235,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isZoomInByScreenCenter() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isZoomInByScreenCenter::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -244,7 +244,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setLogoBottomMargin(int var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setLogoBottomMargin::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -253,7 +253,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setLogoLeftMargin(int var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setLogoLeftMargin::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -262,7 +262,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<double> getLogoMarginRate(int var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('getLogoMarginRate::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -271,7 +271,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setLogoMarginRate(int var1, double var2) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setLogoMarginRate::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -280,7 +280,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setGestureScaleByMapCenter(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setGestureScaleByMapCenter::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -289,7 +289,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isGestureScaleByMapCenter() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isGestureScaleByMapCenter::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -298,7 +298,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setLogoEnable(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setLogoEnable::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -307,7 +307,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> requestRefreshLogo() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('requestRefreshLogo::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -316,7 +316,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isLogoEnable() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isLogoEnable::kNativeObjectPool: $kNativeObjectPool');
     }
   }

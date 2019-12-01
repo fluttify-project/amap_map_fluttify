@@ -148,7 +148,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::onGenerateComplete':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onGenerateComplete([\'var2\':$args[var2]])');
               }
         

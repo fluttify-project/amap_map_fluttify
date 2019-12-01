@@ -19,7 +19,7 @@ mixin com_autonavi_amap_mapcore_AeUtil_ZipCompressProgressListener on java_lang_
   Future<void> onFinishProgress(int var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('onFinishProgress::kNativeObjectPool: $kNativeObjectPool');
     }
   }

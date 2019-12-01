@@ -19,7 +19,7 @@ mixin MAParticleShapeModule on NSObject {
   Future<bool> isRatioEnable() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isRatioEnable::kNativeObjectPool: $kNativeObjectPool');
     }
   }

@@ -19,7 +19,7 @@ mixin com_amap_api_maps_AMap_OnCacheRemoveListener on java_lang_Object {
   Future<void> onRemoveCacheFinish(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('onRemoveCacheFinish::kNativeObjectPool: $kNativeObjectPool');
     }
   }

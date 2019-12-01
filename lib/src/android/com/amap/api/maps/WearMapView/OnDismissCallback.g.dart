@@ -19,7 +19,7 @@ mixin com_amap_api_maps_WearMapView_OnDismissCallback on java_lang_Object {
   Future<void> onDismiss() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('onDismiss::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_amap_api_maps_WearMapView_OnDismissCallback on java_lang_Object {
   Future<void> onNotifySwipe() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('onNotifySwipe::kNativeObjectPool: $kNativeObjectPool');
     }
   }

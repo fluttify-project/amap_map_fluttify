@@ -214,7 +214,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onDismiss([])');
               }
         
@@ -223,7 +223,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
               break;
             case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onNotifySwipe([])');
               }
         

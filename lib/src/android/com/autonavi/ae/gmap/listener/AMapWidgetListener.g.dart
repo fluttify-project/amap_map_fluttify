@@ -19,7 +19,7 @@ mixin com_autonavi_ae_gmap_listener_AMapWidgetListener on java_lang_Object {
   Future<void> invalidateScaleView() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('invalidateScaleView::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_autonavi_ae_gmap_listener_AMapWidgetListener on java_lang_Object {
   Future<void> invalidateCompassView() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('invalidateCompassView::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_autonavi_ae_gmap_listener_AMapWidgetListener on java_lang_Object {
   Future<void> invalidateZoomController(double var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('invalidateZoomController::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -46,7 +46,7 @@ mixin com_autonavi_ae_gmap_listener_AMapWidgetListener on java_lang_Object {
   Future<void> setFrontViewVisibility(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setFrontViewVisibility::kNativeObjectPool: $kNativeObjectPool');
     }
   }
