@@ -1,3 +1,6 @@
+## 0.10.0
+- fix: [breaking change] 增加单独的地图开始移动的回调, 统一android和ios的行为
+
 ## 0.9.1
 - enhance: ios端地图移动加入开始移动的回调, 使之和android端行为保持一致.
 

@@ -48,7 +48,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
           switch (methodCall.method) {
             case 'Callback::void|BOOL isFinished::void|BOOL isFinished':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
         
               }
         
@@ -89,7 +89,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
           switch (methodCall.method) {
             case 'Callback::void|BOOL isFinished::void|BOOL isFinished':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
         
               }
         
@@ -98,7 +98,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
               break;
             case 'Callback::void|MAAnnotationMoveAnimation currentAni::void|MAAnnotationMoveAnimation currentAni':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
         
               }
         

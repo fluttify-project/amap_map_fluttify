@@ -19,7 +19,7 @@ mixin com_amap_api_maps_LocationSource on java_lang_Object {
   Future<void> activate(com_amap_api_maps_LocationSource_OnLocationChangedListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('activate::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_amap_api_maps_LocationSource on java_lang_Object {
   Future<void> deactivate() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('deactivate::kNativeObjectPool: $kNativeObjectPool');
     }
   }

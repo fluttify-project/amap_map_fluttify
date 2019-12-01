@@ -19,7 +19,7 @@ mixin com_amap_api_maps_AMap_OnMapLongClickListener on java_lang_Object {
   Future<void> onMapLongClick(com_amap_api_maps_model_LatLng var1) {
     kNativeObjectPool.add(var1);
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('onMapLongClick::kNativeObjectPool: $kNativeObjectPool');
     }
   }

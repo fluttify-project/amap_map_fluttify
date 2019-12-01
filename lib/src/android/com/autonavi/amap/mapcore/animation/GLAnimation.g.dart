@@ -808,7 +808,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onAnimationStart([])');
               }
         
@@ -817,7 +817,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
               break;
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onAnimationEnd([])');
               }
         

@@ -19,7 +19,7 @@ mixin com_autonavi_custom_IUnityCallback on java_lang_Object {
   Future<void> UnitySetGraphicsDevice(int var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('UnitySetGraphicsDevice::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_autonavi_custom_IUnityCallback on java_lang_Object {
   Future<void> UnityRenderEvent(int var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('UnityRenderEvent::kNativeObjectPool: $kNativeObjectPool');
     }
   }

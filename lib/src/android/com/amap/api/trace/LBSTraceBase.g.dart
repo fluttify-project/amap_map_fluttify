@@ -20,7 +20,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
     kNativeObjectPool.addAll(var2);
     kNativeObjectPool.add(var4);
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('queryProcessedTrace::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -29,7 +29,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   Future<void> setLocationInterval(int var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setLocationInterval::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -38,7 +38,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   Future<void> setTraceStatusInterval(int var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setTraceStatusInterval::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -47,7 +47,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   Future<void> startTrace(com_amap_api_trace_TraceStatusListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('startTrace::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -56,7 +56,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   Future<void> stopTrace() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('stopTrace::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -65,7 +65,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   Future<void> destroy() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
     }
   }

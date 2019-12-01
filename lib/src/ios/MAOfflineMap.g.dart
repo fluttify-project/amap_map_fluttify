@@ -95,7 +95,7 @@ class MAOfflineMap extends NSObject  {
           switch (methodCall.method) {
             case 'Callback::void|BOOL setupSuccess::void|BOOL setupSuccess':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
         
               }
         
@@ -136,7 +136,7 @@ class MAOfflineMap extends NSObject  {
           switch (methodCall.method) {
             case 'Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
         
               }
         
@@ -287,7 +287,7 @@ class MAOfflineMap extends NSObject  {
           switch (methodCall.method) {
             case 'Callback::MAOfflineMapNewestVersionBlock::MAOfflineMapNewestVersionBlock':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
         
               }
         

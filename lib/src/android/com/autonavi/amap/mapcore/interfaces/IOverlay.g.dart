@@ -19,7 +19,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<void> remove() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<String> getId() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<void> setZIndex(double var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setZIndex::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -46,7 +46,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<double> getZIndex() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('getZIndex::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -55,7 +55,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<void> setVisible(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -64,7 +64,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<bool> isVisible() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isVisible::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -73,7 +73,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_IOverlay var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('equalsRemote::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -82,7 +82,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<int> hashCodeRemote() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('hashCodeRemote::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -91,7 +91,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<void> destroy() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -100,7 +100,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<bool> isAboveMaskLayer() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('isAboveMaskLayer::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -109,7 +109,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<void> setAboveMaskLayer(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setAboveMaskLayer::kNativeObjectPool: $kNativeObjectPool');
     }
   }

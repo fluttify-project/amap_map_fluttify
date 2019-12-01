@@ -284,7 +284,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
         switch (methodCall.method) {
           case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: onFinish([])');
             }
         
@@ -293,7 +293,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
             break;
           case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: onCancel([])');
             }
         

@@ -478,7 +478,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener::onVerifyComplete':
               // print log
-              if (!kReleaseMode) {
+              if (!fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onVerifyComplete([])');
               }
         

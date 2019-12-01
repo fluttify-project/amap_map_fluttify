@@ -19,7 +19,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<void> setTopColor(int var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setTopColor::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<void> setSideColor(int var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setSideColor::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<int> getTopColor() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('getTopColor::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -46,7 +46,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<int> getSideColor() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('getSideColor::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -55,7 +55,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setPoints::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -64,7 +64,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('getPoints::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -73,7 +73,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<void> setWidth(double var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('setWidth::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -82,7 +82,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<double> getWidth() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('getWidth::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -91,7 +91,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<void> set3DModel(bool var1) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('set3DModel::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -100,7 +100,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<bool> is3DModel() {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('is3DModel::kNativeObjectPool: $kNativeObjectPool');
     }
   }

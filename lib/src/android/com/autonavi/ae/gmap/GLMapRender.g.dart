@@ -32,7 +32,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
         switch (methodCall.method) {
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getCameraPosition':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getCameraPosition([])');
             }
         
@@ -41,7 +41,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMaxZoomLevel':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getMaxZoomLevel([])');
             }
         
@@ -50,7 +50,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMinZoomLevel':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getMinZoomLevel([])');
             }
         
@@ -59,7 +59,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::moveCamera':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: moveCamera([])');
             }
         
@@ -68,7 +68,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::animateCamera':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: animateCamera([])');
             }
         
@@ -77,7 +77,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::stopAnimation':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: stopAnimation([])');
             }
         
@@ -86,7 +86,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addNavigateArrow':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addNavigateArrow([])');
             }
         
@@ -95,7 +95,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addPolyline':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addPolyline([])');
             }
         
@@ -104,7 +104,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addCircle':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addCircle([])');
             }
         
@@ -113,7 +113,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addArc':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addArc([])');
             }
         
@@ -122,7 +122,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addPolygon':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addPolygon([])');
             }
         
@@ -131,7 +131,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addGroundOverlay':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addGroundOverlay([])');
             }
         
@@ -140,7 +140,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addMultiPointOverlay':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addMultiPointOverlay([])');
             }
         
@@ -149,7 +149,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addMarker':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addMarker([])');
             }
         
@@ -158,7 +158,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addMarkers':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addMarkers([\'var2\':$args[var2]])');
             }
         
@@ -167,7 +167,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addText':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addText([])');
             }
         
@@ -176,7 +176,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addTileOverlay':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addTileOverlay([])');
             }
         
@@ -185,7 +185,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::clear':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: clear([])');
             }
         
@@ -194,7 +194,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapType':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getMapType([])');
             }
         
@@ -203,7 +203,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMapType':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMapType([\'var1\':$args[var1]])');
             }
         
@@ -212,7 +212,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::isTrafficEnabled':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: isTrafficEnabled([])');
             }
         
@@ -221,7 +221,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setTrafficEnabled':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setTrafficEnabled([\'var1\':$args[var1]])');
             }
         
@@ -230,7 +230,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::isIndoorEnabled':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: isIndoorEnabled([])');
             }
         
@@ -239,7 +239,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setIndoorEnabled':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setIndoorEnabled([\'var1\':$args[var1]])');
             }
         
@@ -248,7 +248,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::set3DBuildingEnabled':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: set3DBuildingEnabled([\'var1\':$args[var1]])');
             }
         
@@ -257,7 +257,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::isMyLocationEnabled':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: isMyLocationEnabled([])');
             }
         
@@ -266,7 +266,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMyLocationEnabled':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMyLocationEnabled([\'var1\':$args[var1]])');
             }
         
@@ -275,7 +275,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setLoadOfflineData':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setLoadOfflineData([\'var1\':$args[var1]])');
             }
         
@@ -284,7 +284,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMyLocationStyle':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMyLocationStyle([])');
             }
         
@@ -293,7 +293,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMyLocationType':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMyLocationType([\'var1\':$args[var1]])');
             }
         
@@ -302,7 +302,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapScreenMarkers':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getMapScreenMarkers([])');
             }
         
@@ -311,7 +311,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMapTextEnable':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMapTextEnable([\'var1\':$args[var1]])');
             }
         
@@ -320,7 +320,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setRoadArrowEnable':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setRoadArrowEnable([\'var1\':$args[var1]])');
             }
         
@@ -329,7 +329,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMyTrafficStyle':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMyTrafficStyle([])');
             }
         
@@ -338,7 +338,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMyLocation':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getMyLocation([])');
             }
         
@@ -347,7 +347,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMyLocationRotateAngle':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMyLocationRotateAngle([\'var1\':$args[var1]])');
             }
         
@@ -356,7 +356,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getAMapUiSettings':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getAMapUiSettings([])');
             }
         
@@ -365,7 +365,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getAMapProjection':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getAMapProjection([])');
             }
         
@@ -374,7 +374,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getScalePerPixel':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getScalePerPixel([])');
             }
         
@@ -383,7 +383,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setRunLowFrame':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setRunLowFrame([\'var1\':$args[var1]])');
             }
         
@@ -392,7 +392,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::removecache':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: removecache([])');
             }
         
@@ -401,7 +401,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setCenterToPixel':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setCenterToPixel([\'var1\':$args[var1], \'var2\':$args[var2]])');
             }
         
@@ -410,7 +410,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMapTextZIndex':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMapTextZIndex([\'var1\':$args[var1]])');
             }
         
@@ -419,7 +419,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapTextZIndex':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getMapTextZIndex([])');
             }
         
@@ -428,7 +428,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::reloadMap':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: reloadMap([])');
             }
         
@@ -437,7 +437,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setRenderFps':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setRenderFps([\'var1\':$args[var1]])');
             }
         
@@ -446,7 +446,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setIndoorBuildingInfo':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setIndoorBuildingInfo([])');
             }
         
@@ -455,7 +455,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getZoomToSpanLevel':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getZoomToSpanLevel([])');
             }
         
@@ -464,7 +464,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getInfoWindowAnimationManager':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getInfoWindowAnimationManager([])');
             }
         
@@ -473,7 +473,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMaskLayerParams':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMaskLayerParams([\'var1\':$args[var1], \'var2\':$args[var2], \'var3\':$args[var3], \'var4\':$args[var4], \'var5\':$args[var5], \'var6\':$args[var6]])');
             }
         
@@ -482,7 +482,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMaxZoomLevel':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMaxZoomLevel([\'var1\':$args[var1]])');
             }
         
@@ -491,7 +491,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMinZoomLevel':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMinZoomLevel([\'var1\':$args[var1]])');
             }
         
@@ -500,7 +500,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::resetMinMaxZoomPreference':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: resetMinMaxZoomPreference([])');
             }
         
@@ -509,7 +509,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMapStatusLimits':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMapStatusLimits([])');
             }
         
@@ -518,7 +518,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setCustomMapStylePath':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setCustomMapStylePath([\'var1\':$args[var1]])');
             }
         
@@ -527,7 +527,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMapCustomEnable':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMapCustomEnable([\'var1\':$args[var1]])');
             }
         
@@ -536,7 +536,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::onChangeFinish':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: onChangeFinish([])');
             }
         
@@ -545,7 +545,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setZoomScaleParam':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setZoomScaleParam([\'var1\':$args[var1]])');
             }
         
@@ -554,7 +554,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::onFling':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: onFling([])');
             }
         
@@ -563,7 +563,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapWidth':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getMapWidth([])');
             }
         
@@ -572,7 +572,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapHeight':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getMapHeight([])');
             }
         
@@ -581,7 +581,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getCameraAngle':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getCameraAngle([])');
             }
         
@@ -590,7 +590,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getSkyHeight':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getSkyHeight([])');
             }
         
@@ -599,7 +599,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::isMaploaded':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: isMaploaded([])');
             }
         
@@ -608,7 +608,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapConfig':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getMapConfig([])');
             }
         
@@ -617,7 +617,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getView':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getView([])');
             }
         
@@ -626,7 +626,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setZOrderOnTop':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setZOrderOnTop([\'var1\':$args[var1]])');
             }
         
@@ -635,7 +635,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::destroy':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: destroy([])');
             }
         
@@ -644,7 +644,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setVisibilityEx':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setVisibilityEx([\'var1\':$args[var1]])');
             }
         
@@ -653,7 +653,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::onActivityPause':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: onActivityPause([])');
             }
         
@@ -662,7 +662,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::onActivityResume':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: onActivityResume([])');
             }
         
@@ -671,7 +671,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::createGLOverlay':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: createGLOverlay([\'var1\':$args[var1]])');
             }
         
@@ -680,7 +680,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getGlOverlayMgrPtr':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getGlOverlayMgrPtr([])');
             }
         
@@ -689,7 +689,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addCrossVector':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addCrossVector([])');
             }
         
@@ -698,7 +698,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addNaviRouteOverlay':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addNaviRouteOverlay([])');
             }
         
@@ -707,7 +707,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getViewMatrix':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getViewMatrix([])');
             }
         
@@ -716,7 +716,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getProjectionMatrix':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getProjectionMatrix([])');
             }
         
@@ -725,7 +725,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addOverlayTexture':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addOverlayTexture([\'var1\':$args[var1]])');
             }
         
@@ -734,7 +734,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::onTouchEvent':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: onTouchEvent([])');
             }
         
@@ -743,7 +743,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::canStopMapRender':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: canStopMapRender([])');
             }
         
@@ -752,7 +752,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setCustomTextureResourcePath':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setCustomTextureResourcePath([\'var1\':$args[var1]])');
             }
         
@@ -761,7 +761,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMyLocationStyle':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getMyLocationStyle([])');
             }
         
@@ -770,7 +770,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getRenderMode':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getRenderMode([])');
             }
         
@@ -779,7 +779,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::destroySurface':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: destroySurface([\'var1\':$args[var1]])');
             }
         
@@ -788,7 +788,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::requestRender':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: requestRender([])');
             }
         
@@ -797,7 +797,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::resetRenderTime':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: resetRenderTime([])');
             }
         
@@ -806,7 +806,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::onIndoorBuildingActivity':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: onIndoorBuildingActivity([\'var1\':$args[var1], \'var2\':$args[var2]])');
             }
         
@@ -815,7 +815,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getCamerInfo':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getCamerInfo([])');
             }
         
@@ -824,7 +824,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::checkMapState':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: checkMapState([])');
             }
         
@@ -833,7 +833,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setRenderMode':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setRenderMode([\'var1\':$args[var1]])');
             }
         
@@ -842,7 +842,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapContentApprovalNumber':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getMapContentApprovalNumber([])');
             }
         
@@ -851,7 +851,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getSatelliteImageApprovalNumber':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: getSatelliteImageApprovalNumber([])');
             }
         
@@ -860,7 +860,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setMapLanguage':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setMapLanguage([\'var1\':$args[var1]])');
             }
         
@@ -869,7 +869,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setCustomMapStyleID':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setCustomMapStyleID([\'var1\':$args[var1]])');
             }
         
@@ -878,7 +878,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addBuildingOverlay':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addBuildingOverlay([])');
             }
         
@@ -887,7 +887,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addGLModel':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addGLModel([])');
             }
         
@@ -896,7 +896,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::addParticleOverlay':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: addParticleOverlay([])');
             }
         
@@ -905,7 +905,7 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::setCustomMapStyle':
             // print log
-            if (!kReleaseMode) {
+            if (!fluttifyLogEnabled) {
               print('fluttify-dart-callback: setCustomMapStyle([])');
             }
         

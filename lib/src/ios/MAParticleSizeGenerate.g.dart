@@ -19,7 +19,7 @@ mixin MAParticleSizeGenerate on NSObject {
   Future<double> getSizeX(double timeFrame) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('getSizeX::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin MAParticleSizeGenerate on NSObject {
   Future<double> getSizeY(double timeFrame) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('getSizeY::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin MAParticleSizeGenerate on NSObject {
   Future<double> getSizeZ(double timeFrame) {
   
   
-    if (!kReleaseMode) {
+    if (!fluttifyLogEnabled) {
       debugPrint('getSizeZ::kNativeObjectPool: $kNativeObjectPool');
     }
   }
