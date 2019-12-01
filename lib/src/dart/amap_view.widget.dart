@@ -264,13 +264,13 @@ class _AmapViewState extends State<AmapView> {
       await _controller?.addMarkers(widget.markers);
     }
     if (widget.onMarkerClicked != null) {
-      await _controller?.setMarkerClickListener(widget.onMarkerClicked);
+      await _controller?.setMarkerClickedListener(widget.onMarkerClicked);
     }
     if (widget.onMapClicked != null) {
-      await _controller?.setMapClickListener(widget.onMapClicked);
+      await _controller?.setMapClickedListener(widget.onMapClicked);
     }
     if (widget.onMapMoved != null) {
-      await _controller?.setMapDragListener(widget.onMapMoved);
+      await _controller?.setMapMovedListener(widget.onMapMoved);
     }
   }
 
@@ -313,13 +313,13 @@ class _AmapViewState extends State<AmapView> {
       await _controller?.addMarkers(widget.markers);
     }
     if (widget.onMarkerClicked != null) {
-      await _controller?.setMarkerClickListener(widget.onMarkerClicked);
+      await _controller?.setMarkerClickedListener(widget.onMarkerClicked);
     }
     if (widget.onMapClicked != null) {
-      await _controller?.setMapClickListener(widget.onMapClicked);
+      await _controller?.setMapClickedListener(widget.onMapClicked);
     }
     if (widget.onMapMoved != null) {
-      await _controller?.setMapDragListener(widget.onMapMoved);
+      await _controller?.setMapMovedListener(widget.onMapMoved);
     }
   }
 }
