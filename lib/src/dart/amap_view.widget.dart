@@ -5,15 +5,19 @@ import 'dart:ui';
 
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
-import 'package:amap_map_fluttify/src/dart/amap_controller.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
+
+import 'enums.dart';
+import 'models.dart';
+
+part 'amap_controller.dart';
 
 typedef Future<void> _OnMapCreated(AmapController controller);
-
-final mapKeyContainer = <GlobalKey>[];
 
 /// 高德地图 Widget
 class AmapView extends StatefulWidget {
@@ -28,12 +32,12 @@ class AmapView extends StatefulWidget {
     this.scrollGesturesEnabled,
     this.rotateGestureEnabled,
     this.tiltGestureEnabled,
-    this.zoomLevel,
+    this.zoomLevel, // todo 初始化没用
     this.centerCoordinate,
     this.markers,
-    this.onMarkerClick,
-    this.onMapClick,
-    this.onMapDrag,
+    this.onMarkerClicked,
+    this.onMapClicked,
+    this.onMapMoved,
     this.maskDelay = const Duration(seconds: 0),
     this.mask,
   }) : super(key: key);
@@ -75,13 +79,13 @@ class AmapView extends StatefulWidget {
   final List<MarkerOption> markers;
 
   /// 标识点击回调
-  final OnMarkerClick onMarkerClick;
+  final OnMarkerClicked onMarkerClicked;
 
   /// 地图点击回调
-  final OnMapClick onMapClick;
+  final OnMapClicked onMapClicked;
 
   /// 地图拖动回调
-  final OnMapDrag onMapDrag;
+  final OnMapMoved onMapMoved;
 
   /// [PlatformView]创建时, 会有一下的黑屏, 这里提供一个在[PlatformView]初始化时, 盖住其黑屏
   /// 的遮罩, [maskDelay]配置延迟多少时间之后再显示地图, 默认不延迟, 即0.
@@ -91,10 +95,10 @@ class AmapView extends StatefulWidget {
   final Widget mask;
 
   @override
-  AmapViewState createState() => AmapViewState();
+  _AmapViewState createState() => _AmapViewState();
 }
 
-class AmapViewState extends State<AmapView> {
+class _AmapViewState extends State<AmapView> {
   AmapController _controller;
   // _widgetLayer的存在是为了实现widget作为marker(或其他)而存在的. 添加widget作为marker后,
   // 会调用AmapViewState::setState, 然后等待一帧结束确认widget已经被渲染后再通过RepaintBoundary::toImage
@@ -259,14 +263,14 @@ class AmapViewState extends State<AmapView> {
     if (widget.markers != null && widget.markers.isNotEmpty) {
       await _controller?.addMarkers(widget.markers);
     }
-    if (widget.onMarkerClick != null) {
-      await _controller?.setMarkerClickListener(widget.onMarkerClick);
+    if (widget.onMarkerClicked != null) {
+      await _controller?.setMarkerClickListener(widget.onMarkerClicked);
     }
-    if (widget.onMapClick != null) {
-      await _controller?.setMapClickListener(widget.onMapClick);
+    if (widget.onMapClicked != null) {
+      await _controller?.setMapClickListener(widget.onMapClicked);
     }
-    if (widget.onMapDrag != null) {
-      await _controller?.setMapDragListener(widget.onMapDrag);
+    if (widget.onMapMoved != null) {
+      await _controller?.setMapDragListener(widget.onMapMoved);
     }
   }
 
@@ -308,14 +312,14 @@ class AmapViewState extends State<AmapView> {
     if (widget.markers != null && widget.markers.isNotEmpty) {
       await _controller?.addMarkers(widget.markers);
     }
-    if (widget.onMarkerClick != null) {
-      await _controller?.setMarkerClickListener(widget.onMarkerClick);
+    if (widget.onMarkerClicked != null) {
+      await _controller?.setMarkerClickListener(widget.onMarkerClicked);
     }
-    if (widget.onMapClick != null) {
-      await _controller?.setMapClickListener(widget.onMapClick);
+    if (widget.onMapClicked != null) {
+      await _controller?.setMapClickListener(widget.onMapClicked);
     }
-    if (widget.onMapDrag != null) {
-      await _controller?.setMapDragListener(widget.onMapDrag);
+    if (widget.onMapMoved != null) {
+      await _controller?.setMapDragListener(widget.onMapMoved);
     }
   }
 }

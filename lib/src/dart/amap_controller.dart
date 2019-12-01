@@ -1,22 +1,8 @@
-import 'dart:async';
-import 'dart:io';
-import 'dart:typed_data';
-import 'dart:ui';
+part of 'amap_view.widget.dart';
 
-import 'package:amap_map_fluttify/amap_map_fluttify.dart';
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
-import 'enums.dart';
-import 'models.dart';
-
-typedef Future<void> OnMarkerClick(Marker marker);
-typedef Future<void> OnMapClick(LatLng latLng);
-typedef Future<void> OnMapDrag(MapDrag latLng);
+typedef Future<void> OnMarkerClicked(Marker marker);
+typedef Future<void> OnMapClicked(LatLng latLng);
+typedef Future<void> OnMapMoved(MapMove move);
 typedef Future<void> OnMarkerDrag(Marker marker);
 typedef Future<void> _OnRequireAlwaysAuth(CLLocationManager manager);
 typedef Future<void> OnScreenShot(Uint8List imageData);
@@ -36,7 +22,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   com_amap_api_maps_MapView _androidController;
   MAMapView _iosController;
 
-  AmapViewState _state;
+  _AmapViewState _state;
 
   final _iosMapDelegate = _IOSMapDelegate();
   final _androidMapDelegate = _AndroidMapDelegate();
@@ -1214,7 +1200,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置marker点击监听事件
-  Future<void> setMarkerClickListener(OnMarkerClick onMarkerClicked) async {
+  Future<void> setMarkerClickListener(OnMarkerClicked onMarkerClicked) async {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
@@ -1262,7 +1248,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置地图点击监听事件
-  Future<void> setMapClickListener(OnMapClick onMapClick) async {
+  Future<void> setMapClickListener(OnMapClicked onMapClick) async {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
@@ -1282,20 +1268,20 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置地图拖动监听事件
-  Future<void> setMapDragListener(OnMapDrag onMapDrag) async {
+  Future<void> setMapDragListener(OnMapMoved onMapMoved) async {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
 
         await map.setOnCameraChangeListener(
-          _androidMapDelegate.._onMapDrag = onMapDrag,
+          _androidMapDelegate.._onMapMoved = onMapMoved,
         );
 
         pool..add(map);
       },
       ios: (pool) async {
         await _iosController.set_delegate(
-          _iosMapDelegate.._onMapDrag = onMapDrag,
+          _iosMapDelegate.._onMapMoved = onMapMoved,
         );
       },
     );
@@ -1437,12 +1423,12 @@ class AmapController with WidgetsBindingObserver, _Private {
 }
 
 class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
-  OnMarkerClick _onMarkerClicked;
+  OnMarkerClicked _onMarkerClicked;
   OnMarkerDrag _onMarkerDragStart;
   OnMarkerDrag _onMarkerDragging;
   OnMarkerDrag _onMarkerDragEnd;
-  OnMapClick _onMapClick;
-  OnMapDrag _onMapDrag;
+  OnMapClicked _onMapClick;
+  OnMapMoved _onMapMoved;
   _OnRequireAlwaysAuth _onRequireAlwaysAuth;
   MAMapView _iosController;
 
@@ -1534,9 +1520,9 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
     bool wasUserAction,
   ) async {
     super.mapViewMapDidMoveByUser(mapView, wasUserAction);
-    if (_onMapDrag != null && wasUserAction) {
+    if (_onMapMoved != null) {
       final location = await mapView.get_centerCoordinate();
-      await _onMapDrag(MapDrag(
+      await _onMapMoved(MapMove(
         latLng: LatLng(await location.latitude, await location.longitude),
         zoom: await mapView.get_zoomLevel(),
         tilt: await mapView.get_cameraDegree(),
@@ -1563,12 +1549,12 @@ class _AndroidMapDelegate extends java_lang_Object
         com_amap_api_maps_AMap_OnMapClickListener,
         com_amap_api_maps_AMap_OnCameraChangeListener,
         com_amap_api_maps_AMap_OnMapScreenShotListener {
-  OnMarkerClick _onMarkerClicked;
+  OnMarkerClicked _onMarkerClicked;
   OnMarkerDrag _onMarkerDragStart;
   OnMarkerDrag _onMarkerDragging;
   OnMarkerDrag _onMarkerDragEnd;
-  OnMapDrag _onMapDrag;
-  OnMapClick _onMapClick;
+  OnMapMoved _onMapMoved;
+  OnMapClicked _onMapClick;
   OnScreenShot _onSnapshot;
 
   @override
@@ -1621,9 +1607,9 @@ class _AndroidMapDelegate extends java_lang_Object
     com_amap_api_maps_model_CameraPosition var1,
   ) async {
     super.onCameraChangeFinish(var1);
-    if (_onMapDrag != null) {
+    if (_onMapMoved != null) {
       final location = await var1.get_target();
-      await _onMapDrag(MapDrag(
+      await _onMapMoved(MapMove(
         latLng: LatLng(
           await location.get_latitude(),
           await location.get_longitude(),

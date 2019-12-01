@@ -61,7 +61,7 @@ class MarkerOption {
     this.widget,
     this.imageConfig,
     this.draggable,
-    this.infoWindowEnabled,
+    this.infoWindowEnabled = true,
     this.rotateAngle,
     this.anchorU,
     this.anchorV,
@@ -263,13 +263,13 @@ class Polyline {
 }
 
 @immutable
-class MapDrag {
+class MapMove {
   final LatLng latLng;
   final double zoom;
   final double tilt;
   final bool isAbroad;
 
-  MapDrag({this.latLng, this.zoom, this.tilt, this.isAbroad});
+  MapMove({this.latLng, this.zoom, this.tilt, this.isAbroad});
 
   @override
   String toString() {
