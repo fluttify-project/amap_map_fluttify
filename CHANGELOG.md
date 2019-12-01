@@ -1,3 +1,8 @@
+## 0.9.0
+- enhance: amap_controller作为amap_view的part, 防止AmapViewState被外部访问
+- enhance: infoWindowEnabled默认true
+- enhance: [breaking change] 纠正语义 onMapDrag -> onMapMoved, onMapClick -> onMapClicked, onMarkerClick -> onMarkerClicked
+
 ## 0.8.4
 - fix: 用来获取MarkerLayer的GlobalKey在State中创建，防止出现多个MapView使用一个GlobalKey的情况
 
