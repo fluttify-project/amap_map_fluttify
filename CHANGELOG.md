@@ -1,3 +1,6 @@
+## 0.10.1
+- 更新依赖
+
 ## 0.10.0
 - fix: [breaking change] 增加单独的地图开始移动的回调, 统一android和ios的行为
 
