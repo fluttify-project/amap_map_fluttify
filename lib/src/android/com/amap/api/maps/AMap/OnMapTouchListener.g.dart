@@ -19,7 +19,7 @@ mixin com_amap_api_maps_AMap_OnMapTouchListener on java_lang_Object {
   Future<void> onTouch(android_view_MotionEvent var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onTouch::kNativeObjectPool: $kNativeObjectPool');
     }
   }

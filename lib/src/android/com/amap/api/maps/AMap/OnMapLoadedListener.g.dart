@@ -19,7 +19,7 @@ mixin com_amap_api_maps_AMap_OnMapLoadedListener on java_lang_Object {
   Future<void> onMapLoaded() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onMapLoaded::kNativeObjectPool: $kNativeObjectPool');
     }
   }

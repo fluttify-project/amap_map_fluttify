@@ -19,7 +19,7 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener 
   Future<void> onDownload(int var1, int var2, String var3) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onDownload::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener 
   Future<void> onCheckUpdate(bool var1, String var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onCheckUpdate::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener 
   Future<void> onRemove(bool var1, String var2, String var3) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onRemove::kNativeObjectPool: $kNativeObjectPool');
     }
   }

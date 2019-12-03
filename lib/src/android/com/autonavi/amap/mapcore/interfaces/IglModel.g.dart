@@ -19,7 +19,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<String> getTitle() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getTitle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<String> getSnippet() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getSnippet::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<String> getId() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -46,7 +46,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setPosition::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -55,7 +55,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setRotateAngle(double var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setRotateAngle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -64,7 +64,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<double> getRotateAngle() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getRotateAngle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -73,7 +73,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<com_amap_api_maps_model_LatLng> getPosition() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getPosition::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -82,7 +82,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setAnimation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -91,7 +91,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<bool> startAnimation() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('startAnimation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -100,7 +100,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<bool> remove() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -109,7 +109,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setVisible(bool var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -118,7 +118,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<bool> isVisible() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('isVisible::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -127,7 +127,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setZoomLimit(double var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setZoomLimit::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -136,7 +136,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> destroy() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -145,7 +145,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setGeoPoint::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -154,7 +154,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> showInfoWindow() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('showInfoWindow::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -163,7 +163,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setTitle(String var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setTitle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -172,7 +172,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setSnippet(String var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setSnippet::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -181,7 +181,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setModelFixedLength(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setModelFixedLength::kNativeObjectPool: $kNativeObjectPool');
     }
   }

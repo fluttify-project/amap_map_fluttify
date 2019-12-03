@@ -19,7 +19,7 @@ mixin MAParticleRotationGenerate on NSObject {
   Future<double> getRotate() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getRotate::kNativeObjectPool: $kNativeObjectPool');
     }
   }

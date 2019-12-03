@@ -786,7 +786,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.LocationSource::deactivate':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: deactivate([])');
               }
         
@@ -959,7 +959,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChange':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onCameraChange([])');
               }
         
@@ -968,7 +968,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               break;
             case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onCameraChangeFinish([])');
               }
         
@@ -1009,7 +1009,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapClickListener::onMapClick':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onMapClick([])');
               }
         
@@ -1050,7 +1050,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapTouchListener::onTouch':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onTouch([])');
               }
         
@@ -1091,7 +1091,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnPOIClickListener::onPOIClick':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onPOIClick([])');
               }
         
@@ -1132,7 +1132,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMyLocationChangeListener::onMyLocationChange':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onMyLocationChange([])');
               }
         
@@ -1173,7 +1173,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapLongClickListener::onMapLongClick':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onMapLongClick([])');
               }
         
@@ -1214,7 +1214,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMarkerClickListener::onMarkerClick':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onMarkerClick([])');
               }
         
@@ -1255,7 +1255,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnPolylineClickListener::onPolylineClick':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onPolylineClick([])');
               }
         
@@ -1296,7 +1296,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragStart':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onMarkerDragStart([])');
               }
         
@@ -1305,7 +1305,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onMarkerDrag([])');
               }
         
@@ -1314,7 +1314,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onMarkerDragEnd([])');
               }
         
@@ -1355,7 +1355,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnInfoWindowClickListener::onInfoWindowClick':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onInfoWindowClick([])');
               }
         
@@ -1418,7 +1418,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.CommonInfoWindowAdapter::getInfoWindowParams':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: getInfoWindowParams([])');
               }
         
@@ -1459,7 +1459,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapLoadedListener::onMapLoaded':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onMapLoaded([])');
               }
         
@@ -1500,7 +1500,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::OnIndoorBuilding':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: OnIndoorBuilding([])');
               }
         
@@ -1541,7 +1541,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMultiPointClickListener::onPointClick':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onPointClick([])');
               }
         
@@ -1582,7 +1582,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.onMapPrintScreenListener::onMapPrint':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onMapPrint([])');
               }
         
@@ -1623,7 +1623,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onMapScreenShot([])');
               }
         
@@ -1906,7 +1906,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onDoubleTap':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onDoubleTap([\'var1\':$args[var1], \'var2\':$args[var2]])');
               }
         
@@ -1915,7 +1915,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               break;
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onSingleTap':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onSingleTap([\'var1\':$args[var1], \'var2\':$args[var2]])');
               }
         
@@ -1924,7 +1924,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               break;
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onFling':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onFling([\'var1\':$args[var1], \'var2\':$args[var2]])');
               }
         
@@ -1933,7 +1933,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               break;
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onScroll':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onScroll([\'var1\':$args[var1], \'var2\':$args[var2]])');
               }
         
@@ -1942,7 +1942,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               break;
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onLongPress':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onLongPress([\'var1\':$args[var1], \'var2\':$args[var2]])');
               }
         
@@ -1951,7 +1951,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               break;
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onDown':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onDown([\'var1\':$args[var1], \'var2\':$args[var2]])');
               }
         
@@ -1960,7 +1960,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               break;
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onUp':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onUp([\'var1\':$args[var1], \'var2\':$args[var2]])');
               }
         
@@ -1969,7 +1969,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               break;
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onMapStable':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onMapStable([])');
               }
         

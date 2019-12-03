@@ -19,7 +19,7 @@ mixin com_amap_api_maps_AMap_OnMapScreenShotListener on java_lang_Object {
   Future<void> onMapScreenShot(android_graphics_Bitmap var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onMapScreenShot::kNativeObjectPool: $kNativeObjectPool');
     }
   }

@@ -19,7 +19,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setPosition::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<com_amap_api_maps_model_LatLng> getPosition() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getPosition::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<void> setDimensions(double var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setDimensions::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -46,7 +46,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<double> getWidth() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getWidth::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -55,7 +55,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<double> getHeight() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getHeight::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -64,7 +64,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<void> setPositionFromBounds(com_amap_api_maps_model_LatLngBounds var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setPositionFromBounds::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -73,7 +73,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<com_amap_api_maps_model_LatLngBounds> getBounds() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getBounds::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -82,7 +82,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<void> setBearing(double var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setBearing::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -91,7 +91,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<double> getBearing() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getBearing::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -100,7 +100,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<void> setTransparency(double var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setTransparency::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -109,7 +109,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<double> getTransparency() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getTransparency::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -118,7 +118,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<void> setImage(com_amap_api_maps_model_BitmapDescriptor var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setImage::kNativeObjectPool: $kNativeObjectPool');
     }
   }

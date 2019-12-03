@@ -19,7 +19,7 @@ mixin MAParticleVelocityGenerate on NSObject {
   Future<double> getX() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getX::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin MAParticleVelocityGenerate on NSObject {
   Future<double> getY() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getY::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin MAParticleVelocityGenerate on NSObject {
   Future<double> getZ() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getZ::kNativeObjectPool: $kNativeObjectPool');
     }
   }

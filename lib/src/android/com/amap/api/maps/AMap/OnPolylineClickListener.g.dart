@@ -19,7 +19,7 @@ mixin com_amap_api_maps_AMap_OnPolylineClickListener on java_lang_Object {
   Future<void> onPolylineClick(com_amap_api_maps_model_Polyline var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onPolylineClick::kNativeObjectPool: $kNativeObjectPool');
     }
   }

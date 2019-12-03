@@ -19,7 +19,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAnimation on java_lang_Object {
   Future<void> setAnimation(com_autonavi_amap_mapcore_animation_GLAnimation var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setAnimation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAnimation on java_lang_Object {
   Future<bool> startAnimation() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('startAnimation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAnimation on java_lang_Object {
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setAnimationListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }

@@ -19,7 +19,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IArc on com_autonavi_amap_mapcore_int
   Future<void> setStrokeWidth(double var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IArc on com_autonavi_amap_mapcore_int
   Future<double> getStrokeWidth() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IArc on com_autonavi_amap_mapcore_int
   Future<void> setStrokeColor(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setStrokeColor::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -46,7 +46,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IArc on com_autonavi_amap_mapcore_int
   Future<int> getStrokeColor() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getStrokeColor::kNativeObjectPool: $kNativeObjectPool');
     }
   }

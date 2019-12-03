@@ -63,7 +63,13 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.setProgress(var1);
+            try {
+                ref.setProgress(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");

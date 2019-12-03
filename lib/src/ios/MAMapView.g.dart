@@ -362,7 +362,7 @@ class MAMapView extends UIView  {
         switch (methodCall.method) {
           case 'Callback::MAMapViewDelegate::mapViewRegionChanged':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewRegionChanged([])');
             }
         
@@ -371,7 +371,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewRegionWillChangeAnimated':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewRegionWillChangeAnimated([\'animated\':$args[animated]])');
             }
         
@@ -380,7 +380,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewRegionDidChangeAnimated':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewRegionDidChangeAnimated([\'animated\':$args[animated]])');
             }
         
@@ -389,7 +389,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewMapWillMoveByUser':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewMapWillMoveByUser([\'wasUserAction\':$args[wasUserAction]])');
             }
         
@@ -398,7 +398,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewMapDidMoveByUser':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewMapDidMoveByUser([\'wasUserAction\':$args[wasUserAction]])');
             }
         
@@ -407,7 +407,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewMapWillZoomByUser':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewMapWillZoomByUser([\'wasUserAction\':$args[wasUserAction]])');
             }
         
@@ -416,7 +416,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewMapDidZoomByUser':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewMapDidZoomByUser([\'wasUserAction\':$args[wasUserAction]])');
             }
         
@@ -425,7 +425,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLoadingMap':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewWillStartLoadingMap([])');
             }
         
@@ -434,7 +434,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidFinishLoadingMap':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidFinishLoadingMap([])');
             }
         
@@ -443,7 +443,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidFailLoadingMapWithError':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidFailLoadingMapWithError([])');
             }
         
@@ -452,7 +452,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewViewForAnnotation':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewViewForAnnotation([])');
             }
         
@@ -461,7 +461,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidAddAnnotationViews':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidAddAnnotationViews([])');
             }
         
@@ -470,7 +470,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidSelectAnnotationView':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidSelectAnnotationView([])');
             }
         
@@ -479,7 +479,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidDeselectAnnotationView':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidDeselectAnnotationView([])');
             }
         
@@ -488,7 +488,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLocatingUser':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewWillStartLocatingUser([])');
             }
         
@@ -497,7 +497,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidStopLocatingUser':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidStopLocatingUser([])');
             }
         
@@ -506,7 +506,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidUpdateUserLocationupdatingLocation([\'updatingLocation\':$args[updatingLocation]])');
             }
         
@@ -515,7 +515,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewRequireLocationAuth':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewRequireLocationAuth([])');
             }
         
@@ -524,7 +524,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidFailToLocateUserWithError':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidFailToLocateUserWithError([])');
             }
         
@@ -533,7 +533,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewAnnotationViewdidChangeDragStatefromOldState([])');
             }
         
@@ -542,7 +542,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewRendererForOverlay':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewRendererForOverlay([])');
             }
         
@@ -551,7 +551,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidAddOverlayRenderers':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidAddOverlayRenderers([])');
             }
         
@@ -560,7 +560,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewAnnotationViewcalloutAccessoryControlTapped([])');
             }
         
@@ -569,7 +569,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidAnnotationViewCalloutTapped([])');
             }
         
@@ -578,7 +578,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidAnnotationViewTapped':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidAnnotationViewTapped([])');
             }
         
@@ -587,7 +587,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidChangeUserTrackingModeanimated([\'animated\':$args[animated]])');
             }
         
@@ -596,7 +596,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidChangeOpenGLESDisabled([\'openGLESDisabled\':$args[openGLESDisabled]])');
             }
         
@@ -605,7 +605,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidTouchPois':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidTouchPois([])');
             }
         
@@ -614,7 +614,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidSingleTappedAtCoordinate([])');
             }
         
@@ -623,7 +623,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidLongPressedAtCoordinate':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidLongPressedAtCoordinate([])');
             }
         
@@ -632,7 +632,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapInitComplete':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapInitComplete([])');
             }
         
@@ -641,7 +641,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidIndoorMapShowed':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidIndoorMapShowed([])');
             }
         
@@ -650,7 +650,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidIndoorMapFloorIndexChanged([])');
             }
         
@@ -659,7 +659,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidIndoorMapHidden':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewDidIndoorMapHidden([])');
             }
         
@@ -668,7 +668,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::offlineDataWillReload':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: offlineDataWillReload([])');
             }
         
@@ -677,7 +677,7 @@ class MAMapView extends UIView  {
             break;
           case 'Callback::MAMapViewDelegate::offlineDataDidReload':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: offlineDataDidReload([])');
             }
         
@@ -1306,7 +1306,7 @@ class MAMapView extends UIView  {
           switch (methodCall.method) {
             case 'Callback::void|UIImage resultImage, NSInteger state::void|UIImage resultImage, NSInteger state':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
         
               }
         

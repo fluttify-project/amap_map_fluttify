@@ -38,7 +38,7 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
           switch (methodCall.method) {
             case 'Callback::com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener::networkStateChanged':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: networkStateChanged([])');
               }
         

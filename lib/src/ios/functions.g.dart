@@ -536,7 +536,7 @@ Future<void> MAGetTileProjectionFromBounds(MACoordinateBounds bounds, int levelO
         switch (methodCall.method) {
           case 'Callback::AMapTileProjectionBlock::AMapTileProjectionBlock':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
         
             }
         

@@ -19,7 +19,7 @@ mixin MAAnimatableAnnotation on NSObject {
   Future<void> step(double timeDelta) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('step::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin MAAnimatableAnnotation on NSObject {
   Future<bool> isAnimationFinished() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('isAnimationFinished::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin MAAnimatableAnnotation on NSObject {
   Future<bool> shouldAnimationStart() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('shouldAnimationStart::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -46,7 +46,7 @@ mixin MAAnimatableAnnotation on NSObject {
   Future<double> rotateDegree() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('rotateDegree::kNativeObjectPool: $kNativeObjectPool');
     }
   }

@@ -116,6 +116,47 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
     }
   }
   
+  Future<void> loadTileAtPathResult(MATileOverlayPath path, void result(NSData tileData, NSError error)) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MATileOverlay@$refId::loadTileAtPath([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::loadTileAtPathResult', {"path": path.refId, "refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('MATileOverlay::loadTileAtPathResult::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
+  
+          switch (methodCall.method) {
+            case 'Callback::void|NSData tileData, NSError error::void|NSData tileData, NSError error':
+              // print log
+              if (fluttifyLogEnabled) {
+        
+              }
+        
+              // handle the native call
+              result(NSData()..refId = (args['tileData'])..tag = 'amap_map_fluttify', NSError()..refId = (args['error'])..tag = 'amap_map_fluttify');
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<void> cancelLoadOfTileAtPath(MATileOverlayPath path) async {
     // print log
     if (fluttifyLogEnabled) {
