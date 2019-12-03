@@ -33,6 +33,7 @@ import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 /// !!使用真机调试!!
 /// !注意: 只要是返回Future的方法, 一律使用`await`修饰, 确保当前方法执行完成后再执行下一行, 在不能使用`await`修饰的环境下, 在`then`方法中执行下一步.
 /// 
+/// Swift工程需要注释掉Podfile中的`use_frameworks!`
 /// 初始化:
 ///   1. iOS在init方法中设置
 ///   2. Android需要在AndroidManifest.xml里去设置, 详见 https://lbs.amap.com/api/android-sdk/gettingstarted
