@@ -19,7 +19,7 @@ mixin com_amap_api_maps_AMap_CancelableCallback on java_lang_Object {
   Future<void> onFinish() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onFinish::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_amap_api_maps_AMap_CancelableCallback on java_lang_Object {
   Future<void> onCancel() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onCancel::kNativeObjectPool: $kNativeObjectPool');
     }
   }

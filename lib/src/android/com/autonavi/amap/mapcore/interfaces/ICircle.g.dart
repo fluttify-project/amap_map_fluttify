@@ -19,7 +19,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setCenter(com_amap_api_maps_model_LatLng var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setCenter::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<com_amap_api_maps_model_LatLng> getCenter() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getCenter::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setRadius(double var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setRadius::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -46,7 +46,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<double> getRadius() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getRadius::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -55,7 +55,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setStrokeWidth(double var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -64,7 +64,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<double> getStrokeWidth() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -73,7 +73,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setStrokeColor(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setStrokeColor::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -82,7 +82,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<int> getStrokeColor() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getStrokeColor::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -91,7 +91,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setFillColor(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setFillColor::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -100,7 +100,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<int> getFillColor() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getFillColor::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -109,7 +109,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<bool> contains(com_amap_api_maps_model_LatLng var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('contains::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -118,7 +118,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setHoleOptions::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -127,7 +127,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getHoleOptions::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -136,7 +136,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<int> getDottedLineType() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getDottedLineType::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -145,7 +145,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setDottedLineType(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setDottedLineType::kNativeObjectPool: $kNativeObjectPool');
     }
   }

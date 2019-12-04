@@ -48,7 +48,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onAnimationStart([])');
               }
         
@@ -57,7 +57,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
               break;
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onAnimationEnd([])');
               }
         

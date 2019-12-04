@@ -830,7 +830,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onAnimationStart([])');
               }
         
@@ -839,7 +839,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
               break;
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onAnimationEnd([])');
               }
         

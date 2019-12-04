@@ -19,7 +19,7 @@ mixin com_amap_api_maps_CustomRenderer on java_lang_Object {
   Future<void> OnMapReferencechanged() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('OnMapReferencechanged::kNativeObjectPool: $kNativeObjectPool');
     }
   }

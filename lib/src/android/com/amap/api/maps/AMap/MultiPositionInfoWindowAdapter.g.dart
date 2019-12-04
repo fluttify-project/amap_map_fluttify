@@ -19,7 +19,7 @@ mixin com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter on com_amap_api_maps
   Future<android_view_View> getInfoWindowClick(com_amap_api_maps_model_Marker var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getInfoWindowClick::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter on com_amap_api_maps
   Future<android_view_View> getOverturnInfoWindow(com_amap_api_maps_model_Marker var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getOverturnInfoWindow::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter on com_amap_api_maps
   Future<android_view_View> getOverturnInfoWindowClick(com_amap_api_maps_model_Marker var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getOverturnInfoWindowClick::kNativeObjectPool: $kNativeObjectPool');
     }
   }

@@ -19,7 +19,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_CameraPosition> getCameraPosition() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getCameraPosition::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<double> getMaxZoomLevel() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getMaxZoomLevel::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<double> getMinZoomLevel() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getMinZoomLevel::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -46,7 +46,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> moveCamera(com_amap_api_maps_CameraUpdate var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('moveCamera::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -55,7 +55,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> animateCamera(com_amap_api_maps_CameraUpdate var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('animateCamera::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -65,7 +65,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     kNativeObjectPool.add(var1);
     kNativeObjectPool.add(var2);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('animateCameraWithCallback::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -75,7 +75,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     kNativeObjectPool.add(var1);
     kNativeObjectPool.add(var4);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('animateCameraWithDurationAndCallback::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -84,7 +84,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> stopAnimation() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('stopAnimation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -93,7 +93,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_NavigateArrow> addNavigateArrow(com_amap_api_maps_model_NavigateArrowOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addNavigateArrow::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -102,7 +102,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_Polyline> addPolyline(com_amap_api_maps_model_PolylineOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addPolyline::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -111,7 +111,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_Circle> addCircle(com_amap_api_maps_model_CircleOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addCircle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_Arc> addArc(com_amap_api_maps_model_ArcOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addArc::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -129,7 +129,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_Polygon> addPolygon(com_amap_api_maps_model_PolygonOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addPolygon::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -138,7 +138,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_GroundOverlay> addGroundOverlay(com_amap_api_maps_model_GroundOverlayOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addGroundOverlay::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -147,7 +147,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_MultiPointOverlay> addMultiPointOverlay(com_amap_api_maps_model_MultiPointOverlayOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addMultiPointOverlay::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -156,7 +156,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_Marker> addMarker(com_amap_api_maps_model_MarkerOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addMarker::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -165,7 +165,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<List<com_amap_api_maps_model_Marker>> addMarkers(List<com_amap_api_maps_model_MarkerOptions> var1, bool var2) {
     kNativeObjectPool.addAll(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addMarkers::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -174,7 +174,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_Text> addText(com_amap_api_maps_model_TextOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addText::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -183,7 +183,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_TileOverlay> addTileOverlay(com_amap_api_maps_model_TileOverlayOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addTileOverlay::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> clear() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('clear::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -201,7 +201,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> getMapType() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getMapType::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -210,7 +210,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMapType(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMapType::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -219,7 +219,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<bool> isTrafficEnabled() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('isTrafficEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -228,7 +228,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setTrafficEnabled(bool var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setTrafficEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -237,7 +237,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<bool> isIndoorEnabled() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('isIndoorEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -246,7 +246,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setIndoorEnabled(bool var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setIndoorEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -255,7 +255,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> set3DBuildingEnabled(bool var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('set3DBuildingEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<bool> isMyLocationEnabled() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('isMyLocationEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -273,7 +273,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMyLocationEnabled(bool var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMyLocationEnabled::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -282,7 +282,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setLoadOfflineData(bool var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setLoadOfflineData::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -291,7 +291,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMyLocationStyle(com_amap_api_maps_model_MyLocationStyle var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMyLocationStyle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -300,7 +300,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMyLocationType(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMyLocationType::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -309,7 +309,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<List<com_amap_api_maps_model_Marker>> getMapScreenMarkers() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getMapScreenMarkers::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -318,7 +318,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMapTextEnable(bool var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMapTextEnable::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -327,7 +327,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setRoadArrowEnable(bool var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setRoadArrowEnable::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -336,7 +336,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMyTrafficStyle(com_amap_api_maps_model_MyTrafficStyle var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMyTrafficStyle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -345,7 +345,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<android_location_Location> getMyLocation() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getMyLocation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -354,7 +354,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setLocationSource(com_amap_api_maps_LocationSource var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setLocationSource::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -363,7 +363,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMyLocationRotateAngle(double var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMyLocationRotateAngle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -372,7 +372,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_UiSettings> getAMapUiSettings() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getAMapUiSettings::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -381,7 +381,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_Projection> getAMapProjection() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getAMapProjection::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -390,7 +390,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnCameraChangeListener(com_amap_api_maps_AMap_OnCameraChangeListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOnCameraChangeListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -399,7 +399,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMapClickListener(com_amap_api_maps_AMap_OnMapClickListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOnMapClickListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -408,7 +408,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMapTouchListener(com_amap_api_maps_AMap_OnMapTouchListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOnMapTouchListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -417,7 +417,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMapLongClickListener(com_amap_api_maps_AMap_OnMapLongClickListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOnMapLongClickListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -426,7 +426,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMarkerClickListener(com_amap_api_maps_AMap_OnMarkerClickListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOnMarkerClickListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -435,7 +435,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnPolylineClickListener(com_amap_api_maps_AMap_OnPolylineClickListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOnPolylineClickListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -444,7 +444,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMarkerDragListener(com_amap_api_maps_AMap_OnMarkerDragListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOnMarkerDragListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -453,7 +453,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMaploadedListener(com_amap_api_maps_AMap_OnMapLoadedListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOnMaploadedListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -462,7 +462,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnInfoWindowClickListener(com_amap_api_maps_AMap_OnInfoWindowClickListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOnInfoWindowClickListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -471,7 +471,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMyLocationChangeListener(com_amap_api_maps_AMap_OnMyLocationChangeListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOnMyLocationChangeListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -480,7 +480,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnPOIClickListener(com_amap_api_maps_AMap_OnPOIClickListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOnPOIClickListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -489,7 +489,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setInfoWindowAdapter(com_amap_api_maps_AMap_InfoWindowAdapter var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setInfoWindowAdapter::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -498,7 +498,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnIndoorBuildingActiveListener(com_amap_api_maps_AMap_OnIndoorBuildingActiveListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOnIndoorBuildingActiveListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -507,7 +507,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> getMapPrintScreen(com_amap_api_maps_AMap_onMapPrintScreenListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getMapPrintScreen::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -516,7 +516,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> getMapScreenShot(com_amap_api_maps_AMap_OnMapScreenShotListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getMapScreenShot::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -525,7 +525,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<double> getScalePerPixel() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getScalePerPixel::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -534,7 +534,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setRunLowFrame(bool var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setRunLowFrame::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -543,7 +543,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> removecache() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('removecache::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -552,7 +552,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setCustomRenderer(com_amap_api_maps_CustomRenderer var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setCustomRenderer::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -561,7 +561,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setCenterToPixel(int var1, int var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setCenterToPixel::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -570,7 +570,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMapTextZIndex(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMapTextZIndex::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -579,7 +579,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> getMapTextZIndex() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getMapTextZIndex::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -588,7 +588,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> reloadMap() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('reloadMap::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -597,7 +597,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setRenderFps(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setRenderFps::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -606,7 +606,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setIndoorBuildingInfo(com_amap_api_maps_model_IndoorBuildingInfo var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setIndoorBuildingInfo::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -615,7 +615,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setAMapGestureListener(com_amap_api_maps_model_AMapGestureListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setAMapGestureListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -625,7 +625,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     kNativeObjectPool.add(var1);
     kNativeObjectPool.add(var2);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getZoomToSpanLevel::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -634,7 +634,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_InfoWindowAnimationManager> getInfoWindowAnimationManager() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getInfoWindowAnimationManager::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -643,7 +643,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMaskLayerParams(int var1, int var2, int var3, int var4, int var5, int var6) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMaskLayerParams::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -652,7 +652,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMaxZoomLevel(double var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMaxZoomLevel::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -661,7 +661,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMinZoomLevel(double var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMinZoomLevel::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -670,7 +670,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> resetMinMaxZoomPreference() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('resetMinMaxZoomPreference::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -679,7 +679,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMapStatusLimits(com_amap_api_maps_model_LatLngBounds var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMapStatusLimits::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -688,7 +688,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setCustomMapStylePath(String var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setCustomMapStylePath::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -697,7 +697,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMapCustomEnable(bool var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMapCustomEnable::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -706,7 +706,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> onChangeFinish() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onChangeFinish::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -715,7 +715,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setZoomScaleParam(double var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setZoomScaleParam::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -724,7 +724,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> onFling() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onFling::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -733,7 +733,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> getMapWidth() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getMapWidth::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -742,7 +742,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> getMapHeight() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getMapHeight::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -751,7 +751,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<double> getCameraAngle() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getCameraAngle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -760,7 +760,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<double> getSkyHeight() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getSkyHeight::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -769,7 +769,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<bool> isMaploaded() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('isMaploaded::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -778,7 +778,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_autonavi_amap_mapcore_MapConfig> getMapConfig() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getMapConfig::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -787,7 +787,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<android_view_View> getView() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getView::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -796,7 +796,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setZOrderOnTop(bool var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setZOrderOnTop::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -805,7 +805,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> destroy() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -814,7 +814,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setVisibilityEx(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setVisibilityEx::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -823,7 +823,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> onActivityPause() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onActivityPause::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -832,7 +832,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> onActivityResume() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onActivityResume::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -841,7 +841,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> createGLOverlay(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('createGLOverlay::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -850,7 +850,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> getGlOverlayMgrPtr() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getGlOverlayMgrPtr::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -859,7 +859,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_CrossOverlay> addCrossVector(com_amap_api_maps_model_CrossOverlayOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addCrossVector::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -868,7 +868,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_RouteOverlay> addNaviRouteOverlay() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addNaviRouteOverlay::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -877,7 +877,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<Float64List> getViewMatrix() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getViewMatrix::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -886,7 +886,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<Float64List> getProjectionMatrix() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getProjectionMatrix::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -895,7 +895,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> addOverlayTexture(int var1, com_autonavi_ae_gmap_gloverlay_GLTextureProperty var2) {
     kNativeObjectPool.add(var2);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addOverlayTexture::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -904,7 +904,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<bool> onTouchEvent(android_view_MotionEvent var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onTouchEvent::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -913,7 +913,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<bool> canStopMapRender() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('canStopMapRender::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -922,7 +922,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setCustomTextureResourcePath(String var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setCustomTextureResourcePath::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -931,7 +931,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_MyLocationStyle> getMyLocationStyle() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getMyLocationStyle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -940,7 +940,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> getRenderMode() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getRenderMode::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -949,7 +949,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> destroySurface(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('destroySurface::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -958,7 +958,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> requestRender() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('requestRender::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -967,7 +967,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> resetRenderTime() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('resetRenderTime::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -976,7 +976,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> onIndoorBuildingActivity(int var1, Uint8List var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onIndoorBuildingActivity::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -985,7 +985,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_AMapCameraInfo> getCamerInfo() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getCamerInfo::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -994,7 +994,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> checkMapState(com_autonavi_ae_gmap_GLMapState var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('checkMapState::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -1003,7 +1003,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setRenderMode(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setRenderMode::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -1012,7 +1012,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMultiPointClickListener(com_amap_api_maps_AMap_OnMultiPointClickListener var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOnMultiPointClickListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -1021,7 +1021,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<String> getMapContentApprovalNumber() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getMapContentApprovalNumber::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -1030,7 +1030,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<String> getSatelliteImageApprovalNumber() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getSatelliteImageApprovalNumber::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -1039,7 +1039,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMapLanguage(String var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setMapLanguage::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -1048,7 +1048,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setCustomMapStyleID(String var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setCustomMapStyleID::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -1057,7 +1057,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_BuildingOverlay> addBuildingOverlay() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addBuildingOverlay::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -1066,7 +1066,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_GL3DModel> addGLModel(com_amap_api_maps_model_GL3DModelOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addGLModel::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -1075,7 +1075,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_particle_ParticleOverlay> addParticleOverlay(com_amap_api_maps_model_particle_ParticleOverlayOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('addParticleOverlay::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -1084,7 +1084,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setCustomMapStyle(com_amap_api_maps_model_CustomMapStyleOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setCustomMapStyle::kNativeObjectPool: $kNativeObjectPool');
     }
   }

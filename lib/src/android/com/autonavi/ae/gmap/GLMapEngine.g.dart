@@ -720,7 +720,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawFrame':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: afterDrawFrame([\'var1\':$args[var1]])');
               }
         
@@ -729,7 +729,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
               break;
             case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawLabel':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: afterDrawLabel([\'var1\':$args[var1]])');
               }
         
@@ -738,7 +738,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
               break;
             case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::beforeDrawLabel':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: beforeDrawLabel([\'var1\':$args[var1]])');
               }
         
@@ -747,7 +747,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
               break;
             case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterRendererOver':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: afterRendererOver([\'var1\':$args[var1]])');
               }
         
@@ -756,7 +756,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
               break;
             case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterAnimation':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: afterAnimation([])');
               }
         
@@ -951,7 +951,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onFinish([])');
               }
         
@@ -960,7 +960,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
               break;
             case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onCancel([])');
               }
         

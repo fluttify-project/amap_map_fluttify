@@ -19,7 +19,7 @@ mixin com_amap_api_maps_AMap_InfoWindowAdapter on java_lang_Object {
   Future<android_view_View> getInfoWindow(com_amap_api_maps_model_Marker var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getInfoWindow::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_amap_api_maps_AMap_InfoWindowAdapter on java_lang_Object {
   Future<android_view_View> getInfoContents(com_amap_api_maps_model_Marker var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getInfoContents::kNativeObjectPool: $kNativeObjectPool');
     }
   }

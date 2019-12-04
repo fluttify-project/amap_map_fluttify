@@ -62,7 +62,14 @@ class MapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            com.amap.api.maps.AMap result = ref.getMap();
+            com.amap.api.maps.AMap result;
+            try {
+                result = ref.getMap();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             if (result != null) {
@@ -90,7 +97,13 @@ class MapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onCreate(var1);
+            try {
+                ref.onCreate(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -110,7 +123,13 @@ class MapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onResume();
+            try {
+                ref.onResume();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -130,7 +149,13 @@ class MapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onPause();
+            try {
+                ref.onPause();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -150,7 +175,13 @@ class MapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onDestroy();
+            try {
+                ref.onDestroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -170,7 +201,13 @@ class MapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onLowMemory();
+            try {
+                ref.onLowMemory();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -191,7 +228,13 @@ class MapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onSaveInstanceState(var1);
+            try {
+                ref.onSaveInstanceState(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -212,7 +255,13 @@ class MapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.setVisibility(var1);
+            try {
+                ref.setVisibility(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");

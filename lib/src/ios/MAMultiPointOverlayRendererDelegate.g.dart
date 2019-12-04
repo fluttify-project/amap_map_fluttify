@@ -20,7 +20,7 @@ mixin MAMultiPointOverlayRendererDelegate on NSObject {
     kNativeObjectPool.add(renderer);
     kNativeObjectPool.add(item);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('multiPointOverlayRendererDidItemTapped::kNativeObjectPool: $kNativeObjectPool');
     }
   }

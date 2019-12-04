@@ -19,7 +19,7 @@ mixin com_amap_api_maps_model_TileProvider on java_lang_Object {
   Future<com_amap_api_maps_model_Tile> getTile(int var1, int var2, int var3) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getTile::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_amap_api_maps_model_TileProvider on java_lang_Object {
   Future<int> getTileWidth() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getTileWidth::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_amap_api_maps_model_TileProvider on java_lang_Object {
   Future<int> getTileHeight() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getTileHeight::kNativeObjectPool: $kNativeObjectPool');
     }
   }

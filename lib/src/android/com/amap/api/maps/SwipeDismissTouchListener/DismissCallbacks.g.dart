@@ -19,7 +19,7 @@ mixin com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks on java_lang_
   Future<void> onNotifySwipe() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onNotifySwipe::kNativeObjectPool: $kNativeObjectPool');
     }
   }

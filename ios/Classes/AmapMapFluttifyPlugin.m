@@ -1477,6 +1477,49 @@ extern BOOL enableLog;
           HEAP[@(((NSObject*) result).hash)] = result;
           methodResult(@(((NSObject*) result).hash));
       },
+      @"MATileOverlay::loadTileAtPathResult": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* pathValue = (NSValue*) HEAP[@([args[@"path"] integerValue])];
+          MATileOverlayPath path;
+          [pathValue getValue:&path];
+      
+      
+          // ref
+          MATileOverlay* ref = (MATileOverlay*) HEAP[args[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MATileOverlay@%@::loadTileAtPath(暂未实现参数打印)", args[@"refId"]);
+          }
+      
+          // invoke native method
+          [ref loadTileAtPath : path result: ^(NSData* tileData, NSError* error) {
+              FlutterMethodChannel *channel = [FlutterMethodChannel
+                  methodChannelWithName:@"MATileOverlay::loadTileAtPathResult::Callback"
+                        binaryMessenger:[self->_registrar messenger]];
+      
+              // print log
+              if (enableLog) {
+                  NSLog(@"");
+              }
+      
+              // 构造可以直接传输的参数
+              // ref callback arg
+              NSNumber* argtileData = @(tileData.hash);
+              HEAP[argtileData] = tileData;
+              // ref callback arg
+              NSNumber* argerror = @(error.hash);
+              HEAP[argerror] = error;
+      
+              [channel invokeMethod:@"Callback::void|NSData tileData, NSError error::void|NSData tileData, NSError error" arguments:@{@"tileData": argtileData, @"error": argerror}];
+      
+          }];
+      
+          // result
+          // 无返回值
+          methodResult(@"success");
+      },
       @"MATileOverlay::cancelLoadOfTileAtPath": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // args
           // struct arg
@@ -1610,7 +1653,7 @@ extern BOOL enableLog;
               NSNumber* argdownloadStatus = @((NSInteger) downloadStatus);
               // ref callback arg
               NSNumber* arginfo = @(((NSObject*) info).hash);
-              HEAP[arginfo] = info;
+              HEAP[arginfo] = ((NSObject*) info);
       
               [channel invokeMethod:@"Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock" arguments:@{@"downloadItem": argdownloadItem, @"downloadStatus": argdownloadStatus, @"info": arginfo}];
       

@@ -19,7 +19,7 @@ mixin com_amap_api_maps_utils_overlay_SmoothMoveMarker_MoveListener on java_lang
   Future<void> move(double var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('move::kNativeObjectPool: $kNativeObjectPool');
     }
   }

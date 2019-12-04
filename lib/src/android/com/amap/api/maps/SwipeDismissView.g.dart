@@ -38,7 +38,7 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onDismiss([])');
               }
         
@@ -47,7 +47,7 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
               break;
             case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe':
               // print log
-              if (!fluttifyLogEnabled) {
+              if (fluttifyLogEnabled) {
                 print('fluttify-dart-callback: onNotifySwipe([])');
               }
         

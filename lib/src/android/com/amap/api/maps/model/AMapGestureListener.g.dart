@@ -19,7 +19,7 @@ mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
   Future<void> onDoubleTap(double var1, double var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onDoubleTap::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
   Future<void> onSingleTap(double var1, double var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onSingleTap::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
   Future<void> onFling(double var1, double var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onFling::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -46,7 +46,7 @@ mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
   Future<void> onScroll(double var1, double var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onScroll::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -55,7 +55,7 @@ mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
   Future<void> onLongPress(double var1, double var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onLongPress::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -64,7 +64,7 @@ mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
   Future<void> onDown(double var1, double var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onDown::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -73,7 +73,7 @@ mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
   Future<void> onUp(double var1, double var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onUp::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -82,7 +82,7 @@ mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
   Future<void> onMapStable() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onMapStable::kNativeObjectPool: $kNativeObjectPool');
     }
   }

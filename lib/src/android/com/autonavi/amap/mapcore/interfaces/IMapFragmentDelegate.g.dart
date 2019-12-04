@@ -21,7 +21,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     kNativeObjectPool.add(var2);
     kNativeObjectPool.add(var3);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onInflate::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -30,7 +30,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> setContext(android_content_Context var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setContext::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -39,7 +39,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> setOptions(com_amap_api_maps_AMapOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setOptions::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onCreate(android_os_Bundle var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onCreate::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -57,7 +57,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onResume() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onResume::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -66,7 +66,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onPause() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onPause::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -75,7 +75,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onDestroyView() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onDestroyView::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -84,7 +84,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onDestroy() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onDestroy::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -93,7 +93,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onLowMemory() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onLowMemory::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -102,7 +102,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onSaveInstanceState(android_os_Bundle var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onSaveInstanceState::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -111,7 +111,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<bool> isReady() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('isReady::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> setVisibility(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setVisibility::kNativeObjectPool: $kNativeObjectPool');
     }
   }

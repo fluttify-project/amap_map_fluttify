@@ -62,7 +62,14 @@ class WearMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            com.amap.api.maps.AMap result = ref.getMap();
+            com.amap.api.maps.AMap result;
+            try {
+                result = ref.getMap();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             if (result != null) {
@@ -90,7 +97,13 @@ class WearMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onCreate(var1);
+            try {
+                ref.onCreate(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -110,7 +123,13 @@ class WearMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onResume();
+            try {
+                ref.onResume();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -130,7 +149,13 @@ class WearMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onPause();
+            try {
+                ref.onPause();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -150,7 +175,13 @@ class WearMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onDestroy();
+            try {
+                ref.onDestroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -170,7 +201,13 @@ class WearMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onLowMemory();
+            try {
+                ref.onLowMemory();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -191,7 +228,13 @@ class WearMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onSaveInstanceState(var1);
+            try {
+                ref.onSaveInstanceState(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -212,7 +255,13 @@ class WearMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.setVisibility(var1);
+            try {
+                ref.setVisibility(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -232,7 +281,8 @@ class WearMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.setOnDismissCallbackListener(new com.amap.api.maps.WearMapView.OnDismissCallback() {
+            try {
+                ref.setOnDismissCallbackListener(new com.amap.api.maps.WearMapView.OnDismissCallback() {
                 // method channel
                 MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback");
         
@@ -240,7 +290,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 @Override
                 public void onDismiss() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -260,7 +312,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 @Override
                 public void onNotifySwipe() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -278,6 +332,11 @@ class WearMapViewFactory extends PlatformViewFactory {
                 }
         
             });
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -297,7 +356,13 @@ class WearMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onDismiss();
+            try {
+                ref.onDismiss();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -318,7 +383,13 @@ class WearMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onEnterAmbient(var1);
+            try {
+                ref.onEnterAmbient(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");
@@ -338,7 +409,13 @@ class WearMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            ref.onExitAmbient();
+            try {
+                ref.onExitAmbient();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
         
             // result
             methodResult.success("success");

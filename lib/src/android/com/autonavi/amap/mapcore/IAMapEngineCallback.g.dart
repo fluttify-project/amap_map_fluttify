@@ -19,7 +19,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<Uint8List> requireMapResource(int var1, String var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('requireMapResource::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<void> reloadMapResource(int var1, String var2, int var3) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('reloadMapResource::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -37,7 +37,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<void> requireMapData(int var1, Uint8List var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('requireMapData::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -46,7 +46,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<Uint8List> requireCharBitmap(int var1, int var2, int var3) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('requireCharBitmap::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -55,7 +55,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<Uint8List> requireCharsWidths(int var1, Int32List var2, int var3, int var4) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('requireCharsWidths::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -64,7 +64,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<void> requireMapRender(int var1, int var2, int var3) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('requireMapRender::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -73,7 +73,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<void> onMapRender(int var1, int var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('onMapRender::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -82,7 +82,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<void> OnIndoorBuildingActivity(int var1, Uint8List var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('OnIndoorBuildingActivity::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -91,7 +91,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<int> generateRequestId() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('generateRequestId::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -100,7 +100,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<int> requireMapDataAsyn(int var1, Uint8List var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('requireMapDataAsyn::kNativeObjectPool: $kNativeObjectPool');
     }
   }

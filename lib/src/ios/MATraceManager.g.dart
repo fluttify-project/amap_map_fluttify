@@ -27,7 +27,7 @@ class MATraceManager extends NSObject  {
         switch (methodCall.method) {
           case 'Callback::MATraceDelegate::traceManagerDidTracecorrectdistancewithError':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: traceManagerDidTracecorrectdistancewithError([\'distance\':$args[distance]])');
             }
         
@@ -36,7 +36,7 @@ class MATraceManager extends NSObject  {
             break;
           case 'Callback::MATraceDelegate::mapViewRequireLocationAuth':
             // print log
-            if (!fluttifyLogEnabled) {
+            if (fluttifyLogEnabled) {
               print('fluttify-dart-callback: mapViewRequireLocationAuth([])');
             }
         

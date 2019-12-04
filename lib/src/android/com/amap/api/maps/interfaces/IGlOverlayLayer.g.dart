@@ -19,7 +19,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<bool> removeOverlay(String var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('removeOverlay::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -28,7 +28,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<int> getCurrentParticleNum(String var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getCurrentParticleNum::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -38,7 +38,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     kNativeObjectPool.add(var1);
     kNativeObjectPool.add(var2);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('getNearestLatLng::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -48,7 +48,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     kNativeObjectPool.add(var1);
     kNativeObjectPool.add(var2);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('IsPolygonContainsPoint::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -57,7 +57,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<void> processPolygonHoleOption(com_amap_api_maps_model_PolygonOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('processPolygonHoleOption::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -67,7 +67,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     kNativeObjectPool.add(var1);
     kNativeObjectPool.add(var2);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('IsCircleContainPoint::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -76,7 +76,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<void> processCircleHoleOption(com_amap_api_maps_model_CircleOptions var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('processCircleHoleOption::kNativeObjectPool: $kNativeObjectPool');
     }
   }

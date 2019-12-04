@@ -20,7 +20,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
     kNativeObjectPool.add(var1);
     kNativeObjectPool.add(var2);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setInfoWindowAnimation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -29,7 +29,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
   Future<void> setInfoWindowAppearAnimation(com_amap_api_maps_model_animation_Animation var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setInfoWindowAppearAnimation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -38,7 +38,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
   Future<void> setInfoWindowBackColor(int var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setInfoWindowBackColor::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -47,7 +47,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
   Future<void> setInfoWindowBackEnable(bool var1) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setInfoWindowBackEnable::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -56,7 +56,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
   Future<void> setInfoWindowBackScale(double var1, double var2) {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setInfoWindowBackScale::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -65,7 +65,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
   Future<void> setInfoWindowDisappearAnimation(com_amap_api_maps_model_animation_Animation var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setInfoWindowDisappearAnimation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -74,7 +74,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
   Future<void> setInfoWindowMovingAnimation(com_amap_api_maps_model_animation_Animation var1) {
     kNativeObjectPool.add(var1);
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('setInfoWindowMovingAnimation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
@@ -83,7 +83,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
   Future<void> startAnimation() {
   
   
-    if (!fluttifyLogEnabled) {
+    if (fluttifyLogEnabled) {
       debugPrint('startAnimation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
