@@ -5591,7 +5591,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void afterDrawFrame(int var1, com.autonavi.ae.gmap.GLMapState var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: afterDrawFrame(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: afterDrawFrame(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -5616,7 +5618,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void afterDrawLabel(int var1, com.autonavi.ae.gmap.GLMapState var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: afterDrawLabel(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: afterDrawLabel(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -5641,7 +5645,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void beforeDrawLabel(int var1, com.autonavi.ae.gmap.GLMapState var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: beforeDrawLabel(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: beforeDrawLabel(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -5666,7 +5672,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void afterRendererOver(int var1, com.autonavi.ae.gmap.GLMapState var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: afterRendererOver(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: afterRendererOver(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -5691,7 +5699,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void afterAnimation() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: afterAnimation(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: afterAnimation(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -5980,7 +5990,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onFinish() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -6000,7 +6012,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onCancel() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -7782,7 +7796,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onFinish() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -7802,7 +7818,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onCancel() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -7853,7 +7871,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapAnimationFinish(com.amap.api.maps.AMap.CancelableCallback var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapAnimationFinish(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapAnimationFinish(" + "" + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -7906,7 +7926,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onFinish() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -7926,7 +7948,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onCancel() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -11312,7 +11336,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onGenerateComplete(android.graphics.Bitmap var1, int var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onGenerateComplete(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onGenerateComplete(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -11960,7 +11986,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void networkStateChanged(android.content.Context var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: networkStateChanged(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: networkStateChanged(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -13493,7 +13521,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onLocationChanged(com.autonavi.amap.mapcore.Inner_3dMap_location var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onLocationChanged(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onLocationChanged(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -13598,7 +13628,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onLocationChanged(com.autonavi.amap.mapcore.Inner_3dMap_location var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onLocationChanged(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onLocationChanged(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -16207,7 +16239,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationStart() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -16227,7 +16261,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationEnd() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -24830,7 +24866,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationStart() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -24850,7 +24888,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationEnd() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -28805,7 +28845,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationStart() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -28825,7 +28867,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationEnd() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -29019,7 +29063,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationStart() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -29039,7 +29085,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationEnd() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -29495,7 +29543,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void remove() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: remove(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: remove(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -29515,7 +29565,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void destroy(boolean var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: destroy(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: destroy(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -29536,7 +29588,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void clearTileCache() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: clearTileCache(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: clearTileCache(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -29556,7 +29610,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public String getId() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: getId(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getId(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -29576,7 +29632,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void setZIndex(float var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: setZIndex(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: setZIndex(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -29597,7 +29655,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public float getZIndex() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: getZIndex(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getZIndex(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -29617,7 +29677,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void setVisible(boolean var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: setVisible(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: setVisible(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -29638,7 +29700,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public boolean isVisible() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: isVisible(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: isVisible(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -29658,7 +29722,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public boolean equalsRemote(com.autonavi.amap.mapcore.interfaces.ITileOverlay var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: equalsRemote(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: equalsRemote(" + "" + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -29680,7 +29746,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public int hashCodeRemote() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: hashCodeRemote(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: hashCodeRemote(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -30604,7 +30672,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onFinish() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -30624,7 +30694,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onCancel() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -30678,7 +30750,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onFinish() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -30698,7 +30772,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onCancel() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -31669,7 +31745,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void activate(com.amap.api.maps.LocationSource.OnLocationChangedListener var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: activate(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: activate(" + "" + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -31691,7 +31769,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void deactivate() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: deactivate(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: deactivate(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -31837,7 +31917,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onCameraChange(com.amap.api.maps.model.CameraPosition var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onCameraChange(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onCameraChange(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -31859,7 +31941,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onCameraChangeFinish(com.amap.api.maps.model.CameraPosition var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onCameraChangeFinish(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onCameraChangeFinish(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -31912,7 +31996,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapClick(com.amap.api.maps.model.LatLng var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -31965,7 +32051,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onTouch(android.view.MotionEvent var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onTouch(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onTouch(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32018,7 +32106,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapLongClick(com.amap.api.maps.model.LatLng var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapLongClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapLongClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32071,7 +32161,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public boolean onMarkerClick(com.amap.api.maps.model.Marker var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMarkerClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMarkerClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32124,7 +32216,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onPolylineClick(com.amap.api.maps.model.Polyline var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onPolylineClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onPolylineClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32177,7 +32271,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMarkerDragStart(com.amap.api.maps.model.Marker var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMarkerDragStart(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMarkerDragStart(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32199,7 +32295,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMarkerDrag(com.amap.api.maps.model.Marker var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMarkerDrag(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMarkerDrag(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32221,7 +32319,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMarkerDragEnd(com.amap.api.maps.model.Marker var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMarkerDragEnd(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMarkerDragEnd(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32274,7 +32374,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapLoaded() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapLoaded(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapLoaded(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -32325,7 +32427,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onInfoWindowClick(com.amap.api.maps.model.Marker var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onInfoWindowClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onInfoWindowClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32378,7 +32482,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMyLocationChange(android.location.Location var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMyLocationChange(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMyLocationChange(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32431,7 +32537,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onPOIClick(com.amap.api.maps.model.Poi var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onPOIClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onPOIClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32511,7 +32619,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void OnIndoorBuilding(com.amap.api.maps.model.IndoorBuildingInfo var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: OnIndoorBuilding(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: OnIndoorBuilding(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32564,7 +32674,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapPrint(android.graphics.drawable.Drawable var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapPrint(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapPrint(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32617,7 +32729,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapScreenShot(android.graphics.Bitmap var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32639,7 +32753,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapScreenShot(android.graphics.Bitmap var1, int var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -32965,7 +33081,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onDoubleTap(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onDoubleTap(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onDoubleTap(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -32989,7 +33107,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onSingleTap(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onSingleTap(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onSingleTap(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -33013,7 +33133,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onFling(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onFling(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onFling(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -33037,7 +33159,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onScroll(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onScroll(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onScroll(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -33061,7 +33185,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onLongPress(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onLongPress(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onLongPress(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -33085,7 +33211,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onDown(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onDown(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onDown(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -33109,7 +33237,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onUp(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onUp(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onUp(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -33133,7 +33263,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapStable() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapStable(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapStable(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -34406,7 +34538,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public boolean onPointClick(com.amap.api.maps.model.MultiPointItem var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onPointClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onPointClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -35985,7 +36119,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onLocationChanged(android.location.Location var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onLocationChanged(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onLocationChanged(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -39339,7 +39475,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void move(double var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: move(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: move(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -39809,7 +39947,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void move(double var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: move(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: move(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -39940,7 +40080,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onDismiss() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -39960,7 +40102,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onNotifySwipe() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -41722,7 +41866,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onVerifyComplete() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onVerifyComplete(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onVerifyComplete(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -52369,7 +52515,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationStart() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -52389,7 +52537,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationEnd() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -58763,7 +58913,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationStart() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -58783,7 +58935,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationEnd() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -60296,7 +60450,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onGenerateComplete(android.graphics.Bitmap var1, int var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onGenerateComplete(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onGenerateComplete(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -64862,7 +65018,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationStart() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -64882,7 +65040,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onAnimationEnd() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -65369,7 +65529,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onDismiss() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -65389,7 +65551,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onNotifySwipe() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -66611,7 +66775,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void activate(com.amap.api.maps.LocationSource.OnLocationChangedListener var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: activate(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: activate(" + "" + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -66633,7 +66799,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void deactivate() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: deactivate(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: deactivate(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -66867,7 +67035,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onCameraChange(com.amap.api.maps.model.CameraPosition var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onCameraChange(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onCameraChange(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -66889,7 +67059,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onCameraChangeFinish(com.amap.api.maps.model.CameraPosition var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onCameraChangeFinish(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onCameraChangeFinish(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -66942,7 +67114,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapClick(com.amap.api.maps.model.LatLng var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -66995,7 +67169,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onTouch(android.view.MotionEvent var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onTouch(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onTouch(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67048,7 +67224,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onPOIClick(com.amap.api.maps.model.Poi var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onPOIClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onPOIClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67101,7 +67279,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMyLocationChange(android.location.Location var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMyLocationChange(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMyLocationChange(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67154,7 +67334,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapLongClick(com.amap.api.maps.model.LatLng var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapLongClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapLongClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67207,7 +67389,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public boolean onMarkerClick(com.amap.api.maps.model.Marker var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMarkerClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMarkerClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67260,7 +67444,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onPolylineClick(com.amap.api.maps.model.Polyline var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onPolylineClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onPolylineClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67313,7 +67499,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMarkerDragStart(com.amap.api.maps.model.Marker var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMarkerDragStart(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMarkerDragStart(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67335,7 +67523,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMarkerDrag(com.amap.api.maps.model.Marker var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMarkerDrag(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMarkerDrag(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67357,7 +67547,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMarkerDragEnd(com.amap.api.maps.model.Marker var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMarkerDragEnd(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMarkerDragEnd(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67410,7 +67602,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onInfoWindowClick(com.amap.api.maps.model.Marker var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onInfoWindowClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onInfoWindowClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67490,7 +67684,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public com.amap.api.maps.InfoWindowParams getInfoWindowParams(com.amap.api.maps.model.BasePointOverlay var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: getInfoWindowParams(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getInfoWindowParams(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67543,7 +67739,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapLoaded() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapLoaded(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapLoaded(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -67594,7 +67792,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void OnIndoorBuilding(com.amap.api.maps.model.IndoorBuildingInfo var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: OnIndoorBuilding(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: OnIndoorBuilding(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67647,7 +67847,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public boolean onPointClick(com.amap.api.maps.model.MultiPointItem var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onPointClick(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onPointClick(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67700,7 +67902,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapPrint(android.graphics.drawable.Drawable var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapPrint(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapPrint(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67753,7 +67957,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapScreenShot(android.graphics.Bitmap var1) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -67775,7 +67981,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapScreenShot(android.graphics.Bitmap var1, int var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // ref arg
@@ -68127,7 +68335,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onDoubleTap(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onDoubleTap(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onDoubleTap(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -68151,7 +68361,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onSingleTap(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onSingleTap(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onSingleTap(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -68175,7 +68387,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onFling(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onFling(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onFling(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -68199,7 +68413,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onScroll(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onScroll(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onScroll(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -68223,7 +68439,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onLongPress(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onLongPress(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onLongPress(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -68247,7 +68465,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onDown(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onDown(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onDown(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -68271,7 +68491,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onUp(float var1, float var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onUp(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onUp(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -68295,7 +68517,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onMapStable() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onMapStable(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapStable(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -69409,7 +69633,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onRequestFailed(int var1, String var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onRequestFailed(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onRequestFailed(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -69433,7 +69659,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onTraceProcessing(int var1, int var2, List<com.amap.api.maps.model.LatLng> var3) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onTraceProcessing(" + var1 + var2 + var3 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onTraceProcessing(" + var1 + var2 + var3 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -69464,7 +69692,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onFinished(int var1, List<com.amap.api.maps.model.LatLng> var2, int var3, int var4) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onFinished(" + var1 + var2 + var3 + var4 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onFinished(" + var1 + var2 + var3 + var4 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -69583,7 +69813,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onTraceStatus(List<com.amap.api.trace.TraceLocation> var1, List<com.amap.api.maps.model.LatLng> var2, String var3) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onTraceStatus(" + var1 + var2 + var3 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onTraceStatus(" + var1 + var2 + var3 + ")");
+                    }
         
                     // convert to jsonable data
                     // list arg
@@ -70188,7 +70420,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onRequestFailed(int var1, String var2) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onRequestFailed(" + var1 + var2 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onRequestFailed(" + var1 + var2 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -70212,7 +70446,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onTraceProcessing(int var1, int var2, List<com.amap.api.maps.model.LatLng> var3) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onTraceProcessing(" + var1 + var2 + var3 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onTraceProcessing(" + var1 + var2 + var3 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -70243,7 +70479,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onFinished(int var1, List<com.amap.api.maps.model.LatLng> var2, int var3, int var4) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onFinished(" + var1 + var2 + var3 + var4 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onFinished(" + var1 + var2 + var3 + var4 + ")");
+                    }
         
                     // convert to jsonable data
                     // jsonable arg
@@ -70308,7 +70546,9 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onTraceStatus(List<com.amap.api.trace.TraceLocation> var1, List<com.amap.api.maps.model.LatLng> var2, String var3) {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onTraceStatus(" + var1 + var2 + var3 + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onTraceStatus(" + var1 + var2 + var3 + ")");
+                    }
         
                     // convert to jsonable data
                     // list arg

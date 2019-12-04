@@ -290,7 +290,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 @Override
                 public void onDismiss() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
@@ -310,7 +312,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 @Override
                 public void onNotifySwipe() {
                     // print log
-                    Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                    }
         
                     // convert to jsonable data
         
