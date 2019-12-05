@@ -12,9 +12,31 @@ import 'package:flutter/services.dart';
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMapRect extends NSObject  {
   // generate getters
+  Future<MAMapPoint> get_origin() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapRect::get_origin", {'refId': refId});
+    kNativeObjectPool.add(MAMapPoint()..refId = result..tag = 'amap_map_fluttify');
+    return MAMapPoint()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
+  Future<MAMapSize> get_size() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapRect::get_size", {'refId': refId});
+    kNativeObjectPool.add(MAMapSize()..refId = result..tag = 'amap_map_fluttify');
+    return MAMapSize()..refId = result..tag = 'amap_map_fluttify';
+  }
   
 
   // generate setters
+  Future<void> set_origin(MAMapPoint origin) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRect::set_origin', {'refId': refId, "origin": origin.refId});
+  
+  
+  }
+  
+  Future<void> set_size(MAMapSize size) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRect::set_size', {'refId': refId, "size": size.refId});
+  
+  
+  }
   
 
   // generate methods

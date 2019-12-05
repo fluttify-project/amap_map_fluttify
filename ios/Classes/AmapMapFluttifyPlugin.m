@@ -7045,6 +7045,74 @@ extern BOOL enableLog;
           methodResult(@(result));
       },
       
+      @"MATileOverlayPath::get_x": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::get_x");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MATileOverlayPath* ref = (MATileOverlayPath*) HEAP[@(refId)];
+      
+          // invoke native method
+          NSInteger result = ref.x;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MATileOverlayPath::get_y": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::get_y");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MATileOverlayPath* ref = (MATileOverlayPath*) HEAP[@(refId)];
+      
+          // invoke native method
+          NSInteger result = ref.y;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MATileOverlayPath::get_z": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::get_z");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MATileOverlayPath* ref = (MATileOverlayPath*) HEAP[@(refId)];
+      
+          // invoke native method
+          NSInteger result = ref.z;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MATileOverlayPath::get_contentScaleFactor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::get_contentScaleFactor");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MATileOverlayPath* ref = (MATileOverlayPath*) HEAP[@(refId)];
+      
+          // invoke native method
+          CGFloat result = ref.contentScaleFactor;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
       @"MACustomCalloutView::get_customView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -7264,6 +7332,228 @@ extern BOOL enableLog;
           // return a ref
           HEAP[@((result).hash)] = result;
           methodResult(@((result).hash));
+      },
+      
+      @"MACoordinateBounds::get_northEast": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateBounds::get_northEast");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACoordinateBounds* ref = (MACoordinateBounds*) HEAP[@(refId)];
+      
+          // invoke native method
+          CLLocationCoordinate2D result = ref.northEast;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MACoordinateBounds::get_southWest": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateBounds::get_southWest");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACoordinateBounds* ref = (MACoordinateBounds*) HEAP[@(refId)];
+      
+          // invoke native method
+          CLLocationCoordinate2D result = ref.southWest;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MACoordinateSpan::get_latitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateSpan::get_latitudeDelta");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACoordinateSpan* ref = (MACoordinateSpan*) HEAP[@(refId)];
+      
+          // invoke native method
+          CLLocationDegrees result = ref.latitudeDelta;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MACoordinateSpan::get_longitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateSpan::get_longitudeDelta");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACoordinateSpan* ref = (MACoordinateSpan*) HEAP[@(refId)];
+      
+          // invoke native method
+          CLLocationDegrees result = ref.longitudeDelta;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MACoordinateRegion::get_center": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateRegion::get_center");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACoordinateRegion* ref = (MACoordinateRegion*) HEAP[@(refId)];
+      
+          // invoke native method
+          CLLocationCoordinate2D result = ref.center;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MACoordinateRegion::get_span": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateRegion::get_span");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACoordinateRegion* ref = (MACoordinateRegion*) HEAP[@(refId)];
+      
+          // invoke native method
+          MACoordinateSpan result = ref.span;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateSpan)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MAMapPoint::get_x": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapPoint::get_x");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapPoint* ref = (MAMapPoint*) HEAP[@(refId)];
+      
+          // invoke native method
+          double result = ref.x;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MAMapPoint::get_y": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapPoint::get_y");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapPoint* ref = (MAMapPoint*) HEAP[@(refId)];
+      
+          // invoke native method
+          double result = ref.y;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MAMapSize::get_width": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapSize::get_width");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapSize* ref = (MAMapSize*) HEAP[@(refId)];
+      
+          // invoke native method
+          double result = ref.width;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MAMapSize::get_height": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapSize::get_height");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapSize* ref = (MAMapSize*) HEAP[@(refId)];
+      
+          // invoke native method
+          double result = ref.height;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MAMapRect::get_origin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapRect::get_origin");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapRect* ref = (MAMapRect*) HEAP[@(refId)];
+      
+          // invoke native method
+          MAMapPoint result = ref.origin;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MAMapRect::get_size": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapRect::get_size");
+          }
+      
+          // ref object
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapRect* ref = (MAMapRect*) HEAP[@(refId)];
+      
+          // invoke native method
+          MAMapSize result = ref.size;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapSize)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
       },
       
       @"MAParticleOverlayOptions::get_visibile": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -10447,6 +10737,74 @@ extern BOOL enableLog;
           methodResult(@"success");
       },
       
+      @"MATileOverlayPath::set_x": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::set_x");
+          }
+      
+          // args
+          // jsonable arg
+          NSInteger x = [args[@"x"] integerValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MATileOverlayPath* ref = (MATileOverlayPath*) HEAP[@(refId)];
+      
+          ref.x = x;
+          methodResult(@"success");
+      },
+      
+      @"MATileOverlayPath::set_y": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::set_y");
+          }
+      
+          // args
+          // jsonable arg
+          NSInteger y = [args[@"y"] integerValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MATileOverlayPath* ref = (MATileOverlayPath*) HEAP[@(refId)];
+      
+          ref.y = y;
+          methodResult(@"success");
+      },
+      
+      @"MATileOverlayPath::set_z": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::set_z");
+          }
+      
+          // args
+          // jsonable arg
+          NSInteger z = [args[@"z"] integerValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MATileOverlayPath* ref = (MATileOverlayPath*) HEAP[@(refId)];
+      
+          ref.z = z;
+          methodResult(@"success");
+      },
+      
+      @"MATileOverlayPath::set_contentScaleFactor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::set_contentScaleFactor");
+          }
+      
+          // args
+          // jsonable arg
+          CGFloat contentScaleFactor = [args[@"contentScaleFactor"] floatValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MATileOverlayPath* ref = (MATileOverlayPath*) HEAP[@(refId)];
+      
+          ref.contentScaleFactor = contentScaleFactor;
+          methodResult(@"success");
+      },
+      
       @"MACustomCalloutView::set_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -10478,6 +10836,222 @@ extern BOOL enableLog;
           MAOfflineItemCommonCity* ref = (MAOfflineItemCommonCity*) HEAP[@(refId)];
       
           ref.province = province;
+          methodResult(@"success");
+      },
+      
+      @"MACoordinateBounds::set_northEast": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateBounds::set_northEast");
+          }
+      
+          // args
+          // struct arg
+          NSValue* northEastValue = (NSValue*) HEAP[@([args[@"northEast"] integerValue])];
+          CLLocationCoordinate2D northEast;
+          [northEastValue getValue:&northEast];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACoordinateBounds* ref = (MACoordinateBounds*) HEAP[@(refId)];
+      
+          ref.northEast = northEast;
+          methodResult(@"success");
+      },
+      
+      @"MACoordinateBounds::set_southWest": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateBounds::set_southWest");
+          }
+      
+          // args
+          // struct arg
+          NSValue* southWestValue = (NSValue*) HEAP[@([args[@"southWest"] integerValue])];
+          CLLocationCoordinate2D southWest;
+          [southWestValue getValue:&southWest];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACoordinateBounds* ref = (MACoordinateBounds*) HEAP[@(refId)];
+      
+          ref.southWest = southWest;
+          methodResult(@"success");
+      },
+      
+      @"MACoordinateSpan::set_latitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateSpan::set_latitudeDelta");
+          }
+      
+          // args
+          // jsonable arg
+          CLLocationDegrees latitudeDelta = [args[@"latitudeDelta"] doubleValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACoordinateSpan* ref = (MACoordinateSpan*) HEAP[@(refId)];
+      
+          ref.latitudeDelta = latitudeDelta;
+          methodResult(@"success");
+      },
+      
+      @"MACoordinateSpan::set_longitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateSpan::set_longitudeDelta");
+          }
+      
+          // args
+          // jsonable arg
+          CLLocationDegrees longitudeDelta = [args[@"longitudeDelta"] doubleValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACoordinateSpan* ref = (MACoordinateSpan*) HEAP[@(refId)];
+      
+          ref.longitudeDelta = longitudeDelta;
+          methodResult(@"success");
+      },
+      
+      @"MACoordinateRegion::set_center": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateRegion::set_center");
+          }
+      
+          // args
+          // struct arg
+          NSValue* centerValue = (NSValue*) HEAP[@([args[@"center"] integerValue])];
+          CLLocationCoordinate2D center;
+          [centerValue getValue:&center];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACoordinateRegion* ref = (MACoordinateRegion*) HEAP[@(refId)];
+      
+          ref.center = center;
+          methodResult(@"success");
+      },
+      
+      @"MACoordinateRegion::set_span": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateRegion::set_span");
+          }
+      
+          // args
+          // struct arg
+          NSValue* spanValue = (NSValue*) HEAP[@([args[@"span"] integerValue])];
+          MACoordinateSpan span;
+          [spanValue getValue:&span];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MACoordinateRegion* ref = (MACoordinateRegion*) HEAP[@(refId)];
+      
+          ref.span = span;
+          methodResult(@"success");
+      },
+      
+      @"MAMapPoint::set_x": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapPoint::set_x");
+          }
+      
+          // args
+          // jsonable arg
+          double x = [args[@"x"] doubleValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapPoint* ref = (MAMapPoint*) HEAP[@(refId)];
+      
+          ref.x = x;
+          methodResult(@"success");
+      },
+      
+      @"MAMapPoint::set_y": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapPoint::set_y");
+          }
+      
+          // args
+          // jsonable arg
+          double y = [args[@"y"] doubleValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapPoint* ref = (MAMapPoint*) HEAP[@(refId)];
+      
+          ref.y = y;
+          methodResult(@"success");
+      },
+      
+      @"MAMapSize::set_width": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapSize::set_width");
+          }
+      
+          // args
+          // jsonable arg
+          double width = [args[@"width"] doubleValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapSize* ref = (MAMapSize*) HEAP[@(refId)];
+      
+          ref.width = width;
+          methodResult(@"success");
+      },
+      
+      @"MAMapSize::set_height": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapSize::set_height");
+          }
+      
+          // args
+          // jsonable arg
+          double height = [args[@"height"] doubleValue];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapSize* ref = (MAMapSize*) HEAP[@(refId)];
+      
+          ref.height = height;
+          methodResult(@"success");
+      },
+      
+      @"MAMapRect::set_origin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapRect::set_origin");
+          }
+      
+          // args
+          // struct arg
+          NSValue* originValue = (NSValue*) HEAP[@([args[@"origin"] integerValue])];
+          MAMapPoint origin;
+          [originValue getValue:&origin];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapRect* ref = (MAMapRect*) HEAP[@(refId)];
+      
+          ref.origin = origin;
+          methodResult(@"success");
+      },
+      
+      @"MAMapRect::set_size": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapRect::set_size");
+          }
+      
+          // args
+          // struct arg
+          NSValue* sizeValue = (NSValue*) HEAP[@([args[@"size"] integerValue])];
+          MAMapSize size;
+          [sizeValue getValue:&size];
+      
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapRect* ref = (MAMapRect*) HEAP[@(refId)];
+      
+          ref.size = size;
           methodResult(@"success");
       },
       
