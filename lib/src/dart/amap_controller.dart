@@ -1407,24 +1407,49 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 将所有动态加载的Marker覆盖物调整至同一屏幕中显示
-  Future<void> zoomToSpan(List<LatLng> bounds) async {
+  Future<void> zoomToSpan(List<LatLng> bounds, {bool animated = true}) async {
+    final double minLat = await Stream.fromIterable(bounds)
+        .reduce((pre, cur) => pre.latitude < cur.latitude ? pre : cur)
+        .then((bottom) => bottom.latitude);
+    final double minLng = await Stream.fromIterable(bounds)
+        .reduce((pre, cur) => pre.longitude < cur.longitude ? pre : cur)
+        .then((left) => left.longitude);
+    final double maxLat = await Stream.fromIterable(bounds)
+        .reduce((pre, cur) => pre.latitude > cur.latitude ? pre : cur)
+        .then((top) => top.latitude);
+    final double maxLng = await Stream.fromIterable(bounds)
+        .reduce((pre, cur) => pre.longitude > cur.longitude ? pre : cur)
+        .then((right) => right.longitude);
+
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
 
-        final builder = await com_amap_api_maps_model_LatLngBounds.builder();
-        // todo 在dart这边使用算法算出东北角和西南角的值, 代替调用原生调用
-        for (final latLng in bounds) {
-          await builder.include(
-              await createcom_amap_api_maps_model_LatLng__double__double(
-                  latLng.latitude, latLng.longitude));
-        }
+        final southWest =
+            await createcom_amap_api_maps_model_LatLng__double__double(
+                minLat, minLng);
+        final northEast =
+            await createcom_amap_api_maps_model_LatLng__double__double(
+                maxLat, maxLng);
+
+        final rect =
+            await createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(
+                southWest, northEast);
         final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
-            .newLatLngBounds(await builder.build(), 50);
+            .newLatLngBounds(rect, 50);
 
-        await map.moveCamera(cameraUpdate);
+        if (animated) {
+          await map.animateCamera(cameraUpdate);
+        } else {
+          await map.moveCamera(cameraUpdate);
+        }
 
-        pool..add(map)..add(builder)..add(cameraUpdate);
+        pool
+          ..add(map)
+          ..add(southWest)
+          ..add(northEast)
+          ..add(rect)
+          ..add(cameraUpdate);
       },
       ios: (pool) async {
 //        pool.add(option);
