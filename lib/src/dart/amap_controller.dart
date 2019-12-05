@@ -1406,6 +1406,32 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 将所有动态加载的Marker覆盖物调整至同一屏幕中显示
+  Future<void> zoomToSpan(List<LatLng> bounds) async {
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+
+        final builder = await com_amap_api_maps_model_LatLngBounds.builder();
+        // todo 在dart这边使用算法算出东北角和西南角的值, 代替调用原生调用
+        for (final latLng in bounds) {
+          await builder.include(
+              await createcom_amap_api_maps_model_LatLng__double__double(
+                  latLng.latitude, latLng.longitude));
+        }
+        final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
+            .newLatLngBounds(await builder.build(), 50);
+
+        await map.moveCamera(cameraUpdate);
+
+        pool..add(map)..add(builder)..add(cameraUpdate);
+      },
+      ios: (pool) async {
+//        pool.add(option);
+      },
+    );
+  }
+
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
   }
