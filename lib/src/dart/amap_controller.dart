@@ -70,10 +70,16 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// [strokeColor]精度圈边框颜色, [strokeWidth]精度圈边框宽度, [fillColor]精度圈填充颜色
   Future<void> showMyLocation(
     bool show, {
+    Uri iconUri,
+    ImageConfiguration imageConfig,
     Color strokeColor,
     Color fillColor,
     double strokeWidth,
   }) async {
+    assert(
+      (iconUri != null && imageConfig != null) || iconUri == null,
+      'iconUri与configuration同时设置!',
+    );
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
@@ -85,6 +91,15 @@ class AmapController with WidgetsBindingObserver, _Private {
           // 默认只定位一次
           await locationStyle.myLocationType(1);
 
+          // 定位图标
+          if (iconUri != null) {
+            final imageData = await _uri2ImageData(imageConfig, iconUri);
+            final bitmap = await createandroid_graphics_Bitmap(imageData);
+            final bitmapDescriptor =
+                await com_amap_api_maps_model_BitmapDescriptorFactory
+                    .fromBitmap(bitmap);
+            await locationStyle.myLocationIcon(bitmapDescriptor);
+          }
           // 边框颜色
           if (strokeColor != null) {
             await locationStyle
@@ -117,6 +132,12 @@ class AmapController with WidgetsBindingObserver, _Private {
 
           final style = await createMAUserLocationRepresentation();
 
+          // 定位图标
+          if (iconUri != null) {
+            final imageData = await _uri2ImageData(imageConfig, iconUri);
+            final bitmap = await createUIImage(imageData);
+            await style.set_image(bitmap);
+          }
           // 边框颜色
           if (strokeColor != null) {
             final color = await createUIColor(strokeColor);

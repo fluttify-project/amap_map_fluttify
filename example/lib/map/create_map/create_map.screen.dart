@@ -4,6 +4,8 @@ import 'package:amap_map_fluttify_example/widgets/setting.widget.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:flutter/material.dart';
 
+final _assetsIcon = Uri.parse('images/test_icon.png');
+
 class CreateMapScreen extends StatefulWidget {
   @override
   _CreateMapScreenState createState() => _CreateMapScreenState();
@@ -50,6 +52,16 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   onTap: () async {
                     final latLng = await _controller?.getLocation();
                     toast('当前经纬度: ${latLng.toString()}');
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('使用自定义定位图标')),
+                  onTap: () async {
+                    await _controller?.showMyLocation(
+                      true,
+                      iconUri: _assetsIcon,
+                      imageConfig: createLocalImageConfiguration(context),
+                    );
                   },
                 ),
                 BooleanSetting(
