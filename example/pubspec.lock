@@ -14,7 +14,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.10.3+be1d1e5"
+    version: "0.10.4+be1d1e5"
   args:
     dependency: transitive
     description:
