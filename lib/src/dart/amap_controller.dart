@@ -1083,7 +1083,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// 添加多边形
   ///
   /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[strokeColor]
-  Future<void> addPolygon(PolygonOption option) {
+  Future<Polygon> addPolygon(PolygonOption option) {
     assert(option != null, 'option不能为null');
 
     return platform(
@@ -1121,12 +1121,14 @@ class AmapController with WidgetsBindingObserver, _Private {
         }
 
         // 设置参数
-        await map.addPolygon(polygonOptions);
+        final polygon = await map.addPolygon(polygonOptions);
 
         pool
           ..add(map)
           ..add(polygonOptions)
           ..addAll(latLngList);
+
+        return Polygon.android(polygon);
       },
       ios: (pool) async {
         await _iosController.set_delegate(_iosMapDelegate);
@@ -1154,9 +1156,9 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 设置参数
         await _iosController.addOverlay(polygon);
 
-        pool
-          ..add(polygon)
-          ..addAll(latLngList);
+        pool.addAll(latLngList);
+
+        return Polygon.ios(polygon, _iosController);
       },
     );
   }
@@ -1164,7 +1166,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// 添加圆
   ///
   /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[strokeColor]
-  Future<void> addCircle(CircleOption option) {
+  Future<Circle> addCircle(CircleOption option) {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
@@ -1200,9 +1202,11 @@ class AmapController with WidgetsBindingObserver, _Private {
         }
 
         // 设置参数
-        await map.addCircle(circleOptions);
+        final circle = await map.addCircle(circleOptions);
 
         pool..add(map)..add(circleOptions)..add(latLng);
+
+        return Circle.android(circle);
       },
       ios: (pool) async {
         await _iosController.set_delegate(_iosMapDelegate);
@@ -1229,7 +1233,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 设置参数
         await _iosController.addOverlay(circle);
 
-        pool..add(circle);
+        return Circle.ios(circle, _iosController);
       },
     );
   }

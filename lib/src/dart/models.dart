@@ -182,6 +182,36 @@ class CircleOption {
   }
 }
 
+/// 地图移动
+@immutable
+class MapMove {
+  final LatLng latLng;
+  final double zoom;
+  final double tilt;
+  final bool isAbroad;
+
+  MapMove({this.latLng, this.zoom, this.tilt, this.isAbroad});
+
+  @override
+  String toString() {
+    return 'MapDrag{latLng: $latLng, zoom: $zoom, tilt: $tilt, isAbroad: $isAbroad}';
+  }
+}
+
+/// 屏幕坐标
+@immutable
+class Point {
+  final double x;
+  final double y;
+
+  Point(this.x, this.y);
+
+  @override
+  String toString() {
+    return 'Point{x: $x, y: $y}';
+  }
+}
+
 /// 地图标记
 class Marker {
   Marker.android(this._androidModel);
@@ -254,7 +284,7 @@ class Polyline {
   MAPolyline _iosModel;
   MAMapView _iosController;
 
-  Future<void> remove() async {
+  Future<void> remove() {
     return platform(
       android: (_) => _androidModel.remove(),
       ios: (_) => _iosController?.removeOverlay(_iosModel),
@@ -262,30 +292,38 @@ class Polyline {
   }
 }
 
-@immutable
-class MapMove {
-  final LatLng latLng;
-  final double zoom;
-  final double tilt;
-  final bool isAbroad;
+/// 多边形
+class Polygon {
+  Polygon.android(this._androidModel);
 
-  MapMove({this.latLng, this.zoom, this.tilt, this.isAbroad});
+  Polygon.ios(this._iosModel, this._iosController);
 
-  @override
-  String toString() {
-    return 'MapDrag{latLng: $latLng, zoom: $zoom, tilt: $tilt, isAbroad: $isAbroad}';
+  com_amap_api_maps_model_Polygon _androidModel;
+  MAPolygon _iosModel;
+  MAMapView _iosController;
+
+  Future<void> remove() {
+    return platform(
+      android: (_) => _androidModel.remove(),
+      ios: (_) => _iosController?.removeOverlay(_iosModel),
+    );
   }
 }
 
-@immutable
-class Point {
-  final double x;
-  final double y;
+/// 圆形
+class Circle {
+  Circle.android(this._androidModel);
 
-  Point(this.x, this.y);
+  Circle.ios(this._iosModel, this._iosController);
 
-  @override
-  String toString() {
-    return 'Point{x: $x, y: $y}';
+  com_amap_api_maps_model_Circle _androidModel;
+  MACircle _iosModel;
+  MAMapView _iosController;
+
+  Future<void> remove() {
+    return platform(
+      android: (_) => _androidModel.remove(),
+      ios: (_) => _iosController?.removeOverlay(_iosModel),
+    );
   }
 }
