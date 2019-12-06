@@ -763,6 +763,15 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         final markers = await map.addMarkers(androidOptions, false);
 
+        for (int i = 0; i < options.length; i++) {
+          final option = options[i];
+          final marker = markers[i];
+          // 是否允许弹窗
+          if (option.infoWindowEnabled != null) {
+            await marker.setInfoWindowEnable(option.infoWindowEnabled);
+          }
+        }
+
         // marker不释放, 还有用
         pool
           ..add(map)
@@ -824,6 +833,11 @@ class AmapController with WidgetsBindingObserver, _Private {
           // 是否可拖拽
           if (option.draggable != null) {
             await pushStackJsonable('draggable', option.draggable);
+          }
+          // 是否允许弹窗
+          if (option.infoWindowEnabled != null) {
+            await pushStackJsonable(
+                'infoWindowEnabled', option.infoWindowEnabled);
           }
 
           iosOptions.add(pointAnnotation);

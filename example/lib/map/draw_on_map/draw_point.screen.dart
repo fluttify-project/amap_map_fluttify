@@ -129,6 +129,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                             snippet: '描述',
                             iconUri: _assetsIcon,
                             draggable: true,
+//                            infoWindowEnabled: false,
                             imageConfig: createLocalImageConfiguration(context),
                           ),
                       ],
