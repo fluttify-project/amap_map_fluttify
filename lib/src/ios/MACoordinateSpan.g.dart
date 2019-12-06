@@ -12,9 +12,31 @@ import 'package:flutter/services.dart';
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MACoordinateSpan extends NSObject  {
   // generate getters
+  Future<double> get_latitudeDelta() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateSpan::get_latitudeDelta", {'refId': refId});
+  
+    return result;
+  }
+  
+  Future<double> get_longitudeDelta() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateSpan::get_longitudeDelta", {'refId': refId});
+  
+    return result;
+  }
   
 
   // generate setters
+  Future<void> set_latitudeDelta(double latitudeDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateSpan::set_latitudeDelta', {'refId': refId, "latitudeDelta": latitudeDelta});
+  
+  
+  }
+  
+  Future<void> set_longitudeDelta(double longitudeDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateSpan::set_longitudeDelta', {'refId': refId, "longitudeDelta": longitudeDelta});
+  
+  
+  }
   
 
   // generate methods

@@ -172,6 +172,15 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                     );
                   },
                 ),
+                ListTile(
+                  title: Center(child: Text('将地图缩放至可以显示所有Marker')),
+                  onTap: () async {
+                    Stream.fromIterable(_markers)
+                        .asyncMap((marker) => marker.location)
+                        .toList()
+                        .then(_controller?.zoomToSpan);
+                  },
+                ),
               ],
             ),
           ),

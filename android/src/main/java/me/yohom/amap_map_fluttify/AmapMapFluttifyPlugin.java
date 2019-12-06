@@ -11965,7 +11965,8 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         // method
         put("com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener", (args, methodResult) -> {
             // args
-        
+            // ref arg
+            com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener var1 = (com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener) getHEAP().get((int) args.get("var1"));
         
             // ref
             int refId = (int) args.get("refId");
@@ -11973,41 +11974,12 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // print log
             if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.NetworkState@" + refId + "::setNetworkListener(" + "" + ")");
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.NetworkState@" + refId + "::setNetworkListener(" + var1 + ")");
             }
         
             // invoke native method
             try {
-                ref.setNetworkListener(new com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener() {
-                // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener::Callback");
-        
-                // call dart method
-                @Override
-                public void networkStateChanged(android.content.Context var1) {
-                    // print log
-                    if (getEnableLog()) {
-                        Log.d("java-callback", "fluttify-java-callback: networkStateChanged(" + var1 + ")");
-                    }
-        
-                    // convert to jsonable data
-                    // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
-        
-                    // call dart method
-                    callbackChannel.invokeMethod(
-                            "Callback::com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener::networkStateChanged",
-                            new HashMap<String, Object>() {{
-                                put("var1", argvar1);
-                            }}
-                    );
-        
-                    // method result
-        
-                }
-        
-            });
+                ref.setNetworkListener(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 methodResult.error(throwable.getMessage(), null, null);
@@ -21167,6 +21139,41 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.FPointBounds.Builder::include", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.amap.mapcore.FPoint var1 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.FPointBounds.Builder ref = (com.autonavi.amap.mapcore.FPointBounds.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.FPointBounds.Builder@" + refId + "::include(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.FPointBounds.Builder result;
+            try {
+                result = ref.include(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
         });
         // method
         put("com.autonavi.amap.mapcore.FPointBounds.Builder::build", (args, methodResult) -> {
@@ -45090,6 +45097,41 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
+        put("com.amap.api.maps.model.LatLngBounds.Builder::include", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.LatLngBounds.Builder ref = (com.amap.api.maps.model.LatLngBounds.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.LatLngBounds.Builder@" + refId + "::include(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.api.maps.model.LatLngBounds.Builder result;
+            try {
+                result = ref.include(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
         put("com.amap.api.maps.model.LatLngBounds.Builder::build", (args, methodResult) -> {
             // args
         
@@ -57702,6 +57744,189 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             com.amap.api.maps.model.PolylineOptions.LineJoinType result;
             try {
                 result = com.amap.api.maps.model.PolylineOptions.LineJoinType.valueOf(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.api.maps.model.HeatmapTileProvider.Builder::data", (args, methodResult) -> {
+            // args
+            // list arg
+            List<Integer> var1RefIdList = (List<Integer>) args.get("var1");
+            List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
+            for (int refId : var1RefIdList) {
+                var1.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+            }
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.HeatmapTileProvider.Builder ref = (com.amap.api.maps.model.HeatmapTileProvider.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.HeatmapTileProvider.Builder@" + refId + "::data(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.api.maps.model.HeatmapTileProvider.Builder result;
+            try {
+                result = ref.data(new ArrayList(var1));
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.api.maps.model.HeatmapTileProvider.Builder::weightedData", (args, methodResult) -> {
+            // args
+            // list arg
+            List<Integer> var1RefIdList = (List<Integer>) args.get("var1");
+            List<com.amap.api.maps.model.WeightedLatLng> var1 = new ArrayList<>();
+            for (int refId : var1RefIdList) {
+                var1.add((com.amap.api.maps.model.WeightedLatLng) getHEAP().get(refId));
+            }
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.HeatmapTileProvider.Builder ref = (com.amap.api.maps.model.HeatmapTileProvider.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.HeatmapTileProvider.Builder@" + refId + "::weightedData(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.api.maps.model.HeatmapTileProvider.Builder result;
+            try {
+                result = ref.weightedData(new ArrayList(var1));
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.api.maps.model.HeatmapTileProvider.Builder::radius", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.HeatmapTileProvider.Builder ref = (com.amap.api.maps.model.HeatmapTileProvider.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.HeatmapTileProvider.Builder@" + refId + "::radius(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.api.maps.model.HeatmapTileProvider.Builder result;
+            try {
+                result = ref.radius(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.api.maps.model.HeatmapTileProvider.Builder::gradient", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.api.maps.model.Gradient var1 = (com.amap.api.maps.model.Gradient) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.HeatmapTileProvider.Builder ref = (com.amap.api.maps.model.HeatmapTileProvider.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.HeatmapTileProvider.Builder@" + refId + "::gradient(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.api.maps.model.HeatmapTileProvider.Builder result;
+            try {
+                result = ref.gradient(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.api.maps.model.HeatmapTileProvider.Builder::transparency", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            double var1 = (double) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.HeatmapTileProvider.Builder ref = (com.amap.api.maps.model.HeatmapTileProvider.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.HeatmapTileProvider.Builder@" + refId + "::transparency(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.api.maps.model.HeatmapTileProvider.Builder result;
+            try {
+                result = ref.transparency(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 methodResult.error(throwable.getMessage(), null, null);

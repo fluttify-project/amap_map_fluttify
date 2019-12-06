@@ -1,3 +1,7 @@
+## 0.10.3
+- feat: 加入zoomToSpan方法
+- docs: 如果使用全部组件就使用amap_all_fluttify
+
 ## 0.10.2
 - docs: swift工程说明
 - roll engine #a1a3fff

@@ -62,7 +62,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           UIView* customView = (UIView*) HEAP[@([args[@"customView"] integerValue])];
       
           // ref
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[args[@"refId"]];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -84,8 +84,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[@(refId)];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIView* result = ref.customView;
@@ -102,8 +101,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[@(refId)];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSObject* result = ref.userData;
@@ -123,8 +121,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // ref arg
           id userData = (id) HEAP[@([args[@"userData"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[@(refId)];
+          // ref
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.userData = userData;
           methodResult(@"success");

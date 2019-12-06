@@ -12,9 +12,31 @@ import 'package:flutter/services.dart';
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MACoordinateBounds extends NSObject  {
   // generate getters
+  Future<CLLocationCoordinate2D> get_northEast() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateBounds::get_northEast", {'refId': refId});
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
+    return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
+  Future<CLLocationCoordinate2D> get_southWest() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateBounds::get_southWest", {'refId': refId});
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
+    return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
+  }
   
 
   // generate setters
+  Future<void> set_northEast(CLLocationCoordinate2D northEast) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateBounds::set_northEast', {'refId': refId, "northEast": northEast.refId});
+  
+  
+  }
+  
+  Future<void> set_southWest(CLLocationCoordinate2D southWest) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateBounds::set_southWest', {'refId': refId, "southWest": southWest.refId});
+  
+  
+  }
   
 
   // generate methods

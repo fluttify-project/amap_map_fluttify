@@ -18,6 +18,28 @@ class com_amap_api_maps_model_LatLngBounds_Builder extends java_lang_Object  {
   
 
   // generate methods
+  Future<com_amap_api_maps_model_LatLngBounds_Builder> include(com_amap_api_maps_model_LatLng var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.LatLngBounds.Builder@$refId::include([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds.Builder::include', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds_Builder()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_LatLngBounds_Builder()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
   Future<com_amap_api_maps_model_LatLngBounds> build() async {
     // print log
     if (fluttifyLogEnabled) {

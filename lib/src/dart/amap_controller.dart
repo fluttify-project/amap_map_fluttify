@@ -1406,6 +1406,108 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 将所有动态加载的Marker覆盖物调整至同一屏幕中显示
+  ///
+  /// [bounds]边界点形成的边界, [padding]地图内边距
+  /// !目前发现[padding]在android端和ios端的有不同的行为, 相同的值边距明显不一致, 但是为了
+  /// 不引进多余的参数只能先忽略这个问题, 建议插件使用者在调用方法时自行区分平台并传入在对应平台
+  /// 上合适的值.
+  Future<void> zoomToSpan(
+    List<LatLng> bounds, {
+    int padding = 50,
+    bool animated = true,
+  }) async {
+    final double minLat = await Stream.fromIterable(bounds)
+        .reduce((pre, cur) => pre.latitude < cur.latitude ? pre : cur)
+        .then((bottom) => bottom.latitude);
+    final double minLng = await Stream.fromIterable(bounds)
+        .reduce((pre, cur) => pre.longitude < cur.longitude ? pre : cur)
+        .then((left) => left.longitude);
+    final double maxLat = await Stream.fromIterable(bounds)
+        .reduce((pre, cur) => pre.latitude > cur.latitude ? pre : cur)
+        .then((top) => top.latitude);
+    final double maxLng = await Stream.fromIterable(bounds)
+        .reduce((pre, cur) => pre.longitude > cur.longitude ? pre : cur)
+        .then((right) => right.longitude);
+
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+
+        // 西南角
+        final southWest =
+            await createcom_amap_api_maps_model_LatLng__double__double(
+                minLat, minLng);
+        // 东北角
+        final northEast =
+            await createcom_amap_api_maps_model_LatLng__double__double(
+                maxLat, maxLng);
+
+        // 可视区域矩形
+        final rect =
+            await createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(
+                southWest, northEast);
+
+        // 更新对象
+        final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
+            .newLatLngBounds(rect, padding);
+
+        if (animated) {
+          await map.animateCamera(cameraUpdate);
+        } else {
+          await map.moveCamera(cameraUpdate);
+        }
+
+        pool
+          ..add(map)
+          ..add(southWest)
+          ..add(northEast)
+          ..add(rect)
+          ..add(cameraUpdate);
+      },
+      ios: (pool) async {
+        // 由于屏幕坐标的(0, 0)左上角, 所以需要西北角和东南角
+        // 西北角
+        final northWest = await createCLLocationCoordinate2D(maxLat, minLng);
+        // 东南角
+        final southEast = await createCLLocationCoordinate2D(minLat, maxLng);
+
+        // 西北角屏幕坐标
+        final northWestPoint = await MAMapPointForCoordinate(northWest);
+        // 东南角屏幕坐标
+        final southEastPoint = await MAMapPointForCoordinate(southEast);
+
+        // 矩形原点x
+        final x = await northWestPoint.get_x();
+        // 矩形原点y
+        final y = await northWestPoint.get_y();
+        // 矩形宽度
+        final width =
+            (await southEastPoint.get_x() - await northWestPoint.get_x()).abs();
+        // 矩形高度
+        final height =
+            (await southEastPoint.get_y() - await northWestPoint.get_y()).abs();
+
+        // 矩形
+        final rect = await MAMapRectMake(x, y, width, height);
+
+        final dPadding = padding.toDouble();
+        _iosController.setVisibleMapRectEdgePaddinganimated(
+          rect,
+          await createUIEdgeInsets(dPadding, dPadding, dPadding, dPadding),
+          animated,
+        );
+
+        pool
+          ..add(northWest)
+          ..add(southEast)
+          ..add(northWestPoint)
+          ..add(southEastPoint)
+          ..add(rect);
+      },
+    );
+  }
+
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
   }

@@ -86,7 +86,7 @@ extern BOOL enableLog;
           UIImage* icon = (UIImage*) HEAP[@([args[@"icon"] integerValue])];
       
           // ref
-          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[args[@"refId"]];
+          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -112,7 +112,7 @@ extern BOOL enableLog;
           UIImage* icon = (UIImage*) HEAP[@([args[@"icon"] integerValue])];
       
           // ref
-          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[args[@"refId"]];
+          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -132,7 +132,7 @@ extern BOOL enableLog;
           MAPolygon* polygon = (MAPolygon*) HEAP[@([args[@"polygon"] integerValue])];
       
           // ref
-          MAPolygonRenderer* ref = (MAPolygonRenderer*) HEAP[args[@"refId"]];
+          MAPolygonRenderer* ref = (MAPolygonRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -198,7 +198,7 @@ extern BOOL enableLog;
           [screenAnchorValue getValue:&screenAnchor];
       
           // ref
-          MAMapStatus* ref = (MAMapStatus*) HEAP[args[@"refId"]];
+          MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -271,7 +271,7 @@ extern BOOL enableLog;
           CLLocationDistance radius = [args[@"radius"] doubleValue];
       
           // ref
-          MACircle* ref = (MACircle*) HEAP[args[@"refId"]];
+          MACircle* ref = (MACircle*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -291,7 +291,7 @@ extern BOOL enableLog;
           MAArc* arc = (MAArc*) HEAP[@([args[@"arc"] integerValue])];
       
           // ref
-          MAArcRenderer* ref = (MAArcRenderer*) HEAP[args[@"refId"]];
+          MAArcRenderer* ref = (MAArcRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -314,7 +314,7 @@ extern BOOL enableLog;
           [newCoordinateValue getValue:&newCoordinate];
       
           // ref
-          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[args[@"refId"]];
+          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -334,7 +334,7 @@ extern BOOL enableLog;
           CGFloat timeDelta = [args[@"timeDelta"] floatValue];
       
           // ref
-          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[args[@"refId"]];
+          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -353,7 +353,7 @@ extern BOOL enableLog;
       
       
           // ref
-          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[args[@"refId"]];
+          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -372,7 +372,7 @@ extern BOOL enableLog;
       
       
           // ref
-          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[args[@"refId"]];
+          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -391,7 +391,7 @@ extern BOOL enableLog;
       
       
           // ref
-          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[args[@"refId"]];
+          id<MAAnimatableAnnotation> ref = (id<MAAnimatableAnnotation>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -483,7 +483,7 @@ extern BOOL enableLog;
           NSInteger count = [args[@"count"] integerValue];
       
           // ref
-          MAPolygon* ref = (MAPolygon*) HEAP[args[@"refId"]];
+          MAPolygon* ref = (MAPolygon*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -513,7 +513,7 @@ extern BOOL enableLog;
           NSInteger count = [args[@"count"] integerValue];
       
           // ref
-          MAPolygon* ref = (MAPolygon*) HEAP[args[@"refId"]];
+          MAPolygon* ref = (MAPolygon*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -554,7 +554,7 @@ extern BOOL enableLog;
           MAParticleOverlayOptions* overlayOption = (MAParticleOverlayOptions*) HEAP[@([args[@"overlayOption"] integerValue])];
       
           // ref
-          MAParticleOverlay* ref = (MAParticleOverlay*) HEAP[args[@"refId"]];
+          MAParticleOverlay* ref = (MAParticleOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -646,7 +646,7 @@ extern BOOL enableLog;
           NSInteger count = [args[@"count"] integerValue];
       
           // ref
-          MAPolyline* ref = (MAPolyline*) HEAP[args[@"refId"]];
+          MAPolyline* ref = (MAPolyline*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -676,7 +676,7 @@ extern BOOL enableLog;
           NSInteger count = [args[@"count"] integerValue];
       
           // ref
-          MAPolyline* ref = (MAPolyline*) HEAP[args[@"refId"]];
+          MAPolyline* ref = (MAPolyline*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -696,7 +696,7 @@ extern BOOL enableLog;
           MAMultiPolyline* multiPolyline = (MAMultiPolyline*) HEAP[@([args[@"multiPolyline"] integerValue])];
       
           // ref
-          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[args[@"refId"]];
+          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -732,7 +732,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[args[@"refId"]];
+          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -785,7 +785,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[args[@"refId"]];
+          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -838,7 +838,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[args[@"refId"]];
+          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -858,7 +858,7 @@ extern BOOL enableLog;
           MAMultiPolyline* multiPolyline = (MAMultiPolyline*) HEAP[@([args[@"multiPolyline"] integerValue])];
       
           // ref
-          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[args[@"refId"]];
+          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -879,7 +879,7 @@ extern BOOL enableLog;
           MATileOverlay* tileOverlay = (MATileOverlay*) HEAP[@([args[@"tileOverlay"] integerValue])];
       
           // ref
-          MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[args[@"refId"]];
+          MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -899,7 +899,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[args[@"refId"]];
+          MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -991,7 +991,7 @@ extern BOOL enableLog;
           NSInteger count = [args[@"count"] integerValue];
       
           // ref
-          MAGeodesicPolyline* ref = (MAGeodesicPolyline*) HEAP[args[@"refId"]];
+          MAGeodesicPolyline* ref = (MAGeodesicPolyline*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1021,7 +1021,7 @@ extern BOOL enableLog;
           NSInteger count = [args[@"count"] integerValue];
       
           // ref
-          MAGeodesicPolyline* ref = (MAGeodesicPolyline*) HEAP[args[@"refId"]];
+          MAGeodesicPolyline* ref = (MAGeodesicPolyline*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1059,7 +1059,7 @@ extern BOOL enableLog;
           NSError* error = (NSError*) HEAP[@([args[@"error"] integerValue])];
       
           // ref
-          id<MATraceDelegate> ref = (id<MATraceDelegate>) HEAP[args[@"refId"]];
+          id<MATraceDelegate> ref = (id<MATraceDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1079,7 +1079,7 @@ extern BOOL enableLog;
           CLLocationManager* locationManager = (CLLocationManager*) HEAP[@([args[@"locationManager"] integerValue])];
       
           // ref
-          id<MATraceDelegate> ref = (id<MATraceDelegate>) HEAP[args[@"refId"]];
+          id<MATraceDelegate> ref = (id<MATraceDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1118,7 +1118,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MATraceManager* ref = (MATraceManager*) HEAP[args[@"refId"]];
+          MATraceManager* ref = (MATraceManager*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1137,7 +1137,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MATraceManager* ref = (MATraceManager*) HEAP[args[@"refId"]];
+          MATraceManager* ref = (MATraceManager*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1159,7 +1159,7 @@ extern BOOL enableLog;
           MAMultiPointItem* item = (MAMultiPointItem*) HEAP[@([args[@"item"] integerValue])];
       
           // ref
-          id<MAMultiPointOverlayRendererDelegate> ref = (id<MAMultiPointOverlayRendererDelegate>) HEAP[args[@"refId"]];
+          id<MAMultiPointOverlayRendererDelegate> ref = (id<MAMultiPointOverlayRendererDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1179,7 +1179,7 @@ extern BOOL enableLog;
           MAMultiPointOverlay* multiPointOverlay = (MAMultiPointOverlay*) HEAP[@([args[@"multiPointOverlay"] integerValue])];
       
           // ref
-          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[args[@"refId"]];
+          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1200,7 +1200,7 @@ extern BOOL enableLog;
           MAPolyline* polyline = (MAPolyline*) HEAP[@([args[@"polyline"] integerValue])];
       
           // ref
-          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[args[@"refId"]];
+          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1220,7 +1220,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1239,7 +1239,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1261,7 +1261,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1280,7 +1280,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1299,7 +1299,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1318,7 +1318,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1337,7 +1337,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1356,7 +1356,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[args[@"refId"]];
+          MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1378,7 +1378,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1400,7 +1400,7 @@ extern BOOL enableLog;
           NSString* reuseIdentifier = (NSString*) args[@"reuseIdentifier"];
       
           // ref
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1420,7 +1420,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1442,7 +1442,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1462,7 +1462,7 @@ extern BOOL enableLog;
           NSString* URLTemplate = (NSString*) args[@"URLTemplate"];
       
           // ref
-          MATileOverlay* ref = (MATileOverlay*) HEAP[args[@"refId"]];
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1486,7 +1486,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MATileOverlay* ref = (MATileOverlay*) HEAP[args[@"refId"]];
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1528,7 +1528,7 @@ extern BOOL enableLog;
           [pathValue getValue:&path];
       
           // ref
-          MATileOverlay* ref = (MATileOverlay*) HEAP[args[@"refId"]];
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1548,7 +1548,7 @@ extern BOOL enableLog;
           UIView* customView = (UIView*) HEAP[@([args[@"customView"] integerValue])];
       
           // ref
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[args[@"refId"]];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1588,7 +1588,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1627,7 +1627,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1669,7 +1669,7 @@ extern BOOL enableLog;
           MAOfflineItem* item = (MAOfflineItem*) HEAP[@([args[@"item"] integerValue])];
       
           // ref
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1689,7 +1689,7 @@ extern BOOL enableLog;
           MAOfflineItem* item = (MAOfflineItem*) HEAP[@([args[@"item"] integerValue])];
       
           // ref
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1709,7 +1709,7 @@ extern BOOL enableLog;
           MAOfflineItem* item = (MAOfflineItem*) HEAP[@([args[@"item"] integerValue])];
       
           // ref
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1728,7 +1728,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1747,7 +1747,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1766,7 +1766,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[args[@"refId"]];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1802,7 +1802,7 @@ extern BOOL enableLog;
           MACircle* circle = (MACircle*) HEAP[@([args[@"circle"] integerValue])];
       
           // ref
-          MACircleRenderer* ref = (MACircleRenderer*) HEAP[args[@"refId"]];
+          MACircleRenderer* ref = (MACircleRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1823,7 +1823,7 @@ extern BOOL enableLog;
           MAParticleOverlay* particleOverlay = (MAParticleOverlay*) HEAP[@([args[@"particleOverlay"] integerValue])];
       
           // ref
-          MAParticleOverlayRenderer* ref = (MAParticleOverlayRenderer*) HEAP[args[@"refId"]];
+          MAParticleOverlayRenderer* ref = (MAParticleOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1843,7 +1843,7 @@ extern BOOL enableLog;
       
       
           // ref
-          id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[args[@"refId"]];
+          id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1862,7 +1862,7 @@ extern BOOL enableLog;
       
       
           // ref
-          id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[args[@"refId"]];
+          id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1881,7 +1881,7 @@ extern BOOL enableLog;
       
       
           // ref
-          id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[args[@"refId"]];
+          id<MAParticleVelocityGenerate> ref = (id<MAParticleVelocityGenerate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1911,7 +1911,7 @@ extern BOOL enableLog;
           float z2 = [args[@"z2"] floatValue];
       
           // ref
-          MAParticleRandomVelocityGenerate* ref = (MAParticleRandomVelocityGenerate*) HEAP[args[@"refId"]];
+          MAParticleRandomVelocityGenerate* ref = (MAParticleRandomVelocityGenerate*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1946,7 +1946,7 @@ extern BOOL enableLog;
           float a2 = [args[@"a2"] floatValue];
       
           // ref
-          MAParticleRandomColorGenerate* ref = (MAParticleRandomColorGenerate*) HEAP[args[@"refId"]];
+          MAParticleRandomColorGenerate* ref = (MAParticleRandomColorGenerate*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1966,7 +1966,7 @@ extern BOOL enableLog;
       
       
           // ref
-          id<MAParticleRotationGenerate> ref = (id<MAParticleRotationGenerate>) HEAP[args[@"refId"]];
+          id<MAParticleRotationGenerate> ref = (id<MAParticleRotationGenerate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1986,7 +1986,7 @@ extern BOOL enableLog;
           float rotate = [args[@"rotate"] floatValue];
       
           // ref
-          MAParticleConstantRotationGenerate* ref = (MAParticleConstantRotationGenerate*) HEAP[args[@"refId"]];
+          MAParticleConstantRotationGenerate* ref = (MAParticleConstantRotationGenerate*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2007,7 +2007,7 @@ extern BOOL enableLog;
           float timeFrame = [args[@"timeFrame"] floatValue];
       
           // ref
-          id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[args[@"refId"]];
+          id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2027,7 +2027,7 @@ extern BOOL enableLog;
           float timeFrame = [args[@"timeFrame"] floatValue];
       
           // ref
-          id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[args[@"refId"]];
+          id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2047,7 +2047,7 @@ extern BOOL enableLog;
           float timeFrame = [args[@"timeFrame"] floatValue];
       
           // ref
-          id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[args[@"refId"]];
+          id<MAParticleSizeGenerate> ref = (id<MAParticleSizeGenerate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2071,7 +2071,7 @@ extern BOOL enableLog;
           float z = [args[@"z"] floatValue];
       
           // ref
-          MAParticleCurveSizeGenerate* ref = (MAParticleCurveSizeGenerate*) HEAP[args[@"refId"]];
+          MAParticleCurveSizeGenerate* ref = (MAParticleCurveSizeGenerate*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2094,7 +2094,7 @@ extern BOOL enableLog;
           int rateTime = [args[@"rateTime"] intValue];
       
           // ref
-          MAParticleEmissionModule* ref = (MAParticleEmissionModule*) HEAP[args[@"refId"]];
+          MAParticleEmissionModule* ref = (MAParticleEmissionModule*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2114,7 +2114,7 @@ extern BOOL enableLog;
       
       
           // ref
-          id<MAParticleShapeModule> ref = (id<MAParticleShapeModule>) HEAP[args[@"refId"]];
+          id<MAParticleShapeModule> ref = (id<MAParticleShapeModule>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2140,7 +2140,7 @@ extern BOOL enableLog;
           BOOL isUseRatio = [args[@"isUseRatio"] boolValue];
       
           // ref
-          MAParticleSinglePointShapeModule* ref = (MAParticleSinglePointShapeModule*) HEAP[args[@"refId"]];
+          MAParticleSinglePointShapeModule* ref = (MAParticleSinglePointShapeModule*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2169,7 +2169,7 @@ extern BOOL enableLog;
           BOOL isUseRatio = [args[@"isUseRatio"] boolValue];
       
           // ref
-          MAParticleRectShapeModule* ref = (MAParticleRectShapeModule*) HEAP[args[@"refId"]];
+          MAParticleRectShapeModule* ref = (MAParticleRectShapeModule*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2190,7 +2190,7 @@ extern BOOL enableLog;
           id<MAParticleVelocityGenerate> velocity = (id<MAParticleVelocityGenerate>) HEAP[@([args[@"velocity"] integerValue])];
       
           // ref
-          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[args[@"refId"]];
+          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2210,7 +2210,7 @@ extern BOOL enableLog;
           id<MAParticleRotationGenerate> rotation = (id<MAParticleRotationGenerate>) HEAP[@([args[@"rotation"] integerValue])];
       
           // ref
-          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[args[@"refId"]];
+          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2230,7 +2230,7 @@ extern BOOL enableLog;
           id<MAParticleSizeGenerate> size = (id<MAParticleSizeGenerate>) HEAP[@([args[@"size"] integerValue])];
       
           // ref
-          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[args[@"refId"]];
+          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2250,7 +2250,7 @@ extern BOOL enableLog;
           id<MAParticleColorGenerate> color = (id<MAParticleColorGenerate>) HEAP[@([args[@"color"] integerValue])];
       
           // ref
-          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[args[@"refId"]];
+          MAParticleOverLifeModule* ref = (MAParticleOverLifeModule*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2270,7 +2270,7 @@ extern BOOL enableLog;
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2290,7 +2290,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2312,7 +2312,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2334,7 +2334,7 @@ extern BOOL enableLog;
           [mapPointValue getValue:&mapPoint];
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2367,7 +2367,7 @@ extern BOOL enableLog;
           NSUInteger count = [args[@"count"] unsignedIntegerValue];
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2390,7 +2390,7 @@ extern BOOL enableLog;
           CGFloat windowWidth = [args[@"windowWidth"] floatValue];
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2426,7 +2426,7 @@ extern BOOL enableLog;
           BOOL looped = [args[@"looped"] boolValue];
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2468,7 +2468,7 @@ extern BOOL enableLog;
           MALineDashType lineDash = (MALineDashType) [args[@"lineDash"] integerValue];
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2516,7 +2516,7 @@ extern BOOL enableLog;
           BOOL looped = [args[@"looped"] boolValue];
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2572,7 +2572,7 @@ extern BOOL enableLog;
           MALineDashType lineDash = (MALineDashType) [args[@"lineDash"] integerValue];
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2606,7 +2606,7 @@ extern BOOL enableLog;
           BOOL usingTriangleFan = [args[@"usingTriangleFan"] boolValue];
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2648,7 +2648,7 @@ extern BOOL enableLog;
           BOOL usingTriangleFan = [args[@"usingTriangleFan"] boolValue];
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2667,7 +2667,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2686,7 +2686,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[args[@"refId"]];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2711,7 +2711,7 @@ extern BOOL enableLog;
           }
       
           // ref
-          MAMultiPointOverlay* ref = (MAMultiPointOverlay*) HEAP[args[@"refId"]];
+          MAMultiPointOverlay* ref = (MAMultiPointOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2773,7 +2773,7 @@ extern BOOL enableLog;
           NSUInteger count = [args[@"count"] unsignedIntegerValue];
       
           // ref
-          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[args[@"refId"]];
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2793,7 +2793,7 @@ extern BOOL enableLog;
           MACustomBuildingOverlayOption* option = (MACustomBuildingOverlayOption*) HEAP[@([args[@"option"] integerValue])];
       
           // ref
-          MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[args[@"refId"]];
+          MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2813,7 +2813,7 @@ extern BOOL enableLog;
           MACustomBuildingOverlayOption* option = (MACustomBuildingOverlayOption*) HEAP[@([args[@"option"] integerValue])];
       
           // ref
-          MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[args[@"refId"]];
+          MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2868,7 +2868,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2890,7 +2890,7 @@ extern BOOL enableLog;
           [regionValue getValue:&region];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2917,7 +2917,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2939,7 +2939,7 @@ extern BOOL enableLog;
           [mapRectValue getValue:&mapRect];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2968,7 +2968,7 @@ extern BOOL enableLog;
           [insetsValue getValue:&insets];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -2999,7 +2999,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3023,7 +3023,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3045,7 +3045,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3071,7 +3071,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3095,7 +3095,7 @@ extern BOOL enableLog;
           CFTimeInterval duration = [args[@"duration"] doubleValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3119,7 +3119,7 @@ extern BOOL enableLog;
           CFTimeInterval duration = [args[@"duration"] doubleValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3138,7 +3138,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3161,7 +3161,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3185,7 +3185,7 @@ extern BOOL enableLog;
           CFTimeInterval duration = [args[@"duration"] doubleValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3205,7 +3205,7 @@ extern BOOL enableLog;
           UIImage* image = (UIImage*) HEAP[@([args[@"image"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3228,7 +3228,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3267,7 +3267,7 @@ extern BOOL enableLog;
           CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3291,7 +3291,7 @@ extern BOOL enableLog;
           UIView* view = (UIView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3318,7 +3318,7 @@ extern BOOL enableLog;
           UIView* view = (UIView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3345,7 +3345,7 @@ extern BOOL enableLog;
           UIView* view = (UIView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3372,7 +3372,7 @@ extern BOOL enableLog;
           UIView* view = (UIView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3394,7 +3394,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3413,7 +3413,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3432,7 +3432,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3451,7 +3451,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3470,7 +3470,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3489,7 +3489,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3509,7 +3509,7 @@ extern BOOL enableLog;
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3534,7 +3534,7 @@ extern BOOL enableLog;
           }
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3554,7 +3554,7 @@ extern BOOL enableLog;
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3579,7 +3579,7 @@ extern BOOL enableLog;
           }
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3599,7 +3599,7 @@ extern BOOL enableLog;
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3620,7 +3620,7 @@ extern BOOL enableLog;
           NSString* identifier = (NSString*) args[@"identifier"];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3643,7 +3643,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3665,7 +3665,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3692,7 +3692,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3723,7 +3723,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3745,7 +3745,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3765,7 +3765,7 @@ extern BOOL enableLog;
           MAUserLocationRepresentation* representation = (MAUserLocationRepresentation*) HEAP[@([args[@"representation"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3785,7 +3785,7 @@ extern BOOL enableLog;
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3812,7 +3812,7 @@ extern BOOL enableLog;
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3837,7 +3837,7 @@ extern BOOL enableLog;
           }
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3859,7 +3859,7 @@ extern BOOL enableLog;
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3886,7 +3886,7 @@ extern BOOL enableLog;
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3906,7 +3906,7 @@ extern BOOL enableLog;
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3931,7 +3931,7 @@ extern BOOL enableLog;
           }
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3955,7 +3955,7 @@ extern BOOL enableLog;
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3977,7 +3977,7 @@ extern BOOL enableLog;
           id<MAOverlay> sibling = (id<MAOverlay>) HEAP[@([args[@"sibling"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -3999,7 +3999,7 @@ extern BOOL enableLog;
           id<MAOverlay> sibling = (id<MAOverlay>) HEAP[@([args[@"sibling"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4021,7 +4021,7 @@ extern BOOL enableLog;
           NSUInteger index = [args[@"index"] unsignedIntegerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4043,7 +4043,7 @@ extern BOOL enableLog;
           NSUInteger index2 = [args[@"index2"] unsignedIntegerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4067,7 +4067,7 @@ extern BOOL enableLog;
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4089,7 +4089,7 @@ extern BOOL enableLog;
           id<MAOverlay> overlay2 = (id<MAOverlay>) HEAP[@([args[@"overlay2"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4109,7 +4109,7 @@ extern BOOL enableLog;
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4137,7 +4137,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4168,7 +4168,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4190,7 +4190,7 @@ extern BOOL enableLog;
           [originValue getValue:&origin];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4210,7 +4210,7 @@ extern BOOL enableLog;
           NSInteger floorIndex = [args[@"floorIndex"] integerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4229,7 +4229,7 @@ extern BOOL enableLog;
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4249,7 +4249,7 @@ extern BOOL enableLog;
           MAMapCustomStyleOptions* styleOptions = (MAMapCustomStyleOptions*) HEAP[@([args[@"styleOptions"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4269,7 +4269,7 @@ extern BOOL enableLog;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4291,7 +4291,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4313,7 +4313,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4335,7 +4335,7 @@ extern BOOL enableLog;
           BOOL wasUserAction = [args[@"wasUserAction"] boolValue];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4357,7 +4357,7 @@ extern BOOL enableLog;
           BOOL wasUserAction = [args[@"wasUserAction"] boolValue];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4379,7 +4379,7 @@ extern BOOL enableLog;
           BOOL wasUserAction = [args[@"wasUserAction"] boolValue];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4401,7 +4401,7 @@ extern BOOL enableLog;
           BOOL wasUserAction = [args[@"wasUserAction"] boolValue];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4421,7 +4421,7 @@ extern BOOL enableLog;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4441,7 +4441,7 @@ extern BOOL enableLog;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4463,7 +4463,7 @@ extern BOOL enableLog;
           NSError* error = (NSError*) HEAP[@([args[@"error"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4485,7 +4485,7 @@ extern BOOL enableLog;
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4513,7 +4513,7 @@ extern BOOL enableLog;
           }
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4535,7 +4535,7 @@ extern BOOL enableLog;
           MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4557,7 +4557,7 @@ extern BOOL enableLog;
           MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4577,7 +4577,7 @@ extern BOOL enableLog;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4597,7 +4597,7 @@ extern BOOL enableLog;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4621,7 +4621,7 @@ extern BOOL enableLog;
           BOOL updatingLocation = [args[@"updatingLocation"] boolValue];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4641,7 +4641,7 @@ extern BOOL enableLog;
           CLLocationManager* locationManager = (CLLocationManager*) HEAP[@([args[@"locationManager"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4663,7 +4663,7 @@ extern BOOL enableLog;
           NSError* error = (NSError*) HEAP[@([args[@"error"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4689,7 +4689,7 @@ extern BOOL enableLog;
           MAAnnotationViewDragState oldState = (MAAnnotationViewDragState) [args[@"oldState"] integerValue];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4711,7 +4711,7 @@ extern BOOL enableLog;
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4739,7 +4739,7 @@ extern BOOL enableLog;
           }
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4763,7 +4763,7 @@ extern BOOL enableLog;
           UIControl* control = (UIControl*) HEAP[@([args[@"control"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4785,7 +4785,7 @@ extern BOOL enableLog;
           MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4807,7 +4807,7 @@ extern BOOL enableLog;
           MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4831,7 +4831,7 @@ extern BOOL enableLog;
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4853,7 +4853,7 @@ extern BOOL enableLog;
           BOOL openGLESDisabled = [args[@"openGLESDisabled"] boolValue];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4880,7 +4880,7 @@ extern BOOL enableLog;
           }
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4904,7 +4904,7 @@ extern BOOL enableLog;
           [coordinateValue getValue:&coordinate];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4928,7 +4928,7 @@ extern BOOL enableLog;
           [coordinateValue getValue:&coordinate];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4948,7 +4948,7 @@ extern BOOL enableLog;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4970,7 +4970,7 @@ extern BOOL enableLog;
           MAIndoorInfo* indoorInfo = (MAIndoorInfo*) HEAP[@([args[@"indoorInfo"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -4992,7 +4992,7 @@ extern BOOL enableLog;
           MAIndoorInfo* indoorInfo = (MAIndoorInfo*) HEAP[@([args[@"indoorInfo"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -5014,7 +5014,7 @@ extern BOOL enableLog;
           MAIndoorInfo* indoorInfo = (MAIndoorInfo*) HEAP[@([args[@"indoorInfo"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -5034,7 +5034,7 @@ extern BOOL enableLog;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -5054,7 +5054,7 @@ extern BOOL enableLog;
           MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
       
           // ref
-          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[args[@"refId"]];
+          id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -5074,7 +5074,7 @@ extern BOOL enableLog;
           MAGroundOverlay* groundOverlay = (MAGroundOverlay*) HEAP[@([args[@"groundOverlay"] integerValue])];
       
           // ref
-          MAGroundOverlayRenderer* ref = (MAGroundOverlayRenderer*) HEAP[args[@"refId"]];
+          MAGroundOverlayRenderer* ref = (MAGroundOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -5095,7 +5095,7 @@ extern BOOL enableLog;
           MACustomBuildingOverlay* customBuildingOverlay = (MACustomBuildingOverlay*) HEAP[@([args[@"customBuildingOverlay"] integerValue])];
       
           // ref
-          MACustomBuildingOverlayRenderer* ref = (MACustomBuildingOverlayRenderer*) HEAP[args[@"refId"]];
+          MACustomBuildingOverlayRenderer* ref = (MACustomBuildingOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -5117,8 +5117,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineCity* ref = (MAOfflineCity*) HEAP[@(refId)];
+          MAOfflineCity* ref = (MAOfflineCity*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.cityCode;
@@ -5134,8 +5133,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineCity* ref = (MAOfflineCity*) HEAP[@(refId)];
+          MAOfflineCity* ref = (MAOfflineCity*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.cityName;
@@ -5151,8 +5149,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineCity* ref = (MAOfflineCity*) HEAP[@(refId)];
+          MAOfflineCity* ref = (MAOfflineCity*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.urlString;
@@ -5168,8 +5165,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineCity* ref = (MAOfflineCity*) HEAP[@(refId)];
+          MAOfflineCity* ref = (MAOfflineCity*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAOfflineCityStatus result = ref.status;
@@ -5185,8 +5181,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPoint* ref = (MAMultiPoint*) HEAP[@(refId)];
+          MAMultiPoint* ref = (MAMultiPoint*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMapPoint* result = ref.points;
@@ -5205,8 +5200,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPoint* ref = (MAMultiPoint*) HEAP[@(refId)];
+          MAMultiPoint* ref = (MAMultiPoint*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSUInteger result = ref.pointCount;
@@ -5222,8 +5216,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPoint* ref = (MAMultiPoint*) HEAP[@(refId)];
+          MAMultiPoint* ref = (MAMultiPoint*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.cross180Longitude;
@@ -5239,8 +5232,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[@(refId)];
+          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIImage* result = ref.icon;
@@ -5257,8 +5249,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[@(refId)];
+          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.alpha;
@@ -5274,8 +5265,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[@(refId)];
+          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.zoomLevel;
@@ -5291,8 +5281,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[@(refId)];
+          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MACoordinateBounds result = ref.bounds;
@@ -5311,8 +5300,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolygonRenderer* ref = (MAPolygonRenderer*) HEAP[@(refId)];
+          MAPolygonRenderer* ref = (MAPolygonRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAPolygon* result = ref.polygon;
@@ -5329,8 +5317,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[@(refId)];
+          MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAPinAnnotationColor result = ref.pinColor;
@@ -5346,8 +5333,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[@(refId)];
+          MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.animatesDrop;
@@ -5363,8 +5349,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapNode* ref = (MAHeatMapNode*) HEAP[@(refId)];
+          MAHeatMapNode* ref = (MAHeatMapNode*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.coordinate;
@@ -5383,8 +5368,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapNode* ref = (MAHeatMapNode*) HEAP[@(refId)];
+          MAHeatMapNode* ref = (MAHeatMapNode*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           float result = ref.intensity;
@@ -5400,8 +5384,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapGradient* ref = (MAHeatMapGradient*) HEAP[@(refId)];
+          MAHeatMapGradient* ref = (MAHeatMapGradient*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray<UIColor*>* result = ref.colors;
@@ -5424,8 +5407,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[@(refId)];
+          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray<MAHeatMapNode*>* result = ref.data;
@@ -5448,8 +5430,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[@(refId)];
+          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSInteger result = ref.radius;
@@ -5465,8 +5446,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[@(refId)];
+          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.opacity;
@@ -5482,8 +5462,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[@(refId)];
+          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAHeatMapGradient* result = ref.gradient;
@@ -5500,8 +5479,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[@(refId)];
+          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.allowRetinaAdapting;
@@ -5517,8 +5495,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapStatus* ref = (MAMapStatus*) HEAP[@(refId)];
+          MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.centerCoordinate;
@@ -5537,8 +5514,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapStatus* ref = (MAMapStatus*) HEAP[@(refId)];
+          MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.zoomLevel;
@@ -5554,8 +5530,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapStatus* ref = (MAMapStatus*) HEAP[@(refId)];
+          MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.rotationDegree;
@@ -5571,8 +5546,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapStatus* ref = (MAMapStatus*) HEAP[@(refId)];
+          MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.cameraDegree;
@@ -5588,8 +5562,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapStatus* ref = (MAMapStatus*) HEAP[@(refId)];
+          MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.screenAnchor;
@@ -5608,8 +5581,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[@(refId)];
+          MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.coordinate;
@@ -5628,8 +5600,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[@(refId)];
+          MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.lockedToScreen;
@@ -5645,8 +5616,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[@(refId)];
+          MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.lockedScreenPoint;
@@ -5665,8 +5635,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACircle* ref = (MACircle*) HEAP[@(refId)];
+          MACircle* ref = (MACircle*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray<id<MAOverlay>>* result = ref.hollowShapes;
@@ -5689,8 +5658,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACircle* ref = (MACircle*) HEAP[@(refId)];
+          MACircle* ref = (MACircle*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.coordinate;
@@ -5709,8 +5677,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACircle* ref = (MACircle*) HEAP[@(refId)];
+          MACircle* ref = (MACircle*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationDistance result = ref.radius;
@@ -5726,8 +5693,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACircle* ref = (MACircle*) HEAP[@(refId)];
+          MACircle* ref = (MACircle*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMapRect result = ref.boundingMapRect;
@@ -5746,8 +5712,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAArcRenderer* ref = (MAArcRenderer*) HEAP[@(refId)];
+          MAArcRenderer* ref = (MAArcRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAArc* result = ref.arc;
@@ -5764,8 +5729,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[@(refId)];
+          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.coordinate;
@@ -5784,8 +5748,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[@(refId)];
+          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.title;
@@ -5801,8 +5764,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[@(refId)];
+          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.subtitle;
@@ -5818,8 +5780,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSData* result = ref.styleData;
@@ -5836,8 +5797,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.styleId;
@@ -5853,8 +5813,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSData* result = ref.styleTextureData;
@@ -5871,8 +5830,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSData* result = ref.styleExtraData;
@@ -5889,8 +5847,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolygon* ref = (MAPolygon*) HEAP[@(refId)];
+          MAPolygon* ref = (MAPolygon*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray<id<MAOverlay>>* result = ref.hollowShapes;
@@ -5913,8 +5870,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlay* ref = (MAParticleOverlay*) HEAP[@(refId)];
+          MAParticleOverlay* ref = (MAParticleOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAParticleOverlayOptions* result = ref.overlayOption;
@@ -5931,8 +5887,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[@(refId)];
+          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMultiPolyline* result = ref.multiPolyline;
@@ -5949,8 +5904,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[@(refId)];
+          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray<UIColor*>* result = ref.strokeColors;
@@ -5973,8 +5927,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[@(refId)];
+          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.gradient;
@@ -5990,8 +5943,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[@(refId)];
+          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationDirection result = ref.movingDirection;
@@ -6007,8 +5959,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAOverlay> ref = (id<MAOverlay>) HEAP[@(refId)];
+          id<MAOverlay> ref = (id<MAOverlay>) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.coordinate;
@@ -6027,8 +5978,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAOverlay> ref = (id<MAOverlay>) HEAP[@(refId)];
+          id<MAOverlay> ref = (id<MAOverlay>) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMapRect result = ref.boundingMapRect;
@@ -6047,8 +5997,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[@(refId)];
+          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMultiPolyline* result = ref.multiPolyline;
@@ -6065,8 +6014,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[@(refId)];
+          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray* result = ref.strokeTextureImages;
@@ -6089,8 +6037,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineProvince* ref = (MAOfflineProvince*) HEAP[@(refId)];
+          MAOfflineProvince* ref = (MAOfflineProvince*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray* result = ref.cities;
@@ -6113,8 +6060,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[@(refId)];
+          MATileOverlayRenderer* ref = (MATileOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MATileOverlay* result = ref.tileOverlay;
@@ -6131,8 +6077,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineItem* ref = (MAOfflineItem*) HEAP[@(refId)];
+          MAOfflineItem* ref = (MAOfflineItem*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.name;
@@ -6148,8 +6093,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineItem* ref = (MAOfflineItem*) HEAP[@(refId)];
+          MAOfflineItem* ref = (MAOfflineItem*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.jianpin;
@@ -6165,8 +6109,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineItem* ref = (MAOfflineItem*) HEAP[@(refId)];
+          MAOfflineItem* ref = (MAOfflineItem*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.pinyin;
@@ -6182,8 +6125,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineItem* ref = (MAOfflineItem*) HEAP[@(refId)];
+          MAOfflineItem* ref = (MAOfflineItem*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.adcode;
@@ -6199,8 +6141,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineItem* ref = (MAOfflineItem*) HEAP[@(refId)];
+          MAOfflineItem* ref = (MAOfflineItem*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAOfflineItemStatus result = ref.itemStatus;
@@ -6216,8 +6157,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATouchPoi* ref = (MATouchPoi*) HEAP[@(refId)];
+          MATouchPoi* ref = (MATouchPoi*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.name;
@@ -6233,8 +6173,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATouchPoi* ref = (MATouchPoi*) HEAP[@(refId)];
+          MATouchPoi* ref = (MATouchPoi*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.coordinate;
@@ -6253,8 +6192,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATouchPoi* ref = (MATouchPoi*) HEAP[@(refId)];
+          MATouchPoi* ref = (MATouchPoi*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.uid;
@@ -6270,8 +6208,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[@(refId)];
+          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIImage* result = ref.icon;
@@ -6288,8 +6225,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[@(refId)];
+          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGSize result = ref.pointSize;
@@ -6308,8 +6244,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[@(refId)];
+          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.anchor;
@@ -6328,8 +6263,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[@(refId)];
+          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMultiPointOverlay* result = ref.multiPointOverlay;
@@ -6346,8 +6280,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorFloorInfo* ref = (MAIndoorFloorInfo*) HEAP[@(refId)];
+          MAIndoorFloorInfo* ref = (MAIndoorFloorInfo*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.floorName;
@@ -6363,8 +6296,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorFloorInfo* ref = (MAIndoorFloorInfo*) HEAP[@(refId)];
+          MAIndoorFloorInfo* ref = (MAIndoorFloorInfo*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           int result = ref.floorIndex;
@@ -6380,8 +6312,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorFloorInfo* ref = (MAIndoorFloorInfo*) HEAP[@(refId)];
+          MAIndoorFloorInfo* ref = (MAIndoorFloorInfo*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.floorNona;
@@ -6397,8 +6328,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorFloorInfo* ref = (MAIndoorFloorInfo*) HEAP[@(refId)];
+          MAIndoorFloorInfo* ref = (MAIndoorFloorInfo*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.isPark;
@@ -6414,8 +6344,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[@(refId)];
+          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.cnName;
@@ -6431,8 +6360,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[@(refId)];
+          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.enName;
@@ -6448,8 +6376,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[@(refId)];
+          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.poiID;
@@ -6465,8 +6392,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[@(refId)];
+          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.buildingType;
@@ -6482,8 +6408,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[@(refId)];
+          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           int result = ref.activeFloorIndex;
@@ -6499,8 +6424,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[@(refId)];
+          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           int result = ref.activeFloorInfoIndex;
@@ -6516,8 +6440,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[@(refId)];
+          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray* result = ref.floorInfo;
@@ -6540,8 +6463,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[@(refId)];
+          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           int result = ref.numberOfFloor;
@@ -6557,8 +6479,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[@(refId)];
+          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           int result = ref.numberOfParkFloor;
@@ -6574,8 +6495,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[@(refId)];
+          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAPolyline* result = ref.polyline;
@@ -6592,8 +6512,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[@(refId)];
+          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.is3DArrowLine;
@@ -6609,8 +6528,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[@(refId)];
+          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIColor* result = ref.sideColor;
@@ -6627,8 +6545,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAShape* ref = (MAShape*) HEAP[@(refId)];
+          MAShape* ref = (MAShape*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.title;
@@ -6644,8 +6561,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAShape* ref = (MAShape*) HEAP[@(refId)];
+          MAShape* ref = (MAShape*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.subtitle;
@@ -6661,8 +6577,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.reuseIdentifier;
@@ -6678,8 +6593,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSInteger result = ref.zIndex;
@@ -6695,8 +6609,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           id<MAAnnotation> result = ref.annotation;
@@ -6713,8 +6626,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIImage* result = ref.image;
@@ -6731,8 +6643,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MACustomCalloutView* result = ref.customCalloutView;
@@ -6749,8 +6660,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.centerOffset;
@@ -6769,8 +6679,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.calloutOffset;
@@ -6789,8 +6698,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.enabled;
@@ -6806,8 +6714,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.highlighted;
@@ -6823,8 +6730,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.selected;
@@ -6840,8 +6746,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.canShowCallout;
@@ -6857,8 +6762,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIView* result = ref.leftCalloutAccessoryView;
@@ -6875,8 +6779,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIView* result = ref.rightCalloutAccessoryView;
@@ -6893,8 +6796,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.draggable;
@@ -6910,8 +6812,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAAnnotationViewDragState result = ref.dragState;
@@ -6927,8 +6828,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGSize result = ref.tileSize;
@@ -6947,8 +6847,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSInteger result = ref.minimumZ;
@@ -6964,8 +6863,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSInteger result = ref.maximumZ;
@@ -6981,8 +6879,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.URLTemplate;
@@ -6998,8 +6895,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.canReplaceMapContent;
@@ -7015,8 +6911,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMapRect result = ref.boundingMapRect;
@@ -7035,11 +6930,82 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.disableOffScreenTileLoading;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MATileOverlayPath::get_x": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::get_x");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MATileOverlayPath ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          NSInteger result = ref.x;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MATileOverlayPath::get_y": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::get_y");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MATileOverlayPath ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          NSInteger result = ref.y;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MATileOverlayPath::get_z": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::get_z");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MATileOverlayPath ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          NSInteger result = ref.z;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MATileOverlayPath::get_contentScaleFactor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::get_contentScaleFactor");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MATileOverlayPath ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          CGFloat result = ref.contentScaleFactor;
       
           // 返回值: Value
           methodResult(@(result));
@@ -7052,8 +7018,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[@(refId)];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIView* result = ref.customView;
@@ -7070,8 +7035,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[@(refId)];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSObject* result = ref.userData;
@@ -7088,8 +7052,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineItemCommonCity* ref = (MAOfflineItemCommonCity*) HEAP[@(refId)];
+          MAOfflineItemCommonCity* ref = (MAOfflineItemCommonCity*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAOfflineItem* result = ref.province;
@@ -7106,8 +7069,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray<MAOfflineProvince*>* result = ref.provinces;
@@ -7130,8 +7092,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray<MAOfflineItemMunicipality*>* result = ref.municipalities;
@@ -7154,8 +7115,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAOfflineItemNationWide* result = ref.nationWide;
@@ -7172,8 +7132,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray<MAOfflineCity*>* result = ref.cities;
@@ -7196,8 +7155,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.version;
@@ -7213,8 +7171,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
+          MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray* result = ref.offlineCities;
@@ -7237,8 +7194,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACircleRenderer* ref = (MACircleRenderer*) HEAP[@(refId)];
+          MACircleRenderer* ref = (MACircleRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MACircle* result = ref.circle;
@@ -7255,8 +7211,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayRenderer* ref = (MAParticleOverlayRenderer*) HEAP[@(refId)];
+          MAParticleOverlayRenderer* ref = (MAParticleOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAParticleOverlay* result = ref.particleOverlay;
@@ -7266,6 +7221,240 @@ extern BOOL enableLog;
           methodResult(@((result).hash));
       },
       
+      @"MACoordinateBounds::get_northEast": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateBounds::get_northEast");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MACoordinateBounds ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          CLLocationCoordinate2D result = ref.northEast;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MACoordinateBounds::get_southWest": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateBounds::get_southWest");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MACoordinateBounds ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          CLLocationCoordinate2D result = ref.southWest;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MACoordinateSpan::get_latitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateSpan::get_latitudeDelta");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MACoordinateSpan ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          CLLocationDegrees result = ref.latitudeDelta;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MACoordinateSpan::get_longitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateSpan::get_longitudeDelta");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MACoordinateSpan ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          CLLocationDegrees result = ref.longitudeDelta;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MACoordinateRegion::get_center": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateRegion::get_center");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MACoordinateRegion ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          CLLocationCoordinate2D result = ref.center;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MACoordinateRegion::get_span": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateRegion::get_span");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MACoordinateRegion ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          MACoordinateSpan result = ref.span;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateSpan)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MAMapPoint::get_x": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapPoint::get_x");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MAMapPoint ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          double result = ref.x;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MAMapPoint::get_y": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapPoint::get_y");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MAMapPoint ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          double result = ref.y;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MAMapSize::get_width": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapSize::get_width");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MAMapSize ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          double result = ref.width;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MAMapSize::get_height": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapSize::get_height");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MAMapSize ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          double result = ref.height;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
+      @"MAMapRect::get_origin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapRect::get_origin");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MAMapRect ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          MAMapPoint result = ref.origin;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
+      @"MAMapRect::get_size": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapRect::get_size");
+          }
+      
+          // ref object
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MAMapRect ref;
+          [dataValue getValue:&ref];
+      
+          // invoke native method
+          MAMapSize result = ref.size;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapSize)];
+          HEAP[@(resultValue.hash)] = resultValue;
+      
+          methodResult(@(resultValue.hash));
+      },
+      
       @"MAParticleOverlayOptions::get_visibile": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -7273,8 +7462,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.visibile;
@@ -7290,8 +7478,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.loop;
@@ -7307,8 +7494,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSInteger result = ref.maxParticles;
@@ -7324,8 +7510,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIImage* result = ref.icon;
@@ -7342,8 +7527,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGSize result = ref.startParticleSize;
@@ -7362,8 +7546,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           id<MAParticleColorGenerate> result = ref.particleStartColor;
@@ -7380,8 +7563,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           id<MAParticleVelocityGenerate> result = ref.particleStartSpeed;
@@ -7398,8 +7580,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAParticleEmissionModule* result = ref.particleEmissionModule;
@@ -7416,8 +7597,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           id<MAParticleShapeModule> result = ref.particleShapeModule;
@@ -7434,8 +7614,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAParticleOverLifeModule* result = ref.particleOverLifeModule;
@@ -7452,8 +7631,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           id<MAOverlay> result = ref.overlay;
@@ -7470,8 +7648,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint* result = ref.glPoints;
@@ -7490,8 +7667,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSUInteger result = ref.glPointCount;
@@ -7507,8 +7683,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIImage* result = ref.strokeImage;
@@ -7525,8 +7700,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.alpha;
@@ -7542,8 +7716,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.contentScale;
@@ -7559,8 +7732,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocation* ref = (MAUserLocation*) HEAP[@(refId)];
+          MAUserLocation* ref = (MAUserLocation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.updating;
@@ -7576,8 +7748,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocation* ref = (MAUserLocation*) HEAP[@(refId)];
+          MAUserLocation* ref = (MAUserLocation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocation* result = ref.location;
@@ -7594,8 +7765,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocation* ref = (MAUserLocation*) HEAP[@(refId)];
+          MAUserLocation* ref = (MAUserLocation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLHeading* result = ref.heading;
@@ -7612,8 +7782,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[@(refId)];
+          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.coordinate;
@@ -7632,8 +7801,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[@(refId)];
+          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.customID;
@@ -7649,8 +7817,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[@(refId)];
+          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.title;
@@ -7666,8 +7833,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[@(refId)];
+          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.subtitle;
@@ -7683,8 +7849,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointOverlay* ref = (MAMultiPointOverlay*) HEAP[@(refId)];
+          MAMultiPointOverlay* ref = (MAMultiPointOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray<MAMultiPointItem*>* result = ref.items;
@@ -7707,8 +7872,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.height;
@@ -7724,8 +7888,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.heightScale;
@@ -7741,8 +7904,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIColor* result = ref.topColor;
@@ -7759,8 +7921,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIColor* result = ref.sideColor;
@@ -7777,8 +7938,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.visibile;
@@ -7794,8 +7954,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[@(refId)];
+          MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MACustomBuildingOverlayOption* result = ref.defaultOption;
@@ -7812,8 +7971,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[@(refId)];
+          MACustomBuildingOverlay* ref = (MACustomBuildingOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray<MACustomBuildingOverlayOption*>* result = ref.customOptions;
@@ -7836,8 +7994,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATracePoint* ref = (MATracePoint*) HEAP[@(refId)];
+          MATracePoint* ref = (MATracePoint*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationDegrees result = ref.latitude;
@@ -7853,8 +8010,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATracePoint* ref = (MATracePoint*) HEAP[@(refId)];
+          MATracePoint* ref = (MATracePoint*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationDegrees result = ref.longitude;
@@ -7870,8 +8026,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATraceLocation* ref = (MATraceLocation*) HEAP[@(refId)];
+          MATraceLocation* ref = (MATraceLocation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.loc;
@@ -7890,8 +8045,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATraceLocation* ref = (MATraceLocation*) HEAP[@(refId)];
+          MATraceLocation* ref = (MATraceLocation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           double result = ref.angle;
@@ -7907,8 +8061,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATraceLocation* ref = (MATraceLocation*) HEAP[@(refId)];
+          MATraceLocation* ref = (MATraceLocation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           double result = ref.speed;
@@ -7924,8 +8077,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATraceLocation* ref = (MATraceLocation*) HEAP[@(refId)];
+          MATraceLocation* ref = (MATraceLocation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           double result = ref.time;
@@ -7941,8 +8093,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAArc* ref = (MAArc*) HEAP[@(refId)];
+          MAArc* ref = (MAArc*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.startCoordinate;
@@ -7961,8 +8112,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAArc* ref = (MAArc*) HEAP[@(refId)];
+          MAArc* ref = (MAArc*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.passedCoordinate;
@@ -7981,8 +8131,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAArc* ref = (MAArc*) HEAP[@(refId)];
+          MAArc* ref = (MAArc*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.endCoordinate;
@@ -8001,8 +8150,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAArc* ref = (MAArc*) HEAP[@(refId)];
+          MAArc* ref = (MAArc*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMapRect result = ref.boundingMapRect;
@@ -8021,8 +8169,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsAccuracyRing;
@@ -8038,8 +8185,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsHeadingIndicator;
@@ -8055,8 +8201,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIColor* result = ref.fillColor;
@@ -8073,8 +8218,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIColor* result = ref.strokeColor;
@@ -8091,8 +8235,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.lineWidth;
@@ -8108,8 +8251,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIColor* result = ref.locationDotBgColor;
@@ -8126,8 +8268,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIColor* result = ref.locationDotFillColor;
@@ -8144,8 +8285,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.enablePulseAnnimation;
@@ -8161,8 +8301,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIImage* result = ref.image;
@@ -8179,8 +8318,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMapType result = ref.mapType;
@@ -8196,8 +8334,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.centerCoordinate;
@@ -8216,8 +8353,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MACoordinateRegion result = ref.region;
@@ -8236,8 +8372,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMapRect result = ref.visibleMapRect;
@@ -8256,8 +8391,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MACoordinateRegion result = ref.limitRegion;
@@ -8276,8 +8410,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMapRect result = ref.limitMapRect;
@@ -8296,8 +8429,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.zoomLevel;
@@ -8313,8 +8445,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.minZoomLevel;
@@ -8330,8 +8461,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.maxZoomLevel;
@@ -8347,8 +8477,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.rotationDegree;
@@ -8364,8 +8493,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.cameraDegree;
@@ -8381,8 +8509,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.zoomingInPivotsAroundAnchorPoint;
@@ -8398,8 +8525,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.zoomEnabled;
@@ -8415,8 +8541,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.scrollEnabled;
@@ -8432,8 +8557,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.rotateEnabled;
@@ -8449,8 +8573,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.rotateCameraEnabled;
@@ -8466,8 +8589,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.skyModelEnable;
@@ -8483,8 +8605,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsBuildings;
@@ -8500,8 +8621,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsLabels;
@@ -8517,8 +8637,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showTraffic;
@@ -8534,8 +8653,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.trafficRatio;
@@ -8551,8 +8669,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.touchPOIEnabled;
@@ -8568,8 +8685,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsCompass;
@@ -8585,8 +8701,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.compassOrigin;
@@ -8605,8 +8720,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGSize result = ref.compassSize;
@@ -8625,8 +8739,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsScale;
@@ -8642,8 +8755,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.scaleOrigin;
@@ -8662,8 +8774,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGSize result = ref.scaleSize;
@@ -8682,8 +8793,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.logoCenter;
@@ -8702,8 +8812,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGSize result = ref.logoSize;
@@ -8722,8 +8831,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           double result = ref.metersPerPointForCurrentZoom;
@@ -8739,8 +8847,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.isAbroad;
@@ -8756,8 +8863,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSUInteger result = ref.maxRenderFrame;
@@ -8773,8 +8879,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.isAllowDecreaseFrame;
@@ -8790,8 +8895,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.openGLESDisabled;
@@ -8807,8 +8911,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.screenAnchor;
@@ -8827,8 +8930,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray* result = ref.annotations;
@@ -8851,8 +8953,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray* result = ref.selectedAnnotations;
@@ -8875,8 +8976,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGRect result = ref.annotationVisibleRect;
@@ -8895,8 +8995,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.allowsAnnotationViewSorting;
@@ -8912,8 +9011,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsUserLocation;
@@ -8929,8 +9027,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAUserLocation* result = ref.userLocation;
@@ -8947,8 +9044,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.customizeUserLocationAccuracyCircleRepresentation;
@@ -8964,8 +9060,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MACircle* result = ref.userLocationAccuracyCircle;
@@ -8982,8 +9077,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAUserTrackingMode result = ref.userTrackingMode;
@@ -8999,8 +9093,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.userLocationVisible;
@@ -9016,8 +9109,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationDistance result = ref.distanceFilter;
@@ -9033,8 +9125,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationAccuracy result = ref.desiredAccuracy;
@@ -9050,8 +9141,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationDegrees result = ref.headingFilter;
@@ -9067,8 +9157,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.pausesLocationUpdatesAutomatically;
@@ -9084,8 +9173,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.allowsBackgroundLocationUpdates;
@@ -9101,8 +9189,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray* result = ref.overlays;
@@ -9125,8 +9212,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsIndoorMap;
@@ -9142,8 +9228,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsIndoorMapControl;
@@ -9159,8 +9244,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGSize result = ref.indoorMapControlSize;
@@ -9179,8 +9263,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.customMapStyleEnabled;
@@ -9196,8 +9279,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIColor* result = ref.fillColor;
@@ -9214,8 +9296,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIColor* result = ref.strokeColor;
@@ -9232,8 +9313,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.lineWidth;
@@ -9249,8 +9329,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MALineJoinType result = ref.lineJoinType;
@@ -9266,8 +9345,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MALineCapType result = ref.lineCapType;
@@ -9283,8 +9361,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.miterLimit;
@@ -9300,8 +9377,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.lineDash;
@@ -9317,8 +9393,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MALineDashType result = ref.lineDashType;
@@ -9334,8 +9409,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAGroundOverlayRenderer* ref = (MAGroundOverlayRenderer*) HEAP[@(refId)];
+          MAGroundOverlayRenderer* ref = (MAGroundOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAGroundOverlay* result = ref.groundOverlay;
@@ -9352,8 +9426,7 @@ extern BOOL enableLog;
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlayRenderer* ref = (MACustomBuildingOverlayRenderer*) HEAP[@(refId)];
+          MACustomBuildingOverlayRenderer* ref = (MACustomBuildingOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MACustomBuildingOverlay* result = ref.customBuildingOverlay;
@@ -9373,8 +9446,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat alpha = [args[@"alpha"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[@(refId)];
+          // ref
+          MAGroundOverlay* ref = (MAGroundOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.alpha = alpha;
           methodResult(@"success");
@@ -9390,8 +9463,8 @@ extern BOOL enableLog;
           // enum arg
           MAPinAnnotationColor pinColor = (MAPinAnnotationColor) [args[@"pinColor"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.pinColor = pinColor;
           methodResult(@"success");
@@ -9407,8 +9480,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL animatesDrop = [args[@"animatesDrop"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.animatesDrop = animatesDrop;
           methodResult(@"success");
@@ -9426,8 +9499,8 @@ extern BOOL enableLog;
           CLLocationCoordinate2D coordinate;
           [coordinateValue getValue:&coordinate];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapNode* ref = (MAHeatMapNode*) HEAP[@(refId)];
+          // ref
+          MAHeatMapNode* ref = (MAHeatMapNode*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.coordinate = coordinate;
           methodResult(@"success");
@@ -9443,8 +9516,8 @@ extern BOOL enableLog;
           // jsonable arg
           float intensity = [args[@"intensity"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapNode* ref = (MAHeatMapNode*) HEAP[@(refId)];
+          // ref
+          MAHeatMapNode* ref = (MAHeatMapNode*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.intensity = intensity;
           methodResult(@"success");
@@ -9465,8 +9538,8 @@ extern BOOL enableLog;
               [data addObject:item];
           }
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[@(refId)];
+          // ref
+          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.data = data;
           methodResult(@"success");
@@ -9482,8 +9555,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSInteger radius = [args[@"radius"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[@(refId)];
+          // ref
+          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.radius = radius;
           methodResult(@"success");
@@ -9499,8 +9572,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat opacity = [args[@"opacity"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[@(refId)];
+          // ref
+          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.opacity = opacity;
           methodResult(@"success");
@@ -9516,8 +9589,8 @@ extern BOOL enableLog;
           // ref arg
           MAHeatMapGradient* gradient = (MAHeatMapGradient*) HEAP[@([args[@"gradient"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[@(refId)];
+          // ref
+          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.gradient = gradient;
           methodResult(@"success");
@@ -9533,8 +9606,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL allowRetinaAdapting = [args[@"allowRetinaAdapting"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[@(refId)];
+          // ref
+          MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.allowRetinaAdapting = allowRetinaAdapting;
           methodResult(@"success");
@@ -9552,8 +9625,8 @@ extern BOOL enableLog;
           CLLocationCoordinate2D centerCoordinate;
           [centerCoordinateValue getValue:&centerCoordinate];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapStatus* ref = (MAMapStatus*) HEAP[@(refId)];
+          // ref
+          MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.centerCoordinate = centerCoordinate;
           methodResult(@"success");
@@ -9569,8 +9642,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapStatus* ref = (MAMapStatus*) HEAP[@(refId)];
+          // ref
+          MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.zoomLevel = zoomLevel;
           methodResult(@"success");
@@ -9586,8 +9659,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapStatus* ref = (MAMapStatus*) HEAP[@(refId)];
+          // ref
+          MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.rotationDegree = rotationDegree;
           methodResult(@"success");
@@ -9603,8 +9676,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat cameraDegree = [args[@"cameraDegree"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapStatus* ref = (MAMapStatus*) HEAP[@(refId)];
+          // ref
+          MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.cameraDegree = cameraDegree;
           methodResult(@"success");
@@ -9622,8 +9695,8 @@ extern BOOL enableLog;
           CGPoint screenAnchor;
           [screenAnchorValue getValue:&screenAnchor];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapStatus* ref = (MAMapStatus*) HEAP[@(refId)];
+          // ref
+          MAMapStatus* ref = (MAMapStatus*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.screenAnchor = screenAnchor;
           methodResult(@"success");
@@ -9641,8 +9714,8 @@ extern BOOL enableLog;
           CLLocationCoordinate2D coordinate;
           [coordinateValue getValue:&coordinate];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[@(refId)];
+          // ref
+          MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.coordinate = coordinate;
           methodResult(@"success");
@@ -9658,8 +9731,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL lockedToScreen = [args[@"lockedToScreen"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[@(refId)];
+          // ref
+          MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.lockedToScreen = lockedToScreen;
           methodResult(@"success");
@@ -9677,8 +9750,8 @@ extern BOOL enableLog;
           CGPoint lockedScreenPoint;
           [lockedScreenPointValue getValue:&lockedScreenPoint];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[@(refId)];
+          // ref
+          MAPointAnnotation* ref = (MAPointAnnotation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.lockedScreenPoint = lockedScreenPoint;
           methodResult(@"success");
@@ -9699,8 +9772,8 @@ extern BOOL enableLog;
               [hollowShapes addObject:item];
           }
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACircle* ref = (MACircle*) HEAP[@(refId)];
+          // ref
+          MACircle* ref = (MACircle*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.hollowShapes = hollowShapes;
           methodResult(@"success");
@@ -9718,8 +9791,8 @@ extern BOOL enableLog;
           CLLocationCoordinate2D coordinate;
           [coordinateValue getValue:&coordinate];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACircle* ref = (MACircle*) HEAP[@(refId)];
+          // ref
+          MACircle* ref = (MACircle*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.coordinate = coordinate;
           methodResult(@"success");
@@ -9735,8 +9808,8 @@ extern BOOL enableLog;
           // jsonable arg
           CLLocationDistance radius = [args[@"radius"] doubleValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACircle* ref = (MACircle*) HEAP[@(refId)];
+          // ref
+          MACircle* ref = (MACircle*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.radius = radius;
           methodResult(@"success");
@@ -9752,8 +9825,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSString* title = (NSString*) args[@"title"];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[@(refId)];
+          // ref
+          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.title = title;
           methodResult(@"success");
@@ -9769,8 +9842,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSString* subtitle = (NSString*) args[@"subtitle"];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[@(refId)];
+          // ref
+          id<MAAnnotation> ref = (id<MAAnnotation>) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.subtitle = subtitle;
           methodResult(@"success");
@@ -9786,8 +9859,8 @@ extern BOOL enableLog;
           // ref arg
           NSData* styleData = (NSData*) HEAP[@([args[@"styleData"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+          // ref
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.styleData = styleData;
           methodResult(@"success");
@@ -9803,8 +9876,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSString* styleId = (NSString*) args[@"styleId"];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+          // ref
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.styleId = styleId;
           methodResult(@"success");
@@ -9820,8 +9893,8 @@ extern BOOL enableLog;
           // ref arg
           NSData* styleTextureData = (NSData*) HEAP[@([args[@"styleTextureData"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+          // ref
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.styleTextureData = styleTextureData;
           methodResult(@"success");
@@ -9837,8 +9910,8 @@ extern BOOL enableLog;
           // ref arg
           NSData* styleExtraData = (NSData*) HEAP[@([args[@"styleExtraData"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[@(refId)];
+          // ref
+          MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.styleExtraData = styleExtraData;
           methodResult(@"success");
@@ -9859,8 +9932,8 @@ extern BOOL enableLog;
               [hollowShapes addObject:item];
           }
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolygon* ref = (MAPolygon*) HEAP[@(refId)];
+          // ref
+          MAPolygon* ref = (MAPolygon*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.hollowShapes = hollowShapes;
           methodResult(@"success");
@@ -9881,8 +9954,8 @@ extern BOOL enableLog;
               [strokeColors addObject:item];
           }
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[@(refId)];
+          // ref
+          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.strokeColors = strokeColors;
           methodResult(@"success");
@@ -9898,8 +9971,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL gradient = [args[@"gradient"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[@(refId)];
+          // ref
+          MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.gradient = gradient;
           methodResult(@"success");
@@ -9915,8 +9988,8 @@ extern BOOL enableLog;
           // jsonable arg
           CLLocationDirection movingDirection = [args[@"movingDirection"] doubleValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[@(refId)];
+          // ref
+          MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.movingDirection = movingDirection;
           methodResult(@"success");
@@ -9937,8 +10010,8 @@ extern BOOL enableLog;
               [strokeTextureImages addObject:item];
           }
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[@(refId)];
+          // ref
+          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.strokeTextureImages = strokeTextureImages;
           methodResult(@"success");
@@ -9953,8 +10026,8 @@ extern BOOL enableLog;
           // args
       
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATraceManager* ref = (MATraceManager*) HEAP[@(refId)];
+          // ref
+          MATraceManager* ref = (MATraceManager*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.delegate = self;
           methodResult(@"success");
@@ -9969,8 +10042,8 @@ extern BOOL enableLog;
           // args
       
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[@(refId)];
+          // ref
+          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.delegate = self;
           methodResult(@"success");
@@ -9986,8 +10059,8 @@ extern BOOL enableLog;
           // ref arg
           UIImage* icon = (UIImage*) HEAP[@([args[@"icon"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[@(refId)];
+          // ref
+          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.icon = icon;
           methodResult(@"success");
@@ -10005,8 +10078,8 @@ extern BOOL enableLog;
           CGSize pointSize;
           [pointSizeValue getValue:&pointSize];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[@(refId)];
+          // ref
+          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.pointSize = pointSize;
           methodResult(@"success");
@@ -10024,8 +10097,8 @@ extern BOOL enableLog;
           CGPoint anchor;
           [anchorValue getValue:&anchor];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[@(refId)];
+          // ref
+          MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.anchor = anchor;
           methodResult(@"success");
@@ -10041,8 +10114,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL is3DArrowLine = [args[@"is3DArrowLine"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[@(refId)];
+          // ref
+          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.is3DArrowLine = is3DArrowLine;
           methodResult(@"success");
@@ -10058,8 +10131,8 @@ extern BOOL enableLog;
           // ref arg
           UIColor* sideColor = (UIColor*) HEAP[@([args[@"sideColor"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[@(refId)];
+          // ref
+          MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.sideColor = sideColor;
           methodResult(@"success");
@@ -10075,8 +10148,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSString* title = (NSString*) args[@"title"];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAShape* ref = (MAShape*) HEAP[@(refId)];
+          // ref
+          MAShape* ref = (MAShape*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.title = title;
           methodResult(@"success");
@@ -10092,8 +10165,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSString* subtitle = (NSString*) args[@"subtitle"];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAShape* ref = (MAShape*) HEAP[@(refId)];
+          // ref
+          MAShape* ref = (MAShape*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.subtitle = subtitle;
           methodResult(@"success");
@@ -10109,8 +10182,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSInteger zIndex = [args[@"zIndex"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.zIndex = zIndex;
           methodResult(@"success");
@@ -10126,8 +10199,8 @@ extern BOOL enableLog;
           // ref arg
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.annotation = annotation;
           methodResult(@"success");
@@ -10143,8 +10216,8 @@ extern BOOL enableLog;
           // ref arg
           UIImage* image = (UIImage*) HEAP[@([args[@"image"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.image = image;
           methodResult(@"success");
@@ -10160,8 +10233,8 @@ extern BOOL enableLog;
           // ref arg
           MACustomCalloutView* customCalloutView = (MACustomCalloutView*) HEAP[@([args[@"customCalloutView"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.customCalloutView = customCalloutView;
           methodResult(@"success");
@@ -10179,8 +10252,8 @@ extern BOOL enableLog;
           CGPoint centerOffset;
           [centerOffsetValue getValue:&centerOffset];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.centerOffset = centerOffset;
           methodResult(@"success");
@@ -10198,8 +10271,8 @@ extern BOOL enableLog;
           CGPoint calloutOffset;
           [calloutOffsetValue getValue:&calloutOffset];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.calloutOffset = calloutOffset;
           methodResult(@"success");
@@ -10215,8 +10288,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL enabled = [args[@"enabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.enabled = enabled;
           methodResult(@"success");
@@ -10232,8 +10305,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL highlighted = [args[@"highlighted"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.highlighted = highlighted;
           methodResult(@"success");
@@ -10249,8 +10322,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL selected = [args[@"selected"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.selected = selected;
           methodResult(@"success");
@@ -10266,8 +10339,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL canShowCallout = [args[@"canShowCallout"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.canShowCallout = canShowCallout;
           methodResult(@"success");
@@ -10283,8 +10356,8 @@ extern BOOL enableLog;
           // ref arg
           UIView* leftCalloutAccessoryView = (UIView*) HEAP[@([args[@"leftCalloutAccessoryView"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.leftCalloutAccessoryView = leftCalloutAccessoryView;
           methodResult(@"success");
@@ -10300,8 +10373,8 @@ extern BOOL enableLog;
           // ref arg
           UIView* rightCalloutAccessoryView = (UIView*) HEAP[@([args[@"rightCalloutAccessoryView"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.rightCalloutAccessoryView = rightCalloutAccessoryView;
           methodResult(@"success");
@@ -10317,8 +10390,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL draggable = [args[@"draggable"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.draggable = draggable;
           methodResult(@"success");
@@ -10334,8 +10407,8 @@ extern BOOL enableLog;
           // enum arg
           MAAnnotationViewDragState dragState = (MAAnnotationViewDragState) [args[@"dragState"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.dragState = dragState;
           methodResult(@"success");
@@ -10353,8 +10426,8 @@ extern BOOL enableLog;
           CGSize tileSize;
           [tileSizeValue getValue:&tileSize];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          // ref
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.tileSize = tileSize;
           methodResult(@"success");
@@ -10370,8 +10443,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSInteger minimumZ = [args[@"minimumZ"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          // ref
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.minimumZ = minimumZ;
           methodResult(@"success");
@@ -10387,8 +10460,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSInteger maximumZ = [args[@"maximumZ"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          // ref
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.maximumZ = maximumZ;
           methodResult(@"success");
@@ -10404,8 +10477,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL canReplaceMapContent = [args[@"canReplaceMapContent"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          // ref
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.canReplaceMapContent = canReplaceMapContent;
           methodResult(@"success");
@@ -10423,8 +10496,8 @@ extern BOOL enableLog;
           MAMapRect boundingMapRect;
           [boundingMapRectValue getValue:&boundingMapRect];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          // ref
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.boundingMapRect = boundingMapRect;
           methodResult(@"success");
@@ -10440,10 +10513,86 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL disableOffScreenTileLoading = [args[@"disableOffScreenTileLoading"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATileOverlay* ref = (MATileOverlay*) HEAP[@(refId)];
+          // ref
+          MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.disableOffScreenTileLoading = disableOffScreenTileLoading;
+          methodResult(@"success");
+      },
+      
+      @"MATileOverlayPath::set_x": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::set_x");
+          }
+      
+          // args
+          // jsonable arg
+          NSInteger x = [args[@"x"] integerValue];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MATileOverlayPath ref;
+          [dataValue getValue:&ref];
+      
+          ref.x = x;
+          methodResult(@"success");
+      },
+      
+      @"MATileOverlayPath::set_y": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::set_y");
+          }
+      
+          // args
+          // jsonable arg
+          NSInteger y = [args[@"y"] integerValue];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MATileOverlayPath ref;
+          [dataValue getValue:&ref];
+      
+          ref.y = y;
+          methodResult(@"success");
+      },
+      
+      @"MATileOverlayPath::set_z": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::set_z");
+          }
+      
+          // args
+          // jsonable arg
+          NSInteger z = [args[@"z"] integerValue];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MATileOverlayPath ref;
+          [dataValue getValue:&ref];
+      
+          ref.z = z;
+          methodResult(@"success");
+      },
+      
+      @"MATileOverlayPath::set_contentScaleFactor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MATileOverlayPath::set_contentScaleFactor");
+          }
+      
+          // args
+          // jsonable arg
+          CGFloat contentScaleFactor = [args[@"contentScaleFactor"] floatValue];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MATileOverlayPath ref;
+          [dataValue getValue:&ref];
+      
+          ref.contentScaleFactor = contentScaleFactor;
           methodResult(@"success");
       },
       
@@ -10457,8 +10606,8 @@ extern BOOL enableLog;
           // ref arg
           id userData = (id) HEAP[@([args[@"userData"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[@(refId)];
+          // ref
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.userData = userData;
           methodResult(@"success");
@@ -10474,10 +10623,250 @@ extern BOOL enableLog;
           // ref arg
           MAOfflineItem* province = (MAOfflineItem*) HEAP[@([args[@"province"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineItemCommonCity* ref = (MAOfflineItemCommonCity*) HEAP[@(refId)];
+          // ref
+          MAOfflineItemCommonCity* ref = (MAOfflineItemCommonCity*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.province = province;
+          methodResult(@"success");
+      },
+      
+      @"MACoordinateBounds::set_northEast": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateBounds::set_northEast");
+          }
+      
+          // args
+          // struct arg
+          NSValue* northEastValue = (NSValue*) HEAP[@([args[@"northEast"] integerValue])];
+          CLLocationCoordinate2D northEast;
+          [northEastValue getValue:&northEast];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MACoordinateBounds ref;
+          [dataValue getValue:&ref];
+      
+          ref.northEast = northEast;
+          methodResult(@"success");
+      },
+      
+      @"MACoordinateBounds::set_southWest": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateBounds::set_southWest");
+          }
+      
+          // args
+          // struct arg
+          NSValue* southWestValue = (NSValue*) HEAP[@([args[@"southWest"] integerValue])];
+          CLLocationCoordinate2D southWest;
+          [southWestValue getValue:&southWest];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MACoordinateBounds ref;
+          [dataValue getValue:&ref];
+      
+          ref.southWest = southWest;
+          methodResult(@"success");
+      },
+      
+      @"MACoordinateSpan::set_latitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateSpan::set_latitudeDelta");
+          }
+      
+          // args
+          // jsonable arg
+          CLLocationDegrees latitudeDelta = [args[@"latitudeDelta"] doubleValue];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MACoordinateSpan ref;
+          [dataValue getValue:&ref];
+      
+          ref.latitudeDelta = latitudeDelta;
+          methodResult(@"success");
+      },
+      
+      @"MACoordinateSpan::set_longitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateSpan::set_longitudeDelta");
+          }
+      
+          // args
+          // jsonable arg
+          CLLocationDegrees longitudeDelta = [args[@"longitudeDelta"] doubleValue];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MACoordinateSpan ref;
+          [dataValue getValue:&ref];
+      
+          ref.longitudeDelta = longitudeDelta;
+          methodResult(@"success");
+      },
+      
+      @"MACoordinateRegion::set_center": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateRegion::set_center");
+          }
+      
+          // args
+          // struct arg
+          NSValue* centerValue = (NSValue*) HEAP[@([args[@"center"] integerValue])];
+          CLLocationCoordinate2D center;
+          [centerValue getValue:&center];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MACoordinateRegion ref;
+          [dataValue getValue:&ref];
+      
+          ref.center = center;
+          methodResult(@"success");
+      },
+      
+      @"MACoordinateRegion::set_span": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MACoordinateRegion::set_span");
+          }
+      
+          // args
+          // struct arg
+          NSValue* spanValue = (NSValue*) HEAP[@([args[@"span"] integerValue])];
+          MACoordinateSpan span;
+          [spanValue getValue:&span];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MACoordinateRegion ref;
+          [dataValue getValue:&ref];
+      
+          ref.span = span;
+          methodResult(@"success");
+      },
+      
+      @"MAMapPoint::set_x": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapPoint::set_x");
+          }
+      
+          // args
+          // jsonable arg
+          double x = [args[@"x"] doubleValue];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MAMapPoint ref;
+          [dataValue getValue:&ref];
+      
+          ref.x = x;
+          methodResult(@"success");
+      },
+      
+      @"MAMapPoint::set_y": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapPoint::set_y");
+          }
+      
+          // args
+          // jsonable arg
+          double y = [args[@"y"] doubleValue];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MAMapPoint ref;
+          [dataValue getValue:&ref];
+      
+          ref.y = y;
+          methodResult(@"success");
+      },
+      
+      @"MAMapSize::set_width": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapSize::set_width");
+          }
+      
+          // args
+          // jsonable arg
+          double width = [args[@"width"] doubleValue];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MAMapSize ref;
+          [dataValue getValue:&ref];
+      
+          ref.width = width;
+          methodResult(@"success");
+      },
+      
+      @"MAMapSize::set_height": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapSize::set_height");
+          }
+      
+          // args
+          // jsonable arg
+          double height = [args[@"height"] doubleValue];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MAMapSize ref;
+          [dataValue getValue:&ref];
+      
+          ref.height = height;
+          methodResult(@"success");
+      },
+      
+      @"MAMapRect::set_origin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapRect::set_origin");
+          }
+      
+          // args
+          // struct arg
+          NSValue* originValue = (NSValue*) HEAP[@([args[@"origin"] integerValue])];
+          MAMapPoint origin;
+          [originValue getValue:&origin];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MAMapRect ref;
+          [dataValue getValue:&ref];
+      
+          ref.origin = origin;
+          methodResult(@"success");
+      },
+      
+      @"MAMapRect::set_size": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapRect::set_size");
+          }
+      
+          // args
+          // struct arg
+          NSValue* sizeValue = (NSValue*) HEAP[@([args[@"size"] integerValue])];
+          MAMapSize size;
+          [sizeValue getValue:&size];
+      
+          // ref
+          NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) args[@"refId"]];
+          MAMapRect ref;
+          [dataValue getValue:&ref];
+      
+          ref.size = size;
           methodResult(@"success");
       },
       
@@ -10491,8 +10880,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL visibile = [args[@"visibile"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          // ref
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.visibile = visibile;
           methodResult(@"success");
@@ -10508,8 +10897,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL loop = [args[@"loop"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          // ref
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.loop = loop;
           methodResult(@"success");
@@ -10525,8 +10914,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSInteger maxParticles = [args[@"maxParticles"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          // ref
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.maxParticles = maxParticles;
           methodResult(@"success");
@@ -10542,8 +10931,8 @@ extern BOOL enableLog;
           // ref arg
           UIImage* icon = (UIImage*) HEAP[@([args[@"icon"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          // ref
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.icon = icon;
           methodResult(@"success");
@@ -10561,8 +10950,8 @@ extern BOOL enableLog;
           CGSize startParticleSize;
           [startParticleSizeValue getValue:&startParticleSize];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          // ref
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.startParticleSize = startParticleSize;
           methodResult(@"success");
@@ -10578,8 +10967,8 @@ extern BOOL enableLog;
           // ref arg
           id<MAParticleColorGenerate> particleStartColor = (id<MAParticleColorGenerate>) HEAP[@([args[@"particleStartColor"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          // ref
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.particleStartColor = particleStartColor;
           methodResult(@"success");
@@ -10595,8 +10984,8 @@ extern BOOL enableLog;
           // ref arg
           id<MAParticleVelocityGenerate> particleStartSpeed = (id<MAParticleVelocityGenerate>) HEAP[@([args[@"particleStartSpeed"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          // ref
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.particleStartSpeed = particleStartSpeed;
           methodResult(@"success");
@@ -10612,8 +11001,8 @@ extern BOOL enableLog;
           // ref arg
           MAParticleEmissionModule* particleEmissionModule = (MAParticleEmissionModule*) HEAP[@([args[@"particleEmissionModule"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          // ref
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.particleEmissionModule = particleEmissionModule;
           methodResult(@"success");
@@ -10629,8 +11018,8 @@ extern BOOL enableLog;
           // ref arg
           id<MAParticleShapeModule> particleShapeModule = (id<MAParticleShapeModule>) HEAP[@([args[@"particleShapeModule"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          // ref
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.particleShapeModule = particleShapeModule;
           methodResult(@"success");
@@ -10646,8 +11035,8 @@ extern BOOL enableLog;
           // ref arg
           MAParticleOverLifeModule* particleOverLifeModule = (MAParticleOverLifeModule*) HEAP[@([args[@"particleOverLifeModule"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[@(refId)];
+          // ref
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.particleOverLifeModule = particleOverLifeModule;
           methodResult(@"success");
@@ -10671,8 +11060,8 @@ extern BOOL enableLog;
               glPoints[i] = glPointsItem;
           }
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          // ref
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.glPoints = glPoints;
           methodResult(@"success");
@@ -10688,8 +11077,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSUInteger glPointCount = [args[@"glPointCount"] unsignedIntegerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          // ref
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.glPointCount = glPointCount;
           methodResult(@"success");
@@ -10705,8 +11094,8 @@ extern BOOL enableLog;
           // ref arg
           UIImage* strokeImage = (UIImage*) HEAP[@([args[@"strokeImage"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          // ref
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.strokeImage = strokeImage;
           methodResult(@"success");
@@ -10722,8 +11111,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat alpha = [args[@"alpha"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[@(refId)];
+          // ref
+          MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.alpha = alpha;
           methodResult(@"success");
@@ -10741,8 +11130,8 @@ extern BOOL enableLog;
           CLLocationCoordinate2D coordinate;
           [coordinateValue getValue:&coordinate];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[@(refId)];
+          // ref
+          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.coordinate = coordinate;
           methodResult(@"success");
@@ -10758,8 +11147,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSString* customID = (NSString*) args[@"customID"];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[@(refId)];
+          // ref
+          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.customID = customID;
           methodResult(@"success");
@@ -10775,8 +11164,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSString* title = (NSString*) args[@"title"];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[@(refId)];
+          // ref
+          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.title = title;
           methodResult(@"success");
@@ -10792,8 +11181,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSString* subtitle = (NSString*) args[@"subtitle"];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[@(refId)];
+          // ref
+          MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.subtitle = subtitle;
           methodResult(@"success");
@@ -10809,8 +11198,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat height = [args[@"height"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+          // ref
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.height = height;
           methodResult(@"success");
@@ -10826,8 +11215,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat heightScale = [args[@"heightScale"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+          // ref
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.heightScale = heightScale;
           methodResult(@"success");
@@ -10843,8 +11232,8 @@ extern BOOL enableLog;
           // ref arg
           UIColor* topColor = (UIColor*) HEAP[@([args[@"topColor"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+          // ref
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.topColor = topColor;
           methodResult(@"success");
@@ -10860,8 +11249,8 @@ extern BOOL enableLog;
           // ref arg
           UIColor* sideColor = (UIColor*) HEAP[@([args[@"sideColor"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+          // ref
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.sideColor = sideColor;
           methodResult(@"success");
@@ -10877,8 +11266,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL visibile = [args[@"visibile"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[@(refId)];
+          // ref
+          MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.visibile = visibile;
           methodResult(@"success");
@@ -10894,8 +11283,8 @@ extern BOOL enableLog;
           // jsonable arg
           CLLocationDegrees latitude = [args[@"latitude"] doubleValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATracePoint* ref = (MATracePoint*) HEAP[@(refId)];
+          // ref
+          MATracePoint* ref = (MATracePoint*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.latitude = latitude;
           methodResult(@"success");
@@ -10911,8 +11300,8 @@ extern BOOL enableLog;
           // jsonable arg
           CLLocationDegrees longitude = [args[@"longitude"] doubleValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATracePoint* ref = (MATracePoint*) HEAP[@(refId)];
+          // ref
+          MATracePoint* ref = (MATracePoint*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.longitude = longitude;
           methodResult(@"success");
@@ -10930,8 +11319,8 @@ extern BOOL enableLog;
           CLLocationCoordinate2D loc;
           [locValue getValue:&loc];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATraceLocation* ref = (MATraceLocation*) HEAP[@(refId)];
+          // ref
+          MATraceLocation* ref = (MATraceLocation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.loc = loc;
           methodResult(@"success");
@@ -10947,8 +11336,8 @@ extern BOOL enableLog;
           // jsonable arg
           double angle = [args[@"angle"] doubleValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATraceLocation* ref = (MATraceLocation*) HEAP[@(refId)];
+          // ref
+          MATraceLocation* ref = (MATraceLocation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.angle = angle;
           methodResult(@"success");
@@ -10964,8 +11353,8 @@ extern BOOL enableLog;
           // jsonable arg
           double speed = [args[@"speed"] doubleValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATraceLocation* ref = (MATraceLocation*) HEAP[@(refId)];
+          // ref
+          MATraceLocation* ref = (MATraceLocation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.speed = speed;
           methodResult(@"success");
@@ -10981,8 +11370,8 @@ extern BOOL enableLog;
           // jsonable arg
           double time = [args[@"time"] doubleValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MATraceLocation* ref = (MATraceLocation*) HEAP[@(refId)];
+          // ref
+          MATraceLocation* ref = (MATraceLocation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.time = time;
           methodResult(@"success");
@@ -11000,8 +11389,8 @@ extern BOOL enableLog;
           CLLocationCoordinate2D startCoordinate;
           [startCoordinateValue getValue:&startCoordinate];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAArc* ref = (MAArc*) HEAP[@(refId)];
+          // ref
+          MAArc* ref = (MAArc*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.startCoordinate = startCoordinate;
           methodResult(@"success");
@@ -11019,8 +11408,8 @@ extern BOOL enableLog;
           CLLocationCoordinate2D passedCoordinate;
           [passedCoordinateValue getValue:&passedCoordinate];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAArc* ref = (MAArc*) HEAP[@(refId)];
+          // ref
+          MAArc* ref = (MAArc*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.passedCoordinate = passedCoordinate;
           methodResult(@"success");
@@ -11038,8 +11427,8 @@ extern BOOL enableLog;
           CLLocationCoordinate2D endCoordinate;
           [endCoordinateValue getValue:&endCoordinate];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAArc* ref = (MAArc*) HEAP[@(refId)];
+          // ref
+          MAArc* ref = (MAArc*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.endCoordinate = endCoordinate;
           methodResult(@"success");
@@ -11055,8 +11444,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL showsAccuracyRing = [args[@"showsAccuracyRing"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          // ref
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsAccuracyRing = showsAccuracyRing;
           methodResult(@"success");
@@ -11072,8 +11461,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL showsHeadingIndicator = [args[@"showsHeadingIndicator"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          // ref
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsHeadingIndicator = showsHeadingIndicator;
           methodResult(@"success");
@@ -11089,8 +11478,8 @@ extern BOOL enableLog;
           // ref arg
           UIColor* fillColor = (UIColor*) HEAP[@([args[@"fillColor"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          // ref
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.fillColor = fillColor;
           methodResult(@"success");
@@ -11106,8 +11495,8 @@ extern BOOL enableLog;
           // ref arg
           UIColor* strokeColor = (UIColor*) HEAP[@([args[@"strokeColor"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          // ref
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.strokeColor = strokeColor;
           methodResult(@"success");
@@ -11123,8 +11512,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat lineWidth = [args[@"lineWidth"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          // ref
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.lineWidth = lineWidth;
           methodResult(@"success");
@@ -11140,8 +11529,8 @@ extern BOOL enableLog;
           // ref arg
           UIColor* locationDotBgColor = (UIColor*) HEAP[@([args[@"locationDotBgColor"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          // ref
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.locationDotBgColor = locationDotBgColor;
           methodResult(@"success");
@@ -11157,8 +11546,8 @@ extern BOOL enableLog;
           // ref arg
           UIColor* locationDotFillColor = (UIColor*) HEAP[@([args[@"locationDotFillColor"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          // ref
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.locationDotFillColor = locationDotFillColor;
           methodResult(@"success");
@@ -11174,8 +11563,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL enablePulseAnnimation = [args[@"enablePulseAnnimation"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          // ref
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.enablePulseAnnimation = enablePulseAnnimation;
           methodResult(@"success");
@@ -11191,8 +11580,8 @@ extern BOOL enableLog;
           // ref arg
           UIImage* image = (UIImage*) HEAP[@([args[@"image"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[@(refId)];
+          // ref
+          MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.image = image;
           methodResult(@"success");
@@ -11207,8 +11596,8 @@ extern BOOL enableLog;
           // args
       
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.delegate = self;
           methodResult(@"success");
@@ -11224,8 +11613,8 @@ extern BOOL enableLog;
           // enum arg
           MAMapType mapType = (MAMapType) [args[@"mapType"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.mapType = mapType;
           methodResult(@"success");
@@ -11243,8 +11632,8 @@ extern BOOL enableLog;
           CLLocationCoordinate2D centerCoordinate;
           [centerCoordinateValue getValue:&centerCoordinate];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.centerCoordinate = centerCoordinate;
           methodResult(@"success");
@@ -11262,8 +11651,8 @@ extern BOOL enableLog;
           MACoordinateRegion region;
           [regionValue getValue:&region];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.region = region;
           methodResult(@"success");
@@ -11281,8 +11670,8 @@ extern BOOL enableLog;
           MAMapRect visibleMapRect;
           [visibleMapRectValue getValue:&visibleMapRect];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.visibleMapRect = visibleMapRect;
           methodResult(@"success");
@@ -11300,8 +11689,8 @@ extern BOOL enableLog;
           MACoordinateRegion limitRegion;
           [limitRegionValue getValue:&limitRegion];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.limitRegion = limitRegion;
           methodResult(@"success");
@@ -11319,8 +11708,8 @@ extern BOOL enableLog;
           MAMapRect limitMapRect;
           [limitMapRectValue getValue:&limitMapRect];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.limitMapRect = limitMapRect;
           methodResult(@"success");
@@ -11336,8 +11725,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.zoomLevel = zoomLevel;
           methodResult(@"success");
@@ -11353,8 +11742,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat minZoomLevel = [args[@"minZoomLevel"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.minZoomLevel = minZoomLevel;
           methodResult(@"success");
@@ -11370,8 +11759,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat maxZoomLevel = [args[@"maxZoomLevel"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.maxZoomLevel = maxZoomLevel;
           methodResult(@"success");
@@ -11387,8 +11776,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.rotationDegree = rotationDegree;
           methodResult(@"success");
@@ -11404,8 +11793,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat cameraDegree = [args[@"cameraDegree"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.cameraDegree = cameraDegree;
           methodResult(@"success");
@@ -11421,8 +11810,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL zoomingInPivotsAroundAnchorPoint = [args[@"zoomingInPivotsAroundAnchorPoint"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.zoomingInPivotsAroundAnchorPoint = zoomingInPivotsAroundAnchorPoint;
           methodResult(@"success");
@@ -11438,8 +11827,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL zoomEnabled = [args[@"zoomEnabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.zoomEnabled = zoomEnabled;
           methodResult(@"success");
@@ -11455,8 +11844,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL scrollEnabled = [args[@"scrollEnabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.scrollEnabled = scrollEnabled;
           methodResult(@"success");
@@ -11472,8 +11861,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL rotateEnabled = [args[@"rotateEnabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.rotateEnabled = rotateEnabled;
           methodResult(@"success");
@@ -11489,8 +11878,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL rotateCameraEnabled = [args[@"rotateCameraEnabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.rotateCameraEnabled = rotateCameraEnabled;
           methodResult(@"success");
@@ -11506,8 +11895,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL skyModelEnable = [args[@"skyModelEnable"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.skyModelEnable = skyModelEnable;
           methodResult(@"success");
@@ -11523,8 +11912,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL showsBuildings = [args[@"showsBuildings"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsBuildings = showsBuildings;
           methodResult(@"success");
@@ -11540,8 +11929,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL showsLabels = [args[@"showsLabels"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsLabels = showsLabels;
           methodResult(@"success");
@@ -11557,8 +11946,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL showTraffic = [args[@"showTraffic"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showTraffic = showTraffic;
           methodResult(@"success");
@@ -11574,8 +11963,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat trafficRatio = [args[@"trafficRatio"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.trafficRatio = trafficRatio;
           methodResult(@"success");
@@ -11591,8 +11980,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL touchPOIEnabled = [args[@"touchPOIEnabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.touchPOIEnabled = touchPOIEnabled;
           methodResult(@"success");
@@ -11608,8 +11997,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL showsCompass = [args[@"showsCompass"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsCompass = showsCompass;
           methodResult(@"success");
@@ -11627,8 +12016,8 @@ extern BOOL enableLog;
           CGPoint compassOrigin;
           [compassOriginValue getValue:&compassOrigin];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.compassOrigin = compassOrigin;
           methodResult(@"success");
@@ -11644,8 +12033,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL showsScale = [args[@"showsScale"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsScale = showsScale;
           methodResult(@"success");
@@ -11663,8 +12052,8 @@ extern BOOL enableLog;
           CGPoint scaleOrigin;
           [scaleOriginValue getValue:&scaleOrigin];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.scaleOrigin = scaleOrigin;
           methodResult(@"success");
@@ -11682,8 +12071,8 @@ extern BOOL enableLog;
           CGPoint logoCenter;
           [logoCenterValue getValue:&logoCenter];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.logoCenter = logoCenter;
           methodResult(@"success");
@@ -11699,8 +12088,8 @@ extern BOOL enableLog;
           // jsonable arg
           NSUInteger maxRenderFrame = [args[@"maxRenderFrame"] unsignedIntegerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.maxRenderFrame = maxRenderFrame;
           methodResult(@"success");
@@ -11716,8 +12105,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL isAllowDecreaseFrame = [args[@"isAllowDecreaseFrame"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.isAllowDecreaseFrame = isAllowDecreaseFrame;
           methodResult(@"success");
@@ -11733,8 +12122,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL openGLESDisabled = [args[@"openGLESDisabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.openGLESDisabled = openGLESDisabled;
           methodResult(@"success");
@@ -11752,8 +12141,8 @@ extern BOOL enableLog;
           CGPoint screenAnchor;
           [screenAnchorValue getValue:&screenAnchor];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.screenAnchor = screenAnchor;
           methodResult(@"success");
@@ -11774,8 +12163,8 @@ extern BOOL enableLog;
               [selectedAnnotations addObject:item];
           }
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.selectedAnnotations = selectedAnnotations;
           methodResult(@"success");
@@ -11791,8 +12180,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL allowsAnnotationViewSorting = [args[@"allowsAnnotationViewSorting"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.allowsAnnotationViewSorting = allowsAnnotationViewSorting;
           methodResult(@"success");
@@ -11808,8 +12197,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL showsUserLocation = [args[@"showsUserLocation"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsUserLocation = showsUserLocation;
           methodResult(@"success");
@@ -11825,8 +12214,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL customizeUserLocationAccuracyCircleRepresentation = [args[@"customizeUserLocationAccuracyCircleRepresentation"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.customizeUserLocationAccuracyCircleRepresentation = customizeUserLocationAccuracyCircleRepresentation;
           methodResult(@"success");
@@ -11842,8 +12231,8 @@ extern BOOL enableLog;
           // enum arg
           MAUserTrackingMode userTrackingMode = (MAUserTrackingMode) [args[@"userTrackingMode"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.userTrackingMode = userTrackingMode;
           methodResult(@"success");
@@ -11859,8 +12248,8 @@ extern BOOL enableLog;
           // jsonable arg
           CLLocationDistance distanceFilter = [args[@"distanceFilter"] doubleValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.distanceFilter = distanceFilter;
           methodResult(@"success");
@@ -11876,8 +12265,8 @@ extern BOOL enableLog;
           // jsonable arg
           CLLocationAccuracy desiredAccuracy = [args[@"desiredAccuracy"] doubleValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.desiredAccuracy = desiredAccuracy;
           methodResult(@"success");
@@ -11893,8 +12282,8 @@ extern BOOL enableLog;
           // jsonable arg
           CLLocationDegrees headingFilter = [args[@"headingFilter"] doubleValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.headingFilter = headingFilter;
           methodResult(@"success");
@@ -11910,8 +12299,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL pausesLocationUpdatesAutomatically = [args[@"pausesLocationUpdatesAutomatically"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.pausesLocationUpdatesAutomatically = pausesLocationUpdatesAutomatically;
           methodResult(@"success");
@@ -11927,8 +12316,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL allowsBackgroundLocationUpdates = [args[@"allowsBackgroundLocationUpdates"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.allowsBackgroundLocationUpdates = allowsBackgroundLocationUpdates;
           methodResult(@"success");
@@ -11944,8 +12333,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL showsIndoorMap = [args[@"showsIndoorMap"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsIndoorMap = showsIndoorMap;
           methodResult(@"success");
@@ -11961,8 +12350,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL showsIndoorMapControl = [args[@"showsIndoorMapControl"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsIndoorMapControl = showsIndoorMapControl;
           methodResult(@"success");
@@ -11978,8 +12367,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL customMapStyleEnabled = [args[@"customMapStyleEnabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.customMapStyleEnabled = customMapStyleEnabled;
           methodResult(@"success");
@@ -11995,8 +12384,8 @@ extern BOOL enableLog;
           // ref arg
           UIColor* fillColor = (UIColor*) HEAP[@([args[@"fillColor"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          // ref
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.fillColor = fillColor;
           methodResult(@"success");
@@ -12012,8 +12401,8 @@ extern BOOL enableLog;
           // ref arg
           UIColor* strokeColor = (UIColor*) HEAP[@([args[@"strokeColor"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          // ref
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.strokeColor = strokeColor;
           methodResult(@"success");
@@ -12029,8 +12418,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat lineWidth = [args[@"lineWidth"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          // ref
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.lineWidth = lineWidth;
           methodResult(@"success");
@@ -12046,8 +12435,8 @@ extern BOOL enableLog;
           // enum arg
           MALineJoinType lineJoinType = (MALineJoinType) [args[@"lineJoinType"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          // ref
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.lineJoinType = lineJoinType;
           methodResult(@"success");
@@ -12063,8 +12452,8 @@ extern BOOL enableLog;
           // enum arg
           MALineCapType lineCapType = (MALineCapType) [args[@"lineCapType"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          // ref
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.lineCapType = lineCapType;
           methodResult(@"success");
@@ -12080,8 +12469,8 @@ extern BOOL enableLog;
           // jsonable arg
           CGFloat miterLimit = [args[@"miterLimit"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          // ref
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.miterLimit = miterLimit;
           methodResult(@"success");
@@ -12097,8 +12486,8 @@ extern BOOL enableLog;
           // jsonable arg
           BOOL lineDash = [args[@"lineDash"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          // ref
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.lineDash = lineDash;
           methodResult(@"success");
@@ -12114,8 +12503,8 @@ extern BOOL enableLog;
           // enum arg
           MALineDashType lineDashType = (MALineDashType) [args[@"lineDashType"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[@(refId)];
+          // ref
+          MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.lineDashType = lineDashType;
           methodResult(@"success");

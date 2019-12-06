@@ -12,9 +12,55 @@ import 'package:flutter/services.dart';
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MATileOverlayPath extends NSObject  {
   // generate getters
+  Future<int> get_x() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayPath::get_x", {'refId': refId});
+  
+    return result;
+  }
+  
+  Future<int> get_y() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayPath::get_y", {'refId': refId});
+  
+    return result;
+  }
+  
+  Future<int> get_z() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayPath::get_z", {'refId': refId});
+  
+    return result;
+  }
+  
+  Future<double> get_contentScaleFactor() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayPath::get_contentScaleFactor", {'refId': refId});
+  
+    return result;
+  }
   
 
   // generate setters
+  Future<void> set_x(int x) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_x', {'refId': refId, "x": x});
+  
+  
+  }
+  
+  Future<void> set_y(int y) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_y', {'refId': refId, "y": y});
+  
+  
+  }
+  
+  Future<void> set_z(int z) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_z', {'refId': refId, "z": z});
+  
+  
+  }
+  
+  Future<void> set_contentScaleFactor(double contentScaleFactor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_contentScaleFactor', {'refId': refId, "contentScaleFactor": contentScaleFactor});
+  
+  
+  }
   
 
   // generate methods
