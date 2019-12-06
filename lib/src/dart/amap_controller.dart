@@ -1406,7 +1406,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
-  /// 将所有动态加载的Marker覆盖物调整至同一屏幕中显示
+  /// 将指定的经纬度列表(包括但不限于marker, polyline, polygon等)调整至同一屏幕中显示
   ///
   /// [bounds]边界点形成的边界, [padding]地图内边距
   /// !目前发现[padding]在android端和ios端的有不同的行为, 相同的值边距明显不一致, 但是为了
