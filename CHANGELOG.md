@@ -1,3 +1,7 @@
+## 0.10.5
+- feat: showMyLocation方法提供自定义图标的参数
+- feat: Polygon和Circle增加remove方法
+
 ## 0.10.4
 - docs: 改善zoomToSpan的说明
 - fix: addMarkers方法添加infoWindowEnable的处理
