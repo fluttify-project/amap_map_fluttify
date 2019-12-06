@@ -1,3 +1,7 @@
+## 0.10.4
+- docs: 改善zoomToSpan的说明
+- fix: addMarkers方法添加infoWindowEnable的处理
+
 ## 0.10.3
 - feat: 加入zoomToSpan方法
 - docs: 如果使用全部组件就使用amap_all_fluttify
