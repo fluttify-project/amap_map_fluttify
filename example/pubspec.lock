@@ -7,7 +7,7 @@ packages:
       name: amap_core_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.1+97873c8"
+    version: "0.2.3+324aaff"
   amap_map_fluttify:
     dependency: "direct dev"
     description:
@@ -70,7 +70,7 @@ packages:
       name: connectivity
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.5+6"
+    version: "0.4.5+7"
   convert:
     dependency: transitive
     description:
@@ -91,7 +91,7 @@ packages:
       name: cupertino_icons
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.2"
+    version: "0.1.3"
   decorated_flutter:
     dependency: "direct main"
     description:
@@ -155,7 +155,7 @@ packages:
       name: foundation_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.1"
+    version: "0.2.2+2"
   http:
     dependency: transitive
     description:
@@ -204,7 +204,7 @@ packages:
       name: oktoast
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.2.0"
+    version: "2.2.1"
   path:
     dependency: transitive
     description:

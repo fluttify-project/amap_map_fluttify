@@ -66,7 +66,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -88,7 +88,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           [regionValue getValue:&region];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -115,7 +115,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -137,7 +137,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           [mapRectValue getValue:&mapRect];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -166,7 +166,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           [insetsValue getValue:&insets];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -197,7 +197,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -221,7 +221,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -243,7 +243,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -269,7 +269,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -293,7 +293,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           CFTimeInterval duration = [args[@"duration"] doubleValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -317,7 +317,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           CFTimeInterval duration = [args[@"duration"] doubleValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -336,7 +336,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -359,7 +359,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -383,7 +383,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           CFTimeInterval duration = [args[@"duration"] doubleValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -403,7 +403,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           UIImage* image = (UIImage*) HEAP[@([args[@"image"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -426,7 +426,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -465,7 +465,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -489,7 +489,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           UIView* view = (UIView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -516,7 +516,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           UIView* view = (UIView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -543,7 +543,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           UIView* view = (UIView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -570,7 +570,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           UIView* view = (UIView*) HEAP[@([args[@"view"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -592,7 +592,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -611,7 +611,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -630,7 +630,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -649,7 +649,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -668,7 +668,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -687,7 +687,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -707,7 +707,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -732,7 +732,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -752,7 +752,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -777,7 +777,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -797,7 +797,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -818,7 +818,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSString* identifier = (NSString*) args[@"identifier"];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -841,7 +841,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -863,7 +863,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -890,7 +890,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -921,7 +921,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -943,7 +943,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -963,7 +963,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAUserLocationRepresentation* representation = (MAUserLocationRepresentation*) HEAP[@([args[@"representation"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -983,7 +983,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1010,7 +1010,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1035,7 +1035,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1057,7 +1057,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1084,7 +1084,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1104,7 +1104,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1129,7 +1129,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1153,7 +1153,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1175,7 +1175,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           id<MAOverlay> sibling = (id<MAOverlay>) HEAP[@([args[@"sibling"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1197,7 +1197,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           id<MAOverlay> sibling = (id<MAOverlay>) HEAP[@([args[@"sibling"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1219,7 +1219,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSUInteger index = [args[@"index"] unsignedIntegerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1241,7 +1241,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSUInteger index2 = [args[@"index2"] unsignedIntegerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1265,7 +1265,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1287,7 +1287,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           id<MAOverlay> overlay2 = (id<MAOverlay>) HEAP[@([args[@"overlay2"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1307,7 +1307,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1335,7 +1335,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1366,7 +1366,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1388,7 +1388,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           [originValue getValue:&origin];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1408,7 +1408,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger floorIndex = [args[@"floorIndex"] integerValue];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1427,7 +1427,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1447,7 +1447,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapCustomStyleOptions* styleOptions = (MAMapCustomStyleOptions*) HEAP[@([args[@"styleOptions"] integerValue])];
       
           // ref
-          MAMapView* ref = (MAMapView*) HEAP[args[@"refId"]];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -1468,8 +1468,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMapType result = ref.mapType;
@@ -1485,8 +1484,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationCoordinate2D result = ref.centerCoordinate;
@@ -1505,8 +1503,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MACoordinateRegion result = ref.region;
@@ -1525,8 +1522,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMapRect result = ref.visibleMapRect;
@@ -1545,8 +1541,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MACoordinateRegion result = ref.limitRegion;
@@ -1565,8 +1560,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAMapRect result = ref.limitMapRect;
@@ -1585,8 +1579,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.zoomLevel;
@@ -1602,8 +1595,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.minZoomLevel;
@@ -1619,8 +1611,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.maxZoomLevel;
@@ -1636,8 +1627,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.rotationDegree;
@@ -1653,8 +1643,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.cameraDegree;
@@ -1670,8 +1659,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.zoomingInPivotsAroundAnchorPoint;
@@ -1687,8 +1675,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.zoomEnabled;
@@ -1704,8 +1691,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.scrollEnabled;
@@ -1721,8 +1707,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.rotateEnabled;
@@ -1738,8 +1723,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.rotateCameraEnabled;
@@ -1755,8 +1739,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.skyModelEnable;
@@ -1772,8 +1755,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsBuildings;
@@ -1789,8 +1771,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsLabels;
@@ -1806,8 +1787,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showTraffic;
@@ -1823,8 +1803,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGFloat result = ref.trafficRatio;
@@ -1840,8 +1819,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.touchPOIEnabled;
@@ -1857,8 +1835,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsCompass;
@@ -1874,8 +1851,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.compassOrigin;
@@ -1894,8 +1870,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGSize result = ref.compassSize;
@@ -1914,8 +1889,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsScale;
@@ -1931,8 +1905,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.scaleOrigin;
@@ -1951,8 +1924,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGSize result = ref.scaleSize;
@@ -1971,8 +1943,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.logoCenter;
@@ -1991,8 +1962,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGSize result = ref.logoSize;
@@ -2011,8 +1981,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           double result = ref.metersPerPointForCurrentZoom;
@@ -2028,8 +1997,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.isAbroad;
@@ -2045,8 +2013,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSUInteger result = ref.maxRenderFrame;
@@ -2062,8 +2029,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.isAllowDecreaseFrame;
@@ -2079,8 +2045,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.openGLESDisabled;
@@ -2096,8 +2061,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.screenAnchor;
@@ -2116,8 +2080,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray* result = ref.annotations;
@@ -2140,8 +2103,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray* result = ref.selectedAnnotations;
@@ -2164,8 +2126,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGRect result = ref.annotationVisibleRect;
@@ -2184,8 +2145,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.allowsAnnotationViewSorting;
@@ -2201,8 +2161,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsUserLocation;
@@ -2218,8 +2177,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAUserLocation* result = ref.userLocation;
@@ -2236,8 +2194,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.customizeUserLocationAccuracyCircleRepresentation;
@@ -2253,8 +2210,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MACircle* result = ref.userLocationAccuracyCircle;
@@ -2271,8 +2227,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAUserTrackingMode result = ref.userTrackingMode;
@@ -2288,8 +2243,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.userLocationVisible;
@@ -2305,8 +2259,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationDistance result = ref.distanceFilter;
@@ -2322,8 +2275,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationAccuracy result = ref.desiredAccuracy;
@@ -2339,8 +2291,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CLLocationDegrees result = ref.headingFilter;
@@ -2356,8 +2307,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.pausesLocationUpdatesAutomatically;
@@ -2373,8 +2323,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.allowsBackgroundLocationUpdates;
@@ -2390,8 +2339,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSArray* result = ref.overlays;
@@ -2414,8 +2362,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsIndoorMap;
@@ -2431,8 +2378,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.showsIndoorMapControl;
@@ -2448,8 +2394,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGSize result = ref.indoorMapControlSize;
@@ -2468,8 +2413,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.customMapStyleEnabled;
@@ -2487,8 +2431,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // args
       
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.delegate = self;
           methodResult(@"success");
@@ -2504,8 +2448,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // enum arg
           MAMapType mapType = (MAMapType) [args[@"mapType"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.mapType = mapType;
           methodResult(@"success");
@@ -2523,8 +2467,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           CLLocationCoordinate2D centerCoordinate;
           [centerCoordinateValue getValue:&centerCoordinate];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.centerCoordinate = centerCoordinate;
           methodResult(@"success");
@@ -2542,8 +2486,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MACoordinateRegion region;
           [regionValue getValue:&region];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.region = region;
           methodResult(@"success");
@@ -2561,8 +2505,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapRect visibleMapRect;
           [visibleMapRectValue getValue:&visibleMapRect];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.visibleMapRect = visibleMapRect;
           methodResult(@"success");
@@ -2580,8 +2524,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MACoordinateRegion limitRegion;
           [limitRegionValue getValue:&limitRegion];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.limitRegion = limitRegion;
           methodResult(@"success");
@@ -2599,8 +2543,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapRect limitMapRect;
           [limitMapRectValue getValue:&limitMapRect];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.limitMapRect = limitMapRect;
           methodResult(@"success");
@@ -2616,8 +2560,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.zoomLevel = zoomLevel;
           methodResult(@"success");
@@ -2633,8 +2577,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           CGFloat minZoomLevel = [args[@"minZoomLevel"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.minZoomLevel = minZoomLevel;
           methodResult(@"success");
@@ -2650,8 +2594,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           CGFloat maxZoomLevel = [args[@"maxZoomLevel"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.maxZoomLevel = maxZoomLevel;
           methodResult(@"success");
@@ -2667,8 +2611,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.rotationDegree = rotationDegree;
           methodResult(@"success");
@@ -2684,8 +2628,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           CGFloat cameraDegree = [args[@"cameraDegree"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.cameraDegree = cameraDegree;
           methodResult(@"success");
@@ -2701,8 +2645,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL zoomingInPivotsAroundAnchorPoint = [args[@"zoomingInPivotsAroundAnchorPoint"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.zoomingInPivotsAroundAnchorPoint = zoomingInPivotsAroundAnchorPoint;
           methodResult(@"success");
@@ -2718,8 +2662,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL zoomEnabled = [args[@"zoomEnabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.zoomEnabled = zoomEnabled;
           methodResult(@"success");
@@ -2735,8 +2679,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL scrollEnabled = [args[@"scrollEnabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.scrollEnabled = scrollEnabled;
           methodResult(@"success");
@@ -2752,8 +2696,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL rotateEnabled = [args[@"rotateEnabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.rotateEnabled = rotateEnabled;
           methodResult(@"success");
@@ -2769,8 +2713,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL rotateCameraEnabled = [args[@"rotateCameraEnabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.rotateCameraEnabled = rotateCameraEnabled;
           methodResult(@"success");
@@ -2786,8 +2730,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL skyModelEnable = [args[@"skyModelEnable"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.skyModelEnable = skyModelEnable;
           methodResult(@"success");
@@ -2803,8 +2747,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL showsBuildings = [args[@"showsBuildings"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsBuildings = showsBuildings;
           methodResult(@"success");
@@ -2820,8 +2764,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL showsLabels = [args[@"showsLabels"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsLabels = showsLabels;
           methodResult(@"success");
@@ -2837,8 +2781,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL showTraffic = [args[@"showTraffic"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showTraffic = showTraffic;
           methodResult(@"success");
@@ -2854,8 +2798,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           CGFloat trafficRatio = [args[@"trafficRatio"] floatValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.trafficRatio = trafficRatio;
           methodResult(@"success");
@@ -2871,8 +2815,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL touchPOIEnabled = [args[@"touchPOIEnabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.touchPOIEnabled = touchPOIEnabled;
           methodResult(@"success");
@@ -2888,8 +2832,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL showsCompass = [args[@"showsCompass"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsCompass = showsCompass;
           methodResult(@"success");
@@ -2907,8 +2851,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           CGPoint compassOrigin;
           [compassOriginValue getValue:&compassOrigin];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.compassOrigin = compassOrigin;
           methodResult(@"success");
@@ -2924,8 +2868,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL showsScale = [args[@"showsScale"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsScale = showsScale;
           methodResult(@"success");
@@ -2943,8 +2887,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           CGPoint scaleOrigin;
           [scaleOriginValue getValue:&scaleOrigin];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.scaleOrigin = scaleOrigin;
           methodResult(@"success");
@@ -2962,8 +2906,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           CGPoint logoCenter;
           [logoCenterValue getValue:&logoCenter];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.logoCenter = logoCenter;
           methodResult(@"success");
@@ -2979,8 +2923,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           NSUInteger maxRenderFrame = [args[@"maxRenderFrame"] unsignedIntegerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.maxRenderFrame = maxRenderFrame;
           methodResult(@"success");
@@ -2996,8 +2940,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL isAllowDecreaseFrame = [args[@"isAllowDecreaseFrame"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.isAllowDecreaseFrame = isAllowDecreaseFrame;
           methodResult(@"success");
@@ -3013,8 +2957,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL openGLESDisabled = [args[@"openGLESDisabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.openGLESDisabled = openGLESDisabled;
           methodResult(@"success");
@@ -3032,8 +2976,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           CGPoint screenAnchor;
           [screenAnchorValue getValue:&screenAnchor];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.screenAnchor = screenAnchor;
           methodResult(@"success");
@@ -3054,8 +2998,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
               [selectedAnnotations addObject:item];
           }
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.selectedAnnotations = selectedAnnotations;
           methodResult(@"success");
@@ -3071,8 +3015,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL allowsAnnotationViewSorting = [args[@"allowsAnnotationViewSorting"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.allowsAnnotationViewSorting = allowsAnnotationViewSorting;
           methodResult(@"success");
@@ -3088,8 +3032,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL showsUserLocation = [args[@"showsUserLocation"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsUserLocation = showsUserLocation;
           methodResult(@"success");
@@ -3105,8 +3049,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL customizeUserLocationAccuracyCircleRepresentation = [args[@"customizeUserLocationAccuracyCircleRepresentation"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.customizeUserLocationAccuracyCircleRepresentation = customizeUserLocationAccuracyCircleRepresentation;
           methodResult(@"success");
@@ -3122,8 +3066,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // enum arg
           MAUserTrackingMode userTrackingMode = (MAUserTrackingMode) [args[@"userTrackingMode"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.userTrackingMode = userTrackingMode;
           methodResult(@"success");
@@ -3139,8 +3083,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           CLLocationDistance distanceFilter = [args[@"distanceFilter"] doubleValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.distanceFilter = distanceFilter;
           methodResult(@"success");
@@ -3156,8 +3100,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           CLLocationAccuracy desiredAccuracy = [args[@"desiredAccuracy"] doubleValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.desiredAccuracy = desiredAccuracy;
           methodResult(@"success");
@@ -3173,8 +3117,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           CLLocationDegrees headingFilter = [args[@"headingFilter"] doubleValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.headingFilter = headingFilter;
           methodResult(@"success");
@@ -3190,8 +3134,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL pausesLocationUpdatesAutomatically = [args[@"pausesLocationUpdatesAutomatically"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.pausesLocationUpdatesAutomatically = pausesLocationUpdatesAutomatically;
           methodResult(@"success");
@@ -3207,8 +3151,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL allowsBackgroundLocationUpdates = [args[@"allowsBackgroundLocationUpdates"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.allowsBackgroundLocationUpdates = allowsBackgroundLocationUpdates;
           methodResult(@"success");
@@ -3224,8 +3168,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL showsIndoorMap = [args[@"showsIndoorMap"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsIndoorMap = showsIndoorMap;
           methodResult(@"success");
@@ -3241,8 +3185,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL showsIndoorMapControl = [args[@"showsIndoorMapControl"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.showsIndoorMapControl = showsIndoorMapControl;
           methodResult(@"success");
@@ -3258,8 +3202,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL customMapStyleEnabled = [args[@"customMapStyleEnabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMapView* ref = (MAMapView*) HEAP[@(refId)];
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.customMapStyleEnabled = customMapStyleEnabled;
           methodResult(@"success");

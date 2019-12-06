@@ -64,7 +64,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -86,7 +86,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSString* reuseIdentifier = (NSString*) args[@"reuseIdentifier"];
       
           // ref
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -106,7 +106,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
       
           // ref
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -128,7 +128,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           BOOL animated = [args[@"animated"] boolValue];
       
           // ref
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[args[@"refId"]];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -149,8 +149,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSString* result = ref.reuseIdentifier;
@@ -166,8 +165,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           NSInteger result = ref.zIndex;
@@ -183,8 +181,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           id<MAAnnotation> result = ref.annotation;
@@ -201,8 +198,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIImage* result = ref.image;
@@ -219,8 +215,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MACustomCalloutView* result = ref.customCalloutView;
@@ -237,8 +232,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.centerOffset;
@@ -257,8 +251,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           CGPoint result = ref.calloutOffset;
@@ -277,8 +270,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.enabled;
@@ -294,8 +286,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.highlighted;
@@ -311,8 +302,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.selected;
@@ -328,8 +318,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.canShowCallout;
@@ -345,8 +334,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIView* result = ref.leftCalloutAccessoryView;
@@ -363,8 +351,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           UIView* result = ref.rightCalloutAccessoryView;
@@ -381,8 +368,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           BOOL result = ref.draggable;
@@ -398,8 +384,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           }
       
           // ref object
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           // invoke native method
           MAAnnotationViewDragState result = ref.dragState;
@@ -418,8 +403,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           NSInteger zIndex = [args[@"zIndex"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.zIndex = zIndex;
           methodResult(@"success");
@@ -435,8 +420,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // ref arg
           id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.annotation = annotation;
           methodResult(@"success");
@@ -452,8 +437,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // ref arg
           UIImage* image = (UIImage*) HEAP[@([args[@"image"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.image = image;
           methodResult(@"success");
@@ -469,8 +454,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // ref arg
           MACustomCalloutView* customCalloutView = (MACustomCalloutView*) HEAP[@([args[@"customCalloutView"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.customCalloutView = customCalloutView;
           methodResult(@"success");
@@ -488,8 +473,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           CGPoint centerOffset;
           [centerOffsetValue getValue:&centerOffset];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.centerOffset = centerOffset;
           methodResult(@"success");
@@ -507,8 +492,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           CGPoint calloutOffset;
           [calloutOffsetValue getValue:&calloutOffset];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.calloutOffset = calloutOffset;
           methodResult(@"success");
@@ -524,8 +509,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL enabled = [args[@"enabled"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.enabled = enabled;
           methodResult(@"success");
@@ -541,8 +526,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL highlighted = [args[@"highlighted"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.highlighted = highlighted;
           methodResult(@"success");
@@ -558,8 +543,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL selected = [args[@"selected"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.selected = selected;
           methodResult(@"success");
@@ -575,8 +560,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL canShowCallout = [args[@"canShowCallout"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.canShowCallout = canShowCallout;
           methodResult(@"success");
@@ -592,8 +577,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // ref arg
           UIView* leftCalloutAccessoryView = (UIView*) HEAP[@([args[@"leftCalloutAccessoryView"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.leftCalloutAccessoryView = leftCalloutAccessoryView;
           methodResult(@"success");
@@ -609,8 +594,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // ref arg
           UIView* rightCalloutAccessoryView = (UIView*) HEAP[@([args[@"rightCalloutAccessoryView"] integerValue])];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.rightCalloutAccessoryView = rightCalloutAccessoryView;
           methodResult(@"success");
@@ -626,8 +611,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // jsonable arg
           BOOL draggable = [args[@"draggable"] boolValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.draggable = draggable;
           methodResult(@"success");
@@ -643,8 +628,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // enum arg
           MAAnnotationViewDragState dragState = (MAAnnotationViewDragState) [args[@"dragState"] integerValue];
       
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAAnnotationView* ref = (MAAnnotationView*) HEAP[@(refId)];
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.dragState = dragState;
           methodResult(@"success");
