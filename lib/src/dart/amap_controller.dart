@@ -763,6 +763,15 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         final markers = await map.addMarkers(androidOptions, false);
 
+        for (int i = 0; i < options.length; i++) {
+          final option = options[i];
+          final marker = markers[i];
+          // 是否允许弹窗
+          if (option.infoWindowEnabled != null) {
+            await marker.setInfoWindowEnable(option.infoWindowEnabled);
+          }
+        }
+
         // marker不释放, 还有用
         pool
           ..add(map)
@@ -824,6 +833,11 @@ class AmapController with WidgetsBindingObserver, _Private {
           // 是否可拖拽
           if (option.draggable != null) {
             await pushStackJsonable('draggable', option.draggable);
+          }
+          // 是否允许弹窗
+          if (option.infoWindowEnabled != null) {
+            await pushStackJsonable(
+                'infoWindowEnabled', option.infoWindowEnabled);
           }
 
           iosOptions.add(pointAnnotation);
@@ -1406,7 +1420,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
-  /// 将所有动态加载的Marker覆盖物调整至同一屏幕中显示
+  /// 将指定的经纬度列表(包括但不限于marker, polyline, polygon等)调整至同一屏幕中显示
   ///
   /// [bounds]边界点形成的边界, [padding]地图内边距
   /// !目前发现[padding]在android端和ios端的有不同的行为, 相同的值边距明显不一致, 但是为了
