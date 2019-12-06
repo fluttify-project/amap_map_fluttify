@@ -1,4 +1,5 @@
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
+import 'package:amap_map_fluttify_example/map/tools/next_latlng.dart';
 import 'package:amap_map_fluttify_example/utils/misc.dart';
 import 'package:amap_map_fluttify_example/widgets/setting.widget.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
@@ -17,7 +18,8 @@ class DrawPolylineScreen extends StatefulWidget {
   _DrawPolylineScreenState createState() => _DrawPolylineScreenState();
 }
 
-class _DrawPolylineScreenState extends State<DrawPolylineScreen> {
+class _DrawPolylineScreenState extends State<DrawPolylineScreen>
+    with NextLatLng {
   AmapController _controller;
   Polyline _currentPolyline;
 

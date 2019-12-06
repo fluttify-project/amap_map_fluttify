@@ -1,6 +1,5 @@
-import 'dart:math';
-
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
+import 'package:amap_map_fluttify_example/map/tools/next_latlng.dart';
 import 'package:amap_map_fluttify_example/utils/misc.dart';
 import 'package:amap_map_fluttify_example/widgets/setting.widget.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
@@ -17,7 +16,7 @@ class DrawPointScreen extends StatefulWidget {
   DrawPointScreenState createState() => DrawPointScreenState();
 }
 
-class DrawPointScreenState extends State<DrawPointScreen> {
+class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
   AmapController _controller;
   List<Marker> _markers = [];
 
@@ -49,7 +48,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                   onTap: () async {
                     final marker = await _controller?.addMarker(
                       MarkerOption(
-                        latLng: _getNextLatLng(),
+                        latLng: getNextLatLng(),
                         widget: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: <Widget>[
@@ -70,7 +69,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                   onTap: () async {
                     final marker = await _controller?.addMarker(
                       MarkerOption(
-                        latLng: _getNextLatLng(),
+                        latLng: getNextLatLng(),
                         title: '北京',
                         snippet: '描述',
                         infoWindowEnabled: false,
@@ -124,7 +123,7 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                       [
                         for (int i = 0; i < 10; i++)
                           MarkerOption(
-                            latLng: _getNextLatLng(),
+                            latLng: getNextLatLng(),
                             title: '北京',
                             snippet: '描述',
                             iconUri: _assetsIcon,
@@ -187,14 +186,6 @@ class DrawPointScreenState extends State<DrawPointScreen> {
           ),
         ],
       ),
-    );
-  }
-
-  LatLng _getNextLatLng() {
-    final random = Random();
-    return LatLng(
-      39.90960 + random.nextDouble(),
-      116.397228 + random.nextDouble(),
     );
   }
 }

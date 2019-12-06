@@ -70,10 +70,16 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// [strokeColor]精度圈边框颜色, [strokeWidth]精度圈边框宽度, [fillColor]精度圈填充颜色
   Future<void> showMyLocation(
     bool show, {
+    Uri iconUri,
+    ImageConfiguration imageConfig,
     Color strokeColor,
     Color fillColor,
     double strokeWidth,
   }) async {
+    assert(
+      (iconUri != null && imageConfig != null) || iconUri == null,
+      'iconUri与configuration同时设置!',
+    );
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
@@ -85,6 +91,15 @@ class AmapController with WidgetsBindingObserver, _Private {
           // 默认只定位一次
           await locationStyle.myLocationType(1);
 
+          // 定位图标
+          if (iconUri != null) {
+            final imageData = await _uri2ImageData(imageConfig, iconUri);
+            final bitmap = await createandroid_graphics_Bitmap(imageData);
+            final bitmapDescriptor =
+                await com_amap_api_maps_model_BitmapDescriptorFactory
+                    .fromBitmap(bitmap);
+            await locationStyle.myLocationIcon(bitmapDescriptor);
+          }
           // 边框颜色
           if (strokeColor != null) {
             await locationStyle
@@ -117,6 +132,12 @@ class AmapController with WidgetsBindingObserver, _Private {
 
           final style = await createMAUserLocationRepresentation();
 
+          // 定位图标
+          if (iconUri != null) {
+            final imageData = await _uri2ImageData(imageConfig, iconUri);
+            final bitmap = await createUIImage(imageData);
+            await style.set_image(bitmap);
+          }
           // 边框颜色
           if (strokeColor != null) {
             final color = await createUIColor(strokeColor);
@@ -1062,7 +1083,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// 添加多边形
   ///
   /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[strokeColor]
-  Future<void> addPolygon(PolygonOption option) {
+  Future<Polygon> addPolygon(PolygonOption option) {
     assert(option != null, 'option不能为null');
 
     return platform(
@@ -1100,12 +1121,14 @@ class AmapController with WidgetsBindingObserver, _Private {
         }
 
         // 设置参数
-        await map.addPolygon(polygonOptions);
+        final polygon = await map.addPolygon(polygonOptions);
 
         pool
           ..add(map)
           ..add(polygonOptions)
           ..addAll(latLngList);
+
+        return Polygon.android(polygon);
       },
       ios: (pool) async {
         await _iosController.set_delegate(_iosMapDelegate);
@@ -1133,9 +1156,9 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 设置参数
         await _iosController.addOverlay(polygon);
 
-        pool
-          ..add(polygon)
-          ..addAll(latLngList);
+        pool.addAll(latLngList);
+
+        return Polygon.ios(polygon, _iosController);
       },
     );
   }
@@ -1143,7 +1166,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// 添加圆
   ///
   /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[strokeColor]
-  Future<void> addCircle(CircleOption option) {
+  Future<Circle> addCircle(CircleOption option) {
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();
@@ -1179,9 +1202,11 @@ class AmapController with WidgetsBindingObserver, _Private {
         }
 
         // 设置参数
-        await map.addCircle(circleOptions);
+        final circle = await map.addCircle(circleOptions);
 
         pool..add(map)..add(circleOptions)..add(latLng);
+
+        return Circle.android(circle);
       },
       ios: (pool) async {
         await _iosController.set_delegate(_iosMapDelegate);
@@ -1208,7 +1233,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 设置参数
         await _iosController.addOverlay(circle);
 
-        pool..add(circle);
+        return Circle.ios(circle, _iosController);
       },
     );
   }
