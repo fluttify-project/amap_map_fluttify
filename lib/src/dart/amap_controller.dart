@@ -415,7 +415,10 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置缩放大小
+  ///
+  /// 地图的缩放级别一共分为 17 级，从 3 到 19. 数字越大，展示的图面信息越精细
   Future setZoomLevel(double level, {bool animated = true}) {
+    assert(level >= 3 && level <= 19, '缩放范围为3-19');
     return platform(
       android: (pool) async {
         final map = await _androidController.getMap();

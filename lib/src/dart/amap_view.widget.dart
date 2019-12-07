@@ -41,7 +41,8 @@ class AmapView extends StatefulWidget {
     this.onMapMoveEnd,
     this.maskDelay = const Duration(seconds: 0),
     this.mask,
-  }) : super(key: key);
+  })  : assert(zoomLevel >= 3 && zoomLevel <= 19, '缩放范围为3-19'),
+        super(key: key);
 
   /// 地图创建完成回调
   final _OnMapCreated onMapCreated;
@@ -71,6 +72,8 @@ class AmapView extends StatefulWidget {
   final bool tiltGestureEnabled;
 
   /// 缩放级别
+  ///
+  /// 地图的缩放级别一共分为 17 级，从 3 到 19. 数字越大，展示的图面信息越精细
   final double zoomLevel;
 
   /// 中心点坐标
