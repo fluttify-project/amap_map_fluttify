@@ -1,3 +1,7 @@
+## 0.11.0
+- roll engine #a918944
+- enhance: 适配flutter 1.12.13
+
 ## 0.10.5
 - feat: showMyLocation方法提供自定义图标的参数
 - feat: Polygon和Circle增加remove方法
