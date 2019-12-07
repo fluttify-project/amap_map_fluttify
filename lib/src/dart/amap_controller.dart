@@ -29,38 +29,49 @@ class AmapController with WidgetsBindingObserver, _Private {
 
   /// 获取当前位置
   ///
-  /// 由于定位需要时间, 如果进入地图后马上获取位置信息, 获取到的会是null, 加入参数[delay]指定
-  /// 进入地图后一段时间后再获取定位. 具体数值可以自行尝试判断.
-  /// 另外一个解决方案是使用[amap_location_fluttify](https://pub.flutter-io.cn/packages/amap_location_fluttify)
-  /// 返回的是经纬度, 如果需要进一步的数据, 可以配合[https://github.com/fluttify-project/amap_search_fluttify]进行逆地理搜索
-  Future<LatLng> getLocation({Duration delay = Duration.zero}) async {
+  /// 由于定位需要时间, 如果进入地图后马上获取位置信息, 获取到的会是null, [getLocation]会默认
+  /// 以[interval]300毫秒为间隔循环获取定位信息, 直到获取到的定位不为空. 你可以设置超时时间[timeout], 防止
+  /// 一直获取不到定位的情况(比如没有设置[showMyLocation]为true, 或者没有同意权限申请).
+  Future<LatLng> getLocation({
+    Duration interval = const Duration(milliseconds: 500),
+    Duration timeout = const Duration(seconds: 10),
+  }) async {
     return platform(
       android: (pool) async {
-        return Future.delayed(
-          delay,
-          () async {
-            final map = await _androidController.getMap();
-            final location = await map.getMyLocation();
+        final map = await _androidController.getMap();
+        return Stream.periodic(interval, (_) => _)
+            .asyncMap(
+              (count) async {
+                final coord = await map.getMyLocation();
 
-            final result = LatLng(
-              await location.latitude,
-              await location.longitude,
-            );
-            return result;
-          },
-        );
+                if (coord == null) {
+                  return null;
+                } else {
+                  return LatLng(await coord.latitude, await coord.longitude);
+                }
+              },
+            )
+            .take(timeout.inMilliseconds ~/ interval.inMilliseconds)
+            .firstWhere((location) => location != null)
+            .timeout(timeout, onTimeout: () => null);
       },
-      ios: (pool) async {
-        return Future.delayed(
-          delay,
-          () async {
-            final location = await _iosController.get_userLocation();
-            final coord = await location.get_coordinate();
+      ios: (pool) {
+        return Stream.periodic(interval, (_) => _)
+            .asyncMap(
+              (count) async {
+                final location = await _iosController.get_userLocation();
+                final coord = await location.get_coordinate();
 
-            final result = LatLng(await coord.latitude, await coord.longitude);
-            return result;
-          },
-        );
+                if (coord == null) {
+                  return null;
+                } else {
+                  return LatLng(await coord.latitude, await coord.longitude);
+                }
+              },
+            )
+            .take(timeout.inMilliseconds ~/ interval.inMilliseconds)
+            .firstWhere((location) => location != null)
+            .timeout(timeout, onTimeout: () => null);
       },
     );
   }

@@ -41,7 +41,10 @@ class AmapView extends StatefulWidget {
     this.onMapMoveEnd,
     this.maskDelay = const Duration(seconds: 0),
     this.mask,
-  })  : assert(zoomLevel >= 3 && zoomLevel <= 19, '缩放范围为3-19'),
+  })  : assert(
+          zoomLevel == null || (zoomLevel >= 3 && zoomLevel <= 19),
+          '缩放范围为3-19',
+        ),
         super(key: key);
 
   /// 地图创建完成回调
