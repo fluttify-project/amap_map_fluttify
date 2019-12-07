@@ -5,6 +5,8 @@
 [![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify)
 [![Gitter](https://badges.gitter.im/fluttify_project/community.svg)](https://gitter.im/fluttify_project/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+**从`0.11.0`开始, Flutter环境改为`1.12.13`, 与`1.9.1`版本不兼容, 如果你想继续使用`1.9.1`版本的Flutter, 请不要升级.**
+
 Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)引擎生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/). [CHANGELOG](https://github.com/fluttify-project/amap_map_fluttify/blob/master/CHANGELOG.md). [常见问题对应手册](https://github.com/fluttify-project/amap_map_fluttify/blob/master/Troubleshooting.md).
 
 如果你需要用到地图, 定位和搜索三个组件, 建议使用[amap_all_fluttify](https://github.com/fluttify-project/amap_all_fluttify), 这个插件集合了以上三个插件, 并约束了版本, 兼容性会更好.
