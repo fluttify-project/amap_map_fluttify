@@ -170,6 +170,30 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 设置我的位置图标旋转角度
+  Future<void> setMyLocationRotateAngle(double angle) async {
+    return platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+        await map.setMyLocationRotateAngle((360 - angle).abs());
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        // todo 暂时没有找到比较直接的方式实现
+        print('ios端暂时未实现');
+//        final annotations = await _iosController.get_annotations();
+//        for (final annotation in annotations) {
+//          if (await isKindOfMAUserLocation(annotation)) {
+//            final userLocation = await asMAUserLocation(annotation);
+//            userLocation.set()
+//            break;
+//          }
+//        }
+      },
+    );
+  }
+
   /// 是否显示室内地图
   Future showIndoorMap(bool show) {
     return platform(
