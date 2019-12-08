@@ -30,7 +30,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// 获取当前位置
   ///
   /// 由于定位需要时间, 如果进入地图后马上获取位置信息, 获取到的会是null, [getLocation]会默认
-  /// 以[interval]300毫秒为间隔循环获取定位信息, 直到获取到的定位不为空. 你可以设置超时时间[timeout], 防止
+  /// 以[interval]500毫秒为间隔循环获取定位信息, 直到获取到的定位不为空. 你可以设置超时时间[timeout], 防止
   /// 一直获取不到定位的情况(比如没有设置[showMyLocation]为true, 或者没有同意权限申请).
   Future<LatLng> getLocation({
     Duration interval = const Duration(milliseconds: 500),
@@ -89,7 +89,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   }) async {
     assert(
       (iconUri != null && imageConfig != null) || iconUri == null,
-      'iconUri与configuration同时设置!',
+      'iconUri与imageConfig同时设置!',
     );
     return platform(
       android: (pool) async {
