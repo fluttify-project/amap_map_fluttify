@@ -1585,7 +1585,10 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
-  void dispose() {
+  Future<void> dispose() async {
+    await _androidController?.onPause();
+    await _androidController?.onDestroy();
+
     WidgetsBinding.instance.removeObserver(this);
   }
 
@@ -1593,6 +1596,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   void didChangeAppLifecycleState(AppLifecycleState state) {
     super.didChangeAppLifecycleState(state);
     debugPrint('didChangeAppLifecycleState: $state');
+    // 因为这里的生命周期其实已经是App的生命周期了, 所以除了这里还需要在dispose里释放资源
     switch (state) {
       case AppLifecycleState.resumed:
         _androidController?.onResume();
