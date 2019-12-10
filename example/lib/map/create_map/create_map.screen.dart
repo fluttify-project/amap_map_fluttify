@@ -24,6 +24,12 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
             flex: 1,
             child: AmapView(
               showZoomControl: false,
+              onMapMoveStart: (move) async {
+                toast('onMapMoveStart');
+              },
+              onMapMoveEnd: (move) async {
+                toast('onMapMoveEnd');
+              },
               maskDelay: Duration(milliseconds: 500),
               onMapCreated: (controller) async {
                 _controller = controller;

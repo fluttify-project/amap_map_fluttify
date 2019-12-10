@@ -154,10 +154,10 @@ class _AmapViewState extends State<AmapView> {
                     final bundle = await createandroid_os_Bundle();
                     await controller.onCreate(bundle);
 
+                    await _initAndroid();
                     if (widget.onMapCreated != null) {
                       await widget.onMapCreated(_controller);
                     }
-                    await _initAndroid();
                     release(bundle);
                   },
                 );
@@ -177,10 +177,10 @@ class _AmapViewState extends State<AmapView> {
             onViewCreated: (controller) async {
               _controller = AmapController.ios(controller, this);
 
+              await _initIOS();
               if (widget.onMapCreated != null) {
                 await widget.onMapCreated(_controller);
               }
-              await _initIOS();
             },
           ),
           _mask,
