@@ -67,6 +67,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 result = ref.getMap();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
                 methodResult.error(throwable.getMessage(), null, null);
                 return;
             }
@@ -101,6 +104,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 ref.onCreate(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
                 methodResult.error(throwable.getMessage(), null, null);
                 return;
             }
@@ -127,6 +133,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 ref.onResume();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
                 methodResult.error(throwable.getMessage(), null, null);
                 return;
             }
@@ -153,6 +162,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 ref.onPause();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
                 methodResult.error(throwable.getMessage(), null, null);
                 return;
             }
@@ -179,6 +191,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 ref.onDestroy();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
                 methodResult.error(throwable.getMessage(), null, null);
                 return;
             }
@@ -205,6 +220,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 ref.onLowMemory();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
                 methodResult.error(throwable.getMessage(), null, null);
                 return;
             }
@@ -232,6 +250,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 ref.onSaveInstanceState(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
                 methodResult.error(throwable.getMessage(), null, null);
                 return;
             }
@@ -259,6 +280,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 ref.setVisibility(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
                 methodResult.error(throwable.getMessage(), null, null);
                 return;
             }
@@ -334,6 +358,9 @@ class WearMapViewFactory extends PlatformViewFactory {
             });
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
                 methodResult.error(throwable.getMessage(), null, null);
                 return;
             }
@@ -360,6 +387,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 ref.onDismiss();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
                 methodResult.error(throwable.getMessage(), null, null);
                 return;
             }
@@ -387,6 +417,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 ref.onEnterAmbient(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
                 methodResult.error(throwable.getMessage(), null, null);
                 return;
             }
@@ -413,6 +446,9 @@ class WearMapViewFactory extends PlatformViewFactory {
                 ref.onExitAmbient();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
                 methodResult.error(throwable.getMessage(), null, null);
                 return;
             }

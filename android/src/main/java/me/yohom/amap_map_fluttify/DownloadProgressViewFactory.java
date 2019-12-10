@@ -67,6 +67,9 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
                 ref.setProgress(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
                 methodResult.error(throwable.getMessage(), null, null);
                 return;
             }
