@@ -13,16 +13,20 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 typedef void TextureMapViewCreatedCallback(com_amap_api_maps_TextureMapView controller);
+typedef Future<void> OnAndroidViewDispose();
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_TextureMapView_Android extends StatefulWidget {
   const com_amap_api_maps_TextureMapView_Android({
     Key key,
     this.onViewCreated,
+    this.onDispose,
     this.var2,
   }) : super(key: key);
 
   final TextureMapViewCreatedCallback onViewCreated;
+  final OnAndroidViewDispose onDispose;
+
   final com_amap_api_maps_AMapOptions var2;
 
   @override
@@ -57,6 +61,9 @@ class _com_amap_api_maps_TextureMapView_AndroidState extends State<com_amap_api_
 
   @override
   void dispose() {
+    if (widget.onDispose != null) {
+      await widget.onDispose();
+    }
     release(_controller);
     super.dispose();
   }
