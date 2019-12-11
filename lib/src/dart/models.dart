@@ -212,6 +212,61 @@ class Point {
   }
 }
 
+/// 定位信息
+class Location {
+  Location.android(this._androidModel);
+
+  Location.ios(this._iosModel);
+
+  android_location_Location _androidModel;
+  MAUserLocation _iosModel;
+
+  Future<LatLng> get coord {
+    return platform(
+      android: (pool) async {
+        return LatLng(
+          await _androidModel.latitude,
+          await _androidModel.longitude,
+        );
+      },
+      ios: (pool) async {
+        final location = await _iosModel.get_coordinate();
+        return LatLng(await location.latitude, await location.longitude);
+      },
+    );
+  }
+
+  Future<double> get bearing {
+    return platform(
+      android: (pool) => _androidModel.bearing,
+      ios: (pool) async {
+        final heading = await _iosModel.get_heading();
+        return heading.magneticHeading;
+      },
+    );
+  }
+
+  Future<double> get altitude {
+    return platform(
+      android: (pool) => _androidModel.altitude,
+      ios: (pool) async {
+        final location = await _iosModel.get_location();
+        return location.altitude;
+      },
+    );
+  }
+
+  Future<double> get speed {
+    return platform(
+      android: (pool) => _androidModel.speed,
+      ios: (pool) async {
+        final location = await _iosModel.get_location();
+        return location.speed;
+      },
+    );
+  }
+}
+
 /// 地图标记
 class Marker {
   Marker.android(this._androidModel);

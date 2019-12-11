@@ -13,16 +13,20 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 typedef void WearMapViewCreatedCallback(com_amap_api_maps_WearMapView controller);
+typedef Future<void> _OnAndroidViewDispose();
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_WearMapView_Android extends StatefulWidget {
   const com_amap_api_maps_WearMapView_Android({
     Key key,
     this.onViewCreated,
+    this.onDispose,
     this.var2,
   }) : super(key: key);
 
   final WearMapViewCreatedCallback onViewCreated;
+  final _OnAndroidViewDispose onDispose;
+
   final com_amap_api_maps_AMapOptions var2;
 
   @override
@@ -57,7 +61,9 @@ class _com_amap_api_maps_WearMapView_AndroidState extends State<com_amap_api_map
 
   @override
   void dispose() {
-    release(_controller);
+    if (widget.onDispose != null) {
+      widget.onDispose().then((_) => release(_controller));
+    }
     super.dispose();
   }
 }

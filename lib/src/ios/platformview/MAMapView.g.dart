@@ -13,15 +13,18 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 typedef void MAMapViewCreatedCallback(MAMapView controller);
+typedef Future<void> _OnUiKitViewDispose();
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMapView_iOS extends StatefulWidget {
   const MAMapView_iOS({
     Key key,
     this.onViewCreated,
+    this.onDispose,
   }) : super(key: key);
 
   final MAMapViewCreatedCallback onViewCreated;
+  final _OnUiKitViewDispose onDispose;
 
   @override
   _MAMapView_iOSState createState() => _MAMapView_iOSState();
@@ -55,7 +58,9 @@ class _MAMapView_iOSState extends State<MAMapView_iOS> {
 
   @override
   void dispose() {
-    release(_controller);
+    if (widget.onDispose != null) {
+      widget.onDispose().then((_) => release(_controller));
+    }
     super.dispose();
   }
 }

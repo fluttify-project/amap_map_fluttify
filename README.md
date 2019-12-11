@@ -95,6 +95,24 @@ class AmapWidget extends StatelessWidget {
 }
 ```
 
+`requestPermission`的参考实现(需要依赖`permission_handler`插件): 
+```dart
+import 'package:decorated_flutter/decorated_flutter.dart';
+import 'package:permission_handler/permission_handler.dart';
+
+Future<bool> requestPermission() async {
+  final permissions =
+      await PermissionHandler().requestPermissions([PermissionGroup.location]);
+
+  if (permissions[PermissionGroup.location] == PermissionStatus.granted) {
+    return true;
+  } else {
+    toast('需要定位权限!');
+    return false;
+  }
+}
+```
+
 iOS `Info.plist`配置:
 ```xml
 /// 使用PlatformView的声明

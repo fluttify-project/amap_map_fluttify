@@ -13,16 +13,20 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 typedef void DownloadProgressViewCreatedCallback(com_amap_api_maps_offlinemap_DownloadProgressView controller);
+typedef Future<void> _OnAndroidViewDispose();
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_offlinemap_DownloadProgressView_Android extends StatefulWidget {
   const com_amap_api_maps_offlinemap_DownloadProgressView_Android({
     Key key,
     this.onViewCreated,
+    this.onDispose,
     
   }) : super(key: key);
 
   final DownloadProgressViewCreatedCallback onViewCreated;
+  final _OnAndroidViewDispose onDispose;
+
   
 
   @override
@@ -57,7 +61,9 @@ class _com_amap_api_maps_offlinemap_DownloadProgressView_AndroidState extends St
 
   @override
   void dispose() {
-    release(_controller);
+    if (widget.onDispose != null) {
+      widget.onDispose().then((_) => release(_controller));
+    }
     super.dispose();
   }
 }

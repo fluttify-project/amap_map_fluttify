@@ -41,7 +41,11 @@ class AmapView extends StatefulWidget {
     this.onMapMoveEnd,
     this.maskDelay = const Duration(seconds: 0),
     this.mask,
-  }) : super(key: key);
+  })  : assert(
+          zoomLevel == null || (zoomLevel >= 3 && zoomLevel <= 19),
+          '缩放范围为3-19',
+        ),
+        super(key: key);
 
   /// 地图创建完成回调
   final _OnMapCreated onMapCreated;
@@ -71,6 +75,8 @@ class AmapView extends StatefulWidget {
   final bool tiltGestureEnabled;
 
   /// 缩放级别
+  ///
+  /// 地图的缩放级别一共分为 17 级，从 3 到 19. 数字越大，展示的图面信息越精细
   final double zoomLevel;
 
   /// 中心点坐标
@@ -142,16 +148,17 @@ class _AmapViewState extends State<AmapView> {
               if (snapshot.hasData) {
                 return com_amap_api_maps_MapView_Android(
                   var2: snapshot.data,
+                  onDispose: _onPlatformViewDispose,
                   onViewCreated: (controller) async {
                     _controller = AmapController.android(controller, this);
 
                     final bundle = await createandroid_os_Bundle();
                     await controller.onCreate(bundle);
 
+                    await _initAndroid();
                     if (widget.onMapCreated != null) {
                       await widget.onMapCreated(_controller);
                     }
-                    await _initAndroid();
                     release(bundle);
                   },
                 );
@@ -168,13 +175,14 @@ class _AmapViewState extends State<AmapView> {
         children: <Widget>[
           RepaintBoundary(key: _markerKey, child: _widgetLayer),
           MAMapView_iOS(
+            onDispose: _onPlatformViewDispose,
             onViewCreated: (controller) async {
               _controller = AmapController.ios(controller, this);
 
+              await _initIOS();
               if (widget.onMapCreated != null) {
                 await widget.onMapCreated(_controller);
               }
-              await _initIOS();
             },
           ),
           _mask,
@@ -216,13 +224,15 @@ class _AmapViewState extends State<AmapView> {
 
   @override
   void dispose() {
-    _controller?.dispose();
-
     final isCurrentPlugin = (it) => it.tag == 'amap_map_fluttify';
     kNativeObjectPool
       ..where(isCurrentPlugin).forEach(release)
       ..removeWhere(isCurrentPlugin);
     super.dispose();
+  }
+
+  Future<void> _onPlatformViewDispose() async {
+    await _controller.dispose();
   }
 
   Future<com_amap_api_maps_AMapOptions> _androidOptions() async {

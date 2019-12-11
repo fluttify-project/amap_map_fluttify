@@ -3,6 +3,7 @@ part of 'amap_view.widget.dart';
 typedef Future<void> OnMarkerClicked(Marker marker);
 typedef Future<void> OnMapClicked(LatLng latLng);
 typedef Future<void> OnMapMove(MapMove move);
+typedef Future<void> OnLocationChange(Location move);
 typedef Future<void> OnMarkerDrag(Marker marker);
 typedef Future<void> _OnRequireAlwaysAuth(CLLocationManager manager);
 typedef Future<void> OnScreenShot(Uint8List imageData);
@@ -29,38 +30,49 @@ class AmapController with WidgetsBindingObserver, _Private {
 
   /// 获取当前位置
   ///
-  /// 由于定位需要时间, 如果进入地图后马上获取位置信息, 获取到的会是null, 加入参数[delay]指定
-  /// 进入地图后一段时间后再获取定位. 具体数值可以自行尝试判断.
-  /// 另外一个解决方案是使用[amap_location_fluttify](https://pub.flutter-io.cn/packages/amap_location_fluttify)
-  /// 返回的是经纬度, 如果需要进一步的数据, 可以配合[https://github.com/fluttify-project/amap_search_fluttify]进行逆地理搜索
-  Future<LatLng> getLocation({Duration delay = Duration.zero}) async {
+  /// 由于定位需要时间, 如果进入地图后马上获取位置信息, 获取到的会是null, [getLocation]会默认
+  /// 以[interval]500毫秒为间隔循环获取定位信息, 直到获取到的定位不为空. 你可以设置超时时间[timeout], 防止
+  /// 一直获取不到定位的情况(比如没有设置[showMyLocation]为true, 或者没有同意权限申请).
+  Future<LatLng> getLocation({
+    Duration interval = const Duration(milliseconds: 500),
+    Duration timeout = const Duration(seconds: 10),
+  }) async {
     return platform(
       android: (pool) async {
-        return Future.delayed(
-          delay,
-          () async {
-            final map = await _androidController.getMap();
-            final location = await map.getMyLocation();
+        final map = await _androidController.getMap();
+        return Stream.periodic(interval, (_) => _)
+            .asyncMap(
+              (count) async {
+                final coord = await map.getMyLocation();
 
-            final result = LatLng(
-              await location.latitude,
-              await location.longitude,
-            );
-            return result;
-          },
-        );
+                if (coord == null) {
+                  return null;
+                } else {
+                  return LatLng(await coord.latitude, await coord.longitude);
+                }
+              },
+            )
+            .take(timeout.inMilliseconds ~/ interval.inMilliseconds)
+            .firstWhere((location) => location != null)
+            .timeout(timeout, onTimeout: () => null);
       },
-      ios: (pool) async {
-        return Future.delayed(
-          delay,
-          () async {
-            final location = await _iosController.get_userLocation();
-            final coord = await location.get_coordinate();
+      ios: (pool) {
+        return Stream.periodic(interval, (_) => _)
+            .asyncMap(
+              (count) async {
+                final location = await _iosController.get_userLocation();
+                final coord = await location.get_coordinate();
 
-            final result = LatLng(await coord.latitude, await coord.longitude);
-            return result;
-          },
-        );
+                if (coord == null) {
+                  return null;
+                } else {
+                  return LatLng(await coord.latitude, await coord.longitude);
+                }
+              },
+            )
+            .take(timeout.inMilliseconds ~/ interval.inMilliseconds)
+            .firstWhere((location) => location != null)
+            .timeout(timeout, onTimeout: () => null);
       },
     );
   }
@@ -78,9 +90,9 @@ class AmapController with WidgetsBindingObserver, _Private {
   }) async {
     assert(
       (iconUri != null && imageConfig != null) || iconUri == null,
-      'iconUri与configuration同时设置!',
+      'iconUri与imageConfig同时设置!',
     );
-    return platform(
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final locationStyle =
@@ -159,9 +171,33 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 设置我的位置图标旋转角度
+  Future<void> setMyLocationRotateAngle(double angle) async {
+    await platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+        await map.setMyLocationRotateAngle((360 - angle).abs());
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        // todo 暂时没有找到比较直接的方式实现
+        print('ios端暂时未实现');
+//        final annotations = await _iosController.get_annotations();
+//        for (final annotation in annotations) {
+//          if (await isKindOfMAUserLocation(annotation)) {
+//            final userLocation = await asMAUserLocation(annotation);
+//            userLocation.set()
+//            break;
+//          }
+//        }
+      },
+    );
+  }
+
   /// 是否显示室内地图
-  Future showIndoorMap(bool show) {
-    return platform(
+  Future<void> showIndoorMap(bool show) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         await map.showIndoorMap(show);
@@ -175,8 +211,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 选择显示图层
-  Future setMapType(MapType mapType) async {
-    return platform(
+  Future<void> setMapType(MapType mapType) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         switch (mapType) {
@@ -222,8 +258,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 选择地图语言
-  Future setMapLanguage(Language language) async {
-    return platform(
+  Future<void> setMapLanguage(Language language) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         switch (language) {
@@ -253,8 +289,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 显示路况信息
-  Future showTraffic(bool enable) {
-    return platform(
+  Future<void> showTraffic(bool enable) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         await map.setTrafficEnabled(enable);
@@ -268,8 +304,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 显示缩放控件
-  Future showZoomControl(bool enable) {
-    return platform(
+  Future<void> showZoomControl(bool enable) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final uiSetting = await map.getUiSettings();
@@ -284,8 +320,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 显示指南针
-  Future showCompass(bool enable) {
-    return platform(
+  Future<void> showCompass(bool enable) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final uiSetting = await map.getUiSettings();
@@ -300,8 +336,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 显示定位按钮
-  Future showLocateControl(bool enable) {
-    return platform(
+  Future<void> showLocateControl(bool enable) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final uiSetting = await map.getUiSettings();
@@ -316,8 +352,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 显示比例尺控件
-  Future showScaleControl(bool enable) {
-    return platform(
+  Future<void> showScaleControl(bool enable) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final uiSetting = await map.getUiSettings();
@@ -332,8 +368,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 缩放手势使能
-  Future setZoomGesturesEnabled(bool enable) {
-    return platform(
+  Future<void> setZoomGesturesEnabled(bool enable) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final uiSetting = await map.getUiSettings();
@@ -348,8 +384,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 滑动手势使能
-  Future setScrollGesturesEnabled(bool enable) {
-    return platform(
+  Future<void> setScrollGesturesEnabled(bool enable) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final uiSetting = await map.getUiSettings();
@@ -364,8 +400,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 旋转手势使能
-  Future setRotateGesturesEnabled(bool enable) {
-    return platform(
+  Future<void> setRotateGesturesEnabled(bool enable) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final uiSetting = await map.getUiSettings();
@@ -380,8 +416,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 旋转手势使能
-  Future setTiltGesturesEnabled(bool enable) {
-    return platform(
+  Future<void> setTiltGesturesEnabled(bool enable) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final uiSetting = await map.getUiSettings();
@@ -396,8 +432,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 所有手势使能
-  Future setAllGesturesEnabled(bool enable) {
-    return platform(
+  Future<void> setAllGesturesEnabled(bool enable) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final uiSetting = await map.getUiSettings();
@@ -415,8 +451,11 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置缩放大小
-  Future setZoomLevel(double level, {bool animated = true}) {
-    return platform(
+  ///
+  /// 地图的缩放级别一共分为 17 级，从 3 到 19. 数字越大，展示的图面信息越精细
+  Future<void> setZoomLevel(double level, {bool animated = true}) async {
+    assert(level >= 3 && level <= 19, '缩放范围为3-19');
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final cameraUpdate =
@@ -436,8 +475,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 放大一个等级
-  Future zoomIn({bool animated = true}) {
-    return platform(
+  Future<void> zoomIn({bool animated = true}) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final cameraUpdate =
@@ -458,8 +497,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 放大一个等级
-  Future zoomOut({bool animated = true}) {
-    return platform(
+  Future<void> zoomOut({bool animated = true}) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final cameraUpdate =
@@ -480,13 +519,13 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置地图中心点
-  Future setCenterCoordinate(
+  Future<void> setCenterCoordinate(
     double lat,
     double lng, {
     double zoomLevel,
     bool animated = true,
-  }) {
-    return platform(
+  }) async {
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
 
@@ -876,7 +915,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
   /// 清除所有marker
   Future<void> clearMarkers() async {
-    return platform(
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         final markers = await map.getMapScreenMarkers();
@@ -1240,7 +1279,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
   /// 设置marker点击监听事件
   Future<void> setMarkerClickedListener(OnMarkerClicked onMarkerClicked) async {
-    return platform(
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
 
@@ -1262,7 +1301,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     OnMarkerDrag onMarkerDragging,
     OnMarkerDrag onMarkerDragEnd,
   }) async {
-    return platform(
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
 
@@ -1288,7 +1327,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
   /// 设置地图点击监听事件
   Future<void> setMapClickedListener(OnMapClicked onMapClick) async {
-    return platform(
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
 
@@ -1311,7 +1350,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     OnMapMove onMapMoveStart,
     OnMapMove onMapMoveEnd,
   }) async {
-    return platform(
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
 
@@ -1333,9 +1372,33 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 设置地图移动监听事件
+  ///
+  /// !还有bug, 建议先使用*amap_location_fluttify*代替
+  Future<void> setMyLocationChangeListener(
+    OnLocationChange onLocationChange,
+  ) async {
+    await platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+
+        await map.setOnMyLocationChangeListener(
+          _androidMapDelegate.._onLocationChange = onLocationChange,
+        );
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        await _iosController.set_delegate(
+          _iosMapDelegate.._onLocationChange = onLocationChange,
+        );
+      },
+    );
+  }
+
   /// 请求后台定位 *仅iOS
-  Future<void> requireAlwaysAuth() {
-    return platform(
+  Future<void> requireAlwaysAuth() async {
+    await platform(
       android: (pool) async {},
       ios: (pool) async {
         final onRequireAuth = (CLLocationManager manager) async {
@@ -1349,9 +1412,9 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 截图
-  Future<void> screenShot(OnScreenShot onScreenShot) {
+  Future<void> screenShot(OnScreenShot onScreenShot) async {
     assert(onScreenShot != null);
-    return platform(
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
         await map.getMapScreenShot(
@@ -1401,7 +1464,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           .load(texturePath)
           .then((byteData) => byteData.buffer.asUint8List());
     }
-    return platform(
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
 
@@ -1469,7 +1532,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         .reduce((pre, cur) => pre.longitude > cur.longitude ? pre : cur)
         .then((right) => right.longitude);
 
-    return platform(
+    await platform(
       android: (pool) async {
         final map = await _androidController.getMap();
 
@@ -1547,7 +1610,10 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
-  void dispose() {
+  Future<void> dispose() async {
+    await _androidController?.onPause();
+    await _androidController?.onDestroy();
+
     WidgetsBinding.instance.removeObserver(this);
   }
 
@@ -1555,6 +1621,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   void didChangeAppLifecycleState(AppLifecycleState state) {
     super.didChangeAppLifecycleState(state);
     debugPrint('didChangeAppLifecycleState: $state');
+    // 因为这里的生命周期其实已经是App的生命周期了, 所以除了这里还需要在dispose里释放资源
     switch (state) {
       case AppLifecycleState.resumed:
         _androidController?.onResume();
@@ -1580,6 +1647,8 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   OnMapMove _onMapMoveStart;
   OnMapMove _onMapMoveEnd;
   _OnRequireAlwaysAuth _onRequireAlwaysAuth;
+  OnLocationChange _onLocationChange;
+
   MAMapView _iosController;
 
   @override
@@ -1707,6 +1776,22 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       await _onRequireAlwaysAuth(locationManager);
     }
   }
+
+  @override
+  Future<void> mapViewDidUpdateUserLocationupdatingLocation(
+    MAMapView mapView,
+    MAUserLocation userLocation,
+    bool updatingLocation,
+  ) async {
+    super.mapViewDidUpdateUserLocationupdatingLocation(
+      mapView,
+      userLocation,
+      updatingLocation,
+    );
+    if (_onLocationChange != null) {
+      await _onLocationChange(Location.ios(userLocation));
+    }
+  }
 }
 
 class _AndroidMapDelegate extends java_lang_Object
@@ -1715,7 +1800,8 @@ class _AndroidMapDelegate extends java_lang_Object
         com_amap_api_maps_AMap_OnMarkerDragListener,
         com_amap_api_maps_AMap_OnMapClickListener,
         com_amap_api_maps_AMap_OnCameraChangeListener,
-        com_amap_api_maps_AMap_OnMapScreenShotListener {
+        com_amap_api_maps_AMap_OnMapScreenShotListener,
+        com_amap_api_maps_AMap_OnMyLocationChangeListener {
   OnMarkerClicked _onMarkerClicked;
   OnMarkerDrag _onMarkerDragStart;
   OnMarkerDrag _onMarkerDragging;
@@ -1724,6 +1810,7 @@ class _AndroidMapDelegate extends java_lang_Object
   OnMapMove _onMapMoveEnd;
   OnMapClicked _onMapClick;
   OnScreenShot _onSnapshot;
+  OnLocationChange _onLocationChange;
 
   // 为了和ios端行为保持一致, 需要屏蔽掉移动过程中的回调
   bool _moveStarted = false;
@@ -1822,6 +1909,14 @@ class _AndroidMapDelegate extends java_lang_Object
     if (_onSnapshot != null) {
       await _onSnapshot(await var1.data);
       var1.recycle(); // 回收原生的Bitmap, 由于没有后续操作, 异步执行也无妨.
+    }
+  }
+
+  @override
+  Future<void> onMyLocationChange(android_location_Location var1) async {
+    super.onMyLocationChange(var1);
+    if (_onLocationChange != null) {
+      await _onLocationChange(Location.android(var1));
     }
   }
 }

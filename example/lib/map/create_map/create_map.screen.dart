@@ -245,6 +245,18 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                     toast('屏幕坐标(250, 250)对应的经纬度坐标为: $latLng');
                   },
                 ),
+                ListTile(
+                  title: Center(child: Text('监听位置改变')),
+                  onTap: () async {
+                    await _controller
+                        ?.setMyLocationChangeListener((location) async {
+                      final coord = await location.coord;
+                      toast(
+                        '当前位置: 经度: ${coord.latitude}, 纬度: ${coord.longitude}, 方向: ${await location.bearing}',
+                      );
+                    });
+                  },
+                ),
               ],
             ),
           ),
