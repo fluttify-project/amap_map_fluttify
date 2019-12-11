@@ -937,6 +937,26 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 清除地图上所有覆盖物
+  Future<void> clear() async {
+    await platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+        await map.clear();
+
+        pool.add(map);
+      },
+      ios: (pool) async {
+        final markers = await _iosController.get_annotations();
+        final overlays = await _iosController.get_overlays();
+        await _iosController.removeAnnotations(markers);
+        await _iosController.removeOverlays(overlays);
+
+        pool..addAll(markers.cast<Ref>())..addAll(overlays.cast<Ref>());
+      },
+    );
+  }
+
   /// 屏幕坐标转经纬度坐标
   Future<LatLng> fromScreenLocation(Point point) async {
     return platform(
