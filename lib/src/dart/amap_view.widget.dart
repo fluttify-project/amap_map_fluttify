@@ -148,6 +148,7 @@ class _AmapViewState extends State<AmapView> {
               if (snapshot.hasData) {
                 return com_amap_api_maps_MapView_Android(
                   var2: snapshot.data,
+                  onDispose: _onPlatformViewDispose,
                   onViewCreated: (controller) async {
                     _controller = AmapController.android(controller, this);
 
@@ -174,6 +175,7 @@ class _AmapViewState extends State<AmapView> {
         children: <Widget>[
           RepaintBoundary(key: _markerKey, child: _widgetLayer),
           MAMapView_iOS(
+            onDispose: _onPlatformViewDispose,
             onViewCreated: (controller) async {
               _controller = AmapController.ios(controller, this);
 
@@ -222,13 +224,15 @@ class _AmapViewState extends State<AmapView> {
 
   @override
   void dispose() {
-    _controller?.dispose();
-
     final isCurrentPlugin = (it) => it.tag == 'amap_map_fluttify';
     kNativeObjectPool
       ..where(isCurrentPlugin).forEach(release)
       ..removeWhere(isCurrentPlugin);
     super.dispose();
+  }
+
+  Future<void> _onPlatformViewDispose() async {
+    await _controller.dispose();
   }
 
   Future<com_amap_api_maps_AMapOptions> _androidOptions() async {
