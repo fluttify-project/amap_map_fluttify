@@ -1,3 +1,6 @@
+## 0.12.1
+- fix: 降低url_launcher的版本
+
 ## 0.12.0
 - docs: 添加requestPermission的参考实现
 - enhance: 增加对zoomLevel的断言和文档说明
