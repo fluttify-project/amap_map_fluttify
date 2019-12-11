@@ -12,7 +12,7 @@ dependencies:
     sdk: flutter
   foundation_fluttify: ^0.2.5
   amap_core_fluttify: ^0.2.3
-  url_launcher: ^5.4.0
+  url_launcher: ^5.2.7
 
 dev_dependencies:
   flutter_test:
