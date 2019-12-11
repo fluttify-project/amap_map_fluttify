@@ -3,6 +3,7 @@ part of 'amap_view.widget.dart';
 typedef Future<void> OnMarkerClicked(Marker marker);
 typedef Future<void> OnMapClicked(LatLng latLng);
 typedef Future<void> OnMapMove(MapMove move);
+typedef Future<void> OnLocationChange(Location move);
 typedef Future<void> OnMarkerDrag(Marker marker);
 typedef Future<void> _OnRequireAlwaysAuth(CLLocationManager manager);
 typedef Future<void> OnScreenShot(Uint8List imageData);
@@ -1371,6 +1372,30 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 设置地图移动监听事件
+  ///
+  /// !还有bug, 建议先使用*amap_location_fluttify*代替
+  Future<void> setMyLocationChangeListener(
+    OnLocationChange onLocationChange,
+  ) async {
+    await platform(
+      android: (pool) async {
+        final map = await _androidController.getMap();
+
+        await map.setOnMyLocationChangeListener(
+          _androidMapDelegate.._onLocationChange = onLocationChange,
+        );
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        await _iosController.set_delegate(
+          _iosMapDelegate.._onLocationChange = onLocationChange,
+        );
+      },
+    );
+  }
+
   /// 请求后台定位 *仅iOS
   Future<void> requireAlwaysAuth() async {
     await platform(
@@ -1622,6 +1647,8 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   OnMapMove _onMapMoveStart;
   OnMapMove _onMapMoveEnd;
   _OnRequireAlwaysAuth _onRequireAlwaysAuth;
+  OnLocationChange _onLocationChange;
+
   MAMapView _iosController;
 
   @override
@@ -1749,6 +1776,22 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       await _onRequireAlwaysAuth(locationManager);
     }
   }
+
+  @override
+  Future<void> mapViewDidUpdateUserLocationupdatingLocation(
+    MAMapView mapView,
+    MAUserLocation userLocation,
+    bool updatingLocation,
+  ) async {
+    super.mapViewDidUpdateUserLocationupdatingLocation(
+      mapView,
+      userLocation,
+      updatingLocation,
+    );
+    if (_onLocationChange != null) {
+      await _onLocationChange(Location.ios(userLocation));
+    }
+  }
 }
 
 class _AndroidMapDelegate extends java_lang_Object
@@ -1757,7 +1800,8 @@ class _AndroidMapDelegate extends java_lang_Object
         com_amap_api_maps_AMap_OnMarkerDragListener,
         com_amap_api_maps_AMap_OnMapClickListener,
         com_amap_api_maps_AMap_OnCameraChangeListener,
-        com_amap_api_maps_AMap_OnMapScreenShotListener {
+        com_amap_api_maps_AMap_OnMapScreenShotListener,
+        com_amap_api_maps_AMap_OnMyLocationChangeListener {
   OnMarkerClicked _onMarkerClicked;
   OnMarkerDrag _onMarkerDragStart;
   OnMarkerDrag _onMarkerDragging;
@@ -1766,6 +1810,7 @@ class _AndroidMapDelegate extends java_lang_Object
   OnMapMove _onMapMoveEnd;
   OnMapClicked _onMapClick;
   OnScreenShot _onSnapshot;
+  OnLocationChange _onLocationChange;
 
   // 为了和ios端行为保持一致, 需要屏蔽掉移动过程中的回调
   bool _moveStarted = false;
@@ -1864,6 +1909,14 @@ class _AndroidMapDelegate extends java_lang_Object
     if (_onSnapshot != null) {
       await _onSnapshot(await var1.data);
       var1.recycle(); // 回收原生的Bitmap, 由于没有后续操作, 异步执行也无妨.
+    }
+  }
+
+  @override
+  Future<void> onMyLocationChange(android_location_Location var1) async {
+    super.onMyLocationChange(var1);
+    if (_onLocationChange != null) {
+      await _onLocationChange(Location.android(var1));
     }
   }
 }
