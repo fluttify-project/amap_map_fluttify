@@ -59,9 +59,8 @@ class _MACustomCalloutView_iOSState extends State<MACustomCalloutView_iOS> {
   @override
   void dispose() {
     if (widget.onDispose != null) {
-      await widget.onDispose();
+      widget.onDispose().then((_) => release(_controller));
     }
-    release(_controller);
     super.dispose();
   }
 }

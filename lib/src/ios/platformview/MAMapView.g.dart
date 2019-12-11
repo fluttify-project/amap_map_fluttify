@@ -59,9 +59,8 @@ class _MAMapView_iOSState extends State<MAMapView_iOS> {
   @override
   void dispose() {
     if (widget.onDispose != null) {
-      await widget.onDispose();
+      widget.onDispose().then((_) => release(_controller));
     }
-    release(_controller);
     super.dispose();
   }
 }
