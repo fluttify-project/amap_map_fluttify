@@ -1,3 +1,13 @@
+## 0.12.0
+- docs: 添加requestPermission的参考实现
+- enhance: 增加对zoomLevel的断言和文档说明
+- enhance: [breaking change] getLocation方法更加可靠地获取定位信息, 要么有定位信息要么超时
+- enhance: 导出amap_core_fluttify
+- feat: 增加setMyLocationRotateAngle方法, ios端未实现
+- fix: dispose时，调用地图的生命周期方法
+- enhance: 各平台的初始化方法放在onMapCreated前面执行
+- feat: 增加setMyLocationChangeListener
+
 ## 0.11.0
 - roll engine #a918944
 - enhance: 适配flutter 1.12.13
