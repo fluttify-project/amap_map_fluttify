@@ -13,7 +13,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 typedef void DownloadProgressViewCreatedCallback(com_amap_api_maps_offlinemap_DownloadProgressView controller);
-typedef Future<void> OnAndroidViewDispose();
+typedef Future<void> _OnAndroidViewDispose();
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_offlinemap_DownloadProgressView_Android extends StatefulWidget {
@@ -25,7 +25,7 @@ class com_amap_api_maps_offlinemap_DownloadProgressView_Android extends Stateful
   }) : super(key: key);
 
   final DownloadProgressViewCreatedCallback onViewCreated;
-  final OnAndroidViewDispose onDispose;
+  final _OnAndroidViewDispose onDispose;
 
   
 

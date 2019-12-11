@@ -13,7 +13,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 typedef void MACustomCalloutViewCreatedCallback(MACustomCalloutView controller);
-typedef Future<void> OnUiKitViewDispose();
+typedef Future<void> _OnUiKitViewDispose();
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MACustomCalloutView_iOS extends StatefulWidget {
@@ -24,7 +24,7 @@ class MACustomCalloutView_iOS extends StatefulWidget {
   }) : super(key: key);
 
   final MACustomCalloutViewCreatedCallback onViewCreated;
-  final OnUiKitViewDispose onDispose;
+  final _OnUiKitViewDispose onDispose;
 
   @override
   _MACustomCalloutView_iOSState createState() => _MACustomCalloutView_iOSState();
