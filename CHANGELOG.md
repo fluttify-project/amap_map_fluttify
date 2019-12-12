@@ -1,3 +1,8 @@
+## 0.12.2
+- feat: 添加clear方法, 清除所有添加在地图上的覆盖物
+- enhance: 提高flutter的约束版本
+- enhance: 开放AmapController内部的androidController和iosController, 供使用者自行通过extension实现自己需要的方法
+
 ## 0.12.1
 - fix: 降低url_launcher的版本
 
