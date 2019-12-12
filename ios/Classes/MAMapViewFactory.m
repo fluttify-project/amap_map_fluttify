@@ -3579,6 +3579,18 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       }
       return annotationView;
   }
+  
+//  //用户当前位置大头针
+//  if ([annotation isKindOfClass:[MAUserLocation class]]) {
+//      static NSString *userLocationStyleReuseIndetifier = @"userLocationStyleReuseIndetifier";
+//      
+//      MAAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:userLocationStyleReuseIndetifier];
+//      if (annotationView == nil) {
+//          annotationView = [[MAAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:userLocationStyleReuseIndetifier];
+//      }
+//      
+//      return annotationView;
+//  }
   ////////////////////////////////////////////////////////////////////////////////
   
   return nil;
