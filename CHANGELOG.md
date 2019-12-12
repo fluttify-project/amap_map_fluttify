@@ -1,3 +1,6 @@
+## 0.12.3
+- feat: 增加setInfoWindowClickListener弹窗点击事件
+
 ## 0.12.2
 - feat: 添加clear方法, 清除所有添加在地图上的覆盖物
 - enhance: 提高flutter的约束版本

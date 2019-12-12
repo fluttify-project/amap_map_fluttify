@@ -1630,6 +1630,27 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// Marker弹窗点击事件监听
+  Future<void> setInfoWindowClickListener(
+    OnMarkerClicked onInfoWindowClicked,
+  ) async {
+    await platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        await map.setOnInfoWindowClickListener(
+          _androidMapDelegate.._onInfoWindowClicked = onInfoWindowClicked,
+        );
+        pool.add(map);
+      },
+      ios: (pool) async {
+        await iosController.set_delegate(
+          _iosMapDelegate.._onInfoWindowClicked = onInfoWindowClicked,
+        );
+      },
+    );
+  }
+
   Future<void> dispose() async {
     await androidController?.onPause();
     await androidController?.onDestroy();
@@ -1668,6 +1689,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   OnMapMove _onMapMoveEnd;
   _OnRequireAlwaysAuth _onRequireAlwaysAuth;
   OnLocationChange _onLocationChange;
+  OnMarkerClicked _onInfoWindowClicked;
 
   MAMapView _iosController;
 
@@ -1812,6 +1834,23 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       await _onLocationChange(Location.ios(userLocation));
     }
   }
+
+  @override
+  Future<void> mapViewDidAnnotationViewCalloutTapped(
+    MAMapView mapView,
+    MAAnnotationView view,
+  ) async {
+    super.mapViewDidAnnotationViewCalloutTapped(mapView, view);
+    if (_onInfoWindowClicked != null) {
+      await _onInfoWindowClicked(
+        Marker.ios(
+          MAPointAnnotation()
+            ..refId = (await view.get_annotation(viewChannel: false)).refId,
+          _iosController,
+        ),
+      );
+    }
+  }
 }
 
 class _AndroidMapDelegate extends java_lang_Object
@@ -1821,7 +1860,8 @@ class _AndroidMapDelegate extends java_lang_Object
         com_amap_api_maps_AMap_OnMapClickListener,
         com_amap_api_maps_AMap_OnCameraChangeListener,
         com_amap_api_maps_AMap_OnMapScreenShotListener,
-        com_amap_api_maps_AMap_OnMyLocationChangeListener {
+        com_amap_api_maps_AMap_OnMyLocationChangeListener,
+        com_amap_api_maps_AMap_OnInfoWindowClickListener {
   OnMarkerClicked _onMarkerClicked;
   OnMarkerDrag _onMarkerDragStart;
   OnMarkerDrag _onMarkerDragging;
@@ -1831,6 +1871,7 @@ class _AndroidMapDelegate extends java_lang_Object
   OnMapClicked _onMapClick;
   OnScreenShot _onSnapshot;
   OnLocationChange _onLocationChange;
+  OnMarkerClicked _onInfoWindowClicked;
 
   // 为了和ios端行为保持一致, 需要屏蔽掉移动过程中的回调
   bool _moveStarted = false;
@@ -1937,6 +1978,14 @@ class _AndroidMapDelegate extends java_lang_Object
     super.onMyLocationChange(var1);
     if (_onLocationChange != null) {
       await _onLocationChange(Location.android(var1));
+    }
+  }
+
+  @override
+  Future<void> onInfoWindowClick(com_amap_api_maps_model_Marker var1) async {
+    super.onInfoWindowClick(var1);
+    if (_onInfoWindowClicked != null) {
+      await _onInfoWindowClicked(Marker.android(var1));
     }
   }
 }
