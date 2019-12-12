@@ -11,17 +11,17 @@ typedef Future<void> OnScreenShot(Uint8List imageData);
 /// 地图控制类
 class AmapController with WidgetsBindingObserver, _Private {
   /// Android构造器
-  AmapController.android(this._androidController, this._state) {
+  AmapController.android(this.androidController, this._state) {
     WidgetsBinding.instance.addObserver(this);
   }
 
   /// iOS构造器
-  AmapController.ios(this._iosController, this._state) {
+  AmapController.ios(this.iosController, this._state) {
     WidgetsBinding.instance.addObserver(this);
   }
 
-  com_amap_api_maps_MapView _androidController;
-  MAMapView _iosController;
+  com_amap_api_maps_MapView androidController;
+  MAMapView iosController;
 
   _AmapViewState _state;
 
@@ -39,7 +39,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   }) async {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         return Stream.periodic(interval, (_) => _)
             .asyncMap(
               (count) async {
@@ -60,7 +60,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         return Stream.periodic(interval, (_) => _)
             .asyncMap(
               (count) async {
-                final location = await _iosController.get_userLocation();
+                final location = await iosController.get_userLocation();
                 final coord = await location.get_coordinate();
 
                 if (coord == null) {
@@ -94,7 +94,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final locationStyle =
             await createcom_amap_api_maps_model_MyLocationStyle__();
         await locationStyle.showMyLocation(show);
@@ -134,10 +134,10 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool..add(map)..add(locationStyle);
       },
       ios: (pool) async {
-        await _iosController.set_showsUserLocation(show);
+        await iosController.set_showsUserLocation(show);
 
         if (show) {
-          await _iosController.setUserTrackingModeAnimated(
+          await iosController.setUserTrackingModeAnimated(
             MAUserTrackingMode.MAUserTrackingModeFollow,
             true,
           );
@@ -165,7 +165,7 @@ class AmapController with WidgetsBindingObserver, _Private {
             await style.set_lineWidth(strokeWidth);
           }
 
-          await _iosController.updateUserLocationRepresentation(style);
+          await iosController.updateUserLocationRepresentation(style);
         }
       },
     );
@@ -175,7 +175,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> setMyLocationRotateAngle(double angle) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         await map.setMyLocationRotateAngle((360 - angle).abs());
 
         pool..add(map);
@@ -199,13 +199,13 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> showIndoorMap(bool show) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         await map.showIndoorMap(show);
 
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_showsIndoorMap(show);
+        await iosController.set_showsIndoorMap(show);
       },
     );
   }
@@ -214,7 +214,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> setMapType(MapType mapType) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         switch (mapType) {
           case MapType.Standard:
             await map.setMapType(1);
@@ -238,19 +238,19 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         switch (mapType) {
           case MapType.Standard:
-            await _iosController.set_mapType(MAMapType.MAMapTypeStandard);
+            await iosController.set_mapType(MAMapType.MAMapTypeStandard);
             break;
           case MapType.Satellite:
-            await _iosController.set_mapType(MAMapType.MAMapTypeSatellite);
+            await iosController.set_mapType(MAMapType.MAMapTypeSatellite);
             break;
           case MapType.Night:
-            await _iosController.set_mapType(MAMapType.MAMapTypeStandardNight);
+            await iosController.set_mapType(MAMapType.MAMapTypeStandardNight);
             break;
           case MapType.Navi:
-            await _iosController.set_mapType(MAMapType.MAMapTypeNavi);
+            await iosController.set_mapType(MAMapType.MAMapTypeNavi);
             break;
           case MapType.Bus:
-            await _iosController.set_mapType(MAMapType.MAMapTypeBus);
+            await iosController.set_mapType(MAMapType.MAMapTypeBus);
             break;
         }
       },
@@ -261,7 +261,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> setMapLanguage(Language language) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         switch (language) {
           case Language.Chinese:
             await map.setMapLanguage('zh_cn');
@@ -277,11 +277,11 @@ class AmapController with WidgetsBindingObserver, _Private {
         switch (language) {
           case Language.Chinese:
             await performSelectorWithObject(
-                _iosController, 'setMapLanguage:', 0);
+                iosController, 'setMapLanguage:', 0);
             break;
           case Language.English:
             await performSelectorWithObject(
-                _iosController, 'setMapLanguage:', 1);
+                iosController, 'setMapLanguage:', 1);
             break;
         }
       },
@@ -292,13 +292,13 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> showTraffic(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         await map.setTrafficEnabled(enable);
 
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_showTraffic(enable);
+        await iosController.set_showTraffic(enable);
       },
     );
   }
@@ -307,7 +307,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> showZoomControl(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setZoomControlsEnabled(enable);
 
@@ -323,14 +323,14 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> showCompass(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setCompassEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_showsCompass(enable);
+        await iosController.set_showsCompass(enable);
       },
     );
   }
@@ -339,7 +339,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> showLocateControl(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setMyLocationButtonEnabled(enable);
 
@@ -355,14 +355,14 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> showScaleControl(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setScaleControlsEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_showsScale(enable);
+        await iosController.set_showsScale(enable);
       },
     );
   }
@@ -371,14 +371,14 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> setZoomGesturesEnabled(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setZoomGesturesEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_zoomEnabled(enable);
+        await iosController.set_zoomEnabled(enable);
       },
     );
   }
@@ -387,14 +387,14 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> setScrollGesturesEnabled(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setScrollGesturesEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_scrollEnabled(enable);
+        await iosController.set_scrollEnabled(enable);
       },
     );
   }
@@ -403,14 +403,14 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> setRotateGesturesEnabled(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setRotateGesturesEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_rotateEnabled(enable);
+        await iosController.set_rotateEnabled(enable);
       },
     );
   }
@@ -419,14 +419,14 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> setTiltGesturesEnabled(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setTiltGesturesEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_rotateCameraEnabled(enable);
+        await iosController.set_rotateCameraEnabled(enable);
       },
     );
   }
@@ -435,17 +435,17 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> setAllGesturesEnabled(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setAllGesturesEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_zoomEnabled(enable);
-        await _iosController.set_scrollEnabled(enable);
-        await _iosController.set_rotateEnabled(enable);
-        await _iosController.set_rotateCameraEnabled(enable);
+        await iosController.set_zoomEnabled(enable);
+        await iosController.set_scrollEnabled(enable);
+        await iosController.set_rotateEnabled(enable);
+        await iosController.set_rotateCameraEnabled(enable);
       },
     );
   }
@@ -457,7 +457,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     assert(level >= 3 && level <= 19, '缩放范围为3-19');
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final cameraUpdate =
             await com_amap_api_maps_CameraUpdateFactory.zoomTo(level);
         if (animated) {
@@ -469,7 +469,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool..add(map)..add(cameraUpdate);
       },
       ios: (pool) async {
-        await _iosController.setZoomLevelAnimated(level, animated);
+        await iosController.setZoomLevelAnimated(level, animated);
       },
     );
   }
@@ -478,7 +478,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> zoomIn({bool animated = true}) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final cameraUpdate =
             await com_amap_api_maps_CameraUpdateFactory.zoomIn();
         if (animated) {
@@ -490,8 +490,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool..add(map)..add(cameraUpdate);
       },
       ios: (pool) async {
-        final currentLevel = await _iosController.get_zoomLevel();
-        await _iosController.setZoomLevelAnimated(currentLevel + 1, animated);
+        final currentLevel = await iosController.get_zoomLevel();
+        await iosController.setZoomLevelAnimated(currentLevel + 1, animated);
       },
     );
   }
@@ -500,7 +500,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> zoomOut({bool animated = true}) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final cameraUpdate =
             await com_amap_api_maps_CameraUpdateFactory.zoomOut();
         if (animated) {
@@ -512,8 +512,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool..add(map)..add(cameraUpdate);
       },
       ios: (pool) async {
-        final currentLevel = await _iosController.get_zoomLevel();
-        await _iosController.setZoomLevelAnimated(currentLevel - 1, animated);
+        final currentLevel = await iosController.get_zoomLevel();
+        await iosController.setZoomLevelAnimated(currentLevel - 1, animated);
       },
     );
   }
@@ -527,7 +527,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   }) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         final latLng =
             await createcom_amap_api_maps_model_LatLng__double__double(
@@ -559,9 +559,9 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         final latLng = await createCLLocationCoordinate2D(lat, lng);
         if (zoomLevel != null) {
-          await _iosController.setZoomLevelAnimated(zoomLevel, animated);
+          await iosController.setZoomLevelAnimated(zoomLevel, animated);
         }
-        await _iosController.setCenterCoordinateAnimated(latLng, animated);
+        await iosController.setCenterCoordinateAnimated(latLng, animated);
 
         pool..add(latLng);
       },
@@ -572,7 +572,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<LatLng> getCenterCoordinate() {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         final position = await map.getCameraPosition();
         final target = await position.get_target();
@@ -586,7 +586,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         );
       },
       ios: (pool) async {
-        final target = await _iosController.get_centerCoordinate();
+        final target = await iosController.get_centerCoordinate();
         // target不能马上释放, 因为跟返回对象有联系
         return LatLng(await target.latitude, await target.longitude);
       },
@@ -606,7 +606,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     return platform(
       android: (pool) async {
         // 获取地图
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // marker经纬度
         final latLng =
@@ -675,8 +675,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         return Marker.android(marker);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate.._iosController = _iosController,
+        await iosController.set_delegate(
+          _iosMapDelegate.._iosController = iosController,
         );
 
         // 创建marker
@@ -740,12 +740,12 @@ class AmapController with WidgetsBindingObserver, _Private {
           await pushStackJsonable('anchorV', option.anchorV);
         }
 
-        await _iosController.addAnnotation(pointAnnotation);
+        await iosController.addAnnotation(pointAnnotation);
 
         // pointAnnotation不释放, 还有用
         pool..add(coordinate);
 
-        return Marker.ios(pointAnnotation, _iosController);
+        return Marker.ios(pointAnnotation, iosController);
       },
     );
   }
@@ -760,7 +760,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     return platform(
       android: (pool) async {
         // 获取地图
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         final androidOptions = <com_amap_api_maps_model_MarkerOptions>[];
         for (final option in options) {
@@ -839,8 +839,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         return markers.map((it) => Marker.android(it)).toList();
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate.._iosController = _iosController,
+        await iosController.set_delegate(
+          _iosMapDelegate.._iosController = iosController,
         );
 
         final iosOptions = <NSObject>[];
@@ -906,9 +906,9 @@ class AmapController with WidgetsBindingObserver, _Private {
           pool..add(coordinate);
         }
 
-        await _iosController.addAnnotations(iosOptions);
+        await iosController.addAnnotations(iosOptions);
 
-        return iosOptions.map((it) => Marker.ios(it, _iosController)).toList();
+        return iosOptions.map((it) => Marker.ios(it, iosController)).toList();
       },
     );
   }
@@ -917,7 +917,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> clearMarkers() async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final markers = await map.getMapScreenMarkers();
 
         for (final marker in markers) {
@@ -929,8 +929,8 @@ class AmapController with WidgetsBindingObserver, _Private {
           ..addAll(markers);
       },
       ios: (pool) async {
-        final markers = await _iosController.get_annotations();
-        await _iosController.removeAnnotations(markers);
+        final markers = await iosController.get_annotations();
+        await iosController.removeAnnotations(markers);
 
         pool..addAll(markers as List<Ref>);
       },
@@ -941,16 +941,16 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> clear() async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         await map.clear();
 
         pool.add(map);
       },
       ios: (pool) async {
-        final markers = await _iosController.get_annotations();
-        final overlays = await _iosController.get_overlays();
-        await _iosController.removeAnnotations(markers);
-        await _iosController.removeOverlays(overlays);
+        final markers = await iosController.get_annotations();
+        final overlays = await iosController.get_overlays();
+        await iosController.removeAnnotations(markers);
+        await iosController.removeOverlays(overlays);
 
         pool..addAll(markers.cast<Ref>())..addAll(overlays.cast<Ref>());
       },
@@ -961,7 +961,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<LatLng> fromScreenLocation(Point point) async {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final projection = await map.getProjection();
 
         final androidPoint = await createandroid_graphics_Point(
@@ -977,8 +977,8 @@ class AmapController with WidgetsBindingObserver, _Private {
       },
       ios: (pool) async {
         final cgPoint = await createCGPoint(point.x, point.y);
-        final coord2d = await _iosController.convertPointToCoordinateFromView(
-            cgPoint, _iosController);
+        final coord2d = await iosController.convertPointToCoordinateFromView(
+            cgPoint, iosController);
 
         pool..add(cgPoint)..add(coord2d);
         return LatLng(await coord2d.latitude, await coord2d.longitude);
@@ -990,7 +990,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<Point> toScreenLocation(LatLng coord) async {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final projection = await map.getProjection();
 
         final latLng =
@@ -1005,8 +1005,8 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         final latLng =
             await createCLLocationCoordinate2D(coord.latitude, coord.longitude);
-        final point = await _iosController.convertCoordinateToPointToView(
-            latLng, _iosController);
+        final point = await iosController.convertCoordinateToPointToView(
+            latLng, iosController);
 
         pool..add(latLng)..add(point);
         return Point((await point.x).toDouble(), (await point.y).toDouble());
@@ -1020,7 +1020,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<Polyline> addPolyline(PolylineOption option) {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // 构造折线点
         List<com_amap_api_maps_model_LatLng> latLngList = [];
@@ -1081,7 +1081,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         return Polyline.android(polyline);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_iosMapDelegate);
+        await iosController.set_delegate(_iosMapDelegate);
 
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
@@ -1130,11 +1130,11 @@ class AmapController with WidgetsBindingObserver, _Private {
         }
 
         // 设置参数
-        await _iosController.addOverlay(polyline);
+        await iosController.addOverlay(polyline);
 
         pool..addAll(latLngList);
 
-        return Polyline.ios(polyline, _iosController);
+        return Polyline.ios(polyline, iosController);
       },
     );
   }
@@ -1147,7 +1147,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // 构造折线点
         List<com_amap_api_maps_model_LatLng> latLngList = [];
@@ -1190,7 +1190,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         return Polygon.android(polygon);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_iosMapDelegate);
+        await iosController.set_delegate(_iosMapDelegate);
 
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
@@ -1213,11 +1213,11 @@ class AmapController with WidgetsBindingObserver, _Private {
           await pushStackJsonable('fillColor', option.fillColor.value);
 
         // 设置参数
-        await _iosController.addOverlay(polygon);
+        await iosController.addOverlay(polygon);
 
         pool.addAll(latLngList);
 
-        return Polygon.ios(polygon, _iosController);
+        return Polygon.ios(polygon, iosController);
       },
     );
   }
@@ -1228,7 +1228,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<Circle> addCircle(CircleOption option) {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // 构造点
         final latLng =
@@ -1268,7 +1268,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         return Circle.android(circle);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_iosMapDelegate);
+        await iosController.set_delegate(_iosMapDelegate);
 
         final latLng = await createCLLocationCoordinate2D(
           option.center.latitude,
@@ -1290,9 +1290,9 @@ class AmapController with WidgetsBindingObserver, _Private {
           await pushStackJsonable('fillColor', option.fillColor.value);
 
         // 设置参数
-        await _iosController.addOverlay(circle);
+        await iosController.addOverlay(circle);
 
-        return Circle.ios(circle, _iosController);
+        return Circle.ios(circle, iosController);
       },
     );
   }
@@ -1301,7 +1301,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> setMarkerClickedListener(OnMarkerClicked onMarkerClicked) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.setOnMarkerClickListener(
             _androidMapDelegate.._onMarkerClicked = onMarkerClicked);
@@ -1309,7 +1309,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController
+        await iosController
             .set_delegate(_iosMapDelegate.._onMarkerClicked = onMarkerClicked);
       },
     );
@@ -1323,7 +1323,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   }) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.setOnMarkerDragListener(
           _androidMapDelegate
@@ -1335,7 +1335,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
+        await iosController.set_delegate(
           _iosMapDelegate
             .._onMarkerDragStart = onMarkerDragStart
             .._onMarkerDragging = onMarkerDragging
@@ -1349,7 +1349,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<void> setMapClickedListener(OnMapClicked onMapClick) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.setOnMapClickListener(
           _androidMapDelegate.._onMapClick = onMapClick,
@@ -1358,7 +1358,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
+        await iosController.set_delegate(
           _iosMapDelegate.._onMapClick = onMapClick,
         );
       },
@@ -1372,7 +1372,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   }) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.setOnCameraChangeListener(
           _androidMapDelegate
@@ -1383,7 +1383,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
+        await iosController.set_delegate(
           _iosMapDelegate
             .._onMapMoveStart = onMapMoveStart
             .._onMapMoveEnd = onMapMoveEnd,
@@ -1400,7 +1400,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   ) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.setOnMyLocationChangeListener(
           _androidMapDelegate.._onLocationChange = onLocationChange,
@@ -1409,7 +1409,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
+        await iosController.set_delegate(
           _iosMapDelegate.._onLocationChange = onLocationChange,
         );
       },
@@ -1424,7 +1424,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         final onRequireAuth = (CLLocationManager manager) async {
           await manager?.requestAlwaysAuthorization();
         };
-        await _iosController.set_delegate(
+        await iosController.set_delegate(
           _iosMapDelegate.._onRequireAlwaysAuth = onRequireAuth,
         );
       },
@@ -1436,7 +1436,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     assert(onScreenShot != null);
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         await map.getMapScreenShot(
           _androidMapDelegate.._onSnapshot = onScreenShot,
         );
@@ -1444,8 +1444,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool.add(map);
       },
       ios: (pool) async {
-        final rect = await _iosController.frame;
-        await _iosController.takeSnapshotInRectWithCompletionBlock(
+        final rect = await iosController.frame;
+        await iosController.takeSnapshotInRectWithCompletionBlock(
           rect,
           (image, state) async {
             await onScreenShot(await image.data);
@@ -1486,7 +1486,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     }
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // 构造选项
         final option =
@@ -1520,8 +1520,8 @@ class AmapController with WidgetsBindingObserver, _Private {
           pool.add(textureNSData);
         }
 
-        await _iosController.setCustomMapStyleOptions(option);
-        await _iosController.set_customMapStyleEnabled(true);
+        await iosController.setCustomMapStyleOptions(option);
+        await iosController.set_customMapStyleEnabled(true);
 
         pool.add(option);
       },
@@ -1554,7 +1554,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // 西南角
         final southWest =
@@ -1614,7 +1614,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         final rect = await MAMapRectMake(x, y, width, height);
 
         final dPadding = padding.toDouble();
-        _iosController.setVisibleMapRectEdgePaddinganimated(
+        iosController.setVisibleMapRectEdgePaddinganimated(
           rect,
           await createUIEdgeInsets(dPadding, dPadding, dPadding, dPadding),
           animated,
@@ -1631,8 +1631,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   Future<void> dispose() async {
-    await _androidController?.onPause();
-    await _androidController?.onDestroy();
+    await androidController?.onPause();
+    await androidController?.onDestroy();
 
     WidgetsBinding.instance.removeObserver(this);
   }
@@ -1644,15 +1644,15 @@ class AmapController with WidgetsBindingObserver, _Private {
     // 因为这里的生命周期其实已经是App的生命周期了, 所以除了这里还需要在dispose里释放资源
     switch (state) {
       case AppLifecycleState.resumed:
-        _androidController?.onResume();
+        androidController?.onResume();
         break;
       case AppLifecycleState.inactive:
         break;
       case AppLifecycleState.paused:
-        _androidController?.onPause();
+        androidController?.onPause();
         break;
       case AppLifecycleState.detached:
-        _androidController?.onDestroy();
+        androidController?.onDestroy();
         break;
     }
   }
