@@ -278,9 +278,7 @@ extension on AmapController {
   ///
   /// AmapController开放了内部的[androidController]和[iosController].
   /// 意味着插件使用者可以通过对[AmapController]进行扩展可以获得插件已提供能力之外的能力.
-  /// 如果插件使用者觉得插件本身提供的能力不够用, 那么可以利用[androidController]和[iosController]
-  /// 自行对[AmapController]进行扩展.
-  /// 插件使用者觉得自行扩展的能力已经足够完善, 那么可以把这个扩展方法pr到主仓库合并进[AmapController]类.
+  /// 如果插件使用者觉得自行扩展的能力已经足够完善, 那么可以把这个扩展方法pr到主仓库合并进[AmapController]类.
   Future<LatLng> getLocationX() {
     final interval = const Duration(milliseconds: 500);
     final timeout = const Duration(seconds: 10);
