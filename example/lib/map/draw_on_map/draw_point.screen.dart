@@ -181,6 +181,17 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         .then(_controller?.zoomToSpan);
                   },
                 ),
+                ListTile(
+                  title: Center(child: Text('监听Marker弹窗事件')),
+                  onTap: () async {
+                    await _controller
+                        ?.setInfoWindowClickListener((marker) async {
+                      toast(
+                        '${await marker.title}, ${await marker.location}',
+                      );
+                    });
+                  },
+                ),
               ],
             ),
           ),
