@@ -5,7 +5,8 @@ author: yohom <382146139@qq.com>
 homepage: https://github.com/fluttify-project/amap_map_fluttify
 
 environment:
-  sdk: ">=2.2.2 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.10.13 <2.0.0"
 
 dependencies:
   flutter:

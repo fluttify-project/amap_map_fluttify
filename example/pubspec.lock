@@ -258,7 +258,7 @@ packages:
       name: permission_handler
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.3.0"
+    version: "4.0.0"
   petitparser:
     dependency: transitive
     description:
@@ -273,6 +273,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.1"
+  plugin_platform_interface:
+    dependency: transitive
+    description:
+      name: plugin_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   pointycastle:
     dependency: transitive
     description:
@@ -354,7 +361,7 @@ packages:
       name: url_launcher
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.4.0"
+    version: "5.4.1"
   url_launcher_macos:
     dependency: transitive
     description:
@@ -368,7 +375,7 @@ packages:
       name: url_launcher_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.1"
+    version: "1.0.4"
   url_launcher_web:
     dependency: transitive
     description:
@@ -391,5 +398,5 @@ packages:
     source: hosted
     version: "3.5.0"
 sdks:
-  dart: ">2.4.0 <3.0.0"
+  dart: ">=2.7.0 <3.0.0"
   flutter: ">=1.12.8 <2.0.0"
