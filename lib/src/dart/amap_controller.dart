@@ -3,7 +3,7 @@ part of 'amap_view.widget.dart';
 typedef Future<void> OnMarkerClicked(Marker marker);
 typedef Future<void> OnMapClicked(LatLng latLng);
 typedef Future<void> OnMapMove(MapMove move);
-typedef Future<void> OnLocationChange(Location move);
+typedef Future<void> OnLocationChange(MapLocation move);
 typedef Future<void> OnMarkerDrag(Marker marker);
 typedef Future<void> _OnRequireAlwaysAuth(CLLocationManager manager);
 typedef Future<void> OnScreenShot(Uint8List imageData);
@@ -1831,7 +1831,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       updatingLocation,
     );
     if (_onLocationChange != null) {
-      await _onLocationChange(Location.ios(userLocation));
+      await _onLocationChange(MapLocation.ios(userLocation));
     }
   }
 
@@ -1977,7 +1977,7 @@ class _AndroidMapDelegate extends java_lang_Object
   Future<void> onMyLocationChange(android_location_Location var1) async {
     super.onMyLocationChange(var1);
     if (_onLocationChange != null) {
-      await _onLocationChange(Location.android(var1));
+      await _onLocationChange(MapLocation.android(var1));
     }
   }
 
