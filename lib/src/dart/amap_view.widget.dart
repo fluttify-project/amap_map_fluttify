@@ -261,10 +261,10 @@ class _AmapViewState extends State<AmapView> {
     if (widget.tiltGestureEnabled != null) {
       await option.tiltGesturesEnabled(widget.tiltGestureEnabled);
     }
-    if (widget.centerCoordinate != null) {
+    if (widget.centerCoordinate != null || widget.zoomLevel != null) {
       final latLng = await createcom_amap_api_maps_model_LatLng__double__double(
-        widget.centerCoordinate.latitude,
-        widget.centerCoordinate.longitude,
+        widget.centerCoordinate?.latitude ?? 39.92,
+        widget.centerCoordinate?.longitude ?? 116.46,
       );
       final cameraUpdate = await com_amap_api_maps_model_CameraPosition
           .fromLatLngZoom(latLng, widget.zoomLevel ?? 10);

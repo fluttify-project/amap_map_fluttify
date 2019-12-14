@@ -84,28 +84,6 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
     }
   }
   
-  Future<void> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setAttribute([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setAttribute', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
   Future<int> setData(Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {

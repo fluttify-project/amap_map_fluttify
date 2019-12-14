@@ -40,26 +40,4 @@ class com_amap_api_maps_model_particle_SinglePointParticleShape extends com_amap
     }
   }
   
-  Future<Float64List> getPoint() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.SinglePointParticleShape@$refId::getPoint([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.SinglePointParticleShape::getPoint', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return (result as List).cast<double>();
-    }
-  }
-  
 }

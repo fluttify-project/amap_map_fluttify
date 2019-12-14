@@ -18,26 +18,5 @@ class com_amap_api_maps_model_animation_AlphaAnimation extends com_amap_api_maps
   
 
   // generate methods
-  Future<void> setDuration(int var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.animation.AlphaAnimation@$refId::setDuration([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.AlphaAnimation::setDuration', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
   
 }

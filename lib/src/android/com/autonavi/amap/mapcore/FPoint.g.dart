@@ -18,26 +18,5 @@ class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
   
 
   // generate methods
-  static Future<com_autonavi_amap_mapcore_FPoint> obtain() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FPoint::obtain([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPoint::obtain', );
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_FPoint()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_FPoint()..refId = result..tag = 'amap_map_fluttify';
-    }
-  }
   
 }

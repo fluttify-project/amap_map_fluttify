@@ -36,65 +36,9 @@ Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr> createcom_autonavi_
   return object;
 }
 
-Future<com_autonavi_ae_gmap_glanimation_AdglAnimation2V> createcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int(int var1) async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int', {"var1": var1});
-  final object = com_autonavi_ae_gmap_glanimation_AdglAnimation2V()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
 Future<com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues> createcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__() async {
   final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__');
   final object = com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
-Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimFling> createcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int(int var1, int var2, int var3) async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int', {"var1": var1, "var2": var2, "var3": var3});
-  final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimFling()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
-Future<com_autonavi_ae_gmap_glanimation_AdglAnimation1V> createcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__int(int var1) async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__int', {"var1": var1});
-  final object = com_autonavi_ae_gmap_glanimation_AdglAnimation1V()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
-Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom> createcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int(int var1) async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int', {"var1": var1});
-  final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
-Future<com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V> createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__() async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__');
-  final object = com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
-Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup> createcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int(int var1) async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int', {"var1": var1});
-  final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
-Future<com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V> createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__() async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__');
-  final object = com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V()..refId = refId..tag = 'amap_map_fluttify';
 
   kNativeObjectPool.add(object);
   return object;
@@ -436,46 +380,6 @@ Future<com_autonavi_amap_mapcore_MapConfig> createcom_autonavi_amap_mapcore_MapC
   return object;
 }
 
-Future<com_autonavi_amap_mapcore_message_HoverGestureMapMessage> createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float(int var1, double var2) async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float', {"var1": var1, "var2": var2});
-  final object = com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
-Future<com_autonavi_amap_mapcore_message_MoveGestureMapMessage> createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float(int var1, double var2, double var3) async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float', {"var1": var1, "var2": var2, "var3": var3});
-  final object = com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
-Future<com_autonavi_amap_mapcore_message_ScaleGestureMapMessage> createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int(int var1, double var2, int var3, int var4) async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
-  final object = com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
-Future<com_autonavi_amap_mapcore_message_RotateGestureMapMessage> createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int(int var1, double var2, int var3, int var4) async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
-  final object = com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
-Future<com_autonavi_amap_mapcore_FPointBounds> createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint(com_autonavi_amap_mapcore_FPoint var1, com_autonavi_amap_mapcore_FPoint var2) async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint', {"var1": var1.refId, "var2": var2.refId});
-  final object = com_autonavi_amap_mapcore_FPointBounds()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
 Future<com_autonavi_amap_mapcore_CoordUtil> createcom_autonavi_amap_mapcore_CoordUtil__() async {
   final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_CoordUtil__');
   final object = com_autonavi_amap_mapcore_CoordUtil()..refId = refId..tag = 'amap_map_fluttify';
@@ -535,22 +439,6 @@ Future<com_autonavi_amap_mapcore_Inner_3dMap_location> createcom_autonavi_amap_m
 Future<com_autonavi_amap_mapcore_AMapEngineUtils> createcom_autonavi_amap_mapcore_AMapEngineUtils__() async {
   final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AMapEngineUtils__');
   final object = com_autonavi_amap_mapcore_AMapEngineUtils()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
-Future<com_autonavi_amap_mapcore_FPoint3> createcom_autonavi_amap_mapcore_FPoint3__() async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__');
-  final object = com_autonavi_amap_mapcore_FPoint3()..refId = refId..tag = 'amap_map_fluttify';
-
-  kNativeObjectPool.add(object);
-  return object;
-}
-
-Future<com_autonavi_amap_mapcore_FPoint3> createcom_autonavi_amap_mapcore_FPoint3__float__float__int(double var1, double var2, int var3) async {
-  final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__float__float__int', {"var1": var1, "var2": var2, "var3": var3});
-  final object = com_autonavi_amap_mapcore_FPoint3()..refId = refId..tag = 'amap_map_fluttify';
 
   kNativeObjectPool.add(object);
   return object;

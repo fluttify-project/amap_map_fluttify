@@ -40,28 +40,6 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
     }
   }
   
-  static Future<com_autonavi_ae_gmap_GLMapEngine_InitParam> initResource(android_content_Context var0) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.AeUtil::initResource([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AeUtil::initResource', {"var0": var0.refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-      kNativeObjectPool.add(com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = result..tag = 'amap_map_fluttify';
-    }
-  }
-  
   static Future<void> readAssetsFileAndSave(String var0, String var1, android_content_Context var2) async {
     // print log
     if (fluttifyLogEnabled) {

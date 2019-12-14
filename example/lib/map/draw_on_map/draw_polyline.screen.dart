@@ -1,6 +1,5 @@
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 import 'package:amap_map_fluttify_example/map/tools/next_latlng.dart';
-import 'package:amap_map_fluttify_example/utils/misc.dart';
 import 'package:amap_map_fluttify_example/widgets/setting.widget.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:flutter/material.dart';
@@ -32,11 +31,9 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
           Flexible(
             flex: 1,
             child: AmapView(
+              zoomLevel: 7,
               onMapCreated: (controller) async {
                 _controller = controller;
-                if (await requestPermission()) {
-                  await controller.showMyLocation(false);
-                }
               },
             ),
           ),
@@ -50,10 +47,10 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
                     _currentPolyline =
                         await _controller?.addPolyline(PolylineOption(
                       latLngList: [
-                        LatLng(39.999391, 116.135972),
-                        LatLng(39.898323, 116.057694),
-                        LatLng(39.900430, 116.265061),
-                        LatLng(39.955192, 116.140092),
+                        getNextLatLng(),
+                        getNextLatLng(),
+                        getNextLatLng(),
+                        getNextLatLng(),
                       ],
                       width: 10,
                       strokeColor: Colors.green,
@@ -67,10 +64,10 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
                     _currentPolyline =
                         await _controller?.addPolyline(PolylineOption(
                       latLngList: [
-                        LatLng(39.999391, 116.135972),
-                        LatLng(39.898323, 116.057694),
-                        LatLng(39.900430, 116.265061),
-                        LatLng(39.955192, 116.140092),
+                        getNextLatLng(),
+                        getNextLatLng(),
+                        getNextLatLng(),
+                        getNextLatLng(),
                       ],
                       width: 10,
                       customTexture: _assetsIcon,

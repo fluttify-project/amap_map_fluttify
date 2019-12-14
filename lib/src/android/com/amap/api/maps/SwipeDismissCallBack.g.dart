@@ -18,26 +18,5 @@ class com_amap_api_maps_SwipeDismissCallBack extends java_lang_Object with com_a
   
 
   // generate methods
-  Future<void> onNotifySwipe() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.SwipeDismissCallBack@$refId::onNotifySwipe([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.SwipeDismissCallBack::onNotifySwipe', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
   
 }

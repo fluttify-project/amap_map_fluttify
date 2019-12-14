@@ -744,28 +744,6 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     }
   }
   
-  Future<com_autonavi_amap_mapcore_Rectangle> getGeoRectangle() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getGeoRectangle([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getGeoRectangle', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Rectangle()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Rectangle()..refId = result..tag = 'amap_map_fluttify';
-    }
-  }
-  
   Future<void> setMaxZoomLevel(double var1) async {
     // print log
     if (fluttifyLogEnabled) {

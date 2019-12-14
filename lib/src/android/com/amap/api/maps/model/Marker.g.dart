@@ -106,72 +106,6 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     }
   }
   
-  Future<void> remove() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::remove([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::remove', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<void> destroy() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::destroy([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::destroy', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<String> getId() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getId([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getId', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
   Future<void> setPerspective(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -202,138 +136,6 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isPerspective', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPosition([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setPosition', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<com_amap_api_maps_model_LatLng> getPosition() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getPosition([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getPosition', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify';
-    }
-  }
-  
-  Future<void> setTitle(String var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setTitle([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setTitle', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<String> getTitle() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getTitle([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getTitle', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<void> setSnippet(String var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setSnippet([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setSnippet', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<String> getSnippet() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getSnippet([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getSnippet', {"refId": refId});
   
   
     // handle native call
@@ -436,28 +238,6 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     }
   }
   
-  Future<void> showInfoWindow() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::showInfoWindow([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::showInfoWindow', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
   Future<void> hideInfoWindow() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -502,94 +282,6 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     }
   }
   
-  Future<void> setVisible(bool var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setVisible([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setVisible', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<bool> isVisible() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isVisible([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::isVisible', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<void> setRotateAngle(double var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setRotateAngle([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setRotateAngle', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<double> getRotateAngle() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getRotateAngle([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getRotateAngle', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
   Future<void> setToTop() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -598,28 +290,6 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setToTop', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setGeoPoint([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setGeoPoint', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
@@ -752,50 +422,6 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getZIndex', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnimation([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setAnimation', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<bool> startAnimation() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::startAnimation([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::startAnimation', {"refId": refId});
   
   
     // handle native call

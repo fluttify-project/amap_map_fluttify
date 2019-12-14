@@ -212,11 +212,11 @@ class Point {
   }
 }
 
-/// 定位信息
-class Location {
-  Location.android(this._androidModel);
+/// 地图定位信息 区分于定位插件的定位信息
+class MapLocation {
+  MapLocation.android(this._androidModel);
 
-  Location.ios(this._iosModel);
+  MapLocation.ios(this._iosModel);
 
   android_location_Location _androidModel;
   MAUserLocation _iosModel;
