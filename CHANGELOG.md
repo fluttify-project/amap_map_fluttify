@@ -1,3 +1,7 @@
+## 0.13.0
+- enhance: [breaking change] Location -> MapLocation 防止与amap_location_fluttify的Location对象冲突
+- fix: 构造器传zoomLevel无效的处理
+
 ## 0.12.3
 - feat: 增加setInfoWindowClickListener弹窗点击事件
 
