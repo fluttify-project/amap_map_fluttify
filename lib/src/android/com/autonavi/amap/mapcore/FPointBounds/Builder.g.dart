@@ -18,48 +18,5 @@ class com_autonavi_amap_mapcore_FPointBounds_Builder extends java_lang_Object  {
   
 
   // generate methods
-  Future<com_autonavi_amap_mapcore_FPointBounds_Builder> include(com_autonavi_amap_mapcore_FPoint var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds.Builder@$refId::include([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPointBounds.Builder::include', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = result..tag = 'amap_map_fluttify';
-    }
-  }
-  
-  Future<com_autonavi_amap_mapcore_FPointBounds> build() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds.Builder@$refId::build([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPointBounds.Builder::build', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_FPointBounds()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_FPointBounds()..refId = result..tag = 'amap_map_fluttify';
-    }
-  }
   
 }

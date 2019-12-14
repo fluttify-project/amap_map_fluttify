@@ -40,26 +40,4 @@ class com_amap_api_maps_model_particle_RectParticleShape extends com_amap_api_ma
     }
   }
   
-  Future<Float64List> getPoint() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.RectParticleShape@$refId::getPoint([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.RectParticleShape::getPoint', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return (result as List).cast<double>();
-    }
-  }
-  
 }

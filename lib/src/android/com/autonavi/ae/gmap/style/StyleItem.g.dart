@@ -40,50 +40,6 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
   
 
   // generate methods
-  Future<com_autonavi_ae_gmap_style_StyleElement> get(int var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::get([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::get', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-      kNativeObjectPool.add(com_autonavi_ae_gmap_style_StyleElement()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_ae_gmap_style_StyleElement()..refId = result..tag = 'amap_map_fluttify';
-    }
-  }
-  
-  Future<void> put(int var1, com_autonavi_ae_gmap_style_StyleElement var2) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::put([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::put', {"var1": var1, "var2": var2.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
   Future<bool> isValid() async {
     // print log
     if (fluttifyLogEnabled) {
