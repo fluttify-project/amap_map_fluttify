@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
+  
+
   // generate getters
   
 
@@ -26,6 +28,28 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CrossOverlay::setData', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setAttribute([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CrossOverlay::setAttribute', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call

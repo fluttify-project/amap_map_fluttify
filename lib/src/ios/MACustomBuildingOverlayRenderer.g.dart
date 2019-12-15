@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
+  
+
   // generate getters
   Future<MACustomBuildingOverlay> get_customBuildingOverlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayRenderer::get_customBuildingOverlay", {'refId': refId});

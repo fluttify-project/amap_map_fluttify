@@ -11,6 +11,14 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
+  static final String ROOTPATH = "/amap/";
+  static final String ROOT_DATA_PATH_OLD_NAME = "data";
+  static final String ROOT_DATA_PATH_NAME = "data_v6";
+  static final String CONFIGNAME = "GNaviConfig.xml";
+  static final String RESZIPNAME = "res.zip";
+  static final String SO_FILENAME = "AMapSDK_MAP_v6_9_2";
+  static final String SO_FILENAME_NAVI = "AMapSDK_NAVI_v6_5_0";
+
   // generate getters
   
 
@@ -37,6 +45,28 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
     } else {
     
       return result;
+    }
+  }
+  
+  static Future<com_autonavi_ae_gmap_GLMapEngine_InitParam> initResource(android_content_Context var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.AeUtil::initResource([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AeUtil::initResource', {"var0": var0.refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

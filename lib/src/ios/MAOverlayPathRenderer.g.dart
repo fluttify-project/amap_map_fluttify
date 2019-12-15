@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAOverlayPathRenderer extends MAOverlayRenderer  {
+  
+
   // generate getters
   Future<UIColor> get_fillColor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_fillColor", {'refId': refId});

@@ -11,6 +11,10 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_SwipeDismissTouchListener extends java_lang_Object  {
+  static final int MIN_VIEW_WIDTH = 2;
+  static final int A_HALF = 2;
+  static final int ONE_THIRD = 3;
+
   // generate getters
   
 

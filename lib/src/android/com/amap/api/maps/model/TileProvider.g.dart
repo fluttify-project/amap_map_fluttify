@@ -15,6 +15,8 @@ mixin com_amap_api_maps_model_TileProvider on java_lang_Object {
 
   
 
+  
+
   @mustCallSuper
   Future<com_amap_api_maps_model_Tile> getTile(int var1, int var2, int var3) {
   

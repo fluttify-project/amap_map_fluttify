@@ -11,6 +11,20 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_AMap extends java_lang_Object  {
+  static final int MAP_TYPE_NORMAL = 1;
+  static final int MAP_TYPE_SATELLITE = 2;
+  static final int MAP_TYPE_NIGHT = 3;
+  static final int MAP_TYPE_NAVI = 4;
+  static final int MAP_TYPE_BUS = 5;
+  static final int LOCATION_TYPE_LOCATE = 1;
+  static final int LOCATION_TYPE_MAP_FOLLOW = 2;
+  static final int LOCATION_TYPE_MAP_ROTATE = 3;
+  static final int MASK_LAYER_NONE = -1;
+  static final int MASK_LAYER_UNDER_MARKER = 0;
+  static final String CHINESE = "zh_cn";
+  static final String ENGLISH = "en";
+  static final int MASK_LAYER_UNDER_LINE = 1;
+
   // generate getters
   
 

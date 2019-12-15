@@ -15,6 +15,8 @@ mixin MAParticleSizeGenerate on NSObject {
 
   
 
+  
+
   @mustCallSuper
   Future<double> getSizeX(double timeFrame) {
   

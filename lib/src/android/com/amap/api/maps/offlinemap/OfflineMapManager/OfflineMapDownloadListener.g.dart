@@ -15,6 +15,8 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener 
 
   
 
+  
+
   @mustCallSuper
   Future<void> onDownload(int var1, int var2, String var3) {
   

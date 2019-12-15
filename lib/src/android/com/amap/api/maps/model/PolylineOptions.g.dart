@@ -11,6 +11,9 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_BaseOptions with android_os_Parcelable {
+  static final int DOTTEDLINE_TYPE_SQUARE = 0;
+  static final int DOTTEDLINE_TYPE_CIRCLE = 1;
+
   // generate getters
   
 

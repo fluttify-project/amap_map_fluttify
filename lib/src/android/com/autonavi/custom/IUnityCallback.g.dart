@@ -15,6 +15,8 @@ mixin com_autonavi_custom_IUnityCallback on java_lang_Object {
 
   
 
+  
+
   @mustCallSuper
   Future<void> UnitySetGraphicsDevice(int var1) {
   

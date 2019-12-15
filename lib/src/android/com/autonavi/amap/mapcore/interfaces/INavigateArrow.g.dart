@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
 
   
 
+  
+
   @mustCallSuper
   Future<void> setTopColor(int var1) {
   

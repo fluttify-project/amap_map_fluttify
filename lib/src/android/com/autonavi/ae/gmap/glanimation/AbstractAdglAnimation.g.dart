@@ -11,6 +11,16 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_Object  {
+  static final int INVALIDE_VALUE = -9999;
+  static final int INTERPOLATOR_LINEAR = 0;
+  static final int INTERPOLATOR_ACCELERATE = 1;
+  static final int INTERPOLATOR_DECELERATE = 2;
+  static final int INTERPOLATOR_ACCELERATE_DECELERATE = 3;
+  static final int INTERPOLATOR_BOUNCE = 4;
+  static final int INTERPOLATOR_OVERSHOOT = 5;
+  static final int INTERPOLATOR_DOUBLE_RAISE = 6;
+  static final int DEFAULT_DURATION = 250;
+
   // generate getters
   
 

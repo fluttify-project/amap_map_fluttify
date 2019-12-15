@@ -11,6 +11,18 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with android_os_Parcelable {
+  static final String ERROR_CODE = "errorCode";
+  static final String ERROR_INFO = "errorInfo";
+  static final String LOCATION_TYPE = "locationType";
+  static final int LOCATION_TYPE_SHOW = 0;
+  static final int LOCATION_TYPE_LOCATE = 1;
+  static final int LOCATION_TYPE_FOLLOW = 2;
+  static final int LOCATION_TYPE_MAP_ROTATE = 3;
+  static final int LOCATION_TYPE_LOCATION_ROTATE = 4;
+  static final int LOCATION_TYPE_LOCATION_ROTATE_NO_CENTER = 5;
+  static final int LOCATION_TYPE_FOLLOW_NO_CENTER = 6;
+  static final int LOCATION_TYPE_MAP_ROTATE_NO_CENTER = 7;
+
   // generate getters
   
 

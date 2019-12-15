@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_BaseOverlay  {
+  
+
   // generate getters
   
 

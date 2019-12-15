@@ -10,7 +10,9 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
+class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener, com_autonavi_amap_mapcore_IAMapEngineCallback {
+  
+
   // generate getters
   
 
@@ -18,226 +20,6 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
   
 
   // generate methods
-  Future<Uint8List> requireMapResource(int var1, String var2) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapResource([\'var1\':$var1, \'var2\':$var2])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::requireMapResource', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return (result as List).cast<int>();
-    }
-  }
-  
-  Future<void> reloadMapResource(int var1, String var2, int var3) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::reloadMapResource([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::reloadMapResource', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<int> generateRequestId() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::generateRequestId([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::generateRequestId', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<int> requireMapDataAsyn(int var1, Uint8List var2) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapDataAsyn([\'var1\':$var1, \'var2\':$var2])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::requireMapDataAsyn', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<void> requireMapData(int var1, Uint8List var2) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapData([\'var1\':$var1, \'var2\':$var2])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::requireMapData', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<Uint8List> requireCharBitmap(int var1, int var2, int var3) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireCharBitmap([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::requireCharBitmap', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return (result as List).cast<int>();
-    }
-  }
-  
-  Future<Uint8List> requireCharsWidths(int var1, Int32List var2, int var3, int var4) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireCharsWidths([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::requireCharsWidths', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return (result as List).cast<int>();
-    }
-  }
-  
-  Future<void> requireMapRender(int var1, int var2, int var3) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapRender([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::requireMapRender', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<void> onMapRender(int var1, int var2) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::onMapRender([\'var1\':$var1, \'var2\':$var2])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::onMapRender', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<void> OnIndoorBuildingActivity(int var1, Uint8List var2) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::OnIndoorBuildingActivity([\'var1\':$var1, \'var2\':$var2])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::OnIndoorBuildingActivity', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
   Future<void> receiveNetData(int var1, int var2, Uint8List var4, int var5) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -312,6 +94,28 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::netError', {"var1": var1, "var2": var2, "var4": var4, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> setMapLoaderToTask(int var1, int var2, com_autonavi_amap_mapcore_maploader_AMapLoader var4) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setMapLoaderToTask([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setMapLoaderToTask', {"var1": var1, "var2": var2, "var4": var4.refId, "refId": refId});
   
   
     // handle native call
@@ -546,6 +350,28 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
+  Future<int> getEngineIDWithGestureInfo(com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::getEngineIDWithGestureInfo([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::getEngineIDWithGestureInfo', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<void> setServiceViewRect(int var1, int var2, int var3, int var4, int var5, int var6, int var7) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -656,6 +482,83 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
+  Future<void> setMapListener(com_autonavi_amap_mapcore_interfaces_IAMapListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setMapListener([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setMapListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.autonavi.ae.gmap.GLMapEngine::setMapListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
+  
+          switch (methodCall.method) {
+            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawFrame':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: afterDrawFrame([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var1?.afterDrawFrame(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2'])..tag = 'amap_map_fluttify');
+              break;
+            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawLabel':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: afterDrawLabel([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var1?.afterDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2'])..tag = 'amap_map_fluttify');
+              break;
+            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::beforeDrawLabel':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: beforeDrawLabel([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var1?.beforeDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2'])..tag = 'amap_map_fluttify');
+              break;
+            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterRendererOver':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: afterRendererOver([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var1?.afterRendererOver(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2'])..tag = 'amap_map_fluttify');
+              break;
+            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterAnimation':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: afterAnimation([])');
+              }
+        
+              // handle the native call
+              var1?.afterAnimation();
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<void> setInternaltexture(int var1, Uint8List var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -664,6 +567,116 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setInternaltexture', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<com_autonavi_ae_gmap_GLMapState> getMapState(int var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::getMapState([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::getMapState', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_autonavi_ae_gmap_GLMapState()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_ae_gmap_GLMapState()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  Future<com_autonavi_ae_gmap_GLMapState> getNewMapState(int var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::getNewMapState([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::getNewMapState', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_autonavi_ae_gmap_GLMapState()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_ae_gmap_GLMapState()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  Future<com_autonavi_ae_gmap_GLMapState> getCloneMapState() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::getCloneMapState([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::getCloneMapState', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_autonavi_ae_gmap_GLMapState()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_ae_gmap_GLMapState()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  Future<void> setMapState(int var1, com_autonavi_ae_gmap_GLMapState var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setMapState([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setMapState', {"var1": var1, "var2": var2.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> addGestureMessage(int var1, com_autonavi_amap_mapcore_message_AbstractGestureMapMessage var2, bool var3, int var4, int var5) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::addGestureMessage([\'var1\':$var1, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::addGestureMessage', {"var1": var1, "var2": var2.refId, "var3": var3, "var4": var4, "var5": var5, "refId": refId});
   
   
     // handle native call
@@ -1036,28 +1049,6 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
     }
   }
   
-  Future<void> networkStateChanged(android_content_Context var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::networkStateChanged([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::networkStateChanged', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
   Future<Uint8List> getLabelBuffer(int var1, int var2, int var3, int var4) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -1132,6 +1123,28 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::getGlOverlayMgrPtr', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> addOverlayTexture(int var1, com_autonavi_ae_gmap_gloverlay_GLTextureProperty var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::addOverlayTexture([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::addOverlayTexture', {"var1": var1, "var2": var2.refId, "refId": refId});
   
   
     // handle native call
@@ -1660,6 +1673,50 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::removeNativeAllOverlay', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> createAMapInstance(com_autonavi_ae_gmap_GLMapEngine_InitParam var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::createAMapInstance([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::createAMapInstance', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> createAMapEngineWithFrame(com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::createAMapEngineWithFrame([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::createAMapEngineWithFrame', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call

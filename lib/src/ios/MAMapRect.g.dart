@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMapRect extends NSObject  {
+  
+
   // generate getters
   Future<MAMapPoint> get_origin() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapRect::get_origin", {'refId': refId});

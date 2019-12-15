@@ -11,6 +11,16 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object  {
+  static final int MAXZOOMLEVEL = 20;
+  static final int PIXELS_PER_TILE = 256;
+  static final double MIN_LATITUDE = -85.0511287798;
+  static final double MAX_LATITUDE = 85.0511287798;
+  static final double MIN_LONGITUDE = -360.0;
+  static final double MAX_LONGITUDE = 360.0;
+  static final int EARTH_RADIUS_IN_METERS = 6378137;
+  static final int TILE_SPLIT_LEVEL = 0;
+  static final double EARTH_CIRCUMFERENCE_IN_METERS = 4.007501668557849E7;
+
   // generate getters
   
 

@@ -15,6 +15,8 @@ mixin MATraceDelegate on NSObject {
 
   
 
+  
+
   @mustCallSuper
   Future<void> traceManagerDidTracecorrectdistancewithError(MATraceManager manager, List<CLLocation> locations, List<MATracePoint> tracePoints, double distance, NSError error) {
     kNativeObjectPool.add(manager);

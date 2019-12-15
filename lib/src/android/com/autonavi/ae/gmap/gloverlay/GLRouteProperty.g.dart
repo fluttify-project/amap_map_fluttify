@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_gloverlay_GLRouteProperty extends java_lang_Object  {
+  
+
   // generate getters
   Future<com_autonavi_ae_gmap_gloverlay_GLRouteProperty_EAMapRouteTexture> get_euRouteTexture() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_euRouteTexture", {'refId': refId});

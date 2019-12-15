@@ -11,6 +11,34 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Location  {
+  static final int LOCATION_SUCCESS = 0;
+  static final int ERROR_CODE_INVALID_PARAMETER = 1;
+  static final int ERROR_CODE_FAILURE_WIFI_INFO = 2;
+  static final int ERROR_CODE_FAILURE_LOCATION_PARAMETER = 3;
+  static final int ERROR_CODE_FAILURE_CONNECTION = 4;
+  static final int ERROR_CODE_FAILURE_PARSER = 5;
+  static final int ERROR_CODE_FAILURE_LOCATION = 6;
+  static final int ERROR_CODE_FAILURE_AUTH = 7;
+  static final int ERROR_CODE_UNKNOWN = 8;
+  static final int ERROR_CODE_FAILURE_INIT = 9;
+  static final int ERROR_CODE_SERVICE_FAIL = 10;
+  static final int ERROR_CODE_FAILURE_CELL = 11;
+  static final int ERROR_CODE_FAILURE_LOCATION_PERMISSION = 12;
+  static final int ERROR_CODE_FAILURE_NOWIFIANDAP = 13;
+  static final int ERROR_CODE_FAILURE_NOENOUGHSATELLITES = 14;
+  static final int ERROR_CODE_FAILURE_SIMULATION_LOCATION = 15;
+  static final int LOCATION_TYPE_GPS = 1;
+  static final int LOCATION_TYPE_SAME_REQ = 2;
+  static final int LOCATION_TYPE_FAST = 3;
+  static final int LOCATION_TYPE_FIX_CACHE = 4;
+  static final int LOCATION_TYPE_WIFI = 5;
+  static final int LOCATION_TYPE_CELL = 6;
+  static final int LOCATION_TYPE_AMAP = 7;
+  static final int LOCATION_TYPE_OFFLINE = 8;
+  static final int GPS_ACCURACY_GOOD = 1;
+  static final int GPS_ACCURACY_BAD = 0;
+  static final int GPS_ACCURACY_UNKNOWN = -1;
+
   // generate getters
   
 

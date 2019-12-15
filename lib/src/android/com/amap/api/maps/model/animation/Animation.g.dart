@@ -11,6 +11,12 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
+  static final int FILL_MODE_FORWARDS = 0;
+  static final int FILL_MODE_BACKWARDS = 1;
+  static final int INFINITE = -1;
+  static final int RESTART = 1;
+  static final int REVERSE = 2;
+
   // generate getters
   Future<com_autonavi_amap_mapcore_animation_GLAnimation> get_glAnimation() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.animation.Animation::get_glAnimation", {'refId': refId});

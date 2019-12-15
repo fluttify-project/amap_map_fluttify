@@ -11,6 +11,11 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_AbstractMapMessage extends java_lang_Object  {
+  static final int GESTURE_STATE_BEGIN = 100;
+  static final int GESTURE_STATE_CHANGE = 101;
+  static final int GESTURE_STATE_END = 102;
+  static final int MSGTYPE_NAVIOVERLAY_STATE = 13;
+
   // generate getters
   
 

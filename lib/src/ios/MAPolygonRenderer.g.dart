@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAPolygonRenderer extends MAOverlayPathRenderer  {
+  
+
   // generate getters
   Future<MAPolygon> get_polygon() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygonRenderer::get_polygon", {'refId': refId});

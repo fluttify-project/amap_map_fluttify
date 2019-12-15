@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
+  
+
   // generate getters
   
 
@@ -70,6 +72,28 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::screenToP20Point', {"var1": var1, "var2": var2, "var3": var3.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> p20ToScreenPoint(int var1, int var2, com_autonavi_amap_mapcore_FPoint var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::p20ToScreenPoint([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::p20ToScreenPoint', {"var1": var1, "var2": var2, "var3": var3.refId, "refId": refId});
   
   
     // handle native call

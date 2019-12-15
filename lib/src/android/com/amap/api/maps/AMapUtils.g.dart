@@ -11,6 +11,22 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_AMapUtils extends java_lang_Object  {
+  static final int DRIVING_DEFAULT = 0;
+  static final int DRIVING_SAVE_MONEY = 1;
+  static final int DRIVING_SHORT_DISTANCE = 2;
+  static final int DRIVING_NO_HIGHWAY = 3;
+  static final int DRIVING_AVOID_CONGESTION = 4;
+  static final int DRIVING_NO_HIGHWAY_AVOID_SHORT_MONEY = 5;
+  static final int DRIVING_NO_HIGHWAY_AVOID_CONGESTION = 6;
+  static final int DRIVING_SAVE_MONEY_AVOID_CONGESTION = 7;
+  static final int DRIVING_NO_HIGHWAY_SAVE_MONEY_AVOID_CONGESTION = 8;
+  static final int BUS_TIME_FIRST = 0;
+  static final int BUS_MONEY_LITTLE = 1;
+  static final int BUS_TRANSFER_LITTLE = 2;
+  static final int BUS_WALK_LITTLE = 3;
+  static final int BUS_COMFORT = 4;
+  static final int BUS_NO_SUBWAY = 5;
+
   // generate getters
   
 

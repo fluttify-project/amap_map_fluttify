@@ -15,6 +15,8 @@ mixin com_amap_api_maps_AMap_OnMyLocationChangeListener on java_lang_Object {
 
   
 
+  
+
   @mustCallSuper
   Future<void> onMyLocationChange(android_location_Location var1) {
     kNativeObjectPool.add(var1);

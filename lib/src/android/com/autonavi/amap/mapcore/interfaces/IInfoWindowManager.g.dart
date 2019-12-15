@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
 
   
 
+  
+
   @mustCallSuper
   Future<void> setInfoWindowAnimation(com_amap_api_maps_model_animation_Animation var1, com_amap_api_maps_model_animation_Animation_AnimationListener var2) {
     kNativeObjectPool.add(var1);

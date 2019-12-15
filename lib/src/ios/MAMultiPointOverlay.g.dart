@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
+  
+
   // generate getters
   Future<List<MAMultiPointItem>> get_items() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlay::get_items", {'refId': refId});

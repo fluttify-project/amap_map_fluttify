@@ -15,6 +15,8 @@ mixin com_amap_api_trace_TraceListener on java_lang_Object {
 
   
 
+  
+
   @mustCallSuper
   Future<void> onRequestFailed(int var1, String var2) {
   

@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
 
   
 
+  
+
   @mustCallSuper
   Future<double> getAlpha() {
   

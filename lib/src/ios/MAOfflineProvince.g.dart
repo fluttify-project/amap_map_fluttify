@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAOfflineProvince extends MAOfflineItem  {
+  
+
   // generate getters
   Future<List> get_cities() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineProvince::get_cities", {'refId': refId});

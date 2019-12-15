@@ -11,6 +11,17 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  {
+  static final int INFINITE = -1;
+  static final int RESTART = 1;
+  static final int REVERSE = 2;
+  static final int START_ON_FIRST_FRAME = -1;
+  static final int ABSOLUTE = 0;
+  static final int RELATIVE_TO_SELF = 1;
+  static final int RELATIVE_TO_PARENT = 2;
+  static final int ZORDER_NORMAL = 0;
+  static final int ZORDER_TOP = 1;
+  static final int ZORDER_BOTTOM = -1;
+
   // generate getters
   
 

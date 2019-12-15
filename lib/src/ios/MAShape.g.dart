@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAShape extends NSObject with MAAnnotation {
+  
+
   // generate getters
   Future<String> get_title() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_title", {'refId': refId});

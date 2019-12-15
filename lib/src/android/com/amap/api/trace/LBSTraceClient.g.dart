@@ -11,6 +11,13 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
+  static final int TYPE_AMAP = 1;
+  static final int TYPE_GPS = 2;
+  static final int TYPE_BAIDU = 3;
+  static final String MIN_GRASP_POINT_ERROR = "轨迹点太少或距离太近,轨迹纠偏失败";
+  static final String LOCATE_TIMEOUT_ERROR = "定位超时";
+  static final String TRACE_SUCCESS = "纠偏成功";
+
   // generate getters
   
 

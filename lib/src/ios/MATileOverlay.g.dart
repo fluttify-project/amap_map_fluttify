@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
+  
+
   // generate getters
   Future<CGSize> get_tileSize() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlay::get_tileSize", {'refId': refId});

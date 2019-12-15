@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
 
   
 
+  
+
   @mustCallSuper
   Future<void> remove() {
   
@@ -89,7 +91,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   
   @mustCallSuper
   Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_ITileOverlay var1) {
-  
+    kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
       debugPrint('equalsRemote::kNativeObjectPool: $kNativeObjectPool');

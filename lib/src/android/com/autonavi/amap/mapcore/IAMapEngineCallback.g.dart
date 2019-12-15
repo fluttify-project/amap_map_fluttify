@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
 
   
 
+  
+
   @mustCallSuper
   Future<Uint8List> requireMapResource(int var1, String var2) {
   

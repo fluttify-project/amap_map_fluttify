@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android_os_Parcelable {
+  
+
   // generate getters
   Future<com_amap_api_maps_model_LatLng> get_southwest() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.LatLngBounds::get_southwest", {'refId': refId});

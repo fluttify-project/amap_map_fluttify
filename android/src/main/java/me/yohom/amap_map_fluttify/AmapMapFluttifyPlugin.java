@@ -283,6 +283,66 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // getter
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::get_needMove", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
+        
+            boolean result = ref.needMove;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::get_fromXValue", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            double result = ref.fromXValue;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::get_toXValue", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            double result = ref.toXValue;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::get_fromYValue", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            double result = ref.fromYValue;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::get_toYValue", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            double result = ref.toYValue;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
         put("com.autonavi.ae.gmap.style.StyleItem::get_mainKey", (args, methodResult) -> {
             // ref object
             int refId = (int) args.get("refId");
@@ -1579,6 +1639,210 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // getter
+        put("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::get_angleDelta", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.HoverGestureMapMessage ref = (com.autonavi.amap.mapcore.message.HoverGestureMapMessage) getHEAP().get(refId);
+        
+            float result = ref.angleDelta;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::get_touchDeltaX", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.MoveGestureMapMessage ref = (com.autonavi.amap.mapcore.message.MoveGestureMapMessage) getHEAP().get(refId);
+        
+            float result = ref.touchDeltaX;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::get_touchDeltaY", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.MoveGestureMapMessage ref = (com.autonavi.amap.mapcore.message.MoveGestureMapMessage) getHEAP().get(refId);
+        
+            float result = ref.touchDeltaY;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::get_scaleDelta", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
+        
+            float result = ref.scaleDelta;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::get_pivotX", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
+        
+            int result = ref.pivotX;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::get_pivotY", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
+        
+            int result = ref.pivotY;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::get_width", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            int result = ref.width;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::get_height", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            int result = ref.height;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::get_isGestureScaleByMapCenter", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            boolean result = ref.isGestureScaleByMapCenter;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::get_isUseAnchor", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            boolean result = ref.isUseAnchor;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::get_anchorX", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            int result = ref.anchorX;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::get_anchorY", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            int result = ref.anchorY;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotX", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
+        
+            int result = ref.pivotX;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotY", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
+        
+            int result = ref.pivotY;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_angleDelta", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
+        
+            float result = ref.angleDelta;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.FPointBounds::get_southwest", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.FPointBounds ref = (com.autonavi.amap.mapcore.FPointBounds) getHEAP().get(refId);
+        
+            com.autonavi.amap.mapcore.FPoint result = ref.southwest;
+        
+            getHEAP().put(result.hashCode(), result);
+        
+            methodResult.success(result.hashCode());
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.FPointBounds::get_northeast", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.FPointBounds ref = (com.autonavi.amap.mapcore.FPointBounds) getHEAP().get(refId);
+        
+            com.autonavi.amap.mapcore.FPoint result = ref.northeast;
+        
+            getHEAP().put(result.hashCode(), result);
+        
+            methodResult.success(result.hashCode());
+        });
+        // getter
         put("com.autonavi.amap.mapcore.Rectangle::get_left", (args, methodResult) -> {
             // ref object
             int refId = (int) args.get("refId");
@@ -1621,6 +1885,18 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
         
             float result = ref.top;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.FPoint3::get_colorIndex", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.FPoint3 ref = (com.autonavi.amap.mapcore.FPoint3) getHEAP().get(refId);
+        
+            int result = ref.colorIndex;
         
         
         
@@ -1805,6 +2081,18 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
         
             methodResult.success(result);
+        });
+        // getter
+        put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_mapConfig", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+        
+            com.autonavi.amap.mapcore.MapConfig result = ref.mapConfig;
+        
+            getHEAP().put(result.hashCode(), result);
+        
+            methodResult.success(result.hashCode());
         });
         // getter
         put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_paddingLeft", (args, methodResult) -> {
@@ -2503,6 +2791,61 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
         
             ref.timeStamp = timeStamp;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::set_needMove", (args, methodResult) -> {
+            // jsonable arg
+            boolean needMove = (boolean) args.get("needMove");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
+        
+            ref.needMove = needMove;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromXValue", (args, methodResult) -> {
+            // jsonable arg
+            double fromXValue = (double) args.get("fromXValue");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            ref.fromXValue = fromXValue;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toXValue", (args, methodResult) -> {
+            // jsonable arg
+            double toXValue = (double) args.get("toXValue");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            ref.toXValue = toXValue;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromYValue", (args, methodResult) -> {
+            // jsonable arg
+            double fromYValue = (double) args.get("fromYValue");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            ref.fromYValue = fromYValue;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toYValue", (args, methodResult) -> {
+            // jsonable arg
+            double toYValue = (double) args.get("toYValue");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            ref.toYValue = toYValue;
             methodResult.success("success");
         });
         // setter
@@ -3705,6 +4048,171 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // setter
+        put("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::set_angleDelta", (args, methodResult) -> {
+            // jsonable arg
+            Double angleDelta = (Double) args.get("angleDelta");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.HoverGestureMapMessage ref = (com.autonavi.amap.mapcore.message.HoverGestureMapMessage) getHEAP().get(refId);
+        
+            ref.angleDelta = new Double(angleDelta).floatValue();
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaX", (args, methodResult) -> {
+            // jsonable arg
+            Double touchDeltaX = (Double) args.get("touchDeltaX");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.MoveGestureMapMessage ref = (com.autonavi.amap.mapcore.message.MoveGestureMapMessage) getHEAP().get(refId);
+        
+            ref.touchDeltaX = new Double(touchDeltaX).floatValue();
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaY", (args, methodResult) -> {
+            // jsonable arg
+            Double touchDeltaY = (Double) args.get("touchDeltaY");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.MoveGestureMapMessage ref = (com.autonavi.amap.mapcore.message.MoveGestureMapMessage) getHEAP().get(refId);
+        
+            ref.touchDeltaY = new Double(touchDeltaY).floatValue();
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_scaleDelta", (args, methodResult) -> {
+            // jsonable arg
+            Double scaleDelta = (Double) args.get("scaleDelta");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
+        
+            ref.scaleDelta = new Double(scaleDelta).floatValue();
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotX", (args, methodResult) -> {
+            // jsonable arg
+            int pivotX = (int) args.get("pivotX");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
+        
+            ref.pivotX = pivotX;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotY", (args, methodResult) -> {
+            // jsonable arg
+            int pivotY = (int) args.get("pivotY");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
+        
+            ref.pivotY = pivotY;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_width", (args, methodResult) -> {
+            // jsonable arg
+            int width = (int) args.get("width");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            ref.width = width;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_height", (args, methodResult) -> {
+            // jsonable arg
+            int height = (int) args.get("height");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            ref.height = height;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isGestureScaleByMapCenter", (args, methodResult) -> {
+            // jsonable arg
+            boolean isGestureScaleByMapCenter = (boolean) args.get("isGestureScaleByMapCenter");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            ref.isGestureScaleByMapCenter = isGestureScaleByMapCenter;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isUseAnchor", (args, methodResult) -> {
+            // jsonable arg
+            boolean isUseAnchor = (boolean) args.get("isUseAnchor");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            ref.isUseAnchor = isUseAnchor;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorX", (args, methodResult) -> {
+            // jsonable arg
+            int anchorX = (int) args.get("anchorX");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            ref.anchorX = anchorX;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorY", (args, methodResult) -> {
+            // jsonable arg
+            int anchorY = (int) args.get("anchorY");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            ref.anchorY = anchorY;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotX", (args, methodResult) -> {
+            // jsonable arg
+            int pivotX = (int) args.get("pivotX");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
+        
+            ref.pivotX = pivotX;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotY", (args, methodResult) -> {
+            // jsonable arg
+            int pivotY = (int) args.get("pivotY");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
+        
+            ref.pivotY = pivotY;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_angleDelta", (args, methodResult) -> {
+            // jsonable arg
+            Double angleDelta = (Double) args.get("angleDelta");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
+        
+            ref.angleDelta = new Double(angleDelta).floatValue();
+            methodResult.success("success");
+        });
+        // setter
         put("com.autonavi.amap.mapcore.Rectangle::set_left", (args, methodResult) -> {
             // jsonable arg
             Double left = (Double) args.get("left");
@@ -3746,6 +4254,17 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
         
             ref.top = new Double(top).floatValue();
+            methodResult.success("success");
+        });
+        // setter
+        put("com.autonavi.amap.mapcore.FPoint3::set_colorIndex", (args, methodResult) -> {
+            // jsonable arg
+            int colorIndex = (int) args.get("colorIndex");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.FPoint3 ref = (com.autonavi.amap.mapcore.FPoint3) getHEAP().get(refId);
+        
+            ref.colorIndex = colorIndex;
             methodResult.success("success");
         });
         // setter
@@ -3914,6 +4433,17 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // setter
+        put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mapConfig", (args, methodResult) -> {
+            // ref arg
+            com.autonavi.amap.mapcore.MapConfig mapConfig = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get((int) args.get("mapConfig"));
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+        
+            ref.mapConfig = mapConfig;
+            methodResult.success("success");
+        });
+        // setter
         put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingLeft", (args, methodResult) -> {
             // jsonable arg
             int paddingLeft = (int) args.get("paddingLeft");
@@ -4068,26 +4598,23 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
-        put("com.autonavi.ae.gmap.GLMapEngine::requireMapResource", (args, methodResult) -> {
+        put("com.autonavi.ae.gmap.maploader.ProcessingTile::obtain", (args, methodResult) -> {
             // args
             // jsonable arg
-            int var1 = (int) args.get("var1");
-            // jsonable arg
-            String var2 = (String) args.get("var2");
+            String var0 = (String) args.get("var0");
         
             // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
         
             // print log
             if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::requireMapResource(" + var1 + var2 + ")");
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.maploader.ProcessingTile::obtain(" + var0 + ")");
             }
         
             // invoke native method
-            byte[] result;
+            com.autonavi.ae.gmap.maploader.ProcessingTile result;
             try {
-                result = ref.requireMapResource(var1, var2);
+                result = com.autonavi.ae.gmap.maploader.ProcessingTile.obtain(var0);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -4098,306 +4625,14 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         
             // result
-            methodResult.success(result);
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapEngine::reloadMapResource", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            int var1 = (int) args.get("var1");
-            // jsonable arg
-            String var2 = (String) args.get("var2");
-            // jsonable arg
-            int var3 = (int) args.get("var3");
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
         
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::reloadMapResource(" + var1 + var2 + var3 + ")");
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
             }
-        
-            // invoke native method
-            try {
-                ref.reloadMapResource(var1, var2, var3);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapEngine::generateRequestId", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::generateRequestId(" + "" + ")");
-            }
-        
-            // invoke native method
-            int result;
-            try {
-                result = ref.generateRequestId();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success(result);
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapEngine::requireMapDataAsyn", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            int var1 = (int) args.get("var1");
-            // jsonable arg
-            byte[] var2 = (byte[]) args.get("var2");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::requireMapDataAsyn(" + var1 + var2 + ")");
-            }
-        
-            // invoke native method
-            int result;
-            try {
-                result = ref.requireMapDataAsyn(var1, var2);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success(result);
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapEngine::requireMapData", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            int var1 = (int) args.get("var1");
-            // jsonable arg
-            byte[] var2 = (byte[]) args.get("var2");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::requireMapData(" + var1 + var2 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.requireMapData(var1, var2);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapEngine::requireCharBitmap", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            int var1 = (int) args.get("var1");
-            // jsonable arg
-            int var2 = (int) args.get("var2");
-            // jsonable arg
-            int var3 = (int) args.get("var3");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::requireCharBitmap(" + var1 + var2 + var3 + ")");
-            }
-        
-            // invoke native method
-            byte[] result;
-            try {
-                result = ref.requireCharBitmap(var1, var2, var3);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success(result);
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapEngine::requireCharsWidths", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            int var1 = (int) args.get("var1");
-            // jsonable arg
-            int[] var2 = (int[]) args.get("var2");
-            // jsonable arg
-            int var3 = (int) args.get("var3");
-            // jsonable arg
-            int var4 = (int) args.get("var4");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::requireCharsWidths(" + var1 + var2 + var3 + var4 + ")");
-            }
-        
-            // invoke native method
-            byte[] result;
-            try {
-                result = ref.requireCharsWidths(var1, var2, var3, var4);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success(result);
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapEngine::requireMapRender", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            int var1 = (int) args.get("var1");
-            // jsonable arg
-            int var2 = (int) args.get("var2");
-            // jsonable arg
-            int var3 = (int) args.get("var3");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::requireMapRender(" + var1 + var2 + var3 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.requireMapRender(var1, var2, var3);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapEngine::onMapRender", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            int var1 = (int) args.get("var1");
-            // jsonable arg
-            int var2 = (int) args.get("var2");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::onMapRender(" + var1 + var2 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.onMapRender(var1, var2);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapEngine::OnIndoorBuildingActivity", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            int var1 = (int) args.get("var1");
-            // jsonable arg
-            byte[] var2 = (byte[]) args.get("var2");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::OnIndoorBuildingActivity(" + var1 + var2 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.OnIndoorBuildingActivity(var1, var2);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
         });
         // method
         put("com.autonavi.ae.gmap.GLMapEngine::receiveNetData", (args, methodResult) -> {
@@ -4522,6 +4757,40 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.netError(var1, var2, var4);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapEngine::setMapLoaderToTask", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            long var2 = (long) args.get("var2");
+            // ref arg
+            com.autonavi.amap.mapcore.maploader.AMapLoader var4 = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get((int) args.get("var4"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setMapLoaderToTask(" + var1 + var2 + var4 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setMapLoaderToTask(var1, var2, var4);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -4857,6 +5126,37 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
+        put("com.autonavi.ae.gmap.GLMapEngine::getEngineIDWithGestureInfo", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo var1 = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getEngineIDWithGestureInfo(" + var1 + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getEngineIDWithGestureInfo(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.autonavi.ae.gmap.GLMapEngine::setServiceViewRect", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -5033,6 +5333,170 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
+        put("com.autonavi.ae.gmap.GLMapEngine::setMapListener", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setMapListener(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setMapListener(new com.autonavi.amap.mapcore.interfaces.IAMapListener() {
+                // method channel
+                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.GLMapEngine::setMapListener::Callback");
+        
+                // call dart method
+                @Override
+                public void afterDrawFrame(int var1, com.autonavi.ae.gmap.GLMapState var2) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: afterDrawFrame(" + var1 + var2 + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // jsonable arg
+                    int argvar1 = var1;
+                    // ref arg
+                    int argvar2 = var2.hashCode();
+                    getHEAP().put(argvar2, var2);
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawFrame",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                                put("var2", argvar2);
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+                @Override
+                public void afterDrawLabel(int var1, com.autonavi.ae.gmap.GLMapState var2) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: afterDrawLabel(" + var1 + var2 + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // jsonable arg
+                    int argvar1 = var1;
+                    // ref arg
+                    int argvar2 = var2.hashCode();
+                    getHEAP().put(argvar2, var2);
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawLabel",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                                put("var2", argvar2);
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+                @Override
+                public void beforeDrawLabel(int var1, com.autonavi.ae.gmap.GLMapState var2) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: beforeDrawLabel(" + var1 + var2 + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // jsonable arg
+                    int argvar1 = var1;
+                    // ref arg
+                    int argvar2 = var2.hashCode();
+                    getHEAP().put(argvar2, var2);
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::beforeDrawLabel",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                                put("var2", argvar2);
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+                @Override
+                public void afterRendererOver(int var1, com.autonavi.ae.gmap.GLMapState var2) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: afterRendererOver(" + var1 + var2 + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // jsonable arg
+                    int argvar1 = var1;
+                    // ref arg
+                    int argvar2 = var2.hashCode();
+                    getHEAP().put(argvar2, var2);
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterRendererOver",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                                put("var2", argvar2);
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+                @Override
+                public void afterAnimation() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: afterAnimation(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterAnimation",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+            });
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.autonavi.ae.gmap.GLMapEngine::setInternaltexture", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -5054,6 +5518,189 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.setInternaltexture(var1, var2, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapEngine::getMapState", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getMapState(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.ae.gmap.GLMapState result;
+            try {
+                result = ref.getMapState(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapEngine::getNewMapState", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getNewMapState(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.ae.gmap.GLMapState result;
+            try {
+                result = ref.getNewMapState(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapEngine::getCloneMapState", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getCloneMapState(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.ae.gmap.GLMapState result;
+            try {
+                result = ref.getCloneMapState();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapEngine::setMapState", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // ref arg
+            com.autonavi.ae.gmap.GLMapState var2 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) args.get("var2"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setMapState(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setMapState(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapEngine::addGestureMessage", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // ref arg
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage var2 = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get((int) args.get("var2"));
+            // jsonable arg
+            boolean var3 = (boolean) args.get("var3");
+            // jsonable arg
+            int var4 = (int) args.get("var4");
+            // jsonable arg
+            int var5 = (int) args.get("var5");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::addGestureMessage(" + var1 + var2 + var3 + var4 + var5 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.addGestureMessage(var1, var2, var3, var4, var5);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -5599,36 +6246,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
-        put("com.autonavi.ae.gmap.GLMapEngine::networkStateChanged", (args, methodResult) -> {
-            // args
-            // ref arg
-            android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::networkStateChanged(" + var1 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.networkStateChanged(var1);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
         put("com.autonavi.ae.gmap.GLMapEngine::getLabelBuffer", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -5763,6 +6380,38 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapEngine::addOverlayTexture", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // ref arg
+            com.autonavi.ae.gmap.gloverlay.GLTextureProperty var2 = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get((int) args.get("var2"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::addOverlayTexture(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.addOverlayTexture(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
         });
         // method
         put("com.autonavi.ae.gmap.GLMapEngine::destroyOverlay", (args, methodResult) -> {
@@ -6561,6 +7210,66 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
+        put("com.autonavi.ae.gmap.GLMapEngine::createAMapInstance", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.GLMapEngine.InitParam var1 = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::createAMapInstance(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.createAMapInstance(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapEngine::createAMapEngineWithFrame", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam var1 = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::createAMapEngineWithFrame(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.createAMapEngineWithFrame(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.autonavi.ae.gmap.GLMapEngine::changeSurface", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -6975,6 +7684,173 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::doAnimations", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.GLMapState var1 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@" + refId + "::doAnimations(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.doAnimations(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation var1 = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@" + refId + "::addAnimation(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.addAnimation(var1, new com.amap.api.maps.AMap.CancelableCallback() {
+                // method channel
+                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation::Callback");
+        
+                // call dart method
+                @Override
+                public void onFinish() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+                @Override
+                public void onCancel() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+            });
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@" + refId + "::setMapAnimationListener(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setMapAnimationListener(new com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener() {
+                // method channel
+                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener::Callback");
+        
+                // call dart method
+                @Override
+                public void onMapAnimationFinish(com.amap.api.maps.AMap.CancelableCallback var1) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onMapAnimationFinish(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // ref arg
+                    int argvar1 = var1.hashCode();
+                    getHEAP().put(argvar1, var1);
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener::onMapAnimationFinish",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+            });
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener::onMapAnimationFinish", (args, methodResult) -> {
             // args
         
@@ -7053,6 +7929,189 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
+        put("com.autonavi.ae.gmap.glanimation.AdglAnimation2V::reset", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglAnimation2V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation2V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@" + refId + "::reset(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.reset();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getCurValue", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglAnimation2V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation2V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@" + refId + "::getCurValue(" + var1 + ")");
+            }
+        
+            // invoke native method
+            double result;
+            try {
+                result = ref.getCurValue(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getStartValue", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglAnimation2V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation2V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@" + refId + "::getStartValue(" + var1 + ")");
+            }
+        
+            // invoke native method
+            double result;
+            try {
+                result = ref.getStartValue(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getEndValue", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglAnimation2V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation2V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@" + refId + "::getEndValue(" + var1 + ")");
+            }
+        
+            // invoke native method
+            double result;
+            try {
+                result = ref.getEndValue(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimFling::reset", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimFling ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimFling) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@" + refId + "::reset(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.reset();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimFling::setPositionAndVelocity", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimFling ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimFling) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@" + refId + "::setPositionAndVelocity(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setPositionAndVelocity(new Double(var1).floatValue(), new Double(var2).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::isOver", (args, methodResult) -> {
             // args
         
@@ -7111,6 +8170,222 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglAnimation1V::reset", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglAnimation1V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation1V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@" + refId + "::reset(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.reset();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglAnimation1V::setAnimationValue", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglAnimation1V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation1V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@" + refId + "::setAnimationValue(" + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setAnimationValue(new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglAnimation1V::getCurValue", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglAnimation1V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation1V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@" + refId + "::getCurValue(" + "" + ")");
+            }
+        
+            // invoke native method
+            float result;
+            try {
+                result = ref.getCurValue();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglAnimation1V::getStartValue", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglAnimation1V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation1V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@" + refId + "::getStartValue(" + "" + ")");
+            }
+        
+            // invoke native method
+            float result;
+            try {
+                result = ref.getStartValue();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglAnimation1V::getEndValue", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglAnimation1V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation1V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@" + refId + "::getEndValue(" + "" + ")");
+            }
+        
+            // invoke native method
+            float result;
+            try {
+                result = ref.getEndValue();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom::reset", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@" + refId + "::reset(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.reset();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom::setToMapZoomAndPivot", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // ref arg
+            android.graphics.Point var3 = (android.graphics.Point) getHEAP().get((int) args.get("var3"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@" + refId + "::setToMapZoomAndPivot(" + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setToMapZoomAndPivot(new Double(var1).floatValue(), var2, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
         });
         // method
         put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::reset", (args, methodResult) -> {
@@ -7310,6 +8585,720 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.checkParam();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V::setFromValue", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@" + refId + "::setFromValue(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setFromValue(new Double(var1).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V::setToValue", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@" + refId + "::setToValue(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setToValue(new Double(var1).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V::getFromValue", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@" + refId + "::getFromValue(" + "" + ")");
+            }
+        
+            // invoke native method
+            float result;
+            try {
+                result = ref.getFromValue();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V::getToValue", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@" + refId + "::getToValue(" + "" + ")");
+            }
+        
+            // invoke native method
+            float result;
+            try {
+                result = ref.getToValue();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V::getCurValue", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@" + refId + "::getCurValue(" + "" + ")");
+            }
+        
+            // invoke native method
+            float result;
+            try {
+                result = ref.getCurValue();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setDuration", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::setDuration(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setDuration(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::reset", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::reset(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.reset();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapAngle", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::setToMapAngle(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setToMapAngle(new Double(var1).floatValue(), var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapCenterGeo", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::setToMapCenterGeo(" + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setToMapCenterGeo(var1, var2, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapLevel", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::setToMapLevel(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setToMapLevel(new Double(var1).floatValue(), var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToCameraDegree", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::setToCameraDegree(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setToCameraDegree(new Double(var1).floatValue(), var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::checkLevel", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var0 = (Double) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::checkLevel(" + var0 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup.checkLevel(new Double(var0).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::typeEqueal", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup var1 = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::typeEqueal(" + var1 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.typeEqueal(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::setFromValue", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            double var1 = (double) args.get("var1");
+            // jsonable arg
+            double var3 = (double) args.get("var3");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::setFromValue(" + var1 + var3 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setFromValue(var1, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::setToValue", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            double var1 = (double) args.get("var1");
+            // jsonable arg
+            double var3 = (double) args.get("var3");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::setToValue(" + var1 + var3 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setToValue(var1, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::getFromXValue", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::getFromXValue(" + "" + ")");
+            }
+        
+            // invoke native method
+            double result;
+            try {
+                result = ref.getFromXValue();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::getFromYValue", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::getFromYValue(" + "" + ")");
+            }
+        
+            // invoke native method
+            double result;
+            try {
+                result = ref.getFromYValue();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::getToXValue", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::getToXValue(" + "" + ")");
+            }
+        
+            // invoke native method
+            double result;
+            try {
+                result = ref.getToXValue();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::getToYValue", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::getToYValue(" + "" + ")");
+            }
+        
+            // invoke native method
+            double result;
+            try {
+                result = ref.getToYValue();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::getCurXValue", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::getCurXValue(" + "" + ")");
+            }
+        
+            // invoke native method
+            double result;
+            try {
+                result = ref.getCurXValue();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::getCurYValue", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::getCurYValue(" + "" + ")");
+            }
+        
+            // invoke native method
+            double result;
+            try {
+                result = ref.getCurYValue();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.style.StyleItem::get", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.style.StyleItem ref = (com.autonavi.ae.gmap.style.StyleItem) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.style.StyleItem@" + refId + "::get(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.ae.gmap.style.StyleElement result;
+            try {
+                result = ref.get(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.autonavi.ae.gmap.style.StyleItem::put", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // ref arg
+            com.autonavi.ae.gmap.style.StyleElement var2 = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get((int) args.get("var2"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.style.StyleItem ref = (com.autonavi.ae.gmap.style.StyleItem) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.style.StyleItem@" + refId + "::put(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.put(var1, var2);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -7705,6 +9694,40 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.screenToP20Point(var1, var2, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapState::p20ToScreenPoint", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // ref arg
+            com.autonavi.amap.mapcore.FPoint var3 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) args.get("var3"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::p20ToScreenPoint(" + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.p20ToScreenPoint(var1, var2, var3);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -8921,6 +10944,323 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
+        put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorItem", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr var1 = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) args.get("var1"));
+            // jsonable arg
+            byte[] var2 = (byte[]) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::addVectorItem(" + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.addVectorItem(var1, var2, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorRemainDis", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::addVectorRemainDis(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.addVectorRemainDis(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorCar", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::addVectorCar(" + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.addVectorCar(var1, var2, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::setRoadResId", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::setRoadResId(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setRoadResId(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::setArrowResId", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::setArrowResId(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setArrowResId(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::setCarResId", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::setCarResId(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setCarResId(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::setBackgroundResId", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::setBackgroundResId(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setBackgroundResId(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::setSkyResId", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::setSkyResId(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setSkyResId(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::getFBOTextureId", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::getFBOTextureId(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getFBOTextureId();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::initFBOTexture", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::initFBOTexture(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.initFBOTexture(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::resumeMarker", (args, methodResult) -> {
             // args
             // ref arg
@@ -9016,6 +11356,36 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setAttribute", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr var1 = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::setAttribute(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setAttribute(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
         });
         // method
         put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setData", (args, methodResult) -> {
@@ -9167,36 +11537,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::getTextureID", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::getTextureID(" + "" + ")");
-            }
-        
-            // invoke native method
-            int result;
-            try {
-                result = ref.getTextureID();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success(result);
         });
         // method
         put("com.autonavi.ae.gmap.gloverlay.GLOverlay::getNativeInstatnce", (args, methodResult) -> {
@@ -9827,6 +12167,36 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
+        put("com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener var1 = (com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.NetworkState ref = (com.autonavi.amap.mapcore.maploader.NetworkState) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.NetworkState@" + refId + "::setNetworkListener(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setNetworkListener(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.autonavi.amap.mapcore.maploader.NetworkState::registerNetChangeReceiver", (args, methodResult) -> {
             // args
             // ref arg
@@ -9906,96 +12276,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.networkStateChanged(var1);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.amap.mapcore.maploader.AMapLoader::onDownload", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            byte[] var1 = (byte[]) args.get("var1");
-            // jsonable arg
-            long var2 = (long) args.get("var2");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader@" + refId + "::onDownload(" + var1 + var2 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.onDownload(var1, var2);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.amap.mapcore.maploader.AMapLoader::onStop", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader@" + refId + "::onStop(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.onStop();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.amap.mapcore.maploader.AMapLoader::onFinish", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader@" + refId + "::onFinish(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.onFinish();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -15115,6 +17395,43 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
+        put("com.autonavi.amap.mapcore.MapConfig::getGeoRectangle", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.MapConfig@" + refId + "::getGeoRectangle(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.Rectangle result;
+            try {
+                result = ref.getGeoRectangle();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
         put("com.autonavi.amap.mapcore.MapConfig::setMaxZoomLevel", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -16620,6 +18937,501 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
+        put("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var0 = (int) args.get("var0");
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain(" + var0 + var1 + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.message.HoverGestureMapMessage result;
+            try {
+                result = com.autonavi.amap.mapcore.message.HoverGestureMapMessage.obtain(var0, new Double(var1).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.autonavi.amap.mapcore.message.HoverGestureMapMessage.destory();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::obtain", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var0 = (int) args.get("var0");
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::obtain(" + var0 + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.message.MoveGestureMapMessage result;
+            try {
+                result = com.autonavi.amap.mapcore.message.MoveGestureMapMessage.obtain(var0, new Double(var1).floatValue(), new Double(var2).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::destory", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::destory(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.autonavi.amap.mapcore.message.MoveGestureMapMessage.destory();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::obtain", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var0 = (int) args.get("var0");
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::obtain(" + var0 + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.message.ScaleGestureMapMessage result;
+            try {
+                result = com.autonavi.amap.mapcore.message.ScaleGestureMapMessage.obtain(var0, new Double(var1).floatValue(), var2, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::destory", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::destory(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.autonavi.amap.mapcore.message.ScaleGestureMapMessage.destory();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::setState", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@" + refId + "::setState(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setState(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::reset", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@" + refId + "::reset(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.reset();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::runCameraUpdate", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.GLMapState var1 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@" + refId + "::runCameraUpdate(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.runCameraUpdate(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::getMapGestureState", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@" + refId + "::getMapGestureState(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getMapGestureState();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::obtain", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var0 = (int) args.get("var0");
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.message.RotateGestureMapMessage::obtain(" + var0 + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.message.RotateGestureMapMessage result;
+            try {
+                result = com.autonavi.amap.mapcore.message.RotateGestureMapMessage.obtain(var0, new Double(var1).floatValue(), var2, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::destory", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.message.RotateGestureMapMessage::destory(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.autonavi.amap.mapcore.message.RotateGestureMapMessage.destory();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.FPointBounds::builder", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.FPointBounds::builder(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.FPointBounds.Builder result;
+            try {
+                result = com.autonavi.amap.mapcore.FPointBounds.builder();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.autonavi.amap.mapcore.FPointBounds::contains", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.amap.mapcore.FPoint var1 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.FPointBounds ref = (com.autonavi.amap.mapcore.FPointBounds) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.FPointBounds@" + refId + "::contains(" + var1 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.contains(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.amap.mapcore.FPointBounds::intersects", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.amap.mapcore.FPointBounds var1 = (com.autonavi.amap.mapcore.FPointBounds) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.FPointBounds ref = (com.autonavi.amap.mapcore.FPointBounds) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.FPointBounds@" + refId + "::intersects(" + var1 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.intersects(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.autonavi.amap.mapcore.CoordUtil::convertToGcj", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -16679,6 +19491,43 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.AeUtil::initResource", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var0 = (android.content.Context) getHEAP().get((int) args.get("var0"));
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AeUtil::initResource(" + var0 + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.ae.gmap.GLMapEngine.InitParam result;
+            try {
+                result = com.autonavi.amap.mapcore.AeUtil.initResource(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
         });
         // method
         put("com.autonavi.amap.mapcore.AeUtil::readAssetsFileAndSave", (args, methodResult) -> {
@@ -18527,6 +21376,111 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
+        put("com.autonavi.amap.mapcore.FPoint3::setColorIndex", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.FPoint3 ref = (com.autonavi.amap.mapcore.FPoint3) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.FPoint3@" + refId + "::setColorIndex(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setColorIndex(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.FPointBounds.Builder::include", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.amap.mapcore.FPoint var1 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.FPointBounds.Builder ref = (com.autonavi.amap.mapcore.FPointBounds.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.FPointBounds.Builder@" + refId + "::include(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.FPointBounds.Builder result;
+            try {
+                result = ref.include(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.autonavi.amap.mapcore.FPointBounds.Builder::build", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.FPointBounds.Builder ref = (com.autonavi.amap.mapcore.FPointBounds.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.FPointBounds.Builder@" + refId + "::build(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.FPointBounds result;
+            try {
+                result = ref.build();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
         put("com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY", (args, methodResult) -> {
             // args
         
@@ -19560,6 +22514,42 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.FPoint::obtain", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.FPoint::obtain(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.FPoint result;
+            try {
+                result = com.autonavi.amap.mapcore.FPoint.obtain();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
         });
         // method
         put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreate", (args, methodResult) -> {
@@ -20648,6 +23638,36 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
+        put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::runCameraUpdate", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.GLMapState var1 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@" + refId + "::runCameraUpdate(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.runCameraUpdate(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::mergeCameraUpdateDelegate", (args, methodResult) -> {
             // args
             // ref arg
@@ -20665,6 +23685,36 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.mergeCameraUpdateDelegate(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::generateMapAnimation", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.GLMapEngine var1 = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@" + refId + "::generateMapAnimation(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.generateMapAnimation(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -21554,6 +24604,40 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.setVisible(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::draw", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.amap.mapcore.MapConfig var1 = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get((int) args.get("var1"));
+            // jsonable arg
+            float[] var2 = (float[]) args.get("var2");
+            // jsonable arg
+            float[] var3 = (float[]) args.get("var3");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay ref = (com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@" + refId + "::draw(" + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.draw(var1, var2, var3);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -26901,6 +29985,134 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
+        put("com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawFrame", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // ref arg
+            com.autonavi.ae.gmap.GLMapState var2 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) args.get("var2"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IAMapListener ref = (com.autonavi.amap.mapcore.interfaces.IAMapListener) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMapListener@" + refId + "::afterDrawFrame(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.afterDrawFrame(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawLabel", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // ref arg
+            com.autonavi.ae.gmap.GLMapState var2 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) args.get("var2"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IAMapListener ref = (com.autonavi.amap.mapcore.interfaces.IAMapListener) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMapListener@" + refId + "::afterDrawLabel(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.afterDrawLabel(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.interfaces.IAMapListener::beforeDrawLabel", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // ref arg
+            com.autonavi.ae.gmap.GLMapState var2 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) args.get("var2"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IAMapListener ref = (com.autonavi.amap.mapcore.interfaces.IAMapListener) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMapListener@" + refId + "::beforeDrawLabel(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.beforeDrawLabel(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.interfaces.IAMapListener::afterRendererOver", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // ref arg
+            com.autonavi.ae.gmap.GLMapState var2 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) args.get("var2"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IAMapListener ref = (com.autonavi.amap.mapcore.interfaces.IAMapListener) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMapListener@" + refId + "::afterRendererOver(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.afterRendererOver(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.autonavi.amap.mapcore.interfaces.IAMapListener::afterAnimation", (args, methodResult) -> {
             // args
         
@@ -27460,8 +30672,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         // method
         put("com.autonavi.amap.mapcore.interfaces.ITileOverlay::equalsRemote", (args, methodResult) -> {
             // args
-            // ref arg
-            com.autonavi.amap.mapcore.interfaces.ITileOverlay var1 = (com.autonavi.amap.mapcore.interfaces.ITileOverlay) getHEAP().get((int) args.get("var1"));
+        
         
             // ref
             int refId = (int) args.get("refId");
@@ -27469,13 +30680,243 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // print log
             if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ITileOverlay@" + refId + "::equalsRemote(" + var1 + ")");
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ITileOverlay@" + refId + "::equalsRemote(" + "" + ")");
             }
         
             // invoke native method
             boolean result;
             try {
-                result = ref.equalsRemote(var1);
+                result = ref.equalsRemote(new com.autonavi.amap.mapcore.interfaces.ITileOverlay() {
+                // method channel
+                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.ITileOverlay::equalsRemote::Callback");
+        
+                // call dart method
+                @Override
+                public void remove() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: remove(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::remove",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+                @Override
+                public void destroy(boolean var1) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: destroy(" + var1 + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // jsonable arg
+                    boolean argvar1 = var1;
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::destroy",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+                @Override
+                public void clearTileCache() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: clearTileCache(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::clearTileCache",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+                @Override
+                public String getId() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getId(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::getId",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return null;
+                }
+        
+                @Override
+                public void setZIndex(float var1) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: setZIndex(" + var1 + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // jsonable arg
+                    float argvar1 = var1;
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::setZIndex",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+                @Override
+                public float getZIndex() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getZIndex(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::getZIndex",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return 0f;
+                }
+        
+                @Override
+                public void setVisible(boolean var1) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: setVisible(" + var1 + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // jsonable arg
+                    boolean argvar1 = var1;
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::setVisible",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+                @Override
+                public boolean isVisible() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: isVisible(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::isVisible",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return true;
+                }
+        
+                @Override
+                public boolean equalsRemote(com.autonavi.amap.mapcore.interfaces.ITileOverlay var1) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: equalsRemote(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // ref arg
+                    int argvar1 = var1.hashCode();
+                    getHEAP().put(argvar1, var1);
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::equalsRemote",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                            }}
+                    );
+        
+                    // method result
+                    return true;
+                }
+        
+                @Override
+                public int hashCodeRemote() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: hashCodeRemote(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::hashCodeRemote",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return 0;
+                }
+        
+            });
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -31806,6 +35247,43 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
+        put("com.autonavi.amap.mapcore.interfaces.IAMap::getMapConfig", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMapConfig(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.MapConfig result;
+            try {
+                result = ref.getMapConfig();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
         put("com.autonavi.amap.mapcore.interfaces.IAMap::getView", (args, methodResult) -> {
             // args
         
@@ -32186,6 +35664,38 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
+        put("com.autonavi.amap.mapcore.interfaces.IAMap::addOverlayTexture", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // ref arg
+            com.autonavi.ae.gmap.gloverlay.GLTextureProperty var2 = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get((int) args.get("var2"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addOverlayTexture(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.addOverlayTexture(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.autonavi.amap.mapcore.interfaces.IAMap::onTouchEvent", (args, methodResult) -> {
             // args
             // ref arg
@@ -32499,6 +36009,36 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             } else {
                 methodResult.success(null);
             }
+        });
+        // method
+        put("com.autonavi.amap.mapcore.interfaces.IAMap::checkMapState", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.GLMapState var1 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::checkMapState(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.checkMapState(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
         });
         // method
         put("com.autonavi.amap.mapcore.interfaces.IAMap::setRenderMode", (args, methodResult) -> {
@@ -52986,6 +56526,81 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
+        put("com.amap.api.maps.model.CrossOverlayOptions::getAttribute", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.CrossOverlayOptions ref = (com.amap.api.maps.model.CrossOverlayOptions) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CrossOverlayOptions@" + refId + "::getAttribute(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr result;
+            try {
+                result = ref.getAttribute();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.api.maps.model.CrossOverlayOptions::setAttribute", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr var1 = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.CrossOverlayOptions ref = (com.amap.api.maps.model.CrossOverlayOptions) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CrossOverlayOptions@" + refId + "::setAttribute(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.api.maps.model.CrossOverlayOptions result;
+            try {
+                result = ref.setAttribute(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
         put("com.amap.api.maps.model.CrossOverlayOptions::setRes", (args, methodResult) -> {
             // args
             // ref arg
@@ -59652,6 +63267,36 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success(result);
+        });
+        // method
+        put("com.amap.api.maps.model.CrossOverlay::setAttribute", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr var1 = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.CrossOverlay ref = (com.amap.api.maps.model.CrossOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CrossOverlay@" + refId + "::setAttribute(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setAttribute(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
         });
         // method
         put("com.amap.api.maps.model.CrossOverlay::setVisible", (args, methodResult) -> {
@@ -70895,6 +74540,25 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(obj.hashCode());
         });
         // factory
+        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglAnimation2V__int");
+        
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // create target object
+            com.autonavi.ae.gmap.glanimation.AdglAnimation2V obj = new com.autonavi.ae.gmap.glanimation.AdglAnimation2V(var1);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
         put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__", (args, methodResult) -> {
             Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__");
         
@@ -70903,6 +74567,122 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // create target object
             com.autonavi.ae.gmap.glanimation.AdglAnimationContantValues obj = new com.autonavi.ae.gmap.glanimation.AdglAnimationContantValues();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int");
+        
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+        
+            // create target object
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimFling obj = new com.autonavi.ae.gmap.glanimation.AdglMapAnimFling(var1, var2, var3);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglAnimation1V__int");
+        
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // create target object
+            com.autonavi.ae.gmap.glanimation.AdglAnimation1V obj = new com.autonavi.ae.gmap.glanimation.AdglAnimation1V(var1);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int");
+        
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // create target object
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom obj = new com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom(var1);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__");
+        
+            // args
+        
+        
+            // create target object
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V obj = new com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int");
+        
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // create target object
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup obj = new com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup(var1);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__");
+        
+            // args
+        
+        
+            // create target object
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V obj = new com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V();
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
@@ -71723,6 +75503,121 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(obj.hashCode());
         });
         // factory
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float");
+        
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+        
+            // create target object
+            com.autonavi.amap.mapcore.message.HoverGestureMapMessage obj = new com.autonavi.amap.mapcore.message.HoverGestureMapMessage(var1, new Double(var2).floatValue());
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float");
+        
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+            // jsonable arg
+            Double var3 = (Double) args.get("var3");
+        
+            // create target object
+            com.autonavi.amap.mapcore.message.MoveGestureMapMessage obj = new com.autonavi.amap.mapcore.message.MoveGestureMapMessage(var1, new Double(var2).floatValue(), new Double(var3).floatValue());
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int");
+        
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+            // jsonable arg
+            int var4 = (int) args.get("var4");
+        
+            // create target object
+            com.autonavi.amap.mapcore.message.ScaleGestureMapMessage obj = new com.autonavi.amap.mapcore.message.ScaleGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int");
+        
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+            // jsonable arg
+            int var4 = (int) args.get("var4");
+        
+            // create target object
+            com.autonavi.amap.mapcore.message.RotateGestureMapMessage obj = new com.autonavi.amap.mapcore.message.RotateGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint");
+        
+            // args
+            // ref arg
+            com.autonavi.amap.mapcore.FPoint var1 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) args.get("var1"));
+            // ref arg
+            com.autonavi.amap.mapcore.FPoint var2 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) args.get("var2"));
+        
+            // create target object
+            com.autonavi.amap.mapcore.FPointBounds obj = new com.autonavi.amap.mapcore.FPointBounds(var1, var2);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
         put("ObjectFactory::createcom_autonavi_amap_mapcore_CoordUtil__", (args, methodResult) -> {
             Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_CoordUtil__");
         
@@ -71866,6 +75761,47 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // create target object
             com.autonavi.amap.mapcore.AMapEngineUtils obj = new com.autonavi.amap.mapcore.AMapEngineUtils();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint3__");
+        
+            // args
+        
+        
+            // create target object
+            com.autonavi.amap.mapcore.FPoint3 obj = new com.autonavi.amap.mapcore.FPoint3();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__float__float__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint3__float__float__int");
+        
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+        
+            // create target object
+            com.autonavi.amap.mapcore.FPoint3 obj = new com.autonavi.amap.mapcore.FPoint3(new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP

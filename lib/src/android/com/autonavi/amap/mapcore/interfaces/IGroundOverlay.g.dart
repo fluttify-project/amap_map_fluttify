@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
 
   
 
+  
+
   @mustCallSuper
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) {
   

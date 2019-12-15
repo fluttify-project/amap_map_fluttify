@@ -15,6 +15,8 @@ mixin MAParticleRotationGenerate on NSObject {
 
   
 
+  
+
   @mustCallSuper
   Future<double> getRotate() {
   

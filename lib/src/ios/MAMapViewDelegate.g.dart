@@ -15,6 +15,8 @@ mixin MAMapViewDelegate on NSObject {
 
   
 
+  
+
   @mustCallSuper
   Future<void> mapViewRegionChanged(MAMapView mapView) {
     kNativeObjectPool.add(mapView);
