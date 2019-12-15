@@ -18,11 +18,20 @@ mixin com_amap_api_maps_AMap_OnMapScreenShotListener on java_lang_Object {
   
 
   @mustCallSuper
-  Future<void> onMapScreenShot(android_graphics_Bitmap var1) {
+  Future<void> onMapScreenShot__android_graphics_Bitmap(android_graphics_Bitmap var1) {
     kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
-      debugPrint('onMapScreenShot::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('onMapScreenShot__android_graphics_Bitmap::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> onMapScreenShot__android_graphics_Bitmap__int(android_graphics_Bitmap var1, int var2) {
+    kNativeObjectPool.add(var1);
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('onMapScreenShot__android_graphics_Bitmap__int::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   

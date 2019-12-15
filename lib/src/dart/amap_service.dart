@@ -188,8 +188,9 @@ class AmapService {
                 rightBottom.latitude, rightBottom.longitude);
 
         // 计算结果
-        final result = await com_amap_api_maps_AMapUtils.calculateArea(
-            _location1, _location2);
+        final result = await com_amap_api_maps_AMapUtils
+            .calculateArea__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(
+                _location1, _location2);
 
         // 释放两个点
         pool..add(_location1)..add(_location2);

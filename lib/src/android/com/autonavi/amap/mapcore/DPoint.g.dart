@@ -42,4 +42,26 @@ class com_autonavi_amap_mapcore_DPoint extends java_lang_Object  {
     }
   }
   
+  static Future<com_autonavi_amap_mapcore_DPoint> obtain__double__double(double var0, double var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.DPoint::obtain([\'var0\':$var0, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.DPoint::obtain__double__double', {"var0": var0, "var2": var2});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_DPoint()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_DPoint()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
 }

@@ -64,14 +64,36 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     }
   }
   
-  Future<com_amap_api_maps_model_GroundOverlayOptions> position(com_amap_api_maps_model_LatLng var1, double var2) async {
+  Future<com_amap_api_maps_model_GroundOverlayOptions> position__com_amap_api_maps_model_LatLng__double(com_amap_api_maps_model_LatLng var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::position([\'var2\':$var2])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position', {"var1": var1.refId, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double', {"var1": var1.refId, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_GroundOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  Future<com_amap_api_maps_model_GroundOverlayOptions> position__com_amap_api_maps_model_LatLng__double__double(com_amap_api_maps_model_LatLng var1, double var2, double var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::position([\'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double__double', {"var1": var1.refId, "var2": var2, "var3": var3, "refId": refId});
   
   
     // handle native call

@@ -1080,6 +1080,28 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     }
   }
   
+  Future<String> toStr__int(int var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::toStr([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_location::toStr__int', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<double> getAccuracy() async {
     // print log
     if (fluttifyLogEnabled) {

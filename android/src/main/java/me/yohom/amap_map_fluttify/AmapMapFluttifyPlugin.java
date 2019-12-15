@@ -20,6 +20,7 @@ import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
 import androidx.annotation.NonNull;
 
+// todo 启用新的embedding
 @SuppressWarnings("ALL")
 public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
 
@@ -5644,7 +5645,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
-        put("com.autonavi.ae.gmap.GLMapEngine::setMapState", (args, methodResult) -> {
+        put("com.autonavi.ae.gmap.GLMapEngine::setMapState__int__com_autonavi_ae_gmap_GLMapState", (args, methodResult) -> {
             // args
             // jsonable arg
             int var1 = (int) args.get("var1");
@@ -5663,6 +5664,40 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.setMapState(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapEngine::setMapState__int__com_autonavi_ae_gmap_GLMapState__bool", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // ref arg
+            com.autonavi.ae.gmap.GLMapState var2 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) args.get("var2"));
+            // jsonable arg
+            boolean var3 = (boolean) args.get("var3");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setMapState(" + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setMapState(var1, var2, var3);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -5925,7 +5960,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
-        put("com.autonavi.ae.gmap.GLMapEngine::clearAnimations", (args, methodResult) -> {
+        put("com.autonavi.ae.gmap.GLMapEngine::clearAnimations__int__bool", (args, methodResult) -> {
             // args
             // jsonable arg
             int var1 = (int) args.get("var1");
@@ -5944,6 +5979,40 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.clearAnimations(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapEngine::clearAnimations__int__bool__int", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            boolean var2 = (boolean) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::clearAnimations(" + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.clearAnimations(var1, var2, var3);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -6801,7 +6870,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
-        put("com.autonavi.ae.gmap.GLMapEngine::setTrafficStyle", (args, methodResult) -> {
+        put("com.autonavi.ae.gmap.GLMapEngine::setTrafficStyle__int__int__int__int__int__bool", (args, methodResult) -> {
             // args
             // jsonable arg
             int var1 = (int) args.get("var1");
@@ -6828,6 +6897,44 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.setTrafficStyle(var1, var2, var3, var4, var5, var6);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapEngine::setTrafficStyle__int__int__int__int__int", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+            // jsonable arg
+            int var4 = (int) args.get("var4");
+            // jsonable arg
+            int var5 = (int) args.get("var5");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setTrafficStyle(" + var1 + var2 + var3 + var4 + var5 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setTrafficStyle(var1, var2, var3, var4, var5);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -8873,7 +8980,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
-        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapLevel", (args, methodResult) -> {
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapLevel__double__int", (args, methodResult) -> {
             // args
             // jsonable arg
             Double var1 = (Double) args.get("var1");
@@ -8892,6 +8999,40 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.setToMapLevel(new Double(var1).floatValue(), var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapLevel__double__double__int", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::setToMapLevel(" + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setToMapLevel(new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -9741,7 +9882,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
-        put("com.autonavi.ae.gmap.GLMapState::getMapGeoCenter", (args, methodResult) -> {
+        put("com.autonavi.ae.gmap.GLMapState::getMapGeoCenter__com_autonavi_amap_mapcore_IPoint", (args, methodResult) -> {
             // args
             // ref arg
             com.autonavi.amap.mapcore.IPoint var1 = (com.autonavi.amap.mapcore.IPoint) getHEAP().get((int) args.get("var1"));
@@ -9769,6 +9910,43 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapState::getMapGeoCenter", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::getMapGeoCenter(" + "" + ")");
+            }
+        
+            // invoke native method
+            android.graphics.Point result;
+            try {
+                result = ref.getMapGeoCenter();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
         });
         // method
         put("com.autonavi.ae.gmap.GLMapState::setMapGeoCenter", (args, methodResult) -> {
@@ -14019,6 +14197,45 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
+        put("com.autonavi.amap.mapcore.IPoint::obtain__int__int", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var0 = (int) args.get("var0");
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.IPoint::obtain(" + var0 + var1 + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.IPoint result;
+            try {
+                result = com.autonavi.amap.mapcore.IPoint.obtain(var0, var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
         put("com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeCreateGLShaderManager", (args, methodResult) -> {
             // args
         
@@ -14123,6 +14340,45 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             com.autonavi.amap.mapcore.DPoint result;
             try {
                 result = com.autonavi.amap.mapcore.DPoint.obtain();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.autonavi.amap.mapcore.DPoint::obtain__double__double", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            double var0 = (double) args.get("var0");
+            // jsonable arg
+            double var2 = (double) args.get("var2");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.DPoint::obtain(" + var0 + var2 + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.DPoint result;
+            try {
+                result = com.autonavi.amap.mapcore.DPoint.obtain(var0, var2);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -15322,7 +15578,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
-        put("com.autonavi.amap.mapcore.animation.GLAnimation::setInterpolator", (args, methodResult) -> {
+        put("com.autonavi.amap.mapcore.animation.GLAnimation::setInterpolator__android_content_Context__int", (args, methodResult) -> {
             // args
             // ref arg
             android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
@@ -16300,7 +16556,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
-        put("com.autonavi.amap.mapcore.animation.GLAnimation::getTransformation", (args, methodResult) -> {
+        put("com.autonavi.amap.mapcore.animation.GLAnimation::getTransformation__int__com_autonavi_amap_mapcore_animation_GLTransformation", (args, methodResult) -> {
             // args
             // jsonable arg
             long var1 = (long) args.get("var1");
@@ -16320,6 +16576,41 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             boolean result;
             try {
                 result = ref.getTransformation(var1, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.amap.mapcore.animation.GLAnimation::getTransformation__int__com_autonavi_amap_mapcore_animation_GLTransformation__double", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            long var1 = (long) args.get("var1");
+            // ref arg
+            com.autonavi.amap.mapcore.animation.GLTransformation var3 = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get((int) args.get("var3"));
+            // jsonable arg
+            Double var4 = (Double) args.get("var4");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.animation.GLAnimation ref = (com.autonavi.amap.mapcore.animation.GLAnimation) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.animation.GLAnimation@" + refId + "::getTransformation(" + var1 + var3 + var4 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.getTransformation(var1, var3, new Double(var4).floatValue());
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -19370,10 +19661,41 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
-        put("com.autonavi.amap.mapcore.FPointBounds::contains", (args, methodResult) -> {
+        put("com.autonavi.amap.mapcore.FPointBounds::contains__com_autonavi_amap_mapcore_FPoint", (args, methodResult) -> {
             // args
             // ref arg
             com.autonavi.amap.mapcore.FPoint var1 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.FPointBounds ref = (com.autonavi.amap.mapcore.FPointBounds) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.FPointBounds@" + refId + "::contains(" + var1 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.contains(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.amap.mapcore.FPointBounds::contains__com_autonavi_amap_mapcore_FPointBounds", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.amap.mapcore.FPointBounds var1 = (com.autonavi.amap.mapcore.FPointBounds) getHEAP().get((int) args.get("var1"));
         
             // ref
             int refId = (int) args.get("refId");
@@ -19597,7 +19919,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
-        put("com.autonavi.amap.mapcore.VirtualEarthProjection::latLongToPixels", (args, methodResult) -> {
+        put("com.autonavi.amap.mapcore.VirtualEarthProjection::latLongToPixels__int__int__int", (args, methodResult) -> {
             // args
             // jsonable arg
             int var0 = (int) args.get("var0");
@@ -19618,6 +19940,47 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             android.graphics.Point result;
             try {
                 result = com.autonavi.amap.mapcore.VirtualEarthProjection.latLongToPixels(var0, var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.autonavi.amap.mapcore.VirtualEarthProjection::latLongToPixels__double__double__int", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            double var0 = (double) args.get("var0");
+            // jsonable arg
+            double var2 = (double) args.get("var2");
+            // jsonable arg
+            int var4 = (int) args.get("var4");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.VirtualEarthProjection::latLongToPixels(" + var0 + var2 + var4 + ")");
+            }
+        
+            // invoke native method
+            android.graphics.Point result;
+            try {
+                result = com.autonavi.amap.mapcore.VirtualEarthProjection.latLongToPixels(var0, var2, var4);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -19709,7 +20072,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
-        put("com.autonavi.amap.mapcore.Rectangle::contains", (args, methodResult) -> {
+        put("com.autonavi.amap.mapcore.Rectangle::contains__int__int", (args, methodResult) -> {
             // args
             // jsonable arg
             int var1 = (int) args.get("var1");
@@ -19742,7 +20105,38 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
-        put("com.autonavi.amap.mapcore.Rectangle::isOverlap", (args, methodResult) -> {
+        put("com.autonavi.amap.mapcore.Rectangle::contains__com_autonavi_amap_mapcore_IPoint", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.amap.mapcore.IPoint var1 = (com.autonavi.amap.mapcore.IPoint) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.Rectangle@" + refId + "::contains(" + var1 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.contains(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.amap.mapcore.Rectangle::isOverlap__int__int__int__int", (args, methodResult) -> {
             // args
             // jsonable arg
             int var1 = (int) args.get("var1");
@@ -21189,6 +21583,37 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
+        put("com.autonavi.amap.mapcore.Inner_3dMap_location::toStr__int", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.Inner_3dMap_location ref = (com.autonavi.amap.mapcore.Inner_3dMap_location) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.Inner_3dMap_location@" + refId + "::toStr(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.toStr(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.autonavi.amap.mapcore.Inner_3dMap_location::getAccuracy", (args, methodResult) -> {
             // args
         
@@ -22532,6 +22957,45 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             com.autonavi.amap.mapcore.FPoint result;
             try {
                 result = com.autonavi.amap.mapcore.FPoint.obtain();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.autonavi.amap.mapcore.FPoint::obtain__double__double", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var0 = (Double) args.get("var0");
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.FPoint::obtain(" + var0 + var1 + ")");
+            }
+        
+            // invoke native method
+            com.autonavi.amap.mapcore.FPoint result;
+            try {
+                result = com.autonavi.amap.mapcore.FPoint.obtain(new Double(var0).floatValue(), new Double(var1).floatValue());
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -24139,7 +24603,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
-        put("com.autonavi.amap.mapcore.Convert::getNum", (args, methodResult) -> {
+        put("com.autonavi.amap.mapcore.Convert::getNum__int__int__int", (args, methodResult) -> {
             // args
             // jsonable arg
             byte var0 = (byte) args.get("var0");
@@ -28167,7 +28631,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
-        put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setDimensions", (args, methodResult) -> {
+        put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setDimensions__double", (args, methodResult) -> {
             // args
             // jsonable arg
             Double var1 = (Double) args.get("var1");
@@ -28184,6 +28648,38 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.setDimensions(new Double(var1).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setDimensions__double__double", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@" + refId + "::setDimensions(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setDimensions(new Double(var1).floatValue(), new Double(var2).floatValue());
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -32533,6 +33029,36 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
+        put("com.autonavi.amap.mapcore.interfaces.IAMap::clear__bool", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::clear(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.clear(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.autonavi.amap.mapcore.interfaces.IAMap::getMapType", (args, methodResult) -> {
             // args
         
@@ -33951,7 +34477,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
-        put("com.autonavi.amap.mapcore.interfaces.IAMap::setInfoWindowAdapter", (args, methodResult) -> {
+        put("com.autonavi.amap.mapcore.interfaces.IAMap::setInfoWindowAdapter__com_amap_api_maps_AMap_InfoWindowAdapter", (args, methodResult) -> {
             // args
             // ref arg
             com.amap.api.maps.AMap.InfoWindowAdapter var1 = (com.amap.api.maps.AMap.InfoWindowAdapter) getHEAP().get((int) args.get("var1"));
@@ -33968,6 +34494,64 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.setInfoWindowAdapter(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.interfaces.IAMap::setInfoWindowAdapter__com_amap_api_maps_AMap_CommonInfoWindowAdapter", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setInfoWindowAdapter(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setInfoWindowAdapter(new com.amap.api.maps.AMap.CommonInfoWindowAdapter() {
+                // method channel
+                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setInfoWindowAdapter__com_amap_api_maps_AMap_CommonInfoWindowAdapter::Callback");
+        
+                // call dart method
+                @Override
+                public com.amap.api.maps.InfoWindowParams getInfoWindowParams(com.amap.api.maps.model.BasePointOverlay var1) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getInfoWindowParams(" + var1 + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // ref arg
+                    int argvar1 = var1.hashCode();
+                    getHEAP().put(argvar1, var1);
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.api.maps.AMap.CommonInfoWindowAdapter::getInfoWindowParams",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                            }}
+                    );
+        
+                    // method result
+                    return null;
+                }
+        
+            });
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -34131,7 +34715,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
                     // call dart method
                     callbackChannel.invokeMethod(
-                            "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot",
+                            "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap",
                             new HashMap<String, Object>() {{
                                 put("var1", argvar1);
                             }}
@@ -34157,7 +34741,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
                     // call dart method
                     callbackChannel.invokeMethod(
-                            "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot",
+                            "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap__int",
                             new HashMap<String, Object>() {{
                                 put("var1", argvar1);
                                 put("var2", argvar2);
@@ -34258,6 +34842,63 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.removecache();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.interfaces.IAMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::removecache(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.removecache(new com.amap.api.maps.AMap.OnCacheRemoveListener() {
+                // method channel
+                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback");
+        
+                // call dart method
+                @Override
+                public void onRemoveCacheFinish(boolean var1) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onRemoveCacheFinish(" + var1 + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // jsonable arg
+                    boolean argvar1 = var1;
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.api.maps.AMap.OnCacheRemoveListener::onRemoveCacheFinish",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+            });
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -39361,7 +40002,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
-        put("com.amap.api.maps.CameraUpdateFactory::zoomBy", (args, methodResult) -> {
+        put("com.amap.api.maps.CameraUpdateFactory::zoomBy__double", (args, methodResult) -> {
             // args
             // jsonable arg
             Double var0 = (Double) args.get("var0");
@@ -39378,6 +40019,45 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             com.amap.api.maps.CameraUpdate result;
             try {
                 result = com.amap.api.maps.CameraUpdateFactory.zoomBy(new Double(var0).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.api.maps.CameraUpdateFactory::zoomBy__double__android_graphics_Point", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var0 = (Double) args.get("var0");
+            // ref arg
+            android.graphics.Point var1 = (android.graphics.Point) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::zoomBy(" + var0 + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.api.maps.CameraUpdate result;
+            try {
+                result = com.amap.api.maps.CameraUpdateFactory.zoomBy(new Double(var0).floatValue(), var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -39511,7 +40191,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
-        put("com.amap.api.maps.CameraUpdateFactory::newLatLngBounds", (args, methodResult) -> {
+        put("com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int", (args, methodResult) -> {
             // args
             // ref arg
             com.amap.api.maps.model.LatLngBounds var0 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) args.get("var0"));
@@ -39700,6 +40380,49 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
+        put("com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int__int__int", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.api.maps.model.LatLngBounds var0 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) args.get("var0"));
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::newLatLngBounds(" + var0 + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            com.amap.api.maps.CameraUpdate result;
+            try {
+                result = com.amap.api.maps.CameraUpdateFactory.newLatLngBounds(var0, var1, var2, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
         put("com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect", (args, methodResult) -> {
             // args
             // ref arg
@@ -39833,7 +40556,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
-        put("com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot", (args, methodResult) -> {
+        put("com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap", (args, methodResult) -> {
             // args
             // ref arg
             android.graphics.Bitmap var1 = (android.graphics.Bitmap) getHEAP().get((int) args.get("var1"));
@@ -39850,6 +40573,38 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.onMapScreenShot(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap__int", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.graphics.Bitmap var1 = (android.graphics.Bitmap) getHEAP().get((int) args.get("var1"));
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.AMap.OnMapScreenShotListener ref = (com.amap.api.maps.AMap.OnMapScreenShotListener) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.OnMapScreenShotListener@" + refId + "::onMapScreenShot(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.onMapScreenShot(var1, var2);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -44531,6 +45286,36 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
+        put("com.amap.api.maps.offlinemap.OfflineMapActivity::closeScr__android_os_Bundle", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.offlinemap.OfflineMapActivity ref = (com.amap.api.maps.offlinemap.OfflineMapActivity) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapActivity@" + refId + "::closeScr(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.closeScr(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.amap.api.maps.offlinemap.OfflineMapActivity::onClick", (args, methodResult) -> {
             // args
             // ref arg
@@ -47769,7 +48554,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
-        put("com.amap.api.maps.model.NavigateArrowOptions::add", (args, methodResult) -> {
+        put("com.amap.api.maps.model.NavigateArrowOptions::add__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
             // args
             // ref arg
             com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var1"));
@@ -48551,6 +49336,43 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
+        put("com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker__double", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var0 = (Double) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker(" + var0 + ")");
+            }
+        
+            // invoke native method
+            com.amap.api.maps.model.BitmapDescriptor result;
+            try {
+                result = com.amap.api.maps.model.BitmapDescriptorFactory.defaultMarker(new Double(var0).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
         put("com.amap.api.maps.model.BitmapDescriptorFactory::fromBitmap", (args, methodResult) -> {
             // args
             // ref arg
@@ -49289,7 +50111,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
-        put("com.amap.api.maps.model.PolylineOptions::add", (args, methodResult) -> {
+        put("com.amap.api.maps.model.PolylineOptions::add__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
             // args
             // ref arg
             com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var1"));
@@ -50810,7 +51632,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
-        put("com.amap.api.maps.model.GroundOverlayOptions::position", (args, methodResult) -> {
+        put("com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double", (args, methodResult) -> {
             // args
             // ref arg
             com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var1"));
@@ -50830,6 +51652,48 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             com.amap.api.maps.model.GroundOverlayOptions result;
             try {
                 result = ref.position(var1, new Double(var2).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double__double", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var1"));
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+            // jsonable arg
+            Double var3 = (Double) args.get("var3");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::position(" + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            com.amap.api.maps.model.GroundOverlayOptions result;
+            try {
+                result = ref.position(var1, new Double(var2).floatValue(), new Double(var3).floatValue());
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -51903,7 +52767,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
-        put("com.amap.api.maps.model.GroundOverlay::setDimensions", (args, methodResult) -> {
+        put("com.amap.api.maps.model.GroundOverlay::setDimensions__double", (args, methodResult) -> {
             // args
             // jsonable arg
             Double var1 = (Double) args.get("var1");
@@ -51950,6 +52814,38 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.setImage(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.api.maps.model.GroundOverlay::setDimensions__double__double", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setDimensions(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setDimensions(new Double(var1).floatValue(), new Double(var2).floatValue());
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -52774,6 +53670,43 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             com.amap.api.maps.model.CameraPosition.Builder result;
             try {
                 result = com.amap.api.maps.model.CameraPosition.builder();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.api.maps.model.CameraPosition::builder__com_amap_api_maps_model_CameraPosition", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.api.maps.model.CameraPosition var0 = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("var0"));
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CameraPosition::builder(" + var0 + ")");
+            }
+        
+            // invoke native method
+            com.amap.api.maps.model.CameraPosition.Builder result;
+            try {
+                result = com.amap.api.maps.model.CameraPosition.builder(var0);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -55379,10 +56312,41 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             }
         });
         // method
-        put("com.amap.api.maps.model.LatLngBounds::contains", (args, methodResult) -> {
+        put("com.amap.api.maps.model.LatLngBounds::contains__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
             // args
             // ref arg
             com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.LatLngBounds@" + refId + "::contains(" + var1 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.contains(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.api.maps.model.LatLngBounds::contains__com_amap_api_maps_model_LatLngBounds", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.api.maps.model.LatLngBounds var1 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) args.get("var1"));
         
             // ref
             int refId = (int) args.get("refId");
@@ -58423,7 +59387,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
-        put("com.amap.api.maps.model.PolygonOptions::add", (args, methodResult) -> {
+        put("com.amap.api.maps.model.PolygonOptions::add__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
             // args
             // ref arg
             com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var1"));
@@ -58571,7 +59535,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
-        put("com.amap.api.maps.model.PolygonOptions::addHoles", (args, methodResult) -> {
+        put("com.amap.api.maps.model.PolygonOptions::addHoles__com_amap_api_maps_model_BaseHoleOptions", (args, methodResult) -> {
             // args
             // ref arg
             com.amap.api.maps.model.BaseHoleOptions var1 = (com.amap.api.maps.model.BaseHoleOptions) getHEAP().get((int) args.get("var1"));
@@ -60249,7 +61213,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
-        put("com.amap.api.maps.model.CircleOptions::addHoles", (args, methodResult) -> {
+        put("com.amap.api.maps.model.CircleOptions::addHoles__com_amap_api_maps_model_BaseHoleOptions", (args, methodResult) -> {
             // args
             // ref arg
             com.amap.api.maps.model.BaseHoleOptions var1 = (com.amap.api.maps.model.BaseHoleOptions) getHEAP().get((int) args.get("var1"));
@@ -67759,7 +68723,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(result);
         });
         // method
-        put("com.amap.api.maps.AMapUtils::calculateArea", (args, methodResult) -> {
+        put("com.amap.api.maps.AMapUtils::calculateArea__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
             // args
             // ref arg
             com.amap.api.maps.model.LatLng var0 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var0"));
@@ -67778,6 +68742,40 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             float result;
             try {
                 result = com.amap.api.maps.AMapUtils.calculateArea(var0, var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.api.maps.AMapUtils::calculateArea__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            // args
+            // list arg
+            List<Integer> var0RefIdList = (List<Integer>) args.get("var0");
+            List<com.amap.api.maps.model.LatLng> var0 = new ArrayList<>();
+            for (int refId : var0RefIdList) {
+                var0.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+            }
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapUtils::calculateArea(" + var0 + ")");
+            }
+        
+            // invoke native method
+            float result;
+            try {
+                result = com.amap.api.maps.AMapUtils.calculateArea(new ArrayList(var0));
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -68951,7 +69949,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
-        put("com.amap.api.maps.AMap::animateCamera", (args, methodResult) -> {
+        put("com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate", (args, methodResult) -> {
             // args
             // ref arg
             com.amap.api.maps.CameraUpdate var1 = (com.amap.api.maps.CameraUpdate) getHEAP().get((int) args.get("var1"));
@@ -68968,6 +69966,166 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.animateCamera(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.api.maps.CameraUpdate var1 = (com.amap.api.maps.CameraUpdate) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.AMap ref = (com.amap.api.maps.AMap) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap@" + refId + "::animateCamera(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.animateCamera(var1, new com.amap.api.maps.AMap.CancelableCallback() {
+                // method channel
+                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback::Callback");
+        
+                // call dart method
+                @Override
+                public void onFinish() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+                @Override
+                public void onCancel() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+            });
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.api.maps.CameraUpdate var1 = (com.amap.api.maps.CameraUpdate) getHEAP().get((int) args.get("var1"));
+            // jsonable arg
+            long var2 = (long) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.AMap ref = (com.amap.api.maps.AMap) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap@" + refId + "::animateCamera(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.animateCamera(var1, var2, new com.amap.api.maps.AMap.CancelableCallback() {
+                // method channel
+                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback::Callback");
+        
+                // call dart method
+                @Override
+                public void onFinish() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+                @Override
+                public void onCancel() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+            });
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -69604,6 +70762,36 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.clear();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.api.maps.AMap::clear__bool", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.AMap ref = (com.amap.api.maps.AMap) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap@" + refId + "::clear(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.clear(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -71276,7 +72464,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
                     // call dart method
                     callbackChannel.invokeMethod(
-                            "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot",
+                            "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap",
                             new HashMap<String, Object>() {{
                                 put("var1", argvar1);
                             }}
@@ -71302,7 +72490,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
                     // call dart method
                     callbackChannel.invokeMethod(
-                            "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot",
+                            "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap__int",
                             new HashMap<String, Object>() {{
                                 put("var1", argvar1);
                                 put("var2", argvar2);
@@ -71402,6 +72590,63 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.removecache();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.api.maps.AMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.AMap ref = (com.amap.api.maps.AMap) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap@" + refId + "::removecache(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.removecache(new com.amap.api.maps.AMap.OnCacheRemoveListener() {
+                // method channel
+                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback");
+        
+                // call dart method
+                @Override
+                public void onRemoveCacheFinish(boolean var1) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onRemoveCacheFinish(" + var1 + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // jsonable arg
+                    boolean argvar1 = var1;
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.api.maps.AMap.OnCacheRemoveListener::onRemoveCacheFinish",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+            });
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {

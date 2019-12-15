@@ -307,14 +307,14 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
     }
   }
   
-  Future<com_amap_api_maps_model_PolylineOptions> add(com_amap_api_maps_model_LatLng var1) async {
+  Future<com_amap_api_maps_model_PolylineOptions> add__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::add([])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::add', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::add__com_amap_api_maps_model_LatLng', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call

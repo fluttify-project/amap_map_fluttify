@@ -152,6 +152,28 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     }
   }
   
+  static Future<com_amap_api_maps_model_BitmapDescriptor> defaultMarker__double(double var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker__double', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromBitmap(android_graphics_Bitmap var0) async {
     // print log
     if (fluttifyLogEnabled) {

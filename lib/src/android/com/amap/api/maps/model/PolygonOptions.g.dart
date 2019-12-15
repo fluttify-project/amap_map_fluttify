@@ -20,14 +20,14 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   
 
   // generate methods
-  Future<com_amap_api_maps_model_PolygonOptions> add(com_amap_api_maps_model_LatLng var1) async {
+  Future<com_amap_api_maps_model_PolygonOptions> add__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::add([])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::add', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::add__com_amap_api_maps_model_LatLng', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
@@ -108,14 +108,14 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     }
   }
   
-  Future<com_amap_api_maps_model_PolygonOptions> addHoles(com_amap_api_maps_model_BaseHoleOptions var1) async {
+  Future<com_amap_api_maps_model_PolygonOptions> addHoles__com_amap_api_maps_model_BaseHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addHoles([])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::addHoles', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonOptions::addHoles__com_amap_api_maps_model_BaseHoleOptions', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call

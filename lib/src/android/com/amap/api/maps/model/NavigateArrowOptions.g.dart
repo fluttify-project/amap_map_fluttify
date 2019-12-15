@@ -20,14 +20,14 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   
 
   // generate methods
-  Future<com_amap_api_maps_model_NavigateArrowOptions> add(com_amap_api_maps_model_LatLng var1) async {
+  Future<com_amap_api_maps_model_NavigateArrowOptions> add__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::add([])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::add', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::add__com_amap_api_maps_model_LatLng', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call

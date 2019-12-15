@@ -200,6 +200,15 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   }
   
   @mustCallSuper
+  Future<void> clear__bool(bool var1) {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('clear__bool::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
   Future<int> getMapType() {
   
   
@@ -488,11 +497,20 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   }
   
   @mustCallSuper
-  Future<void> setInfoWindowAdapter(com_amap_api_maps_AMap_InfoWindowAdapter var1) {
+  Future<void> setInfoWindowAdapter__com_amap_api_maps_AMap_InfoWindowAdapter(com_amap_api_maps_AMap_InfoWindowAdapter var1) {
     kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
-      debugPrint('setInfoWindowAdapter::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('setInfoWindowAdapter__com_amap_api_maps_AMap_InfoWindowAdapter::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> setInfoWindowAdapter__com_amap_api_maps_AMap_CommonInfoWindowAdapter(com_amap_api_maps_AMap_CommonInfoWindowAdapter var1) {
+    kNativeObjectPool.add(var1);
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('setInfoWindowAdapter__com_amap_api_maps_AMap_CommonInfoWindowAdapter::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
@@ -547,6 +565,15 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   
     if (fluttifyLogEnabled) {
       debugPrint('removecache::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> removecache__com_amap_api_maps_AMap_OnCacheRemoveListener(com_amap_api_maps_AMap_OnCacheRemoveListener var1) {
+    kNativeObjectPool.add(var1);
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   

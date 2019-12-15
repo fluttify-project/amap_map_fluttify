@@ -56,14 +56,36 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     }
   }
   
-  static Future<double> calculateArea(com_amap_api_maps_model_LatLng var0, com_amap_api_maps_model_LatLng var1) async {
+  static Future<double> calculateArea__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var0, com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.AMapUtils::calculateArea([])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::calculateArea', {"var0": var0.refId, "var1": var1.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::calculateArea__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng', {"var0": var0.refId, "var1": var1.refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<double> calculateArea__com_amap_api_maps_model_LatLng(List<com_amap_api_maps_model_LatLng> var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.AMapUtils::calculateArea([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::calculateArea__com_amap_api_maps_model_LatLng', {"var0": var0.map((it) => it.refId).toList()});
   
   
     // handle native call

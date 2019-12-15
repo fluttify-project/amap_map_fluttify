@@ -42,4 +42,26 @@ class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
     }
   }
   
+  static Future<com_autonavi_amap_mapcore_IPoint> obtain__int__int(int var0, int var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.IPoint::obtain([\'var0\':$var0, \'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IPoint::obtain__int__int', {"var0": var0, "var1": var1});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_IPoint()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
 }

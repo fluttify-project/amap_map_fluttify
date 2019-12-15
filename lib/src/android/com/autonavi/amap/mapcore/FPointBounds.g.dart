@@ -53,14 +53,36 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
     }
   }
   
-  Future<bool> contains(com_autonavi_amap_mapcore_FPoint var1) async {
+  Future<bool> contains__com_autonavi_amap_mapcore_FPoint(com_autonavi_amap_mapcore_FPoint var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds@$refId::contains([])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPointBounds::contains', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPointBounds::contains__com_autonavi_amap_mapcore_FPoint', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<bool> contains__com_autonavi_amap_mapcore_FPointBounds(com_autonavi_amap_mapcore_FPointBounds var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds@$refId::contains([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPointBounds::contains__com_autonavi_amap_mapcore_FPointBounds', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call

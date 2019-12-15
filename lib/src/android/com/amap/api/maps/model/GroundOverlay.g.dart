@@ -108,14 +108,14 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
     }
   }
   
-  Future<void> setDimensions(double var1) async {
+  Future<void> setDimensions__double(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setDimensions([\'var1\':$var1])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setDimensions', {"var1": var1, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setDimensions__double', {"var1": var1, "refId": refId});
   
   
     // handle native call
@@ -138,6 +138,28 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setImage', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> setDimensions__double__double(double var1, double var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setDimensions([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlay::setDimensions__double__double', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // handle native call

@@ -152,14 +152,14 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
     }
   }
   
-  static Future<int> getNum(int var0, int var1, int var2) async {
+  static Future<int> getNum__int__int__int(int var0, int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.Convert::getNum([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getNum', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getNum__int__int__int', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // handle native call

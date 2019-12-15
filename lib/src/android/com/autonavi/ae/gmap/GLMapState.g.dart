@@ -108,14 +108,14 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     }
   }
   
-  Future<void> getMapGeoCenter(com_autonavi_amap_mapcore_IPoint var1) async {
+  Future<void> getMapGeoCenter__com_autonavi_amap_mapcore_IPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapGeoCenter([])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapGeoCenter', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapGeoCenter__com_autonavi_amap_mapcore_IPoint', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
@@ -127,6 +127,28 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     } else {
     
       return result;
+    }
+  }
+  
+  Future<android_graphics_Point> getMapGeoCenter() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapGeoCenter([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapGeoCenter', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(android_graphics_Point()..refId = result..tag = 'amap_map_fluttify');
+      return android_graphics_Point()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

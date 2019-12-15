@@ -121,14 +121,36 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
     }
   }
   
-  Future<void> setToMapLevel(double var1, int var2) async {
+  Future<void> setToMapLevel__double__int(double var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToMapLevel([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapLevel', {"var1": var1, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapLevel__double__int', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> setToMapLevel__double__double__int(double var1, double var2, int var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToMapLevel([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapLevel__double__double__int', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
   
   
     // handle native call

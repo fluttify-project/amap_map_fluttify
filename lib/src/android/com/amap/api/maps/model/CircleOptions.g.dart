@@ -328,14 +328,14 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     }
   }
   
-  Future<com_amap_api_maps_model_CircleOptions> addHoles(com_amap_api_maps_model_BaseHoleOptions var1) async {
+  Future<com_amap_api_maps_model_CircleOptions> addHoles__com_amap_api_maps_model_BaseHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::addHoles([])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::addHoles', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::addHoles__com_amap_api_maps_model_BaseHoleOptions', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call

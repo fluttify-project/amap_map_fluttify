@@ -647,14 +647,36 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     }
   }
   
-  Future<void> setMapState(int var1, com_autonavi_ae_gmap_GLMapState var2) async {
+  Future<void> setMapState__int__com_autonavi_ae_gmap_GLMapState(int var1, com_autonavi_ae_gmap_GLMapState var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setMapState([\'var1\':$var1])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setMapState', {"var1": var1, "var2": var2.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setMapState__int__com_autonavi_ae_gmap_GLMapState', {"var1": var1, "var2": var2.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> setMapState__int__com_autonavi_ae_gmap_GLMapState__bool(int var1, com_autonavi_ae_gmap_GLMapState var2, bool var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setMapState([\'var1\':$var1, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setMapState__int__com_autonavi_ae_gmap_GLMapState__bool', {"var1": var1, "var2": var2.refId, "var3": var3, "refId": refId});
   
   
     // handle native call
@@ -829,14 +851,36 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     }
   }
   
-  Future<void> clearAnimations(int var1, bool var2) async {
+  Future<void> clearAnimations__int__bool(int var1, bool var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::clearAnimations([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::clearAnimations', {"var1": var1, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::clearAnimations__int__bool', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> clearAnimations__int__bool__int(int var1, bool var2, int var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::clearAnimations([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::clearAnimations__int__bool__int', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
   
   
     // handle native call
@@ -1423,14 +1467,36 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     }
   }
   
-  Future<void> setTrafficStyle(int var1, int var2, int var3, int var4, int var5, bool var6) async {
+  Future<void> setTrafficStyle__int__int__int__int__int__bool(int var1, int var2, int var3, int var4, int var5, bool var6) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setTrafficStyle([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setTrafficStyle', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setTrafficStyle__int__int__int__int__int__bool', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> setTrafficStyle__int__int__int__int__int(int var1, int var2, int var3, int var4, int var5) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setTrafficStyle([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setTrafficStyle__int__int__int__int__int', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "refId": refId});
   
   
     // handle native call

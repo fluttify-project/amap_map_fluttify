@@ -93,4 +93,26 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
     }
   }
   
+  static Future<com_amap_api_maps_model_CameraPosition_Builder> builder__com_amap_api_maps_model_CameraPosition(com_amap_api_maps_model_CameraPosition var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.CameraPosition::builder([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CameraPosition::builder__com_amap_api_maps_model_CameraPosition', {"var0": var0.refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition_Builder()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CameraPosition_Builder()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
 }

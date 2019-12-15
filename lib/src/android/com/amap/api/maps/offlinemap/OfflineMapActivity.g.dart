@@ -64,6 +64,28 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     }
   }
   
+  Future<void> closeScr__android_os_Bundle(android_os_Bundle var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::closeScr([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::closeScr__android_os_Bundle', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<void> onClick(android_view_View var1) async {
     // print log
     if (fluttifyLogEnabled) {

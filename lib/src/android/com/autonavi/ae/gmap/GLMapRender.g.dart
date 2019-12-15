@@ -201,6 +201,15 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
             // handle the native call
             mGLMapView?.clear();
             break;
+          case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::clear__bool':
+            // print log
+            if (fluttifyLogEnabled) {
+              print('fluttify-dart-callback: clear__bool([\'var1\':$args[var1]])');
+            }
+        
+            // handle the native call
+            mGLMapView?.clear__bool(args['var1']);
+            break;
           case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMap::getMapType':
             // print log
             if (fluttifyLogEnabled) {
