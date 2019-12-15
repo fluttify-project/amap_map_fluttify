@@ -264,10 +264,10 @@ class AmapController with WidgetsBindingObserver, _Private {
         final map = await androidController.getMap();
         switch (language) {
           case Language.Chinese:
-            await map.setMapLanguage('zh_cn');
+            await map.setMapLanguage(com_amap_api_maps_AMap.CHINESE);
             break;
           case Language.English:
-            await map.setMapLanguage('en');
+            await map.setMapLanguage(com_amap_api_maps_AMap.ENGLISH);
             break;
         }
 
