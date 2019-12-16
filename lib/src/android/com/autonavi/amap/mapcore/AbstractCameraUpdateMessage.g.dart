@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Object  {
+  
+
   // generate getters
   Future<com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Type> get_nowType() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_nowType", {'refId': refId});
@@ -100,6 +102,12 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_isChangeFinished", {'refId': refId});
   
     return result;
+  }
+  
+  Future<com_autonavi_amap_mapcore_MapConfig> get_mapConfig() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_mapConfig", {'refId': refId});
+    kNativeObjectPool.add(com_autonavi_amap_mapcore_MapConfig()..refId = result..tag = 'amap_map_fluttify');
+    return com_autonavi_amap_mapcore_MapConfig()..refId = result..tag = 'amap_map_fluttify';
   }
   
   Future<int> get_paddingLeft() async {
@@ -236,6 +244,12 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
   
   }
   
+  Future<void> set_mapConfig(com_autonavi_amap_mapcore_MapConfig mapConfig) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mapConfig', {'refId': refId, "mapConfig": mapConfig.refId});
+  
+  
+  }
+  
   Future<void> set_paddingLeft(int paddingLeft) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingLeft', {'refId': refId, "paddingLeft": paddingLeft});
   
@@ -314,6 +328,28 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
   
 
   // generate methods
+  Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::runCameraUpdate([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::runCameraUpdate', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<void> mergeCameraUpdateDelegate(com_autonavi_amap_mapcore_AbstractCameraUpdateMessage var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -322,6 +358,28 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::mergeCameraUpdateDelegate', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<void> generateMapAnimation(com_autonavi_ae_gmap_GLMapEngine var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::generateMapAnimation([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::generateMapAnimation', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call

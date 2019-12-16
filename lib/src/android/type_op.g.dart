@@ -40,8 +40,18 @@ Future<bool> isKindOfcom_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr(Ref re
   return result;
 }
 
+Future<bool> isKindOfcom_autonavi_ae_gmap_glanimation_AdglAnimation2V(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AdglAnimation2V', {'refId': ref.refId});
+  return result;
+}
+
 Future<bool> isKindOfcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling', {'refId': ref.refId});
   return result;
 }
 
@@ -50,8 +60,33 @@ Future<bool> isKindOfcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimation(Ref 
   return result;
 }
 
+Future<bool> isKindOfcom_autonavi_ae_gmap_glanimation_AdglAnimation1V(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AdglAnimation1V', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom', {'refId': ref.refId});
+  return result;
+}
+
 Future<bool> isKindOfcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V', {'refId': ref.refId});
   return result;
 }
 
@@ -92,6 +127,11 @@ Future<bool> isKindOfcom_autonavi_ae_gmap_gloverlay_BaseRouteOverlay(Ref ref) as
 
 Future<bool> isKindOfcom_autonavi_ae_gmap_gloverlay_GLTextureProperty(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_GLTextureProperty', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_autonavi_ae_gmap_gloverlay_GLCrossVector(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_GLCrossVector', {'refId': ref.refId});
   return result;
 }
 
@@ -270,6 +310,31 @@ Future<bool> isKindOfcom_autonavi_amap_mapcore_MapConfig(Ref ref) async {
   return result;
 }
 
+Future<bool> isKindOfcom_autonavi_amap_mapcore_message_HoverGestureMapMessage(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_message_HoverGestureMapMessage', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_autonavi_amap_mapcore_message_MoveGestureMapMessage(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_message_MoveGestureMapMessage', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_autonavi_amap_mapcore_message_AbstractGestureMapMessage(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_message_AbstractGestureMapMessage', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_autonavi_amap_mapcore_message_RotateGestureMapMessage(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_message_RotateGestureMapMessage', {'refId': ref.refId});
+  return result;
+}
+
 Future<bool> isKindOfcom_autonavi_amap_mapcore_FPointBounds(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_FPointBounds', {'refId': ref.refId});
   return result;
@@ -302,6 +367,11 @@ Future<bool> isKindOfcom_autonavi_amap_mapcore_Inner_3dMap_location(Ref ref) asy
 
 Future<bool> isKindOfcom_autonavi_amap_mapcore_AMapEngineUtils(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_AMapEngineUtils', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_autonavi_amap_mapcore_FPoint3(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_FPoint3', {'refId': ref.refId});
   return result;
 }
 
@@ -1056,9 +1126,19 @@ Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr> ascom_autonavi_ae_g
   return com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr()..refId = result;
 }
 
+Future<com_autonavi_ae_gmap_glanimation_AdglAnimation2V> ascom_autonavi_ae_gmap_glanimation_AdglAnimation2V(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_ae_gmap_glanimation_AdglAnimation2V', {'refId': ref.refId});
+  return com_autonavi_ae_gmap_glanimation_AdglAnimation2V()..refId = result;
+}
+
 Future<com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues> ascom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues', {'refId': ref.refId});
   return com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = result;
+}
+
+Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimFling> ascom_autonavi_ae_gmap_glanimation_AdglMapAnimFling(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_ae_gmap_glanimation_AdglMapAnimFling', {'refId': ref.refId});
+  return com_autonavi_ae_gmap_glanimation_AdglMapAnimFling()..refId = result;
 }
 
 Future<com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation> ascom_autonavi_ae_gmap_glanimation_AbstractAdglAnimation(Ref ref) async {
@@ -1066,9 +1146,34 @@ Future<com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation> ascom_autonavi_ae
   return com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation()..refId = result;
 }
 
+Future<com_autonavi_ae_gmap_glanimation_AdglAnimation1V> ascom_autonavi_ae_gmap_glanimation_AdglAnimation1V(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_ae_gmap_glanimation_AdglAnimation1V', {'refId': ref.refId});
+  return com_autonavi_ae_gmap_glanimation_AdglAnimation1V()..refId = result;
+}
+
+Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom> ascom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom', {'refId': ref.refId});
+  return com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom()..refId = result;
+}
+
 Future<com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam> ascom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam', {'refId': ref.refId});
   return com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam()..refId = result;
+}
+
+Future<com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V> ascom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V', {'refId': ref.refId});
+  return com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V()..refId = result;
+}
+
+Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup> ascom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup', {'refId': ref.refId});
+  return com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup()..refId = result;
+}
+
+Future<com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V> ascom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V', {'refId': ref.refId});
+  return com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V()..refId = result;
 }
 
 Future<com_autonavi_ae_gmap_style_StyleItem> ascom_autonavi_ae_gmap_style_StyleItem(Ref ref) async {
@@ -1109,6 +1214,11 @@ Future<com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay> ascom_autonavi_ae_gmap_g
 Future<com_autonavi_ae_gmap_gloverlay_GLTextureProperty> ascom_autonavi_ae_gmap_gloverlay_GLTextureProperty(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_ae_gmap_gloverlay_GLTextureProperty', {'refId': ref.refId});
   return com_autonavi_ae_gmap_gloverlay_GLTextureProperty()..refId = result;
+}
+
+Future<com_autonavi_ae_gmap_gloverlay_GLCrossVector> ascom_autonavi_ae_gmap_gloverlay_GLCrossVector(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_ae_gmap_gloverlay_GLCrossVector', {'refId': ref.refId});
+  return com_autonavi_ae_gmap_gloverlay_GLCrossVector()..refId = result;
 }
 
 Future<com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits> ascom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits(Ref ref) async {
@@ -1286,6 +1396,31 @@ Future<com_autonavi_amap_mapcore_MapConfig> ascom_autonavi_amap_mapcore_MapConfi
   return com_autonavi_amap_mapcore_MapConfig()..refId = result;
 }
 
+Future<com_autonavi_amap_mapcore_message_HoverGestureMapMessage> ascom_autonavi_amap_mapcore_message_HoverGestureMapMessage(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_message_HoverGestureMapMessage', {'refId': ref.refId});
+  return com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = result;
+}
+
+Future<com_autonavi_amap_mapcore_message_MoveGestureMapMessage> ascom_autonavi_amap_mapcore_message_MoveGestureMapMessage(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_message_MoveGestureMapMessage', {'refId': ref.refId});
+  return com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = result;
+}
+
+Future<com_autonavi_amap_mapcore_message_ScaleGestureMapMessage> ascom_autonavi_amap_mapcore_message_ScaleGestureMapMessage(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_message_ScaleGestureMapMessage', {'refId': ref.refId});
+  return com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = result;
+}
+
+Future<com_autonavi_amap_mapcore_message_AbstractGestureMapMessage> ascom_autonavi_amap_mapcore_message_AbstractGestureMapMessage(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_message_AbstractGestureMapMessage', {'refId': ref.refId});
+  return com_autonavi_amap_mapcore_message_AbstractGestureMapMessage()..refId = result;
+}
+
+Future<com_autonavi_amap_mapcore_message_RotateGestureMapMessage> ascom_autonavi_amap_mapcore_message_RotateGestureMapMessage(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_message_RotateGestureMapMessage', {'refId': ref.refId});
+  return com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = result;
+}
+
 Future<com_autonavi_amap_mapcore_FPointBounds> ascom_autonavi_amap_mapcore_FPointBounds(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_FPointBounds', {'refId': ref.refId});
   return com_autonavi_amap_mapcore_FPointBounds()..refId = result;
@@ -1319,6 +1454,11 @@ Future<com_autonavi_amap_mapcore_Inner_3dMap_location> ascom_autonavi_amap_mapco
 Future<com_autonavi_amap_mapcore_AMapEngineUtils> ascom_autonavi_amap_mapcore_AMapEngineUtils(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_AMapEngineUtils', {'refId': ref.refId});
   return com_autonavi_amap_mapcore_AMapEngineUtils()..refId = result;
+}
+
+Future<com_autonavi_amap_mapcore_FPoint3> ascom_autonavi_amap_mapcore_FPoint3(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_FPoint3', {'refId': ref.refId});
+  return com_autonavi_amap_mapcore_FPoint3()..refId = result;
 }
 
 Future<com_autonavi_amap_mapcore_AMapEtaDecoder> ascom_autonavi_amap_mapcore_AMapEtaDecoder(Ref ref) async {

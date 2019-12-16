@@ -15,6 +15,8 @@ mixin MAAnimatableAnnotation on NSObject {
 
   
 
+  
+
   @mustCallSuper
   Future<void> step(double timeDelta) {
   

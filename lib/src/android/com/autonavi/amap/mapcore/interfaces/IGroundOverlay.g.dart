@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
 
   
 
+  
+
   @mustCallSuper
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) {
   
@@ -34,11 +36,20 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   }
   
   @mustCallSuper
-  Future<void> setDimensions(double var1) {
+  Future<void> setDimensions__double(double var1) {
   
   
     if (fluttifyLogEnabled) {
-      debugPrint('setDimensions::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('setDimensions__double::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> setDimensions__double__double(double var1, double var2) {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('setDimensions__double__double::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   

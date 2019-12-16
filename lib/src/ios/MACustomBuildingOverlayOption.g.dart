@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MACustomBuildingOverlayOption extends MAMultiPoint  {
+  
+
   // generate getters
   Future<double> get_height() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayOption::get_height", {'refId': refId});

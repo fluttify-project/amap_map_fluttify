@@ -1,3 +1,9 @@
+## 0.13.1
+- enhance: 使用类常量代替字面量
+- enhance: 当前位置大头针显示处理
+- feat: Polygon增加判断点是否在区域内的方法`contains`
+- feat: 增加setZoomByCenter设置是否以地图中心点进行缩放
+
 ## 0.13.0
 - enhance: [breaking change] Location -> MapLocation 防止与amap_location_fluttify的Location对象冲突
 - fix: 构造器传zoomLevel无效的处理

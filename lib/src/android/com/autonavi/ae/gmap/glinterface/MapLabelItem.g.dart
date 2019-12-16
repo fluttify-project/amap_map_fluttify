@@ -11,6 +11,12 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_glinterface_MapLabelItem extends java_lang_Object  {
+  static final int LABEL_TYPE_NORMAL = 0;
+  static final int LABEL_TYPE_SCENIC = 1;
+  static final int LABEL_TYPE_INDOOR = 2;
+  static final int LABEL_TYPE_SEARCH_RESULT = 3;
+  static final int LABEL_TYPE_OPENLAYER = 6;
+
   // generate getters
   Future<String> get_name() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_name", {'refId': refId});

@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase on java_lang_Obj
 
   
 
+  
+
   @mustCallSuper
   Future<void> setLocationOption(com_autonavi_amap_mapcore_Inner_3dMap_locationOption var1) {
     kNativeObjectPool.add(var1);

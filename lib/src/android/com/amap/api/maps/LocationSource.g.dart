@@ -15,6 +15,8 @@ mixin com_amap_api_maps_LocationSource on java_lang_Object {
 
   
 
+  
+
   @mustCallSuper
   Future<void> activate(com_amap_api_maps_LocationSource_OnLocationChangedListener var1) {
     kNativeObjectPool.add(var1);

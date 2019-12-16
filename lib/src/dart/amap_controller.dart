@@ -264,10 +264,10 @@ class AmapController with WidgetsBindingObserver, _Private {
         final map = await androidController.getMap();
         switch (language) {
           case Language.Chinese:
-            await map.setMapLanguage('zh_cn');
+            await map.setMapLanguage(com_amap_api_maps_AMap.CHINESE);
             break;
           case Language.English:
-            await map.setMapLanguage('en');
+            await map.setMapLanguage(com_amap_api_maps_AMap.ENGLISH);
             break;
         }
 
@@ -461,7 +461,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         final cameraUpdate =
             await com_amap_api_maps_CameraUpdateFactory.zoomTo(level);
         if (animated) {
-          await map.animateCamera(cameraUpdate);
+          await map.animateCamera__com_amap_api_maps_CameraUpdate(cameraUpdate);
         } else {
           await map.moveCamera(cameraUpdate);
         }
@@ -474,6 +474,23 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 设置缩放是否以中心点为锚点
+  Future<void> setZoomByCenter(bool byCenter) async {
+    assert(byCenter != null);
+    await platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+        final uiSetting = await map.getUiSettings();
+        await uiSetting.setZoomInByScreenCenter(byCenter);
+
+        pool..add(map)..add(uiSetting);
+      },
+      ios: (pool) async {
+        await iosController.set_zoomingInPivotsAroundAnchorPoint(!byCenter);
+      },
+    );
+  }
+
   /// 放大一个等级
   Future<void> zoomIn({bool animated = true}) async {
     await platform(
@@ -482,7 +499,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         final cameraUpdate =
             await com_amap_api_maps_CameraUpdateFactory.zoomIn();
         if (animated) {
-          await map.animateCamera(cameraUpdate);
+          await map.animateCamera__com_amap_api_maps_CameraUpdate(cameraUpdate);
         } else {
           await map.moveCamera(cameraUpdate);
         }
@@ -504,7 +521,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         final cameraUpdate =
             await com_amap_api_maps_CameraUpdateFactory.zoomOut();
         if (animated) {
-          await map.animateCamera(cameraUpdate);
+          await map.animateCamera__com_amap_api_maps_CameraUpdate(cameraUpdate);
         } else {
           await map.moveCamera(cameraUpdate);
         }
@@ -549,7 +566,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
             .newCameraPosition(cameraPosition);
         if (animated) {
-          await map.animateCamera(cameraUpdate);
+          await map.animateCamera__com_amap_api_maps_CameraUpdate(cameraUpdate);
         } else {
           await map.moveCamera(cameraUpdate);
         }
@@ -1572,10 +1589,11 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 更新对象
         final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
-            .newLatLngBounds(rect, padding);
+            .newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int(
+                rect, padding);
 
         if (animated) {
-          await map.animateCamera(cameraUpdate);
+          await map.animateCamera__com_amap_api_maps_CameraUpdate(cameraUpdate);
         } else {
           await map.moveCamera(cameraUpdate);
         }
@@ -1965,8 +1983,9 @@ class _AndroidMapDelegate extends java_lang_Object
   }
 
   @override
-  Future<void> onMapScreenShot(android_graphics_Bitmap var1) async {
-    super.onMapScreenShot(var1);
+  Future<void> onMapScreenShot__android_graphics_Bitmap(
+      android_graphics_Bitmap var1) async {
+    super.onMapScreenShot__android_graphics_Bitmap(var1);
     if (_onSnapshot != null) {
       await _onSnapshot(await var1.data);
       var1.recycle(); // 回收原生的Bitmap, 由于没有后续操作, 异步执行也无妨.

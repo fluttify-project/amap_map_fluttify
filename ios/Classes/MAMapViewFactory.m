@@ -3560,6 +3560,12 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSNumber* infoWindowEnabled = (NSNumber*) STACK[@"infoWindowEnabled"];
   NSNumber* anchorU = (NSNumber*) STACK[@"anchorU"];
   NSNumber* anchorV = (NSNumber*) STACK[@"anchorV"];
+  
+  //用户当前位置大头针
+  if ([annotation isKindOfClass:[MAUserLocation class]]) {
+    return nil;
+  }
+    
   if ([annotation isKindOfClass:[MAPointAnnotation class]]) {
       static NSString *pointReuseIndentifier = @"pointReuseIndentifier";
       MAPinAnnotationView* annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndentifier];
@@ -3579,18 +3585,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       }
       return annotationView;
   }
-  
-//  //用户当前位置大头针
-//  if ([annotation isKindOfClass:[MAUserLocation class]]) {
-//      static NSString *userLocationStyleReuseIndetifier = @"userLocationStyleReuseIndetifier";
-//      
-//      MAAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:userLocationStyleReuseIndetifier];
-//      if (annotationView == nil) {
-//          annotationView = [[MAAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:userLocationStyleReuseIndetifier];
-//      }
-//      
-//      return annotationView;
-//  }
   ////////////////////////////////////////////////////////////////////////////////
   
   return nil;

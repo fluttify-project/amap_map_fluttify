@@ -11,6 +11,28 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
+  static final int AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_1 = 2;
+  static final int AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_1_EAGLE_EYE = 3;
+  static final int AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_2 = 4;
+  static final int AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_2_EAGLE_EYE = 5;
+  static final int AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_3 = 6;
+  static final int AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_3_EAGLE_EYE = 7;
+  static final int AN_ENGINE_ID_INVALID = -1;
+  static final int AN_ENGINE_ID_MAIN = 1;
+  static final int AN_ENGINE_ID_EAGLE_EYE = 2;
+  static final int AN_ENGINE_ID_DISPLAY_EXTERNAL_1 = 3;
+  static final int AN_ENGINE_ID_DISPLAY_EXTERNAL_1_EAGLE_EYE = 4;
+  static final int AN_ENGINE_ID_DISPLAY_EXTERNAL_2 = 5;
+  static final int AN_ENGINE_ID_DISPLAY_EXTERNAL_2_EAGLE_EYE = 6;
+  static final int AN_ENGINE_ID_DISPLAY_EXTERNAL_3 = 7;
+  static final int AN_ENGINE_ID_DISPLAY_EXTERNAL_3_EAGLE_EYE = 8;
+  static final int DEVICE_DISPLAY_DPI_LOW = 120;
+  static final int DEVICE_DISPLAY_DPI_NORMAL = 160;
+  static final int DEVICE_DISPLAY_DPI_MEDIAN = 240;
+  static final int DEVICE_DISPLAY_DPI_HIGH = 320;
+  static final int DEVICE_DISPLAY_DPI_XHIGH = 480;
+  static final int DEVICE_DISPLAY_DPI_XXHIGH = 640;
+
   // generate getters
   
 

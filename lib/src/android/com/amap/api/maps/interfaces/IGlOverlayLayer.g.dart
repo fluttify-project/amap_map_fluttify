@@ -15,6 +15,8 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
 
   
 
+  
+
   @mustCallSuper
   Future<bool> removeOverlay(String var1) {
   

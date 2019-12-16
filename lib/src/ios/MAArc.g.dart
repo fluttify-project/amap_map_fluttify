@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAArc extends MAShape with MAAnnotation, MAOverlay {
+  
+
   // generate getters
   Future<CLLocationCoordinate2D> get_startCoordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAArc::get_startCoordinate", {'refId': refId});

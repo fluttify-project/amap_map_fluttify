@@ -11,6 +11,9 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object with com_amap_api_maps_model_TileProvider {
+  static final int DEFAULT_RADIUS = 12;
+  static final double DEFAULT_OPACITY = 0.6;
+
   // generate getters
   
 

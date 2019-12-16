@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMapPoint extends NSObject  {
+  
+
   // generate getters
   Future<double> get_x() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapPoint::get_x", {'refId': refId});

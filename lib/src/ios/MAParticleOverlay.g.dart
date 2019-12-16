@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
+  
+
   // generate getters
   Future<MAParticleOverlayOptions> get_overlayOption() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlay::get_overlayOption", {'refId': refId});

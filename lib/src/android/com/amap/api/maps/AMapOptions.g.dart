@@ -11,6 +11,15 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Parcelable {
+  static final int LOGO_POSITION_BOTTOM_LEFT = 0;
+  static final int LOGO_POSITION_BOTTOM_CENTER = 1;
+  static final int LOGO_POSITION_BOTTOM_RIGHT = 2;
+  static final int ZOOM_POSITION_RIGHT_CENTER = 1;
+  static final int ZOOM_POSITION_RIGHT_BUTTOM = 2;
+  static final int LOGO_MARGIN_LEFT = 0;
+  static final int LOGO_MARGIN_RIGHT = 1;
+  static final int LOGO_MARGIN_BOTTOM = 2;
+
   // generate getters
   
 

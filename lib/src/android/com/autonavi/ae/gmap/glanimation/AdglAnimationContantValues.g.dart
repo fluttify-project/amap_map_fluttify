@@ -11,6 +11,12 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues extends java_lang_Object  {
+  static final int ADGLANIMATOIN_TWO_INT = 2;
+  static final int ADGLANIMATOIN_FOUR_INT = 2;
+  static final int ADGLANIMATOIN_TWO_POWER_TEN = 1024;
+  static final double ADGLANIMATOIN_OFFSET = 1.0E-4;
+  static final double ADGLANIMATOIN_OFFSET1 = 1.0E-6;
+
   // generate getters
   
 

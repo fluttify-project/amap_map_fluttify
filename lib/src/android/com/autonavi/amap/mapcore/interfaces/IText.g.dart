@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_interfaces_IText on com_autonavi_amap_mapcore_in
 
   
 
+  
+
   @mustCallSuper
   Future<void> setText(String var1) {
   

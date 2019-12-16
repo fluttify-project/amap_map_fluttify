@@ -1,6 +1,6 @@
 name: amap_map_fluttify
 description: An `Amap` Map Component, Powered By `Fluttify` Engine.
-version: 0.13.0+9687b86
+version: 0.13.1+d44bb02
 author: yohom <382146139@qq.com>
 homepage: https://github.com/fluttify-project/amap_map_fluttify
 
@@ -11,9 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  foundation_fluttify: ^0.2.5
+  foundation_fluttify: ^0.2.7
   amap_core_fluttify: ^0.2.4
-  url_launcher: ^5.2.7
+  url_launcher: ^5.4.1
 
 dev_dependencies:
   flutter_test:

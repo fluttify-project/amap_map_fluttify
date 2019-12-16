@@ -11,6 +11,24 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_AMapException extends java_lang_Object  {
+  static final String ERROR_IO = "IO 操作异常 - IOException";
+  static final String ERROR_SOCKET = "socket 连接异常 - SocketException";
+  static final String ERROR_SOCKE_TIME_OUT = "socket 连接超时 - SocketTimeoutException";
+  static final String ERROR_INVALID_PARAMETER = "无效的参数 - IllegalArgumentException";
+  static final String ERROR_NULL_PARAMETER = "空指针异常 - NullPointException";
+  static final String ERROR_URL = "url异常 - MalformedURLException";
+  static final String ERROR_UNKNOW_HOST = "未知主机 - UnKnowHostException";
+  static final String ERROR_UNKNOW_SERVICE = "服务器连接失败 - UnknownServiceException";
+  static final String ERROR_PROTOCOL = "协议解析错误 - ProtocolException";
+  static final String ERROR_CONNECTION = "http连接失败 - ConnectionException";
+  static final String ERROR_UNKNOWN = "未知的错误";
+  static final String ERROR_FAILURE_AUTH = "key鉴权失败";
+  static final String ERROR_NOT_ENOUGH_SPACE = "空间不足";
+  static final String ERROR_NOT_AVAILABLE = "不可写入异常";
+  static final String ERROR_ILLEGAL_VALUE = "非法坐标值";
+  static final String AMAP_NOT_SUPPORT = "移动设备上未安装高德地图或高德地图版本较旧";
+  static final String ILLEGAL_AMAP_ARGUMENT = "非法参数";
+
   // generate getters
   
 

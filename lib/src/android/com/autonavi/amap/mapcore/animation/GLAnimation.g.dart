@@ -11,6 +11,17 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  {
+  static final int INFINITE = -1;
+  static final int RESTART = 1;
+  static final int REVERSE = 2;
+  static final int START_ON_FIRST_FRAME = -1;
+  static final int ABSOLUTE = 0;
+  static final int RELATIVE_TO_SELF = 1;
+  static final int RELATIVE_TO_PARENT = 2;
+  static final int ZORDER_NORMAL = 0;
+  static final int ZORDER_TOP = 1;
+  static final int ZORDER_BOTTOM = -1;
+
   // generate getters
   
 
@@ -150,14 +161,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
     }
   }
   
-  Future<void> setInterpolator(android_content_Context var1, int var2) async {
+  Future<void> setInterpolator__android_content_Context__int(android_content_Context var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setInterpolator([\'var2\':$var2])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimation::setInterpolator', {"var1": var1.refId, "var2": var2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimation::setInterpolator__android_content_Context__int', {"var1": var1.refId, "var2": var2, "refId": refId});
   
   
     // handle native call
@@ -860,14 +871,36 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
     }
   }
   
-  Future<bool> getTransformation(int var1, com_autonavi_amap_mapcore_animation_GLTransformation var3) async {
+  Future<bool> getTransformation__int__com_autonavi_amap_mapcore_animation_GLTransformation(int var1, com_autonavi_amap_mapcore_animation_GLTransformation var3) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getTransformation([\'var1\':$var1])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimation::getTransformation', {"var1": var1, "var3": var3.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimation::getTransformation__int__com_autonavi_amap_mapcore_animation_GLTransformation', {"var1": var1, "var3": var3.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<bool> getTransformation__int__com_autonavi_amap_mapcore_animation_GLTransformation__double(int var1, com_autonavi_amap_mapcore_animation_GLTransformation var3, double var4) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getTransformation([\'var1\':$var1, \'var4\':$var4])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimation::getTransformation__int__com_autonavi_amap_mapcore_animation_GLTransformation__double', {"var1": var1, "var3": var3.refId, "var4": var4, "refId": refId});
   
   
     // handle native call

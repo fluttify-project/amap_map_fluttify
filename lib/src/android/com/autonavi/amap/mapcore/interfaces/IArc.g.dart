@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_interfaces_IArc on com_autonavi_amap_mapcore_int
 
   
 
+  
+
   @mustCallSuper
   Future<void> setStrokeWidth(double var1) {
   

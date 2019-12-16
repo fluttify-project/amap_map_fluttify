@@ -15,6 +15,8 @@ mixin MAMultiPointOverlayRendererDelegate on NSObject {
 
   
 
+  
+
   @mustCallSuper
   Future<void> multiPointOverlayRendererDidItemTapped(MAMultiPointOverlayRenderer renderer, MAMultiPointItem item) {
     kNativeObjectPool.add(renderer);

@@ -11,6 +11,9 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
+  static final int HTTP = 1;
+  static final int HTTPS = 2;
+
   // generate getters
   
 

@@ -11,6 +11,11 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_utils_SpatialRelationUtil extends java_lang_Object  {
+  static final int MIN_POLYLINE_POINT_SIZE = 2;
+  static final int A_HALF_CIRCLE_DEGREE = 180;
+  static final int A_CIRCLE_DEGREE = 360;
+  static final int MIN_OFFSET_DEGREE = 50;
+
   // generate getters
   
 

@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_DPoint extends java_lang_Object  {
+  
+
   // generate getters
   
 
@@ -26,6 +28,28 @@ class com_autonavi_amap_mapcore_DPoint extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.DPoint::obtain', );
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_DPoint()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_DPoint()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  static Future<com_autonavi_amap_mapcore_DPoint> obtain__double__double(double var0, double var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.DPoint::obtain([\'var0\':$var0, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.DPoint::obtain__double__double', {"var0": var0, "var2": var2});
   
   
     // handle native call

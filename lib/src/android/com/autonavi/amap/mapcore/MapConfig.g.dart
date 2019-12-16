@@ -11,6 +11,20 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
+  static final int MSG_AUTH_FAILURE = 2;
+  static final int MSG_CAMERAUPDATE_CHANGE = 10;
+  static final int MSG_CAMERAUPDATE_FINISH = 11;
+  static final int MSG_ZOOMVIEW_CHANGESTATE = 12;
+  static final int MSG_COMPASSVIEW_CHANGESTATE = 13;
+  static final int MSG_CALLBACK_ONTOUCHEVENT = 14;
+  static final int MSG_CALLBACK_SCREENSHOT = 15;
+  static final int MSG_CALLBACK_MAPLOADED = 16;
+  static final int MSG_TILEOVERLAY_REFRESH = 17;
+  static final int MSG_INFOWINDOW_UPDATE = 18;
+  static final int MSG_ACTION_ONMAPCLICK = 19;
+  static final int MSG_ACTION_ONBASEPOICLICK = 20;
+  static final int DEFAULT_RATIO = 1;
+
   // generate getters
   Future<double> get_maxZoomLevel() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_maxZoomLevel", {'refId': refId});
@@ -741,6 +755,28 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     } else {
     
       return result;
+    }
+  }
+  
+  Future<com_autonavi_amap_mapcore_Rectangle> getGeoRectangle() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getGeoRectangle([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::getGeoRectangle', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Rectangle()..refId = result..tag = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Rectangle()..refId = result..tag = 'amap_map_fluttify';
     }
   }
   

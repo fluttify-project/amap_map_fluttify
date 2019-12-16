@@ -15,6 +15,8 @@ mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
 
   
 
+  
+
   @mustCallSuper
   Future<void> onDoubleTap(double var1, double var2) {
   

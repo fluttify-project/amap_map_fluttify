@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
 
   
 
+  
+
   @mustCallSuper
   Future<void> setPeriod(int var1) {
   

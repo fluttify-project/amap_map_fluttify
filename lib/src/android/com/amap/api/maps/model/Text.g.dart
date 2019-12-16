@@ -11,6 +11,13 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_Text extends java_lang_Object  {
+  static final int ALIGN_LEFT = 1;
+  static final int ALIGN_RIGHT = 2;
+  static final int ALIGN_CENTER_HORIZONTAL = 4;
+  static final int ALIGN_TOP = 8;
+  static final int ALIGN_BOTTOM = 16;
+  static final int ALIGN_CENTER_VERTICAL = 32;
+
   // generate getters
   
 

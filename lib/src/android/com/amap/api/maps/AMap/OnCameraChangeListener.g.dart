@@ -15,6 +15,8 @@ mixin com_amap_api_maps_AMap_OnCameraChangeListener on java_lang_Object {
 
   
 
+  
+
   @mustCallSuper
   Future<void> onCameraChange(com_amap_api_maps_model_CameraPosition var1) {
     kNativeObjectPool.add(var1);

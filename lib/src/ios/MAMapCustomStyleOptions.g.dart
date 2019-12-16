@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMapCustomStyleOptions extends NSObject  {
+  
+
   // generate getters
   Future<NSData> get_styleData() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleData", {'refId': refId});

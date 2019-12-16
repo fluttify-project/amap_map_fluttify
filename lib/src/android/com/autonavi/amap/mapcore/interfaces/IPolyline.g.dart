@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
 
   
 
+  
+
   @mustCallSuper
   Future<void> setWidth(double var1) {
   

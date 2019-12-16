@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_TileProjection extends java_lang_Object with android_os_Parcelable {
+  
+
   // generate getters
   Future<int> get_offsetX() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.TileProjection::get_offsetX", {'refId': refId});

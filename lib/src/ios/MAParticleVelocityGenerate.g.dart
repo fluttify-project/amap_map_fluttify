@@ -15,6 +15,8 @@ mixin MAParticleVelocityGenerate on NSObject {
 
   
 
+  
+
   @mustCallSuper
   Future<double> getX() {
   

@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo extends java_lang_Object  {
+  
+
   // generate getters
   Future<int> get_mGestureState() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mGestureState", {'refId': refId});

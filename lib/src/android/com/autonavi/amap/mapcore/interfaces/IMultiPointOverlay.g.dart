@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
 
   
 
+  
+
   @mustCallSuper
   Future<void> addItems(List<com_amap_api_maps_model_MultiPointItem> var1) {
     kNativeObjectPool.addAll(var1);
@@ -48,6 +50,15 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
   
     if (fluttifyLogEnabled) {
       debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> draw(com_autonavi_amap_mapcore_MapConfig var1, Float64List var2, Float64List var3) {
+    kNativeObjectPool.add(var1);
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('draw::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   

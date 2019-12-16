@@ -11,6 +11,20 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_offlinemap_OfflineMapStatus extends java_lang_Object  {
+  static final int CHECKUPDATES = 6;
+  static final int ERROR = -1;
+  static final int STOP = 5;
+  static final int LOADING = 0;
+  static final int UNZIP = 1;
+  static final int WAITING = 2;
+  static final int PAUSE = 3;
+  static final int SUCCESS = 4;
+  static final int NEW_VERSION = 7;
+  static final int EXCEPTION_NETWORK_LOADING = 101;
+  static final int EXCEPTION_AMAP = 102;
+  static final int EXCEPTION_SDCARD = 103;
+  static final int START_DOWNLOAD_FAILD = 1002;
+
   // generate getters
   
 

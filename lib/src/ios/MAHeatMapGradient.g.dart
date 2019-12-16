@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAHeatMapGradient extends NSObject with NSCopying {
+  
+
   // generate getters
   Future<List<UIColor>> get_colors() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapGradient::get_colors", {'refId': refId});

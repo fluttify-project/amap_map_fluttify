@@ -15,6 +15,8 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
 
   
 
+  
+
   @mustCallSuper
   Future<void> setStrokeWidth(double var1) {
   

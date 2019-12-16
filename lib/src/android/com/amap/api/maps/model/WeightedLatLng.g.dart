@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_WeightedLatLng extends java_lang_Object  {
+  static final double DEFAULT_INTENSITY = 1.0;
+
   // generate getters
   Future<double> get_intensity() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.WeightedLatLng::get_intensity", {'refId': refId});

@@ -11,6 +11,8 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  {
+  
+
   // generate getters
   
 
@@ -136,6 +138,28 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker', );
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  static Future<com_amap_api_maps_model_BitmapDescriptor> defaultMarker__double(double var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker__double', {"var0": var0});
   
   
     // handle native call

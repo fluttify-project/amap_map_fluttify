@@ -15,6 +15,8 @@ mixin com_amap_api_maps_AMap_OnMarkerDragListener on java_lang_Object {
 
   
 
+  
+
   @mustCallSuper
   Future<void> onMarkerDragStart(com_amap_api_maps_model_Marker var1) {
     kNativeObjectPool.add(var1);
