@@ -363,6 +363,24 @@ class Polygon {
       ios: (_) => _iosController?.removeOverlay(_iosModel),
     );
   }
+
+  Future<bool> contains(LatLng target) {
+    return platform(
+      android: (_) async {
+        final latLng =
+            await createcom_amap_api_maps_model_LatLng__double__double(
+                target.latitude, target.longitude);
+        return _androidModel.contains(latLng);
+      },
+      ios: (_) async {
+        final latLng = await createCLLocationCoordinate2D(
+            target.latitude, target.longitude);
+        final point = await MAMapPointForCoordinate(latLng);
+        final bounds = await _iosModel.get_points();
+        return MAPolygonContainsPoint(point, bounds, bounds.length);
+      },
+    );
+  }
 }
 
 /// 圆形
