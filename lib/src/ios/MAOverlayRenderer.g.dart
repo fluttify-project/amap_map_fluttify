@@ -20,10 +20,10 @@ class MAOverlayRenderer extends NSObject  {
     return MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify';
   }
   
-  Future<CGPoint> get_glPoints() async {
+  Future<List<CGPoint>> get_glPoints() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_glPoints", {'refId': refId});
-    kNativeObjectPool.add(CGPoint()..refId = result..tag = 'amap_map_fluttify');
-    return CGPoint()..refId = result..tag = 'amap_map_fluttify';
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => CGPoint()..refId = it..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((it) => CGPoint()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
   Future<int> get_glPointCount() async {

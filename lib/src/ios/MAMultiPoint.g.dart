@@ -14,10 +14,10 @@ class MAMultiPoint extends MAShape  {
   
 
   // generate getters
-  Future<MAMapPoint> get_points() async {
+  Future<List<MAMapPoint>> get_points() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPoint::get_points", {'refId': refId});
-    kNativeObjectPool.add(MAMapPoint()..refId = result..tag = 'amap_map_fluttify');
-    return MAMapPoint()..refId = result..tag = 'amap_map_fluttify';
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAMapPoint()..refId = it..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((it) => MAMapPoint()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
   Future<int> get_pointCount() async {
