@@ -264,6 +264,12 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                     });
                   },
                 ),
+                ListTile(
+                  title: Center(child: Text('设置以地图为中心进行缩放')),
+                  onTap: () async {
+                    await _controller?.setZoomByCenter(true);
+                  },
+                ),
               ],
             ),
           ),

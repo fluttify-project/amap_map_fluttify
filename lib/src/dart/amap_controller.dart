@@ -474,6 +474,23 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 设置缩放是否以中心点为锚点
+  Future<void> setZoomByCenter(bool byCenter) async {
+    assert(byCenter != null);
+    await platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+        final uiSetting = await map.getUiSettings();
+        await uiSetting.setZoomInByScreenCenter(byCenter);
+
+        pool..add(map)..add(uiSetting);
+      },
+      ios: (pool) async {
+        await iosController.set_zoomingInPivotsAroundAnchorPoint(!byCenter);
+      },
+    );
+  }
+
   /// 放大一个等级
   Future<void> zoomIn({bool animated = true}) async {
     await platform(
