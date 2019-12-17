@@ -13,6 +13,6 @@ jobs:
           channel: 'stable'
       - run: flutter pub get
       - run: flutter test
-      - run: cd example; flutter build apk; flutter build ios --no-codesign
+      - run: cd example; flutter build apk; # flutter build ios;
 
 
