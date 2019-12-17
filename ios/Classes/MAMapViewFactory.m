@@ -3813,6 +3813,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   UIImage* texture = (UIImage*) STACK[@"texture"];
   NSNumber* lineCapType = (NSNumber*) STACK[@"lineCapType"];
   NSNumber* lineJoinType = (NSNumber*) STACK[@"lineJoinType"];
+  NSNumber* dashType = (NSNumber*) STACK[@"dashType"];
 
   // 线
   if ([overlay isKindOfClass:[MAPolyline class]])
@@ -3832,6 +3833,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       polylineRenderer.strokeImage = texture;
       if (lineCapType != nil) polylineRenderer.lineCapType = (MALineCapType) [lineCapType integerValue];
       if (lineJoinType != nil) polylineRenderer.lineJoinType = (MALineJoinType) [lineJoinType integerValue];
+      if (dashType != nil) polylineRenderer.lineDashType = (MALineDashType) [dashType integerValue];
 
       // 这次调用完成后 清空栈
       [STACK removeAllObjects];

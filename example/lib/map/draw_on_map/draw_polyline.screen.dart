@@ -107,10 +107,10 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
                     _currentPolyline =
                         await _controller?.addPolyline(PolylineOption(
                       latLngList: [
-                        LatLng(39.999391, 116.135972),
-                        LatLng(39.898323, 116.057694),
-                        LatLng(39.900430, 116.265061),
-                        LatLng(39.955192, 116.140092),
+                        getNextLatLng(),
+                        getNextLatLng(),
+                        getNextLatLng(),
+                        getNextLatLng(),
                       ],
                       width: 10,
                       strokeColor: Colors.green,
@@ -153,6 +153,41 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
                     ));
                   },
                 ),
+                DiscreteSetting(
+                  head: '选择始折线样式',
+                  options: [
+                    '普通折线',
+                    '方块虚线',
+                    '圆形虚线',
+                  ],
+                  onSelected: (value) async {
+                    DashType type;
+                    switch (value) {
+                      case '普通折线':
+                        type = null;
+                        break;
+                      case '方块虚线':
+                        type = DashType.Square;
+                        break;
+                      case '圆形虚线':
+                        type = DashType.Circle;
+                        break;
+                    }
+                    await _currentPolyline?.remove();
+                    _currentPolyline =
+                        await _controller?.addPolyline(PolylineOption(
+                      latLngList: [
+                        getNextLatLng(),
+                        getNextLatLng(),
+                        getNextLatLng(),
+                        getNextLatLng(),
+                      ],
+                      width: 10,
+                      strokeColor: Colors.green,
+                      dashType: type,
+                    ));
+                  },
+                )
               ],
             ),
           ),

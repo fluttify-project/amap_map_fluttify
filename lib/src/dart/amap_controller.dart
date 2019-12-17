@@ -1087,6 +1087,21 @@ class AmapController with WidgetsBindingObserver, _Private {
               com_amap_api_maps_model_PolylineOptions_LineJoinType
                   .values[option.lineJoinType.index]);
         }
+        // 是否虚线
+        if (option.dashType != null) {
+          switch (option.dashType) {
+            case DashType.Square:
+              await polylineOptions.setDottedLineType(
+                  com_amap_api_maps_model_PolylineOptions
+                      .DOTTEDLINE_TYPE_SQUARE);
+              break;
+            case DashType.Circle:
+              await polylineOptions.setDottedLineType(
+                  com_amap_api_maps_model_PolylineOptions
+                      .DOTTEDLINE_TYPE_CIRCLE);
+              break;
+          }
+        }
         // 设置参数
         final polyline = await map.addPolyline(polylineOptions);
 
@@ -1144,6 +1159,12 @@ class AmapController with WidgetsBindingObserver, _Private {
             'lineJoinType',
             option.lineJoinType.index,
           );
+        }
+        // 是否虚线
+        if (option.dashType != null) {
+          // android端没有None类型, 而ios端还有None类型, 并且索引为0, 这里+1统一一下两端
+          // 的值, ios端用起来方便一点, 直接强转成枚举即可.
+          await pushStackJsonable('dashType', option.dashType.index + 1);
         }
 
         // 设置参数
