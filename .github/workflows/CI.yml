@@ -1,0 +1,10 @@
+name: CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Flutter action
+        uses: subosito/flutter-action@v1.1.1
+
+
