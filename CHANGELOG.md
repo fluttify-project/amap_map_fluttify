@@ -1,3 +1,7 @@
+## 0.14.0
+- roll engine #e26c0fa
+- enhance: 提升依赖
+
 ## 0.13.1
 - enhance: 使用类常量代替字面量
 - enhance: 当前位置大头针显示处理
