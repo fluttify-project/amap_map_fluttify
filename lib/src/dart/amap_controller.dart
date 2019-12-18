@@ -1089,6 +1089,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         }
         // 是否虚线
         if (option.dashType != null) {
+          await polylineOptions.setDottedLine(true);
           switch (option.dashType) {
             case DashType.Square:
               await polylineOptions.setDottedLineType(

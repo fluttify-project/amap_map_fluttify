@@ -39,6 +39,7 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
           ),
           Flexible(
             child: DecoratedColumn(
+              scrollable: true,
               divider: kDividerTiny,
               children: <Widget>[
                 ListTile(
