@@ -1,3 +1,4 @@
+// ignore_for_file: non_constant_identifier_names
 part of 'amap_view.widget.dart';
 
 typedef Future<void> OnMarkerClicked(Marker marker);
@@ -11,8 +12,20 @@ typedef Future<void> OnScreenShot(Uint8List imageData);
 /// 地图控制类
 class AmapController with WidgetsBindingObserver, _Private {
   /// Android构造器
-  AmapController.android(this.androidController, this._state) {
+  AmapController.android(
+    this.androidController,
+    this._state,
+    _OnMapCreated onMapCreated,
+  ) {
     WidgetsBinding.instance.addObserver(this);
+    androidController.getMap().then((map) {
+      map.setOnMapLoadedListener(
+        _androidMapDelegate
+          .._onMapLoaded = () async {
+            await onMapCreated(this);
+          },
+      );
+    });
   }
 
   /// iOS构造器
@@ -1901,7 +1914,8 @@ class _AndroidMapDelegate extends java_lang_Object
         com_amap_api_maps_AMap_OnCameraChangeListener,
         com_amap_api_maps_AMap_OnMapScreenShotListener,
         com_amap_api_maps_AMap_OnMyLocationChangeListener,
-        com_amap_api_maps_AMap_OnInfoWindowClickListener {
+        com_amap_api_maps_AMap_OnInfoWindowClickListener,
+        com_amap_api_maps_AMap_OnMapLoadedListener {
   OnMarkerClicked _onMarkerClicked;
   OnMarkerDrag _onMarkerDragStart;
   OnMarkerDrag _onMarkerDragging;
@@ -1912,6 +1926,7 @@ class _AndroidMapDelegate extends java_lang_Object
   OnScreenShot _onSnapshot;
   OnLocationChange _onLocationChange;
   OnMarkerClicked _onInfoWindowClicked;
+  VoidCallback _onMapLoaded;
 
   // 为了和ios端行为保持一致, 需要屏蔽掉移动过程中的回调
   bool _moveStarted = false;
@@ -2027,6 +2042,14 @@ class _AndroidMapDelegate extends java_lang_Object
     super.onInfoWindowClick(var1);
     if (_onInfoWindowClicked != null) {
       await _onInfoWindowClicked(Marker.android(var1));
+    }
+  }
+
+  @override
+  Future<void> onMapLoaded() async {
+    super.onMapLoaded();
+    if (_onMapLoaded != null) {
+      _onMapLoaded();
     }
   }
 }
