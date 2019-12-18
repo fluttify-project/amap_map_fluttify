@@ -101,6 +101,9 @@ class PolylineOption {
   /// 线段连接处样式
   final LineJoinType lineJoinType;
 
+  /// 是否虚线
+  final DashType dashType;
+
   PolylineOption({
     @required this.latLngList,
     this.width,
@@ -109,6 +112,7 @@ class PolylineOption {
     this.imageConfig,
     this.lineCapType,
     this.lineJoinType,
+    this.dashType,
   }) : assert(
           (customTexture != null && imageConfig != null) ||
               customTexture == null,
@@ -117,7 +121,7 @@ class PolylineOption {
 
   @override
   String toString() {
-    return 'PolylineOption{latLngList: $latLngList, width: $width, strokeColor: $strokeColor, customTexture: $customTexture, imageConfig: $imageConfig, lineCapType: $lineCapType, lineJoinType: $lineJoinType}';
+    return 'PolylineOption{latLngList: $latLngList, width: $width, strokeColor: $strokeColor, customTexture: $customTexture, imageConfig: $imageConfig, lineCapType: $lineCapType, lineJoinType: $lineJoinType, dotted: $dashType}';
   }
 }
 

@@ -3,6 +3,7 @@
 # 高德 `地图`组件
 
 [![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify)
+![CI](https://github.com/fluttify-project/amap_map_fluttify/workflows/CI/badge.svg)
 [![Gitter](https://badges.gitter.im/fluttify_project/community.svg)](https://gitter.im/fluttify_project/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 **从`0.11.0`开始, Flutter环境改为`1.12.13`, 与`1.9.1`版本不兼容, 如果你想继续使用`1.9.1`版本的Flutter, 请不要升级.**

@@ -1,3 +1,7 @@
+## 0.14.1
+- feat: 绘制折线提供虚线的样式
+- chore: 增加CI
+
 ## 0.14.0
 - roll engine #e26c0fa
 - enhance: 提升依赖

@@ -62,3 +62,12 @@ enum LineJoinType {
   /// 圆角连接点
   Round,
 }
+
+/// 虚线样式
+enum DashType {
+  /// 方块样式
+  Square,
+
+  /// 圆点样式
+  Circle,
+}

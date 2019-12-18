@@ -80,7 +80,7 @@ packages:
     source: sdk
     version: "0.0.0"
   foundation_fluttify:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: foundation_fluttify
       url: "https://pub.dartlang.org"
