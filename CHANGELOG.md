@@ -1,3 +1,6 @@
+## 0.14.2
+- enhance: [android] 在onMapLoaded回调之后再回调onMapCreated
+
 ## 0.14.1
 - feat: 绘制折线提供虚线的样式
 - chore: 增加CI
