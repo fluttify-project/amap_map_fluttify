@@ -11,6 +11,8 @@
       <excludeFolder url="file://$MODULE_DIR$/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/build/app/intermediates/flutter/release/flutter_assets/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/build/app/intermediates/merged_assets/release/out/flutter_assets/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_core_fluttify/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_core_fluttify/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_core_fluttify/build" />
@@ -66,7 +68,6 @@
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/url_launcher_macos/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/url_launcher_macos/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/url_launcher_macos/example/build" />
-      <excludeFolder url="file://$MODULE_DIR$/example/ios/Flutter/App.framework/flutter_assets/packages" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
