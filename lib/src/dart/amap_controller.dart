@@ -119,7 +119,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           // 定位图标
           if (iconUri != null) {
             final imageData = await _uri2ImageData(imageConfig, iconUri);
-            final bitmap = await createandroid_graphics_Bitmap(imageData);
+            final bitmap = await android_graphics_Bitmap.create(imageData);
             final bitmapDescriptor =
                 await com_amap_api_maps_model_BitmapDescriptorFactory
                     .fromBitmap(bitmap);
@@ -160,17 +160,17 @@ class AmapController with WidgetsBindingObserver, _Private {
           // 定位图标
           if (iconUri != null) {
             final imageData = await _uri2ImageData(imageConfig, iconUri);
-            final bitmap = await createUIImage(imageData);
+            final bitmap = await UIImage.create(imageData);
             await style.set_image(bitmap);
           }
           // 边框颜色
           if (strokeColor != null) {
-            final color = await createUIColor(strokeColor);
+            final color = await UIColor.create(strokeColor);
             await style.set_strokeColor(color);
           }
           // 填充颜色
           if (fillColor != null) {
-            final color = await createUIColor(fillColor);
+            final color = await UIColor.create(fillColor);
             await style.set_fillColor(color);
           }
           // 边框宽度
@@ -289,12 +289,10 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         switch (language) {
           case Language.Chinese:
-            await performSelectorWithObject(
-                iosController, 'setMapLanguage:', 0);
+            await iosController.performSelectorWithObject('setMapLanguage:', 0);
             break;
           case Language.English:
-            await performSelectorWithObject(
-                iosController, 'setMapLanguage:', 1);
+            await iosController.performSelectorWithObject('setMapLanguage:', 1);
             break;
         }
       },
@@ -587,7 +585,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool..add(map)..add(latLng)..add(cameraUpdate);
       },
       ios: (pool) async {
-        final latLng = await createCLLocationCoordinate2D(lat, lng);
+        final latLng = await CLLocationCoordinate2D.create(lat, lng);
         if (zoomLevel != null) {
           await iosController.setZoomLevelAnimated(zoomLevel, animated);
         }
@@ -663,7 +661,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           Uint8List iconData =
               await _uri2ImageData(option.imageConfig, option.iconUri);
 
-          final bitmap = await createandroid_graphics_Bitmap(iconData);
+          final bitmap = await android_graphics_Bitmap.create(iconData);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
           await markerOption.icon(icon);
@@ -674,7 +672,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         else if (option.widget != null) {
           Uint8List iconData = await _state.widgetToImageData(option.widget);
 
-          final bitmap = await createandroid_graphics_Bitmap(iconData);
+          final bitmap = await android_graphics_Bitmap.create(iconData);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
           await markerOption.icon(icon);
@@ -712,7 +710,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 创建marker
         final pointAnnotation = await createMAPointAnnotation();
 
-        final coordinate = await createCLLocationCoordinate2D(lat, lng);
+        final coordinate = await CLLocationCoordinate2D.create(lat, lng);
 
         // 设置经纬度
         await pointAnnotation.set_coordinate(coordinate);
@@ -731,7 +729,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           Uint8List iconData =
               await _uri2ImageData(option.imageConfig, option.iconUri);
 
-          final icon = await createUIImage(iconData);
+          final icon = await UIImage.create(iconData);
 
           // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
           // 供ios的回调去获取
@@ -743,7 +741,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         else if (option.widget != null) {
           Uint8List iconData = await _state.widgetToImageData(option.widget);
 
-          final icon = await createUIImage(iconData);
+          final icon = await UIImage.create(iconData);
 
           // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
           // 供ios的回调去获取
@@ -822,7 +820,7 @@ class AmapController with WidgetsBindingObserver, _Private {
             Uint8List iconData =
                 await _uri2ImageData(option.imageConfig, option.iconUri);
 
-            final bitmap = await createandroid_graphics_Bitmap(iconData);
+            final bitmap = await android_graphics_Bitmap.create(iconData);
             final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
                 .fromBitmap(bitmap);
             await markerOption.icon(icon);
@@ -833,7 +831,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           else if (option.widget != null) {
             Uint8List iconData = await _state.widgetToImageData(option.widget);
 
-            final bitmap = await createandroid_graphics_Bitmap(iconData);
+            final bitmap = await android_graphics_Bitmap.create(iconData);
             final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
                 .fromBitmap(bitmap);
             await markerOption.icon(icon);
@@ -881,7 +879,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           // 创建marker
           final pointAnnotation = await createMAPointAnnotation();
 
-          final coordinate = await createCLLocationCoordinate2D(lat, lng);
+          final coordinate = await CLLocationCoordinate2D.create(lat, lng);
 
           // 设置经纬度
           await pointAnnotation.set_coordinate(coordinate);
@@ -900,7 +898,7 @@ class AmapController with WidgetsBindingObserver, _Private {
             Uint8List iconData =
                 await _uri2ImageData(option.imageConfig, option.iconUri);
 
-            final icon = await createUIImage(iconData);
+            final icon = await UIImage.create(iconData);
 
             // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
             // 供ios的回调去获取
@@ -912,7 +910,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           else if (option.widget != null) {
             Uint8List iconData = await _state.widgetToImageData(option.widget);
 
-            final icon = await createUIImage(iconData);
+            final icon = await UIImage.create(iconData);
 
             // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
             // 供ios的回调去获取
@@ -994,7 +992,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         final map = await androidController.getMap();
         final projection = await map.getProjection();
 
-        final androidPoint = await createandroid_graphics_Point(
+        final androidPoint = await android_graphics_Point.create(
             point.x.toInt(), point.y.toInt());
 
         final latLng = await projection.fromScreenLocation(androidPoint);
@@ -1006,7 +1004,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         );
       },
       ios: (pool) async {
-        final cgPoint = await createCGPoint(point.x, point.y);
+        final cgPoint = await CGPoint.create(point.x, point.y);
         final coord2d = await iosController.convertPointToCoordinateFromView(
             cgPoint, iosController);
 
@@ -1033,8 +1031,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         return Point((await point.x).toDouble(), (await point.y).toDouble());
       },
       ios: (pool) async {
-        final latLng =
-            await createCLLocationCoordinate2D(coord.latitude, coord.longitude);
+        final latLng = await CLLocationCoordinate2D.create(
+            coord.latitude, coord.longitude);
         final point = await iosController.convertCoordinateToPointToView(
             latLng, iosController);
 
@@ -1079,7 +1077,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         if (option.customTexture != null && option.imageConfig != null) {
           Uint8List iconData =
               await _uri2ImageData(option.imageConfig, option.customTexture);
-          final bitmap = await createandroid_graphics_Bitmap(iconData);
+          final bitmap = await android_graphics_Bitmap.create(iconData);
           final texture = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
           await polylineOptions.setCustomTexture(texture);
@@ -1132,7 +1130,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
         for (final point in option.latLngList) {
-          final latLng = await createCLLocationCoordinate2D(
+          final latLng = await CLLocationCoordinate2D.create(
               point.latitude, point.longitude);
           latLngList.add(latLng);
         }
@@ -1154,7 +1152,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           Uint8List textureData =
               await _uri2ImageData(option.imageConfig, option.customTexture);
 
-          final texture = await createUIImage(textureData);
+          final texture = await UIImage.create(textureData);
 
           await pushStack('texture', texture);
 
@@ -1247,7 +1245,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList = [];
         for (final point in option.latLngList) {
-          final latLng = await createCLLocationCoordinate2D(
+          final latLng = await CLLocationCoordinate2D.create(
               point.latitude, point.longitude);
           latLngList.add(latLng);
         }
@@ -1322,7 +1320,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         await iosController.set_delegate(_iosMapDelegate);
 
-        final latLng = await createCLLocationCoordinate2D(
+        final latLng = await CLLocationCoordinate2D.create(
           option.center.latitude,
           option.center.longitude,
         );
@@ -1557,17 +1555,17 @@ class AmapController with WidgetsBindingObserver, _Private {
         final option = await createMAMapCustomStyleOptions();
 
         if (styleData != null) {
-          final styleDataNSData = await createNSDataWithUint8List(styleData);
+          final styleDataNSData = await NSData.createWithUint8List(styleData);
           await option.set_styleData(styleDataNSData);
           pool.add(styleDataNSData);
         }
         if (styleExtra != null) {
-          final styleExtraNSData = await createNSDataWithUint8List(styleExtra);
+          final styleExtraNSData = await NSData.createWithUint8List(styleExtra);
           await option.set_styleExtraData(styleExtraNSData);
           pool.add(styleExtraNSData);
         }
         if (texture != null) {
-          final textureNSData = await createNSDataWithUint8List(texture);
+          final textureNSData = await NSData.createWithUint8List(texture);
           await option.set_styleTextureData(textureNSData);
           pool.add(textureNSData);
         }
@@ -1643,9 +1641,9 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         // 由于屏幕坐标的(0, 0)左上角, 所以需要西北角和东南角
         // 西北角
-        final northWest = await createCLLocationCoordinate2D(maxLat, minLng);
+        final northWest = await CLLocationCoordinate2D.create(maxLat, minLng);
         // 东南角
-        final southEast = await createCLLocationCoordinate2D(minLat, maxLng);
+        final southEast = await CLLocationCoordinate2D.create(minLat, maxLng);
 
         // 西北角屏幕坐标
         final northWestPoint = await MAMapPointForCoordinate(northWest);
@@ -1669,7 +1667,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         final dPadding = padding.toDouble();
         iosController.setVisibleMapRectEdgePaddinganimated(
           rect,
-          await createUIEdgeInsets(dPadding, dPadding, dPadding, dPadding),
+          await UIEdgeInsets.create(dPadding, dPadding, dPadding, dPadding),
           animated,
         );
 

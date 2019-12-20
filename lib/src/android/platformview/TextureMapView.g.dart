@@ -62,7 +62,7 @@ class _com_amap_api_maps_TextureMapView_AndroidState extends State<com_amap_api_
   @override
   void dispose() {
     if (widget.onDispose != null) {
-      widget.onDispose().then((_) => release(_controller));
+      widget.onDispose().then((_) => _controller.release());
     }
     super.dispose();
   }

@@ -377,7 +377,7 @@ class Polygon {
         return _androidModel.contains(latLng);
       },
       ios: (_) async {
-        final latLng = await createCLLocationCoordinate2D(
+        final latLng = await CLLocationCoordinate2D.create(
             target.latitude, target.longitude);
         final point = await MAMapPointForCoordinate(latLng);
         final bounds = await _iosModel.get_points();

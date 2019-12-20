@@ -156,11 +156,11 @@ class _AmapViewState extends State<AmapView> {
                       widget.onMapCreated,
                     );
 
-                    final bundle = await createandroid_os_Bundle();
+                    final bundle = await android_os_Bundle.create();
                     await controller.onCreate(bundle);
 
                     await _initAndroid();
-                    release(bundle);
+                    await bundle.release();
                   },
                 );
               } else {
@@ -227,7 +227,7 @@ class _AmapViewState extends State<AmapView> {
   void dispose() {
     final isCurrentPlugin = (it) => it.tag == 'amap_map_fluttify';
     kNativeObjectPool
-      ..where(isCurrentPlugin).forEach(release)
+      ..where(isCurrentPlugin).forEach((it) => it.release())
       ..removeWhere(isCurrentPlugin);
     super.dispose();
   }

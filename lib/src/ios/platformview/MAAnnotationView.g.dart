@@ -59,7 +59,7 @@ class _MAAnnotationView_iOSState extends State<MAAnnotationView_iOS> {
   @override
   void dispose() {
     if (widget.onDispose != null) {
-      widget.onDispose().then((_) => release(_controller));
+      widget.onDispose().then((_) => _controller.release());
     }
     super.dispose();
   }
