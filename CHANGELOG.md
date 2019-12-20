@@ -1,3 +1,6 @@
+## 0.15.0
+- 提升依赖
+
 ## 0.14.2
 - enhance: [android] 在onMapLoaded回调之后再回调onMapCreated
 
