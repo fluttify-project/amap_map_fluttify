@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_maploader_ProcessingTile extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_ae_gmap_maploader_ProcessingTile> create__String(String var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_maploader_ProcessingTile__String', {"var1": var1});
+    final object = com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<String> get_mKeyName() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.maploader.ProcessingTile::get_mKeyName", {'refId': refId});
   
@@ -26,8 +39,9 @@ class com_autonavi_ae_gmap_maploader_ProcessingTile extends java_lang_Object  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_mKeyName(String mKeyName) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.maploader.ProcessingTile::set_mKeyName', {'refId': refId, "mKeyName": mKeyName});
   
@@ -40,8 +54,9 @@ class com_autonavi_ae_gmap_maploader_ProcessingTile extends java_lang_Object  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   static Future<com_autonavi_ae_gmap_maploader_ProcessingTile> obtain(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -64,4 +79,5 @@ class com_autonavi_ae_gmap_maploader_ProcessingTile extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

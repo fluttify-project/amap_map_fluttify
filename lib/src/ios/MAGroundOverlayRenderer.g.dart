@@ -11,20 +11,35 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAGroundOverlayRenderer extends MAOverlayRenderer  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAGroundOverlayRenderer> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAGroundOverlayRenderer');
+    final object = MAGroundOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<MAGroundOverlay> get_groundOverlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAGroundOverlayRenderer::get_groundOverlay", {'refId': refId});
     kNativeObjectPool.add(MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify');
     return MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<MAGroundOverlayRenderer> initWithGroundOverlay(MAGroundOverlay groundOverlay) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -47,4 +62,5 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
     }
   }
   
+  //endregion
 }

@@ -11,15 +11,23 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
   
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -174,4 +182,5 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

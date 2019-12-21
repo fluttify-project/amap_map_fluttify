@@ -11,15 +11,38 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_DPoint extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_DPoint> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__');
+    final object = com_autonavi_amap_mapcore_DPoint()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  static Future<com_autonavi_amap_mapcore_DPoint> create__double__double(double var1, double var3) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__double__double', {"var1": var1, "var3": var3});
+    final object = com_autonavi_amap_mapcore_DPoint()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   static Future<com_autonavi_amap_mapcore_DPoint> obtain() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -64,4 +87,5 @@ class com_autonavi_amap_mapcore_DPoint extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

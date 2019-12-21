@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAParticleCurveSizeGenerate> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleCurveSizeGenerate');
+    final object = MAParticleCurveSizeGenerate()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<MAParticleCurveSizeGenerate> initWithCurveXYZ(double x, double y, double z) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -42,4 +57,5 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
     }
   }
   
+  //endregion
 }

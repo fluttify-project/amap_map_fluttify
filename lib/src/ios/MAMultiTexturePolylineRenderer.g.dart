@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAMultiTexturePolylineRenderer> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMultiTexturePolylineRenderer');
+    final object = MAMultiTexturePolylineRenderer()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<MAMultiPolyline> get_multiPolyline() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_multiPolyline", {'refId': refId});
     kNativeObjectPool.add(MAMultiPolyline()..refId = result..tag = 'amap_map_fluttify');
@@ -26,16 +39,18 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     return (result as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_strokeTextureImages(List strokeTextureImages) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::set_strokeTextureImages', {'refId': refId, "strokeTextureImages": strokeTextureImages.map((it) => it.refId).toList()});
   
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<MAMultiTexturePolylineRenderer> initWithMultiPolyline(MAMultiPolyline multiPolyline) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -58,4 +73,5 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     }
   }
   
+  //endregion
 }

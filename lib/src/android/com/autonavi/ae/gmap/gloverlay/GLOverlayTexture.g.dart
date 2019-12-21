@@ -11,9 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_gloverlay_GLOverlayTexture extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_ae_gmap_gloverlay_GLOverlayTexture> create__int__int__int__int(int var1, int var2, int var3, int var4) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final object = com_autonavi_ae_gmap_gloverlay_GLOverlayTexture()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  static Future<com_autonavi_ae_gmap_gloverlay_GLOverlayTexture> create__int__int__float__float__int__int(int var1, int var2, double var3, double var4, int var5, int var6) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
+    final object = com_autonavi_ae_gmap_gloverlay_GLOverlayTexture()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<int> get_mResId() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::get_mResId", {'refId': refId});
   
@@ -62,8 +83,9 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlayTexture extends java_lang_Object  
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_mResId(int mResId) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResId', {'refId': refId, "mResId": mResId});
   
@@ -112,7 +134,9 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlayTexture extends java_lang_Object  
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

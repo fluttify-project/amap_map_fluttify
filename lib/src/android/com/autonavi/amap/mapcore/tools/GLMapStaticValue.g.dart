@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_tools_GLMapStaticValue extends java_lang_Object  {
+  //region constants
   static final int MAPVIEW_MODE_NORAML = 0;
   static final int MAPVIEW_MODE_SATELLITE = 1;
   static final int MAPVIEW_MODE_BUS = 2;
@@ -206,13 +207,28 @@ class com_autonavi_amap_mapcore_tools_GLMapStaticValue extends java_lang_Object 
   static final int LONG_LONG_TICK_COUNT = 30;
   static final int RENDER_FPS_MAX = 60;
   static final int AM_PARAMETERNAME_PROCESS_MAP = 1025;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_tools_GLMapStaticValue> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLMapStaticValue__');
+    final object = com_autonavi_amap_mapcore_tools_GLMapStaticValue()..refId = refId..tag = 'amap_map_fluttify';
   
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
   
+  //endregion
+
+  //region methods
+  
+  //endregion
 }

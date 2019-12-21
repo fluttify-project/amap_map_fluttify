@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_gloverlay_GLTextureProperty extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_ae_gmap_gloverlay_GLTextureProperty> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLTextureProperty__');
+    final object = com_autonavi_ae_gmap_gloverlay_GLTextureProperty()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<int> get_mId() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::get_mId", {'refId': refId});
   
@@ -62,8 +75,9 @@ class com_autonavi_ae_gmap_gloverlay_GLTextureProperty extends java_lang_Object 
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_mId(int mId) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mId', {'refId': refId, "mId": mId});
   
@@ -112,7 +126,9 @@ class com_autonavi_ae_gmap_gloverlay_GLTextureProperty extends java_lang_Object 
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

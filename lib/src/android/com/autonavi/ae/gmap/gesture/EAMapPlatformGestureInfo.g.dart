@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__');
+    final object = com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<int> get_mGestureState() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mGestureState", {'refId': refId});
   
@@ -56,8 +69,9 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo extends java_lang_Ob
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_mGestureState(int mGestureState) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureState', {'refId': refId, "mGestureState": mGestureState});
   
@@ -100,7 +114,9 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo extends java_lang_Ob
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

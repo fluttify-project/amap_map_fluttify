@@ -11,17 +11,25 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_SwipeDismissTouchListener extends java_lang_Object  {
+  //region constants
   static final int MIN_VIEW_WIDTH = 2;
   static final int A_HALF = 2;
   static final int ONE_THIRD = 3;
+  //endregion
 
-  // generate getters
+  //region creators
   
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<bool> onTouch(android_view_View var1, android_view_MotionEvent var2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -44,4 +52,5 @@ class com_amap_api_maps_SwipeDismissTouchListener extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

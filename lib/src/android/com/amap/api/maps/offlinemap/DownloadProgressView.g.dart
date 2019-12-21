@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_View  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_offlinemap_DownloadProgressView> create__android_content_Context(android_content_Context var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context', {"var1": var1.refId});
+    final object = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<void> setProgress(int var1, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -42,4 +57,5 @@ class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_Vie
     }
   }
   
+  //endregion
 }

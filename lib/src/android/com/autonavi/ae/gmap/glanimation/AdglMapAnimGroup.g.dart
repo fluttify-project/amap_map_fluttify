@@ -11,28 +11,43 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation  {
+  //region constants
   static final int CAMERA_MAX_DEGREE = 60;
   static final int CAMERA_MIN_DEGREE = 0;
   static final int MAXMAPLEVEL = 20;
   static final int MINMAPLEVEL = 3;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup> create__int(int var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int', {"var1": var1});
+    final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<bool> get_needMove() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::get_needMove", {'refId': refId});
   
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_needMove(bool needMove) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::set_needMove', {'refId': refId, "needMove": needMove});
   
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<void> setDuration(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -231,4 +246,5 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
     }
   }
   
+  //endregion
 }

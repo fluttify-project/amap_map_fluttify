@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MACustomCalloutView extends UIView  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MACustomCalloutView> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACustomCalloutView');
+    final object = MACustomCalloutView()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<UIView> get_customView({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod("MACustomCalloutView::get_customView", {'refId': refId});
     kNativeObjectPool.add(UIView()..refId = result..tag = 'amap_map_fluttify');
@@ -26,16 +39,18 @@ class MACustomCalloutView extends UIView  {
     return NSObject()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_userData(NSObject userData, {bool viewChannel = true}) async {
     await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod('MACustomCalloutView::set_userData', {'refId': refId, "userData": userData.refId});
   
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<NSObject> initWithCustomView(UIView customView, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -58,4 +73,5 @@ class MACustomCalloutView extends UIView  {
     }
   }
   
+  //endregion
 }

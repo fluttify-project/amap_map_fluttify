@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MACoordinateBounds extends NSObject  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MACoordinateBounds> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACoordinateBounds');
+    final object = MACoordinateBounds()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<CLLocationCoordinate2D> get_northEast() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateBounds::get_northEast", {'refId': refId});
     kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
@@ -26,8 +39,9 @@ class MACoordinateBounds extends NSObject  {
     return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_northEast(CLLocationCoordinate2D northEast) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateBounds::set_northEast', {'refId': refId, "northEast": northEast.refId});
   
@@ -40,7 +54,9 @@ class MACoordinateBounds extends NSObject  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

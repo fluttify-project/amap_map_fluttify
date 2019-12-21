@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_AMapEngineUtils extends java_lang_Object  {
+  //region constants
   static final int AMAP_ENGINE_TYPE_MAIN = 1;
   static final int AMAP_ENGINE_TYPE_EAGLEEYE = 2;
   static final String MAP_MAP_ASSETS_NAME = "map_assets";
@@ -37,13 +38,28 @@ class com_autonavi_amap_mapcore_AMapEngineUtils extends java_lang_Object  {
   static final int ARROW_LINE_INNER_TEXTURE_ID = 111;
   static final int ARROW_LINE_OUTER_TEXTURE_ID = 222;
   static final int ARROW_LINE_SHADOW_TEXTURE_ID = 333;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_AMapEngineUtils> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AMapEngineUtils__');
+    final object = com_autonavi_amap_mapcore_AMapEngineUtils()..refId = refId..tag = 'amap_map_fluttify';
   
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
   
+  //endregion
+
+  //region methods
+  
+  //endregion
 }

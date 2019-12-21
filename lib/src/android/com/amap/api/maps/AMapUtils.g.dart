@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_AMapUtils extends java_lang_Object  {
+  //region constants
   static final int DRIVING_DEFAULT = 0;
   static final int DRIVING_SAVE_MONEY = 1;
   static final int DRIVING_SHORT_DISTANCE = 2;
@@ -26,14 +27,28 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   static final int BUS_WALK_LITTLE = 3;
   static final int BUS_COMFORT = 4;
   static final int BUS_NO_SUBWAY = 5;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_AMapUtils> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapUtils__');
+    final object = com_amap_api_maps_AMapUtils()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   static Future<double> calculateLineDistance(com_amap_api_maps_model_LatLng var0, com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -232,4 +247,5 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

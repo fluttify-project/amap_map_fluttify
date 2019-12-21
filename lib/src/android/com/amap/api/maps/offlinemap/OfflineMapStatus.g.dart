@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_offlinemap_OfflineMapStatus extends java_lang_Object  {
+  //region constants
   static final int CHECKUPDATES = 6;
   static final int ERROR = -1;
   static final int STOP = 5;
@@ -24,13 +25,28 @@ class com_amap_api_maps_offlinemap_OfflineMapStatus extends java_lang_Object  {
   static final int EXCEPTION_AMAP = 102;
   static final int EXCEPTION_SDCARD = 103;
   static final int START_DOWNLOAD_FAILD = 1002;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_offlinemap_OfflineMapStatus> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__');
+    final object = com_amap_api_maps_offlinemap_OfflineMapStatus()..refId = refId..tag = 'amap_map_fluttify';
   
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
   
+  //endregion
+
+  //region methods
+  
+  //endregion
 }

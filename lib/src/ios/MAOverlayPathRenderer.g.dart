@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAOverlayPathRenderer extends MAOverlayRenderer  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAOverlayPathRenderer> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAOverlayPathRenderer');
+    final object = MAOverlayPathRenderer()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<UIColor> get_fillColor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_fillColor", {'refId': refId});
     kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
@@ -62,8 +75,9 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
     return MALineDashType.values[result];
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_fillColor(UIColor fillColor) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_fillColor', {'refId': refId, "fillColor": fillColor.refId});
   
@@ -112,7 +126,9 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_IndoorBuildingInfo extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_model_IndoorBuildingInfo> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__');
+    final object = com_amap_api_maps_model_IndoorBuildingInfo()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<String> get_activeFloorName() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorName", {'refId': refId});
   
@@ -44,8 +57,9 @@ class com_amap_api_maps_model_IndoorBuildingInfo extends java_lang_Object  {
     return (result as List).cast<String>();
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_activeFloorName(String activeFloorName) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorName', {'refId': refId, "activeFloorName": activeFloorName});
   
@@ -76,7 +90,9 @@ class com_amap_api_maps_model_IndoorBuildingInfo extends java_lang_Object  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

@@ -11,9 +11,15 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  
+  //endregion
+
+  //region getters
   Future<com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Type> get_nowType() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_nowType", {'refId': refId});
   
@@ -152,8 +158,9 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_nowType(com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Type nowType) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_nowType', {'refId': refId, "nowType": nowType.index});
   
@@ -326,8 +333,9 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -394,4 +402,5 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
     }
   }
   
+  //endregion
 }

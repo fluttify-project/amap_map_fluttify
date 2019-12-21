@@ -11,9 +11,15 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_autonavi_ae_gmap_AbstractMapMessage  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  
+  //endregion
+
+  //region getters
   Future<int> get_width() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::get_width", {'refId': refId});
   
@@ -50,8 +56,9 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_width(int width) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_width', {'refId': refId, "width": width});
   
@@ -88,8 +95,9 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<void> setState(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -178,4 +186,5 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     }
   }
   
+  //endregion
 }

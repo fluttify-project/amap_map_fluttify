@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_SwipeDismissView> create__android_content_Context__android_view_View(android_content_Context var1, android_view_View var2) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View', {"var1": var1.refId, "var2": var2.refId});
+    final object = com_amap_api_maps_SwipeDismissView()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<void> setCallback(com_amap_api_maps_WearMapView_OnDismissCallback var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -70,4 +85,5 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
     }
   }
   
+  //endregion
 }

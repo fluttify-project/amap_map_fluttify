@@ -11,20 +11,28 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_mapcore_AbstractNativeInstance  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  
+  //endregion
+
+  //region getters
   Future<int> get_DEFAULT_SIZE() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.particle.SizeOverLife::get_DEFAULT_SIZE", {'refId': refId});
   
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<double> getSizeX(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -91,4 +99,5 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
     }
   }
   
+  //endregion
 }

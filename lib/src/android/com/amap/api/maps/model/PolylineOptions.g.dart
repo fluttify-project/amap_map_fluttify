@@ -11,16 +11,31 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_BaseOptions with android_os_Parcelable {
+  //region constants
   static final int DOTTEDLINE_TYPE_SQUARE = 0;
   static final int DOTTEDLINE_TYPE_CIRCLE = 1;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_model_PolylineOptions> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__');
+    final object = com_amap_api_maps_model_PolylineOptions()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<com_amap_api_maps_model_PolylineOptions> setUseTexture(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -967,4 +982,5 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
     }
   }
   
+  //endregion
 }

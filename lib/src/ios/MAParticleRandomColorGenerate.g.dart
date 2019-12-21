@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerate {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAParticleRandomColorGenerate> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleRandomColorGenerate');
+    final object = MAParticleRandomColorGenerate()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<MAParticleRandomColorGenerate> initWithBoundaryColorR1G1B1A1R2G2B2A2(double r1, double g1, double b1, double a1, double r2, double g2, double b2, double a2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -42,4 +57,5 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
     }
   }
   
+  //endregion
 }

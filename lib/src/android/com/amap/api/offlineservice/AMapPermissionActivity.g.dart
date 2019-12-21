@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_offlineservice_AMapPermissionActivity extends android_app_Activity  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_offlineservice_AMapPermissionActivity> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity__');
+    final object = com_amap_api_offlineservice_AMapPermissionActivity()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<void> onRequestPermissionsResult(int var1, List<String> var2, Int32List var3) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -42,4 +57,5 @@ class com_amap_api_offlineservice_AMapPermissionActivity extends android_app_Act
     }
   }
   
+  //endregion
 }

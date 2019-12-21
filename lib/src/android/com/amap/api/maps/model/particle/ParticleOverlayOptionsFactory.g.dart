@@ -11,18 +11,33 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends java_lang_Object  {
+  //region constants
   static final int PARTICLE_TYPE_SUNNY = 0;
   static final int PARTICLE_TYPE_RAIN = 1;
   static final int PARTICLE_TYPE_SNOWY = 2;
   static final int PARTICLE_TYPE_HAZE = 3;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__');
+    final object = com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   static Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> defaultOptions(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -45,4 +60,5 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends jav
     }
   }
   
+  //endregion
 }

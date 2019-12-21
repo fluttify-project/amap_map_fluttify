@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAMultiColoredPolylineRenderer> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMultiColoredPolylineRenderer');
+    final object = MAMultiColoredPolylineRenderer()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<MAMultiPolyline> get_multiPolyline() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiColoredPolylineRenderer::get_multiPolyline", {'refId': refId});
     kNativeObjectPool.add(MAMultiPolyline()..refId = result..tag = 'amap_map_fluttify');
@@ -32,8 +45,9 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_strokeColors(List<UIColor> strokeColors) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::set_strokeColors', {'refId': refId, "strokeColors": strokeColors.map((it) => it.refId).toList()});
   
@@ -46,8 +60,9 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<MAMultiColoredPolylineRenderer> initWithMultiPolyline(MAMultiPolyline multiPolyline) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -70,4 +85,5 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
     }
   }
   
+  //endregion
 }

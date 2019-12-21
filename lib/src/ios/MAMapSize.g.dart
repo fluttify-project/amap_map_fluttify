@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAMapSize extends NSObject  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAMapSize> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMapSize');
+    final object = MAMapSize()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_width() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapSize::get_width", {'refId': refId});
   
@@ -26,8 +39,9 @@ class MAMapSize extends NSObject  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_width(double width) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapSize::set_width', {'refId': refId, "width": width});
   
@@ -40,7 +54,9 @@ class MAMapSize extends NSObject  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__');
+    final object = com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_fromXValue() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::get_fromXValue", {'refId': refId});
   
@@ -38,8 +51,9 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends com_
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_fromXValue(double fromXValue) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromXValue', {'refId': refId, "fromXValue": fromXValue});
   
@@ -64,8 +78,9 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends com_
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<void> setFromValue(double var1, double var3) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -242,4 +257,5 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends com_
     }
   }
   
+  //endregion
 }

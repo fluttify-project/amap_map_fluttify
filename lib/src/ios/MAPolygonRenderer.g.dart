@@ -11,20 +11,35 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAPolygonRenderer extends MAOverlayPathRenderer  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAPolygonRenderer> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAPolygonRenderer');
+    final object = MAPolygonRenderer()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<MAPolygon> get_polygon() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygonRenderer::get_polygon", {'refId': refId});
     kNativeObjectPool.add(MAPolygon()..refId = result..tag = 'amap_map_fluttify');
     return MAPolygon()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<MAPolygonRenderer> initWithPolygon(MAPolygon polygon) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -47,4 +62,5 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
     }
   }
   
+  //endregion
 }

@@ -11,15 +11,23 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
   
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<void> resumeMarker(android_graphics_Bitmap var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -215,4 +223,5 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
     }
   }
   
+  //endregion
 }

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  {
+  //region constants
   static final int INFINITE = -1;
   static final int RESTART = 1;
   static final int REVERSE = 2;
@@ -21,14 +22,28 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
   static final int ZORDER_NORMAL = 0;
   static final int ZORDER_TOP = 1;
   static final int ZORDER_BOTTOM = -1;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_animation_GLAnimation> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimation__');
+    final object = com_autonavi_amap_mapcore_animation_GLAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<com_autonavi_amap_mapcore_animation_GLAnimation> clone() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -981,4 +996,5 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
     }
   }
   
+  //endregion
 }

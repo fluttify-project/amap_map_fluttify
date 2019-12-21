@@ -11,18 +11,26 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
+  //region constants
   static final int TRACE_STATUS_PROCESSING = 1;
   static final int TRACE_STATUS_FINISH = 2;
   static final int TRACE_STATUS_FAILURE = 3;
   static final int TRACE_STATUS_PREPARE = 4;
+  //endregion
 
-  // generate getters
+  //region creators
   
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<void> add(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -243,4 +251,5 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

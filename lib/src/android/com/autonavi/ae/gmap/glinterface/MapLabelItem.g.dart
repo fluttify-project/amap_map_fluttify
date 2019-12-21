@@ -11,13 +11,26 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_glinterface_MapLabelItem extends java_lang_Object  {
+  //region constants
   static final int LABEL_TYPE_NORMAL = 0;
   static final int LABEL_TYPE_SCENIC = 1;
   static final int LABEL_TYPE_INDOOR = 2;
   static final int LABEL_TYPE_SEARCH_RESULT = 3;
   static final int LABEL_TYPE_OPENLAYER = 6;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_ae_gmap_glinterface_MapLabelItem> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glinterface_MapLabelItem__');
+    final object = com_autonavi_ae_gmap_glinterface_MapLabelItem()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<String> get_name() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_name", {'refId': refId});
   
@@ -132,8 +145,9 @@ class com_autonavi_ae_gmap_glinterface_MapLabelItem extends java_lang_Object  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_name(String name) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_name', {'refId': refId, "name": name});
   
@@ -248,7 +262,9 @@ class com_autonavi_ae_gmap_glinterface_MapLabelItem extends java_lang_Object  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

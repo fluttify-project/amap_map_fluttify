@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends com_autonavi_amap_mapcore_message_AbstractGestureMapMessage  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_message_ScaleGestureMapMessage> create__int__float__int__int(int var1, double var2, int var3, int var4) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final object = com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_scaleDelta() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::get_scaleDelta", {'refId': refId});
   
@@ -32,8 +45,9 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends com_auton
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_scaleDelta(double scaleDelta) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_scaleDelta', {'refId': refId, "scaleDelta": scaleDelta});
   
@@ -52,8 +66,9 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends com_auton
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   static Future<com_autonavi_amap_mapcore_message_ScaleGestureMapMessage> obtain(int var0, double var1, int var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -98,4 +113,5 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends com_auton
     }
   }
   
+  //endregion
 }

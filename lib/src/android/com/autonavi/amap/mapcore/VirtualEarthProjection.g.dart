@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object  {
+  //region constants
   static final int MAXZOOMLEVEL = 20;
   static final int PIXELS_PER_TILE = 256;
   static final double MIN_LATITUDE = -85.0511287798;
@@ -20,14 +21,28 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
   static final int EARTH_RADIUS_IN_METERS = 6378137;
   static final int TILE_SPLIT_LEVEL = 0;
   static final double EARTH_CIRCUMFERENCE_IN_METERS = 4.007501668557849E7;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_VirtualEarthProjection> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_VirtualEarthProjection__');
+    final object = com_autonavi_amap_mapcore_VirtualEarthProjection()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   static Future<double> clip(double var0, double var2, double var4) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -116,4 +131,5 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
     }
   }
   
+  //endregion
 }

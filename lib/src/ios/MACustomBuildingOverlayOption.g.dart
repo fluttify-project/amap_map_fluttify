@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MACustomBuildingOverlayOption extends MAMultiPoint  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MACustomBuildingOverlayOption> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACustomBuildingOverlayOption');
+    final object = MACustomBuildingOverlayOption()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_height() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayOption::get_height", {'refId': refId});
   
@@ -44,8 +57,9 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_height(double height) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_height', {'refId': refId, "height": height});
   
@@ -76,8 +90,9 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   static Future<MACustomBuildingOverlayOption> optionWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -122,4 +137,5 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
     }
   }
   
+  //endregion
 }

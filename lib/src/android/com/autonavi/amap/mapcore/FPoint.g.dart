@@ -11,15 +11,38 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_FPoint> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__');
+    final object = com_autonavi_amap_mapcore_FPoint()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  static Future<com_autonavi_amap_mapcore_FPoint> create__float__float(double var1, double var2) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__float__float', {"var1": var1, "var2": var2});
+    final object = com_autonavi_amap_mapcore_FPoint()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   static Future<com_autonavi_amap_mapcore_FPoint> obtain() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -64,4 +87,5 @@ class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
     }
   }
   
+  //endregion
 }

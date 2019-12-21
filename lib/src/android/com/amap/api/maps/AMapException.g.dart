@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_AMapException extends java_lang_Object  {
+  //region constants
   static final String ERROR_IO = "IO 操作异常 - IOException";
   static final String ERROR_SOCKET = "socket 连接异常 - SocketException";
   static final String ERROR_SOCKE_TIME_OUT = "socket 连接超时 - SocketTimeoutException";
@@ -28,14 +29,36 @@ class com_amap_api_maps_AMapException extends java_lang_Object  {
   static final String ERROR_ILLEGAL_VALUE = "非法坐标值";
   static final String AMAP_NOT_SUPPORT = "移动设备上未安装高德地图或高德地图版本较旧";
   static final String ILLEGAL_AMAP_ARGUMENT = "非法参数";
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_AMapException> create__String(String var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapException__String', {"var1": var1});
+    final object = com_amap_api_maps_AMapException()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  static Future<com_amap_api_maps_AMapException> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapException__');
+    final object = com_amap_api_maps_AMapException()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<String> getErrorMessage() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -58,4 +81,5 @@ class com_amap_api_maps_AMapException extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

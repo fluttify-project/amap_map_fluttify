@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_AMap extends java_lang_Object  {
+  //region constants
   static final int MAP_TYPE_NORMAL = 1;
   static final int MAP_TYPE_SATELLITE = 2;
   static final int MAP_TYPE_NIGHT = 3;
@@ -24,14 +25,21 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   static final String CHINESE = "zh_cn";
   static final String ENGLISH = "en";
   static final int MASK_LAYER_UNDER_LINE = 1;
+  //endregion
 
-  // generate getters
+  //region creators
   
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<com_amap_api_maps_model_CameraPosition> getCameraPosition() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -2660,4 +2668,5 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

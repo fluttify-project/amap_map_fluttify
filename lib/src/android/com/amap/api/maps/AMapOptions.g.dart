@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Parcelable {
+  //region constants
   static final int LOGO_POSITION_BOTTOM_LEFT = 0;
   static final int LOGO_POSITION_BOTTOM_CENTER = 1;
   static final int LOGO_POSITION_BOTTOM_RIGHT = 2;
@@ -19,14 +20,28 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   static final int LOGO_MARGIN_LEFT = 0;
   static final int LOGO_MARGIN_RIGHT = 1;
   static final int LOGO_MARGIN_BOTTOM = 2;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_AMapOptions> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapOptions__');
+    final object = com_amap_api_maps_AMapOptions()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<com_amap_api_maps_AMapOptions> logoPosition(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -511,4 +526,5 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     }
   }
   
+  //endregion
 }

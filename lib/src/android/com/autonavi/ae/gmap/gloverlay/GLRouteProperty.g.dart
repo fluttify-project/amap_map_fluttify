@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_gloverlay_GLRouteProperty extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_ae_gmap_gloverlay_GLRouteProperty> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLRouteProperty__');
+    final object = com_autonavi_ae_gmap_gloverlay_GLRouteProperty()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<com_autonavi_ae_gmap_gloverlay_GLRouteProperty_EAMapRouteTexture> get_euRouteTexture() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_euRouteTexture", {'refId': refId});
   
@@ -194,8 +207,9 @@ class com_autonavi_ae_gmap_gloverlay_GLRouteProperty extends java_lang_Object  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_euRouteTexture(com_autonavi_ae_gmap_gloverlay_GLRouteProperty_EAMapRouteTexture euRouteTexture) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_euRouteTexture', {'refId': refId, "euRouteTexture": euRouteTexture.index});
   
@@ -376,7 +390,9 @@ class com_autonavi_ae_gmap_gloverlay_GLRouteProperty extends java_lang_Object  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

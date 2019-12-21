@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MATileOverlay> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATileOverlay');
+    final object = MATileOverlay()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<CGSize> get_tileSize() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlay::get_tileSize", {'refId': refId});
     kNativeObjectPool.add(CGSize()..refId = result..tag = 'amap_map_fluttify');
@@ -56,8 +69,9 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_tileSize(CGSize tileSize) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_tileSize', {'refId': refId, "tileSize": tileSize.refId});
   
@@ -94,8 +108,9 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<NSObject> initWithURLTemplate(String URLTemplate) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -181,4 +196,5 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
     }
   }
   
+  //endregion
 }

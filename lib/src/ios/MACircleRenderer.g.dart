@@ -11,20 +11,35 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MACircleRenderer extends MAOverlayPathRenderer  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MACircleRenderer> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACircleRenderer');
+    final object = MACircleRenderer()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<MACircle> get_circle() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACircleRenderer::get_circle", {'refId': refId});
     kNativeObjectPool.add(MACircle()..refId = result..tag = 'amap_map_fluttify');
     return MACircle()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<MACircleRenderer> initWithCircle(MACircle circle) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -47,4 +62,5 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
     }
   }
   
+  //endregion
 }

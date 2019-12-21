@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__');
+    final object = com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   static Future<int> nativeCreateGLShaderManager() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -64,4 +79,5 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
     }
   }
   
+  //endregion
 }
