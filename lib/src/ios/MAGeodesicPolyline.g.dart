@@ -11,14 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAGeodesicPolyline extends MAPolyline  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAGeodesicPolyline> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAGeodesicPolyline');
+    final object = MAGeodesicPolyline()..refId = refId..tag = 'amap_map_fluttify';
   
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
   
+  //endregion
+
+  //region methods
+  
+  //endregion
 }

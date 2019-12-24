@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAArc extends MAShape with MAAnnotation, MAOverlay {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAArc> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAArc');
+    final object = MAArc()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<CLLocationCoordinate2D> get_startCoordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAArc::get_startCoordinate", {'refId': refId});
     kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
@@ -38,8 +51,9 @@ class MAArc extends MAShape with MAAnnotation, MAOverlay {
     return MAMapRect()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_startCoordinate(CLLocationCoordinate2D startCoordinate) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::set_startCoordinate', {'refId': refId, "startCoordinate": startCoordinate.refId});
   
@@ -58,8 +72,9 @@ class MAArc extends MAShape with MAAnnotation, MAOverlay {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   static Future<MAArc> arcWithStartCoordinatePassedCoordinateendCoordinate(CLLocationCoordinate2D startCoordinate, CLLocationCoordinate2D passedCoordinate, CLLocationCoordinate2D endCoordinate) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -82,4 +97,5 @@ class MAArc extends MAShape with MAAnnotation, MAOverlay {
     }
   }
   
+  //endregion
 }

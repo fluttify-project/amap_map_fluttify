@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAPolylineRenderer extends MAOverlayPathRenderer  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAPolylineRenderer> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAPolylineRenderer');
+    final object = MAPolylineRenderer()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<MAPolyline> get_polyline() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_polyline", {'refId': refId});
     kNativeObjectPool.add(MAPolyline()..refId = result..tag = 'amap_map_fluttify');
@@ -32,8 +45,9 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     return UIColor()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_is3DArrowLine(bool is3DArrowLine) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_is3DArrowLine', {'refId': refId, "is3DArrowLine": is3DArrowLine});
   
@@ -46,8 +60,9 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<MAPolylineRenderer> initWithPolyline(MAPolyline polyline) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -70,4 +85,5 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     }
   }
   
+  //endregion
 }

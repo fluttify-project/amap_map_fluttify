@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_animation_GLAnimationSet extends com_autonavi_amap_mapcore_animation_GLAnimation  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_animation_GLAnimationSet> create__boolean(bool var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimationSet__boolean', {"var1": var1});
+    final object = com_autonavi_amap_mapcore_animation_GLAnimationSet()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<void> addAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -86,4 +101,5 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends com_autonavi_am
     }
   }
   
+  //endregion
 }

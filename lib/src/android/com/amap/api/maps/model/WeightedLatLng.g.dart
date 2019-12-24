@@ -11,9 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_WeightedLatLng extends java_lang_Object  {
+  //region constants
   static final double DEFAULT_INTENSITY = 1.0;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_model_WeightedLatLng> create__com_amap_api_maps_model_LatLng__double(com_amap_api_maps_model_LatLng var1, double var2) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double', {"var1": var1.refId, "var2": var2});
+    final object = com_amap_api_maps_model_WeightedLatLng()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  static Future<com_amap_api_maps_model_WeightedLatLng> create__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng', {"var1": var1.refId});
+    final object = com_amap_api_maps_model_WeightedLatLng()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_intensity() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.WeightedLatLng::get_intensity", {'refId': refId});
   
@@ -26,10 +47,13 @@ class com_amap_api_maps_model_WeightedLatLng extends java_lang_Object  {
     return com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

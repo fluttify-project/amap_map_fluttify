@@ -11,20 +11,35 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
+  //region constants
   static final int TYPE_AMAP = 1;
   static final int TYPE_GPS = 2;
   static final int TYPE_BAIDU = 3;
   static final String MIN_GRASP_POINT_ERROR = "轨迹点太少或距离太近,轨迹纠偏失败";
   static final String LOCATE_TIMEOUT_ERROR = "定位超时";
   static final String TRACE_SUCCESS = "纠偏成功";
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_trace_LBSTraceClient> create__android_content_Context(android_content_Context var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_trace_LBSTraceClient__android_content_Context', {"var1": var1.refId});
+    final object = com_amap_api_trace_LBSTraceClient()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   static Future<com_amap_api_trace_LBSTraceClient> getInstance(android_content_Context var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -191,4 +206,5 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

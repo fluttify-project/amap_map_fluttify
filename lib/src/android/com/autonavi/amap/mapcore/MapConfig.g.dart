@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
+  //region constants
   static final int MSG_AUTH_FAILURE = 2;
   static final int MSG_CAMERAUPDATE_CHANGE = 10;
   static final int MSG_CAMERAUPDATE_FINISH = 11;
@@ -24,8 +25,20 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   static final int MSG_ACTION_ONMAPCLICK = 19;
   static final int MSG_ACTION_ONBASEPOICLICK = 20;
   static final int DEFAULT_RATIO = 1;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_MapConfig> create__boolean(bool var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_MapConfig__boolean', {"var1": var1});
+    final object = com_autonavi_amap_mapcore_MapConfig()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_maxZoomLevel() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_maxZoomLevel", {'refId': refId});
   
@@ -38,8 +51,9 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_maxZoomLevel(double maxZoomLevel) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::set_maxZoomLevel', {'refId': refId, "maxZoomLevel": maxZoomLevel});
   
@@ -52,8 +66,9 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<int> getAnchorY() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -1880,4 +1895,5 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

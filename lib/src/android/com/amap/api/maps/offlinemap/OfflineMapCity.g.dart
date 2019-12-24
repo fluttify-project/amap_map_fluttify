@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offlinemap_City  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_offlinemap_OfflineMapCity> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapCity__');
+    final object = com_amap_api_maps_offlinemap_OfflineMapCity()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<String> getUrl() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -240,4 +255,5 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offl
     }
   }
   
+  //endregion
 }

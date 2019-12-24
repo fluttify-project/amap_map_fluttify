@@ -11,18 +11,34 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues extends java_lang_Object  {
+  //region constants
   static final int ADGLANIMATOIN_TWO_INT = 2;
   static final int ADGLANIMATOIN_FOUR_INT = 2;
   static final int ADGLANIMATOIN_TWO_POWER_TEN = 1024;
   static final double ADGLANIMATOIN_OFFSET = 1.0E-4;
   static final double ADGLANIMATOIN_OFFSET1 = 1.0E-6;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__');
+    final object = com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = refId..tag = 'amap_map_fluttify';
   
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
   
+  //endregion
+
+  //region methods
+  
+  //endregion
 }

@@ -11,14 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_mapcore_util_id extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_mapcore_util_id> create__android_content_Context__boolean(android_content_Context var1, bool var2) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_mapcore_util_id__android_content_Context__boolean', {"var1": var1.refId, "var2": var2});
+    final object = com_amap_api_mapcore_util_id()..refId = refId..tag = 'amap_map_fluttify';
   
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
   
+  //endregion
+
+  //region methods
+  
+  //endregion
 }

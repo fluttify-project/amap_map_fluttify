@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_VisibleRegion extends java_lang_Object with android_os_Parcelable {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_model_VisibleRegion> create__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds(com_amap_api_maps_model_LatLng var1, com_amap_api_maps_model_LatLng var2, com_amap_api_maps_model_LatLng var3, com_amap_api_maps_model_LatLng var4, com_amap_api_maps_model_LatLngBounds var5) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds', {"var1": var1.refId, "var2": var2.refId, "var3": var3.refId, "var4": var4.refId, "var5": var5.refId});
+    final object = com_amap_api_maps_model_VisibleRegion()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<com_amap_api_maps_model_LatLng> get_nearLeft() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.VisibleRegion::get_nearLeft", {'refId': refId});
     kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
@@ -44,10 +57,13 @@ class com_amap_api_maps_model_VisibleRegion extends java_lang_Object with androi
     return com_amap_api_maps_model_LatLngBounds()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

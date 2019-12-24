@@ -11,29 +11,37 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
+  //region constants
   static final int FILL_MODE_FORWARDS = 0;
   static final int FILL_MODE_BACKWARDS = 1;
   static final int INFINITE = -1;
   static final int RESTART = 1;
   static final int REVERSE = 2;
+  //endregion
 
-  // generate getters
+  //region creators
+  
+  //endregion
+
+  //region getters
   Future<com_autonavi_amap_mapcore_animation_GLAnimation> get_glAnimation() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.animation.Animation::get_glAnimation", {'refId': refId});
     kNativeObjectPool.add(com_autonavi_amap_mapcore_animation_GLAnimation()..refId = result..tag = 'amap_map_fluttify');
     return com_autonavi_amap_mapcore_animation_GLAnimation()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_glAnimation(com_autonavi_amap_mapcore_animation_GLAnimation glAnimation) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::set_glAnimation', {'refId': refId, "glAnimation": glAnimation.refId});
   
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -238,4 +246,5 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

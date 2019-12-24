@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__');
+    final object = com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<int> get_stAreaColor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::get_stAreaColor", {'refId': refId});
   
@@ -50,8 +63,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr extends java
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_stAreaColor(int stAreaColor) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stAreaColor', {'refId': refId, "stAreaColor": stAreaColor});
   
@@ -88,7 +102,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr extends java
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

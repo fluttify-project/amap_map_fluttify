@@ -11,20 +11,35 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAArcRenderer extends MAOverlayPathRenderer  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAArcRenderer> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAArcRenderer');
+    final object = MAArcRenderer()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<MAArc> get_arc() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAArcRenderer::get_arc", {'refId': refId});
     kNativeObjectPool.add(MAArc()..refId = result..tag = 'amap_map_fluttify');
     return MAArc()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<MAArcRenderer> initWithArc(MAArc arc) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -47,4 +62,5 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
     }
   }
   
+  //endregion
 }

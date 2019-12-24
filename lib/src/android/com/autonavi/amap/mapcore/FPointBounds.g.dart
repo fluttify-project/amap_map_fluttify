@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_FPointBounds> create__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint(com_autonavi_amap_mapcore_FPoint var1, com_autonavi_amap_mapcore_FPoint var2) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint', {"var1": var1.refId, "var2": var2.refId});
+    final object = com_autonavi_amap_mapcore_FPointBounds()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<com_autonavi_amap_mapcore_FPoint> get_southwest() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.FPointBounds::get_southwest", {'refId': refId});
     kNativeObjectPool.add(com_autonavi_amap_mapcore_FPoint()..refId = result..tag = 'amap_map_fluttify');
@@ -26,11 +39,13 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
     return com_autonavi_amap_mapcore_FPoint()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   static Future<com_autonavi_amap_mapcore_FPointBounds_Builder> builder() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -119,4 +134,5 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

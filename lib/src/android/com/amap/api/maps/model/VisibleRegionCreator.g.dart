@@ -11,14 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_VisibleRegionCreator extends java_lang_Object  {
+  //region constants
   static final int CONTENT_DESCRIPTION = 0;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_model_VisibleRegionCreator> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_VisibleRegionCreator__');
+    final object = com_amap_api_maps_model_VisibleRegionCreator()..refId = refId..tag = 'amap_map_fluttify';
   
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
   
+  //endregion
+
+  //region methods
+  
+  //endregion
 }

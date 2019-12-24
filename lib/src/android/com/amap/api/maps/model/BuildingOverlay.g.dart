@@ -11,15 +11,23 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_BaseOverlay  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
   
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<void> setDefaultOptions(com_amap_api_maps_model_BuildingOverlayOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -240,4 +248,5 @@ class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_Ba
     }
   }
   
+  //endregion
 }

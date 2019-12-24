@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAIndoorInfo extends NSObject  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAIndoorInfo> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAIndoorInfo');
+    final object = MAIndoorInfo()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<String> get_cnName() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorInfo::get_cnName", {'refId': refId});
   
@@ -68,10 +81,13 @@ class MAIndoorInfo extends NSObject  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

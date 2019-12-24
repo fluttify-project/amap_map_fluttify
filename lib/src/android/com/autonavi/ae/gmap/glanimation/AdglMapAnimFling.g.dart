@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimFling> create__int__int__int(int var1, int var2, int var3) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int', {"var1": var1, "var2": var2, "var3": var3});
+    final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimFling()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<void> reset() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -64,4 +79,5 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends com_autonavi_ae_
     }
   }
   
+  //endregion
 }

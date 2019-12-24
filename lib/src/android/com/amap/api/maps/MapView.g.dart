@@ -11,15 +11,38 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_MapView> create__android_content_Context(android_content_Context var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context', {"var1": var1.refId});
+    final object = com_amap_api_maps_MapView()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  static Future<com_amap_api_maps_MapView> create__android_content_Context__com_amap_api_maps_AMapOptions(android_content_Context var1, com_amap_api_maps_AMapOptions var2) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions', {"var1": var1.refId, "var2": var2.refId});
+    final object = com_amap_api_maps_MapView()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<com_amap_api_maps_AMap> getMap({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -196,4 +219,5 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     }
   }
   
+  //endregion
 }

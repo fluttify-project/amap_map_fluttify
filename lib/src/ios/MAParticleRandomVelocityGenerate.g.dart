@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityGenerate {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAParticleRandomVelocityGenerate> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleRandomVelocityGenerate');
+    final object = MAParticleRandomVelocityGenerate()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<MAParticleRandomVelocityGenerate> initWithBoundaryValueX1Y1Z1X2Y2Z2(double x1, double y1, double z1, double x2, double y2, double z2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -42,4 +57,5 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
     }
   }
   
+  //endregion
 }

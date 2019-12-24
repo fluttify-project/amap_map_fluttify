@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAShape extends NSObject with MAAnnotation {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAShape> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAShape');
+    final object = MAShape()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<String> get_title() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_title", {'refId': refId});
   
@@ -26,8 +39,9 @@ class MAShape extends NSObject with MAAnnotation {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_title(String title) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAShape::set_title', {'refId': refId, "title": title});
   
@@ -40,7 +54,9 @@ class MAShape extends NSObject with MAAnnotation {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

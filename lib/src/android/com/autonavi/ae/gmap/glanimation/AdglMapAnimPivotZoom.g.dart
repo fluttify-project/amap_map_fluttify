@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom extends com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom> create__int(int var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int', {"var1": var1});
+    final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<void> reset() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -64,4 +79,5 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom extends com_autonavi
     }
   }
   
+  //endregion
 }

@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAGroundOverlay> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAGroundOverlay');
+    final object = MAGroundOverlay()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<UIImage> get_icon() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAGroundOverlay::get_icon", {'refId': refId});
     kNativeObjectPool.add(UIImage()..refId = result..tag = 'amap_map_fluttify');
@@ -38,16 +51,18 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
     return MACoordinateBounds()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_alpha(double alpha) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::set_alpha', {'refId': refId, "alpha": alpha});
   
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   static Future<MAGroundOverlay> groundOverlayWithBoundsIcon(MACoordinateBounds bounds, UIImage icon) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -136,4 +151,5 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
     }
   }
   
+  //endregion
 }

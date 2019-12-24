@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_particle_CurveSizeOverLife extends com_amap_api_maps_model_particle_SizeOverLife  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_model_particle_CurveSizeOverLife> create__float__float__float(double var1, double var2, double var3) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float', {"var1": var1, "var2": var2, "var3": var3});
+    final object = com_amap_api_maps_model_particle_CurveSizeOverLife()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<void> createNativeInstace() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -42,4 +57,5 @@ class com_amap_api_maps_model_particle_CurveSizeOverLife extends com_amap_api_ma
     }
   }
   
+  //endregion
 }

@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MATraceLocation extends NSObject  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MATraceLocation> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATraceLocation');
+    final object = MATraceLocation()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<CLLocationCoordinate2D> get_loc() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATraceLocation::get_loc", {'refId': refId});
     kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
@@ -38,8 +51,9 @@ class MATraceLocation extends NSObject  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_loc(CLLocationCoordinate2D loc) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceLocation::set_loc', {'refId': refId, "loc": loc.refId});
   
@@ -64,7 +78,9 @@ class MATraceLocation extends NSObject  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

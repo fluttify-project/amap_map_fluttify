@@ -11,15 +11,23 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener, com_autonavi_amap_mapcore_IAMapEngineCallback {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
   
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<void> receiveNetData(int var1, int var2, Uint8List var4, int var5) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -1929,4 +1937,5 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     }
   }
   
+  //endregion
 }

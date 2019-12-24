@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_animation_GLTransformation extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_animation_GLTransformation> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTransformation__');
+    final object = com_autonavi_amap_mapcore_animation_GLTransformation()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_alpha() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTransformation::get_alpha", {'refId': refId});
   
@@ -38,8 +51,9 @@ class com_autonavi_amap_mapcore_animation_GLTransformation extends java_lang_Obj
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_alpha(double alpha) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_alpha', {'refId': refId, "alpha": alpha});
   
@@ -64,8 +78,9 @@ class com_autonavi_amap_mapcore_animation_GLTransformation extends java_lang_Obj
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<void> clear() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -88,4 +103,5 @@ class com_autonavi_amap_mapcore_animation_GLTransformation extends java_lang_Obj
     }
   }
   
+  //endregion
 }

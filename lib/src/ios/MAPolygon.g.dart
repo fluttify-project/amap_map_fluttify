@@ -11,25 +11,40 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAPolygon> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAPolygon');
+    final object = MAPolygon()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<List<MAOverlay>> get_hollowShapes() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygon::get_hollowShapes", {'refId': refId});
     kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it..tag = 'amap_map_fluttify').toList());
     return (result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_hollowShapes(List<MAOverlay> hollowShapes) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::set_hollowShapes', {'refId': refId, "hollowShapes": hollowShapes.map((it) => it.refId).toList()});
   
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   static Future<MAPolygon> polygonWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -118,4 +133,5 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     }
   }
   
+  //endregion
 }

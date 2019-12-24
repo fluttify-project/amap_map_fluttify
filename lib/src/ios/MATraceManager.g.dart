@@ -11,12 +11,26 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MATraceManager extends NSObject  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MATraceManager> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATraceManager');
+    final object = MATraceManager()..refId = refId..tag = 'amap_map_fluttify';
   
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate setters
+  //region getters
+  
+  //endregion
+
+  //region setters
   Future<void> set_delegate(MATraceDelegate delegate) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::set_delegate', {'refId': refId, "delegate": delegate.refId});
   
@@ -51,8 +65,9 @@ class MATraceManager extends NSObject  {
       });
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   static Future<MATraceManager> sharedInstance() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -119,4 +134,5 @@ class MATraceManager extends NSObject  {
     }
   }
   
+  //endregion
 }

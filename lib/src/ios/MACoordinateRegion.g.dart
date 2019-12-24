@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MACoordinateRegion extends NSObject  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MACoordinateRegion> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACoordinateRegion');
+    final object = MACoordinateRegion()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<CLLocationCoordinate2D> get_center() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateRegion::get_center", {'refId': refId});
     kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
@@ -26,8 +39,9 @@ class MACoordinateRegion extends NSObject  {
     return MACoordinateSpan()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_center(CLLocationCoordinate2D center) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegion::set_center', {'refId': refId, "center": center.refId});
   
@@ -40,7 +54,9 @@ class MACoordinateRegion extends NSObject  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

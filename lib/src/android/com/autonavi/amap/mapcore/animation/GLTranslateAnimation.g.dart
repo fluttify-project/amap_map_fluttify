@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_animation_GLTranslateAnimation extends com_autonavi_amap_mapcore_animation_GLAnimation  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_animation_GLTranslateAnimation> create__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng', {"var1": var1.refId});
+    final object = com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_mFromXDelta() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::get_mFromXDelta", {'refId': refId});
   
@@ -50,8 +63,9 @@ class com_autonavi_amap_mapcore_animation_GLTranslateAnimation extends com_auton
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_mFromXDelta(double mFromXDelta) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mFromXDelta', {'refId': refId, "mFromXDelta": mFromXDelta});
   
@@ -88,8 +102,9 @@ class com_autonavi_amap_mapcore_animation_GLTranslateAnimation extends com_auton
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<void> setFromPoint(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -112,4 +127,5 @@ class com_autonavi_amap_mapcore_animation_GLTranslateAnimation extends com_auton
     }
   }
   
+  //endregion
 }

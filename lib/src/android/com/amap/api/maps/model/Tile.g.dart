@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_Tile extends java_lang_Object with android_os_Parcelable {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_model_Tile> create__int__int__byteArray(int var1, int var2, Uint8List var3) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_Tile__int__int__byteArray', {"var1": var1, "var2": var2, "var3": var3});
+    final object = com_amap_api_maps_model_Tile()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<int> get_width() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.Tile::get_width", {'refId': refId});
   
@@ -32,11 +45,13 @@ class com_amap_api_maps_model_Tile extends java_lang_Object with android_os_Parc
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   static Future<com_amap_api_maps_model_Tile> obtain(int var0, int var1, Uint8List var2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -59,4 +74,5 @@ class com_amap_api_maps_model_Tile extends java_lang_Object with android_os_Parc
     }
   }
   
+  //endregion
 }

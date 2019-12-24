@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAOverlayRenderer extends NSObject  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAOverlayRenderer> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAOverlayRenderer');
+    final object = MAOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<MAOverlay> get_overlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_overlay", {'refId': refId});
     kNativeObjectPool.add(MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify');
@@ -50,8 +63,9 @@ class MAOverlayRenderer extends NSObject  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_glPoints(List<CGPoint> glPoints) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::set_glPoints', {'refId': refId, "glPoints": glPoints.map((it) => it.refId).toList()});
   
@@ -76,8 +90,9 @@ class MAOverlayRenderer extends NSObject  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<MAOverlayRenderer> initWithOverlay(MAOverlay overlay) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -386,4 +401,5 @@ class MAOverlayRenderer extends NSObject  {
     }
   }
   
+  //endregion
 }

@@ -29,13 +29,11 @@ class AmapService {
     return platform(
       android: (pool) async {
         // 点1
-        final _location1 =
-            await createcom_amap_api_maps_model_LatLng__double__double(
-                point1.latitude, point1.longitude);
+        final _location1 = await com_amap_api_maps_model_LatLng
+            .create__double__double(point1.latitude, point1.longitude);
         // 点2
-        final _location2 =
-            await createcom_amap_api_maps_model_LatLng__double__double(
-                point2.latitude, point2.longitude);
+        final _location2 = await com_amap_api_maps_model_LatLng
+            .create__double__double(point2.latitude, point2.longitude);
 
         // 计算结果
         final result = await com_amap_api_maps_AMapUtils.calculateLineDistance(
@@ -77,14 +75,12 @@ class AmapService {
         final context = await android_app_Activity.get();
 
         // 待转换坐标
-        final targetCoord =
-            await createcom_amap_api_maps_model_LatLng__double__double(
-                coord.latitude, coord.longitude);
+        final targetCoord = await com_amap_api_maps_model_LatLng
+            .create__double__double(coord.latitude, coord.longitude);
 
         // 转换器
-        final converter =
-            await createcom_amap_api_maps_CoordinateConverter__android_content_Context(
-                context);
+        final converter = await com_amap_api_maps_CoordinateConverter
+            .create__android_content_Context(context);
 
         switch (fromType) {
           case CoordType.GPS:
@@ -179,12 +175,11 @@ class AmapService {
     return platform(
       android: (pool) async {
         // 点1
-        final _location1 =
-            await createcom_amap_api_maps_model_LatLng__double__double(
-                leftTop.latitude, leftTop.longitude);
+        final _location1 = await com_amap_api_maps_model_LatLng
+            .create__double__double(leftTop.latitude, leftTop.longitude);
         // 点2
         final _location2 =
-            await createcom_amap_api_maps_model_LatLng__double__double(
+            await com_amap_api_maps_model_LatLng.create__double__double(
                 rightBottom.latitude, rightBottom.longitude);
 
         // 计算结果

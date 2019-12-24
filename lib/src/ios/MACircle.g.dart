@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MACircle extends MAShape with MAAnnotation, MAOverlay {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MACircle> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACircle');
+    final object = MACircle()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<List<MAOverlay>> get_hollowShapes() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACircle::get_hollowShapes", {'refId': refId});
     kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it..tag = 'amap_map_fluttify').toList());
@@ -38,8 +51,9 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
     return MAMapRect()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_hollowShapes(List<MAOverlay> hollowShapes) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_hollowShapes', {'refId': refId, "hollowShapes": hollowShapes.map((it) => it.refId).toList()});
   
@@ -58,8 +72,9 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   static Future<MACircle> circleWithCenterCoordinateRadius(CLLocationCoordinate2D coord, double radius) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -126,4 +141,5 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
     }
   }
   
+  //endregion
 }

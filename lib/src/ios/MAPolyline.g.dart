@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAPolyline> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAPolyline');
+    final object = MAPolyline()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   static Future<MAPolyline> polylineWithPointsCount(List<MAMapPoint> points, int count) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -108,4 +123,5 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
     }
   }
   
+  //endregion
 }

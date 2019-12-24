@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAMapView extends UIView  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAMapView> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMapView');
+    final object = MAMapView()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<MAMapType> get_mapType({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_mapType", {'refId': refId});
   
@@ -350,8 +363,9 @@ class MAMapView extends UIView  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_delegate(MAMapViewDelegate delegate, {bool viewChannel = true}) async {
     await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_delegate', {'refId': refId, "delegate": delegate.refId});
   
@@ -956,8 +970,9 @@ class MAMapView extends UIView  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<void> setRegionAnimated(MACoordinateRegion region, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -2297,4 +2312,5 @@ class MAMapView extends UIView  {
     }
   }
   
+  //endregion
 }

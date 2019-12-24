@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
+  //region constants
   static final String ROOTPATH = "/amap/";
   static final String ROOT_DATA_PATH_OLD_NAME = "data";
   static final String ROOT_DATA_PATH_NAME = "data_v6";
@@ -18,14 +19,28 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
   static final String RESZIPNAME = "res.zip";
   static final String SO_FILENAME = "AMapSDK_MAP_v6_9_2";
   static final String SO_FILENAME_NAVI = "AMapSDK_NAVI_v6_5_0";
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_AeUtil> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil__');
+    final object = com_autonavi_amap_mapcore_AeUtil()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   static Future<void> loadLib(android_content_Context var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -92,4 +107,5 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

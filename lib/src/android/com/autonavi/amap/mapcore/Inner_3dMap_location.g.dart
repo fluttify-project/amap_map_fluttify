@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Location  {
+  //region constants
   static final int LOCATION_SUCCESS = 0;
   static final int ERROR_CODE_INVALID_PARAMETER = 1;
   static final int ERROR_CODE_FAILURE_WIFI_INFO = 2;
@@ -38,14 +39,36 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   static final int GPS_ACCURACY_GOOD = 1;
   static final int GPS_ACCURACY_BAD = 0;
   static final int GPS_ACCURACY_UNKNOWN = -1;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_Inner_3dMap_location> create__String(String var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__String', {"var1": var1});
+    final object = com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  static Future<com_autonavi_amap_mapcore_Inner_3dMap_location> create__android_location_Location(android_location_Location var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location', {"var1": var1.refId});
+    final object = com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<int> getGpsAccuracyStatus() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -1234,4 +1257,5 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     }
   }
   
+  //endregion
 }

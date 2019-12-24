@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends com_autonavi_amap_mapcore_message_AbstractGestureMapMessage  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_message_MoveGestureMapMessage> create__int__float__float(int var1, double var2, double var3) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float', {"var1": var1, "var2": var2, "var3": var3});
+    final object = com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_touchDeltaX() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::get_touchDeltaX", {'refId': refId});
   
@@ -26,8 +39,9 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends com_autona
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_touchDeltaX(double touchDeltaX) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaX', {'refId': refId, "touchDeltaX": touchDeltaX});
   
@@ -40,8 +54,9 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends com_autona
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   static Future<com_autonavi_amap_mapcore_message_MoveGestureMapMessage> obtain(int var0, double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -86,4 +101,5 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends com_autona
     }
   }
   
+  //endregion
 }

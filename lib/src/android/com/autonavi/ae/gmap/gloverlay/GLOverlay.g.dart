@@ -11,15 +11,23 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
   
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<int> getNativeInstatnce() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -482,4 +490,5 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

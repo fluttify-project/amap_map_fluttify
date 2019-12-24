@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAAnnotationView extends UIView  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAAnnotationView> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAAnnotationView');
+    final object = MAAnnotationView()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<String> get_reuseIdentifier({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAAnnotationView::get_reuseIdentifier", {'refId': refId});
   
@@ -104,8 +117,9 @@ class MAAnnotationView extends UIView  {
     return MAAnnotationViewDragState.values[result];
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_zIndex(int zIndex, {bool viewChannel = true}) async {
     await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_zIndex', {'refId': refId, "zIndex": zIndex});
   
@@ -190,8 +204,9 @@ class MAAnnotationView extends UIView  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<void> setSelectedAnimated(bool selected, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -280,4 +295,5 @@ class MAAnnotationView extends UIView  {
     }
   }
   
+  //endregion
 }

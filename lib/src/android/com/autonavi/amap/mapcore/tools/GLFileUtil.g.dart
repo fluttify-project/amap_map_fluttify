@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_tools_GLFileUtil> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLFileUtil__');
+    final object = com_autonavi_amap_mapcore_tools_GLFileUtil()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   static Future<void> writeDatasToFile(String var0, Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -64,4 +79,5 @@ class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

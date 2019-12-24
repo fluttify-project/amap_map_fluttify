@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__');
+    final object = com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<String> get_requestUrl() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_requestUrl", {'refId': refId});
   
@@ -50,8 +63,9 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam extends j
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_requestUrl(String requestUrl) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_requestUrl', {'refId': refId, "requestUrl": requestUrl});
   
@@ -88,7 +102,9 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam extends j
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

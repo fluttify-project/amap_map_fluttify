@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_animation_GLAlphaAnimation extends com_autonavi_amap_mapcore_animation_GLAnimation  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_animation_GLAlphaAnimation> create__float__float(double var1, double var2) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float', {"var1": var1, "var2": var2});
+    final object = com_autonavi_amap_mapcore_animation_GLAlphaAnimation()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_mFromAlpha() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::get_mFromAlpha", {'refId': refId});
   
@@ -32,8 +45,9 @@ class com_autonavi_amap_mapcore_animation_GLAlphaAnimation extends com_autonavi_
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_mFromAlpha(double mFromAlpha) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mFromAlpha', {'refId': refId, "mFromAlpha": mFromAlpha});
   
@@ -52,7 +66,9 @@ class com_autonavi_amap_mapcore_animation_GLAlphaAnimation extends com_autonavi_
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

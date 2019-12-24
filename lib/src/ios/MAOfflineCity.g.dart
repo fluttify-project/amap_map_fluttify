@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAOfflineCity extends MAOfflineItem  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAOfflineCity> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAOfflineCity');
+    final object = MAOfflineCity()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<String> get_cityCode() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_cityCode", {'refId': refId});
   
@@ -38,10 +51,13 @@ class MAOfflineCity extends MAOfflineItem  {
     return MAOfflineCityStatus.values[result];
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

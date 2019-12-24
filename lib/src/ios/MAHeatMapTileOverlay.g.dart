@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAHeatMapTileOverlay extends MATileOverlay  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAHeatMapTileOverlay> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAHeatMapTileOverlay');
+    final object = MAHeatMapTileOverlay()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<List<MAHeatMapNode>> get_data() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_data", {'refId': refId});
     kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAHeatMapNode()..refId = it..tag = 'amap_map_fluttify').toList());
@@ -44,8 +57,9 @@ class MAHeatMapTileOverlay extends MATileOverlay  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_data(List<MAHeatMapNode> data) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapTileOverlay::set_data', {'refId': refId, "data": data.map((it) => it.refId).toList()});
   
@@ -76,7 +90,9 @@ class MAHeatMapTileOverlay extends MATileOverlay  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

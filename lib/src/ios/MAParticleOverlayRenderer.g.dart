@@ -11,20 +11,35 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAParticleOverlayRenderer extends MAOverlayRenderer  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAParticleOverlayRenderer> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleOverlayRenderer');
+    final object = MAParticleOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<MAParticleOverlay> get_particleOverlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayRenderer::get_particleOverlay", {'refId': refId});
     kNativeObjectPool.add(MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify');
     return MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<MAParticleOverlayRenderer> initWithParticleOverlay(MAParticleOverlay particleOverlay) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -47,4 +62,5 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
     }
   }
   
+  //endregion
 }

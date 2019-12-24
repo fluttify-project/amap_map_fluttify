@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAMultiPointOverlayRenderer> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMultiPointOverlayRenderer');
+    final object = MAMultiPointOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<UIImage> get_icon() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlayRenderer::get_icon", {'refId': refId});
     kNativeObjectPool.add(UIImage()..refId = result..tag = 'amap_map_fluttify');
@@ -38,8 +51,9 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
     return MAMultiPointOverlay()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_delegate(MAMultiPointOverlayRendererDelegate delegate) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::set_delegate', {'refId': refId, "delegate": delegate.refId});
   
@@ -83,8 +97,9 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<MAMultiPointOverlayRenderer> initWithMultiPointOverlay(MAMultiPointOverlay multiPointOverlay) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -107,4 +122,5 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
     }
   }
   
+  //endregion
 }

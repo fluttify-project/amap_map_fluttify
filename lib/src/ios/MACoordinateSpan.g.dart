@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MACoordinateSpan extends NSObject  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MACoordinateSpan> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACoordinateSpan');
+    final object = MACoordinateSpan()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_latitudeDelta() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateSpan::get_latitudeDelta", {'refId': refId});
   
@@ -26,8 +39,9 @@ class MACoordinateSpan extends NSObject  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_latitudeDelta(double latitudeDelta) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateSpan::set_latitudeDelta', {'refId': refId, "latitudeDelta": latitudeDelta});
   
@@ -40,7 +54,9 @@ class MACoordinateSpan extends NSObject  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

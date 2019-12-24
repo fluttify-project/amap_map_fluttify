@@ -11,25 +11,33 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  
+  //endregion
+
+  //region getters
   Future<bool> get_isFinish() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader::get_isFinish", {'refId': refId});
   
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_isFinish(bool isFinish) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::set_isFinish', {'refId': refId, "isFinish": isFinish});
   
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<void> doRequest() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -96,4 +104,5 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

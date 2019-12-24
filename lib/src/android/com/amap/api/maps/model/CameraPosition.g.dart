@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_CameraPosition extends java_lang_Object with android_os_Parcelable {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_model_CameraPosition> create__com_amap_api_maps_model_LatLng__float__float__float(com_amap_api_maps_model_LatLng var1, double var2, double var3, double var4) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float', {"var1": var1.refId, "var2": var2, "var3": var3, "var4": var4});
+    final object = com_amap_api_maps_model_CameraPosition()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<com_amap_api_maps_model_LatLng> get_target() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.CameraPosition::get_target", {'refId': refId});
     kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
@@ -44,11 +57,13 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   static Future<com_amap_api_maps_model_CameraPosition> fromLatLngZoom(com_amap_api_maps_model_LatLng var0, double var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -115,4 +130,5 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
     }
   }
   
+  //endregion
 }

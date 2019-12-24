@@ -371,9 +371,8 @@ class Polygon {
   Future<bool> contains(LatLng target) {
     return platform(
       android: (_) async {
-        final latLng =
-            await createcom_amap_api_maps_model_LatLng__double__double(
-                target.latitude, target.longitude);
+        final latLng = await com_amap_api_maps_model_LatLng
+            .create__double__double(target.latitude, target.longitude);
         return _androidModel.contains(latLng);
       },
       ios: (_) async {

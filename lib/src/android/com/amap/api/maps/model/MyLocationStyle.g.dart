@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with android_os_Parcelable {
+  //region constants
   static final String ERROR_CODE = "errorCode";
   static final String ERROR_INFO = "errorInfo";
   static final String LOCATION_TYPE = "locationType";
@@ -22,14 +23,28 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   static final int LOCATION_TYPE_LOCATION_ROTATE_NO_CENTER = 5;
   static final int LOCATION_TYPE_FOLLOW_NO_CENTER = 6;
   static final int LOCATION_TYPE_MAP_ROTATE_NO_CENTER = 7;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_model_MyLocationStyle> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle__');
+    final object = com_amap_api_maps_model_MyLocationStyle()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<com_amap_api_maps_model_MyLocationStyle> myLocationIcon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -404,4 +419,5 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     }
   }
   
+  //endregion
 }

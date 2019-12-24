@@ -11,25 +11,40 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAAnimatedAnnotation> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAAnimatedAnnotation');
+    final object = MAAnimatedAnnotation()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_movingDirection() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnimatedAnnotation::get_movingDirection", {'refId': refId});
   
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_movingDirection(double movingDirection) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::set_movingDirection', {'refId': refId, "movingDirection": movingDirection});
   
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<MAAnnotationMoveAnimation> addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback(List<CLLocationCoordinate2D> coordinates, int count, double duration, String name, void completeCallback(bool isFinished)) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -143,4 +158,5 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     }
   }
   
+  //endregion
 }

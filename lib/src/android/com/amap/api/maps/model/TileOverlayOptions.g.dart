@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with android_os_Parcelable {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_model_TileOverlayOptions> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions__');
+    final object = com_amap_api_maps_model_TileOverlayOptions()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<com_amap_api_maps_model_TileOverlayOptions> tileProvider(com_amap_api_maps_model_TileProvider var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -350,4 +365,5 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     }
   }
   
+  //endregion
 }

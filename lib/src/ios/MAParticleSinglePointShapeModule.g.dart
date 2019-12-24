@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModule {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAParticleSinglePointShapeModule> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleSinglePointShapeModule');
+    final object = MAParticleSinglePointShapeModule()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<MAParticleSinglePointShapeModule> initWithShapeXYZuseRatio(double x, double y, double z, bool isUseRatio) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -42,4 +57,5 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
     }
   }
   
+  //endregion
 }

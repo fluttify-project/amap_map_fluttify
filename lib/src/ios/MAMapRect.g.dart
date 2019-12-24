@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAMapRect extends NSObject  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAMapRect> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMapRect');
+    final object = MAMapRect()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<MAMapPoint> get_origin() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapRect::get_origin", {'refId': refId});
     kNativeObjectPool.add(MAMapPoint()..refId = result..tag = 'amap_map_fluttify');
@@ -26,8 +39,9 @@ class MAMapRect extends NSObject  {
     return MAMapSize()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_origin(MAMapPoint origin) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRect::set_origin', {'refId': refId, "origin": origin.refId});
   
@@ -40,7 +54,9 @@ class MAMapRect extends NSObject  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

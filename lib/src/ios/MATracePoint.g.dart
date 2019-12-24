@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MATracePoint extends NSObject with NSCoding {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MATracePoint> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATracePoint');
+    final object = MATracePoint()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_latitude() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATracePoint::get_latitude", {'refId': refId});
   
@@ -26,8 +39,9 @@ class MATracePoint extends NSObject with NSCoding {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_latitude(double latitude) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATracePoint::set_latitude', {'refId': refId, "latitude": latitude});
   
@@ -40,7 +54,9 @@ class MATracePoint extends NSObject with NSCoding {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

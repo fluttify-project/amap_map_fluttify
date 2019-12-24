@@ -11,20 +11,35 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAMultiPointOverlay> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMultiPointOverlay');
+    final object = MAMultiPointOverlay()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<List<MAMultiPointItem>> get_items() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlay::get_items", {'refId': refId});
     kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAMultiPointItem()..refId = it..tag = 'amap_map_fluttify').toList());
     return (result as List).cast<int>().map((it) => MAMultiPointItem()..refId = it..tag = 'amap_map_fluttify').toList();
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<MAMultiPointOverlay> initWithMultiPointItems(List<MAMultiPointItem> items) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -47,4 +62,5 @@ class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
     }
   }
   
+  //endregion
 }

@@ -11,15 +11,30 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAAnnotationMoveAnimation extends NSObject  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAAnnotationMoveAnimation> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAAnnotationMoveAnimation');
+    final object = MAAnnotationMoveAnimation()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<String> name() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -196,4 +211,5 @@ class MAAnnotationMoveAnimation extends NSObject  {
     }
   }
   
+  //endregion
 }

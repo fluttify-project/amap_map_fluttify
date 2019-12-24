@@ -11,20 +11,35 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MATileOverlayRenderer extends MAOverlayRenderer  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MATileOverlayRenderer> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATileOverlayRenderer');
+    final object = MATileOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<MATileOverlay> get_tileOverlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayRenderer::get_tileOverlay", {'refId': refId});
     kNativeObjectPool.add(MATileOverlay()..refId = result..tag = 'amap_map_fluttify');
     return MATileOverlay()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<MATileOverlayRenderer> initWithTileOverlay(MATileOverlay tileOverlay) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -69,4 +84,5 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
     }
   }
   
+  //endregion
 }

@@ -11,15 +11,38 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_IPoint> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__');
+    final object = com_autonavi_amap_mapcore_IPoint()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  static Future<com_autonavi_amap_mapcore_IPoint> create__int__int(int var1, int var2) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__int__int', {"var1": var1, "var2": var2});
+    final object = com_autonavi_amap_mapcore_IPoint()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   static Future<com_autonavi_amap_mapcore_IPoint> obtain() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -64,4 +87,5 @@ class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
     }
   }
   
+  //endregion
 }

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_Object  {
+  //region constants
   static final int INVALIDE_VALUE = -9999;
   static final int INTERPOLATOR_LINEAR = 0;
   static final int INTERPOLATOR_ACCELERATE = 1;
@@ -20,14 +21,21 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
   static final int INTERPOLATOR_OVERSHOOT = 5;
   static final int INTERPOLATOR_DOUBLE_RAISE = 6;
   static final int DEFAULT_DURATION = 250;
+  //endregion
 
-  // generate getters
+  //region creators
   
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<bool> isOver() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -72,4 +80,5 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
     }
   }
   
+  //endregion
 }

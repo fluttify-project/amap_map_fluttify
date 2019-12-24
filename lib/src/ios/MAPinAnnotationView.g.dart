@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAPinAnnotationView extends MAAnnotationView  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAPinAnnotationView> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAPinAnnotationView');
+    final object = MAPinAnnotationView()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<MAPinAnnotationColor> get_pinColor() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPinAnnotationView::get_pinColor", {'refId': refId});
   
@@ -26,8 +39,9 @@ class MAPinAnnotationView extends MAAnnotationView  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_pinColor(MAPinAnnotationColor pinColor) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPinAnnotationView::set_pinColor', {'refId': refId, "pinColor": pinColor.index});
   
@@ -40,7 +54,9 @@ class MAPinAnnotationView extends MAAnnotationView  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAPointAnnotation extends MAShape  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAPointAnnotation> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAPointAnnotation');
+    final object = MAPointAnnotation()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPointAnnotation::get_coordinate", {'refId': refId});
     kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
@@ -32,8 +45,9 @@ class MAPointAnnotation extends MAShape  {
     return CGPoint()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_coordinate(CLLocationCoordinate2D coordinate) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_coordinate', {'refId': refId, "coordinate": coordinate.refId});
   
@@ -52,7 +66,9 @@ class MAPointAnnotation extends MAShape  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

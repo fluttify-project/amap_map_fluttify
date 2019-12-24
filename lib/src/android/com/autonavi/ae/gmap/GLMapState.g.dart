@@ -11,15 +11,38 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_ae_gmap_GLMapState> create__int__long(int var1, int var2) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__int__long', {"var1": var1, "var2": var2});
+    final object = com_autonavi_ae_gmap_GLMapState()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  static Future<com_autonavi_ae_gmap_GLMapState> create__long__long(int var1, int var3) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__long__long', {"var1": var1, "var3": var3});
+    final object = com_autonavi_ae_gmap_GLMapState()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   static Future<void> lonlat2Geo(double var0, double var2, com_autonavi_amap_mapcore_IPoint var4) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -922,4 +945,5 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

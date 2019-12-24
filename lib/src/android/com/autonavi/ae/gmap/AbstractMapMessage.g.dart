@@ -11,18 +11,26 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_AbstractMapMessage extends java_lang_Object  {
+  //region constants
   static final int GESTURE_STATE_BEGIN = 100;
   static final int GESTURE_STATE_CHANGE = 101;
   static final int GESTURE_STATE_END = 102;
   static final int MSGTYPE_NAVIOVERLAY_STATE = 13;
+  //endregion
 
-  // generate getters
+  //region creators
   
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<int> getType() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -45,4 +53,5 @@ class com_autonavi_ae_gmap_AbstractMapMessage extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

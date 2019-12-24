@@ -11,25 +11,40 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends com_autonavi_amap_mapcore_message_AbstractGestureMapMessage  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_autonavi_amap_mapcore_message_HoverGestureMapMessage> create__int__float(int var1, double var2) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float', {"var1": var1, "var2": var2});
+    final object = com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<double> get_angleDelta() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::get_angleDelta", {'refId': refId});
   
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_angleDelta(double angleDelta) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::set_angleDelta', {'refId': refId, "angleDelta": angleDelta});
   
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   static Future<com_autonavi_amap_mapcore_message_HoverGestureMapMessage> obtain(int var0, double var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -74,4 +89,5 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends com_auton
     }
   }
   
+  //endregion
 }

@@ -11,16 +11,31 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
+  //region constants
   static final int HTTP = 1;
   static final int HTTPS = 2;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_MapsInitializer> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_MapsInitializer__');
+    final object = com_amap_api_maps_MapsInitializer()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   static Future<void> initialize(android_content_Context var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -351,4 +366,5 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MAMapCustomStyleOptions extends NSObject  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MAMapCustomStyleOptions> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMapCustomStyleOptions');
+    final object = MAMapCustomStyleOptions()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<NSData> get_styleData() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleData", {'refId': refId});
     kNativeObjectPool.add(NSData()..refId = result..tag = 'amap_map_fluttify');
@@ -38,8 +51,9 @@ class MAMapCustomStyleOptions extends NSObject  {
     return NSData()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_styleData(NSData styleData) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleData', {'refId': refId, "styleData": styleData.refId});
   
@@ -64,7 +78,9 @@ class MAMapCustomStyleOptions extends NSObject  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

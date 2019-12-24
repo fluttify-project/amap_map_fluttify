@@ -11,9 +11,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class MATileOverlayPath extends NSObject  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<MATileOverlayPath> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATileOverlayPath');
+    final object = MATileOverlayPath()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
+
+  //region getters
   Future<int> get_x() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATileOverlayPath::get_x", {'refId': refId});
   
@@ -38,8 +51,9 @@ class MATileOverlayPath extends NSObject  {
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_x(int x) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_x', {'refId': refId, "x": x});
   
@@ -64,7 +78,9 @@ class MATileOverlayPath extends NSObject  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   
+  //endregion
 }

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
+  //region constants
   static final int NORMAL_TICK_COUNT = 2;
   static final int ANIMATION_TICK_COUNT = 10;
   static final int LONG_TICK_COUNT = 6;
@@ -19,16 +20,22 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   static final int RENDER_FPS_NORMAL = 15;
   static final int RENDER_FPS_ANIMATION = 30;
   static final int RENDER_FPS_GESTURE_ACTION = 40;
+  //endregion
 
-  // generate getters
+  //region creators
+  
+  //endregion
+
+  //region getters
   Future<bool> get_mSurfacedestoryed() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_mSurfacedestoryed", {'refId': refId});
   
     return result;
   }
   
+  //endregion
 
-  // generate setters
+  //region setters
   Future<void> set_mGLMapView(com_autonavi_amap_mapcore_interfaces_IAMap mGLMapView) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapRender::set_mGLMapView', {'refId': refId, "mGLMapView": mGLMapView.refId});
   
@@ -942,8 +949,9 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
   
   }
   
+  //endregion
 
-  // generate methods
+  //region methods
   Future<void> setTrafficMode(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -1142,4 +1150,5 @@ class com_autonavi_ae_gmap_GLMapRender extends java_lang_Object  {
     }
   }
   
+  //endregion
 }

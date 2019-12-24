@@ -11,15 +11,38 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_model_particle_SinglePointParticleShape extends com_amap_api_maps_model_particle_ParticleShapeModule  {
+  //region constants
   
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_model_particle_SinglePointParticleShape> create__float__float__float__boolean(double var1, double var2, double var3, bool var4) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final object = com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = refId..tag = 'amap_map_fluttify';
   
-
-  // generate setters
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
+  static Future<com_amap_api_maps_model_particle_SinglePointParticleShape> create__float__float__float(double var1, double var2, double var3) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float', {"var1": var1, "var2": var2, "var3": var3});
+    final object = com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate methods
+  //region getters
+  
+  //endregion
+
+  //region setters
+  
+  //endregion
+
+  //region methods
   Future<void> createNativeInstace() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -42,4 +65,5 @@ class com_amap_api_maps_model_particle_SinglePointParticleShape extends com_amap
     }
   }
   
+  //endregion
 }

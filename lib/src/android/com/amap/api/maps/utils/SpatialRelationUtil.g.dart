@@ -11,17 +11,33 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 class com_amap_api_maps_utils_SpatialRelationUtil extends java_lang_Object  {
+  //region constants
   static final int MIN_POLYLINE_POINT_SIZE = 2;
   static final int A_HALF_CIRCLE_DEGREE = 180;
   static final int A_CIRCLE_DEGREE = 360;
   static final int MIN_OFFSET_DEGREE = 50;
+  //endregion
 
-  // generate getters
+  //region creators
+  static Future<com_amap_api_maps_utils_SpatialRelationUtil> create() async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_utils_SpatialRelationUtil__');
+    final object = com_amap_api_maps_utils_SpatialRelationUtil()..refId = refId..tag = 'amap_map_fluttify';
   
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  //endregion
 
-  // generate setters
+  //region getters
   
+  //endregion
 
-  // generate methods
+  //region setters
   
+  //endregion
+
+  //region methods
+  
+  //endregion
 }
