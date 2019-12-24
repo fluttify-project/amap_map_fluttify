@@ -1673,6 +1673,48 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 限制地图的显示范围
+  ///
+  /// [southWest]西南角, [northEast]东北角
+  Future<void> setMapRegionLimits(LatLng southWest, LatLng northEast) async {
+    await platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        final southWestPoint = await com_amap_api_maps_model_LatLng
+            .create__double__double(southWest.latitude, southWest.longitude);
+        final northEastPoint = await com_amap_api_maps_model_LatLng
+            .create__double__double(northEast.latitude, northEast.longitude);
+
+        final latLngBounds = await com_amap_api_maps_model_LatLngBounds
+            .create__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(
+                southWestPoint, northEastPoint);
+
+        await map.setMapStatusLimits(latLngBounds);
+
+        pool
+          ..add(map)
+          ..add(southWestPoint)
+          ..add(northEastPoint)
+          ..add(latLngBounds);
+      },
+      ios: (pool) async {
+        final center = await CLLocationCoordinate2D.create(
+          (southWest.latitude + northEast.latitude) / 2,
+          (southWest.longitude + northEast.longitude) / 2,
+        );
+        final span = await MACoordinateSpanMake(
+          northEast.latitude - southWest.latitude,
+          northEast.longitude - southWest.longitude,
+        );
+        final region = await MACoordinateRegionMake(center, span);
+        iosController.set_limitRegion(region);
+
+        pool..add(center)..add(span)..add(region);
+      },
+    );
+  }
+
   /// Marker弹窗点击事件监听
   Future<void> setInfoWindowClickListener(
     OnMarkerClicked onInfoWindowClicked,
