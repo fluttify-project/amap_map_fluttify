@@ -19,6 +19,8 @@ A new flutter plugin project.
   # flutter plugin dependency
   s.dependency 'amap_core_fluttify'
   s.dependency 'url_launcher'
+  # sdk dependency
+  s.dependency 'AMap3DMap', '6.9.0'
 
   s.ios.deployment_target = '8.0'
   # include project framework
@@ -27,11 +29,11 @@ A new flutter plugin project.
   s.vendored_libraries = '**/*.a'
   # ios system framework
   s.frameworks = [
-        "QuartzCore", "CoreLocation", "SystemConfiguration", "CoreTelephony", "Security", "OpenGLES", "CoreText", "CoreGraphics", "GLKit"
+        
   ]
   # ios system library
   s.libraries = [
-        "z", "c++"
+        
   ]
   # resources
   s.resources = '*.framework/*.bundle'

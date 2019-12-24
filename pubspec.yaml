@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  amap_core_fluttify: ^0.4.0+e26c0fa
+  amap_core_fluttify: ^0.5.0+ea37ae9
   url_launcher: ^5.4.1
   
 
