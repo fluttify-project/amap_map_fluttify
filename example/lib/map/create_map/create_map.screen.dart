@@ -270,6 +270,14 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                     await _controller?.setZoomByCenter(true);
                   },
                 ),
+                ListTile(
+                  title: Center(child: Text('限制地图显示范围')),
+                  onTap: () async {
+                    final southWest = LatLng(40, 116);
+                    final northEast = LatLng(42, 118);
+                    await _controller?.setMapRegionLimits(southWest, northEast);
+                  },
+                ),
               ],
             ),
           ),
