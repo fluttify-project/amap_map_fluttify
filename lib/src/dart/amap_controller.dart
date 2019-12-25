@@ -485,6 +485,22 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 获取当前缩放大小
+  Future<double> getZoomLevel() async {
+    return platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+        final camera = await map.getCameraPosition();
+
+        pool..add(map)..add(camera);
+        return camera.get_zoom();
+      },
+      ios: (pool) async {
+        return iosController.get_zoomLevel();
+      },
+    );
+  }
+
   /// 设置缩放是否以中心点为锚点
   Future<void> setZoomByCenter(bool byCenter) async {
     assert(byCenter != null);
