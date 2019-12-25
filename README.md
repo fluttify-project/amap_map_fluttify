@@ -15,6 +15,7 @@ Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)引擎
 如果你需要用到地图, 定位和搜索三个组件, 建议使用[amap_all_fluttify](https://github.com/fluttify-project/amap_all_fluttify), 这个插件集合了以上三个插件, 并约束了版本, 兼容性会更好.
 
 > 0.16.0开始使用远程依赖, git clone不会失败了.
+>
 > ~~**!!`git clone`失败看这里!!**~~
 >
 > ~~由于高德地图的iOS端的二进制文件`MAMapKit`有**128.1MB**, 超出了GitHub上传文件限制的大小(100MB), 而GitHub免费版的git-lfs限额流量(1G)已经用完, 所以`git clone`的时候会失败, 就算直接下载repo, `MAMapKit`也已经转换成了git-lfs的一个指针文件, 无法使用.~~
