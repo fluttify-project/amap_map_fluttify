@@ -6,8 +6,6 @@
 ![CI](https://github.com/fluttify-project/amap_map_fluttify/workflows/CI/badge.svg)
 [![Gitter](https://badges.gitter.im/fluttify_project/community.svg)](https://gitter.im/fluttify_project/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-**从`0.11.0`开始, Flutter环境改为`1.12.13`, 与`1.9.1`版本不兼容, 如果你想继续使用`1.9.1`版本的Flutter, 请不要升级.**
-
 **从`0.12.2`开始, [AmapController](https://github.com/fluttify-project/amap_map_fluttify/blob/master/lib/src/dart/amap_controller.dart)类开放了内部的`androidController`和`iosController`, 这两个类分别对应了原生的`MapView`和`MAMapView`, 具有这两个原生类的所有Fluttify支持的接口, 插件使用者可以自行对其扩展(基于dart 2.6加入的static extension)以满足自己的需求, [参考实现](https://github.com/fluttify-project/amap_map_fluttify/blob/5892f2d01cbbefd957f400cc8e2f4cfa1356f3eb/example/lib/map/create_map/create_map.screen.dart#L276).**
 
 Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)引擎生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/). [CHANGELOG](https://github.com/fluttify-project/amap_map_fluttify/blob/master/CHANGELOG.md). [常见问题对应手册](https://github.com/fluttify-project/amap_map_fluttify/blob/master/Troubleshooting.md).
