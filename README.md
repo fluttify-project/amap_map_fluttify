@@ -14,13 +14,14 @@ Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)引擎
 
 如果你需要用到地图, 定位和搜索三个组件, 建议使用[amap_all_fluttify](https://github.com/fluttify-project/amap_all_fluttify), 这个插件集合了以上三个插件, 并约束了版本, 兼容性会更好.
 
-> **!!`git clone`失败看这里!!**
+> 0.16.0开始使用远程依赖, git clone不会失败了.
+> ~~**!!`git clone`失败看这里!!**~~
 >
-> 由于高德地图的iOS端的二进制文件`MAMapKit`有**128.1MB**, 超出了GitHub上传文件限制的大小(100MB), 而GitHub免费版的git-lfs限额流量(1G)已经用完, 所以`git clone`的时候会失败, 就算直接下载repo, `MAMapKit`也已经转换成了git-lfs的一个指针文件, 无法使用.
+> ~~由于高德地图的iOS端的二进制文件`MAMapKit`有**128.1MB**, 超出了GitHub上传文件限制的大小(100MB), 而GitHub免费版的git-lfs限额流量(1G)已经用完, 所以`git clone`的时候会失败, 就算直接下载repo, `MAMapKit`也已经转换成了git-lfs的一个指针文件, 无法使用.~~
 >
-> 这里提供一个变通方法, 随便在一个flutter工程内依赖`amap_map_fluttify`, 然后`flutter packages get`下载flutter插件后, 去flutter的pub缓存文件夹`$flutter_root/.pub-cache/hosted/pub.dartlang.org/`(`$flutter_root`是你的flutter安装文件夹)下找到`amap_map_fluttify`的包, 这是一个完整的插件工程, 里面含有`example`工程, 可以正常运行.
+> ~~这里提供一个变通方法, 随便在一个flutter工程内依赖`amap_map_fluttify`, 然后`flutter packages get`下载flutter插件后, 去flutter的pub缓存文件夹`$flutter_root/.pub-cache/hosted/pub.dartlang.org/`(`$flutter_root`是你的flutter安装文件夹)下找到`amap_map_fluttify`的包, 这是一个完整的插件工程, 里面含有`example`工程, 可以正常运行.~~
 >
-> 如果想要查看样例工程的话, 就运行这个example工程.
+> ~~如果想要查看样例工程的话, 就运行这个example工程.~~
 
 安装: 
 ```yaml
