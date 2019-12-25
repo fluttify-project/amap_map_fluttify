@@ -278,6 +278,12 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                     await _controller?.setMapRegionLimits(southWest, northEast);
                   },
                 ),
+                ListTile(
+                  title: Center(child: Text('获取当前缩放等级')),
+                  onTap: () async {
+                    toast('当前缩放等级: ${await _controller.getZoomLevel()}');
+                  },
+                ),
               ],
             ),
           ),
