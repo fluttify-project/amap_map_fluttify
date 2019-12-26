@@ -16,7 +16,7 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
   //endregion
 
   //region creators
-  static Future<MACircle> create() async {
+  static Future<MACircle> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACircle');
     final object = MACircle()..refId = refId..tag = 'amap_map_fluttify';
   

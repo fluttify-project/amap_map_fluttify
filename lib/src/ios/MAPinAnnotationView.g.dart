@@ -16,7 +16,7 @@ class MAPinAnnotationView extends MAAnnotationView  {
   //endregion
 
   //region creators
-  static Future<MAPinAnnotationView> create() async {
+  static Future<MAPinAnnotationView> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAPinAnnotationView');
     final object = MAPinAnnotationView()..refId = refId..tag = 'amap_map_fluttify';
   

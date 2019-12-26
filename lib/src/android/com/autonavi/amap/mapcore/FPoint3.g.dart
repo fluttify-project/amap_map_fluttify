@@ -16,7 +16,7 @@ class com_autonavi_amap_mapcore_FPoint3 extends com_autonavi_amap_mapcore_FPoint
   //endregion
 
   //region creators
-  static Future<com_autonavi_amap_mapcore_FPoint3> create() async {
+  static Future<com_autonavi_amap_mapcore_FPoint3> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__');
     final object = com_autonavi_amap_mapcore_FPoint3()..refId = refId..tag = 'amap_map_fluttify';
   

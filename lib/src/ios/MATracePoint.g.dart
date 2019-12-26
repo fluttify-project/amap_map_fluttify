@@ -16,7 +16,7 @@ class MATracePoint extends NSObject with NSCoding {
   //endregion
 
   //region creators
-  static Future<MATracePoint> create() async {
+  static Future<MATracePoint> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATracePoint');
     final object = MATracePoint()..refId = refId..tag = 'amap_map_fluttify';
   

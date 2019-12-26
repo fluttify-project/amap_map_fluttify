@@ -16,7 +16,7 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   //endregion
 
   //region creators
-  static Future<MAMultiColoredPolylineRenderer> create() async {
+  static Future<MAMultiColoredPolylineRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMultiColoredPolylineRenderer');
     final object = MAMultiColoredPolylineRenderer()..refId = refId..tag = 'amap_map_fluttify';
   

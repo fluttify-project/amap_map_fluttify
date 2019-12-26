@@ -16,7 +16,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   //endregion
 
   //region creators
-  static Future<MAMultiPointOverlayRenderer> create() async {
+  static Future<MAMultiPointOverlayRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMultiPointOverlayRenderer');
     final object = MAMultiPointOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
   

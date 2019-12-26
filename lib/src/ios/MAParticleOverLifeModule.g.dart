@@ -16,7 +16,7 @@ class MAParticleOverLifeModule extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAParticleOverLifeModule> create() async {
+  static Future<MAParticleOverLifeModule> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleOverLifeModule');
     final object = MAParticleOverLifeModule()..refId = refId..tag = 'amap_map_fluttify';
   

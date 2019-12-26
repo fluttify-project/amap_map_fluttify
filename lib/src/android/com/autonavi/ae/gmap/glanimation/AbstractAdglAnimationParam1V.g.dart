@@ -16,7 +16,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends com_
   //endregion
 
   //region creators
-  static Future<com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V> create() async {
+  static Future<com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__');
     final object = com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V()..refId = refId..tag = 'amap_map_fluttify';
   

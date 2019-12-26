@@ -109,7 +109,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       android: (pool) async {
         final map = await androidController.getMap();
         final locationStyle =
-            await com_amap_api_maps_model_MyLocationStyle.create();
+            await com_amap_api_maps_model_MyLocationStyle.create__();
         await locationStyle.showMyLocation(show);
         await map.setMyLocationEnabled(show);
         if (show) {
@@ -155,7 +155,7 @@ class AmapController with WidgetsBindingObserver, _Private {
             true,
           );
 
-          final style = await MAUserLocationRepresentation.create();
+          final style = await MAUserLocationRepresentation.create__();
 
           // 定位图标
           if (iconUri != null) {
@@ -657,7 +657,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // marker配置
         final markerOption =
-            await com_amap_api_maps_model_MarkerOptions.create();
+            await com_amap_api_maps_model_MarkerOptions.create__();
 
         // 设置marker经纬度
         await markerOption.position(latLng);
@@ -722,7 +722,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         );
 
         // 创建marker
-        final pointAnnotation = await MAPointAnnotation.create();
+        final pointAnnotation = await MAPointAnnotation.create__();
 
         final coordinate = await CLLocationCoordinate2D.create(lat, lng);
 
@@ -815,7 +815,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
           // marker配置
           final markerOption =
-              await com_amap_api_maps_model_MarkerOptions.create();
+              await com_amap_api_maps_model_MarkerOptions.create__();
 
           // 设置marker经纬度
           await markerOption.position(latLng);
@@ -890,7 +890,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           final lng = option.latLng.longitude;
 
           // 创建marker
-          final pointAnnotation = await MAPointAnnotation.create();
+          final pointAnnotation = await MAPointAnnotation.create__();
 
           final coordinate = await CLLocationCoordinate2D.create(lat, lng);
 
@@ -1072,7 +1072,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 构造折线参数
         final polylineOptions =
-            await com_amap_api_maps_model_PolylineOptions.create();
+            await com_amap_api_maps_model_PolylineOptions.create__();
 
         // 添加经纬度列表
         await polylineOptions.addAll(latLngList);
@@ -1220,7 +1220,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 构造参数
         final polygonOptions =
-            await com_amap_api_maps_model_PolygonOptions.create();
+            await com_amap_api_maps_model_PolygonOptions.create__();
 
         // 添加参数
         await polygonOptions.addAll(latLngList);
@@ -1299,7 +1299,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 构造参数
         final circleOptions =
-            await com_amap_api_maps_model_CircleOptions.create();
+            await com_amap_api_maps_model_CircleOptions.create__();
 
         // 中心点
         await circleOptions.center(latLng);
@@ -1550,7 +1550,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 构造选项
         final option =
-            await com_amap_api_maps_model_CustomMapStyleOptions.create();
+            await com_amap_api_maps_model_CustomMapStyleOptions.create__();
         await option.setEnable(true);
         if (styleData != null) await option.setStyleData(styleData);
         if (styleExtra != null) await option.setStyleExtraData(styleExtra);
@@ -1562,7 +1562,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       },
       ios: (pool) async {
         // 构造选项
-        final option = await MAMapCustomStyleOptions.create();
+        final option = await MAMapCustomStyleOptions.create__();
 
         if (styleData != null) {
           final styleDataNSData = await NSData.createWithUint8List(styleData);

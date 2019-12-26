@@ -28,7 +28,7 @@ class com_amap_api_maps_offlinemap_OfflineMapStatus extends java_lang_Object  {
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_offlinemap_OfflineMapStatus> create() async {
+  static Future<com_amap_api_maps_offlinemap_OfflineMapStatus> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__');
     final object = com_amap_api_maps_offlinemap_OfflineMapStatus()..refId = refId..tag = 'amap_map_fluttify';
   

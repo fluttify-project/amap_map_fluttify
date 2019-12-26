@@ -16,7 +16,7 @@ class MAIndoorFloorInfo extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAIndoorFloorInfo> create() async {
+  static Future<MAIndoorFloorInfo> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAIndoorFloorInfo');
     final object = MAIndoorFloorInfo()..refId = refId..tag = 'amap_map_fluttify';
   

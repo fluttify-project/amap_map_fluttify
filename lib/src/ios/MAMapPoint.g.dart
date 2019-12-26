@@ -16,7 +16,7 @@ class MAMapPoint extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAMapPoint> create() async {
+  static Future<MAMapPoint> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMapPoint');
     final object = MAMapPoint()..refId = refId..tag = 'amap_map_fluttify';
   

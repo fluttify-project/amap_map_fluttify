@@ -16,7 +16,7 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
   //endregion
 
   //region creators
-  static Future<MACustomBuildingOverlayOption> create() async {
+  static Future<MACustomBuildingOverlayOption> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACustomBuildingOverlayOption');
     final object = MACustomBuildingOverlayOption()..refId = refId..tag = 'amap_map_fluttify';
   

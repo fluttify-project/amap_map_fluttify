@@ -16,7 +16,7 @@ class MAMapView extends UIView  {
   //endregion
 
   //region creators
-  static Future<MAMapView> create() async {
+  static Future<MAMapView> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMapView');
     final object = MAMapView()..refId = refId..tag = 'amap_map_fluttify';
   

@@ -16,7 +16,7 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
   //endregion
 
   //region creators
-  static Future<MACustomBuildingOverlay> create() async {
+  static Future<MACustomBuildingOverlay> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACustomBuildingOverlay');
     final object = MACustomBuildingOverlay()..refId = refId..tag = 'amap_map_fluttify';
   

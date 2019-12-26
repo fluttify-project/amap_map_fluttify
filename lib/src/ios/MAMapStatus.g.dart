@@ -16,7 +16,7 @@ class MAMapStatus extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAMapStatus> create() async {
+  static Future<MAMapStatus> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMapStatus');
     final object = MAMapStatus()..refId = refId..tag = 'amap_map_fluttify';
   

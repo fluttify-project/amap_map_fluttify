@@ -16,7 +16,7 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
   //endregion
 
   //region creators
-  static Future<MAParticleSinglePointShapeModule> create() async {
+  static Future<MAParticleSinglePointShapeModule> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleSinglePointShapeModule');
     final object = MAParticleSinglePointShapeModule()..refId = refId..tag = 'amap_map_fluttify';
   

@@ -16,7 +16,7 @@ class MAParticleConstantRotationGenerate extends NSObject with MAParticleRotatio
   //endregion
 
   //region creators
-  static Future<MAParticleConstantRotationGenerate> create() async {
+  static Future<MAParticleConstantRotationGenerate> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleConstantRotationGenerate');
     final object = MAParticleConstantRotationGenerate()..refId = refId..tag = 'amap_map_fluttify';
   

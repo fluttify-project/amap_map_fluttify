@@ -210,7 +210,7 @@ class com_autonavi_amap_mapcore_tools_GLMapStaticValue extends java_lang_Object 
   //endregion
 
   //region creators
-  static Future<com_autonavi_amap_mapcore_tools_GLMapStaticValue> create() async {
+  static Future<com_autonavi_amap_mapcore_tools_GLMapStaticValue> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLMapStaticValue__');
     final object = com_autonavi_amap_mapcore_tools_GLMapStaticValue()..refId = refId..tag = 'amap_map_fluttify';
   

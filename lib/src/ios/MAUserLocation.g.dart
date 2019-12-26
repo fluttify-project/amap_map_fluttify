@@ -16,7 +16,7 @@ class MAUserLocation extends MAAnimatedAnnotation  {
   //endregion
 
   //region creators
-  static Future<MAUserLocation> create() async {
+  static Future<MAUserLocation> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAUserLocation');
     final object = MAUserLocation()..refId = refId..tag = 'amap_map_fluttify';
   

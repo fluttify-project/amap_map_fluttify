@@ -16,7 +16,7 @@ class MATouchPoi extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MATouchPoi> create() async {
+  static Future<MATouchPoi> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATouchPoi');
     final object = MATouchPoi()..refId = refId..tag = 'amap_map_fluttify';
   

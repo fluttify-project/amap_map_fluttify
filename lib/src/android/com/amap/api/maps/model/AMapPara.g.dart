@@ -18,7 +18,7 @@ class com_amap_api_maps_model_AMapPara extends java_lang_Object  {
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_model_AMapPara> create() async {
+  static Future<com_amap_api_maps_model_AMapPara> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_AMapPara__');
     final object = com_amap_api_maps_model_AMapPara()..refId = refId..tag = 'amap_map_fluttify';
   

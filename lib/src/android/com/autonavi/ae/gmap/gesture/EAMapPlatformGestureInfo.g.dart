@@ -16,7 +16,7 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo extends java_lang_Ob
   //endregion
 
   //region creators
-  static Future<com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo> create() async {
+  static Future<com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__');
     final object = com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo()..refId = refId..tag = 'amap_map_fluttify';
   

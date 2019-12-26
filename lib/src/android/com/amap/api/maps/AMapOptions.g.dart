@@ -23,7 +23,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_AMapOptions> create() async {
+  static Future<com_amap_api_maps_AMapOptions> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapOptions__');
     final object = com_amap_api_maps_AMapOptions()..refId = refId..tag = 'amap_map_fluttify';
   

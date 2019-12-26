@@ -16,7 +16,7 @@ class com_amap_api_offlineservice_AMapPermissionActivity extends android_app_Act
   //endregion
 
   //region creators
-  static Future<com_amap_api_offlineservice_AMapPermissionActivity> create() async {
+  static Future<com_amap_api_offlineservice_AMapPermissionActivity> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity__');
     final object = com_amap_api_offlineservice_AMapPermissionActivity()..refId = refId..tag = 'amap_map_fluttify';
   

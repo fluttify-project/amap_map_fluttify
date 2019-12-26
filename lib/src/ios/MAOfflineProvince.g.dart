@@ -16,7 +16,7 @@ class MAOfflineProvince extends MAOfflineItem  {
   //endregion
 
   //region creators
-  static Future<MAOfflineProvince> create() async {
+  static Future<MAOfflineProvince> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAOfflineProvince');
     final object = MAOfflineProvince()..refId = refId..tag = 'amap_map_fluttify';
   

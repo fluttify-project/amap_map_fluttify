@@ -16,7 +16,7 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
   //endregion
 
   //region creators
-  static Future<MAParticleRandomVelocityGenerate> create() async {
+  static Future<MAParticleRandomVelocityGenerate> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleRandomVelocityGenerate');
     final object = MAParticleRandomVelocityGenerate()..refId = refId..tag = 'amap_map_fluttify';
   

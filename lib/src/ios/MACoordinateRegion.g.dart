@@ -16,7 +16,7 @@ class MACoordinateRegion extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MACoordinateRegion> create() async {
+  static Future<MACoordinateRegion> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACoordinateRegion');
     final object = MACoordinateRegion()..refId = refId..tag = 'amap_map_fluttify';
   

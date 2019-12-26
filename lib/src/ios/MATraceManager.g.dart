@@ -16,7 +16,7 @@ class MATraceManager extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MATraceManager> create() async {
+  static Future<MATraceManager> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATraceManager');
     final object = MATraceManager()..refId = refId..tag = 'amap_map_fluttify';
   

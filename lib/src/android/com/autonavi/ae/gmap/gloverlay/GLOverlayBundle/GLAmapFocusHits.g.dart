@@ -16,7 +16,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits extends jav
   //endregion
 
   //region creators
-  static Future<com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits> create() async {
+  static Future<com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__');
     final object = com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits()..refId = refId..tag = 'amap_map_fluttify';
   

@@ -16,7 +16,7 @@ class com_amap_api_maps_model_PolygonHoleOptions extends com_amap_api_maps_model
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_model_PolygonHoleOptions> create() async {
+  static Future<com_amap_api_maps_model_PolygonHoleOptions> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_PolygonHoleOptions__');
     final object = com_amap_api_maps_model_PolygonHoleOptions()..refId = refId..tag = 'amap_map_fluttify';
   

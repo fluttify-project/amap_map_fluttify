@@ -16,7 +16,7 @@ class MAShape extends NSObject with MAAnnotation {
   //endregion
 
   //region creators
-  static Future<MAShape> create() async {
+  static Future<MAShape> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAShape');
     final object = MAShape()..refId = refId..tag = 'amap_map_fluttify';
   

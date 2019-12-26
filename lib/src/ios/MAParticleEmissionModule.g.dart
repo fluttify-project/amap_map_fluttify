@@ -16,7 +16,7 @@ class MAParticleEmissionModule extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAParticleEmissionModule> create() async {
+  static Future<MAParticleEmissionModule> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleEmissionModule');
     final object = MAParticleEmissionModule()..refId = refId..tag = 'amap_map_fluttify';
   

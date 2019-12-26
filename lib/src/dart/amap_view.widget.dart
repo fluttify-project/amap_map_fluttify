@@ -237,7 +237,7 @@ class _AmapViewState extends State<AmapView> {
   }
 
   Future<com_amap_api_maps_AMapOptions> _androidOptions() async {
-    final option = await com_amap_api_maps_AMapOptions.create();
+    final option = await com_amap_api_maps_AMapOptions.create__();
     if (widget.mapType != null) {
       await option.mapType(widget.mapType.index);
     }

@@ -16,7 +16,7 @@ class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
   //endregion
 
   //region creators
-  static Future<MAMultiPointOverlay> create() async {
+  static Future<MAMultiPointOverlay> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMultiPointOverlay');
     final object = MAMultiPointOverlay()..refId = refId..tag = 'amap_map_fluttify';
   

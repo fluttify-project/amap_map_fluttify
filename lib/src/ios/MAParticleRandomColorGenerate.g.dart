@@ -16,7 +16,7 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
   //endregion
 
   //region creators
-  static Future<MAParticleRandomColorGenerate> create() async {
+  static Future<MAParticleRandomColorGenerate> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleRandomColorGenerate');
     final object = MAParticleRandomColorGenerate()..refId = refId..tag = 'amap_map_fluttify';
   

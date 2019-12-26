@@ -16,7 +16,7 @@ class MAHeatMapTileOverlay extends MATileOverlay  {
   //endregion
 
   //region creators
-  static Future<MAHeatMapTileOverlay> create() async {
+  static Future<MAHeatMapTileOverlay> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAHeatMapTileOverlay');
     final object = MAHeatMapTileOverlay()..refId = refId..tag = 'amap_map_fluttify';
   

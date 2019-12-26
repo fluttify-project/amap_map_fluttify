@@ -16,7 +16,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_model_TileOverlayOptions> create() async {
+  static Future<com_amap_api_maps_model_TileOverlayOptions> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions__');
     final object = com_amap_api_maps_model_TileOverlayOptions()..refId = refId..tag = 'amap_map_fluttify';
   

@@ -16,7 +16,7 @@ class MAOverlayRenderer extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAOverlayRenderer> create() async {
+  static Future<MAOverlayRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAOverlayRenderer');
     final object = MAOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
   

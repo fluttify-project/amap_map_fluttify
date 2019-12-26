@@ -16,7 +16,7 @@ class MAParticleOverlayOptionsFactory extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAParticleOverlayOptionsFactory> create() async {
+  static Future<MAParticleOverlayOptionsFactory> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleOverlayOptionsFactory');
     final object = MAParticleOverlayOptionsFactory()..refId = refId..tag = 'amap_map_fluttify';
   

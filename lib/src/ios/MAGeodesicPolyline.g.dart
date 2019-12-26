@@ -16,7 +16,7 @@ class MAGeodesicPolyline extends MAPolyline  {
   //endregion
 
   //region creators
-  static Future<MAGeodesicPolyline> create() async {
+  static Future<MAGeodesicPolyline> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAGeodesicPolyline');
     final object = MAGeodesicPolyline()..refId = refId..tag = 'amap_map_fluttify';
   
