@@ -563,34 +563,35 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 设置地图中心点
+  ///
+  /// [lat]纬度, [lng]经度, [zoomLevel]缩放等级, [bearing]地图选择角度, [tilt]倾斜角
   Future<void> setCenterCoordinate(
     double lat,
     double lng, {
     double zoomLevel,
+    double bearing,
+    double tilt,
     bool animated = true,
   }) async {
+    assert(zoomLevel >= 3 && zoomLevel <= 19, '缩放范围为3-19');
     await platform(
       android: (pool) async {
         final map = await androidController.getMap();
 
         final latLng = await com_amap_api_maps_model_LatLng
             .create__double__double(lat, lng);
-        com_amap_api_maps_model_CameraPosition cameraPosition;
-        if (zoomLevel == null) {
-          // 如果没有设置zoomLevel, 那么就使用当前的zoomLevel
-          final camera = await map.getCameraPosition();
-          final currentZoomLevel = await camera.get_zoom();
-          cameraPosition = await com_amap_api_maps_model_CameraPosition
-              .create__com_amap_api_maps_model_LatLng__float__float__float(
-                  latLng, currentZoomLevel, 0, 0);
-        } else {
-          cameraPosition = await com_amap_api_maps_model_CameraPosition
-              .create__com_amap_api_maps_model_LatLng__float__float__float(
-                  latLng, zoomLevel, 0, 0);
-        }
+
+        final camera = await map.getCameraPosition();
+        final finalZoomLevel = zoomLevel ?? await camera.get_zoom();
+        final finalBearing = bearing ?? await camera.get_bearing();
+        final finalTilt = tilt ?? await camera.get_tilt();
+        final cameraPosition = await com_amap_api_maps_model_CameraPosition
+            .create__com_amap_api_maps_model_LatLng__float__float__float(
+                latLng, finalZoomLevel, finalBearing, finalTilt);
 
         final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
             .newCameraPosition(cameraPosition);
+
         if (animated) {
           await map.animateCamera__com_amap_api_maps_CameraUpdate(cameraUpdate);
         } else {
@@ -603,6 +604,12 @@ class AmapController with WidgetsBindingObserver, _Private {
         final latLng = await CLLocationCoordinate2D.create(lat, lng);
         if (zoomLevel != null) {
           await iosController.setZoomLevelAnimated(zoomLevel, animated);
+        }
+        if (bearing != null) {
+          await iosController.set_rotationDegree(bearing);
+        }
+        if (tilt != null) {
+          await iosController.set_cameraDegree(tilt);
         }
         await iosController.setCenterCoordinateAnimated(latLng, animated);
 
