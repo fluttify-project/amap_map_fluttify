@@ -11,10 +11,6 @@
         android:label="amap_map_fluttify_example"
         android:icon="@mipmap/ic_launcher">
 
-        <meta-data
-                android:name="com.amap.api.v2.apikey"
-                android:value="7c9daac55e90a439f7b4304b465297fa"/>
-
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

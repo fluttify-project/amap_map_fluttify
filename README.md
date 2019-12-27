@@ -12,16 +12,6 @@ Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)引擎
 
 如果你需要用到地图, 定位和搜索三个组件, 建议使用[amap_all_fluttify](https://github.com/fluttify-project/amap_all_fluttify), 这个插件集合了以上三个插件, 并约束了版本, 兼容性会更好.
 
-> 0.16.0开始使用远程依赖, git clone不会失败了.
->
-> ~~**!!`git clone`失败看这里!!**~~
->
-> ~~由于高德地图的iOS端的二进制文件`MAMapKit`有**128.1MB**, 超出了GitHub上传文件限制的大小(100MB), 而GitHub免费版的git-lfs限额流量(1G)已经用完, 所以`git clone`的时候会失败, 就算直接下载repo, `MAMapKit`也已经转换成了git-lfs的一个指针文件, 无法使用.~~
->
-> ~~这里提供一个变通方法, 随便在一个flutter工程内依赖`amap_map_fluttify`, 然后`flutter packages get`下载flutter插件后, 去flutter的pub缓存文件夹`$flutter_root/.pub-cache/hosted/pub.dartlang.org/`(`$flutter_root`是你的flutter安装文件夹)下找到`amap_map_fluttify`的包, 这是一个完整的插件工程, 里面含有`example`工程, 可以正常运行.~~
->
-> ~~如果想要查看样例工程的话, 就运行这个example工程.~~
-
 安装: 
 ```yaml
 dependencies:
@@ -41,15 +31,9 @@ import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 /// !注意: 只要是返回Future的方法, 一律使用`await`修饰, 确保当前方法执行完成后再执行下一行, 在不能使用`await`修饰的环境下, 在`then`方法中执行下一步.
 /// 
 /// Swift工程需要注释掉Podfile中的`use_frameworks!`
-/// 初始化:
-///   1. iOS在init方法中设置
-///   2. Android需要在AndroidManifest.xml里去设置, 详见 https://lbs.amap.com/api/android-sdk/gettingstarted
-///     <application>
-///       <meta-data
-///         android:name="com.amap.api.v2.apikey"
-///         android:value="您的Key"/>
-///     </application>
-await AmapCore.init('7a04506d15fdb7585707f7091d715ef4');
+/// 
+/// 初始化(0.17.0开始可以不用配置AndroidManifest.xml):
+await AmapService.init(iosKey: '7a04506d15fdb7585707f7091d715ef4', androidKey: '7c9daac55e90a439f7b4304b465297fa');
 /// 如果你觉得引擎的日志太多, 可以关闭Fluttify引擎的日志
 await enableFluttifyLog(false); // 关闭log
 

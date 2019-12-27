@@ -1,6 +1,7 @@
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 export 'package:amap_core_fluttify/amap_core_fluttify.dart';
@@ -9,15 +10,17 @@ export 'package:amap_core_fluttify/amap_core_fluttify.dart';
 class AmapService {
   AmapService._();
 
-  /// 设置ios端的key, android端需要在manifest里面设置, 无法通过代码设置
-  @Deprecated('使用AmapCore.init(iosKey)')
-  static Future init(String iosKey) async {
-    return platform(
+  /// 设置ios和android的app key
+  static Future<void> init({
+    @required String iosKey,
+    @required String androidKey,
+  }) async {
+    await platform(
       android: (pool) async {
-        print('android端需要在Manifest里面设置');
+        await com_amap_api_maps_MapsInitializer.setApiKey(androidKey);
       },
       ios: (pool) async {
-        AmapCore.init(iosKey);
+        await AmapCore.init(iosKey);
       },
     );
   }
@@ -218,7 +221,7 @@ class AmapService {
   ///
   /// [target]目的地, [appName]当前应用名称, [dev]是否偏移(0:lat和lon是已经加密后的,不需要国测加密;1:需要国测加密)
   /// !注意: iOS端需要在Info.plist配置白名单, 可以参考example工程的配置(LSApplicationQueriesSchemes), 具体文档详见 https://lbs.amap.com/api/amap-mobile/guide/ios/ios-uri-information
-  static Future navigateDrive(
+  static Future<void> navigateDrive(
     LatLng target, {
     String appName = 'appname',
     int dev = 1,
@@ -244,4 +247,6 @@ class AmapService {
       },
     );
   }
+
+  static Future<void> queryProcessedTrace() async {}
 }
