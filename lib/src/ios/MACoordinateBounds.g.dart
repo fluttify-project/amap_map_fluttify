@@ -16,7 +16,7 @@ class MACoordinateBounds extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MACoordinateBounds> create() async {
+  static Future<MACoordinateBounds> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACoordinateBounds');
     final object = MACoordinateBounds()..refId = refId..tag = 'amap_map_fluttify';
   

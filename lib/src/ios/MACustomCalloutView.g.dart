@@ -16,7 +16,7 @@ class MACustomCalloutView extends UIView  {
   //endregion
 
   //region creators
-  static Future<MACustomCalloutView> create() async {
+  static Future<MACustomCalloutView> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACustomCalloutView');
     final object = MACustomCalloutView()..refId = refId..tag = 'amap_map_fluttify';
   

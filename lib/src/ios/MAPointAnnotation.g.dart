@@ -16,7 +16,7 @@ class MAPointAnnotation extends MAShape  {
   //endregion
 
   //region creators
-  static Future<MAPointAnnotation> create() async {
+  static Future<MAPointAnnotation> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAPointAnnotation');
     final object = MAPointAnnotation()..refId = refId..tag = 'amap_map_fluttify';
   

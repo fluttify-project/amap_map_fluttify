@@ -578,15 +578,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   }
   
   @mustCallSuper
-  Future<void> setCustomRenderer(com_amap_api_maps_CustomRenderer var1) {
-    kNativeObjectPool.add(var1);
-  
-    if (fluttifyLogEnabled) {
-      debugPrint('setCustomRenderer::kNativeObjectPool: $kNativeObjectPool');
-    }
-  }
-  
-  @mustCallSuper
   Future<void> setCenterToPixel(int var1, int var2) {
   
   

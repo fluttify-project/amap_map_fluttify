@@ -17,7 +17,7 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
   //endregion
 
   //region creators
-  static Future<com_autonavi_amap_mapcore_tools_TextTextureGenerator> create() async {
+  static Future<com_autonavi_amap_mapcore_tools_TextTextureGenerator> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_tools_TextTextureGenerator__');
     final object = com_autonavi_amap_mapcore_tools_TextTextureGenerator()..refId = refId..tag = 'amap_map_fluttify';
   

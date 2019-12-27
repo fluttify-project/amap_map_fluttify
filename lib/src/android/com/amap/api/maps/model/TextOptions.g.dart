@@ -16,7 +16,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_model_TextOptions> create() async {
+  static Future<com_amap_api_maps_model_TextOptions> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_TextOptions__');
     final object = com_amap_api_maps_model_TextOptions()..refId = refId..tag = 'amap_map_fluttify';
   

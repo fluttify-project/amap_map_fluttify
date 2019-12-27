@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
 
+import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 import io.flutter.plugin.common.StandardMessageCodec;
@@ -26,12 +27,12 @@ import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableL
 @SuppressWarnings("ALL")
 class DownloadProgressViewFactory extends PlatformViewFactory {
 
-    DownloadProgressViewFactory(Registrar registrar) {
+    DownloadProgressViewFactory(BinaryMessenger messenger) {
         super(StandardMessageCodec.INSTANCE);
 
-        this.registrar = registrar;
+        this.messenger = messenger;
 
-        new MethodChannel(registrar.messenger(), "me.yohom/amap_map_fluttify/com_amap_api_maps_offlinemap_DownloadProgressView").setMethodCallHandler((methodCall, methodResult) -> {
+        new MethodChannel(messenger, "me.yohom/amap_map_fluttify/com_amap_api_maps_offlinemap_DownloadProgressView").setMethodCallHandler((methodCall, methodResult) -> {
                     Map<String, Object> args = (Map<String, Object>) methodCall.arguments;
                     AmapMapFluttifyPlugin.Handler handler = handlerMap.get(methodCall.method);
                     if (handler != null) {
@@ -47,7 +48,7 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
                 });
     }
 
-    private Registrar registrar;
+    private BinaryMessenger messenger;
 
     private final Map<String, AmapMapFluttifyPlugin.Handler> handlerMap = new HashMap<String, AmapMapFluttifyPlugin.Handler>() {{
         // method
@@ -87,7 +88,7 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
         Map<String, Object> args = (Map<String, Object>) params;
         
 
-        com.amap.api.maps.offlinemap.DownloadProgressView view = new com.amap.api.maps.offlinemap.DownloadProgressView(registrar.activity());
+        com.amap.api.maps.offlinemap.DownloadProgressView view = new com.amap.api.maps.offlinemap.DownloadProgressView(context);
         getHEAP().put(id, view);
         return new PlatformView() {
 

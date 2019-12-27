@@ -16,7 +16,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
   //endregion
 
   //region creators
-  static Future<MAPolyline> create() async {
+  static Future<MAPolyline> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAPolyline');
     final object = MAPolyline()..refId = refId..tag = 'amap_map_fluttify';
   

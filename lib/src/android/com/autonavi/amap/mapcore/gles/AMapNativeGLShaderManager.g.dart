@@ -16,7 +16,7 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
   //endregion
 
   //region creators
-  static Future<com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager> create() async {
+  static Future<com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__');
     final object = com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager()..refId = refId..tag = 'amap_map_fluttify';
   

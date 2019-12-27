@@ -16,7 +16,7 @@ class MAHeatMapNode extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAHeatMapNode> create() async {
+  static Future<MAHeatMapNode> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAHeatMapNode');
     final object = MAHeatMapNode()..refId = refId..tag = 'amap_map_fluttify';
   

@@ -16,7 +16,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offl
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_offlinemap_OfflineMapCity> create() async {
+  static Future<com_amap_api_maps_offlinemap_OfflineMapCity> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapCity__');
     final object = com_amap_api_maps_offlinemap_OfflineMapCity()..refId = refId..tag = 'amap_map_fluttify';
   

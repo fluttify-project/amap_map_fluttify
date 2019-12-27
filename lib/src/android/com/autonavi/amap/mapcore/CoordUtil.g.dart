@@ -16,7 +16,7 @@ class com_autonavi_amap_mapcore_CoordUtil extends java_lang_Object  {
   //endregion
 
   //region creators
-  static Future<com_autonavi_amap_mapcore_CoordUtil> create() async {
+  static Future<com_autonavi_amap_mapcore_CoordUtil> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_CoordUtil__');
     final object = com_autonavi_amap_mapcore_CoordUtil()..refId = refId..tag = 'amap_map_fluttify';
   

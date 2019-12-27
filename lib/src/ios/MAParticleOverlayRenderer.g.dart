@@ -16,7 +16,7 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
   //endregion
 
   //region creators
-  static Future<MAParticleOverlayRenderer> create() async {
+  static Future<MAParticleOverlayRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleOverlayRenderer');
     final object = MAParticleOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
   

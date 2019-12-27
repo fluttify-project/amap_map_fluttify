@@ -16,7 +16,7 @@ class com_amap_api_maps_model_LatLngBoundsCreator extends java_lang_Object  {
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_model_LatLngBoundsCreator> create() async {
+  static Future<com_amap_api_maps_model_LatLngBoundsCreator> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_LatLngBoundsCreator__');
     final object = com_amap_api_maps_model_LatLngBoundsCreator()..refId = refId..tag = 'amap_map_fluttify';
   

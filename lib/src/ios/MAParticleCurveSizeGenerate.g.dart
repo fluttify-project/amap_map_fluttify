@@ -16,7 +16,7 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
   //endregion
 
   //region creators
-  static Future<MAParticleCurveSizeGenerate> create() async {
+  static Future<MAParticleCurveSizeGenerate> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleCurveSizeGenerate');
     final object = MAParticleCurveSizeGenerate()..refId = refId..tag = 'amap_map_fluttify';
   

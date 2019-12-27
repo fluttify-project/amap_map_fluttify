@@ -16,7 +16,7 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
   //endregion
 
   //region creators
-  static Future<MAParticleRectShapeModule> create() async {
+  static Future<MAParticleRectShapeModule> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleRectShapeModule');
     final object = MAParticleRectShapeModule()..refId = refId..tag = 'amap_map_fluttify';
   

@@ -16,7 +16,7 @@ class MAArc extends MAShape with MAAnnotation, MAOverlay {
   //endregion
 
   //region creators
-  static Future<MAArc> create() async {
+  static Future<MAArc> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAArc');
     final object = MAArc()..refId = refId..tag = 'amap_map_fluttify';
   

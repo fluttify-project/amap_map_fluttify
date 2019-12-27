@@ -16,7 +16,7 @@ class com_amap_api_maps_model_BitmapDescriptorCreator extends java_lang_Object  
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_model_BitmapDescriptorCreator> create() async {
+  static Future<com_amap_api_maps_model_BitmapDescriptorCreator> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorCreator__');
     final object = com_amap_api_maps_model_BitmapDescriptorCreator()..refId = refId..tag = 'amap_map_fluttify';
   

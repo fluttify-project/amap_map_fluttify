@@ -17,7 +17,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_model_PolylineOptions> create() async {
+  static Future<com_amap_api_maps_model_PolylineOptions> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__');
     final object = com_amap_api_maps_model_PolylineOptions()..refId = refId..tag = 'amap_map_fluttify';
   

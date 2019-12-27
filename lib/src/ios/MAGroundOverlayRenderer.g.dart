@@ -16,7 +16,7 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   //endregion
 
   //region creators
-  static Future<MAGroundOverlayRenderer> create() async {
+  static Future<MAGroundOverlayRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAGroundOverlayRenderer');
     final object = MAGroundOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
   

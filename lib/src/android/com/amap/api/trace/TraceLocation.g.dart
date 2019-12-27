@@ -24,7 +24,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     return object;
   }
   
-  static Future<com_amap_api_trace_TraceLocation> create() async {
+  static Future<com_amap_api_trace_TraceLocation> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_trace_TraceLocation__');
     final object = com_amap_api_trace_TraceLocation()..refId = refId..tag = 'amap_map_fluttify';
   

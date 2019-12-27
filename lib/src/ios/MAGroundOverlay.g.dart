@@ -16,7 +16,7 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   //endregion
 
   //region creators
-  static Future<MAGroundOverlay> create() async {
+  static Future<MAGroundOverlay> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAGroundOverlay');
     final object = MAGroundOverlay()..refId = refId..tag = 'amap_map_fluttify';
   

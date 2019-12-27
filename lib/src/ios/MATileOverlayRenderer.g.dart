@@ -16,7 +16,7 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   //endregion
 
   //region creators
-  static Future<MATileOverlayRenderer> create() async {
+  static Future<MATileOverlayRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATileOverlayRenderer');
     final object = MATileOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
   

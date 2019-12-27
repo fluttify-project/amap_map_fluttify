@@ -16,7 +16,7 @@ class com_autonavi_amap_mapcore_animation_GLTransformation extends java_lang_Obj
   //endregion
 
   //region creators
-  static Future<com_autonavi_amap_mapcore_animation_GLTransformation> create() async {
+  static Future<com_autonavi_amap_mapcore_animation_GLTransformation> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTransformation__');
     final object = com_autonavi_amap_mapcore_animation_GLTransformation()..refId = refId..tag = 'amap_map_fluttify';
   

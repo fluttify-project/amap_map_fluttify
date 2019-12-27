@@ -13,22 +13,25 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import androidx.annotation.NonNull;
+import io.flutter.embedding.engine.plugins.FlutterPlugin;
+import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
-import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
+import io.flutter.plugin.platform.PlatformViewRegistry;
+
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
-import androidx.annotation.NonNull;
+import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
 
-// todo 启用新的embedding
 @SuppressWarnings("ALL")
-public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
+public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodCallHandler {
 
-    private AmapMapFluttifyPlugin(Registrar registrar) {
-        this.registrar = registrar;
+    private AmapMapFluttifyPlugin(BinaryMessenger messenger) {
+        this.messenger = messenger;
     }
 
-    private Registrar registrar;
+    private BinaryMessenger messenger;
 
     private final Map<String, Handler> handlerMap = new HashMap<String, Handler>() {{
         // getter
@@ -434,18 +437,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
         
             int result = ref.visible;
-        
-        
-        
-            methodResult.success(result);
-        });
-        // getter
-        put("com.autonavi.ae.gmap.GLMapRender::get_mSurfacedestoryed", (args, methodResult) -> {
-            // ref object
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapRender ref = (com.autonavi.ae.gmap.GLMapRender) getHEAP().get(refId);
-        
-            boolean result = ref.mSurfacedestoryed;
         
         
         
@@ -1418,18 +1409,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
         
             String result = ref.requestBaseUrl;
-        
-        
-        
-            methodResult.success(result);
-        });
-        // getter
-        put("com.autonavi.amap.mapcore.maploader.AMapLoader::get_isFinish", (args, methodResult) -> {
-            // ref object
-            int refId = (int) args.get("refId");
-            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
-        
-            boolean result = ref.isFinish;
         
         
         
@@ -2938,28 +2917,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // setter
-        put("com.autonavi.ae.gmap.GLMapRender::set_mGLMapView", (args, methodResult) -> {
-            // ref arg
-            com.autonavi.amap.mapcore.interfaces.IAMap mGLMapView = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get((int) args.get("mGLMapView"));
-        
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapRender ref = (com.autonavi.ae.gmap.GLMapRender) getHEAP().get(refId);
-        
-            ref.mGLMapView = mGLMapView;
-            methodResult.success("success");
-        });
-        // setter
-        put("com.autonavi.ae.gmap.GLMapRender::set_mSurfacedestoryed", (args, methodResult) -> {
-            // jsonable arg
-            boolean mSurfacedestoryed = (boolean) args.get("mSurfacedestoryed");
-        
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapRender ref = (com.autonavi.ae.gmap.GLMapRender) getHEAP().get(refId);
-        
-            ref.mSurfacedestoryed = mSurfacedestoryed;
-            methodResult.success("success");
-        });
-        // setter
         put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_engineId", (args, methodResult) -> {
             // jsonable arg
             int engineId = (int) args.get("engineId");
@@ -3848,17 +3805,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
         
             ref.requestBaseUrl = requestBaseUrl;
-            methodResult.success("success");
-        });
-        // setter
-        put("com.autonavi.amap.mapcore.maploader.AMapLoader::set_isFinish", (args, methodResult) -> {
-            // jsonable arg
-            boolean isFinish = (boolean) args.get("isFinish");
-        
-            int refId = (int) args.get("refId");
-            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
-        
-            ref.isFinish = isFinish;
             methodResult.success("success");
         });
         // setter
@@ -4771,40 +4717,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
-        put("com.autonavi.ae.gmap.GLMapEngine::setMapLoaderToTask", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            int var1 = (int) args.get("var1");
-            // jsonable arg
-            long var2 = (long) args.get("var2");
-            // ref arg
-            com.autonavi.amap.mapcore.maploader.AMapLoader var4 = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get((int) args.get("var4"));
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setMapLoaderToTask(" + var1 + var2 + var4 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.setMapLoaderToTask(var1, var2, var4);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
         put("com.autonavi.ae.gmap.GLMapEngine::getContext", (args, methodResult) -> {
             // args
         
@@ -5351,7 +5263,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setMapListener(new com.autonavi.amap.mapcore.interfaces.IAMapListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.GLMapEngine::setMapListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.GLMapEngine::setMapListener::Callback");
         
                 // call dart method
                 @Override
@@ -5808,7 +5720,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.addGroupAnimation(var1, var2, new Double(var3).floatValue(), var4, var5, var6, var7, new com.amap.api.maps.AMap.CancelableCallback() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation::Callback");
         
                 // call dart method
                 @Override
@@ -7839,7 +7751,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.addAnimation(var1, new com.amap.api.maps.AMap.CancelableCallback() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation::Callback");
         
                 // call dart method
                 @Override
@@ -7917,7 +7829,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setMapAnimationListener(new com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener::Callback");
         
                 // call dart method
                 @Override
@@ -7975,7 +7887,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.onMapAnimationFinish(new com.amap.api.maps.AMap.CancelableCallback() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener::onMapAnimationFinish::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener::onMapAnimationFinish::Callback");
         
                 // call dart method
                 @Override
@@ -9481,271 +9393,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success(result);
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapRender::setTrafficMode", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            boolean var1 = (boolean) args.get("var1");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapRender ref = (com.autonavi.ae.gmap.GLMapRender) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapRender@" + refId + "::setTrafficMode(" + var1 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.setTrafficMode(var1);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapRender::resetTickCount", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            int var1 = (int) args.get("var1");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapRender ref = (com.autonavi.ae.gmap.GLMapRender) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapRender@" + refId + "::resetTickCount(" + var1 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.resetTickCount(var1);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapRender::isRenderPause", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapRender ref = (com.autonavi.ae.gmap.GLMapRender) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapRender@" + refId + "::isRenderPause(" + "" + ")");
-            }
-        
-            // invoke native method
-            boolean result;
-            try {
-                result = ref.isRenderPause();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success(result);
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapRender::setRenderFps", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            Double var1 = (Double) args.get("var1");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapRender ref = (com.autonavi.ae.gmap.GLMapRender) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapRender@" + refId + "::setRenderFps(" + var1 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.setRenderFps(new Double(var1).floatValue());
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapRender::renderPause", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapRender ref = (com.autonavi.ae.gmap.GLMapRender) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapRender@" + refId + "::renderPause(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.renderPause();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapRender::renderResume", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapRender ref = (com.autonavi.ae.gmap.GLMapRender) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapRender@" + refId + "::renderResume(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.renderResume();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapRender::onAttachedToWindow", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapRender ref = (com.autonavi.ae.gmap.GLMapRender) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapRender@" + refId + "::onAttachedToWindow(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.onAttachedToWindow();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapRender::onDetachedFromWindow", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapRender ref = (com.autonavi.ae.gmap.GLMapRender) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapRender@" + refId + "::onDetachedFromWindow(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.onDetachedFromWindow();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.GLMapRender::onSurfaceDestory", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.GLMapRender ref = (com.autonavi.ae.gmap.GLMapRender) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapRender@" + refId + "::onSurfaceDestory(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.onSurfaceDestory();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
         });
         // method
         put("com.autonavi.ae.gmap.GLMapState::lonlat2Geo", (args, methodResult) -> {
@@ -11439,284 +11086,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
-        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::resumeMarker", (args, methodResult) -> {
-            // args
-            // ref arg
-            android.graphics.Bitmap var1 = (android.graphics.Bitmap) getHEAP().get((int) args.get("var1"));
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::resumeMarker(" + var1 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.resumeMarker(var1);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::AddOverlayTexture", (args, methodResult) -> {
-            // args
-            // ref arg
-            android.graphics.Bitmap var1 = (android.graphics.Bitmap) getHEAP().get((int) args.get("var1"));
-            // jsonable arg
-            int var2 = (int) args.get("var2");
-            // jsonable arg
-            int var3 = (int) args.get("var3");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::AddOverlayTexture(" + var1 + var2 + var3 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.AddOverlayTexture(var1, var2, var3);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::dipToPixel", (args, methodResult) -> {
-            // args
-            // ref arg
-            android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
-            // jsonable arg
-            int var2 = (int) args.get("var2");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::dipToPixel(" + var1 + var2 + ")");
-            }
-        
-            // invoke native method
-            int result;
-            try {
-                result = ref.dipToPixel(var1, var2);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success(result);
-        });
-        // method
-        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setAttribute", (args, methodResult) -> {
-            // args
-            // ref arg
-            com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr var1 = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) args.get("var1"));
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::setAttribute(" + var1 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.setAttribute(var1);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setData", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            byte[] var1 = (byte[]) args.get("var1");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::setData(" + var1 + ")");
-            }
-        
-            // invoke native method
-            int result;
-            try {
-                result = ref.setData(var1);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success(result);
-        });
-        // method
-        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::remove", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::remove(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.remove();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setImageMode", (args, methodResult) -> {
-            // args
-            // jsonable arg
-            boolean var1 = (boolean) args.get("var1");
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::setImageMode(" + var1 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.setImageMode(var1);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setGenerateCrossImageListener", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::setGenerateCrossImageListener(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.setGenerateCrossImageListener(new com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener() {
-                // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setGenerateCrossImageListener::Callback");
-        
-                // call dart method
-                @Override
-                public void onGenerateComplete(android.graphics.Bitmap var1, int var2) {
-                    // print log
-                    if (getEnableLog()) {
-                        Log.d("java-callback", "fluttify-java-callback: onGenerateComplete(" + var1 + var2 + ")");
-                    }
-        
-                    // convert to jsonable data
-                    // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
-                    // jsonable arg
-                    int argvar2 = var2;
-        
-                    // call dart method
-                    callbackChannel.invokeMethod(
-                            "Callback::com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::onGenerateComplete",
-                            new HashMap<String, Object>() {{
-                                put("var1", argvar1);
-                                put("var2", argvar2);
-                            }}
-                    );
-        
-                    // method result
-        
-                }
-        
-            });
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
         put("com.autonavi.ae.gmap.gloverlay.GLOverlay::getNativeInstatnce", (args, methodResult) -> {
             // args
         
@@ -12465,95 +11834,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.amap.mapcore.maploader.AMapLoader::doRequest", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader@" + refId + "::doRequest(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.doRequest();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.amap.mapcore.maploader.AMapLoader::doCancel", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader@" + refId + "::doCancel(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.doCancel();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.amap.mapcore.maploader.AMapLoader::getDeviceId", (args, methodResult) -> {
-            // args
-            // ref arg
-            android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader@" + refId + "::getDeviceId(" + var1 + ")");
-            }
-        
-            // invoke native method
-            String result;
-            try {
-                result = ref.getDeviceId(var1);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success(result);
         });
         // method
         put("com.autonavi.amap.mapcore.MapProjection::lonlat2Geo", (args, methodResult) -> {
@@ -13938,7 +13218,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setLocationListener(new com.autonavi.amap.mapcore.Inner_3dMap_locationListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::setLocationListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::setLocationListener::Callback");
         
                 // call dart method
                 @Override
@@ -14054,7 +13334,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.unRegisterLocationListener(new com.autonavi.amap.mapcore.Inner_3dMap_locationListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::unRegisterLocationListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::unRegisterLocationListener::Callback");
         
                 // call dart method
                 @Override
@@ -16465,7 +15745,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setAnimationListener(new com.amap.api.maps.model.animation.Animation.AnimationListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener::Callback");
         
                 // call dart method
                 @Override
@@ -25983,7 +25263,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setAnimationListener(new com.amap.api.maps.model.animation.Animation.AnimationListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAnimation::setAnimationListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAnimation::setAnimationListener::Callback");
         
                 // call dart method
                 @Override
@@ -30420,7 +29700,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setAnimationListener(new com.amap.api.maps.model.animation.Animation.AnimationListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IMarker::setAnimationListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IMarker::setAnimationListener::Callback");
         
                 // call dart method
                 @Override
@@ -30656,7 +29936,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setInfoWindowAnimation(var1, new com.amap.api.maps.model.animation.Animation.AnimationListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IInfoWindowManager::setInfoWindowAnimation::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IInfoWindowManager::setInfoWindowAnimation::Callback");
         
                 // call dart method
                 @Override
@@ -31184,7 +30464,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 result = ref.equalsRemote(new com.autonavi.amap.mapcore.interfaces.ITileOverlay() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.ITileOverlay::equalsRemote::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.ITileOverlay::equalsRemote::Callback");
         
                 // call dart method
                 @Override
@@ -32403,7 +31683,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.animateCameraWithCallback(var1, new com.amap.api.maps.AMap.CancelableCallback() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::animateCameraWithCallback::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::animateCameraWithCallback::Callback");
         
                 // call dart method
                 @Override
@@ -32484,7 +31764,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.animateCameraWithDurationAndCallback(var1, var2, new com.amap.api.maps.AMap.CancelableCallback() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::animateCameraWithDurationAndCallback::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::animateCameraWithDurationAndCallback::Callback");
         
                 // call dart method
                 @Override
@@ -33602,7 +32882,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setLocationSource(new com.amap.api.maps.LocationSource() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setLocationSource::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setLocationSource::Callback");
         
                 // call dart method
                 @Override
@@ -33786,7 +33066,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnCameraChangeListener(new com.amap.api.maps.AMap.OnCameraChangeListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnCameraChangeListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnCameraChangeListener::Callback");
         
                 // call dart method
                 @Override
@@ -33868,7 +33148,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMapClickListener(new com.amap.api.maps.AMap.OnMapClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -33926,7 +33206,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMapTouchListener(new com.amap.api.maps.AMap.OnMapTouchListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapTouchListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapTouchListener::Callback");
         
                 // call dart method
                 @Override
@@ -33984,7 +33264,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMapLongClickListener(new com.amap.api.maps.AMap.OnMapLongClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapLongClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapLongClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -34042,7 +33322,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMarkerClickListener(new com.amap.api.maps.AMap.OnMarkerClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMarkerClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMarkerClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -34100,7 +33380,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnPolylineClickListener(new com.amap.api.maps.AMap.OnPolylineClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnPolylineClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnPolylineClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -34158,7 +33438,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMarkerDragListener(new com.amap.api.maps.AMap.OnMarkerDragListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMarkerDragListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMarkerDragListener::Callback");
         
                 // call dart method
                 @Override
@@ -34264,7 +33544,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMaploadedListener(new com.amap.api.maps.AMap.OnMapLoadedListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMaploadedListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMaploadedListener::Callback");
         
                 // call dart method
                 @Override
@@ -34320,7 +33600,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnInfoWindowClickListener(new com.amap.api.maps.AMap.OnInfoWindowClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnInfoWindowClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnInfoWindowClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -34378,7 +33658,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMyLocationChangeListener(new com.amap.api.maps.AMap.OnMyLocationChangeListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMyLocationChangeListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMyLocationChangeListener::Callback");
         
                 // call dart method
                 @Override
@@ -34436,7 +33716,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnPOIClickListener(new com.amap.api.maps.AMap.OnPOIClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnPOIClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnPOIClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -34524,7 +33804,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setInfoWindowAdapter(new com.amap.api.maps.AMap.CommonInfoWindowAdapter() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setInfoWindowAdapter__com_amap_api_maps_AMap_CommonInfoWindowAdapter::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setInfoWindowAdapter__com_amap_api_maps_AMap_CommonInfoWindowAdapter::Callback");
         
                 // call dart method
                 @Override
@@ -34582,7 +33862,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnIndoorBuildingActiveListener(new com.amap.api.maps.AMap.OnIndoorBuildingActiveListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnIndoorBuildingActiveListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnIndoorBuildingActiveListener::Callback");
         
                 // call dart method
                 @Override
@@ -34640,7 +33920,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.getMapPrintScreen(new com.amap.api.maps.AMap.onMapPrintScreenListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::getMapPrintScreen::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::getMapPrintScreen::Callback");
         
                 // call dart method
                 @Override
@@ -34698,7 +33978,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.getMapScreenShot(new com.amap.api.maps.AMap.OnMapScreenShotListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::getMapScreenShot::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::getMapScreenShot::Callback");
         
                 // call dart method
                 @Override
@@ -34872,7 +34152,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.removecache(new com.amap.api.maps.AMap.OnCacheRemoveListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback");
         
                 // call dart method
                 @Override
@@ -34899,36 +34179,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 }
         
             });
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.autonavi.amap.mapcore.interfaces.IAMap::setCustomRenderer", (args, methodResult) -> {
-            // args
-            // ref arg
-            com.amap.api.maps.CustomRenderer var1 = (com.amap.api.maps.CustomRenderer) getHEAP().get((int) args.get("var1"));
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setCustomRenderer(" + var1 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.setCustomRenderer(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -35140,7 +34390,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setAMapGestureListener(new com.amap.api.maps.model.AMapGestureListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setAMapGestureListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setAMapGestureListener::Callback");
         
                 // call dart method
                 @Override
@@ -36729,7 +35979,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMultiPointClickListener(new com.amap.api.maps.AMap.OnMultiPointClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMultiPointClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMultiPointClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -38475,7 +37725,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.activate(new com.amap.api.maps.LocationSource.OnLocationChangedListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.LocationSource::activate::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.LocationSource::activate::Callback");
         
                 // call dart method
                 @Override
@@ -39565,39 +38815,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success("success");
-        });
-        // method
-        put("com.amap.api.maps.SwipeDismissTouchListener::onTouch", (args, methodResult) -> {
-            // args
-            // ref arg
-            android.view.View var1 = (android.view.View) getHEAP().get((int) args.get("var1"));
-            // ref arg
-            android.view.MotionEvent var2 = (android.view.MotionEvent) getHEAP().get((int) args.get("var2"));
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.amap.api.maps.SwipeDismissTouchListener ref = (com.amap.api.maps.SwipeDismissTouchListener) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.SwipeDismissTouchListener@" + refId + "::onTouch(" + var1 + var2 + ")");
-            }
-        
-            // invoke native method
-            boolean result;
-            try {
-                result = ref.onTouch(var1, var2);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success(result);
         });
         // method
         put("com.amap.api.maps.InfoWindowParams::setInfoWindowUpdateTime", (args, methodResult) -> {
@@ -42284,7 +41501,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setMoveListener(new com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener::Callback");
         
                 // call dart method
                 @Override
@@ -42804,7 +42021,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setMoveListener(new com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.utils.overlay.SmoothMoveMarker::setMoveListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.SmoothMoveMarker::setMoveListener::Callback");
         
                 // call dart method
                 @Override
@@ -42831,35 +42048,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 }
         
             });
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.amap.api.maps.CustomRenderer::OnMapReferencechanged", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.amap.api.maps.CustomRenderer ref = (com.amap.api.maps.CustomRenderer) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CustomRenderer@" + refId + "::OnMapReferencechanged(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.OnMapReferencechanged();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -42920,7 +42108,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setCallback(new com.amap.api.maps.WearMapView.OnDismissCallback() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.SwipeDismissView::setCallback::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.SwipeDismissView::setCallback::Callback");
         
                 // call dart method
                 @Override
@@ -44889,7 +44077,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnOfflineLoadedListener(new com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener::Callback");
         
                 // call dart method
                 @Override
@@ -45215,124 +44403,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             // invoke native method
             try {
                 ref.setCompleteCode(var1);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.amap.api.maps.offlinemap.OfflineMapActivity::showScr", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.amap.api.maps.offlinemap.OfflineMapActivity ref = (com.amap.api.maps.offlinemap.OfflineMapActivity) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapActivity@" + refId + "::showScr(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.showScr();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.amap.api.maps.offlinemap.OfflineMapActivity::closeScr", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.amap.api.maps.offlinemap.OfflineMapActivity ref = (com.amap.api.maps.offlinemap.OfflineMapActivity) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapActivity@" + refId + "::closeScr(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.closeScr();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.amap.api.maps.offlinemap.OfflineMapActivity::closeScr__android_os_Bundle", (args, methodResult) -> {
-            // args
-            // ref arg
-            android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) args.get("var1"));
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.amap.api.maps.offlinemap.OfflineMapActivity ref = (com.amap.api.maps.offlinemap.OfflineMapActivity) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapActivity@" + refId + "::closeScr(" + var1 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.closeScr(var1);
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.amap.api.maps.offlinemap.OfflineMapActivity::onClick", (args, methodResult) -> {
-            // args
-            // ref arg
-            android.view.View var1 = (android.view.View) getHEAP().get((int) args.get("var1"));
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.amap.api.maps.offlinemap.OfflineMapActivity ref = (com.amap.api.maps.offlinemap.OfflineMapActivity) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapActivity@" + refId + "::onClick(" + var1 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.onClick(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -56005,7 +55075,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setAnimationListener(new com.amap.api.maps.model.animation.Animation.AnimationListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation::setAnimationListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.animation.Animation::setAnimationListener::Callback");
         
                 // call dart method
                 @Override
@@ -62676,7 +61746,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setAnimationListener(new com.amap.api.maps.model.animation.Animation.AnimationListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.model.Marker::setAnimationListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.Marker::setAnimationListener::Callback");
         
                 // call dart method
                 @Override
@@ -64369,7 +63439,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setGenerateCrossImageListener(new com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener::Callback");
         
                 // call dart method
                 @Override
@@ -64533,122 +63603,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success("success");
         });
         // method
-        put("com.amap.api.maps.model.particle.ConstantRotationOverLife::createNativeInstace", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.amap.api.maps.model.particle.ConstantRotationOverLife ref = (com.amap.api.maps.model.particle.ConstantRotationOverLife) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.particle.ConstantRotationOverLife@" + refId + "::createNativeInstace(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.createNativeInstace();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.amap.api.maps.model.particle.SinglePointParticleShape::createNativeInstace", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.amap.api.maps.model.particle.SinglePointParticleShape ref = (com.amap.api.maps.model.particle.SinglePointParticleShape) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.particle.SinglePointParticleShape@" + refId + "::createNativeInstace(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.createNativeInstace();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants::createNativeInstace", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants ref = (com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@" + refId + "::createNativeInstace(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.createNativeInstace();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.amap.api.maps.model.particle.CurveSizeOverLife::createNativeInstace", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.amap.api.maps.model.particle.CurveSizeOverLife ref = (com.amap.api.maps.model.particle.CurveSizeOverLife) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.particle.CurveSizeOverLife@" + refId + "::createNativeInstace(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.createNativeInstace();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
         put("com.amap.api.maps.model.particle.SizeOverLife::getSizeX", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -64740,35 +63694,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success(result);
-        });
-        // method
-        put("com.amap.api.maps.model.particle.RectParticleShape::createNativeInstace", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.amap.api.maps.model.particle.RectParticleShape ref = (com.amap.api.maps.model.particle.RectParticleShape) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.particle.RectParticleShape@" + refId + "::createNativeInstace(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.createNativeInstace();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
         });
         // method
         put("com.amap.api.maps.model.particle.ColorGenerate::getColor", (args, methodResult) -> {
@@ -64919,35 +63844,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             // result
             methodResult.success(result);
-        });
-        // method
-        put("com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants::createNativeInstace", (args, methodResult) -> {
-            // args
-        
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants ref = (com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants@" + refId + "::createNativeInstace(" + "" + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.createNativeInstace();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
         });
         // method
         put("com.amap.api.maps.model.particle.ParticleShapeModule::isUseRatio", (args, methodResult) -> {
@@ -69081,7 +67977,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setInfoWindowAnimation(var1, new com.amap.api.maps.model.animation.Animation.AnimationListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation::Callback");
         
                 // call dart method
                 @Override
@@ -69643,7 +68539,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnDismissCallbackListener(new com.amap.api.maps.WearMapView.OnDismissCallback() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback");
         
                 // call dart method
                 @Override
@@ -69997,7 +68893,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.animateCamera(var1, new com.amap.api.maps.AMap.CancelableCallback() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback::Callback");
         
                 // call dart method
                 @Override
@@ -70078,7 +68974,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.animateCamera(var1, var2, new com.amap.api.maps.AMap.CancelableCallback() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback::Callback");
         
                 // call dart method
                 @Override
@@ -71196,7 +70092,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setLocationSource(new com.amap.api.maps.LocationSource() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setLocationSource::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setLocationSource::Callback");
         
                 // call dart method
                 @Override
@@ -71477,7 +70373,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnCameraChangeListener(new com.amap.api.maps.AMap.OnCameraChangeListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnCameraChangeListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnCameraChangeListener::Callback");
         
                 // call dart method
                 @Override
@@ -71559,7 +70455,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMapClickListener(new com.amap.api.maps.AMap.OnMapClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -71617,7 +70513,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMapTouchListener(new com.amap.api.maps.AMap.OnMapTouchListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapTouchListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapTouchListener::Callback");
         
                 // call dart method
                 @Override
@@ -71675,7 +70571,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnPOIClickListener(new com.amap.api.maps.AMap.OnPOIClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnPOIClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnPOIClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -71733,7 +70629,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMyLocationChangeListener(new com.amap.api.maps.AMap.OnMyLocationChangeListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMyLocationChangeListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMyLocationChangeListener::Callback");
         
                 // call dart method
                 @Override
@@ -71791,7 +70687,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMapLongClickListener(new com.amap.api.maps.AMap.OnMapLongClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapLongClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapLongClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -71849,7 +70745,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMarkerClickListener(new com.amap.api.maps.AMap.OnMarkerClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMarkerClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMarkerClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -71907,7 +70803,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnPolylineClickListener(new com.amap.api.maps.AMap.OnPolylineClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnPolylineClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnPolylineClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -71965,7 +70861,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMarkerDragListener(new com.amap.api.maps.AMap.OnMarkerDragListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMarkerDragListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMarkerDragListener::Callback");
         
                 // call dart method
                 @Override
@@ -72071,7 +70967,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnInfoWindowClickListener(new com.amap.api.maps.AMap.OnInfoWindowClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnInfoWindowClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnInfoWindowClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -72159,7 +71055,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setCommonInfoWindowAdapter(new com.amap.api.maps.AMap.CommonInfoWindowAdapter() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setCommonInfoWindowAdapter::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setCommonInfoWindowAdapter::Callback");
         
                 // call dart method
                 @Override
@@ -72217,7 +71113,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMapLoadedListener(new com.amap.api.maps.AMap.OnMapLoadedListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapLoadedListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapLoadedListener::Callback");
         
                 // call dart method
                 @Override
@@ -72273,7 +71169,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnIndoorBuildingActiveListener(new com.amap.api.maps.AMap.OnIndoorBuildingActiveListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener::Callback");
         
                 // call dart method
                 @Override
@@ -72331,7 +71227,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setOnMultiPointClickListener(new com.amap.api.maps.AMap.OnMultiPointClickListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMultiPointClickListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMultiPointClickListener::Callback");
         
                 // call dart method
                 @Override
@@ -72389,7 +71285,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.getMapPrintScreen(new com.amap.api.maps.AMap.onMapPrintScreenListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::getMapPrintScreen::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::getMapPrintScreen::Callback");
         
                 // call dart method
                 @Override
@@ -72447,7 +71343,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.getMapScreenShot(new com.amap.api.maps.AMap.OnMapScreenShotListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::getMapScreenShot::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::getMapScreenShot::Callback");
         
                 // call dart method
                 @Override
@@ -72620,7 +71516,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.removecache(new com.amap.api.maps.AMap.OnCacheRemoveListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback");
         
                 // call dart method
                 @Override
@@ -72647,36 +71543,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
                 }
         
             });
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                if (getEnableLog()) {
-                    Log.d("Current HEAP: ", getHEAP().toString());
-                }
-                methodResult.error(throwable.getMessage(), null, null);
-                return;
-            }
-        
-            // result
-            methodResult.success("success");
-        });
-        // method
-        put("com.amap.api.maps.AMap::setCustomRenderer", (args, methodResult) -> {
-            // args
-            // ref arg
-            com.amap.api.maps.CustomRenderer var1 = (com.amap.api.maps.CustomRenderer) getHEAP().get((int) args.get("var1"));
-        
-            // ref
-            int refId = (int) args.get("refId");
-            com.amap.api.maps.AMap ref = (com.amap.api.maps.AMap) getHEAP().get(refId);
-        
-            // print log
-            if (getEnableLog()) {
-                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap@" + refId + "::setCustomRenderer(" + var1 + ")");
-            }
-        
-            // invoke native method
-            try {
-                ref.setCustomRenderer(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -72918,7 +71784,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.setAMapGestureListener(new com.amap.api.maps.model.AMapGestureListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setAMapGestureListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setAMapGestureListener::Callback");
         
                 // call dart method
                 @Override
@@ -74330,7 +73196,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.queryProcessedTrace(var1, new ArrayList(var2), var3, new com.amap.api.trace.TraceListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.trace.LBSTraceBase::queryProcessedTrace::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.trace.LBSTraceBase::queryProcessedTrace::Callback");
         
                 // call dart method
                 @Override
@@ -74519,7 +73385,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.startTrace(new com.amap.api.trace.TraceStatusListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.trace.LBSTraceBase::startTrace::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.trace.LBSTraceBase::startTrace::Callback");
         
                 // call dart method
                 @Override
@@ -75183,7 +74049,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.queryProcessedTrace(var1, new ArrayList(var2), var3, new com.amap.api.trace.TraceListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.trace.LBSTraceClient::queryProcessedTrace::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.trace.LBSTraceClient::queryProcessedTrace::Callback");
         
                 // call dart method
                 @Override
@@ -75312,7 +74178,7 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             try {
                 ref.startTrace(new com.amap.api.trace.TraceStatusListener() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.trace.LBSTraceClient::startTrace::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.trace.LBSTraceClient::startTrace::Callback");
         
                 // call dart method
                 @Override
@@ -77517,24 +76383,6 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
             methodResult.success(obj.hashCode());
         });
         // factory
-        put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapActivity__", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapActivity__");
-        
-            // args
-        
-        
-            // create target object
-            com.amap.api.maps.offlinemap.OfflineMapActivity obj = new com.amap.api.maps.offlinemap.OfflineMapActivity();
-            getHEAP().put(obj.hashCode(), obj);
-        
-            // print current HEAP
-            if (getEnableLog()) {
-                Log.d("ObjectFactory", "HEAP: " + getHEAP());
-            }
-        
-            methodResult.success(obj.hashCode());
-        });
-        // factory
         put("ObjectFactory::createcom_amap_api_maps_offlinemap_City__", (args, methodResult) -> {
             Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_City__");
         
@@ -79289,50 +78137,22 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         
             methodResult.success(obj.hashCode());
         });
-        // factory
-        put("ObjectFactory::createcom_amap_api_mapcore_util_id__android_content_Context__boolean", (args, methodResult) -> {
-            Log.d("ObjectFactory", "创建对象: com_amap_api_mapcore_util_id__android_content_Context__boolean");
-        
-            // args
-            // ref arg
-            android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
-            // jsonable arg
-            boolean var2 = (boolean) args.get("var2");
-        
-            // create target object
-            com.amap.api.mapcore.util.id obj = new com.amap.api.mapcore.util.id(var1, var2);
-            getHEAP().put(obj.hashCode(), obj);
-        
-            // print current HEAP
-            if (getEnableLog()) {
-                Log.d("ObjectFactory", "HEAP: " + getHEAP());
-            }
-        
-            methodResult.success(obj.hashCode());
-        });
     }};
 
+    // v1 android embedding for compatible
     public static void registerWith(Registrar registrar) {
-        MethodChannel channel = new MethodChannel(registrar.messenger(), "me.yohom/amap_map_fluttify");
-        channel.setMethodCallHandler(new AmapMapFluttifyPlugin(registrar));
+        initPlugin(registrar.messenger(), registrar.platformViewRegistry());
+    }
 
-        // register platform view
-        registrar
-                .platformViewRegistry()
-                .registerViewFactory("me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView", new DownloadProgressViewFactory(registrar));
-        
-        registrar
-                .platformViewRegistry()
-                .registerViewFactory("me.yohom/com.amap.api.maps.TextureMapView", new TextureMapViewFactory(registrar));
-        
-        registrar
-                .platformViewRegistry()
-                .registerViewFactory("me.yohom/com.amap.api.maps.WearMapView", new WearMapViewFactory(registrar));
-        
-        registrar
-                .platformViewRegistry()
-                .registerViewFactory("me.yohom/com.amap.api.maps.MapView", new MapViewFactory(registrar));
-        
+    // v2 android embedding
+    @Override
+    public void onAttachedToEngine(FlutterPluginBinding binding) {
+        initPlugin(binding.getBinaryMessenger(), binding.getPlatformViewRegistry());
+    }
+
+    @Override
+    public void onDetachedFromEngine(FlutterPluginBinding binding) {
+
     }
 
     @Override
@@ -79349,6 +78169,21 @@ public class AmapMapFluttifyPlugin implements MethodChannel.MethodCallHandler {
         } else {
             methodResult.notImplemented();
         }
+    }
+
+    private static void initPlugin(BinaryMessenger messenger, PlatformViewRegistry platformViewRegistry) {
+        MethodChannel channel = new MethodChannel(messenger, "me.yohom/amap_map_fluttify");
+        channel.setMethodCallHandler(new AmapMapFluttifyPlugin(messenger));
+
+        // register platform view
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView", new DownloadProgressViewFactory(messenger));
+        
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.TextureMapView", new TextureMapViewFactory(messenger));
+        
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.WearMapView", new WearMapViewFactory(messenger));
+        
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.MapView", new MapViewFactory(messenger));
+        
     }
 
     @FunctionalInterface

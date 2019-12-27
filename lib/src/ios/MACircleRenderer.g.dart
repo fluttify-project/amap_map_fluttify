@@ -16,7 +16,7 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
   //endregion
 
   //region creators
-  static Future<MACircleRenderer> create() async {
+  static Future<MACircleRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACircleRenderer');
     final object = MACircleRenderer()..refId = refId..tag = 'amap_map_fluttify';
   

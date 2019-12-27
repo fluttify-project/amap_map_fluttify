@@ -16,7 +16,7 @@ class MAMapRect extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAMapRect> create() async {
+  static Future<MAMapRect> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMapRect');
     final object = MAMapRect()..refId = refId..tag = 'amap_map_fluttify';
   

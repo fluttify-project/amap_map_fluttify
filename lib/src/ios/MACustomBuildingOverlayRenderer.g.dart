@@ -16,7 +16,7 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
   //endregion
 
   //region creators
-  static Future<MACustomBuildingOverlayRenderer> create() async {
+  static Future<MACustomBuildingOverlayRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACustomBuildingOverlayRenderer');
     final object = MACustomBuildingOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
   

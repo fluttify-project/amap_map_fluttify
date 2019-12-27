@@ -16,7 +16,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
   //endregion
 
   //region creators
-  static Future<com_autonavi_amap_mapcore_AMapNativeParticleSystem> create() async {
+  static Future<com_autonavi_amap_mapcore_AMapNativeParticleSystem> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeParticleSystem__');
     final object = com_autonavi_amap_mapcore_AMapNativeParticleSystem()..refId = refId..tag = 'amap_map_fluttify';
   

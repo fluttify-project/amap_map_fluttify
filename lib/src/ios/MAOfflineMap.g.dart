@@ -16,7 +16,7 @@ class MAOfflineMap extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAOfflineMap> create() async {
+  static Future<MAOfflineMap> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAOfflineMap');
     final object = MAOfflineMap()..refId = refId..tag = 'amap_map_fluttify';
   

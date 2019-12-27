@@ -16,7 +16,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends java_lang_Obj
   //endregion
 
   //region creators
-  static Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr> create() async {
+  static Future<com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr__');
     final object = com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr()..refId = refId..tag = 'amap_map_fluttify';
   

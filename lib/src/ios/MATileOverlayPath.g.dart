@@ -16,7 +16,7 @@ class MATileOverlayPath extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MATileOverlayPath> create() async {
+  static Future<MATileOverlayPath> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATileOverlayPath');
     final object = MATileOverlayPath()..refId = refId..tag = 'amap_map_fluttify';
   

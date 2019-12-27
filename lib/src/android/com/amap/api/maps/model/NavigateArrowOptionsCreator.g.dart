@@ -16,7 +16,7 @@ class com_amap_api_maps_model_NavigateArrowOptionsCreator extends java_lang_Obje
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_model_NavigateArrowOptionsCreator> create() async {
+  static Future<com_amap_api_maps_model_NavigateArrowOptionsCreator> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptionsCreator__');
     final object = com_amap_api_maps_model_NavigateArrowOptionsCreator()..refId = refId..tag = 'amap_map_fluttify';
   

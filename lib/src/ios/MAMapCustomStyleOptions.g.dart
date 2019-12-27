@@ -16,7 +16,7 @@ class MAMapCustomStyleOptions extends NSObject  {
   //endregion
 
   //region creators
-  static Future<MAMapCustomStyleOptions> create() async {
+  static Future<MAMapCustomStyleOptions> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMapCustomStyleOptions');
     final object = MAMapCustomStyleOptions()..refId = refId..tag = 'amap_map_fluttify';
   

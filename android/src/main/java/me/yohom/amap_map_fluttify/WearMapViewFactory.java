@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
 
+import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 import io.flutter.plugin.common.StandardMessageCodec;
@@ -26,12 +27,12 @@ import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableL
 @SuppressWarnings("ALL")
 class WearMapViewFactory extends PlatformViewFactory {
 
-    WearMapViewFactory(Registrar registrar) {
+    WearMapViewFactory(BinaryMessenger messenger) {
         super(StandardMessageCodec.INSTANCE);
 
-        this.registrar = registrar;
+        this.messenger = messenger;
 
-        new MethodChannel(registrar.messenger(), "me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView").setMethodCallHandler((methodCall, methodResult) -> {
+        new MethodChannel(messenger, "me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView").setMethodCallHandler((methodCall, methodResult) -> {
                     Map<String, Object> args = (Map<String, Object>) methodCall.arguments;
                     AmapMapFluttifyPlugin.Handler handler = handlerMap.get(methodCall.method);
                     if (handler != null) {
@@ -47,7 +48,7 @@ class WearMapViewFactory extends PlatformViewFactory {
                 });
     }
 
-    private Registrar registrar;
+    private BinaryMessenger messenger;
 
     private final Map<String, AmapMapFluttifyPlugin.Handler> handlerMap = new HashMap<String, AmapMapFluttifyPlugin.Handler>() {{
         // method
@@ -311,7 +312,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             try {
                 ref.setOnDismissCallbackListener(new com.amap.api.maps.WearMapView.OnDismissCallback() {
                 // method channel
-                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback");
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback");
         
                 // call dart method
                 @Override
@@ -467,7 +468,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         // ref arg
         com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) args.get("var2"));
 
-        com.amap.api.maps.WearMapView view = new com.amap.api.maps.WearMapView(registrar.activity(), var2);
+        com.amap.api.maps.WearMapView view = new com.amap.api.maps.WearMapView(context, var2);
         getHEAP().put(id, view);
         return new PlatformView() {
 

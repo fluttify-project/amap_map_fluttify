@@ -16,7 +16,7 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   //endregion
 
   //region creators
-  static Future<MAOverlayPathRenderer> create() async {
+  static Future<MAOverlayPathRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAOverlayPathRenderer');
     final object = MAOverlayPathRenderer()..refId = refId..tag = 'amap_map_fluttify';
   

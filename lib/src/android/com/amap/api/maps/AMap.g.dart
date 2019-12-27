@@ -1904,28 +1904,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   }
   
-  Future<void> setCustomRenderer(com_amap_api_maps_CustomRenderer var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMap@$refId::setCustomRenderer([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setCustomRenderer', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
   Future<void> setPointToCenter(int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {

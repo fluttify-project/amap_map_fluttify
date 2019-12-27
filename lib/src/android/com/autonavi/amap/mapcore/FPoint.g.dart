@@ -16,7 +16,7 @@ class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
   //endregion
 
   //region creators
-  static Future<com_autonavi_amap_mapcore_FPoint> create() async {
+  static Future<com_autonavi_amap_mapcore_FPoint> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__');
     final object = com_autonavi_amap_mapcore_FPoint()..refId = refId..tag = 'amap_map_fluttify';
   

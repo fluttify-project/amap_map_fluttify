@@ -16,7 +16,7 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends java_lang_Obj
   //endregion
 
   //region creators
-  static Future<com_autonavi_amap_mapcore_AMapNativeBuildingRenderer> create() async {
+  static Future<com_autonavi_amap_mapcore_AMapNativeBuildingRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeBuildingRenderer__');
     final object = com_autonavi_amap_mapcore_AMapNativeBuildingRenderer()..refId = refId..tag = 'amap_map_fluttify';
   

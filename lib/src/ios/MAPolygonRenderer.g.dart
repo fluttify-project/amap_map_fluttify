@@ -16,7 +16,7 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
   //endregion
 
   //region creators
-  static Future<MAPolygonRenderer> create() async {
+  static Future<MAPolygonRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAPolygonRenderer');
     final object = MAPolygonRenderer()..refId = refId..tag = 'amap_map_fluttify';
   

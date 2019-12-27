@@ -16,7 +16,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   //endregion
 
   //region creators
-  static Future<MATileOverlay> create() async {
+  static Future<MATileOverlay> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATileOverlay');
     final object = MATileOverlay()..refId = refId..tag = 'amap_map_fluttify';
   

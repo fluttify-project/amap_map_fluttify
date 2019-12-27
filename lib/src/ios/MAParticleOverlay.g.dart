@@ -16,7 +16,7 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
   //endregion
 
   //region creators
-  static Future<MAParticleOverlay> create() async {
+  static Future<MAParticleOverlay> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleOverlay');
     final object = MAParticleOverlay()..refId = refId..tag = 'amap_map_fluttify';
   

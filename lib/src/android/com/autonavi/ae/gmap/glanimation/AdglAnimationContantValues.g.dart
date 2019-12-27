@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues extends java_l
   //endregion
 
   //region creators
-  static Future<com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues> create() async {
+  static Future<com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__');
     final object = com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = refId..tag = 'amap_map_fluttify';
   

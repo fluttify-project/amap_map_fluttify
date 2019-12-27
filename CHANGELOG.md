@@ -1,3 +1,6 @@
+## 0.16.3
+- fix: setCenterCoordinate的时候, 如果没有设置bearing和tilt, 则使用地图已有的状态
+
 ## 0.16.2
 - feat: 增加获取缩放等级的方法
 

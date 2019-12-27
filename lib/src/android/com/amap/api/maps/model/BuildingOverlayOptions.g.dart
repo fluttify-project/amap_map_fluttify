@@ -16,7 +16,7 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_model_BuildingOverlayOptions> create() async {
+  static Future<com_amap_api_maps_model_BuildingOverlayOptions> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_BuildingOverlayOptions__');
     final object = com_amap_api_maps_model_BuildingOverlayOptions()..refId = refId..tag = 'amap_map_fluttify';
   

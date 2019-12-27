@@ -20,7 +20,7 @@ class com_autonavi_ae_gmap_glinterface_MapLabelItem extends java_lang_Object  {
   //endregion
 
   //region creators
-  static Future<com_autonavi_ae_gmap_glinterface_MapLabelItem> create() async {
+  static Future<com_autonavi_ae_gmap_glinterface_MapLabelItem> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glinterface_MapLabelItem__');
     final object = com_autonavi_ae_gmap_glinterface_MapLabelItem()..refId = refId..tag = 'amap_map_fluttify';
   

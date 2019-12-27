@@ -40,7 +40,7 @@ class com_amap_api_maps_AMapException extends java_lang_Object  {
     return object;
   }
   
-  static Future<com_amap_api_maps_AMapException> create() async {
+  static Future<com_amap_api_maps_AMapException> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapException__');
     final object = com_amap_api_maps_AMapException()..refId = refId..tag = 'amap_map_fluttify';
   

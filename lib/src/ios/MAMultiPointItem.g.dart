@@ -16,7 +16,7 @@ class MAMultiPointItem extends NSObject with MAAnnotation, NSCopying {
   //endregion
 
   //region creators
-  static Future<MAMultiPointItem> create() async {
+  static Future<MAMultiPointItem> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMultiPointItem');
     final object = MAMultiPointItem()..refId = refId..tag = 'amap_map_fluttify';
   

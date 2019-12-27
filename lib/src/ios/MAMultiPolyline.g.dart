@@ -16,7 +16,7 @@ class MAMultiPolyline extends MAPolyline  {
   //endregion
 
   //region creators
-  static Future<MAMultiPolyline> create() async {
+  static Future<MAMultiPolyline> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMultiPolyline');
     final object = MAMultiPolyline()..refId = refId..tag = 'amap_map_fluttify';
   

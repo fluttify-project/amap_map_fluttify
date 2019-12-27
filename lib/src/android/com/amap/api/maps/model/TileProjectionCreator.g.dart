@@ -16,7 +16,7 @@ class com_amap_api_maps_model_TileProjectionCreator extends java_lang_Object  {
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_model_TileProjectionCreator> create() async {
+  static Future<com_amap_api_maps_model_TileProjectionCreator> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_TileProjectionCreator__');
     final object = com_amap_api_maps_model_TileProjectionCreator()..refId = refId..tag = 'amap_map_fluttify';
   
