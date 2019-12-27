@@ -468,7 +468,7 @@ class WearMapViewFactory extends PlatformViewFactory {
         // ref arg
         com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) args.get("var2"));
 
-        com.amap.api.maps.WearMapView view = new com.amap.api.maps.WearMapView((android.app.Activity) context, var2);
+        com.amap.api.maps.WearMapView view = new com.amap.api.maps.WearMapView(context, var2);
         getHEAP().put(id, view);
         return new PlatformView() {
 

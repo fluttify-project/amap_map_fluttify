@@ -302,7 +302,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
         // ref arg
         com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) args.get("var2"));
 
-        com.amap.api.maps.TextureMapView view = new com.amap.api.maps.TextureMapView((android.app.Activity) context, var2);
+        com.amap.api.maps.TextureMapView view = new com.amap.api.maps.TextureMapView(context, var2);
         getHEAP().put(id, view);
         return new PlatformView() {
 

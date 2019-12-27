@@ -302,7 +302,7 @@ class MapViewFactory extends PlatformViewFactory {
         // ref arg
         com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) args.get("var2"));
 
-        com.amap.api.maps.MapView view = new com.amap.api.maps.MapView((android.app.Activity) context, var2);
+        com.amap.api.maps.MapView view = new com.amap.api.maps.MapView(context, var2);
         getHEAP().put(id, view);
         return new PlatformView() {
 
