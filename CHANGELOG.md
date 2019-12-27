@@ -1,3 +1,6 @@
+## 0.17.0
+- enhance: Android端可以不用通过AndroidManifest.xml配置key
+
 ## 0.16.3
 - fix: setCenterCoordinate的时候, 如果没有设置bearing和tilt, 则使用地图已有的状态
 
