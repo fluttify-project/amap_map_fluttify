@@ -587,7 +587,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         final finalTilt = tilt ?? await camera.get_tilt();
         final cameraPosition = await com_amap_api_maps_model_CameraPosition
             .create__com_amap_api_maps_model_LatLng__float__float__float(
-                latLng, finalZoomLevel, finalBearing, finalTilt);
+                latLng, finalZoomLevel, finalTilt, finalBearing);
 
         final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
             .newCameraPosition(cameraPosition);
