@@ -27,10 +27,6 @@ import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
 @SuppressWarnings("ALL")
 public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodCallHandler {
 
-    private AmapMapFluttifyPlugin(BinaryMessenger messenger) {
-        this.messenger = messenger;
-    }
-
     private BinaryMessenger messenger;
 
     private final Map<String, Handler> handlerMap = new HashMap<String, Handler>() {{
@@ -78141,13 +78137,46 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
 
     // v1 android embedding for compatible
     public static void registerWith(Registrar registrar) {
-        initPlugin(registrar.messenger(), registrar.platformViewRegistry());
+        final MethodChannel channel = new MethodChannel(registrar.messenger(), "me.yohom/amap_map_fluttify");
+
+        AmapMapFluttifyPlugin plugin = new AmapMapFluttifyPlugin();
+        BinaryMessenger messenger = registrar.messenger();
+        plugin.messenger = messenger;
+
+        channel.setMethodCallHandler(plugin);
+
+        // register platform view
+        PlatformViewRegistry platformViewRegistry = registrar.platformViewRegistry();
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView", new DownloadProgressViewFactory(messenger));
+        
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.TextureMapView", new TextureMapViewFactory(messenger));
+        
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.WearMapView", new WearMapViewFactory(messenger));
+        
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.MapView", new MapViewFactory(messenger));
+        
     }
 
     // v2 android embedding
     @Override
     public void onAttachedToEngine(FlutterPluginBinding binding) {
-        initPlugin(binding.getBinaryMessenger(), binding.getPlatformViewRegistry());
+        final MethodChannel channel = new MethodChannel(binding.getBinaryMessenger(), "me.yohom/amap_map_fluttify");
+
+        messenger = binding.getBinaryMessenger();
+
+        channel.setMethodCallHandler(this);
+
+
+        // register platform view
+        PlatformViewRegistry platformViewRegistry = binding.getPlatformViewRegistry();
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView", new DownloadProgressViewFactory(messenger));
+        
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.TextureMapView", new TextureMapViewFactory(messenger));
+        
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.WearMapView", new WearMapViewFactory(messenger));
+        
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.MapView", new MapViewFactory(messenger));
+        
     }
 
     @Override
@@ -78169,21 +78198,6 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         } else {
             methodResult.notImplemented();
         }
-    }
-
-    private static void initPlugin(BinaryMessenger messenger, PlatformViewRegistry platformViewRegistry) {
-        MethodChannel channel = new MethodChannel(messenger, "me.yohom/amap_map_fluttify");
-        channel.setMethodCallHandler(new AmapMapFluttifyPlugin(messenger));
-
-        // register platform view
-        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView", new DownloadProgressViewFactory(messenger));
-        
-        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.TextureMapView", new TextureMapViewFactory(messenger));
-        
-        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.WearMapView", new WearMapViewFactory(messenger));
-        
-        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.MapView", new MapViewFactory(messenger));
-        
     }
 
     @FunctionalInterface

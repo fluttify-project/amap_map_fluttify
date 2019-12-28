@@ -1,3 +1,7 @@
+## 0.17.1
+- roll engine #2721fb9
+- fix: 修正安卓端CameraPosition构造函数tilt和bearing位置 (#133)
+
 ## 0.17.0
 - enhance: Android端可以不用通过AndroidManifest.xml配置key
 
