@@ -78140,11 +78140,13 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         final MethodChannel channel = new MethodChannel(registrar.messenger(), "me.yohom/amap_map_fluttify");
 
         AmapMapFluttifyPlugin plugin = new AmapMapFluttifyPlugin();
-        plugin.messenger = registrar.messenger();
+        BinaryMessenger messenger = registrar.messenger();
+        plugin.messenger = messenger;
 
         channel.setMethodCallHandler(plugin);
 
         // register platform view
+        PlatformViewRegistry platformViewRegistry = registrar.platformViewRegistry();
         platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView", new DownloadProgressViewFactory(messenger));
         
         platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.TextureMapView", new TextureMapViewFactory(messenger));
@@ -78164,7 +78166,9 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
 
         channel.setMethodCallHandler(this);
 
+
         // register platform view
+        PlatformViewRegistry platformViewRegistry = binding.getPlatformViewRegistry();
         platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView", new DownloadProgressViewFactory(messenger));
         
         platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.TextureMapView", new TextureMapViewFactory(messenger));
