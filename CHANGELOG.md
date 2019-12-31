@@ -1,3 +1,6 @@
+## 0.17.2
+- roll engine #4d92ce0.
+
 ## 0.17.1
 - roll engine #2721fb9
 - fix: 修正安卓端CameraPosition构造函数tilt和bearing位置 (#133)

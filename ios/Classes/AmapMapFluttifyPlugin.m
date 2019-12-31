@@ -7349,6 +7349,22 @@ extern BOOL enableLog;
           methodResult(@(result));
       },
       
+      @"MAParticleOverlayOptions::get_duration": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::get_duration");
+          }
+      
+          // ref object
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
+      
+          // invoke native method
+          NSTimeInterval result = ref.duration;
+      
+          // 返回值: Value
+          methodResult(@(result));
+      },
+      
       @"MAParticleOverlayOptions::get_loop": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -7415,6 +7431,22 @@ extern BOOL enableLog;
           HEAP[@(resultValue.hash)] = resultValue;
       
           methodResult(@(resultValue.hash));
+      },
+      
+      @"MAParticleOverlayOptions::get_particleLifeTime": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::get_particleLifeTime");
+          }
+      
+          // ref object
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
+      
+          // invoke native method
+          NSTimeInterval result = ref.particleLifeTime;
+      
+          // 返回值: Value
+          methodResult(@(result));
       },
       
       @"MAParticleOverlayOptions::get_particleStartColor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -10765,6 +10797,23 @@ extern BOOL enableLog;
           methodResult(@"success");
       },
       
+      @"MAParticleOverlayOptions::set_duration": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::set_duration");
+          }
+      
+          // args
+          // jsonable arg
+          NSTimeInterval duration = [args[@"duration"] doubleValue];
+      
+          // ref
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
+      
+          ref.duration = duration;
+          methodResult(@"success");
+      },
+      
       @"MAParticleOverlayOptions::set_loop": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -10832,6 +10881,23 @@ extern BOOL enableLog;
           MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
       
           ref.startParticleSize = startParticleSize;
+          methodResult(@"success");
+      },
+      
+      @"MAParticleOverlayOptions::set_particleLifeTime": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAParticleOverlayOptions::set_particleLifeTime");
+          }
+      
+          // args
+          // jsonable arg
+          NSTimeInterval particleLifeTime = [args[@"particleLifeTime"] doubleValue];
+      
+          // ref
+          MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) args[@"refId"]];
+      
+          ref.particleLifeTime = particleLifeTime;
           methodResult(@"success");
       },
       
