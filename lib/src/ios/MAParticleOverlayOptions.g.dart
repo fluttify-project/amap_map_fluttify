@@ -33,6 +33,12 @@ class MAParticleOverlayOptions extends NSObject  {
     return result;
   }
   
+  Future<double> get_duration() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_duration", {'refId': refId});
+  
+    return result;
+  }
+  
   Future<bool> get_loop() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_loop", {'refId': refId});
   
@@ -55,6 +61,12 @@ class MAParticleOverlayOptions extends NSObject  {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_startParticleSize", {'refId': refId});
     kNativeObjectPool.add(CGSize()..refId = result..tag = 'amap_map_fluttify');
     return CGSize()..refId = result..tag = 'amap_map_fluttify';
+  }
+  
+  Future<double> get_particleLifeTime() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayOptions::get_particleLifeTime", {'refId': refId});
+  
+    return result;
   }
   
   Future<MAParticleColorGenerate> get_particleStartColor() async {
@@ -96,6 +108,12 @@ class MAParticleOverlayOptions extends NSObject  {
   
   }
   
+  Future<void> set_duration(double duration) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_duration', {'refId': refId, "duration": duration});
+  
+  
+  }
+  
   Future<void> set_loop(bool loop) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_loop', {'refId': refId, "loop": loop});
   
@@ -116,6 +134,12 @@ class MAParticleOverlayOptions extends NSObject  {
   
   Future<void> set_startParticleSize(CGSize startParticleSize) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_startParticleSize', {'refId': refId, "startParticleSize": startParticleSize.refId});
+  
+  
+  }
+  
+  Future<void> set_particleLifeTime(double particleLifeTime) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_particleLifeTime', {'refId': refId, "particleLifeTime": particleLifeTime});
   
   
   }

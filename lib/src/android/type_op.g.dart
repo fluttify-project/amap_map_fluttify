@@ -11,7 +11,7 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-extension TypeOpAndroid on Ref {
+extension TypeOpAmapMapFluttifyAndroid on Ref {
   Future<bool> iscom_autonavi_ae_gmap_maploader_Pools() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_maploader_Pools', {'refId': refId});
     return result;
