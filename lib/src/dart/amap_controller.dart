@@ -573,7 +573,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     double tilt,
     bool animated = true,
   }) async {
-    assert(zoomLevel >= 3 && zoomLevel <= 19, '缩放范围为3-19');
+    assert((zoomLevel >= 3 && zoomLevel <= 19) || zoomLevel == null, '缩放范围为3-19');
     await platform(
       android: (pool) async {
         final map = await androidController.getMap();

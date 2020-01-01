@@ -1,3 +1,6 @@
+## 0.17.4
+- fix: setCenterCoordinate的zoomLevel没有设置时触发了assert的错误
+
 ## 0.17.3
 - enhance: ios端支持不同样式的marker
 
