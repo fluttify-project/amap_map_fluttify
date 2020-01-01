@@ -20,7 +20,7 @@ A new flutter plugin project.
   s.dependency 'amap_core_fluttify'
   s.dependency 'url_launcher'
   # sdk dependency
-  s.dependency 'AMap3DMap', '6.9.0'
+  s.dependency 'AMap3DMap', '~> 6.9.0'
 
   s.ios.deployment_target = '8.0'
   # include project framework
