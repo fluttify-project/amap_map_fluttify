@@ -7,7 +7,8 @@ import 'package:flutter/material.dart';
 
 final _networkIcon = Uri.parse(
     'https://w3.hoopchina.com.cn/30/a7/6a/30a76aea75aef69e4ea0e7d3dee552c7001.jpg');
-final _assetsIcon = Uri.parse('images/test_icon.png');
+final _assetsIcon1 = Uri.parse('images/test_icon.png');
+final _assetsIcon2 = Uri.parse('images/arrow.png');
 
 class DrawPointScreen extends StatefulWidget {
   DrawPointScreen();
@@ -29,6 +30,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
           Flexible(
             flex: 1,
             child: AmapView(
+              zoomLevel: 6,
               onMapCreated: (controller) async {
                 _controller = controller;
                 if (await requestPermission()) {
@@ -72,6 +74,8 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         latLng: getNextLatLng(),
                         title: '北京',
                         snippet: '描述',
+                        iconUri: _assetsIcon1,
+                        imageConfig: createLocalImageConfiguration(context),
                         infoWindowEnabled: false,
                       ),
                     );
@@ -105,7 +109,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         latLng: LatLng(39.90960, 116.397228),
                         title: '北京',
                         snippet: '描述',
-                        iconUri: _assetsIcon,
+                        iconUri: _assetsIcon1,
                         draggable: true,
                         imageConfig: createLocalImageConfiguration(context),
                         rotateAngle: 360 * value,
@@ -126,9 +130,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                             latLng: getNextLatLng(),
                             title: '北京',
                             snippet: '描述',
-                            iconUri: _assetsIcon,
-                            draggable: true,
-//                            infoWindowEnabled: false,
+                            iconUri: i % 2 == 0 ? _assetsIcon1 : _assetsIcon2,
                             imageConfig: createLocalImageConfiguration(context),
                           ),
                       ],

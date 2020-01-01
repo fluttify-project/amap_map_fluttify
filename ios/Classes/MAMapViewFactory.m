@@ -4,6 +4,7 @@
 
 #import "MAMapViewFactory.h"
 #import "AmapMapFluttifyPlugin.h"
+#import <objc/runtime.h>
 
 // Dart端一次方法调用所存在的栈, 只有当MethodChannel传递参数受限时, 再启用这个容器
 extern NSMutableDictionary<NSString*, NSObject*>* STACK;
@@ -3554,13 +3555,13 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"暂不支持有返回值的回调方法");
   
   ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
-  UIImage* icon = (UIImage*) STACK[@"icon"];
-  NSNumber* draggable = (NSNumber*) STACK[@"draggable"];
-  NSNumber* rotateAngle = (NSNumber*) STACK[@"rotateAngle"];
-  NSNumber* infoWindowEnabled = (NSNumber*) STACK[@"infoWindowEnabled"];
-  NSNumber* anchorU = (NSNumber*) STACK[@"anchorU"];
-  NSNumber* anchorV = (NSNumber*) STACK[@"anchorV"];
-  
+  UIImage* icon = (UIImage *) objc_getAssociatedObject(annotation, (const void *) 1);
+  NSNumber* draggable = objc_getAssociatedObject(annotation, (const void *) 2);
+  NSNumber* rotateAngle = objc_getAssociatedObject(annotation, (const void *) 3);
+  NSNumber* infoWindowEnabled = objc_getAssociatedObject(annotation, (const void *) 4);
+  NSNumber* anchorU = objc_getAssociatedObject(annotation, (const void *) 5);
+  NSNumber* anchorV = objc_getAssociatedObject(annotation, (const void *) 6);
+
   //用户当前位置大头针
   if ([annotation isKindOfClass:[MAUserLocation class]]) {
     return nil;
@@ -3616,8 +3617,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAddAnnotationViews" arguments:@{@"mapView": argmapView, @"views": argviews}];
 
-  // 添加annotation完成后, 不管是批量还是单个, 都会回调此方法, 所以不能在viewForAnnotation里清空, 需要在这里清空栈, 到这里才算一个方法调用完成
-  [STACK removeAllObjects];
 }
 
 - (void)mapView : (MAMapView*)mapView didSelectAnnotationView: (MAAnnotationView*)view

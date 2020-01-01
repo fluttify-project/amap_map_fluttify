@@ -752,9 +752,8 @@ class AmapController with WidgetsBindingObserver, _Private {
 
           final icon = await UIImage.create(iconData);
 
-          // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
-          // 供ios的回调去获取
-          await pushStack('icon', icon);
+          // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
+          await pointAnnotation.addProperty(1, icon);
 
           pool..add(icon);
         }
@@ -764,29 +763,27 @@ class AmapController with WidgetsBindingObserver, _Private {
 
           final icon = await UIImage.create(iconData);
 
-          // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
-          // 供ios的回调去获取
-          await pushStack('icon', icon);
+          // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
+          await pointAnnotation.addProperty(1, icon);
 
           pool..add(icon);
         }
         // 是否可拖拽
         if (option.draggable != null) {
-          await pushStackJsonable('draggable', option.draggable);
+          await pointAnnotation.addJsonableProperty(2, option.draggable);
         }
         // 旋转角度
         if (option.rotateAngle != null) {
-          await pushStackJsonable('rotateAngle', option.rotateAngle);
+          await pointAnnotation.addJsonableProperty(3, option.rotateAngle);
         }
         // 是否允许弹窗
         if (option.infoWindowEnabled != null) {
-          await pushStackJsonable(
-              'infoWindowEnabled', option.infoWindowEnabled);
+          pointAnnotation.addJsonableProperty(4, option.infoWindowEnabled);
         }
         // 锚点
         if (option.anchorU != null || option.anchorV != null) {
-          await pushStackJsonable('anchorU', option.anchorU);
-          await pushStackJsonable('anchorV', option.anchorV);
+          await pointAnnotation.addJsonableProperty(5, option.anchorU);
+          await pointAnnotation.addJsonableProperty(6, option.anchorV);
         }
 
         await iosController.addAnnotation(pointAnnotation);
@@ -801,7 +798,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
   /// 批量添加marker
   ///
-  /// 根据[options]批量创建Marker, 目前iOS端所有的marker的icon和draggable参数都只能一样
+  /// 根据[options]批量创建Marker
   Future<List<Marker>> addMarkers(List<MarkerOption> options) {
     assert(options != null);
 
@@ -920,9 +917,8 @@ class AmapController with WidgetsBindingObserver, _Private {
 
             final icon = await UIImage.create(iconData);
 
-            // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
-            // 供ios的回调去获取
-            await pushStack('icon', icon);
+            // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
+            await pointAnnotation.addProperty(1, icon);
 
             pool..add(icon);
           }
@@ -932,20 +928,27 @@ class AmapController with WidgetsBindingObserver, _Private {
 
             final icon = await UIImage.create(iconData);
 
-            // 由于ios端的icon参数在回调中设置, 无法在add的时候设置, 所以需要放到STACK中去
-            // 供ios的回调去获取
-            await pushStack('icon', icon);
+            // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
+            await pointAnnotation.addProperty(1, icon);
 
             pool..add(icon);
           }
           // 是否可拖拽
           if (option.draggable != null) {
-            await pushStackJsonable('draggable', option.draggable);
+            await pointAnnotation.addJsonableProperty(2, option.draggable);
+          }
+          // 旋转角度
+          if (option.rotateAngle != null) {
+            await pointAnnotation.addJsonableProperty(3, option.rotateAngle);
           }
           // 是否允许弹窗
           if (option.infoWindowEnabled != null) {
-            await pushStackJsonable(
-                'infoWindowEnabled', option.infoWindowEnabled);
+            pointAnnotation.addJsonableProperty(4, option.infoWindowEnabled);
+          }
+          // 锚点
+          if (option.anchorU != null || option.anchorV != null) {
+            await pointAnnotation.addJsonableProperty(5, option.anchorU);
+            await pointAnnotation.addJsonableProperty(6, option.anchorV);
           }
 
           iosOptions.add(pointAnnotation);
