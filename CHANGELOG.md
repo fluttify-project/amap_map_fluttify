@@ -1,3 +1,6 @@
+## 0.17.3
+- enhance: ios端支持不同样式的marker
+
 ## 0.17.2
 - roll engine #4d92ce0.
 
