@@ -1,3 +1,8 @@
+## 0.17.5
+- roll engine #26272df
+- feat: MarkerOption增加自定义数据字段 (#15)
+- fix: setCenterCoordinate的zoomLevel asset错误处理
+
 ## 0.17.4
 - fix: setCenterCoordinate的zoomLevel没有设置时触发了assert的错误
 

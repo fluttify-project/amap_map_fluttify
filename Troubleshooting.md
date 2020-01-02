@@ -2,6 +2,10 @@
 方案1. 注释掉ios工程的Podfile内的`use_frameworks!`.<br/>
 方案2. 参考 [手动添加bundle到工程](https://lbs.amap.com/api/ios-sdk/guide/create-project/manual-configuration), 把`AMap.bundle`加入到主工程中.
 
+## Swift工程集成时, 报`The 'Pods-Runner' target has transitive dependencies that include statically linked binaries`
+方案1. 注释掉ios工程的Podfile内的`use_frameworks!`.<br/>
+方案2. 重新创建项目, 并选择objc.
+
 ## 集成最新版本时, 报`Because run depends on xxx_fluttify x.x.x which doesn't match any versions, version solving failed.`
 方案1: 在命令行运行`flutter packages upgrade; flutter packages get`, 而不是使用ide获取依赖.<br/>
 方案2: 去掉国内镜像换成官方源, 即注释掉环境变量
