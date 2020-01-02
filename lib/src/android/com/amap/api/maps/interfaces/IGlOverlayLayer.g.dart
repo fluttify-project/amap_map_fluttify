@@ -18,11 +18,29 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   
 
   @mustCallSuper
+  Future<void> updateOption(String var1, Object var2) {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('updateOption::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
   Future<bool> removeOverlay(String var1) {
   
   
     if (fluttifyLogEnabled) {
       debugPrint('removeOverlay::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> prepareIcon(Object var1) {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('prepareIcon::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   

@@ -224,6 +224,28 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
     }
   }
   
+  Future<void> commitAnimation(Object var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::commitAnimation([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::commitAnimation', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<bool> typeEqueal(com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup var1) async {
     // print log
     if (fluttifyLogEnabled) {

@@ -189,6 +189,28 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     }
   }
   
+  Future<com_amap_api_maps_model_TextOptions> setObject(Object var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::setObject([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::setObject', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_TextOptions()..refId = result..tag = 'amap_map_fluttify');
+      return com_amap_api_maps_model_TextOptions()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
   Future<com_amap_api_maps_model_TextOptions> fontColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -373,6 +395,28 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::getFontColor', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<Object> getObject() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getObject([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::getObject', {"refId": refId});
   
   
     // handle native call

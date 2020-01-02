@@ -81,6 +81,15 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   }
   
   @mustCallSuper
+  Future<void> cancelRequireMapData(Object var1) {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('cancelRequireMapData::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
   Future<void> OnIndoorBuildingActivity(int var1, Uint8List var2) {
   
   

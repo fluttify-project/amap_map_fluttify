@@ -126,6 +126,24 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   }
   
   @mustCallSuper
+  Future<void> setObject(Object var1) {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('setObject::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<Object> getObject() {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('getObject::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
   Future<void> setZoomLimit(double var1) {
   
   
