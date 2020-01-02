@@ -77,6 +77,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         iconUri: _assetsIcon1,
                         imageConfig: createLocalImageConfiguration(context),
                         infoWindowEnabled: false,
+                        object: '自定义数据',
                       ),
                     );
                     _markers.add(marker);
@@ -158,7 +159,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                   onTap: () {
                     _controller?.setMarkerClickedListener((marker) async {
                       toast(
-                          '${await marker.title}, ${await marker.snippet}, ${await marker.location}');
+                          '${await marker.title}, ${await marker.snippet}, ${await marker.location}, ${await marker.object}');
                     });
                   },
                 ),

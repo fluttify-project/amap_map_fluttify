@@ -8127,6 +8127,66 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             methodResult.success("success");
         });
         // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimFling::commitAnimationold", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimFling ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimFling) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@" + refId + "::commitAnimationold(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.commitAnimationold(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimFling::commitAnimation", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimFling ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimFling) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@" + refId + "::commitAnimation(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.commitAnimation(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::isOver", (args, methodResult) -> {
             // args
         
@@ -8185,6 +8245,36 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         
             // result
             methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::doAnimation", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@" + refId + "::doAnimation(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.doAnimation(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
         });
         // method
         put("com.autonavi.ae.gmap.glanimation.AdglAnimation1V::reset", (args, methodResult) -> {
@@ -8356,6 +8446,36 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             // invoke native method
             try {
                 ref.reset();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom::commitAnimation", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@" + refId + "::commitAnimation(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.commitAnimation(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -9014,6 +9134,36 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         
             // result
             methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::commitAnimation", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::commitAnimation(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.commitAnimation(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
         });
         // method
         put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::typeEqueal", (args, methodResult) -> {
@@ -10675,6 +10825,36 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         
             // result
             methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay::addItem", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay ref = (com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@" + refId + "::addItem(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.addItem(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
         });
         // method
         put("com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay::resumeMarker", (args, methodResult) -> {
@@ -13512,6 +13692,36 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             }
         });
         // method
+        put("com.autonavi.amap.mapcore.IPoint::clone", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.IPoint ref = (com.autonavi.amap.mapcore.IPoint) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.IPoint@" + refId + "::clone(" + "" + ")");
+            }
+        
+            // invoke native method
+            Object result;
+            try {
+                result = ref.clone();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeCreateGLShaderManager", (args, methodResult) -> {
             // args
         
@@ -14406,6 +14616,36 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             // invoke native method
             try {
                 ref.onMapRender(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.IAMapEngineCallback::cancelRequireMapData", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.IAMapEngineCallback ref = (com.autonavi.amap.mapcore.IAMapEngineCallback) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.IAMapEngineCallback@" + refId + "::cancelRequireMapData(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.cancelRequireMapData(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -25687,6 +25927,66 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             methodResult.success(result);
         });
         // method
+        put("com.autonavi.amap.mapcore.interfaces.IglModel::setObject", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IglModel@" + refId + "::setObject(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setObject(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.interfaces.IglModel::getObject", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IglModel@" + refId + "::getObject(" + "" + ")");
+            }
+        
+            // invoke native method
+            Object result;
+            try {
+                result = ref.getObject();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.autonavi.amap.mapcore.interfaces.IglModel::setZoomLimit", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -27422,6 +27722,66 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             int result;
             try {
                 result = ref.hashCodeRemote();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::setObject", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IOverlayImage@" + refId + "::setObject(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setObject(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getObject", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IOverlayImage@" + refId + "::getObject(" + "" + ")");
+            }
+        
+            // invoke native method
+            Object result;
+            try {
+                result = ref.getObject();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -47425,6 +47785,66 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             methodResult.success(result);
         });
         // method
+        put("com.amap.api.maps.model.Text::setObject", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.Text ref = (com.amap.api.maps.model.Text) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.Text@" + refId + "::setObject(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setObject(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.api.maps.model.Text::getObject", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.Text ref = (com.amap.api.maps.model.Text) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.Text@" + refId + "::getObject(" + "" + ")");
+            }
+        
+            // invoke native method
+            Object result;
+            try {
+                result = ref.getObject();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.amap.api.maps.model.Text::setRotate", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -57087,6 +57507,66 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             methodResult.success(result);
         });
         // method
+        put("com.amap.api.maps.model.BasePointOverlay::setObject", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.BasePointOverlay ref = (com.amap.api.maps.model.BasePointOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.BasePointOverlay@" + refId + "::setObject(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setObject(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.api.maps.model.BasePointOverlay::getObject", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.BasePointOverlay ref = (com.amap.api.maps.model.BasePointOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.BasePointOverlay@" + refId + "::getObject(" + "" + ")");
+            }
+        
+            // invoke native method
+            Object result;
+            try {
+                result = ref.getObject();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.amap.api.maps.model.BasePointOverlay::setRotateAngle", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -59358,6 +59838,66 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             // invoke native method
             try {
                 ref.setIPoint(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.api.maps.model.MultiPointItem::getObject", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.MultiPointItem ref = (com.amap.api.maps.model.MultiPointItem) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MultiPointItem@" + refId + "::getObject(" + "" + ")");
+            }
+        
+            // invoke native method
+            Object result;
+            try {
+                result = ref.getObject();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.api.maps.model.MultiPointItem::setObject", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.MultiPointItem ref = (com.amap.api.maps.model.MultiPointItem) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MultiPointItem@" + refId + "::setObject(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setObject(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -65558,6 +66098,44 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             }
         });
         // method
+        put("com.amap.api.maps.model.TextOptions::setObject", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.TextOptions@" + refId + "::setObject(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.api.maps.model.TextOptions result;
+            try {
+                result = ref.setObject(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
         put("com.amap.api.maps.model.TextOptions::fontColor", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -65838,6 +66416,36 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             int result;
             try {
                 result = ref.getFontColor();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.api.maps.model.TextOptions::getObject", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.TextOptions@" + refId + "::getObject(" + "" + ")");
+            }
+        
+            // invoke native method
+            Object result;
+            try {
+                result = ref.getObject();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -67309,6 +67917,69 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         
             // result
             methodResult.success(result);
+        });
+        // method
+        put("com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks::canDismiss", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks ref = (com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks@" + refId + "::canDismiss(" + var1 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.canDismiss(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks::onDismiss", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.view.View var1 = (android.view.View) getHEAP().get((int) args.get("var1"));
+            // jsonable arg
+            Object var2 = (Object) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks ref = (com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks@" + refId + "::onDismiss(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.onDismiss(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
         });
         // method
         put("com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks::onNotifySwipe", (args, methodResult) -> {
@@ -72695,6 +73366,38 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             methodResult.success("success");
         });
         // method
+        put("com.amap.api.maps.interfaces.IGlOverlayLayer::updateOption", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            Object var2 = (Object) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.interfaces.IGlOverlayLayer ref = (com.amap.api.maps.interfaces.IGlOverlayLayer) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.interfaces.IGlOverlayLayer@" + refId + "::updateOption(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.updateOption(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.amap.api.maps.interfaces.IGlOverlayLayer::removeOverlay", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -72724,6 +73427,36 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         
             // result
             methodResult.success(result);
+        });
+        // method
+        put("com.amap.api.maps.interfaces.IGlOverlayLayer::prepareIcon", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.interfaces.IGlOverlayLayer ref = (com.amap.api.maps.interfaces.IGlOverlayLayer) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.interfaces.IGlOverlayLayer@" + refId + "::prepareIcon(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.prepareIcon(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
         });
         // method
         put("com.amap.api.maps.interfaces.IGlOverlayLayer::getCurrentParticleNum", (args, methodResult) -> {

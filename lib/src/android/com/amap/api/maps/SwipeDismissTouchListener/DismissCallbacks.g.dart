@@ -18,6 +18,24 @@ mixin com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks on java_lang_
   
 
   @mustCallSuper
+  Future<bool> canDismiss(Object var1) {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('canDismiss::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> onDismiss(android_view_View var1, Object var2) {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('onDismiss::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
   Future<void> onNotifySwipe() {
   
   

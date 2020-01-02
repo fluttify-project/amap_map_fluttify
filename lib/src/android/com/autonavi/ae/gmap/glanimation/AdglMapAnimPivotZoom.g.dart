@@ -57,6 +57,28 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom extends com_autonavi
     }
   }
   
+  Future<void> commitAnimation(Object var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@$refId::commitAnimation([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom::commitAnimation', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<void> setToMapZoomAndPivot(double var1, int var2, android_graphics_Point var3) async {
     // print log
     if (fluttifyLogEnabled) {
