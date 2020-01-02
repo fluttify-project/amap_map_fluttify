@@ -53,6 +53,9 @@ class MarkerOption {
   /// 纵轴锚点
   final double anchorV;
 
+  /// 自定义数据 理论上可以使用任何类型的数据, 但是为了减少意外情况, 这里一律转换成String来保存
+  final String object;
+
   MarkerOption({
     @required this.latLng,
     this.title,
@@ -65,6 +68,7 @@ class MarkerOption {
     this.rotateAngle,
     this.anchorU,
     this.anchorV,
+    this.object,
   })  : assert(
           (iconUri != null && imageConfig != null) || iconUri == null,
           'iconUri和imageConfig必须同时设置! 如果想要一个默认的imageConfig, 那么就直接调用[createLocalImageConfiguration]方法来创建!',
@@ -73,7 +77,7 @@ class MarkerOption {
 
   @override
   String toString() {
-    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, imageConfig: $imageConfig, widget: $widget, draggable: $draggable, infoWindowEnabled: $infoWindowEnabled, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV}';
+    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, imageConfig: $imageConfig, widget: $widget, draggable: $draggable, infoWindowEnabled: $infoWindowEnabled, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV, object: $object}';
   }
 }
 
@@ -307,6 +311,19 @@ class Marker {
       ios: (_) async {
         final location = await _iosModel.get_coordinate();
         return LatLng(await location.latitude, await location.longitude);
+      },
+    );
+  }
+
+  Future<String> get object {
+    return platform(
+      android: (_) {
+        return _androidModel.getObject().then((object) => object as String);
+      },
+      ios: (_) {
+        return _iosModel
+            .getJsonableProperty(7)
+            .then((object) => object as String);
       },
     );
   }

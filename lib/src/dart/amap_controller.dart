@@ -718,6 +718,11 @@ class AmapController with WidgetsBindingObserver, _Private {
           await marker.setInfoWindowEnable(option.infoWindowEnabled);
         }
 
+        // 自定义数据
+        if (option.object != null) {
+          await marker.setObject(option.object);
+        }
+
         // marker不释放, 还有用
         pool..add(map)..add(latLng)..add(markerOption);
 
@@ -784,6 +789,11 @@ class AmapController with WidgetsBindingObserver, _Private {
         if (option.anchorU != null || option.anchorV != null) {
           await pointAnnotation.addJsonableProperty(5, option.anchorU);
           await pointAnnotation.addJsonableProperty(6, option.anchorV);
+        }
+
+        // 自定义数据
+        if (option.object != null) {
+          await pointAnnotation.addJsonableProperty(7, option.object);
         }
 
         await iosController.addAnnotation(pointAnnotation);
