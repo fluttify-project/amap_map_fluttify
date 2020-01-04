@@ -195,6 +195,23 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                     });
                   },
                 ),
+                ListTile(
+                  title: Center(child: Text('添加平滑移动点')),
+                  onTap: () async {
+                    final moveMarker = await _controller?.addSmoothMoveMarker(
+                      SmoothMoveMarkerOption(
+                        path: [for (int i = 0; i < 10; i++) getNextLatLng()],
+                        iconUri: _assetsIcon1,
+                        imageConfig: createLocalImageConfiguration(context),
+                        duration: Duration(seconds: 10),
+                      ),
+                    );
+                    Future.delayed(
+                      Duration(seconds: 5),
+                      () => moveMarker.stop(),
+                    );
+                  },
+                ),
               ],
             ),
           ),

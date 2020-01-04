@@ -38,6 +38,93 @@ class com_amap_api_maps_utils_SpatialRelationUtil extends java_lang_Object  {
   //endregion
 
   //region methods
+  static Future<android_util_Pair> calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__double__double(List<com_amap_api_maps_model_LatLng> var0, com_amap_api_maps_model_LatLng var1, double var2, double var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint([\'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__double__double', {"var0": var0.map((it) => it.refId).toList(), "var1": var1.refId, "var2": var2, "var3": var3});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(android_util_Pair()..refId = result..tag = 'amap_map_fluttify');
+      return android_util_Pair()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  static Future<android_util_Pair> calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(List<com_amap_api_maps_model_LatLng> var0, com_amap_api_maps_model_LatLng var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng', {"var0": var0.map((it) => it.refId).toList(), "var1": var1.refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(android_util_Pair()..refId = result..tag = 'amap_map_fluttify');
+      return android_util_Pair()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  static Future<android_util_Pair> calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint(List<com_autonavi_amap_mapcore_DPoint> var0, com_autonavi_amap_mapcore_DPoint var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint', {"var0": var0.map((it) => it.refId).toList(), "var1": var1.refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(android_util_Pair()..refId = result..tag = 'amap_map_fluttify');
+      return android_util_Pair()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  static Future<android_util_Pair> calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint__double(List<com_autonavi_amap_mapcore_DPoint> var0, com_autonavi_amap_mapcore_DPoint var1, double var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint([\'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint__double', {"var0": var0.map((it) => it.refId).toList(), "var1": var1.refId, "var2": var2});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(android_util_Pair()..refId = result..tag = 'amap_map_fluttify');
+      return android_util_Pair()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
   
   //endregion
 }
