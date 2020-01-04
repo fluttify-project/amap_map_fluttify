@@ -77237,6 +77237,46 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             methodResult.success(obj.hashCode());
         });
         // factory
+        put("ObjectFactory::createcom_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay");
+        
+            // args
+            // ref arg
+            com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) args.get("var1"));
+            // ref arg
+            com.amap.api.maps.model.BasePointOverlay var2 = (com.amap.api.maps.model.BasePointOverlay) getHEAP().get((int) args.get("var2"));
+        
+            // create target object
+            com.amap.api.maps.utils.overlay.MovingPointOverlay obj = new com.amap.api.maps.utils.overlay.MovingPointOverlay(var1, var2);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap");
+        
+            // args
+            // ref arg
+            com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) args.get("var1"));
+        
+            // create target object
+            com.amap.api.maps.utils.overlay.SmoothMoveMarker obj = new com.amap.api.maps.utils.overlay.SmoothMoveMarker(var1);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
         put("ObjectFactory::createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView", (args, methodResult) -> {
             Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView");
         
@@ -79131,6 +79171,50 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         
             // create target object
             com.amap.api.trace.LBSTraceClient obj = new com.amap.api.trace.LBSTraceClient(var1);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_LatLng");
+        
+            // args
+            // ref arg
+            com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) args.get("var1"));
+            // list arg
+            List<Integer> var2RefIdList = (List<Integer>) args.get("var2");
+            List<com.amap.api.maps.model.LatLng> var2 = new ArrayList<>();
+            for (int refId : var2RefIdList) {
+                var2.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+            }
+        
+            // create target object
+            com.amap.api.trace.TraceOverlay obj = new com.amap.api.trace.TraceOverlay(var1, new ArrayList(var2));
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap");
+        
+            // args
+            // ref arg
+            com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) args.get("var1"));
+        
+            // create target object
+            com.amap.api.trace.TraceOverlay obj = new com.amap.api.trace.TraceOverlay(var1);
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
