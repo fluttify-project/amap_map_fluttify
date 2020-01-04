@@ -1,3 +1,9 @@
+## 0.17.6
+- feat: 增加轨迹功能 (#63)
+- docs: README加入apk下载链接
+- enhance: 加入打包好的apk
+- enhance: 加入打包的jks (#139)
+
 ## 0.17.5
 - roll engine #26272df
 - feat: MarkerOption增加自定义数据字段 (#15)
