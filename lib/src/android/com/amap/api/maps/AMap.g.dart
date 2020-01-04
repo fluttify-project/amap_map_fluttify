@@ -2184,6 +2184,28 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   }
   
+  Future<android_util_Pair> calculateZoomToSpanLevel(int var1, int var2, int var3, int var4, com_amap_api_maps_model_LatLng var5, com_amap_api_maps_model_LatLng var6) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.AMap@$refId::calculateZoomToSpanLevel([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::calculateZoomToSpanLevel', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5.refId, "var6": var6.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(android_util_Pair()..refId = result..tag = 'amap_map_fluttify');
+      return android_util_Pair()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
   Future<com_amap_api_maps_InfoWindowAnimationManager> getInfoWindowAnimationManager() async {
     // print log
     if (fluttifyLogEnabled) {

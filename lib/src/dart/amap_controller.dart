@@ -977,6 +977,103 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 批量添加marker
+  ///
+  /// 根据[options]批量创建Marker
+  Future<SmoothMoveMarker> addSmoothMoveMarker(SmoothMoveMarkerOption option) {
+    assert(option != null);
+    return platform(
+      android: (pool) async {
+        // 获取地图
+        final map = await androidController.getMap();
+
+        // 创建平滑移动marker对象
+        final marker = await com_amap_api_maps_utils_overlay_SmoothMoveMarker
+            .create__com_amap_api_maps_AMap(map);
+
+        // 创建marker的图标
+        final bitmap = await android_graphics_Bitmap
+            .create(await _uri2ImageData(option.imageConfig, option.iconUri));
+        final bitmapDescriptor =
+            await com_amap_api_maps_model_BitmapDescriptorFactory
+                .fromBitmap(bitmap);
+
+        // 设置图标
+        await marker.setDescriptor(bitmapDescriptor);
+
+        // 动画途经点
+        final points = [
+          for (final latLng in option.path)
+            await com_amap_api_maps_model_LatLng.create__double__double(
+                latLng.latitude, latLng.longitude)
+        ];
+
+        // 设置途经点
+        await marker.setPoints(points);
+        // 设置动画时长
+        await marker.setTotalDuration(option.duration.inSeconds);
+        // 执行动画
+        await marker.startSmoothMove();
+
+        pool
+          ..add(map)
+          ..add(bitmap)
+          ..add(bitmapDescriptor)
+          ..addAll(points);
+        return SmoothMoveMarker.android(marker);
+      },
+      ios: (pool) async {
+        await iosController.set_delegate(
+          _iosMapDelegate.._iosController = iosController,
+        );
+
+        // 创建annotation
+        final annotation = await MAAnimatedAnnotation.create__();
+
+        // 动画途经点
+        final points = <CLLocationCoordinate2D>[
+          for (final latLng in option.path)
+            await CLLocationCoordinate2D.create(
+                latLng.latitude, latLng.longitude)
+        ];
+
+        // 设置图片
+        // 普通图片
+        if (option.iconUri != null && option.imageConfig != null) {
+          Uint8List iconData =
+              await _uri2ImageData(option.imageConfig, option.iconUri);
+
+          final icon = await UIImage.create(iconData);
+
+          // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
+          await annotation.addProperty(1, icon);
+
+          pool..add(icon);
+        }
+
+        // 设置起始点
+        await annotation.set_coordinate(points[0]);
+
+        // 添加动画
+        final animation = await annotation
+            .addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback(
+          points,
+          points.length,
+          option.duration.inSeconds.toDouble(),
+          'name',
+          (finished) {},
+        );
+        await iosController.addAnnotation(annotation);
+
+        pool
+          ..add(annotation)
+          ..addAll(points);
+
+        return SmoothMoveMarker.ios(animation);
+      },
+    );
+  }
+
   /// 清除所有marker
   Future<void> clearMarkers() async {
     await platform(

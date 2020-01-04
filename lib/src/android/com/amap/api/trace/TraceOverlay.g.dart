@@ -19,6 +19,21 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   //endregion
 
   //region creators
+  static Future<com_amap_api_trace_TraceOverlay> create__com_amap_api_maps_AMap__com_amap_api_maps_model_LatLng(com_amap_api_maps_AMap var1, List<com_amap_api_maps_model_LatLng> var2) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_LatLng', {"var1": var1.refId, "var2": var2.map((it) => it.refId).toList()});
+    final object = com_amap_api_trace_TraceOverlay()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  static Future<com_amap_api_trace_TraceOverlay> create__com_amap_api_maps_AMap(com_amap_api_maps_AMap var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap', {"var1": var1.refId});
+    final object = com_amap_api_trace_TraceOverlay()..refId = refId..tag = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
   
   //endregion
 
