@@ -651,6 +651,16 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   }
   
   @mustCallSuper
+  Future<android_util_Pair> calculateZoomToSpanLevel(int var1, int var2, int var3, int var4, com_amap_api_maps_model_LatLng var5, com_amap_api_maps_model_LatLng var6) {
+    kNativeObjectPool.add(var5);
+    kNativeObjectPool.add(var6);
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('calculateZoomToSpanLevel::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
   Future<com_amap_api_maps_InfoWindowAnimationManager> getInfoWindowAnimationManager() {
   
   

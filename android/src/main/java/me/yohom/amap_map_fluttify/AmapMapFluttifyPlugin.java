@@ -35000,6 +35000,54 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             methodResult.success(result);
         });
         // method
+        put("com.autonavi.amap.mapcore.interfaces.IAMap::calculateZoomToSpanLevel", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+            // jsonable arg
+            int var4 = (int) args.get("var4");
+            // ref arg
+            com.amap.api.maps.model.LatLng var5 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var5"));
+            // ref arg
+            com.amap.api.maps.model.LatLng var6 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var6"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::calculateZoomToSpanLevel(" + var1 + var2 + var3 + var4 + var5 + var6 + ")");
+            }
+        
+            // invoke native method
+            android.util.Pair<Float,com.amap.api.maps.model.LatLng> result;
+            try {
+                result = ref.calculateZoomToSpanLevel(var1, var2, var3, var4, var5, var6);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
         put("com.autonavi.amap.mapcore.interfaces.IAMap::getInfoWindowAnimationManager", (args, methodResult) -> {
             // args
         
@@ -41405,6 +41453,184 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         
             // result
             methodResult.success("success");
+        });
+        // method
+        put("com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__double__double", (args, methodResult) -> {
+            // args
+            // list arg
+            List<Integer> var0RefIdList = (List<Integer>) args.get("var0");
+            List<com.amap.api.maps.model.LatLng> var0 = new ArrayList<>();
+            for (int refId : var0RefIdList) {
+                var0.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+            }
+            // ref arg
+            com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var1"));
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+            // jsonable arg
+            double var3 = (double) args.get("var3");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint(" + var0 + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            android.util.Pair<Integer,com.amap.api.maps.model.LatLng> result;
+            try {
+                result = com.amap.api.maps.utils.SpatialRelationUtil.calShortestDistancePoint(new ArrayList(var0), var1, new Double(var2).floatValue(), var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            // args
+            // list arg
+            List<Integer> var0RefIdList = (List<Integer>) args.get("var0");
+            List<com.amap.api.maps.model.LatLng> var0 = new ArrayList<>();
+            for (int refId : var0RefIdList) {
+                var0.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+            }
+            // ref arg
+            com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint(" + var0 + var1 + ")");
+            }
+        
+            // invoke native method
+            android.util.Pair<Integer,com.amap.api.maps.model.LatLng> result;
+            try {
+                result = com.amap.api.maps.utils.SpatialRelationUtil.calShortestDistancePoint(new ArrayList(var0), var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint", (args, methodResult) -> {
+            // args
+            // list arg
+            List<Integer> var0RefIdList = (List<Integer>) args.get("var0");
+            List<com.autonavi.amap.mapcore.DPoint> var0 = new ArrayList<>();
+            for (int refId : var0RefIdList) {
+                var0.add((com.autonavi.amap.mapcore.DPoint) getHEAP().get(refId));
+            }
+            // ref arg
+            com.autonavi.amap.mapcore.DPoint var1 = (com.autonavi.amap.mapcore.DPoint) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint(" + var0 + var1 + ")");
+            }
+        
+            // invoke native method
+            android.util.Pair<Integer,com.autonavi.amap.mapcore.DPoint> result;
+            try {
+                result = com.amap.api.maps.utils.SpatialRelationUtil.calShortestDistancePoint(new ArrayList(var0), var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint__double", (args, methodResult) -> {
+            // args
+            // list arg
+            List<Integer> var0RefIdList = (List<Integer>) args.get("var0");
+            List<com.autonavi.amap.mapcore.DPoint> var0 = new ArrayList<>();
+            for (int refId : var0RefIdList) {
+                var0.add((com.autonavi.amap.mapcore.DPoint) getHEAP().get(refId));
+            }
+            // ref arg
+            com.autonavi.amap.mapcore.DPoint var1 = (com.autonavi.amap.mapcore.DPoint) getHEAP().get((int) args.get("var1"));
+            // jsonable arg
+            Double var2 = (Double) args.get("var2");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint(" + var0 + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            android.util.Pair<Integer,com.autonavi.amap.mapcore.DPoint> result;
+            try {
+                result = com.amap.api.maps.utils.SpatialRelationUtil.calShortestDistancePoint(new ArrayList(var0), var1, new Double(var2).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
         });
         // method
         put("com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener::move", (args, methodResult) -> {
@@ -72703,6 +72929,54 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         
             // result
             methodResult.success(result);
+        });
+        // method
+        put("com.amap.api.maps.AMap::calculateZoomToSpanLevel", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+            // jsonable arg
+            int var4 = (int) args.get("var4");
+            // ref arg
+            com.amap.api.maps.model.LatLng var5 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var5"));
+            // ref arg
+            com.amap.api.maps.model.LatLng var6 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("var6"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.AMap ref = (com.amap.api.maps.AMap) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap@" + refId + "::calculateZoomToSpanLevel(" + var1 + var2 + var3 + var4 + var5 + var6 + ")");
+            }
+        
+            // invoke native method
+            android.util.Pair<Float,com.amap.api.maps.model.LatLng> result;
+            try {
+                result = ref.calculateZoomToSpanLevel(var1, var2, var3, var4, var5, var6);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
         });
         // method
         put("com.amap.api.maps.AMap::getInfoWindowAnimationManager", (args, methodResult) -> {
