@@ -6,11 +6,15 @@
 ![CI](https://github.com/fluttify-project/amap_map_fluttify/workflows/CI/badge.svg)
 [![Gitter](https://badges.gitter.im/fluttify_project/community.svg)](https://gitter.im/fluttify_project/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-**从`0.12.2`开始, [AmapController](https://github.com/fluttify-project/amap_map_fluttify/blob/master/lib/src/dart/amap_controller.dart)类开放了内部的`androidController`和`iosController`, 这两个类分别对应了原生的`MapView`和`MAMapView`, 具有这两个原生类的所有Fluttify支持的接口, 插件使用者可以自行对其扩展(基于dart 2.6加入的static extension)以满足自己的需求, [参考实现](https://github.com/fluttify-project/amap_map_fluttify/blob/5892f2d01cbbefd957f400cc8e2f4cfa1356f3eb/example/lib/map/create_map/create_map.screen.dart#L276).**
-
 Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)引擎生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/). [CHANGELOG](https://github.com/fluttify-project/amap_map_fluttify/blob/master/CHANGELOG.md). [常见问题对应手册](https://github.com/fluttify-project/amap_map_fluttify/blob/master/Troubleshooting.md).
 
 如果你需要用到地图, 定位和搜索三个组件, 建议使用[amap_all_fluttify](https://github.com/fluttify-project/amap_all_fluttify), 这个插件集合了以上三个插件, 并约束了版本, 兼容性会更好.
+
+## DEMO 与 打赏
+
+| Demo | 微信赞助 | 支付宝赞助 |
+| :----------: | :----------: | :----------: |
+| 扫描二维码 <br> 或者 <br> [点击下载](https://github.com/fluttify-project/amap_map_fluttify/blob/master/example/build/app/outputs/apk/release/app-release.apk?raw=true) </br> ![Example](assets/amap_map_fluttify_apk.png) | 如果项目帮到了你 </br> 不妨请作者喝杯奶茶 :) </br> ![微信](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/WechatIMG111.jpeg?raw=true) | 开源不易 </br> 你的star是我最大的动力 </br> ![支付宝](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/1557492318.jpg?raw=true) |
 
 安装: 
 ```yaml
@@ -130,9 +134,6 @@ iOS `Info.plist`配置:
 - 这个项目跟`amap_base`有什么联系和区别?
     - 联系: 除了是同一个作者开发的之外没有联系; 
     - 区别: `amap_base`使用的是常规的开发方式, 还是以`MethodChannel`为中心在dart和原生以及各个原生平台之间斡旋. 而`fluttify`系列插件是在[fluttify](https://github.com/fluttify-project/fluttify-core-example)引擎生成的dart接口之上去开发插件, 屏蔽了原生代码, 开发插件时不再需要在不同的原生代码之间斡旋, 只需要专注于整合不同平台的api即可.
-
-## 请作者喝杯奶茶
-<img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/1557492318.jpg?raw=true" height="300">  <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/WechatIMG111.jpeg?raw=true" height="300">  <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/IMG_5480.JPG?raw=true" height="200">
 
 ## qq群
 <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/QQ%E7%BE%A4.png?raw=true" height="250">
