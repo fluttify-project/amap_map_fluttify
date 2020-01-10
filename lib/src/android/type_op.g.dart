@@ -142,6 +142,11 @@ extension TypeOpAmapMapFluttifyAndroid on Ref {
     return result;
   }
   
+  Future<bool> iscom_autonavi_ae_gmap_gloverlay_CrossVectorOverlay() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_CrossVectorOverlay', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> iscom_autonavi_ae_gmap_gloverlay_GLOverlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_GLOverlay', {'refId': refId});
     return result;
@@ -169,6 +174,16 @@ extension TypeOpAmapMapFluttifyAndroid on Ref {
   
   Future<bool> iscom_autonavi_amap_mapcore_maploader_NetworkState() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_maploader_NetworkState', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_autonavi_amap_mapcore_maploader_AMapLoader() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_maploader_AMapLoader', {'refId': refId});
     return result;
   }
   
@@ -837,6 +852,11 @@ extension TypeOpAmapMapFluttifyAndroid on Ref {
     return result;
   }
   
+  Future<bool> iscom_amap_api_maps_model_AMapGLOverlay() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_AMapGLOverlay', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> iscom_amap_api_maps_model_HeatmapTileProvider_Builder() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatmapTileProvider_Builder', {'refId': refId});
     return result;
@@ -1198,6 +1218,11 @@ extension TypeOpAmapMapFluttifyAndroid on Ref {
     return com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = result;
   }
   
+  Future<com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay> ascom_autonavi_ae_gmap_gloverlay_CrossVectorOverlay() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_ae_gmap_gloverlay_CrossVectorOverlay', {'refId': refId});
+    return com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay()..refId = result;
+  }
+  
   Future<com_autonavi_ae_gmap_gloverlay_GLOverlay> ascom_autonavi_ae_gmap_gloverlay_GLOverlay() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_ae_gmap_gloverlay_GLOverlay', {'refId': refId});
     return com_autonavi_ae_gmap_gloverlay_GLOverlay()..refId = result;
@@ -1226,6 +1251,16 @@ extension TypeOpAmapMapFluttifyAndroid on Ref {
   Future<com_autonavi_amap_mapcore_maploader_NetworkState> ascom_autonavi_amap_mapcore_maploader_NetworkState() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_maploader_NetworkState', {'refId': refId});
     return com_autonavi_amap_mapcore_maploader_NetworkState()..refId = result;
+  }
+  
+  Future<com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest> ascom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest', {'refId': refId});
+    return com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest()..refId = result;
+  }
+  
+  Future<com_autonavi_amap_mapcore_maploader_AMapLoader> ascom_autonavi_amap_mapcore_maploader_AMapLoader() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_maploader_AMapLoader', {'refId': refId});
+    return com_autonavi_amap_mapcore_maploader_AMapLoader()..refId = result;
   }
   
   Future<com_autonavi_amap_mapcore_MapProjection> ascom_autonavi_amap_mapcore_MapProjection() async {
@@ -1891,6 +1926,11 @@ extension TypeOpAmapMapFluttifyAndroid on Ref {
   Future<com_amap_api_maps_model_RuntimeRemoteException> ascom_amap_api_maps_model_RuntimeRemoteException() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_amap_api_maps_model_RuntimeRemoteException', {'refId': refId});
     return com_amap_api_maps_model_RuntimeRemoteException()..refId = result;
+  }
+  
+  Future<com_amap_api_maps_model_AMapGLOverlay> ascom_amap_api_maps_model_AMapGLOverlay() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_amap_api_maps_model_AMapGLOverlay', {'refId': refId});
+    return com_amap_api_maps_model_AMapGLOverlay()..refId = result;
   }
   
   Future<com_amap_api_maps_model_HeatmapTileProvider_Builder> ascom_amap_api_maps_model_HeatmapTileProvider_Builder() async {

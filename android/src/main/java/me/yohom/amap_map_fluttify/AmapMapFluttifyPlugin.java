@@ -1411,6 +1411,18 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             methodResult.success(result);
         });
         // getter
+        put("com.autonavi.amap.mapcore.maploader.AMapLoader::get_isFinish", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
+        
+            boolean result = ref.isFinish;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
         put("com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake::get_mIsAborted", (args, methodResult) -> {
             // ref object
             int refId = (int) args.get("refId");
@@ -3804,6 +3816,17 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             methodResult.success("success");
         });
         // setter
+        put("com.autonavi.amap.mapcore.maploader.AMapLoader::set_isFinish", (args, methodResult) -> {
+            // jsonable arg
+            boolean isFinish = (boolean) args.get("isFinish");
+        
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
+        
+            ref.isFinish = isFinish;
+            methodResult.success("success");
+        });
+        // setter
         put("com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake::set_mIsAborted", (args, methodResult) -> {
             // jsonable arg
             boolean mIsAborted = (boolean) args.get("mIsAborted");
@@ -4700,6 +4723,40 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             // invoke native method
             try {
                 ref.netError(var1, var2, var4);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.GLMapEngine::setMapLoaderToTask", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            long var2 = (long) args.get("var2");
+            // ref arg
+            com.autonavi.amap.mapcore.maploader.AMapLoader var4 = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get((int) args.get("var4"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setMapLoaderToTask(" + var1 + var2 + var4 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setMapLoaderToTask(var1, var2, var4);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -11262,6 +11319,344 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             methodResult.success("success");
         });
         // method
+        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::addItem", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Object var1 = (Object) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::addItem(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.addItem(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::resumeMarker", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.graphics.Bitmap var1 = (android.graphics.Bitmap) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::resumeMarker(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.resumeMarker(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::AddOverlayTexture", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.graphics.Bitmap var1 = (android.graphics.Bitmap) getHEAP().get((int) args.get("var1"));
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::AddOverlayTexture(" + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.AddOverlayTexture(var1, var2, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::dipToPixel", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::dipToPixel(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.dipToPixel(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setAttribute", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr var1 = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::setAttribute(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setAttribute(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setData", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            byte[] var1 = (byte[]) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::setData(" + var1 + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.setData(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::remove", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::remove(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.remove();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setImageMode", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::setImageMode(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setImageMode(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setGenerateCrossImageListener", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::setGenerateCrossImageListener(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setGenerateCrossImageListener(new com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener() {
+                // method channel
+                MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setGenerateCrossImageListener::Callback");
+        
+                // call dart method
+                @Override
+                public void onGenerateComplete(android.graphics.Bitmap var1, int var2) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: onGenerateComplete(" + var1 + var2 + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // ref arg
+                    int argvar1 = var1.hashCode();
+                    getHEAP().put(argvar1, var1);
+                    // jsonable arg
+                    int argvar2 = var2;
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::onGenerateComplete",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                                put("var2", argvar2);
+                            }}
+                    );
+        
+                    // method result
+        
+                }
+        
+            });
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::getTextureID", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay ref = (com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@" + refId + "::getTextureID(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getTextureID();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.autonavi.ae.gmap.gloverlay.GLOverlay::getNativeInstatnce", (args, methodResult) -> {
             // args
         
@@ -12010,6 +12405,335 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         
             // result
             methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getRequestHead", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest@" + refId + "::getRequestHead(" + "" + ")");
+            }
+        
+            // invoke native method
+            Map<String,String> result;
+            try {
+                result = ref.getRequestHead();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getParams", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest@" + refId + "::getParams(" + "" + ")");
+            }
+        
+            // invoke native method
+            Map<String,String> result;
+            try {
+                result = ref.getParams();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getURL", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest@" + refId + "::getURL(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getURL();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::setPostEntityBytes", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            byte[] var1 = (byte[]) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest@" + refId + "::setPostEntityBytes(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setPostEntityBytes(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getEntityBytes", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest@" + refId + "::getEntityBytes(" + "" + ")");
+            }
+        
+            // invoke native method
+            byte[] result;
+            try {
+                result = ref.getEntityBytes();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.amap.mapcore.maploader.AMapLoader::onDownload", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            byte[] var1 = (byte[]) args.get("var1");
+            // jsonable arg
+            long var2 = (long) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader@" + refId + "::onDownload(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.onDownload(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.maploader.AMapLoader::onStop", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader@" + refId + "::onStop(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.onStop();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.maploader.AMapLoader::onFinish", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader@" + refId + "::onFinish(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.onFinish();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.maploader.AMapLoader::doRequest", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader@" + refId + "::doRequest(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.doRequest();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.maploader.AMapLoader::doCancel", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader@" + refId + "::doCancel(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.doCancel();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.amap.mapcore.maploader.AMapLoader::getDeviceId", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader@" + refId + "::getDeviceId(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getDeviceId(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
         });
         // method
         put("com.autonavi.amap.mapcore.MapProjection::lonlat2Geo", (args, methodResult) -> {
@@ -61510,6 +62234,35 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             }
         });
         // method
+        put("com.amap.api.maps.model.AMapGLOverlay::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.api.maps.model.AMapGLOverlay ref = (com.amap.api.maps.model.AMapGLOverlay) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.AMapGLOverlay@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.amap.api.maps.model.HeatmapTileProvider.Builder::data", (args, methodResult) -> {
             // args
             // list arg
@@ -76092,6 +76845,52 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         
             // create target object
             com.autonavi.amap.mapcore.maploader.NetworkState obj = new com.autonavi.amap.mapcore.maploader.NetworkState();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest__android_content_Context__String__String", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest__android_content_Context__String__String");
+        
+            // args
+            // ref arg
+            android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+            // jsonable arg
+            String var3 = (String) args.get("var3");
+        
+            // create target object
+            com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest obj = new com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest(var1, var2, var3);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader__int__com_autonavi_ae_gmap_GLMapEngine__com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_maploader_AMapLoader__int__com_autonavi_ae_gmap_GLMapEngine__com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam");
+        
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // ref arg
+            com.autonavi.ae.gmap.GLMapEngine var2 = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get((int) args.get("var2"));
+            // ref arg
+            com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam var3 = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get((int) args.get("var3"));
+        
+            // create target object
+            com.autonavi.amap.mapcore.maploader.AMapLoader obj = new com.autonavi.amap.mapcore.maploader.AMapLoader(var1, var2, var3);
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP
