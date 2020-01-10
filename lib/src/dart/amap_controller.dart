@@ -22,7 +22,9 @@ class AmapController with WidgetsBindingObserver, _Private {
       map.setOnMapLoadedListener(
         _androidMapDelegate
           .._onMapLoaded = () async {
-            await onMapCreated(this);
+            if (onMapCreated != null) {
+              await onMapCreated(this);
+            }
           },
       );
     });
