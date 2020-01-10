@@ -22,7 +22,9 @@ class AmapController with WidgetsBindingObserver, _Private {
       map.setOnMapLoadedListener(
         _androidMapDelegate
           .._onMapLoaded = () async {
-            await onMapCreated(this);
+            if (onMapCreated != null) {
+              await onMapCreated(this);
+            }
           },
       );
     });
@@ -2019,6 +2021,40 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
     bool wasUserAction,
   ) async {
     super.mapViewMapDidMoveByUser(mapView, wasUserAction);
+    if (_onMapMoveEnd != null) {
+      final location = await mapView.get_centerCoordinate();
+      await _onMapMoveEnd(MapMove(
+        latLng: LatLng(await location.latitude, await location.longitude),
+        zoom: await mapView.get_zoomLevel(),
+        tilt: await mapView.get_cameraDegree(),
+        isAbroad: await mapView.get_isAbroad(),
+      ));
+    }
+  }
+
+  @override
+  Future<void> mapViewMapWillZoomByUser(
+    MAMapView mapView,
+    bool wasUserAction,
+  ) async {
+    super.mapViewMapWillZoomByUser(mapView, wasUserAction);
+    if (_onMapMoveStart != null) {
+      final location = await mapView.get_centerCoordinate();
+      await _onMapMoveStart(MapMove(
+        latLng: LatLng(await location.latitude, await location.longitude),
+        zoom: await mapView.get_zoomLevel(),
+        tilt: await mapView.get_cameraDegree(),
+        isAbroad: await mapView.get_isAbroad(),
+      ));
+    }
+  }
+
+  @override
+  Future<void> mapViewMapDidZoomByUser(
+    MAMapView mapView,
+    bool wasUserAction,
+  ) async {
+    super.mapViewMapDidZoomByUser(mapView, wasUserAction);
     if (_onMapMoveEnd != null) {
       final location = await mapView.get_centerCoordinate();
       await _onMapMoveEnd(MapMove(

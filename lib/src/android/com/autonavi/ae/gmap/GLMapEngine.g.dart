@@ -116,6 +116,28 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     }
   }
   
+  Future<void> setMapLoaderToTask(int var1, int var2, com_autonavi_amap_mapcore_maploader_AMapLoader var4) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setMapLoaderToTask([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setMapLoaderToTask', {"var1": var1, "var2": var2, "var4": var4.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<android_content_Context> getContext() async {
     // print log
     if (fluttifyLogEnabled) {

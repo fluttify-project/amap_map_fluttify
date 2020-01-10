@@ -12,9 +12,9 @@ Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)引擎
 
 ## DEMO 与 打赏
 
-| Demo | 微信赞助 | 支付宝赞助 |
-| :----------: | :----------: | :----------: |
-| 扫描二维码 <br> 或者 <br> [点击下载](https://github.com/fluttify-project/amap_map_fluttify/blob/master/example/build/app/outputs/apk/release/app-release.apk?raw=true) </br> ![Example](assets/amap_map_fluttify_apk.png) | 如果项目帮到了你 </br> 不妨请作者喝杯奶茶 :) </br> ![微信](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/WechatIMG111.jpeg?raw=true) | 开源不易 </br> 你的star是我最大的动力 </br> ![支付宝](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/1557492318.jpg?raw=true) |
+| Demo | 微信赞助 | 支付宝赞助 | QQ群 |
+| :----------: | :----------: | :----------: | :----------: |
+| 扫描二维码 <br> 或者 <br> [点击下载](https://github.com/fluttify-project/amap_map_fluttify/blob/master/example/build/app/outputs/apk/release/app-release.apk?raw=true) </br> ![Example](assets/amap_map_fluttify_apk.png) | 如果项目帮到了你 </br> 不妨请作者喝杯奶茶 :) </br> ![微信](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/WechatIMG111.jpeg?raw=true) | 开源不易 </br> 你的star是我最大的动力 </br> ![支付宝](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/1557492318.jpg?raw=true) | 加入QQ群讨论 <br/><br/> ![QQ群](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/QQ%E7%BE%A4.png?raw=true) |
 
 安装: 
 ```yaml
@@ -135,11 +135,8 @@ iOS `Info.plist`配置:
     - 联系: 除了是同一个作者开发的之外没有联系; 
     - 区别: `amap_base`使用的是常规的开发方式, 还是以`MethodChannel`为中心在dart和原生以及各个原生平台之间斡旋. 而`fluttify`系列插件是在[fluttify](https://github.com/fluttify-project/fluttify-core-example)引擎生成的dart接口之上去开发插件, 屏蔽了原生代码, 开发插件时不再需要在不同的原生代码之间斡旋, 只需要专注于整合不同平台的api即可.
 
-## qq群
-<img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/QQ%E7%BE%A4.png?raw=true" height="250">
-
 ## LICENSE
-> Copyright 2019 yohom
+> Copyright 2020 yohom
 >   
 > Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.

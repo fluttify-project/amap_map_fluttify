@@ -22,6 +22,7 @@ A new flutter plugin project.
   # sdk dependency
   s.dependency 'AMap3DMap', '~> 6.9.0'
 
+  s.static_framework = true
   s.ios.deployment_target = '8.0'
   # include project framework
   s.vendored_frameworks = '**/*.framework'
