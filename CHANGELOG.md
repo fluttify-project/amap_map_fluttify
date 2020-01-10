@@ -1,3 +1,6 @@
+## 0.17.8
+- 提升依赖
+
 ## 0.17.7
 - enhance: ios端合并mapViewMapDidMoveByUser和mapViewMapDidZoomByUser.
 - fix: onMapCreated空判断
