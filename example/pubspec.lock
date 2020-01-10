@@ -7,7 +7,7 @@ packages:
       name: amap_core_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.2+68b910c"
+    version: "0.5.3+356f11c"
   amap_map_fluttify:
     dependency: "direct dev"
     description:
