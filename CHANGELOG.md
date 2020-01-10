@@ -1,3 +1,7 @@
+## 0.17.7
+- enhance: ios端合并mapViewMapDidMoveByUser和mapViewMapDidZoomByUser.
+- fix: onMapCreated空判断
+
 ## 0.17.6
 - feat: 增加轨迹功能 (#63)
 - docs: README加入apk下载链接
