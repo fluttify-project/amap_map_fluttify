@@ -1,3 +1,7 @@
+## 0.17.9
+- docs: 去除swift项目说明
+- enhance: MarkerOption增加width和height参数, 仅限ios
+
 ## 0.17.8
 - 提升依赖
 
