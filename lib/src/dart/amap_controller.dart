@@ -795,10 +795,14 @@ class AmapController with WidgetsBindingObserver, _Private {
           await pointAnnotation.addJsonableProperty(5, option.anchorU);
           await pointAnnotation.addJsonableProperty(6, option.anchorV);
         }
-
         // 自定义数据
         if (option.object != null) {
           await pointAnnotation.addJsonableProperty(7, option.object);
+        }
+        // 宽高
+        if (option.width != null && option.height != null) {
+          await pointAnnotation.addJsonableProperty(8, option.width);
+          await pointAnnotation.addJsonableProperty(9, option.height);
         }
 
         await iosController.addAnnotation(pointAnnotation);
@@ -964,6 +968,15 @@ class AmapController with WidgetsBindingObserver, _Private {
           if (option.anchorU != null || option.anchorV != null) {
             await pointAnnotation.addJsonableProperty(5, option.anchorU);
             await pointAnnotation.addJsonableProperty(6, option.anchorV);
+          }
+          // 自定义数据
+          if (option.object != null) {
+            await pointAnnotation.addJsonableProperty(7, option.object);
+          }
+          // 宽高
+          if (option.width != null && option.height != null) {
+            await pointAnnotation.addJsonableProperty(8, option.width);
+            await pointAnnotation.addJsonableProperty(9, option.height);
           }
 
           iosOptions.add(pointAnnotation);
@@ -2280,25 +2293,13 @@ mixin _Private {
         break;
       // asset图片
       default:
-        // asset的bug描述(https://github.com/flutter/flutter/issues/24865):
-        // android和ios平台上都取了1.0密度的图片, android上就显示了1.0密度的图片, 而ios
-        // 平台上使用的图片也是1.0密度, 但是根据设备密度进行了对应的放大, 导致了android和ios
-        // 两端的图片的大小不一致, 这里只对android根据密度选择原始图片, ios原封不动
-        // 这样做android端能够保证完美, ios端的话图片会有点糊, 因为原始图片是1.0密度, 但是这样
-        // 的话两端大小是一致的, 如果要求再高一点的话, ios这边对图片根据设备密度选择好图片后, 再进行对应密度
-        // 的缩小, 就是完美的了, 但是处理起来比较麻烦, 这里就不去处理了
-        if (Platform.isAndroid) {
-          AssetImage(iconUri.path)
-              .resolve(config)
-              .addListener(ImageStreamListener((imageInfo, sync) async {
-            final byteData =
-                await imageInfo.image.toByteData(format: ImageByteFormat.png);
-            imageData.complete(byteData.buffer.asUint8List());
-          }));
-        } else {
-          final byteData = await rootBundle.load(iconUri.path);
+        AssetImage(iconUri.path)
+            .resolve(config)
+            .addListener(ImageStreamListener((imageInfo, sync) async {
+          final byteData =
+              await imageInfo.image.toByteData(format: ImageByteFormat.png);
           imageData.complete(byteData.buffer.asUint8List());
-        }
+        }));
         break;
     }
     return imageData.future;

@@ -3561,6 +3561,9 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSNumber* infoWindowEnabled = objc_getAssociatedObject(annotation, (const void *) 4);
   NSNumber* anchorU = objc_getAssociatedObject(annotation, (const void *) 5);
   NSNumber* anchorV = objc_getAssociatedObject(annotation, (const void *) 6);
+  // 7上绑的是自定义数据, 这里不需要
+  NSNumber* width = objc_getAssociatedObject(annotation, (const void *) 8);
+  NSNumber* height = objc_getAssociatedObject(annotation, (const void *) 9);
 
   //用户当前位置大头针
   if ([annotation isKindOfClass:[MAUserLocation class]]) {
@@ -3583,6 +3586,12 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       // 锚点
       if (anchorU != nil && anchorV != nil) {
           annotationView.layer.anchorPoint = CGPointMake([anchorU doubleValue], [anchorV doubleValue]);
+      }
+      
+      // 设置图片大小
+      if (annotationView.image != nil && width != nil && height != nil) {
+        CGSize size = annotationView.imageView.frame.size;
+        annotationView.frame = CGRectMake(annotationView.center.x + size.width / 2, annotationView.center.y, [width doubleValue], [height doubleValue]);
       }
       return annotationView;
   }
