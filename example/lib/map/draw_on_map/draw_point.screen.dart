@@ -61,6 +61,8 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         imageConfig: createLocalImageConfiguration(context),
                         title: '北京',
                         snippet: '描述',
+                        width: 100,
+                        height: 100,
                       ),
                     );
                     _markers.add(marker);
@@ -77,6 +79,8 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         iconUri: _assetsIcon1,
                         imageConfig: createLocalImageConfiguration(context),
                         infoWindowEnabled: false,
+                        width: 48,
+                        height: 48,
                         object: '自定义数据',
                       ),
                     );

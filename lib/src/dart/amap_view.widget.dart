@@ -205,16 +205,8 @@ class _AmapViewState extends State<AmapView> {
       RenderRepaintBoundary boundary =
           _markerKey.currentContext.findRenderObject();
 
-      double pixelRatio = 1.0;
-      if (Platform.isAndroid) {
-        pixelRatio = MediaQuery.of(context).devicePixelRatio;
-      } else if (Platform.isIOS) {
-        // ios端的PlatformView的bug, 取了1.0密度的图片, 然后放大了devicePixelRatio的倍数
-        pixelRatio = 1.0;
-      }
-
       boundary
-          .toImage(pixelRatio: pixelRatio)
+          .toImage(pixelRatio: MediaQuery.of(context).devicePixelRatio)
           .then((image) => image.toByteData(format: ImageByteFormat.png))
           .then((byteData) => byteData.buffer.asUint8List())
           .then((data) => completer.complete(data));

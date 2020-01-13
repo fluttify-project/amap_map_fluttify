@@ -56,6 +56,12 @@ class MarkerOption {
   /// 自定义数据 理论上可以使用任何类型的数据, 但是为了减少意外情况, 这里一律转换成String来保存
   final String object;
 
+  /// 图片宽度 iOS only
+  final double width;
+
+  /// 图片高度 iOS only
+  final double height;
+
   MarkerOption({
     @required this.latLng,
     this.title,
@@ -69,6 +75,8 @@ class MarkerOption {
     this.anchorU,
     this.anchorV,
     this.object,
+    this.width,
+    this.height,
   })  : assert(
           (iconUri != null && imageConfig != null) || iconUri == null,
           'iconUri和imageConfig必须同时设置! 如果想要一个默认的imageConfig, 那么就直接调用[createLocalImageConfiguration]方法来创建!',
@@ -77,7 +85,7 @@ class MarkerOption {
 
   @override
   String toString() {
-    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, imageConfig: $imageConfig, widget: $widget, draggable: $draggable, infoWindowEnabled: $infoWindowEnabled, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV, object: $object}';
+    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, imageConfig: $imageConfig, widget: $widget, draggable: $draggable, infoWindowEnabled: $infoWindowEnabled, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV, object: $object, width: $width, height: $height}';
   }
 }
 
