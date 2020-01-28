@@ -10,6 +10,9 @@ Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)引擎
 
 如果你需要用到地图, 定位和搜索三个组件, 建议使用[amap_all_fluttify](https://github.com/fluttify-project/amap_all_fluttify), 这个插件集合了以上三个插件, 并约束了版本, 兼容性会更好.
 
+## 接外包
+**本人承接外包项目(地图类app优先), 有意者请联系qq 382146139.**
+
 ## DEMO 与 打赏
 
 | Demo | 微信赞助 | 支付宝赞助 | QQ群 |
