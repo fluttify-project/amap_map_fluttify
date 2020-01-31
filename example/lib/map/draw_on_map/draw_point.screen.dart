@@ -130,7 +130,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                   onTap: () async {
                     final markers = await _controller?.addMarkers(
                       [
-                        for (int i = 0; i < 10; i++)
+                        for (int i = 0; i < 1000; i++)
                           MarkerOption(
                             latLng: getNextLatLng(),
                             title: '北京',
