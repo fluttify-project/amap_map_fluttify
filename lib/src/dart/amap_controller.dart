@@ -2280,6 +2280,7 @@ mixin _Private {
   ) async {
     final imageData = Completer<Uint8List>();
     if (_cache.containsKey(iconUri.toString())) {
+      debugPrint('命中缓存');
       imageData.complete(_cache[iconUri.toString()]);
     } else {
       switch (iconUri.scheme) {
