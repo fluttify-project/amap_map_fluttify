@@ -9,9 +9,9 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^0.1.3
-  permission_handler: ^4.0.0
-  oktoast: ^2.2.1
-  decorated_flutter: ^0.9.1
+  permission_handler: ^4.1.0
+  oktoast: ^2.3.0
+  decorated_flutter: ^0.10.0
 
 dev_dependencies:
   flutter_test:

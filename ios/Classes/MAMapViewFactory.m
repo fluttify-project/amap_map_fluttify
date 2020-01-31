@@ -3533,22 +3533,16 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   }
 
   // convert to jsonable arg
-  
+  // ref callback arg
+  NSNumber* argmapView = @(mapView.hash);
+  HEAP[argmapView] = mapView;
+  // ref callback arg
+  NSNumber* argannotation = @(annotation.hash);
+  HEAP[argannotation] = annotation;
 
-  // __block #__callback_result_type__# _callbackResult = nil;
-  // [channel invokeMethod:@"#__callback_method__#"
-  //             arguments:@{#__callback_args__#}
-  //                result:^(id result) {
-  //                  #__raw_callback_result__#
-  //                }];
-  //
-  // while (_callbackResult == nil) {
-  //   // _callbackResult有值前, 空转
-  // }
-  //
-  // #__struct_value__#
-  //
-  // return #__callback_result__#;
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewViewForAnnotation"
+              arguments:@{@"mapView": argmapView, @"annotation": argannotation}
+                 result:^(id result) {}]; // 由于结果是异步返回, 这里用不上, 所以就不生成代码了
   
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
@@ -3625,7 +3619,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   }
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAddAnnotationViews" arguments:@{@"mapView": argmapView, @"views": argviews}];
-
+  
 }
 
 - (void)mapView : (MAMapView*)mapView didSelectAnnotationView: (MAAnnotationView*)view
@@ -3793,22 +3787,16 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   }
 
   // convert to jsonable arg
-  
+  // ref callback arg
+  NSNumber* argmapView = @(mapView.hash);
+  HEAP[argmapView] = mapView;
+  // ref callback arg
+  NSNumber* argoverlay = @(overlay.hash);
+  HEAP[argoverlay] = overlay;
 
-  // __block #__callback_result_type__# _callbackResult = nil;
-  // [channel invokeMethod:@"#__callback_method__#"
-  //             arguments:@{#__callback_args__#}
-  //                result:^(id result) {
-  //                  #__raw_callback_result__#
-  //                }];
-  //
-  // while (_callbackResult == nil) {
-  //   // _callbackResult有值前, 空转
-  // }
-  //
-  // #__struct_value__#
-  //
-  // return #__callback_result__#;
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRendererForOverlay"
+              arguments:@{@"mapView": argmapView, @"overlay": argoverlay}
+                 result:^(id result) {}]; // 由于结果是异步返回, 这里用不上, 所以就不生成代码了
   
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
