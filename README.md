@@ -46,35 +46,35 @@ class AmapWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AmapView(
-      // 地图类型
+      // 地图类型 (可选)
       mapType: MapType.Standard,
-      // 是否显示缩放控件
+      // 是否显示缩放控件 (可选)
       showZoomControl: true,
-      // 是否显示指南针控件
+      // 是否显示指南针控件 (可选)
       showCompass: true,
-      // 是否显示比例尺控件
+      // 是否显示比例尺控件 (可选)
       showScaleControl: true,
-      // 是否使能缩放手势
+      // 是否使能缩放手势 (可选)
       zoomGesturesEnabled: true,
-      // 是否使能滚动手势
+      // 是否使能滚动手势 (可选)
       scrollGesturesEnabled: true,
-      // 是否使能旋转手势
+      // 是否使能旋转手势 (可选)
       rotateGestureEnabled: true,
-      // 是否使能倾斜手势
+      // 是否使能倾斜手势 (可选)
       tiltGestureEnabled: true,
-      // 缩放级别
+      // 缩放级别 (可选)
       zoomLevel: 10, 
-      // 中心点坐标
+      // 中心点坐标 (可选)
       centerCoordinate: LatLng(39, 116),
-      // 标记
+      // 标记 (可选)
       markers: <MarkerOption>[], 
-      // 标识点击回调
+      // 标识点击回调 (可选)
       onMarkerClick: (Marker marker) {},
-      // 地图点击回调
+      // 地图点击回调 (可选)
       onMapClick: (LatLng coord) {},
-      // 地图拖动回调
+      // 地图拖动回调 (可选)
       onMapDrag: (MapDrag drag) {},
-      // 地图创建完成回调
+      // 地图创建完成回调 (可选)
       onMapCreated: (controller) async {
         // requestPermission是权限请求方法, 需要你自己实现 
         // 如果不知道怎么处理, 可以参考example工程的实现, example过程依赖了`permission_handler`插件.
