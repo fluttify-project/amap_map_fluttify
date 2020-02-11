@@ -1,6 +1,8 @@
 //
 // Generated file. Do not edit.
 //
+
+// ignore: unused_import
 import 'dart:ui';
 
 import 'package:url_launcher_web/url_launcher_web.dart';

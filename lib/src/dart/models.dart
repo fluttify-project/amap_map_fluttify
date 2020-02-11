@@ -237,6 +237,22 @@ class CircleOption {
   }
 }
 
+/// TileOverlay创建参数
+@immutable
+class HeatmapTileOption {
+  /// 中心点经纬度
+  final List<LatLng> latLngList;
+
+  HeatmapTileOption({
+    @required this.latLngList,
+  });
+
+  @override
+  String toString() {
+    return 'HeatmapTileOption{latLngList: $latLngList}';
+  }
+}
+
 /// 地图移动
 @immutable
 class MapMove {

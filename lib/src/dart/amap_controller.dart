@@ -1887,6 +1887,34 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  Future<void> addHeatmapTile(HeatmapTileOption option) async {
+    return platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        // 创建热力图Provider
+        final builder =
+            await com_amap_api_maps_model_HeatmapTileProvider_Builder
+                .create__();
+        List<com_amap_api_maps_model_LatLng> latLngList = [];
+        for (final latLng in option.latLngList) {
+          latLngList.add(await com_amap_api_maps_model_LatLng
+              .create__double__double(latLng.latitude, latLng.longitude));
+        }
+        await builder.data(latLngList);
+
+        // 创建Tile Overlay选项
+        final tileOverlayOption =
+            await com_amap_api_maps_model_TileOverlayOptions.create__();
+        await tileOverlayOption.tileProvider(await builder.build());
+
+        // 添加热力图
+        await map.addTileOverlay(tileOverlayOption);
+      },
+      ios: (pool) async {},
+    );
+  }
+
   Future<void> dispose() async {
     await androidController?.onPause();
     await androidController?.onDestroy();
