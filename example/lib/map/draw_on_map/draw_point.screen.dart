@@ -200,6 +200,14 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                   },
                 ),
                 ListTile(
+                  title: Center(child: Text('画热力图')),
+                  onTap: () async {
+                    await _controller?.addHeatmapTile(
+                      HeatmapTileOption(latLngList: getNextBatchLatLng(50)),
+                    );
+                  },
+                ),
+                ListTile(
                   title: Center(child: Text('添加平滑移动点')),
                   onTap: () async {
                     final moveMarker = await _controller?.addSmoothMoveMarker(

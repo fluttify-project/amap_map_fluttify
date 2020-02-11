@@ -1887,6 +1887,74 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  Future<Heatmap> addHeatmapTile(HeatmapTileOption option) async {
+    assert(option != null);
+    return platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        // 创建热力图Provider
+        final builder =
+            await com_amap_api_maps_model_HeatmapTileProvider_Builder
+                .create__();
+        List<com_amap_api_maps_model_LatLng> latLngList = [];
+        for (final latLng in option.latLngList) {
+          latLngList.add(await com_amap_api_maps_model_LatLng
+              .create__double__double(latLng.latitude, latLng.longitude));
+        }
+        await builder.data(latLngList);
+
+        // 创建Tile Overlay选项
+        final tileOverlayOption =
+            await com_amap_api_maps_model_TileOverlayOptions.create__();
+        await tileOverlayOption.tileProvider(await builder.build());
+
+        // 添加热力图
+        final heatmap = await map.addTileOverlay(tileOverlayOption);
+
+        pool
+          ..add(map)
+          ..add(builder)
+          ..addAll(latLngList)
+          ..add(tileOverlayOption);
+
+        return Heatmap.android(heatmap);
+      },
+      ios: (pool) async {
+        await iosController.set_delegate(_iosMapDelegate);
+
+        // 创建热力图选项
+        final overlay = await MAHeatMapTileOverlay.create__();
+
+        // 构造热力图结点
+        List<MAHeatMapNode> nodeList = [];
+        for (final latLng in option.latLngList) {
+          final node = await MAHeatMapNode.create__();
+          final coordinate = await CLLocationCoordinate2D.create(
+            latLng.latitude,
+            latLng.longitude,
+          );
+          pool..add(node)..add(coordinate);
+
+          // 坐标点
+          await node.set_coordinate(coordinate);
+          // 权重值 暂时全部都为1
+          await node.set_intensity(1);
+          nodeList.add(node);
+        }
+        // 添加结点数据
+        await overlay.set_data(nodeList);
+
+        // 添加热力图
+        await iosController.addOverlay(overlay);
+
+        pool.addAll(nodeList);
+
+        return Heatmap.ios(overlay, iosController);
+      },
+    );
+  }
+
   Future<void> dispose() async {
     await androidController?.onPause();
     await androidController?.onDestroy();

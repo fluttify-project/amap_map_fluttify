@@ -237,6 +237,22 @@ class CircleOption {
   }
 }
 
+/// TileOverlay创建参数
+@immutable
+class HeatmapTileOption {
+  /// 中心点经纬度
+  final List<LatLng> latLngList;
+
+  HeatmapTileOption({
+    @required this.latLngList,
+  });
+
+  @override
+  String toString() {
+    return 'HeatmapTileOption{latLngList: $latLngList}';
+  }
+}
+
 /// 地图移动
 @immutable
 class MapMove {
@@ -474,6 +490,24 @@ class Circle {
 
   com_amap_api_maps_model_Circle _androidModel;
   MACircle _iosModel;
+  MAMapView _iosController;
+
+  Future<void> remove() {
+    return platform(
+      android: (_) => _androidModel.remove(),
+      ios: (_) => _iosController?.removeOverlay(_iosModel),
+    );
+  }
+}
+
+/// 热力图
+class Heatmap {
+  Heatmap.android(this._androidModel);
+
+  Heatmap.ios(this._iosModel, this._iosController);
+
+  com_amap_api_maps_model_TileOverlay _androidModel;
+  MAHeatMapTileOverlay _iosModel;
   MAMapView _iosController;
 
   Future<void> remove() {
