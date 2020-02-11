@@ -1887,7 +1887,8 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
-  Future<void> addHeatmapTile(HeatmapTileOption option) async {
+  Future<Heatmap> addHeatmapTile(HeatmapTileOption option) async {
+    assert(option != null);
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
@@ -1909,9 +1910,48 @@ class AmapController with WidgetsBindingObserver, _Private {
         await tileOverlayOption.tileProvider(await builder.build());
 
         // 添加热力图
-        await map.addTileOverlay(tileOverlayOption);
+        final heatmap = await map.addTileOverlay(tileOverlayOption);
+
+        pool
+          ..add(map)
+          ..add(builder)
+          ..addAll(latLngList)
+          ..add(tileOverlayOption);
+
+        return Heatmap.android(heatmap);
       },
-      ios: (pool) async {},
+      ios: (pool) async {
+        await iosController.set_delegate(_iosMapDelegate);
+
+        // 创建热力图选项
+        final overlay = await MAHeatMapTileOverlay.create__();
+
+        // 构造热力图结点
+        List<MAHeatMapNode> nodeList = [];
+        for (final latLng in option.latLngList) {
+          final node = await MAHeatMapNode.create__();
+          final coordinate = await CLLocationCoordinate2D.create(
+            latLng.latitude,
+            latLng.longitude,
+          );
+          pool..add(node)..add(coordinate);
+
+          // 坐标点
+          await node.set_coordinate(coordinate);
+          // 权重值 暂时全部都为1
+          await node.set_intensity(1);
+          nodeList.add(node);
+        }
+        // 添加结点数据
+        await overlay.set_data(nodeList);
+
+        // 添加热力图
+        await iosController.addOverlay(overlay);
+
+        pool.addAll(nodeList);
+
+        return Heatmap.ios(overlay, iosController);
+      },
     );
   }
 

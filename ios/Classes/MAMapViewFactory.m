@@ -3894,6 +3894,13 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       [STACK removeAllObjects];
       return circleRenderer;
   }
+
+  // 瓦片图
+  if ([overlay isKindOfClass:[MATileOverlay class]])
+  {
+      MATileOverlayRenderer *tileOverlayRenderer = [[MATileOverlayRenderer alloc] initWithTileOverlay:overlay];
+      return tileOverlayRenderer;
+  }
   ////////////////////////////////////////////////////////////////////////////////
   
   return nil;

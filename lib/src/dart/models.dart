@@ -499,3 +499,21 @@ class Circle {
     );
   }
 }
+
+/// 热力图
+class Heatmap {
+  Heatmap.android(this._androidModel);
+
+  Heatmap.ios(this._iosModel, this._iosController);
+
+  com_amap_api_maps_model_TileOverlay _androidModel;
+  MAHeatMapTileOverlay _iosModel;
+  MAMapView _iosController;
+
+  Future<void> remove() {
+    return platform(
+      android: (_) => _androidModel.remove(),
+      ios: (_) => _iosController?.removeOverlay(_iosModel),
+    );
+  }
+}
