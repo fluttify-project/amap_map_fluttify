@@ -1,3 +1,7 @@
+## 0.17.13
+- enhance: build.gradle加入国内源
+- enhance: showMyLocation增加定位模式的参数
+
 ## 0.17.12
 - feat: 热力图实现
 

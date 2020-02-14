@@ -71,3 +71,14 @@ enum DashType {
   /// 圆点样式
   Circle,
 }
+
+enum MyLocationType {
+  /// 单次定位
+  Locate,
+
+  /// 跟随
+  Follow,
+
+  /// 方向跟随
+  Rotate,
+}
