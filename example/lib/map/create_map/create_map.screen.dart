@@ -47,6 +47,28 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                     _controller?.showMyLocation(value);
                   },
                 ),
+                DiscreteSetting(
+                  head: '选择定位模式',
+                  options: <String>['定位一次', '连续定位并跟随', '连续定位跟随方向'],
+                  onSelected: (String value) async {
+                    if (value == '定位一次') {
+                      await _controller?.showMyLocation(
+                        true,
+                        myLocationType: MyLocationType.Locate,
+                      );
+                    } else if (value == '连续定位并跟随') {
+                      await _controller?.showMyLocation(
+                        true,
+                        myLocationType: MyLocationType.Follow,
+                      );
+                    } else if (value == '连续定位跟随方向') {
+                      await _controller?.showMyLocation(
+                        true,
+                        myLocationType: MyLocationType.Rotate,
+                      );
+                    }
+                  },
+                ),
                 ListTile(
                   title: Center(child: Text('获取当前位置经纬度')),
                   onTap: () async {

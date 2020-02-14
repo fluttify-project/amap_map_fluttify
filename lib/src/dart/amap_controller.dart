@@ -97,6 +97,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// [strokeColor]精度圈边框颜色, [strokeWidth]精度圈边框宽度, [fillColor]精度圈填充颜色
   Future<void> showMyLocation(
     bool show, {
+    MyLocationType myLocationType = MyLocationType.Locate,
     Uri iconUri,
     ImageConfiguration imageConfig,
     Color strokeColor,
@@ -107,6 +108,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       (iconUri != null && imageConfig != null) || iconUri == null,
       'iconUri与imageConfig同时设置!',
     );
+    assert(myLocationType != null);
     await platform(
       android: (pool) async {
         final map = await androidController.getMap();
@@ -116,7 +118,21 @@ class AmapController with WidgetsBindingObserver, _Private {
         await map.setMyLocationEnabled(show);
         if (show) {
           // 默认只定位一次
-          await locationStyle.myLocationType(1);
+          switch (myLocationType) {
+            case MyLocationType.Locate:
+              await locationStyle.myLocationType(
+                  com_amap_api_maps_model_MyLocationStyle.LOCATION_TYPE_LOCATE);
+              break;
+            case MyLocationType.Follow:
+              await locationStyle.myLocationType(
+                  com_amap_api_maps_model_MyLocationStyle.LOCATION_TYPE_FOLLOW);
+              break;
+            case MyLocationType.Rotate:
+              await locationStyle.myLocationType(
+                  com_amap_api_maps_model_MyLocationStyle
+                      .LOCATION_TYPE_LOCATION_ROTATE);
+              break;
+          }
 
           // 定位图标
           if (iconUri != null) {
@@ -152,10 +168,17 @@ class AmapController with WidgetsBindingObserver, _Private {
         await iosController.set_showsUserLocation(show);
 
         if (show) {
-          await iosController.setUserTrackingModeAnimated(
-            MAUserTrackingMode.MAUserTrackingModeFollow,
-            true,
-          );
+          if (myLocationType == MyLocationType.Follow) {
+            await iosController.setUserTrackingModeAnimated(
+              MAUserTrackingMode.MAUserTrackingModeFollow,
+              true,
+            );
+          } else if (myLocationType == MyLocationType.Rotate) {
+            await iosController.setUserTrackingModeAnimated(
+              MAUserTrackingMode.MAUserTrackingModeFollowWithHeading,
+              true,
+            );
+          }
 
           final style = await MAUserLocationRepresentation.create__();
 
