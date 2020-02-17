@@ -31,3 +31,13 @@ class com_amap_api_maps_model_BaseHoleOptions extends com_amap_api_maps_model_Ba
   
   //endregion
 }
+
+extension com_amap_api_maps_model_BaseHoleOptions_Batch on List<com_amap_api_maps_model_BaseHoleOptions> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}

@@ -24,6 +24,17 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
     return object;
   }
   
+  static Future<List<MAParticleCurveSizeGenerate>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleCurveSizeGenerate', );
+  
+    final List<MAParticleCurveSizeGenerate> typedResult = resultBatch.map((result) => MAParticleCurveSizeGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -54,6 +65,35 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
     } else {
       kNativeObjectPool.add(MAParticleCurveSizeGenerate()..refId = result..tag = 'amap_map_fluttify');
       return MAParticleCurveSizeGenerate()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  //endregion
+}
+
+extension MAParticleCurveSizeGenerate_Batch on List<MAParticleCurveSizeGenerate> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<MAParticleCurveSizeGenerate>> initWithCurveXYZ_batch(List<double> x, List<double> y, List<double> z) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleCurveSizeGenerate::initWithCurveXYZ_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => MAParticleCurveSizeGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
     }
   }
   

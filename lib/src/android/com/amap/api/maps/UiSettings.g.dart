@@ -690,3 +690,612 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   
   //endregion
 }
+
+extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSettings> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<void> setScaleControlsEnabled_batch(List<bool> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setScaleControlsEnabled_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setZoomControlsEnabled_batch(List<bool> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setZoomControlsEnabled_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setCompassEnabled_batch(List<bool> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setCompassEnabled_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setMyLocationButtonEnabled_batch(List<bool> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setMyLocationButtonEnabled_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setScrollGesturesEnabled_batch(List<bool> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setScrollGesturesEnabled_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setZoomGesturesEnabled_batch(List<bool> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setZoomGesturesEnabled_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setTiltGesturesEnabled_batch(List<bool> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setTiltGesturesEnabled_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setRotateGesturesEnabled_batch(List<bool> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setRotateGesturesEnabled_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setAllGesturesEnabled_batch(List<bool> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setAllGesturesEnabled_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setLogoPosition_batch(List<int> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setLogoPosition_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setZoomPosition_batch(List<int> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setZoomPosition_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> getZoomPosition_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::getZoomPosition_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> isScaleControlsEnabled_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::isScaleControlsEnabled_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> isZoomControlsEnabled_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::isZoomControlsEnabled_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> isCompassEnabled_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::isCompassEnabled_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> isMyLocationButtonEnabled_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::isMyLocationButtonEnabled_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> isScrollGesturesEnabled_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::isScrollGesturesEnabled_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> isZoomGesturesEnabled_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::isZoomGesturesEnabled_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> isTiltGesturesEnabled_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::isTiltGesturesEnabled_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> isRotateGesturesEnabled_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::isRotateGesturesEnabled_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> getLogoPosition_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::getLogoPosition_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> isIndoorSwitchEnabled_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::isIndoorSwitchEnabled_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setIndoorSwitchEnabled_batch(List<bool> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setIndoorSwitchEnabled_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setLogoMarginRate_batch(List<int> var1, List<double> var2) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setLogoMarginRate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<double>> getLogoMarginRate_batch(List<int> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::getLogoMarginRate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setLogoLeftMargin_batch(List<int> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setLogoLeftMargin_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setLogoBottomMargin_batch(List<int> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setLogoBottomMargin_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setZoomInByScreenCenter_batch(List<bool> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setZoomInByScreenCenter_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setGestureScaleByMapCenter_batch(List<bool> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setGestureScaleByMapCenter_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> isGestureScaleByMapCenter_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::isGestureScaleByMapCenter_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  //endregion
+}

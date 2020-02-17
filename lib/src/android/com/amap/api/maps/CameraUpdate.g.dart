@@ -31,3 +31,13 @@ class com_amap_api_maps_CameraUpdate extends java_lang_Object  {
   
   //endregion
 }
+
+extension com_amap_api_maps_CameraUpdate_Batch on List<com_amap_api_maps_CameraUpdate> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}

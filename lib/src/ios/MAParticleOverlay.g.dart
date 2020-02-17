@@ -24,6 +24,17 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
     return object;
   }
   
+  static Future<List<MAParticleOverlay>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleOverlay', );
+  
+    final List<MAParticleOverlay> typedResult = resultBatch.map((result) => MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -81,6 +92,61 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension MAParticleOverlay_Batch on List<MAParticleOverlay> {
+  //region getters
+  Future<List<MAParticleOverlayOptions>> get_overlayOption_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlay::get_overlayOption_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => MAParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  //endregion
+
+  //region methods
+  Future<List<MAParticleOverlay>> particleOverlayWithOption_batch(List<MAParticleOverlayOptions> option) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::particleOverlayWithOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<void> updateOverlayOption_batch(List<MAParticleOverlayOptions> overlayOption) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::updateOverlayOption_batch', [for (int i = 0; i < this.length; i++) {"overlayOption": overlayOption[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   

@@ -24,6 +24,17 @@ class com_autonavi_amap_mapcore_AMapNativePolyline extends java_lang_Object  {
     return object;
   }
   
+  static Future<List<com_autonavi_amap_mapcore_AMapNativePolyline>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapNativePolyline__', {'length': length});
+  
+    final List<com_autonavi_amap_mapcore_AMapNativePolyline> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_AMapNativePolyline()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -120,6 +131,95 @@ class com_autonavi_amap_mapcore_AMapNativePolyline extends java_lang_Object  {
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension com_autonavi_amap_mapcore_AMapNativePolyline_Batch on List<com_autonavi_amap_mapcore_AMapNativePolyline> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<int>> nativeCreate_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativePolyline::nativeCreate_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> nativeSetGLShaderManager_batch(List<int> var0, List<int> var2) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativePolyline::nativeSetGLShaderManager_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> nativeDrawLineByTextureID_batch(List<int> var0, List<Float64List> var2, List<int> var3, List<double> var4, List<int> var5, List<double> var6, List<double> var7, List<double> var8, List<double> var9, List<double> var10, List<bool> var11, List<bool> var12, List<bool> var13, List<Float64List> var14, List<int> var15, List<int> var16) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativePolyline::nativeDrawLineByTextureID_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "var12": var12[i], "var13": var13[i], "var14": var14[i], "var15": var15[i], "var16": var16[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> nativeDestroy_batch(List<int> var0) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativePolyline::nativeDestroy_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   

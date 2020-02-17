@@ -24,6 +24,17 @@ class MAParticleConstantRotationGenerate extends NSObject with MAParticleRotatio
     return object;
   }
   
+  static Future<List<MAParticleConstantRotationGenerate>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleConstantRotationGenerate', );
+  
+    final List<MAParticleConstantRotationGenerate> typedResult = resultBatch.map((result) => MAParticleConstantRotationGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -54,6 +65,35 @@ class MAParticleConstantRotationGenerate extends NSObject with MAParticleRotatio
     } else {
       kNativeObjectPool.add(MAParticleConstantRotationGenerate()..refId = result..tag = 'amap_map_fluttify');
       return MAParticleConstantRotationGenerate()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  //endregion
+}
+
+extension MAParticleConstantRotationGenerate_Batch on List<MAParticleConstantRotationGenerate> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<MAParticleConstantRotationGenerate>> initWithRotate_batch(List<double> rotate) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleConstantRotationGenerate::initWithRotate_batch', [for (int i = 0; i < this.length; i++) {"rotate": rotate[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => MAParticleConstantRotationGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
     }
   }
   

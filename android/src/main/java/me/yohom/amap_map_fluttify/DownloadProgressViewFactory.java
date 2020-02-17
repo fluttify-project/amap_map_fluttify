@@ -55,10 +55,10 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
         put("com.amap.api.maps.offlinemap.DownloadProgressView::setProgress", (args, methodResult) -> {
             // args
             // jsonable arg
-            int var1 = (int) args.get("var1");
+            int var1 = (int) ((Map<String, Object>) args).get("var1");
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) args).get("refId");
             com.amap.api.maps.offlinemap.DownloadProgressView ref = (com.amap.api.maps.offlinemap.DownloadProgressView) getHEAP().get(refId);
         
             // print log
@@ -78,8 +78,10 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            methodResult.success(jsonableResult);
         });
     }};
 

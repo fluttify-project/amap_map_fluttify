@@ -24,6 +24,17 @@ class MAParticleOverlayOptionsFactory extends NSObject  {
     return object;
   }
   
+  static Future<List<MAParticleOverlayOptionsFactory>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleOverlayOptionsFactory', );
+  
+    final List<MAParticleOverlayOptionsFactory> typedResult = resultBatch.map((result) => MAParticleOverlayOptionsFactory()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -31,6 +42,16 @@ class MAParticleOverlayOptionsFactory extends NSObject  {
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension MAParticleOverlayOptionsFactory_Batch on List<MAParticleOverlayOptionsFactory> {
+  //region getters
   
   //endregion
 

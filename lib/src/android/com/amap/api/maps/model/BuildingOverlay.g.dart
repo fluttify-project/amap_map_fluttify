@@ -250,3 +250,212 @@ class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_Ba
   
   //endregion
 }
+
+extension com_amap_api_maps_model_BuildingOverlay_Batch on List<com_amap_api_maps_model_BuildingOverlay> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<void> setDefaultOptions_batch(List<com_amap_api_maps_model_BuildingOverlayOptions> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setDefaultOptions_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<com_amap_api_maps_model_BuildingOverlayOptions>> getDefaultOptions_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getDefaultOptions_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_BuildingOverlayOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<void> setCustomOptions_batch(List<List<com_amap_api_maps_model_BuildingOverlayOptions>> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setCustomOptions_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<List<com_amap_api_maps_model_BuildingOverlayOptions>>> getCustomOptions_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getCustomOptions_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((it) => com_amap_api_maps_model_BuildingOverlayOptions()..refId = it..tag = 'amap_map_fluttify').toList()).toList();
+      kNativeObjectPool.addAll(typedResult.expand((e) => e));
+      return typedResult;
+    }
+  }
+  
+  Future<void> destroy_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::destroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<String>> getId_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getId_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setZIndex_batch(List<double> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setZIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<double>> getZIndex_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getZIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setVisible_batch(List<bool> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setVisible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> isVisible_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::isVisible_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  //endregion
+}

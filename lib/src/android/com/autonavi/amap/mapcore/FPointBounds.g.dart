@@ -24,6 +24,17 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
     return object;
   }
   
+  static Future<List<com_autonavi_amap_mapcore_FPointBounds>> create_batch__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint(List<com_autonavi_amap_mapcore_FPoint> var1, List<com_autonavi_amap_mapcore_FPoint> var2) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId, "var2": var2[i].refId}]);
+  
+    final List<com_autonavi_amap_mapcore_FPointBounds> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_FPointBounds()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -131,6 +142,108 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension com_autonavi_amap_mapcore_FPointBounds_Batch on List<com_autonavi_amap_mapcore_FPointBounds> {
+  //region getters
+  Future<List<com_autonavi_amap_mapcore_FPoint>> get_southwest_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.FPointBounds::get_southwest_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_FPoint()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  Future<List<com_autonavi_amap_mapcore_FPoint>> get_northeast_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.FPointBounds::get_northeast_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_FPoint()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  //endregion
+
+  //region methods
+  Future<List<com_autonavi_amap_mapcore_FPointBounds_Builder>> builder_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPointBounds::builder_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> contains__com_autonavi_amap_mapcore_FPoint_batch(List<com_autonavi_amap_mapcore_FPoint> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPointBounds::contains__com_autonavi_amap_mapcore_FPoint_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> contains__com_autonavi_amap_mapcore_FPointBounds_batch(List<com_autonavi_amap_mapcore_FPointBounds> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPointBounds::contains__com_autonavi_amap_mapcore_FPointBounds_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> intersects_batch(List<com_autonavi_amap_mapcore_FPointBounds> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPointBounds::intersects_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   

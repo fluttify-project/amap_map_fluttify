@@ -31,3 +31,13 @@ class com_amap_api_maps_model_CameraPosition_Builder extends java_lang_Object  {
   
   //endregion
 }
+
+extension com_amap_api_maps_model_CameraPosition_Builder_Batch on List<com_amap_api_maps_model_CameraPosition_Builder> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}

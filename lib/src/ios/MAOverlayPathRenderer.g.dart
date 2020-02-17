@@ -24,6 +24,17 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
     return object;
   }
   
+  static Future<List<MAOverlayPathRenderer>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOverlayPathRenderer', );
+  
+    final List<MAOverlayPathRenderer> typedResult = resultBatch.map((result) => MAOverlayPathRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -124,6 +135,71 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineDashType', {'refId': refId, "lineDashType": lineDashType.index});
   
   
+  }
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension MAOverlayPathRenderer_Batch on List<MAOverlayPathRenderer> {
+  //region getters
+  Future<List<UIColor>> get_fillColor_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_fillColor_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => UIColor()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  Future<List<UIColor>> get_strokeColor_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_strokeColor_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => UIColor()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  Future<List<double>> get_lineWidth_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineWidth_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<MALineJoinType>> get_lineJoinType_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineJoinType_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => MALineJoinType.values[result]).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<MALineCapType>> get_lineCapType_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineCapType_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => MALineCapType.values[result]).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_miterLimit_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_miterLimit_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<bool>> get_lineDash_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineDash_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<MALineDashType>> get_lineDashType_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineDashType_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => MALineDashType.values[result]).toList();
+  
+    return typedResult;
   }
   
   //endregion

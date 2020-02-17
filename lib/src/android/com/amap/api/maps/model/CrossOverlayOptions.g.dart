@@ -24,6 +24,17 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
     return object;
   }
   
+  static Future<List<com_amap_api_maps_model_CrossOverlayOptions>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_CrossOverlayOptions__', {'length': length});
+  
+    final List<com_amap_api_maps_model_CrossOverlayOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_CrossOverlayOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -120,6 +131,95 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
     } else {
       kNativeObjectPool.add(android_graphics_Bitmap()..refId = result..tag = 'amap_map_fluttify');
       return android_graphics_Bitmap()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  //endregion
+}
+
+extension com_amap_api_maps_model_CrossOverlayOptions_Batch on List<com_amap_api_maps_model_CrossOverlayOptions> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr>> getAttribute_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CrossOverlayOptions::getAttribute_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<com_amap_api_maps_model_CrossOverlayOptions>> setAttribute_batch(List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CrossOverlayOptions::setAttribute_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_CrossOverlayOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<com_amap_api_maps_model_CrossOverlayOptions>> setRes_batch(List<android_graphics_Bitmap> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CrossOverlayOptions::setRes_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_CrossOverlayOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<android_graphics_Bitmap>> getRes_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CrossOverlayOptions::getRes_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => android_graphics_Bitmap()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
     }
   }
   

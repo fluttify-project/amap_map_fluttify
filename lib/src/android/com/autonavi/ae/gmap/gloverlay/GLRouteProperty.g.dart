@@ -24,6 +24,17 @@ class com_autonavi_ae_gmap_gloverlay_GLRouteProperty extends java_lang_Object  {
     return object;
   }
   
+  static Future<List<com_autonavi_ae_gmap_gloverlay_GLRouteProperty>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLRouteProperty__', {'length': length});
+  
+    final List<com_autonavi_ae_gmap_gloverlay_GLRouteProperty> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_gloverlay_GLRouteProperty()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -388,6 +399,225 @@ class com_autonavi_ae_gmap_gloverlay_GLRouteProperty extends java_lang_Object  {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mbTexPreMulAlpha', {'refId': refId, "mbTexPreMulAlpha": mbTexPreMulAlpha});
   
   
+  }
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_autonavi_ae_gmap_gloverlay_GLRouteProperty_Batch on List<com_autonavi_ae_gmap_gloverlay_GLRouteProperty> {
+  //region getters
+  Future<List<com_autonavi_ae_gmap_gloverlay_GLRouteProperty_EAMapRouteTexture>> get_euRouteTexture_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_euRouteTexture_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => com_autonavi_ae_gmap_gloverlay_GLRouteProperty_EAMapRouteTexture.values[result]).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mFilledResId_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mFilledResId_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mSimple3DFillResId_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DFillResId_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mFilledColor_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mFilledColor_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mBgResId_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mBgResId_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mBgColor_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mBgColor_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mLineWidth_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mLineWidth_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mBorderLineWidth_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mBorderLineWidth_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mX1_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mX1_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mY1_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mY1_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mX2_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mX2_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mY2_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mY2_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mGLStart_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mGLStart_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mTextureLen_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mTextureLen_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mSimple3DX1_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DX1_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mSimple3DY1_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DY1_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mSimple3DX2_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DX2_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mSimple3DY2_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DY2_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mSimple3DGLStart_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DGLStart_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mSimple3DTextureLen_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mSimple3DTextureLen_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mCapX1_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mCapX1_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mCapY1_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mCapY1_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mCapX2_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mCapX2_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mCapY2_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mCapY2_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<bool>> get_isLineExtract_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_isLineExtract_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<bool>> get_isCanCovered_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_isCanCovered_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<bool>> get_isUseColor_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_isUseColor_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<bool>> get_isUseCap_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_isUseCap_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<bool>> get_mShowArrow_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mShowArrow_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<bool>> get_mbTexPreMulAlpha_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mbTexPreMulAlpha_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
   }
   
   //endregion

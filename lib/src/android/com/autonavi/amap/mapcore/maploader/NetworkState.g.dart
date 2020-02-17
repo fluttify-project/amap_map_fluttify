@@ -24,6 +24,17 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
     return object;
   }
   
+  static Future<List<com_autonavi_amap_mapcore_maploader_NetworkState>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_NetworkState__', {'length': length});
+  
+    final List<com_autonavi_amap_mapcore_maploader_NetworkState> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_maploader_NetworkState()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -98,6 +109,75 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension com_autonavi_amap_mapcore_maploader_NetworkState_Batch on List<com_autonavi_amap_mapcore_maploader_NetworkState> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<void> setNetworkListener_batch(List<com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> registerNetChangeReceiver_batch(List<android_content_Context> var1, List<bool> var2) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.NetworkState::registerNetChangeReceiver_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> isNetworkConnected_batch(List<android_content_Context> var0) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.NetworkState::isNetworkConnected_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   

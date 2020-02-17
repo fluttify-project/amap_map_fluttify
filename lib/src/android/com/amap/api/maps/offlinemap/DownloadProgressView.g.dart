@@ -24,6 +24,17 @@ class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_Vie
     return object;
   }
   
+  static Future<List<com_amap_api_maps_offlinemap_DownloadProgressView>> create_batch__android_content_Context(List<android_content_Context> var1) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
+  
+    final List<com_amap_api_maps_offlinemap_DownloadProgressView> typedResult = resultBatch.map((result) => com_amap_api_maps_offlinemap_DownloadProgressView()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -54,6 +65,35 @@ class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_Vie
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension com_amap_api_maps_offlinemap_DownloadProgressView_Batch on List<com_amap_api_maps_offlinemap_DownloadProgressView> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<void> setProgress_batch(List<int> var1, {bool viewChannel = true}) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_offlinemap_DownloadProgressView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.DownloadProgressView::setProgress_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   

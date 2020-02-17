@@ -52,3 +52,32 @@ class com_amap_api_maps_model_particle_ColorGenerate extends com_autonavi_amap_m
   
   //endregion
 }
+
+extension com_amap_api_maps_model_particle_ColorGenerate_Batch on List<com_amap_api_maps_model_particle_ColorGenerate> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<Float64List>> getColor_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ColorGenerate::getColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => (result as List).cast<double>()).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  //endregion
+}

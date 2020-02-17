@@ -32,6 +32,28 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlayTexture extends java_lang_Object  
     return object;
   }
   
+  static Future<List<com_autonavi_ae_gmap_gloverlay_GLOverlayTexture>> create_batch__int__int__int__int(List<int> var1, List<int> var2, List<int> var3, List<int> var4) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i]}]);
+  
+    final List<com_autonavi_ae_gmap_gloverlay_GLOverlayTexture> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_gloverlay_GLOverlayTexture()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  static Future<List<com_autonavi_ae_gmap_gloverlay_GLOverlayTexture>> create_batch__int__int__float__float__int__int(List<int> var1, List<int> var2, List<double> var3, List<double> var4, List<int> var5, List<int> var6) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i]}]);
+  
+    final List<com_autonavi_ae_gmap_gloverlay_GLOverlayTexture> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_gloverlay_GLOverlayTexture()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -132,6 +154,71 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlayTexture extends java_lang_Object  
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchor', {'refId': refId, "mAnchor": mAnchor});
   
   
+  }
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_autonavi_ae_gmap_gloverlay_GLOverlayTexture_Batch on List<com_autonavi_ae_gmap_gloverlay_GLOverlayTexture> {
+  //region getters
+  Future<List<int>> get_mResId_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::get_mResId_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mWidth_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::get_mWidth_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mHeight_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::get_mHeight_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mResWidth_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::get_mResWidth_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mResHeight_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::get_mResHeight_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mAnchorXRatio_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::get_mAnchorXRatio_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mAnchorYRatio_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::get_mAnchorYRatio_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mAnchor_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::get_mAnchor_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
   }
   
   //endregion

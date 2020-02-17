@@ -24,6 +24,17 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     return object;
   }
   
+  static Future<List<MAMultiTexturePolylineRenderer>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiTexturePolylineRenderer', );
+  
+    final List<MAMultiTexturePolylineRenderer> typedResult = resultBatch.map((result) => MAMultiTexturePolylineRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -70,6 +81,48 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     } else {
       kNativeObjectPool.add(MAMultiTexturePolylineRenderer()..refId = result..tag = 'amap_map_fluttify');
       return MAMultiTexturePolylineRenderer()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  //endregion
+}
+
+extension MAMultiTexturePolylineRenderer_Batch on List<MAMultiTexturePolylineRenderer> {
+  //region getters
+  Future<List<MAMultiPolyline>> get_multiPolyline_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_multiPolyline_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => MAMultiPolyline()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  Future<List<List>> get_strokeTextureImages_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_strokeTextureImages_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList()).toList();
+    kNativeObjectPool.addAll(typedResult.expand((e) => e));
+    return typedResult;
+  }
+  
+  //endregion
+
+  //region methods
+  Future<List<MAMultiTexturePolylineRenderer>> initWithMultiPolyline_batch(List<MAMultiPolyline> multiPolyline) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline_batch', [for (int i = 0; i < this.length; i++) {"multiPolyline": multiPolyline[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => MAMultiTexturePolylineRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
     }
   }
   

@@ -24,6 +24,17 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
     return object;
   }
   
+  static Future<List<MAParticleRandomColorGenerate>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleRandomColorGenerate', );
+  
+    final List<MAParticleRandomColorGenerate> typedResult = resultBatch.map((result) => MAParticleRandomColorGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -54,6 +65,35 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
     } else {
       kNativeObjectPool.add(MAParticleRandomColorGenerate()..refId = result..tag = 'amap_map_fluttify');
       return MAParticleRandomColorGenerate()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  //endregion
+}
+
+extension MAParticleRandomColorGenerate_Batch on List<MAParticleRandomColorGenerate> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<MAParticleRandomColorGenerate>> initWithBoundaryColorR1G1B1A1R2G2B2A2_batch(List<double> r1, List<double> g1, List<double> b1, List<double> a1, List<double> r2, List<double> g2, List<double> b2, List<double> a2) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomColorGenerate::initWithBoundaryColorR1G1B1A1R2G2B2A2_batch', [for (int i = 0; i < this.length; i++) {"r1": r1[i], "g1": g1[i], "b1": b1[i], "a1": a1[i], "r2": r2[i], "g2": g2[i], "b2": b2[i], "a2": a2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => MAParticleRandomColorGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
     }
   }
   

@@ -24,6 +24,17 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
     return object;
   }
   
+  static Future<List<MACustomBuildingOverlayOption>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACustomBuildingOverlayOption', );
+  
+    final List<MACustomBuildingOverlayOption> typedResult = resultBatch.map((result) => MACustomBuildingOverlayOption()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -134,6 +145,89 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension MACustomBuildingOverlayOption_Batch on List<MACustomBuildingOverlayOption> {
+  //region getters
+  Future<List<double>> get_height_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayOption::get_height_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_heightScale_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayOption::get_heightScale_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<UIColor>> get_topColor_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayOption::get_topColor_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => UIColor()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  Future<List<UIColor>> get_sideColor_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayOption::get_sideColor_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => UIColor()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  Future<List<bool>> get_visibile_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlayOption::get_visibile_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  //endregion
+
+  //region methods
+  Future<List<MACustomBuildingOverlayOption>> optionWithCoordinatesCount_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::optionWithCoordinatesCount_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => MACustomBuildingOverlayOption()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> setOptionWithCoordinatesCount_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::setOptionWithCoordinatesCount_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   

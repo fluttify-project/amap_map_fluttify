@@ -24,6 +24,17 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits extends jav
     return object;
   }
   
+  static Future<List<com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__', {'length': length});
+  
+    final List<com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -64,6 +75,36 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits extends jav
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedTimes', {'refId': refId, "mHitedTimes": mHitedTimes});
   
   
+  }
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits_Batch on List<com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits> {
+  //region getters
+  Future<List<int>> get_mOverlayHashCode_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::get_mOverlayHashCode_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mHitedIndex_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::get_mHitedIndex_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_mHitedTimes_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::get_mHitedTimes_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
   }
   
   //endregion

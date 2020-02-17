@@ -24,6 +24,17 @@ class com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants extends co
     return object;
   }
   
+  static Future<List<com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants>> create_batch__float__float__float__float__float__float__float__float(List<double> var1, List<double> var2, List<double> var3, List<double> var4, List<double> var5, List<double> var6, List<double> var7, List<double> var8) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i]}]);
+  
+    final List<com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -31,6 +42,16 @@ class com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants extends co
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants_Batch on List<com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants> {
+  //region getters
   
   //endregion
 

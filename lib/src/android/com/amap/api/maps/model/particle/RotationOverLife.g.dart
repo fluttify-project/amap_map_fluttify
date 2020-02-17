@@ -52,3 +52,32 @@ class com_amap_api_maps_model_particle_RotationOverLife extends com_autonavi_ama
   
   //endregion
 }
+
+extension com_amap_api_maps_model_particle_RotationOverLife_Batch on List<com_amap_api_maps_model_particle_RotationOverLife> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<double>> getRotate_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.RotationOverLife::getRotate_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  //endregion
+}

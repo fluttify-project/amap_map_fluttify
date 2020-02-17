@@ -24,6 +24,17 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom extends com_autonavi
     return object;
   }
   
+  static Future<List<com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom>> create_batch__int(List<int> var1) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int', [for (int i = 0; i < var1.length; i++) {"var1": var1[i]}]);
+  
+    final List<com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -98,6 +109,75 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom extends com_autonavi
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom_Batch on List<com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<void> reset_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom::reset_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> commitAnimation_batch(List<Object> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom::commitAnimation_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> setToMapZoomAndPivot_batch(List<double> var1, List<int> var2, List<android_graphics_Point> var3) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom::setToMapZoomAndPivot_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   

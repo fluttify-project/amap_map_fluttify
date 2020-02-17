@@ -24,6 +24,17 @@ class MAHeatMapNode extends NSObject  {
     return object;
   }
   
+  static Future<List<MAHeatMapNode>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAHeatMapNode', );
+  
+    final List<MAHeatMapNode> typedResult = resultBatch.map((result) => MAHeatMapNode()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -52,6 +63,29 @@ class MAHeatMapNode extends NSObject  {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapNode::set_intensity', {'refId': refId, "intensity": intensity});
   
   
+  }
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension MAHeatMapNode_Batch on List<MAHeatMapNode> {
+  //region getters
+  Future<List<CLLocationCoordinate2D>> get_coordinate_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapNode::get_coordinate_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  Future<List<double>> get_intensity_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapNode::get_intensity_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
   }
   
   //endregion

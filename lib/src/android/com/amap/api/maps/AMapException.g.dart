@@ -48,6 +48,28 @@ class com_amap_api_maps_AMapException extends java_lang_Object  {
     return object;
   }
   
+  static Future<List<com_amap_api_maps_AMapException>> create_batch__String(List<String> var1) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_AMapException__String', [for (int i = 0; i < var1.length; i++) {"var1": var1[i]}]);
+  
+    final List<com_amap_api_maps_AMapException> typedResult = resultBatch.map((result) => com_amap_api_maps_AMapException()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  static Future<List<com_amap_api_maps_AMapException>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_AMapException__', {'length': length});
+  
+    final List<com_amap_api_maps_AMapException> typedResult = resultBatch.map((result) => com_amap_api_maps_AMapException()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -78,6 +100,35 @@ class com_amap_api_maps_AMapException extends java_lang_Object  {
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension com_amap_api_maps_AMapException_Batch on List<com_amap_api_maps_AMapException> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<String>> getErrorMessage_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapException::getErrorMessage_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   

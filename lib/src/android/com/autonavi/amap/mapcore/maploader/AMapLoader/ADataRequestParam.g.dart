@@ -24,6 +24,17 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam extends j
     return object;
   }
   
+  static Future<List<com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__', {'length': length});
+  
+    final List<com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -100,6 +111,57 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam extends j
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_requestBaseUrl', {'refId': refId, "requestBaseUrl": requestBaseUrl});
   
   
+  }
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam_Batch on List<com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam> {
+  //region getters
+  Future<List<String>> get_requestUrl_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_requestUrl_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_handler_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_handler_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_nRequestType_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_nRequestType_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<Uint8List>> get_enCodeString_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_enCodeString_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_nCompress_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_nCompress_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<String>> get_requestBaseUrl_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_requestBaseUrl_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
   }
   
   //endregion

@@ -24,6 +24,17 @@ class com_amap_api_maps_model_MyLocationStyleCreator extends java_lang_Object  {
     return object;
   }
   
+  static Future<List<com_amap_api_maps_model_MyLocationStyleCreator>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_MyLocationStyleCreator__', {'length': length});
+  
+    final List<com_amap_api_maps_model_MyLocationStyleCreator> typedResult = resultBatch.map((result) => com_amap_api_maps_model_MyLocationStyleCreator()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -31,6 +42,16 @@ class com_amap_api_maps_model_MyLocationStyleCreator extends java_lang_Object  {
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_amap_api_maps_model_MyLocationStyleCreator_Batch on List<com_amap_api_maps_model_MyLocationStyleCreator> {
+  //region getters
   
   //endregion
 

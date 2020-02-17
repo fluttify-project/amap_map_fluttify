@@ -24,6 +24,17 @@ class com_autonavi_amap_mapcore_animation_GLEmergeAnimation extends com_autonavi
     return object;
   }
   
+  static Future<List<com_autonavi_amap_mapcore_animation_GLEmergeAnimation>> create_batch__com_amap_api_maps_model_LatLng(List<com_amap_api_maps_model_LatLng> var1) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
+  
+    final List<com_autonavi_amap_mapcore_animation_GLEmergeAnimation> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_animation_GLEmergeAnimation()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -40,6 +51,22 @@ class com_autonavi_amap_mapcore_animation_GLEmergeAnimation extends com_autonavi
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLEmergeAnimation::set_mStartPoint', {'refId': refId, "mStartPoint": mStartPoint.refId});
   
   
+  }
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_autonavi_amap_mapcore_animation_GLEmergeAnimation_Batch on List<com_autonavi_amap_mapcore_animation_GLEmergeAnimation> {
+  //region getters
+  Future<List<com_amap_api_maps_model_LatLng>> get_mStartPoint_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLEmergeAnimation::get_mStartPoint_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
   }
   
   //endregion

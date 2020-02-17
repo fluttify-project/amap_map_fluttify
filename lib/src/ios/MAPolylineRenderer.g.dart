@@ -24,6 +24,17 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     return object;
   }
   
+  static Future<List<MAPolylineRenderer>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAPolylineRenderer', );
+  
+    final List<MAPolylineRenderer> typedResult = resultBatch.map((result) => MAPolylineRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -82,6 +93,55 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     } else {
       kNativeObjectPool.add(MAPolylineRenderer()..refId = result..tag = 'amap_map_fluttify');
       return MAPolylineRenderer()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  //endregion
+}
+
+extension MAPolylineRenderer_Batch on List<MAPolylineRenderer> {
+  //region getters
+  Future<List<MAPolyline>> get_polyline_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_polyline_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => MAPolyline()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  Future<List<bool>> get_is3DArrowLine_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_is3DArrowLine_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<UIColor>> get_sideColor_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_sideColor_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => UIColor()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  //endregion
+
+  //region methods
+  Future<List<MAPolylineRenderer>> initWithPolyline_batch(List<MAPolyline> polyline) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline_batch', [for (int i = 0; i < this.length; i++) {"polyline": polyline[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => MAPolylineRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
     }
   }
   

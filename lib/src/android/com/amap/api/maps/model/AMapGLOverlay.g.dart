@@ -52,3 +52,32 @@ class com_amap_api_maps_model_AMapGLOverlay extends java_lang_Object  {
   
   //endregion
 }
+
+extension com_amap_api_maps_model_AMapGLOverlay_Batch on List<com_amap_api_maps_model_AMapGLOverlay> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<void> destroy_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapGLOverlay::destroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  //endregion
+}

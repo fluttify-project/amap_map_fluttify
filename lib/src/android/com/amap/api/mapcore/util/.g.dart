@@ -31,3 +31,13 @@ class com_amap_api_mapcore_util_ extends java_lang_Object  {
   
   //endregion
 }
+
+extension com_amap_api_mapcore_util__Batch on List<com_amap_api_mapcore_util_> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}

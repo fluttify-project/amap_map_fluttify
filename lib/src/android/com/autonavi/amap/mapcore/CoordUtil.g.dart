@@ -24,6 +24,17 @@ class com_autonavi_amap_mapcore_CoordUtil extends java_lang_Object  {
     return object;
   }
   
+  static Future<List<com_autonavi_amap_mapcore_CoordUtil>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_CoordUtil__', {'length': length});
+  
+    final List<com_autonavi_amap_mapcore_CoordUtil> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_CoordUtil()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -54,6 +65,35 @@ class com_autonavi_amap_mapcore_CoordUtil extends java_lang_Object  {
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension com_autonavi_amap_mapcore_CoordUtil_Batch on List<com_autonavi_amap_mapcore_CoordUtil> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<int>> convertToGcj_batch(List<Float64List> var0, List<Float64List> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.CoordUtil::convertToGcj_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   

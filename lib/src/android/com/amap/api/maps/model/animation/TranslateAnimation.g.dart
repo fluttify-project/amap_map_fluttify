@@ -24,6 +24,17 @@ class com_amap_api_maps_model_animation_TranslateAnimation extends com_amap_api_
     return object;
   }
   
+  static Future<List<com_amap_api_maps_model_animation_TranslateAnimation>> create_batch__com_amap_api_maps_model_LatLng(List<com_amap_api_maps_model_LatLng> var1) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
+  
+    final List<com_amap_api_maps_model_animation_TranslateAnimation> typedResult = resultBatch.map((result) => com_amap_api_maps_model_animation_TranslateAnimation()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -31,6 +42,16 @@ class com_amap_api_maps_model_animation_TranslateAnimation extends com_amap_api_
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_amap_api_maps_model_animation_TranslateAnimation_Batch on List<com_amap_api_maps_model_animation_TranslateAnimation> {
+  //region getters
   
   //endregion
 

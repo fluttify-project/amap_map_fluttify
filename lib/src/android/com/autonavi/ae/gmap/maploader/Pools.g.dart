@@ -31,3 +31,13 @@ class com_autonavi_ae_gmap_maploader_Pools extends java_lang_Object  {
   
   //endregion
 }
+
+extension com_autonavi_ae_gmap_maploader_Pools_Batch on List<com_autonavi_ae_gmap_maploader_Pools> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}

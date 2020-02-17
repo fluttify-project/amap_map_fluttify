@@ -24,6 +24,17 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     return object;
   }
   
+  static Future<List<MAPolygon>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAPolygon', );
+  
+    final List<MAPolygon> typedResult = resultBatch.map((result) => MAPolygon()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -130,6 +141,101 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension MAPolygon_Batch on List<MAPolygon> {
+  //region getters
+  Future<List<List<MAOverlay>>> get_hollowShapes_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygon::get_hollowShapes_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it..tag = 'amap_map_fluttify').toList()).toList();
+    kNativeObjectPool.addAll(typedResult.expand((e) => e));
+    return typedResult;
+  }
+  
+  //endregion
+
+  //region methods
+  Future<List<MAPolygon>> polygonWithCoordinatesCount_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithCoordinatesCount_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => MAPolygon()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<MAPolygon>> polygonWithPointsCount_batch(List<List<MAMapPoint>> points, List<int> count) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithPointsCount_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => MAPolygon()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> setPolygonWithPointsCount_batch(List<List<MAMapPoint>> points, List<int> count) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithPointsCount_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<bool>> setPolygonWithCoordinatesCount_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithCoordinatesCount_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   

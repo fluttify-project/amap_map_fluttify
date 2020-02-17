@@ -24,6 +24,17 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends com_autonavi_am
     return object;
   }
   
+  static Future<List<com_autonavi_amap_mapcore_animation_GLAnimationSet>> create_batch__boolean(List<bool> var1) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLAnimationSet__boolean', [for (int i = 0; i < var1.length; i++) {"var1": var1[i]}]);
+  
+    final List<com_autonavi_amap_mapcore_animation_GLAnimationSet> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_animation_GLAnimationSet()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -98,6 +109,75 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends com_autonavi_am
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension com_autonavi_amap_mapcore_animation_GLAnimationSet_Batch on List<com_autonavi_amap_mapcore_animation_GLAnimationSet> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<void> addAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::addAnimation_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<List<com_autonavi_amap_mapcore_animation_GLAnimation>>> getAnimations_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::getAnimations_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((it) => com_autonavi_amap_mapcore_animation_GLAnimation()..refId = it..tag = 'amap_map_fluttify').toList()).toList();
+      kNativeObjectPool.addAll(typedResult.expand((e) => e));
+      return typedResult;
+    }
+  }
+  
+  Future<void> cleanAnimation_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAnimationSet::cleanAnimation_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   

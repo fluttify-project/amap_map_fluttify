@@ -24,6 +24,17 @@ class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
     return object;
   }
   
+  static Future<List<MAMultiPointOverlay>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiPointOverlay', );
+  
+    final List<MAMultiPointOverlay> typedResult = resultBatch.map((result) => MAMultiPointOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -59,6 +70,41 @@ class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
     } else {
       kNativeObjectPool.add(MAMultiPointOverlay()..refId = result..tag = 'amap_map_fluttify');
       return MAMultiPointOverlay()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  //endregion
+}
+
+extension MAMultiPointOverlay_Batch on List<MAMultiPointOverlay> {
+  //region getters
+  Future<List<List<MAMultiPointItem>>> get_items_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPointOverlay::get_items_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((it) => MAMultiPointItem()..refId = it..tag = 'amap_map_fluttify').toList()).toList();
+    kNativeObjectPool.addAll(typedResult.expand((e) => e));
+    return typedResult;
+  }
+  
+  //endregion
+
+  //region methods
+  Future<List<MAMultiPointOverlay>> initWithMultiPointItems_batch(List<List<MAMultiPointItem>> items) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlay::initWithMultiPointItems_batch', [for (int i = 0; i < this.length; i++) {"items": items[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => MAMultiPointOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
     }
   }
   

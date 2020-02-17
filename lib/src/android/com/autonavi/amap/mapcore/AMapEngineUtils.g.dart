@@ -49,6 +49,17 @@ class com_autonavi_amap_mapcore_AMapEngineUtils extends java_lang_Object  {
     return object;
   }
   
+  static Future<List<com_autonavi_amap_mapcore_AMapEngineUtils>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapEngineUtils__', {'length': length});
+  
+    final List<com_autonavi_amap_mapcore_AMapEngineUtils> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_AMapEngineUtils()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -56,6 +67,16 @@ class com_autonavi_amap_mapcore_AMapEngineUtils extends java_lang_Object  {
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_autonavi_amap_mapcore_AMapEngineUtils_Batch on List<com_autonavi_amap_mapcore_AMapEngineUtils> {
+  //region getters
   
   //endregion
 

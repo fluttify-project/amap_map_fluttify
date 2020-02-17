@@ -32,6 +32,28 @@ class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
     return object;
   }
   
+  static Future<List<com_autonavi_amap_mapcore_IPoint>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_IPoint__', {'length': length});
+  
+    final List<com_autonavi_amap_mapcore_IPoint> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_IPoint()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  static Future<List<com_autonavi_amap_mapcore_IPoint>> create_batch__int__int(List<int> var1, List<int> var2) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_IPoint__int__int', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i]}]);
+  
+    final List<com_autonavi_amap_mapcore_IPoint> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_IPoint()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -106,6 +128,75 @@ class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension com_autonavi_amap_mapcore_IPoint_Batch on List<com_autonavi_amap_mapcore_IPoint> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<com_autonavi_amap_mapcore_IPoint>> obtain_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IPoint::obtain_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_IPoint()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<com_autonavi_amap_mapcore_IPoint>> obtain__int__int_batch(List<int> var0, List<int> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IPoint::obtain__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_IPoint()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<Object>> clone_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IPoint::clone_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   

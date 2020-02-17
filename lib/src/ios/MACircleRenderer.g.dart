@@ -24,6 +24,17 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
     return object;
   }
   
+  static Future<List<MACircleRenderer>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACircleRenderer', );
+  
+    final List<MACircleRenderer> typedResult = resultBatch.map((result) => MACircleRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -59,6 +70,41 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
     } else {
       kNativeObjectPool.add(MACircleRenderer()..refId = result..tag = 'amap_map_fluttify');
       return MACircleRenderer()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  //endregion
+}
+
+extension MACircleRenderer_Batch on List<MACircleRenderer> {
+  //region getters
+  Future<List<MACircle>> get_circle_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACircleRenderer::get_circle_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => MACircle()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  //endregion
+
+  //region methods
+  Future<List<MACircleRenderer>> initWithCircle_batch(List<MACircle> circle) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleRenderer::initWithCircle_batch', [for (int i = 0; i < this.length; i++) {"circle": circle[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => MACircleRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
     }
   }
   

@@ -24,6 +24,17 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
     return object;
   }
   
+  static Future<List<MAParticleRectShapeModule>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleRectShapeModule', );
+  
+    final List<MAParticleRectShapeModule> typedResult = resultBatch.map((result) => MAParticleRectShapeModule()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -54,6 +65,35 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
     } else {
       kNativeObjectPool.add(MAParticleRectShapeModule()..refId = result..tag = 'amap_map_fluttify');
       return MAParticleRectShapeModule()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  //endregion
+}
+
+extension MAParticleRectShapeModule_Batch on List<MAParticleRectShapeModule> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<MAParticleRectShapeModule>> initWithLeftToprightbottomuseRatio_batch(List<double> left, List<double> top, List<double> right, List<double> bottom, List<bool> isUseRatio) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeftToprightbottomuseRatio_batch', [for (int i = 0; i < this.length; i++) {"left": left[i], "top": top[i], "right": right[i], "bottom": bottom[i], "isUseRatio": isUseRatio[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => MAParticleRectShapeModule()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
     }
   }
   

@@ -32,3 +32,13 @@ class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object with 
   
   //endregion
 }
+
+extension com_amap_api_maps_model_HeatmapTileProvider_Batch on List<com_amap_api_maps_model_HeatmapTileProvider> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}

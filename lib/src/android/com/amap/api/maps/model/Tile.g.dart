@@ -24,6 +24,17 @@ class com_amap_api_maps_model_Tile extends java_lang_Object with android_os_Parc
     return object;
   }
   
+  static Future<List<com_amap_api_maps_model_Tile>> create_batch__int__int__byteArray(List<int> var1, List<int> var2, List<Uint8List> var3) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_Tile__int__int__byteArray', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i]}]);
+  
+    final List<com_amap_api_maps_model_Tile> typedResult = resultBatch.map((result) => com_amap_api_maps_model_Tile()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -71,6 +82,55 @@ class com_amap_api_maps_model_Tile extends java_lang_Object with android_os_Parc
     } else {
       kNativeObjectPool.add(com_amap_api_maps_model_Tile()..refId = result..tag = 'amap_map_fluttify');
       return com_amap_api_maps_model_Tile()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  //endregion
+}
+
+extension com_amap_api_maps_model_Tile_Batch on List<com_amap_api_maps_model_Tile> {
+  //region getters
+  Future<List<int>> get_width_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.Tile::get_width_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_height_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.Tile::get_height_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<Uint8List>> get_data_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.Tile::get_data_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  //endregion
+
+  //region methods
+  Future<List<com_amap_api_maps_model_Tile>> obtain_batch(List<int> var0, List<int> var1, List<Uint8List> var2) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Tile::obtain_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_Tile()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
     }
   }
   

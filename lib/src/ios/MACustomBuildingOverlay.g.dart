@@ -24,6 +24,17 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
     return object;
   }
   
+  static Future<List<MACustomBuildingOverlay>> create_batch__() async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACustomBuildingOverlay', );
+  
+    final List<MACustomBuildingOverlay> typedResult = resultBatch.map((result) => MACustomBuildingOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -87,6 +98,68 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension MACustomBuildingOverlay_Batch on List<MACustomBuildingOverlay> {
+  //region getters
+  Future<List<MACustomBuildingOverlayOption>> get_defaultOption_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlay::get_defaultOption_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => MACustomBuildingOverlayOption()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  Future<List<List<MACustomBuildingOverlayOption>>> get_customOptions_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACustomBuildingOverlay::get_customOptions_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((it) => MACustomBuildingOverlayOption()..refId = it..tag = 'amap_map_fluttify').toList()).toList();
+    kNativeObjectPool.addAll(typedResult.expand((e) => e));
+    return typedResult;
+  }
+  
+  //endregion
+
+  //region methods
+  Future<void> addCustomOption_batch(List<MACustomBuildingOverlayOption> option) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::addCustomOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> removeCustomOption_batch(List<MACustomBuildingOverlayOption> option) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::removeCustomOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   
