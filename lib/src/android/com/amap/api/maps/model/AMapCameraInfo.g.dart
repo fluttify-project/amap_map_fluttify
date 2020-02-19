@@ -194,7 +194,7 @@ extension com_amap_api_maps_model_AMapCameraInfo_Batch on List<com_amap_api_maps
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getFov_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getFov_batch', );
   
   
     // convert native result to dart side object
@@ -214,7 +214,7 @@ extension com_amap_api_maps_model_AMapCameraInfo_Batch on List<com_amap_api_maps
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getAspectRatio_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getAspectRatio_batch', );
   
   
     // convert native result to dart side object
@@ -234,7 +234,7 @@ extension com_amap_api_maps_model_AMapCameraInfo_Batch on List<com_amap_api_maps
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getRotate_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getRotate_batch', );
   
   
     // convert native result to dart side object
@@ -254,7 +254,7 @@ extension com_amap_api_maps_model_AMapCameraInfo_Batch on List<com_amap_api_maps
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getX_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getX_batch', );
   
   
     // convert native result to dart side object
@@ -274,7 +274,7 @@ extension com_amap_api_maps_model_AMapCameraInfo_Batch on List<com_amap_api_maps
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getY_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getY_batch', );
   
   
     // convert native result to dart side object
@@ -294,7 +294,7 @@ extension com_amap_api_maps_model_AMapCameraInfo_Batch on List<com_amap_api_maps
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getZ_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.AMapCameraInfo::getZ_batch', );
   
   
     // convert native result to dart side object

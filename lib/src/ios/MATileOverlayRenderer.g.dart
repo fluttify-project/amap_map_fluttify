@@ -24,11 +24,11 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
     return object;
   }
   
-  static Future<List<MATileOverlayRenderer>> create_batch__() async {
+  static Future<List<MATileOverlayRenderer>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATileOverlayRenderer', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATileOverlayRenderer', {'length': length});
   
     final List<MATileOverlayRenderer> typedResult = resultBatch.map((result) => MATileOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -117,7 +117,7 @@ extension MATileOverlayRenderer_Batch on List<MATileOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::initWithTileOverlay_batch', [for (int i = 0; i < this.length; i++) {"tileOverlay": tileOverlay[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::initWithTileOverlay_batch', [for (int i = 0; i < this.length; i++) {"tileOverlay": tileOverlay[i].refId}]);
   
   
     // convert native result to dart side object
@@ -137,7 +137,7 @@ extension MATileOverlayRenderer_Batch on List<MATileOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::reloadData_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::reloadData_batch', );
   
   
     // convert native result to dart side object

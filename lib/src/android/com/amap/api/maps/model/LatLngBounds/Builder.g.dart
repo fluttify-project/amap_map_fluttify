@@ -106,7 +106,7 @@ extension com_amap_api_maps_model_LatLngBounds_Builder_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds.Builder::include_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds.Builder::include_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
   
   
     // convert native result to dart side object
@@ -126,7 +126,7 @@ extension com_amap_api_maps_model_LatLngBounds_Builder_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds.Builder::build_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds.Builder::build_batch', );
   
   
     // convert native result to dart side object

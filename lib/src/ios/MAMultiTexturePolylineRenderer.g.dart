@@ -24,11 +24,11 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     return object;
   }
   
-  static Future<List<MAMultiTexturePolylineRenderer>> create_batch__() async {
+  static Future<List<MAMultiTexturePolylineRenderer>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiTexturePolylineRenderer', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiTexturePolylineRenderer', {'length': length});
   
     final List<MAMultiTexturePolylineRenderer> typedResult = resultBatch.map((result) => MAMultiTexturePolylineRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -113,7 +113,7 @@ extension MAMultiTexturePolylineRenderer_Batch on List<MAMultiTexturePolylineRen
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline_batch', [for (int i = 0; i < this.length; i++) {"multiPolyline": multiPolyline[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline_batch', [for (int i = 0; i < this.length; i++) {"multiPolyline": multiPolyline[i].refId}]);
   
   
     // convert native result to dart side object

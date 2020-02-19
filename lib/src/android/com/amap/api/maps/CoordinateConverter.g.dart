@@ -150,7 +150,7 @@ extension com_amap_api_maps_CoordinateConverter_Batch on List<com_amap_api_maps_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::from_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::from_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].index}]);
   
   
     // convert native result to dart side object
@@ -170,7 +170,7 @@ extension com_amap_api_maps_CoordinateConverter_Batch on List<com_amap_api_maps_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::coord_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::coord_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
   
   
     // convert native result to dart side object
@@ -190,7 +190,7 @@ extension com_amap_api_maps_CoordinateConverter_Batch on List<com_amap_api_maps_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::convert_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::convert_batch', );
   
   
     // convert native result to dart side object
@@ -210,7 +210,7 @@ extension com_amap_api_maps_CoordinateConverter_Batch on List<com_amap_api_maps_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::isAMapDataAvailable_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::isAMapDataAvailable_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i]}]);
   
   
     // convert native result to dart side object

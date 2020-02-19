@@ -119,7 +119,7 @@ extension com_amap_api_maps_AMapException_Batch on List<com_amap_api_maps_AMapEx
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapException::getErrorMessage_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapException::getErrorMessage_batch', );
   
   
     // convert native result to dart side object

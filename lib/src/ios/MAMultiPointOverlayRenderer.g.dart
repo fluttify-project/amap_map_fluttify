@@ -24,11 +24,11 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
     return object;
   }
   
-  static Future<List<MAMultiPointOverlayRenderer>> create_batch__() async {
+  static Future<List<MAMultiPointOverlayRenderer>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiPointOverlayRenderer', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiPointOverlayRenderer', {'length': length});
   
     final List<MAMultiPointOverlayRenderer> typedResult = resultBatch.map((result) => MAMultiPointOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -176,7 +176,7 @@ extension MAMultiPointOverlayRenderer_Batch on List<MAMultiPointOverlayRenderer>
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::initWithMultiPointOverlay_batch', [for (int i = 0; i < this.length; i++) {"multiPointOverlay": multiPointOverlay[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::initWithMultiPointOverlay_batch', [for (int i = 0; i < this.length; i++) {"multiPointOverlay": multiPointOverlay[i].refId}]);
   
   
     // convert native result to dart side object

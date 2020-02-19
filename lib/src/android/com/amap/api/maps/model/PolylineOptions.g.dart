@@ -1009,7 +1009,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setUseTexture_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setUseTexture_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1029,7 +1029,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setCustomTexture_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setCustomTexture_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1049,7 +1049,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getCustomTexture_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getCustomTexture_batch', );
   
   
     // convert native result to dart side object
@@ -1069,7 +1069,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setCustomTextureList_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setCustomTextureList_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList()}]);
   
   
     // convert native result to dart side object
@@ -1089,7 +1089,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getCustomTextureList_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getCustomTextureList_batch', );
   
   
     // convert native result to dart side object
@@ -1109,7 +1109,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setCustomTextureIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setCustomTextureIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1129,7 +1129,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getCustomTextureIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getCustomTextureIndex_batch', );
   
   
     // convert native result to dart side object
@@ -1149,7 +1149,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::colorValues_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::colorValues_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1169,7 +1169,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getColorValues_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getColorValues_batch', );
   
   
     // convert native result to dart side object
@@ -1189,7 +1189,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::useGradient_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::useGradient_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1209,7 +1209,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isUseGradient_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isUseGradient_batch', );
   
   
     // convert native result to dart side object
@@ -1229,7 +1229,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isUseTexture_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isUseTexture_batch', );
   
   
     // convert native result to dart side object
@@ -1249,7 +1249,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isGeodesic_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isGeodesic_batch', );
   
   
     // convert native result to dart side object
@@ -1269,7 +1269,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::add__com_amap_api_maps_model_LatLng_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::add__com_amap_api_maps_model_LatLng_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1289,7 +1289,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::addAll_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::addAll_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList()}]);
   
   
     // convert native result to dart side object
@@ -1309,7 +1309,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::width_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::width_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1329,7 +1329,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::color_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::color_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1349,7 +1349,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::zIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::zIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1369,7 +1369,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::visible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::visible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1389,7 +1389,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::geodesic_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::geodesic_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1409,7 +1409,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setDottedLine_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setDottedLine_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1429,7 +1429,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isDottedLine_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isDottedLine_batch', );
   
   
     // convert native result to dart side object
@@ -1449,7 +1449,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setDottedLineType_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setDottedLineType_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1469,7 +1469,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::lineCapType_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::lineCapType_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].index}]);
   
   
     // convert native result to dart side object
@@ -1489,7 +1489,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::lineJoinType_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::lineJoinType_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].index}]);
   
   
     // convert native result to dart side object
@@ -1509,7 +1509,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getLineCapType_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getLineCapType_batch', );
   
   
     // convert native result to dart side object
@@ -1529,7 +1529,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getLineJoinType_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getLineJoinType_batch', );
   
   
     // convert native result to dart side object
@@ -1549,7 +1549,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getDottedLineType_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getDottedLineType_batch', );
   
   
     // convert native result to dart side object
@@ -1569,7 +1569,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getPoints_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getPoints_batch', );
   
   
     // convert native result to dart side object
@@ -1589,7 +1589,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getWidth_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getWidth_batch', );
   
   
     // convert native result to dart side object
@@ -1609,7 +1609,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getColor_batch', );
   
   
     // convert native result to dart side object
@@ -1629,7 +1629,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getZIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getZIndex_batch', );
   
   
     // convert native result to dart side object
@@ -1649,7 +1649,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isVisible_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isVisible_batch', );
   
   
     // convert native result to dart side object
@@ -1669,7 +1669,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::transparency_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::transparency_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1689,7 +1689,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getTransparency_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getTransparency_batch', );
   
   
     // convert native result to dart side object
@@ -1709,7 +1709,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::aboveMaskLayer_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::aboveMaskLayer_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1729,7 +1729,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isAboveMaskLayer_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isAboveMaskLayer_batch', );
   
   
     // convert native result to dart side object
@@ -1749,7 +1749,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setPoints_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setPoints_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList()}]);
   
   
     // convert native result to dart side object
@@ -1769,7 +1769,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getShownRatio_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getShownRatio_batch', );
   
   
     // convert native result to dart side object
@@ -1789,7 +1789,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setShownRatio_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setShownRatio_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1809,7 +1809,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setShownRange_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setShownRange_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i]}]);
   
   
     // convert native result to dart side object
@@ -1829,7 +1829,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getShownRangeBegin_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getShownRangeBegin_batch', );
   
   
     // convert native result to dart side object
@@ -1849,7 +1849,7 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getShownRangeEnd_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getShownRangeEnd_batch', );
   
   
     // convert native result to dart side object

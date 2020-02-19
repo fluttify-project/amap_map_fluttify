@@ -194,7 +194,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::data_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::data_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList()}]);
   
   
     // convert native result to dart side object
@@ -214,7 +214,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::weightedData_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::weightedData_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList()}]);
   
   
     // convert native result to dart side object
@@ -234,7 +234,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::radius_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::radius_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -254,7 +254,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::gradient_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::gradient_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
   
   
     // convert native result to dart side object
@@ -274,7 +274,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::transparency_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::transparency_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -294,7 +294,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::build_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::build_batch', );
   
   
     // convert native result to dart side object

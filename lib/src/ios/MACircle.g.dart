@@ -24,11 +24,11 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
     return object;
   }
   
-  static Future<List<MACircle>> create_batch__() async {
+  static Future<List<MACircle>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACircle', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACircle', {'length': length});
   
     final List<MACircle> typedResult = resultBatch.map((result) => MACircle()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -195,7 +195,7 @@ extension MACircle_Batch on List<MACircle> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithCenterCoordinateRadius_batch', [for (int i = 0; i < this.length; i++) {"coord": coord[i].refId, "radius": radius[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithCenterCoordinateRadius_batch', [for (int i = 0; i < this.length; i++) {"coord": coord[i].refId, "radius": radius[i]}]);
   
   
     // convert native result to dart side object
@@ -215,7 +215,7 @@ extension MACircle_Batch on List<MACircle> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithMapRect_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithMapRect_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId}]);
   
   
     // convert native result to dart side object
@@ -235,7 +235,7 @@ extension MACircle_Batch on List<MACircle> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::setCircleWithCenterCoordinateRadius_batch', [for (int i = 0; i < this.length; i++) {"coord": coord[i].refId, "radius": radius[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::setCircleWithCenterCoordinateRadius_batch', [for (int i = 0; i < this.length; i++) {"coord": coord[i].refId, "radius": radius[i]}]);
   
   
     // convert native result to dart side object

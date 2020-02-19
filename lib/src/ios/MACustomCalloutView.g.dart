@@ -24,11 +24,11 @@ class MACustomCalloutView extends UIView  {
     return object;
   }
   
-  static Future<List<MACustomCalloutView>> create_batch__() async {
+  static Future<List<MACustomCalloutView>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACustomCalloutView', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACustomCalloutView', {'length': length});
   
     final List<MACustomCalloutView> typedResult = resultBatch.map((result) => MACustomCalloutView()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -113,7 +113,7 @@ extension MACustomCalloutView_Batch on List<MACustomCalloutView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod('MACustomCalloutView::initWithCustomView_batch', [for (int i = 0; i < this.length; i++) {"customView": customView[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod('MACustomCalloutView::initWithCustomView_batch', [for (int i = 0; i < this.length; i++) {"customView": customView[i].refId}]);
   
   
     // convert native result to dart side object

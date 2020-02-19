@@ -24,11 +24,11 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
     return object;
   }
   
-  static Future<List<MACustomBuildingOverlayRenderer>> create_batch__() async {
+  static Future<List<MACustomBuildingOverlayRenderer>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACustomBuildingOverlayRenderer', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACustomBuildingOverlayRenderer', {'length': length});
   
     final List<MACustomBuildingOverlayRenderer> typedResult = resultBatch.map((result) => MACustomBuildingOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -95,7 +95,7 @@ extension MACustomBuildingOverlayRenderer_Batch on List<MACustomBuildingOverlayR
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay_batch', [for (int i = 0; i < this.length; i++) {"customBuildingOverlay": customBuildingOverlay[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay_batch', [for (int i = 0; i < this.length; i++) {"customBuildingOverlay": customBuildingOverlay[i].refId}]);
   
   
     // convert native result to dart side object

@@ -24,11 +24,11 @@ class MAOfflineItemCommonCity extends MAOfflineCity  {
     return object;
   }
   
-  static Future<List<MAOfflineItemCommonCity>> create_batch__() async {
+  static Future<List<MAOfflineItemCommonCity>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineItemCommonCity', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineItemCommonCity', {'length': length});
   
     final List<MAOfflineItemCommonCity> typedResult = resultBatch.map((result) => MAOfflineItemCommonCity()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

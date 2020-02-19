@@ -24,11 +24,11 @@ class MAHeatMapGradient extends NSObject with NSCopying {
     return object;
   }
   
-  static Future<List<MAHeatMapGradient>> create_batch__() async {
+  static Future<List<MAHeatMapGradient>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAHeatMapGradient', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAHeatMapGradient', {'length': length});
   
     final List<MAHeatMapGradient> typedResult = resultBatch.map((result) => MAHeatMapGradient()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

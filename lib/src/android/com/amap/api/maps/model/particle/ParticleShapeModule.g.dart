@@ -88,7 +88,7 @@ extension com_amap_api_maps_model_particle_ParticleShapeModule_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleShapeModule::isUseRatio_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleShapeModule::isUseRatio_batch', );
   
   
     // convert native result to dart side object
@@ -108,7 +108,7 @@ extension com_amap_api_maps_model_particle_ParticleShapeModule_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleShapeModule::getPoint_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleShapeModule::getPoint_batch', );
   
   
     // convert native result to dart side object

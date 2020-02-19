@@ -24,11 +24,11 @@ class MATileOverlayPath extends NSObject  {
     return object;
   }
   
-  static Future<List<MATileOverlayPath>> create_batch__() async {
+  static Future<List<MATileOverlayPath>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATileOverlayPath', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATileOverlayPath', {'length': length});
   
     final List<MATileOverlayPath> typedResult = resultBatch.map((result) => MATileOverlayPath()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

@@ -24,11 +24,11 @@ class MAMapPoint extends NSObject  {
     return object;
   }
   
-  static Future<List<MAMapPoint>> create_batch__() async {
+  static Future<List<MAMapPoint>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMapPoint', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMapPoint', {'length': length});
   
     final List<MAMapPoint> typedResult = resultBatch.map((result) => MAMapPoint()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

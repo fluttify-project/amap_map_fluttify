@@ -157,7 +157,7 @@ extension com_autonavi_amap_mapcore_animation_GLTransformation_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::clear_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::clear_batch', );
   
   
     // convert native result to dart side object

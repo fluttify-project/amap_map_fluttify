@@ -24,11 +24,11 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
     return object;
   }
   
-  static Future<List<MACircleRenderer>> create_batch__() async {
+  static Future<List<MACircleRenderer>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACircleRenderer', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACircleRenderer', {'length': length});
   
     final List<MACircleRenderer> typedResult = resultBatch.map((result) => MACircleRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -95,7 +95,7 @@ extension MACircleRenderer_Batch on List<MACircleRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleRenderer::initWithCircle_batch', [for (int i = 0; i < this.length; i++) {"circle": circle[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleRenderer::initWithCircle_batch', [for (int i = 0; i < this.length; i++) {"circle": circle[i].refId}]);
   
   
     // convert native result to dart side object

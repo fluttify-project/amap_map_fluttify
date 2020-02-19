@@ -24,11 +24,11 @@ class MAOfflineCity extends MAOfflineItem  {
     return object;
   }
   
-  static Future<List<MAOfflineCity>> create_batch__() async {
+  static Future<List<MAOfflineCity>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineCity', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineCity', {'length': length});
   
     final List<MAOfflineCity> typedResult = resultBatch.map((result) => MAOfflineCity()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

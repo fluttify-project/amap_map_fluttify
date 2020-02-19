@@ -24,11 +24,11 @@ class MATraceManager extends NSObject  {
     return object;
   }
   
-  static Future<List<MATraceManager>> create_batch__() async {
+  static Future<List<MATraceManager>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATraceManager', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATraceManager', {'length': length});
   
     final List<MATraceManager> typedResult = resultBatch.map((result) => MATraceManager()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -161,7 +161,7 @@ extension MATraceManager_Batch on List<MATraceManager> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::sharedInstance_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::sharedInstance_batch', );
   
   
     // convert native result to dart side object
@@ -181,7 +181,7 @@ extension MATraceManager_Batch on List<MATraceManager> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::start_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::start_batch', );
   
   
     // convert native result to dart side object
@@ -201,7 +201,7 @@ extension MATraceManager_Batch on List<MATraceManager> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::stop_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::stop_batch', );
   
   
     // convert native result to dart side object

@@ -233,7 +233,7 @@ extension com_amap_api_trace_LBSTraceClient_Batch on List<com_amap_api_trace_LBS
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::getInstance_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::getInstance_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId}]);
   
   
     // convert native result to dart side object
@@ -253,7 +253,7 @@ extension com_amap_api_trace_LBSTraceClient_Batch on List<com_amap_api_trace_LBS
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::stopTrace_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::stopTrace_batch', );
   
   
     // convert native result to dart side object
@@ -273,7 +273,7 @@ extension com_amap_api_trace_LBSTraceClient_Batch on List<com_amap_api_trace_LBS
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::destroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::destroy_batch', );
   
   
     // convert native result to dart side object

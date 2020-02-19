@@ -24,11 +24,11 @@ class MAOfflineMap extends NSObject  {
     return object;
   }
   
-  static Future<List<MAOfflineMap>> create_batch__() async {
+  static Future<List<MAOfflineMap>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineMap', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineMap', {'length': length});
   
     final List<MAOfflineMap> typedResult = resultBatch.map((result) => MAOfflineMap()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -393,7 +393,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::sharedOfflineMap_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::sharedOfflineMap_batch', );
   
   
     // convert native result to dart side object
@@ -413,7 +413,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::isDownloadingForItem_batch', [for (int i = 0; i < this.length; i++) {"item": item[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::isDownloadingForItem_batch', [for (int i = 0; i < this.length; i++) {"item": item[i].refId}]);
   
   
     // convert native result to dart side object
@@ -433,7 +433,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::pauseItem_batch', [for (int i = 0; i < this.length; i++) {"item": item[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::pauseItem_batch', [for (int i = 0; i < this.length; i++) {"item": item[i].refId}]);
   
   
     // convert native result to dart side object
@@ -453,7 +453,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::deleteItem_batch', [for (int i = 0; i < this.length; i++) {"item": item[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::deleteItem_batch', [for (int i = 0; i < this.length; i++) {"item": item[i].refId}]);
   
   
     // convert native result to dart side object
@@ -473,7 +473,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::cancelAll_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::cancelAll_batch', );
   
   
     // convert native result to dart side object
@@ -493,7 +493,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::clearDisk_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::clearDisk_batch', );
   
   
     // convert native result to dart side object

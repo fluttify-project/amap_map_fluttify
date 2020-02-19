@@ -24,11 +24,11 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
     return object;
   }
   
-  static Future<List<MACustomBuildingOverlay>> create_batch__() async {
+  static Future<List<MACustomBuildingOverlay>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACustomBuildingOverlay', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACustomBuildingOverlay', {'length': length});
   
     final List<MACustomBuildingOverlay> typedResult = resultBatch.map((result) => MACustomBuildingOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -130,7 +130,7 @@ extension MACustomBuildingOverlay_Batch on List<MACustomBuildingOverlay> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::addCustomOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::addCustomOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId}]);
   
   
     // convert native result to dart side object
@@ -150,7 +150,7 @@ extension MACustomBuildingOverlay_Batch on List<MACustomBuildingOverlay> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::removeCustomOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::removeCustomOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId}]);
   
   
     // convert native result to dart side object

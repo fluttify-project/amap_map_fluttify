@@ -158,14 +158,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.maploader.ProcessingTile ref = (com.autonavi.ae.gmap.maploader.ProcessingTile) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.maploader.ProcessingTile ref = (com.autonavi.ae.gmap.maploader.ProcessingTile) getHEAP().get((int) args.get("refId"));
             
                     String result = ref.mKeyName;
             
+                    String jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -178,14 +177,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.maploader.ProcessingTile ref = (com.autonavi.ae.gmap.maploader.ProcessingTile) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.maploader.ProcessingTile ref = (com.autonavi.ae.gmap.maploader.ProcessingTile) getHEAP().get((int) args.get("refId"));
             
                     long result = ref.mCreateTime;
             
+                    long jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -198,14 +196,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     String result = ref.name;
             
+                    String jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -218,14 +215,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     String result = ref.poiid;
             
+                    String jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -238,14 +234,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.angle;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -258,14 +253,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.strWidth;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -278,14 +272,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.strHeight;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -298,14 +291,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.iconID;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -318,14 +310,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.labelx;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -338,14 +329,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.labely;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -358,14 +348,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.pixel20X;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -378,14 +367,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.pixel20Y;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -398,14 +386,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.pixel20Z;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -418,14 +405,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.fontColor;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -438,14 +424,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.borderColor;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -458,14 +443,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.type;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -478,14 +462,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.anchor;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -498,14 +481,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.fontSize;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -518,14 +500,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mSublayerId;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -538,14 +519,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.mIsFouces;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -558,14 +538,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.timeStamp;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -578,14 +557,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.needMove;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -598,14 +576,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.fromXValue;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -618,14 +595,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.toXValue;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -638,14 +614,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.fromYValue;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -658,14 +633,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.toYValue;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -678,14 +652,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.style.StyleItem ref = (com.autonavi.ae.gmap.style.StyleItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.style.StyleItem ref = (com.autonavi.ae.gmap.style.StyleItem) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mainKey;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -698,14 +671,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.style.StyleItem ref = (com.autonavi.ae.gmap.style.StyleItem) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.style.StyleItem ref = (com.autonavi.ae.gmap.style.StyleItem) getHEAP().get((int) args.get("refId"));
             
                     int[] result = ref.subKey;
             
+                    int[] jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -718,14 +690,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.styleElementType;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -738,14 +709,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.value;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -758,14 +728,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.textureId;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -778,14 +747,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.opacity;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -798,14 +766,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.lineWidth;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -818,14 +785,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.visible;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -838,14 +804,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.engineId;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -858,14 +823,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.width;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -878,14 +842,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.height;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -898,14 +861,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.screenWidth;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -918,14 +880,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.screenHeight;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -938,14 +899,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.screenScale;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -958,14 +918,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.textScale;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -978,14 +937,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mapZoomScale;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -998,14 +956,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mGestureState;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1018,14 +975,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mGestureType;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1038,14 +994,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get((int) args.get("refId"));
             
                     float[] result = ref.mLocation;
             
+                    float[] jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1058,14 +1013,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mScale;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1078,14 +1032,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mRotation;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1098,14 +1051,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mVeLocityFloat;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1118,14 +1070,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get((int) args.get("refId"));
             
                     float[] result = ref.mVelocityPoint;
             
+                    float[] jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1138,14 +1089,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mId;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1158,14 +1108,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get((int) args.get("refId"));
             
                     android.graphics.Bitmap result = ref.mBitmap;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1178,14 +1131,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get((int) args.get("refId"));
             
                     byte[] result = ref.mPngBuffer;
             
+                    byte[] jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1198,14 +1150,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mAnchor;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1218,14 +1169,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mXRatio;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1238,14 +1188,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mYRatio;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1258,14 +1207,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.isGenMimps;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1278,14 +1226,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.isRepeat;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1298,14 +1245,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get((int) args.get("refId"));
             
                     long result = ref.mOverlayHashCode;
             
+                    long jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1318,14 +1264,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get((int) args.get("refId"));
             
                     long result = ref.mHitedIndex;
             
+                    long jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1338,14 +1283,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get((int) args.get("refId"));
             
                     long result = ref.mHitedTimes;
             
+                    long jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1358,14 +1302,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.stAreaColor;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1378,14 +1321,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.stArrowBorderColor;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1398,14 +1340,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.fArrowBorderWidth;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1418,14 +1359,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.fArrowLineWidth;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1438,14 +1378,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.stArrowLineColor;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1458,14 +1397,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.dayMode;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1478,14 +1416,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     com.autonavi.ae.gmap.gloverlay.GLRouteProperty.EAMapRouteTexture result = ref.euRouteTexture;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1498,14 +1439,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mFilledResId;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1518,14 +1458,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mSimple3DFillResId;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1538,14 +1477,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mFilledColor;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1558,14 +1496,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mBgResId;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1578,14 +1515,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mBgColor;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1598,14 +1534,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mLineWidth;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1618,14 +1553,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mBorderLineWidth;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1638,14 +1572,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mX1;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1658,14 +1591,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mY1;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1678,14 +1610,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mX2;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1698,14 +1629,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mY2;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1718,14 +1648,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mGLStart;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1738,14 +1667,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mTextureLen;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1758,14 +1686,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mSimple3DX1;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1778,14 +1705,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mSimple3DY1;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1798,14 +1724,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mSimple3DX2;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1818,14 +1743,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mSimple3DY2;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1838,14 +1762,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mSimple3DGLStart;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1858,14 +1781,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mSimple3DTextureLen;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1878,14 +1800,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mCapX1;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1898,14 +1819,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mCapY1;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1918,14 +1838,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mCapX2;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1938,14 +1857,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mCapY2;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1958,14 +1876,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.isLineExtract;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1978,14 +1895,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.isCanCovered;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -1998,14 +1914,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.isUseColor;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2018,14 +1933,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.isUseCap;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2038,14 +1952,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.mShowArrow;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2058,14 +1971,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.mbTexPreMulAlpha;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2078,14 +1990,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mResId;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2098,14 +2009,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mWidth;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2118,14 +2028,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mHeight;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2138,14 +2047,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mResWidth;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2158,14 +2066,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mResHeight;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2178,14 +2085,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mAnchorXRatio;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2198,14 +2104,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mAnchorYRatio;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2218,14 +2123,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.mAnchor;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2238,14 +2142,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get((int) args.get("refId"));
             
                     String result = ref.mRootPath;
             
+                    String jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2258,14 +2161,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get((int) args.get("refId"));
             
                     String result = ref.mConfigPath;
             
+                    String jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2278,14 +2180,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get((int) args.get("refId"));
             
                     String result = ref.mConfigContent;
             
+                    String jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2298,14 +2199,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get((int) args.get("refId"));
             
                     String result = ref.mOfflineDataPath;
             
+                    String jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2318,14 +2218,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
+                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get((int) args.get("refId"));
             
                     String result = ref.mP3dCrossPath;
             
+                    String jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2338,14 +2237,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get((int) args.get("refId"));
             
                     String result = ref.requestUrl;
             
+                    String jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2358,14 +2256,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get((int) args.get("refId"));
             
                     long result = ref.handler;
             
+                    long jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2378,14 +2275,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.nRequestType;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2398,14 +2294,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get((int) args.get("refId"));
             
                     byte[] result = ref.enCodeString;
             
+                    byte[] jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2418,14 +2313,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.nCompress;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2438,14 +2332,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get((int) args.get("refId"));
             
                     String result = ref.requestBaseUrl;
             
+                    String jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2458,14 +2351,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.isFinish;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2478,14 +2370,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake ref = (com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake ref = (com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.mIsAborted;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2498,14 +2389,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.mFromXDelta;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2518,14 +2408,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.mFromYDelta;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2538,14 +2427,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.mToXDelta;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2558,14 +2446,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.mToYDelta;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2578,14 +2465,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.mCurXDelta;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2598,14 +2484,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.mCurYDelta;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2618,14 +2503,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLAlphaAnimation ref = (com.autonavi.amap.mapcore.animation.GLAlphaAnimation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLAlphaAnimation ref = (com.autonavi.amap.mapcore.animation.GLAlphaAnimation) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mFromAlpha;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2638,14 +2522,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLAlphaAnimation ref = (com.autonavi.amap.mapcore.animation.GLAlphaAnimation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLAlphaAnimation ref = (com.autonavi.amap.mapcore.animation.GLAlphaAnimation) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mToAlpha;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2658,14 +2541,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLAlphaAnimation ref = (com.autonavi.amap.mapcore.animation.GLAlphaAnimation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLAlphaAnimation ref = (com.autonavi.amap.mapcore.animation.GLAlphaAnimation) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.mCurAlpha;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2678,14 +2560,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.alpha;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2698,14 +2579,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.rotate;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2718,14 +2598,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.scaleX;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2738,14 +2617,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.scaleY;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2758,14 +2636,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.animation.GLEmergeAnimation ref = (com.autonavi.amap.mapcore.animation.GLEmergeAnimation) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.animation.GLEmergeAnimation ref = (com.autonavi.amap.mapcore.animation.GLEmergeAnimation) getHEAP().get((int) args.get("refId"));
             
                     com.amap.api.maps.model.LatLng result = ref.mStartPoint;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2778,14 +2659,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.maxZoomLevel;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2798,14 +2678,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.minZoomLevel;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2818,14 +2697,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.HoverGestureMapMessage ref = (com.autonavi.amap.mapcore.message.HoverGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.HoverGestureMapMessage ref = (com.autonavi.amap.mapcore.message.HoverGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.angleDelta;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2838,14 +2716,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.MoveGestureMapMessage ref = (com.autonavi.amap.mapcore.message.MoveGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.MoveGestureMapMessage ref = (com.autonavi.amap.mapcore.message.MoveGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.touchDeltaX;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2858,14 +2735,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.MoveGestureMapMessage ref = (com.autonavi.amap.mapcore.message.MoveGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.MoveGestureMapMessage ref = (com.autonavi.amap.mapcore.message.MoveGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.touchDeltaY;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2878,14 +2754,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.scaleDelta;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2898,14 +2773,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.pivotX;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2918,14 +2792,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.pivotY;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2938,14 +2811,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.width;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2958,14 +2830,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.height;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2978,14 +2849,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.isGestureScaleByMapCenter;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -2998,14 +2868,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.isUseAnchor;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3018,14 +2887,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.anchorX;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3038,14 +2906,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.anchorY;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3058,14 +2925,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.pivotX;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3078,14 +2944,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.pivotY;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3098,14 +2963,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.angleDelta;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3118,14 +2982,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.FPointBounds ref = (com.autonavi.amap.mapcore.FPointBounds) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.FPointBounds ref = (com.autonavi.amap.mapcore.FPointBounds) getHEAP().get((int) args.get("refId"));
             
                     com.autonavi.amap.mapcore.FPoint result = ref.southwest;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3138,14 +3005,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.FPointBounds ref = (com.autonavi.amap.mapcore.FPointBounds) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.FPointBounds ref = (com.autonavi.amap.mapcore.FPointBounds) getHEAP().get((int) args.get("refId"));
             
                     com.autonavi.amap.mapcore.FPoint result = ref.northeast;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3158,14 +3028,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.left;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3178,14 +3047,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.right;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3198,14 +3066,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.bottom;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3218,14 +3085,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.top;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3238,14 +3104,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.FPoint3 ref = (com.autonavi.amap.mapcore.FPoint3) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.FPoint3 ref = (com.autonavi.amap.mapcore.FPoint3) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.colorIndex;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3258,14 +3123,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     com.autonavi.amap.mapcore.AbstractCameraUpdateMessage.Type result = ref.nowType;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3278,14 +3146,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.xPixel;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3298,14 +3165,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.yPixel;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3318,14 +3184,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.amount;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3338,14 +3203,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     com.amap.api.maps.model.CameraPosition result = ref.cameraPosition;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3358,14 +3226,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     com.amap.api.maps.model.LatLngBounds result = ref.bounds;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3378,14 +3249,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     android.graphics.Point result = ref.focus;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3398,14 +3272,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.zoom;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3418,14 +3291,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.tilt;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3438,14 +3310,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.bearing;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3458,14 +3329,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     android.graphics.Point result = ref.geoPoint;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3478,14 +3352,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.isUseAnchor;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3498,14 +3371,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.anchorX;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3518,14 +3390,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.anchorY;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3538,14 +3409,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.isChangeFinished;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3558,14 +3428,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     com.autonavi.amap.mapcore.MapConfig result = ref.mapConfig;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3578,14 +3451,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.paddingLeft;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3598,14 +3470,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.paddingRight;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3618,14 +3489,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.paddingTop;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3638,14 +3508,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.paddingBottom;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3658,14 +3527,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     long result = ref.mDuration;
             
+                    long jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3678,14 +3546,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.width;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3698,14 +3565,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.height;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3718,14 +3584,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get(refId);
+                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
             
                     com.amap.api.maps.model.LatLng result = ref.nearLeft;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3738,14 +3607,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get(refId);
+                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
             
                     com.amap.api.maps.model.LatLng result = ref.nearRight;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3758,14 +3630,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get(refId);
+                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
             
                     com.amap.api.maps.model.LatLng result = ref.farLeft;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3778,14 +3653,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get(refId);
+                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
             
                     com.amap.api.maps.model.LatLng result = ref.farRight;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3798,14 +3676,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get(refId);
+                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
             
                     com.amap.api.maps.model.LatLngBounds result = ref.latLngBounds;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3818,14 +3699,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get(refId);
+                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.width;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3838,14 +3718,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get(refId);
+                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.height;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3858,14 +3737,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get(refId);
+                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) args.get("refId"));
             
                     byte[] result = ref.data;
             
+                    byte[] jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3878,14 +3756,17 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get(refId);
+                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
             
                     com.amap.api.maps.model.LatLng result = ref.target;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3898,14 +3779,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get(refId);
+                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.zoom;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3918,14 +3798,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get(refId);
+                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.tilt;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -3938,14 +3817,13 @@ public class SubHandler1 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get(refId);
+                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
             
                     float result = ref.bearing;
             
+                    float jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);

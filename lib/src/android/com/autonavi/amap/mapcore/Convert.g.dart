@@ -436,7 +436,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getInt_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getInt_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -456,7 +456,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getUShort_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getUShort_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -476,7 +476,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getBit_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getBit_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -496,7 +496,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::copyString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::copyString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i]}]);
   
   
     // convert native result to dart side object
@@ -516,7 +516,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::covertBytes_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::covertBytes_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
   
   
     // convert native result to dart side object
@@ -536,7 +536,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::convertInt_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::convertInt_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
   
   
     // convert native result to dart side object
@@ -556,7 +556,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getNum__int__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getNum__int__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i]}]);
   
   
     // convert native result to dart side object
@@ -576,7 +576,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::convertShort_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::convertShort_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
   
   
     // convert native result to dart side object
@@ -596,7 +596,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::writeInt_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::writeInt_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i]}]);
   
   
     // convert native result to dart side object
@@ -616,7 +616,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::moveArray_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::moveArray_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i]}]);
   
   
     // convert native result to dart side object
@@ -636,7 +636,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i]}]);
   
   
     // convert native result to dart side object
@@ -656,7 +656,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getSubBytes_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getSubBytes_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i]}]);
   
   
     // convert native result to dart side object
@@ -676,7 +676,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::get1BString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::get1BString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
   
   
     // convert native result to dart side object
@@ -696,7 +696,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::get2BString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::get2BString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
   
   
     // convert native result to dart side object
@@ -716,7 +716,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::convertDouble_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::convertDouble_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -736,7 +736,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getDouble_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::getDouble_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
   
   
     // convert native result to dart side object
@@ -756,7 +756,7 @@ extension com_autonavi_amap_mapcore_Convert_Batch on List<com_autonavi_amap_mapc
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::bytesToHexString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Convert::bytesToHexString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
   
   
     // convert native result to dart side object

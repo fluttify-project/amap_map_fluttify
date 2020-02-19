@@ -24,11 +24,11 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
     return object;
   }
   
-  static Future<List<MAParticleOverlay>> create_batch__() async {
+  static Future<List<MAParticleOverlay>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleOverlay', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleOverlay', {'length': length});
   
     final List<MAParticleOverlay> typedResult = resultBatch.map((result) => MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -117,7 +117,7 @@ extension MAParticleOverlay_Batch on List<MAParticleOverlay> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::particleOverlayWithOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::particleOverlayWithOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId}]);
   
   
     // convert native result to dart side object
@@ -137,7 +137,7 @@ extension MAParticleOverlay_Batch on List<MAParticleOverlay> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::updateOverlayOption_batch', [for (int i = 0; i < this.length; i++) {"overlayOption": overlayOption[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::updateOverlayOption_batch', [for (int i = 0; i < this.length; i++) {"overlayOption": overlayOption[i].refId}]);
   
   
     // convert native result to dart side object

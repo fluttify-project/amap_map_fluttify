@@ -24,11 +24,11 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
     return object;
   }
   
-  static Future<List<MAParticleRandomVelocityGenerate>> create_batch__() async {
+  static Future<List<MAParticleRandomVelocityGenerate>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleRandomVelocityGenerate', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleRandomVelocityGenerate', {'length': length});
   
     final List<MAParticleRandomVelocityGenerate> typedResult = resultBatch.map((result) => MAParticleRandomVelocityGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -84,7 +84,7 @@ extension MAParticleRandomVelocityGenerate_Batch on List<MAParticleRandomVelocit
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1Y1Z1X2Y2Z2_batch', [for (int i = 0; i < this.length; i++) {"x1": x1[i], "y1": y1[i], "z1": z1[i], "x2": x2[i], "y2": y2[i], "z2": z2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1Y1Z1X2Y2Z2_batch', [for (int i = 0; i < this.length; i++) {"x1": x1[i], "y1": y1[i], "z1": z1[i], "x2": x2[i], "y2": y2[i], "z2": z2[i]}]);
   
   
     // convert native result to dart side object

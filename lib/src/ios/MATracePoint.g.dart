@@ -24,11 +24,11 @@ class MATracePoint extends NSObject with NSCoding {
     return object;
   }
   
-  static Future<List<MATracePoint>> create_batch__() async {
+  static Future<List<MATracePoint>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATracePoint', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATracePoint', {'length': length});
   
     final List<MATracePoint> typedResult = resultBatch.map((result) => MATracePoint()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

@@ -24,11 +24,11 @@ class MAAnnotationMoveAnimation extends NSObject  {
     return object;
   }
   
-  static Future<List<MAAnnotationMoveAnimation>> create_batch__() async {
+  static Future<List<MAAnnotationMoveAnimation>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAAnnotationMoveAnimation', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAAnnotationMoveAnimation', {'length': length});
   
     final List<MAAnnotationMoveAnimation> typedResult = resultBatch.map((result) => MAAnnotationMoveAnimation()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -238,7 +238,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::name_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::name_batch', );
   
   
     // convert native result to dart side object
@@ -258,7 +258,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::coordinates_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::coordinates_batch', );
   
   
     // convert native result to dart side object
@@ -278,7 +278,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::count_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::count_batch', );
   
   
     // convert native result to dart side object
@@ -298,7 +298,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::duration_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::duration_batch', );
   
   
     // convert native result to dart side object
@@ -318,7 +318,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::elapsedTime_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::elapsedTime_batch', );
   
   
     // convert native result to dart side object
@@ -338,7 +338,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::cancel_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::cancel_batch', );
   
   
     // convert native result to dart side object
@@ -358,7 +358,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::isCancelled_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::isCancelled_batch', );
   
   
     // convert native result to dart side object
@@ -378,7 +378,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::passedPointCount_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::passedPointCount_batch', );
   
   
     // convert native result to dart side object

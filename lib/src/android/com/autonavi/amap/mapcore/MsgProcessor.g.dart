@@ -150,7 +150,7 @@ extension com_autonavi_amap_mapcore_MsgProcessor_Batch on List<com_autonavi_amap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeInitMsg_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeInitMsg_batch', );
   
   
     // convert native result to dart side object
@@ -170,7 +170,7 @@ extension com_autonavi_amap_mapcore_MsgProcessor_Batch on List<com_autonavi_amap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeInit_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeInit_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i]}]);
   
   
     // convert native result to dart side object
@@ -190,7 +190,7 @@ extension com_autonavi_amap_mapcore_MsgProcessor_Batch on List<com_autonavi_amap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeMsgProcessor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeMsgProcessor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -210,7 +210,7 @@ extension com_autonavi_amap_mapcore_MsgProcessor_Batch on List<com_autonavi_amap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeCall_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeCall_batch', );
   
   
     // convert native result to dart side object

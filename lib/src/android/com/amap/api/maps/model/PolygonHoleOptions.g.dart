@@ -106,7 +106,7 @@ extension com_amap_api_maps_model_PolygonHoleOptions_Batch on List<com_amap_api_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonHoleOptions::addAll_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonHoleOptions::addAll_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList()}]);
   
   
     // convert native result to dart side object
@@ -126,7 +126,7 @@ extension com_amap_api_maps_model_PolygonHoleOptions_Batch on List<com_amap_api_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonHoleOptions::getPoints_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolygonHoleOptions::getPoints_batch', );
   
   
     // convert native result to dart side object

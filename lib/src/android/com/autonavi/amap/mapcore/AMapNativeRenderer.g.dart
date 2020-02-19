@@ -172,7 +172,7 @@ extension com_autonavi_amap_mapcore_AMapNativeRenderer_Batch on List<com_autonav
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByMultiTextureID_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByMultiTextureID_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i]}]);
   
   
     // convert native result to dart side object
@@ -192,7 +192,7 @@ extension com_autonavi_amap_mapcore_AMapNativeRenderer_Batch on List<com_autonav
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByMultiColor_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByMultiColor_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i]}]);
   
   
     // convert native result to dart side object
@@ -212,7 +212,7 @@ extension com_autonavi_amap_mapcore_AMapNativeRenderer_Batch on List<com_autonav
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawGradientColorLine_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawGradientColorLine_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i]}]);
   
   
     // convert native result to dart side object
@@ -232,7 +232,7 @@ extension com_autonavi_amap_mapcore_AMapNativeRenderer_Batch on List<com_autonav
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineInit_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineInit_batch', );
   
   
     // convert native result to dart side object
@@ -252,7 +252,7 @@ extension com_autonavi_amap_mapcore_AMapNativeRenderer_Batch on List<com_autonav
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByTextureID_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "var12": var12[i], "var13": var13[i], "var14": var14[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByTextureID_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "var12": var12[i], "var13": var13[i], "var14": var14[i]}]);
   
   
     // convert native result to dart side object

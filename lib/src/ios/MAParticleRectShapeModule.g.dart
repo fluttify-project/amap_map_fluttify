@@ -24,11 +24,11 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
     return object;
   }
   
-  static Future<List<MAParticleRectShapeModule>> create_batch__() async {
+  static Future<List<MAParticleRectShapeModule>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleRectShapeModule', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleRectShapeModule', {'length': length});
   
     final List<MAParticleRectShapeModule> typedResult = resultBatch.map((result) => MAParticleRectShapeModule()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -84,7 +84,7 @@ extension MAParticleRectShapeModule_Batch on List<MAParticleRectShapeModule> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeftToprightbottomuseRatio_batch', [for (int i = 0; i < this.length; i++) {"left": left[i], "top": top[i], "right": right[i], "bottom": bottom[i], "isUseRatio": isUseRatio[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeftToprightbottomuseRatio_batch', [for (int i = 0; i < this.length; i++) {"left": left[i], "top": top[i], "right": right[i], "bottom": bottom[i], "isUseRatio": isUseRatio[i]}]);
   
   
     // convert native result to dart side object

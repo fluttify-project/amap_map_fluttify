@@ -373,7 +373,7 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::getMap_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::getMap_batch', );
   
   
     // convert native result to dart side object
@@ -393,7 +393,7 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onCreate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onCreate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
   
   
     // convert native result to dart side object
@@ -413,7 +413,7 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onResume_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onResume_batch', );
   
   
     // convert native result to dart side object
@@ -433,7 +433,7 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onPause_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onPause_batch', );
   
   
     // convert native result to dart side object
@@ -453,7 +453,7 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onDestroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onDestroy_batch', );
   
   
     // convert native result to dart side object
@@ -473,7 +473,7 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onLowMemory_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onLowMemory_batch', );
   
   
     // convert native result to dart side object
@@ -493,7 +493,7 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onSaveInstanceState_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onSaveInstanceState_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
   
   
     // convert native result to dart side object
@@ -513,7 +513,7 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::setVisibility_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::setVisibility_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -533,7 +533,7 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onDismiss_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onDismiss_batch', );
   
   
     // convert native result to dart side object
@@ -553,7 +553,7 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onEnterAmbient_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onEnterAmbient_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
   
   
     // convert native result to dart side object
@@ -573,7 +573,7 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onExitAmbient_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onExitAmbient_batch', );
   
   
     // convert native result to dart side object

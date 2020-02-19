@@ -24,11 +24,11 @@ class MAParticleEmissionModule extends NSObject  {
     return object;
   }
   
-  static Future<List<MAParticleEmissionModule>> create_batch__() async {
+  static Future<List<MAParticleEmissionModule>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleEmissionModule', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleEmissionModule', {'length': length});
   
     final List<MAParticleEmissionModule> typedResult = resultBatch.map((result) => MAParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -84,7 +84,7 @@ extension MAParticleEmissionModule_Batch on List<MAParticleEmissionModule> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleEmissionModule::initWithEmissionRateRateTime_batch', [for (int i = 0; i < this.length; i++) {"rate": rate[i], "rateTime": rateTime[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleEmissionModule::initWithEmissionRateRateTime_batch', [for (int i = 0; i < this.length; i++) {"rate": rate[i], "rateTime": rateTime[i]}]);
   
   
     // convert native result to dart side object

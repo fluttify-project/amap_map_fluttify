@@ -24,11 +24,11 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
     return object;
   }
   
-  static Future<List<MAMultiColoredPolylineRenderer>> create_batch__() async {
+  static Future<List<MAMultiColoredPolylineRenderer>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiColoredPolylineRenderer', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiColoredPolylineRenderer', {'length': length});
   
     final List<MAMultiColoredPolylineRenderer> typedResult = resultBatch.map((result) => MAMultiColoredPolylineRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -132,7 +132,7 @@ extension MAMultiColoredPolylineRenderer_Batch on List<MAMultiColoredPolylineRen
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::initWithMultiPolyline_batch', [for (int i = 0; i < this.length; i++) {"multiPolyline": multiPolyline[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::initWithMultiPolyline_batch', [for (int i = 0; i < this.length; i++) {"multiPolyline": multiPolyline[i].refId}]);
   
   
     // convert native result to dart side object

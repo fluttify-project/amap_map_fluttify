@@ -24,11 +24,11 @@ class MAArc extends MAShape with MAAnnotation, MAOverlay {
     return object;
   }
   
-  static Future<List<MAArc>> create_batch__() async {
+  static Future<List<MAArc>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAArc', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAArc', {'length': length});
   
     final List<MAArc> typedResult = resultBatch.map((result) => MAArc()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -151,7 +151,7 @@ extension MAArc_Batch on List<MAArc> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::arcWithStartCoordinatePassedCoordinateendCoordinate_batch', [for (int i = 0; i < this.length; i++) {"startCoordinate": startCoordinate[i].refId, "passedCoordinate": passedCoordinate[i].refId, "endCoordinate": endCoordinate[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::arcWithStartCoordinatePassedCoordinateendCoordinate_batch', [for (int i = 0; i < this.length; i++) {"startCoordinate": startCoordinate[i].refId, "passedCoordinate": passedCoordinate[i].refId, "endCoordinate": endCoordinate[i].refId}]);
   
   
     // convert native result to dart side object

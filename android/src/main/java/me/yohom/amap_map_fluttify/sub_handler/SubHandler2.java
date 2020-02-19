@@ -38,14 +38,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get(refId);
+                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
             
                     boolean result = ref.isAbroad;
             
+                    boolean jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -58,14 +57,17 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get(refId);
+                    com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get((int) args.get("refId"));
             
                     com.autonavi.amap.mapcore.animation.GLAnimation result = ref.glAnimation;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -78,14 +80,17 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get(refId);
+                    com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) args.get("refId"));
             
                     com.amap.api.maps.model.LatLng result = ref.southwest;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -98,14 +103,17 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get(refId);
+                    com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) args.get("refId"));
             
                     com.amap.api.maps.model.LatLng result = ref.northeast;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -118,14 +126,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get(refId);
+                    com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.latitude;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -138,14 +145,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get(refId);
+                    com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.longitude;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -158,14 +164,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.offsetX;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -178,14 +183,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.offsetY;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -198,14 +202,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.minX;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -218,14 +221,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.maxX;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -238,14 +240,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.minY;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -258,14 +259,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.maxY;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -278,14 +278,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get(refId);
+                    com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) args.get("refId"));
             
                     double result = ref.intensity;
             
+                    double jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -298,14 +297,17 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get(refId);
+                    com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) args.get("refId"));
             
                     com.amap.api.maps.model.LatLng result = ref.latLng;
             
-                    getHEAP().put(result.hashCode(), result);
+                    Integer jsonableResult = null;
+            if (result != null) {
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
+            }
             
-                    resultList.add(result.hashCode());
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -318,14 +320,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.particle.SizeOverLife ref = (com.amap.api.maps.model.particle.SizeOverLife) getHEAP().get(refId);
+                    com.amap.api.maps.model.particle.SizeOverLife ref = (com.amap.api.maps.model.particle.SizeOverLife) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.DEFAULT_SIZE;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -338,14 +339,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
             
                     String result = ref.activeFloorName;
             
+                    String jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -358,14 +358,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.activeFloorIndex;
             
+                    int jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -378,14 +377,13 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
             
                     String result = ref.poiid;
             
+                    String jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
@@ -398,34 +396,32 @@ public class SubHandler2 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
             
                     int[] result = ref.floor_indexs;
             
+                    int[] jsonableResult = result;
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);
             });
             // getter
             put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_names_batch", (argsBatch, methodResult) -> {
-                List<String[]> resultList = new ArrayList<>();
+                List<List<String>> resultList = new ArrayList<>();
             
                 for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // ref object
-                    int refId = (int) args.get("refId");
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
             
                     String[] result = ref.floor_names;
             
+                    List<String> jsonableResult = new ArrayList<String>(java.util.Arrays.asList(result));
             
-            
-                    resultList.add(result);
+                    resultList.add(jsonableResult);
                 }
             
                 methodResult.success(resultList);

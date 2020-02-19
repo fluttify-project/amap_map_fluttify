@@ -766,7 +766,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY_batch', );
   
   
     // convert native result to dart side object
@@ -786,7 +786,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isMockEnable_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isMockEnable_batch', );
   
   
     // convert native result to dart side object
@@ -806,7 +806,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setMockEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setMockEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -826,7 +826,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getInterval_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getInterval_batch', );
   
   
     // convert native result to dart side object
@@ -846,7 +846,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setInterval_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setInterval_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -866,7 +866,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocation_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocation_batch', );
   
   
     // convert native result to dart side object
@@ -886,7 +886,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocation_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocation_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -906,7 +906,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isNeedAddress_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isNeedAddress_batch', );
   
   
     // convert native result to dart side object
@@ -926,7 +926,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setNeedAddress_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setNeedAddress_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -946,7 +946,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiActiveScan_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiActiveScan_batch', );
   
   
     // convert native result to dart side object
@@ -966,7 +966,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiActiveScan_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiActiveScan_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -986,7 +986,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiScan_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiScan_batch', );
   
   
     // convert native result to dart side object
@@ -1006,7 +1006,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiScan_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiScan_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1026,7 +1026,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationMode_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationMode_batch', );
   
   
     // convert native result to dart side object
@@ -1046,7 +1046,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationProtocol_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationProtocol_batch', );
   
   
     // convert native result to dart side object
@@ -1066,7 +1066,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationMode_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationMode_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].index}]);
   
   
     // convert native result to dart side object
@@ -1086,7 +1086,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].index}]);
   
   
     // convert native result to dart side object
@@ -1106,7 +1106,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isKillProcess_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isKillProcess_batch', );
   
   
     // convert native result to dart side object
@@ -1126,7 +1126,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setKillProcess_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setKillProcess_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1146,7 +1146,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isGpsFirst_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isGpsFirst_batch', );
   
   
     // convert native result to dart side object
@@ -1166,7 +1166,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setGpsFirst_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setGpsFirst_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1186,7 +1186,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::clone_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::clone_batch', );
   
   
     // convert native result to dart side object
@@ -1206,7 +1206,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getHttpTimeOut_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getHttpTimeOut_batch', );
   
   
     // convert native result to dart side object
@@ -1226,7 +1226,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setHttpTimeOut_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setHttpTimeOut_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1246,7 +1246,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOffset_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOffset_batch', );
   
   
     // convert native result to dart side object
@@ -1266,7 +1266,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOffset_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOffset_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1286,7 +1286,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isLocationCacheEnable_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isLocationCacheEnable_batch', );
   
   
     // convert native result to dart side object
@@ -1306,7 +1306,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationCacheEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationCacheEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1326,7 +1326,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocationLatest_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocationLatest_batch', );
   
   
     // convert native result to dart side object
@@ -1346,7 +1346,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocationLatest_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocationLatest_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -1366,7 +1366,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isSensorEnable_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isSensorEnable_batch', );
   
   
     // convert native result to dart side object
@@ -1386,7 +1386,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setSensorEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setSensorEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object

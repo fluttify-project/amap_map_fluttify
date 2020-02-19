@@ -24,11 +24,11 @@ class MAHeatMapTileOverlay extends MATileOverlay  {
     return object;
   }
   
-  static Future<List<MAHeatMapTileOverlay>> create_batch__() async {
+  static Future<List<MAHeatMapTileOverlay>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAHeatMapTileOverlay', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAHeatMapTileOverlay', {'length': length});
   
     final List<MAHeatMapTileOverlay> typedResult = resultBatch.map((result) => MAHeatMapTileOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

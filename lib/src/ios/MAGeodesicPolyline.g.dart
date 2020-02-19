@@ -24,11 +24,11 @@ class MAGeodesicPolyline extends MAPolyline  {
     return object;
   }
   
-  static Future<List<MAGeodesicPolyline>> create_batch__() async {
+  static Future<List<MAGeodesicPolyline>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAGeodesicPolyline', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAGeodesicPolyline', {'length': length});
   
     final List<MAGeodesicPolyline> typedResult = resultBatch.map((result) => MAGeodesicPolyline()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

@@ -326,7 +326,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::point_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "var2": var2[i].refId, "var3": var3[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::point_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "var2": var2[i].refId, "var3": var3[i].refId}]);
   
   
     // convert native result to dart side object
@@ -346,7 +346,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::strokeWidth_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::strokeWidth_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -366,7 +366,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::strokeColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::strokeColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -386,7 +386,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::zIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::zIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -406,7 +406,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::visible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::visible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -426,7 +426,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getStrokeWidth_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getStrokeWidth_batch', );
   
   
     // convert native result to dart side object
@@ -446,7 +446,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getStrokeColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getStrokeColor_batch', );
   
   
     // convert native result to dart side object
@@ -466,7 +466,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getZIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getZIndex_batch', );
   
   
     // convert native result to dart side object
@@ -486,7 +486,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::isVisible_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::isVisible_batch', );
   
   
     // convert native result to dart side object
@@ -506,7 +506,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getStart_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getStart_batch', );
   
   
     // convert native result to dart side object
@@ -526,7 +526,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getPassed_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getPassed_batch', );
   
   
     // convert native result to dart side object
@@ -546,7 +546,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getEnd_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getEnd_batch', );
   
   
     // convert native result to dart side object

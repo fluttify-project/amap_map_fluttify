@@ -24,11 +24,11 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     return object;
   }
   
-  static Future<List<MAPolylineRenderer>> create_batch__() async {
+  static Future<List<MAPolylineRenderer>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAPolylineRenderer', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAPolylineRenderer', {'length': length});
   
     final List<MAPolylineRenderer> typedResult = resultBatch.map((result) => MAPolylineRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -132,7 +132,7 @@ extension MAPolylineRenderer_Batch on List<MAPolylineRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline_batch', [for (int i = 0; i < this.length; i++) {"polyline": polyline[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline_batch', [for (int i = 0; i < this.length; i++) {"polyline": polyline[i].refId}]);
   
   
     // convert native result to dart side object

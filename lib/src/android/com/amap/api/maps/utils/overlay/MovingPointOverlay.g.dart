@@ -389,7 +389,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setPoints_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setPoints_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList()}]);
   
   
     // convert native result to dart side object
@@ -409,7 +409,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::resetIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::resetIndex_batch', );
   
   
     // convert native result to dart side object
@@ -429,7 +429,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setTotalDuration_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setTotalDuration_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -449,7 +449,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::startSmoothMove_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::startSmoothMove_batch', );
   
   
     // convert native result to dart side object
@@ -469,7 +469,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::stopMove_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::stopMove_batch', );
   
   
     // convert native result to dart side object
@@ -489,7 +489,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getObject_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getObject_batch', );
   
   
     // convert native result to dart side object
@@ -509,7 +509,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getPosition_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getPosition_batch', );
   
   
     // convert native result to dart side object
@@ -529,7 +529,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getIndex_batch', );
   
   
     // convert native result to dart side object
@@ -549,7 +549,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::destroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::destroy_batch', );
   
   
     // convert native result to dart side object
@@ -569,7 +569,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::removeMarker_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::removeMarker_batch', );
   
   
     // convert native result to dart side object
@@ -589,7 +589,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setPosition_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setPosition_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
   
   
     // convert native result to dart side object
@@ -609,7 +609,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setRotate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setRotate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -629,7 +629,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setVisible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setVisible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object

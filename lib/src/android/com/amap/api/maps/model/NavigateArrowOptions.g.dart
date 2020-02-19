@@ -414,7 +414,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::add__com_amap_api_maps_model_LatLng_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::add__com_amap_api_maps_model_LatLng_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
   
   
     // convert native result to dart side object
@@ -434,7 +434,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::addAll_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::addAll_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList()}]);
   
   
     // convert native result to dart side object
@@ -454,7 +454,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::width_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::width_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -474,7 +474,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::topColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::topColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -494,7 +494,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::sideColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::sideColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -514,7 +514,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::zIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::zIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -534,7 +534,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::visible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::visible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -554,7 +554,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::set3DModel_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::set3DModel_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
   
   
     // convert native result to dart side object
@@ -574,7 +574,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::getPoints_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::getPoints_batch', );
   
   
     // convert native result to dart side object
@@ -594,7 +594,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::getWidth_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::getWidth_batch', );
   
   
     // convert native result to dart side object
@@ -614,7 +614,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::getTopColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::getTopColor_batch', );
   
   
     // convert native result to dart side object
@@ -634,7 +634,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::getSideColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::getSideColor_batch', );
   
   
     // convert native result to dart side object
@@ -654,7 +654,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::getZIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::getZIndex_batch', );
   
   
     // convert native result to dart side object
@@ -674,7 +674,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::isVisible_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::isVisible_batch', );
   
   
     // convert native result to dart side object
@@ -694,7 +694,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::is3DModel_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::is3DModel_batch', );
   
   
     // convert native result to dart side object
@@ -714,7 +714,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::setPoints_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrowOptions::setPoints_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList()}]);
   
   
     // convert native result to dart side object

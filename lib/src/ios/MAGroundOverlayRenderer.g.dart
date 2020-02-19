@@ -24,11 +24,11 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
     return object;
   }
   
-  static Future<List<MAGroundOverlayRenderer>> create_batch__() async {
+  static Future<List<MAGroundOverlayRenderer>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAGroundOverlayRenderer', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAGroundOverlayRenderer', {'length': length});
   
     final List<MAGroundOverlayRenderer> typedResult = resultBatch.map((result) => MAGroundOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -95,7 +95,7 @@ extension MAGroundOverlayRenderer_Batch on List<MAGroundOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlayRenderer::initWithGroundOverlay_batch', [for (int i = 0; i < this.length; i++) {"groundOverlay": groundOverlay[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlayRenderer::initWithGroundOverlay_batch', [for (int i = 0; i < this.length; i++) {"groundOverlay": groundOverlay[i].refId}]);
   
   
     // convert native result to dart side object

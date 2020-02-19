@@ -24,11 +24,11 @@ class MAMultiPolyline extends MAPolyline  {
     return object;
   }
   
-  static Future<List<MAMultiPolyline>> create_batch__() async {
+  static Future<List<MAMultiPolyline>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiPolyline', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiPolyline', {'length': length});
   
     final List<MAMultiPolyline> typedResult = resultBatch.map((result) => MAMultiPolyline()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

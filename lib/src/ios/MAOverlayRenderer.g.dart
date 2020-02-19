@@ -24,11 +24,11 @@ class MAOverlayRenderer extends NSObject  {
     return object;
   }
   
-  static Future<List<MAOverlayRenderer>> create_batch__() async {
+  static Future<List<MAOverlayRenderer>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOverlayRenderer', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOverlayRenderer', {'length': length});
   
     final List<MAOverlayRenderer> typedResult = resultBatch.map((result) => MAOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -469,7 +469,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::initWithOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::initWithOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId}]);
   
   
     // convert native result to dart side object
@@ -489,7 +489,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getOffsetPoint_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getOffsetPoint_batch', );
   
   
     // convert native result to dart side object
@@ -509,7 +509,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getMapZoomLevel_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getMapZoomLevel_batch', );
   
   
     // convert native result to dart side object
@@ -529,7 +529,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointForMapPoint_batch', [for (int i = 0; i < this.length; i++) {"mapPoint": mapPoint[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointForMapPoint_batch', [for (int i = 0; i < this.length; i++) {"mapPoint": mapPoint[i].refId}]);
   
   
     // convert native result to dart side object
@@ -549,7 +549,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointsForMapPointsCount_batch', [for (int i = 0; i < this.length; i++) {"mapPoints": mapPoints[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointsForMapPointsCount_batch', [for (int i = 0; i < this.length; i++) {"mapPoints": mapPoints[i].map((it) => it.refId).toList(), "count": count[i]}]);
   
   
     // convert native result to dart side object
@@ -569,7 +569,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glWidthForWindowWidth_batch', [for (int i = 0; i < this.length; i++) {"windowWidth": windowWidth[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glWidthForWindowWidth_batch', [for (int i = 0; i < this.length; i++) {"windowWidth": windowWidth[i]}]);
   
   
     // convert native result to dart side object
@@ -589,7 +589,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthlooped_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "strokeColor": strokeColor[i].refId, "lineWidth": lineWidth[i], "looped": looped[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthlooped_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "strokeColor": strokeColor[i].refId, "lineWidth": lineWidth[i], "looped": looped[i]}]);
   
   
     // convert native result to dart side object
@@ -609,7 +609,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthloopedLineJoinTypeLineCapTypelineDash_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "strokeColor": strokeColor[i].refId, "lineWidth": lineWidth[i], "looped": looped[i], "lineJoinType": lineJoinType[i].index, "lineCapType": lineCapType[i].index, "lineDash": lineDash[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthloopedLineJoinTypeLineCapTypelineDash_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "strokeColor": strokeColor[i].refId, "lineWidth": lineWidth[i], "looped": looped[i], "lineJoinType": lineJoinType[i].index, "lineCapType": lineCapType[i].index, "lineDash": lineDash[i].index}]);
   
   
     // convert native result to dart side object
@@ -629,7 +629,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderTexturedLinesWithPointsPointCountlineWidthtextureIDsdrawStyleIndexeslooped_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "lineWidth": lineWidth[i], "textureIDs": textureIDs[i].map((it) => it.refId).toList(), "drawStyleIndexes": drawStyleIndexes[i].map((it) => it.refId).toList(), "looped": looped[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderTexturedLinesWithPointsPointCountlineWidthtextureIDsdrawStyleIndexeslooped_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "lineWidth": lineWidth[i], "textureIDs": textureIDs[i].map((it) => it.refId).toList(), "drawStyleIndexes": drawStyleIndexes[i].map((it) => it.refId).toList(), "looped": looped[i]}]);
   
   
     // convert native result to dart side object
@@ -649,7 +649,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorsdrawStyleIndexesisGradientlineWidthloopedLineJoinTypeLineCapTypelineDash_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "strokeColors": strokeColors[i].map((it) => it.refId).toList(), "drawStyleIndexes": drawStyleIndexes[i].map((it) => it.refId).toList(), "isGradient": isGradient[i], "lineWidth": lineWidth[i], "looped": looped[i], "lineJoinType": lineJoinType[i].index, "lineCapType": lineCapType[i].index, "lineDash": lineDash[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorsdrawStyleIndexesisGradientlineWidthloopedLineJoinTypeLineCapTypelineDash_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "strokeColors": strokeColors[i].map((it) => it.refId).toList(), "drawStyleIndexes": drawStyleIndexes[i].map((it) => it.refId).toList(), "isGradient": isGradient[i], "lineWidth": lineWidth[i], "looped": looped[i], "lineJoinType": lineJoinType[i].index, "lineCapType": lineCapType[i].index, "lineDash": lineDash[i].index}]);
   
   
     // convert native result to dart side object
@@ -669,7 +669,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderRegionWithPointsPointCountfillColorusingTriangleFan_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "fillColor": fillColor[i].refId, "usingTriangleFan": usingTriangleFan[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderRegionWithPointsPointCountfillColorusingTriangleFan_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "fillColor": fillColor[i].refId, "usingTriangleFan": usingTriangleFan[i]}]);
   
   
     // convert native result to dart side object
@@ -689,7 +689,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPointsPointCountfillColorstrokeColorstrokeLineWidthstrokeLineJoinTypestrokeLineDashusingTriangleFan_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "fillColor": fillColor[i].refId, "strokeColor": strokeColor[i].refId, "strokeLineWidth": strokeLineWidth[i], "strokeLineJoinType": strokeLineJoinType[i].index, "strokeLineDash": strokeLineDash[i].index, "usingTriangleFan": usingTriangleFan[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPointsPointCountfillColorstrokeColorstrokeLineWidthstrokeLineJoinTypestrokeLineDashusingTriangleFan_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "fillColor": fillColor[i].refId, "strokeColor": strokeColor[i].refId, "strokeLineWidth": strokeLineWidth[i], "strokeLineJoinType": strokeLineJoinType[i].index, "strokeLineDash": strokeLineDash[i].index, "usingTriangleFan": usingTriangleFan[i]}]);
   
   
     // convert native result to dart side object
@@ -709,7 +709,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glRender_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glRender_batch', );
   
   
     // convert native result to dart side object
@@ -729,7 +729,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::setNeedsUpdate_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::setNeedsUpdate_batch', );
   
   
     // convert native result to dart side object

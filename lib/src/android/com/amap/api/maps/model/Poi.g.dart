@@ -128,7 +128,7 @@ extension com_amap_api_maps_model_Poi_Batch on List<com_amap_api_maps_model_Poi>
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getName_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getName_batch', );
   
   
     // convert native result to dart side object
@@ -148,7 +148,7 @@ extension com_amap_api_maps_model_Poi_Batch on List<com_amap_api_maps_model_Poi>
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getCoordinate_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getCoordinate_batch', );
   
   
     // convert native result to dart side object
@@ -168,7 +168,7 @@ extension com_amap_api_maps_model_Poi_Batch on List<com_amap_api_maps_model_Poi>
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getPoiId_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getPoiId_batch', );
   
   
     // convert native result to dart side object

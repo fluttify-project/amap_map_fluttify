@@ -24,11 +24,11 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     return object;
   }
   
-  static Future<List<MAAnimatedAnnotation>> create_batch__() async {
+  static Future<List<MAAnimatedAnnotation>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAAnimatedAnnotation', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAAnimatedAnnotation', {'length': length});
   
     final List<MAAnimatedAnnotation> typedResult = resultBatch.map((result) => MAAnimatedAnnotation()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -191,7 +191,7 @@ extension MAAnimatedAnnotation_Batch on List<MAAnimatedAnnotation> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::setNeedsStart_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::setNeedsStart_batch', );
   
   
     // convert native result to dart side object

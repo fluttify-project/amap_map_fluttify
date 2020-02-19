@@ -106,7 +106,7 @@ extension com_autonavi_amap_mapcore_AbstractNativeInstance_Batch on List<com_aut
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractNativeInstance::getNativeInstance_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractNativeInstance::getNativeInstance_batch', );
   
   
     // convert native result to dart side object
@@ -126,7 +126,7 @@ extension com_autonavi_amap_mapcore_AbstractNativeInstance_Batch on List<com_aut
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractNativeInstance::createNativeInstace_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractNativeInstance::createNativeInstace_batch', );
   
   
     // convert native result to dart side object

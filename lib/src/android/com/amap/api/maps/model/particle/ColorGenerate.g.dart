@@ -66,7 +66,7 @@ extension com_amap_api_maps_model_particle_ColorGenerate_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ColorGenerate::getColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ColorGenerate::getColor_batch', );
   
   
     // convert native result to dart side object

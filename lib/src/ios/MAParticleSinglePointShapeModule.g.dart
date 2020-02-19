@@ -24,11 +24,11 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
     return object;
   }
   
-  static Future<List<MAParticleSinglePointShapeModule>> create_batch__() async {
+  static Future<List<MAParticleSinglePointShapeModule>> create_batch__(int length) async {
     // if (#__check_param_size__#) {
     //   return Future.error('all args must has same length!');
     // }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleSinglePointShapeModule', );
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleSinglePointShapeModule', {'length': length});
   
     final List<MAParticleSinglePointShapeModule> typedResult = resultBatch.map((result) => MAParticleSinglePointShapeModule()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -84,7 +84,7 @@ extension MAParticleSinglePointShapeModule_Batch on List<MAParticleSinglePointSh
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSinglePointShapeModule::initWithShapeXYZuseRatio_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i], "isUseRatio": isUseRatio[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSinglePointShapeModule::initWithShapeXYZuseRatio_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i], "isUseRatio": isUseRatio[i]}]);
   
   
     // convert native result to dart side object
