@@ -176,7 +176,7 @@ extension MAMultiPointOverlayRenderer_Batch on List<MAMultiPointOverlayRenderer>
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::initWithMultiPointOverlay_batch', [for (int i = 0; i < this.length; i++) {"multiPointOverlay": multiPointOverlay[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::initWithMultiPointOverlay_batch', [for (int i = 0; i < this.length; i++) {"multiPointOverlay": multiPointOverlay[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

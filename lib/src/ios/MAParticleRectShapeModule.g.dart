@@ -84,7 +84,7 @@ extension MAParticleRectShapeModule_Batch on List<MAParticleRectShapeModule> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeftToprightbottomuseRatio_batch', [for (int i = 0; i < this.length; i++) {"left": left[i], "top": top[i], "right": right[i], "bottom": bottom[i], "isUseRatio": isUseRatio[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeftToprightbottomuseRatio_batch', [for (int i = 0; i < this.length; i++) {"left": left[i], "top": top[i], "right": right[i], "bottom": bottom[i], "isUseRatio": isUseRatio[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

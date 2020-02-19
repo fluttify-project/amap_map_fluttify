@@ -525,7 +525,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::downloadByCityCode_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::downloadByCityCode_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -545,7 +545,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::downloadByCityName_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::downloadByCityName_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -565,7 +565,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::downloadByProvinceName_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::downloadByProvinceName_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -585,7 +585,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::remove_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::remove_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -605,7 +605,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getOfflineMapProvinceList_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getOfflineMapProvinceList_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -625,7 +625,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getItemByCityCode_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getItemByCityCode_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -645,7 +645,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getItemByCityName_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getItemByCityName_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -665,7 +665,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getItemByProvinceName_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getItemByProvinceName_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -685,7 +685,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getOfflineMapCityList_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getOfflineMapCityList_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -705,7 +705,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getDownloadingCityList_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getDownloadingCityList_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -725,7 +725,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getDownloadingProvinceList_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getDownloadingProvinceList_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -745,7 +745,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getDownloadOfflineMapCityList_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getDownloadOfflineMapCityList_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -765,7 +765,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getDownloadOfflineMapProvinceList_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::getDownloadOfflineMapProvinceList_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -785,7 +785,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::updateOfflineCityByCode_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::updateOfflineCityByCode_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -805,7 +805,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::updateOfflineCityByName_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::updateOfflineCityByName_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -825,7 +825,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::updateOfflineMapProvinceByName_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::updateOfflineMapProvinceByName_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -845,7 +845,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::restart_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::restart_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -865,7 +865,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::stop_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::stop_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -885,7 +885,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::pause_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::pause_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -905,7 +905,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::destroy_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager::destroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object

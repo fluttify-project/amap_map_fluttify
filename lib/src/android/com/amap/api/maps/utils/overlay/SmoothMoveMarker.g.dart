@@ -411,7 +411,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setPoints_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList()}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setPoints_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -431,7 +431,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setTotalDuration_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setTotalDuration_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -451,7 +451,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::startSmoothMove_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::startSmoothMove_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -471,7 +471,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::stopMove_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::stopMove_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -491,7 +491,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::getMarker_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::getMarker_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -511,7 +511,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::getPosition_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::getPosition_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -531,7 +531,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::getIndex_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::getIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -551,7 +551,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::resetIndex_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::resetIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -571,7 +571,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::destroy_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::destroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -591,7 +591,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::removeMarker_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::removeMarker_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -611,7 +611,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setPosition_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setPosition_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -631,7 +631,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setDescriptor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setDescriptor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -651,7 +651,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setRotate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setRotate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -671,7 +671,7 @@ extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_ama
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setVisible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setVisible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

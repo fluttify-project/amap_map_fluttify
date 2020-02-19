@@ -271,7 +271,7 @@ extension MATileOverlay_Batch on List<MATileOverlay> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::initWithURLTemplate_batch', [for (int i = 0; i < this.length; i++) {"URLTemplate": URLTemplate[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::initWithURLTemplate_batch', [for (int i = 0; i < this.length; i++) {"URLTemplate": URLTemplate[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -291,7 +291,7 @@ extension MATileOverlay_Batch on List<MATileOverlay> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::cancelLoadOfTileAtPath_batch', [for (int i = 0; i < this.length; i++) {"path": path[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::cancelLoadOfTileAtPath_batch', [for (int i = 0; i < this.length; i++) {"path": path[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

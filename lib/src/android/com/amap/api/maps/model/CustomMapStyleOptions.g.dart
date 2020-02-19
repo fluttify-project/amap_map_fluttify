@@ -414,7 +414,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleDataPath_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleDataPath_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -434,7 +434,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleDataPath_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleDataPath_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -454,7 +454,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleTexturePath_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleTexturePath_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -474,7 +474,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleTexturePath_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleTexturePath_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -494,7 +494,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleData_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleData_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -514,7 +514,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleData_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleData_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -534,7 +534,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleTextureData_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleTextureData_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -554,7 +554,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleTextureData_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleTextureData_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -574,7 +574,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleId_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleId_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -594,7 +594,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleId_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleId_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -614,7 +614,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::isEnable_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::isEnable_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -634,7 +634,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -654,7 +654,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleExtraData_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleExtraData_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -674,7 +674,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleExtraData_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleExtraData_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -694,7 +694,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleExtraPath_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleExtraPath_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -714,7 +714,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleExtraPath_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleExtraPath_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

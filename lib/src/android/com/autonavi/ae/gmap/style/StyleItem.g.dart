@@ -163,7 +163,7 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::get_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::get_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -183,7 +183,7 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::put_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::put_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -203,7 +203,7 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::isValid_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::isValid_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object

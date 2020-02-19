@@ -84,7 +84,7 @@ extension MAParticleSinglePointShapeModule_Batch on List<MAParticleSinglePointSh
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSinglePointShapeModule::initWithShapeXYZuseRatio_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i], "isUseRatio": isUseRatio[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSinglePointShapeModule::initWithShapeXYZuseRatio_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i], "isUseRatio": isUseRatio[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

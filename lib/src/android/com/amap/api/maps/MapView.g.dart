@@ -257,7 +257,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::getMap_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::getMap_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -277,7 +277,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onCreate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onCreate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -297,7 +297,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onResume_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onResume_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -317,7 +317,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onPause_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onPause_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -337,7 +337,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onDestroy_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onDestroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -357,7 +357,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onLowMemory_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onLowMemory_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -377,7 +377,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onSaveInstanceState_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onSaveInstanceState_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -397,7 +397,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::setVisibility_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::setVisibility_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

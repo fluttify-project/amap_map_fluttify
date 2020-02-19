@@ -84,7 +84,7 @@ extension MAParticleConstantRotationGenerate_Batch on List<MAParticleConstantRot
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleConstantRotationGenerate::initWithRotate_batch', [for (int i = 0; i < this.length; i++) {"rotate": rotate[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleConstantRotationGenerate::initWithRotate_batch', [for (int i = 0; i < this.length; i++) {"rotate": rotate[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

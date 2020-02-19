@@ -95,7 +95,7 @@ extension MAArcRenderer_Batch on List<MAArcRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArcRenderer::initWithArc_batch', [for (int i = 0; i < this.length; i++) {"arc": arc[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArcRenderer::initWithArc_batch', [for (int i = 0; i < this.length; i++) {"arc": arc[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

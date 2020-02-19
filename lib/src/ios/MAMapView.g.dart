@@ -2730,7 +2730,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRegionAnimated_batch', [for (int i = 0; i < this.length; i++) {"region": region[i].refId, "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRegionAnimated_batch', [for (int i = 0; i < this.length; i++) {"region": region[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2750,7 +2750,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::regionThatFits_batch', [for (int i = 0; i < this.length; i++) {"region": region[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::regionThatFits_batch', [for (int i = 0; i < this.length; i++) {"region": region[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2770,7 +2770,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRectAnimated_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRectAnimated_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2790,7 +2790,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFits_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFits_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2810,7 +2810,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFitsEdgePadding_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "insets": insets[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFitsEdgePadding_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "insets": insets[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2830,7 +2830,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRectEdgePaddinganimated_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "insets": insets[i].refId, "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRectEdgePaddinganimated_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "insets": insets[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2850,7 +2850,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCenterCoordinateAnimated_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCenterCoordinateAnimated_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2870,7 +2870,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevelAnimated_batch', [for (int i = 0; i < this.length; i++) {"zoomLevel": zoomLevel[i], "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevelAnimated_batch', [for (int i = 0; i < this.length; i++) {"zoomLevel": zoomLevel[i], "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2890,7 +2890,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevelAtPivotanimated_batch', [for (int i = 0; i < this.length; i++) {"zoomLevel": zoomLevel[i], "pivot": pivot[i].refId, "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevelAtPivotanimated_batch', [for (int i = 0; i < this.length; i++) {"zoomLevel": zoomLevel[i], "pivot": pivot[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2910,7 +2910,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRotationDegreeAnimatedduration_batch', [for (int i = 0; i < this.length; i++) {"rotationDegree": rotationDegree[i], "animated": animated[i], "duration": duration[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRotationDegreeAnimatedduration_batch', [for (int i = 0; i < this.length; i++) {"rotationDegree": rotationDegree[i], "animated": animated[i], "duration": duration[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2930,7 +2930,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCameraDegreeAnimatedduration_batch', [for (int i = 0; i < this.length; i++) {"cameraDegree": cameraDegree[i], "animated": animated[i], "duration": duration[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCameraDegreeAnimatedduration_batch', [for (int i = 0; i < this.length; i++) {"cameraDegree": cameraDegree[i], "animated": animated[i], "duration": duration[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2950,7 +2950,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::getMapStatus_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::getMapStatus_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2970,7 +2970,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatusAnimated_batch', [for (int i = 0; i < this.length; i++) {"status": status[i].refId, "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatusAnimated_batch', [for (int i = 0; i < this.length; i++) {"status": status[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2990,7 +2990,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatusAnimatedduration_batch', [for (int i = 0; i < this.length; i++) {"status": status[i].refId, "animated": animated[i], "duration": duration[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatusAnimatedduration_batch', [for (int i = 0; i < this.length; i++) {"status": status[i].refId, "animated": animated[i], "duration": duration[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3010,7 +3010,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCompassImage_batch', [for (int i = 0; i < this.length; i++) {"image": image[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCompassImage_batch', [for (int i = 0; i < this.length; i++) {"image": image[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3030,7 +3030,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::metersPerPointForZoomLevel_batch', [for (int i = 0; i < this.length; i++) {"zoomLevel": zoomLevel[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::metersPerPointForZoomLevel_batch', [for (int i = 0; i < this.length; i++) {"zoomLevel": zoomLevel[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3050,7 +3050,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertCoordinateToPointToView_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "view": view[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertCoordinateToPointToView_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3070,7 +3070,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertPointToCoordinateFromView_batch', [for (int i = 0; i < this.length; i++) {"point": point[i].refId, "view": view[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertPointToCoordinateFromView_batch', [for (int i = 0; i < this.length; i++) {"point": point[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3090,7 +3090,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRegionToRectToView_batch', [for (int i = 0; i < this.length; i++) {"region": region[i].refId, "view": view[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRegionToRectToView_batch', [for (int i = 0; i < this.length; i++) {"region": region[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3110,7 +3110,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRectToRegionFromView_batch', [for (int i = 0; i < this.length; i++) {"rect": rect[i].refId, "view": view[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRectToRegionFromView_batch', [for (int i = 0; i < this.length; i++) {"rect": rect[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3130,7 +3130,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::reloadMap_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::reloadMap_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3150,7 +3150,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::clearDisk_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::clearDisk_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3170,7 +3170,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::reloadInternalTexture_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::reloadInternalTexture_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3190,7 +3190,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapContentApprovalNumber_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapContentApprovalNumber_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3210,7 +3210,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::satelliteImageApprovalNumber_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::satelliteImageApprovalNumber_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3230,7 +3230,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::forceRefresh_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::forceRefresh_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3250,7 +3250,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addAnnotation_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addAnnotation_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3270,7 +3270,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addAnnotations_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList()}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addAnnotations_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3290,7 +3290,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeAnnotation_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeAnnotation_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3310,7 +3310,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeAnnotations_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList()}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeAnnotations_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3330,7 +3330,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::viewForAnnotation_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::viewForAnnotation_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3350,7 +3350,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::dequeueReusableAnnotationViewWithIdentifier_batch', [for (int i = 0; i < this.length; i++) {"identifier": identifier[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::dequeueReusableAnnotationViewWithIdentifier_batch', [for (int i = 0; i < this.length; i++) {"identifier": identifier[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3370,7 +3370,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::selectAnnotationAnimated_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::selectAnnotationAnimated_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3390,7 +3390,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::deselectAnnotationAnimated_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::deselectAnnotationAnimated_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3410,7 +3410,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotationsAnimated_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotationsAnimated_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3430,7 +3430,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotationsEdgePaddinganimated_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "insets": insets[i].refId, "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotationsEdgePaddinganimated_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "insets": insets[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3450,7 +3450,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setUserTrackingModeAnimated_batch', [for (int i = 0; i < this.length; i++) {"mode": mode[i].index, "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setUserTrackingModeAnimated_batch', [for (int i = 0; i < this.length; i++) {"mode": mode[i].index, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3470,7 +3470,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::updateUserLocationRepresentation_batch', [for (int i = 0; i < this.length; i++) {"representation": representation[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::updateUserLocationRepresentation_batch', [for (int i = 0; i < this.length; i++) {"representation": representation[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3490,7 +3490,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::overlaysInLevel_batch', [for (int i = 0; i < this.length; i++) {"level": level[i].index}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::overlaysInLevel_batch', [for (int i = 0; i < this.length; i++) {"level": level[i].index, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3510,7 +3510,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3530,7 +3530,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlays_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList()}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlays_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3550,7 +3550,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlayLevel_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "level": level[i].index}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlayLevel_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "level": level[i].index, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3570,7 +3570,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlaysLevel_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "level": level[i].index}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlaysLevel_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "level": level[i].index, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3590,7 +3590,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3610,7 +3610,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeOverlays_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList()}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeOverlays_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3630,7 +3630,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAtIndexlevel_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "index": index[i], "level": level[i].index}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAtIndexlevel_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "index": index[i], "level": level[i].index, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3650,7 +3650,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAboveOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "sibling": sibling[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAboveOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "sibling": sibling[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3670,7 +3670,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayBelowOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "sibling": sibling[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayBelowOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "sibling": sibling[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3690,7 +3690,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAtIndex_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "index": index[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAtIndex_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "index": index[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3710,7 +3710,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndexWithOverlayAtIndex_batch', [for (int i = 0; i < this.length; i++) {"index1": index1[i], "index2": index2[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndexWithOverlayAtIndex_batch', [for (int i = 0; i < this.length; i++) {"index1": index1[i], "index2": index2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3730,7 +3730,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndexWithOverlayAtIndexatLevel_batch', [for (int i = 0; i < this.length; i++) {"index1": index1[i], "index2": index2[i], "level": level[i].index}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndexWithOverlayAtIndexatLevel_batch', [for (int i = 0; i < this.length; i++) {"index1": index1[i], "index2": index2[i], "level": level[i].index, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3750,7 +3750,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayWithOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay1": overlay1[i].refId, "overlay2": overlay2[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayWithOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay1": overlay1[i].refId, "overlay2": overlay2[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3770,7 +3770,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::rendererForOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::rendererForOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3790,7 +3790,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlaysAnimated_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlaysAnimated_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3810,7 +3810,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlaysEdgePaddinganimated_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "insets": insets[i].refId, "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlaysEdgePaddinganimated_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "insets": insets[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3830,7 +3830,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setIndoorMapControlOrigin_batch', [for (int i = 0; i < this.length; i++) {"origin": origin[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setIndoorMapControlOrigin_batch', [for (int i = 0; i < this.length; i++) {"origin": origin[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3850,7 +3850,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCurrentIndoorMapFloorIndex_batch', [for (int i = 0; i < this.length; i++) {"floorIndex": floorIndex[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCurrentIndoorMapFloorIndex_batch', [for (int i = 0; i < this.length; i++) {"floorIndex": floorIndex[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3870,7 +3870,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::clearIndoorMapCache_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::clearIndoorMapCache_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3890,7 +3890,7 @@ extension MAMapView_Batch on List<MAMapView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyleOptions_batch', [for (int i = 0; i < this.length; i++) {"styleOptions": styleOptions[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyleOptions_batch', [for (int i = 0; i < this.length; i++) {"styleOptions": styleOptions[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

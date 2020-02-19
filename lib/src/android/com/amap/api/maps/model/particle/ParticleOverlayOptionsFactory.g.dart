@@ -87,7 +87,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory_Batch o
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory::defaultOptions_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory::defaultOptions_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

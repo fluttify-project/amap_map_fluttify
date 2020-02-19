@@ -216,7 +216,7 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeCreate_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeCreate_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -236,7 +236,7 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::setCurTileIDs_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::setCurTileIDs_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -256,7 +256,7 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeClearBuildingOptions_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeClearBuildingOptions_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -276,7 +276,7 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::addBuildingOptions_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::addBuildingOptions_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -296,7 +296,7 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::render_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::render_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -316,7 +316,7 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeDestory_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeDestory_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -336,7 +336,7 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeSetGLShaderManager_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeSetGLShaderManager_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

@@ -151,7 +151,7 @@ extension MAArc_Batch on List<MAArc> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::arcWithStartCoordinatePassedCoordinateendCoordinate_batch', [for (int i = 0; i < this.length; i++) {"startCoordinate": startCoordinate[i].refId, "passedCoordinate": passedCoordinate[i].refId, "endCoordinate": endCoordinate[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::arcWithStartCoordinatePassedCoordinateendCoordinate_batch', [for (int i = 0; i < this.length; i++) {"startCoordinate": startCoordinate[i].refId, "passedCoordinate": passedCoordinate[i].refId, "endCoordinate": endCoordinate[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

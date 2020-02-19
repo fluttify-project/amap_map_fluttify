@@ -132,7 +132,7 @@ extension MAPolylineRenderer_Batch on List<MAPolylineRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline_batch', [for (int i = 0; i < this.length; i++) {"polyline": polyline[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline_batch', [for (int i = 0; i < this.length; i++) {"polyline": polyline[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

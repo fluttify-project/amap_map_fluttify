@@ -95,7 +95,7 @@ extension MAParticleOverlayRenderer_Batch on List<MAParticleOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayRenderer::initWithParticleOverlay_batch', [for (int i = 0; i < this.length; i++) {"particleOverlay": particleOverlay[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayRenderer::initWithParticleOverlay_batch', [for (int i = 0; i < this.length; i++) {"particleOverlay": particleOverlay[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

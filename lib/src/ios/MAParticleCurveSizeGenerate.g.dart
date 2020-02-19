@@ -84,7 +84,7 @@ extension MAParticleCurveSizeGenerate_Batch on List<MAParticleCurveSizeGenerate>
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleCurveSizeGenerate::initWithCurveXYZ_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleCurveSizeGenerate::initWithCurveXYZ_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

@@ -95,7 +95,7 @@ extension MACustomBuildingOverlayRenderer_Batch on List<MACustomBuildingOverlayR
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay_batch', [for (int i = 0; i < this.length; i++) {"customBuildingOverlay": customBuildingOverlay[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay_batch', [for (int i = 0; i < this.length; i++) {"customBuildingOverlay": customBuildingOverlay[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

@@ -95,7 +95,7 @@ extension MAPolygonRenderer_Batch on List<MAPolygonRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonRenderer::initWithPolygon_batch', [for (int i = 0; i < this.length; i++) {"polygon": polygon[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonRenderer::initWithPolygon_batch', [for (int i = 0; i < this.length; i++) {"polygon": polygon[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

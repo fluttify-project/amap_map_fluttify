@@ -117,7 +117,7 @@ extension MAParticleOverlay_Batch on List<MAParticleOverlay> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::particleOverlayWithOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::particleOverlayWithOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -137,7 +137,7 @@ extension MAParticleOverlay_Batch on List<MAParticleOverlay> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::updateOverlayOption_batch', [for (int i = 0; i < this.length; i++) {"overlayOption": overlayOption[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::updateOverlayOption_batch', [for (int i = 0; i < this.length; i++) {"overlayOption": overlayOption[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

@@ -106,7 +106,7 @@ extension com_autonavi_amap_mapcore_tools_GLFileUtil_Batch on List<com_autonavi_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLFileUtil::writeDatasToFile_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLFileUtil::writeDatasToFile_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -126,7 +126,7 @@ extension com_autonavi_amap_mapcore_tools_GLFileUtil_Batch on List<com_autonavi_
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLFileUtil::readFileContents_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLFileUtil::readFileContents_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

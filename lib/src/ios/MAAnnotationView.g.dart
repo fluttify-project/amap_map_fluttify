@@ -426,7 +426,7 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setSelectedAnimated_batch', [for (int i = 0; i < this.length; i++) {"selected": selected[i], "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setSelectedAnimated_batch', [for (int i = 0; i < this.length; i++) {"selected": selected[i], "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -446,7 +446,7 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::initWithAnnotationReuseIdentifier_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "reuseIdentifier": reuseIdentifier[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::initWithAnnotationReuseIdentifier_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "reuseIdentifier": reuseIdentifier[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -466,7 +466,7 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::prepareForReuse_batch', );
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::prepareForReuse_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -486,7 +486,7 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setDragStateAnimated_batch', [for (int i = 0; i < this.length; i++) {"newDragState": newDragState[i].index, "animated": animated[i]}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setDragStateAnimated_batch', [for (int i = 0; i < this.length; i++) {"newDragState": newDragState[i].index, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

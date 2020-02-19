@@ -119,7 +119,7 @@ extension com_autonavi_ae_gmap_maploader_ProcessingTile_Batch on List<com_autona
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.maploader.ProcessingTile::obtain_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.maploader.ProcessingTile::obtain_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

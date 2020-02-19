@@ -117,7 +117,7 @@ extension MATileOverlayRenderer_Batch on List<MATileOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::initWithTileOverlay_batch', [for (int i = 0; i < this.length; i++) {"tileOverlay": tileOverlay[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::initWithTileOverlay_batch', [for (int i = 0; i < this.length; i++) {"tileOverlay": tileOverlay[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -137,7 +137,7 @@ extension MATileOverlayRenderer_Batch on List<MATileOverlayRenderer> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::reloadData_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::reloadData_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object

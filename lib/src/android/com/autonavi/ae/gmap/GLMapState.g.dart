@@ -983,7 +983,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::lonlat2Geo_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var4": var4[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::lonlat2Geo_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var4": var4[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1003,7 +1003,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::geo2LonLat_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::geo2LonLat_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1023,7 +1023,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::screenToP20Point_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::screenToP20Point_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1043,7 +1043,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::p20ToScreenPoint_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::p20ToScreenPoint_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1063,7 +1063,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapGeoCenter__com_autonavi_amap_mapcore_IPoint_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapGeoCenter__com_autonavi_amap_mapcore_IPoint_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1083,7 +1083,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapGeoCenter_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapGeoCenter_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1103,7 +1103,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapGeoCenter_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapGeoCenter_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1123,7 +1123,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setCameraDegree_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setCameraDegree_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1143,7 +1143,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapAngle_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapAngle_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1163,7 +1163,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapZoomer_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapZoomer_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1183,7 +1183,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapZoomer_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapZoomer_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1203,7 +1203,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getCameraDegree_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getCameraDegree_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1223,7 +1223,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapAngle_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapAngle_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1243,7 +1243,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::recalculate_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::recalculate_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1263,7 +1263,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::reset_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::reset_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1283,7 +1283,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapLenWithWin_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapLenWithWin_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1303,7 +1303,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getGLUnitWithWin_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getGLUnitWithWin_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1323,7 +1323,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getNativeInstance_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getNativeInstance_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1343,7 +1343,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getViewMatrix_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getViewMatrix_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1363,7 +1363,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getProjectionMatrix_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getProjectionMatrix_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1383,7 +1383,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getSkyHeight_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getSkyHeight_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1403,7 +1403,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setNativeMapengineState_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setNativeMapengineState_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1423,7 +1423,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::calMapZoomScalefactor_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::calMapZoomScalefactor_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1443,7 +1443,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeNewInstance_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeNewInstance_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1463,7 +1463,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1483,7 +1483,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1503,7 +1503,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1523,7 +1523,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1543,7 +1543,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapZoomer_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapZoomer_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1563,7 +1563,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1583,7 +1583,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1603,7 +1603,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1623,7 +1623,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1643,7 +1643,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1663,7 +1663,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeRecalculate_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeRecalculate_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1683,7 +1683,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeStateDestroy_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeStateDestroy_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1703,7 +1703,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1723,7 +1723,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1743,7 +1743,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1763,7 +1763,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1783,7 +1783,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeCalMapZoomScalefactor_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeCalMapZoomScalefactor_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

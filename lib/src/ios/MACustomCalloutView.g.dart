@@ -113,7 +113,7 @@ extension MACustomCalloutView_Batch on List<MACustomCalloutView> {
     // }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod('MACustomCalloutView::initWithCustomView_batch', [for (int i = 0; i < this.length; i++) {"customView": customView[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod('MACustomCalloutView::initWithCustomView_batch', [for (int i = 0; i < this.length; i++) {"customView": customView[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
