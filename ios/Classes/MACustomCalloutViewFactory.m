@@ -464,7 +464,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   HEAP[argannotation] = annotation;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewViewForAnnotation"
-              arguments:@{@"mapView": argmapView, @"annotation": argannotation}
+              arguments:@{}
                  result:^(id result) {}]; // 由于结果是异步返回, 这里用不上, 所以就不生成代码了
   
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
@@ -679,7 +679,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   HEAP[argoverlay] = overlay;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRendererForOverlay"
-              arguments:@{@"mapView": argmapView, @"overlay": argoverlay}
+              arguments:@{}
                  result:^(id result) {}]; // 由于结果是异步返回, 这里用不上, 所以就不生成代码了
   
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
