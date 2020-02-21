@@ -103,6 +103,65 @@ class MATraceManager extends NSObject  {
     }
   }
   
+  Future<NSOperation> queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback(List<MATraceLocation> locations, AMapCoordinateType type, void processingCallback(int index, List<MATracePoint> points), void finishCallback(List<MATracePoint> points, double distance), void failedCallback(int errorCode, String errorDesc)) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MATraceManager@$refId::queryProcessedTraceWith([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback', {"locations": locations.map((it) => it.refId).toList(), "type": type.index, "refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('MATraceManager::queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
+  
+          switch (methodCall.method) {
+            case 'Callback::MAProcessingCallback::MAProcessingCallback':
+              // print log
+              if (fluttifyLogEnabled) {
+        
+              }
+        
+              // handle the native call
+              processingCallback(args['index'], (args['points'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag = 'amap_map_fluttify').toList());
+              break;
+            case 'Callback::MAFinishCallback::MAFinishCallback':
+              // print log
+              if (fluttifyLogEnabled) {
+        
+              }
+        
+              // handle the native call
+              finishCallback((args['points'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag = 'amap_map_fluttify').toList(), args['distance']);
+              break;
+            case 'Callback::MAFailedCallback::MAFailedCallback':
+              // print log
+              if (fluttifyLogEnabled) {
+        
+              }
+        
+              // handle the native call
+              failedCallback(args['errorCode'], args['errorDesc']);
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSOperation()..refId = result..tag = 'amap_map_fluttify');
+      return NSOperation()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
   Future<void> start() async {
     // print log
     if (fluttifyLogEnabled) {

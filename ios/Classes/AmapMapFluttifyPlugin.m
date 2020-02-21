@@ -1064,6 +1064,107 @@ extern BOOL enableLog;
       
           methodResult(jsonableResult);
       },
+      @"MATraceManager::queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // args
+          // list arg
+          NSArray<NSNumber*>* locationsRefArray = (NSArray<NSNumber*> *) args[@"locations"];
+          NSMutableArray<MATraceLocation*>* locations = [NSMutableArray arrayWithCapacity:locationsRefArray.count];
+          for (int i = 0; i < locationsRefArray.count; i++) {
+              MATraceLocation* item = (MATraceLocation*) HEAP[[locationsRefArray objectAtIndex:i]];
+              [locations addObject:item];
+          }
+          // enum arg
+          AMapCoordinateType type = (AMapCoordinateType) [args[@"type"] integerValue];
+      
+      
+      
+      
+          // ref
+          MATraceManager* ref = (MATraceManager*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MATraceManager@%@::queryProcessedTraceWith(暂未实现参数打印)", args[@"refId"]);
+          }
+      
+          // invoke native method
+          NSOperation* result = [ref queryProcessedTraceWith: locations type: type processingCallback: ^(int index, NSArray<MATracePoint*>* points) {
+              FlutterMethodChannel *channel = [FlutterMethodChannel
+                  methodChannelWithName:@"MATraceManager::queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback::Callback"
+                        binaryMessenger:[self->_registrar messenger]];
+      
+              // print log
+              if (enableLog) {
+                  NSLog(@"");
+              }
+      
+              // 构造可以直接传输的参数
+              // primitive callback arg
+              NSNumber* argindex = @(index);
+              // list callback arg
+              NSMutableArray<NSNumber*>* argpoints = [NSMutableArray arrayWithCapacity:points.count];
+              for (int i = 0; i < points.count; i++) {
+                  NSObject* item = ((NSObject*) [points objectAtIndex:i]);
+                  // return to dart side data
+                  argpoints[i] = @(item.hash);
+                  // add to HEAP
+                  HEAP[@(item.hash)] = item;
+              }
+      
+              [channel invokeMethod:@"Callback::MAProcessingCallback::MAProcessingCallback" arguments:@{@"index": argindex, @"points": argpoints}];
+      
+          } finishCallback: ^(NSArray<MATracePoint*>* points, double distance) {
+              FlutterMethodChannel *channel = [FlutterMethodChannel
+                  methodChannelWithName:@"MATraceManager::queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback::Callback"
+                        binaryMessenger:[self->_registrar messenger]];
+      
+              // print log
+              if (enableLog) {
+                  NSLog(@"");
+              }
+      
+              // 构造可以直接传输的参数
+              // list callback arg
+              NSMutableArray<NSNumber*>* argpoints = [NSMutableArray arrayWithCapacity:points.count];
+              for (int i = 0; i < points.count; i++) {
+                  NSObject* item = ((NSObject*) [points objectAtIndex:i]);
+                  // return to dart side data
+                  argpoints[i] = @(item.hash);
+                  // add to HEAP
+                  HEAP[@(item.hash)] = item;
+              }
+              // primitive callback arg
+              NSNumber* argdistance = @(distance);
+      
+              [channel invokeMethod:@"Callback::MAFinishCallback::MAFinishCallback" arguments:@{@"points": argpoints, @"distance": argdistance}];
+      
+          } failedCallback: ^(int errorCode, NSString* errorDesc) {
+              FlutterMethodChannel *channel = [FlutterMethodChannel
+                  methodChannelWithName:@"MATraceManager::queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback::Callback"
+                        binaryMessenger:[self->_registrar messenger]];
+      
+              // print log
+              if (enableLog) {
+                  NSLog(@"");
+              }
+      
+              // 构造可以直接传输的参数
+              // primitive callback arg
+              NSNumber* argerrorCode = @(errorCode);
+              // jsonable callback arg
+              NSString* argerrorDesc = errorDesc;
+      
+              [channel invokeMethod:@"Callback::MAFailedCallback::MAFailedCallback" arguments:@{@"errorCode": argerrorCode, @"errorDesc": argerrorDesc}];
+      
+          }];
+      
+          // result
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          NSNumber* jsonableResult = @((result).hash);
+      
+          methodResult(jsonableResult);
+      },
       @"MATraceManager::start": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
       
@@ -6208,138 +6309,6 @@ extern BOOL enableLog;
       
           methodResult(resultList);
       },
-      @"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-          NSMutableArray* resultList = [NSMutableArray array];
-      
-          for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-              NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-      
-              // args
-              // list arg
-              NSArray* coordinatesRefIdArray = (NSArray*) args[@"coordinates"];
-              CLLocationCoordinate2D coordinates[coordinatesRefIdArray.count];
-        
-              for (int i = 0; i < coordinatesRefIdArray.count; i++) {
-                  NSValue* coordinatesValue = (NSValue*) HEAP[[coordinatesRefIdArray objectAtIndex:i]];
-                  CLLocationCoordinate2D coordinatesItem;
-                  [coordinatesValue getValue:&coordinatesItem];
-                  coordinates[i] = coordinatesItem;
-              }
-              // jsonable arg
-              NSUInteger count = [args[@"count"] unsignedIntegerValue];
-              // jsonable arg
-              CGFloat duration = [args[@"duration"] floatValue];
-              // jsonable arg
-              NSString* name = (NSString*) args[@"name"];
-        
-      
-              // ref
-              MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-      
-              // invoke native method
-              MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
-                  FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback::Callback"
-                            binaryMessenger:[self->_registrar messenger]];
-        
-                  // print log
-                  if (enableLog) {
-                      NSLog(@"");
-                  }
-        
-                  // 构造可以直接传输的参数
-                  // primitive callback arg
-                  NSNumber* argisFinished = @(isFinished);
-        
-                  [channel invokeMethod:@"Callback::void|BOOL isFinished::void|BOOL isFinished" arguments:@{@"isFinished": argisFinished}];
-        
-              }];
-      
-              // result
-              // return a ref
-              HEAP[@((result).hash)] = result;
-              NSNumber* jsonableResult = @((result).hash);
-      
-              [resultList addObject:jsonableResult];
-          }
-      
-          methodResult(resultList);
-      },
-      @"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-          NSMutableArray* resultList = [NSMutableArray array];
-      
-          for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-              NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-      
-              // args
-              // list arg
-              NSArray* coordinatesRefIdArray = (NSArray*) args[@"coordinates"];
-              CLLocationCoordinate2D coordinates[coordinatesRefIdArray.count];
-        
-              for (int i = 0; i < coordinatesRefIdArray.count; i++) {
-                  NSValue* coordinatesValue = (NSValue*) HEAP[[coordinatesRefIdArray objectAtIndex:i]];
-                  CLLocationCoordinate2D coordinatesItem;
-                  [coordinatesValue getValue:&coordinatesItem];
-                  coordinates[i] = coordinatesItem;
-              }
-              // jsonable arg
-              NSUInteger count = [args[@"count"] unsignedIntegerValue];
-              // jsonable arg
-              CGFloat duration = [args[@"duration"] floatValue];
-              // jsonable arg
-              NSString* name = (NSString*) args[@"name"];
-        
-        
-      
-              // ref
-              MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-      
-              // invoke native method
-              MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
-                  FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback::Callback"
-                            binaryMessenger:[self->_registrar messenger]];
-        
-                  // print log
-                  if (enableLog) {
-                      NSLog(@"");
-                  }
-        
-                  // 构造可以直接传输的参数
-                  // primitive callback arg
-                  NSNumber* argisFinished = @(isFinished);
-        
-                  [channel invokeMethod:@"Callback::void|BOOL isFinished::void|BOOL isFinished" arguments:@{@"isFinished": argisFinished}];
-        
-              } stepCallback: ^(MAAnnotationMoveAnimation* currentAni) {
-                  FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback::Callback"
-                            binaryMessenger:[self->_registrar messenger]];
-        
-                  // print log
-                  if (enableLog) {
-                      NSLog(@"");
-                  }
-        
-                  // 构造可以直接传输的参数
-                  // ref callback arg
-                  NSNumber* argcurrentAni = @(currentAni.hash);
-                  HEAP[argcurrentAni] = currentAni;
-        
-                  [channel invokeMethod:@"Callback::void|MAAnnotationMoveAnimation currentAni::void|MAAnnotationMoveAnimation currentAni" arguments:@{@"currentAni": argcurrentAni}];
-        
-              }];
-      
-              // result
-              // return a ref
-              HEAP[@((result).hash)] = result;
-              NSNumber* jsonableResult = @((result).hash);
-      
-              [resultList addObject:jsonableResult];
-          }
-      
-          methodResult(resultList);
-      },
       @"MAAnimatedAnnotation::setNeedsStart_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
           NSMutableArray* resultList = [NSMutableArray array];
       
@@ -6986,54 +6955,6 @@ extern BOOL enableLog;
       
           methodResult(resultList);
       },
-      @"MATileOverlay::loadTileAtPathResult_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-          NSMutableArray* resultList = [NSMutableArray array];
-      
-          for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-              NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-      
-              // args
-              // struct arg
-              NSValue* pathValue = (NSValue*) HEAP[@([args[@"path"] integerValue])];
-              MATileOverlayPath path;
-              [pathValue getValue:&path];
-        
-      
-              // ref
-              MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-      
-              // invoke native method
-              [ref loadTileAtPath : path result: ^(NSData* tileData, NSError* error) {
-                  FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MATileOverlay::loadTileAtPathResult::Callback"
-                            binaryMessenger:[self->_registrar messenger]];
-        
-                  // print log
-                  if (enableLog) {
-                      NSLog(@"");
-                  }
-        
-                  // 构造可以直接传输的参数
-                  // ref callback arg
-                  NSNumber* argtileData = @(tileData.hash);
-                  HEAP[argtileData] = tileData;
-                  // ref callback arg
-                  NSNumber* argerror = @(error.hash);
-                  HEAP[argerror] = error;
-        
-                  [channel invokeMethod:@"Callback::void|NSData tileData, NSError error::void|NSData tileData, NSError error" arguments:@{@"tileData": argtileData, @"error": argerror}];
-        
-              }];
-      
-              // result
-              // 无返回值
-              NSString* jsonableResult = @"success";
-      
-              [resultList addObject:jsonableResult];
-          }
-      
-          methodResult(resultList);
-      },
       @"MATileOverlay::cancelLoadOfTileAtPath_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
           NSMutableArray* resultList = [NSMutableArray array];
       
@@ -7106,96 +7027,6 @@ extern BOOL enableLog;
               // return a ref
               HEAP[@((result).hash)] = result;
               NSNumber* jsonableResult = @((result).hash);
-      
-              [resultList addObject:jsonableResult];
-          }
-      
-          methodResult(resultList);
-      },
-      @"MAOfflineMap::setupWithCompletionBlock_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-          NSMutableArray* resultList = [NSMutableArray array];
-      
-          for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-              NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-      
-              // args
-        
-      
-              // ref
-              MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-      
-              // invoke native method
-              [ref setupWithCompletionBlock : ^(BOOL setupSuccess) {
-                  FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAOfflineMap::setupWithCompletionBlock::Callback"
-                            binaryMessenger:[self->_registrar messenger]];
-        
-                  // print log
-                  if (enableLog) {
-                      NSLog(@"");
-                  }
-        
-                  // 构造可以直接传输的参数
-                  // primitive callback arg
-                  NSNumber* argsetupSuccess = @(setupSuccess);
-        
-                  [channel invokeMethod:@"Callback::void|BOOL setupSuccess::void|BOOL setupSuccess" arguments:@{@"setupSuccess": argsetupSuccess}];
-        
-              }];
-      
-              // result
-              // 无返回值
-              NSString* jsonableResult = @"success";
-      
-              [resultList addObject:jsonableResult];
-          }
-      
-          methodResult(resultList);
-      },
-      @"MAOfflineMap::downloadItemShouldContinueWhenAppEntersBackgrounddownloadBlock_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-          NSMutableArray* resultList = [NSMutableArray array];
-      
-          for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-              NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-      
-              // args
-              // ref arg
-              MAOfflineItem* item = (MAOfflineItem*) HEAP[@([args[@"item"] integerValue])];
-              // jsonable arg
-              BOOL shouldContinueWhenAppEntersBackground = [args[@"shouldContinueWhenAppEntersBackground"] boolValue];
-        
-      
-              // ref
-              MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-      
-              // invoke native method
-              [ref downloadItem : item shouldContinueWhenAppEntersBackground: shouldContinueWhenAppEntersBackground downloadBlock: ^(MAOfflineItem* downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
-                  FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAOfflineMap::downloadItemShouldContinueWhenAppEntersBackgrounddownloadBlock::Callback"
-                            binaryMessenger:[self->_registrar messenger]];
-        
-                  // print log
-                  if (enableLog) {
-                      NSLog(@"");
-                  }
-        
-                  // 构造可以直接传输的参数
-                  // ref callback arg
-                  NSNumber* argdownloadItem = @(downloadItem.hash);
-                  HEAP[argdownloadItem] = downloadItem;
-                  // enum callback arg
-                  NSNumber* argdownloadStatus = @((NSInteger) downloadStatus);
-                  // ref callback arg
-                  NSNumber* arginfo = @(((NSObject*) info).hash);
-                  HEAP[arginfo] = ((NSObject*) info);
-        
-                  [channel invokeMethod:@"Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock" arguments:@{@"downloadItem": argdownloadItem, @"downloadStatus": argdownloadStatus, @"info": arginfo}];
-        
-              }];
-      
-              // result
-              // 无返回值
-              NSString* jsonableResult = @"success";
       
               [resultList addObject:jsonableResult];
           }
@@ -7315,46 +7146,6 @@ extern BOOL enableLog;
       
               // invoke native method
               [ref clearDisk ];
-      
-              // result
-              // 无返回值
-              NSString* jsonableResult = @"success";
-      
-              [resultList addObject:jsonableResult];
-          }
-      
-          methodResult(resultList);
-      },
-      @"MAOfflineMap::checkNewestVersion_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-          NSMutableArray* resultList = [NSMutableArray array];
-      
-          for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-              NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-      
-              // args
-        
-      
-              // ref
-              MAOfflineMap* ref = (MAOfflineMap*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-      
-              // invoke native method
-              [ref checkNewestVersion : ^(BOOL hasNewestVersion) {
-                  FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAOfflineMap::checkNewestVersion::Callback"
-                            binaryMessenger:[self->_registrar messenger]];
-        
-                  // print log
-                  if (enableLog) {
-                      NSLog(@"");
-                  }
-        
-                  // 构造可以直接传输的参数
-                  // primitive callback arg
-                  NSNumber* arghasNewestVersion = @(hasNewestVersion);
-        
-                  [channel invokeMethod:@"Callback::MAOfflineMapNewestVersionBlock::MAOfflineMapNewestVersionBlock" arguments:@{@"hasNewestVersion": arghasNewestVersion}];
-        
-              }];
       
               // result
               // 无返回值
@@ -9052,53 +8843,6 @@ extern BOOL enableLog;
       
               // invoke native method
               [ref setCompassImage : image];
-      
-              // result
-              // 无返回值
-              NSString* jsonableResult = @"success";
-      
-              [resultList addObject:jsonableResult];
-          }
-      
-          methodResult(resultList);
-      },
-      @"MAMapView::takeSnapshotInRectWithCompletionBlock_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-          NSMutableArray* resultList = [NSMutableArray array];
-      
-          for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-              NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-      
-              // args
-              // struct arg
-              NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
-              CGRect rect;
-              [rectValue getValue:&rect];
-        
-      
-              // ref
-              MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-      
-              // invoke native method
-              [ref takeSnapshotInRect : rect withCompletionBlock: ^(UIImage* resultImage, NSInteger state) {
-                  FlutterMethodChannel *channel = [FlutterMethodChannel
-                      methodChannelWithName:@"MAMapView::takeSnapshotInRectWithCompletionBlock::Callback"
-                            binaryMessenger:[self->_registrar messenger]];
-        
-                  // print log
-                  if (enableLog) {
-                      NSLog(@"");
-                  }
-        
-                  // 构造可以直接传输的参数
-                  // ref callback arg
-                  NSNumber* argresultImage = @(resultImage.hash);
-                  HEAP[argresultImage] = resultImage;
-                  // primitive callback arg
-                  NSNumber* argstate = @(state);
-        
-                  [channel invokeMethod:@"Callback::void|UIImage resultImage, NSInteger state::void|UIImage resultImage, NSInteger state" arguments:@{@"resultImage": argresultImage, @"state": argstate}];
-        
-              }];
       
               // result
               // 无返回值
