@@ -127,8 +127,8 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                 ),
                 ListTile(
                   title: Center(child: Text('批量添加Marker')),
-                  onTap: () async {
-                    final markers = await _controller?.addMarkers(
+                  onTap: () {
+                    _controller?.addMarkers(
                       [
                         for (int i = 0; i < 1000; i++)
                           MarkerOption(
@@ -141,8 +141,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                             height: 40,
                           ),
                       ],
-                    );
-                    _markers.addAll(markers);
+                    )?.then(_markers.addAll);
                   },
                 ),
                 ListTile(
