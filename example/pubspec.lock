@@ -7,7 +7,7 @@ packages:
       name: amap_core_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.3+356f11c"
+    version: "0.5.4+111ecbe"
   amap_map_fluttify:
     dependency: "direct dev"
     description:
@@ -98,7 +98,7 @@ packages:
       name: decorated_flutter
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.10.0"
+    version: "0.10.5"
   dio:
     dependency: transitive
     description:
@@ -112,7 +112,7 @@ packages:
       name: encrypt
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.3.1"
+    version: "4.0.0"
   flushbar:
     dependency: transitive
     description:
@@ -131,7 +131,7 @@ packages:
       name: flutter_advanced_networkimage
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.6.2"
+    version: "0.6.4"
   flutter_localizations:
     dependency: transitive
     description: flutter
@@ -143,7 +143,7 @@ packages:
       name: flutter_svg
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.15.0"
+    version: "0.17.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -160,7 +160,7 @@ packages:
       name: foundation_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.6"
+    version: "0.4.8"
   http:
     dependency: transitive
     description:
@@ -216,7 +216,7 @@ packages:
       name: oktoast
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.3.0"
+    version: "2.3.1+1"
   path:
     dependency: transitive
     description:
@@ -244,7 +244,7 @@ packages:
       name: path_provider
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.5.1"
+    version: "1.6.1"
   pedantic:
     dependency: transitive
     description:
@@ -258,7 +258,7 @@ packages:
       name: permission_handler
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.1.0"
+    version: "4.2.0+hotfix.3"
   petitparser:
     dependency: transitive
     description:
@@ -279,7 +279,7 @@ packages:
       name: plugin_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.1"
+    version: "1.0.2"
   pointycastle:
     dependency: transitive
     description:
@@ -361,28 +361,28 @@ packages:
       name: url_launcher
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.4.1"
+    version: "5.4.2"
   url_launcher_macos:
     dependency: transitive
     description:
       name: url_launcher_macos
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.1+2"
+    version: "0.0.1+4"
   url_launcher_platform_interface:
     dependency: transitive
     description:
       name: url_launcher_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.5"
+    version: "1.0.6"
   url_launcher_web:
     dependency: transitive
     description:
       name: url_launcher_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.0+2"
+    version: "0.1.1+1"
   vector_math:
     dependency: transitive
     description:
