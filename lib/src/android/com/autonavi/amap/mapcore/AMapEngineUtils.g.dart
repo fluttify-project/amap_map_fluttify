@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_autonavi_amap_mapcore_AMapEngineUtils extends java_lang_Object  {
   //region constants
   static final int AMAP_ENGINE_TYPE_MAIN = 1;

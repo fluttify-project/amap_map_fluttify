@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener on java_lang_Object {
   
 

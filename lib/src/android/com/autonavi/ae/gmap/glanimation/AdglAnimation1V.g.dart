@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation  {
   //region constants
   

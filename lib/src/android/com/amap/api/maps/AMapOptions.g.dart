@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Parcelable {
   //region constants
   static final int LOGO_POSITION_BOTTOM_LEFT = 0;

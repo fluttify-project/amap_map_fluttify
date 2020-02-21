@@ -283,6 +283,29 @@ class Point {
   }
 }
 
+/// 屏幕坐标
+@immutable
+class TraceLocation {
+  final double latitude;
+  final double longitude;
+  final double speed;
+  final double bearing;
+  final int time;
+
+  TraceLocation({
+    @required this.latitude,
+    @required this.longitude,
+    @required this.speed,
+    @required this.bearing,
+    @required this.time,
+  });
+
+  @override
+  String toString() {
+    return 'TraceLocation{latitude: $latitude, longitude: $longitude, speed: $speed, bearing: $bearing, time: $time}';
+  }
+}
+
 /// 地图定位信息 区分于定位插件的定位信息
 class MapLocation {
   MapLocation.android(this._androidModel);

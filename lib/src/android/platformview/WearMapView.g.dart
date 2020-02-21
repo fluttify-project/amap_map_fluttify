@@ -13,6 +13,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 typedef void WearMapViewCreatedCallback(com_amap_api_maps_WearMapView controller);
 typedef Future<void> _OnAndroidViewDispose();
 
