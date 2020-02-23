@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class MAArcRenderer extends MAOverlayPathRenderer  {
   //region constants
   
@@ -22,6 +24,17 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
   
     kNativeObjectPool.add(object);
     return object;
+  }
+  
+  static Future<List<MAArcRenderer>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAArcRenderer', {'length': length});
+  
+    final List<MAArcRenderer> typedResult = resultBatch.map((result) => MAArcRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
   }
   
   //endregion
@@ -59,6 +72,41 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
     } else {
       kNativeObjectPool.add(MAArcRenderer()..refId = result..tag = 'amap_map_fluttify');
       return MAArcRenderer()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  //endregion
+}
+
+extension MAArcRenderer_Batch on List<MAArcRenderer> {
+  //region getters
+  Future<List<MAArc>> get_arc_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAArcRenderer::get_arc_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => MAArc()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  //endregion
+
+  //region methods
+  Future<List<MAArcRenderer>> initWithArc_batch(List<MAArc> arc) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArcRenderer::initWithArc_batch', [for (int i = 0; i < this.length; i++) {"arc": arc[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => MAArcRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
     }
   }
   

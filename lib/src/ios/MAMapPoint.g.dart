@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class MAMapPoint extends NSObject  {
   //region constants
   
@@ -22,6 +24,17 @@ class MAMapPoint extends NSObject  {
   
     kNativeObjectPool.add(object);
     return object;
+  }
+  
+  static Future<List<MAMapPoint>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMapPoint', {'length': length});
+  
+    final List<MAMapPoint> typedResult = resultBatch.map((result) => MAMapPoint()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
   }
   
   //endregion
@@ -52,6 +65,29 @@ class MAMapPoint extends NSObject  {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapPoint::set_y', {'refId': refId, "y": y});
   
   
+  }
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension MAMapPoint_Batch on List<MAMapPoint> {
+  //region getters
+  Future<List<double>> get_x_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapPoint::get_x_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_y_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapPoint::get_y_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
   }
   
   //endregion

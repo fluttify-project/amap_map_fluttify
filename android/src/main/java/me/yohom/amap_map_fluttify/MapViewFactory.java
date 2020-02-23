@@ -57,7 +57,7 @@ class MapViewFactory extends PlatformViewFactory {
         
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) args).get("refId");
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
@@ -78,24 +78,23 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // result
+            // convert result to jsonable result
+            Integer jsonableResult = null;
             if (result != null) {
-                int returnRefId = result.hashCode();
-                getHEAP().put(returnRefId, result);
-        
-                methodResult.success(returnRefId);
-            } else {
-                methodResult.success(null);
+                jsonableResult = result.hashCode();
+                getHEAP().put(jsonableResult, result);
             }
+        
+            methodResult.success(jsonableResult);
         });
         // method
         put("com.amap.api.maps.MapView::onCreate", (args, methodResult) -> {
             // args
             // ref arg
-            android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) args.get("var1"));
+            android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) args).get("refId");
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
@@ -115,8 +114,10 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            methodResult.success(jsonableResult);
         });
         // method
         put("com.amap.api.maps.MapView::onResume", (args, methodResult) -> {
@@ -124,7 +125,7 @@ class MapViewFactory extends PlatformViewFactory {
         
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) args).get("refId");
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
@@ -144,8 +145,10 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            methodResult.success(jsonableResult);
         });
         // method
         put("com.amap.api.maps.MapView::onPause", (args, methodResult) -> {
@@ -153,7 +156,7 @@ class MapViewFactory extends PlatformViewFactory {
         
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) args).get("refId");
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
@@ -173,8 +176,10 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            methodResult.success(jsonableResult);
         });
         // method
         put("com.amap.api.maps.MapView::onDestroy", (args, methodResult) -> {
@@ -182,7 +187,7 @@ class MapViewFactory extends PlatformViewFactory {
         
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) args).get("refId");
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
@@ -202,8 +207,10 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            methodResult.success(jsonableResult);
         });
         // method
         put("com.amap.api.maps.MapView::onLowMemory", (args, methodResult) -> {
@@ -211,7 +218,7 @@ class MapViewFactory extends PlatformViewFactory {
         
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) args).get("refId");
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
@@ -231,17 +238,19 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            methodResult.success(jsonableResult);
         });
         // method
         put("com.amap.api.maps.MapView::onSaveInstanceState", (args, methodResult) -> {
             // args
             // ref arg
-            android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) args.get("var1"));
+            android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) args).get("refId");
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
@@ -261,17 +270,19 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            methodResult.success(jsonableResult);
         });
         // method
         put("com.amap.api.maps.MapView::setVisibility", (args, methodResult) -> {
             // args
             // jsonable arg
-            int var1 = (int) args.get("var1");
+            int var1 = (int) ((Map<String, Object>) args).get("var1");
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) args).get("refId");
             com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
         
             // print log
@@ -291,8 +302,10 @@ class MapViewFactory extends PlatformViewFactory {
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            methodResult.success(jsonableResult);
         });
     }};
 
@@ -300,7 +313,7 @@ class MapViewFactory extends PlatformViewFactory {
     public PlatformView create(Context context, int id, Object params) {
         Map<String, Object> args = (Map<String, Object>) params;
         // ref arg
-        com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) args.get("var2"));
+        com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
 
         com.amap.api.maps.MapView view = new com.amap.api.maps.MapView(context, var2);
         getHEAP().put(id, view);

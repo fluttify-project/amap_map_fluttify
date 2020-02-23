@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class MAOfflineItemMunicipality extends MAOfflineCity  {
   //region constants
   
@@ -24,6 +26,17 @@ class MAOfflineItemMunicipality extends MAOfflineCity  {
     return object;
   }
   
+  static Future<List<MAOfflineItemMunicipality>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineItemMunicipality', {'length': length});
+  
+    final List<MAOfflineItemMunicipality> typedResult = resultBatch.map((result) => MAOfflineItemMunicipality()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -31,6 +44,16 @@ class MAOfflineItemMunicipality extends MAOfflineCity  {
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension MAOfflineItemMunicipality_Batch on List<MAOfflineItemMunicipality> {
+  //region getters
   
   //endregion
 

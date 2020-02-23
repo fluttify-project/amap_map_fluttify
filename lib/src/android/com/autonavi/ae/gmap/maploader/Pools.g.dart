@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_autonavi_ae_gmap_maploader_Pools extends java_lang_Object  {
   //region constants
   
@@ -24,6 +26,16 @@ class com_autonavi_ae_gmap_maploader_Pools extends java_lang_Object  {
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_autonavi_ae_gmap_maploader_Pools_Batch on List<com_autonavi_ae_gmap_maploader_Pools> {
+  //region getters
   
   //endregion
 

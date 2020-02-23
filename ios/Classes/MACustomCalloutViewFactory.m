@@ -57,13 +57,13 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   //region handlers
   _handlerMap = @{
-      @"MACustomCalloutView::initWithCustomView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MACustomCalloutView::initWithCustomView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // ref arg
           UIView* customView = (UIView*) HEAP[@([args[@"customView"] integerValue])];
       
           // ref
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) args[@"refId"]];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
           // print log
           if (enableLog) {
@@ -76,43 +76,47 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // result
           // return a ref
           HEAP[@(((NSObject*) result).hash)] = result;
-          methodResult(@(((NSObject*) result).hash));
+          NSNumber* jsonableResult = @(((NSObject*) result).hash);
+      
+          methodResult(jsonableResult);
       },
-      @"MACustomCalloutView::get_customView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MACustomCalloutView::get_customView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
               NSLog(@"MACustomCalloutView::get_customView");
           }
       
           // ref object
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) args[@"refId"]];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
-          // invoke native method
           UIView* result = ref.customView;
       
           // return a ref
           HEAP[@((result).hash)] = result;
-          methodResult(@((result).hash));
+          NSNumber* jsonableResult = @((result).hash);
+      
+          methodResult(jsonableResult);
       },
       
-      @"MACustomCalloutView::get_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MACustomCalloutView::get_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
               NSLog(@"MACustomCalloutView::get_userData");
           }
       
           // ref object
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) args[@"refId"]];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
-          // invoke native method
           NSObject* result = ref.userData;
       
           // return a ref
           HEAP[@(((NSObject*) result).hash)] = result;
-          methodResult(@(((NSObject*) result).hash));
+          NSNumber* jsonableResult = @(((NSObject*) result).hash);
+      
+          methodResult(jsonableResult);
       },
       
-      @"MACustomCalloutView::set_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MACustomCalloutView::set_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
               NSLog(@"MACustomCalloutView::set_userData");
@@ -123,7 +127,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           id userData = (id) HEAP[@([args[@"userData"] integerValue])];
       
           // ref
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) args[@"refId"]];
+          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
           ref.userData = userData;
           methodResult(@"success");
@@ -460,7 +464,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   HEAP[argannotation] = annotation;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewViewForAnnotation"
-              arguments:@{@"mapView": argmapView, @"annotation": argannotation}
+              arguments:@{}
                  result:^(id result) {}]; // 由于结果是异步返回, 这里用不上, 所以就不生成代码了
   
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
@@ -675,7 +679,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   HEAP[argoverlay] = overlay;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRendererForOverlay"
-              arguments:@{@"mapView": argmapView, @"overlay": argoverlay}
+              arguments:@{}
                  result:^(id result) {}]; // 由于结果是异步返回, 这里用不上, 所以就不生成代码了
   
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法

@@ -8,6 +8,14 @@ typedef Future<void> OnLocationChange(MapLocation move);
 typedef Future<void> OnMarkerDrag(Marker marker);
 typedef Future<void> _OnRequireAlwaysAuth(CLLocationManager manager);
 typedef Future<void> OnScreenShot(Uint8List imageData);
+typedef Future<void> OnTraceProcessing(List<LatLng> traceList);
+typedef Future<void> OnTraceFinished(
+  int id,
+  List<LatLng> traceList,
+  int distance,
+  int waitingTime,
+);
+typedef Future<void> OnTraceFailed(int errorCode, String errorInfo);
 
 /// 地图控制类
 class AmapController with WidgetsBindingObserver, _Private {
@@ -1978,6 +1986,41 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  Future<void> queryProcessedTrace(
+    int traceId,
+    List<TraceLocation> locationList, {
+    OnTraceProcessing onTraceProcessing,
+    OnTraceFinished onTraceFinished,
+    OnTraceFailed onTraceFailed,
+  }) async {
+    assert(locationList != null);
+    assert(locationList.length > 1);
+    return platform(
+      android: (pool) async {
+        // 获取上下文
+        final applicationContext = await android_app_Application.get();
+        // 创建轨迹对象
+        final traceClient = await com_amap_api_trace_LBSTraceClient
+            .create__android_content_Context(applicationContext);
+
+        // 开始对轨迹纠偏
+        await traceClient.queryProcessedTrace(
+            traceId,
+            await locationList.toAndroidModel(),
+            com_amap_api_trace_LBSTraceClient.TYPE_AMAP,
+            _androidMapDelegate
+              .._onTraceProcessing = onTraceProcessing
+              .._onTraceFinished = onTraceFinished
+              .._onTraceFailed = onTraceFailed);
+      },
+      ios: (pool) async {
+//        final traceManager = await MATraceManager.create__();
+//
+//        traceManager.queryProcessedTraceWith();
+      },
+    );
+  }
+
   Future<void> dispose() async {
     await androidController?.onPause();
     await androidController?.onDestroy();
@@ -2223,7 +2266,8 @@ class _AndroidMapDelegate extends java_lang_Object
         com_amap_api_maps_AMap_OnMapScreenShotListener,
         com_amap_api_maps_AMap_OnMyLocationChangeListener,
         com_amap_api_maps_AMap_OnInfoWindowClickListener,
-        com_amap_api_maps_AMap_OnMapLoadedListener {
+        com_amap_api_maps_AMap_OnMapLoadedListener,
+        com_amap_api_trace_TraceListener {
   OnMarkerClicked _onMarkerClicked;
   OnMarkerDrag _onMarkerDragStart;
   OnMarkerDrag _onMarkerDragging;
@@ -2235,6 +2279,9 @@ class _AndroidMapDelegate extends java_lang_Object
   OnLocationChange _onLocationChange;
   OnMarkerClicked _onInfoWindowClicked;
   VoidCallback _onMapLoaded;
+  OnTraceProcessing _onTraceProcessing;
+  OnTraceFinished _onTraceFinished;
+  OnTraceFailed _onTraceFailed;
 
   // 为了和ios端行为保持一致, 需要屏蔽掉移动过程中的回调
   bool _moveStarted = false;
@@ -2358,6 +2405,39 @@ class _AndroidMapDelegate extends java_lang_Object
     super.onMapLoaded();
     if (_onMapLoaded != null) {
       _onMapLoaded();
+    }
+  }
+
+  @override
+  Future<void> onTraceProcessing(
+    int var1,
+    int var2,
+    List<com_amap_api_maps_model_LatLng> var3,
+  ) async {
+    super.onTraceProcessing(var1, var2, var3);
+    if (_onTraceProcessing != null) {
+      _onTraceProcessing(await var3.toDartModel());
+    }
+  }
+
+  @override
+  Future<void> onFinished(
+    int var1,
+    List<com_amap_api_maps_model_LatLng> var2,
+    int var3,
+    int var4,
+  ) async {
+    super.onFinished(var1, var2, var3, var4);
+    if (_onTraceFinished != null) {
+      _onTraceFinished(var1, await var2.toDartModel(), var3, var4);
+    }
+  }
+
+  @override
+  Future<void> onRequestFailed(int var1, String var2) async {
+    super.onRequestFailed(var1, var2);
+    if (_onTraceFailed != null) {
+      _onTraceFailed(var1, var2);
     }
   }
 }

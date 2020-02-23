@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_autonavi_ae_gmap_AbstractMapMessage extends java_lang_Object  {
   //region constants
   static final int GESTURE_STATE_BEGIN = 100;
@@ -50,6 +52,35 @@ class com_autonavi_ae_gmap_AbstractMapMessage extends java_lang_Object  {
     } else {
     
       return result;
+    }
+  }
+  
+  //endregion
+}
+
+extension com_autonavi_ae_gmap_AbstractMapMessage_Batch on List<com_autonavi_ae_gmap_AbstractMapMessage> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<int>> getType_batch() async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.AbstractMapMessage::getType_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
     }
   }
   

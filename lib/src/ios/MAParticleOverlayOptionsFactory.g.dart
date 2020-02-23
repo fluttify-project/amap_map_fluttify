@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class MAParticleOverlayOptionsFactory extends NSObject  {
   //region constants
   
@@ -24,6 +26,17 @@ class MAParticleOverlayOptionsFactory extends NSObject  {
     return object;
   }
   
+  static Future<List<MAParticleOverlayOptionsFactory>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleOverlayOptionsFactory', {'length': length});
+  
+    final List<MAParticleOverlayOptionsFactory> typedResult = resultBatch.map((result) => MAParticleOverlayOptionsFactory()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -31,6 +44,16 @@ class MAParticleOverlayOptionsFactory extends NSObject  {
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension MAParticleOverlayOptionsFactory_Batch on List<MAParticleOverlayOptionsFactory> {
+  //region getters
   
   //endregion
 

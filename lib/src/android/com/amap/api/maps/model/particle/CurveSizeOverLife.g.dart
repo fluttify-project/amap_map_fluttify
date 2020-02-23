@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_amap_api_maps_model_particle_CurveSizeOverLife extends com_amap_api_maps_model_particle_SizeOverLife  {
   //region constants
   
@@ -24,6 +26,17 @@ class com_amap_api_maps_model_particle_CurveSizeOverLife extends com_amap_api_ma
     return object;
   }
   
+  static Future<List<com_amap_api_maps_model_particle_CurveSizeOverLife>> create_batch__float__float__float(List<double> var1, List<double> var2, List<double> var3) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i]}]);
+  
+    final List<com_amap_api_maps_model_particle_CurveSizeOverLife> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_CurveSizeOverLife()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -31,6 +44,16 @@ class com_amap_api_maps_model_particle_CurveSizeOverLife extends com_amap_api_ma
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_amap_api_maps_model_particle_CurveSizeOverLife_Batch on List<com_amap_api_maps_model_particle_CurveSizeOverLife> {
+  //region getters
   
   //endregion
 

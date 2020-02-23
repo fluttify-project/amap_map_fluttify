@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_autonavi_amap_mapcore_animation_GLAlphaAnimation extends com_autonavi_amap_mapcore_animation_GLAnimation  {
   //region constants
   
@@ -22,6 +24,17 @@ class com_autonavi_amap_mapcore_animation_GLAlphaAnimation extends com_autonavi_
   
     kNativeObjectPool.add(object);
     return object;
+  }
+  
+  static Future<List<com_autonavi_amap_mapcore_animation_GLAlphaAnimation>> create_batch__float__float(List<double> var1, List<double> var2) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i]}]);
+  
+    final List<com_autonavi_amap_mapcore_animation_GLAlphaAnimation> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_animation_GLAlphaAnimation()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
   }
   
   //endregion
@@ -64,6 +77,36 @@ class com_autonavi_amap_mapcore_animation_GLAlphaAnimation extends com_autonavi_
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mCurAlpha', {'refId': refId, "mCurAlpha": mCurAlpha});
   
   
+  }
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_autonavi_amap_mapcore_animation_GLAlphaAnimation_Batch on List<com_autonavi_amap_mapcore_animation_GLAlphaAnimation> {
+  //region getters
+  Future<List<double>> get_mFromAlpha_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::get_mFromAlpha_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mToAlpha_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::get_mToAlpha_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_mCurAlpha_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::get_mCurAlpha_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
   }
   
   //endregion

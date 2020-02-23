@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_amap_api_maps_model_animation_AlphaAnimation extends com_amap_api_maps_model_animation_Animation  {
   //region constants
   
@@ -24,6 +26,17 @@ class com_amap_api_maps_model_animation_AlphaAnimation extends com_amap_api_maps
     return object;
   }
   
+  static Future<List<com_amap_api_maps_model_animation_AlphaAnimation>> create_batch__float__float(List<double> var1, List<double> var2) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_animation_AlphaAnimation__float__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i]}]);
+  
+    final List<com_amap_api_maps_model_animation_AlphaAnimation> typedResult = resultBatch.map((result) => com_amap_api_maps_model_animation_AlphaAnimation()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -31,6 +44,16 @@ class com_amap_api_maps_model_animation_AlphaAnimation extends com_amap_api_maps
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_amap_api_maps_model_animation_AlphaAnimation_Batch on List<com_amap_api_maps_model_animation_AlphaAnimation> {
+  //region getters
   
   //endregion
 

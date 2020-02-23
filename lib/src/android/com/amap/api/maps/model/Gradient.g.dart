@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_amap_api_maps_model_Gradient extends java_lang_Object  {
   //region constants
   
@@ -24,6 +26,17 @@ class com_amap_api_maps_model_Gradient extends java_lang_Object  {
     return object;
   }
   
+  static Future<List<com_amap_api_maps_model_Gradient>> create_batch__intArray__floatArray(List<Int32List> var1, List<Float64List> var2) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_Gradient__intArray__floatArray', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i]}]);
+  
+    final List<com_amap_api_maps_model_Gradient> typedResult = resultBatch.map((result) => com_amap_api_maps_model_Gradient()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -31,6 +44,16 @@ class com_amap_api_maps_model_Gradient extends java_lang_Object  {
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_amap_api_maps_model_Gradient_Batch on List<com_amap_api_maps_model_Gradient> {
+  //region getters
   
   //endregion
 

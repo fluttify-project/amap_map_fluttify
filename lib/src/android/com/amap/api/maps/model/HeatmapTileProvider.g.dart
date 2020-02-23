@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object with com_amap_api_maps_model_TileProvider {
   //region constants
   static final int DEFAULT_RADIUS = 12;
@@ -25,6 +27,16 @@ class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object with 
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_amap_api_maps_model_HeatmapTileProvider_Batch on List<com_amap_api_maps_model_HeatmapTileProvider> {
+  //region getters
   
   //endregion
 

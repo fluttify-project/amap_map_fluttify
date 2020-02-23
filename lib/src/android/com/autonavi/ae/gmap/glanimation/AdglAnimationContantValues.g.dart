@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues extends java_lang_Object  {
   //region constants
   static final int ADGLANIMATOIN_TWO_INT = 2;
@@ -28,6 +30,17 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues extends java_l
     return object;
   }
   
+  static Future<List<com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__', {'length': length});
+  
+    final List<com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -35,6 +48,16 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues extends java_l
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues_Batch on List<com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues> {
+  //region getters
   
   //endregion
 

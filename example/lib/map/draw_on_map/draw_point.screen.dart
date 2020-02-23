@@ -78,7 +78,6 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         snippet: '描述',
                         iconUri: _assetsIcon1,
                         imageConfig: createLocalImageConfiguration(context),
-                        infoWindowEnabled: false,
                         width: 48,
                         height: 48,
                         object: '自定义数据',
@@ -127,8 +126,8 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                 ),
                 ListTile(
                   title: Center(child: Text('批量添加Marker')),
-                  onTap: () async {
-                    final markers = await _controller?.addMarkers(
+                  onTap: () {
+                    _controller?.addMarkers(
                       [
                         for (int i = 0; i < 1000; i++)
                           MarkerOption(
@@ -137,10 +136,11 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                             snippet: '描述',
                             iconUri: i % 2 == 0 ? _assetsIcon1 : _assetsIcon2,
                             imageConfig: createLocalImageConfiguration(context),
+                            width: 40,
+                            height: 40,
                           ),
                       ],
-                    );
-                    _markers.addAll(markers);
+                    )?.then(_markers.addAll);
                   },
                 ),
                 ListTile(

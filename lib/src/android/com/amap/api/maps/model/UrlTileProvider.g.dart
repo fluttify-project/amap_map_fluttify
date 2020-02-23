@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_amap_api_maps_model_UrlTileProvider extends java_lang_Object with com_amap_api_maps_model_TileProvider {
   //region constants
   
@@ -24,6 +26,16 @@ class com_amap_api_maps_model_UrlTileProvider extends java_lang_Object with com_
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_amap_api_maps_model_UrlTileProvider_Batch on List<com_amap_api_maps_model_UrlTileProvider> {
+  //region getters
   
   //endregion
 

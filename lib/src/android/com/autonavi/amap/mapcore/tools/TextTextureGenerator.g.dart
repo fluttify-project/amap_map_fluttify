@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Object  {
   //region constants
   static final int CHAR_MAX = 256;
@@ -23,6 +25,17 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
   
     kNativeObjectPool.add(object);
     return object;
+  }
+  
+  static Future<List<com_autonavi_amap_mapcore_tools_TextTextureGenerator>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_TextTextureGenerator__', {'length': length});
+  
+    final List<com_autonavi_amap_mapcore_tools_TextTextureGenerator> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_tools_TextTextureGenerator()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
   }
   
   //endregion
@@ -99,6 +112,75 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
     } else {
     
       return (result as List).cast<int>();
+    }
+  }
+  
+  //endregion
+}
+
+extension com_autonavi_amap_mapcore_tools_TextTextureGenerator_Batch on List<com_autonavi_amap_mapcore_tools_TextTextureGenerator> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<int>> getNearstSize2N_batch(List<int> var0) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.TextTextureGenerator::getNearstSize2N_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<Uint8List>> getTextPixelBuffer_batch(List<int> var1, List<int> var2) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.TextTextureGenerator::getTextPixelBuffer_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>()).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<Uint8List>> getCharsWidths_batch(List<Int32List> var1) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.TextTextureGenerator::getCharsWidths_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>()).toList();
+    
+      return typedResult;
     }
   }
   

@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_autonavi_amap_mapcore_AMapEtaDecoder extends java_lang_Object  {
   //region constants
   
@@ -24,6 +26,17 @@ class com_autonavi_amap_mapcore_AMapEtaDecoder extends java_lang_Object  {
     return object;
   }
   
+  static Future<List<com_autonavi_amap_mapcore_AMapEtaDecoder>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapEtaDecoder__', {'length': length});
+  
+    final List<com_autonavi_amap_mapcore_AMapEtaDecoder> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_AMapEtaDecoder()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -31,6 +44,16 @@ class com_autonavi_amap_mapcore_AMapEtaDecoder extends java_lang_Object  {
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_autonavi_amap_mapcore_AMapEtaDecoder_Batch on List<com_autonavi_amap_mapcore_AMapEtaDecoder> {
+  //region getters
   
   //endregion
 

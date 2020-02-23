@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class MAOfflineItemNationWide extends MAOfflineCity  {
   //region constants
   
@@ -24,6 +26,17 @@ class MAOfflineItemNationWide extends MAOfflineCity  {
     return object;
   }
   
+  static Future<List<MAOfflineItemNationWide>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineItemNationWide', {'length': length});
+  
+    final List<MAOfflineItemNationWide> typedResult = resultBatch.map((result) => MAOfflineItemNationWide()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -31,6 +44,16 @@ class MAOfflineItemNationWide extends MAOfflineCity  {
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension MAOfflineItemNationWide_Batch on List<MAOfflineItemNationWide> {
+  //region getters
   
   //endregion
 

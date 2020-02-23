@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_amap_api_maps_model_WeightedLatLng extends java_lang_Object  {
   //region constants
   static final double DEFAULT_INTENSITY = 1.0;
@@ -32,6 +34,28 @@ class com_amap_api_maps_model_WeightedLatLng extends java_lang_Object  {
     return object;
   }
   
+  static Future<List<com_amap_api_maps_model_WeightedLatLng>> create_batch__com_amap_api_maps_model_LatLng__double(List<com_amap_api_maps_model_LatLng> var1, List<double> var2) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId, "var2": var2[i]}]);
+  
+    final List<com_amap_api_maps_model_WeightedLatLng> typedResult = resultBatch.map((result) => com_amap_api_maps_model_WeightedLatLng()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  static Future<List<com_amap_api_maps_model_WeightedLatLng>> create_batch__com_amap_api_maps_model_LatLng(List<com_amap_api_maps_model_LatLng> var1) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
+  
+    final List<com_amap_api_maps_model_WeightedLatLng> typedResult = resultBatch.map((result) => com_amap_api_maps_model_WeightedLatLng()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region getters
@@ -50,6 +74,29 @@ class com_amap_api_maps_model_WeightedLatLng extends java_lang_Object  {
   //endregion
 
   //region setters
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension com_amap_api_maps_model_WeightedLatLng_Batch on List<com_amap_api_maps_model_WeightedLatLng> {
+  //region getters
+  Future<List<double>> get_intensity_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.WeightedLatLng::get_intensity_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<com_amap_api_maps_model_LatLng>> get_latLng_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.WeightedLatLng::get_latLng_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
   
   //endregion
 

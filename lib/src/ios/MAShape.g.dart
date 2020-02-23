@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class MAShape extends NSObject with MAAnnotation {
   //region constants
   
@@ -22,6 +24,17 @@ class MAShape extends NSObject with MAAnnotation {
   
     kNativeObjectPool.add(object);
     return object;
+  }
+  
+  static Future<List<MAShape>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAShape', {'length': length});
+  
+    final List<MAShape> typedResult = resultBatch.map((result) => MAShape()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
   }
   
   //endregion
@@ -52,6 +65,29 @@ class MAShape extends NSObject with MAAnnotation {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAShape::set_subtitle', {'refId': refId, "subtitle": subtitle});
   
   
+  }
+  
+  //endregion
+
+  //region methods
+  
+  //endregion
+}
+
+extension MAShape_Batch on List<MAShape> {
+  //region getters
+  Future<List<String>> get_title_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_title_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<String>> get_subtitle_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_subtitle_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
   }
   
   //endregion

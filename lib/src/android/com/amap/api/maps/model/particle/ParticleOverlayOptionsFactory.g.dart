@@ -10,6 +10,8 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import 'package:foundation_fluttify/foundation_fluttify.dart';
+
 class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends java_lang_Object  {
   //region constants
   static final int PARTICLE_TYPE_SUNNY = 0;
@@ -25,6 +27,17 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends jav
   
     kNativeObjectPool.add(object);
     return object;
+  }
+  
+  static Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory>> create_batch__(int length) async {
+    // if (#__check_param_size__#) {
+    //   return Future.error('all args must has same length!');
+    // }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__', {'length': length});
+  
+    final List<com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = result..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
   }
   
   //endregion
@@ -57,6 +70,35 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends jav
     } else {
       kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = it..tag = 'amap_map_fluttify').toList());
       return (result as List).cast<int>().map((it) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = it..tag = 'amap_map_fluttify').toList();
+    }
+  }
+  
+  //endregion
+}
+
+extension com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory_Batch on List<com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory> {
+  //region getters
+  
+  //endregion
+
+  //region methods
+  Future<List<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>>> defaultOptions_batch(List<int> var0) async {
+    // print log
+    // if (fluttifyLogEnabled) {
+    //   #__log__#
+    // }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory::defaultOptions_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((it) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = it..tag = 'amap_map_fluttify').toList()).toList();
+      kNativeObjectPool.addAll(typedResult.expand((e) => e));
+      return typedResult;
     }
   }
   
