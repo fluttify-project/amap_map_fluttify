@@ -78,7 +78,6 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         snippet: '描述',
                         iconUri: _assetsIcon1,
                         imageConfig: createLocalImageConfiguration(context),
-                        infoWindowEnabled: false,
                         width: 48,
                         height: 48,
                         object: '自定义数据',

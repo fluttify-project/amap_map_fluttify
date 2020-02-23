@@ -3712,10 +3712,18 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   }
     
   if ([annotation isKindOfClass:[MAPointAnnotation class]]) {
-      static NSString *pointReuseIndentifier = @"pointReuseIndentifier";
-      MAPinAnnotationView* annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndentifier];
-      if (annotationView == nil) {
-          annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pointReuseIndentifier];
+      MAAnnotationView* annotationView;
+      // 如果没有指定icon就使用m自带的annotation
+      if (icon == nil) {
+          annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"pinAnnotationReuseIndentifier"];
+          if (annotationView == nil) {
+              annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"pinAnnotationReuseIndentifier"];
+          }
+      } else {
+          annotationView = (MAAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"customAnnotationReuseIndentifier"];
+          if (annotationView == nil) {
+              annotationView = [[MAAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"customAnnotationReuseIndentifier"];
+          }
       }
       if (icon != nil) annotationView.image = icon;
       if (draggable != nil) annotationView.draggable = [draggable boolValue];
@@ -3724,15 +3732,13 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       if (rotateAngle != nil) {
           annotationView.transform = CGAffineTransformRotate(CGAffineTransformIdentity, -[rotateAngle doubleValue] / 180.0 * M_PI);
       }
+      // 设置图片大小
+      if (annotationView.image != nil && width != nil && height != nil) {
+          annotationView.frame = CGRectMake(annotationView.frame.origin.x, annotationView.frame.origin.x, [width doubleValue], [height doubleValue]);
+      }
       // 锚点
       if (anchorU != nil && anchorV != nil) {
           annotationView.layer.anchorPoint = CGPointMake([anchorU doubleValue], [anchorV doubleValue]);
-      }
-      
-      // 设置图片大小
-      if (annotationView.image != nil && width != nil && height != nil) {
-        CGSize size = annotationView.imageView.frame.size;
-        annotationView.frame = CGRectMake(annotationView.center.x + size.width / 2, annotationView.center.y, [width doubleValue], [height doubleValue]);
       }
       return annotationView;
   }
