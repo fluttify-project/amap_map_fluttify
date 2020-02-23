@@ -1,3 +1,6 @@
+## 0.17.14
+- fix: 当marker图片过大时, 点击事件只有左上角有效 处理
+
 ## 0.17.13
 - enhance: build.gradle加入国内源
 - enhance: showMyLocation增加定位模式的参数
