@@ -48,50 +48,6 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest ext
   //endregion
 
   //region methods
-  Future<Map> getRequestHead() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest@$refId::getRequestHead([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getRequestHead', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
-  Future<Map> getParams() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest@$refId::getParams([])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getParams', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
   Future<String> getURL() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -167,46 +123,6 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest
   //endregion
 
   //region methods
-  Future<List<Map>> getRequestHead_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getRequestHead_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  Future<List<Map>> getParams_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getParams_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
-    
-      return typedResult;
-    }
-  }
-  
   Future<List<String>> getURL_batch() async {
     // print log
     // if (fluttifyLogEnabled) {

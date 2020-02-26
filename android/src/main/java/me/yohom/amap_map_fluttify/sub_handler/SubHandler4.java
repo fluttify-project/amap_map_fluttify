@@ -1392,70 +1392,6 @@ public class SubHandler4 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getRequestHead", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest@" + refId + "::getRequestHead(" + "" + ")");
-                }
-            
-                // invoke native method
-                Map<String,String> result;
-                try {
-                    result = ref.getRequestHead();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Map<String,String> jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getParams", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest@" + refId + "::getParams(" + "" + ")");
-                }
-            
-                // invoke native method
-                Map<String,String> result;
-                try {
-                    result = ref.getParams();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Map<String,String> jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
             put("com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getURL", (args, methodResult) -> {
                 // args
             
@@ -6807,6 +6743,70 @@ public class SubHandler4 {
                 boolean result;
                 try {
                     result = ref.isTrafficEnabled();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.MapConfig::setTrafficEnabled", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.MapConfig@" + refId + "::setTrafficEnabled(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setTrafficEnabled(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.MapConfig::isNeedUpdateZoomControllerState", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.MapConfig@" + refId + "::isNeedUpdateZoomControllerState(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = ref.isNeedUpdateZoomControllerState();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {

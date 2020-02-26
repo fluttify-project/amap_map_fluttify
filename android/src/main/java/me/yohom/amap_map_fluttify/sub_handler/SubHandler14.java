@@ -31,80 +31,6 @@ public class SubHandler14 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setLabelEnable_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setLabelEnable(var1, var2);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setAllContentEnable_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setAllContentEnable(var1, var2);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
             put("com.autonavi.ae.gmap.GLMapEngine::setProjectionCenter_batch", (argsBatch, methodResult) -> {
                 List<String> resultList = new ArrayList<>();
             
@@ -6289,76 +6215,6 @@ public class SubHandler14 {
                 methodResult.success(resultList);
             });
             // method
-            put("com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getRequestHead_batch", (argsBatch, methodResult) -> {
-                List<Map<String,String>> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest) getHEAP().get(refId);
-            
-                    // invoke native method
-                    Map<String,String> result;
-                    try {
-                        result = ref.getRequestHead();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Map<String,String> jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getParams_batch", (argsBatch, methodResult) -> {
-                List<Map<String,String>> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest) getHEAP().get(refId);
-            
-                    // invoke native method
-                    Map<String,String> result;
-                    try {
-                        result = ref.getParams();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Map<String,String> jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
             put("com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getURL_batch", (argsBatch, methodResult) -> {
                 List<String> resultList = new ArrayList<>();
             
@@ -7212,6 +7068,152 @@ public class SubHandler14 {
             
                     // convert result to jsonable result
                     int jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.tools.GLConvertUtil::getLong_batch", (argsBatch, methodResult) -> {
+                List<Long> resultList = new ArrayList<>();
+            
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // args
+                    // jsonable arg
+                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                    // ref
+            
+            
+                    // invoke native method
+                    long result;
+                    try {
+                        result = com.autonavi.amap.mapcore.tools.GLConvertUtil.getLong(var0, var1);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    long jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt2_batch", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // args
+                    // jsonable arg
+                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                    // ref
+            
+            
+                    // invoke native method
+                    int result;
+                    try {
+                        result = com.autonavi.amap.mapcore.tools.GLConvertUtil.getInt2(var0, var1);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    int jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.tools.GLConvertUtil::getUShort_batch", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // args
+                    // jsonable arg
+                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                    // ref
+            
+            
+                    // invoke native method
+                    int result;
+                    try {
+                        result = com.autonavi.amap.mapcore.tools.GLConvertUtil.getUShort(var0, var1);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    int jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.tools.GLConvertUtil::convertInt_batch", (argsBatch, methodResult) -> {
+                List<byte[]> resultList = new ArrayList<>();
+            
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // args
+                    // jsonable arg
+                    int var0 = (int) ((Map<String, Object>) args).get("var0");
+            
+                    // ref
+            
+            
+                    // invoke native method
+                    byte[] result;
+                    try {
+                        result = com.autonavi.amap.mapcore.tools.GLConvertUtil.convertInt(var0);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    byte[] jsonableResult = result;
             
                     resultList.add(jsonableResult);
                 }

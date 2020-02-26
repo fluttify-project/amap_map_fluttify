@@ -158,6 +158,36 @@ extern BOOL enableLog;
       
           methodResult(jsonableResult);
       },
+      @"MAHeatMapGradient::initWithColorAndWithStartPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // args
+          // list arg
+          NSArray<NSNumber*>* colorsRefArray = (NSArray<NSNumber*> *) args[@"colors"];
+          NSMutableArray<UIColor*>* colors = [NSMutableArray arrayWithCapacity:colorsRefArray.count];
+          for (int i = 0; i < colorsRefArray.count; i++) {
+              UIColor* item = (UIColor*) HEAP[[colorsRefArray objectAtIndex:i]];
+              [colors addObject:item];
+          }
+          // jsonable arg
+          NSNumber* startPoints = (NSNumber*) args[@"startPoints"];
+      
+          // ref
+          MAHeatMapGradient* ref = (MAHeatMapGradient*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAHeatMapGradient@%@::initWithColor(暂未实现参数打印)", args[@"refId"]);
+          }
+      
+          // invoke native method
+          MAHeatMapGradient* result = [ref initWithColor: colors andWithStartPoints: startPoints];
+      
+          // result
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          NSNumber* jsonableResult = @((result).hash);
+      
+          methodResult(jsonableResult);
+      },
       @"MAMapStatus::statusWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // struct arg
@@ -5624,6 +5654,39 @@ extern BOOL enableLog;
       
               // invoke native method
               MAPolygonRenderer* result = [ref initWithPolygon: polygon];
+      
+              // result
+              // return a ref
+              HEAP[@((result).hash)] = result;
+              NSNumber* jsonableResult = @((result).hash);
+      
+              [resultList addObject:jsonableResult];
+          }
+      
+          methodResult(resultList);
+      },
+      @"MAHeatMapGradient::initWithColorAndWithStartPoints_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+          NSMutableArray* resultList = [NSMutableArray array];
+      
+          for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+              NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+      
+              // args
+              // list arg
+              NSArray<NSNumber*>* colorsRefArray = (NSArray<NSNumber*> *) args[@"colors"];
+              NSMutableArray<UIColor*>* colors = [NSMutableArray arrayWithCapacity:colorsRefArray.count];
+              for (int i = 0; i < colorsRefArray.count; i++) {
+                  UIColor* item = (UIColor*) HEAP[[colorsRefArray objectAtIndex:i]];
+                  [colors addObject:item];
+              }
+              // jsonable arg
+              NSNumber* startPoints = (NSNumber*) args[@"startPoints"];
+      
+              // ref
+              MAHeatMapGradient* ref = (MAHeatMapGradient*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+              // invoke native method
+              MAHeatMapGradient* result = [ref initWithColor: colors andWithStartPoints: startPoints];
       
               // result
               // return a ref
@@ -11408,6 +11471,23 @@ extern BOOL enableLog;
           methodResult(jsonableResult);
       },
       
+      @"MAHeatMapGradient::get_startPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAHeatMapGradient::get_startPoints");
+          }
+      
+          // ref object
+          MAHeatMapGradient* ref = (MAHeatMapGradient*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          NSArray<NSNumber*>* result = ref.startPoints;
+      
+          // 返回值: jsonable
+          id jsonableResult = result;
+      
+          methodResult(jsonableResult);
+      },
+      
       @"MAHeatMapTileOverlay::get_data": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -12054,6 +12134,23 @@ extern BOOL enableLog;
           methodResult(jsonableResult);
       },
       
+      @"MAMultiTexturePolylineRenderer::get_strokeTextureIDs": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiTexturePolylineRenderer::get_strokeTextureIDs");
+          }
+      
+          // ref object
+          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          NSArray<NSNumber*>* result = ref.strokeTextureIDs;
+      
+          // 返回值: jsonable
+          id jsonableResult = result;
+      
+          methodResult(jsonableResult);
+      },
+      
       @"MAOfflineProvince::get_cities": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -12225,6 +12322,23 @@ extern BOOL enableLog;
           MATouchPoi* ref = (MATouchPoi*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
           NSString* result = ref.uid;
+      
+          // 返回值: jsonable
+          id jsonableResult = result;
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAMultiPolyline::get_drawStyleIndexes": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPolyline::get_drawStyleIndexes");
+          }
+      
+          // ref object
+          MAMultiPolyline* ref = (MAMultiPolyline*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          NSArray<NSNumber*>* result = ref.drawStyleIndexes;
       
           // 返回值: jsonable
           id jsonableResult = result;
@@ -15099,6 +15213,40 @@ extern BOOL enableLog;
           methodResult(jsonableResult);
       },
       
+      @"MAMapView::get_isShowsWorldMap": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isShowsWorldMap");
+          }
+      
+          // ref object
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          NSNumber* result = ref.showsWorldMap;
+      
+          // 返回值: jsonable
+          id jsonableResult = result;
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAMapView::get_mapLanguage": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_mapLanguage");
+          }
+      
+          // ref object
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          NSNumber* result = ref.mapLanguage;
+      
+          // 返回值: jsonable
+          id jsonableResult = result;
+      
+          methodResult(jsonableResult);
+      },
+      
       @"MAMapView::get_annotations": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -15987,6 +16135,26 @@ extern BOOL enableLog;
           methodResult(resultList);
       },
       
+      @"MAHeatMapGradient::get_startPoints_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+          NSMutableArray* resultList = [NSMutableArray array];
+      
+          for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+              NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+      
+              // ref object
+              MAHeatMapGradient* ref = (MAHeatMapGradient*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+              NSArray<NSNumber*>* result = ref.startPoints;
+      
+              // 返回值: jsonable
+              id jsonableResult = result;
+      
+              [resultList addObject:jsonableResult];
+          }
+      
+          methodResult(resultList);
+      },
+      
       @"MAHeatMapTileOverlay::get_data_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
           NSMutableArray* resultList = [NSMutableArray array];
       
@@ -16738,6 +16906,26 @@ extern BOOL enableLog;
           methodResult(resultList);
       },
       
+      @"MAMultiTexturePolylineRenderer::get_strokeTextureIDs_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+          NSMutableArray* resultList = [NSMutableArray array];
+      
+          for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+              NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+      
+              // ref object
+              MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+              NSArray<NSNumber*>* result = ref.strokeTextureIDs;
+      
+              // 返回值: jsonable
+              id jsonableResult = result;
+      
+              [resultList addObject:jsonableResult];
+          }
+      
+          methodResult(resultList);
+      },
+      
       @"MAOfflineProvince::get_cities_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
           NSMutableArray* resultList = [NSMutableArray array];
       
@@ -16936,6 +17124,26 @@ extern BOOL enableLog;
               MATouchPoi* ref = (MATouchPoi*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
               NSString* result = ref.uid;
+      
+              // 返回值: jsonable
+              id jsonableResult = result;
+      
+              [resultList addObject:jsonableResult];
+          }
+      
+          methodResult(resultList);
+      },
+      
+      @"MAMultiPolyline::get_drawStyleIndexes_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+          NSMutableArray* resultList = [NSMutableArray array];
+      
+          for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+              NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+      
+              // ref object
+              MAMultiPolyline* ref = (MAMultiPolyline*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+              NSArray<NSNumber*>* result = ref.drawStyleIndexes;
       
               // 返回值: jsonable
               id jsonableResult = result;
@@ -20290,6 +20498,46 @@ extern BOOL enableLog;
           methodResult(resultList);
       },
       
+      @"MAMapView::get_isShowsWorldMap_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+          NSMutableArray* resultList = [NSMutableArray array];
+      
+          for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+              NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+      
+              // ref object
+              MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+              NSNumber* result = ref.showsWorldMap;
+      
+              // 返回值: jsonable
+              id jsonableResult = result;
+      
+              [resultList addObject:jsonableResult];
+          }
+      
+          methodResult(resultList);
+      },
+      
+      @"MAMapView::get_mapLanguage_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+          NSMutableArray* resultList = [NSMutableArray array];
+      
+          for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+              NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+      
+              // ref object
+              MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+              NSNumber* result = ref.mapLanguage;
+      
+              // 返回值: jsonable
+              id jsonableResult = result;
+      
+              [resultList addObject:jsonableResult];
+          }
+      
+          methodResult(resultList);
+      },
+      
       @"MAMapView::get_annotations_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
           NSMutableArray* resultList = [NSMutableArray array];
       
@@ -21493,6 +21741,23 @@ extern BOOL enableLog;
           MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
           ref.strokeTextureImages = strokeTextureImages;
+          methodResult(@"success");
+      },
+      
+      @"MAMultiPolyline::set_drawStyleIndexes": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMultiPolyline::set_drawStyleIndexes");
+          }
+      
+          // args
+          // jsonable arg
+          NSNumber* drawStyleIndexes = (NSNumber*) args[@"drawStyleIndexes"];
+      
+          // ref
+          MAMultiPolyline* ref = (MAMultiPolyline*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.drawStyleIndexes = drawStyleIndexes;
           methodResult(@"success");
       },
       
@@ -23658,6 +23923,40 @@ extern BOOL enableLog;
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
           ref.screenAnchor = screenAnchor;
+          methodResult(@"success");
+      },
+      
+      @"MAMapView::set_showsWorldMap": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsWorldMap");
+          }
+      
+          // args
+          // jsonable arg
+          NSNumber* showsWorldMap = (NSNumber*) args[@"showsWorldMap"];
+      
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.showsWorldMap = showsWorldMap;
+          methodResult(@"success");
+      },
+      
+      @"MAMapView::set_mapLanguage": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_mapLanguage");
+          }
+      
+          // args
+          // jsonable arg
+          NSNumber* mapLanguage = (NSNumber*) args[@"mapLanguage"];
+      
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.mapLanguage = mapLanguage;
           methodResult(@"success");
       },
       

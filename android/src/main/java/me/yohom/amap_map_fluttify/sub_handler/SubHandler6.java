@@ -31,78 +31,6 @@ public class SubHandler6 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleEmissionModule", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleEmissionModule(" + var0 + var1 + ")");
-                }
-            
-                // invoke native method
-                long result;
-                try {
-                    result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateParticleEmissionModule(var0, var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                long jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateSinglePointParticleShape", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                boolean var3 = (boolean) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateSinglePointParticleShape(" + var0 + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                long result;
-                try {
-                    result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateSinglePointParticleShape(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                long jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRectParticleShape", (args, methodResult) -> {
                 // args
                 // jsonable arg
@@ -6633,6 +6561,81 @@ public class SubHandler6 {
             
                 // convert result to jsonable result
                 int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.interfaces.IMarker::setIcons", (args, methodResult) -> {
+                // args
+                // list arg
+                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
+                List<com.amap.api.maps.model.BitmapDescriptor> var1 = new ArrayList<>();
+                for (int refId : var1RefIdList) {
+                    var1.add((com.amap.api.maps.model.BitmapDescriptor) getHEAP().get(refId));
+                }
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.autonavi.amap.mapcore.interfaces.IMarker ref = (com.autonavi.amap.mapcore.interfaces.IMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarker@" + refId + "::setIcons(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setIcons(new ArrayList(var1));
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.interfaces.IMarker::getIcons", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.autonavi.amap.mapcore.interfaces.IMarker ref = (com.autonavi.amap.mapcore.interfaces.IMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarker@" + refId + "::getIcons(" + "" + ")");
+                }
+            
+                // invoke native method
+                List<com.amap.api.maps.model.BitmapDescriptor> result;
+                try {
+                    result = ref.getIcons();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                List<Integer> jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = new ArrayList<>();
+                    for (com.amap.api.maps.model.BitmapDescriptor item : result) {
+                        getHEAP().put(item.hashCode(), item);
+                        jsonableResult.add(item.hashCode());
+                    }
+                }
             
                 methodResult.success(jsonableResult);
             });

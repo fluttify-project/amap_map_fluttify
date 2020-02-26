@@ -256,6 +256,18 @@ class MAMapView extends UIView  {
     return CGPoint()..refId = result..tag = 'amap_map_fluttify';
   }
   
+  Future<num> get_showsWorldMap({bool viewChannel = true}) async {
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isShowsWorldMap", {'refId': refId});
+  
+    return result;
+  }
+  
+  Future<num> get_mapLanguage({bool viewChannel = true}) async {
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_mapLanguage", {'refId': refId});
+  
+    return result;
+  }
+  
   Future<List> get_annotations({bool viewChannel = true}) async {
     final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_annotations", {'refId': refId});
     kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
@@ -901,6 +913,18 @@ class MAMapView extends UIView  {
   
   Future<void> set_screenAnchor(CGPoint screenAnchor, {bool viewChannel = true}) async {
     await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_screenAnchor', {'refId': refId, "screenAnchor": screenAnchor.refId});
+  
+  
+  }
+  
+  Future<void> set_showsWorldMap(num showsWorldMap, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_showsWorldMap', {'refId': refId, "showsWorldMap": showsWorldMap});
+  
+  
+  }
+  
+  Future<void> set_mapLanguage(num mapLanguage, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_mapLanguage', {'refId': refId, "mapLanguage": mapLanguage});
   
   
   }
@@ -2579,6 +2603,20 @@ extension MAMapView_Batch on List<MAMapView> {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_screenAnchor_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => CGPoint()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  Future<List<num>> get_showsWorldMap_batch({bool viewChannel = true}) async {
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_isShowsWorldMap_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<num>> get_mapLanguage_batch({bool viewChannel = true}) async {
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_mapLanguage_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => result).toList();
+  
     return typedResult;
   }
   
