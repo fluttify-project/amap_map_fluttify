@@ -14,7 +14,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.17.15+b961bcc"
+    version: "0.17.16+b961bcc"
   archive:
     dependency: transitive
     description:
@@ -160,7 +160,7 @@ packages:
       name: foundation_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.12+1"
+    version: "0.4.13"
   http:
     dependency: transitive
     description:

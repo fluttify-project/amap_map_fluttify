@@ -3773,6 +3773,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 7上绑的是自定义数据, 这里不需要
   NSNumber* width = objc_getAssociatedObject(annotation, (const void *) 8);
   NSNumber* height = objc_getAssociatedObject(annotation, (const void *) 9);
+  NSNumber* visible = objc_getAssociatedObject(annotation, (const void *) 10);
 
   //用户当前位置大头针
   if ([annotation isKindOfClass:[MAUserLocation class]]) {
@@ -3807,6 +3808,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       // 锚点
       if (anchorU != nil && anchorV != nil) {
           annotationView.layer.anchorPoint = CGPointMake([anchorU doubleValue], [anchorV doubleValue]);
+      }
+      // 是否可见
+      if (visible != nil) {
+          annotationView.hidden = ![visible boolValue];
       }
       return annotationView;
   }
