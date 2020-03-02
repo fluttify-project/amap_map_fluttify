@@ -1,3 +1,7 @@
+## 0.17.16
+- feat: Marker添加更改坐标的方法
+- feat: Marker添加setVisible方法, 设置marker是否可见
+
 ## 0.17.15
 - enhance: 借用新的release_batch方法释放对象, 提升性能
 
