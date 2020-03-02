@@ -446,6 +446,14 @@ class Marker {
     );
   }
 
+  Future<void> setVisible(bool visible) async {
+    assert(visible != null);
+    return platform(
+      android: (_) => _androidModel.setVisible(visible),
+      ios: (_) => _annotationView.setHidden(!visible),
+    );
+  }
+
   Future<void> showInfoWindow() async {
     return platform(
       android: (_) => _androidModel.showInfoWindow(),

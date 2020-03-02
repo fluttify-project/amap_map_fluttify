@@ -20,6 +20,7 @@ class DrawPointScreen extends StatefulWidget {
 class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
   AmapController _controller;
   List<Marker> _markers = [];
+  Marker _hiddenMarker;
 
   @override
   Widget build(BuildContext context) {
@@ -90,6 +91,29 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                   title: Center(child: Text('移动Marker坐标')),
                   onTap: () async {
                     await _markers?.first?.setCoordinate(getNextLatLng());
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('添加一个不显示的marker')),
+                  onTap: () async {
+                    await _hiddenMarker?.remove();
+                    _hiddenMarker = await _controller?.addMarker(
+                      MarkerOption(
+                        latLng: getNextLatLng(),
+                        title: '北京',
+                        snippet: '描述',
+                        iconUri: _assetsIcon1,
+                        imageConfig: createLocalImageConfiguration(context),
+                        visible: false,
+                      ),
+                    );
+                  },
+                ),
+                BooleanSetting(
+                  head: '是否显示隐藏的Marker',
+                  selected: false,
+                  onSelected: (visible) async {
+                    await _hiddenMarker?.setVisible(visible);
                   },
                 ),
                 ListTile(

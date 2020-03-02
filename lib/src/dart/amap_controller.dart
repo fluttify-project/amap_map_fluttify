@@ -744,10 +744,10 @@ class AmapController with WidgetsBindingObserver, _Private {
         if (option.rotateAngle != null) {
           await markerOption.rotateAngle(option.rotateAngle);
         }
-        // 是否可见
-        await markerOption.visible(option.visible);
         // 锚点 和ios端统一为默认0.5
         await markerOption.anchor(option.anchorU ?? 0.5, option.anchorV ?? 0.5);
+        // 是否可见
+        await markerOption.visible(option.visible);
 
         final marker = await map.addMarker(markerOption);
 
@@ -772,20 +772,20 @@ class AmapController with WidgetsBindingObserver, _Private {
         );
 
         // 创建marker
-        final anotation = await MAPointAnnotation.create__();
+        final annotation = await MAPointAnnotation.create__();
 
         final coordinate = await CLLocationCoordinate2D.create(lat, lng);
 
         // 设置经纬度
-        await anotation.set_coordinate(coordinate);
+        await annotation.set_coordinate(coordinate);
 
         // 设置标题
         if (option.title != null) {
-          await anotation.set_title(option.title);
+          await annotation.set_title(option.title);
         }
         // 设置副标题
         if (option.snippet != null) {
-          await anotation.set_subtitle(option.snippet);
+          await annotation.set_subtitle(option.snippet);
         }
         // 设置图片
         // 普通图片
@@ -796,7 +796,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           final icon = await UIImage.create(iconData);
 
           // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-          await anotation.addProperty(1, icon);
+          await annotation.addProperty(1, icon);
 
           pool..add(icon);
         }
@@ -807,41 +807,41 @@ class AmapController with WidgetsBindingObserver, _Private {
           final icon = await UIImage.create(iconData);
 
           // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-          await anotation.addProperty(1, icon);
+          await annotation.addProperty(1, icon);
 
           pool..add(icon);
         }
         // 是否可拖拽
         if (option.draggable != null) {
-          await anotation.addJsonableProperty(2, option.draggable);
+          await annotation.addJsonableProperty(2, option.draggable);
         }
         // 旋转角度
         if (option.rotateAngle != null) {
-          await anotation.addJsonableProperty(3, option.rotateAngle);
+          await annotation.addJsonableProperty(3, option.rotateAngle);
         }
         // 是否允许弹窗
         if (option.infoWindowEnabled != null) {
-          anotation.addJsonableProperty(4, option.infoWindowEnabled);
+          annotation.addJsonableProperty(4, option.infoWindowEnabled);
         }
         // 锚点
         if (option.anchorU != null || option.anchorV != null) {
-          await anotation.addJsonableProperty(5, option.anchorU);
-          await anotation.addJsonableProperty(6, option.anchorV);
+          await annotation.addJsonableProperty(5, option.anchorU);
+          await annotation.addJsonableProperty(6, option.anchorV);
         }
         // 自定义数据
         if (option.object != null) {
-          await anotation.addJsonableProperty(7, option.object);
+          await annotation.addJsonableProperty(7, option.object);
         }
         // 宽高
         if (option.width != null && option.height != null) {
-          await anotation.addJsonableProperty(8, option.width);
-          await anotation.addJsonableProperty(9, option.height);
+          await annotation.addJsonableProperty(8, option.width);
+          await annotation.addJsonableProperty(9, option.height);
         }
         // 是否可见
-        await anotation.addJsonableProperty(10, option.visible);
+        await annotation.addJsonableProperty(10, option.visible);
 
         // 添加marker
-        await iosController.addAnnotation(anotation);
+        await iosController.addAnnotation(annotation);
 
         // 等待添加完成 获取对应的view
         final annotationViewList =
@@ -849,7 +849,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // pointAnnotation不释放, 还有用
         pool.add(coordinate);
 
-        return Marker.ios(anotation, annotationViewList[0], iosController);
+        return Marker.ios(annotation, annotationViewList[0], iosController);
       },
     );
   }
@@ -918,6 +918,8 @@ class AmapController with WidgetsBindingObserver, _Private {
           if (option.draggable != null) {
             await markerOption.draggable(option.draggable);
           }
+          // 是否可见
+          await markerOption.visible(option.visible);
 
           androidOptions.add(markerOption);
 
@@ -952,20 +954,20 @@ class AmapController with WidgetsBindingObserver, _Private {
           final lng = option.latLng.longitude;
 
           // 创建marker
-          final pointAnnotation = await MAPointAnnotation.create__();
+          final annotation = await MAPointAnnotation.create__();
 
           final coordinate = await CLLocationCoordinate2D.create(lat, lng);
 
           // 设置经纬度
-          await pointAnnotation.set_coordinate(coordinate);
+          await annotation.set_coordinate(coordinate);
 
           // 设置标题
           if (option.title != null) {
-            await pointAnnotation.set_title(option.title);
+            await annotation.set_title(option.title);
           }
           // 设置副标题
           if (option.snippet != null) {
-            await pointAnnotation.set_subtitle(option.snippet);
+            await annotation.set_subtitle(option.snippet);
           }
           // 设置图片
           // 普通图片
@@ -976,7 +978,7 @@ class AmapController with WidgetsBindingObserver, _Private {
             final icon = await UIImage.create(iconData);
 
             // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-            await pointAnnotation.addProperty(1, icon);
+            await annotation.addProperty(1, icon);
 
             pool..add(icon);
           }
@@ -987,38 +989,40 @@ class AmapController with WidgetsBindingObserver, _Private {
             final icon = await UIImage.create(iconData);
 
             // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-            await pointAnnotation.addProperty(1, icon);
+            await annotation.addProperty(1, icon);
 
             pool..add(icon);
           }
           // 是否可拖拽
           if (option.draggable != null) {
-            await pointAnnotation.addJsonableProperty(2, option.draggable);
+            await annotation.addJsonableProperty(2, option.draggable);
           }
           // 旋转角度
           if (option.rotateAngle != null) {
-            await pointAnnotation.addJsonableProperty(3, option.rotateAngle);
+            await annotation.addJsonableProperty(3, option.rotateAngle);
           }
           // 是否允许弹窗
           if (option.infoWindowEnabled != null) {
-            pointAnnotation.addJsonableProperty(4, option.infoWindowEnabled);
+            annotation.addJsonableProperty(4, option.infoWindowEnabled);
           }
           // 锚点
           if (option.anchorU != null || option.anchorV != null) {
-            await pointAnnotation.addJsonableProperty(5, option.anchorU);
-            await pointAnnotation.addJsonableProperty(6, option.anchorV);
+            await annotation.addJsonableProperty(5, option.anchorU);
+            await annotation.addJsonableProperty(6, option.anchorV);
           }
           // 自定义数据
           if (option.object != null) {
-            await pointAnnotation.addJsonableProperty(7, option.object);
+            await annotation.addJsonableProperty(7, option.object);
           }
           // 宽高
           if (option.width != null && option.height != null) {
-            await pointAnnotation.addJsonableProperty(8, option.width);
-            await pointAnnotation.addJsonableProperty(9, option.height);
+            await annotation.addJsonableProperty(8, option.width);
+            await annotation.addJsonableProperty(9, option.height);
           }
+          // 是否可见
+          await annotation.addJsonableProperty(10, option.visible);
 
-          iosOptions.add(pointAnnotation);
+          iosOptions.add(annotation);
 
           // pointAnnotation不释放, 还有用
           pool..add(coordinate);
@@ -2080,7 +2084,8 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   OnMarkerClicked _onInfoWindowClicked;
 
   MAMapView _iosController;
-  final _annotationViewStream = StreamController<List<MAAnnotationView>>();
+  final _annotationViewStream =
+      StreamController<List<MAAnnotationView>>.broadcast();
 
   @override
   Future<void> mapViewDidAddAnnotationViews(
