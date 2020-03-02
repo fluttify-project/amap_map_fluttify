@@ -220,8 +220,9 @@ class _AmapViewState extends State<AmapView> {
   void dispose() {
     final isCurrentPlugin = (it) => it.tag == 'amap_map_fluttify';
     kNativeObjectPool
-      ..where(isCurrentPlugin).forEach((it) => it.release())
-      ..removeWhere(isCurrentPlugin);
+        .where(isCurrentPlugin)
+        .release_batch()
+        .then((_) => kNativeObjectPool.removeWhere(isCurrentPlugin));
     super.dispose();
   }
 

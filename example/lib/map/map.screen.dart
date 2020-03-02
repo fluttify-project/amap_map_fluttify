@@ -4,6 +4,7 @@ import 'package:amap_map_fluttify_example/widgets/function_item.widget.dart';
 import 'package:flutter/material.dart';
 
 import 'create_map/create_map.screen.dart';
+import 'create_map/multi_map.screen.dart';
 import 'draw_on_map/draw_circle.screen.dart';
 import 'draw_on_map/draw_point.screen.dart';
 import 'draw_on_map/draw_polygon.screen.dart';
@@ -29,6 +30,11 @@ class MapDemo extends StatelessWidget {
               sublabel: 'CreateMapScreen',
               target: CreateMapScreen(),
             ),
+//            FunctionItem(
+//              label: '显示多地图',
+//              sublabel: 'MultiMapScreen',
+//              target: MultiMapScreen(),
+//            ),
           ],
         ),
         SPACE_BIG,

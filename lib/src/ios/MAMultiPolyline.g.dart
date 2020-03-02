@@ -40,10 +40,20 @@ class MAMultiPolyline extends MAPolyline  {
   //endregion
 
   //region getters
+  Future<List<num>> get_drawStyleIndexes() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPolyline::get_drawStyleIndexes", {'refId': refId});
+  
+    return (result as List).cast<num>();
+  }
   
   //endregion
 
   //region setters
+  Future<void> set_drawStyleIndexes(List<num> drawStyleIndexes) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPolyline::set_drawStyleIndexes', {'refId': refId, "drawStyleIndexes": drawStyleIndexes});
+  
+  
+  }
   
   //endregion
 
@@ -54,6 +64,12 @@ class MAMultiPolyline extends MAPolyline  {
 
 extension MAMultiPolyline_Batch on List<MAMultiPolyline> {
   //region getters
+  Future<List<List<num>>> get_drawStyleIndexes_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPolyline::get_drawStyleIndexes_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => (result as List).cast<num>()).toList();
+  
+    return typedResult;
+  }
   
   //endregion
 

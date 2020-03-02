@@ -2209,6 +2209,40 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(jsonableResult);
       },
       
+      @"MAMapView::get_isShowsWorldMap": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_isShowsWorldMap");
+          }
+      
+          // ref object
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          NSNumber* result = ref.showsWorldMap;
+      
+          // 返回值: jsonable
+          id jsonableResult = result;
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAMapView::get_mapLanguage": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::get_mapLanguage");
+          }
+      
+          // ref object
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          NSNumber* result = ref.mapLanguage;
+      
+          // 返回值: jsonable
+          id jsonableResult = result;
+      
+          methodResult(jsonableResult);
+      },
+      
       @"MAMapView::get_annotations": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -3128,6 +3162,40 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
           ref.screenAnchor = screenAnchor;
+          methodResult(@"success");
+      },
+      
+      @"MAMapView::set_showsWorldMap": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_showsWorldMap");
+          }
+      
+          // args
+          // jsonable arg
+          NSNumber* showsWorldMap = (NSNumber*) args[@"showsWorldMap"];
+      
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.showsWorldMap = showsWorldMap;
+          methodResult(@"success");
+      },
+      
+      @"MAMapView::set_mapLanguage": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAMapView::set_mapLanguage");
+          }
+      
+          // args
+          // jsonable arg
+          NSNumber* mapLanguage = (NSNumber*) args[@"mapLanguage"];
+      
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.mapLanguage = mapLanguage;
           methodResult(@"success");
       },
       
