@@ -44,6 +44,9 @@ class MarkerOption {
   /// 是否允许弹窗
   final bool infoWindowEnabled;
 
+  /// 是否可见
+  final bool visible;
+
   /// 旋转角度 单位为度(°)
   final double rotateAngle;
 
@@ -71,6 +74,7 @@ class MarkerOption {
     this.imageConfig,
     this.draggable,
     this.infoWindowEnabled = true,
+    this.visible = true,
     this.rotateAngle,
     this.anchorU,
     this.anchorV,
@@ -85,7 +89,7 @@ class MarkerOption {
 
   @override
   String toString() {
-    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, imageConfig: $imageConfig, widget: $widget, draggable: $draggable, infoWindowEnabled: $infoWindowEnabled, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV, object: $object, width: $width, height: $height}';
+    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, imageConfig: $imageConfig, widget: $widget, draggable: $draggable, infoWindowEnabled: $infoWindowEnabled, visible: $visible, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV, object: $object, width: $width, height: $height}';
   }
 }
 
@@ -365,10 +369,11 @@ class MapLocation {
 class Marker {
   Marker.android(this._androidModel);
 
-  Marker.ios(this._iosModel, this._iosController);
+  Marker.ios(this._iosModel, this._annotationView, this._iosController);
 
   com_amap_api_maps_model_Marker _androidModel;
   MAPointAnnotation _iosModel;
+  MAAnnotationView _annotationView;
   MAMapView _iosController;
 
   Future<String> get title {
@@ -418,6 +423,26 @@ class Marker {
     return platform(
       android: (_) => _androidModel.remove(),
       ios: (_) => _iosController.removeAnnotation(_iosModel),
+    );
+  }
+
+  Future<void> setCoordinate(LatLng coord) async {
+    assert(coord != null);
+    return platform(
+      android: (_) async => _androidModel.setPosition(
+        await com_amap_api_maps_model_LatLng.create__double__double(
+          coord.latitude,
+          coord.longitude,
+        ),
+      ),
+      ios: (_) async {
+        final coordinate = await CLLocationCoordinate2D.create(
+          coord.latitude,
+          coord.longitude,
+        );
+        await _iosModel.set_coordinate(coordinate);
+        return _annotationView.set_annotation(_iosModel);
+      },
     );
   }
 

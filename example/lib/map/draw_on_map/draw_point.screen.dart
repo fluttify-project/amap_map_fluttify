@@ -87,6 +87,12 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                   },
                 ),
                 ListTile(
+                  title: Center(child: Text('移动Marker坐标')),
+                  onTap: () async {
+                    await _markers?.first?.setCoordinate(getNextLatLng());
+                  },
+                ),
+                ListTile(
                   title: Center(child: Text('调用方法开启弹窗')),
                   onTap: () async {
                     if (_markers.isNotEmpty) {
