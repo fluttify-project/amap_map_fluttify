@@ -7,6 +7,7 @@ package me.yohom.amap_map_fluttify;
 import android.content.Context;
 import android.view.View;
 import android.util.Log;
+import android.app.Activity;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -27,28 +28,30 @@ import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableL
 @SuppressWarnings("ALL")
 class TextureMapViewFactory extends PlatformViewFactory {
 
-    TextureMapViewFactory(BinaryMessenger messenger) {
+    TextureMapViewFactory(BinaryMessenger messenger, Activity activity) {
         super(StandardMessageCodec.INSTANCE);
 
         this.messenger = messenger;
+        this.activity = activity;
 
         new MethodChannel(messenger, "me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView").setMethodCallHandler((methodCall, methodResult) -> {
-                    Map<String, Object> args = (Map<String, Object>) methodCall.arguments;
-                    AmapMapFluttifyPlugin.Handler handler = handlerMap.get(methodCall.method);
-                    if (handler != null) {
-                        try {
-                            handler.call(args, methodResult);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            methodResult.error(e.getMessage(), null, null);
-                        }
-                    } else {
-                        methodResult.notImplemented();
+                Map<String, Object> args = (Map<String, Object>) methodCall.arguments;
+                AmapMapFluttifyPlugin.Handler handler = handlerMap.get(methodCall.method);
+                if (handler != null) {
+                    try {
+                        handler.call(args, methodResult);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        methodResult.error(e.getMessage(), null, null);
                     }
-                });
+                } else {
+                    methodResult.notImplemented();
+                }
+            });
     }
 
     private BinaryMessenger messenger;
+    private Activity activity;
 
     private final Map<String, AmapMapFluttifyPlugin.Handler> handlerMap = new HashMap<String, AmapMapFluttifyPlugin.Handler>() {{
         // method
@@ -310,12 +313,12 @@ class TextureMapViewFactory extends PlatformViewFactory {
     }};
 
     @Override
-    public PlatformView create(Context context, int id, Object params) {
+    public PlatformView create(Context __, int id, Object params) {
         Map<String, Object> args = (Map<String, Object>) params;
         // ref arg
         com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
 
-        com.amap.api.maps.TextureMapView view = new com.amap.api.maps.TextureMapView(context, var2);
+        com.amap.api.maps.TextureMapView view = new com.amap.api.maps.TextureMapView(activity, var2);
         getHEAP().put(id, view);
         return new PlatformView() {
 

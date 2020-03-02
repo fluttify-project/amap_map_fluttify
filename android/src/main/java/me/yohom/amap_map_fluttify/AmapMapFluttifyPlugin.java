@@ -6,6 +6,7 @@ package me.yohom.amap_map_fluttify;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.app.Activity;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -15,6 +16,8 @@ import java.util.Map;
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
+import io.flutter.embedding.engine.plugins.activity.ActivityAware;
+import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
 import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
@@ -27,9 +30,7 @@ import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableL
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
 
 @SuppressWarnings("ALL")
-public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodCallHandler {
-
-    private BinaryMessenger messenger;
+public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodCallHandler, ActivityAware {
 
     private static final List<Map<String, Handler>> handlerMapList = new ArrayList<>();
 
@@ -38,8 +39,13 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         final MethodChannel channel = new MethodChannel(registrar.messenger(), "me.yohom/amap_map_fluttify");
 
         AmapMapFluttifyPlugin plugin = new AmapMapFluttifyPlugin();
+
         BinaryMessenger messenger = registrar.messenger();
+        PlatformViewRegistry platformViewRegistry = registrar.platformViewRegistry();
+        Activity activity = registrar.activity();
+
         plugin.messenger = messenger;
+        plugin.platformViewRegistry = platformViewRegistry;
 
         handlerMapList.add(SubHandler0.getSubHandler(messenger));
         handlerMapList.add(SubHandler1.getSubHandler(messenger));
@@ -71,12 +77,14 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         channel.setMethodCallHandler(plugin);
 
         // register platform view
-        PlatformViewRegistry platformViewRegistry = registrar.platformViewRegistry();
-        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView", new DownloadProgressViewFactory(messenger));
-        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.TextureMapView", new TextureMapViewFactory(messenger));
-        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.WearMapView", new WearMapViewFactory(messenger));
-        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.MapView", new MapViewFactory(messenger));
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView", new DownloadProgressViewFactory(messenger, activity));
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.TextureMapView", new TextureMapViewFactory(messenger, activity));
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.WearMapView", new WearMapViewFactory(messenger, activity));
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.MapView", new MapViewFactory(messenger, activity));
     }
+
+    private BinaryMessenger messenger;
+    private PlatformViewRegistry platformViewRegistry;
 
     // v2 android embedding
     @Override
@@ -84,6 +92,7 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         final MethodChannel channel = new MethodChannel(binding.getBinaryMessenger(), "me.yohom/amap_map_fluttify");
 
         messenger = binding.getBinaryMessenger();
+        platformViewRegistry = binding.getPlatformViewRegistry();
 
         handlerMapList.add(SubHandler0.getSubHandler(messenger));
         handlerMapList.add(SubHandler1.getSubHandler(messenger));
@@ -113,19 +122,32 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         handlerMapList.add(SubHandler25.getSubHandler(messenger));
 
         channel.setMethodCallHandler(this);
-
-        // register platform view
-        PlatformViewRegistry platformViewRegistry = binding.getPlatformViewRegistry();
-        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView", new DownloadProgressViewFactory(messenger));
-        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.TextureMapView", new TextureMapViewFactory(messenger));
-        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.WearMapView", new WearMapViewFactory(messenger));
-        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.MapView", new MapViewFactory(messenger));
     }
 
     @Override
     public void onDetachedFromEngine(FlutterPluginBinding binding) {
 
     }
+
+    @Override
+    public void onAttachedToActivity(ActivityPluginBinding binding) {
+        Activity activity = binding.getActivity();
+
+        // register platform view
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView", new DownloadProgressViewFactory(messenger, activity));
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.TextureMapView", new TextureMapViewFactory(messenger, activity));
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.WearMapView", new WearMapViewFactory(messenger, activity));
+        platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.MapView", new MapViewFactory(messenger, activity));
+    }
+
+    @Override
+    public void onDetachedFromActivityForConfigChanges() { }
+
+    @Override
+    public void onReattachedToActivityForConfigChanges(ActivityPluginBinding binding) { }
+
+    @Override
+    public void onDetachedFromActivity() { }
 
     @Override
     public void onMethodCall(@NonNull MethodCall methodCall, @NonNull MethodChannel.Result methodResult) {
