@@ -1244,17 +1244,21 @@ class AmapController with WidgetsBindingObserver, _Private {
   ///
   /// 可配置参数详见[PolylineOption]
   Future<Polyline> addPolyline(PolylineOption option) {
+    assert(option != null);
+
+    final latitudeBatch = option.latLngList.map((e) => e.latitude);
+    final longitudeBatch = option.latLngList.map((e) => e.longitude);
+
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
 
         // 构造折线点
-        List<com_amap_api_maps_model_LatLng> latLngList = [];
-        for (final point in option.latLngList) {
-          final latLng = await com_amap_api_maps_model_LatLng
-              .create__double__double(point.latitude, point.longitude);
-          latLngList.add(latLng);
-        }
+        List<com_amap_api_maps_model_LatLng> latLngList =
+            await com_amap_api_maps_model_LatLng.create_batch__double__double(
+          latitudeBatch,
+          longitudeBatch,
+        );
 
         // 构造折线参数
         final polylineOptions =
@@ -1325,12 +1329,9 @@ class AmapController with WidgetsBindingObserver, _Private {
         await iosController.set_delegate(_iosMapDelegate);
 
         // 构造折线点
-        List<CLLocationCoordinate2D> latLngList = [];
-        for (final point in option.latLngList) {
-          final latLng = await CLLocationCoordinate2D.create(
-              point.latitude, point.longitude);
-          latLngList.add(latLng);
-        }
+        List<CLLocationCoordinate2D> latLngList =
+            await CLLocationCoordinate2D.create_batch(
+                latitudeBatch, longitudeBatch);
 
         // 构造折线参数
         final polyline = await MAPolyline.polylineWithCoordinatesCount(
@@ -1392,17 +1393,19 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<Polygon> addPolygon(PolygonOption option) {
     assert(option != null, 'option不能为null');
 
+    final latitudeBatch = option.latLngList.map((e) => e.latitude);
+    final longitudeBatch = option.latLngList.map((e) => e.longitude);
+
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
 
         // 构造折线点
-        List<com_amap_api_maps_model_LatLng> latLngList = [];
-        for (final point in option.latLngList) {
-          final latLng = await com_amap_api_maps_model_LatLng
-              .create__double__double(point.latitude, point.longitude);
-          latLngList.add(latLng);
-        }
+        List<com_amap_api_maps_model_LatLng> latLngList =
+            await com_amap_api_maps_model_LatLng.create_batch__double__double(
+          latitudeBatch,
+          longitudeBatch,
+        );
 
         // 构造参数
         final polygonOptions =
@@ -1439,12 +1442,9 @@ class AmapController with WidgetsBindingObserver, _Private {
         await iosController.set_delegate(_iosMapDelegate);
 
         // 构造折线点
-        List<CLLocationCoordinate2D> latLngList = [];
-        for (final point in option.latLngList) {
-          final latLng = await CLLocationCoordinate2D.create(
-              point.latitude, point.longitude);
-          latLngList.add(latLng);
-        }
+        List<CLLocationCoordinate2D> latLngList =
+            await CLLocationCoordinate2D.create_batch(
+                latitudeBatch, longitudeBatch);
 
         // 构造折线参数
         final polygon = await MAPolygon.polygonWithCoordinatesCount(
