@@ -27,9 +27,9 @@ class MAAnnotationView extends UIView  {
   }
   
   static Future<List<MAAnnotationView>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAAnnotationView', {'length': length});
   
     final List<MAAnnotationView> typedResult = resultBatch.map((result) => MAAnnotationView()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -422,10 +422,9 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
 
   //region methods
   Future<void> setSelectedAnimated_batch(List<bool> selected, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (selected.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setSelectedAnimated_batch', [for (int i = 0; i < this.length; i++) {"selected": selected[i], "animated": animated[i], "refId": this[i].refId}]);
@@ -442,10 +441,9 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
   }
   
   Future<List<NSObject>> initWithAnnotationReuseIdentifier_batch(List<MAAnnotation> annotation, List<String> reuseIdentifier, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (annotation.length != reuseIdentifier.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::initWithAnnotationReuseIdentifier_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "reuseIdentifier": reuseIdentifier[i], "refId": this[i].refId}]);
@@ -462,10 +460,9 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
   }
   
   Future<void> prepareForReuse_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::prepareForReuse_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -482,10 +479,9 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
   }
   
   Future<void> setDragStateAnimated_batch(List<MAAnnotationViewDragState> newDragState, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (newDragState.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setDragStateAnimated_batch', [for (int i = 0; i < this.length; i++) {"newDragState": newDragState[i].index, "animated": animated[i], "refId": this[i].refId}]);

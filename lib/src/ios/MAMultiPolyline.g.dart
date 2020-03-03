@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MAMultiPolyline extends MAPolyline  {
+class MAMultiPolyline extends MAPolyline with MAOverlay, MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MAMultiPolyline extends MAPolyline  {
   }
   
   static Future<List<MAMultiPolyline>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiPolyline', {'length': length});
   
     final List<MAMultiPolyline> typedResult = resultBatch.map((result) => MAMultiPolyline()..refId = result..tag = 'amap_map_fluttify').toList();

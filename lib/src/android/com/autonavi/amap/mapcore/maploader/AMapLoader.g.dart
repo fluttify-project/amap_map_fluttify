@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
   }
   
   static Future<List<com_autonavi_amap_mapcore_maploader_AMapLoader>> create_batch__int__com_autonavi_ae_gmap_GLMapEngine__com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam(List<int> var1, List<com_autonavi_ae_gmap_GLMapEngine> var2, List<com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam> var3) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_AMapLoader__int__com_autonavi_ae_gmap_GLMapEngine__com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i].refId, "var3": var3[i].refId}]);
   
     final List<com_autonavi_amap_mapcore_maploader_AMapLoader> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_maploader_AMapLoader()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -206,10 +206,9 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
 
   //region methods
   Future<void> onDownload_batch(List<Uint8List> var1, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::onDownload_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -226,10 +225,9 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
   }
   
   Future<void> onStop_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::onStop_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -246,10 +244,9 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
   }
   
   Future<void> onFinish_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::onFinish_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -266,10 +263,9 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
   }
   
   Future<void> doRequest_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::doRequest_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -286,10 +282,9 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
   }
   
   Future<void> doCancel_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::doCancel_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -306,10 +301,9 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
   }
   
   Future<List<String>> getDeviceId_batch(List<android_content_Context> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::getDeviceId_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);

@@ -27,9 +27,9 @@ class MAMapStatus extends NSObject  {
   }
   
   static Future<List<MAMapStatus>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMapStatus', {'length': length});
   
     final List<MAMapStatus> typedResult = resultBatch.map((result) => MAMapStatus()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -194,10 +194,9 @@ extension MAMapStatus_Batch on List<MAMapStatus> {
 
   //region methods
   Future<List<MAMapStatus>> statusWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<double> rotationDegree, List<double> cameraDegree, List<CGPoint> screenAnchor) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coordinate.length != zoomLevel.length || zoomLevel.length != rotationDegree.length || rotationDegree.length != cameraDegree.length || cameraDegree.length != screenAnchor.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::statusWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "zoomLevel": zoomLevel[i], "rotationDegree": rotationDegree[i], "cameraDegree": cameraDegree[i], "screenAnchor": screenAnchor[i].refId, "refId": this[i].refId}]);
@@ -214,10 +213,9 @@ extension MAMapStatus_Batch on List<MAMapStatus> {
   }
   
   Future<List<NSObject>> initWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<double> rotationDegree, List<double> cameraDegree, List<CGPoint> screenAnchor) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coordinate.length != zoomLevel.length || zoomLevel.length != rotationDegree.length || rotationDegree.length != cameraDegree.length || cameraDegree.length != screenAnchor.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::initWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "zoomLevel": zoomLevel[i], "rotationDegree": rotationDegree[i], "cameraDegree": cameraDegree[i], "screenAnchor": screenAnchor[i].refId, "refId": this[i].refId}]);

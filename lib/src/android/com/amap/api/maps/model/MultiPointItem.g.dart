@@ -27,9 +27,9 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_maps_model_MultiPointItem>> create_batch__com_amap_api_maps_model_LatLng(List<com_amap_api_maps_model_LatLng> var1) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
   
     final List<com_amap_api_maps_model_MultiPointItem> typedResult = resultBatch.map((result) => com_amap_api_maps_model_MultiPointItem()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -322,10 +322,9 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
 
   //region methods
   Future<List<com_amap_api_maps_model_LatLng>> getLatLng_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::getLatLng_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -342,10 +341,9 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   }
   
   Future<void> setLatLng_batch(List<com_amap_api_maps_model_LatLng> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setLatLng_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -362,10 +360,9 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   }
   
   Future<List<String>> getCustomerId_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::getCustomerId_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -382,10 +379,9 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   }
   
   Future<void> setCustomerId_batch(List<String> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setCustomerId_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -402,10 +398,9 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   }
   
   Future<List<String>> getSnippet_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::getSnippet_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -422,10 +417,9 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   }
   
   Future<void> setSnippet_batch(List<String> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setSnippet_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -442,10 +436,9 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   }
   
   Future<List<String>> getTitle_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::getTitle_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -462,10 +455,9 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   }
   
   Future<void> setTitle_batch(List<String> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setTitle_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -482,10 +474,9 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   }
   
   Future<List<com_autonavi_amap_mapcore_IPoint>> getIPoint_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::getIPoint_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -502,10 +493,9 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   }
   
   Future<void> setIPoint_batch(List<com_autonavi_amap_mapcore_IPoint> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setIPoint_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -522,10 +512,9 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   }
   
   Future<List<Object>> getObject_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::getObject_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -542,10 +531,9 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   }
   
   Future<void> setObject_batch(List<Object> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setObject_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);

@@ -27,9 +27,9 @@ class MAUserLocationRepresentation extends NSObject  {
   }
   
   static Future<List<MAUserLocationRepresentation>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAUserLocationRepresentation', {'length': length});
   
     final List<MAUserLocationRepresentation> typedResult = resultBatch.map((result) => MAUserLocationRepresentation()..refId = result..tag = 'amap_map_fluttify').toList();

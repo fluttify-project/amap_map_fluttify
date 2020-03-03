@@ -27,9 +27,9 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   }
   
   static Future<List<com_amap_api_maps_model_ArcOptions>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_ArcOptions__', {'length': length});
   
     final List<com_amap_api_maps_model_ArcOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_ArcOptions()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -322,10 +322,9 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
 
   //region methods
   Future<List<com_amap_api_maps_model_ArcOptions>> point_batch(List<com_amap_api_maps_model_LatLng> var1, List<com_amap_api_maps_model_LatLng> var2, List<com_amap_api_maps_model_LatLng> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::point_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "var2": var2[i].refId, "var3": var3[i].refId, "refId": this[i].refId}]);
@@ -342,10 +341,9 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
   }
   
   Future<List<com_amap_api_maps_model_ArcOptions>> strokeWidth_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::strokeWidth_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -362,10 +360,9 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
   }
   
   Future<List<com_amap_api_maps_model_ArcOptions>> strokeColor_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::strokeColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -382,10 +379,9 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
   }
   
   Future<List<com_amap_api_maps_model_ArcOptions>> zIndex_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::zIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -402,10 +398,9 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
   }
   
   Future<List<com_amap_api_maps_model_ArcOptions>> visible_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::visible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -422,10 +417,9 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
   }
   
   Future<List<double>> getStrokeWidth_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getStrokeWidth_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -442,10 +436,9 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
   }
   
   Future<List<int>> getStrokeColor_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getStrokeColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -462,10 +455,9 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
   }
   
   Future<List<double>> getZIndex_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getZIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -482,10 +474,9 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
   }
   
   Future<List<bool>> isVisible_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::isVisible_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -502,10 +493,9 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
   }
   
   Future<List<com_amap_api_maps_model_LatLng>> getStart_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getStart_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -522,10 +512,9 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
   }
   
   Future<List<com_amap_api_maps_model_LatLng>> getPassed_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getPassed_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -542,10 +531,9 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
   }
   
   Future<List<com_amap_api_maps_model_LatLng>> getEnd_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::getEnd_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

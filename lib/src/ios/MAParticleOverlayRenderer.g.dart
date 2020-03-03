@@ -27,9 +27,9 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
   }
   
   static Future<List<MAParticleOverlayRenderer>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleOverlayRenderer', {'length': length});
   
     final List<MAParticleOverlayRenderer> typedResult = resultBatch.map((result) => MAParticleOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -91,10 +91,9 @@ extension MAParticleOverlayRenderer_Batch on List<MAParticleOverlayRenderer> {
 
   //region methods
   Future<List<MAParticleOverlayRenderer>> initWithParticleOverlay_batch(List<MAParticleOverlay> particleOverlay) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayRenderer::initWithParticleOverlay_batch', [for (int i = 0; i < this.length; i++) {"particleOverlay": particleOverlay[i].refId, "refId": this[i].refId}]);

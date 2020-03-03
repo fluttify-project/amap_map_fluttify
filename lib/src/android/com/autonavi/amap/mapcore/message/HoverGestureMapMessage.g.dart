@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends com_auton
   }
   
   static Future<List<com_autonavi_amap_mapcore_message_HoverGestureMapMessage>> create_batch__int__float(List<int> var1, List<double> var2) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i]}]);
   
     final List<com_autonavi_amap_mapcore_message_HoverGestureMapMessage> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -118,10 +118,9 @@ extension com_autonavi_amap_mapcore_message_HoverGestureMapMessage_Batch on List
 
   //region methods
   Future<List<com_autonavi_amap_mapcore_message_HoverGestureMapMessage>> obtain_batch(List<int> var0, List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
@@ -138,10 +137,9 @@ extension com_autonavi_amap_mapcore_message_HoverGestureMapMessage_Batch on List
   }
   
   Future<void> destory_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
+class MAParticleOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
   }
   
   static Future<List<MAParticleOverlay>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleOverlay', {'length': length});
   
     final List<MAParticleOverlay> typedResult = resultBatch.map((result) => MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -113,10 +113,9 @@ extension MAParticleOverlay_Batch on List<MAParticleOverlay> {
 
   //region methods
   Future<List<MAParticleOverlay>> particleOverlayWithOption_batch(List<MAParticleOverlayOptions> option) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::particleOverlayWithOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId, "refId": this[i].refId}]);
@@ -133,10 +132,9 @@ extension MAParticleOverlay_Batch on List<MAParticleOverlay> {
   }
   
   Future<void> updateOverlayOption_batch(List<MAParticleOverlayOptions> overlayOption) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::updateOverlayOption_batch', [for (int i = 0; i < this.length; i++) {"overlayOption": overlayOption[i].refId, "refId": this[i].refId}]);

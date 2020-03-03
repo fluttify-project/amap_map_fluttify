@@ -27,9 +27,9 @@ class com_amap_api_maps_SwipeDismissCallBack extends java_lang_Object with com_a
   }
   
   static Future<List<com_amap_api_maps_SwipeDismissCallBack>> create_batch__com_amap_api_maps_SwipeDismissView(List<com_amap_api_maps_SwipeDismissView> var1) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
   
     final List<com_amap_api_maps_SwipeDismissCallBack> typedResult = resultBatch.map((result) => com_amap_api_maps_SwipeDismissCallBack()..refId = result..tag = 'amap_map_fluttify').toList();

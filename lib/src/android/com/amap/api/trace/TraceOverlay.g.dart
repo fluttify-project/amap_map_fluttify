@@ -38,9 +38,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_trace_TraceOverlay>> create_batch__com_amap_api_maps_AMap__com_amap_api_maps_model_LatLng(List<com_amap_api_maps_AMap> var1, List<List<com_amap_api_maps_model_LatLng>> var2) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_LatLng', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId, "var2": var2[i].map((it) => it.refId).toList()}]);
   
     final List<com_amap_api_trace_TraceOverlay> typedResult = resultBatch.map((result) => com_amap_api_trace_TraceOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -49,9 +49,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_trace_TraceOverlay>> create_batch__com_amap_api_maps_AMap(List<com_amap_api_maps_AMap> var1) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
   
     final List<com_amap_api_trace_TraceOverlay> typedResult = resultBatch.map((result) => com_amap_api_trace_TraceOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -300,10 +300,9 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
 
   //region methods
   Future<void> add_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::add_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
@@ -320,10 +319,9 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
   }
   
   Future<void> remove_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::remove_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -340,10 +338,9 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
   }
   
   Future<void> setProperCamera_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::setProperCamera_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
@@ -360,10 +357,9 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
   }
   
   Future<void> zoopToSpan_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::zoopToSpan_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -380,10 +376,9 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
   }
   
   Future<List<int>> getTraceStatus_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::getTraceStatus_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -400,10 +395,9 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
   }
   
   Future<void> setTraceStatus_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::setTraceStatus_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -420,10 +414,9 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
   }
   
   Future<List<int>> getDistance_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::getDistance_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -440,10 +433,9 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
   }
   
   Future<void> setDistance_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::setDistance_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -460,10 +452,9 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
   }
   
   Future<List<int>> getWaitTime_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::getWaitTime_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -480,10 +471,9 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
   }
   
   Future<void> setWaitTime_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::setWaitTime_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);

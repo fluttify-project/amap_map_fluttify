@@ -27,9 +27,9 @@ class com_amap_api_maps_model_animation_EmergeAnimation extends com_amap_api_map
   }
   
   static Future<List<com_amap_api_maps_model_animation_EmergeAnimation>> create_batch__com_amap_api_maps_model_LatLng(List<com_amap_api_maps_model_LatLng> var1) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
   
     final List<com_amap_api_maps_model_animation_EmergeAnimation> typedResult = resultBatch.map((result) => com_amap_api_maps_model_animation_EmergeAnimation()..refId = result..tag = 'amap_map_fluttify').toList();

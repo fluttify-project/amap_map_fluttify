@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MACustomBuildingOverlayOption extends MAMultiPoint  {
+class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
   }
   
   static Future<List<MACustomBuildingOverlayOption>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACustomBuildingOverlayOption', {'length': length});
   
     final List<MACustomBuildingOverlayOption> typedResult = resultBatch.map((result) => MACustomBuildingOverlayOption()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -194,10 +194,9 @@ extension MACustomBuildingOverlayOption_Batch on List<MACustomBuildingOverlayOpt
 
   //region methods
   Future<List<MACustomBuildingOverlayOption>> optionWithCoordinatesCount_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coords.length != count.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::optionWithCoordinatesCount_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
@@ -214,10 +213,9 @@ extension MACustomBuildingOverlayOption_Batch on List<MACustomBuildingOverlayOpt
   }
   
   Future<List<bool>> setOptionWithCoordinatesCount_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coords.length != count.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::setOptionWithCoordinatesCount_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);

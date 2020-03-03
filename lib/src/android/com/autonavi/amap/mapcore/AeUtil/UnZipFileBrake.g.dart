@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake extends java_lang_Object  
   }
   
   static Future<List<com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_AeUtil_UnZipFileBrake__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake()..refId = result..tag = 'amap_map_fluttify').toList();

@@ -27,9 +27,9 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   }
   
   static Future<List<MAMultiPointOverlayRenderer>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiPointOverlayRenderer', {'length': length});
   
     final List<MAMultiPointOverlayRenderer> typedResult = resultBatch.map((result) => MAMultiPointOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -172,10 +172,9 @@ extension MAMultiPointOverlayRenderer_Batch on List<MAMultiPointOverlayRenderer>
 
   //region methods
   Future<List<MAMultiPointOverlayRenderer>> initWithMultiPointOverlay_batch(List<MAMultiPointOverlay> multiPointOverlay) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::initWithMultiPointOverlay_batch', [for (int i = 0; i < this.length; i++) {"multiPointOverlay": multiPointOverlay[i].refId, "refId": this[i].refId}]);

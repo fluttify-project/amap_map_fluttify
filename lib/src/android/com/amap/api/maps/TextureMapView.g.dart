@@ -35,9 +35,9 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   }
   
   static Future<List<com_amap_api_maps_TextureMapView>> create_batch__android_content_Context(List<android_content_Context> var1) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_TextureMapView__android_content_Context', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
   
     final List<com_amap_api_maps_TextureMapView> typedResult = resultBatch.map((result) => com_amap_api_maps_TextureMapView()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -46,9 +46,9 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   }
   
   static Future<List<com_amap_api_maps_TextureMapView>> create_batch__android_content_Context__com_amap_api_maps_AMapOptions(List<android_content_Context> var1, List<com_amap_api_maps_AMapOptions> var2) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId, "var2": var2[i].refId}]);
   
     final List<com_amap_api_maps_TextureMapView> typedResult = resultBatch.map((result) => com_amap_api_maps_TextureMapView()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -253,10 +253,9 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
 
   //region methods
   Future<List<com_amap_api_maps_AMap>> getMap_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::getMap_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -273,10 +272,9 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
   }
   
   Future<void> onCreate_batch(List<android_os_Bundle> var1, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onCreate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -293,10 +291,9 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
   }
   
   Future<void> onResume_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onResume_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -313,10 +310,9 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
   }
   
   Future<void> onPause_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onPause_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -333,10 +329,9 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
   }
   
   Future<void> onDestroy_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onDestroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -353,10 +348,9 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
   }
   
   Future<void> onLowMemory_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onLowMemory_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -373,10 +367,9 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
   }
   
   Future<void> onSaveInstanceState_batch(List<android_os_Bundle> var1, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::onSaveInstanceState_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -393,10 +386,9 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
   }
   
   Future<void> setVisibility_batch(List<int> var1, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_TextureMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.TextureMapView::setVisibility_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);

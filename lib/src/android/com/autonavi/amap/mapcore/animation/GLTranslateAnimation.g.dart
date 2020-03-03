@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_animation_GLTranslateAnimation extends com_auton
   }
   
   static Future<List<com_autonavi_amap_mapcore_animation_GLTranslateAnimation>> create_batch__com_amap_api_maps_model_LatLng(List<com_amap_api_maps_model_LatLng> var1) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
   
     final List<com_autonavi_amap_mapcore_animation_GLTranslateAnimation> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -191,10 +191,9 @@ extension com_autonavi_amap_mapcore_animation_GLTranslateAnimation_Batch on List
 
   //region methods
   Future<void> setFromPoint_batch(List<com_amap_api_maps_model_LatLng> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::setFromPoint_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);

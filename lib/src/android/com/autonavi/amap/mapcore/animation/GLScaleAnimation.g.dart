@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_animation_GLScaleAnimation extends com_autonavi_
   }
   
   static Future<List<com_autonavi_amap_mapcore_animation_GLScaleAnimation>> create_batch__float__float__float__float(List<double> var1, List<double> var2, List<double> var3, List<double> var4) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i]}]);
   
     final List<com_autonavi_amap_mapcore_animation_GLScaleAnimation> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_animation_GLScaleAnimation()..refId = result..tag = 'amap_map_fluttify').toList();

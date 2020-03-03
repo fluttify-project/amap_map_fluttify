@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MAHeatMapTileOverlay extends MATileOverlay  {
+class MAHeatMapTileOverlay extends MATileOverlay with MAAnnotation, MAOverlay {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MAHeatMapTileOverlay extends MATileOverlay  {
   }
   
   static Future<List<MAHeatMapTileOverlay>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAHeatMapTileOverlay', {'length': length});
   
     final List<MAHeatMapTileOverlay> typedResult = resultBatch.map((result) => MAHeatMapTileOverlay()..refId = result..tag = 'amap_map_fluttify').toList();

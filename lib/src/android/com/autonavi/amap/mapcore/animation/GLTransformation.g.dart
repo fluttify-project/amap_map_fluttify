@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_animation_GLTransformation extends java_lang_Obj
   }
   
   static Future<List<com_autonavi_amap_mapcore_animation_GLTransformation>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLTransformation__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_animation_GLTransformation> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_animation_GLTransformation()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -153,10 +153,9 @@ extension com_autonavi_amap_mapcore_animation_GLTransformation_Batch on List<com
 
   //region methods
   Future<void> clear_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::clear_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

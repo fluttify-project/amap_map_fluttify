@@ -62,10 +62,9 @@ extension com_amap_api_maps_model_particle_ColorGenerate_Batch on List<com_amap_
 
   //region methods
   Future<List<Float64List>> getColor_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ColorGenerate::getColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

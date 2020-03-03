@@ -35,9 +35,9 @@ class com_amap_api_maps_model_NaviPara extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_maps_model_NaviPara>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_NaviPara__', {'length': length});
   
     final List<com_amap_api_maps_model_NaviPara> typedResult = resultBatch.map((result) => com_amap_api_maps_model_NaviPara()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -154,10 +154,9 @@ extension com_amap_api_maps_model_NaviPara_Batch on List<com_amap_api_maps_model
 
   //region methods
   Future<void> setTargetPoint_batch(List<com_amap_api_maps_model_LatLng> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NaviPara::setTargetPoint_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -174,10 +173,9 @@ extension com_amap_api_maps_model_NaviPara_Batch on List<com_amap_api_maps_model
   }
   
   Future<void> setNaviStyle_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NaviPara::setNaviStyle_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -194,10 +192,9 @@ extension com_amap_api_maps_model_NaviPara_Batch on List<com_amap_api_maps_model
   }
   
   Future<List<com_amap_api_maps_model_LatLng>> getTargetPoint_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NaviPara::getTargetPoint_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -214,10 +211,9 @@ extension com_amap_api_maps_model_NaviPara_Batch on List<com_amap_api_maps_model
   }
   
   Future<List<int>> getNaviStyle_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NaviPara::getNaviStyle_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

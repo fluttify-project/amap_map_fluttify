@@ -27,9 +27,9 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
   }
   
   static Future<List<MAParticleCurveSizeGenerate>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleCurveSizeGenerate', {'length': length});
   
     final List<MAParticleCurveSizeGenerate> typedResult = resultBatch.map((result) => MAParticleCurveSizeGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -80,10 +80,9 @@ extension MAParticleCurveSizeGenerate_Batch on List<MAParticleCurveSizeGenerate>
 
   //region methods
   Future<List<MAParticleCurveSizeGenerate>> initWithCurveXYZ_batch(List<double> x, List<double> y, List<double> z) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (x.length != y.length || y.length != z.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleCurveSizeGenerate::initWithCurveXYZ_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i], "refId": this[i].refId}]);

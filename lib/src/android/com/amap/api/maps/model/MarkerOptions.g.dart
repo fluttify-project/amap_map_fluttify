@@ -27,9 +27,9 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   }
   
   static Future<List<com_amap_api_maps_model_MarkerOptions>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_MarkerOptions__', {'length': length});
   
     final List<com_amap_api_maps_model_MarkerOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_MarkerOptions()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -1048,10 +1048,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
 
   //region methods
   Future<List<com_amap_api_maps_model_MarkerOptions>> icons_batch(List<List<com_amap_api_maps_model_BitmapDescriptor>> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::icons_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
@@ -1068,10 +1067,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> rotatingIcons_batch(List<List<com_amap_api_maps_model_BitmapDescriptor>> var1, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::rotatingIcons_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "var2": var2[i], "refId": this[i].refId}]);
@@ -1088,10 +1086,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<double>> getAngleOffset_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getAngleOffset_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1108,10 +1105,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<bool>> isRotatingMode_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::isRotatingMode_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1128,10 +1124,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<List<com_amap_api_maps_model_BitmapDescriptor>>> getIcons_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getIcons_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1148,10 +1143,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> period_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::period_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1168,10 +1162,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<int>> getPeriod_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getPeriod_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1188,10 +1181,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<bool>> isPerspective_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::isPerspective_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1208,10 +1200,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> perspective_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::perspective_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1228,10 +1219,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> position_batch(List<com_amap_api_maps_model_LatLng> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::position_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -1248,10 +1238,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> setFlat_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::setFlat_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1268,10 +1257,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> icon_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::icon_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -1288,10 +1276,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> anchor_batch(List<double> var1, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::anchor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1308,10 +1295,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> setInfoWindowOffset_batch(List<int> var1, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::setInfoWindowOffset_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1328,10 +1314,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> title_batch(List<String> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::title_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1348,10 +1333,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> snippet_batch(List<String> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::snippet_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1368,10 +1352,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> draggable_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::draggable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1388,10 +1371,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> visible_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::visible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1408,10 +1390,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> setGps_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::setGps_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1428,10 +1409,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_LatLng>> getPosition_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getPosition_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1448,10 +1428,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<String>> getTitle_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getTitle_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1468,10 +1447,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<String>> getSnippet_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getSnippet_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1488,10 +1466,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getIcon_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getIcon_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1508,10 +1485,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<double>> getAnchorU_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getAnchorU_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1528,10 +1504,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<int>> getInfoWindowOffsetX_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getInfoWindowOffsetX_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1548,10 +1523,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<int>> getInfoWindowOffsetY_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getInfoWindowOffsetY_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1568,10 +1542,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<double>> getAnchorV_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getAnchorV_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1588,10 +1561,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<bool>> isDraggable_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::isDraggable_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1608,10 +1580,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<bool>> isVisible_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::isVisible_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1628,10 +1599,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<bool>> isGps_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::isGps_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1648,10 +1618,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<bool>> isFlat_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::isFlat_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1668,10 +1637,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> zIndex_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::zIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1688,10 +1656,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<double>> getZIndex_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getZIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1708,10 +1675,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> alpha_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::alpha_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1728,10 +1694,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<double>> getAlpha_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getAlpha_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1748,10 +1713,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> autoOverturnInfoWindow_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::autoOverturnInfoWindow_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1768,10 +1732,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<bool>> isInfoWindowAutoOverturn_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::isInfoWindowAutoOverturn_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1788,10 +1751,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> displayLevel_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::displayLevel_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1808,10 +1770,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<int>> getDisplayLevel_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getDisplayLevel_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1828,10 +1789,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> rotateAngle_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::rotateAngle_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1848,10 +1808,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<double>> getRotateAngle_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::getRotateAngle_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1868,10 +1827,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> infoWindowEnable_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::infoWindowEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1888,10 +1846,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<bool>> isInfoWindowEnable_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::isInfoWindowEnable_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1908,10 +1865,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> belowMaskLayer_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::belowMaskLayer_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1928,10 +1884,9 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<bool>> isBelowMaskLayer_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::isBelowMaskLayer_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

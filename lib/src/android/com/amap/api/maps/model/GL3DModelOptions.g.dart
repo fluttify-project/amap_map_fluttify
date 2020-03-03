@@ -27,9 +27,9 @@ class com_amap_api_maps_model_GL3DModelOptions extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_maps_model_GL3DModelOptions>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_GL3DModelOptions__', {'length': length});
   
     final List<com_amap_api_maps_model_GL3DModelOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_GL3DModelOptions()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -300,10 +300,9 @@ extension com_amap_api_maps_model_GL3DModelOptions_Batch on List<com_amap_api_ma
 
   //region methods
   Future<List<com_amap_api_maps_model_GL3DModelOptions>> textureDrawable_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::textureDrawable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -320,10 +319,9 @@ extension com_amap_api_maps_model_GL3DModelOptions_Batch on List<com_amap_api_ma
   }
   
   Future<List<com_amap_api_maps_model_GL3DModelOptions>> vertexData_batch(List<List<double>> var1, List<List<double>> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::vertexData_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -340,10 +338,9 @@ extension com_amap_api_maps_model_GL3DModelOptions_Batch on List<com_amap_api_ma
   }
   
   Future<List<com_amap_api_maps_model_GL3DModelOptions>> position_batch(List<com_amap_api_maps_model_LatLng> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::position_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -360,10 +357,9 @@ extension com_amap_api_maps_model_GL3DModelOptions_Batch on List<com_amap_api_ma
   }
   
   Future<List<com_amap_api_maps_model_GL3DModelOptions>> angle_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::angle_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -380,10 +376,9 @@ extension com_amap_api_maps_model_GL3DModelOptions_Batch on List<com_amap_api_ma
   }
   
   Future<List<List<double>>> getVertext_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getVertext_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -400,10 +395,9 @@ extension com_amap_api_maps_model_GL3DModelOptions_Batch on List<com_amap_api_ma
   }
   
   Future<List<List<double>>> getTextrue_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getTextrue_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -420,10 +414,9 @@ extension com_amap_api_maps_model_GL3DModelOptions_Batch on List<com_amap_api_ma
   }
   
   Future<List<double>> getAngle_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getAngle_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -440,10 +433,9 @@ extension com_amap_api_maps_model_GL3DModelOptions_Batch on List<com_amap_api_ma
   }
   
   Future<List<com_amap_api_maps_model_LatLng>> getLatLng_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getLatLng_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -460,10 +452,9 @@ extension com_amap_api_maps_model_GL3DModelOptions_Batch on List<com_amap_api_ma
   }
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getBitmapDescriptor_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getBitmapDescriptor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -480,10 +471,9 @@ extension com_amap_api_maps_model_GL3DModelOptions_Batch on List<com_amap_api_ma
   }
   
   Future<List<com_amap_api_maps_model_GL3DModelOptions>> setModelFixedLength_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::setModelFixedLength_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -500,10 +490,9 @@ extension com_amap_api_maps_model_GL3DModelOptions_Batch on List<com_amap_api_ma
   }
   
   Future<List<int>> getModelFixedLength_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getModelFixedLength_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

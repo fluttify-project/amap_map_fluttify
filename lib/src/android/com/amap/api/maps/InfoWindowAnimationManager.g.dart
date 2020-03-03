@@ -244,10 +244,9 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
 
   //region methods
   Future<void> setInfoWindowAppearAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAppearAnimation_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -264,10 +263,9 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
   }
   
   Future<void> setInfoWindowBackColor_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowBackColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -284,10 +282,9 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
   }
   
   Future<void> setInfoWindowBackEnable_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowBackEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -304,10 +301,9 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
   }
   
   Future<void> setInfoWindowBackScale_batch(List<double> var1, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowBackScale_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -324,10 +320,9 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
   }
   
   Future<void> setInfoWindowDisappearAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowDisappearAnimation_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -344,10 +339,9 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
   }
   
   Future<void> setInfoWindowMovingAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowMovingAnimation_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -364,10 +358,9 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
   }
   
   Future<void> startAnimation_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowAnimationManager::startAnimation_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

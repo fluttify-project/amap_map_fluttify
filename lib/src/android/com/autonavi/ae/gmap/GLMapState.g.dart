@@ -35,9 +35,9 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   }
   
   static Future<List<com_autonavi_ae_gmap_GLMapState>> create_batch__int__long(List<int> var1, List<int> var2) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapState__int__long', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i]}]);
   
     final List<com_autonavi_ae_gmap_GLMapState> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_GLMapState()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -46,9 +46,9 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   }
   
   static Future<List<com_autonavi_ae_gmap_GLMapState>> create_batch__long__long(List<int> var1, List<int> var3) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapState__long__long', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var3": var3[i]}]);
   
     final List<com_autonavi_ae_gmap_GLMapState> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_GLMapState()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -979,10 +979,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
 
   //region methods
   Future<void> lonlat2Geo_batch(List<double> var0, List<double> var2, List<com_autonavi_amap_mapcore_IPoint> var4) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length || var2.length != var4.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::lonlat2Geo_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var4": var4[i].refId, "refId": this[i].refId}]);
@@ -999,10 +998,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> geo2LonLat_batch(List<int> var0, List<int> var1, List<com_autonavi_amap_mapcore_DPoint> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::geo2LonLat_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i].refId, "refId": this[i].refId}]);
@@ -1019,10 +1017,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> screenToP20Point_batch(List<int> var1, List<int> var2, List<android_graphics_Point> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::screenToP20Point_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i].refId, "refId": this[i].refId}]);
@@ -1039,10 +1036,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> p20ToScreenPoint_batch(List<int> var1, List<int> var2, List<com_autonavi_amap_mapcore_FPoint> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::p20ToScreenPoint_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i].refId, "refId": this[i].refId}]);
@@ -1059,10 +1055,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> getMapGeoCenter__com_autonavi_amap_mapcore_IPoint_batch(List<com_autonavi_amap_mapcore_IPoint> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapGeoCenter__com_autonavi_amap_mapcore_IPoint_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -1079,10 +1074,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<android_graphics_Point>> getMapGeoCenter_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapGeoCenter_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1099,10 +1093,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> setMapGeoCenter_batch(List<int> var1, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapGeoCenter_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1119,10 +1112,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> setCameraDegree_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setCameraDegree_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1139,10 +1131,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> setMapAngle_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapAngle_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1159,10 +1150,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> setMapZoomer_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setMapZoomer_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1179,10 +1169,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<double>> getMapZoomer_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapZoomer_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1199,10 +1188,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<double>> getCameraDegree_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getCameraDegree_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1219,10 +1207,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<double>> getMapAngle_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapAngle_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1239,10 +1226,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> recalculate_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::recalculate_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1259,10 +1245,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> reset_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::reset_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1279,10 +1264,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<double>> getMapLenWithWin_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapLenWithWin_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1299,10 +1283,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<double>> getGLUnitWithWin_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getGLUnitWithWin_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1319,10 +1302,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<int>> getNativeInstance_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getNativeInstance_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1339,10 +1321,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> getViewMatrix_batch(List<Float64List> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getViewMatrix_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1359,10 +1340,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> getProjectionMatrix_batch(List<Float64List> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getProjectionMatrix_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1379,10 +1359,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<double>> getSkyHeight_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::getSkyHeight_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1399,10 +1378,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> setNativeMapengineState_batch(List<int> var1, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::setNativeMapengineState_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1419,10 +1397,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<double>> calMapZoomScalefactor_batch(List<int> var0, List<int> var1, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::calMapZoomScalefactor_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1439,10 +1416,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<int>> nativeNewInstance_batch(List<int> var0, List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeNewInstance_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
@@ -1459,10 +1435,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> nativeScreenToP20Point_batch(List<int> var0, List<double> var2, List<double> var3, List<android_graphics_Point> var4) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i].refId, "refId": this[i].refId}]);
@@ -1479,10 +1454,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> nativeP20ToScreenPoint_batch(List<int> var0, List<int> var2, List<int> var3, List<int> var4, List<android_graphics_PointF> var5) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i].refId, "refId": this[i].refId}]);
@@ -1499,10 +1473,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> nativeSetMapCenter_batch(List<int> var0, List<int> var2, List<int> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
@@ -1519,10 +1492,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> nativeGetMapCenter_batch(List<int> var0, List<android_graphics_Point> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i].refId, "refId": this[i].refId}]);
@@ -1539,10 +1511,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<double>> nativeGetMapZoomer_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapZoomer_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1559,10 +1530,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> nativeSetMapZoomer_batch(List<int> var0, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1579,10 +1549,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> nativeSetMapAngle_batch(List<int> var0, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1599,10 +1568,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<double>> nativeGetCameraDegree_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1619,10 +1587,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<double>> nativeGetMapAngle_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1639,10 +1606,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> nativeSetCameraDegree_batch(List<int> var0, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1659,10 +1625,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> nativeRecalculate_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeRecalculate_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1679,10 +1644,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> nativeStateDestroy_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeStateDestroy_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1699,10 +1663,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> nativeGetViewMatrix_batch(List<int> var0, List<Float64List> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1719,10 +1682,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<void> nativeGetProjectionMatrix_batch(List<int> var0, List<Float64List> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1739,10 +1701,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<double>> nativeGetSkyHeight_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1759,10 +1720,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<double>> nativeGetGLUnitWithWin_batch(List<int> var0, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1779,10 +1739,9 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   }
   
   Future<List<double>> nativeCalMapZoomScalefactor_batch(List<int> var0, List<int> var1, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeCalMapZoomScalefactor_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);

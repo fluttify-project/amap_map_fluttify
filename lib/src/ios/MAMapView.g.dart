@@ -27,9 +27,9 @@ class MAMapView extends UIView  {
   }
   
   static Future<List<MAMapView>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMapView', {'length': length});
   
     final List<MAMapView> typedResult = resultBatch.map((result) => MAMapView()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -2764,10 +2764,9 @@ extension MAMapView_Batch on List<MAMapView> {
 
   //region methods
   Future<void> setRegionAnimated_batch(List<MACoordinateRegion> region, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (region.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRegionAnimated_batch', [for (int i = 0; i < this.length; i++) {"region": region[i].refId, "animated": animated[i], "refId": this[i].refId}]);
@@ -2784,10 +2783,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<MACoordinateRegion>> regionThatFits_batch(List<MACoordinateRegion> region, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::regionThatFits_batch', [for (int i = 0; i < this.length; i++) {"region": region[i].refId, "refId": this[i].refId}]);
@@ -2804,10 +2802,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setVisibleMapRectAnimated_batch(List<MAMapRect> mapRect, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (mapRect.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRectAnimated_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "animated": animated[i], "refId": this[i].refId}]);
@@ -2824,10 +2821,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<MAMapRect>> mapRectThatFits_batch(List<MAMapRect> mapRect, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFits_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "refId": this[i].refId}]);
@@ -2844,10 +2840,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<MAMapRect>> mapRectThatFitsEdgePadding_batch(List<MAMapRect> mapRect, List<UIEdgeInsets> insets, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (mapRect.length != insets.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFitsEdgePadding_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "insets": insets[i].refId, "refId": this[i].refId}]);
@@ -2864,10 +2859,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setVisibleMapRectEdgePaddinganimated_batch(List<MAMapRect> mapRect, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (mapRect.length != insets.length || insets.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRectEdgePaddinganimated_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "insets": insets[i].refId, "animated": animated[i], "refId": this[i].refId}]);
@@ -2884,10 +2878,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setCenterCoordinateAnimated_batch(List<CLLocationCoordinate2D> coordinate, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coordinate.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCenterCoordinateAnimated_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "animated": animated[i], "refId": this[i].refId}]);
@@ -2904,10 +2897,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setZoomLevelAnimated_batch(List<double> zoomLevel, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (zoomLevel.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevelAnimated_batch', [for (int i = 0; i < this.length; i++) {"zoomLevel": zoomLevel[i], "animated": animated[i], "refId": this[i].refId}]);
@@ -2924,10 +2916,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setZoomLevelAtPivotanimated_batch(List<double> zoomLevel, List<CGPoint> pivot, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (zoomLevel.length != pivot.length || pivot.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevelAtPivotanimated_batch', [for (int i = 0; i < this.length; i++) {"zoomLevel": zoomLevel[i], "pivot": pivot[i].refId, "animated": animated[i], "refId": this[i].refId}]);
@@ -2944,10 +2935,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setRotationDegreeAnimatedduration_batch(List<double> rotationDegree, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (rotationDegree.length != animated.length || animated.length != duration.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRotationDegreeAnimatedduration_batch', [for (int i = 0; i < this.length; i++) {"rotationDegree": rotationDegree[i], "animated": animated[i], "duration": duration[i], "refId": this[i].refId}]);
@@ -2964,10 +2954,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setCameraDegreeAnimatedduration_batch(List<double> cameraDegree, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (cameraDegree.length != animated.length || animated.length != duration.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCameraDegreeAnimatedduration_batch', [for (int i = 0; i < this.length; i++) {"cameraDegree": cameraDegree[i], "animated": animated[i], "duration": duration[i], "refId": this[i].refId}]);
@@ -2984,10 +2973,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<MAMapStatus>> getMapStatus_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::getMapStatus_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -3004,10 +2992,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setMapStatusAnimated_batch(List<MAMapStatus> status, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (status.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatusAnimated_batch', [for (int i = 0; i < this.length; i++) {"status": status[i].refId, "animated": animated[i], "refId": this[i].refId}]);
@@ -3024,10 +3011,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setMapStatusAnimatedduration_batch(List<MAMapStatus> status, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (status.length != animated.length || animated.length != duration.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatusAnimatedduration_batch', [for (int i = 0; i < this.length; i++) {"status": status[i].refId, "animated": animated[i], "duration": duration[i], "refId": this[i].refId}]);
@@ -3044,10 +3030,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setCompassImage_batch(List<UIImage> image, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCompassImage_batch', [for (int i = 0; i < this.length; i++) {"image": image[i].refId, "refId": this[i].refId}]);
@@ -3064,10 +3049,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<double>> metersPerPointForZoomLevel_batch(List<double> zoomLevel, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::metersPerPointForZoomLevel_batch', [for (int i = 0; i < this.length; i++) {"zoomLevel": zoomLevel[i], "refId": this[i].refId}]);
@@ -3084,10 +3068,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<CGPoint>> convertCoordinateToPointToView_batch(List<CLLocationCoordinate2D> coordinate, List<UIView> view, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coordinate.length != view.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertCoordinateToPointToView_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
@@ -3104,10 +3087,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<CLLocationCoordinate2D>> convertPointToCoordinateFromView_batch(List<CGPoint> point, List<UIView> view, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (point.length != view.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertPointToCoordinateFromView_batch', [for (int i = 0; i < this.length; i++) {"point": point[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
@@ -3124,10 +3106,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<CGRect>> convertRegionToRectToView_batch(List<MACoordinateRegion> region, List<UIView> view, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (region.length != view.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRegionToRectToView_batch', [for (int i = 0; i < this.length; i++) {"region": region[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
@@ -3144,10 +3125,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<MACoordinateRegion>> convertRectToRegionFromView_batch(List<CGRect> rect, List<UIView> view, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (rect.length != view.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRectToRegionFromView_batch', [for (int i = 0; i < this.length; i++) {"rect": rect[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
@@ -3164,10 +3144,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> reloadMap_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::reloadMap_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -3184,10 +3163,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> clearDisk_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::clearDisk_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -3204,10 +3182,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> reloadInternalTexture_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::reloadInternalTexture_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -3224,10 +3201,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<String>> mapContentApprovalNumber_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapContentApprovalNumber_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -3244,10 +3220,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<String>> satelliteImageApprovalNumber_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::satelliteImageApprovalNumber_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -3264,10 +3239,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> forceRefresh_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::forceRefresh_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -3284,10 +3258,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> addAnnotation_batch(List<MAAnnotation> annotation, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addAnnotation_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "refId": this[i].refId}]);
@@ -3304,10 +3277,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> addAnnotations_batch(List<List<NSObject>> annotations, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addAnnotations_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
@@ -3324,10 +3296,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> removeAnnotation_batch(List<MAAnnotation> annotation, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeAnnotation_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "refId": this[i].refId}]);
@@ -3344,10 +3315,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> removeAnnotations_batch(List<List<NSObject>> annotations, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeAnnotations_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
@@ -3364,10 +3334,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<MAAnnotationView>> viewForAnnotation_batch(List<MAAnnotation> annotation, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::viewForAnnotation_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "refId": this[i].refId}]);
@@ -3384,10 +3353,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<MAAnnotationView>> dequeueReusableAnnotationViewWithIdentifier_batch(List<String> identifier, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::dequeueReusableAnnotationViewWithIdentifier_batch', [for (int i = 0; i < this.length; i++) {"identifier": identifier[i], "refId": this[i].refId}]);
@@ -3404,10 +3372,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> selectAnnotationAnimated_batch(List<MAAnnotation> annotation, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (annotation.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::selectAnnotationAnimated_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "animated": animated[i], "refId": this[i].refId}]);
@@ -3424,10 +3391,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> deselectAnnotationAnimated_batch(List<MAAnnotation> annotation, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (annotation.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::deselectAnnotationAnimated_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "animated": animated[i], "refId": this[i].refId}]);
@@ -3444,10 +3410,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> showAnnotationsAnimated_batch(List<List<NSObject>> annotations, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (annotations.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotationsAnimated_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "animated": animated[i], "refId": this[i].refId}]);
@@ -3464,10 +3429,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> showAnnotationsEdgePaddinganimated_batch(List<List<NSObject>> annotations, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (annotations.length != insets.length || insets.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotationsEdgePaddinganimated_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "insets": insets[i].refId, "animated": animated[i], "refId": this[i].refId}]);
@@ -3484,10 +3448,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setUserTrackingModeAnimated_batch(List<MAUserTrackingMode> mode, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (mode.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setUserTrackingModeAnimated_batch', [for (int i = 0; i < this.length; i++) {"mode": mode[i].index, "animated": animated[i], "refId": this[i].refId}]);
@@ -3504,10 +3467,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> updateUserLocationRepresentation_batch(List<MAUserLocationRepresentation> representation, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::updateUserLocationRepresentation_batch', [for (int i = 0; i < this.length; i++) {"representation": representation[i].refId, "refId": this[i].refId}]);
@@ -3524,10 +3486,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<List>> overlaysInLevel_batch(List<MAOverlayLevel> level, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::overlaysInLevel_batch', [for (int i = 0; i < this.length; i++) {"level": level[i].index, "refId": this[i].refId}]);
@@ -3544,10 +3505,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> addOverlay_batch(List<MAOverlay> overlay, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "refId": this[i].refId}]);
@@ -3564,10 +3524,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> addOverlays_batch(List<List<NSObject>> overlays, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlays_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
@@ -3584,10 +3543,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> addOverlayLevel_batch(List<MAOverlay> overlay, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (overlay.length != level.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlayLevel_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "level": level[i].index, "refId": this[i].refId}]);
@@ -3604,10 +3562,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> addOverlaysLevel_batch(List<List<NSObject>> overlays, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (overlays.length != level.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlaysLevel_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "level": level[i].index, "refId": this[i].refId}]);
@@ -3624,10 +3581,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> removeOverlay_batch(List<MAOverlay> overlay, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "refId": this[i].refId}]);
@@ -3644,10 +3600,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> removeOverlays_batch(List<List<NSObject>> overlays, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeOverlays_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
@@ -3664,10 +3619,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> insertOverlayAtIndexlevel_batch(List<MAOverlay> overlay, List<int> index, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (overlay.length != index.length || index.length != level.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAtIndexlevel_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "index": index[i], "level": level[i].index, "refId": this[i].refId}]);
@@ -3684,10 +3638,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> insertOverlayAboveOverlay_batch(List<MAOverlay> overlay, List<MAOverlay> sibling, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (overlay.length != sibling.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAboveOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "sibling": sibling[i].refId, "refId": this[i].refId}]);
@@ -3704,10 +3657,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> insertOverlayBelowOverlay_batch(List<MAOverlay> overlay, List<MAOverlay> sibling, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (overlay.length != sibling.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayBelowOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "sibling": sibling[i].refId, "refId": this[i].refId}]);
@@ -3724,10 +3676,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> insertOverlayAtIndex_batch(List<MAOverlay> overlay, List<int> index, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (overlay.length != index.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAtIndex_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "index": index[i], "refId": this[i].refId}]);
@@ -3744,10 +3695,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> exchangeOverlayAtIndexWithOverlayAtIndex_batch(List<int> index1, List<int> index2, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (index1.length != index2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndexWithOverlayAtIndex_batch', [for (int i = 0; i < this.length; i++) {"index1": index1[i], "index2": index2[i], "refId": this[i].refId}]);
@@ -3764,10 +3714,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> exchangeOverlayAtIndexWithOverlayAtIndexatLevel_batch(List<int> index1, List<int> index2, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (index1.length != index2.length || index2.length != level.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndexWithOverlayAtIndexatLevel_batch', [for (int i = 0; i < this.length; i++) {"index1": index1[i], "index2": index2[i], "level": level[i].index, "refId": this[i].refId}]);
@@ -3784,10 +3733,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> exchangeOverlayWithOverlay_batch(List<MAOverlay> overlay1, List<MAOverlay> overlay2, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (overlay1.length != overlay2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayWithOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay1": overlay1[i].refId, "overlay2": overlay2[i].refId, "refId": this[i].refId}]);
@@ -3804,10 +3752,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<List<MAOverlayRenderer>> rendererForOverlay_batch(List<MAOverlay> overlay, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::rendererForOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "refId": this[i].refId}]);
@@ -3824,10 +3771,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> showOverlaysAnimated_batch(List<List<NSObject>> overlays, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (overlays.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlaysAnimated_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "animated": animated[i], "refId": this[i].refId}]);
@@ -3844,10 +3790,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> showOverlaysEdgePaddinganimated_batch(List<List<NSObject>> overlays, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (overlays.length != insets.length || insets.length != animated.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlaysEdgePaddinganimated_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "insets": insets[i].refId, "animated": animated[i], "refId": this[i].refId}]);
@@ -3864,10 +3809,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setIndoorMapControlOrigin_batch(List<CGPoint> origin, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setIndoorMapControlOrigin_batch', [for (int i = 0; i < this.length; i++) {"origin": origin[i].refId, "refId": this[i].refId}]);
@@ -3884,10 +3828,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setCurrentIndoorMapFloorIndex_batch(List<int> floorIndex, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCurrentIndoorMapFloorIndex_batch', [for (int i = 0; i < this.length; i++) {"floorIndex": floorIndex[i], "refId": this[i].refId}]);
@@ -3904,10 +3847,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> clearIndoorMapCache_batch({bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::clearIndoorMapCache_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -3924,10 +3866,9 @@ extension MAMapView_Batch on List<MAMapView> {
   }
   
   Future<void> setCustomMapStyleOptions_batch(List<MAMapCustomStyleOptions> styleOptions, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyleOptions_batch', [for (int i = 0; i < this.length; i++) {"styleOptions": styleOptions[i].refId, "refId": this[i].refId}]);

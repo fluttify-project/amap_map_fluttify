@@ -27,9 +27,9 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo extends java_lang_Ob
   }
   
   static Future<List<com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__', {'length': length});
   
     final List<com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo()..refId = result..tag = 'amap_map_fluttify').toList();

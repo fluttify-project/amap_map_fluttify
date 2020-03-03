@@ -27,9 +27,9 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   }
   
   static Future<List<com_amap_api_maps_model_CircleOptions>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_CircleOptions__', {'length': length});
   
     final List<com_amap_api_maps_model_CircleOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_CircleOptions()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -454,10 +454,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
 
   //region methods
   Future<List<com_amap_api_maps_model_CircleOptions>> center_batch(List<com_amap_api_maps_model_LatLng> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::center_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -474,10 +473,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_CircleOptions>> radius_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::radius_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -494,10 +492,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_CircleOptions>> strokeWidth_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::strokeWidth_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -514,10 +511,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_CircleOptions>> strokeColor_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::strokeColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -534,10 +530,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_CircleOptions>> fillColor_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::fillColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -554,10 +549,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_CircleOptions>> zIndex_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::zIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -574,10 +568,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_CircleOptions>> visible_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::visible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -594,10 +587,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_LatLng>> getCenter_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getCenter_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -614,10 +606,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<double>> getRadius_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getRadius_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -634,10 +625,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<double>> getStrokeWidth_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getStrokeWidth_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -654,10 +644,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<int>> getStrokeColor_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getStrokeColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -674,10 +663,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<int>> getFillColor_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getFillColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -694,10 +682,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<double>> getZIndex_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getZIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -714,10 +701,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<bool>> isVisible_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::isVisible_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -734,10 +720,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_CircleOptions>> addHoles__com_amap_api_maps_model_BaseHoleOptions_batch(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::addHoles__com_amap_api_maps_model_BaseHoleOptions_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -754,10 +739,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<List<com_amap_api_maps_model_BaseHoleOptions>>> getHoleOptions_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getHoleOptions_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -774,10 +758,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_CircleOptions>> setStrokeDottedLineType_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::setStrokeDottedLineType_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -794,10 +777,9 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   }
   
   Future<List<int>> getStrokeDottedLineType_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::getStrokeDottedLineType_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

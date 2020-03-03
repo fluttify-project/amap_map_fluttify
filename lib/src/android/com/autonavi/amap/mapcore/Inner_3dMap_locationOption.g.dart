@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   }
   
   static Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -762,10 +762,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
 
   //region methods
   Future<List<String>> getAPIKEY_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -782,10 +781,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<bool>> isMockEnable_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isMockEnable_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -802,10 +800,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<void> setMockEnable_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setMockEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -822,10 +819,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<int>> getInterval_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getInterval_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -842,10 +838,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setInterval_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setInterval_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -862,10 +857,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<bool>> isOnceLocation_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocation_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -882,10 +876,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setOnceLocation_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocation_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -902,10 +895,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<bool>> isNeedAddress_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isNeedAddress_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -922,10 +914,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setNeedAddress_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setNeedAddress_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -942,10 +933,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<bool>> isWifiActiveScan_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiActiveScan_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -962,10 +952,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<void> setWifiActiveScan_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiActiveScan_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -982,10 +971,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<bool>> isWifiScan_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiScan_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1002,10 +990,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<void> setWifiScan_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiScan_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1022,10 +1009,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode>> getLocationMode_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationMode_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1042,10 +1028,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol>> getLocationProtocol_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationProtocol_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1062,10 +1047,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setLocationMode_batch(List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationMode_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].index, "refId": this[i].refId}]);
@@ -1082,10 +1066,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<void> setLocationProtocol_batch(List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].index, "refId": this[i].refId}]);
@@ -1102,10 +1085,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<bool>> isKillProcess_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isKillProcess_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1122,10 +1104,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setKillProcess_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setKillProcess_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1142,10 +1123,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<bool>> isGpsFirst_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isGpsFirst_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1162,10 +1142,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setGpsFirst_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setGpsFirst_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1182,10 +1161,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> clone_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::clone_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1202,10 +1180,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<int>> getHttpTimeOut_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getHttpTimeOut_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1222,10 +1199,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<void> setHttpTimeOut_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setHttpTimeOut_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1242,10 +1218,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<bool>> isOffset_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOffset_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1262,10 +1237,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setOffset_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOffset_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1282,10 +1256,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<bool>> isLocationCacheEnable_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isLocationCacheEnable_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1302,10 +1275,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<void> setLocationCacheEnable_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationCacheEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1322,10 +1294,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<bool>> isOnceLocationLatest_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocationLatest_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1342,10 +1313,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<void> setOnceLocationLatest_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocationLatest_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1362,10 +1332,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<List<bool>> isSensorEnable_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isSensorEnable_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1382,10 +1351,9 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   }
   
   Future<void> setSensorEnable_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setSensorEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);

@@ -27,9 +27,9 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   }
   
   static Future<List<MAOverlayPathRenderer>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOverlayPathRenderer', {'length': length});
   
     final List<MAOverlayPathRenderer> typedResult = resultBatch.map((result) => MAOverlayPathRenderer()..refId = result..tag = 'amap_map_fluttify').toList();

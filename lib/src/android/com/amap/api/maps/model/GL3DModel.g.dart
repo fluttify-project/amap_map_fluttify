@@ -128,10 +128,9 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
 
   //region methods
   Future<void> setAngle_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModel::setAngle_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -148,10 +147,9 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
   }
   
   Future<List<double>> getAngle_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModel::getAngle_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -168,10 +166,9 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
   }
   
   Future<void> setModelFixedLength_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModel::setModelFixedLength_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -188,10 +185,9 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
   }
   
   Future<void> setZoomLimit_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GL3DModel::setZoomLimit_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);

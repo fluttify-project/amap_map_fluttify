@@ -27,9 +27,9 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
   }
   
   static Future<List<com_amap_api_maps_model_CameraPosition>> create_batch__com_amap_api_maps_model_LatLng__float__float__float(List<com_amap_api_maps_model_LatLng> var1, List<double> var2, List<double> var3, List<double> var4) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId, "var2": var2[i], "var3": var3[i], "var4": var4[i]}]);
   
     final List<com_amap_api_maps_model_CameraPosition> typedResult = resultBatch.map((result) => com_amap_api_maps_model_CameraPosition()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -187,10 +187,9 @@ extension com_amap_api_maps_model_CameraPosition_Batch on List<com_amap_api_maps
 
   //region methods
   Future<List<com_amap_api_maps_model_CameraPosition>> fromLatLngZoom_batch(List<com_amap_api_maps_model_LatLng> var0, List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CameraPosition::fromLatLngZoom_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "refId": this[i].refId}]);
@@ -207,10 +206,9 @@ extension com_amap_api_maps_model_CameraPosition_Batch on List<com_amap_api_maps
   }
   
   Future<List<com_amap_api_maps_model_CameraPosition_Builder>> builder_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CameraPosition::builder_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -227,10 +225,9 @@ extension com_amap_api_maps_model_CameraPosition_Batch on List<com_amap_api_maps
   }
   
   Future<List<com_amap_api_maps_model_CameraPosition_Builder>> builder__com_amap_api_maps_model_CameraPosition_batch(List<com_amap_api_maps_model_CameraPosition> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CameraPosition::builder__com_amap_api_maps_model_CameraPosition_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "refId": this[i].refId}]);

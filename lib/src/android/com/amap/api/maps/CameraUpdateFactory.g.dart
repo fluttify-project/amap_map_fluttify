@@ -27,9 +27,9 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_maps_CameraUpdateFactory>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_CameraUpdateFactory__', {'length': length});
   
     final List<com_amap_api_maps_CameraUpdateFactory> typedResult = resultBatch.map((result) => com_amap_api_maps_CameraUpdateFactory()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -410,10 +410,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
 
   //region methods
   Future<List<com_amap_api_maps_CameraUpdate>> zoomIn_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomIn_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -430,10 +429,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> zoomOut_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomOut_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -450,10 +448,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> scrollBy_batch(List<double> var0, List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::scrollBy_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
@@ -470,10 +467,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> zoomTo_batch(List<double> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomTo_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -490,10 +486,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> zoomBy__double_batch(List<double> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomBy__double_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -510,10 +505,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> zoomBy__double__android_graphics_Point_batch(List<double> var0, List<android_graphics_Point> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomBy__double__android_graphics_Point_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i].refId, "refId": this[i].refId}]);
@@ -530,10 +524,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> newCameraPosition_batch(List<com_amap_api_maps_model_CameraPosition> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newCameraPosition_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "refId": this[i].refId}]);
@@ -550,10 +543,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> newLatLng_batch(List<com_amap_api_maps_model_LatLng> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLng_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "refId": this[i].refId}]);
@@ -570,10 +562,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> newLatLngZoom_batch(List<com_amap_api_maps_model_LatLng> var0, List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngZoom_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "refId": this[i].refId}]);
@@ -590,10 +581,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int_batch(List<com_amap_api_maps_model_LatLngBounds> var0, List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "refId": this[i].refId}]);
@@ -610,10 +600,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> changeLatLng_batch(List<com_amap_api_maps_model_LatLng> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeLatLng_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "refId": this[i].refId}]);
@@ -630,10 +619,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> changeBearing_batch(List<double> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeBearing_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -650,10 +638,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> changeBearingGeoCenter_batch(List<double> var0, List<com_autonavi_amap_mapcore_IPoint> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i].refId, "refId": this[i].refId}]);
@@ -670,10 +657,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> changeTilt_batch(List<double> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeTilt_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -690,10 +676,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int__int__int_batch(List<com_amap_api_maps_model_LatLngBounds> var0, List<int> var1, List<int> var2, List<int> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
@@ -710,10 +695,9 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CameraUpdate>> newLatLngBoundsRect_batch(List<com_amap_api_maps_model_LatLngBounds> var0, List<int> var1, List<int> var2, List<int> var3, List<int> var4) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);

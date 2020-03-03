@@ -27,9 +27,9 @@ class MAOverlayRenderer extends NSObject  {
   }
   
   static Future<List<MAOverlayRenderer>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOverlayRenderer', {'length': length});
   
     final List<MAOverlayRenderer> typedResult = resultBatch.map((result) => MAOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -465,10 +465,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
 
   //region methods
   Future<List<MAOverlayRenderer>> initWithOverlay_batch(List<MAOverlay> overlay) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::initWithOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "refId": this[i].refId}]);
@@ -485,10 +484,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   }
   
   Future<List<MAMapPoint>> getOffsetPoint_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getOffsetPoint_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -505,10 +503,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   }
   
   Future<List<double>> getMapZoomLevel_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getMapZoomLevel_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -525,10 +522,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   }
   
   Future<List<CGPoint>> glPointForMapPoint_batch(List<MAMapPoint> mapPoint) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointForMapPoint_batch', [for (int i = 0; i < this.length; i++) {"mapPoint": mapPoint[i].refId, "refId": this[i].refId}]);
@@ -545,10 +541,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   }
   
   Future<List<CGPoint>> glPointsForMapPointsCount_batch(List<List<MAMapPoint>> mapPoints, List<int> count) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (mapPoints.length != count.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointsForMapPointsCount_batch', [for (int i = 0; i < this.length; i++) {"mapPoints": mapPoints[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
@@ -565,10 +560,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   }
   
   Future<List<double>> glWidthForWindowWidth_batch(List<double> windowWidth) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glWidthForWindowWidth_batch', [for (int i = 0; i < this.length; i++) {"windowWidth": windowWidth[i], "refId": this[i].refId}]);
@@ -585,10 +579,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   }
   
   Future<void> renderLinesWithPointsPointCountstrokeColorlineWidthlooped_batch(List<List<CGPoint>> points, List<int> pointCount, List<UIColor> strokeColor, List<double> lineWidth, List<bool> looped) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (points.length != pointCount.length || pointCount.length != strokeColor.length || strokeColor.length != lineWidth.length || lineWidth.length != looped.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthlooped_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "strokeColor": strokeColor[i].refId, "lineWidth": lineWidth[i], "looped": looped[i], "refId": this[i].refId}]);
@@ -605,10 +598,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   }
   
   Future<void> renderLinesWithPointsPointCountstrokeColorlineWidthloopedLineJoinTypeLineCapTypelineDash_batch(List<List<CGPoint>> points, List<int> pointCount, List<UIColor> strokeColor, List<double> lineWidth, List<bool> looped, List<MALineJoinType> lineJoinType, List<MALineCapType> lineCapType, List<MALineDashType> lineDash) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (points.length != pointCount.length || pointCount.length != strokeColor.length || strokeColor.length != lineWidth.length || lineWidth.length != looped.length || looped.length != lineJoinType.length || lineJoinType.length != lineCapType.length || lineCapType.length != lineDash.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthloopedLineJoinTypeLineCapTypelineDash_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "strokeColor": strokeColor[i].refId, "lineWidth": lineWidth[i], "looped": looped[i], "lineJoinType": lineJoinType[i].index, "lineCapType": lineCapType[i].index, "lineDash": lineDash[i].index, "refId": this[i].refId}]);
@@ -625,10 +617,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   }
   
   Future<void> renderTexturedLinesWithPointsPointCountlineWidthtextureIDsdrawStyleIndexeslooped_batch(List<List<CGPoint>> points, List<int> pointCount, List<double> lineWidth, List<List<NSObject>> textureIDs, List<List<NSObject>> drawStyleIndexes, List<bool> looped) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (points.length != pointCount.length || pointCount.length != lineWidth.length || lineWidth.length != textureIDs.length || textureIDs.length != drawStyleIndexes.length || drawStyleIndexes.length != looped.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderTexturedLinesWithPointsPointCountlineWidthtextureIDsdrawStyleIndexeslooped_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "lineWidth": lineWidth[i], "textureIDs": textureIDs[i].map((it) => it.refId).toList(), "drawStyleIndexes": drawStyleIndexes[i].map((it) => it.refId).toList(), "looped": looped[i], "refId": this[i].refId}]);
@@ -645,10 +636,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   }
   
   Future<void> renderLinesWithPointsPointCountstrokeColorsdrawStyleIndexesisGradientlineWidthloopedLineJoinTypeLineCapTypelineDash_batch(List<List<CGPoint>> points, List<int> pointCount, List<List<NSObject>> strokeColors, List<List<NSObject>> drawStyleIndexes, List<bool> isGradient, List<double> lineWidth, List<bool> looped, List<MALineJoinType> lineJoinType, List<MALineCapType> lineCapType, List<MALineDashType> lineDash) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (points.length != pointCount.length || pointCount.length != strokeColors.length || strokeColors.length != drawStyleIndexes.length || drawStyleIndexes.length != isGradient.length || isGradient.length != lineWidth.length || lineWidth.length != looped.length || looped.length != lineJoinType.length || lineJoinType.length != lineCapType.length || lineCapType.length != lineDash.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorsdrawStyleIndexesisGradientlineWidthloopedLineJoinTypeLineCapTypelineDash_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "strokeColors": strokeColors[i].map((it) => it.refId).toList(), "drawStyleIndexes": drawStyleIndexes[i].map((it) => it.refId).toList(), "isGradient": isGradient[i], "lineWidth": lineWidth[i], "looped": looped[i], "lineJoinType": lineJoinType[i].index, "lineCapType": lineCapType[i].index, "lineDash": lineDash[i].index, "refId": this[i].refId}]);
@@ -665,10 +655,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   }
   
   Future<void> renderRegionWithPointsPointCountfillColorusingTriangleFan_batch(List<List<CGPoint>> points, List<int> pointCount, List<UIColor> fillColor, List<bool> usingTriangleFan) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (points.length != pointCount.length || pointCount.length != fillColor.length || fillColor.length != usingTriangleFan.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderRegionWithPointsPointCountfillColorusingTriangleFan_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "fillColor": fillColor[i].refId, "usingTriangleFan": usingTriangleFan[i], "refId": this[i].refId}]);
@@ -685,10 +674,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   }
   
   Future<void> renderStrokedRegionWithPointsPointCountfillColorstrokeColorstrokeLineWidthstrokeLineJoinTypestrokeLineDashusingTriangleFan_batch(List<List<CGPoint>> points, List<int> pointCount, List<UIColor> fillColor, List<UIColor> strokeColor, List<double> strokeLineWidth, List<MALineJoinType> strokeLineJoinType, List<MALineDashType> strokeLineDash, List<bool> usingTriangleFan) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (points.length != pointCount.length || pointCount.length != fillColor.length || fillColor.length != strokeColor.length || strokeColor.length != strokeLineWidth.length || strokeLineWidth.length != strokeLineJoinType.length || strokeLineJoinType.length != strokeLineDash.length || strokeLineDash.length != usingTriangleFan.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPointsPointCountfillColorstrokeColorstrokeLineWidthstrokeLineJoinTypestrokeLineDashusingTriangleFan_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "pointCount": pointCount[i], "fillColor": fillColor[i].refId, "strokeColor": strokeColor[i].refId, "strokeLineWidth": strokeLineWidth[i], "strokeLineJoinType": strokeLineJoinType[i].index, "strokeLineDash": strokeLineDash[i].index, "usingTriangleFan": usingTriangleFan[i], "refId": this[i].refId}]);
@@ -705,10 +693,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   }
   
   Future<void> glRender_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glRender_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -725,10 +712,9 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   }
   
   Future<void> setNeedsUpdate_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::setNeedsUpdate_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

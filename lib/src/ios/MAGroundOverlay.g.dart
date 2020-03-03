@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
+class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   }
   
   static Future<List<MAGroundOverlay>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAGroundOverlay', {'length': length});
   
     final List<MAGroundOverlay> typedResult = resultBatch.map((result) => MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -201,10 +201,9 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
 
   //region methods
   Future<List<MAGroundOverlay>> groundOverlayWithBoundsIcon_batch(List<MACoordinateBounds> bounds, List<UIImage> icon) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (bounds.length != icon.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithBoundsIcon_batch', [for (int i = 0; i < this.length; i++) {"bounds": bounds[i].refId, "icon": icon[i].refId, "refId": this[i].refId}]);
@@ -221,10 +220,9 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
   }
   
   Future<List<MAGroundOverlay>> groundOverlayWithCoordinateZoomLevelicon_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<UIImage> icon) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coordinate.length != zoomLevel.length || zoomLevel.length != icon.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithCoordinateZoomLevelicon_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "zoomLevel": zoomLevel[i], "icon": icon[i].refId, "refId": this[i].refId}]);
@@ -241,10 +239,9 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
   }
   
   Future<List<bool>> setGroundOverlayWithBoundsIcon_batch(List<MACoordinateBounds> bounds, List<UIImage> icon) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (bounds.length != icon.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithBoundsIcon_batch', [for (int i = 0; i < this.length; i++) {"bounds": bounds[i].refId, "icon": icon[i].refId, "refId": this[i].refId}]);
@@ -261,10 +258,9 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
   }
   
   Future<List<bool>> setGroundOverlayWithCoordinateZoomLevelicon_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<UIImage> icon) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coordinate.length != zoomLevel.length || zoomLevel.length != icon.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithCoordinateZoomLevelicon_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "zoomLevel": zoomLevel[i], "icon": icon[i].refId, "refId": this[i].refId}]);

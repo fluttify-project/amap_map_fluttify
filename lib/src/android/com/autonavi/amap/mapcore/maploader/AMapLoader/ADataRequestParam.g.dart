@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam extends j
   }
   
   static Future<List<com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam()..refId = result..tag = 'amap_map_fluttify').toList();

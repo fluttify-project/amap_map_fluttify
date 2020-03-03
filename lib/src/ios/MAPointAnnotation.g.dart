@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MAPointAnnotation extends MAShape  {
+class MAPointAnnotation extends MAShape with MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MAPointAnnotation extends MAShape  {
   }
   
   static Future<List<MAPointAnnotation>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAPointAnnotation', {'length': length});
   
     final List<MAPointAnnotation> typedResult = resultBatch.map((result) => MAPointAnnotation()..refId = result..tag = 'amap_map_fluttify').toList();

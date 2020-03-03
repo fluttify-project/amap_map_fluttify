@@ -27,9 +27,9 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation2V extends com_autonavi_ae_g
   }
   
   static Future<List<com_autonavi_ae_gmap_glanimation_AdglAnimation2V>> create_batch__int(List<int> var1) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int', [for (int i = 0; i < var1.length; i++) {"var1": var1[i]}]);
   
     final List<com_autonavi_ae_gmap_glanimation_AdglAnimation2V> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_glanimation_AdglAnimation2V()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -146,10 +146,9 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation2V_Batch on List<com_aut
 
   //region methods
   Future<void> reset_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation2V::reset_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -166,10 +165,9 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation2V_Batch on List<com_aut
   }
   
   Future<List<double>> getCurValue_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getCurValue_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -186,10 +184,9 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation2V_Batch on List<com_aut
   }
   
   Future<List<double>> getStartValue_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getStartValue_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -206,10 +203,9 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation2V_Batch on List<com_aut
   }
   
   Future<List<double>> getEndValue_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getEndValue_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);

@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
+class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   }
   
   static Future<List<MAPolygon>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAPolygon', {'length': length});
   
     final List<MAPolygon> typedResult = resultBatch.map((result) => MAPolygon()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -162,10 +162,9 @@ extension MAPolygon_Batch on List<MAPolygon> {
 
   //region methods
   Future<List<MAPolygon>> polygonWithCoordinatesCount_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coords.length != count.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithCoordinatesCount_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
@@ -182,10 +181,9 @@ extension MAPolygon_Batch on List<MAPolygon> {
   }
   
   Future<List<MAPolygon>> polygonWithPointsCount_batch(List<List<MAMapPoint>> points, List<int> count) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (points.length != count.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithPointsCount_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
@@ -202,10 +200,9 @@ extension MAPolygon_Batch on List<MAPolygon> {
   }
   
   Future<List<bool>> setPolygonWithPointsCount_batch(List<List<MAMapPoint>> points, List<int> count) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (points.length != count.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithPointsCount_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
@@ -222,10 +219,9 @@ extension MAPolygon_Batch on List<MAPolygon> {
   }
   
   Future<List<bool>> setPolygonWithCoordinatesCount_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coords.length != count.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithCoordinatesCount_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);

@@ -574,10 +574,9 @@ extension com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Batch on List<co
 
   //region methods
   Future<void> runCameraUpdate_batch(List<com_autonavi_ae_gmap_GLMapState> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::runCameraUpdate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -594,10 +593,9 @@ extension com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Batch on List<co
   }
   
   Future<void> mergeCameraUpdateDelegate_batch(List<com_autonavi_amap_mapcore_AbstractCameraUpdateMessage> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::mergeCameraUpdateDelegate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -614,10 +612,9 @@ extension com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Batch on List<co
   }
   
   Future<void> generateMapAnimation_batch(List<com_autonavi_ae_gmap_GLMapEngine> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::generateMapAnimation_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);

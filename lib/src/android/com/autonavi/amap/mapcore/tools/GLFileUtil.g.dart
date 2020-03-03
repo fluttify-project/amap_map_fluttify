@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
   }
   
   static Future<List<com_autonavi_amap_mapcore_tools_GLFileUtil>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GLFileUtil__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_tools_GLFileUtil> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_tools_GLFileUtil()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -102,10 +102,9 @@ extension com_autonavi_amap_mapcore_tools_GLFileUtil_Batch on List<com_autonavi_
 
   //region methods
   Future<void> writeDatasToFile_batch(List<String> var0, List<Uint8List> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLFileUtil::writeDatasToFile_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
@@ -122,10 +121,9 @@ extension com_autonavi_amap_mapcore_tools_GLFileUtil_Batch on List<com_autonavi_
   }
   
   Future<List<Uint8List>> readFileContents_batch(List<String> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLFileUtil::readFileContents_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);

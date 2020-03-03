@@ -239,10 +239,9 @@ extension com_autonavi_amap_mapcore_message_AbstractGestureMapMessage_Batch on L
 
   //region methods
   Future<void> setState_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::setState_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -259,10 +258,9 @@ extension com_autonavi_amap_mapcore_message_AbstractGestureMapMessage_Batch on L
   }
   
   Future<void> reset_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::reset_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -279,10 +277,9 @@ extension com_autonavi_amap_mapcore_message_AbstractGestureMapMessage_Batch on L
   }
   
   Future<void> runCameraUpdate_batch(List<com_autonavi_ae_gmap_GLMapState> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::runCameraUpdate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -299,10 +296,9 @@ extension com_autonavi_amap_mapcore_message_AbstractGestureMapMessage_Batch on L
   }
   
   Future<List<int>> getMapGestureState_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::getMapGestureState_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
   }
   
   static Future<List<com_autonavi_amap_mapcore_AMapNativeParticleSystem>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapNativeParticleSystem__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_AMapNativeParticleSystem> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_AMapNativeParticleSystem()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -784,10 +784,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
 
   //region methods
   Future<List<int>> nativeCreate_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreate_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -804,10 +803,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> nativeSetGLShaderManager_batch(List<int> var0, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetGLShaderManager_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -824,10 +822,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<List<int>> nativeDestroy_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeDestroy_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -844,10 +841,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> nativeRender_batch(List<int> var0, List<Float64List> var2, List<Float64List> var3, List<int> var4, List<int> var5, List<double> var6, List<double> var7, List<double> var8) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeRender_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "refId": this[i].refId}]);
@@ -864,10 +860,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> setStartParticleSize_batch(List<int> var0, List<double> var2, List<double> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartParticleSize_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
@@ -884,10 +879,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> setMaxParticles_batch(List<int> var0, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setMaxParticles_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -904,10 +898,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> setDuration_batch(List<int> var0, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setDuration_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -924,10 +917,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> setParticleLifeTime_batch(List<int> var0, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleLifeTime_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -944,10 +936,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> setParticleStartSpeed_batch(List<int> var0, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleStartSpeed_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -964,10 +955,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> setLoop_batch(List<int> var0, List<bool> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setLoop_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -984,10 +974,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> setParticleShapeModule_batch(List<int> var0, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleShapeModule_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1004,10 +993,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> setParticleEmission_batch(List<int> var0, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleEmission_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1024,10 +1012,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<List<int>> getCurrentParticleNum_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::getCurrentParticleNum_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1044,10 +1031,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> setParticleOverLifeModule_batch(List<int> var0, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleOverLifeModule_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1064,10 +1050,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> setPreWram_batch(List<int> var0, List<bool> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setPreWram_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1084,10 +1069,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> setStartColor_batch(List<int> var0, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartColor_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1104,10 +1088,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> nativeSetTextureId_batch(List<int> var0, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetTextureId_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1124,10 +1107,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<List<int>> nativeCreateParticleEmissionModule_batch(List<int> var0, List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleEmissionModule_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
@@ -1144,10 +1126,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<List<int>> nativeCreateSinglePointParticleShape_batch(List<double> var0, List<double> var1, List<double> var2, List<bool> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateSinglePointParticleShape_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
@@ -1164,10 +1145,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<List<int>> nativeCreateRectParticleShape_batch(List<double> var0, List<double> var1, List<double> var2, List<double> var3, List<bool> var4) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRectParticleShape_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
@@ -1184,10 +1164,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<List<int>> nativeCreateRandomColorBetWeenTwoConstants_batch(List<double> var0, List<double> var1, List<double> var2, List<double> var3, List<double> var4, List<double> var5, List<double> var6, List<double> var7) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomColorBetWeenTwoConstants_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
@@ -1204,10 +1183,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<List<int>> nativeCreateParticleOverLifeModule_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleOverLifeModule_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1224,10 +1202,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<List<int>> nativeCreateConstantRotationOverLife_batch(List<double> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateConstantRotationOverLife_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1244,10 +1221,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<List<int>> nativeCreateRandomVelocityBetweenTwoConstants_batch(List<double> var0, List<double> var1, List<double> var2, List<double> var3, List<double> var4, List<double> var5) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomVelocityBetweenTwoConstants_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
@@ -1264,10 +1240,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<List<int>> nativeCreateCurveSizeOverLife_batch(List<double> var0, List<double> var1, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateCurveSizeOverLife_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1284,10 +1259,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> nativeSetOverLifeItem_batch(List<int> var0, List<int> var2, List<int> var4) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length || var2.length != var4.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetOverLifeItem_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var4": var4[i], "refId": this[i].refId}]);
@@ -1304,10 +1278,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> nativeReleaseVelocityOverLife_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseVelocityOverLife_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1324,10 +1297,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> nativeReleaseColorGenerate_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseColorGenerate_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1344,10 +1316,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> nativeReleaseParticleEmissonModule_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleEmissonModule_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1364,10 +1335,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> nativeReleaseParticleOverLifeModule_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleOverLifeModule_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1384,10 +1354,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> nativeReleaseParticleShapeModule_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleShapeModule_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1404,10 +1373,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> nativeReleaseRotationOverLife_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseRotationOverLife_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -1424,10 +1392,9 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   }
   
   Future<void> nativeReleaseSizeOverLife_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseSizeOverLife_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);

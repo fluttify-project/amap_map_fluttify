@@ -27,9 +27,9 @@ class MAHeatMapGradient extends NSObject with NSCopying {
   }
   
   static Future<List<MAHeatMapGradient>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAHeatMapGradient', {'length': length});
   
     final List<MAHeatMapGradient> typedResult = resultBatch.map((result) => MAHeatMapGradient()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -104,10 +104,9 @@ extension MAHeatMapGradient_Batch on List<MAHeatMapGradient> {
 
   //region methods
   Future<List<MAHeatMapGradient>> initWithColorAndWithStartPoints_batch(List<List<UIColor>> colors, List<List<num>> startPoints) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (colors.length != startPoints.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapGradient::initWithColorAndWithStartPoints_batch', [for (int i = 0; i < this.length; i++) {"colors": colors[i].map((it) => it.refId).toList(), "startPoints": startPoints[i], "refId": this[i].refId}]);

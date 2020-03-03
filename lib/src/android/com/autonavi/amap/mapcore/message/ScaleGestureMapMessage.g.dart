@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends com_auton
   }
   
   static Future<List<com_autonavi_amap_mapcore_message_ScaleGestureMapMessage>> create_batch__int__float__int__int(List<int> var1, List<double> var2, List<int> var3, List<int> var4) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i]}]);
   
     final List<com_autonavi_amap_mapcore_message_ScaleGestureMapMessage> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -156,10 +156,9 @@ extension com_autonavi_amap_mapcore_message_ScaleGestureMapMessage_Batch on List
 
   //region methods
   Future<List<com_autonavi_amap_mapcore_message_ScaleGestureMapMessage>> obtain_batch(List<int> var0, List<double> var1, List<int> var2, List<int> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::obtain_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
@@ -176,10 +175,9 @@ extension com_autonavi_amap_mapcore_message_ScaleGestureMapMessage_Batch on List
   }
   
   Future<void> destory_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::destory_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

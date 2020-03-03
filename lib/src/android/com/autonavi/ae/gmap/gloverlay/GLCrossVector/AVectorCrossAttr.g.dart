@@ -27,9 +27,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr extends java
   }
   
   static Future<List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__', {'length': length});
   
     final List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = result..tag = 'amap_map_fluttify').toList();

@@ -27,9 +27,9 @@ class com_amap_api_maps_model_particle_ParticleEmissionModule extends com_autona
   }
   
   static Future<List<com_amap_api_maps_model_particle_ParticleEmissionModule>> create_batch__int__int(List<int> var1, List<int> var2) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i]}]);
   
     final List<com_amap_api_maps_model_particle_ParticleEmissionModule> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify').toList();

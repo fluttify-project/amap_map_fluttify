@@ -27,9 +27,9 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   }
   
   static Future<List<com_amap_api_maps_model_TextOptions>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_TextOptions__', {'length': length});
   
     final List<com_amap_api_maps_model_TextOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_TextOptions()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -520,10 +520,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
 
   //region methods
   Future<List<com_amap_api_maps_model_TextOptions>> position_batch(List<com_amap_api_maps_model_LatLng> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::position_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -540,10 +539,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<com_amap_api_maps_model_TextOptions>> text_batch(List<String> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::text_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -560,10 +558,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<com_amap_api_maps_model_TextOptions>> visible_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::visible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -580,10 +577,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<com_amap_api_maps_model_TextOptions>> zIndex_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::zIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -600,10 +596,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<com_amap_api_maps_model_TextOptions>> rotate_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::rotate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -620,10 +615,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<com_amap_api_maps_model_TextOptions>> align_batch(List<int> var1, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::align_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -640,10 +634,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<com_amap_api_maps_model_TextOptions>> backgroundColor_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::backgroundColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -660,10 +653,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<com_amap_api_maps_model_TextOptions>> setObject_batch(List<Object> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::setObject_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -680,10 +672,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<com_amap_api_maps_model_TextOptions>> fontColor_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::fontColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -700,10 +691,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<com_amap_api_maps_model_TextOptions>> fontSize_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::fontSize_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -720,10 +710,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<com_amap_api_maps_model_LatLng>> getPosition_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::getPosition_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -740,10 +729,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<String>> getText_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::getText_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -760,10 +748,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<double>> getRotate_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::getRotate_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -780,10 +767,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<int>> getAlignX_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::getAlignX_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -800,10 +786,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<int>> getAlignY_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::getAlignY_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -820,10 +805,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<int>> getBackgroundColor_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::getBackgroundColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -840,10 +824,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<int>> getFontColor_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::getFontColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -860,10 +843,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<Object>> getObject_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::getObject_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -880,10 +862,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<int>> getFontSize_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::getFontSize_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -900,10 +881,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<double>> getZIndex_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::getZIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -920,10 +900,9 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   }
   
   Future<List<bool>> isVisible_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::isVisible_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

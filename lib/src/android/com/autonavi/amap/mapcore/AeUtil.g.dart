@@ -33,9 +33,9 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
   }
   
   static Future<List<com_autonavi_amap_mapcore_AeUtil>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_AeUtil__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_AeUtil> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_AeUtil()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -130,10 +130,9 @@ extension com_autonavi_amap_mapcore_AeUtil_Batch on List<com_autonavi_amap_mapco
 
   //region methods
   Future<void> loadLib_batch(List<android_content_Context> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AeUtil::loadLib_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "refId": this[i].refId}]);
@@ -150,10 +149,9 @@ extension com_autonavi_amap_mapcore_AeUtil_Batch on List<com_autonavi_amap_mapco
   }
   
   Future<List<com_autonavi_ae_gmap_GLMapEngine_InitParam>> initResource_batch(List<android_content_Context> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AeUtil::initResource_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "refId": this[i].refId}]);
@@ -170,10 +168,9 @@ extension com_autonavi_amap_mapcore_AeUtil_Batch on List<com_autonavi_amap_mapco
   }
   
   Future<void> readAssetsFileAndSave_batch(List<String> var0, List<String> var1, List<android_content_Context> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AeUtil::readAssetsFileAndSave_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i].refId, "refId": this[i].refId}]);

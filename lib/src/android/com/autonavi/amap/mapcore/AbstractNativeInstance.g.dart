@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_AbstractNativeInstance extends java_lang_Object 
   }
   
   static Future<List<com_autonavi_amap_mapcore_AbstractNativeInstance>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_AbstractNativeInstance__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_AbstractNativeInstance> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_AbstractNativeInstance()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -102,10 +102,9 @@ extension com_autonavi_amap_mapcore_AbstractNativeInstance_Batch on List<com_aut
 
   //region methods
   Future<List<int>> getNativeInstance_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractNativeInstance::getNativeInstance_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -122,10 +121,9 @@ extension com_autonavi_amap_mapcore_AbstractNativeInstance_Batch on List<com_aut
   }
   
   Future<void> createNativeInstace_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractNativeInstance::createNativeInstace_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

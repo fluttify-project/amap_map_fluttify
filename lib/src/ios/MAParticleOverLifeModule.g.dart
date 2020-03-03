@@ -27,9 +27,9 @@ class MAParticleOverLifeModule extends NSObject  {
   }
   
   static Future<List<MAParticleOverLifeModule>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleOverLifeModule', {'length': length});
   
     final List<MAParticleOverLifeModule> typedResult = resultBatch.map((result) => MAParticleOverLifeModule()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -146,10 +146,9 @@ extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
 
   //region methods
   Future<void> setVelocityOverLife_batch(List<MAParticleVelocityGenerate> velocity) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setVelocityOverLife_batch', [for (int i = 0; i < this.length; i++) {"velocity": velocity[i].refId, "refId": this[i].refId}]);
@@ -166,10 +165,9 @@ extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
   }
   
   Future<void> setRotationOverLife_batch(List<MAParticleRotationGenerate> rotation) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setRotationOverLife_batch', [for (int i = 0; i < this.length; i++) {"rotation": rotation[i].refId, "refId": this[i].refId}]);
@@ -186,10 +184,9 @@ extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
   }
   
   Future<void> setSizeOverLife_batch(List<MAParticleSizeGenerate> size) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setSizeOverLife_batch', [for (int i = 0; i < this.length; i++) {"size": size[i].refId, "refId": this[i].refId}]);
@@ -206,10 +203,9 @@ extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
   }
   
   Future<void> setColorOverLife_batch(List<MAParticleColorGenerate> color) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setColorOverLife_batch', [for (int i = 0; i < this.length; i++) {"color": color[i].refId, "refId": this[i].refId}]);

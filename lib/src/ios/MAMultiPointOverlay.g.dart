@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
+class MAMultiPointOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
   }
   
   static Future<List<MAMultiPointOverlay>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiPointOverlay', {'length': length});
   
     final List<MAMultiPointOverlay> typedResult = resultBatch.map((result) => MAMultiPointOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -91,10 +91,9 @@ extension MAMultiPointOverlay_Batch on List<MAMultiPointOverlay> {
 
   //region methods
   Future<List<MAMultiPointOverlay>> initWithMultiPointItems_batch(List<List<MAMultiPointItem>> items) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlay::initWithMultiPointItems_batch', [for (int i = 0; i < this.length; i++) {"items": items[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);

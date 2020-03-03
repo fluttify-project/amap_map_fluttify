@@ -27,9 +27,9 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
   }
   
   static Future<List<MAParticleSinglePointShapeModule>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleSinglePointShapeModule', {'length': length});
   
     final List<MAParticleSinglePointShapeModule> typedResult = resultBatch.map((result) => MAParticleSinglePointShapeModule()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -80,10 +80,9 @@ extension MAParticleSinglePointShapeModule_Batch on List<MAParticleSinglePointSh
 
   //region methods
   Future<List<MAParticleSinglePointShapeModule>> initWithShapeXYZuseRatio_batch(List<double> x, List<double> y, List<double> z, List<bool> isUseRatio) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (x.length != y.length || y.length != z.length || z.length != isUseRatio.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSinglePointShapeModule::initWithShapeXYZuseRatio_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i], "isUseRatio": isUseRatio[i], "refId": this[i].refId}]);

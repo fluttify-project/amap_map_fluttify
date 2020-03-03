@@ -27,9 +27,9 @@ class MAParticleConstantRotationGenerate extends NSObject with MAParticleRotatio
   }
   
   static Future<List<MAParticleConstantRotationGenerate>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleConstantRotationGenerate', {'length': length});
   
     final List<MAParticleConstantRotationGenerate> typedResult = resultBatch.map((result) => MAParticleConstantRotationGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -80,10 +80,9 @@ extension MAParticleConstantRotationGenerate_Batch on List<MAParticleConstantRot
 
   //region methods
   Future<List<MAParticleConstantRotationGenerate>> initWithRotate_batch(List<double> rotate) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleConstantRotationGenerate::initWithRotate_batch', [for (int i = 0; i < this.length; i++) {"rotate": rotate[i], "refId": this[i].refId}]);

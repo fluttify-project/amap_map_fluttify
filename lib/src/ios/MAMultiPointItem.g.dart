@@ -27,9 +27,9 @@ class MAMultiPointItem extends NSObject with MAAnnotation, NSCopying {
   }
   
   static Future<List<MAMultiPointItem>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiPointItem', {'length': length});
   
     final List<MAMultiPointItem> typedResult = resultBatch.map((result) => MAMultiPointItem()..refId = result..tag = 'amap_map_fluttify').toList();

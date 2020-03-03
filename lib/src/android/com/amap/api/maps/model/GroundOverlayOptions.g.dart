@@ -27,9 +27,9 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
   }
   
   static Future<List<com_amap_api_maps_model_GroundOverlayOptions>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_GroundOverlayOptions__', {'length': length});
   
     final List<com_amap_api_maps_model_GroundOverlayOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_GroundOverlayOptions()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -498,10 +498,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
 
   //region methods
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> image_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::image_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -518,10 +517,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> anchor_batch(List<double> var1, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::anchor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -538,10 +536,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> position__com_amap_api_maps_model_LatLng__double_batch(List<com_amap_api_maps_model_LatLng> var1, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "var2": var2[i], "refId": this[i].refId}]);
@@ -558,10 +555,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> position__com_amap_api_maps_model_LatLng__double__double_batch(List<com_amap_api_maps_model_LatLng> var1, List<double> var2, List<double> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double__double_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
@@ -578,10 +574,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> positionFromBounds_batch(List<com_amap_api_maps_model_LatLngBounds> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::positionFromBounds_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -598,10 +593,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> bearing_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::bearing_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -618,10 +612,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> zIndex_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::zIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -638,10 +631,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> visible_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::visible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -658,10 +650,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> transparency_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::transparency_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -678,10 +669,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getImage_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getImage_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -698,10 +688,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<com_amap_api_maps_model_LatLng>> getLocation_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getLocation_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -718,10 +707,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<double>> getWidth_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getWidth_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -738,10 +726,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<double>> getHeight_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getHeight_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -758,10 +745,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<com_amap_api_maps_model_LatLngBounds>> getBounds_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getBounds_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -778,10 +764,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<double>> getBearing_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getBearing_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -798,10 +783,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<double>> getZIndex_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getZIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -818,10 +802,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<double>> getTransparency_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getTransparency_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -838,10 +821,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<double>> getAnchorU_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getAnchorU_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -858,10 +840,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<double>> getAnchorV_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::getAnchorV_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -878,10 +859,9 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   }
   
   Future<List<bool>> isVisible_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::isVisible_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

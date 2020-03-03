@@ -27,9 +27,9 @@ class MAShape extends NSObject with MAAnnotation {
   }
   
   static Future<List<MAShape>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAShape', {'length': length});
   
     final List<MAShape> typedResult = resultBatch.map((result) => MAShape()..refId = result..tag = 'amap_map_fluttify').toList();

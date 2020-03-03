@@ -27,9 +27,9 @@ class MACustomCalloutView extends UIView  {
   }
   
   static Future<List<MACustomCalloutView>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACustomCalloutView', {'length': length});
   
     final List<MACustomCalloutView> typedResult = resultBatch.map((result) => MACustomCalloutView()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -109,10 +109,9 @@ extension MACustomCalloutView_Batch on List<MACustomCalloutView> {
 
   //region methods
   Future<List<NSObject>> initWithCustomView_batch(List<UIView> customView, {bool viewChannel = true}) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod('MACustomCalloutView::initWithCustomView_batch', [for (int i = 0; i < this.length; i++) {"customView": customView[i].refId, "refId": this[i].refId}]);

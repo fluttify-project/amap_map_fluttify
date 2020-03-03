@@ -27,9 +27,9 @@ class MATraceLocation extends NSObject  {
   }
   
   static Future<List<MATraceLocation>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATraceLocation', {'length': length});
   
     final List<MATraceLocation> typedResult = resultBatch.map((result) => MATraceLocation()..refId = result..tag = 'amap_map_fluttify').toList();

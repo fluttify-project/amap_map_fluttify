@@ -27,9 +27,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   }
   
   static Future<List<com_amap_api_maps_utils_overlay_MovingPointOverlay>> create_batch__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay(List<com_amap_api_maps_AMap> var1, List<com_amap_api_maps_model_BasePointOverlay> var2) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId, "var2": var2[i].refId}]);
   
     final List<com_amap_api_maps_utils_overlay_MovingPointOverlay> typedResult = resultBatch.map((result) => com_amap_api_maps_utils_overlay_MovingPointOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -385,10 +385,9 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
 
   //region methods
   Future<void> setPoints_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setPoints_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
@@ -405,10 +404,9 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   }
   
   Future<void> resetIndex_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::resetIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -425,10 +423,9 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   }
   
   Future<void> setTotalDuration_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setTotalDuration_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -445,10 +442,9 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   }
   
   Future<void> startSmoothMove_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::startSmoothMove_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -465,10 +461,9 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   }
   
   Future<void> stopMove_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::stopMove_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -485,10 +480,9 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   }
   
   Future<List<com_amap_api_maps_model_BasePointOverlay>> getObject_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getObject_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -505,10 +499,9 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   }
   
   Future<List<com_amap_api_maps_model_LatLng>> getPosition_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getPosition_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -525,10 +518,9 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   }
   
   Future<List<int>> getIndex_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::getIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -545,10 +537,9 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   }
   
   Future<void> destroy_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::destroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -565,10 +556,9 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   }
   
   Future<void> removeMarker_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::removeMarker_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -585,10 +575,9 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   }
   
   Future<void> setPosition_batch(List<com_amap_api_maps_model_LatLng> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setPosition_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -605,10 +594,9 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   }
   
   Future<void> setRotate_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setRotate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -625,10 +613,9 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   }
   
   Future<void> setVisible_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.MovingPointOverlay::setVisible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);

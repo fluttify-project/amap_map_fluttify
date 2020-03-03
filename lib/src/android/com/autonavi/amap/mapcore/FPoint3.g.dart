@@ -35,9 +35,9 @@ class com_autonavi_amap_mapcore_FPoint3 extends com_autonavi_amap_mapcore_FPoint
   }
   
   static Future<List<com_autonavi_amap_mapcore_FPoint3>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_FPoint3__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_FPoint3> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_FPoint3()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -46,9 +46,9 @@ class com_autonavi_amap_mapcore_FPoint3 extends com_autonavi_amap_mapcore_FPoint
   }
   
   static Future<List<com_autonavi_amap_mapcore_FPoint3>> create_batch__float__float__int(List<double> var1, List<double> var2, List<int> var3) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_FPoint3__float__float__int', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i]}]);
   
     final List<com_autonavi_amap_mapcore_FPoint3> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_FPoint3()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -115,10 +115,9 @@ extension com_autonavi_amap_mapcore_FPoint3_Batch on List<com_autonavi_amap_mapc
 
   //region methods
   Future<void> setColorIndex_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPoint3::setColorIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
