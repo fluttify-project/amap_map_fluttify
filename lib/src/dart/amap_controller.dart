@@ -1237,8 +1237,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<Polyline> addPolyline(PolylineOption option) {
     assert(option != null);
 
-    final latitudeBatch = option.latLngList.map((e) => e.latitude);
-    final longitudeBatch = option.latLngList.map((e) => e.longitude);
+    final latitudeBatch = option.latLngList.map((e) => e.latitude).toList();
+    final longitudeBatch = option.latLngList.map((e) => e.longitude).toList();
 
     return platform(
       android: (pool) async {
@@ -1384,8 +1384,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<Polygon> addPolygon(PolygonOption option) {
     assert(option != null, 'option不能为null');
 
-    final latitudeBatch = option.latLngList.map((e) => e.latitude);
-    final longitudeBatch = option.latLngList.map((e) => e.longitude);
+    final latitudeBatch = option.latLngList.map((e) => e.latitude).toList();
+    final longitudeBatch = option.latLngList.map((e) => e.longitude).toList();
 
     return platform(
       android: (pool) async {
