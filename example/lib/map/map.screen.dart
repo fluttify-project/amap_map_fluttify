@@ -30,11 +30,11 @@ class MapDemo extends StatelessWidget {
               sublabel: 'CreateMapScreen',
               target: CreateMapScreen(),
             ),
-//            FunctionItem(
-//              label: '显示多地图',
-//              sublabel: 'MultiMapScreen',
-//              target: MultiMapScreen(),
-//            ),
+            FunctionItem(
+              label: '显示多地图',
+              sublabel: 'MultiMapScreen',
+              target: MultiMapScreen(),
+            ),
           ],
         ),
         SPACE_BIG,

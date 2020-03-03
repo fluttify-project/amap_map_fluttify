@@ -151,16 +151,15 @@ class _AmapViewState extends State<AmapView> {
                   var2: snapshot.data,
                   onDispose: _onPlatformViewDispose,
                   onViewCreated: (controller) async {
-                    _controller = AmapController.android(
-                      controller,
-                      this,
-                      widget.onMapCreated,
-                    );
+                    _controller = AmapController.android(controller, this);
 
                     final bundle = await android_os_Bundle.create();
                     await controller.onCreate(bundle);
 
                     await _initAndroid();
+                    if (widget.onMapCreated != null) {
+                      await widget.onMapCreated(_controller);
+                    }
                     await bundle.release();
                   },
                 );

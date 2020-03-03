@@ -20,22 +20,8 @@ typedef Future<void> OnTraceFailed(int errorCode, String errorInfo);
 /// 地图控制类
 class AmapController with WidgetsBindingObserver, _Private {
   /// Android构造器
-  AmapController.android(
-    this.androidController,
-    this._state,
-    _OnMapCreated onMapCreated,
-  ) {
+  AmapController.android(this.androidController, this._state) {
     WidgetsBinding.instance.addObserver(this);
-    androidController.getMap().then((map) {
-      map.setOnMapLoadedListener(
-        _androidMapDelegate
-          .._onMapLoaded = () async {
-            if (onMapCreated != null) {
-              await onMapCreated(this);
-            }
-          },
-      );
-    });
   }
 
   /// iOS构造器
@@ -129,7 +115,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           switch (myLocationType) {
             case MyLocationType.Locate:
               await locationStyle.myLocationType(
-                  com_amap_api_maps_model_MyLocationStyle.LOCATION_TYPE_LOCATE);
+                  com_amap_api_maps_model_MyLocationStyle.LOCATION_TYPE_SHOW);
               break;
             case MyLocationType.Follow:
               await locationStyle.myLocationType(
@@ -184,6 +170,11 @@ class AmapController with WidgetsBindingObserver, _Private {
           } else if (myLocationType == MyLocationType.Rotate) {
             await iosController.setUserTrackingModeAnimated(
               MAUserTrackingMode.MAUserTrackingModeFollowWithHeading,
+              true,
+            );
+          } else {
+            await iosController.setUserTrackingModeAnimated(
+              MAUserTrackingMode.MAUserTrackingModeNone,
               true,
             );
           }
@@ -1938,6 +1929,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 添加热力图
   Future<Heatmap> addHeatmapTile(HeatmapTileOption option) async {
     assert(option != null);
     return platform(
