@@ -93,14 +93,14 @@ extension MAShape_Batch on List<MAShape> {
   //endregion
 
   //region setters
-  Future<void> set_batch_title(List<String> title) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAShape::set_title_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "title": title[i]}]);
+  Future<void> set_title_batch(List<String> title) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAShape::set_title_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "title": title[i]}]);
   
   
   }
   
-  Future<void> set_batch_subtitle(List<String> subtitle) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAShape::set_subtitle_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "subtitle": subtitle[i]}]);
+  Future<void> set_subtitle_batch(List<String> subtitle) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAShape::set_subtitle_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "subtitle": subtitle[i]}]);
   
   
   }

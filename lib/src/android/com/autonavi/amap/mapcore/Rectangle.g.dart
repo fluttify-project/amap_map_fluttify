@@ -237,26 +237,26 @@ extension com_autonavi_amap_mapcore_Rectangle_Batch on List<com_autonavi_amap_ma
   //endregion
 
   //region setters
-  Future<void> set_batch_left(List<double> left) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::set_left_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "left": left[i]}]);
+  Future<void> set_left_batch(List<double> left) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::set_left_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "left": left[i]}]);
   
   
   }
   
-  Future<void> set_batch_right(List<double> right) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::set_right_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "right": right[i]}]);
+  Future<void> set_right_batch(List<double> right) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::set_right_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "right": right[i]}]);
   
   
   }
   
-  Future<void> set_batch_bottom(List<double> bottom) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::set_bottom_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "bottom": bottom[i]}]);
+  Future<void> set_bottom_batch(List<double> bottom) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::set_bottom_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "bottom": bottom[i]}]);
   
   
   }
   
-  Future<void> set_batch_top(List<double> top) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::set_top_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "top": top[i]}]);
+  Future<void> set_top_batch(List<double> top) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::set_top_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "top": top[i]}]);
   
   
   }

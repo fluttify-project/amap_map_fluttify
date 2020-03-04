@@ -155,20 +155,20 @@ extension com_autonavi_amap_mapcore_message_ScaleGestureMapMessage_Batch on List
   //endregion
 
   //region setters
-  Future<void> set_batch_scaleDelta(List<double> scaleDelta) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_scaleDelta_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "scaleDelta": scaleDelta[i]}]);
+  Future<void> set_scaleDelta_batch(List<double> scaleDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_scaleDelta_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "scaleDelta": scaleDelta[i]}]);
   
   
   }
   
-  Future<void> set_batch_pivotX(List<int> pivotX) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotX_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pivotX": pivotX[i]}]);
+  Future<void> set_pivotX_batch(List<int> pivotX) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotX_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pivotX": pivotX[i]}]);
   
   
   }
   
-  Future<void> set_batch_pivotY(List<int> pivotY) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotY_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pivotY": pivotY[i]}]);
+  Future<void> set_pivotY_batch(List<int> pivotY) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotY_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pivotY": pivotY[i]}]);
   
   
   }

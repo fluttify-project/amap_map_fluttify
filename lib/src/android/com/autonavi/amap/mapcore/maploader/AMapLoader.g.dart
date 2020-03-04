@@ -205,8 +205,8 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
   //endregion
 
   //region setters
-  Future<void> set_batch_isFinish(List<bool> isFinish) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::set_isFinish_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isFinish": isFinish[i]}]);
+  Future<void> set_isFinish_batch(List<bool> isFinish) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::set_isFinish_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isFinish": isFinish[i]}]);
   
   
   }

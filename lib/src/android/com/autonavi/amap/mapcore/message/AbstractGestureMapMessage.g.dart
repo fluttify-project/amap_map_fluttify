@@ -238,38 +238,38 @@ extension com_autonavi_amap_mapcore_message_AbstractGestureMapMessage_Batch on L
   //endregion
 
   //region setters
-  Future<void> set_batch_width(List<int> width) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_width_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "width": width[i]}]);
+  Future<void> set_width_batch(List<int> width) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_width_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "width": width[i]}]);
   
   
   }
   
-  Future<void> set_batch_height(List<int> height) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_height_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "height": height[i]}]);
+  Future<void> set_height_batch(List<int> height) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_height_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "height": height[i]}]);
   
   
   }
   
-  Future<void> set_batch_isGestureScaleByMapCenter(List<bool> isGestureScaleByMapCenter) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isGestureScaleByMapCenter_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isGestureScaleByMapCenter": isGestureScaleByMapCenter[i]}]);
+  Future<void> set_isGestureScaleByMapCenter_batch(List<bool> isGestureScaleByMapCenter) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isGestureScaleByMapCenter_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isGestureScaleByMapCenter": isGestureScaleByMapCenter[i]}]);
   
   
   }
   
-  Future<void> set_batch_isUseAnchor(List<bool> isUseAnchor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isUseAnchor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isUseAnchor": isUseAnchor[i]}]);
+  Future<void> set_isUseAnchor_batch(List<bool> isUseAnchor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isUseAnchor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isUseAnchor": isUseAnchor[i]}]);
   
   
   }
   
-  Future<void> set_batch_anchorX(List<int> anchorX) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorX_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "anchorX": anchorX[i]}]);
+  Future<void> set_anchorX_batch(List<int> anchorX) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorX_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "anchorX": anchorX[i]}]);
   
   
   }
   
-  Future<void> set_batch_anchorY(List<int> anchorY) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorY_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "anchorY": anchorY[i]}]);
+  Future<void> set_anchorY_batch(List<int> anchorY) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorY_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "anchorY": anchorY[i]}]);
   
   
   }

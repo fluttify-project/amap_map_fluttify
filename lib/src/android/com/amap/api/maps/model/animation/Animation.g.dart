@@ -263,8 +263,8 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
   //endregion
 
   //region setters
-  Future<void> set_batch_glAnimation(List<com_autonavi_amap_mapcore_animation_GLAnimation> glAnimation) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::set_glAnimation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "glAnimation": glAnimation[i].refId}]);
+  Future<void> set_glAnimation_batch(List<com_autonavi_amap_mapcore_animation_GLAnimation> glAnimation) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::set_glAnimation_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "glAnimation": glAnimation[i].refId}]);
   
   
   }

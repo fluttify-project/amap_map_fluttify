@@ -74,8 +74,8 @@ extension MAMultiPolyline_Batch on List<MAMultiPolyline> {
   //endregion
 
   //region setters
-  Future<void> set_batch_drawStyleIndexes(List<List<num>> drawStyleIndexes) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPolyline::set_drawStyleIndexes_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "drawStyleIndexes": drawStyleIndexes[i]}]);
+  Future<void> set_drawStyleIndexes_batch(List<List<num>> drawStyleIndexes) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPolyline::set_drawStyleIndexes_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "drawStyleIndexes": drawStyleIndexes[i]}]);
   
   
   }

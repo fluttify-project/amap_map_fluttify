@@ -146,20 +146,20 @@ extension MAArc_Batch on List<MAArc> {
   //endregion
 
   //region setters
-  Future<void> set_batch_startCoordinate(List<CLLocationCoordinate2D> startCoordinate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::set_startCoordinate_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "startCoordinate": startCoordinate[i].refId}]);
+  Future<void> set_startCoordinate_batch(List<CLLocationCoordinate2D> startCoordinate) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::set_startCoordinate_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "startCoordinate": startCoordinate[i].refId}]);
   
   
   }
   
-  Future<void> set_batch_passedCoordinate(List<CLLocationCoordinate2D> passedCoordinate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::set_passedCoordinate_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "passedCoordinate": passedCoordinate[i].refId}]);
+  Future<void> set_passedCoordinate_batch(List<CLLocationCoordinate2D> passedCoordinate) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::set_passedCoordinate_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "passedCoordinate": passedCoordinate[i].refId}]);
   
   
   }
   
-  Future<void> set_batch_endCoordinate(List<CLLocationCoordinate2D> endCoordinate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::set_endCoordinate_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "endCoordinate": endCoordinate[i].refId}]);
+  Future<void> set_endCoordinate_batch(List<CLLocationCoordinate2D> endCoordinate) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::set_endCoordinate_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "endCoordinate": endCoordinate[i].refId}]);
   
   
   }

@@ -296,8 +296,8 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup_Batch on List<com_au
   //endregion
 
   //region setters
-  Future<void> set_batch_needMove(List<bool> needMove) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::set_needMove_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "needMove": needMove[i]}]);
+  Future<void> set_needMove_batch(List<bool> needMove) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::set_needMove_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "needMove": needMove[i]}]);
   
   
   }

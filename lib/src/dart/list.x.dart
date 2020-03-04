@@ -35,10 +35,10 @@ extension TraceLocationListX on List<TraceLocation> {
       latitudeBatch,
       longitudeBatch,
     );
-    await traceLocationBatch.set_batch_loc(coordBatch);
-    await traceLocationBatch.set_batch_speed(speedBatch);
-    await traceLocationBatch.set_batch_angle(bearingBatch);
-    await traceLocationBatch.set_batch_time(timeBatch);
+    await traceLocationBatch.set_loc_batch(coordBatch);
+    await traceLocationBatch.set_speed_batch(speedBatch);
+    await traceLocationBatch.set_angle_batch(bearingBatch);
+    await traceLocationBatch.set_time_batch(timeBatch);
 
     return traceLocationBatch;
   }

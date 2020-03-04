@@ -127,14 +127,14 @@ extension MAMultiColoredPolylineRenderer_Batch on List<MAMultiColoredPolylineRen
   //endregion
 
   //region setters
-  Future<void> set_batch_strokeColors(List<List<UIColor>> strokeColors) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::set_strokeColors_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strokeColors": strokeColors[i].map((it) => it.refId).toList()}]);
+  Future<void> set_strokeColors_batch(List<List<UIColor>> strokeColors) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::set_strokeColors_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strokeColors": strokeColors[i].map((it) => it.refId).toList()}]);
   
   
   }
   
-  Future<void> set_batch_gradient(List<bool> gradient) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::set_gradient_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "gradient": gradient[i]}]);
+  Future<void> set_gradient_batch(List<bool> gradient) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::set_gradient_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "gradient": gradient[i]}]);
   
   
   }

@@ -114,14 +114,14 @@ extension com_autonavi_ae_gmap_maploader_ProcessingTile_Batch on List<com_autona
   //endregion
 
   //region setters
-  Future<void> set_batch_mKeyName(List<String> mKeyName) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.maploader.ProcessingTile::set_mKeyName_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mKeyName": mKeyName[i]}]);
+  Future<void> set_mKeyName_batch(List<String> mKeyName) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.maploader.ProcessingTile::set_mKeyName_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mKeyName": mKeyName[i]}]);
   
   
   }
   
-  Future<void> set_batch_mCreateTime(List<int> mCreateTime) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.maploader.ProcessingTile::set_mCreateTime_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCreateTime": mCreateTime[i]}]);
+  Future<void> set_mCreateTime_batch(List<int> mCreateTime) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.maploader.ProcessingTile::set_mCreateTime_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCreateTime": mCreateTime[i]}]);
   
   
   }

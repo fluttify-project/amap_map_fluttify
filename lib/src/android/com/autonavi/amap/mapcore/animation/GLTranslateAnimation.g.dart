@@ -190,38 +190,38 @@ extension com_autonavi_amap_mapcore_animation_GLTranslateAnimation_Batch on List
   //endregion
 
   //region setters
-  Future<void> set_batch_mFromXDelta(List<double> mFromXDelta) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mFromXDelta_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mFromXDelta": mFromXDelta[i]}]);
+  Future<void> set_mFromXDelta_batch(List<double> mFromXDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mFromXDelta_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mFromXDelta": mFromXDelta[i]}]);
   
   
   }
   
-  Future<void> set_batch_mFromYDelta(List<double> mFromYDelta) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mFromYDelta_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mFromYDelta": mFromYDelta[i]}]);
+  Future<void> set_mFromYDelta_batch(List<double> mFromYDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mFromYDelta_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mFromYDelta": mFromYDelta[i]}]);
   
   
   }
   
-  Future<void> set_batch_mToXDelta(List<double> mToXDelta) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mToXDelta_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mToXDelta": mToXDelta[i]}]);
+  Future<void> set_mToXDelta_batch(List<double> mToXDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mToXDelta_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mToXDelta": mToXDelta[i]}]);
   
   
   }
   
-  Future<void> set_batch_mToYDelta(List<double> mToYDelta) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mToYDelta_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mToYDelta": mToYDelta[i]}]);
+  Future<void> set_mToYDelta_batch(List<double> mToYDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mToYDelta_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mToYDelta": mToYDelta[i]}]);
   
   
   }
   
-  Future<void> set_batch_mCurXDelta(List<double> mCurXDelta) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mCurXDelta_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCurXDelta": mCurXDelta[i]}]);
+  Future<void> set_mCurXDelta_batch(List<double> mCurXDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mCurXDelta_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCurXDelta": mCurXDelta[i]}]);
   
   
   }
   
-  Future<void> set_batch_mCurYDelta(List<double> mCurYDelta) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mCurYDelta_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCurYDelta": mCurYDelta[i]}]);
+  Future<void> set_mCurYDelta_batch(List<double> mCurYDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mCurYDelta_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCurYDelta": mCurYDelta[i]}]);
   
   
   }

@@ -127,14 +127,14 @@ extension MAPolylineRenderer_Batch on List<MAPolylineRenderer> {
   //endregion
 
   //region setters
-  Future<void> set_batch_is3DArrowLine(List<bool> is3DArrowLine) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_is3DArrowLine_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "is3DArrowLine": is3DArrowLine[i]}]);
+  Future<void> set_is3DArrowLine_batch(List<bool> is3DArrowLine) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_is3DArrowLine_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "is3DArrowLine": is3DArrowLine[i]}]);
   
   
   }
   
-  Future<void> set_batch_sideColor(List<UIColor> sideColor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_sideColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "sideColor": sideColor[i].refId}]);
+  Future<void> set_sideColor_batch(List<UIColor> sideColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_sideColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "sideColor": sideColor[i].refId}]);
   
   
   }

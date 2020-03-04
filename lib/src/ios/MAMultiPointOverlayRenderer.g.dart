@@ -171,20 +171,20 @@ extension MAMultiPointOverlayRenderer_Batch on List<MAMultiPointOverlayRenderer>
   //endregion
 
   //region setters
-  Future<void> set_batch_icon(List<UIImage> icon) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::set_icon_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "icon": icon[i].refId}]);
+  Future<void> set_icon_batch(List<UIImage> icon) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::set_icon_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "icon": icon[i].refId}]);
   
   
   }
   
-  Future<void> set_batch_pointSize(List<CGSize> pointSize) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::set_pointSize_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pointSize": pointSize[i].refId}]);
+  Future<void> set_pointSize_batch(List<CGSize> pointSize) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::set_pointSize_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pointSize": pointSize[i].refId}]);
   
   
   }
   
-  Future<void> set_batch_anchor(List<CGPoint> anchor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::set_anchor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "anchor": anchor[i].refId}]);
+  Future<void> set_anchor_batch(List<CGPoint> anchor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::set_anchor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "anchor": anchor[i].refId}]);
   
   
   }

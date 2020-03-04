@@ -112,20 +112,20 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits_Batch o
   //endregion
 
   //region setters
-  Future<void> set_batch_mOverlayHashCode(List<int> mOverlayHashCode) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mOverlayHashCode_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mOverlayHashCode": mOverlayHashCode[i]}]);
+  Future<void> set_mOverlayHashCode_batch(List<int> mOverlayHashCode) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mOverlayHashCode_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mOverlayHashCode": mOverlayHashCode[i]}]);
   
   
   }
   
-  Future<void> set_batch_mHitedIndex(List<int> mHitedIndex) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedIndex_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mHitedIndex": mHitedIndex[i]}]);
+  Future<void> set_mHitedIndex_batch(List<int> mHitedIndex) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedIndex_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mHitedIndex": mHitedIndex[i]}]);
   
   
   }
   
-  Future<void> set_batch_mHitedTimes(List<int> mHitedTimes) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedTimes_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mHitedTimes": mHitedTimes[i]}]);
+  Future<void> set_mHitedTimes_batch(List<int> mHitedTimes) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedTimes_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mHitedTimes": mHitedTimes[i]}]);
   
   
   }

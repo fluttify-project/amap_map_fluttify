@@ -93,14 +93,14 @@ extension MACoordinateRegion_Batch on List<MACoordinateRegion> {
   //endregion
 
   //region setters
-  Future<void> set_batch_center(List<CLLocationCoordinate2D> center) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegion::set_center_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "center": center[i].refId}]);
+  Future<void> set_center_batch(List<CLLocationCoordinate2D> center) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegion::set_center_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "center": center[i].refId}]);
   
   
   }
   
-  Future<void> set_batch_span(List<MACoordinateSpan> span) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegion::set_span_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "span": span[i].refId}]);
+  Future<void> set_span_batch(List<MACoordinateSpan> span) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegion::set_span_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "span": span[i].refId}]);
   
   
   }

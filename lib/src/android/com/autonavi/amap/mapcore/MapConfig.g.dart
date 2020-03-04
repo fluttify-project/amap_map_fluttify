@@ -1930,14 +1930,14 @@ extension com_autonavi_amap_mapcore_MapConfig_Batch on List<com_autonavi_amap_ma
   //endregion
 
   //region setters
-  Future<void> set_batch_maxZoomLevel(List<double> maxZoomLevel) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::set_maxZoomLevel_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "maxZoomLevel": maxZoomLevel[i]}]);
+  Future<void> set_maxZoomLevel_batch(List<double> maxZoomLevel) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::set_maxZoomLevel_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "maxZoomLevel": maxZoomLevel[i]}]);
   
   
   }
   
-  Future<void> set_batch_minZoomLevel(List<double> minZoomLevel) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::set_minZoomLevel_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "minZoomLevel": minZoomLevel[i]}]);
+  Future<void> set_minZoomLevel_batch(List<double> minZoomLevel) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapConfig::set_minZoomLevel_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "minZoomLevel": minZoomLevel[i]}]);
   
   
   }

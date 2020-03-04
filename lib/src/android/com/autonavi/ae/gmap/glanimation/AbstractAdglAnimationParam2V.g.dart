@@ -306,26 +306,26 @@ extension com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V_Batch on
   //endregion
 
   //region setters
-  Future<void> set_batch_fromXValue(List<double> fromXValue) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromXValue_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fromXValue": fromXValue[i]}]);
+  Future<void> set_fromXValue_batch(List<double> fromXValue) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromXValue_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fromXValue": fromXValue[i]}]);
   
   
   }
   
-  Future<void> set_batch_toXValue(List<double> toXValue) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toXValue_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "toXValue": toXValue[i]}]);
+  Future<void> set_toXValue_batch(List<double> toXValue) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toXValue_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "toXValue": toXValue[i]}]);
   
   
   }
   
-  Future<void> set_batch_fromYValue(List<double> fromYValue) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromYValue_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fromYValue": fromYValue[i]}]);
+  Future<void> set_fromYValue_batch(List<double> fromYValue) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromYValue_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fromYValue": fromYValue[i]}]);
   
   
   }
   
-  Future<void> set_batch_toYValue(List<double> toYValue) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toYValue_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "toYValue": toYValue[i]}]);
+  Future<void> set_toYValue_batch(List<double> toYValue) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toYValue_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "toYValue": toYValue[i]}]);
   
   
   }

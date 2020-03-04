@@ -464,26 +464,26 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   //endregion
 
   //region setters
-  Future<void> set_batch_glPoints(List<List<CGPoint>> glPoints) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::set_glPoints_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "glPoints": glPoints[i].map((it) => it.refId).toList()}]);
+  Future<void> set_glPoints_batch(List<List<CGPoint>> glPoints) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::set_glPoints_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "glPoints": glPoints[i].map((it) => it.refId).toList()}]);
   
   
   }
   
-  Future<void> set_batch_glPointCount(List<int> glPointCount) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::set_glPointCount_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "glPointCount": glPointCount[i]}]);
+  Future<void> set_glPointCount_batch(List<int> glPointCount) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::set_glPointCount_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "glPointCount": glPointCount[i]}]);
   
   
   }
   
-  Future<void> set_batch_strokeImage(List<UIImage> strokeImage) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::set_strokeImage_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strokeImage": strokeImage[i].refId}]);
+  Future<void> set_strokeImage_batch(List<UIImage> strokeImage) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::set_strokeImage_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strokeImage": strokeImage[i].refId}]);
   
   
   }
   
-  Future<void> set_batch_alpha(List<double> alpha) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::set_alpha_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "alpha": alpha[i]}]);
+  Future<void> set_alpha_batch(List<double> alpha) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::set_alpha_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "alpha": alpha[i]}]);
   
   
   }

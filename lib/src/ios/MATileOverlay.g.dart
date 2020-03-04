@@ -266,38 +266,38 @@ extension MATileOverlay_Batch on List<MATileOverlay> {
   //endregion
 
   //region setters
-  Future<void> set_batch_tileSize(List<CGSize> tileSize) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_tileSize_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "tileSize": tileSize[i].refId}]);
+  Future<void> set_tileSize_batch(List<CGSize> tileSize) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_tileSize_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "tileSize": tileSize[i].refId}]);
   
   
   }
   
-  Future<void> set_batch_minimumZ(List<int> minimumZ) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_minimumZ_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "minimumZ": minimumZ[i]}]);
+  Future<void> set_minimumZ_batch(List<int> minimumZ) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_minimumZ_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "minimumZ": minimumZ[i]}]);
   
   
   }
   
-  Future<void> set_batch_maximumZ(List<int> maximumZ) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_maximumZ_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "maximumZ": maximumZ[i]}]);
+  Future<void> set_maximumZ_batch(List<int> maximumZ) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_maximumZ_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "maximumZ": maximumZ[i]}]);
   
   
   }
   
-  Future<void> set_batch_canReplaceMapContent(List<bool> canReplaceMapContent) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_canReplaceMapContent_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "canReplaceMapContent": canReplaceMapContent[i]}]);
+  Future<void> set_canReplaceMapContent_batch(List<bool> canReplaceMapContent) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_canReplaceMapContent_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "canReplaceMapContent": canReplaceMapContent[i]}]);
   
   
   }
   
-  Future<void> set_batch_boundingMapRect(List<MAMapRect> boundingMapRect) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_boundingMapRect_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "boundingMapRect": boundingMapRect[i].refId}]);
+  Future<void> set_boundingMapRect_batch(List<MAMapRect> boundingMapRect) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_boundingMapRect_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "boundingMapRect": boundingMapRect[i].refId}]);
   
   
   }
   
-  Future<void> set_batch_disableOffScreenTileLoading(List<bool> disableOffScreenTileLoading) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_disableOffScreenTileLoading_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "disableOffScreenTileLoading": disableOffScreenTileLoading[i]}]);
+  Future<void> set_disableOffScreenTileLoading_batch(List<bool> disableOffScreenTileLoading) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_disableOffScreenTileLoading_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "disableOffScreenTileLoading": disableOffScreenTileLoading[i]}]);
   
   
   }

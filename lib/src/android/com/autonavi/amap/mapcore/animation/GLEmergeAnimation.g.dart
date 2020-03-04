@@ -74,8 +74,8 @@ extension com_autonavi_amap_mapcore_animation_GLEmergeAnimation_Batch on List<co
   //endregion
 
   //region setters
-  Future<void> set_batch_mStartPoint(List<com_amap_api_maps_model_LatLng> mStartPoint) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLEmergeAnimation::set_mStartPoint_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mStartPoint": mStartPoint[i].refId}]);
+  Future<void> set_mStartPoint_batch(List<com_amap_api_maps_model_LatLng> mStartPoint) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLEmergeAnimation::set_mStartPoint_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mStartPoint": mStartPoint[i].refId}]);
   
   
   }

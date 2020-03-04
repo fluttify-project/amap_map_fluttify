@@ -136,14 +136,14 @@ extension com_autonavi_amap_mapcore_message_MoveGestureMapMessage_Batch on List<
   //endregion
 
   //region setters
-  Future<void> set_batch_touchDeltaX(List<double> touchDeltaX) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaX_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "touchDeltaX": touchDeltaX[i]}]);
+  Future<void> set_touchDeltaX_batch(List<double> touchDeltaX) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaX_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "touchDeltaX": touchDeltaX[i]}]);
   
   
   }
   
-  Future<void> set_batch_touchDeltaY(List<double> touchDeltaY) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaY_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "touchDeltaY": touchDeltaY[i]}]);
+  Future<void> set_touchDeltaY_batch(List<double> touchDeltaY) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaY_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "touchDeltaY": touchDeltaY[i]}]);
   
   
   }

@@ -93,14 +93,14 @@ extension MAMapRect_Batch on List<MAMapRect> {
   //endregion
 
   //region setters
-  Future<void> set_batch_origin(List<MAMapPoint> origin) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRect::set_origin_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "origin": origin[i].refId}]);
+  Future<void> set_origin_batch(List<MAMapPoint> origin) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRect::set_origin_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "origin": origin[i].refId}]);
   
   
   }
   
-  Future<void> set_batch_size(List<MAMapSize> size) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRect::set_size_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "size": size[i].refId}]);
+  Future<void> set_size_batch(List<MAMapSize> size) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRect::set_size_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "size": size[i].refId}]);
   
   
   }
