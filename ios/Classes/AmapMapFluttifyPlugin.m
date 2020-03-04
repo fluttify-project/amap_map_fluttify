@@ -168,7 +168,7 @@ extern BOOL enableLog;
               [colors addObject:item];
           }
           // jsonable arg
-          NSNumber* startPoints = (NSNumber*) args[@"startPoints"];
+          NSArray<NSNumber*>* startPoints = (NSArray<NSNumber*>*) args[@"startPoints"];
       
           // ref
           MAHeatMapGradient* ref = (MAHeatMapGradient*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -5680,7 +5680,7 @@ extern BOOL enableLog;
                   [colors addObject:item];
               }
               // jsonable arg
-              NSNumber* startPoints = (NSNumber*) args[@"startPoints"];
+              NSArray<NSNumber*>* startPoints = (NSArray<NSNumber*>*) args[@"startPoints"];
       
               // ref
               MAHeatMapGradient* ref = (MAHeatMapGradient*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -21752,7 +21752,7 @@ extern BOOL enableLog;
       
           // args
           // jsonable arg
-          NSNumber* drawStyleIndexes = (NSNumber*) args[@"drawStyleIndexes"];
+          NSArray<NSNumber*>* drawStyleIndexes = (NSArray<NSNumber*>*) args[@"drawStyleIndexes"];
       
           // ref
           MAMultiPolyline* ref = (MAMultiPolyline*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -24941,7 +24941,7 @@ extern BOOL enableLog;
       
               // args
               // jsonable arg
-              NSNumber* drawStyleIndexes = (NSNumber*) args[@"drawStyleIndexes"];
+              NSArray<NSNumber*>* drawStyleIndexes = (NSArray<NSNumber*>*) args[@"drawStyleIndexes"];
       
               // ref
               MAMultiPolyline* ref = (MAMultiPolyline*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -31170,7 +31170,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACoordinateBoundsMake::MACoordinateBoundsMake(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MACoordinateBoundsMake::MACoordinateBoundsMake(%d)", 1);
           }
       
           // invoke native method
