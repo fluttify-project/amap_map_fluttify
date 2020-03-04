@@ -13,10 +13,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
 // 日志打印开关
 extern BOOL enableLog;
 
-typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSString *, NSObject *> *, FlutterResult);
-
 @implementation MAMapViewFactory {
-  NSObject <FlutterPluginRegistrar> *_registrar;
 }
 
 - (instancetype)initWithRegistrar:(NSObject <FlutterPluginRegistrar> *)registrar {
@@ -35,7 +32,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 @end
 
 @implementation MAMapViewPlatformView {
-  NSObject <FlutterPluginRegistrar> *_registrar;
   NSInteger _viewId;
   NSDictionary<NSString *, Handler> *_handlerMap;
 }
@@ -465,7 +461,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           [ref takeSnapshotInRect : rect withCompletionBlock: ^(UIImage* resultImage, NSInteger state) {
               FlutterMethodChannel *channel = [FlutterMethodChannel
                   methodChannelWithName:@"MAMapView::takeSnapshotInRectWithCompletionBlock::Callback"
-                        binaryMessenger:[self->_registrar messenger]];
+                        binaryMessenger:[[self registrar] messenger]];
       
               // print log
               if (enableLog) {
