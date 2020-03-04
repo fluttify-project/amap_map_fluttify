@@ -60,6 +60,10 @@ extension com_amap_api_maps_model_particle_RotationOverLife_Batch on List<com_am
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<double>> getRotate_batch() async {
     if (false) {

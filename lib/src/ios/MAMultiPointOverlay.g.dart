@@ -89,6 +89,10 @@ extension MAMultiPointOverlay_Batch on List<MAMultiPointOverlay> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAMultiPointOverlay>> initWithMultiPointItems_batch(List<List<MAMultiPointItem>> items) async {
     if (false) {

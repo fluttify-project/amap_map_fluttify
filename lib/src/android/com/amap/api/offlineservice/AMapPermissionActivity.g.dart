@@ -78,6 +78,10 @@ extension com_amap_api_offlineservice_AMapPermissionActivity_Batch on List<com_a
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> onRequestPermissionsResult_batch(List<int> var1, List<List<String>> var2, List<Int32List> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {

@@ -128,6 +128,10 @@ extension com_autonavi_amap_mapcore_AeUtil_Batch on List<com_autonavi_amap_mapco
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> loadLib_batch(List<android_content_Context> var0) async {
     if (false) {

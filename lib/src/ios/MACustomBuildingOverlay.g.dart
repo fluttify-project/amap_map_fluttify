@@ -124,6 +124,10 @@ extension MACustomBuildingOverlay_Batch on List<MACustomBuildingOverlay> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> addCustomOption_batch(List<MACustomBuildingOverlayOption> option) async {
     if (false) {

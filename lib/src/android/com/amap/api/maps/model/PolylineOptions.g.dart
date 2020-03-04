@@ -1003,6 +1003,10 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_PolylineOptions>> setUseTexture_batch(List<bool> var1) async {
     if (false) {

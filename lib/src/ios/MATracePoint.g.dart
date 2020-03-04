@@ -92,6 +92,21 @@ extension MATracePoint_Batch on List<MATracePoint> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_latitude(List<double> latitude) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATracePoint::set_latitude_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "latitude": latitude[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_longitude(List<double> longitude) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATracePoint::set_longitude_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "longitude": longitude[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

@@ -188,6 +188,10 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_HeatmapTileProvider_Builder>> data_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {

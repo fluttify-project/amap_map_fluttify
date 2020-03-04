@@ -547,6 +547,10 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_AMapOptions>> logoPosition_batch(List<int> var1) async {
     if (false) {

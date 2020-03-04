@@ -168,6 +168,45 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam_Batch
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_requestUrl(List<String> requestUrl) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_requestUrl_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "requestUrl": requestUrl[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_handler(List<int> handler) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_handler_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "handler": handler[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_nRequestType(List<int> nRequestType) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_nRequestType_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "nRequestType": nRequestType[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_enCodeString(List<Uint8List> enCodeString) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_enCodeString_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "enCodeString": enCodeString[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_nCompress(List<int> nCompress) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_nCompress_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "nCompress": nCompress[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_requestBaseUrl(List<String> requestBaseUrl) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_requestBaseUrl_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "requestBaseUrl": requestBaseUrl[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

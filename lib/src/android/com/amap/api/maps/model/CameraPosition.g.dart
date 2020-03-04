@@ -185,6 +185,10 @@ extension com_amap_api_maps_model_CameraPosition_Batch on List<com_amap_api_maps
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_CameraPosition>> fromLatLngZoom_batch(List<com_amap_api_maps_model_LatLng> var0, List<double> var1) async {
     if (var0.length != var1.length) {

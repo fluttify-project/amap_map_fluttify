@@ -92,6 +92,21 @@ extension MAPinAnnotationView_Batch on List<MAPinAnnotationView> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_pinColor(List<MAPinAnnotationColor> pinColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPinAnnotationView::set_pinColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pinColor": pinColor[i].index}]);
+  
+  
+  }
+  
+  Future<void> set_batch_animatesDrop(List<bool> animatesDrop) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPinAnnotationView::set_animatesDrop_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "animatesDrop": animatesDrop[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

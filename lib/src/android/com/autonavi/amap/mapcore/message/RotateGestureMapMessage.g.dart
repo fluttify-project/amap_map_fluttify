@@ -154,6 +154,27 @@ extension com_autonavi_amap_mapcore_message_RotateGestureMapMessage_Batch on Lis
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_pivotX(List<int> pivotX) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotX_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pivotX": pivotX[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_pivotY(List<int> pivotY) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotY_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pivotY": pivotY[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_angleDelta(List<double> angleDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_angleDelta_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "angleDelta": angleDelta[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<com_autonavi_amap_mapcore_message_RotateGestureMapMessage>> obtain_batch(List<int> var0, List<double> var1, List<int> var2, List<int> var3) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length) {

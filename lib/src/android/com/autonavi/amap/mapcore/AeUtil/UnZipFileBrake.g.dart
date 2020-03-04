@@ -73,6 +73,15 @@ extension com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake_Batch on List<com_auto
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_mIsAborted(List<bool> mIsAborted) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake::set_mIsAborted_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mIsAborted": mIsAborted[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

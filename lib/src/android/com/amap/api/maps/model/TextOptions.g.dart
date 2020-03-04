@@ -518,6 +518,10 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_TextOptions>> position_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {

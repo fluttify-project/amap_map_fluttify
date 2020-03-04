@@ -57,6 +57,10 @@ extension MAParticleOverlayOptionsFactory_Batch on List<MAParticleOverlayOptions
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

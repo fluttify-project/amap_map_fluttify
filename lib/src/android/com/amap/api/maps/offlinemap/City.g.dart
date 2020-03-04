@@ -276,6 +276,10 @@ extension com_amap_api_maps_offlinemap_City_Batch on List<com_amap_api_maps_offl
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setCity_batch(List<String> var1) async {
     if (false) {

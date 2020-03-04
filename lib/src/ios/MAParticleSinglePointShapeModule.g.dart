@@ -78,6 +78,10 @@ extension MAParticleSinglePointShapeModule_Batch on List<MAParticleSinglePointSh
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAParticleSinglePointShapeModule>> initWithShapeXYZuseRatio_batch(List<double> x, List<double> y, List<double> z, List<bool> isUseRatio) async {
     if (x.length != y.length || y.length != z.length || z.length != isUseRatio.length) {

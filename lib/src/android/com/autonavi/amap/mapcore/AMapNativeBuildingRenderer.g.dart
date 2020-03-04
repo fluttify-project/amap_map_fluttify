@@ -210,6 +210,10 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> nativeCreate_batch() async {
     if (false) {

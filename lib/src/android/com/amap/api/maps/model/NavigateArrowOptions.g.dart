@@ -408,6 +408,10 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_NavigateArrowOptions>> add__com_amap_api_maps_model_LatLng_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {

@@ -320,6 +320,10 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> getInt_batch(List<Uint8List> var0, List<int> var1) async {
     if (var0.length != var1.length) {

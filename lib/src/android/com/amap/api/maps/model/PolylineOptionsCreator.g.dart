@@ -57,6 +57,10 @@ extension com_amap_api_maps_model_PolylineOptionsCreator_Batch on List<com_amap_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

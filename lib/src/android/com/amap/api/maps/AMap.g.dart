@@ -2678,6 +2678,10 @@ extension com_amap_api_maps_AMap_Batch on List<com_amap_api_maps_AMap> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_CameraPosition>> getCameraPosition_batch() async {
     if (false) {

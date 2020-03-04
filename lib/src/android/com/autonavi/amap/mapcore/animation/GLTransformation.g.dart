@@ -151,6 +151,33 @@ extension com_autonavi_amap_mapcore_animation_GLTransformation_Batch on List<com
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_alpha(List<double> alpha) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_alpha_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "alpha": alpha[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_rotate(List<double> rotate) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_rotate_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "rotate": rotate[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_scaleX(List<double> scaleX) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleX_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "scaleX": scaleX[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_scaleY(List<double> scaleY) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleY_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "scaleY": scaleY[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<void> clear_batch() async {
     if (false) {

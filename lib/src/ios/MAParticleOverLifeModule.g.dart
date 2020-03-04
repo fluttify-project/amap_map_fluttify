@@ -144,6 +144,10 @@ extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setVelocityOverLife_batch(List<MAParticleVelocityGenerate> velocity) async {
     if (false) {

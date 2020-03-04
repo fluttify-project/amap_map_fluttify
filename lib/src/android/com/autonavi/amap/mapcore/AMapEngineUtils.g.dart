@@ -82,6 +82,10 @@ extension com_autonavi_amap_mapcore_AMapEngineUtils_Batch on List<com_autonavi_a
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

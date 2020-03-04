@@ -144,6 +144,10 @@ extension com_amap_api_maps_model_CrossOverlayOptions_Batch on List<com_amap_api
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr>> getAttribute_batch() async {
     if (false) {

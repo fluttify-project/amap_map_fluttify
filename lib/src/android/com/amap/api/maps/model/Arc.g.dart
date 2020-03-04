@@ -258,6 +258,10 @@ extension com_amap_api_maps_model_Arc_Batch on List<com_amap_api_maps_model_Arc>
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> remove_batch() async {
     if (false) {

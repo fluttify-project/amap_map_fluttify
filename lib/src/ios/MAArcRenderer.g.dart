@@ -89,6 +89,10 @@ extension MAArcRenderer_Batch on List<MAArcRenderer> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAArcRenderer>> initWithArc_batch(List<MAArc> arc) async {
     if (false) {

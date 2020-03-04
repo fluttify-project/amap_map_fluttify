@@ -251,6 +251,10 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_AMap>> getMap_batch({bool viewChannel = true}) async {
     if (false) {

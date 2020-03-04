@@ -277,6 +277,10 @@ extension com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay_Batch on List<com_au
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> addItem_batch(List<Object> var1) async {
     if (false) {

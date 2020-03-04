@@ -89,6 +89,10 @@ extension MACustomBuildingOverlayRenderer_Batch on List<MACustomBuildingOverlayR
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MACustomBuildingOverlayRenderer>> initWithCustomBuildingOverlay_batch(List<MACustomBuildingOverlay> customBuildingOverlay) async {
     if (false) {

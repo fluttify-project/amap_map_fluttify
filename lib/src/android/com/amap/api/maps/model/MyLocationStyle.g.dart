@@ -440,6 +440,10 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_MyLocationStyle>> myLocationIcon_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     if (false) {

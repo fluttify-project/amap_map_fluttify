@@ -258,6 +258,10 @@ extension com_amap_api_maps_model_BuildingOverlay_Batch on List<com_amap_api_map
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setDefaultOptions_batch(List<com_amap_api_maps_model_BuildingOverlayOptions> var1) async {
     if (false) {

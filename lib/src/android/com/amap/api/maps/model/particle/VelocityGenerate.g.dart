@@ -104,6 +104,10 @@ extension com_amap_api_maps_model_particle_VelocityGenerate_Batch on List<com_am
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<double>> getX_batch() async {
     if (false) {

@@ -452,6 +452,10 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_CircleOptions>> center_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {

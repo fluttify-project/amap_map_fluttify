@@ -78,6 +78,10 @@ extension MAParticleRandomColorGenerate_Batch on List<MAParticleRandomColorGener
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAParticleRandomColorGenerate>> initWithBoundaryColorR1G1B1A1R2G2B2A2_batch(List<double> r1, List<double> g1, List<double> b1, List<double> a1, List<double> r2, List<double> g2, List<double> b2, List<double> a2) async {
     if (r1.length != g1.length || g1.length != b1.length || b1.length != a1.length || a1.length != r2.length || r2.length != g2.length || g2.length != b2.length || b2.length != a2.length) {

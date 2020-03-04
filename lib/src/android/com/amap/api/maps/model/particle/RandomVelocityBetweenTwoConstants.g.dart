@@ -57,6 +57,10 @@ extension com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants_Bat
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

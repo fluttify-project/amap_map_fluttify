@@ -144,6 +144,10 @@ extension com_amap_api_maps_CoordinateConverter_Batch on List<com_amap_api_maps_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_CoordinateConverter>> from_batch(List<com_amap_api_maps_CoordinateConverter_CoordType> var1) async {
     if (false) {

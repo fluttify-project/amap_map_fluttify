@@ -100,6 +100,10 @@ extension com_autonavi_amap_mapcore_AbstractNativeInstance_Batch on List<com_aut
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> getNativeInstance_batch() async {
     if (false) {

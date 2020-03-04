@@ -419,6 +419,123 @@ extension com_autonavi_ae_gmap_glinterface_MapLabelItem_Batch on List<com_autona
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_name(List<String> name) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_name_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "name": name[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_poiid(List<String> poiid) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_poiid_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "poiid": poiid[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_angle(List<int> angle) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_angle_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "angle": angle[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_strWidth(List<int> strWidth) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_strWidth_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strWidth": strWidth[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_strHeight(List<int> strHeight) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_strHeight_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strHeight": strHeight[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_iconID(List<int> iconID) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_iconID_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "iconID": iconID[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_labelx(List<int> labelx) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_labelx_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "labelx": labelx[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_labely(List<int> labely) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_labely_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "labely": labely[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_pixel20X(List<int> pixel20X) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20X_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pixel20X": pixel20X[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_pixel20Y(List<int> pixel20Y) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20Y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pixel20Y": pixel20Y[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_pixel20Z(List<int> pixel20Z) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20Z_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pixel20Z": pixel20Z[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_fontColor(List<int> fontColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_fontColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fontColor": fontColor[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_borderColor(List<int> borderColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_borderColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "borderColor": borderColor[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_type(List<int> type) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_type_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "type": type[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_anchor(List<int> anchor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_anchor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "anchor": anchor[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_fontSize(List<int> fontSize) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_fontSize_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fontSize": fontSize[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mSublayerId(List<int> mSublayerId) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_mSublayerId_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mSublayerId": mSublayerId[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mIsFouces(List<bool> mIsFouces) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_mIsFouces_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mIsFouces": mIsFouces[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_timeStamp(List<int> timeStamp) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_timeStamp_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "timeStamp": timeStamp[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

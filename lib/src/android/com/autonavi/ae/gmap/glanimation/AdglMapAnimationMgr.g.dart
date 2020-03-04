@@ -227,6 +227,10 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr_Batch on List<com
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setMapCoreListener_batch() async {
     if (false) {

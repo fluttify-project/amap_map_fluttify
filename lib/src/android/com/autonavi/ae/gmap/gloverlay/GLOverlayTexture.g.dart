@@ -225,6 +225,57 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlayTexture_Batch on List<com_auto
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_mResId(List<int> mResId) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResId_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mResId": mResId[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mWidth(List<int> mWidth) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mWidth_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mWidth": mWidth[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mHeight(List<int> mHeight) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mHeight_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mHeight": mHeight[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mResWidth(List<int> mResWidth) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResWidth_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mResWidth": mResWidth[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mResHeight(List<int> mResHeight) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResHeight_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mResHeight": mResHeight[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mAnchorXRatio(List<double> mAnchorXRatio) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorXRatio_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mAnchorXRatio": mAnchorXRatio[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mAnchorYRatio(List<double> mAnchorYRatio) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorYRatio_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mAnchorYRatio": mAnchorYRatio[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mAnchor(List<int> mAnchor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mAnchor": mAnchor[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

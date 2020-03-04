@@ -82,6 +82,10 @@ extension com_amap_api_maps_model_particle_ParticleShapeModule_Batch on List<com
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<bool>> isUseRatio_batch() async {
     if (false) {

@@ -57,6 +57,10 @@ extension MAGeodesicPolyline_Batch on List<MAGeodesicPolyline> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

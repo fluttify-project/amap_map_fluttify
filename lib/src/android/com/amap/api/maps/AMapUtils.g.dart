@@ -268,6 +268,10 @@ extension com_amap_api_maps_AMapUtils_Batch on List<com_amap_api_maps_AMapUtils>
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<double>> calculateLineDistance_batch(List<com_amap_api_maps_model_LatLng> var0, List<com_amap_api_maps_model_LatLng> var1) async {
     if (var0.length != var1.length) {

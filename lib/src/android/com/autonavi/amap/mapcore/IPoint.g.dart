@@ -141,6 +141,10 @@ extension com_autonavi_amap_mapcore_IPoint_Batch on List<com_autonavi_amap_mapco
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_autonavi_amap_mapcore_IPoint>> obtain_batch() async {
     if (false) {

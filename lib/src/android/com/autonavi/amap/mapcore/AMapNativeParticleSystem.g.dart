@@ -782,6 +782,10 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> nativeCreate_batch() async {
     if (false) {

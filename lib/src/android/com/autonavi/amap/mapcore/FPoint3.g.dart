@@ -113,6 +113,15 @@ extension com_autonavi_amap_mapcore_FPoint3_Batch on List<com_autonavi_amap_mapc
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_colorIndex(List<int> colorIndex) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPoint3::set_colorIndex_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "colorIndex": colorIndex[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<void> setColorIndex_batch(List<int> var1) async {
     if (false) {

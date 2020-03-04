@@ -120,6 +120,10 @@ extension MAOfflineItem_Batch on List<MAOfflineItem> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

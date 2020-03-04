@@ -148,6 +148,10 @@ extension com_amap_api_maps_model_MultiPointOverlay_Batch on List<com_amap_api_m
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setItems_batch(List<List<com_amap_api_maps_model_MultiPointItem>> var1) async {
     if (false) {

@@ -496,6 +496,10 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> image_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     if (false) {

@@ -57,6 +57,10 @@ extension com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants_Batch 
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

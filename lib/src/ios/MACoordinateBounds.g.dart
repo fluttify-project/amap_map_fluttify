@@ -92,6 +92,21 @@ extension MACoordinateBounds_Batch on List<MACoordinateBounds> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_northEast(List<CLLocationCoordinate2D> northEast) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateBounds::set_northEast_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "northEast": northEast[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_southWest(List<CLLocationCoordinate2D> southWest) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateBounds::set_southWest_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "southWest": southWest[i].refId}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

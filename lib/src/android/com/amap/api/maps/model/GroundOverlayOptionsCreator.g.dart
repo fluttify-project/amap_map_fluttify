@@ -57,6 +57,10 @@ extension com_amap_api_maps_model_GroundOverlayOptionsCreator_Batch on List<com_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

@@ -144,6 +144,10 @@ extension com_autonavi_amap_mapcore_AMapNativePolyline_Batch on List<com_autonav
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> nativeCreate_batch() async {
     if (false) {

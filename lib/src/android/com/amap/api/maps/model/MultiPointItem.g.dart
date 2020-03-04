@@ -320,6 +320,10 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_LatLng>> getLatLng_batch() async {
     if (false) {

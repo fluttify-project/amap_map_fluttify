@@ -152,6 +152,10 @@ extension com_autonavi_amap_mapcore_VirtualEarthProjection_Batch on List<com_aut
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<double>> clip_batch(List<double> var0, List<double> var2, List<double> var4) async {
     if (var0.length != var2.length || var2.length != var4.length) {

@@ -122,6 +122,10 @@ extension com_autonavi_amap_mapcore_maploader_NetworkState_Batch on List<com_aut
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setNetworkListener_batch(List<com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener> var1) async {
     if (false) {

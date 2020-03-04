@@ -149,6 +149,39 @@ extension com_autonavi_ae_gmap_GLMapEngine_InitParam_Batch on List<com_autonavi_
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_mRootPath(List<String> mRootPath) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mRootPath_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mRootPath": mRootPath[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mConfigPath(List<String> mConfigPath) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mConfigPath_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mConfigPath": mConfigPath[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mConfigContent(List<String> mConfigContent) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mConfigContent_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mConfigContent": mConfigContent[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mOfflineDataPath(List<String> mOfflineDataPath) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mOfflineDataPath_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mOfflineDataPath": mOfflineDataPath[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mP3dCrossPath(List<String> mP3dCrossPath) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mP3dCrossPath_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mP3dCrossPath": mP3dCrossPath[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

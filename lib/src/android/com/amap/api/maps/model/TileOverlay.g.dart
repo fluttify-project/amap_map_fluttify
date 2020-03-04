@@ -192,6 +192,10 @@ extension com_amap_api_maps_model_TileOverlay_Batch on List<com_amap_api_maps_mo
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> remove_batch() async {
     if (false) {

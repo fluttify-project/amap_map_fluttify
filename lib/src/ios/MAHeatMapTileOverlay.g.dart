@@ -149,6 +149,39 @@ extension MAHeatMapTileOverlay_Batch on List<MAHeatMapTileOverlay> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_data(List<List<MAHeatMapNode>> data) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapTileOverlay::set_data_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "data": data[i].map((it) => it.refId).toList()}]);
+  
+  
+  }
+  
+  Future<void> set_batch_radius(List<int> radius) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapTileOverlay::set_radius_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "radius": radius[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_opacity(List<double> opacity) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapTileOverlay::set_opacity_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "opacity": opacity[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_gradient(List<MAHeatMapGradient> gradient) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapTileOverlay::set_gradient_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "gradient": gradient[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_allowRetinaAdapting(List<bool> allowRetinaAdapting) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapTileOverlay::set_allowRetinaAdapting_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "allowRetinaAdapting": allowRetinaAdapting[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

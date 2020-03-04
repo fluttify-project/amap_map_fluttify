@@ -81,6 +81,10 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory_Batch o
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>>> defaultOptions_batch(List<int> var0) async {
     if (false) {

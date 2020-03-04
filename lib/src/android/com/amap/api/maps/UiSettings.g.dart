@@ -698,6 +698,10 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setScaleControlsEnabled_batch(List<bool> var1) async {
     if (false) {

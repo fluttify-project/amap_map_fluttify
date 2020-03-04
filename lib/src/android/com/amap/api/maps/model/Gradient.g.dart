@@ -57,6 +57,10 @@ extension com_amap_api_maps_model_Gradient_Batch on List<com_amap_api_maps_model
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

@@ -94,6 +94,10 @@ extension MAMultiPoint_Batch on List<MAMultiPoint> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

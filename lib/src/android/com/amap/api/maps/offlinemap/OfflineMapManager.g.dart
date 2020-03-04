@@ -519,6 +519,10 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> downloadByCityCode_batch(List<String> var1) async {
     if (false) {

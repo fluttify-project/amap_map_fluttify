@@ -107,6 +107,10 @@ extension MAIndoorFloorInfo_Batch on List<MAIndoorFloorInfo> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

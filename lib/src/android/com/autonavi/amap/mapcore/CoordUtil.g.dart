@@ -78,6 +78,10 @@ extension com_autonavi_amap_mapcore_CoordUtil_Batch on List<com_autonavi_amap_ma
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> convertToGcj_batch(List<Float64List> var0, List<Float64List> var1) async {
     if (var0.length != var1.length) {

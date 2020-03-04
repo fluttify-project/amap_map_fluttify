@@ -57,6 +57,10 @@ extension com_amap_api_maps_model_TileOverlayOptionsCreator_Batch on List<com_am
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

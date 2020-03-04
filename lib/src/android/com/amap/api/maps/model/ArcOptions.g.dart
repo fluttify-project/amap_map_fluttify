@@ -320,6 +320,10 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_ArcOptions>> point_batch(List<com_amap_api_maps_model_LatLng> var1, List<com_amap_api_maps_model_LatLng> var2, List<com_amap_api_maps_model_LatLng> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {

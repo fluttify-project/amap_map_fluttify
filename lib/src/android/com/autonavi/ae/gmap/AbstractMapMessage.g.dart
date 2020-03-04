@@ -63,6 +63,10 @@ extension com_autonavi_ae_gmap_AbstractMapMessage_Batch on List<com_autonavi_ae_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> getType_batch() async {
     if (false) {

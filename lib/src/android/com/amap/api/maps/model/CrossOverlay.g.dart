@@ -189,6 +189,10 @@ extension com_amap_api_maps_model_CrossOverlay_Batch on List<com_amap_api_maps_m
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> setData_batch(List<Uint8List> var1) async {
     if (false) {

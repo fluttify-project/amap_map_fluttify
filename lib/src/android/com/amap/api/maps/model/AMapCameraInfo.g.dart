@@ -188,6 +188,10 @@ extension com_amap_api_maps_model_AMapCameraInfo_Batch on List<com_amap_api_maps
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<double>> getFov_batch() async {
     if (false) {

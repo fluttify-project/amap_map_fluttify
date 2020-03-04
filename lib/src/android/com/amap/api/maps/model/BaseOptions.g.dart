@@ -57,6 +57,10 @@ extension com_amap_api_maps_model_BaseOptions_Batch on List<com_amap_api_maps_mo
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

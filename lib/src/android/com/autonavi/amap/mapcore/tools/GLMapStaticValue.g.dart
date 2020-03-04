@@ -251,6 +251,10 @@ extension com_autonavi_amap_mapcore_tools_GLMapStaticValue_Batch on List<com_aut
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

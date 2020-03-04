@@ -258,6 +258,10 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> addVectorItem_batch(List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> var1, List<Uint8List> var2, List<int> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {

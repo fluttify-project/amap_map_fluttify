@@ -111,6 +111,10 @@ extension MAParticleOverlay_Batch on List<MAParticleOverlay> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAParticleOverlay>> particleOverlayWithOption_batch(List<MAParticleOverlayOptions> option) async {
     if (false) {

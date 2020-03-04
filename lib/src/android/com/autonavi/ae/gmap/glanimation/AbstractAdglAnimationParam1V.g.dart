@@ -166,6 +166,10 @@ extension com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V_Batch on
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setFromValue_batch(List<double> var1) async {
     if (false) {

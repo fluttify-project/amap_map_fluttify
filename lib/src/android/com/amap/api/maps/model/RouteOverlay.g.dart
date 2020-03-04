@@ -82,6 +82,10 @@ extension com_amap_api_maps_model_RouteOverlay_Batch on List<com_amap_api_maps_m
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> removeRouteName_batch() async {
     if (false) {

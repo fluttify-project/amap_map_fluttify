@@ -60,6 +60,10 @@ extension com_amap_api_maps_model_particle_ColorGenerate_Batch on List<com_amap_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<Float64List>> getColor_batch() async {
     if (false) {

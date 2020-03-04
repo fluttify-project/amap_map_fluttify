@@ -166,6 +166,10 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation1V_Batch on List<com_aut
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> reset_batch() async {
     if (false) {

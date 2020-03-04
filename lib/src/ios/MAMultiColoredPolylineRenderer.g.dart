@@ -126,6 +126,21 @@ extension MAMultiColoredPolylineRenderer_Batch on List<MAMultiColoredPolylineRen
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_strokeColors(List<List<UIColor>> strokeColors) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::set_strokeColors_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strokeColors": strokeColors[i].map((it) => it.refId).toList()}]);
+  
+  
+  }
+  
+  Future<void> set_batch_gradient(List<bool> gradient) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::set_gradient_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "gradient": gradient[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<MAMultiColoredPolylineRenderer>> initWithMultiPolyline_batch(List<MAMultiPolyline> multiPolyline) async {
     if (false) {

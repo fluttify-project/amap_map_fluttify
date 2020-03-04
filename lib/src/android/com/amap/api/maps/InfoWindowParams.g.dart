@@ -233,6 +233,10 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setInfoWindowUpdateTime_batch(List<int> var1) async {
     if (false) {

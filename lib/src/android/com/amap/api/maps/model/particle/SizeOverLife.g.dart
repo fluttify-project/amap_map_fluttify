@@ -115,6 +115,10 @@ extension com_amap_api_maps_model_particle_SizeOverLife_Batch on List<com_amap_a
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<double>> getSizeX_batch(List<double> var1) async {
     if (false) {

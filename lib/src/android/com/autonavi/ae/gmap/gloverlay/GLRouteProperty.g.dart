@@ -624,6 +624,189 @@ extension com_autonavi_ae_gmap_gloverlay_GLRouteProperty_Batch on List<com_auton
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_euRouteTexture(List<com_autonavi_ae_gmap_gloverlay_GLRouteProperty_EAMapRouteTexture> euRouteTexture) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_euRouteTexture_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "euRouteTexture": euRouteTexture[i].index}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mFilledResId(List<int> mFilledResId) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mFilledResId_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mFilledResId": mFilledResId[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mSimple3DFillResId(List<int> mSimple3DFillResId) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DFillResId_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mSimple3DFillResId": mSimple3DFillResId[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mFilledColor(List<int> mFilledColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mFilledColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mFilledColor": mFilledColor[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mBgResId(List<int> mBgResId) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBgResId_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mBgResId": mBgResId[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mBgColor(List<int> mBgColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBgColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mBgColor": mBgColor[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mLineWidth(List<int> mLineWidth) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mLineWidth_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mLineWidth": mLineWidth[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mBorderLineWidth(List<int> mBorderLineWidth) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBorderLineWidth_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mBorderLineWidth": mBorderLineWidth[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mX1(List<double> mX1) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX1_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mX1": mX1[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mY1(List<double> mY1) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY1_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mY1": mY1[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mX2(List<double> mX2) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX2_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mX2": mX2[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mY2(List<double> mY2) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY2_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mY2": mY2[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mGLStart(List<double> mGLStart) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mGLStart_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mGLStart": mGLStart[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mTextureLen(List<double> mTextureLen) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mTextureLen_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mTextureLen": mTextureLen[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mSimple3DX1(List<double> mSimple3DX1) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX1_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mSimple3DX1": mSimple3DX1[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mSimple3DY1(List<double> mSimple3DY1) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY1_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mSimple3DY1": mSimple3DY1[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mSimple3DX2(List<double> mSimple3DX2) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX2_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mSimple3DX2": mSimple3DX2[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mSimple3DY2(List<double> mSimple3DY2) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY2_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mSimple3DY2": mSimple3DY2[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mSimple3DGLStart(List<double> mSimple3DGLStart) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DGLStart_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mSimple3DGLStart": mSimple3DGLStart[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mSimple3DTextureLen(List<double> mSimple3DTextureLen) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DTextureLen_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mSimple3DTextureLen": mSimple3DTextureLen[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mCapX1(List<double> mCapX1) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX1_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCapX1": mCapX1[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mCapY1(List<double> mCapY1) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY1_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCapY1": mCapY1[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mCapX2(List<double> mCapX2) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX2_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCapX2": mCapX2[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mCapY2(List<double> mCapY2) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY2_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCapY2": mCapY2[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_isLineExtract(List<bool> isLineExtract) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isLineExtract_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isLineExtract": isLineExtract[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_isCanCovered(List<bool> isCanCovered) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isCanCovered_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isCanCovered": isCanCovered[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_isUseColor(List<bool> isUseColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isUseColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isUseColor": isUseColor[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_isUseCap(List<bool> isUseCap) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isUseCap_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isUseCap": isUseCap[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mShowArrow(List<bool> mShowArrow) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mShowArrow_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mShowArrow": mShowArrow[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mbTexPreMulAlpha(List<bool> mbTexPreMulAlpha) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mbTexPreMulAlpha_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mbTexPreMulAlpha": mbTexPreMulAlpha[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

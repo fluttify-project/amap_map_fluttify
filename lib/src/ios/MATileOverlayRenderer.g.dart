@@ -111,6 +111,10 @@ extension MATileOverlayRenderer_Batch on List<MATileOverlayRenderer> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MATileOverlayRenderer>> initWithTileOverlay_batch(List<MATileOverlay> tileOverlay) async {
     if (false) {

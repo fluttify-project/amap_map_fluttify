@@ -107,6 +107,10 @@ extension MAOfflineCity_Batch on List<MAOfflineCity> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

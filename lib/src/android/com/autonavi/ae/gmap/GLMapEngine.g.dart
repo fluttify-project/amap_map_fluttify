@@ -1947,6 +1947,10 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> receiveNetData_batch(List<int> var1, List<int> var2, List<Uint8List> var4, List<int> var5) async {
     if (var1.length != var2.length || var2.length != var4.length || var4.length != var5.length) {

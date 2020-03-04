@@ -111,6 +111,27 @@ extension MAPointAnnotation_Batch on List<MAPointAnnotation> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_coordinate(List<CLLocationCoordinate2D> coordinate) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_coordinate_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "coordinate": coordinate[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_lockedToScreen(List<bool> lockedToScreen) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_lockedToScreen_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lockedToScreen": lockedToScreen[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_lockedScreenPoint(List<CGPoint> lockedScreenPoint) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_lockedScreenPoint_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lockedScreenPoint": lockedScreenPoint[i].refId}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

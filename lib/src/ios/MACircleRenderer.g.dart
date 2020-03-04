@@ -89,6 +89,10 @@ extension MACircleRenderer_Batch on List<MACircleRenderer> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MACircleRenderer>> initWithCircle_batch(List<MACircle> circle) async {
     if (false) {

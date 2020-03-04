@@ -57,6 +57,10 @@ extension com_autonavi_amap_mapcore_animation_GLRotateAnimation_Batch on List<co
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

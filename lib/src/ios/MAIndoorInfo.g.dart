@@ -172,6 +172,10 @@ extension MAIndoorInfo_Batch on List<MAIndoorInfo> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

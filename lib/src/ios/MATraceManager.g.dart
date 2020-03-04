@@ -214,6 +214,10 @@ extension MATraceManager_Batch on List<MATraceManager> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MATraceManager>> sharedInstance_batch() async {
     if (false) {

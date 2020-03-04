@@ -412,6 +412,10 @@ extension com_amap_api_maps_model_Polygon_Batch on List<com_amap_api_maps_model_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> remove_batch() async {
     if (false) {

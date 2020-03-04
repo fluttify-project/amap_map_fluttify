@@ -152,6 +152,10 @@ extension com_amap_api_maps_model_NaviPara_Batch on List<com_amap_api_maps_model
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setTargetPoint_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {

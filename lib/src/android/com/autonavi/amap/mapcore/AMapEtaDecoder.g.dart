@@ -57,6 +57,10 @@ extension com_autonavi_amap_mapcore_AMapEtaDecoder_Batch on List<com_autonavi_am
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

@@ -232,6 +232,10 @@ extension com_amap_api_maps_offlinemap_Province_Batch on List<com_amap_api_maps_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<String>> getProvinceName_batch() async {
     if (false) {

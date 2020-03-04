@@ -1289,6 +1289,10 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_location_Batch on List<com_auton
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> getGpsAccuracyStatus_batch() async {
     if (false) {

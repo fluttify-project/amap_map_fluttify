@@ -57,6 +57,10 @@ extension MAOfflineItemMunicipality_Batch on List<MAOfflineItemMunicipality> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

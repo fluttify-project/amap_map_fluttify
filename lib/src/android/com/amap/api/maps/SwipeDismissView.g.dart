@@ -106,6 +106,10 @@ extension com_amap_api_maps_SwipeDismissView_Batch on List<com_amap_api_maps_Swi
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

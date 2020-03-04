@@ -149,6 +149,39 @@ extension com_amap_api_maps_model_IndoorBuildingInfo_Batch on List<com_amap_api_
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_activeFloorName(List<String> activeFloorName) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorName_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "activeFloorName": activeFloorName[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_activeFloorIndex(List<int> activeFloorIndex) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorIndex_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "activeFloorIndex": activeFloorIndex[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_poiid(List<String> poiid) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_poiid_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "poiid": poiid[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_floor_indexs(List<Int32List> floor_indexs) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_floor_indexs_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "floor_indexs": floor_indexs[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_floor_names(List<List<String>> floor_names) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_floor_names_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "floor_names": floor_names[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

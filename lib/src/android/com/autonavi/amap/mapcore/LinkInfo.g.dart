@@ -188,6 +188,10 @@ extension com_autonavi_amap_mapcore_LinkInfo_Batch on List<com_autonavi_amap_map
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> getState_batch() async {
     if (false) {

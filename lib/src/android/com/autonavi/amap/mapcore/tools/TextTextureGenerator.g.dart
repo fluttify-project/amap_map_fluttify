@@ -123,6 +123,10 @@ extension com_autonavi_amap_mapcore_tools_TextTextureGenerator_Batch on List<com
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> getNearstSize2N_batch(List<int> var0) async {
     if (false) {

@@ -89,6 +89,10 @@ extension MAParticleOverlayRenderer_Batch on List<MAParticleOverlayRenderer> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAParticleOverlayRenderer>> initWithParticleOverlay_batch(List<MAParticleOverlay> particleOverlay) async {
     if (false) {

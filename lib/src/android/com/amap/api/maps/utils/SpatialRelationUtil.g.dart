@@ -147,6 +147,10 @@ extension com_amap_api_maps_utils_SpatialRelationUtil_Batch on List<com_amap_api
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<android_util_Pair>> calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__double__double_batch(List<List<com_amap_api_maps_model_LatLng>> var0, List<com_amap_api_maps_model_LatLng> var1, List<double> var2, List<double> var3) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length) {

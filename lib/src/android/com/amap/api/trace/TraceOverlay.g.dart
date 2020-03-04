@@ -298,6 +298,10 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> add_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {

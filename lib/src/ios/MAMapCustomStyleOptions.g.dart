@@ -130,6 +130,33 @@ extension MAMapCustomStyleOptions_Batch on List<MAMapCustomStyleOptions> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_styleData(List<NSData> styleData) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleData_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "styleData": styleData[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_styleId(List<String> styleId) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleId_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "styleId": styleId[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_styleTextureData(List<NSData> styleTextureData) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleTextureData_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "styleTextureData": styleTextureData[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_styleExtraData(List<NSData> styleExtraData) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleExtraData_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "styleExtraData": styleExtraData[i].refId}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

@@ -68,6 +68,10 @@ extension MAOfflineProvince_Batch on List<MAOfflineProvince> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

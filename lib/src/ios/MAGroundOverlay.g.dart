@@ -199,6 +199,15 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_alpha(List<double> alpha) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::set_alpha_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "alpha": alpha[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<MAGroundOverlay>> groundOverlayWithBoundsIcon_batch(List<MACoordinateBounds> bounds, List<UIImage> icon) async {
     if (bounds.length != icon.length) {

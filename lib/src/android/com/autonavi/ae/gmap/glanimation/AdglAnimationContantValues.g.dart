@@ -61,6 +61,10 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues_Batch on L
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

@@ -94,6 +94,10 @@ extension MAUserLocation_Batch on List<MAUserLocation> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

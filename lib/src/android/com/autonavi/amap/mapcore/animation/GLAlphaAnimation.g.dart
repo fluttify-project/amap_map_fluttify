@@ -111,6 +111,27 @@ extension com_autonavi_amap_mapcore_animation_GLAlphaAnimation_Batch on List<com
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_mFromAlpha(List<double> mFromAlpha) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mFromAlpha_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mFromAlpha": mFromAlpha[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mToAlpha(List<double> mToAlpha) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mToAlpha_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mToAlpha": mToAlpha[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mCurAlpha(List<double> mCurAlpha) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mCurAlpha_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCurAlpha": mCurAlpha[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

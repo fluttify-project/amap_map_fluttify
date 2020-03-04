@@ -408,6 +408,10 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_CameraUpdate>> zoomIn_batch() async {
     if (false) {

@@ -192,6 +192,39 @@ extension MACustomBuildingOverlayOption_Batch on List<MACustomBuildingOverlayOpt
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_height(List<double> height) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_height_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "height": height[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_heightScale(List<double> heightScale) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_heightScale_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "heightScale": heightScale[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_topColor(List<UIColor> topColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_topColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "topColor": topColor[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_sideColor(List<UIColor> sideColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_sideColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "sideColor": sideColor[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_visibile(List<bool> visibile) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_visibile_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "visibile": visibile[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<MACustomBuildingOverlayOption>> optionWithCoordinatesCount_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
     if (coords.length != count.length) {

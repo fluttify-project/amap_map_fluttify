@@ -387,6 +387,10 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> initialize_batch(List<android_content_Context> var0) async {
     if (false) {

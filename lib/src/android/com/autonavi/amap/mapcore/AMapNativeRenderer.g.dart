@@ -166,6 +166,10 @@ extension com_autonavi_amap_mapcore_AMapNativeRenderer_Batch on List<com_autonav
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> nativeDrawLineByMultiTextureID_batch(List<Float64List> var0, List<int> var1, List<double> var2, List<Int32List> var3, List<int> var4, List<Int32List> var5, List<int> var6, List<double> var7, List<Float64List> var8, List<int> var9, List<int> var10) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length) {

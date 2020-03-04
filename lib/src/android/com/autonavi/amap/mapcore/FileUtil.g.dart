@@ -254,6 +254,10 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<String>> getMapBaseStorage_batch(List<android_content_Context> var0) async {
     if (false) {

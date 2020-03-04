@@ -408,6 +408,10 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<String>> getStyleDataPath_batch() async {
     if (false) {

@@ -760,6 +760,10 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<String>> getAPIKEY_batch() async {
     if (false) {

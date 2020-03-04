@@ -73,6 +73,15 @@ extension MAOfflineItemCommonCity_Batch on List<MAOfflineItemCommonCity> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_province(List<MAOfflineItem> province) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineItemCommonCity::set_province_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "province": province[i].refId}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

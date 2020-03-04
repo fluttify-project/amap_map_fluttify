@@ -383,6 +383,10 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setPoints_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {

@@ -115,6 +115,10 @@ extension com_amap_api_maps_model_Tile_Batch on List<com_amap_api_maps_model_Til
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_Tile>> obtain_batch(List<int> var0, List<int> var1, List<Uint8List> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {

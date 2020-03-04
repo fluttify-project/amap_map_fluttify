@@ -242,6 +242,10 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setInfoWindowAppearAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
     if (false) {

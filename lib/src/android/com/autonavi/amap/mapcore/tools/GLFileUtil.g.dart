@@ -100,6 +100,10 @@ extension com_autonavi_amap_mapcore_tools_GLFileUtil_Batch on List<com_autonavi_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> writeDatasToFile_batch(List<String> var0, List<Uint8List> var1) async {
     if (var0.length != var1.length) {

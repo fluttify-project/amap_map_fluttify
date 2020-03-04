@@ -2762,6 +2762,285 @@ extension MAMapView_Batch on List<MAMapView> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_mapType(List<MAMapType> mapType, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_mapType_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mapType": mapType[i].index}]);
+  
+  
+  }
+  
+  Future<void> set_batch_centerCoordinate(List<CLLocationCoordinate2D> centerCoordinate, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_centerCoordinate_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "centerCoordinate": centerCoordinate[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_region(List<MACoordinateRegion> region, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_region_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "region": region[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_visibleMapRect(List<MAMapRect> visibleMapRect, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_visibleMapRect_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "visibleMapRect": visibleMapRect[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_limitRegion(List<MACoordinateRegion> limitRegion, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_limitRegion_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "limitRegion": limitRegion[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_limitMapRect(List<MAMapRect> limitMapRect, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_limitMapRect_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "limitMapRect": limitMapRect[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_zoomLevel(List<double> zoomLevel, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_zoomLevel_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "zoomLevel": zoomLevel[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_minZoomLevel(List<double> minZoomLevel, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_minZoomLevel_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "minZoomLevel": minZoomLevel[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_maxZoomLevel(List<double> maxZoomLevel, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_maxZoomLevel_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "maxZoomLevel": maxZoomLevel[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_rotationDegree(List<double> rotationDegree, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_rotationDegree_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "rotationDegree": rotationDegree[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_cameraDegree(List<double> cameraDegree, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_cameraDegree_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "cameraDegree": cameraDegree[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_zoomingInPivotsAroundAnchorPoint(List<bool> zoomingInPivotsAroundAnchorPoint, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_zoomingInPivotsAroundAnchorPoint_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "zoomingInPivotsAroundAnchorPoint": zoomingInPivotsAroundAnchorPoint[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_zoomEnabled(List<bool> zoomEnabled, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_zoomEnabled_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "zoomEnabled": zoomEnabled[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_scrollEnabled(List<bool> scrollEnabled, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_scrollEnabled_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "scrollEnabled": scrollEnabled[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_rotateEnabled(List<bool> rotateEnabled, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_rotateEnabled_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "rotateEnabled": rotateEnabled[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_rotateCameraEnabled(List<bool> rotateCameraEnabled, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_rotateCameraEnabled_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "rotateCameraEnabled": rotateCameraEnabled[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_skyModelEnable(List<bool> skyModelEnable, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_skyModelEnable_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "skyModelEnable": skyModelEnable[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_showsBuildings(List<bool> showsBuildings, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_showsBuildings_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsBuildings": showsBuildings[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_showsLabels(List<bool> showsLabels, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_showsLabels_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsLabels": showsLabels[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_showTraffic(List<bool> showTraffic, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_showTraffic_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showTraffic": showTraffic[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_trafficRatio(List<double> trafficRatio, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_trafficRatio_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "trafficRatio": trafficRatio[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_touchPOIEnabled(List<bool> touchPOIEnabled, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_touchPOIEnabled_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "touchPOIEnabled": touchPOIEnabled[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_showsCompass(List<bool> showsCompass, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_showsCompass_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsCompass": showsCompass[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_compassOrigin(List<CGPoint> compassOrigin, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_compassOrigin_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "compassOrigin": compassOrigin[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_showsScale(List<bool> showsScale, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_showsScale_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsScale": showsScale[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_scaleOrigin(List<CGPoint> scaleOrigin, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_scaleOrigin_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "scaleOrigin": scaleOrigin[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_logoCenter(List<CGPoint> logoCenter, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_logoCenter_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "logoCenter": logoCenter[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_maxRenderFrame(List<int> maxRenderFrame, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_maxRenderFrame_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "maxRenderFrame": maxRenderFrame[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_isAllowDecreaseFrame(List<bool> isAllowDecreaseFrame, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_isAllowDecreaseFrame_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isAllowDecreaseFrame": isAllowDecreaseFrame[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_openGLESDisabled(List<bool> openGLESDisabled, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_openGLESDisabled_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "openGLESDisabled": openGLESDisabled[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_screenAnchor(List<CGPoint> screenAnchor, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_screenAnchor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "screenAnchor": screenAnchor[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_showsWorldMap(List<num> showsWorldMap, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_showsWorldMap_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsWorldMap": showsWorldMap[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mapLanguage(List<num> mapLanguage, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_mapLanguage_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mapLanguage": mapLanguage[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_selectedAnnotations(List<List> selectedAnnotations, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_selectedAnnotations_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "selectedAnnotations": selectedAnnotations[i].map((it) => it.refId).toList()}]);
+  
+  
+  }
+  
+  Future<void> set_batch_allowsAnnotationViewSorting(List<bool> allowsAnnotationViewSorting, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_allowsAnnotationViewSorting_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "allowsAnnotationViewSorting": allowsAnnotationViewSorting[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_showsUserLocation(List<bool> showsUserLocation, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_showsUserLocation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsUserLocation": showsUserLocation[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_customizeUserLocationAccuracyCircleRepresentation(List<bool> customizeUserLocationAccuracyCircleRepresentation, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_customizeUserLocationAccuracyCircleRepresentation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "customizeUserLocationAccuracyCircleRepresentation": customizeUserLocationAccuracyCircleRepresentation[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_userTrackingMode(List<MAUserTrackingMode> userTrackingMode, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_userTrackingMode_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "userTrackingMode": userTrackingMode[i].index}]);
+  
+  
+  }
+  
+  Future<void> set_batch_distanceFilter(List<double> distanceFilter, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_distanceFilter_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "distanceFilter": distanceFilter[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_desiredAccuracy(List<double> desiredAccuracy, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_desiredAccuracy_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "desiredAccuracy": desiredAccuracy[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_headingFilter(List<double> headingFilter, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_headingFilter_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "headingFilter": headingFilter[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_pausesLocationUpdatesAutomatically(List<bool> pausesLocationUpdatesAutomatically, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_pausesLocationUpdatesAutomatically_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pausesLocationUpdatesAutomatically": pausesLocationUpdatesAutomatically[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_allowsBackgroundLocationUpdates(List<bool> allowsBackgroundLocationUpdates, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_allowsBackgroundLocationUpdates_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "allowsBackgroundLocationUpdates": allowsBackgroundLocationUpdates[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_showsIndoorMap(List<bool> showsIndoorMap, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_showsIndoorMap_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsIndoorMap": showsIndoorMap[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_showsIndoorMapControl(List<bool> showsIndoorMapControl, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_showsIndoorMapControl_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsIndoorMapControl": showsIndoorMapControl[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_customMapStyleEnabled(List<bool> customMapStyleEnabled, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_customMapStyleEnabled_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "customMapStyleEnabled": customMapStyleEnabled[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<void> setRegionAnimated_batch(List<MACoordinateRegion> region, List<bool> animated, {bool viewChannel = true}) async {
     if (region.length != animated.length) {

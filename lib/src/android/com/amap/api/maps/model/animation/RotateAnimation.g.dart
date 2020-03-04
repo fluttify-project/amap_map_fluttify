@@ -76,6 +76,10 @@ extension com_amap_api_maps_model_animation_RotateAnimation_Batch on List<com_am
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

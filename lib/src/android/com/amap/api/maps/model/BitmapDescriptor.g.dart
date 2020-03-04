@@ -148,6 +148,10 @@ extension com_amap_api_maps_model_BitmapDescriptor_Batch on List<com_amap_api_ma
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<String>> getId_batch() async {
     if (false) {

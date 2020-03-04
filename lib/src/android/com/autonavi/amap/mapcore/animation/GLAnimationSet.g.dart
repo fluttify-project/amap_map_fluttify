@@ -122,6 +122,10 @@ extension com_autonavi_amap_mapcore_animation_GLAnimationSet_Batch on List<com_a
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> addAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
     if (false) {

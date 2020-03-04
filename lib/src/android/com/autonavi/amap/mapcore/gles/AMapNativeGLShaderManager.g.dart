@@ -100,6 +100,10 @@ extension com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager_Batch on List
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> nativeCreateGLShaderManager_batch() async {
     if (false) {

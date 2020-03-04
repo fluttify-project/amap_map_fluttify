@@ -57,6 +57,10 @@ extension MAOfflineItemNationWide_Batch on List<MAOfflineItemNationWide> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

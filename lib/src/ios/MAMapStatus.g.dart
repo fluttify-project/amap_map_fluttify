@@ -192,6 +192,39 @@ extension MAMapStatus_Batch on List<MAMapStatus> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_centerCoordinate(List<CLLocationCoordinate2D> centerCoordinate) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_centerCoordinate_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "centerCoordinate": centerCoordinate[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_zoomLevel(List<double> zoomLevel) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_zoomLevel_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "zoomLevel": zoomLevel[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_rotationDegree(List<double> rotationDegree) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_rotationDegree_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "rotationDegree": rotationDegree[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_cameraDegree(List<double> cameraDegree) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_cameraDegree_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "cameraDegree": cameraDegree[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_screenAnchor(List<CGPoint> screenAnchor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_screenAnchor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "screenAnchor": screenAnchor[i].refId}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<MAMapStatus>> statusWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<double> rotationDegree, List<double> cameraDegree, List<CGPoint> screenAnchor) async {
     if (coordinate.length != zoomLevel.length || zoomLevel.length != rotationDegree.length || rotationDegree.length != cameraDegree.length || cameraDegree.length != screenAnchor.length) {

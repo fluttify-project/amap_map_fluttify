@@ -166,6 +166,10 @@ extension com_amap_api_maps_model_MultiPointOverlayOptions_Batch on List<com_ama
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_MultiPointOverlayOptions>> anchor_batch(List<double> var1, List<double> var2) async {
     if (var1.length != var2.length) {

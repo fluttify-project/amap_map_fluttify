@@ -89,6 +89,10 @@ extension MAPolygonRenderer_Batch on List<MAPolygonRenderer> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAPolygonRenderer>> initWithPolygon_batch(List<MAPolygon> polygon) async {
     if (false) {

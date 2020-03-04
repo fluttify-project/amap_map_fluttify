@@ -100,6 +100,10 @@ extension com_amap_api_maps_model_PolygonHoleOptions_Batch on List<com_amap_api_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_PolygonHoleOptions>> addAll_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {

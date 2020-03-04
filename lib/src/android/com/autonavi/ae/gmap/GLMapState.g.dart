@@ -977,6 +977,10 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> lonlat2Geo_batch(List<double> var0, List<double> var2, List<com_autonavi_amap_mapcore_IPoint> var4) async {
     if (var0.length != var2.length || var2.length != var4.length) {

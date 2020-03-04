@@ -76,6 +76,10 @@ extension com_amap_api_maps_model_particle_SinglePointParticleShape_Batch on Lis
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

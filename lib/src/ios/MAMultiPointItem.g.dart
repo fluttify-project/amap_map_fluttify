@@ -130,6 +130,33 @@ extension MAMultiPointItem_Batch on List<MAMultiPointItem> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_coordinate(List<CLLocationCoordinate2D> coordinate) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointItem::set_coordinate_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "coordinate": coordinate[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_batch_customID(List<String> customID) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointItem::set_customID_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "customID": customID[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_title(List<String> title) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointItem::set_title_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "title": title[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_subtitle(List<String> subtitle) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointItem::set_subtitle_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "subtitle": subtitle[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

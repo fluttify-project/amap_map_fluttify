@@ -102,6 +102,10 @@ extension MAHeatMapGradient_Batch on List<MAHeatMapGradient> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAHeatMapGradient>> initWithColorAndWithStartPoints_batch(List<List<UIColor>> colors, List<List<num>> startPoints) async {
     if (colors.length != startPoints.length) {

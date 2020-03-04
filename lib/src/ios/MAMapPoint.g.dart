@@ -92,6 +92,21 @@ extension MAMapPoint_Batch on List<MAMapPoint> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_x(List<double> x) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapPoint::set_x_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "x": x[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_y(List<double> y) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapPoint::set_y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "y": y[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

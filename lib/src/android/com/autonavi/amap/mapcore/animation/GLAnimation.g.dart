@@ -1017,6 +1017,10 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_autonavi_amap_mapcore_animation_GLAnimation>> clone_batch() async {
     if (false) {

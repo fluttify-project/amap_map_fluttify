@@ -168,6 +168,10 @@ extension com_autonavi_amap_mapcore_FPointBounds_Batch on List<com_autonavi_amap
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_autonavi_amap_mapcore_FPointBounds_Builder>> builder_batch() async {
     if (false) {

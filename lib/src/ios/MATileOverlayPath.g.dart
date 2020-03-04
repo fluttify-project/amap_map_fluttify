@@ -130,6 +130,33 @@ extension MATileOverlayPath_Batch on List<MATileOverlayPath> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_x(List<int> x) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_x_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "x": x[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_y(List<int> y) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "y": y[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_z(List<int> z) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_z_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "z": z[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_contentScaleFactor(List<double> contentScaleFactor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_contentScaleFactor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "contentScaleFactor": contentScaleFactor[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

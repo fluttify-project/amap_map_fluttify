@@ -133,6 +133,10 @@ extension com_amap_api_maps_model_TileProjection_Batch on List<com_amap_api_maps
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

@@ -324,6 +324,10 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setVisible_batch(List<bool> var1) async {
     if (false) {

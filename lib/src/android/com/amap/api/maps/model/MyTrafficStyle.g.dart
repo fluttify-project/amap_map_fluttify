@@ -320,6 +320,10 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> getSmoothColor_batch() async {
     if (false) {

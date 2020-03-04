@@ -100,6 +100,10 @@ extension com_autonavi_amap_mapcore_FPointBounds_Builder_Batch on List<com_auton
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_autonavi_amap_mapcore_FPointBounds_Builder>> include_batch(List<com_autonavi_amap_mapcore_FPoint> var1) async {
     if (false) {

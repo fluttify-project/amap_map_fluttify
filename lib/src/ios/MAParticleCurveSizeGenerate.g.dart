@@ -78,6 +78,10 @@ extension MAParticleCurveSizeGenerate_Batch on List<MAParticleCurveSizeGenerate>
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAParticleCurveSizeGenerate>> initWithCurveXYZ_batch(List<double> x, List<double> y, List<double> z) async {
     if (x.length != y.length || y.length != z.length) {

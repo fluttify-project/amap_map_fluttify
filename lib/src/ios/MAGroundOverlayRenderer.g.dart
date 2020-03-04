@@ -89,6 +89,10 @@ extension MAGroundOverlayRenderer_Batch on List<MAGroundOverlayRenderer> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAGroundOverlayRenderer>> initWithGroundOverlay_batch(List<MAGroundOverlay> groundOverlay) async {
     if (false) {

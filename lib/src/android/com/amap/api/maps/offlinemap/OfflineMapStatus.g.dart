@@ -69,6 +69,10 @@ extension com_amap_api_maps_offlinemap_OfflineMapStatus_Batch on List<com_amap_a
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

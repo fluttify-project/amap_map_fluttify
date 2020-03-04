@@ -57,6 +57,10 @@ extension com_autonavi_amap_mapcore_animation_GLScaleAnimation_Batch on List<com
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

@@ -78,6 +78,10 @@ extension MAParticleEmissionModule_Batch on List<MAParticleEmissionModule> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAParticleEmissionModule>> initWithEmissionRateRateTime_batch(List<int> rate, List<int> rateTime) async {
     if (rate.length != rateTime.length) {

@@ -94,6 +94,10 @@ extension MATouchPoi_Batch on List<MATouchPoi> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

@@ -206,6 +206,57 @@ extension com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam_Batch on List<com_au
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_engineId(List<int> engineId) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_engineId_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "engineId": engineId[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_width(List<int> width) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_width_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "width": width[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_height(List<int> height) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_height_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "height": height[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_screenWidth(List<int> screenWidth) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenWidth_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "screenWidth": screenWidth[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_screenHeight(List<int> screenHeight) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenHeight_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "screenHeight": screenHeight[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_screenScale(List<double> screenScale) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenScale_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "screenScale": screenScale[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_textScale(List<double> textScale) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_textScale_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "textScale": textScale[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_mapZoomScale(List<double> mapZoomScale) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_mapZoomScale_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mapZoomScale": mapZoomScale[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

@@ -185,6 +185,15 @@ extension MAAnimatedAnnotation_Batch on List<MAAnimatedAnnotation> {
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_movingDirection(List<double> movingDirection) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::set_movingDirection_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "movingDirection": movingDirection[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<void> setNeedsStart_batch() async {
     if (false) {

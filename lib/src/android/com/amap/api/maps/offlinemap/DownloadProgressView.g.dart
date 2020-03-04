@@ -78,6 +78,10 @@ extension com_amap_api_maps_offlinemap_DownloadProgressView_Batch on List<com_am
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setProgress_batch(List<int> var1, {bool viewChannel = true}) async {
     if (false) {

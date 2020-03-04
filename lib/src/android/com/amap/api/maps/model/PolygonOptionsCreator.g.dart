@@ -57,6 +57,10 @@ extension com_amap_api_maps_model_PolygonOptionsCreator_Batch on List<com_amap_a
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

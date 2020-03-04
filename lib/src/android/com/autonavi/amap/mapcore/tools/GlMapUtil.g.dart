@@ -208,6 +208,10 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<Uint8List>> decodeAssetResData_batch(List<android_content_Context> var0, List<String> var1) async {
     if (var0.length != var1.length) {

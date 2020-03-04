@@ -456,6 +456,10 @@ extension com_amap_api_maps_model_BasePointOverlay_Batch on List<com_amap_api_ma
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_LatLng>> getPosition_batch() async {
     if (false) {

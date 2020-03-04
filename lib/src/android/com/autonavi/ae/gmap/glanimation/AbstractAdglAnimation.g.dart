@@ -112,6 +112,10 @@ extension com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation_Batch on List<c
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<bool>> isOver_batch() async {
     if (false) {

@@ -78,6 +78,10 @@ extension MAParticleRectShapeModule_Batch on List<MAParticleRectShapeModule> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAParticleRectShapeModule>> initWithLeftToprightbottomuseRatio_batch(List<double> left, List<double> top, List<double> right, List<double> bottom, List<bool> isUseRatio) async {
     if (left.length != top.length || top.length != right.length || right.length != bottom.length || bottom.length != isUseRatio.length) {

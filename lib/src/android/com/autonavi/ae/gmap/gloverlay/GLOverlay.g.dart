@@ -500,6 +500,10 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> getNativeInstatnce_batch() async {
     if (false) {

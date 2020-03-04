@@ -387,6 +387,10 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAOfflineMap>> sharedOfflineMap_batch() async {
     if (false) {

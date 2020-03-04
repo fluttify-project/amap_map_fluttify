@@ -39,6 +39,10 @@ extension com_autonavi_ae_gmap_maploader_Pools_Batch on List<com_autonavi_ae_gma
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

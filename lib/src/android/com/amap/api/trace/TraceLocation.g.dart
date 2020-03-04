@@ -317,6 +317,10 @@ extension com_amap_api_trace_TraceLocation_Batch on List<com_amap_api_trace_Trac
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<double>> getLatitude_batch() async {
     if (false) {

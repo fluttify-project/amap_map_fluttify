@@ -144,6 +144,10 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimFling_Batch on List<com_au
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> reset_batch() async {
     if (false) {

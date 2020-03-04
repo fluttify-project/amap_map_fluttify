@@ -320,6 +320,10 @@ extension com_amap_api_maps_model_RoutePara_Batch on List<com_amap_api_maps_mode
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> getDrivingRouteStyle_batch() async {
     if (false) {

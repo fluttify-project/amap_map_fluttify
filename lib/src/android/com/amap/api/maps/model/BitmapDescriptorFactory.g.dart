@@ -254,6 +254,10 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromResource_batch(List<int> var0) async {
     if (false) {

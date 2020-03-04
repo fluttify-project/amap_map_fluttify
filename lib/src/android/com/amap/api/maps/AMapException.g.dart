@@ -113,6 +113,10 @@ extension com_amap_api_maps_AMapException_Batch on List<com_amap_api_maps_AMapEx
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<String>> getErrorMessage_batch() async {
     if (false) {

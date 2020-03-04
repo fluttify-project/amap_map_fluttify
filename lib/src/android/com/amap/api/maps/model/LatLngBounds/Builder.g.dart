@@ -100,6 +100,10 @@ extension com_amap_api_maps_model_LatLngBounds_Builder_Batch on List<com_amap_ap
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_LatLngBounds_Builder>> include_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {

@@ -144,6 +144,10 @@ extension com_amap_api_maps_model_particle_ParticleOverLifeModule_Batch on List<
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setVelocityOverLife_batch(List<com_amap_api_maps_model_particle_VelocityGenerate> var1) async {
     if (false) {

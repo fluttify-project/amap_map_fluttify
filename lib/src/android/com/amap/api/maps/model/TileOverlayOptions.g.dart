@@ -386,6 +386,10 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_TileOverlayOptions>> tileProvider_batch(List<com_amap_api_maps_model_TileProvider> var1) async {
     if (false) {

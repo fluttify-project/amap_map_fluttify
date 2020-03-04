@@ -168,6 +168,45 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr_Batch on
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_stAreaColor(List<int> stAreaColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stAreaColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stAreaColor": stAreaColor[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_stArrowBorderColor(List<int> stArrowBorderColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stArrowBorderColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stArrowBorderColor": stArrowBorderColor[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_fArrowBorderWidth(List<int> fArrowBorderWidth) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_fArrowBorderWidth_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fArrowBorderWidth": fArrowBorderWidth[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_fArrowLineWidth(List<int> fArrowLineWidth) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_fArrowLineWidth_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fArrowLineWidth": fArrowLineWidth[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_stArrowLineColor(List<int> stArrowLineColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stArrowLineColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stArrowLineColor": stArrowLineColor[i]}]);
+  
+  
+  }
+  
+  Future<void> set_batch_dayMode(List<bool> dayMode) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_dayMode_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "dayMode": dayMode[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   
   //endregion

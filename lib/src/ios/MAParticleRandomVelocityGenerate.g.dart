@@ -78,6 +78,10 @@ extension MAParticleRandomVelocityGenerate_Batch on List<MAParticleRandomVelocit
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAParticleRandomVelocityGenerate>> initWithBoundaryValueX1Y1Z1X2Y2Z2_batch(List<double> x1, List<double> y1, List<double> z1, List<double> x2, List<double> y2, List<double> z2) async {
     if (x1.length != y1.length || y1.length != z1.length || z1.length != x2.length || x2.length != y2.length || y2.length != z2.length) {

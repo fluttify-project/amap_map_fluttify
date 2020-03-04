@@ -190,6 +190,10 @@ extension com_amap_api_maps_model_LatLngBounds_Batch on List<com_amap_api_maps_m
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_LatLngBounds_Builder>> builder_batch() async {
     if (false) {

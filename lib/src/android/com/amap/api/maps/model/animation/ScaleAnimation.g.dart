@@ -57,6 +57,10 @@ extension com_amap_api_maps_model_animation_ScaleAnimation_Batch on List<com_ama
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

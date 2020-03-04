@@ -144,6 +144,10 @@ extension MAPolyline_Batch on List<MAPolyline> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAPolyline>> polylineWithPointsCount_batch(List<List<MAMapPoint>> points, List<int> count) async {
     if (points.length != count.length) {

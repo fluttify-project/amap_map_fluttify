@@ -1046,6 +1046,10 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_MarkerOptions>> icons_batch(List<List<com_amap_api_maps_model_BitmapDescriptor>> var1) async {
     if (false) {

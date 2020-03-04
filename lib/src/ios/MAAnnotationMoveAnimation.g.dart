@@ -232,6 +232,10 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<String>> name_batch() async {
     if (false) {

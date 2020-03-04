@@ -251,6 +251,10 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_AMap>> getMap_batch({bool viewChannel = true}) async {
     if (false) {

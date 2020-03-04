@@ -78,6 +78,10 @@ extension MAParticleConstantRotationGenerate_Batch on List<MAParticleConstantRot
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAParticleConstantRotationGenerate>> initWithRotate_batch(List<double> rotate) async {
     if (false) {

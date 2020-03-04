@@ -116,6 +116,15 @@ extension com_autonavi_amap_mapcore_message_HoverGestureMapMessage_Batch on List
   
   //endregion
 
+  //region setters
+  Future<void> set_batch_angleDelta(List<double> angleDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::set_angleDelta_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "angleDelta": angleDelta[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<com_autonavi_amap_mapcore_message_HoverGestureMapMessage>> obtain_batch(List<int> var0, List<double> var1) async {
     if (var0.length != var1.length) {

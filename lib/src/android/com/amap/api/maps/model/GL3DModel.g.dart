@@ -126,6 +126,10 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setAngle_batch(List<double> var1) async {
     if (false) {
