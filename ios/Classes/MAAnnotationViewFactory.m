@@ -69,7 +69,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(%d, %d)", args[@"refId"], args[@"selected"], args[@"animated"]);
           }
       
           // invoke native method
@@ -93,7 +93,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationView@%@::initWithAnnotation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::initWithAnnotation(%@, %@)", args[@"refId"], args[@"annotation"], args[@"reuseIdentifier"]);
           }
       
           // invoke native method
@@ -115,7 +115,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationView@%@::prepareForReuse(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::prepareForReuse()", args[@"refId"]);
           }
       
           // invoke native method
@@ -139,7 +139,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(%d, %d)", args[@"refId"], args[@"newDragState"], args[@"animated"]);
           }
       
           // invoke native method

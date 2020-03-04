@@ -39,7 +39,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAGroundOverlay::groundOverlayWithBounds(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAGroundOverlay::groundOverlayWithBounds(%@, %@)", args[@"bounds"], args[@"icon"]);
           }
       
           // invoke native method
@@ -68,7 +68,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAGroundOverlay::groundOverlayWithCoordinate(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAGroundOverlay::groundOverlayWithCoordinate(%@, %d, %@)", args[@"coordinate"], args[@"zoomLevel"], args[@"icon"]);
           }
       
           // invoke native method
@@ -95,7 +95,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAGroundOverlay@%@::setGroundOverlayWithBounds(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAGroundOverlay@%@::setGroundOverlayWithBounds(%@, %@)", args[@"refId"], args[@"bounds"], args[@"icon"]);
           }
       
           // invoke native method
@@ -123,7 +123,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAGroundOverlay@%@::setGroundOverlayWithCoordinate(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAGroundOverlay@%@::setGroundOverlayWithCoordinate(%@, %d, %@)", args[@"refId"], args[@"coordinate"], args[@"zoomLevel"], args[@"icon"]);
           }
       
           // invoke native method
@@ -145,7 +145,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAPolygonRenderer@%@::initWithPolygon(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAPolygonRenderer@%@::initWithPolygon(%@)", args[@"refId"], args[@"polygon"]);
           }
       
           // invoke native method
@@ -175,7 +175,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAHeatMapGradient@%@::initWithColor(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAHeatMapGradient@%@::initWithColor(%@, %@)", args[@"refId"], args[@"colors"], args[@"startPoints"]);
           }
       
           // invoke native method
@@ -210,7 +210,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapStatus::statusWithCenterCoordinate(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapStatus::statusWithCenterCoordinate(%@, %d, %d, %d, %@)", args[@"coordinate"], args[@"zoomLevel"], args[@"rotationDegree"], args[@"cameraDegree"], args[@"screenAnchor"]);
           }
       
           // invoke native method
@@ -245,7 +245,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapStatus@%@::initWithCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapStatus@%@::initWithCenterCoordinate(%@, %d, %d, %d, %@)", args[@"refId"], args[@"coordinate"], args[@"zoomLevel"], args[@"rotationDegree"], args[@"cameraDegree"], args[@"screenAnchor"]);
           }
       
           // invoke native method
@@ -272,7 +272,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACircle::circleWithCenterCoordinate(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MACircle::circleWithCenterCoordinate(%@, %d)", args[@"coord"], args[@"radius"]);
           }
       
           // invoke native method
@@ -297,7 +297,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACircle::circleWithMapRect(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MACircle::circleWithMapRect(%@)", args[@"mapRect"]);
           }
       
           // invoke native method
@@ -324,7 +324,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACircle@%@::setCircleWithCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MACircle@%@::setCircleWithCenterCoordinate(%@, %d)", args[@"refId"], args[@"coord"], args[@"radius"]);
           }
       
           // invoke native method
@@ -346,7 +346,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAArcRenderer@%@::initWithArc(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAArcRenderer@%@::initWithArc(%@)", args[@"refId"], args[@"arc"]);
           }
       
           // invoke native method
@@ -371,7 +371,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotation@%@::setCoordinate(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotation@%@::setCoordinate(%@)", args[@"refId"], args[@"newCoordinate"]);
           }
       
           // invoke native method
@@ -393,7 +393,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::step(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::step(%d)", args[@"refId"], args[@"timeDelta"]);
           }
       
           // invoke native method
@@ -414,7 +414,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::isAnimationFinished(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::isAnimationFinished()", args[@"refId"]);
           }
       
           // invoke native method
@@ -435,7 +435,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::shouldAnimationStart(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::shouldAnimationStart()", args[@"refId"]);
           }
       
           // invoke native method
@@ -456,7 +456,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::rotateDegree(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnimatableAnnotation@%@::rotateDegree()", args[@"refId"]);
           }
       
           // invoke native method
@@ -488,7 +488,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAPolygon::polygonWithCoordinates(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAPolygon::polygonWithCoordinates(%@, %d)", args[@"coords"], args[@"count"]);
           }
       
           // invoke native method
@@ -521,7 +521,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAPolygon::polygonWithPoints(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAPolygon::polygonWithPoints(%@, %d)", args[@"points"], args[@"count"]);
           }
       
           // invoke native method
@@ -554,7 +554,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAPolygon@%@::setPolygonWithPoints(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAPolygon@%@::setPolygonWithPoints(%@, %d)", args[@"refId"], args[@"points"], args[@"count"]);
           }
       
           // invoke native method
@@ -586,7 +586,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAPolygon@%@::setPolygonWithCoordinates(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAPolygon@%@::setPolygonWithCoordinates(%@, %d)", args[@"refId"], args[@"coords"], args[@"count"]);
           }
       
           // invoke native method
@@ -608,7 +608,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleOverlay::particleOverlayWithOption(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAParticleOverlay::particleOverlayWithOption(%@)", args[@"option"]);
           }
       
           // invoke native method
@@ -631,7 +631,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleOverlay@%@::updateOverlayOption(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleOverlay@%@::updateOverlayOption(%@)", args[@"refId"], args[@"overlayOption"]);
           }
       
           // invoke native method
@@ -663,7 +663,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAPolyline::polylineWithPoints(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAPolyline::polylineWithPoints(%@, %d)", args[@"points"], args[@"count"]);
           }
       
           // invoke native method
@@ -696,7 +696,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAPolyline::polylineWithCoordinates(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAPolyline::polylineWithCoordinates(%@, %d)", args[@"coords"], args[@"count"]);
           }
       
           // invoke native method
@@ -729,7 +729,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAPolyline@%@::setPolylineWithPoints(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAPolyline@%@::setPolylineWithPoints(%@, %d)", args[@"refId"], args[@"points"], args[@"count"]);
           }
       
           // invoke native method
@@ -761,7 +761,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAPolyline@%@::setPolylineWithCoordinates(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAPolyline@%@::setPolylineWithCoordinates(%@, %d)", args[@"refId"], args[@"coords"], args[@"count"]);
           }
       
           // invoke native method
@@ -783,7 +783,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMultiColoredPolylineRenderer@%@::initWithMultiPolyline(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMultiColoredPolylineRenderer@%@::initWithMultiPolyline(%@)", args[@"refId"], args[@"multiPolyline"]);
           }
       
           // invoke native method
@@ -821,7 +821,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::addMoveAnimationWithKeyCoordinates(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::addMoveAnimationWithKeyCoordinates(%@, %d, %d, %@, %@)", args[@"refId"], args[@"coordinates"], args[@"count"], args[@"duration"], args[@"name"], args[@"completeCallback"]);
           }
       
           // invoke native method
@@ -876,7 +876,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::addMoveAnimationWithKeyCoordinates(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::addMoveAnimationWithKeyCoordinates(%@, %d, %d, %@, %@, %@)", args[@"refId"], args[@"coordinates"], args[@"count"], args[@"duration"], args[@"name"], args[@"completeCallback"], args[@"stepCallback"]);
           }
       
           // invoke native method
@@ -931,7 +931,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::setNeedsStart(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::setNeedsStart()", args[@"refId"]);
           }
       
           // invoke native method
@@ -953,7 +953,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMultiTexturePolylineRenderer@%@::initWithMultiPolyline(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMultiTexturePolylineRenderer@%@::initWithMultiPolyline(%@)", args[@"refId"], args[@"multiPolyline"]);
           }
       
           // invoke native method
@@ -976,7 +976,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MATileOverlayRenderer@%@::initWithTileOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MATileOverlayRenderer@%@::initWithTileOverlay(%@)", args[@"refId"], args[@"tileOverlay"]);
           }
       
           // invoke native method
@@ -998,7 +998,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MATileOverlayRenderer@%@::reloadData(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MATileOverlayRenderer@%@::reloadData()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1038,7 +1038,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MATraceDelegate@%@::traceManager(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MATraceDelegate@%@::traceManager(%@, %@, %@, %d, %@)", args[@"refId"], args[@"manager"], args[@"locations"], args[@"tracePoints"], args[@"distance"], args[@"error"]);
           }
       
           // invoke native method
@@ -1060,7 +1060,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MATraceDelegate@%@::mapViewRequireLocationAuth(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MATraceDelegate@%@::mapViewRequireLocationAuth(%@)", args[@"refId"], args[@"locationManager"]);
           }
       
           // invoke native method
@@ -1081,7 +1081,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MATraceManager::sharedInstance(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MATraceManager::sharedInstance()");
           }
       
           // invoke native method
@@ -1114,7 +1114,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MATraceManager@%@::queryProcessedTraceWith(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MATraceManager@%@::queryProcessedTraceWith(%@, %d, %@, %@, %@)", args[@"refId"], args[@"locations"], args[@"type"], args[@"processingCallback"], args[@"finishCallback"], args[@"failedCallback"]);
           }
       
           // invoke native method
@@ -1204,7 +1204,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MATraceManager@%@::start(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MATraceManager@%@::start()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1225,7 +1225,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MATraceManager@%@::stop(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MATraceManager@%@::stop()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1249,7 +1249,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMultiPointOverlayRendererDelegate@%@::multiPointOverlayRenderer(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMultiPointOverlayRendererDelegate@%@::multiPointOverlayRenderer(%@, %@)", args[@"refId"], args[@"renderer"], args[@"item"]);
           }
       
           // invoke native method
@@ -1271,7 +1271,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMultiPointOverlayRenderer@%@::initWithMultiPointOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMultiPointOverlayRenderer@%@::initWithMultiPointOverlay(%@)", args[@"refId"], args[@"multiPointOverlay"]);
           }
       
           // invoke native method
@@ -1294,7 +1294,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAPolylineRenderer@%@::initWithPolyline(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAPolylineRenderer@%@::initWithPolyline(%@)", args[@"refId"], args[@"polyline"]);
           }
       
           // invoke native method
@@ -1316,7 +1316,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::name(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::name()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1337,7 +1337,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::coordinates(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::coordinates()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1360,7 +1360,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::count(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::count()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1381,7 +1381,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::duration(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::duration()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1402,7 +1402,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::elapsedTime(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::elapsedTime()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1423,7 +1423,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::cancel(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::cancel()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1444,7 +1444,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::isCancelled(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::isCancelled()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1465,7 +1465,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::passedPointCount(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationMoveAnimation@%@::passedPointCount()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1489,7 +1489,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(%d, %d)", args[@"refId"], args[@"selected"], args[@"animated"]);
           }
       
           // invoke native method
@@ -1513,7 +1513,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationView@%@::initWithAnnotation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::initWithAnnotation(%@, %@)", args[@"refId"], args[@"annotation"], args[@"reuseIdentifier"]);
           }
       
           // invoke native method
@@ -1535,7 +1535,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationView@%@::prepareForReuse(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::prepareForReuse()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1559,7 +1559,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(%d, %d)", args[@"refId"], args[@"newDragState"], args[@"animated"]);
           }
       
           // invoke native method
@@ -1581,7 +1581,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MATileOverlay@%@::initWithURLTemplate(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MATileOverlay@%@::initWithURLTemplate(%@)", args[@"refId"], args[@"URLTemplate"]);
           }
       
           // invoke native method
@@ -1607,7 +1607,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MATileOverlay@%@::loadTileAtPath(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MATileOverlay@%@::loadTileAtPath(%@, %@)", args[@"refId"], args[@"path"], args[@"result"]);
           }
       
           // invoke native method
@@ -1651,7 +1651,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MATileOverlay@%@::cancelLoadOfTileAtPath(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MATileOverlay@%@::cancelLoadOfTileAtPath(%@)", args[@"refId"], args[@"path"]);
           }
       
           // invoke native method
@@ -1673,7 +1673,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACustomCalloutView@%@::initWithCustomView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MACustomCalloutView@%@::initWithCustomView(%@)", args[@"refId"], args[@"customView"]);
           }
       
           // invoke native method
@@ -1695,7 +1695,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOfflineMap::sharedOfflineMap(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAOfflineMap::sharedOfflineMap()");
           }
       
           // invoke native method
@@ -1717,7 +1717,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOfflineMap@%@::setupWithCompletionBlock(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::setupWithCompletionBlock(%@)", args[@"refId"], args[@"block"]);
           }
       
           // invoke native method
@@ -1758,7 +1758,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOfflineMap@%@::downloadItem(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::downloadItem(%@, %d, %@)", args[@"refId"], args[@"item"], args[@"shouldContinueWhenAppEntersBackground"], args[@"downloadBlock"]);
           }
       
           // invoke native method
@@ -1802,7 +1802,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOfflineMap@%@::isDownloadingForItem(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::isDownloadingForItem(%@)", args[@"refId"], args[@"item"]);
           }
       
           // invoke native method
@@ -1824,7 +1824,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOfflineMap@%@::pauseItem(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::pauseItem(%@)", args[@"refId"], args[@"item"]);
           }
       
           // invoke native method
@@ -1846,7 +1846,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOfflineMap@%@::deleteItem(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::deleteItem(%@)", args[@"refId"], args[@"item"]);
           }
       
           // invoke native method
@@ -1867,7 +1867,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOfflineMap@%@::cancelAll(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::cancelAll()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1888,7 +1888,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOfflineMap@%@::clearDisk(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::clearDisk()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1909,7 +1909,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOfflineMap@%@::checkNewestVersion(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOfflineMap@%@::checkNewestVersion(%@)", args[@"refId"], args[@"newestVersionBlock"]);
           }
       
           // invoke native method
@@ -1947,7 +1947,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACircleRenderer@%@::initWithCircle(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MACircleRenderer@%@::initWithCircle(%@)", args[@"refId"], args[@"circle"]);
           }
       
           // invoke native method
@@ -1970,7 +1970,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleOverlayRenderer@%@::initWithParticleOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleOverlayRenderer@%@::initWithParticleOverlay(%@)", args[@"refId"], args[@"particleOverlay"]);
           }
       
           // invoke native method
@@ -1992,7 +1992,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getX(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getX()", args[@"refId"]);
           }
       
           // invoke native method
@@ -2013,7 +2013,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getY(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getY()", args[@"refId"]);
           }
       
           // invoke native method
@@ -2034,7 +2034,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getZ(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleVelocityGenerate@%@::getZ()", args[@"refId"]);
           }
       
           // invoke native method
@@ -2066,7 +2066,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleRandomVelocityGenerate@%@::initWithBoundaryValueX1(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleRandomVelocityGenerate@%@::initWithBoundaryValueX1(%d, %d, %d, %d, %d, %d)", args[@"refId"], args[@"x1"], args[@"y1"], args[@"z1"], args[@"x2"], args[@"y2"], args[@"z2"]);
           }
       
           // invoke native method
@@ -2103,7 +2103,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleRandomColorGenerate@%@::initWithBoundaryColorR1(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleRandomColorGenerate@%@::initWithBoundaryColorR1(%d, %d, %d, %d, %d, %d, %d, %d)", args[@"refId"], args[@"r1"], args[@"g1"], args[@"b1"], args[@"a1"], args[@"r2"], args[@"g2"], args[@"b2"], args[@"a2"]);
           }
       
           // invoke native method
@@ -2125,7 +2125,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleRotationGenerate@%@::getRotate(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleRotationGenerate@%@::getRotate()", args[@"refId"]);
           }
       
           // invoke native method
@@ -2147,7 +2147,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleConstantRotationGenerate@%@::initWithRotate(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleConstantRotationGenerate@%@::initWithRotate(%d)", args[@"refId"], args[@"rotate"]);
           }
       
           // invoke native method
@@ -2170,7 +2170,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeX(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeX(%d)", args[@"refId"], args[@"timeFrame"]);
           }
       
           // invoke native method
@@ -2192,7 +2192,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeY(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeY(%d)", args[@"refId"], args[@"timeFrame"]);
           }
       
           // invoke native method
@@ -2214,7 +2214,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeZ(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleSizeGenerate@%@::getSizeZ(%d)", args[@"refId"], args[@"timeFrame"]);
           }
       
           // invoke native method
@@ -2240,7 +2240,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleCurveSizeGenerate@%@::initWithCurveX(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleCurveSizeGenerate@%@::initWithCurveX(%d, %d, %d)", args[@"refId"], args[@"x"], args[@"y"], args[@"z"]);
           }
       
           // invoke native method
@@ -2265,7 +2265,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleEmissionModule@%@::initWithEmissionRate(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleEmissionModule@%@::initWithEmissionRate(%d, %d)", args[@"refId"], args[@"rate"], args[@"rateTime"]);
           }
       
           // invoke native method
@@ -2287,7 +2287,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleShapeModule@%@::isRatioEnable(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleShapeModule@%@::isRatioEnable()", args[@"refId"]);
           }
       
           // invoke native method
@@ -2315,7 +2315,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleSinglePointShapeModule@%@::initWithShapeX(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleSinglePointShapeModule@%@::initWithShapeX(%d, %d, %d, %d)", args[@"refId"], args[@"x"], args[@"y"], args[@"z"], args[@"isUseRatio"]);
           }
       
           // invoke native method
@@ -2346,7 +2346,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleRectShapeModule@%@::initWithLeft(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleRectShapeModule@%@::initWithLeft(%d, %d, %d, %d, %d)", args[@"refId"], args[@"left"], args[@"top"], args[@"right"], args[@"bottom"], args[@"isUseRatio"]);
           }
       
           // invoke native method
@@ -2369,7 +2369,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setVelocityOverLife(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setVelocityOverLife(%@)", args[@"refId"], args[@"velocity"]);
           }
       
           // invoke native method
@@ -2391,7 +2391,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setRotationOverLife(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setRotationOverLife(%@)", args[@"refId"], args[@"rotation"]);
           }
       
           // invoke native method
@@ -2413,7 +2413,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setSizeOverLife(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setSizeOverLife(%@)", args[@"refId"], args[@"size"]);
           }
       
           // invoke native method
@@ -2435,7 +2435,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setColorOverLife(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAParticleOverLifeModule@%@::setColorOverLife(%@)", args[@"refId"], args[@"color"]);
           }
       
           // invoke native method
@@ -2457,7 +2457,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::initWithOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::initWithOverlay(%@)", args[@"refId"], args[@"overlay"]);
           }
       
           // invoke native method
@@ -2479,7 +2479,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::getOffsetPoint(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::getOffsetPoint()", args[@"refId"]);
           }
       
           // invoke native method
@@ -2502,7 +2502,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::getMapZoomLevel(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::getMapZoomLevel()", args[@"refId"]);
           }
       
           // invoke native method
@@ -2526,7 +2526,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glPointForMapPoint(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glPointForMapPoint(%@)", args[@"refId"], args[@"mapPoint"]);
           }
       
           // invoke native method
@@ -2560,7 +2560,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glPointsForMapPoints(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glPointsForMapPoints(%@, %d)", args[@"refId"], args[@"mapPoints"], args[@"count"]);
           }
       
           // invoke native method
@@ -2584,7 +2584,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glWidthForWindowWidth(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glWidthForWindowWidth(%d)", args[@"refId"], args[@"windowWidth"]);
           }
       
           // invoke native method
@@ -2622,7 +2622,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(%@, %d, %@, %d, %d)", args[@"refId"], args[@"points"], args[@"pointCount"], args[@"strokeColor"], args[@"lineWidth"], args[@"looped"]);
           }
       
           // invoke native method
@@ -2666,7 +2666,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(%@, %d, %@, %d, %d, %d, %d, %d)", args[@"refId"], args[@"points"], args[@"pointCount"], args[@"strokeColor"], args[@"lineWidth"], args[@"looped"], args[@"lineJoinType"], args[@"lineCapType"], args[@"lineDash"]);
           }
       
           // invoke native method
@@ -2716,7 +2716,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderTexturedLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderTexturedLinesWithPoints(%@, %d, %d, %@, %@, %d)", args[@"refId"], args[@"points"], args[@"pointCount"], args[@"lineWidth"], args[@"textureIDs"], args[@"drawStyleIndexes"], args[@"looped"]);
           }
       
           // invoke native method
@@ -2774,7 +2774,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderLinesWithPoints(%@, %d, %@, %@, %d, %d, %d, %d, %d, %d)", args[@"refId"], args[@"points"], args[@"pointCount"], args[@"strokeColors"], args[@"drawStyleIndexes"], args[@"isGradient"], args[@"lineWidth"], args[@"looped"], args[@"lineJoinType"], args[@"lineCapType"], args[@"lineDash"]);
           }
       
           // invoke native method
@@ -2810,7 +2810,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderRegionWithPoints(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderRegionWithPoints(%@, %d, %@, %d)", args[@"refId"], args[@"points"], args[@"pointCount"], args[@"fillColor"], args[@"usingTriangleFan"]);
           }
       
           // invoke native method
@@ -2854,7 +2854,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderStrokedRegionWithPoints(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::renderStrokedRegionWithPoints(%@, %d, %@, %@, %d, %d, %d, %d)", args[@"refId"], args[@"points"], args[@"pointCount"], args[@"fillColor"], args[@"strokeColor"], args[@"strokeLineWidth"], args[@"strokeLineJoinType"], args[@"strokeLineDash"], args[@"usingTriangleFan"]);
           }
       
           // invoke native method
@@ -2875,7 +2875,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glRender(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::glRender()", args[@"refId"]);
           }
       
           // invoke native method
@@ -2896,7 +2896,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::setNeedsUpdate(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAOverlayRenderer@%@::setNeedsUpdate()", args[@"refId"]);
           }
       
           // invoke native method
@@ -2923,7 +2923,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMultiPointOverlay@%@::initWithMultiPointItems(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMultiPointOverlay@%@::initWithMultiPointItems(%@)", args[@"refId"], args[@"items"]);
           }
       
           // invoke native method
@@ -2956,7 +2956,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACustomBuildingOverlayOption::optionWithCoordinates(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MACustomBuildingOverlayOption::optionWithCoordinates(%@, %d)", args[@"coords"], args[@"count"]);
           }
       
           // invoke native method
@@ -2989,7 +2989,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACustomBuildingOverlayOption@%@::setOptionWithCoordinates(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MACustomBuildingOverlayOption@%@::setOptionWithCoordinates(%@, %d)", args[@"refId"], args[@"coords"], args[@"count"]);
           }
       
           // invoke native method
@@ -3011,7 +3011,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACustomBuildingOverlay@%@::addCustomOption(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MACustomBuildingOverlay@%@::addCustomOption(%@)", args[@"refId"], args[@"option"]);
           }
       
           // invoke native method
@@ -3033,7 +3033,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACustomBuildingOverlay@%@::removeCustomOption(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MACustomBuildingOverlay@%@::removeCustomOption(%@)", args[@"refId"], args[@"option"]);
           }
       
           // invoke native method
@@ -3065,7 +3065,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAArc::arcWithStartCoordinate(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAArc::arcWithStartCoordinate(%@, %@, %@)", args[@"startCoordinate"], args[@"passedCoordinate"], args[@"endCoordinate"]);
           }
       
           // invoke native method
@@ -3092,7 +3092,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setRegion(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setRegion(%@, %d)", args[@"refId"], args[@"region"], args[@"animated"]);
           }
       
           // invoke native method
@@ -3116,7 +3116,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::regionThatFits(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::regionThatFits(%@)", args[@"refId"], args[@"region"]);
           }
       
           // invoke native method
@@ -3144,7 +3144,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(%@, %d)", args[@"refId"], args[@"mapRect"], args[@"animated"]);
           }
       
           // invoke native method
@@ -3168,7 +3168,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(%@)", args[@"refId"], args[@"mapRect"]);
           }
       
           // invoke native method
@@ -3198,7 +3198,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(%@, %@)", args[@"refId"], args[@"mapRect"], args[@"insets"]);
           }
       
           // invoke native method
@@ -3230,7 +3230,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(%@, %@, %d)", args[@"refId"], args[@"mapRect"], args[@"insets"], args[@"animated"]);
           }
       
           // invoke native method
@@ -3256,7 +3256,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setCenterCoordinate(%@, %d)", args[@"refId"], args[@"coordinate"], args[@"animated"]);
           }
       
           // invoke native method
@@ -3280,7 +3280,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(%d, %d)", args[@"refId"], args[@"zoomLevel"], args[@"animated"]);
           }
       
           // invoke native method
@@ -3308,7 +3308,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(%d, %@, %d)", args[@"refId"], args[@"zoomLevel"], args[@"pivot"], args[@"animated"]);
           }
       
           // invoke native method
@@ -3334,7 +3334,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(%d, %d, %d)", args[@"refId"], args[@"rotationDegree"], args[@"animated"], args[@"duration"]);
           }
       
           // invoke native method
@@ -3360,7 +3360,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCameraDegree(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setCameraDegree(%d, %d, %d)", args[@"refId"], args[@"cameraDegree"], args[@"animated"], args[@"duration"]);
           }
       
           // invoke native method
@@ -3381,7 +3381,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::getMapStatus(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::getMapStatus()", args[@"refId"]);
           }
       
           // invoke native method
@@ -3406,7 +3406,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(%@, %d)", args[@"refId"], args[@"status"], args[@"animated"]);
           }
       
           // invoke native method
@@ -3432,7 +3432,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(%@, %d, %d)", args[@"refId"], args[@"status"], args[@"animated"], args[@"duration"]);
           }
       
           // invoke native method
@@ -3454,7 +3454,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCompassImage(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setCompassImage(%@)", args[@"refId"], args[@"image"]);
           }
       
           // invoke native method
@@ -3479,7 +3479,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::takeSnapshotInRect(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::takeSnapshotInRect(%@, %@)", args[@"refId"], args[@"rect"], args[@"block"]);
           }
       
           // invoke native method
@@ -3520,7 +3520,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::metersPerPointForZoomLevel(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::metersPerPointForZoomLevel(%d)", args[@"refId"], args[@"zoomLevel"]);
           }
       
           // invoke native method
@@ -3546,7 +3546,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::convertCoordinate(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::convertCoordinate(%@, %@)", args[@"refId"], args[@"coordinate"], args[@"view"]);
           }
       
           // invoke native method
@@ -3574,7 +3574,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::convertPoint(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::convertPoint(%@, %@)", args[@"refId"], args[@"point"], args[@"view"]);
           }
       
           // invoke native method
@@ -3602,7 +3602,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::convertRegion(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::convertRegion(%@, %@)", args[@"refId"], args[@"region"], args[@"view"]);
           }
       
           // invoke native method
@@ -3630,7 +3630,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::convertRect(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::convertRect(%@, %@)", args[@"refId"], args[@"rect"], args[@"view"]);
           }
       
           // invoke native method
@@ -3653,7 +3653,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::reloadMap(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::reloadMap()", args[@"refId"]);
           }
       
           // invoke native method
@@ -3674,7 +3674,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::clearDisk(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::clearDisk()", args[@"refId"]);
           }
       
           // invoke native method
@@ -3695,7 +3695,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::reloadInternalTexture(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::reloadInternalTexture()", args[@"refId"]);
           }
       
           // invoke native method
@@ -3716,7 +3716,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::mapContentApprovalNumber(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::mapContentApprovalNumber()", args[@"refId"]);
           }
       
           // invoke native method
@@ -3737,7 +3737,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::satelliteImageApprovalNumber(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::satelliteImageApprovalNumber()", args[@"refId"]);
           }
       
           // invoke native method
@@ -3758,7 +3758,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::forceRefresh(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::forceRefresh()", args[@"refId"]);
           }
       
           // invoke native method
@@ -3780,7 +3780,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addAnnotation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addAnnotation(%@)", args[@"refId"], args[@"annotation"]);
           }
       
           // invoke native method
@@ -3807,7 +3807,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addAnnotations(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addAnnotations(%@)", args[@"refId"], args[@"annotations"]);
           }
       
           // invoke native method
@@ -3829,7 +3829,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotation(%@)", args[@"refId"], args[@"annotation"]);
           }
       
           // invoke native method
@@ -3856,7 +3856,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotations(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotations(%@)", args[@"refId"], args[@"annotations"]);
           }
       
           // invoke native method
@@ -3878,7 +3878,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::viewForAnnotation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::viewForAnnotation(%@)", args[@"refId"], args[@"annotation"]);
           }
       
           // invoke native method
@@ -3901,7 +3901,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::dequeueReusableAnnotationViewWithIdentifier(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::dequeueReusableAnnotationViewWithIdentifier(%@)", args[@"refId"], args[@"identifier"]);
           }
       
           // invoke native method
@@ -3926,7 +3926,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::selectAnnotation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::selectAnnotation(%@, %d)", args[@"refId"], args[@"annotation"], args[@"animated"]);
           }
       
           // invoke native method
@@ -3950,7 +3950,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::deselectAnnotation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::deselectAnnotation(%@, %d)", args[@"refId"], args[@"annotation"], args[@"animated"]);
           }
       
           // invoke native method
@@ -3979,7 +3979,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(%@, %d)", args[@"refId"], args[@"annotations"], args[@"animated"]);
           }
       
           // invoke native method
@@ -4012,7 +4012,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(%@, %@, %d)", args[@"refId"], args[@"annotations"], args[@"insets"], args[@"animated"]);
           }
       
           // invoke native method
@@ -4036,7 +4036,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setUserTrackingMode(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setUserTrackingMode(%d, %d)", args[@"refId"], args[@"mode"], args[@"animated"]);
           }
       
           // invoke native method
@@ -4058,7 +4058,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::updateUserLocationRepresentation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::updateUserLocationRepresentation(%@)", args[@"refId"], args[@"representation"]);
           }
       
           // invoke native method
@@ -4080,7 +4080,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(%d)", args[@"refId"], args[@"level"]);
           }
       
           // invoke native method
@@ -4107,7 +4107,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(%@)", args[@"refId"], args[@"overlay"]);
           }
       
           // invoke native method
@@ -4134,7 +4134,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(%@)", args[@"refId"], args[@"overlays"]);
           }
       
           // invoke native method
@@ -4158,7 +4158,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(%@, %d)", args[@"refId"], args[@"overlay"], args[@"level"]);
           }
       
           // invoke native method
@@ -4187,7 +4187,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(%@, %d)", args[@"refId"], args[@"overlays"], args[@"level"]);
           }
       
           // invoke native method
@@ -4209,7 +4209,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::removeOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::removeOverlay(%@)", args[@"refId"], args[@"overlay"]);
           }
       
           // invoke native method
@@ -4236,7 +4236,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::removeOverlays(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::removeOverlays(%@)", args[@"refId"], args[@"overlays"]);
           }
       
           // invoke native method
@@ -4262,7 +4262,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(%@, %d, %d)", args[@"refId"], args[@"overlay"], args[@"index"], args[@"level"]);
           }
       
           // invoke native method
@@ -4286,7 +4286,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(%@, %@)", args[@"refId"], args[@"overlay"], args[@"sibling"]);
           }
       
           // invoke native method
@@ -4310,7 +4310,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(%@, %@)", args[@"refId"], args[@"overlay"], args[@"sibling"]);
           }
       
           // invoke native method
@@ -4334,7 +4334,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(%@, %d)", args[@"refId"], args[@"overlay"], args[@"index"]);
           }
       
           // invoke native method
@@ -4358,7 +4358,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(%d, %d)", args[@"refId"], args[@"index1"], args[@"index2"]);
           }
       
           // invoke native method
@@ -4384,7 +4384,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(%d, %d, %d)", args[@"refId"], args[@"index1"], args[@"index2"], args[@"level"]);
           }
       
           // invoke native method
@@ -4408,7 +4408,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlay(%@, %@)", args[@"refId"], args[@"overlay1"], args[@"overlay2"]);
           }
       
           // invoke native method
@@ -4430,7 +4430,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::rendererForOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::rendererForOverlay(%@)", args[@"refId"], args[@"overlay"]);
           }
       
           // invoke native method
@@ -4460,7 +4460,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(%@, %d)", args[@"refId"], args[@"overlays"], args[@"animated"]);
           }
       
           // invoke native method
@@ -4493,7 +4493,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(%@, %@, %d)", args[@"refId"], args[@"overlays"], args[@"insets"], args[@"animated"]);
           }
       
           // invoke native method
@@ -4517,7 +4517,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setIndoorMapControlOrigin(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setIndoorMapControlOrigin(%@)", args[@"refId"], args[@"origin"]);
           }
       
           // invoke native method
@@ -4539,7 +4539,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCurrentIndoorMapFloorIndex(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setCurrentIndoorMapFloorIndex(%d)", args[@"refId"], args[@"floorIndex"]);
           }
       
           // invoke native method
@@ -4560,7 +4560,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::clearIndoorMapCache(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::clearIndoorMapCache()", args[@"refId"]);
           }
       
           // invoke native method
@@ -4582,7 +4582,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleOptions(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleOptions(%@)", args[@"refId"], args[@"styleOptions"]);
           }
       
           // invoke native method
@@ -4604,7 +4604,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewRegionChanged(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewRegionChanged(%@)", args[@"refId"], args[@"mapView"]);
           }
       
           // invoke native method
@@ -4628,7 +4628,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %d)", args[@"refId"], args[@"mapView"], args[@"animated"]);
           }
       
           // invoke native method
@@ -4652,7 +4652,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %d)", args[@"refId"], args[@"mapView"], args[@"animated"]);
           }
       
           // invoke native method
@@ -4676,7 +4676,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %d)", args[@"refId"], args[@"mapView"], args[@"wasUserAction"]);
           }
       
           // invoke native method
@@ -4700,7 +4700,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %d)", args[@"refId"], args[@"mapView"], args[@"wasUserAction"]);
           }
       
           // invoke native method
@@ -4724,7 +4724,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %d)", args[@"refId"], args[@"mapView"], args[@"wasUserAction"]);
           }
       
           // invoke native method
@@ -4748,7 +4748,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %d)", args[@"refId"], args[@"mapView"], args[@"wasUserAction"]);
           }
       
           // invoke native method
@@ -4770,7 +4770,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewWillStartLoadingMap(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewWillStartLoadingMap(%@)", args[@"refId"], args[@"mapView"]);
           }
       
           // invoke native method
@@ -4792,7 +4792,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidFinishLoadingMap(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidFinishLoadingMap(%@)", args[@"refId"], args[@"mapView"]);
           }
       
           // invoke native method
@@ -4816,7 +4816,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidFailLoadingMap(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidFailLoadingMap(%@, %@)", args[@"refId"], args[@"mapView"], args[@"error"]);
           }
       
           // invoke native method
@@ -4840,7 +4840,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"annotation"]);
           }
       
           // invoke native method
@@ -4870,7 +4870,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"views"]);
           }
       
           // invoke native method
@@ -4894,7 +4894,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"view"]);
           }
       
           // invoke native method
@@ -4918,7 +4918,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"view"]);
           }
       
           // invoke native method
@@ -4940,7 +4940,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewWillStartLocatingUser(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewWillStartLocatingUser(%@)", args[@"refId"], args[@"mapView"]);
           }
       
           // invoke native method
@@ -4962,7 +4962,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidStopLocatingUser(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewDidStopLocatingUser(%@)", args[@"refId"], args[@"mapView"]);
           }
       
           // invoke native method
@@ -4988,7 +4988,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@, %d)", args[@"refId"], args[@"mapView"], args[@"userLocation"], args[@"updatingLocation"]);
           }
       
           // invoke native method
@@ -5010,7 +5010,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewRequireLocationAuth(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapViewRequireLocationAuth(%@)", args[@"refId"], args[@"locationManager"]);
           }
       
           // invoke native method
@@ -5034,7 +5034,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"error"]);
           }
       
           // invoke native method
@@ -5062,7 +5062,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@, %d, %d)", args[@"refId"], args[@"mapView"], args[@"view"], args[@"newState"], args[@"oldState"]);
           }
       
           // invoke native method
@@ -5086,7 +5086,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"overlay"]);
           }
       
           // invoke native method
@@ -5116,7 +5116,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"overlayRenderers"]);
           }
       
           // invoke native method
@@ -5142,7 +5142,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@, %@)", args[@"refId"], args[@"mapView"], args[@"view"], args[@"control"]);
           }
       
           // invoke native method
@@ -5166,7 +5166,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"view"]);
           }
       
           // invoke native method
@@ -5190,7 +5190,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"view"]);
           }
       
           // invoke native method
@@ -5216,7 +5216,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %d, %d)", args[@"refId"], args[@"mapView"], args[@"mode"], args[@"animated"]);
           }
       
           // invoke native method
@@ -5240,7 +5240,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %d)", args[@"refId"], args[@"mapView"], args[@"openGLESDisabled"]);
           }
       
           // invoke native method
@@ -5269,7 +5269,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"pois"]);
           }
       
           // invoke native method
@@ -5295,7 +5295,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"coordinate"]);
           }
       
           // invoke native method
@@ -5321,7 +5321,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"coordinate"]);
           }
       
           // invoke native method
@@ -5343,7 +5343,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapInitComplete(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapInitComplete(%@)", args[@"refId"], args[@"mapView"]);
           }
       
           // invoke native method
@@ -5367,7 +5367,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"indoorInfo"]);
           }
       
           // invoke native method
@@ -5391,7 +5391,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"indoorInfo"]);
           }
       
           // invoke native method
@@ -5415,7 +5415,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"indoorInfo"]);
           }
       
           // invoke native method
@@ -5437,7 +5437,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::offlineDataWillReload(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::offlineDataWillReload(%@)", args[@"refId"], args[@"mapView"]);
           }
       
           // invoke native method
@@ -5459,7 +5459,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::offlineDataDidReload(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapViewDelegate@%@::offlineDataDidReload(%@)", args[@"refId"], args[@"mapView"]);
           }
       
           // invoke native method
@@ -5481,7 +5481,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAGroundOverlayRenderer@%@::initWithGroundOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAGroundOverlayRenderer@%@::initWithGroundOverlay(%@)", args[@"refId"], args[@"groundOverlay"]);
           }
       
           // invoke native method
@@ -5504,7 +5504,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACustomBuildingOverlayRenderer@%@::initWithCustomBuildingOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MACustomBuildingOverlayRenderer@%@::initWithCustomBuildingOverlay(%@)", args[@"refId"], args[@"customBuildingOverlay"]);
           }
       
           // invoke native method
@@ -31170,7 +31170,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACoordinateBoundsMake::MACoordinateBoundsMake(%d)", 1);
+              NSLog(@"fluttify-objc: MACoordinateBoundsMake::MACoordinateBoundsMake(%@, %@)", args[@"northEast"], args[@"southWest"]);
           }
       
           // invoke native method
@@ -31196,7 +31196,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACoordinateSpanMake::MACoordinateSpanMake(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MACoordinateSpanMake::MACoordinateSpanMake(%d, %d)", args[@"latitudeDelta"], args[@"longitudeDelta"]);
           }
       
           // invoke native method
@@ -31226,7 +31226,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACoordinateRegionMake::MACoordinateRegionMake(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MACoordinateRegionMake::MACoordinateRegionMake(%@, %@)", args[@"centerCoordinate"], args[@"span"]);
           }
       
           // invoke native method
@@ -31256,7 +31256,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance(%@, %d, %d)", args[@"centerCoordinate"], args[@"latitudinalMeters"], args[@"longitudinalMeters"]);
           }
       
           // invoke native method
@@ -31282,7 +31282,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapPointForCoordinate::MAMapPointForCoordinate(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapPointForCoordinate::MAMapPointForCoordinate(%@)", args[@"coordinate"]);
           }
       
           // invoke native method
@@ -31308,7 +31308,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACoordinateForMapPoint::MACoordinateForMapPoint(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MACoordinateForMapPoint::MACoordinateForMapPoint(%@)", args[@"mapPoint"]);
           }
       
           // invoke native method
@@ -31334,7 +31334,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACoordinateRegionForMapRect::MACoordinateRegionForMapRect(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MACoordinateRegionForMapRect::MACoordinateRegionForMapRect(%@)", args[@"rect"]);
           }
       
           // invoke native method
@@ -31360,7 +31360,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectForCoordinateRegion::MAMapRectForCoordinateRegion(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectForCoordinateRegion::MAMapRectForCoordinateRegion(%@)", args[@"region"]);
           }
       
           // invoke native method
@@ -31384,7 +31384,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMetersPerMapPointAtLatitude::MAMetersPerMapPointAtLatitude(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMetersPerMapPointAtLatitude::MAMetersPerMapPointAtLatitude(%d)", args[@"latitude"]);
           }
       
           // invoke native method
@@ -31406,7 +31406,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapPointsPerMeterAtLatitude::MAMapPointsPerMeterAtLatitude(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapPointsPerMeterAtLatitude::MAMapPointsPerMeterAtLatitude(%d)", args[@"latitude"]);
           }
       
           // invoke native method
@@ -31434,7 +31434,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMetersBetweenMapPoints::MAMetersBetweenMapPoints(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMetersBetweenMapPoints::MAMetersBetweenMapPoints(%@, %@)", args[@"a"], args[@"b"]);
           }
       
           // invoke native method
@@ -31462,7 +31462,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAreaBetweenCoordinates::MAAreaBetweenCoordinates(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAAreaBetweenCoordinates::MAAreaBetweenCoordinates(%@, %@)", args[@"northEast"], args[@"southWest"]);
           }
       
           // invoke native method
@@ -31490,7 +31490,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectInset::MAMapRectInset(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectInset::MAMapRectInset(%@, %d, %d)", args[@"rect"], args[@"dx"], args[@"dy"]);
           }
       
           // invoke native method
@@ -31520,7 +31520,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectUnion::MAMapRectUnion(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectUnion::MAMapRectUnion(%@, %@)", args[@"rect1"], args[@"rect2"]);
           }
       
           // invoke native method
@@ -31550,7 +31550,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapSizeContainsSize::MAMapSizeContainsSize(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapSizeContainsSize::MAMapSizeContainsSize(%@, %@)", args[@"size1"], args[@"size2"]);
           }
       
           // invoke native method
@@ -31578,7 +31578,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectContainsPoint::MAMapRectContainsPoint(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectContainsPoint::MAMapRectContainsPoint(%@, %@)", args[@"rect"], args[@"point"]);
           }
       
           // invoke native method
@@ -31606,7 +31606,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectIntersectsRect::MAMapRectIntersectsRect(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectIntersectsRect::MAMapRectIntersectsRect(%@, %@)", args[@"rect1"], args[@"rect2"]);
           }
       
           // invoke native method
@@ -31634,7 +31634,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectContainsRect::MAMapRectContainsRect(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectContainsRect::MAMapRectContainsRect(%@, %@)", args[@"rect1"], args[@"rect2"]);
           }
       
           // invoke native method
@@ -31664,7 +31664,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACircleContainsPoint::MACircleContainsPoint(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MACircleContainsPoint::MACircleContainsPoint(%@, %@, %d)", args[@"point"], args[@"center"], args[@"radius"]);
           }
       
           // invoke native method
@@ -31694,7 +31694,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACircleContainsCoordinate::MACircleContainsCoordinate(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MACircleContainsCoordinate::MACircleContainsCoordinate(%@, %@, %d)", args[@"point"], args[@"center"], args[@"radius"]);
           }
       
           // invoke native method
@@ -31730,7 +31730,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAPolygonContainsPoint::MAPolygonContainsPoint(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAPolygonContainsPoint::MAPolygonContainsPoint(%@, %@, %d)", args[@"point"], args[@"*polygon"], args[@"count"]);
           }
       
           // invoke native method
@@ -31766,7 +31766,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAPolygonContainsCoordinate::MAPolygonContainsCoordinate(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAPolygonContainsCoordinate::MAPolygonContainsCoordinate(%@, %@, %d)", args[@"point"], args[@"*polygon"], args[@"count"]);
           }
       
           // invoke native method
@@ -31798,7 +31798,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAGetNearestMapPointFromLine::MAGetNearestMapPointFromLine(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAGetNearestMapPointFromLine::MAGetNearestMapPointFromLine(%@, %@, %@)", args[@"lineStart"], args[@"lineEnd"], args[@"point"]);
           }
       
           // invoke native method
@@ -31832,7 +31832,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAreaForPolygon::MAAreaForPolygon(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAAreaForPolygon::MAAreaForPolygon(%@, %d)", args[@"*coordinates"], args[@"count"]);
           }
       
           // invoke native method
@@ -31856,7 +31856,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapPointMake::MAMapPointMake(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapPointMake::MAMapPointMake(%d, %d)", args[@"x"], args[@"y"]);
           }
       
           // invoke native method
@@ -31882,7 +31882,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapSizeMake::MAMapSizeMake(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapSizeMake::MAMapSizeMake(%d, %d)", args[@"width"], args[@"height"]);
           }
       
           // invoke native method
@@ -31912,7 +31912,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectMake::MAMapRectMake(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectMake::MAMapRectMake(%d, %d, %d, %d)", args[@"x"], args[@"y"], args[@"width"], args[@"height"]);
           }
       
           // invoke native method
@@ -31938,7 +31938,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectGetMinX::MAMapRectGetMinX(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectGetMinX::MAMapRectGetMinX(%@)", args[@"rect"]);
           }
       
           // invoke native method
@@ -31962,7 +31962,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectGetMinY::MAMapRectGetMinY(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectGetMinY::MAMapRectGetMinY(%@)", args[@"rect"]);
           }
       
           // invoke native method
@@ -31986,7 +31986,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectGetMidX::MAMapRectGetMidX(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectGetMidX::MAMapRectGetMidX(%@)", args[@"rect"]);
           }
       
           // invoke native method
@@ -32010,7 +32010,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectGetMidY::MAMapRectGetMidY(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectGetMidY::MAMapRectGetMidY(%@)", args[@"rect"]);
           }
       
           // invoke native method
@@ -32034,7 +32034,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectGetMaxX::MAMapRectGetMaxX(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectGetMaxX::MAMapRectGetMaxX(%@)", args[@"rect"]);
           }
       
           // invoke native method
@@ -32058,7 +32058,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectGetMaxY::MAMapRectGetMaxY(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectGetMaxY::MAMapRectGetMaxY(%@)", args[@"rect"]);
           }
       
           // invoke native method
@@ -32082,7 +32082,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectGetWidth::MAMapRectGetWidth(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectGetWidth::MAMapRectGetWidth(%@)", args[@"rect"]);
           }
       
           // invoke native method
@@ -32106,7 +32106,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectGetHeight::MAMapRectGetHeight(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectGetHeight::MAMapRectGetHeight(%@)", args[@"rect"]);
           }
       
           // invoke native method
@@ -32134,7 +32134,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapPointEqualToPoint::MAMapPointEqualToPoint(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapPointEqualToPoint::MAMapPointEqualToPoint(%@, %@)", args[@"point1"], args[@"point2"]);
           }
       
           // invoke native method
@@ -32162,7 +32162,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapSizeEqualToSize::MAMapSizeEqualToSize(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapSizeEqualToSize::MAMapSizeEqualToSize(%@, %@)", args[@"size1"], args[@"size2"]);
           }
       
           // invoke native method
@@ -32190,7 +32190,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectEqualToRect::MAMapRectEqualToRect(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectEqualToRect::MAMapRectEqualToRect(%@, %@)", args[@"rect1"], args[@"rect2"]);
           }
       
           // invoke native method
@@ -32214,7 +32214,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectIsNull::MAMapRectIsNull(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectIsNull::MAMapRectIsNull(%@)", args[@"rect"]);
           }
       
           // invoke native method
@@ -32238,7 +32238,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapRectIsEmpty::MAMapRectIsEmpty(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAMapRectIsEmpty::MAMapRectIsEmpty(%@)", args[@"rect"]);
           }
       
           // invoke native method
@@ -32262,7 +32262,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAStringFromMapPoint::MAStringFromMapPoint(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAStringFromMapPoint::MAStringFromMapPoint(%@)", args[@"point"]);
           }
       
           // invoke native method
@@ -32286,7 +32286,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAStringFromMapSize::MAStringFromMapSize(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAStringFromMapSize::MAStringFromMapSize(%@)", args[@"size"]);
           }
       
           // invoke native method
@@ -32310,7 +32310,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAStringFromMapRect::MAStringFromMapRect(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAStringFromMapRect::MAStringFromMapRect(%@)", args[@"rect"]);
           }
       
           // invoke native method
@@ -32338,7 +32338,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAGetDirectionFromCoords::MAGetDirectionFromCoords(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAGetDirectionFromCoords::MAGetDirectionFromCoords(%@, %@)", args[@"fromCoord"], args[@"toCoord"]);
           }
       
           // invoke native method
@@ -32366,7 +32366,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAGetDirectionFromPoints::MAGetDirectionFromPoints(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAGetDirectionFromPoints::MAGetDirectionFromPoints(%@, %@)", args[@"fromPoint"], args[@"toPoint"]);
           }
       
           // invoke native method
@@ -32398,7 +32398,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine(暂未实现参数打印)");
+              NSLog(@"fluttify-objc: MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine(%@, %@, %@)", args[@"point"], args[@"lineBegin"], args[@"lineEnd"]);
           }
       
           // invoke native method

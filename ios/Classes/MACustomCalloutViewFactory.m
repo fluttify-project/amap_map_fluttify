@@ -67,7 +67,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MACustomCalloutView@%@::initWithCustomView(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MACustomCalloutView@%@::initWithCustomView(%@)", args[@"refId"], args[@"customView"]);
           }
       
           // invoke native method
