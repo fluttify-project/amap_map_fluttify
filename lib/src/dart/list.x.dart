@@ -6,34 +6,41 @@ import 'models.dart';
 extension TraceLocationListX on List<TraceLocation> {
   /// 转换为android对象
   Future<List<com_amap_api_trace_TraceLocation>> toAndroidModel() async {
-    List<com_amap_api_trace_TraceLocation> result = [];
-    for (final item in this) {
-      result.add(await com_amap_api_trace_TraceLocation
-          .create__double__double__float__float__long(
-        item.longitude,
-        item.latitude,
-        item.speed,
-        item.bearing,
-        item.time,
-      ));
-    }
-    return result;
+    final latitudeBatch = this.map((e) => e.latitude);
+    final longitudeBatch = this.map((e) => e.longitude);
+    final speedBatch = this.map((e) => e.speed);
+    final bearingBatch = this.map((e) => e.bearing);
+    final timeBatch = this.map((e) => e.time);
+
+    return com_amap_api_trace_TraceLocation
+        .create_batch__double__double__float__float__long(
+      latitudeBatch,
+      longitudeBatch,
+      speedBatch,
+      bearingBatch,
+      timeBatch,
+    );
   }
 
   /// 转换为ios对象
   Future<List<MATraceLocation>> toIOSModel() async {
-    List<MATraceLocation> result = [];
-    for (final item in this) {
-      final location = await MATraceLocation.create__();
-      await location.set_loc(
-          await CLLocationCoordinate2D.create(item.latitude, item.longitude));
-      await location.set_angle(item.bearing);
-      await location.set_speed(item.speed);
-      await location.set_time(item.time.toDouble());
+    final latitudeBatch = this.map((e) => e.latitude).toList();
+    final longitudeBatch = this.map((e) => e.longitude).toList();
+    final speedBatch = this.map((e) => e.speed).toList();
+    final bearingBatch = this.map((e) => e.bearing).toList();
+    final timeBatch = this.map((e) => e.time.toDouble()).toList();
 
-      result.add(location);
-    }
-    return result;
+    final traceLocationBatch = await MATraceLocation.create_batch__(length);
+    final coordBatch = await CLLocationCoordinate2D.create_batch(
+      latitudeBatch,
+      longitudeBatch,
+    );
+    await traceLocationBatch.set_batch_loc(coordBatch);
+    await traceLocationBatch.set_batch_speed(speedBatch);
+    await traceLocationBatch.set_batch_angle(bearingBatch);
+    await traceLocationBatch.set_batch_time(timeBatch);
+
+    return traceLocationBatch;
   }
 }
 

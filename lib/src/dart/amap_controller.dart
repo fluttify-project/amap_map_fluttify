@@ -2026,9 +2026,9 @@ class AmapController with WidgetsBindingObserver, _Private {
               .._onTraceFailed = onTraceFailed);
       },
       ios: (pool) async {
-//        final traceManager = await MATraceManager.create__();
-//
-//        traceManager.queryProcessedTraceWith();
+        final traceManager = await MATraceManager.create__();
+
+//        traceManager.queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback(locations, type, (index, points) { }, (points, distance) { }, (errorCode, errorDesc) { });
       },
     );
   }
