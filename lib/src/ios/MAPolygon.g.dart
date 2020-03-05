@@ -162,7 +162,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
 
   //region setters
   Future<void> set_hollowShapes_batch(List<List<MAOverlay>> hollowShapes) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::set_hollowShapes_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "hollowShapes": hollowShapes[i].map((it) => it.refId).toList()}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::set_hollowShapes_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "hollowShapes": hollowShapes[i].map((it) => it.refId).toList()}]);
   
   
   }

@@ -189,43 +189,43 @@ extension com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo_Batch on List<co
 
   //region setters
   Future<void> set_mGestureState_batch(List<int> mGestureState) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureState_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mGestureState": mGestureState[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureState_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mGestureState": mGestureState[i]}]);
   
   
   }
   
   Future<void> set_mGestureType_batch(List<int> mGestureType) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureType_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mGestureType": mGestureType[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureType_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mGestureType": mGestureType[i]}]);
   
   
   }
   
   Future<void> set_mLocation_batch(List<Float64List> mLocation) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mLocation_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mLocation": mLocation[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mLocation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mLocation": mLocation[i]}]);
   
   
   }
   
   Future<void> set_mScale_batch(List<double> mScale) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mScale_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mScale": mScale[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mScale_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mScale": mScale[i]}]);
   
   
   }
   
   Future<void> set_mRotation_batch(List<double> mRotation) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mRotation_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mRotation": mRotation[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mRotation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mRotation": mRotation[i]}]);
   
   
   }
   
   Future<void> set_mVeLocityFloat_batch(List<double> mVeLocityFloat) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVeLocityFloat_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mVeLocityFloat": mVeLocityFloat[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVeLocityFloat_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mVeLocityFloat": mVeLocityFloat[i]}]);
   
   
   }
   
   Future<void> set_mVelocityPoint_batch(List<Float64List> mVelocityPoint) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVelocityPoint_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mVelocityPoint": mVelocityPoint[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVelocityPoint_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mVelocityPoint": mVelocityPoint[i]}]);
   
   
   }

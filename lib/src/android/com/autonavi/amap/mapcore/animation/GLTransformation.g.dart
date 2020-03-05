@@ -153,25 +153,25 @@ extension com_autonavi_amap_mapcore_animation_GLTransformation_Batch on List<com
 
   //region setters
   Future<void> set_alpha_batch(List<double> alpha) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_alpha_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "alpha": alpha[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_alpha_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "alpha": alpha[i]}]);
   
   
   }
   
   Future<void> set_rotate_batch(List<double> rotate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_rotate_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "rotate": rotate[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_rotate_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "rotate": rotate[i]}]);
   
   
   }
   
   Future<void> set_scaleX_batch(List<double> scaleX) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleX_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "scaleX": scaleX[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleX_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "scaleX": scaleX[i]}]);
   
   
   }
   
   Future<void> set_scaleY_batch(List<double> scaleY) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleY_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "scaleY": scaleY[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleY_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "scaleY": scaleY[i]}]);
   
   
   }

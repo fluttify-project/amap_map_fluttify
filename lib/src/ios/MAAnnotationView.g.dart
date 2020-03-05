@@ -422,85 +422,85 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
 
   //region setters
   Future<void> set_zIndex_batch(List<int> zIndex, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_zIndex_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "zIndex": zIndex[i]}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_zIndex_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "zIndex": zIndex[i]}]);
   
   
   }
   
   Future<void> set_annotation_batch(List<MAAnnotation> annotation, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_annotation_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "annotation": annotation[i].refId}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_annotation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "annotation": annotation[i].refId}]);
   
   
   }
   
   Future<void> set_image_batch(List<UIImage> image, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_image_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "image": image[i].refId}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_image_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "image": image[i].refId}]);
   
   
   }
   
   Future<void> set_customCalloutView_batch(List<MACustomCalloutView> customCalloutView, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_customCalloutView_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "customCalloutView": customCalloutView[i].refId}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_customCalloutView_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "customCalloutView": customCalloutView[i].refId}]);
   
   
   }
   
   Future<void> set_centerOffset_batch(List<CGPoint> centerOffset, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_centerOffset_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "centerOffset": centerOffset[i].refId}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_centerOffset_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "centerOffset": centerOffset[i].refId}]);
   
   
   }
   
   Future<void> set_calloutOffset_batch(List<CGPoint> calloutOffset, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_calloutOffset_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "calloutOffset": calloutOffset[i].refId}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_calloutOffset_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "calloutOffset": calloutOffset[i].refId}]);
   
   
   }
   
   Future<void> set_enabled_batch(List<bool> enabled, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_enabled_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "enabled": enabled[i]}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_enabled_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "enabled": enabled[i]}]);
   
   
   }
   
   Future<void> set_highlighted_batch(List<bool> highlighted, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_highlighted_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "highlighted": highlighted[i]}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_highlighted_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "highlighted": highlighted[i]}]);
   
   
   }
   
   Future<void> set_selected_batch(List<bool> selected, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_selected_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "selected": selected[i]}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_selected_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "selected": selected[i]}]);
   
   
   }
   
   Future<void> set_canShowCallout_batch(List<bool> canShowCallout, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_canShowCallout_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "canShowCallout": canShowCallout[i]}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_canShowCallout_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "canShowCallout": canShowCallout[i]}]);
   
   
   }
   
   Future<void> set_leftCalloutAccessoryView_batch(List<UIView> leftCalloutAccessoryView, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_leftCalloutAccessoryView_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "leftCalloutAccessoryView": leftCalloutAccessoryView[i].refId}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_leftCalloutAccessoryView_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "leftCalloutAccessoryView": leftCalloutAccessoryView[i].refId}]);
   
   
   }
   
   Future<void> set_rightCalloutAccessoryView_batch(List<UIView> rightCalloutAccessoryView, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_rightCalloutAccessoryView_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "rightCalloutAccessoryView": rightCalloutAccessoryView[i].refId}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_rightCalloutAccessoryView_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "rightCalloutAccessoryView": rightCalloutAccessoryView[i].refId}]);
   
   
   }
   
   Future<void> set_draggable_batch(List<bool> draggable, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_draggable_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "draggable": draggable[i]}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_draggable_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "draggable": draggable[i]}]);
   
   
   }
   
   Future<void> set_dragState_batch(List<MAAnnotationViewDragState> dragState, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_dragState_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "dragState": dragState[i].index}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_dragState_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "dragState": dragState[i].index}]);
   
   
   }

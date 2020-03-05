@@ -208,49 +208,49 @@ extension com_autonavi_ae_gmap_gloverlay_GLTextureProperty_Batch on List<com_aut
 
   //region setters
   Future<void> set_mId_batch(List<int> mId) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mId_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mId": mId[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mId_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mId": mId[i]}]);
   
   
   }
   
   Future<void> set_mBitmap_batch(List<android_graphics_Bitmap> mBitmap) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mBitmap_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mBitmap": mBitmap[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mBitmap_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mBitmap": mBitmap[i].refId}]);
   
   
   }
   
   Future<void> set_mPngBuffer_batch(List<Uint8List> mPngBuffer) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mPngBuffer_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mPngBuffer": mPngBuffer[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mPngBuffer_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mPngBuffer": mPngBuffer[i]}]);
   
   
   }
   
   Future<void> set_mAnchor_batch(List<int> mAnchor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mAnchor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mAnchor": mAnchor[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mAnchor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mAnchor": mAnchor[i]}]);
   
   
   }
   
   Future<void> set_mXRatio_batch(List<double> mXRatio) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mXRatio_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mXRatio": mXRatio[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mXRatio_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mXRatio": mXRatio[i]}]);
   
   
   }
   
   Future<void> set_mYRatio_batch(List<double> mYRatio) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mYRatio_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mYRatio": mYRatio[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mYRatio_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mYRatio": mYRatio[i]}]);
   
   
   }
   
   Future<void> set_isGenMimps_batch(List<bool> isGenMimps) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_isGenMimps_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isGenMimps": isGenMimps[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_isGenMimps_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isGenMimps": isGenMimps[i]}]);
   
   
   }
   
   Future<void> set_isRepeat_batch(List<bool> isRepeat) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_isRepeat_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isRepeat": isRepeat[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_isRepeat_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isRepeat": isRepeat[i]}]);
   
   
   }

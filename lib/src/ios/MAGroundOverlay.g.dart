@@ -201,7 +201,7 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
 
   //region setters
   Future<void> set_alpha_batch(List<double> alpha) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::set_alpha_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "alpha": alpha[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::set_alpha_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "alpha": alpha[i]}]);
   
   
   }

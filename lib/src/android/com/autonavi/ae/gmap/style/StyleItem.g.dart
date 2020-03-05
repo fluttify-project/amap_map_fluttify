@@ -159,13 +159,13 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
 
   //region setters
   Future<void> set_mainKey_batch(List<int> mainKey) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::set_mainKey_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mainKey": mainKey[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::set_mainKey_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mainKey": mainKey[i]}]);
   
   
   }
   
   Future<void> set_subKey_batch(List<Int32List> subKey) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::set_subKey_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "subKey": subKey[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::set_subKey_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "subKey": subKey[i]}]);
   
   
   }

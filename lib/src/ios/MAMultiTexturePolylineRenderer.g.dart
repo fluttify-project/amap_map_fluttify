@@ -122,7 +122,7 @@ extension MAMultiTexturePolylineRenderer_Batch on List<MAMultiTexturePolylineRen
 
   //region setters
   Future<void> set_strokeTextureImages_batch(List<List> strokeTextureImages) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::set_strokeTextureImages_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strokeTextureImages": strokeTextureImages[i].map((it) => it.refId).toList()}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::set_strokeTextureImages_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strokeTextureImages": strokeTextureImages[i].map((it) => it.refId).toList()}]);
   
   
   }

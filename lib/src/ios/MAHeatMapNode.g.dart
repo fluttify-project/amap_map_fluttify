@@ -94,13 +94,13 @@ extension MAHeatMapNode_Batch on List<MAHeatMapNode> {
 
   //region setters
   Future<void> set_coordinate_batch(List<CLLocationCoordinate2D> coordinate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapNode::set_coordinate_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "coordinate": coordinate[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapNode::set_coordinate_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "coordinate": coordinate[i].refId}]);
   
   
   }
   
   Future<void> set_intensity_batch(List<double> intensity) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapNode::set_intensity_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "intensity": intensity[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapNode::set_intensity_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "intensity": intensity[i]}]);
   
   
   }
