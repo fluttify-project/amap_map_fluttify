@@ -63,6 +63,2918 @@ public class SubHandler3 {
                 ref.floor_names = floor_names.toArray(new String[floor_names.size()]);
                 methodResult.success("success");
             });
+            // setter batch
+            put("com.autonavi.ae.gmap.maploader.ProcessingTile::set_mKeyName_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    String mKeyName = (String) ((Map<String, Object>) args).get("mKeyName");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.maploader.ProcessingTile ref = (com.autonavi.ae.gmap.maploader.ProcessingTile) getHEAP().get(refId);
+            
+                    ref.mKeyName = mKeyName;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.maploader.ProcessingTile::set_mCreateTime_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    long mCreateTime = (long) ((Map<String, Object>) args).get("mCreateTime");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.maploader.ProcessingTile ref = (com.autonavi.ae.gmap.maploader.ProcessingTile) getHEAP().get(refId);
+            
+                    ref.mCreateTime = mCreateTime;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_name_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    String name = (String) ((Map<String, Object>) args).get("name");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.name = name;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_poiid_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    String poiid = (String) ((Map<String, Object>) args).get("poiid");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.poiid = poiid;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_angle_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int angle = (int) ((Map<String, Object>) args).get("angle");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.angle = angle;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_strWidth_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int strWidth = (int) ((Map<String, Object>) args).get("strWidth");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.strWidth = strWidth;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_strHeight_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int strHeight = (int) ((Map<String, Object>) args).get("strHeight");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.strHeight = strHeight;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_iconID_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int iconID = (int) ((Map<String, Object>) args).get("iconID");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.iconID = iconID;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_labelx_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int labelx = (int) ((Map<String, Object>) args).get("labelx");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.labelx = labelx;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_labely_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int labely = (int) ((Map<String, Object>) args).get("labely");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.labely = labely;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20X_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int pixel20X = (int) ((Map<String, Object>) args).get("pixel20X");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.pixel20X = pixel20X;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20Y_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int pixel20Y = (int) ((Map<String, Object>) args).get("pixel20Y");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.pixel20Y = pixel20Y;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20Z_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int pixel20Z = (int) ((Map<String, Object>) args).get("pixel20Z");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.pixel20Z = pixel20Z;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_fontColor_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int fontColor = (int) ((Map<String, Object>) args).get("fontColor");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.fontColor = fontColor;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_borderColor_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int borderColor = (int) ((Map<String, Object>) args).get("borderColor");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.borderColor = borderColor;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_type_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int type = (int) ((Map<String, Object>) args).get("type");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.type = type;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_anchor_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int anchor = (int) ((Map<String, Object>) args).get("anchor");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.anchor = anchor;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_fontSize_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int fontSize = (int) ((Map<String, Object>) args).get("fontSize");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.fontSize = fontSize;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_mSublayerId_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mSublayerId = (int) ((Map<String, Object>) args).get("mSublayerId");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.mSublayerId = mSublayerId;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_mIsFouces_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean mIsFouces = (boolean) ((Map<String, Object>) args).get("mIsFouces");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.mIsFouces = mIsFouces;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_timeStamp_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int timeStamp = (int) ((Map<String, Object>) args).get("timeStamp");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                    ref.timeStamp = timeStamp;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::set_needMove_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean needMove = (boolean) ((Map<String, Object>) args).get("needMove");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
+            
+                    ref.needMove = needMove;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromXValue_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double fromXValue = (double) ((Map<String, Object>) args).get("fromXValue");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+            
+                    ref.fromXValue = fromXValue;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toXValue_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double toXValue = (double) ((Map<String, Object>) args).get("toXValue");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+            
+                    ref.toXValue = toXValue;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromYValue_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double fromYValue = (double) ((Map<String, Object>) args).get("fromYValue");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+            
+                    ref.fromYValue = fromYValue;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toYValue_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double toYValue = (double) ((Map<String, Object>) args).get("toYValue");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
+            
+                    ref.toYValue = toYValue;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.style.StyleItem::set_mainKey_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mainKey = (int) ((Map<String, Object>) args).get("mainKey");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.style.StyleItem ref = (com.autonavi.ae.gmap.style.StyleItem) getHEAP().get(refId);
+            
+                    ref.mainKey = mainKey;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.style.StyleItem::set_subKey_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int[] subKey = (int[]) ((Map<String, Object>) args).get("subKey");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.style.StyleItem ref = (com.autonavi.ae.gmap.style.StyleItem) getHEAP().get(refId);
+            
+                    ref.subKey = subKey;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.style.StyleElement::set_styleElementType_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int styleElementType = (int) ((Map<String, Object>) args).get("styleElementType");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
+            
+                    ref.styleElementType = styleElementType;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.style.StyleElement::set_value_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int value = (int) ((Map<String, Object>) args).get("value");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
+            
+                    ref.value = value;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.style.StyleElement::set_textureId_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int textureId = (int) ((Map<String, Object>) args).get("textureId");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
+            
+                    ref.textureId = textureId;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.style.StyleElement::set_opacity_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double opacity = (Double) ((Map<String, Object>) args).get("opacity");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
+            
+                    ref.opacity = new Double(opacity).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.style.StyleElement::set_lineWidth_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int lineWidth = (int) ((Map<String, Object>) args).get("lineWidth");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
+            
+                    ref.lineWidth = lineWidth;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.style.StyleElement::set_visible_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int visible = (int) ((Map<String, Object>) args).get("visible");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
+            
+                    ref.visible = visible;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_engineId_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int engineId = (int) ((Map<String, Object>) args).get("engineId");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+            
+                    ref.engineId = engineId;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_width_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int width = (int) ((Map<String, Object>) args).get("width");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+            
+                    ref.width = width;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_height_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int height = (int) ((Map<String, Object>) args).get("height");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+            
+                    ref.height = height;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenWidth_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int screenWidth = (int) ((Map<String, Object>) args).get("screenWidth");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+            
+                    ref.screenWidth = screenWidth;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenHeight_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int screenHeight = (int) ((Map<String, Object>) args).get("screenHeight");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+            
+                    ref.screenHeight = screenHeight;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenScale_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double screenScale = (Double) ((Map<String, Object>) args).get("screenScale");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+            
+                    ref.screenScale = new Double(screenScale).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_textScale_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double textScale = (Double) ((Map<String, Object>) args).get("textScale");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+            
+                    ref.textScale = new Double(textScale).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_mapZoomScale_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mapZoomScale = (Double) ((Map<String, Object>) args).get("mapZoomScale");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+            
+                    ref.mapZoomScale = new Double(mapZoomScale).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureState_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mGestureState = (int) ((Map<String, Object>) args).get("mGestureState");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+            
+                    ref.mGestureState = mGestureState;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureType_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mGestureType = (int) ((Map<String, Object>) args).get("mGestureType");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+            
+                    ref.mGestureType = mGestureType;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mLocation_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    float[] mLocation = (float[]) ((Map<String, Object>) args).get("mLocation");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+            
+                    ref.mLocation = mLocation;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mScale_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mScale = (Double) ((Map<String, Object>) args).get("mScale");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+            
+                    ref.mScale = new Double(mScale).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mRotation_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mRotation = (Double) ((Map<String, Object>) args).get("mRotation");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+            
+                    ref.mRotation = new Double(mRotation).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVeLocityFloat_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mVeLocityFloat = (Double) ((Map<String, Object>) args).get("mVeLocityFloat");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+            
+                    ref.mVeLocityFloat = new Double(mVeLocityFloat).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVelocityPoint_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    float[] mVelocityPoint = (float[]) ((Map<String, Object>) args).get("mVelocityPoint");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
+            
+                    ref.mVelocityPoint = mVelocityPoint;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mId_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mId = (int) ((Map<String, Object>) args).get("mId");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+            
+                    ref.mId = mId;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mBitmap_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // ref arg
+                    android.graphics.Bitmap mBitmap = (android.graphics.Bitmap) getHEAP().get((int) ((Map<String, Object>) args).get("mBitmap"));
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+            
+                    ref.mBitmap = mBitmap;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mPngBuffer_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    byte[] mPngBuffer = (byte[]) ((Map<String, Object>) args).get("mPngBuffer");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+            
+                    ref.mPngBuffer = mPngBuffer;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mAnchor_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mAnchor = (int) ((Map<String, Object>) args).get("mAnchor");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+            
+                    ref.mAnchor = mAnchor;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mXRatio_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mXRatio = (Double) ((Map<String, Object>) args).get("mXRatio");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+            
+                    ref.mXRatio = new Double(mXRatio).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mYRatio_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mYRatio = (Double) ((Map<String, Object>) args).get("mYRatio");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+            
+                    ref.mYRatio = new Double(mYRatio).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_isGenMimps_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean isGenMimps = (boolean) ((Map<String, Object>) args).get("isGenMimps");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+            
+                    ref.isGenMimps = isGenMimps;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_isRepeat_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean isRepeat = (boolean) ((Map<String, Object>) args).get("isRepeat");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
+            
+                    ref.isRepeat = isRepeat;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mOverlayHashCode_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    long mOverlayHashCode = (long) ((Map<String, Object>) args).get("mOverlayHashCode");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
+            
+                    ref.mOverlayHashCode = mOverlayHashCode;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedIndex_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    long mHitedIndex = (long) ((Map<String, Object>) args).get("mHitedIndex");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
+            
+                    ref.mHitedIndex = mHitedIndex;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedTimes_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    long mHitedTimes = (long) ((Map<String, Object>) args).get("mHitedTimes");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
+            
+                    ref.mHitedTimes = mHitedTimes;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stAreaColor_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int stAreaColor = (int) ((Map<String, Object>) args).get("stAreaColor");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
+            
+                    ref.stAreaColor = stAreaColor;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stArrowBorderColor_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int stArrowBorderColor = (int) ((Map<String, Object>) args).get("stArrowBorderColor");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
+            
+                    ref.stArrowBorderColor = stArrowBorderColor;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_fArrowBorderWidth_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int fArrowBorderWidth = (int) ((Map<String, Object>) args).get("fArrowBorderWidth");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
+            
+                    ref.fArrowBorderWidth = fArrowBorderWidth;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_fArrowLineWidth_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int fArrowLineWidth = (int) ((Map<String, Object>) args).get("fArrowLineWidth");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
+            
+                    ref.fArrowLineWidth = fArrowLineWidth;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stArrowLineColor_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int stArrowLineColor = (int) ((Map<String, Object>) args).get("stArrowLineColor");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
+            
+                    ref.stArrowLineColor = stArrowLineColor;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_dayMode_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean dayMode = (boolean) ((Map<String, Object>) args).get("dayMode");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
+            
+                    ref.dayMode = dayMode;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_euRouteTexture_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // enum arg
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty.EAMapRouteTexture euRouteTexture = com.autonavi.ae.gmap.gloverlay.GLRouteProperty.EAMapRouteTexture.values()[(int) ((Map<String, Object>) args).get("euRouteTexture")];
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.euRouteTexture = euRouteTexture;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mFilledResId_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mFilledResId = (int) ((Map<String, Object>) args).get("mFilledResId");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mFilledResId = mFilledResId;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DFillResId_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mSimple3DFillResId = (int) ((Map<String, Object>) args).get("mSimple3DFillResId");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mSimple3DFillResId = mSimple3DFillResId;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mFilledColor_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mFilledColor = (int) ((Map<String, Object>) args).get("mFilledColor");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mFilledColor = mFilledColor;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBgResId_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mBgResId = (int) ((Map<String, Object>) args).get("mBgResId");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mBgResId = mBgResId;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBgColor_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mBgColor = (int) ((Map<String, Object>) args).get("mBgColor");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mBgColor = mBgColor;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mLineWidth_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mLineWidth = (int) ((Map<String, Object>) args).get("mLineWidth");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mLineWidth = mLineWidth;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBorderLineWidth_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mBorderLineWidth = (int) ((Map<String, Object>) args).get("mBorderLineWidth");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mBorderLineWidth = mBorderLineWidth;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX1_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mX1 = (Double) ((Map<String, Object>) args).get("mX1");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mX1 = new Double(mX1).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY1_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mY1 = (Double) ((Map<String, Object>) args).get("mY1");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mY1 = new Double(mY1).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX2_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mX2 = (Double) ((Map<String, Object>) args).get("mX2");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mX2 = new Double(mX2).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY2_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mY2 = (Double) ((Map<String, Object>) args).get("mY2");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mY2 = new Double(mY2).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mGLStart_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mGLStart = (Double) ((Map<String, Object>) args).get("mGLStart");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mGLStart = new Double(mGLStart).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mTextureLen_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mTextureLen = (Double) ((Map<String, Object>) args).get("mTextureLen");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mTextureLen = new Double(mTextureLen).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX1_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mSimple3DX1 = (Double) ((Map<String, Object>) args).get("mSimple3DX1");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mSimple3DX1 = new Double(mSimple3DX1).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY1_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mSimple3DY1 = (Double) ((Map<String, Object>) args).get("mSimple3DY1");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mSimple3DY1 = new Double(mSimple3DY1).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX2_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mSimple3DX2 = (Double) ((Map<String, Object>) args).get("mSimple3DX2");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mSimple3DX2 = new Double(mSimple3DX2).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY2_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mSimple3DY2 = (Double) ((Map<String, Object>) args).get("mSimple3DY2");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mSimple3DY2 = new Double(mSimple3DY2).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DGLStart_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mSimple3DGLStart = (Double) ((Map<String, Object>) args).get("mSimple3DGLStart");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mSimple3DGLStart = new Double(mSimple3DGLStart).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DTextureLen_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mSimple3DTextureLen = (Double) ((Map<String, Object>) args).get("mSimple3DTextureLen");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mSimple3DTextureLen = new Double(mSimple3DTextureLen).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX1_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mCapX1 = (Double) ((Map<String, Object>) args).get("mCapX1");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mCapX1 = new Double(mCapX1).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY1_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mCapY1 = (Double) ((Map<String, Object>) args).get("mCapY1");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mCapY1 = new Double(mCapY1).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX2_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mCapX2 = (Double) ((Map<String, Object>) args).get("mCapX2");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mCapX2 = new Double(mCapX2).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY2_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mCapY2 = (Double) ((Map<String, Object>) args).get("mCapY2");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mCapY2 = new Double(mCapY2).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isLineExtract_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean isLineExtract = (boolean) ((Map<String, Object>) args).get("isLineExtract");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.isLineExtract = isLineExtract;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isCanCovered_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean isCanCovered = (boolean) ((Map<String, Object>) args).get("isCanCovered");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.isCanCovered = isCanCovered;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isUseColor_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean isUseColor = (boolean) ((Map<String, Object>) args).get("isUseColor");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.isUseColor = isUseColor;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isUseCap_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean isUseCap = (boolean) ((Map<String, Object>) args).get("isUseCap");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.isUseCap = isUseCap;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mShowArrow_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean mShowArrow = (boolean) ((Map<String, Object>) args).get("mShowArrow");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mShowArrow = mShowArrow;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mbTexPreMulAlpha_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean mbTexPreMulAlpha = (boolean) ((Map<String, Object>) args).get("mbTexPreMulAlpha");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
+            
+                    ref.mbTexPreMulAlpha = mbTexPreMulAlpha;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResId_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mResId = (int) ((Map<String, Object>) args).get("mResId");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+            
+                    ref.mResId = mResId;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mWidth_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mWidth = (int) ((Map<String, Object>) args).get("mWidth");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+            
+                    ref.mWidth = mWidth;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mHeight_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mHeight = (int) ((Map<String, Object>) args).get("mHeight");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+            
+                    ref.mHeight = mHeight;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResWidth_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mResWidth = (int) ((Map<String, Object>) args).get("mResWidth");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+            
+                    ref.mResWidth = mResWidth;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResHeight_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mResHeight = (int) ((Map<String, Object>) args).get("mResHeight");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+            
+                    ref.mResHeight = mResHeight;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorXRatio_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mAnchorXRatio = (Double) ((Map<String, Object>) args).get("mAnchorXRatio");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+            
+                    ref.mAnchorXRatio = new Double(mAnchorXRatio).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorYRatio_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mAnchorYRatio = (Double) ((Map<String, Object>) args).get("mAnchorYRatio");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+            
+                    ref.mAnchorYRatio = new Double(mAnchorYRatio).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchor_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int mAnchor = (int) ((Map<String, Object>) args).get("mAnchor");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
+            
+                    ref.mAnchor = mAnchor;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mRootPath_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    String mRootPath = (String) ((Map<String, Object>) args).get("mRootPath");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
+            
+                    ref.mRootPath = mRootPath;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mConfigPath_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    String mConfigPath = (String) ((Map<String, Object>) args).get("mConfigPath");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
+            
+                    ref.mConfigPath = mConfigPath;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mConfigContent_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    String mConfigContent = (String) ((Map<String, Object>) args).get("mConfigContent");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
+            
+                    ref.mConfigContent = mConfigContent;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mOfflineDataPath_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    String mOfflineDataPath = (String) ((Map<String, Object>) args).get("mOfflineDataPath");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
+            
+                    ref.mOfflineDataPath = mOfflineDataPath;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mP3dCrossPath_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    String mP3dCrossPath = (String) ((Map<String, Object>) args).get("mP3dCrossPath");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
+            
+                    ref.mP3dCrossPath = mP3dCrossPath;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_requestUrl_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    String requestUrl = (String) ((Map<String, Object>) args).get("requestUrl");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
+            
+                    ref.requestUrl = requestUrl;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_handler_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    long handler = (long) ((Map<String, Object>) args).get("handler");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
+            
+                    ref.handler = handler;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_nRequestType_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int nRequestType = (int) ((Map<String, Object>) args).get("nRequestType");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
+            
+                    ref.nRequestType = nRequestType;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_enCodeString_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    byte[] enCodeString = (byte[]) ((Map<String, Object>) args).get("enCodeString");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
+            
+                    ref.enCodeString = enCodeString;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_nCompress_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int nCompress = (int) ((Map<String, Object>) args).get("nCompress");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
+            
+                    ref.nCompress = nCompress;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_requestBaseUrl_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    String requestBaseUrl = (String) ((Map<String, Object>) args).get("requestBaseUrl");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
+            
+                    ref.requestBaseUrl = requestBaseUrl;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader::set_isFinish_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean isFinish = (boolean) ((Map<String, Object>) args).get("isFinish");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
+            
+                    ref.isFinish = isFinish;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake::set_mIsAborted_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean mIsAborted = (boolean) ((Map<String, Object>) args).get("mIsAborted");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake ref = (com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake) getHEAP().get(refId);
+            
+                    ref.mIsAborted = mIsAborted;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mFromXDelta_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double mFromXDelta = (double) ((Map<String, Object>) args).get("mFromXDelta");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
+            
+                    ref.mFromXDelta = mFromXDelta;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mFromYDelta_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double mFromYDelta = (double) ((Map<String, Object>) args).get("mFromYDelta");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
+            
+                    ref.mFromYDelta = mFromYDelta;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mToXDelta_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double mToXDelta = (double) ((Map<String, Object>) args).get("mToXDelta");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
+            
+                    ref.mToXDelta = mToXDelta;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mToYDelta_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double mToYDelta = (double) ((Map<String, Object>) args).get("mToYDelta");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
+            
+                    ref.mToYDelta = mToYDelta;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mCurXDelta_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double mCurXDelta = (double) ((Map<String, Object>) args).get("mCurXDelta");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
+            
+                    ref.mCurXDelta = mCurXDelta;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mCurYDelta_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double mCurYDelta = (double) ((Map<String, Object>) args).get("mCurYDelta");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
+            
+                    ref.mCurYDelta = mCurYDelta;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mFromAlpha_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mFromAlpha = (Double) ((Map<String, Object>) args).get("mFromAlpha");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLAlphaAnimation ref = (com.autonavi.amap.mapcore.animation.GLAlphaAnimation) getHEAP().get(refId);
+            
+                    ref.mFromAlpha = new Double(mFromAlpha).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mToAlpha_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mToAlpha = (Double) ((Map<String, Object>) args).get("mToAlpha");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLAlphaAnimation ref = (com.autonavi.amap.mapcore.animation.GLAlphaAnimation) getHEAP().get(refId);
+            
+                    ref.mToAlpha = new Double(mToAlpha).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mCurAlpha_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double mCurAlpha = (Double) ((Map<String, Object>) args).get("mCurAlpha");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLAlphaAnimation ref = (com.autonavi.amap.mapcore.animation.GLAlphaAnimation) getHEAP().get(refId);
+            
+                    ref.mCurAlpha = new Double(mCurAlpha).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_alpha_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double alpha = (double) ((Map<String, Object>) args).get("alpha");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
+            
+                    ref.alpha = alpha;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_rotate_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double rotate = (double) ((Map<String, Object>) args).get("rotate");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
+            
+                    ref.rotate = rotate;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleX_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double scaleX = (double) ((Map<String, Object>) args).get("scaleX");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
+            
+                    ref.scaleX = scaleX;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleY_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    double scaleY = (double) ((Map<String, Object>) args).get("scaleY");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
+            
+                    ref.scaleY = scaleY;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.animation.GLEmergeAnimation::set_mStartPoint_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // ref arg
+                    com.amap.api.maps.model.LatLng mStartPoint = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("mStartPoint"));
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.animation.GLEmergeAnimation ref = (com.autonavi.amap.mapcore.animation.GLEmergeAnimation) getHEAP().get(refId);
+            
+                    ref.mStartPoint = mStartPoint;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.MapConfig::set_maxZoomLevel_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double maxZoomLevel = (Double) ((Map<String, Object>) args).get("maxZoomLevel");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
+            
+                    ref.maxZoomLevel = new Double(maxZoomLevel).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.MapConfig::set_minZoomLevel_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double minZoomLevel = (Double) ((Map<String, Object>) args).get("minZoomLevel");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
+            
+                    ref.minZoomLevel = new Double(minZoomLevel).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::set_angleDelta_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double angleDelta = (Double) ((Map<String, Object>) args).get("angleDelta");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.HoverGestureMapMessage ref = (com.autonavi.amap.mapcore.message.HoverGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.angleDelta = new Double(angleDelta).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaX_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double touchDeltaX = (Double) ((Map<String, Object>) args).get("touchDeltaX");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.MoveGestureMapMessage ref = (com.autonavi.amap.mapcore.message.MoveGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.touchDeltaX = new Double(touchDeltaX).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaY_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double touchDeltaY = (Double) ((Map<String, Object>) args).get("touchDeltaY");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.MoveGestureMapMessage ref = (com.autonavi.amap.mapcore.message.MoveGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.touchDeltaY = new Double(touchDeltaY).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_scaleDelta_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double scaleDelta = (Double) ((Map<String, Object>) args).get("scaleDelta");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.scaleDelta = new Double(scaleDelta).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotX_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int pivotX = (int) ((Map<String, Object>) args).get("pivotX");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.pivotX = pivotX;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotY_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int pivotY = (int) ((Map<String, Object>) args).get("pivotY");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.pivotY = pivotY;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_width_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int width = (int) ((Map<String, Object>) args).get("width");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.width = width;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_height_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int height = (int) ((Map<String, Object>) args).get("height");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.height = height;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isGestureScaleByMapCenter_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean isGestureScaleByMapCenter = (boolean) ((Map<String, Object>) args).get("isGestureScaleByMapCenter");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.isGestureScaleByMapCenter = isGestureScaleByMapCenter;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isUseAnchor_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean isUseAnchor = (boolean) ((Map<String, Object>) args).get("isUseAnchor");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.isUseAnchor = isUseAnchor;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorX_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int anchorX = (int) ((Map<String, Object>) args).get("anchorX");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.anchorX = anchorX;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorY_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int anchorY = (int) ((Map<String, Object>) args).get("anchorY");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.anchorY = anchorY;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotX_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int pivotX = (int) ((Map<String, Object>) args).get("pivotX");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.pivotX = pivotX;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotY_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int pivotY = (int) ((Map<String, Object>) args).get("pivotY");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.pivotY = pivotY;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_angleDelta_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double angleDelta = (Double) ((Map<String, Object>) args).get("angleDelta");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
+            
+                    ref.angleDelta = new Double(angleDelta).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.Rectangle::set_left_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double left = (Double) ((Map<String, Object>) args).get("left");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
+            
+                    ref.left = new Double(left).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.Rectangle::set_right_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double right = (Double) ((Map<String, Object>) args).get("right");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
+            
+                    ref.right = new Double(right).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.Rectangle::set_bottom_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double bottom = (Double) ((Map<String, Object>) args).get("bottom");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
+            
+                    ref.bottom = new Double(bottom).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.Rectangle::set_top_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double top = (Double) ((Map<String, Object>) args).get("top");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
+            
+                    ref.top = new Double(top).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.FPoint3::set_colorIndex_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int colorIndex = (int) ((Map<String, Object>) args).get("colorIndex");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.FPoint3 ref = (com.autonavi.amap.mapcore.FPoint3) getHEAP().get(refId);
+            
+                    ref.colorIndex = colorIndex;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_nowType_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // enum arg
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage.Type nowType = com.autonavi.amap.mapcore.AbstractCameraUpdateMessage.Type.values()[(int) ((Map<String, Object>) args).get("nowType")];
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.nowType = nowType;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_xPixel_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double xPixel = (Double) ((Map<String, Object>) args).get("xPixel");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.xPixel = new Double(xPixel).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_yPixel_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double yPixel = (Double) ((Map<String, Object>) args).get("yPixel");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.yPixel = new Double(yPixel).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_amount_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double amount = (Double) ((Map<String, Object>) args).get("amount");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.amount = new Double(amount).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_cameraPosition_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // ref arg
+                    com.amap.api.maps.model.CameraPosition cameraPosition = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) ((Map<String, Object>) args).get("cameraPosition"));
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.cameraPosition = cameraPosition;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_bounds_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // ref arg
+                    com.amap.api.maps.model.LatLngBounds bounds = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) args).get("bounds"));
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.bounds = bounds;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_focus_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // ref arg
+                    android.graphics.Point focus = (android.graphics.Point) getHEAP().get((int) ((Map<String, Object>) args).get("focus"));
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.focus = focus;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_zoom_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double zoom = (Double) ((Map<String, Object>) args).get("zoom");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.zoom = new Double(zoom).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_tilt_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double tilt = (Double) ((Map<String, Object>) args).get("tilt");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.tilt = new Double(tilt).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_bearing_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    Double bearing = (Double) ((Map<String, Object>) args).get("bearing");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.bearing = new Double(bearing).floatValue();
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_geoPoint_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // ref arg
+                    android.graphics.Point geoPoint = (android.graphics.Point) getHEAP().get((int) ((Map<String, Object>) args).get("geoPoint"));
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.geoPoint = geoPoint;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_isUseAnchor_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean isUseAnchor = (boolean) ((Map<String, Object>) args).get("isUseAnchor");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.isUseAnchor = isUseAnchor;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_anchorX_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int anchorX = (int) ((Map<String, Object>) args).get("anchorX");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.anchorX = anchorX;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_anchorY_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int anchorY = (int) ((Map<String, Object>) args).get("anchorY");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.anchorY = anchorY;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_isChangeFinished_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    boolean isChangeFinished = (boolean) ((Map<String, Object>) args).get("isChangeFinished");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.isChangeFinished = isChangeFinished;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mapConfig_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // ref arg
+                    com.autonavi.amap.mapcore.MapConfig mapConfig = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get((int) ((Map<String, Object>) args).get("mapConfig"));
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.mapConfig = mapConfig;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingLeft_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int paddingLeft = (int) ((Map<String, Object>) args).get("paddingLeft");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.paddingLeft = paddingLeft;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingRight_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int paddingRight = (int) ((Map<String, Object>) args).get("paddingRight");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.paddingRight = paddingRight;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingTop_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int paddingTop = (int) ((Map<String, Object>) args).get("paddingTop");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.paddingTop = paddingTop;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingBottom_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int paddingBottom = (int) ((Map<String, Object>) args).get("paddingBottom");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.paddingBottom = paddingBottom;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mDuration_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    long mDuration = (long) ((Map<String, Object>) args).get("mDuration");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.mDuration = mDuration;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_width_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int width = (int) ((Map<String, Object>) args).get("width");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.width = width;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_height_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int height = (int) ((Map<String, Object>) args).get("height");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
+            
+                    ref.height = height;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.amap.api.maps.model.animation.Animation::set_glAnimation_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // ref arg
+                    com.autonavi.amap.mapcore.animation.GLAnimation glAnimation = (com.autonavi.amap.mapcore.animation.GLAnimation) getHEAP().get((int) ((Map<String, Object>) args).get("glAnimation"));
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get(refId);
+            
+                    ref.glAnimation = glAnimation;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorName_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    String activeFloorName = (String) ((Map<String, Object>) args).get("activeFloorName");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+            
+                    ref.activeFloorName = activeFloorName;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorIndex_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int activeFloorIndex = (int) ((Map<String, Object>) args).get("activeFloorIndex");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+            
+                    ref.activeFloorIndex = activeFloorIndex;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.amap.api.maps.model.IndoorBuildingInfo::set_poiid_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    String poiid = (String) ((Map<String, Object>) args).get("poiid");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+            
+                    ref.poiid = poiid;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.amap.api.maps.model.IndoorBuildingInfo::set_floor_indexs_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    int[] floor_indexs = (int[]) ((Map<String, Object>) args).get("floor_indexs");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+            
+                    ref.floor_indexs = floor_indexs;
+                }
+            
+                methodResult.success("success");
+            });
+            // setter batch
+            put("com.amap.api.maps.model.IndoorBuildingInfo::set_floor_names_batch", (argsBatch, methodResult) -> {
+                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+            
+                    // jsonable arg
+                    List<String> floor_names = (List<String>) ((Map<String, Object>) args).get("floor_names");
+            
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+            
+                    ref.floor_names = floor_names.toArray(new String[floor_names.size()]);
+                }
+            
+                methodResult.success("success");
+            });
             // method
             put("com.autonavi.ae.gmap.maploader.ProcessingTile::obtain", (args, methodResult) -> {
                 // args
@@ -581,6452 +3493,6 @@ public class SubHandler3 {
             
                 // convert result to jsonable result
                 boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::getMapStateInstance", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getMapStateInstance(" + var1 + ")");
-                }
-            
-                // invoke native method
-                long result;
-                try {
-                    result = ref.getMapStateInstance(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                long jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::getEngineIDWithGestureInfo", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo var1 = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getEngineIDWithGestureInfo(" + var1 + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getEngineIDWithGestureInfo(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setServiceViewRect", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
-                // jsonable arg
-                int var5 = (int) ((Map<String, Object>) args).get("var5");
-                // jsonable arg
-                int var6 = (int) ((Map<String, Object>) args).get("var6");
-                // jsonable arg
-                int var7 = (int) ((Map<String, Object>) args).get("var7");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setServiceViewRect(" + var1 + var2 + var3 + var4 + var5 + var6 + var7 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setServiceViewRect(var1, var2, var3, var4, var5, var6, var7);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setSrvViewStateBoolValue", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                boolean var3 = (boolean) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setSrvViewStateBoolValue(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setSrvViewStateBoolValue(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::getSrvViewStateBoolValue", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getSrvViewStateBoolValue(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.getSrvViewStateBoolValue(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::getIsProcessBuildingMark", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getIsProcessBuildingMark(" + var1 + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.getIsProcessBuildingMark(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setIndoorBuildingToBeActive", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                String var2 = (String) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                String var4 = (String) ((Map<String, Object>) args).get("var4");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setIndoorBuildingToBeActive(" + var1 + var2 + var3 + var4 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setIndoorBuildingToBeActive(var1, var2, var3, var4);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setMapListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setMapListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapListener(new com.autonavi.amap.mapcore.interfaces.IAMapListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.GLMapEngine::setMapListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void afterDrawFrame(int var1, com.autonavi.ae.gmap.GLMapState var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: afterDrawFrame(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        int argvar1 = var1;
-                        // ref arg
-                        final Integer argvar2;
-                        if (var2 != null) {
-                            argvar2 = var2.hashCode();
-                            getHEAP().put(argvar2, var2);
-                        } else {
-                            argvar2 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawFrame",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void afterDrawLabel(int var1, com.autonavi.ae.gmap.GLMapState var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: afterDrawLabel(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        int argvar1 = var1;
-                        // ref arg
-                        final Integer argvar2;
-                        if (var2 != null) {
-                            argvar2 = var2.hashCode();
-                            getHEAP().put(argvar2, var2);
-                        } else {
-                            argvar2 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawLabel",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void beforeDrawLabel(int var1, com.autonavi.ae.gmap.GLMapState var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: beforeDrawLabel(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        int argvar1 = var1;
-                        // ref arg
-                        final Integer argvar2;
-                        if (var2 != null) {
-                            argvar2 = var2.hashCode();
-                            getHEAP().put(argvar2, var2);
-                        } else {
-                            argvar2 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::beforeDrawLabel",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void afterRendererOver(int var1, com.autonavi.ae.gmap.GLMapState var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: afterRendererOver(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        int argvar1 = var1;
-                        // ref arg
-                        final Integer argvar2;
-                        if (var2 != null) {
-                            argvar2 = var2.hashCode();
-                            getHEAP().put(argvar2, var2);
-                        } else {
-                            argvar2 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterRendererOver",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void afterAnimation() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: afterAnimation(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterAnimation",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setInternaltexture", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setInternaltexture(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setInternaltexture(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::getMapState", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getMapState(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.autonavi.ae.gmap.GLMapState result;
-                try {
-                    result = ref.getMapState(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = result.hashCode();
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::getNewMapState", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getNewMapState(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.autonavi.ae.gmap.GLMapState result;
-                try {
-                    result = ref.getNewMapState(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = result.hashCode();
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::getCloneMapState", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getCloneMapState(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.autonavi.ae.gmap.GLMapState result;
-                try {
-                    result = ref.getCloneMapState();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = result.hashCode();
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setMapState__int__com_autonavi_ae_gmap_GLMapState", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                com.autonavi.ae.gmap.GLMapState var2 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setMapState(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapState(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setMapState__int__com_autonavi_ae_gmap_GLMapState__bool", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                com.autonavi.ae.gmap.GLMapState var2 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-                // jsonable arg
-                boolean var3 = (boolean) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setMapState(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapState(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::addGestureMessage", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                com.autonavi.amap.mapcore.message.AbstractGestureMapMessage var2 = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-                // jsonable arg
-                boolean var3 = (boolean) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
-                // jsonable arg
-                int var5 = (int) ((Map<String, Object>) args).get("var5");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::addGestureMessage(" + var1 + var2 + var3 + var4 + var5 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.addGestureMessage(var1, var2, var3, var4, var5);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::interruptAnimation", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::interruptAnimation(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.interruptAnimation();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
-                // jsonable arg
-                int var5 = (int) ((Map<String, Object>) args).get("var5");
-                // jsonable arg
-                int var6 = (int) ((Map<String, Object>) args).get("var6");
-                // jsonable arg
-                int var7 = (int) ((Map<String, Object>) args).get("var7");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::addGroupAnimation(" + var1 + var2 + var3 + var4 + var5 + var6 + var7 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.addGroupAnimation(var1, var2, new Double(var3).floatValue(), var4, var5, var6, var7, new com.amap.api.maps.AMap.CancelableCallback() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onFinish() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onCancel() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::isInMapAnimation", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::isInMapAnimation(" + var1 + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isInMapAnimation(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::getAnimateionsCount", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getAnimateionsCount(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getAnimateionsCount();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::clearAllMessages", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::clearAllMessages(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.clearAllMessages(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::clearAnimations__int__bool", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::clearAnimations(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.clearAnimations(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::clearAnimations__int__bool__int", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::clearAnimations(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.clearAnimations(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::startMapSlidAnim", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                android.graphics.Point var2 = (android.graphics.Point) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-                // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) args).get("var4");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::startMapSlidAnim(" + var1 + var2 + var3 + var4 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.startMapSlidAnim(var1, var2, new Double(var3).floatValue(), new Double(var4).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::startPivotZoomRotateAnim", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                android.graphics.Point var2 = (android.graphics.Point) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-                // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
-                // jsonable arg
-                int var5 = (int) ((Map<String, Object>) args).get("var5");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::startPivotZoomRotateAnim(" + var1 + var2 + var3 + var4 + var5 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.startPivotZoomRotateAnim(var1, var2, new Double(var3).floatValue(), var4, var5);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::getStateMessageCount", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getStateMessageCount(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getStateMessageCount();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::addMessage", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.autonavi.amap.mapcore.AbstractCameraUpdateMessage var1 = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::addMessage(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.addMessage(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setMapOpenLayer", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setMapOpenLayer(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapOpenLayer(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::pushRendererState", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::pushRendererState(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.pushRendererState();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::popRendererState", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::popRendererState(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.popRendererState();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::getMapModeState", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getMapModeState(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                int[] result;
-                try {
-                    result = ref.getMapModeState(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int[] jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::putResourceData", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::putResourceData(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.putResourceData(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::getLabelBuffer", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getLabelBuffer(" + var1 + var2 + var3 + var4 + ")");
-                }
-            
-                // invoke native method
-                byte[] result;
-                try {
-                    result = ref.getLabelBuffer(var1, var2, var3, var4);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                byte[] jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::createOverlay", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::createOverlay(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                long result;
-                try {
-                    result = ref.createOverlay(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                long jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::addNativeOverlay", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::addNativeOverlay(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                String result;
-                try {
-                    result = ref.addNativeOverlay(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::getGlOverlayMgrPtr", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getGlOverlayMgrPtr(" + var1 + ")");
-                }
-            
-                // invoke native method
-                long result;
-                try {
-                    result = ref.getGlOverlayMgrPtr(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                long jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::addOverlayTexture", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                com.autonavi.ae.gmap.gloverlay.GLTextureProperty var2 = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::addOverlayTexture(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.addOverlayTexture(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::destroyOverlay", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine::destroyOverlay(" + var0 + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapEngine.destroyOverlay(var0, var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setSimple3DEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setSimple3DEnable(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setSimple3DEnable(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setRoadArrowEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setRoadArrowEnable(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setRoadArrowEnable(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setSkyTexture", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setSkyTexture(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setSkyTexture(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setBackgroundTexture", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setBackgroundTexture(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setBackgroundTexture(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setCustomStyleTexture", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setCustomStyleTexture(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setCustomStyleTexture(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setCustomStyleData", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                byte[] var3 = (byte[]) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setCustomStyleData(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setCustomStyleData(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setTrafficEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setTrafficEnable(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setTrafficEnable(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setBuildingEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setBuildingEnable(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setBuildingEnable(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setLabelEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setLabelEnable(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setLabelEnable(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setAllContentEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setAllContentEnable(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setAllContentEnable(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setProjectionCenter", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setProjectionCenter(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setProjectionCenter(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setTrafficStyle__int__int__int__int__int__bool", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
-                // jsonable arg
-                int var5 = (int) ((Map<String, Object>) args).get("var5");
-                // jsonable arg
-                boolean var6 = (boolean) ((Map<String, Object>) args).get("var6");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setTrafficStyle(" + var1 + var2 + var3 + var4 + var5 + var6 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setTrafficStyle(var1, var2, var3, var4, var5, var6);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setTrafficStyle__int__int__int__int__int", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
-                // jsonable arg
-                int var5 = (int) ((Map<String, Object>) args).get("var5");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setTrafficStyle(" + var1 + var2 + var3 + var4 + var5 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setTrafficStyle(var1, var2, var3, var4, var5);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::startCheckEngineRenderComplete", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::startCheckEngineRenderComplete(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.startCheckEngineRenderComplete();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::getCurTileIDs", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int[] var2 = (int[]) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getCurTileIDs(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.getCurTileIDs(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setIndoorEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setIndoorEnable(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setIndoorEnable(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setOfflineDataEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setOfflineDataEnable(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOfflineDataEnable(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setHighlightSubwayEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setHighlightSubwayEnable(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setHighlightSubwayEnable(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::setBuildingTextureEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setBuildingTextureEnable(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setBuildingTextureEnable(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::initNativeTexture", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::initNativeTexture(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.initNativeTexture(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::AddOverlayTexture", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                android.graphics.Bitmap var2 = (android.graphics.Bitmap) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::AddOverlayTexture(" + var1 + var2 + var3 + var4 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.AddOverlayTexture(var1, var2, var3, var4);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::updateNativeArrowOverlay", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                String var2 = (String) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int[] var3 = (int[]) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-                // jsonable arg
-                int var5 = (int) ((Map<String, Object>) args).get("var5");
-                // jsonable arg
-                int var6 = (int) ((Map<String, Object>) args).get("var6");
-                // jsonable arg
-                int var7 = (int) ((Map<String, Object>) args).get("var7");
-                // jsonable arg
-                Double var8 = (Double) ((Map<String, Object>) args).get("var8");
-                // jsonable arg
-                int var9 = (int) ((Map<String, Object>) args).get("var9");
-                // jsonable arg
-                int var10 = (int) ((Map<String, Object>) args).get("var10");
-                // jsonable arg
-                int var11 = (int) ((Map<String, Object>) args).get("var11");
-                // jsonable arg
-                boolean var12 = (boolean) ((Map<String, Object>) args).get("var12");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::updateNativeArrowOverlay(" + var1 + var2 + var3 + var4 + var5 + var6 + var7 + var8 + var9 + var10 + var11 + var12 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.updateNativeArrowOverlay(var1, var2, var3, var4, var5, var6, var7, new Double(var8).floatValue(), var9, var10, var11, var12);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::removeNativeOverlay", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                String var2 = (String) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::removeNativeOverlay(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.removeNativeOverlay(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::removeNativeAllOverlay", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::removeNativeAllOverlay(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.removeNativeAllOverlay(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::createAMapInstance", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.autonavi.ae.gmap.GLMapEngine.InitParam var1 = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::createAMapInstance(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.createAMapInstance(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::createAMapEngineWithFrame", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam var1 = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::createAMapEngineWithFrame(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.createAMapEngineWithFrame(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::changeSurface", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::changeSurface(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.changeSurface(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::renderAMap", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::renderAMap(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.renderAMap();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::releaseNetworkState", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::releaseNetworkState(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.releaseNetworkState();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::cancelAllAMapDownload", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::cancelAllAMapDownload(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.cancelAllAMapDownload();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::destroyAMapEngine", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::destroyAMapEngine(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.destroyAMapEngine();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapEngine::nativeGetMapEngineVersion", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine::nativeGetMapEngineVersion(" + var0 + ")");
-                }
-            
-                // invoke native method
-                String result;
-                try {
-                    result = com.autonavi.ae.gmap.GLMapEngine.nativeGetMapEngineVersion(var0);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.listener.AMapWidgetListener::invalidateScaleView", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.listener.AMapWidgetListener ref = (com.autonavi.ae.gmap.listener.AMapWidgetListener) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.listener.AMapWidgetListener@" + refId + "::invalidateScaleView(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.invalidateScaleView();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.listener.AMapWidgetListener::invalidateCompassView", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.listener.AMapWidgetListener ref = (com.autonavi.ae.gmap.listener.AMapWidgetListener) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.listener.AMapWidgetListener@" + refId + "::invalidateCompassView(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.invalidateCompassView();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.listener.AMapWidgetListener::invalidateZoomController", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.listener.AMapWidgetListener ref = (com.autonavi.ae.gmap.listener.AMapWidgetListener) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.listener.AMapWidgetListener@" + refId + "::invalidateZoomController(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.invalidateZoomController(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.listener.AMapWidgetListener::setFrontViewVisibility", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.listener.AMapWidgetListener ref = (com.autonavi.ae.gmap.listener.AMapWidgetListener) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.listener.AMapWidgetListener@" + refId + "::setFrontViewVisibility(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setFrontViewVisibility(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.AbstractMapMessage::getType", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.AbstractMapMessage ref = (com.autonavi.ae.gmap.AbstractMapMessage) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.AbstractMapMessage@" + refId + "::getType(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getType();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapCoreListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@" + refId + "::setMapCoreListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapCoreListener();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::clearAnimations", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@" + refId + "::clearAnimations(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.clearAnimations();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::getAnimationsCount", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@" + refId + "::getAnimationsCount(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getAnimationsCount();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::doAnimations", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.autonavi.ae.gmap.GLMapState var1 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@" + refId + "::doAnimations(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.doAnimations(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation var1 = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@" + refId + "::addAnimation(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.addAnimation(var1, new com.amap.api.maps.AMap.CancelableCallback() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onFinish() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onCancel() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@" + refId + "::setMapAnimationListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapAnimationListener(new com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMapAnimationFinish(com.amap.api.maps.AMap.CancelableCallback var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapAnimationFinish(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = var1.hashCode();
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener::onMapAnimationFinish",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener::onMapAnimationFinish", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener@" + refId + "::onMapAnimationFinish(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onMapAnimationFinish(new com.amap.api.maps.AMap.CancelableCallback() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener::onMapAnimationFinish::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onFinish() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onCancel() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglAnimation2V::reset", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglAnimation2V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation2V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@" + refId + "::reset(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.reset();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getCurValue", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglAnimation2V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation2V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@" + refId + "::getCurValue(" + var1 + ")");
-                }
-            
-                // invoke native method
-                double result;
-                try {
-                    result = ref.getCurValue(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                double jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getStartValue", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglAnimation2V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation2V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@" + refId + "::getStartValue(" + var1 + ")");
-                }
-            
-                // invoke native method
-                double result;
-                try {
-                    result = ref.getStartValue(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                double jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getEndValue", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglAnimation2V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation2V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@" + refId + "::getEndValue(" + var1 + ")");
-                }
-            
-                // invoke native method
-                double result;
-                try {
-                    result = ref.getEndValue(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                double jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimFling::reset", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimFling ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimFling) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@" + refId + "::reset(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.reset();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimFling::setPositionAndVelocity", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimFling ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimFling) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@" + refId + "::setPositionAndVelocity(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setPositionAndVelocity(new Double(var1).floatValue(), new Double(var2).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimFling::commitAnimationold", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Object var1 = (Object) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimFling ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimFling) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@" + refId + "::commitAnimationold(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.commitAnimationold(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimFling::commitAnimation", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Object var1 = (Object) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimFling ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimFling) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@" + refId + "::commitAnimation(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.commitAnimation(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::isOver", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@" + refId + "::isOver(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isOver();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::isValid", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@" + refId + "::isValid(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isValid();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::doAnimation", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Object var1 = (Object) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@" + refId + "::doAnimation(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.doAnimation(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglAnimation1V::reset", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglAnimation1V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation1V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@" + refId + "::reset(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.reset();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglAnimation1V::setAnimationValue", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglAnimation1V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation1V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@" + refId + "::setAnimationValue(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setAnimationValue(new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglAnimation1V::getCurValue", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglAnimation1V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation1V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@" + refId + "::getCurValue(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getCurValue();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglAnimation1V::getStartValue", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglAnimation1V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation1V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@" + refId + "::getStartValue(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getStartValue();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglAnimation1V::getEndValue", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglAnimation1V ref = (com.autonavi.ae.gmap.glanimation.AdglAnimation1V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@" + refId + "::getEndValue(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getEndValue();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom::reset", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@" + refId + "::reset(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.reset();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom::commitAnimation", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Object var1 = (Object) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@" + refId + "::commitAnimation(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.commitAnimation(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom::setToMapZoomAndPivot", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // ref arg
-                android.graphics.Point var3 = (android.graphics.Point) getHEAP().get((int) ((Map<String, Object>) args).get("var3"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@" + refId + "::setToMapZoomAndPivot(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setToMapZoomAndPivot(new Double(var1).floatValue(), var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::reset", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@" + refId + "::reset(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.reset();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::needToCaculate", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@" + refId + "::needToCaculate(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.needToCaculate();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::getCurMult", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@" + refId + "::getCurMult(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getCurMult();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::setNormalizedTime", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@" + refId + "::setNormalizedTime(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setNormalizedTime(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::setInterpolatorType", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@" + refId + "::setInterpolatorType(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setInterpolatorType(var1, new Double(var2).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::getInterpolatorType", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@" + refId + "::getInterpolatorType(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getInterpolatorType();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::checkParam", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@" + refId + "::checkParam(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.checkParam();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V::setFromValue", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@" + refId + "::setFromValue(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setFromValue(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V::setToValue", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@" + refId + "::setToValue(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setToValue(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V::getFromValue", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@" + refId + "::getFromValue(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getFromValue();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V::getToValue", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@" + refId + "::getToValue(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getToValue();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V::getCurValue", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@" + refId + "::getCurValue(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getCurValue();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setDuration", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::setDuration(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setDuration(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::reset", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::reset(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.reset();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapAngle", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::setToMapAngle(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setToMapAngle(new Double(var1).floatValue(), var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapCenterGeo", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::setToMapCenterGeo(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setToMapCenterGeo(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapLevel__double__int", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::setToMapLevel(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setToMapLevel(new Double(var1).floatValue(), var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapLevel__double__double__int", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::setToMapLevel(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setToMapLevel(new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToCameraDegree", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::setToCameraDegree(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setToCameraDegree(new Double(var1).floatValue(), var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::checkLevel", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::checkLevel(" + var0 + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup.checkLevel(new Double(var0).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::commitAnimation", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Object var1 = (Object) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::commitAnimation(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.commitAnimation(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::typeEqueal", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup var1 = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@" + refId + "::typeEqueal(" + var1 + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.typeEqueal(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::setFromValue", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                double var1 = (double) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                double var3 = (double) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::setFromValue(" + var1 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setFromValue(var1, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::setToValue", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                double var1 = (double) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                double var3 = (double) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::setToValue(" + var1 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setToValue(var1, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::getFromXValue", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::getFromXValue(" + "" + ")");
-                }
-            
-                // invoke native method
-                double result;
-                try {
-                    result = ref.getFromXValue();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                double jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::getFromYValue", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::getFromYValue(" + "" + ")");
-                }
-            
-                // invoke native method
-                double result;
-                try {
-                    result = ref.getFromYValue();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                double jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::getToXValue", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::getToXValue(" + "" + ")");
-                }
-            
-                // invoke native method
-                double result;
-                try {
-                    result = ref.getToXValue();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                double jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::getToYValue", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::getToYValue(" + "" + ")");
-                }
-            
-                // invoke native method
-                double result;
-                try {
-                    result = ref.getToYValue();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                double jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::getCurXValue", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::getCurXValue(" + "" + ")");
-                }
-            
-                // invoke native method
-                double result;
-                try {
-                    result = ref.getCurXValue();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                double jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::getCurYValue", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@" + refId + "::getCurYValue(" + "" + ")");
-                }
-            
-                // invoke native method
-                double result;
-                try {
-                    result = ref.getCurYValue();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                double jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.style.StyleItem::get", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.style.StyleItem ref = (com.autonavi.ae.gmap.style.StyleItem) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.style.StyleItem@" + refId + "::get(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.autonavi.ae.gmap.style.StyleElement result;
-                try {
-                    result = ref.get(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = result.hashCode();
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.style.StyleItem::put", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                com.autonavi.ae.gmap.style.StyleElement var2 = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.style.StyleItem ref = (com.autonavi.ae.gmap.style.StyleItem) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.style.StyleItem@" + refId + "::put(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.put(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.style.StyleItem::isValid", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.style.StyleItem ref = (com.autonavi.ae.gmap.style.StyleItem) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.style.StyleItem@" + refId + "::isValid(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isValid();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::lonlat2Geo", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                double var0 = (double) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                double var2 = (double) ((Map<String, Object>) args).get("var2");
-                // ref arg
-                com.autonavi.amap.mapcore.IPoint var4 = (com.autonavi.amap.mapcore.IPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var4"));
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::lonlat2Geo(" + var0 + var2 + var4 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapState.lonlat2Geo(var0, var2, var4);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::geo2LonLat", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                com.autonavi.amap.mapcore.DPoint var2 = (com.autonavi.amap.mapcore.DPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::geo2LonLat(" + var0 + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapState.geo2LonLat(var0, var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::screenToP20Point", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // ref arg
-                android.graphics.Point var3 = (android.graphics.Point) getHEAP().get((int) ((Map<String, Object>) args).get("var3"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::screenToP20Point(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.screenToP20Point(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::p20ToScreenPoint", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // ref arg
-                com.autonavi.amap.mapcore.FPoint var3 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var3"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::p20ToScreenPoint(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.p20ToScreenPoint(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getMapGeoCenter__com_autonavi_amap_mapcore_IPoint", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.autonavi.amap.mapcore.IPoint var1 = (com.autonavi.amap.mapcore.IPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::getMapGeoCenter(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.getMapGeoCenter(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getMapGeoCenter", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::getMapGeoCenter(" + "" + ")");
-                }
-            
-                // invoke native method
-                android.graphics.Point result;
-                try {
-                    result = ref.getMapGeoCenter();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = result.hashCode();
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::setMapGeoCenter", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::setMapGeoCenter(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapGeoCenter(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::setCameraDegree", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::setCameraDegree(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setCameraDegree(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::setMapAngle", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::setMapAngle(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapAngle(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::setMapZoomer", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::setMapZoomer(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapZoomer(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getMapZoomer", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::getMapZoomer(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getMapZoomer();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getCameraDegree", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::getCameraDegree(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getCameraDegree();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getMapAngle", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::getMapAngle(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getMapAngle();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::recalculate", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::recalculate(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.recalculate();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::reset", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::reset(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.reset();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getMapLenWithWin", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::getMapLenWithWin(" + var1 + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getMapLenWithWin(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getGLUnitWithWin", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::getGLUnitWithWin(" + var1 + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getGLUnitWithWin(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getNativeInstance", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::getNativeInstance(" + "" + ")");
-                }
-            
-                // invoke native method
-                long result;
-                try {
-                    result = ref.getNativeInstance();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                long jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getViewMatrix", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                float[] var1 = (float[]) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::getViewMatrix(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.getViewMatrix(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getProjectionMatrix", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                float[] var1 = (float[]) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::getProjectionMatrix(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.getProjectionMatrix(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getSkyHeight", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::getSkyHeight(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getSkyHeight();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::setNativeMapengineState", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState@" + refId + "::setNativeMapengineState(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setNativeMapengineState(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::calMapZoomScalefactor", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::calMapZoomScalefactor(" + var0 + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = com.autonavi.ae.gmap.GLMapState.calMapZoomScalefactor(var0, var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeNewInstance", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeNewInstance(" + var0 + var1 + ")");
-                }
-            
-                // invoke native method
-                long result;
-                try {
-                    result = com.autonavi.ae.gmap.GLMapState.nativeNewInstance(var0, var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                long jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
-                // ref arg
-                android.graphics.Point var4 = (android.graphics.Point) getHEAP().get((int) ((Map<String, Object>) args).get("var4"));
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point(" + var0 + var2 + var3 + var4 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapState.nativeScreenToP20Point(var0, new Double(var2).floatValue(), new Double(var3).floatValue(), var4);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
-                // ref arg
-                android.graphics.PointF var5 = (android.graphics.PointF) getHEAP().get((int) ((Map<String, Object>) args).get("var5"));
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint(" + var0 + var2 + var3 + var4 + var5 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapState.nativeP20ToScreenPoint(var0, var2, var3, var4, var5);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter(" + var0 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapState.nativeSetMapCenter(var0, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-                // ref arg
-                android.graphics.Point var2 = (android.graphics.Point) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter(" + var0 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapState.nativeGetMapCenter(var0, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeGetMapZoomer", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeGetMapZoomer(" + var0 + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = com.autonavi.ae.gmap.GLMapState.nativeGetMapZoomer(var0);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer(" + var0 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapState.nativeSetMapZoomer(var0, new Double(var2).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle(" + var0 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapState.nativeSetMapAngle(var0, new Double(var2).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree(" + var0 + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = com.autonavi.ae.gmap.GLMapState.nativeGetCameraDegree(var0);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle(" + var0 + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = com.autonavi.ae.gmap.GLMapState.nativeGetMapAngle(var0);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree(" + var0 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapState.nativeSetCameraDegree(var0, new Double(var2).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeRecalculate", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeRecalculate(" + var0 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapState.nativeRecalculate(var0);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeStateDestroy", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeStateDestroy(" + var0 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapState.nativeStateDestroy(var0);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix(" + var0 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapState.nativeGetViewMatrix(var0, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix(" + var0 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.ae.gmap.GLMapState.nativeGetProjectionMatrix(var0, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight(" + var0 + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = com.autonavi.ae.gmap.GLMapState.nativeGetSkyHeight(var0);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin(" + var0 + var2 + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = com.autonavi.ae.gmap.GLMapState.nativeGetGLUnitWithWin(var0, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeCalMapZoomScalefactor", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeCalMapZoomScalefactor(" + var0 + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = com.autonavi.ae.gmap.GLMapState.nativeCalMapZoomScalefactor(var0, var1, new Double(var2).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay::addItem", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Object var1 = (Object) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay ref = (com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@" + refId + "::addItem(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.addItem(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay::resumeMarker", (args, methodResult) -> {
-                // args
-                // ref arg
-                android.graphics.Bitmap var1 = (android.graphics.Bitmap) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay ref = (com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@" + refId + "::resumeMarker(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.resumeMarker(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay::removeRouteName", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay ref = (com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@" + refId + "::removeRouteName(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.removeRouteName();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay::remove", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay ref = (com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@" + refId + "::remove(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.remove();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorItem", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr var1 = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-                // jsonable arg
-                byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::addVectorItem(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.addVectorItem(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorRemainDis", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::addVectorRemainDis(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.addVectorRemainDis(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorCar", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::addVectorCar(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.addVectorCar(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector::setRoadResId", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.ae.gmap.gloverlay.GLCrossVector ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.gloverlay.GLCrossVector@" + refId + "::setRoadResId(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setRoadResId(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
             
                 methodResult.success(jsonableResult);
             });

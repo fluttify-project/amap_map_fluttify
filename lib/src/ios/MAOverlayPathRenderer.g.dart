@@ -27,9 +27,9 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   }
   
   static Future<List<MAOverlayPathRenderer>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOverlayPathRenderer', {'length': length});
   
     final List<MAOverlayPathRenderer> typedResult = resultBatch.map((result) => MAOverlayPathRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -202,6 +202,57 @@ extension MAOverlayPathRenderer_Batch on List<MAOverlayPathRenderer> {
     final typedResult = (resultBatch as List).map((result) => MALineDashType.values[result]).toList();
   
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_fillColor_batch(List<UIColor> fillColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_fillColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fillColor": fillColor[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_strokeColor_batch(List<UIColor> strokeColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_strokeColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strokeColor": strokeColor[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_lineWidth_batch(List<double> lineWidth) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineWidth_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lineWidth": lineWidth[i]}]);
+  
+  
+  }
+  
+  Future<void> set_lineJoinType_batch(List<MALineJoinType> lineJoinType) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineJoinType_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lineJoinType": lineJoinType[i].index}]);
+  
+  
+  }
+  
+  Future<void> set_lineCapType_batch(List<MALineCapType> lineCapType) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineCapType_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lineCapType": lineCapType[i].index}]);
+  
+  
+  }
+  
+  Future<void> set_miterLimit_batch(List<double> miterLimit) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_miterLimit_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "miterLimit": miterLimit[i]}]);
+  
+  
+  }
+  
+  Future<void> set_lineDash_batch(List<bool> lineDash) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineDash_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lineDash": lineDash[i]}]);
+  
+  
+  }
+  
+  Future<void> set_lineDashType_batch(List<MALineDashType> lineDashType) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineDashType_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lineDashType": lineDashType[i].index}]);
+  
+  
   }
   
   //endregion

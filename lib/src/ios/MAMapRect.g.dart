@@ -27,9 +27,9 @@ class MAMapRect extends NSObject  {
   }
   
   static Future<List<MAMapRect>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMapRect', {'length': length});
   
     final List<MAMapRect> typedResult = resultBatch.map((result) => MAMapRect()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -88,6 +88,21 @@ extension MAMapRect_Batch on List<MAMapRect> {
     final typedResult = (resultBatch as List).map((result) => MAMapSize()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_origin_batch(List<MAMapPoint> origin) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRect::set_origin_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "origin": origin[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_size_batch(List<MAMapSize> size) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRect::set_size_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "size": size[i].refId}]);
+  
+  
   }
   
   //endregion

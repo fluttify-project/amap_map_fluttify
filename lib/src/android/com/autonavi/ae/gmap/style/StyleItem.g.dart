@@ -27,9 +27,9 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
   }
   
   static Future<List<com_autonavi_ae_gmap_style_StyleItem>> create_batch__int(List<int> var1) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_style_StyleItem__int', [for (int i = 0; i < var1.length; i++) {"var1": var1[i]}]);
   
     final List<com_autonavi_ae_gmap_style_StyleItem> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_style_StyleItem()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -157,12 +157,26 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
   
   //endregion
 
+  //region setters
+  Future<void> set_mainKey_batch(List<int> mainKey) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::set_mainKey_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mainKey": mainKey[i]}]);
+  
+  
+  }
+  
+  Future<void> set_subKey_batch(List<Int32List> subKey) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::set_subKey_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "subKey": subKey[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<com_autonavi_ae_gmap_style_StyleElement>> get_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::get_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -179,10 +193,9 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
   }
   
   Future<void> put_batch(List<int> var1, List<com_autonavi_ae_gmap_style_StyleElement> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::put_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i].refId, "refId": this[i].refId}]);
@@ -199,10 +212,9 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
   }
   
   Future<List<bool>> isValid_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::isValid_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

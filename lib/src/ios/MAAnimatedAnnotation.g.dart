@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation {
+class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation, MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   }
   
   static Future<List<MAAnimatedAnnotation>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAAnimatedAnnotation', {'length': length});
   
     final List<MAAnimatedAnnotation> typedResult = resultBatch.map((result) => MAAnimatedAnnotation()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -185,12 +185,20 @@ extension MAAnimatedAnnotation_Batch on List<MAAnimatedAnnotation> {
   
   //endregion
 
+  //region setters
+  Future<void> set_movingDirection_batch(List<double> movingDirection) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::set_movingDirection_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "movingDirection": movingDirection[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<void> setNeedsStart_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::setNeedsStart_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

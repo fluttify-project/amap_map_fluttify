@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends com_auto
   }
   
   static Future<List<com_autonavi_amap_mapcore_message_RotateGestureMapMessage>> create_batch__int__float__int__int(List<int> var1, List<double> var2, List<int> var3, List<int> var4) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i]}]);
   
     final List<com_autonavi_amap_mapcore_message_RotateGestureMapMessage> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -154,12 +154,32 @@ extension com_autonavi_amap_mapcore_message_RotateGestureMapMessage_Batch on Lis
   
   //endregion
 
+  //region setters
+  Future<void> set_pivotX_batch(List<int> pivotX) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotX_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pivotX": pivotX[i]}]);
+  
+  
+  }
+  
+  Future<void> set_pivotY_batch(List<int> pivotY) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotY_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pivotY": pivotY[i]}]);
+  
+  
+  }
+  
+  Future<void> set_angleDelta_batch(List<double> angleDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_angleDelta_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "angleDelta": angleDelta[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<com_autonavi_amap_mapcore_message_RotateGestureMapMessage>> obtain_batch(List<int> var0, List<double> var1, List<int> var2, List<int> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::obtain_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
@@ -176,10 +196,9 @@ extension com_autonavi_amap_mapcore_message_RotateGestureMapMessage_Batch on Lis
   }
   
   Future<void> destory_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::destory_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

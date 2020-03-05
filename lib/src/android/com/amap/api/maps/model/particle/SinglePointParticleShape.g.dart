@@ -35,9 +35,9 @@ class com_amap_api_maps_model_particle_SinglePointParticleShape extends com_amap
   }
   
   static Future<List<com_amap_api_maps_model_particle_SinglePointParticleShape>> create_batch__float__float__float__boolean(List<double> var1, List<double> var2, List<double> var3, List<bool> var4) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i]}]);
   
     final List<com_amap_api_maps_model_particle_SinglePointParticleShape> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -46,9 +46,9 @@ class com_amap_api_maps_model_particle_SinglePointParticleShape extends com_amap
   }
   
   static Future<List<com_amap_api_maps_model_particle_SinglePointParticleShape>> create_batch__float__float__float(List<double> var1, List<double> var2, List<double> var3) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i]}]);
   
     final List<com_amap_api_maps_model_particle_SinglePointParticleShape> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -73,6 +73,10 @@ class com_amap_api_maps_model_particle_SinglePointParticleShape extends com_amap
 
 extension com_amap_api_maps_model_particle_SinglePointParticleShape_Batch on List<com_amap_api_maps_model_particle_SinglePointParticleShape> {
   //region getters
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

@@ -27,9 +27,9 @@ class MATracePoint extends NSObject with NSCoding {
   }
   
   static Future<List<MATracePoint>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATracePoint', {'length': length});
   
     final List<MATracePoint> typedResult = resultBatch.map((result) => MATracePoint()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -88,6 +88,21 @@ extension MATracePoint_Batch on List<MATracePoint> {
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_latitude_batch(List<double> latitude) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATracePoint::set_latitude_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "latitude": latitude[i]}]);
+  
+  
+  }
+  
+  Future<void> set_longitude_batch(List<double> longitude) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATracePoint::set_longitude_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "longitude": longitude[i]}]);
+  
+  
   }
   
   //endregion

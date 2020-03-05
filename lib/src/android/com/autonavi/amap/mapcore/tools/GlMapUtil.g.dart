@@ -47,9 +47,9 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
   }
   
   static Future<List<com_autonavi_amap_mapcore_tools_GlMapUtil>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GlMapUtil__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_tools_GlMapUtil> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_tools_GlMapUtil()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -208,12 +208,15 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<Uint8List>> decodeAssetResData_batch(List<android_content_Context> var0, List<String> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::decodeAssetResData_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "refId": this[i].refId}]);
@@ -230,10 +233,9 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
   }
   
   Future<List<int>> dipToPixel_batch(List<android_content_Context> var0, List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::dipToPixel_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "refId": this[i].refId}]);
@@ -250,10 +252,9 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
   }
   
   Future<List<int>> spToPixel_batch(List<android_content_Context> var0, List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::spToPixel_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "refId": this[i].refId}]);
@@ -270,10 +271,9 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
   }
   
   Future<List<String>> getString_batch(List<android_content_Context> var0, List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::getString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "refId": this[i].refId}]);
@@ -290,10 +290,9 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
   }
   
   Future<List<bool>> isAssic_batch(List<String> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::isAssic_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -310,10 +309,9 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
   }
   
   Future<List<String>> getAppVersionName_batch(List<android_content_Context> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::getAppVersionName_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "refId": this[i].refId}]);

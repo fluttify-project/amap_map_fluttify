@@ -27,9 +27,9 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
   }
   
   static Future<List<MACircleRenderer>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACircleRenderer', {'length': length});
   
     final List<MACircleRenderer> typedResult = resultBatch.map((result) => MACircleRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -89,12 +89,15 @@ extension MACircleRenderer_Batch on List<MACircleRenderer> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MACircleRenderer>> initWithCircle_batch(List<MACircle> circle) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleRenderer::initWithCircle_batch', [for (int i = 0; i < this.length; i++) {"circle": circle[i].refId, "refId": this[i].refId}]);

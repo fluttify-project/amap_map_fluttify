@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
+class MACustomBuildingOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
   }
   
   static Future<List<MACustomBuildingOverlay>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACustomBuildingOverlay', {'length': length});
   
     final List<MACustomBuildingOverlay> typedResult = resultBatch.map((result) => MACustomBuildingOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -124,12 +124,15 @@ extension MACustomBuildingOverlay_Batch on List<MACustomBuildingOverlay> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> addCustomOption_batch(List<MACustomBuildingOverlayOption> option) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::addCustomOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId, "refId": this[i].refId}]);
@@ -146,10 +149,9 @@ extension MACustomBuildingOverlay_Batch on List<MACustomBuildingOverlay> {
   }
   
   Future<void> removeCustomOption_batch(List<MACustomBuildingOverlayOption> option) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlay::removeCustomOption_batch', [for (int i = 0; i < this.length; i++) {"option": option[i].refId, "refId": this[i].refId}]);

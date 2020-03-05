@@ -27,9 +27,9 @@ class com_amap_api_offlineservice_AMapPermissionActivity extends android_app_Act
   }
   
   static Future<List<com_amap_api_offlineservice_AMapPermissionActivity>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_offlineservice_AMapPermissionActivity__', {'length': length});
   
     final List<com_amap_api_offlineservice_AMapPermissionActivity> typedResult = resultBatch.map((result) => com_amap_api_offlineservice_AMapPermissionActivity()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -78,12 +78,15 @@ extension com_amap_api_offlineservice_AMapPermissionActivity_Batch on List<com_a
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> onRequestPermissionsResult_batch(List<int> var1, List<List<String>> var2, List<Int32List> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.offlineservice.AMapPermissionActivity::onRequestPermissionsResult_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);

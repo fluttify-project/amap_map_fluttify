@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_MapProjection extends java_lang_Object  {
   }
   
   static Future<List<com_autonavi_amap_mapcore_MapProjection>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_MapProjection__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_MapProjection> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_MapProjection()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -100,12 +100,15 @@ extension com_autonavi_amap_mapcore_MapProjection_Batch on List<com_autonavi_ama
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> lonlat2Geo_batch(List<double> var0, List<double> var2, List<com_autonavi_amap_mapcore_IPoint> var4) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length || var2.length != var4.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapProjection::lonlat2Geo_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var4": var4[i].refId, "refId": this[i].refId}]);
@@ -122,10 +125,9 @@ extension com_autonavi_amap_mapcore_MapProjection_Batch on List<com_autonavi_ama
   }
   
   Future<void> geo2LonLat_batch(List<int> var0, List<int> var1, List<com_autonavi_amap_mapcore_DPoint> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapProjection::geo2LonLat_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i].refId, "refId": this[i].refId}]);

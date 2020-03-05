@@ -115,12 +115,15 @@ extension com_amap_api_maps_model_particle_SizeOverLife_Batch on List<com_amap_a
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<double>> getSizeX_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.SizeOverLife::getSizeX_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -137,10 +140,9 @@ extension com_amap_api_maps_model_particle_SizeOverLife_Batch on List<com_amap_a
   }
   
   Future<List<double>> getSizeY_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.SizeOverLife::getSizeY_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -157,10 +159,9 @@ extension com_amap_api_maps_model_particle_SizeOverLife_Batch on List<com_amap_a
   }
   
   Future<List<double>> getSizeZ_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.SizeOverLife::getSizeZ_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);

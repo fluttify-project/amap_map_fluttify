@@ -27,9 +27,9 @@ class MAParticleOverlayOptions extends NSObject  {
   }
   
   static Future<List<MAParticleOverlayOptions>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleOverlayOptions', {'length': length});
   
     final List<MAParticleOverlayOptions> typedResult = resultBatch.map((result) => MAParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -278,6 +278,81 @@ extension MAParticleOverlayOptions_Batch on List<MAParticleOverlayOptions> {
     final typedResult = (resultBatch as List).map((result) => MAParticleOverLifeModule()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_visibile_batch(List<bool> visibile) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_visibile_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "visibile": visibile[i]}]);
+  
+  
+  }
+  
+  Future<void> set_duration_batch(List<double> duration) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_duration_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "duration": duration[i]}]);
+  
+  
+  }
+  
+  Future<void> set_loop_batch(List<bool> loop) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_loop_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "loop": loop[i]}]);
+  
+  
+  }
+  
+  Future<void> set_maxParticles_batch(List<int> maxParticles) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_maxParticles_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "maxParticles": maxParticles[i]}]);
+  
+  
+  }
+  
+  Future<void> set_icon_batch(List<UIImage> icon) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_icon_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "icon": icon[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_startParticleSize_batch(List<CGSize> startParticleSize) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_startParticleSize_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "startParticleSize": startParticleSize[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_particleLifeTime_batch(List<double> particleLifeTime) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_particleLifeTime_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "particleLifeTime": particleLifeTime[i]}]);
+  
+  
+  }
+  
+  Future<void> set_particleStartColor_batch(List<MAParticleColorGenerate> particleStartColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_particleStartColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "particleStartColor": particleStartColor[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_particleStartSpeed_batch(List<MAParticleVelocityGenerate> particleStartSpeed) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_particleStartSpeed_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "particleStartSpeed": particleStartSpeed[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_particleEmissionModule_batch(List<MAParticleEmissionModule> particleEmissionModule) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_particleEmissionModule_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "particleEmissionModule": particleEmissionModule[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_particleShapeModule_batch(List<MAParticleShapeModule> particleShapeModule) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_particleShapeModule_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "particleShapeModule": particleShapeModule[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_particleOverLifeModule_batch(List<MAParticleOverLifeModule> particleOverLifeModule) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptions::set_particleOverLifeModule_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "particleOverLifeModule": particleOverLifeModule[i].refId}]);
+  
+  
   }
   
   //endregion

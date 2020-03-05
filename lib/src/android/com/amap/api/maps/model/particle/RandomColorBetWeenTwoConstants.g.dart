@@ -27,9 +27,9 @@ class com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants extends co
   }
   
   static Future<List<com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants>> create_batch__float__float__float__float__float__float__float__float(List<double> var1, List<double> var2, List<double> var3, List<double> var4, List<double> var5, List<double> var6, List<double> var7, List<double> var8) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i]}]);
   
     final List<com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -54,6 +54,10 @@ class com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants extends co
 
 extension com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants_Batch on List<com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants> {
   //region getters
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

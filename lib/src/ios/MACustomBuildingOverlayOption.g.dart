@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MACustomBuildingOverlayOption extends MAMultiPoint  {
+class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
   }
   
   static Future<List<MACustomBuildingOverlayOption>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACustomBuildingOverlayOption', {'length': length});
   
     final List<MACustomBuildingOverlayOption> typedResult = resultBatch.map((result) => MACustomBuildingOverlayOption()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -192,12 +192,44 @@ extension MACustomBuildingOverlayOption_Batch on List<MACustomBuildingOverlayOpt
   
   //endregion
 
+  //region setters
+  Future<void> set_height_batch(List<double> height) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_height_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "height": height[i]}]);
+  
+  
+  }
+  
+  Future<void> set_heightScale_batch(List<double> heightScale) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_heightScale_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "heightScale": heightScale[i]}]);
+  
+  
+  }
+  
+  Future<void> set_topColor_batch(List<UIColor> topColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_topColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "topColor": topColor[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_sideColor_batch(List<UIColor> sideColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_sideColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "sideColor": sideColor[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_visibile_batch(List<bool> visibile) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::set_visibile_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "visibile": visibile[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<MACustomBuildingOverlayOption>> optionWithCoordinatesCount_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coords.length != count.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::optionWithCoordinatesCount_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
@@ -214,10 +246,9 @@ extension MACustomBuildingOverlayOption_Batch on List<MACustomBuildingOverlayOpt
   }
   
   Future<List<bool>> setOptionWithCoordinatesCount_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coords.length != count.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::setOptionWithCoordinatesCount_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);

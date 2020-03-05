@@ -27,9 +27,9 @@ class MAMapSize extends NSObject  {
   }
   
   static Future<List<MAMapSize>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMapSize', {'length': length});
   
     final List<MAMapSize> typedResult = resultBatch.map((result) => MAMapSize()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -88,6 +88,21 @@ extension MAMapSize_Batch on List<MAMapSize> {
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_width_batch(List<double> width) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapSize::set_width_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "width": width[i]}]);
+  
+  
+  }
+  
+  Future<void> set_height_batch(List<double> height) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapSize::set_height_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "height": height[i]}]);
+  
+  
   }
   
   //endregion

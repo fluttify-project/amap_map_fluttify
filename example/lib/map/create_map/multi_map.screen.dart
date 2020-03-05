@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 import 'package:amap_map_fluttify_example/widgets/setting.widget.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
@@ -13,7 +15,8 @@ class MultiMapScreen extends StatefulWidget {
 class _MultiMapScreenState extends State<MultiMapScreen> {
   AmapController _controller1;
   AmapController _controller2;
-  AmapController _controller3;
+  AmapController _controller;
+  String _currentInstance = '地图1';
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +30,13 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
               showZoomControl: false,
               maskDelay: Duration(milliseconds: 500),
               onMapCreated: (controller) async {
-                L.d('地图1创建完成, id为${controller.androidController.refId}');
+                if (Platform.isAndroid) {
+                  L.d('地图1创建完成, id为${controller.androidController.refId}');
+                } else if (Platform.isIOS) {
+                  L.d('地图1创建完成, id为${controller.iosController.refId}');
+                }
                 _controller1 = controller;
+                _controller = _controller1;
               },
             ),
           ),
@@ -38,19 +46,12 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
               showZoomControl: false,
               maskDelay: Duration(milliseconds: 500),
               onMapCreated: (controller) async {
-                L.d('地图2创建完成, id为${controller.androidController.refId}');
+                if (Platform.isAndroid) {
+                  L.d('地图2创建完成, id为${controller.androidController.refId}');
+                } else if (Platform.isIOS) {
+                  L.d('地图2创建完成, id为${controller.iosController.refId}');
+                }
                 _controller2 = controller;
-              },
-            ),
-          ),
-          Flexible(
-            child: AmapView(
-              key: Key('map3'),
-              showZoomControl: false,
-              maskDelay: Duration(milliseconds: 500),
-              onMapCreated: (controller) async {
-                L.d('地图3创建完成, id为${controller.androidController.refId}');
-                _controller3 = controller;
               },
             ),
           ),
@@ -59,10 +60,30 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
               scrollable: true,
               divider: kDividerZero,
               children: <Widget>[
+                DiscreteSetting(
+                  head: '选择地图实例 当前实例: $_currentInstance',
+                  options: <String>['地图1', '地图2'],
+                  onSelected: (String value) {
+                    switch (value) {
+                      case '地图1':
+                        setState(() {
+                          _currentInstance = '地图1';
+                          _controller = _controller1;
+                        });
+                        break;
+                      case '地图2':
+                        setState(() {
+                          _currentInstance = '地图2';
+                          _controller = _controller2;
+                        });
+                        break;
+                    }
+                  },
+                ),
                 BooleanSetting(
                   head: '是否显示定位',
                   onSelected: (value) {
-                    _controller1?.showMyLocation(value);
+                    _controller?.showMyLocation(value);
                   },
                 ),
                 DiscreteSetting(
@@ -70,17 +91,17 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   options: <String>['定位一次', '连续定位并跟随', '连续定位跟随方向'],
                   onSelected: (String value) async {
                     if (value == '定位一次') {
-                      await _controller1?.showMyLocation(
+                      await _controller?.showMyLocation(
                         true,
                         myLocationType: MyLocationType.Locate,
                       );
                     } else if (value == '连续定位并跟随') {
-                      await _controller1?.showMyLocation(
+                      await _controller?.showMyLocation(
                         true,
                         myLocationType: MyLocationType.Follow,
                       );
                     } else if (value == '连续定位跟随方向') {
-                      await _controller1?.showMyLocation(
+                      await _controller?.showMyLocation(
                         true,
                         myLocationType: MyLocationType.Rotate,
                       );
@@ -90,21 +111,21 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                 ListTile(
                   title: Center(child: Text('获取当前位置经纬度')),
                   onTap: () async {
-                    final latLng = await _controller1?.getLocation();
+                    final latLng = await _controller?.getLocation();
                     toast('当前经纬度: ${latLng.toString()}');
                   },
                 ),
                 ListTile(
                   title: Center(child: Text('通过Extension获取当前位置经纬度')),
                   onTap: () async {
-                    final latLng = await _controller1?.getLocationX();
+                    final latLng = await _controller?.getLocationX();
                     toast('当前经纬度Extension: ${latLng.toString()}');
                   },
                 ),
                 ListTile(
                   title: Center(child: Text('使用自定义定位图标')),
                   onTap: () async {
-                    await _controller1?.showMyLocation(
+                    await _controller?.showMyLocation(
                       true,
                       iconUri: _assetsIcon,
                       imageConfig: createLocalImageConfiguration(context),
@@ -114,7 +135,7 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                 BooleanSetting(
                   head: '是否显示室内地图',
                   onSelected: (value) {
-                    _controller1?.showIndoorMap(value);
+                    _controller?.showIndoorMap(value);
                   },
                 ),
                 DiscreteSetting(
@@ -123,19 +144,19 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   onSelected: (value) {
                     switch (value) {
                       case '正常视图':
-                        _controller1?.setMapType(MapType.Standard);
+                        _controller?.setMapType(MapType.Standard);
                         break;
                       case '卫星视图':
-                        _controller1?.setMapType(MapType.Satellite);
+                        _controller?.setMapType(MapType.Satellite);
                         break;
                       case '黑夜视图':
-                        _controller1?.setMapType(MapType.Night);
+                        _controller?.setMapType(MapType.Night);
                         break;
                       case '导航视图':
-                        _controller1?.setMapType(MapType.Navi);
+                        _controller?.setMapType(MapType.Navi);
                         break;
                       case '公交视图':
-                        _controller1?.setMapType(MapType.Bus);
+                        _controller?.setMapType(MapType.Bus);
                         break;
                     }
                   },
@@ -146,10 +167,10 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   onSelected: (value) {
                     switch (value) {
                       case '中文':
-                        _controller1?.setMapLanguage(Language.Chinese);
+                        _controller?.setMapLanguage(Language.Chinese);
                         break;
                       case '英文':
-                        _controller1?.setMapLanguage(Language.English);
+                        _controller?.setMapLanguage(Language.English);
                         break;
                     }
                   },
@@ -160,21 +181,21 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   onSelected: (value) {
                     switch (value) {
                       case '红色':
-                        _controller1?.showMyLocation(
+                        _controller?.showMyLocation(
                           true,
                           strokeColor: Colors.red,
                           strokeWidth: 2,
                         );
                         break;
                       case '绿色':
-                        _controller1?.showMyLocation(
+                        _controller?.showMyLocation(
                           true,
                           strokeColor: Colors.green,
                           strokeWidth: 2,
                         );
                         break;
                       case '蓝色':
-                        _controller1?.showMyLocation(
+                        _controller?.showMyLocation(
                           true,
                           strokeColor: Colors.blue,
                           strokeWidth: 2,
@@ -189,21 +210,21 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   onSelected: (value) {
                     switch (value) {
                       case '红色':
-                        _controller1?.showMyLocation(
+                        _controller?.showMyLocation(
                           true,
                           fillColor: Colors.red,
                           strokeWidth: 2,
                         );
                         break;
                       case '绿色':
-                        _controller1?.showMyLocation(
+                        _controller?.showMyLocation(
                           true,
                           fillColor: Colors.green,
                           strokeWidth: 2,
                         );
                         break;
                       case '蓝色':
-                        _controller1?.showMyLocation(
+                        _controller?.showMyLocation(
                           true,
                           fillColor: Colors.blue,
                           strokeWidth: 2,
@@ -218,13 +239,13 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   onSelected: (value) {
                     switch (value) {
                       case '2':
-                        _controller1?.showMyLocation(true, strokeWidth: 2);
+                        _controller?.showMyLocation(true, strokeWidth: 2);
                         break;
                       case '4':
-                        _controller1?.showMyLocation(true, strokeWidth: 4);
+                        _controller?.showMyLocation(true, strokeWidth: 4);
                         break;
                       case '8':
-                        _controller1?.showMyLocation(true, strokeWidth: 8);
+                        _controller?.showMyLocation(true, strokeWidth: 8);
                         break;
                     }
                   },
@@ -232,13 +253,13 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                 BooleanSetting(
                   head: '是否显示路况信息',
                   onSelected: (value) {
-                    _controller1?.showTraffic(value);
+                    _controller?.showTraffic(value);
                   },
                 ),
                 ListTile(
                   title: Center(child: Text('获取地图中心点')),
                   onTap: () async {
-                    final center = await _controller1?.getCenterCoordinate();
+                    final center = await _controller?.getCenterCoordinate();
                     toast(
                         'center: lat: ${center.latitude}, lng: ${center.longitude}');
                   },
@@ -246,7 +267,7 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                 ListTile(
                   title: Center(child: Text('监听地图移动')),
                   onTap: () {
-                    _controller1?.setMapMoveListener(
+                    _controller?.setMapMoveListener(
                       onMapMoveStart: (move) async => toast('开始移动: $move'),
                       onMapMoveEnd: (move) async => toast('结束移动: $move'),
                     );
@@ -255,7 +276,7 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                 ListTile(
                   title: Center(child: Text('添加点击地图监听')),
                   onTap: () {
-                    _controller1?.setMapClickedListener(
+                    _controller?.setMapClickedListener(
                       (latLng) async {
                         toast(
                           '点击: lat: ${latLng.latitude}, lng: ${latLng.longitude}',
@@ -267,7 +288,7 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                 ListTile(
                   title: Center(child: Text('自定义地图')),
                   onTap: () {
-                    _controller1?.setCustomMapStyle(
+                    _controller?.setCustomMapStyle(
                       styleDataPath: 'raw/style.data',
                       styleExtraPath: 'raw/style_extra.data',
                     );
@@ -277,9 +298,9 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   title: Center(child: Text('经纬度坐标转屏幕坐标')),
                   onTap: () async {
                     final centerLatLng =
-                        await _controller1.getCenterCoordinate();
+                        await _controller?.getCenterCoordinate();
                     final screenPoint =
-                        await _controller1?.toScreenLocation(centerLatLng);
+                        await _controller?.toScreenLocation(centerLatLng);
                     toast('地图中心点对应的屏幕坐标为: $screenPoint');
                   },
                 ),
@@ -288,14 +309,14 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   onTap: () async {
                     final screenPoint = Point(250, 250);
                     final latLng =
-                        await _controller1?.fromScreenLocation(screenPoint);
+                        await _controller?.fromScreenLocation(screenPoint);
                     toast('屏幕坐标(250, 250)对应的经纬度坐标为: $latLng');
                   },
                 ),
                 ListTile(
                   title: Center(child: Text('监听位置改变')),
                   onTap: () async {
-                    await _controller1
+                    await _controller
                         ?.setMyLocationChangeListener((location) async {
                       final coord = await location.coord;
                       toast(
@@ -307,7 +328,7 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                 ListTile(
                   title: Center(child: Text('设置以地图为中心进行缩放')),
                   onTap: () async {
-                    await _controller1?.setZoomByCenter(true);
+                    await _controller?.setZoomByCenter(true);
                   },
                 ),
                 ListTile(
@@ -315,14 +336,13 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   onTap: () async {
                     final southWest = LatLng(40, 116);
                     final northEast = LatLng(42, 118);
-                    await _controller1?.setMapRegionLimits(
-                        southWest, northEast);
+                    await _controller?.setMapRegionLimits(southWest, northEast);
                   },
                 ),
                 ListTile(
                   title: Center(child: Text('获取当前缩放等级')),
                   onTap: () async {
-                    toast('当前缩放等级: ${await _controller1.getZoomLevel()}');
+                    toast('当前缩放等级: ${await _controller?.getZoomLevel()}');
                   },
                 ),
               ],

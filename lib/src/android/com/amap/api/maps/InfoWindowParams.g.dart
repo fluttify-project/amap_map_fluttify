@@ -28,9 +28,9 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_maps_InfoWindowParams>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_InfoWindowParams__', {'length': length});
   
     final List<com_amap_api_maps_InfoWindowParams> typedResult = resultBatch.map((result) => com_amap_api_maps_InfoWindowParams()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -233,12 +233,15 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setInfoWindowUpdateTime_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::setInfoWindowUpdateTime_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -255,10 +258,9 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
   }
   
   Future<List<int>> getInfoWindowUpdateTime_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::getInfoWindowUpdateTime_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -275,10 +277,9 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
   }
   
   Future<void> setInfoWindowType_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::setInfoWindowType_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -295,10 +296,9 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
   }
   
   Future<List<int>> getInfoWindowType_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::getInfoWindowType_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -315,10 +315,9 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
   }
   
   Future<List<android_view_View>> getInfoWindow_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::getInfoWindow_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -335,10 +334,9 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
   }
   
   Future<void> setInfoContent_batch(List<android_view_View> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::setInfoContent_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -355,10 +353,9 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
   }
   
   Future<void> setInfoWindow_batch(List<android_view_View> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::setInfoWindow_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -375,10 +372,9 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
   }
   
   Future<List<android_view_View>> getInfoContents_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.InfoWindowParams::getInfoContents_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

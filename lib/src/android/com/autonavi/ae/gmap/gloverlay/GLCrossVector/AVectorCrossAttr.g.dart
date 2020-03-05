@@ -27,9 +27,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr extends java
   }
   
   static Future<List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__', {'length': length});
   
     final List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -164,6 +164,45 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr_Batch on
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_stAreaColor_batch(List<int> stAreaColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stAreaColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stAreaColor": stAreaColor[i]}]);
+  
+  
+  }
+  
+  Future<void> set_stArrowBorderColor_batch(List<int> stArrowBorderColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stArrowBorderColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stArrowBorderColor": stArrowBorderColor[i]}]);
+  
+  
+  }
+  
+  Future<void> set_fArrowBorderWidth_batch(List<int> fArrowBorderWidth) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_fArrowBorderWidth_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fArrowBorderWidth": fArrowBorderWidth[i]}]);
+  
+  
+  }
+  
+  Future<void> set_fArrowLineWidth_batch(List<int> fArrowLineWidth) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_fArrowLineWidth_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fArrowLineWidth": fArrowLineWidth[i]}]);
+  
+  
+  }
+  
+  Future<void> set_stArrowLineColor_batch(List<int> stArrowLineColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stArrowLineColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stArrowLineColor": stArrowLineColor[i]}]);
+  
+  
+  }
+  
+  Future<void> set_dayMode_batch(List<bool> dayMode) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_dayMode_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "dayMode": dayMode[i]}]);
+  
+  
   }
   
   //endregion

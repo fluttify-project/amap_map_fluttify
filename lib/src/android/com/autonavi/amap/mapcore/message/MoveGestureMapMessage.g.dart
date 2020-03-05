@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends com_autona
   }
   
   static Future<List<com_autonavi_amap_mapcore_message_MoveGestureMapMessage>> create_batch__int__float__float(List<int> var1, List<double> var2, List<double> var3) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i]}]);
   
     final List<com_autonavi_amap_mapcore_message_MoveGestureMapMessage> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -135,12 +135,26 @@ extension com_autonavi_amap_mapcore_message_MoveGestureMapMessage_Batch on List<
   
   //endregion
 
+  //region setters
+  Future<void> set_touchDeltaX_batch(List<double> touchDeltaX) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaX_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "touchDeltaX": touchDeltaX[i]}]);
+  
+  
+  }
+  
+  Future<void> set_touchDeltaY_batch(List<double> touchDeltaY) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaY_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "touchDeltaY": touchDeltaY[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<com_autonavi_amap_mapcore_message_MoveGestureMapMessage>> obtain_batch(List<int> var0, List<double> var1, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::obtain_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -157,10 +171,9 @@ extension com_autonavi_amap_mapcore_message_MoveGestureMapMessage_Batch on List<
   }
   
   Future<void> destory_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.MoveGestureMapMessage::destory_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

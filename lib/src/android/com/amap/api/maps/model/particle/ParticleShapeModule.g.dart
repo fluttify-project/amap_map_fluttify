@@ -82,12 +82,15 @@ extension com_amap_api_maps_model_particle_ParticleShapeModule_Batch on List<com
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<bool>> isUseRatio_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleShapeModule::isUseRatio_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -104,10 +107,9 @@ extension com_amap_api_maps_model_particle_ParticleShapeModule_Batch on List<com
   }
   
   Future<List<Float64List>> getPoint_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleShapeModule::getPoint_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

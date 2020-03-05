@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MAMultiPoint extends MAShape  {
+class MAMultiPoint extends MAShape with MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MAMultiPoint extends MAShape  {
   }
   
   static Future<List<MAMultiPoint>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiPoint', {'length': length});
   
     final List<MAMultiPoint> typedResult = resultBatch.map((result) => MAMultiPoint()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -91,6 +91,10 @@ extension MAMultiPoint_Batch on List<MAMultiPoint> {
   
     return typedResult;
   }
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

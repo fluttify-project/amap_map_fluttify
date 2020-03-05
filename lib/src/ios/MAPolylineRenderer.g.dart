@@ -27,9 +27,9 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
   }
   
   static Future<List<MAPolylineRenderer>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAPolylineRenderer', {'length': length});
   
     final List<MAPolylineRenderer> typedResult = resultBatch.map((result) => MAPolylineRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -126,12 +126,26 @@ extension MAPolylineRenderer_Batch on List<MAPolylineRenderer> {
   
   //endregion
 
+  //region setters
+  Future<void> set_is3DArrowLine_batch(List<bool> is3DArrowLine) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_is3DArrowLine_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "is3DArrowLine": is3DArrowLine[i]}]);
+  
+  
+  }
+  
+  Future<void> set_sideColor_batch(List<UIColor> sideColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_sideColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "sideColor": sideColor[i].refId}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<MAPolylineRenderer>> initWithPolyline_batch(List<MAPolyline> polyline) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline_batch', [for (int i = 0; i < this.length; i++) {"polyline": polyline[i].refId, "refId": this[i].refId}]);

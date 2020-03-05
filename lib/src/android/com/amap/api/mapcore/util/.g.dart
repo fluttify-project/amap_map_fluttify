@@ -39,6 +39,10 @@ extension com_amap_api_mapcore_util__Batch on List<com_amap_api_mapcore_util_> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   
   //endregion

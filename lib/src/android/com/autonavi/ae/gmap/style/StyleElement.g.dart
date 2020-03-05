@@ -27,9 +27,9 @@ class com_autonavi_ae_gmap_style_StyleElement extends java_lang_Object  {
   }
   
   static Future<List<com_autonavi_ae_gmap_style_StyleElement>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_style_StyleElement__', {'length': length});
   
     final List<com_autonavi_ae_gmap_style_StyleElement> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_style_StyleElement()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -164,6 +164,45 @@ extension com_autonavi_ae_gmap_style_StyleElement_Batch on List<com_autonavi_ae_
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_styleElementType_batch(List<int> styleElementType) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleElement::set_styleElementType_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "styleElementType": styleElementType[i]}]);
+  
+  
+  }
+  
+  Future<void> set_value_batch(List<int> value) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleElement::set_value_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "value": value[i]}]);
+  
+  
+  }
+  
+  Future<void> set_textureId_batch(List<int> textureId) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleElement::set_textureId_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "textureId": textureId[i]}]);
+  
+  
+  }
+  
+  Future<void> set_opacity_batch(List<double> opacity) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleElement::set_opacity_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "opacity": opacity[i]}]);
+  
+  
+  }
+  
+  Future<void> set_lineWidth_batch(List<int> lineWidth) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleElement::set_lineWidth_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lineWidth": lineWidth[i]}]);
+  
+  
+  }
+  
+  Future<void> set_visible_batch(List<int> visible) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleElement::set_visible_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "visible": visible[i]}]);
+  
+  
   }
   
   //endregion

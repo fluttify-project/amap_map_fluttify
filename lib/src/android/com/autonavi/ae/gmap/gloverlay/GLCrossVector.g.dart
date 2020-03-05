@@ -258,12 +258,15 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> addVectorItem_batch(List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> var1, List<Uint8List> var2, List<int> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorItem_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
@@ -280,10 +283,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
   }
   
   Future<void> addVectorRemainDis_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorRemainDis_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -300,10 +302,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
   }
   
   Future<void> addVectorCar_batch(List<int> var1, List<int> var2, List<int> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorCar_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
@@ -320,10 +321,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
   }
   
   Future<void> setRoadResId_batch(List<bool> var1, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::setRoadResId_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -340,10 +340,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
   }
   
   Future<void> setArrowResId_batch(List<bool> var1, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::setArrowResId_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -360,10 +359,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
   }
   
   Future<void> setCarResId_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::setCarResId_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -380,10 +378,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
   }
   
   Future<void> setBackgroundResId_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::setBackgroundResId_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -400,10 +397,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
   }
   
   Future<void> setSkyResId_batch(List<bool> var1, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::setSkyResId_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -420,10 +416,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
   }
   
   Future<List<int>> getFBOTextureId_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::getFBOTextureId_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -440,10 +435,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
   }
   
   Future<void> initFBOTexture_batch(List<int> var1, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::initFBOTexture_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);

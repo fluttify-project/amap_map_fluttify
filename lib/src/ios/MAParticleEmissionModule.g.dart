@@ -27,9 +27,9 @@ class MAParticleEmissionModule extends NSObject  {
   }
   
   static Future<List<MAParticleEmissionModule>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleEmissionModule', {'length': length});
   
     final List<MAParticleEmissionModule> typedResult = resultBatch.map((result) => MAParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -78,12 +78,15 @@ extension MAParticleEmissionModule_Batch on List<MAParticleEmissionModule> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAParticleEmissionModule>> initWithEmissionRateRateTime_batch(List<int> rate, List<int> rateTime) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (rate.length != rateTime.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleEmissionModule::initWithEmissionRateRateTime_batch', [for (int i = 0; i < this.length; i++) {"rate": rate[i], "rateTime": rateTime[i], "refId": this[i].refId}]);

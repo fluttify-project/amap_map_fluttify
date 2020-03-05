@@ -27,9 +27,9 @@ class com_amap_api_maps_model_particle_ConstantRotationOverLife extends com_amap
   }
   
   static Future<List<com_amap_api_maps_model_particle_ConstantRotationOverLife>> create_batch__float(List<double> var1) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_ConstantRotationOverLife__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i]}]);
   
     final List<com_amap_api_maps_model_particle_ConstantRotationOverLife> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_ConstantRotationOverLife()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -54,6 +54,10 @@ class com_amap_api_maps_model_particle_ConstantRotationOverLife extends com_amap
 
 extension com_amap_api_maps_model_particle_ConstantRotationOverLife_Batch on List<com_amap_api_maps_model_particle_ConstantRotationOverLife> {
   //region getters
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

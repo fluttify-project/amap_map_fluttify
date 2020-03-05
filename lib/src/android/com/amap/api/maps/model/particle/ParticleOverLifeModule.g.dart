@@ -27,9 +27,9 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
   }
   
   static Future<List<com_amap_api_maps_model_particle_ParticleOverLifeModule>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_ParticleOverLifeModule__', {'length': length});
   
     final List<com_amap_api_maps_model_particle_ParticleOverLifeModule> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -144,12 +144,15 @@ extension com_amap_api_maps_model_particle_ParticleOverLifeModule_Batch on List<
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setVelocityOverLife_batch(List<com_amap_api_maps_model_particle_VelocityGenerate> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverLifeModule::setVelocityOverLife_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -166,10 +169,9 @@ extension com_amap_api_maps_model_particle_ParticleOverLifeModule_Batch on List<
   }
   
   Future<void> setRotateOverLife_batch(List<com_amap_api_maps_model_particle_RotationOverLife> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverLifeModule::setRotateOverLife_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -186,10 +188,9 @@ extension com_amap_api_maps_model_particle_ParticleOverLifeModule_Batch on List<
   }
   
   Future<void> setSizeOverLife_batch(List<com_amap_api_maps_model_particle_SizeOverLife> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverLifeModule::setSizeOverLife_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -206,10 +207,9 @@ extension com_amap_api_maps_model_particle_ParticleOverLifeModule_Batch on List<
   }
   
   Future<void> setColorGenerate_batch(List<com_amap_api_maps_model_particle_ColorGenerate> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverLifeModule::setColorGenerate_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);

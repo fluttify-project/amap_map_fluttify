@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MACircle extends MAShape with MAAnnotation, MAOverlay {
+class MACircle extends MAShape with MAOverlay, MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
   }
   
   static Future<List<MACircle>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACircle', {'length': length});
   
     final List<MACircle> typedResult = resultBatch.map((result) => MACircle()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -189,12 +189,32 @@ extension MACircle_Batch on List<MACircle> {
   
   //endregion
 
+  //region setters
+  Future<void> set_hollowShapes_batch(List<List<MAOverlay>> hollowShapes) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_hollowShapes_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "hollowShapes": hollowShapes[i].map((it) => it.refId).toList()}]);
+  
+  
+  }
+  
+  Future<void> set_coordinate_batch(List<CLLocationCoordinate2D> coordinate) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_coordinate_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "coordinate": coordinate[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_radius_batch(List<double> radius) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_radius_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "radius": radius[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<MACircle>> circleWithCenterCoordinateRadius_batch(List<CLLocationCoordinate2D> coord, List<double> radius) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coord.length != radius.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithCenterCoordinateRadius_batch', [for (int i = 0; i < this.length; i++) {"coord": coord[i].refId, "radius": radius[i], "refId": this[i].refId}]);
@@ -211,10 +231,9 @@ extension MACircle_Batch on List<MACircle> {
   }
   
   Future<List<MACircle>> circleWithMapRect_batch(List<MAMapRect> mapRect) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithMapRect_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "refId": this[i].refId}]);
@@ -231,10 +250,9 @@ extension MACircle_Batch on List<MACircle> {
   }
   
   Future<List<bool>> setCircleWithCenterCoordinateRadius_batch(List<CLLocationCoordinate2D> coord, List<double> radius) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (coord.length != radius.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::setCircleWithCenterCoordinateRadius_batch', [for (int i = 0; i < this.length; i++) {"coord": coord[i].refId, "radius": radius[i], "refId": this[i].refId}]);

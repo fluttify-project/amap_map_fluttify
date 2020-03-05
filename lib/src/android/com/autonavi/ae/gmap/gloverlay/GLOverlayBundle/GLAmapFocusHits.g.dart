@@ -27,9 +27,9 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits extends jav
   }
   
   static Future<List<com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__', {'length': length});
   
     final List<com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -107,6 +107,27 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits_Batch o
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_mOverlayHashCode_batch(List<int> mOverlayHashCode) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mOverlayHashCode_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mOverlayHashCode": mOverlayHashCode[i]}]);
+  
+  
+  }
+  
+  Future<void> set_mHitedIndex_batch(List<int> mHitedIndex) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedIndex_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mHitedIndex": mHitedIndex[i]}]);
+  
+  
+  }
+  
+  Future<void> set_mHitedTimes_batch(List<int> mHitedTimes) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedTimes_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mHitedTimes": mHitedTimes[i]}]);
+  
+  
   }
   
   //endregion

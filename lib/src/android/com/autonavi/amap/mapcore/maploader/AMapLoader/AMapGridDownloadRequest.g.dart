@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest ext
   }
   
   static Future<List<com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest>> create_batch__android_content_Context__String__String(List<android_content_Context> var1, List<String> var2, List<String> var3) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest__android_content_Context__String__String', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId, "var2": var2[i], "var3": var3[i]}]);
   
     final List<com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -122,12 +122,15 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<String>> getURL_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getURL_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -144,10 +147,9 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest
   }
   
   Future<void> setPostEntityBytes_batch(List<Uint8List> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::setPostEntityBytes_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -164,10 +166,9 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest
   }
   
   Future<List<Uint8List>> getEntityBytes_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest::getEntityBytes_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

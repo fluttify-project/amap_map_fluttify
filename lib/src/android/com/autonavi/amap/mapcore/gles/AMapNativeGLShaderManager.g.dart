@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
   }
   
   static Future<List<com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -100,12 +100,15 @@ extension com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager_Batch on List
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> nativeCreateGLShaderManager_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeCreateGLShaderManager_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -122,10 +125,9 @@ extension com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager_Batch on List
   }
   
   Future<void> nativeDestroyGLShaderManager_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeDestroyGLShaderManager_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);

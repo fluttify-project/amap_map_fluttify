@@ -27,9 +27,9 @@ class MATouchPoi extends NSObject  {
   }
   
   static Future<List<MATouchPoi>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATouchPoi', {'length': length});
   
     final List<MATouchPoi> typedResult = resultBatch.map((result) => MATouchPoi()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -91,6 +91,10 @@ extension MATouchPoi_Batch on List<MATouchPoi> {
   
     return typedResult;
   }
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

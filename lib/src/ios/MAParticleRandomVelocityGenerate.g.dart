@@ -27,9 +27,9 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
   }
   
   static Future<List<MAParticleRandomVelocityGenerate>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleRandomVelocityGenerate', {'length': length});
   
     final List<MAParticleRandomVelocityGenerate> typedResult = resultBatch.map((result) => MAParticleRandomVelocityGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -78,12 +78,15 @@ extension MAParticleRandomVelocityGenerate_Batch on List<MAParticleRandomVelocit
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAParticleRandomVelocityGenerate>> initWithBoundaryValueX1Y1Z1X2Y2Z2_batch(List<double> x1, List<double> y1, List<double> z1, List<double> x2, List<double> y2, List<double> z2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (x1.length != y1.length || y1.length != z1.length || z1.length != x2.length || x2.length != y2.length || y2.length != z2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1Y1Z1X2Y2Z2_batch', [for (int i = 0; i < this.length; i++) {"x1": x1[i], "y1": y1[i], "z1": z1[i], "x2": x2[i], "y2": y2[i], "z2": z2[i], "refId": this[i].refId}]);

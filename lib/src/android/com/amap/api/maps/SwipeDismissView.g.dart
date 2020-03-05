@@ -27,9 +27,9 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
   }
   
   static Future<List<com_amap_api_maps_SwipeDismissView>> create_batch__android_content_Context__android_view_View(List<android_content_Context> var1, List<android_view_View> var2) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId, "var2": var2[i].refId}]);
   
     final List<com_amap_api_maps_SwipeDismissView> typedResult = resultBatch.map((result) => com_amap_api_maps_SwipeDismissView()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -103,6 +103,10 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
 
 extension com_amap_api_maps_SwipeDismissView_Batch on List<com_amap_api_maps_SwipeDismissView> {
   //region getters
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

@@ -28,9 +28,9 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   }
   
   static Future<List<com_amap_api_maps_model_PolylineOptions>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_PolylineOptions__', {'length': length});
   
     final List<com_amap_api_maps_model_PolylineOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_PolylineOptions()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -1003,12 +1003,15 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_PolylineOptions>> setUseTexture_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setUseTexture_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1025,10 +1028,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> setCustomTexture_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setCustomTexture_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -1045,10 +1047,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getCustomTexture_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getCustomTexture_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1065,10 +1066,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> setCustomTextureList_batch(List<List<com_amap_api_maps_model_BitmapDescriptor>> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setCustomTextureList_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
@@ -1085,10 +1085,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<List<com_amap_api_maps_model_BitmapDescriptor>>> getCustomTextureList_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getCustomTextureList_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1105,10 +1104,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> setCustomTextureIndex_batch(List<List<int>> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setCustomTextureIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1125,10 +1123,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<List<int>>> getCustomTextureIndex_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getCustomTextureIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1145,10 +1142,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> colorValues_batch(List<List<int>> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::colorValues_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1165,10 +1161,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<List<int>>> getColorValues_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getColorValues_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1185,10 +1180,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> useGradient_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::useGradient_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1205,10 +1199,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<bool>> isUseGradient_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isUseGradient_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1225,10 +1218,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<bool>> isUseTexture_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isUseTexture_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1245,10 +1237,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<bool>> isGeodesic_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isGeodesic_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1265,10 +1256,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> add__com_amap_api_maps_model_LatLng_batch(List<com_amap_api_maps_model_LatLng> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::add__com_amap_api_maps_model_LatLng_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -1285,10 +1275,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> addAll_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::addAll_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
@@ -1305,10 +1294,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> width_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::width_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1325,10 +1313,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> color_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::color_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1345,10 +1332,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> zIndex_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::zIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1365,10 +1351,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> visible_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::visible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1385,10 +1370,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> geodesic_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::geodesic_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1405,10 +1389,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> setDottedLine_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setDottedLine_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1425,10 +1408,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<bool>> isDottedLine_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isDottedLine_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1445,10 +1427,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> setDottedLineType_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setDottedLineType_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1465,10 +1446,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> lineCapType_batch(List<com_amap_api_maps_model_PolylineOptions_LineCapType> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::lineCapType_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].index, "refId": this[i].refId}]);
@@ -1485,10 +1465,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> lineJoinType_batch(List<com_amap_api_maps_model_PolylineOptions_LineJoinType> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::lineJoinType_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].index, "refId": this[i].refId}]);
@@ -1505,10 +1484,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions_LineCapType>> getLineCapType_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getLineCapType_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1525,10 +1503,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions_LineJoinType>> getLineJoinType_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getLineJoinType_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1545,10 +1522,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<int>> getDottedLineType_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getDottedLineType_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1565,10 +1541,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<List<com_amap_api_maps_model_LatLng>>> getPoints_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getPoints_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1585,10 +1560,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<double>> getWidth_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getWidth_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1605,10 +1579,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<int>> getColor_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1625,10 +1598,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<double>> getZIndex_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getZIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1645,10 +1617,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<bool>> isVisible_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isVisible_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1665,10 +1636,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> transparency_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::transparency_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1685,10 +1655,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<double>> getTransparency_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getTransparency_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1705,10 +1674,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> aboveMaskLayer_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::aboveMaskLayer_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1725,10 +1693,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<bool>> isAboveMaskLayer_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isAboveMaskLayer_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1745,10 +1712,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<void> setPoints_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setPoints_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
@@ -1765,10 +1731,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<double>> getShownRatio_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getShownRatio_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1785,10 +1750,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> setShownRatio_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setShownRatio_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -1805,10 +1769,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_PolylineOptions>> setShownRange_batch(List<double> var1, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setShownRange_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -1825,10 +1788,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<double>> getShownRangeBegin_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getShownRangeBegin_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -1845,10 +1807,9 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
   }
   
   Future<List<double>> getShownRangeEnd_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getShownRangeEnd_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

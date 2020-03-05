@@ -27,9 +27,9 @@ class com_amap_api_maps_CoordinateConverter extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_maps_CoordinateConverter>> create_batch__android_content_Context(List<android_content_Context> var1) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_CoordinateConverter__android_content_Context', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
   
     final List<com_amap_api_maps_CoordinateConverter> typedResult = resultBatch.map((result) => com_amap_api_maps_CoordinateConverter()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -144,12 +144,15 @@ extension com_amap_api_maps_CoordinateConverter_Batch on List<com_amap_api_maps_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_CoordinateConverter>> from_batch(List<com_amap_api_maps_CoordinateConverter_CoordType> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::from_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].index, "refId": this[i].refId}]);
@@ -166,10 +169,9 @@ extension com_amap_api_maps_CoordinateConverter_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_CoordinateConverter>> coord_batch(List<com_amap_api_maps_model_LatLng> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::coord_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -186,10 +188,9 @@ extension com_amap_api_maps_CoordinateConverter_Batch on List<com_amap_api_maps_
   }
   
   Future<List<com_amap_api_maps_model_LatLng>> convert_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::convert_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -206,10 +207,9 @@ extension com_amap_api_maps_CoordinateConverter_Batch on List<com_amap_api_maps_
   }
   
   Future<List<bool>> isAMapDataAvailable_batch(List<double> var0, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::isAMapDataAvailable_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);

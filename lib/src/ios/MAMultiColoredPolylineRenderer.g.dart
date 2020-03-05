@@ -27,9 +27,9 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   }
   
   static Future<List<MAMultiColoredPolylineRenderer>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiColoredPolylineRenderer', {'length': length});
   
     final List<MAMultiColoredPolylineRenderer> typedResult = resultBatch.map((result) => MAMultiColoredPolylineRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -126,12 +126,26 @@ extension MAMultiColoredPolylineRenderer_Batch on List<MAMultiColoredPolylineRen
   
   //endregion
 
+  //region setters
+  Future<void> set_strokeColors_batch(List<List<UIColor>> strokeColors) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::set_strokeColors_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strokeColors": strokeColors[i].map((it) => it.refId).toList()}]);
+  
+  
+  }
+  
+  Future<void> set_gradient_batch(List<bool> gradient) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::set_gradient_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "gradient": gradient[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<MAMultiColoredPolylineRenderer>> initWithMultiPolyline_batch(List<MAMultiPolyline> multiPolyline) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiColoredPolylineRenderer::initWithMultiPolyline_batch', [for (int i = 0; i < this.length; i++) {"multiPolyline": multiPolyline[i].refId, "refId": this[i].refId}]);

@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MAHeatMapTileOverlay extends MATileOverlay  {
+class MAHeatMapTileOverlay extends MATileOverlay with MAAnnotation, MAOverlay {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MAHeatMapTileOverlay extends MATileOverlay  {
   }
   
   static Future<List<MAHeatMapTileOverlay>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAHeatMapTileOverlay', {'length': length});
   
     final List<MAHeatMapTileOverlay> typedResult = resultBatch.map((result) => MAHeatMapTileOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -145,6 +145,39 @@ extension MAHeatMapTileOverlay_Batch on List<MAHeatMapTileOverlay> {
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_data_batch(List<List<MAHeatMapNode>> data) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapTileOverlay::set_data_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "data": data[i].map((it) => it.refId).toList()}]);
+  
+  
+  }
+  
+  Future<void> set_radius_batch(List<int> radius) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapTileOverlay::set_radius_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "radius": radius[i]}]);
+  
+  
+  }
+  
+  Future<void> set_opacity_batch(List<double> opacity) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapTileOverlay::set_opacity_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "opacity": opacity[i]}]);
+  
+  
+  }
+  
+  Future<void> set_gradient_batch(List<MAHeatMapGradient> gradient) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapTileOverlay::set_gradient_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "gradient": gradient[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_allowRetinaAdapting_batch(List<bool> allowRetinaAdapting) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapTileOverlay::set_allowRetinaAdapting_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "allowRetinaAdapting": allowRetinaAdapting[i]}]);
+  
+  
   }
   
   //endregion

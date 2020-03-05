@@ -27,9 +27,9 @@ class com_amap_api_maps_model_Tile extends java_lang_Object with android_os_Parc
   }
   
   static Future<List<com_amap_api_maps_model_Tile>> create_batch__int__int__byteArray(List<int> var1, List<int> var2, List<Uint8List> var3) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_Tile__int__int__byteArray', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i]}]);
   
     final List<com_amap_api_maps_model_Tile> typedResult = resultBatch.map((result) => com_amap_api_maps_model_Tile()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -115,12 +115,15 @@ extension com_amap_api_maps_model_Tile_Batch on List<com_amap_api_maps_model_Til
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_Tile>> obtain_batch(List<int> var0, List<int> var1, List<Uint8List> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Tile::obtain_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);

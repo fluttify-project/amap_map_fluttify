@@ -27,9 +27,9 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   }
   
   static Future<List<MATileOverlay>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATileOverlay', {'length': length});
   
     final List<MATileOverlay> typedResult = resultBatch.map((result) => MATileOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -265,12 +265,50 @@ extension MATileOverlay_Batch on List<MATileOverlay> {
   
   //endregion
 
+  //region setters
+  Future<void> set_tileSize_batch(List<CGSize> tileSize) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_tileSize_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "tileSize": tileSize[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_minimumZ_batch(List<int> minimumZ) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_minimumZ_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "minimumZ": minimumZ[i]}]);
+  
+  
+  }
+  
+  Future<void> set_maximumZ_batch(List<int> maximumZ) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_maximumZ_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "maximumZ": maximumZ[i]}]);
+  
+  
+  }
+  
+  Future<void> set_canReplaceMapContent_batch(List<bool> canReplaceMapContent) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_canReplaceMapContent_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "canReplaceMapContent": canReplaceMapContent[i]}]);
+  
+  
+  }
+  
+  Future<void> set_boundingMapRect_batch(List<MAMapRect> boundingMapRect) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_boundingMapRect_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "boundingMapRect": boundingMapRect[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_disableOffScreenTileLoading_batch(List<bool> disableOffScreenTileLoading) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::set_disableOffScreenTileLoading_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "disableOffScreenTileLoading": disableOffScreenTileLoading[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<NSObject>> initWithURLTemplate_batch(List<String> URLTemplate) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::initWithURLTemplate_batch', [for (int i = 0; i < this.length; i++) {"URLTemplate": URLTemplate[i], "refId": this[i].refId}]);
@@ -287,10 +325,9 @@ extension MATileOverlay_Batch on List<MATileOverlay> {
   }
   
   Future<void> cancelLoadOfTileAtPath_batch(List<MATileOverlayPath> path) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::cancelLoadOfTileAtPath_batch', [for (int i = 0; i < this.length; i++) {"path": path[i].refId, "refId": this[i].refId}]);

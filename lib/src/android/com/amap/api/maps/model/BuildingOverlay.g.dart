@@ -258,12 +258,15 @@ extension com_amap_api_maps_model_BuildingOverlay_Batch on List<com_amap_api_map
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setDefaultOptions_batch(List<com_amap_api_maps_model_BuildingOverlayOptions> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setDefaultOptions_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -280,10 +283,9 @@ extension com_amap_api_maps_model_BuildingOverlay_Batch on List<com_amap_api_map
   }
   
   Future<List<com_amap_api_maps_model_BuildingOverlayOptions>> getDefaultOptions_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getDefaultOptions_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -300,10 +302,9 @@ extension com_amap_api_maps_model_BuildingOverlay_Batch on List<com_amap_api_map
   }
   
   Future<void> setCustomOptions_batch(List<List<com_amap_api_maps_model_BuildingOverlayOptions>> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setCustomOptions_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
@@ -320,10 +321,9 @@ extension com_amap_api_maps_model_BuildingOverlay_Batch on List<com_amap_api_map
   }
   
   Future<List<List<com_amap_api_maps_model_BuildingOverlayOptions>>> getCustomOptions_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getCustomOptions_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -340,10 +340,9 @@ extension com_amap_api_maps_model_BuildingOverlay_Batch on List<com_amap_api_map
   }
   
   Future<void> destroy_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::destroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -360,10 +359,9 @@ extension com_amap_api_maps_model_BuildingOverlay_Batch on List<com_amap_api_map
   }
   
   Future<List<String>> getId_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getId_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -380,10 +378,9 @@ extension com_amap_api_maps_model_BuildingOverlay_Batch on List<com_amap_api_map
   }
   
   Future<void> setZIndex_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setZIndex_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -400,10 +397,9 @@ extension com_amap_api_maps_model_BuildingOverlay_Batch on List<com_amap_api_map
   }
   
   Future<List<double>> getZIndex_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::getZIndex_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -420,10 +416,9 @@ extension com_amap_api_maps_model_BuildingOverlay_Batch on List<com_amap_api_map
   }
   
   Future<void> setVisible_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::setVisible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -440,10 +435,9 @@ extension com_amap_api_maps_model_BuildingOverlay_Batch on List<com_amap_api_map
   }
   
   Future<List<bool>> isVisible_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BuildingOverlay::isVisible_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

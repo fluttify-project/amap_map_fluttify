@@ -27,9 +27,9 @@ class MATraceManager extends NSObject  {
   }
   
   static Future<List<MATraceManager>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATraceManager', {'length': length});
   
     final List<MATraceManager> typedResult = resultBatch.map((result) => MATraceManager()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -214,12 +214,15 @@ extension MATraceManager_Batch on List<MATraceManager> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MATraceManager>> sharedInstance_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::sharedInstance_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -236,10 +239,9 @@ extension MATraceManager_Batch on List<MATraceManager> {
   }
   
   Future<void> start_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::start_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -256,10 +258,9 @@ extension MATraceManager_Batch on List<MATraceManager> {
   }
   
   Future<void> stop_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::stop_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

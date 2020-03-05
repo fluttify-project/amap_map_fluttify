@@ -262,12 +262,20 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
   
   //endregion
 
+  //region setters
+  Future<void> set_glAnimation_batch(List<com_autonavi_amap_mapcore_animation_GLAnimation> glAnimation) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::set_glAnimation_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "glAnimation": glAnimation[i].refId}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<void> setDuration_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::setDuration_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -284,10 +292,9 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
   }
   
   Future<void> setFillMode_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::setFillMode_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -304,10 +311,9 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
   }
   
   Future<List<int>> getFillMode_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::getFillMode_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -324,10 +330,9 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
   }
   
   Future<void> setRepeatCount_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::setRepeatCount_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -344,10 +349,9 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
   }
   
   Future<void> setRepeatMode_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::setRepeatMode_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -364,10 +368,9 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
   }
   
   Future<List<int>> getRepeatMode_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::getRepeatMode_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -384,10 +387,9 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
   }
   
   Future<List<int>> getRepeatCount_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::getRepeatCount_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

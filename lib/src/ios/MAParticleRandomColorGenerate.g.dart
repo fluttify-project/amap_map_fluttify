@@ -27,9 +27,9 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
   }
   
   static Future<List<MAParticleRandomColorGenerate>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleRandomColorGenerate', {'length': length});
   
     final List<MAParticleRandomColorGenerate> typedResult = resultBatch.map((result) => MAParticleRandomColorGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -78,12 +78,15 @@ extension MAParticleRandomColorGenerate_Batch on List<MAParticleRandomColorGener
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAParticleRandomColorGenerate>> initWithBoundaryColorR1G1B1A1R2G2B2A2_batch(List<double> r1, List<double> g1, List<double> b1, List<double> a1, List<double> r2, List<double> g2, List<double> b2, List<double> a2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (r1.length != g1.length || g1.length != b1.length || b1.length != a1.length || a1.length != r2.length || r2.length != g2.length || g2.length != b2.length || b2.length != a2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomColorGenerate::initWithBoundaryColorR1G1B1A1R2G2B2A2_batch', [for (int i = 0; i < this.length; i++) {"r1": r1[i], "g1": g1[i], "b1": b1[i], "a1": a1[i], "r2": r2[i], "g2": g2[i], "b2": b2[i], "a2": a2[i], "refId": this[i].refId}]);

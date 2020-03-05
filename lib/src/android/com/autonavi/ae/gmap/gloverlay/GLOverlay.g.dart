@@ -500,12 +500,15 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> getNativeInstatnce_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getNativeInstatnce_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -522,10 +525,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<List<int>> getCode_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getCode_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -542,10 +544,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<List<int>> getType_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getType_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -562,10 +563,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<List<int>> getSubType_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getSubType_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -582,10 +582,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<void> removeItem_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::removeItem_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -602,10 +601,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<void> removeAll_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::removeAll_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -622,10 +620,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<List<int>> getSize_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getSize_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -642,10 +639,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<void> setVisible_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setVisible_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -662,10 +658,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<List<bool>> isVisible_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::isVisible_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -682,10 +677,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<void> setClickable_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setClickable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -702,10 +696,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<List<bool>> isClickable_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::isClickable_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -722,10 +715,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<void> clearFocus_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::clearFocus_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -742,10 +734,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<List<bool>> getIsInBundle_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getIsInBundle_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -762,10 +753,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<void> setMaxCountShown_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setMaxCountShown_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -782,10 +772,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<void> setOverlayOnTop_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setOverlayOnTop_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -802,10 +791,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<void> setMinDisplayLevel_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setMinDisplayLevel_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -822,10 +810,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<void> setMaxDisplayLevel_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setMaxDisplayLevel_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -842,10 +829,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<void> setOverlayPriority_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setOverlayPriority_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -862,10 +848,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<List<int>> getOverlayPriority_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::getOverlayPriority_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -882,10 +867,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<void> setOverlayItemPriority_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::setOverlayItemPriority_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -902,10 +886,9 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   }
   
   Future<void> useNightStyle_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.GLOverlay::useNightStyle_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);

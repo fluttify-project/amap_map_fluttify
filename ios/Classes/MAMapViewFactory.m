@@ -13,10 +13,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
 // 日志打印开关
 extern BOOL enableLog;
 
-typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSString *, NSObject *> *, FlutterResult);
-
 @implementation MAMapViewFactory {
-  NSObject <FlutterPluginRegistrar> *_registrar;
 }
 
 - (instancetype)initWithRegistrar:(NSObject <FlutterPluginRegistrar> *)registrar {
@@ -35,7 +32,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 @end
 
 @implementation MAMapViewPlatformView {
-  NSObject <FlutterPluginRegistrar> *_registrar;
   NSInteger _viewId;
   NSDictionary<NSString *, Handler> *_handlerMap;
 }
@@ -71,7 +67,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setRegion(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setRegion(%@, %@)", args[@"refId"], args[@"region"], args[@"animated"]);
           }
       
           // invoke native method
@@ -95,7 +91,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::regionThatFits(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::regionThatFits(%@)", args[@"refId"], args[@"region"]);
           }
       
           // invoke native method
@@ -123,7 +119,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(%@, %@)", args[@"refId"], args[@"mapRect"], args[@"animated"]);
           }
       
           // invoke native method
@@ -147,7 +143,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(%@)", args[@"refId"], args[@"mapRect"]);
           }
       
           // invoke native method
@@ -177,7 +173,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::mapRectThatFits(%@, %@)", args[@"refId"], args[@"mapRect"], args[@"insets"]);
           }
       
           // invoke native method
@@ -209,7 +205,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(%@, %@, %@)", args[@"refId"], args[@"mapRect"], args[@"insets"], args[@"animated"]);
           }
       
           // invoke native method
@@ -235,7 +231,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCenterCoordinate(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setCenterCoordinate(%@, %@)", args[@"refId"], args[@"coordinate"], args[@"animated"]);
           }
       
           // invoke native method
@@ -259,7 +255,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(%@, %@)", args[@"refId"], args[@"zoomLevel"], args[@"animated"]);
           }
       
           // invoke native method
@@ -287,7 +283,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(%@, %@, %@)", args[@"refId"], args[@"zoomLevel"], args[@"pivot"], args[@"animated"]);
           }
       
           // invoke native method
@@ -313,7 +309,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(%@, %@, %@)", args[@"refId"], args[@"rotationDegree"], args[@"animated"], args[@"duration"]);
           }
       
           // invoke native method
@@ -339,7 +335,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCameraDegree(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setCameraDegree(%@, %@, %@)", args[@"refId"], args[@"cameraDegree"], args[@"animated"], args[@"duration"]);
           }
       
           // invoke native method
@@ -360,7 +356,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::getMapStatus(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::getMapStatus()", args[@"refId"]);
           }
       
           // invoke native method
@@ -385,7 +381,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(%@, %@)", args[@"refId"], args[@"status"], args[@"animated"]);
           }
       
           // invoke native method
@@ -411,7 +407,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(%@, %@, %@)", args[@"refId"], args[@"status"], args[@"animated"], args[@"duration"]);
           }
       
           // invoke native method
@@ -433,7 +429,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCompassImage(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setCompassImage(%@)", args[@"refId"], args[@"image"]);
           }
       
           // invoke native method
@@ -458,14 +454,14 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::takeSnapshotInRect(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::takeSnapshotInRect(%@, %@)", args[@"refId"], args[@"rect"], args[@"block"]);
           }
       
           // invoke native method
           [ref takeSnapshotInRect : rect withCompletionBlock: ^(UIImage* resultImage, NSInteger state) {
               FlutterMethodChannel *channel = [FlutterMethodChannel
                   methodChannelWithName:@"MAMapView::takeSnapshotInRectWithCompletionBlock::Callback"
-                        binaryMessenger:[self->_registrar messenger]];
+                        binaryMessenger:[[self registrar] messenger]];
       
               // print log
               if (enableLog) {
@@ -499,7 +495,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::metersPerPointForZoomLevel(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::metersPerPointForZoomLevel(%@)", args[@"refId"], args[@"zoomLevel"]);
           }
       
           // invoke native method
@@ -525,7 +521,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::convertCoordinate(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::convertCoordinate(%@, %@)", args[@"refId"], args[@"coordinate"], args[@"view"]);
           }
       
           // invoke native method
@@ -553,7 +549,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::convertPoint(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::convertPoint(%@, %@)", args[@"refId"], args[@"point"], args[@"view"]);
           }
       
           // invoke native method
@@ -581,7 +577,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::convertRegion(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::convertRegion(%@, %@)", args[@"refId"], args[@"region"], args[@"view"]);
           }
       
           // invoke native method
@@ -609,7 +605,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::convertRect(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::convertRect(%@, %@)", args[@"refId"], args[@"rect"], args[@"view"]);
           }
       
           // invoke native method
@@ -632,7 +628,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::reloadMap(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::reloadMap()", args[@"refId"]);
           }
       
           // invoke native method
@@ -653,7 +649,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::clearDisk(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::clearDisk()", args[@"refId"]);
           }
       
           // invoke native method
@@ -674,7 +670,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::reloadInternalTexture(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::reloadInternalTexture()", args[@"refId"]);
           }
       
           // invoke native method
@@ -695,7 +691,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::mapContentApprovalNumber(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::mapContentApprovalNumber()", args[@"refId"]);
           }
       
           // invoke native method
@@ -716,7 +712,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::satelliteImageApprovalNumber(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::satelliteImageApprovalNumber()", args[@"refId"]);
           }
       
           // invoke native method
@@ -737,7 +733,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::forceRefresh(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::forceRefresh()", args[@"refId"]);
           }
       
           // invoke native method
@@ -759,7 +755,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addAnnotation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addAnnotation(%@)", args[@"refId"], args[@"annotation"]);
           }
       
           // invoke native method
@@ -786,7 +782,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addAnnotations(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addAnnotations(%@)", args[@"refId"], args[@"annotations"]);
           }
       
           // invoke native method
@@ -808,7 +804,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotation(%@)", args[@"refId"], args[@"annotation"]);
           }
       
           // invoke native method
@@ -835,7 +831,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotations(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::removeAnnotations(%@)", args[@"refId"], args[@"annotations"]);
           }
       
           // invoke native method
@@ -857,7 +853,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::viewForAnnotation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::viewForAnnotation(%@)", args[@"refId"], args[@"annotation"]);
           }
       
           // invoke native method
@@ -880,7 +876,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::dequeueReusableAnnotationViewWithIdentifier(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::dequeueReusableAnnotationViewWithIdentifier(%@)", args[@"refId"], args[@"identifier"]);
           }
       
           // invoke native method
@@ -905,7 +901,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::selectAnnotation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::selectAnnotation(%@, %@)", args[@"refId"], args[@"annotation"], args[@"animated"]);
           }
       
           // invoke native method
@@ -929,7 +925,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::deselectAnnotation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::deselectAnnotation(%@, %@)", args[@"refId"], args[@"annotation"], args[@"animated"]);
           }
       
           // invoke native method
@@ -958,7 +954,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(%@, %@)", args[@"refId"], args[@"annotations"], args[@"animated"]);
           }
       
           // invoke native method
@@ -991,7 +987,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(%@, %@, %@)", args[@"refId"], args[@"annotations"], args[@"insets"], args[@"animated"]);
           }
       
           // invoke native method
@@ -1015,7 +1011,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setUserTrackingMode(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setUserTrackingMode(%@, %@)", args[@"refId"], args[@"mode"], args[@"animated"]);
           }
       
           // invoke native method
@@ -1037,7 +1033,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::updateUserLocationRepresentation(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::updateUserLocationRepresentation(%@)", args[@"refId"], args[@"representation"]);
           }
       
           // invoke native method
@@ -1059,7 +1055,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(%@)", args[@"refId"], args[@"level"]);
           }
       
           // invoke native method
@@ -1086,7 +1082,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(%@)", args[@"refId"], args[@"overlay"]);
           }
       
           // invoke native method
@@ -1113,7 +1109,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(%@)", args[@"refId"], args[@"overlays"]);
           }
       
           // invoke native method
@@ -1137,7 +1133,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(%@, %@)", args[@"refId"], args[@"overlay"], args[@"level"]);
           }
       
           // invoke native method
@@ -1166,7 +1162,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(%@, %@)", args[@"refId"], args[@"overlays"], args[@"level"]);
           }
       
           // invoke native method
@@ -1188,7 +1184,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::removeOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::removeOverlay(%@)", args[@"refId"], args[@"overlay"]);
           }
       
           // invoke native method
@@ -1215,7 +1211,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::removeOverlays(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::removeOverlays(%@)", args[@"refId"], args[@"overlays"]);
           }
       
           // invoke native method
@@ -1241,7 +1237,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(%@, %@, %@)", args[@"refId"], args[@"overlay"], args[@"index"], args[@"level"]);
           }
       
           // invoke native method
@@ -1265,7 +1261,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(%@, %@)", args[@"refId"], args[@"overlay"], args[@"sibling"]);
           }
       
           // invoke native method
@@ -1289,7 +1285,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(%@, %@)", args[@"refId"], args[@"overlay"], args[@"sibling"]);
           }
       
           // invoke native method
@@ -1313,7 +1309,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(%@, %@)", args[@"refId"], args[@"overlay"], args[@"index"]);
           }
       
           // invoke native method
@@ -1337,7 +1333,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(%@, %@)", args[@"refId"], args[@"index1"], args[@"index2"]);
           }
       
           // invoke native method
@@ -1363,7 +1359,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(%@, %@, %@)", args[@"refId"], args[@"index1"], args[@"index2"], args[@"level"]);
           }
       
           // invoke native method
@@ -1387,7 +1383,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlay(%@, %@)", args[@"refId"], args[@"overlay1"], args[@"overlay2"]);
           }
       
           // invoke native method
@@ -1409,7 +1405,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::rendererForOverlay(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::rendererForOverlay(%@)", args[@"refId"], args[@"overlay"]);
           }
       
           // invoke native method
@@ -1439,7 +1435,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(%@, %@)", args[@"refId"], args[@"overlays"], args[@"animated"]);
           }
       
           // invoke native method
@@ -1472,7 +1468,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(%@, %@, %@)", args[@"refId"], args[@"overlays"], args[@"insets"], args[@"animated"]);
           }
       
           // invoke native method
@@ -1496,7 +1492,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setIndoorMapControlOrigin(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setIndoorMapControlOrigin(%@)", args[@"refId"], args[@"origin"]);
           }
       
           // invoke native method
@@ -1518,7 +1514,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCurrentIndoorMapFloorIndex(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setCurrentIndoorMapFloorIndex(%@)", args[@"refId"], args[@"floorIndex"]);
           }
       
           // invoke native method
@@ -1539,7 +1535,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::clearIndoorMapCache(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::clearIndoorMapCache()", args[@"refId"]);
           }
       
           // invoke native method
@@ -1561,7 +1557,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleOptions(暂未实现参数打印)", args[@"refId"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleOptions(%@)", args[@"refId"], args[@"styleOptions"]);
           }
       
           // invoke native method

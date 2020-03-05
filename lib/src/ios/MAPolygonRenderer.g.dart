@@ -27,9 +27,9 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
   }
   
   static Future<List<MAPolygonRenderer>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAPolygonRenderer', {'length': length});
   
     final List<MAPolygonRenderer> typedResult = resultBatch.map((result) => MAPolygonRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -89,12 +89,15 @@ extension MAPolygonRenderer_Batch on List<MAPolygonRenderer> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAPolygonRenderer>> initWithPolygon_batch(List<MAPolygon> polygon) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonRenderer::initWithPolygon_batch', [for (int i = 0; i < this.length; i++) {"polygon": polygon[i].refId, "refId": this[i].refId}]);

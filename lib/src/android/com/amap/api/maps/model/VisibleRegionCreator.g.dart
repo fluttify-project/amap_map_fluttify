@@ -27,9 +27,9 @@ class com_amap_api_maps_model_VisibleRegionCreator extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_maps_model_VisibleRegionCreator>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_VisibleRegionCreator__', {'length': length});
   
     final List<com_amap_api_maps_model_VisibleRegionCreator> typedResult = resultBatch.map((result) => com_amap_api_maps_model_VisibleRegionCreator()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -54,6 +54,10 @@ class com_amap_api_maps_model_VisibleRegionCreator extends java_lang_Object  {
 
 extension com_amap_api_maps_model_VisibleRegionCreator_Batch on List<com_amap_api_maps_model_VisibleRegionCreator> {
   //region getters
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

@@ -35,9 +35,9 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
   }
   
   static Future<List<com_autonavi_amap_mapcore_Rectangle>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_Rectangle__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_Rectangle> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_Rectangle()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -46,9 +46,9 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
   }
   
   static Future<List<com_autonavi_amap_mapcore_Rectangle>> create_batch__float__float__float__float(List<double> var1, List<double> var2, List<double> var3, List<double> var4) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_Rectangle__float__float__float__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i]}]);
   
     final List<com_autonavi_amap_mapcore_Rectangle> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_Rectangle()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -236,12 +236,38 @@ extension com_autonavi_amap_mapcore_Rectangle_Batch on List<com_autonavi_amap_ma
   
   //endregion
 
+  //region setters
+  Future<void> set_left_batch(List<double> left) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::set_left_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "left": left[i]}]);
+  
+  
+  }
+  
+  Future<void> set_right_batch(List<double> right) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::set_right_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "right": right[i]}]);
+  
+  
+  }
+  
+  Future<void> set_bottom_batch(List<double> bottom) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::set_bottom_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "bottom": bottom[i]}]);
+  
+  
+  }
+  
+  Future<void> set_top_batch(List<double> top) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::set_top_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "top": top[i]}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<int>> getBeyond180Mode_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::getBeyond180Mode_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -258,10 +284,9 @@ extension com_autonavi_amap_mapcore_Rectangle_Batch on List<com_autonavi_amap_ma
   }
   
   Future<List<bool>> contains__int__int_batch(List<int> var1, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::contains__int__int_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -278,10 +303,9 @@ extension com_autonavi_amap_mapcore_Rectangle_Batch on List<com_autonavi_amap_ma
   }
   
   Future<List<bool>> contains__com_autonavi_amap_mapcore_IPoint_batch(List<com_autonavi_amap_mapcore_IPoint> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::contains__com_autonavi_amap_mapcore_IPoint_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -298,10 +322,9 @@ extension com_autonavi_amap_mapcore_Rectangle_Batch on List<com_autonavi_amap_ma
   }
   
   Future<List<bool>> isOverlap__int__int__int__int_batch(List<int> var1, List<int> var2, List<int> var3, List<int> var4) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Rectangle::isOverlap__int__int__int__int_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);

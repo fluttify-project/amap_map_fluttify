@@ -277,12 +277,15 @@ extension com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay_Batch on List<com_au
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> addItem_batch(List<Object> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::addItem_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -299,10 +302,9 @@ extension com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay_Batch on List<com_au
   }
   
   Future<void> resumeMarker_batch(List<android_graphics_Bitmap> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::resumeMarker_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -319,10 +321,9 @@ extension com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay_Batch on List<com_au
   }
   
   Future<void> AddOverlayTexture_batch(List<android_graphics_Bitmap> var1, List<int> var2, List<int> var3) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::AddOverlayTexture_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
@@ -339,10 +340,9 @@ extension com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay_Batch on List<com_au
   }
   
   Future<List<int>> dipToPixel_batch(List<android_content_Context> var1, List<int> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::dipToPixel_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "var2": var2[i], "refId": this[i].refId}]);
@@ -359,10 +359,9 @@ extension com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay_Batch on List<com_au
   }
   
   Future<void> setAttribute_batch(List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setAttribute_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].refId, "refId": this[i].refId}]);
@@ -379,10 +378,9 @@ extension com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay_Batch on List<com_au
   }
   
   Future<List<int>> setData_batch(List<Uint8List> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setData_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -399,10 +397,9 @@ extension com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay_Batch on List<com_au
   }
   
   Future<void> remove_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::remove_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -419,10 +416,9 @@ extension com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay_Batch on List<com_au
   }
   
   Future<void> setImageMode_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setImageMode_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -439,10 +435,9 @@ extension com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay_Batch on List<com_au
   }
   
   Future<List<int>> getTextureID_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::getTextureID_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_AMapNativeRenderer extends java_lang_Object  {
   }
   
   static Future<List<com_autonavi_amap_mapcore_AMapNativeRenderer>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapNativeRenderer__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_AMapNativeRenderer> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_AMapNativeRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -166,12 +166,15 @@ extension com_autonavi_amap_mapcore_AMapNativeRenderer_Batch on List<com_autonav
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> nativeDrawLineByMultiTextureID_batch(List<Float64List> var0, List<int> var1, List<double> var2, List<Int32List> var3, List<int> var4, List<Int32List> var5, List<int> var6, List<double> var7, List<Float64List> var8, List<int> var9, List<int> var10) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByMultiTextureID_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
@@ -188,10 +191,9 @@ extension com_autonavi_amap_mapcore_AMapNativeRenderer_Batch on List<com_autonav
   }
   
   Future<void> nativeDrawLineByMultiColor_batch(List<Float64List> var0, List<int> var1, List<double> var2, List<int> var3, List<Int32List> var4, List<int> var5, List<Int32List> var6, List<int> var7, List<Float64List> var8, List<int> var9, List<int> var10) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByMultiColor_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
@@ -208,10 +210,9 @@ extension com_autonavi_amap_mapcore_AMapNativeRenderer_Batch on List<com_autonav
   }
   
   Future<void> nativeDrawGradientColorLine_batch(List<Float64List> var0, List<int> var1, List<double> var2, List<Int32List> var3, List<int> var4, List<Int32List> var5, List<int> var6, List<int> var7, List<Float64List> var8, List<int> var9, List<int> var10) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawGradientColorLine_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
@@ -228,10 +229,9 @@ extension com_autonavi_amap_mapcore_AMapNativeRenderer_Batch on List<com_autonav
   }
   
   Future<void> nativeDrawLineInit_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineInit_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -248,10 +248,9 @@ extension com_autonavi_amap_mapcore_AMapNativeRenderer_Batch on List<com_autonav
   }
   
   Future<void> nativeDrawLineByTextureID_batch(List<Float64List> var0, List<int> var1, List<double> var2, List<int> var3, List<double> var4, List<double> var5, List<double> var6, List<double> var7, List<double> var8, List<bool> var9, List<bool> var10, List<bool> var11, List<Float64List> var12, List<int> var13, List<int> var14) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length || var10.length != var11.length || var11.length != var12.length || var12.length != var13.length || var13.length != var14.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByTextureID_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "var12": var12[i], "var13": var13[i], "var14": var14[i], "refId": this[i].refId}]);

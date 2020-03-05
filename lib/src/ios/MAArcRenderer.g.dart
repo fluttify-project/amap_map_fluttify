@@ -27,9 +27,9 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
   }
   
   static Future<List<MAArcRenderer>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAArcRenderer', {'length': length});
   
     final List<MAArcRenderer> typedResult = resultBatch.map((result) => MAArcRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -89,12 +89,15 @@ extension MAArcRenderer_Batch on List<MAArcRenderer> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAArcRenderer>> initWithArc_batch(List<MAArc> arc) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArcRenderer::initWithArc_batch', [for (int i = 0; i < this.length; i++) {"arc": arc[i].refId, "refId": this[i].refId}]);

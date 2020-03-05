@@ -27,9 +27,9 @@ class MAOfflineItemMunicipality extends MAOfflineCity  {
   }
   
   static Future<List<MAOfflineItemMunicipality>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineItemMunicipality', {'length': length});
   
     final List<MAOfflineItemMunicipality> typedResult = resultBatch.map((result) => MAOfflineItemMunicipality()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -54,6 +54,10 @@ class MAOfflineItemMunicipality extends MAOfflineCity  {
 
 extension MAOfflineItemMunicipality_Batch on List<MAOfflineItemMunicipality> {
   //region getters
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

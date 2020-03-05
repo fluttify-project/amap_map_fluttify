@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MAUserLocation extends MAAnimatedAnnotation  {
+class MAUserLocation extends MAAnimatedAnnotation with MAAnimatableAnnotation, MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MAUserLocation extends MAAnimatedAnnotation  {
   }
   
   static Future<List<MAUserLocation>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAUserLocation', {'length': length});
   
     final List<MAUserLocation> typedResult = resultBatch.map((result) => MAUserLocation()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -91,6 +91,10 @@ extension MAUserLocation_Batch on List<MAUserLocation> {
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

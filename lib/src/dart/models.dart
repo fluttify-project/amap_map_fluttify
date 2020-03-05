@@ -372,6 +372,7 @@ class Marker {
   Marker.ios(this._iosModel, this._annotationView, this._iosController);
 
   com_amap_api_maps_model_Marker _androidModel;
+
   MAPointAnnotation _iosModel;
   MAAnnotationView _annotationView;
   MAMapView _iosController;
@@ -441,7 +442,7 @@ class Marker {
           coord.longitude,
         );
         await _iosModel.set_coordinate(coordinate);
-        return _annotationView.set_annotation(_iosModel);
+        return _annotationView.set_annotation(_iosModel, viewChannel: false);
       },
     );
   }

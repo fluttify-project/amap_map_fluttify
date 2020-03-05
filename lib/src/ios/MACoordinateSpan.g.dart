@@ -27,9 +27,9 @@ class MACoordinateSpan extends NSObject  {
   }
   
   static Future<List<MACoordinateSpan>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACoordinateSpan', {'length': length});
   
     final List<MACoordinateSpan> typedResult = resultBatch.map((result) => MACoordinateSpan()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -88,6 +88,21 @@ extension MACoordinateSpan_Batch on List<MACoordinateSpan> {
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_latitudeDelta_batch(List<double> latitudeDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateSpan::set_latitudeDelta_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "latitudeDelta": latitudeDelta[i]}]);
+  
+  
+  }
+  
+  Future<void> set_longitudeDelta_batch(List<double> longitudeDelta) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateSpan::set_longitudeDelta_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "longitudeDelta": longitudeDelta[i]}]);
+  
+  
   }
   
   //endregion

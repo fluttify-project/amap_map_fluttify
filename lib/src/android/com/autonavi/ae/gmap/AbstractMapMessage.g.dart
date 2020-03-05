@@ -63,12 +63,15 @@ extension com_autonavi_ae_gmap_AbstractMapMessage_Batch on List<com_autonavi_ae_
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> getType_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.AbstractMapMessage::getType_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

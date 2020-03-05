@@ -27,9 +27,9 @@ class com_amap_api_maps_model_PolygonOptionsCreator extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_maps_model_PolygonOptionsCreator>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_PolygonOptionsCreator__', {'length': length});
   
     final List<com_amap_api_maps_model_PolygonOptionsCreator> typedResult = resultBatch.map((result) => com_amap_api_maps_model_PolygonOptionsCreator()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -54,6 +54,10 @@ class com_amap_api_maps_model_PolygonOptionsCreator extends java_lang_Object  {
 
 extension com_amap_api_maps_model_PolygonOptionsCreator_Batch on List<com_amap_api_maps_model_PolygonOptionsCreator> {
   //region getters
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

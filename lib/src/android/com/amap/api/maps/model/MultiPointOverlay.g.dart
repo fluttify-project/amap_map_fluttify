@@ -148,12 +148,15 @@ extension com_amap_api_maps_model_MultiPointOverlay_Batch on List<com_amap_api_m
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> setItems_batch(List<List<com_amap_api_maps_model_MultiPointItem>> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlay::setItems_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
@@ -170,10 +173,9 @@ extension com_amap_api_maps_model_MultiPointOverlay_Batch on List<com_amap_api_m
   }
   
   Future<void> setAnchor_batch(List<double> var1, List<double> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlay::setAnchor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -190,10 +192,9 @@ extension com_amap_api_maps_model_MultiPointOverlay_Batch on List<com_amap_api_m
   }
   
   Future<void> setEnable_batch(List<bool> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlay::setEnable_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -210,10 +211,9 @@ extension com_amap_api_maps_model_MultiPointOverlay_Batch on List<com_amap_api_m
   }
   
   Future<void> remove_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlay::remove_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -230,10 +230,9 @@ extension com_amap_api_maps_model_MultiPointOverlay_Batch on List<com_amap_api_m
   }
   
   Future<void> destroy_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlay::destroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

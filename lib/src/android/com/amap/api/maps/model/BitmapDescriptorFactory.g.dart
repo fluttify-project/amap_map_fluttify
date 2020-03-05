@@ -27,9 +27,9 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   }
   
   static Future<List<com_amap_api_maps_model_BitmapDescriptorFactory>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_BitmapDescriptorFactory__', {'length': length});
   
     final List<com_amap_api_maps_model_BitmapDescriptorFactory> typedResult = resultBatch.map((result) => com_amap_api_maps_model_BitmapDescriptorFactory()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -254,12 +254,15 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromResource_batch(List<int> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromResource_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -276,10 +279,9 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
   }
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromView_batch(List<android_view_View> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromView_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "refId": this[i].refId}]);
@@ -296,10 +298,9 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
   }
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromPath_batch(List<String> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromPath_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -316,10 +317,9 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
   }
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromAsset_batch(List<String> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromAsset_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -336,10 +336,9 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
   }
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromFile_batch(List<String> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromFile_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -356,10 +355,9 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
   }
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> defaultMarker_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -376,10 +374,9 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
   }
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> defaultMarker__double_batch(List<double> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker__double_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
@@ -396,10 +393,9 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
   }
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromBitmap_batch(List<android_graphics_Bitmap> var0) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromBitmap_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "refId": this[i].refId}]);
@@ -416,10 +412,9 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
   }
   
   Future<List<android_content_Context>> getContext_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::getContext_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

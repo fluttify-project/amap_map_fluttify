@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_animation_GLAlphaAnimation extends com_autonavi_
   }
   
   static Future<List<com_autonavi_amap_mapcore_animation_GLAlphaAnimation>> create_batch__float__float(List<double> var1, List<double> var2) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i]}]);
   
     final List<com_autonavi_amap_mapcore_animation_GLAlphaAnimation> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_animation_GLAlphaAnimation()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -107,6 +107,27 @@ extension com_autonavi_amap_mapcore_animation_GLAlphaAnimation_Batch on List<com
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_mFromAlpha_batch(List<double> mFromAlpha) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mFromAlpha_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mFromAlpha": mFromAlpha[i]}]);
+  
+  
+  }
+  
+  Future<void> set_mToAlpha_batch(List<double> mToAlpha) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mToAlpha_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mToAlpha": mToAlpha[i]}]);
+  
+  
+  }
+  
+  Future<void> set_mCurAlpha_batch(List<double> mCurAlpha) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mCurAlpha_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCurAlpha": mCurAlpha[i]}]);
+  
+  
   }
   
   //endregion

@@ -27,9 +27,9 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   }
   
   static Future<List<MAGroundOverlayRenderer>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAGroundOverlayRenderer', {'length': length});
   
     final List<MAGroundOverlayRenderer> typedResult = resultBatch.map((result) => MAGroundOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -89,12 +89,15 @@ extension MAGroundOverlayRenderer_Batch on List<MAGroundOverlayRenderer> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAGroundOverlayRenderer>> initWithGroundOverlay_batch(List<MAGroundOverlay> groundOverlay) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlayRenderer::initWithGroundOverlay_batch', [for (int i = 0; i < this.length; i++) {"groundOverlay": groundOverlay[i].refId, "refId": this[i].refId}]);

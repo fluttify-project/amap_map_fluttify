@@ -27,9 +27,9 @@ class MACoordinateRegion extends NSObject  {
   }
   
   static Future<List<MACoordinateRegion>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACoordinateRegion', {'length': length});
   
     final List<MACoordinateRegion> typedResult = resultBatch.map((result) => MACoordinateRegion()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -88,6 +88,21 @@ extension MACoordinateRegion_Batch on List<MACoordinateRegion> {
     final typedResult = (resultBatch as List).map((result) => MACoordinateSpan()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_center_batch(List<CLLocationCoordinate2D> center) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegion::set_center_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "center": center[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_span_batch(List<MACoordinateSpan> span) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegion::set_span_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "span": span[i].refId}]);
+  
+  
   }
   
   //endregion

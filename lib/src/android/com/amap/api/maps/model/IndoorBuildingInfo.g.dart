@@ -27,9 +27,9 @@ class com_amap_api_maps_model_IndoorBuildingInfo extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_maps_model_IndoorBuildingInfo>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_IndoorBuildingInfo__', {'length': length});
   
     final List<com_amap_api_maps_model_IndoorBuildingInfo> typedResult = resultBatch.map((result) => com_amap_api_maps_model_IndoorBuildingInfo()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -145,6 +145,39 @@ extension com_amap_api_maps_model_IndoorBuildingInfo_Batch on List<com_amap_api_
     final typedResult = (resultBatch as List).map((result) => (result as List).cast<String>()).toList();
   
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_activeFloorName_batch(List<String> activeFloorName) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorName_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "activeFloorName": activeFloorName[i]}]);
+  
+  
+  }
+  
+  Future<void> set_activeFloorIndex_batch(List<int> activeFloorIndex) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorIndex_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "activeFloorIndex": activeFloorIndex[i]}]);
+  
+  
+  }
+  
+  Future<void> set_poiid_batch(List<String> poiid) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_poiid_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "poiid": poiid[i]}]);
+  
+  
+  }
+  
+  Future<void> set_floor_indexs_batch(List<Int32List> floor_indexs) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_floor_indexs_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "floor_indexs": floor_indexs[i]}]);
+  
+  
+  }
+  
+  Future<void> set_floor_names_batch(List<List<String>> floor_names) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_floor_names_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "floor_names": floor_names[i]}]);
+  
+  
   }
   
   //endregion

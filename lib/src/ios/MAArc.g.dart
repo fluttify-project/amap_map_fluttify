@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MAArc extends MAShape with MAAnnotation, MAOverlay {
+class MAArc extends MAShape with MAOverlay, MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MAArc extends MAShape with MAAnnotation, MAOverlay {
   }
   
   static Future<List<MAArc>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAArc', {'length': length});
   
     final List<MAArc> typedResult = resultBatch.map((result) => MAArc()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -145,12 +145,32 @@ extension MAArc_Batch on List<MAArc> {
   
   //endregion
 
+  //region setters
+  Future<void> set_startCoordinate_batch(List<CLLocationCoordinate2D> startCoordinate) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::set_startCoordinate_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "startCoordinate": startCoordinate[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_passedCoordinate_batch(List<CLLocationCoordinate2D> passedCoordinate) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::set_passedCoordinate_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "passedCoordinate": passedCoordinate[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_endCoordinate_batch(List<CLLocationCoordinate2D> endCoordinate) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::set_endCoordinate_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "endCoordinate": endCoordinate[i].refId}]);
+  
+  
+  }
+  
+  //endregion
+
   //region methods
   Future<List<MAArc>> arcWithStartCoordinatePassedCoordinateendCoordinate_batch(List<CLLocationCoordinate2D> startCoordinate, List<CLLocationCoordinate2D> passedCoordinate, List<CLLocationCoordinate2D> endCoordinate) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (startCoordinate.length != passedCoordinate.length || passedCoordinate.length != endCoordinate.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::arcWithStartCoordinatePassedCoordinateendCoordinate_batch', [for (int i = 0; i < this.length; i++) {"startCoordinate": startCoordinate[i].refId, "passedCoordinate": passedCoordinate[i].refId, "endCoordinate": endCoordinate[i].refId, "refId": this[i].refId}]);

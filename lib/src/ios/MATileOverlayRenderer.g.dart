@@ -27,9 +27,9 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   }
   
   static Future<List<MATileOverlayRenderer>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATileOverlayRenderer', {'length': length});
   
     final List<MATileOverlayRenderer> typedResult = resultBatch.map((result) => MATileOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -111,12 +111,15 @@ extension MATileOverlayRenderer_Batch on List<MATileOverlayRenderer> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MATileOverlayRenderer>> initWithTileOverlay_batch(List<MATileOverlay> tileOverlay) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::initWithTileOverlay_batch', [for (int i = 0; i < this.length; i++) {"tileOverlay": tileOverlay[i].refId, "refId": this[i].refId}]);
@@ -133,10 +136,9 @@ extension MATileOverlayRenderer_Batch on List<MATileOverlayRenderer> {
   }
   
   Future<void> reloadData_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayRenderer::reloadData_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

@@ -27,9 +27,9 @@ class MAMultiPointItem extends NSObject with MAAnnotation, NSCopying {
   }
   
   static Future<List<MAMultiPointItem>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiPointItem', {'length': length});
   
     final List<MAMultiPointItem> typedResult = resultBatch.map((result) => MAMultiPointItem()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -126,6 +126,33 @@ extension MAMultiPointItem_Batch on List<MAMultiPointItem> {
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_coordinate_batch(List<CLLocationCoordinate2D> coordinate) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointItem::set_coordinate_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "coordinate": coordinate[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_customID_batch(List<String> customID) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointItem::set_customID_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "customID": customID[i]}]);
+  
+  
+  }
+  
+  Future<void> set_title_batch(List<String> title) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointItem::set_title_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "title": title[i]}]);
+  
+  
+  }
+  
+  Future<void> set_subtitle_batch(List<String> subtitle) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointItem::set_subtitle_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "subtitle": subtitle[i]}]);
+  
+  
   }
   
   //endregion

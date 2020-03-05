@@ -35,9 +35,9 @@ class com_amap_api_maps_model_WeightedLatLng extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_maps_model_WeightedLatLng>> create_batch__com_amap_api_maps_model_LatLng__double(List<com_amap_api_maps_model_LatLng> var1, List<double> var2) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId, "var2": var2[i]}]);
   
     final List<com_amap_api_maps_model_WeightedLatLng> typedResult = resultBatch.map((result) => com_amap_api_maps_model_WeightedLatLng()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -46,9 +46,9 @@ class com_amap_api_maps_model_WeightedLatLng extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_maps_model_WeightedLatLng>> create_batch__com_amap_api_maps_model_LatLng(List<com_amap_api_maps_model_LatLng> var1) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
   
     final List<com_amap_api_maps_model_WeightedLatLng> typedResult = resultBatch.map((result) => com_amap_api_maps_model_WeightedLatLng()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -97,6 +97,10 @@ extension com_amap_api_maps_model_WeightedLatLng_Batch on List<com_amap_api_maps
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

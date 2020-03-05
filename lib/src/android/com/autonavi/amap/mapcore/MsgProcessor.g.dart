@@ -27,9 +27,9 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
   }
   
   static Future<List<com_autonavi_amap_mapcore_MsgProcessor>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_MsgProcessor__', {'length': length});
   
     final List<com_autonavi_amap_mapcore_MsgProcessor> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_MsgProcessor()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -144,12 +144,15 @@ extension com_autonavi_amap_mapcore_MsgProcessor_Batch on List<com_autonavi_amap
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<void> nativeInitMsg_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeInitMsg_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -166,10 +169,9 @@ extension com_autonavi_amap_mapcore_MsgProcessor_Batch on List<com_autonavi_amap
   }
   
   Future<void> nativeInit_batch(List<int> var1, List<String> var2) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (var1.length != var2.length) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeInit_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
@@ -186,10 +188,9 @@ extension com_autonavi_amap_mapcore_MsgProcessor_Batch on List<com_autonavi_amap
   }
   
   Future<void> nativeMsgProcessor_batch(List<String> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeMsgProcessor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -206,10 +207,9 @@ extension com_autonavi_amap_mapcore_MsgProcessor_Batch on List<com_autonavi_amap
   }
   
   Future<void> nativeCall_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MsgProcessor::nativeCall_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

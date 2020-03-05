@@ -20,22 +20,8 @@ typedef Future<void> OnTraceFailed(int errorCode, String errorInfo);
 /// 地图控制类
 class AmapController with WidgetsBindingObserver, _Private {
   /// Android构造器
-  AmapController.android(
-    this.androidController,
-    this._state,
-    _OnMapCreated onMapCreated,
-  ) {
+  AmapController.android(this.androidController, this._state) {
     WidgetsBinding.instance.addObserver(this);
-    androidController.getMap().then((map) {
-      map.setOnMapLoadedListener(
-        _androidMapDelegate
-          .._onMapLoaded = () async {
-            if (onMapCreated != null) {
-              await onMapCreated(this);
-            }
-          },
-      );
-    });
   }
 
   /// iOS构造器
@@ -105,7 +91,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// [strokeColor]精度圈边框颜色, [strokeWidth]精度圈边框宽度, [fillColor]精度圈填充颜色
   Future<void> showMyLocation(
     bool show, {
-    MyLocationType myLocationType = MyLocationType.Locate,
+    MyLocationType myLocationType = MyLocationType.Follow,
     Uri iconUri,
     ImageConfiguration imageConfig,
     Color strokeColor,
@@ -129,7 +115,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           switch (myLocationType) {
             case MyLocationType.Locate:
               await locationStyle.myLocationType(
-                  com_amap_api_maps_model_MyLocationStyle.LOCATION_TYPE_LOCATE);
+                  com_amap_api_maps_model_MyLocationStyle.LOCATION_TYPE_SHOW);
               break;
             case MyLocationType.Follow:
               await locationStyle.myLocationType(
@@ -184,6 +170,11 @@ class AmapController with WidgetsBindingObserver, _Private {
           } else if (myLocationType == MyLocationType.Rotate) {
             await iosController.setUserTrackingModeAnimated(
               MAUserTrackingMode.MAUserTrackingModeFollowWithHeading,
+              true,
+            );
+          } else {
+            await iosController.setUserTrackingModeAnimated(
+              MAUserTrackingMode.MAUserTrackingModeNone,
               true,
             );
           }
@@ -1244,17 +1235,21 @@ class AmapController with WidgetsBindingObserver, _Private {
   ///
   /// 可配置参数详见[PolylineOption]
   Future<Polyline> addPolyline(PolylineOption option) {
+    assert(option != null);
+
+    final latitudeBatch = option.latLngList.map((e) => e.latitude).toList();
+    final longitudeBatch = option.latLngList.map((e) => e.longitude).toList();
+
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
 
         // 构造折线点
-        List<com_amap_api_maps_model_LatLng> latLngList = [];
-        for (final point in option.latLngList) {
-          final latLng = await com_amap_api_maps_model_LatLng
-              .create__double__double(point.latitude, point.longitude);
-          latLngList.add(latLng);
-        }
+        List<com_amap_api_maps_model_LatLng> latLngList =
+            await com_amap_api_maps_model_LatLng.create_batch__double__double(
+          latitudeBatch,
+          longitudeBatch,
+        );
 
         // 构造折线参数
         final polylineOptions =
@@ -1325,12 +1320,9 @@ class AmapController with WidgetsBindingObserver, _Private {
         await iosController.set_delegate(_iosMapDelegate);
 
         // 构造折线点
-        List<CLLocationCoordinate2D> latLngList = [];
-        for (final point in option.latLngList) {
-          final latLng = await CLLocationCoordinate2D.create(
-              point.latitude, point.longitude);
-          latLngList.add(latLng);
-        }
+        List<CLLocationCoordinate2D> latLngList =
+            await CLLocationCoordinate2D.create_batch(
+                latitudeBatch, longitudeBatch);
 
         // 构造折线参数
         final polyline = await MAPolyline.polylineWithCoordinatesCount(
@@ -1392,17 +1384,19 @@ class AmapController with WidgetsBindingObserver, _Private {
   Future<Polygon> addPolygon(PolygonOption option) {
     assert(option != null, 'option不能为null');
 
+    final latitudeBatch = option.latLngList.map((e) => e.latitude).toList();
+    final longitudeBatch = option.latLngList.map((e) => e.longitude).toList();
+
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
 
         // 构造折线点
-        List<com_amap_api_maps_model_LatLng> latLngList = [];
-        for (final point in option.latLngList) {
-          final latLng = await com_amap_api_maps_model_LatLng
-              .create__double__double(point.latitude, point.longitude);
-          latLngList.add(latLng);
-        }
+        List<com_amap_api_maps_model_LatLng> latLngList =
+            await com_amap_api_maps_model_LatLng.create_batch__double__double(
+          latitudeBatch,
+          longitudeBatch,
+        );
 
         // 构造参数
         final polygonOptions =
@@ -1439,12 +1433,9 @@ class AmapController with WidgetsBindingObserver, _Private {
         await iosController.set_delegate(_iosMapDelegate);
 
         // 构造折线点
-        List<CLLocationCoordinate2D> latLngList = [];
-        for (final point in option.latLngList) {
-          final latLng = await CLLocationCoordinate2D.create(
-              point.latitude, point.longitude);
-          latLngList.add(latLng);
-        }
+        List<CLLocationCoordinate2D> latLngList =
+            await CLLocationCoordinate2D.create_batch(
+                latitudeBatch, longitudeBatch);
 
         // 构造折线参数
         final polygon = await MAPolygon.polygonWithCoordinatesCount(
@@ -1938,6 +1929,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 添加热力图
   Future<Heatmap> addHeatmapTile(HeatmapTileOption option) async {
     assert(option != null);
     return platform(
@@ -2034,9 +2026,9 @@ class AmapController with WidgetsBindingObserver, _Private {
               .._onTraceFailed = onTraceFailed);
       },
       ios: (pool) async {
-//        final traceManager = await MATraceManager.create__();
-//
-//        traceManager.queryProcessedTraceWith();
+        final traceManager = await MATraceManager.create__();
+
+//        traceManager.queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback(locations, type, (index, points) { }, (points, distance) { }, (errorCode, errorDesc) { });
       },
     );
   }

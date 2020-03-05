@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class MAPointAnnotation extends MAShape  {
+class MAPointAnnotation extends MAShape with MAAnnotation {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class MAPointAnnotation extends MAShape  {
   }
   
   static Future<List<MAPointAnnotation>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAPointAnnotation', {'length': length});
   
     final List<MAPointAnnotation> typedResult = resultBatch.map((result) => MAPointAnnotation()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -107,6 +107,27 @@ extension MAPointAnnotation_Batch on List<MAPointAnnotation> {
     final typedResult = (resultBatch as List).map((result) => CGPoint()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_coordinate_batch(List<CLLocationCoordinate2D> coordinate) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_coordinate_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "coordinate": coordinate[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_lockedToScreen_batch(List<bool> lockedToScreen) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_lockedToScreen_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lockedToScreen": lockedToScreen[i]}]);
+  
+  
+  }
+  
+  Future<void> set_lockedScreenPoint_batch(List<CGPoint> lockedScreenPoint) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_lockedScreenPoint_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lockedScreenPoint": lockedScreenPoint[i].refId}]);
+  
+  
   }
   
   //endregion

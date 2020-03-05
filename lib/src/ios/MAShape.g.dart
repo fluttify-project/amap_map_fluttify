@@ -27,9 +27,9 @@ class MAShape extends NSObject with MAAnnotation {
   }
   
   static Future<List<MAShape>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAShape', {'length': length});
   
     final List<MAShape> typedResult = resultBatch.map((result) => MAShape()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -88,6 +88,21 @@ extension MAShape_Batch on List<MAShape> {
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_title_batch(List<String> title) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAShape::set_title_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "title": title[i]}]);
+  
+  
+  }
+  
+  Future<void> set_subtitle_batch(List<String> subtitle) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAShape::set_subtitle_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "subtitle": subtitle[i]}]);
+  
+  
   }
   
   //endregion

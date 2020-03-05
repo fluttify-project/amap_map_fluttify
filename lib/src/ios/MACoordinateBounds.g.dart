@@ -27,9 +27,9 @@ class MACoordinateBounds extends NSObject  {
   }
   
   static Future<List<MACoordinateBounds>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACoordinateBounds', {'length': length});
   
     final List<MACoordinateBounds> typedResult = resultBatch.map((result) => MACoordinateBounds()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -88,6 +88,21 @@ extension MACoordinateBounds_Batch on List<MACoordinateBounds> {
     final typedResult = (resultBatch as List).map((result) => CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_northEast_batch(List<CLLocationCoordinate2D> northEast) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateBounds::set_northEast_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "northEast": northEast[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_southWest_batch(List<CLLocationCoordinate2D> southWest) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateBounds::set_southWest_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "southWest": southWest[i].refId}]);
+  
+  
   }
   
   //endregion

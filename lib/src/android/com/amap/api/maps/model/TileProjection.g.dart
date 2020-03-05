@@ -27,9 +27,9 @@ class com_amap_api_maps_model_TileProjection extends java_lang_Object with andro
   }
   
   static Future<List<com_amap_api_maps_model_TileProjection>> create_batch__int__int__int__int__int__int(List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<int> var5, List<int> var6) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i]}]);
   
     final List<com_amap_api_maps_model_TileProjection> typedResult = resultBatch.map((result) => com_amap_api_maps_model_TileProjection()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -130,6 +130,10 @@ extension com_amap_api_maps_model_TileProjection_Batch on List<com_amap_api_maps
   
     return typedResult;
   }
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

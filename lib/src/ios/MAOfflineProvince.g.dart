@@ -27,9 +27,9 @@ class MAOfflineProvince extends MAOfflineItem  {
   }
   
   static Future<List<MAOfflineProvince>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineProvince', {'length': length});
   
     final List<MAOfflineProvince> typedResult = resultBatch.map((result) => MAOfflineProvince()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -65,6 +65,10 @@ extension MAOfflineProvince_Batch on List<MAOfflineProvince> {
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

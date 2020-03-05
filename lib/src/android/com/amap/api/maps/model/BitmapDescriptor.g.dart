@@ -148,12 +148,15 @@ extension com_amap_api_maps_model_BitmapDescriptor_Batch on List<com_amap_api_ma
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<String>> getId_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptor::getId_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -170,10 +173,9 @@ extension com_amap_api_maps_model_BitmapDescriptor_Batch on List<com_amap_api_ma
   }
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> clone_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptor::clone_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -190,10 +192,9 @@ extension com_amap_api_maps_model_BitmapDescriptor_Batch on List<com_amap_api_ma
   }
   
   Future<List<android_graphics_Bitmap>> getBitmap_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptor::getBitmap_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -210,10 +211,9 @@ extension com_amap_api_maps_model_BitmapDescriptor_Batch on List<com_amap_api_ma
   }
   
   Future<List<int>> getWidth_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptor::getWidth_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -230,10 +230,9 @@ extension com_amap_api_maps_model_BitmapDescriptor_Batch on List<com_amap_api_ma
   }
   
   Future<List<int>> getHeight_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptor::getHeight_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

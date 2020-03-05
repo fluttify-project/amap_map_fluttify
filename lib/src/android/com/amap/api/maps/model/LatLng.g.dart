@@ -35,9 +35,9 @@ class com_amap_api_maps_model_LatLng extends java_lang_Object with android_os_Pa
   }
   
   static Future<List<com_amap_api_maps_model_LatLng>> create_batch__double__double(List<double> var1, List<double> var3) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var3.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_LatLng__double__double', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var3": var3[i]}]);
   
     final List<com_amap_api_maps_model_LatLng> typedResult = resultBatch.map((result) => com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -46,9 +46,9 @@ class com_amap_api_maps_model_LatLng extends java_lang_Object with android_os_Pa
   }
   
   static Future<List<com_amap_api_maps_model_LatLng>> create_batch__double__double__boolean(List<double> var1, List<double> var3, List<bool> var5) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (var1.length != var3.length || var3.length != var5.length) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_LatLng__double__double__boolean', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var3": var3[i], "var5": var5[i]}]);
   
     final List<com_amap_api_maps_model_LatLng> typedResult = resultBatch.map((result) => com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -121,12 +121,15 @@ extension com_amap_api_maps_model_LatLng_Batch on List<com_amap_api_maps_model_L
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<com_amap_api_maps_model_LatLng>> clone_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLng::clone_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

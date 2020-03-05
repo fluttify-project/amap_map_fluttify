@@ -27,9 +27,9 @@ class com_amap_api_maps_model_BaseOverlay extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_maps_model_BaseOverlay>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_BaseOverlay__', {'length': length});
   
     final List<com_amap_api_maps_model_BaseOverlay> typedResult = resultBatch.map((result) => com_amap_api_maps_model_BaseOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -54,6 +54,10 @@ class com_amap_api_maps_model_BaseOverlay extends java_lang_Object  {
 
 extension com_amap_api_maps_model_BaseOverlay_Batch on List<com_amap_api_maps_model_BaseOverlay> {
   //region getters
+  
+  //endregion
+
+  //region setters
   
   //endregion
 

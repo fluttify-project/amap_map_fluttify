@@ -27,9 +27,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   }
   
   static Future<List<com_amap_api_maps_model_MyTrafficStyle>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_MyTrafficStyle__', {'length': length});
   
     final List<com_amap_api_maps_model_MyTrafficStyle> typedResult = resultBatch.map((result) => com_amap_api_maps_model_MyTrafficStyle()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -320,12 +320,15 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<int>> getSmoothColor_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::getSmoothColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -342,10 +345,9 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   }
   
   Future<void> setSmoothColor_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::setSmoothColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -362,10 +364,9 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   }
   
   Future<List<int>> getSlowColor_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::getSlowColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -382,10 +383,9 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   }
   
   Future<void> setSlowColor_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::setSlowColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -402,10 +402,9 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   }
   
   Future<List<int>> getCongestedColor_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::getCongestedColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -422,10 +421,9 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   }
   
   Future<void> setCongestedColor_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::setCongestedColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -442,10 +440,9 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   }
   
   Future<List<int>> getSeriousCongestedColor_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::getSeriousCongestedColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -462,10 +459,9 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   }
   
   Future<void> setSeriousCongestedColor_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::setSeriousCongestedColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -482,10 +478,9 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   }
   
   Future<List<double>> getRatio_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::getRatio_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -502,10 +497,9 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   }
   
   Future<void> setRatio_batch(List<double> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::setRatio_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -522,10 +516,9 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   }
   
   Future<List<int>> getTrafficRoadBackgroundColor_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::getTrafficRoadBackgroundColor_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -542,10 +535,9 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   }
   
   Future<void> setTrafficRoadBackgroundColor_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyTrafficStyle::setTrafficRoadBackgroundColor_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);

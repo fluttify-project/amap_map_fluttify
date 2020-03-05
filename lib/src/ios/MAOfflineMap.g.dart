@@ -27,9 +27,9 @@ class MAOfflineMap extends NSObject  {
   }
   
   static Future<List<MAOfflineMap>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineMap', {'length': length});
   
     final List<MAOfflineMap> typedResult = resultBatch.map((result) => MAOfflineMap()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -387,12 +387,15 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<MAOfflineMap>> sharedOfflineMap_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::sharedOfflineMap_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -409,10 +412,9 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
   }
   
   Future<List<bool>> isDownloadingForItem_batch(List<MAOfflineItem> item) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::isDownloadingForItem_batch', [for (int i = 0; i < this.length; i++) {"item": item[i].refId, "refId": this[i].refId}]);
@@ -429,10 +431,9 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
   }
   
   Future<List<bool>> pauseItem_batch(List<MAOfflineItem> item) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::pauseItem_batch', [for (int i = 0; i < this.length; i++) {"item": item[i].refId, "refId": this[i].refId}]);
@@ -449,10 +450,9 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
   }
   
   Future<void> deleteItem_batch(List<MAOfflineItem> item) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::deleteItem_batch', [for (int i = 0; i < this.length; i++) {"item": item[i].refId, "refId": this[i].refId}]);
@@ -469,10 +469,9 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
   }
   
   Future<void> cancelAll_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::cancelAll_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -489,10 +488,9 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
   }
   
   Future<void> clearDisk_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::clearDisk_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);

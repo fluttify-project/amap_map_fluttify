@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offlinemap_City  {
+class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offlinemap_City with android_os_Parcelable {
   //region constants
   
   //endregion
@@ -27,9 +27,9 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offl
   }
   
   static Future<List<com_amap_api_maps_offlinemap_OfflineMapCity>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapCity__', {'length': length});
   
     final List<com_amap_api_maps_offlinemap_OfflineMapCity> typedResult = resultBatch.map((result) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -276,12 +276,15 @@ extension com_amap_api_maps_offlinemap_OfflineMapCity_Batch on List<com_amap_api
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<String>> getUrl_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::getUrl_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -298,10 +301,9 @@ extension com_amap_api_maps_offlinemap_OfflineMapCity_Batch on List<com_amap_api
   }
   
   Future<void> setUrl_batch(List<String> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::setUrl_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -318,10 +320,9 @@ extension com_amap_api_maps_offlinemap_OfflineMapCity_Batch on List<com_amap_api
   }
   
   Future<List<int>> getSize_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::getSize_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -338,10 +339,9 @@ extension com_amap_api_maps_offlinemap_OfflineMapCity_Batch on List<com_amap_api
   }
   
   Future<void> setSize_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::setSize_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -358,10 +358,9 @@ extension com_amap_api_maps_offlinemap_OfflineMapCity_Batch on List<com_amap_api
   }
   
   Future<List<int>> getState_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::getState_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -378,10 +377,9 @@ extension com_amap_api_maps_offlinemap_OfflineMapCity_Batch on List<com_amap_api
   }
   
   Future<void> setState_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::setState_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -398,10 +396,9 @@ extension com_amap_api_maps_offlinemap_OfflineMapCity_Batch on List<com_amap_api
   }
   
   Future<List<String>> getVersion_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::getVersion_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -418,10 +415,9 @@ extension com_amap_api_maps_offlinemap_OfflineMapCity_Batch on List<com_amap_api
   }
   
   Future<void> setVersion_batch(List<String> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::setVersion_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);
@@ -438,10 +434,9 @@ extension com_amap_api_maps_offlinemap_OfflineMapCity_Batch on List<com_amap_api
   }
   
   Future<List<int>> getcompleteCode_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::getcompleteCode_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -458,10 +453,9 @@ extension com_amap_api_maps_offlinemap_OfflineMapCity_Batch on List<com_amap_api
   }
   
   Future<void> setCompleteCode_batch(List<int> var1) async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapCity::setCompleteCode_batch', [for (int i = 0; i < this.length; i++) {"var1": var1[i], "refId": this[i].refId}]);

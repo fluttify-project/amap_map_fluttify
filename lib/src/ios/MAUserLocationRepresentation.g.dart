@@ -27,9 +27,9 @@ class MAUserLocationRepresentation extends NSObject  {
   }
   
   static Future<List<MAUserLocationRepresentation>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAUserLocationRepresentation', {'length': length});
   
     final List<MAUserLocationRepresentation> typedResult = resultBatch.map((result) => MAUserLocationRepresentation()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -221,6 +221,63 @@ extension MAUserLocationRepresentation_Batch on List<MAUserLocationRepresentatio
     final typedResult = (resultBatch as List).map((result) => UIImage()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
+  }
+  
+  //endregion
+
+  //region setters
+  Future<void> set_showsAccuracyRing_batch(List<bool> showsAccuracyRing) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_showsAccuracyRing_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsAccuracyRing": showsAccuracyRing[i]}]);
+  
+  
+  }
+  
+  Future<void> set_showsHeadingIndicator_batch(List<bool> showsHeadingIndicator) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_showsHeadingIndicator_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsHeadingIndicator": showsHeadingIndicator[i]}]);
+  
+  
+  }
+  
+  Future<void> set_fillColor_batch(List<UIColor> fillColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_fillColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fillColor": fillColor[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_strokeColor_batch(List<UIColor> strokeColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_strokeColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strokeColor": strokeColor[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_lineWidth_batch(List<double> lineWidth) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_lineWidth_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lineWidth": lineWidth[i]}]);
+  
+  
+  }
+  
+  Future<void> set_locationDotBgColor_batch(List<UIColor> locationDotBgColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_locationDotBgColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "locationDotBgColor": locationDotBgColor[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_locationDotFillColor_batch(List<UIColor> locationDotFillColor) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_locationDotFillColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "locationDotFillColor": locationDotFillColor[i].refId}]);
+  
+  
+  }
+  
+  Future<void> set_enablePulseAnnimation_batch(List<bool> enablePulseAnnimation) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_enablePulseAnnimation_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "enablePulseAnnimation": enablePulseAnnimation[i]}]);
+  
+  
+  }
+  
+  Future<void> set_image_batch(List<UIImage> image) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_image_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "image": image[i].refId}]);
+  
+  
   }
   
   //endregion

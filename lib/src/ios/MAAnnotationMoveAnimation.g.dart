@@ -27,9 +27,9 @@ class MAAnnotationMoveAnimation extends NSObject  {
   }
   
   static Future<List<MAAnnotationMoveAnimation>> create_batch__(int length) async {
-    // if (#__check_param_size__#) {
-    //   return Future.error('all args must has same length!');
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAAnnotationMoveAnimation', {'length': length});
   
     final List<MAAnnotationMoveAnimation> typedResult = resultBatch.map((result) => MAAnnotationMoveAnimation()..refId = result..tag = 'amap_map_fluttify').toList();
@@ -232,12 +232,15 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
   
   //endregion
 
+  //region setters
+  
+  //endregion
+
   //region methods
   Future<List<String>> name_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::name_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -254,10 +257,9 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
   }
   
   Future<List<CLLocationCoordinate2D>> coordinates_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::coordinates_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -274,10 +276,9 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
   }
   
   Future<List<int>> count_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::count_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -294,10 +295,9 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
   }
   
   Future<List<double>> duration_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::duration_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -314,10 +314,9 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
   }
   
   Future<List<double>> elapsedTime_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::elapsedTime_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -334,10 +333,9 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
   }
   
   Future<void> cancel_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::cancel_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -354,10 +352,9 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
   }
   
   Future<List<bool>> isCancelled_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::isCancelled_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
@@ -374,10 +371,9 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
   }
   
   Future<List<int>> passedPointCount_batch() async {
-    // print log
-    // if (fluttifyLogEnabled) {
-    //   #__log__#
-    // }
+    if (false) {
+      return Future.error('all args must has same length!');
+    }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationMoveAnimation::passedPointCount_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
