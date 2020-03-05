@@ -65,7 +65,7 @@ public class SubHandler7 {
             put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::setCurTileIDs", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int[] var2 = (int[]) ((Map<String, Object>) args).get("var2");
             
@@ -98,7 +98,7 @@ public class SubHandler7 {
             put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeClearBuildingOptions", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -129,7 +129,7 @@ public class SubHandler7 {
             put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::addBuildingOptions", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
                 // ref arg
                 com.amap.api.maps.model.BuildingOverlayOptions var2 = (com.amap.api.maps.model.BuildingOverlayOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
             
@@ -162,7 +162,7 @@ public class SubHandler7 {
             put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::render", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -205,7 +205,7 @@ public class SubHandler7 {
             put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeDestory", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -236,9 +236,9 @@ public class SubHandler7 {
             put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeSetGLShaderManager", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
             

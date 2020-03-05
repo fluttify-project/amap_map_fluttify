@@ -2583,7 +2583,7 @@ public class SubHandler14 {
                 // jsonable arg
                 int var5 = (int) ((Map<String, Object>) args).get("var5");
                 // jsonable arg
-                long var6 = (long) ((Map<String, Object>) args).get("var6");
+                int var6 = (int) ((Map<String, Object>) args).get("var6");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -3932,7 +3932,7 @@ public class SubHandler14 {
             put("com.amap.api.trace.LBSTraceBase::setLocationInterval", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -4579,7 +4579,7 @@ public class SubHandler14 {
             put("com.amap.api.trace.TraceLocation::setTime", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -5330,7 +5330,7 @@ public class SubHandler14 {
                     // jsonable arg
                     int var1 = (int) ((Map<String, Object>) args).get("var1");
                     // jsonable arg
-                    long var2 = (long) ((Map<String, Object>) args).get("var2");
+                    int var2 = (int) ((Map<String, Object>) args).get("var2");
                     // jsonable arg
                     byte[] var4 = (byte[]) ((Map<String, Object>) args).get("var4");
                     // jsonable arg
@@ -5371,7 +5371,7 @@ public class SubHandler14 {
                     // jsonable arg
                     int var1 = (int) ((Map<String, Object>) args).get("var1");
                     // jsonable arg
-                    long var2 = (long) ((Map<String, Object>) args).get("var2");
+                    int var2 = (int) ((Map<String, Object>) args).get("var2");
             
                     // ref
                     int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -5409,7 +5409,7 @@ public class SubHandler14 {
                     // jsonable arg
                     int var1 = (int) ((Map<String, Object>) args).get("var1");
                     // jsonable arg
-                    long var2 = (long) ((Map<String, Object>) args).get("var2");
+                    int var2 = (int) ((Map<String, Object>) args).get("var2");
             
                     // ref
                     int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -5446,7 +5446,7 @@ public class SubHandler14 {
                     // jsonable arg
                     int var1 = (int) ((Map<String, Object>) args).get("var1");
                     // jsonable arg
-                    long var2 = (long) ((Map<String, Object>) args).get("var2");
+                    int var2 = (int) ((Map<String, Object>) args).get("var2");
                     // jsonable arg
                     int var4 = (int) ((Map<String, Object>) args).get("var4");
             
@@ -5485,7 +5485,7 @@ public class SubHandler14 {
                     // jsonable arg
                     int var1 = (int) ((Map<String, Object>) args).get("var1");
                     // jsonable arg
-                    long var2 = (long) ((Map<String, Object>) args).get("var2");
+                    int var2 = (int) ((Map<String, Object>) args).get("var2");
                     // ref arg
                     com.autonavi.amap.mapcore.maploader.AMapLoader var4 = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get((int) ((Map<String, Object>) args).get("var4"));
             
@@ -7150,7 +7150,7 @@ public class SubHandler14 {
                     // jsonable arg
                     int var0 = (int) ((Map<String, Object>) args).get("var0");
                     // jsonable arg
-                    long var1 = (long) ((Map<String, Object>) args).get("var1");
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
             
                     // ref
             

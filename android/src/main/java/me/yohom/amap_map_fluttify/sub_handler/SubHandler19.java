@@ -1035,7 +1035,7 @@ public class SubHandler19 {
                     // jsonable arg
                     int var5 = (int) ((Map<String, Object>) args).get("var5");
                     // jsonable arg
-                    long var6 = (long) ((Map<String, Object>) args).get("var6");
+                    int var6 = (int) ((Map<String, Object>) args).get("var6");
             
                     // ref
                     int refId = (int) ((Map<String, Object>) args).get("refId");

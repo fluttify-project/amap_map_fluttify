@@ -785,7 +785,7 @@ public class SubHandler10 {
             put("com.amap.api.maps.offlinemap.OfflineMapCity::setSize", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -2969,7 +2969,7 @@ public class SubHandler10 {
             put("com.amap.api.maps.model.MyLocationStyle::interval", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");

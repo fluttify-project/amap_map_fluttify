@@ -868,7 +868,7 @@ public class SubHandler5 {
                 // jsonable arg
                 byte[] var1 = (byte[]) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -2350,9 +2350,9 @@ public class SubHandler5 {
             put("com.autonavi.amap.mapcore.AMapNativePolyline::nativeSetGLShaderManager", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
             
@@ -2383,7 +2383,7 @@ public class SubHandler5 {
             put("com.autonavi.amap.mapcore.AMapNativePolyline::nativeDrawLineByTextureID", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -2444,7 +2444,7 @@ public class SubHandler5 {
             put("com.autonavi.amap.mapcore.AMapNativePolyline::nativeDestroy", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -2903,7 +2903,7 @@ public class SubHandler5 {
             put("com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeDestroyGLShaderManager", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -4349,7 +4349,7 @@ public class SubHandler5 {
             put("com.autonavi.amap.mapcore.animation.GLAnimation::setStartOffset", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -4381,7 +4381,7 @@ public class SubHandler5 {
             put("com.autonavi.amap.mapcore.animation.GLAnimation::setDuration", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -4413,7 +4413,7 @@ public class SubHandler5 {
             put("com.autonavi.amap.mapcore.animation.GLAnimation::restrictDuration", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -4477,7 +4477,7 @@ public class SubHandler5 {
             put("com.autonavi.amap.mapcore.animation.GLAnimation::setStartTime", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -5355,7 +5355,7 @@ public class SubHandler5 {
             put("com.autonavi.amap.mapcore.animation.GLAnimation::getTransformation__int__com_autonavi_amap_mapcore_animation_GLTransformation", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
                 // ref arg
                 com.autonavi.amap.mapcore.animation.GLTransformation var3 = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get((int) ((Map<String, Object>) args).get("var3"));
             
@@ -5390,7 +5390,7 @@ public class SubHandler5 {
             put("com.autonavi.amap.mapcore.animation.GLAnimation::getTransformation__int__com_autonavi_amap_mapcore_animation_GLTransformation__double", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
                 // ref arg
                 com.autonavi.amap.mapcore.animation.GLTransformation var3 = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get((int) ((Map<String, Object>) args).get("var3"));
                 // jsonable arg
