@@ -8,8 +8,13 @@ import 'list.x.dart';
 
 export 'package:amap_core_fluttify/amap_core_fluttify.dart';
 
+/// 轨迹纠偏过程回调，一条轨迹分割为多个段，按索引顺序回调其中一段 [index]片段索引 [traceList]当前片段的经纬度列表
 typedef Future<void> OnTraceProcessing(int index, List<LatLng> traceList);
+
+/// 轨迹纠偏成功回调 [traceList]纠偏后的经纬度列表 [distance]路程
 typedef Future<void> OnTraceFinished(List<LatLng> traceList, int distance);
+
+/// 轨迹纠偏失败回调
 typedef Future<void> OnTraceFailed(int errorCode, String errorInfo);
 
 final _traceListener = _TraceListener();
@@ -256,6 +261,10 @@ class AmapService {
     );
   }
 
+  /// 轨迹纠偏
+  ///
+  /// 指定轨迹id[traceId]和轨迹点列表[locationList], 处理过程回调为[onTraceProcessing],
+  /// 处理完成回调为[onTraceFinished], 处理失败回调为[onTraceFailed].
   static Future<void> queryProcessedTrace(
     int traceId,
     List<TraceLocation> locationList, {
