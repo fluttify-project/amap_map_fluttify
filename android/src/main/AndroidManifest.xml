@@ -13,4 +13,6 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--如果不加回报 error, Neither user 10426 nor current process has android.permission.WAKE_LOCK., null-->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 </manifest>
