@@ -226,7 +226,7 @@ class _AmapViewState extends State<AmapView> {
   }
 
   Future<void> _onPlatformViewDispose() async {
-    await _controller.dispose();
+    await _controller?.dispose();
   }
 
   Future<com_amap_api_maps_AMapOptions> _androidOptions() async {
