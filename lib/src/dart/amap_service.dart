@@ -8,13 +8,8 @@ import 'list.x.dart';
 
 export 'package:amap_core_fluttify/amap_core_fluttify.dart';
 
-typedef Future<void> OnTraceProcessing(List<LatLng> traceList);
-typedef Future<void> OnTraceFinished(
-  int id,
-  List<LatLng> traceList,
-  int distance,
-  int waitingTime,
-);
+typedef Future<void> OnTraceProcessing(int index, List<LatLng> traceList);
+typedef Future<void> OnTraceFinished(List<LatLng> traceList, int distance);
 typedef Future<void> OnTraceFailed(int errorCode, String errorInfo);
 
 final _traceListener = _TraceListener();
@@ -292,7 +287,26 @@ class AmapService {
       ios: (pool) async {
         final traceManager = await MATraceManager.create__();
 
-//        traceManager.queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback(locations, type, (index, points) { }, (points, distance) { }, (errorCode, errorDesc) { });
+        await traceManager
+            .queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback(
+          await locationList.toIOSModel(),
+          AMapCoordinateType.AMapCoordinateTypeAMap,
+          (int index, List<MATracePoint> points) async {
+            if (onTraceProcessing != null) {
+              onTraceProcessing(index, await points.toDartModel());
+            }
+          },
+          (List<MATracePoint> points, double distance) async {
+            if (onTraceFinished != null) {
+              onTraceFinished(await points.toDartModel(), distance.toInt());
+            }
+          },
+          (int errorCode, String errorDesc) {
+            if (onTraceFailed != null) {
+              onTraceFailed(errorCode, errorDesc);
+            }
+          },
+        );
       },
     );
   }
@@ -306,34 +320,34 @@ class _TraceListener extends java_lang_Object
 
   @override
   Future<void> onTraceProcessing(
-    int var1,
-    int var2,
-    List<com_amap_api_maps_model_LatLng> var3,
+    int lineID,
+    int index,
+    List<com_amap_api_maps_model_LatLng> segments,
   ) async {
-    super.onTraceProcessing(var1, var2, var3);
+    super.onTraceProcessing(lineID, index, segments);
     if (_onTraceProcessing != null) {
-      _onTraceProcessing(await var3.toDartModel());
+      _onTraceProcessing(index, await segments.toDartModel());
     }
   }
 
   @override
   Future<void> onFinished(
-    int var1,
-    List<com_amap_api_maps_model_LatLng> var2,
-    int var3,
-    int var4,
+    int lineID,
+    List<com_amap_api_maps_model_LatLng> linepoints,
+    int distance,
+    int waitingtime,
   ) async {
-    super.onFinished(var1, var2, var3, var4);
+    super.onFinished(lineID, linepoints, distance, waitingtime);
     if (_onTraceFinished != null) {
-      _onTraceFinished(var1, await var2.toDartModel(), var3, var4);
+      _onTraceFinished(await linepoints.toDartModel(), distance);
     }
   }
 
   @override
-  Future<void> onRequestFailed(int var1, String var2) async {
-    super.onRequestFailed(var1, var2);
+  Future<void> onRequestFailed(int lineID, String errorInfo) async {
+    super.onRequestFailed(lineID, errorInfo);
     if (_onTraceFailed != null) {
-      _onTraceFailed(var1, var2);
+      _onTraceFailed(lineID, errorInfo);
     }
   }
 }

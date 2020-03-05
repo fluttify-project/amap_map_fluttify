@@ -84,8 +84,8 @@ class ProcessedTraceStateScreen extends State<ProcessedTraceScreen> {
                     time: 60000,
                   ),
                 ],
-                onTraceFinished: (id, processed, distance, waitingTime) async {
-                  setState(() => _result = processed);
+                onTraceFinished: (List<LatLng> traceList, int distance) async {
+                  setState(() => _result = traceList);
                 },
               );
             },

@@ -55,3 +55,14 @@ extension com_amap_api_maps_model_LatLngListX
     return result;
   }
 }
+
+extension MATracePointListX on List<MATracePoint> {
+  /// 转换为dart对象
+  Future<List<LatLng>> toDartModel() async {
+    List<LatLng> result = [];
+    for (final item in this) {
+      result.add(LatLng(await item.get_latitude(), await item.get_longitude()));
+    }
+    return result;
+  }
+}
