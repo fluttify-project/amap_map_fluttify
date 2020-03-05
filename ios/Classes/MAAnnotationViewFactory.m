@@ -65,7 +65,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(%d, %d)", args[@"refId"], args[@"selected"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(%@, %@)", args[@"refId"], args[@"selected"], args[@"animated"]);
           }
       
           // invoke native method
@@ -135,7 +135,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(%d, %d)", args[@"refId"], args[@"newDragState"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(%@, %@)", args[@"refId"], args[@"newDragState"], args[@"animated"]);
           }
       
           // invoke native method

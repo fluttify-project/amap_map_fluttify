@@ -2185,7 +2185,7 @@ extern BOOL enableLog;
         
             // print log
             if (enableLog) {
-                NSLog(@"fluttify-objc: MACoordinateSpanMake::MACoordinateSpanMake(%d, %d)", args[@"latitudeDelta"], args[@"longitudeDelta"]);
+                NSLog(@"fluttify-objc: MACoordinateSpanMake::MACoordinateSpanMake(%@, %@)", args[@"latitudeDelta"], args[@"longitudeDelta"]);
             }
         
             // invoke native method
@@ -2245,7 +2245,7 @@ extern BOOL enableLog;
         
             // print log
             if (enableLog) {
-                NSLog(@"fluttify-objc: MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance(%@, %d, %d)", args[@"centerCoordinate"], args[@"latitudinalMeters"], args[@"longitudinalMeters"]);
+                NSLog(@"fluttify-objc: MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance(%@, %@, %@)", args[@"centerCoordinate"], args[@"latitudinalMeters"], args[@"longitudinalMeters"]);
             }
         
             // invoke native method
@@ -2373,7 +2373,7 @@ extern BOOL enableLog;
         
             // print log
             if (enableLog) {
-                NSLog(@"fluttify-objc: MAMetersPerMapPointAtLatitude::MAMetersPerMapPointAtLatitude(%d)", args[@"latitude"]);
+                NSLog(@"fluttify-objc: MAMetersPerMapPointAtLatitude::MAMetersPerMapPointAtLatitude(%@)", args[@"latitude"]);
             }
         
             // invoke native method
@@ -2395,7 +2395,7 @@ extern BOOL enableLog;
         
             // print log
             if (enableLog) {
-                NSLog(@"fluttify-objc: MAMapPointsPerMeterAtLatitude::MAMapPointsPerMeterAtLatitude(%d)", args[@"latitude"]);
+                NSLog(@"fluttify-objc: MAMapPointsPerMeterAtLatitude::MAMapPointsPerMeterAtLatitude(%@)", args[@"latitude"]);
             }
         
             // invoke native method
@@ -2479,7 +2479,7 @@ extern BOOL enableLog;
         
             // print log
             if (enableLog) {
-                NSLog(@"fluttify-objc: MAMapRectInset::MAMapRectInset(%@, %d, %d)", args[@"rect"], args[@"dx"], args[@"dy"]);
+                NSLog(@"fluttify-objc: MAMapRectInset::MAMapRectInset(%@, %@, %@)", args[@"rect"], args[@"dx"], args[@"dy"]);
             }
         
             // invoke native method
@@ -2653,7 +2653,7 @@ extern BOOL enableLog;
         
             // print log
             if (enableLog) {
-                NSLog(@"fluttify-objc: MACircleContainsPoint::MACircleContainsPoint(%@, %@, %d)", args[@"point"], args[@"center"], args[@"radius"]);
+                NSLog(@"fluttify-objc: MACircleContainsPoint::MACircleContainsPoint(%@, %@, %@)", args[@"point"], args[@"center"], args[@"radius"]);
             }
         
             // invoke native method
@@ -2683,7 +2683,7 @@ extern BOOL enableLog;
         
             // print log
             if (enableLog) {
-                NSLog(@"fluttify-objc: MACircleContainsCoordinate::MACircleContainsCoordinate(%@, %@, %d)", args[@"point"], args[@"center"], args[@"radius"]);
+                NSLog(@"fluttify-objc: MACircleContainsCoordinate::MACircleContainsCoordinate(%@, %@, %@)", args[@"point"], args[@"center"], args[@"radius"]);
             }
         
             // invoke native method
@@ -2719,7 +2719,7 @@ extern BOOL enableLog;
         
             // print log
             if (enableLog) {
-                NSLog(@"fluttify-objc: MAPolygonContainsPoint::MAPolygonContainsPoint(%@, %@, %d)", args[@"point"], args[@"*polygon"], args[@"count"]);
+                NSLog(@"fluttify-objc: MAPolygonContainsPoint::MAPolygonContainsPoint(%@, %@, %@)", args[@"point"], args[@"*polygon"], args[@"count"]);
             }
         
             // invoke native method
@@ -2755,7 +2755,7 @@ extern BOOL enableLog;
         
             // print log
             if (enableLog) {
-                NSLog(@"fluttify-objc: MAPolygonContainsCoordinate::MAPolygonContainsCoordinate(%@, %@, %d)", args[@"point"], args[@"*polygon"], args[@"count"]);
+                NSLog(@"fluttify-objc: MAPolygonContainsCoordinate::MAPolygonContainsCoordinate(%@, %@, %@)", args[@"point"], args[@"*polygon"], args[@"count"]);
             }
         
             // invoke native method
@@ -2821,7 +2821,7 @@ extern BOOL enableLog;
         
             // print log
             if (enableLog) {
-                NSLog(@"fluttify-objc: MAAreaForPolygon::MAAreaForPolygon(%@, %d)", args[@"*coordinates"], args[@"count"]);
+                NSLog(@"fluttify-objc: MAAreaForPolygon::MAAreaForPolygon(%@, %@)", args[@"*coordinates"], args[@"count"]);
             }
         
             // invoke native method
@@ -2845,7 +2845,7 @@ extern BOOL enableLog;
         
             // print log
             if (enableLog) {
-                NSLog(@"fluttify-objc: MAMapPointMake::MAMapPointMake(%d, %d)", args[@"x"], args[@"y"]);
+                NSLog(@"fluttify-objc: MAMapPointMake::MAMapPointMake(%@, %@)", args[@"x"], args[@"y"]);
             }
         
             // invoke native method
@@ -2871,7 +2871,7 @@ extern BOOL enableLog;
         
             // print log
             if (enableLog) {
-                NSLog(@"fluttify-objc: MAMapSizeMake::MAMapSizeMake(%d, %d)", args[@"width"], args[@"height"]);
+                NSLog(@"fluttify-objc: MAMapSizeMake::MAMapSizeMake(%@, %@)", args[@"width"], args[@"height"]);
             }
         
             // invoke native method
@@ -2901,7 +2901,7 @@ extern BOOL enableLog;
         
             // print log
             if (enableLog) {
-                NSLog(@"fluttify-objc: MAMapRectMake::MAMapRectMake(%d, %d, %d, %d)", args[@"x"], args[@"y"], args[@"width"], args[@"height"]);
+                NSLog(@"fluttify-objc: MAMapRectMake::MAMapRectMake(%@, %@, %@, %@)", args[@"x"], args[@"y"], args[@"width"], args[@"height"]);
             }
         
             // invoke native method

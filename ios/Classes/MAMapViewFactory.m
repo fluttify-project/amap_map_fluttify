@@ -67,7 +67,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setRegion(%@, %d)", args[@"refId"], args[@"region"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setRegion(%@, %@)", args[@"refId"], args[@"region"], args[@"animated"]);
           }
       
           // invoke native method
@@ -119,7 +119,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(%@, %d)", args[@"refId"], args[@"mapRect"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(%@, %@)", args[@"refId"], args[@"mapRect"], args[@"animated"]);
           }
       
           // invoke native method
@@ -205,7 +205,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(%@, %@, %d)", args[@"refId"], args[@"mapRect"], args[@"insets"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setVisibleMapRect(%@, %@, %@)", args[@"refId"], args[@"mapRect"], args[@"insets"], args[@"animated"]);
           }
       
           // invoke native method
@@ -231,7 +231,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCenterCoordinate(%@, %d)", args[@"refId"], args[@"coordinate"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setCenterCoordinate(%@, %@)", args[@"refId"], args[@"coordinate"], args[@"animated"]);
           }
       
           // invoke native method
@@ -255,7 +255,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(%d, %d)", args[@"refId"], args[@"zoomLevel"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(%@, %@)", args[@"refId"], args[@"zoomLevel"], args[@"animated"]);
           }
       
           // invoke native method
@@ -283,7 +283,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(%d, %@, %d)", args[@"refId"], args[@"zoomLevel"], args[@"pivot"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setZoomLevel(%@, %@, %@)", args[@"refId"], args[@"zoomLevel"], args[@"pivot"], args[@"animated"]);
           }
       
           // invoke native method
@@ -309,7 +309,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(%d, %d, %d)", args[@"refId"], args[@"rotationDegree"], args[@"animated"], args[@"duration"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(%@, %@, %@)", args[@"refId"], args[@"rotationDegree"], args[@"animated"], args[@"duration"]);
           }
       
           // invoke native method
@@ -335,7 +335,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCameraDegree(%d, %d, %d)", args[@"refId"], args[@"cameraDegree"], args[@"animated"], args[@"duration"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setCameraDegree(%@, %@, %@)", args[@"refId"], args[@"cameraDegree"], args[@"animated"], args[@"duration"]);
           }
       
           // invoke native method
@@ -381,7 +381,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(%@, %d)", args[@"refId"], args[@"status"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(%@, %@)", args[@"refId"], args[@"status"], args[@"animated"]);
           }
       
           // invoke native method
@@ -407,7 +407,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(%@, %d, %d)", args[@"refId"], args[@"status"], args[@"animated"], args[@"duration"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setMapStatus(%@, %@, %@)", args[@"refId"], args[@"status"], args[@"animated"], args[@"duration"]);
           }
       
           // invoke native method
@@ -495,7 +495,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::metersPerPointForZoomLevel(%d)", args[@"refId"], args[@"zoomLevel"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::metersPerPointForZoomLevel(%@)", args[@"refId"], args[@"zoomLevel"]);
           }
       
           // invoke native method
@@ -901,7 +901,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::selectAnnotation(%@, %d)", args[@"refId"], args[@"annotation"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::selectAnnotation(%@, %@)", args[@"refId"], args[@"annotation"], args[@"animated"]);
           }
       
           // invoke native method
@@ -925,7 +925,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::deselectAnnotation(%@, %d)", args[@"refId"], args[@"annotation"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::deselectAnnotation(%@, %@)", args[@"refId"], args[@"annotation"], args[@"animated"]);
           }
       
           // invoke native method
@@ -954,7 +954,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(%@, %d)", args[@"refId"], args[@"annotations"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(%@, %@)", args[@"refId"], args[@"annotations"], args[@"animated"]);
           }
       
           // invoke native method
@@ -987,7 +987,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(%@, %@, %d)", args[@"refId"], args[@"annotations"], args[@"insets"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::showAnnotations(%@, %@, %@)", args[@"refId"], args[@"annotations"], args[@"insets"], args[@"animated"]);
           }
       
           // invoke native method
@@ -1011,7 +1011,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setUserTrackingMode(%d, %d)", args[@"refId"], args[@"mode"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setUserTrackingMode(%@, %@)", args[@"refId"], args[@"mode"], args[@"animated"]);
           }
       
           // invoke native method
@@ -1055,7 +1055,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(%d)", args[@"refId"], args[@"level"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(%@)", args[@"refId"], args[@"level"]);
           }
       
           // invoke native method
@@ -1133,7 +1133,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(%@, %d)", args[@"refId"], args[@"overlay"], args[@"level"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlay(%@, %@)", args[@"refId"], args[@"overlay"], args[@"level"]);
           }
       
           // invoke native method
@@ -1162,7 +1162,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(%@, %d)", args[@"refId"], args[@"overlays"], args[@"level"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::addOverlays(%@, %@)", args[@"refId"], args[@"overlays"], args[@"level"]);
           }
       
           // invoke native method
@@ -1237,7 +1237,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(%@, %d, %d)", args[@"refId"], args[@"overlay"], args[@"index"], args[@"level"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(%@, %@, %@)", args[@"refId"], args[@"overlay"], args[@"index"], args[@"level"]);
           }
       
           // invoke native method
@@ -1309,7 +1309,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(%@, %d)", args[@"refId"], args[@"overlay"], args[@"index"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(%@, %@)", args[@"refId"], args[@"overlay"], args[@"index"]);
           }
       
           // invoke native method
@@ -1333,7 +1333,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(%d, %d)", args[@"refId"], args[@"index1"], args[@"index2"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(%@, %@)", args[@"refId"], args[@"index1"], args[@"index2"]);
           }
       
           // invoke native method
@@ -1359,7 +1359,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(%d, %d, %d)", args[@"refId"], args[@"index1"], args[@"index2"], args[@"level"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::exchangeOverlayAtIndex(%@, %@, %@)", args[@"refId"], args[@"index1"], args[@"index2"], args[@"level"]);
           }
       
           // invoke native method
@@ -1435,7 +1435,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(%@, %d)", args[@"refId"], args[@"overlays"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(%@, %@)", args[@"refId"], args[@"overlays"], args[@"animated"]);
           }
       
           // invoke native method
@@ -1468,7 +1468,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(%@, %@, %d)", args[@"refId"], args[@"overlays"], args[@"insets"], args[@"animated"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::showOverlays(%@, %@, %@)", args[@"refId"], args[@"overlays"], args[@"insets"], args[@"animated"]);
           }
       
           // invoke native method
@@ -1514,7 +1514,7 @@ extern BOOL enableLog;
       
           // print log
           if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCurrentIndoorMapFloorIndex(%d)", args[@"refId"], args[@"floorIndex"]);
+              NSLog(@"fluttify-objc: MAMapView@%@::setCurrentIndoorMapFloorIndex(%@)", args[@"refId"], args[@"floorIndex"]);
           }
       
           // invoke native method
