@@ -91,7 +91,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// [strokeColor]精度圈边框颜色, [strokeWidth]精度圈边框宽度, [fillColor]精度圈填充颜色
   Future<void> showMyLocation(
     bool show, {
-    MyLocationType myLocationType = MyLocationType.Locate,
+    MyLocationType myLocationType = MyLocationType.Follow,
     Uri iconUri,
     ImageConfiguration imageConfig,
     Color strokeColor,
