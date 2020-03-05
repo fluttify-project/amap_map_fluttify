@@ -1,3 +1,7 @@
+## 0.17.17
+- enhance: TraceLocation转换使用批处理优化
+- enhance: addPolyline和addPolygon使用批处理创建经纬度列表, 提升性能 related #160
+
 ## 0.17.16
 - feat: Marker添加更改坐标的方法
 - feat: Marker添加setVisible方法, 设置marker是否可见
