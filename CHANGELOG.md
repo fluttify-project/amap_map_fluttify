@@ -1,3 +1,7 @@
+## 0.17.18
+- roll engine #5fd57b0
+- fix: Neither user 10426 nor current process has android.permission.WAKE_LOCK 错误处理
+
 ## 0.17.17
 - enhance: TraceLocation转换使用批处理优化
 - enhance: addPolyline和addPolygon使用批处理创建经纬度列表, 提升性能 related #160
