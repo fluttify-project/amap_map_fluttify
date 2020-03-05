@@ -4,7 +4,20 @@ import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'list.x.dart';
+
 export 'package:amap_core_fluttify/amap_core_fluttify.dart';
+
+typedef Future<void> OnTraceProcessing(List<LatLng> traceList);
+typedef Future<void> OnTraceFinished(
+  int id,
+  List<LatLng> traceList,
+  int distance,
+  int waitingTime,
+);
+typedef Future<void> OnTraceFailed(int errorCode, String errorInfo);
+
+final _traceListener = _TraceListener();
 
 /// 除了地图以外的功能放在这里, 比如说sdk初始化
 class AmapService {
@@ -248,5 +261,79 @@ class AmapService {
     );
   }
 
-  static Future<void> queryProcessedTrace() async {}
+  static Future<void> queryProcessedTrace(
+    int traceId,
+    List<TraceLocation> locationList, {
+    OnTraceProcessing onTraceProcessing,
+    OnTraceFinished onTraceFinished,
+    OnTraceFailed onTraceFailed,
+  }) async {
+    assert(locationList != null);
+    assert(locationList.length > 1);
+    return platform(
+      android: (pool) async {
+        // 获取上下文
+        final applicationContext = await android_app_Application.get();
+        // 创建轨迹对象
+        final traceClient = await com_amap_api_trace_LBSTraceClient
+            .create__android_content_Context(applicationContext);
+
+        // 开始对轨迹纠偏
+        await traceClient.queryProcessedTrace(
+          traceId,
+          await locationList.toAndroidModel(),
+          com_amap_api_trace_LBSTraceClient.TYPE_AMAP,
+          _traceListener
+            .._onTraceProcessing = onTraceProcessing
+            .._onTraceFinished = onTraceFinished
+            .._onTraceFailed = onTraceFailed,
+        );
+      },
+      ios: (pool) async {
+        final traceManager = await MATraceManager.create__();
+
+//        traceManager.queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback(locations, type, (index, points) { }, (points, distance) { }, (errorCode, errorDesc) { });
+      },
+    );
+  }
+}
+
+class _TraceListener extends java_lang_Object
+    with com_amap_api_trace_TraceListener {
+  OnTraceProcessing _onTraceProcessing;
+  OnTraceFinished _onTraceFinished;
+  OnTraceFailed _onTraceFailed;
+
+  @override
+  Future<void> onTraceProcessing(
+    int var1,
+    int var2,
+    List<com_amap_api_maps_model_LatLng> var3,
+  ) async {
+    super.onTraceProcessing(var1, var2, var3);
+    if (_onTraceProcessing != null) {
+      _onTraceProcessing(await var3.toDartModel());
+    }
+  }
+
+  @override
+  Future<void> onFinished(
+    int var1,
+    List<com_amap_api_maps_model_LatLng> var2,
+    int var3,
+    int var4,
+  ) async {
+    super.onFinished(var1, var2, var3, var4);
+    if (_onTraceFinished != null) {
+      _onTraceFinished(var1, await var2.toDartModel(), var3, var4);
+    }
+  }
+
+  @override
+  Future<void> onRequestFailed(int var1, String var2) async {
+    super.onRequestFailed(var1, var2);
+    if (_onTraceFailed != null) {
+      _onTraceFailed(var1, var2);
+    }
+  }
 }
