@@ -1,6 +1,6 @@
 name: amap_map_fluttify
 description: An `Amap` Map Component, Powered By `Fluttify` Engine, A Dart Bindings Generator For Native SDK.
-version: 0.17.19+0a5ab5f
+version: 0.17.20+dbad1c3
 author: yohom <yohombao@qq.com>
 homepage: https://github.com/fluttify-project/amap_map_fluttify
 
