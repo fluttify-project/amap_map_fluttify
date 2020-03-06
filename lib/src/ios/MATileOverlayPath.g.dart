@@ -132,25 +132,25 @@ extension MATileOverlayPath_Batch on List<MATileOverlayPath> {
 
   //region setters
   Future<void> set_x_batch(List<int> x) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_x_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "x": x[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_x_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "x": x[i]}]);
   
   
   }
   
   Future<void> set_y_batch(List<int> y) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_y_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "y": y[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "y": y[i]}]);
   
   
   }
   
   Future<void> set_z_batch(List<int> z) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_z_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "z": z[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_z_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "z": z[i]}]);
   
   
   }
   
   Future<void> set_contentScaleFactor_batch(List<double> contentScaleFactor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_contentScaleFactor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "contentScaleFactor": contentScaleFactor[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlayPath::set_contentScaleFactor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "contentScaleFactor": contentScaleFactor[i]}]);
   
   
   }

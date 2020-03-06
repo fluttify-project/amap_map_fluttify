@@ -227,55 +227,55 @@ extension MAUserLocationRepresentation_Batch on List<MAUserLocationRepresentatio
 
   //region setters
   Future<void> set_showsAccuracyRing_batch(List<bool> showsAccuracyRing) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_showsAccuracyRing_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsAccuracyRing": showsAccuracyRing[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_showsAccuracyRing_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsAccuracyRing": showsAccuracyRing[i]}]);
   
   
   }
   
   Future<void> set_showsHeadingIndicator_batch(List<bool> showsHeadingIndicator) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_showsHeadingIndicator_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsHeadingIndicator": showsHeadingIndicator[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_showsHeadingIndicator_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "showsHeadingIndicator": showsHeadingIndicator[i]}]);
   
   
   }
   
   Future<void> set_fillColor_batch(List<UIColor> fillColor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_fillColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fillColor": fillColor[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_fillColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fillColor": fillColor[i].refId}]);
   
   
   }
   
   Future<void> set_strokeColor_batch(List<UIColor> strokeColor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_strokeColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strokeColor": strokeColor[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_strokeColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "strokeColor": strokeColor[i].refId}]);
   
   
   }
   
   Future<void> set_lineWidth_batch(List<double> lineWidth) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_lineWidth_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lineWidth": lineWidth[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_lineWidth_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lineWidth": lineWidth[i]}]);
   
   
   }
   
   Future<void> set_locationDotBgColor_batch(List<UIColor> locationDotBgColor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_locationDotBgColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "locationDotBgColor": locationDotBgColor[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_locationDotBgColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "locationDotBgColor": locationDotBgColor[i].refId}]);
   
   
   }
   
   Future<void> set_locationDotFillColor_batch(List<UIColor> locationDotFillColor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_locationDotFillColor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "locationDotFillColor": locationDotFillColor[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_locationDotFillColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "locationDotFillColor": locationDotFillColor[i].refId}]);
   
   
   }
   
   Future<void> set_enablePulseAnnimation_batch(List<bool> enablePulseAnnimation) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_enablePulseAnnimation_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "enablePulseAnnimation": enablePulseAnnimation[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_enablePulseAnnimation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "enablePulseAnnimation": enablePulseAnnimation[i]}]);
   
   
   }
   
   Future<void> set_image_batch(List<UIImage> image) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_image_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "image": image[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAUserLocationRepresentation::set_image_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "image": image[i].refId}]);
   
   
   }

@@ -16,6 +16,7 @@ import 'interact_with_map/screen_shot_screen.dart';
 import 'tools/calcute_distance_screen.dart';
 import 'tools/coordinate_transformation_screen.dart';
 import 'tools/launch_amap_screen.dart';
+import 'tools/processed_trace.screen.dart';
 
 class MapDemo extends StatelessWidget {
   @override
@@ -107,6 +108,11 @@ class MapDemo extends StatelessWidget {
               label: "调用高德地图",
               sublabel: "LaunchAmapScreen",
               target: LaunchAmapScreen(),
+            ),
+            FunctionItem(
+              label: "轨迹纠偏",
+              sublabel: "ProcessedTraceScreen",
+              target: ProcessedTraceScreen(),
             ),
           ],
         ),

@@ -191,19 +191,19 @@ extension MACircle_Batch on List<MACircle> {
 
   //region setters
   Future<void> set_hollowShapes_batch(List<List<MAOverlay>> hollowShapes) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_hollowShapes_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "hollowShapes": hollowShapes[i].map((it) => it.refId).toList()}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_hollowShapes_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "hollowShapes": hollowShapes[i].map((it) => it.refId).toList()}]);
   
   
   }
   
   Future<void> set_coordinate_batch(List<CLLocationCoordinate2D> coordinate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_coordinate_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "coordinate": coordinate[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_coordinate_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "coordinate": coordinate[i].refId}]);
   
   
   }
   
   Future<void> set_radius_batch(List<double> radius) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_radius_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "radius": radius[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_radius_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "radius": radius[i]}]);
   
   
   }

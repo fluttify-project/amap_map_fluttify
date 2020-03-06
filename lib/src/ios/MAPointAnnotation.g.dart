@@ -113,19 +113,19 @@ extension MAPointAnnotation_Batch on List<MAPointAnnotation> {
 
   //region setters
   Future<void> set_coordinate_batch(List<CLLocationCoordinate2D> coordinate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_coordinate_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "coordinate": coordinate[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_coordinate_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "coordinate": coordinate[i].refId}]);
   
   
   }
   
   Future<void> set_lockedToScreen_batch(List<bool> lockedToScreen) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_lockedToScreen_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lockedToScreen": lockedToScreen[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_lockedToScreen_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lockedToScreen": lockedToScreen[i]}]);
   
   
   }
   
   Future<void> set_lockedScreenPoint_batch(List<CGPoint> lockedScreenPoint) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_lockedScreenPoint_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lockedScreenPoint": lockedScreenPoint[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPointAnnotation::set_lockedScreenPoint_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "lockedScreenPoint": lockedScreenPoint[i].refId}]);
   
   
   }

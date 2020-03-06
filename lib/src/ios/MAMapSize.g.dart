@@ -94,13 +94,13 @@ extension MAMapSize_Batch on List<MAMapSize> {
 
   //region setters
   Future<void> set_width_batch(List<double> width) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapSize::set_width_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "width": width[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapSize::set_width_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "width": width[i]}]);
   
   
   }
   
   Future<void> set_height_batch(List<double> height) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapSize::set_height_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "height": height[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapSize::set_height_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "height": height[i]}]);
   
   
   }

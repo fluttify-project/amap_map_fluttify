@@ -132,25 +132,25 @@ extension MAMapCustomStyleOptions_Batch on List<MAMapCustomStyleOptions> {
 
   //region setters
   Future<void> set_styleData_batch(List<NSData> styleData) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleData_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "styleData": styleData[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleData_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "styleData": styleData[i].refId}]);
   
   
   }
   
   Future<void> set_styleId_batch(List<String> styleId) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleId_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "styleId": styleId[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleId_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "styleId": styleId[i]}]);
   
   
   }
   
   Future<void> set_styleTextureData_batch(List<NSData> styleTextureData) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleTextureData_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "styleTextureData": styleTextureData[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleTextureData_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "styleTextureData": styleTextureData[i].refId}]);
   
   
   }
   
   Future<void> set_styleExtraData_batch(List<NSData> styleExtraData) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleExtraData_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "styleExtraData": styleExtraData[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleExtraData_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "styleExtraData": styleExtraData[i].refId}]);
   
   
   }

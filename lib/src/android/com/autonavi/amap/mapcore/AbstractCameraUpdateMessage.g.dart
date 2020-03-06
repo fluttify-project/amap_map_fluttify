@@ -574,139 +574,139 @@ extension com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Batch on List<co
 
   //region setters
   Future<void> set_nowType_batch(List<com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Type> nowType) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_nowType_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "nowType": nowType[i].index}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_nowType_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "nowType": nowType[i].index}]);
   
   
   }
   
   Future<void> set_xPixel_batch(List<double> xPixel) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_xPixel_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "xPixel": xPixel[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_xPixel_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "xPixel": xPixel[i]}]);
   
   
   }
   
   Future<void> set_yPixel_batch(List<double> yPixel) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_yPixel_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "yPixel": yPixel[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_yPixel_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "yPixel": yPixel[i]}]);
   
   
   }
   
   Future<void> set_amount_batch(List<double> amount) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_amount_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "amount": amount[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_amount_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "amount": amount[i]}]);
   
   
   }
   
   Future<void> set_cameraPosition_batch(List<com_amap_api_maps_model_CameraPosition> cameraPosition) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_cameraPosition_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "cameraPosition": cameraPosition[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_cameraPosition_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "cameraPosition": cameraPosition[i].refId}]);
   
   
   }
   
   Future<void> set_bounds_batch(List<com_amap_api_maps_model_LatLngBounds> bounds) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_bounds_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "bounds": bounds[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_bounds_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "bounds": bounds[i].refId}]);
   
   
   }
   
   Future<void> set_focus_batch(List<android_graphics_Point> focus) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_focus_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "focus": focus[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_focus_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "focus": focus[i].refId}]);
   
   
   }
   
   Future<void> set_zoom_batch(List<double> zoom) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_zoom_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "zoom": zoom[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_zoom_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "zoom": zoom[i]}]);
   
   
   }
   
   Future<void> set_tilt_batch(List<double> tilt) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_tilt_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "tilt": tilt[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_tilt_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "tilt": tilt[i]}]);
   
   
   }
   
   Future<void> set_bearing_batch(List<double> bearing) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_bearing_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "bearing": bearing[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_bearing_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "bearing": bearing[i]}]);
   
   
   }
   
   Future<void> set_geoPoint_batch(List<android_graphics_Point> geoPoint) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_geoPoint_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "geoPoint": geoPoint[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_geoPoint_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "geoPoint": geoPoint[i].refId}]);
   
   
   }
   
   Future<void> set_isUseAnchor_batch(List<bool> isUseAnchor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_isUseAnchor_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isUseAnchor": isUseAnchor[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_isUseAnchor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isUseAnchor": isUseAnchor[i]}]);
   
   
   }
   
   Future<void> set_anchorX_batch(List<int> anchorX) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_anchorX_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "anchorX": anchorX[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_anchorX_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "anchorX": anchorX[i]}]);
   
   
   }
   
   Future<void> set_anchorY_batch(List<int> anchorY) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_anchorY_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "anchorY": anchorY[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_anchorY_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "anchorY": anchorY[i]}]);
   
   
   }
   
   Future<void> set_isChangeFinished_batch(List<bool> isChangeFinished) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_isChangeFinished_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isChangeFinished": isChangeFinished[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_isChangeFinished_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "isChangeFinished": isChangeFinished[i]}]);
   
   
   }
   
   Future<void> set_mapConfig_batch(List<com_autonavi_amap_mapcore_MapConfig> mapConfig) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mapConfig_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mapConfig": mapConfig[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mapConfig_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mapConfig": mapConfig[i].refId}]);
   
   
   }
   
   Future<void> set_paddingLeft_batch(List<int> paddingLeft) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingLeft_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "paddingLeft": paddingLeft[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingLeft_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "paddingLeft": paddingLeft[i]}]);
   
   
   }
   
   Future<void> set_paddingRight_batch(List<int> paddingRight) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingRight_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "paddingRight": paddingRight[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingRight_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "paddingRight": paddingRight[i]}]);
   
   
   }
   
   Future<void> set_paddingTop_batch(List<int> paddingTop) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingTop_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "paddingTop": paddingTop[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingTop_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "paddingTop": paddingTop[i]}]);
   
   
   }
   
   Future<void> set_paddingBottom_batch(List<int> paddingBottom) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingBottom_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "paddingBottom": paddingBottom[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingBottom_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "paddingBottom": paddingBottom[i]}]);
   
   
   }
   
   Future<void> set_mDuration_batch(List<int> mDuration) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mDuration_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mDuration": mDuration[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mDuration_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mDuration": mDuration[i]}]);
   
   
   }
   
   Future<void> set_width_batch(List<int> width) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_width_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "width": width[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_width_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "width": width[i]}]);
   
   
   }
   
   Future<void> set_height_batch(List<int> height) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_height_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "height": height[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_height_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "height": height[i]}]);
   
   
   }

@@ -109,7 +109,7 @@ extension MACustomCalloutView_Batch on List<MACustomCalloutView> {
 
   //region setters
   Future<void> set_userData_batch(List<NSObject> userData, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod('MACustomCalloutView::set_userData_batch_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "userData": userData[i].refId}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod('MACustomCalloutView::set_userData_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "userData": userData[i].refId}]);
   
   
   }

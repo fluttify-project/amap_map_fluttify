@@ -1,5 +1,5 @@
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
-import 'package:amap_map_fluttify_example/map/tools/next_latlng.dart';
+import 'package:amap_map_fluttify_example/utils/next_latlng.dart';
 import 'package:amap_map_fluttify_example/utils/utils.export.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:flutter/material.dart';

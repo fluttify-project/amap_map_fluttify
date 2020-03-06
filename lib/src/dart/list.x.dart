@@ -6,11 +6,11 @@ import 'models.dart';
 extension TraceLocationListX on List<TraceLocation> {
   /// 转换为android对象
   Future<List<com_amap_api_trace_TraceLocation>> toAndroidModel() async {
-    final latitudeBatch = this.map((e) => e.latitude);
-    final longitudeBatch = this.map((e) => e.longitude);
-    final speedBatch = this.map((e) => e.speed);
-    final bearingBatch = this.map((e) => e.bearing);
-    final timeBatch = this.map((e) => e.time);
+    final latitudeBatch = this.map((e) => e.latitude).toList();
+    final longitudeBatch = this.map((e) => e.longitude).toList();
+    final speedBatch = this.map((e) => e.speed).toList();
+    final bearingBatch = this.map((e) => e.bearing).toList();
+    final timeBatch = this.map((e) => e.time).toList();
 
     return com_amap_api_trace_TraceLocation
         .create_batch__double__double__float__float__long(
@@ -46,6 +46,17 @@ extension TraceLocationListX on List<TraceLocation> {
 
 extension com_amap_api_maps_model_LatLngListX
     on List<com_amap_api_maps_model_LatLng> {
+  /// 转换为dart对象
+  Future<List<LatLng>> toDartModel() async {
+    List<LatLng> result = [];
+    for (final item in this) {
+      result.add(LatLng(await item.get_latitude(), await item.get_longitude()));
+    }
+    return result;
+  }
+}
+
+extension MATracePointListX on List<MATracePoint> {
   /// 转换为dart对象
   Future<List<LatLng>> toDartModel() async {
     List<LatLng> result = [];

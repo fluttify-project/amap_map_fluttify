@@ -1,3 +1,7 @@
+## 0.17.19
+- feat: 轨迹纠偏实现 (#118)
+- enhance: 清除marker使用批处理
+
 ## 0.17.18
 - roll engine #5fd57b0
 - fix: Neither user 10426 nor current process has android.permission.WAKE_LOCK 错误处理
