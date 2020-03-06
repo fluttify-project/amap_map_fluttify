@@ -1130,9 +1130,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         final map = await androidController.getMap();
         final markers = await map.getMapScreenMarkers();
 
-        for (final marker in markers) {
-          marker.remove();
-        }
+        await markers.remove_batch();
 
         pool
           ..add(map)
