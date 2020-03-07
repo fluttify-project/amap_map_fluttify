@@ -727,8 +727,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         if (option.rotateAngle != null) {
           await markerOption.rotateAngle(option.rotateAngle);
         }
-        // 锚点 和ios端统一为默认0.5
-        await markerOption.anchor(option.anchorU ?? 0.5, option.anchorV ?? 0.5);
+        // 锚点 默认在中间底部是最合理的
+        await markerOption.anchor(option.anchorU ?? 0.5, option.anchorV ?? 0);
         // 是否可见
         await markerOption.visible(option.visible);
 
