@@ -901,12 +901,18 @@ class AmapController with WidgetsBindingObserver, _Private {
           if (option.draggable != null) {
             await markerOption.draggable(option.draggable);
           }
+          // 旋转角度
+          if (option.rotateAngle != null) {
+            await markerOption.rotateAngle(option.rotateAngle);
+          }
+          // 锚点 默认在中间底部是最合理的
+          await markerOption.anchor(option.anchorU ?? 0.5, option.anchorV ?? 0);
           // 是否可见
           await markerOption.visible(option.visible);
 
           androidOptions.add(markerOption);
 
-          pool..add(latLng);
+          pool.add(latLng);
         }
 
         final markers = await map.addMarkers(androidOptions, false);
@@ -914,9 +920,15 @@ class AmapController with WidgetsBindingObserver, _Private {
         for (int i = 0; i < options.length; i++) {
           final option = options[i];
           final marker = markers[i];
+
           // 是否允许弹窗
           if (option.infoWindowEnabled != null) {
             await marker.setInfoWindowEnable(option.infoWindowEnabled);
+          }
+
+          // 自定义数据
+          if (option.object != null) {
+            await marker.setObject(option.object);
           }
         }
 
