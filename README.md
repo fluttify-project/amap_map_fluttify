@@ -28,7 +28,7 @@ Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)引擎
 
 | Demo | QQ群 |
 | :----------: | :----------: |
-| 扫描二维码 <br> 或者 <br> [点击下载](https://github.com/fluttify-project/amap_map_fluttify/blob/master/example/build/app/outputs/apk/release/app-release.apk?raw=true) </br> ![Example](assets/amap_map_fluttify_apk.png) | 加入QQ群讨论 <br/><br/> ![QQ群](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/QQ%E7%BE%A4.png?raw=true) |
+| 扫描二维码 <br> 或者 <br> [点击下载](https://github.com/fluttify-project/amap_map_fluttify/blob/master/example/build/app/outputs/apk/release/app-release.apk?raw=true) </br> <img src="assets/amap_map_fluttify_apk.png" height="300"> | 加入QQ群讨论 <br/> <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/QQ%E7%BE%A4.png?raw=true" height="300"> |
 
 安装: 
 ```yaml
@@ -140,7 +140,7 @@ iOS `Info.plist`配置:
 
 | 微信支持 | 支付宝支持 |
 | :----------: | :----------: |
-| ![微信](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/WechatIMG111.jpeg?raw=true) | ![支付宝](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/1557492318.jpg?raw=true) |
+| <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/WechatIMG111.jpeg?raw=true" height="300"> | <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/1557492318.jpg?raw=true" height="300"> |
 
 ## LICENSE
 > Copyright 2020 yohom
