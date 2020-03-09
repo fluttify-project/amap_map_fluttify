@@ -1,3 +1,9 @@
+## 0.18.0
+- enhance: [breaking change] 优化定位api (#183, #182)
+- fix: addMarkers的rotateAngle无效修正
+- docs: 更新技术支持相关信息
+- enhance: Marker锚点默认为(0, 0.5)
+
 ## 0.17.21
 - roll engine #481e45c1
 
