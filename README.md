@@ -7,8 +7,10 @@
 [![Gitter](https://badges.gitter.im/fluttify_project/community.svg)](https://gitter.im/fluttify_project/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)引擎生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/). [CHANGELOG](https://github.com/fluttify-project/amap_map_fluttify/blob/master/CHANGELOG.md). [常见问题对应手册](https://github.com/fluttify-project/amap_map_fluttify/blob/master/Troubleshooting.md).
+同款[百度地图插件](https://github.com/fluttify-project/bmap_map_fluttify), 有其他插件需求的也都可以走技术支持流程请求支持 :) .
 
-如果你需要用到地图, 定位和搜索三个组件, 建议使用[amap_all_fluttify](https://github.com/fluttify-project/amap_all_fluttify), 这个插件集合了以上三个插件, 并约束了版本, 兼容性会更好.
+## 技术支持
+- 请参考 [technical-support-plan](https://github.com/fluttify-project/technical-support-plan) 进行操作, 技术支持工单将以最高优先级处理.
 
 ## Fluttify网站
 - Fluttify系列插件的生成引擎[fluttify.com](http://fluttify.com/#/)网站已上线, 欢迎各位来试用, 目前网站仍然处于早期阶段, 如果有什么建议可以在[反馈仓库](https://github.com/fluttify-project/fluttify-feedback/issues/new)中提issue.
@@ -22,11 +24,11 @@ Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)引擎
 ## 接外包
 **本人承接外包项目(地图类app优先), 有意者请联系qq 382146139.**
 
-## DEMO 与 打赏
+## DEMO 与 社区
 
-| Demo | 微信赞助 | 支付宝赞助 | QQ群 |
-| :----------: | :----------: | :----------: | :----------: |
-| 扫描二维码 <br> 或者 <br> [点击下载](https://github.com/fluttify-project/amap_map_fluttify/blob/master/example/build/app/outputs/apk/release/app-release.apk?raw=true) </br> ![Example](assets/amap_map_fluttify_apk.png) | 如果项目帮到了你 </br> 不妨请作者喝杯奶茶 :) </br> ![微信](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/WechatIMG111.jpeg?raw=true) | 开源不易 </br> 你的star是我最大的动力 </br> ![支付宝](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/1557492318.jpg?raw=true) | 加入QQ群讨论 <br/><br/> ![QQ群](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/QQ%E7%BE%A4.png?raw=true) |
+| Demo | QQ群 |
+| :----------: | :----------: |
+| 扫描二维码 <br> 或者 <br> [点击下载](https://github.com/fluttify-project/amap_map_fluttify/blob/master/example/build/app/outputs/apk/release/app-release.apk?raw=true) </br> <img src="assets/amap_map_fluttify_apk.png" height="300"> | 加入QQ群讨论 <br/> <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/QQ%E7%BE%A4.png?raw=true" height="300"> |
 
 安装: 
 ```yaml
@@ -135,15 +137,10 @@ iOS `Info.plist`配置:
     - 小版本号迭代表示无破坏性更新, 包括功能增加和bug修复;
     - 次版本号迭代表示有破坏性更新, 包括但不限于接口改动, 类名改动等;
     - 主版本号迭代表示底层高德SDK更换;
-### 功能开发/bug修复(优先级从高到低)
-    1. 提供详细android文档和ios文档;
-    2. 按照issue模板提供对应信息;
-    3. 用户需求度;
 
-## FAQ
-- 这个项目跟`amap_base`有什么联系和区别?
-    - 联系: 除了是同一个作者开发的之外没有联系; 
-    - 区别: `amap_base`使用的是常规的开发方式, 还是以`MethodChannel`为中心在dart和原生以及各个原生平台之间斡旋. 而`fluttify`系列插件是在[fluttify](https://github.com/fluttify-project/fluttify-core-example)引擎生成的dart接口之上去开发插件, 屏蔽了原生代码, 开发插件时不再需要在不同的原生代码之间斡旋, 只需要专注于整合不同平台的api即可.
+| 微信支持 | 支付宝支持 |
+| :----------: | :----------: |
+| <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/WechatIMG111.jpeg?raw=true" height="300"> | <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/1557492318.jpg?raw=true" height="300"> |
 
 ## LICENSE
 > Copyright 2020 yohom

@@ -29,6 +29,9 @@ class AmapController with WidgetsBindingObserver, _Private {
   final _iosMapDelegate = _IOSMapDelegate();
   final _androidMapDelegate = _AndroidMapDelegate();
 
+  // 定位间隔订阅事件
+  StreamSubscription _locateSubscription;
+
   /// 获取当前位置
   ///
   /// 由于定位需要时间, 如果进入地图后马上获取位置信息, 获取到的会是null, [getLocation]会默认
@@ -78,51 +81,50 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
-  /// 是否显示我的位置
-  ///
-  /// [strokeColor]精度圈边框颜色, [strokeWidth]精度圈边框宽度, [fillColor]精度圈填充颜色
-  Future<void> showMyLocation(
-    bool show, {
-    MyLocationType myLocationType = MyLocationType.Follow,
-    Uri iconUri,
-    ImageConfiguration imageConfig,
-    Color strokeColor,
-    Color fillColor,
-    double strokeWidth,
-  }) async {
-    assert(
-      (iconUri != null && imageConfig != null) || iconUri == null,
-      'iconUri与imageConfig同时设置!',
-    );
-    assert(myLocationType != null);
+  /// 显示我的位置
+  Future<void> showMyLocation(MyLocationOption option) async {
+    assert(option != null);
     await platform(
       android: (pool) async {
         final map = await androidController.getMap();
         final locationStyle =
             await com_amap_api_maps_model_MyLocationStyle.create__();
-        await locationStyle.showMyLocation(show);
-        await map.setMyLocationEnabled(show);
-        if (show) {
-          // 默认只定位一次
-          switch (myLocationType) {
+        await locationStyle.showMyLocation(option.show);
+        await map.setMyLocationEnabled(option.show);
+
+        if (option.show) {
+          switch (option.myLocationType) {
+            case MyLocationType.Show:
+              await locationStyle.myLocationType(
+                com_amap_api_maps_model_MyLocationStyle.LOCATION_TYPE_SHOW,
+              );
+              break;
             case MyLocationType.Locate:
               await locationStyle.myLocationType(
-                  com_amap_api_maps_model_MyLocationStyle.LOCATION_TYPE_SHOW);
+                com_amap_api_maps_model_MyLocationStyle.LOCATION_TYPE_LOCATE,
+              );
               break;
             case MyLocationType.Follow:
               await locationStyle.myLocationType(
-                  com_amap_api_maps_model_MyLocationStyle.LOCATION_TYPE_FOLLOW);
+                com_amap_api_maps_model_MyLocationStyle.LOCATION_TYPE_FOLLOW,
+              );
               break;
             case MyLocationType.Rotate:
               await locationStyle.myLocationType(
-                  com_amap_api_maps_model_MyLocationStyle
-                      .LOCATION_TYPE_LOCATION_ROTATE);
+                com_amap_api_maps_model_MyLocationStyle
+                    .LOCATION_TYPE_LOCATION_ROTATE,
+              );
               break;
           }
+          // 定位间隔
+          await locationStyle.interval(option.interval.inMilliseconds);
 
           // 定位图标
-          if (iconUri != null) {
-            final imageData = await _uri2ImageData(imageConfig, iconUri);
+          if (option.iconUri != null) {
+            final imageData = await _uri2ImageData(
+              option.imageConfiguration,
+              option.iconUri,
+            );
             final bitmap = await android_graphics_Bitmap.create(imageData);
             final bitmapDescriptor =
                 await com_amap_api_maps_model_BitmapDescriptorFactory
@@ -130,18 +132,18 @@ class AmapController with WidgetsBindingObserver, _Private {
             await locationStyle.myLocationIcon(bitmapDescriptor);
           }
           // 边框颜色
-          if (strokeColor != null) {
+          if (option.strokeColor != null) {
             await locationStyle
-                .strokeColor(Int32List.fromList([strokeColor.value])[0]);
+                .strokeColor(Int32List.fromList([option.strokeColor.value])[0]);
           }
           // 填充颜色
-          if (fillColor != null) {
-            await locationStyle
-                .radiusFillColor(Int32List.fromList([fillColor.value])[0]);
+          if (option.fillColor != null) {
+            await locationStyle.radiusFillColor(
+                Int32List.fromList([option.fillColor.value])[0]);
           }
           // 边框宽度
-          if (strokeWidth != null) {
-            await locationStyle.strokeWidth(strokeWidth);
+          if (option.strokeWidth != null) {
+            await locationStyle.strokeWidth(option.strokeWidth);
           }
 
           // 设置样式
@@ -151,50 +153,73 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool..add(map)..add(locationStyle);
       },
       ios: (pool) async {
-        await iosController.set_showsUserLocation(show);
+        await iosController.set_showsUserLocation(option.show);
 
-        if (show) {
-          if (myLocationType == MyLocationType.Follow) {
-            await iosController.setUserTrackingModeAnimated(
-              MAUserTrackingMode.MAUserTrackingModeFollow,
-              true,
-            );
-          } else if (myLocationType == MyLocationType.Rotate) {
-            await iosController.setUserTrackingModeAnimated(
-              MAUserTrackingMode.MAUserTrackingModeFollowWithHeading,
-              true,
-            );
-          } else {
-            await iosController.setUserTrackingModeAnimated(
-              MAUserTrackingMode.MAUserTrackingModeNone,
-              true,
-            );
+        if (option.show) {
+          if (option.interval != Duration.zero) {
+            _locateSubscription?.cancel();
+            _locateSubscription = Stream.periodic(option.interval, (_) => _)
+                .listen((_) async =>
+                    await iosController.setUserTrackingModeAnimated(
+                      MAUserTrackingMode.MAUserTrackingModeFollow,
+                      true,
+                    ));
+          }
+
+          switch (option.myLocationType) {
+            case MyLocationType.Show:
+              await iosController.setUserTrackingModeAnimated(
+                MAUserTrackingMode.MAUserTrackingModeNone,
+                true,
+              );
+              break;
+            case MyLocationType.Locate:
+              await iosController.setUserTrackingModeAnimated(
+                MAUserTrackingMode.MAUserTrackingModeFollow,
+                true,
+              );
+              break;
+            case MyLocationType.Follow:
+              await iosController.setUserTrackingModeAnimated(
+                MAUserTrackingMode.MAUserTrackingModeFollow,
+                true,
+              );
+              break;
+            case MyLocationType.Rotate:
+              await iosController.setUserTrackingModeAnimated(
+                MAUserTrackingMode.MAUserTrackingModeFollowWithHeading,
+                true,
+              );
+              break;
           }
 
           final style = await MAUserLocationRepresentation.create__();
 
           // 定位图标
-          if (iconUri != null) {
-            final imageData = await _uri2ImageData(imageConfig, iconUri);
+          if (option.iconUri != null) {
+            final imageData =
+                await _uri2ImageData(option.imageConfiguration, option.iconUri);
             final bitmap = await UIImage.create(imageData);
             await style.set_image(bitmap);
           }
           // 边框颜色
-          if (strokeColor != null) {
-            final color = await UIColor.create(strokeColor);
+          if (option.strokeColor != null) {
+            final color = await UIColor.create(option.strokeColor);
             await style.set_strokeColor(color);
           }
           // 填充颜色
-          if (fillColor != null) {
-            final color = await UIColor.create(fillColor);
+          if (option.fillColor != null) {
+            final color = await UIColor.create(option.fillColor);
             await style.set_fillColor(color);
           }
           // 边框宽度
-          if (strokeWidth != null) {
-            await style.set_lineWidth(strokeWidth);
+          if (option.strokeWidth != null) {
+            await style.set_lineWidth(option.strokeWidth);
           }
 
           await iosController.updateUserLocationRepresentation(style);
+        } else {
+          _locateSubscription?.cancel();
         }
       },
     );
@@ -727,8 +752,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         if (option.rotateAngle != null) {
           await markerOption.rotateAngle(option.rotateAngle);
         }
-        // 锚点 和ios端统一为默认0.5
-        await markerOption.anchor(option.anchorU ?? 0.5, option.anchorV ?? 0.5);
+        // 锚点 默认在中间底部是最合理的
+        await markerOption.anchor(option.anchorU ?? 0.5, option.anchorV ?? 0);
         // 是否可见
         await markerOption.visible(option.visible);
 
@@ -901,12 +926,18 @@ class AmapController with WidgetsBindingObserver, _Private {
           if (option.draggable != null) {
             await markerOption.draggable(option.draggable);
           }
+          // 旋转角度
+          if (option.rotateAngle != null) {
+            await markerOption.rotateAngle(option.rotateAngle);
+          }
+          // 锚点 默认在中间底部是最合理的
+          await markerOption.anchor(option.anchorU ?? 0.5, option.anchorV ?? 0);
           // 是否可见
           await markerOption.visible(option.visible);
 
           androidOptions.add(markerOption);
 
-          pool..add(latLng);
+          pool.add(latLng);
         }
 
         final markers = await map.addMarkers(androidOptions, false);
@@ -914,9 +945,15 @@ class AmapController with WidgetsBindingObserver, _Private {
         for (int i = 0; i < options.length; i++) {
           final option = options[i];
           final marker = markers[i];
+
           // 是否允许弹窗
           if (option.infoWindowEnabled != null) {
             await marker.setInfoWindowEnable(option.infoWindowEnabled);
+          }
+
+          // 自定义数据
+          if (option.object != null) {
+            await marker.setObject(option.object);
           }
         }
 
@@ -1990,6 +2027,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
   Future<void> dispose() async {
     _iosMapDelegate._annotationViewStream.close();
+    _locateSubscription?.cancel();
 
     await androidController?.onPause();
     await androidController?.onDestroy();

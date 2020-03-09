@@ -29,9 +29,6 @@ class _ControlInteractionScreenState extends State<ControlInteractionScreen> {
             child: AmapView(
               onMapCreated: (controller) async {
                 _controller = controller;
-                if (await requestPermission()) {
-                  await controller.showMyLocation(false);
-                }
               },
             ),
           ),

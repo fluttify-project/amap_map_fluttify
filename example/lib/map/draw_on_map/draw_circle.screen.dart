@@ -28,9 +28,6 @@ class _DrawCircleScreenState extends State<DrawCircleScreen> with NextLatLng {
             child: AmapView(
               onMapCreated: (controller) async {
                 _controller = controller;
-                if (await requestPermission()) {
-                  await controller.showMyLocation(false);
-                }
               },
             ),
           ),

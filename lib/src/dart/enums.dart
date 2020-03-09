@@ -73,7 +73,10 @@ enum DashType {
 }
 
 enum MyLocationType {
-  /// 单次定位
+  /// 只定位
+  Show,
+
+  /// 定位一次, 并移动到中心
   Locate,
 
   /// 跟随
