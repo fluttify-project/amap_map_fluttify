@@ -159,7 +159,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                   onTap: () {
                     _controller?.addMarkers(
                       [
-                        for (int i = 0; i < 1000; i++)
+                        for (int i = 0; i < 100; i++)
                           MarkerOption(
                             latLng: getNextLatLng(),
                             title: '北京',
@@ -167,6 +167,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                             iconUri: i % 2 == 0 ? _assetsIcon1 : _assetsIcon2,
                             imageConfig: createLocalImageConfiguration(context),
                             width: 40,
+                            rotateAngle: 90,
                             height: 40,
                           ),
                       ],
