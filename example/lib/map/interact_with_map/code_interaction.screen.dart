@@ -31,9 +31,6 @@ class _CodeInteractionScreenState extends State<CodeInteractionScreen> {
             child: AmapView(
               onMapCreated: (controller) async {
                 _controller = controller;
-                if (await requestPermission()) {
-                  await controller.showMyLocation(false);
-                }
               },
             ),
           ),

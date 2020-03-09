@@ -82,29 +82,37 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                 ),
                 BooleanSetting(
                   head: '是否显示定位',
-                  onSelected: (value) {
-                    _controller?.showMyLocation(value);
+                  onSelected: (value) async {
+                    await _controller?.showMyLocation(MyLocationOption(
+                      show: value,
+                    ));
                   },
                 ),
                 DiscreteSetting(
                   head: '选择定位模式',
-                  options: <String>['定位一次', '连续定位并跟随', '连续定位跟随方向'],
+                  options: <String>[
+                    '只定位不移动地图到中心',
+                    '定位一次并移动地图到中心',
+                    '连续定位并跟随',
+                    '连续定位跟随方向',
+                  ],
                   onSelected: (String value) async {
-                    if (value == '定位一次') {
-                      await _controller?.showMyLocation(
-                        true,
+                    if (value == '只定位不移动地图到中心') {
+                      await _controller?.showMyLocation(MyLocationOption(
+                        myLocationType: MyLocationType.Show,
+                      ));
+                    } else if (value == '定位一次并移动地图到中心') {
+                      await _controller?.showMyLocation(MyLocationOption(
                         myLocationType: MyLocationType.Locate,
-                      );
+                      ));
                     } else if (value == '连续定位并跟随') {
-                      await _controller?.showMyLocation(
-                        true,
+                      await _controller?.showMyLocation(MyLocationOption(
                         myLocationType: MyLocationType.Follow,
-                      );
+                      ));
                     } else if (value == '连续定位跟随方向') {
-                      await _controller?.showMyLocation(
-                        true,
+                      await _controller?.showMyLocation(MyLocationOption(
                         myLocationType: MyLocationType.Rotate,
-                      );
+                      ));
                     }
                   },
                 ),
@@ -125,11 +133,12 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                 ListTile(
                   title: Center(child: Text('使用自定义定位图标')),
                   onTap: () async {
-                    await _controller?.showMyLocation(
-                      true,
+                    await _controller?.showMyLocation(MyLocationOption(
+                      myLocationType: MyLocationType.Rotate,
                       iconUri: _assetsIcon,
-                      imageConfig: createLocalImageConfiguration(context),
-                    );
+                      imageConfiguration:
+                          createLocalImageConfiguration(context),
+                    ));
                   },
                 ),
                 BooleanSetting(
@@ -181,25 +190,22 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   onSelected: (value) {
                     switch (value) {
                       case '红色':
-                        _controller?.showMyLocation(
-                          true,
+                        _controller?.showMyLocation(MyLocationOption(
                           strokeColor: Colors.red,
                           strokeWidth: 2,
-                        );
+                        ));
                         break;
                       case '绿色':
-                        _controller?.showMyLocation(
-                          true,
+                        _controller?.showMyLocation(MyLocationOption(
                           strokeColor: Colors.green,
                           strokeWidth: 2,
-                        );
+                        ));
                         break;
                       case '蓝色':
-                        _controller?.showMyLocation(
-                          true,
+                        _controller?.showMyLocation(MyLocationOption(
                           strokeColor: Colors.blue,
                           strokeWidth: 2,
-                        );
+                        ));
                         break;
                     }
                   },
@@ -210,25 +216,22 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   onSelected: (value) {
                     switch (value) {
                       case '红色':
-                        _controller?.showMyLocation(
-                          true,
+                        _controller?.showMyLocation(MyLocationOption(
                           fillColor: Colors.red,
                           strokeWidth: 2,
-                        );
+                        ));
                         break;
                       case '绿色':
-                        _controller?.showMyLocation(
-                          true,
+                        _controller?.showMyLocation(MyLocationOption(
                           fillColor: Colors.green,
                           strokeWidth: 2,
-                        );
+                        ));
                         break;
                       case '蓝色':
-                        _controller?.showMyLocation(
-                          true,
+                        _controller?.showMyLocation(MyLocationOption(
                           fillColor: Colors.blue,
                           strokeWidth: 2,
-                        );
+                        ));
                         break;
                     }
                   },
@@ -239,13 +242,19 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   onSelected: (value) {
                     switch (value) {
                       case '2':
-                        _controller?.showMyLocation(true, strokeWidth: 2);
+                        _controller?.showMyLocation(MyLocationOption(
+                          strokeWidth: 2,
+                        ));
                         break;
                       case '4':
-                        _controller?.showMyLocation(true, strokeWidth: 4);
+                        _controller?.showMyLocation(MyLocationOption(
+                          strokeWidth: 4,
+                        ));
                         break;
                       case '8':
-                        _controller?.showMyLocation(true, strokeWidth: 8);
+                        _controller?.showMyLocation(MyLocationOption(
+                          strokeWidth: 8,
+                        ));
                         break;
                     }
                   },
@@ -298,7 +307,7 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   title: Center(child: Text('经纬度坐标转屏幕坐标')),
                   onTap: () async {
                     final centerLatLng =
-                        await _controller?.getCenterCoordinate();
+                        await _controller.getCenterCoordinate();
                     final screenPoint =
                         await _controller?.toScreenLocation(centerLatLng);
                     toast('地图中心点对应的屏幕坐标为: $screenPoint');
@@ -342,7 +351,7 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                 ListTile(
                   title: Center(child: Text('获取当前缩放等级')),
                   onTap: () async {
-                    toast('当前缩放等级: ${await _controller?.getZoomLevel()}');
+                    toast('当前缩放等级: ${await _controller.getZoomLevel()}');
                   },
                 ),
               ],

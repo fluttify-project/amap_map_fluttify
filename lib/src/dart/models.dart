@@ -6,6 +6,53 @@ import '../android/android.export.g.dart';
 import '../ios/ios.export.g.dart';
 import 'enums.dart';
 
+/// 我的位置选项
+@immutable
+class MyLocationOption {
+  /// 是否显示
+  final bool show;
+
+  /// 定位类型
+  final MyLocationType myLocationType;
+
+  /// 定位间隔
+  final Duration interval;
+
+  /// 我的位置图标
+  final Uri iconUri;
+
+  /// 图标配置
+  final ImageConfiguration imageConfiguration;
+
+  /// 边框颜色
+  final Color strokeColor;
+
+  /// 边框宽度
+  final double strokeWidth;
+
+  /// 填充颜色
+  final Color fillColor;
+
+  MyLocationOption({
+    this.show = true,
+    this.myLocationType = MyLocationType.Locate,
+    this.interval = Duration.zero,
+    this.iconUri,
+    this.imageConfiguration,
+    this.strokeColor,
+    this.strokeWidth,
+    this.fillColor,
+  }) : assert(
+          (iconUri != null && imageConfiguration != null) || iconUri == null,
+          'iconUri与imageConfiguration同时设置!',
+        );
+
+  @override
+  String toString() {
+    return 'MyLocationOption{show: $show, myLocationType: $myLocationType, interval: $interval, iconUri: $iconUri, imageConfiguration: $imageConfiguration, strokeColor: $strokeColor, fillColor: $fillColor, strokeWidth: $strokeWidth}';
+  }
+}
+
 /// Marker创建参数
 @immutable
 class MarkerOption {

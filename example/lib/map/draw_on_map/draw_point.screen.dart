@@ -35,7 +35,6 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
               onMapCreated: (controller) async {
                 _controller = controller;
                 if (await requestPermission()) {
-                  await controller.showMyLocation(false);
                   await controller.setZoomLevel(6);
                 }
               },
