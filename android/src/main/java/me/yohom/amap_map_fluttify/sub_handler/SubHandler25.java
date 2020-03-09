@@ -32,7 +32,9 @@ public class SubHandler25 {
         return new HashMap<String, Handler>() {{
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__");
+                }
             
                 // args
             
@@ -50,7 +52,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_style_StyleItem__int", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_style_StyleItem__int");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_style_StyleItem__int");
+                }
             
                 // args
                 // jsonable arg
@@ -69,7 +73,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_style_StyleElement__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_style_StyleElement__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_style_StyleElement__");
+                }
             
                 // args
             
@@ -87,7 +93,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_MapViewInitParam__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam__");
+                }
             
                 // args
             
@@ -105,7 +113,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__");
+                }
             
                 // args
             
@@ -123,7 +133,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__int__long", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_GLMapState__int__long");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_GLMapState__int__long");
+                }
             
                 // args
                 // jsonable arg
@@ -144,7 +156,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__long__long", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_GLMapState__long__long");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_GLMapState__long__long");
+                }
             
                 // args
                 // jsonable arg
@@ -165,7 +179,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLTextureProperty__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLTextureProperty__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLTextureProperty__");
+                }
             
                 // args
             
@@ -183,7 +199,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__");
+                }
             
                 // args
             
@@ -201,7 +219,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__");
+                }
             
                 // args
             
@@ -219,7 +239,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLRouteProperty__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLRouteProperty__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLRouteProperty__");
+                }
             
                 // args
             
@@ -237,7 +259,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int");
+                }
             
                 // args
                 // jsonable arg
@@ -262,7 +286,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int");
+                }
             
                 // args
                 // jsonable arg
@@ -291,7 +317,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_InitParam__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_GLMapEngine_InitParam__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_GLMapEngine_InitParam__");
+                }
             
                 // args
             
@@ -309,7 +337,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__");
+                }
             
                 // args
             
@@ -327,7 +357,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_maploader_NetworkState__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_maploader_NetworkState__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_maploader_NetworkState__");
+                }
             
                 // args
             
@@ -345,7 +377,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest__android_content_Context__String__String", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest__android_content_Context__String__String");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest__android_content_Context__String__String");
+                }
             
                 // args
                 // ref arg
@@ -368,7 +402,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader__int__com_autonavi_ae_gmap_GLMapEngine__com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_maploader_AMapLoader__int__com_autonavi_ae_gmap_GLMapEngine__com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_maploader_AMapLoader__int__com_autonavi_ae_gmap_GLMapEngine__com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam");
+                }
             
                 // args
                 // jsonable arg
@@ -391,7 +427,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_MapProjection__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_MapProjection__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_MapProjection__");
+                }
             
                 // args
             
@@ -409,7 +447,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_tools_TextTextureGenerator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_tools_TextTextureGenerator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_tools_TextTextureGenerator__");
+                }
             
                 // args
             
@@ -427,7 +467,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLFileUtil__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_tools_GLFileUtil__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_tools_GLFileUtil__");
+                }
             
                 // args
             
@@ -445,7 +487,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_tools_GlMapUtil__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_tools_GlMapUtil__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_tools_GlMapUtil__");
+                }
             
                 // args
             
@@ -463,7 +507,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLMapStaticValue__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_tools_GLMapStaticValue__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_tools_GLMapStaticValue__");
+                }
             
                 // args
             
@@ -481,7 +527,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLConvertUtil__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_tools_GLConvertUtil__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_tools_GLConvertUtil__");
+                }
             
                 // args
             
@@ -499,7 +547,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_MsgProcessor__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_MsgProcessor__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_MsgProcessor__");
+                }
             
                 // args
             
@@ -517,7 +567,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil_UnZipFileBrake__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake__");
+                }
             
                 // args
             
@@ -535,7 +587,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AbstractNativeInstance__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AbstractNativeInstance__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AbstractNativeInstance__");
+                }
             
                 // args
             
@@ -553,7 +607,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_LinkInfo__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_LinkInfo__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_LinkInfo__");
+                }
             
                 // args
             
@@ -571,7 +627,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativePolyline__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapNativePolyline__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapNativePolyline__");
+                }
             
                 // args
             
@@ -589,7 +647,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_IPoint__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_IPoint__");
+                }
             
                 // args
             
@@ -607,7 +667,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__int__int", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_IPoint__int__int");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_IPoint__int__int");
+                }
             
                 // args
                 // jsonable arg
@@ -628,7 +690,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__");
+                }
             
                 // args
             
@@ -646,7 +710,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_DPoint__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_DPoint__");
+                }
             
                 // args
             
@@ -664,7 +730,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__double__double", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_DPoint__double__double");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_DPoint__double__double");
+                }
             
                 // args
                 // jsonable arg
@@ -685,7 +753,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeRenderer__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapNativeRenderer__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapNativeRenderer__");
+                }
             
                 // args
             
@@ -703,7 +773,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FileUtil__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FileUtil__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FileUtil__");
+                }
             
                 // args
             
@@ -721,7 +793,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng");
+                }
             
                 // args
                 // ref arg
@@ -740,7 +814,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -767,7 +843,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -788,7 +866,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -813,7 +893,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTransformation__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLTransformation__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLTransformation__");
+                }
             
                 // args
             
@@ -831,7 +913,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimationSet__boolean", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLAnimationSet__boolean");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLAnimationSet__boolean");
+                }
             
                 // args
                 // jsonable arg
@@ -850,7 +934,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng");
+                }
             
                 // args
                 // ref arg
@@ -869,7 +955,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimation__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLAnimation__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLAnimation__");
+                }
             
                 // args
             
@@ -887,7 +975,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_MapConfig__boolean", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_MapConfig__boolean");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_MapConfig__boolean");
+                }
             
                 // args
                 // jsonable arg
@@ -906,7 +996,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float");
+                }
             
                 // args
                 // jsonable arg
@@ -927,7 +1019,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -950,7 +1044,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int");
+                }
             
                 // args
                 // jsonable arg
@@ -975,7 +1071,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int");
+                }
             
                 // args
                 // jsonable arg
@@ -1000,7 +1098,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint");
+                }
             
                 // args
                 // ref arg
@@ -1021,7 +1121,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_CoordUtil__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_CoordUtil__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_CoordUtil__");
+                }
             
                 // args
             
@@ -1039,7 +1141,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AeUtil__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AeUtil__");
+                }
             
                 // args
             
@@ -1057,7 +1161,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_VirtualEarthProjection__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_VirtualEarthProjection__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_VirtualEarthProjection__");
+                }
             
                 // args
             
@@ -1075,7 +1181,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Rectangle__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Rectangle__");
+                }
             
                 // args
             
@@ -1093,7 +1201,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__float__float__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Rectangle__float__float__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Rectangle__float__float__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -1118,7 +1228,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__String", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Inner_3dMap_location__String");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Inner_3dMap_location__String");
+                }
             
                 // args
                 // jsonable arg
@@ -1137,7 +1249,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location");
+                }
             
                 // args
                 // ref arg
@@ -1156,7 +1270,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapEngineUtils__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapEngineUtils__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapEngineUtils__");
+                }
             
                 // args
             
@@ -1174,7 +1290,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint3__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint3__");
+                }
             
                 // args
             
@@ -1192,7 +1310,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__float__float__int", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint3__float__float__int");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint3__float__float__int");
+                }
             
                 // args
                 // jsonable arg
@@ -1215,7 +1335,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapEtaDecoder__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapEtaDecoder__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapEtaDecoder__");
+                }
             
                 // args
             
@@ -1233,7 +1355,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds_Builder__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPointBounds_Builder__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPointBounds_Builder__");
+                }
             
                 // args
             
@@ -1251,7 +1375,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Inner_3dMap_locationOption__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Inner_3dMap_locationOption__");
+                }
             
                 // args
             
@@ -1269,7 +1395,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint__");
+                }
             
                 // args
             
@@ -1287,7 +1415,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -1308,7 +1438,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeParticleSystem__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapNativeParticleSystem__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapNativeParticleSystem__");
+                }
             
                 // args
             
@@ -1326,7 +1458,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeBuildingRenderer__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapNativeBuildingRenderer__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapNativeBuildingRenderer__");
+                }
             
                 // args
             
@@ -1344,7 +1478,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_Convert__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Convert__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Convert__");
+                }
             
                 // args
             
@@ -1362,7 +1498,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_offlineservice_AMapPermissionActivity__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_offlineservice_AMapPermissionActivity__");
+                }
             
                 // args
             
@@ -1380,7 +1518,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_InfoWindowParams__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_InfoWindowParams__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_InfoWindowParams__");
+                }
             
                 // args
             
@@ -1398,7 +1538,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_CameraUpdateFactory__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_CameraUpdateFactory__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_CameraUpdateFactory__");
+                }
             
                 // args
             
@@ -1416,7 +1558,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapException__String", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapException__String");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapException__String");
+                }
             
                 // args
                 // jsonable arg
@@ -1435,7 +1579,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapException__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapException__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapException__");
+                }
             
                 // args
             
@@ -1453,7 +1599,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapOptions__");
+                }
             
                 // args
             
@@ -1471,7 +1619,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapOptionsCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapOptionsCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapOptionsCreator__");
+                }
             
                 // args
             
@@ -1489,7 +1639,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_CoordinateConverter__android_content_Context", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_CoordinateConverter__android_content_Context");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_CoordinateConverter__android_content_Context");
+                }
             
                 // args
                 // ref arg
@@ -1508,7 +1660,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_utils_SpatialRelationUtil__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_SpatialRelationUtil__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_SpatialRelationUtil__");
+                }
             
                 // args
             
@@ -1526,7 +1680,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay");
+                }
             
                 // args
                 // ref arg
@@ -1547,7 +1703,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap");
+                }
             
                 // args
                 // ref arg
@@ -1566,7 +1724,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView");
+                }
             
                 // args
                 // ref arg
@@ -1585,7 +1745,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View");
+                }
             
                 // args
                 // ref arg
@@ -1606,7 +1768,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_MapsInitializer__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapsInitializer__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapsInitializer__");
+                }
             
                 // args
             
@@ -1624,7 +1788,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapStatus__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapStatus__");
+                }
             
                 // args
             
@@ -1642,7 +1808,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapProvince__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapProvince__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapProvince__");
+                }
             
                 // args
             
@@ -1660,7 +1828,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context");
+                }
             
                 // args
                 // ref arg
@@ -1679,7 +1849,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_Province__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_Province__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_Province__");
+                }
             
                 // args
             
@@ -1697,7 +1869,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapCity__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapCity__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapCity__");
+                }
             
                 // args
             
@@ -1715,7 +1889,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_City__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_City__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_City__");
+                }
             
                 // args
             
@@ -1733,7 +1909,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolygonHoleOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolygonHoleOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolygonHoleOptions__");
+                }
             
                 // args
             
@@ -1751,7 +1929,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptionsCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileOverlayOptionsCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileOverlayOptionsCreator__");
+                }
             
                 // args
             
@@ -1769,7 +1949,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String");
+                }
             
                 // args
                 // jsonable arg
@@ -1792,7 +1974,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MyLocationStyle__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MyLocationStyle__");
+                }
             
                 // args
             
@@ -1810,7 +1994,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds");
+                }
             
                 // args
                 // ref arg
@@ -1837,7 +2023,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLngCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngCreator__");
+                }
             
                 // args
             
@@ -1855,7 +2043,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CircleHoleOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CircleHoleOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CircleHoleOptions__");
+                }
             
                 // args
             
@@ -1873,7 +2063,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds_Builder__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBounds_Builder__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBounds_Builder__");
+                }
             
                 // args
             
@@ -1891,7 +2083,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_NavigateArrowOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_NavigateArrowOptions__");
+                }
             
                 // args
             
@@ -1909,7 +2103,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorFactory__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BitmapDescriptorFactory__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BitmapDescriptorFactory__");
+                }
             
                 // args
             
@@ -1927,7 +2123,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MultiPointOverlayOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MultiPointOverlayOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MultiPointOverlayOptions__");
+                }
             
                 // args
             
@@ -1945,7 +2143,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PoiCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PoiCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PoiCreator__");
+                }
             
                 // args
             
@@ -1963,7 +2163,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolylineOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolylineOptions__");
+                }
             
                 // args
             
@@ -1981,7 +2183,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_Tile__int__int__byteArray", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Tile__int__int__byteArray");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Tile__int__int__byteArray");
+                }
             
                 // args
                 // jsonable arg
@@ -2004,7 +2208,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_Gradient__intArray__floatArray", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Gradient__intArray__floatArray");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Gradient__intArray__floatArray");
+                }
             
                 // args
                 // jsonable arg
@@ -2025,7 +2231,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_NaviPara__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_NaviPara__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_NaviPara__");
+                }
             
                 // args
             
@@ -2043,7 +2251,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_GroundOverlayOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_GroundOverlayOptions__");
+                }
             
                 // args
             
@@ -2061,7 +2271,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_GL3DModelOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_GL3DModelOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_GL3DModelOptions__");
+                }
             
                 // args
             
@@ -2079,7 +2291,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MyTrafficStyle__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MyTrafficStyle__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MyTrafficStyle__");
+                }
             
                 // args
             
@@ -2097,7 +2311,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float");
+                }
             
                 // args
                 // ref arg
@@ -2122,7 +2338,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TextOptionsCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TextOptionsCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TextOptionsCreator__");
+                }
             
                 // args
             
@@ -2140,7 +2358,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PoiPara__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PoiPara__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PoiPara__");
+                }
             
                 // args
             
@@ -2158,7 +2378,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MarkerOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MarkerOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MarkerOptions__");
+                }
             
                 // args
             
@@ -2176,7 +2398,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_AnimationSet__boolean", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_AnimationSet__boolean");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_AnimationSet__boolean");
+                }
             
                 // args
                 // jsonable arg
@@ -2195,7 +2419,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -2222,7 +2448,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_RotateAnimation__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_RotateAnimation__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -2243,7 +2471,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng");
+                }
             
                 // args
                 // ref arg
@@ -2262,7 +2492,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng");
+                }
             
                 // args
                 // ref arg
@@ -2281,7 +2513,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_AlphaAnimation__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_AlphaAnimation__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_AlphaAnimation__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -2302,7 +2536,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -2327,7 +2563,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng");
+                }
             
                 // args
                 // ref arg
@@ -2348,7 +2586,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CustomMapStyleOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CustomMapStyleOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CustomMapStyleOptions__");
+                }
             
                 // args
             
@@ -2366,7 +2606,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BuildingOverlayOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BuildingOverlayOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BuildingOverlayOptions__");
+                }
             
                 // args
             
@@ -2384,7 +2626,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CrossOverlayOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CrossOverlayOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CrossOverlayOptions__");
+                }
             
                 // args
             
@@ -2402,7 +2646,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegionCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_VisibleRegionCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_VisibleRegionCreator__");
+                }
             
                 // args
             
@@ -2420,7 +2666,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLng__double__double");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLng__double__double");
+                }
             
                 // args
                 // jsonable arg
@@ -2441,7 +2689,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double__boolean", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLng__double__double__boolean");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLng__double__double__boolean");
+                }
             
                 // args
                 // jsonable arg
@@ -2464,7 +2714,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileProjection__int__int__int__int__int__int");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileProjection__int__int__int__int__int__int");
+                }
             
                 // args
                 // jsonable arg
@@ -2493,7 +2745,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_AMapPara__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_AMapPara__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_AMapPara__");
+                }
             
                 // args
             
@@ -2511,7 +2765,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CircleOptionsCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CircleOptionsCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CircleOptionsCreator__");
+                }
             
                 // args
             
@@ -2529,7 +2785,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -2558,7 +2816,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolygonOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolygonOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolygonOptions__");
+                }
             
                 // args
             
@@ -2576,7 +2836,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double");
+                }
             
                 // args
                 // ref arg
@@ -2597,7 +2859,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng");
+                }
             
                 // args
                 // ref arg
@@ -2616,7 +2880,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MyLocationStyleCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MyLocationStyleCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MyLocationStyleCreator__");
+                }
             
                 // args
             
@@ -2634,7 +2900,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MarkerOptionsCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MarkerOptionsCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MarkerOptionsCreator__");
+                }
             
                 // args
             
@@ -2652,7 +2920,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng");
+                }
             
                 // args
                 // ref arg
@@ -2671,7 +2941,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLngBoundsCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBoundsCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBoundsCreator__");
+                }
             
                 // args
             
@@ -2689,7 +2961,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_ArcOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_ArcOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_ArcOptions__");
+                }
             
                 // args
             
@@ -2707,7 +2981,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BitmapDescriptorCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BitmapDescriptorCreator__");
+                }
             
                 // args
             
@@ -2725,7 +3001,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CircleOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CircleOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CircleOptions__");
+                }
             
                 // args
             
@@ -2743,7 +3021,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptionsCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_NavigateArrowOptionsCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_NavigateArrowOptionsCreator__");
+                }
             
                 // args
             
@@ -2761,7 +3041,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_RuntimeRemoteException__String", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_RuntimeRemoteException__String");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_RuntimeRemoteException__String");
+                }
             
                 // args
                 // jsonable arg
@@ -2780,7 +3062,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_HeatmapTileProvider_Builder__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_HeatmapTileProvider_Builder__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_HeatmapTileProvider_Builder__");
+                }
             
                 // args
             
@@ -2798,7 +3082,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BaseOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BaseOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BaseOptions__");
+                }
             
                 // args
             
@@ -2816,7 +3102,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolylineOptionsCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolylineOptionsCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolylineOptionsCreator__");
+                }
             
                 // args
             
@@ -2834,7 +3122,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BaseOverlay__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BaseOverlay__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BaseOverlay__");
+                }
             
                 // args
             
@@ -2852,7 +3142,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileOverlayOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileOverlayOptions__");
+                }
             
                 // args
             
@@ -2870,7 +3162,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_RoutePara__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_RoutePara__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_RoutePara__");
+                }
             
                 // args
             
@@ -2888,7 +3182,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_ArcOptionsCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_ArcOptionsCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_ArcOptionsCreator__");
+                }
             
                 // args
             
@@ -2906,7 +3202,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CameraPositionCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CameraPositionCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CameraPositionCreator__");
+                }
             
                 // args
             
@@ -2924,7 +3222,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverLifeModule__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleOverLifeModule__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleOverLifeModule__");
+                }
             
                 // args
             
@@ -2942,7 +3242,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_ConstantRotationOverLife__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ConstantRotationOverLife__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ConstantRotationOverLife__float");
+                }
             
                 // args
                 // jsonable arg
@@ -2961,7 +3263,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean");
+                }
             
                 // args
                 // jsonable arg
@@ -2986,7 +3290,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -3009,7 +3315,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -3038,7 +3346,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -3061,7 +3371,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleEmissionModule__int__int");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleEmissionModule__int__int");
+                }
             
                 // args
                 // jsonable arg
@@ -3082,7 +3394,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean");
+                }
             
                 // args
                 // jsonable arg
@@ -3109,7 +3423,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float");
+                }
             
                 // args
                 // jsonable arg
@@ -3142,7 +3458,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__");
+                }
             
                 // args
             
@@ -3160,7 +3478,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleOverlayOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleOverlayOptions__");
+                }
             
                 // args
             
@@ -3178,7 +3498,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TextOptions__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TextOptions__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TextOptions__");
+                }
             
                 // args
             
@@ -3196,7 +3518,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolygonOptionsCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolygonOptionsCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolygonOptionsCreator__");
+                }
             
                 // args
             
@@ -3214,7 +3538,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TileProjectionCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileProjectionCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileProjectionCreator__");
+                }
             
                 // args
             
@@ -3232,7 +3558,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptionsCreator__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_GroundOverlayOptionsCreator__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_GroundOverlayOptionsCreator__");
+                }
             
                 // args
             
@@ -3250,7 +3578,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_IndoorBuildingInfo__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_IndoorBuildingInfo__");
+                }
             
                 // args
             
@@ -3268,7 +3598,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_TextureMapView__android_content_Context");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_TextureMapView__android_content_Context");
+                }
             
                 // args
                 // ref arg
@@ -3287,7 +3619,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions");
+                }
             
                 // args
                 // ref arg
@@ -3308,7 +3642,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapUtils__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapUtils__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapUtils__");
+                }
             
                 // args
             
@@ -3326,7 +3662,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_WearMapView__android_content_Context");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_WearMapView__android_content_Context");
+                }
             
                 // args
                 // ref arg
@@ -3345,7 +3683,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions");
+                }
             
                 // args
                 // ref arg
@@ -3366,7 +3706,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapView__android_content_Context");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapView__android_content_Context");
+                }
             
                 // args
                 // ref arg
@@ -3385,7 +3727,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions");
+                }
             
                 // args
                 // ref arg
@@ -3406,7 +3750,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_TraceLocation__double__double__float__float__long", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceLocation__double__double__float__float__long");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceLocation__double__double__float__float__long");
+                }
             
                 // args
                 // jsonable arg
@@ -3433,7 +3779,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_TraceLocation__", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceLocation__");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceLocation__");
+                }
             
                 // args
             
@@ -3451,7 +3799,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_LBSTraceClient__android_content_Context", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_trace_LBSTraceClient__android_content_Context");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_trace_LBSTraceClient__android_content_Context");
+                }
             
                 // args
                 // ref arg
@@ -3470,7 +3820,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_LatLng");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_LatLng");
+                }
             
                 // args
                 // ref arg
@@ -3495,7 +3847,9 @@ public class SubHandler25 {
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap", (args, methodResult) -> {
-                Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap");
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap");
+                }
             
                 // args
                 // ref arg
