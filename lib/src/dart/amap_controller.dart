@@ -81,6 +81,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 显示我的位置
   Future<void> showMyLocation(MyLocationOption option) async {
     assert(option != null);
     await platform(
