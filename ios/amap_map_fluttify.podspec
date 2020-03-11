@@ -4,7 +4,7 @@
 Pod::Spec.new do |s|
   s.name             = 'amap_map_fluttify'
   s.version          = '0.0.1'
-  s.summary          = 'An `Amap` Map Component, Powered By `Fluttify` Engine, Which Generates Dart Interface For Native SDK.'
+  s.summary          = 'An `Amap` Map Component, Powered By `Fluttify` Compiler, A Dart Bindings Generator For Native SDK.'
   s.description      = <<-DESC
 A new flutter plugin project.
                        DESC
