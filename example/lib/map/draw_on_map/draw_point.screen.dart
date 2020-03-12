@@ -168,6 +168,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                             width: 40,
                             rotateAngle: 90,
                             height: 40,
+                            object: 'Marker_$i',
                           ),
                       ],
                     )?.then(_markers.addAll);
