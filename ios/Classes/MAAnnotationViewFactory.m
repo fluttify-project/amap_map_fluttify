@@ -156,6 +156,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           NSString* result = ref.reuseIdentifier;
       
           // 返回值: jsonable
@@ -173,6 +174,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           NSInteger result = ref.zIndex;
       
           // 返回值: Value
@@ -190,6 +192,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           id<MAAnnotation> result = ref.annotation;
       
           // return a ref
@@ -208,6 +211,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           UIImage* result = ref.image;
       
           // return a ref
@@ -226,6 +230,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           MACustomCalloutView* result = ref.customCalloutView;
       
           // return a ref
@@ -244,6 +249,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGPoint result = ref.centerOffset;
       
           // 返回值: 结构体
@@ -263,6 +269,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGPoint result = ref.calloutOffset;
       
           // 返回值: 结构体
@@ -282,6 +289,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.enabled;
       
           // 返回值: Value
@@ -299,6 +307,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.highlighted;
       
           // 返回值: Value
@@ -316,6 +325,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.selected;
       
           // 返回值: Value
@@ -333,6 +343,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.canShowCallout;
       
           // 返回值: Value
@@ -350,6 +361,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           UIView* result = ref.leftCalloutAccessoryView;
       
           // return a ref
@@ -368,6 +380,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           UIView* result = ref.rightCalloutAccessoryView;
       
           // return a ref
@@ -386,6 +399,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.draggable;
       
           // 返回值: Value
@@ -403,6 +417,7 @@ extern BOOL enableLog;
           // ref object
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           MAAnnotationViewDragState result = ref.dragState;
       
           // 返回值: Value
@@ -419,7 +434,7 @@ extern BOOL enableLog;
       
           // args
           // jsonable arg
-          NSInteger zIndex = [args[@"zIndex"] integerValue];
+          NSInteger zIndex = [args[@"zIndex"] longValue];
       
           // ref
           MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];

@@ -1507,7 +1507,7 @@ extern BOOL enableLog;
       @"MAMapView::setCurrentIndoorMapFloorIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // jsonable arg
-          NSInteger floorIndex = [args[@"floorIndex"] integerValue];
+          NSInteger floorIndex = [args[@"floorIndex"] longValue];
       
           // ref
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -1578,6 +1578,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           MAMapType result = ref.mapType;
       
           // 返回值: Value
@@ -1595,6 +1596,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CLLocationCoordinate2D result = ref.centerCoordinate;
       
           // 返回值: 结构体
@@ -1614,6 +1616,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           MACoordinateRegion result = ref.region;
       
           // 返回值: 结构体
@@ -1633,6 +1636,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           MAMapRect result = ref.visibleMapRect;
       
           // 返回值: 结构体
@@ -1652,6 +1656,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           MACoordinateRegion result = ref.limitRegion;
       
           // 返回值: 结构体
@@ -1671,6 +1676,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           MAMapRect result = ref.limitMapRect;
       
           // 返回值: 结构体
@@ -1690,6 +1696,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGFloat result = ref.zoomLevel;
       
           // 返回值: Value
@@ -1707,6 +1714,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGFloat result = ref.minZoomLevel;
       
           // 返回值: Value
@@ -1724,6 +1732,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGFloat result = ref.maxZoomLevel;
       
           // 返回值: Value
@@ -1741,6 +1750,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGFloat result = ref.rotationDegree;
       
           // 返回值: Value
@@ -1758,6 +1768,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGFloat result = ref.cameraDegree;
       
           // 返回值: Value
@@ -1775,6 +1786,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.zoomingInPivotsAroundAnchorPoint;
       
           // 返回值: Value
@@ -1792,6 +1804,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.zoomEnabled;
       
           // 返回值: Value
@@ -1809,6 +1822,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.scrollEnabled;
       
           // 返回值: Value
@@ -1826,6 +1840,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.rotateEnabled;
       
           // 返回值: Value
@@ -1843,6 +1858,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.rotateCameraEnabled;
       
           // 返回值: Value
@@ -1860,6 +1876,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.skyModelEnable;
       
           // 返回值: Value
@@ -1877,6 +1894,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.showsBuildings;
       
           // 返回值: Value
@@ -1894,6 +1912,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.showsLabels;
       
           // 返回值: Value
@@ -1911,6 +1930,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.showTraffic;
       
           // 返回值: Value
@@ -1928,6 +1948,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGFloat result = ref.trafficRatio;
       
           // 返回值: Value
@@ -1945,6 +1966,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.touchPOIEnabled;
       
           // 返回值: Value
@@ -1962,6 +1984,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.showsCompass;
       
           // 返回值: Value
@@ -1979,6 +2002,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGPoint result = ref.compassOrigin;
       
           // 返回值: 结构体
@@ -1998,6 +2022,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGSize result = ref.compassSize;
       
           // 返回值: 结构体
@@ -2017,6 +2042,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.showsScale;
       
           // 返回值: Value
@@ -2034,6 +2060,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGPoint result = ref.scaleOrigin;
       
           // 返回值: 结构体
@@ -2053,6 +2080,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGSize result = ref.scaleSize;
       
           // 返回值: 结构体
@@ -2072,6 +2100,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGPoint result = ref.logoCenter;
       
           // 返回值: 结构体
@@ -2091,6 +2120,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGSize result = ref.logoSize;
       
           // 返回值: 结构体
@@ -2110,6 +2140,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           double result = ref.metersPerPointForCurrentZoom;
       
           // 返回值: Value
@@ -2127,6 +2158,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.isAbroad;
       
           // 返回值: Value
@@ -2144,6 +2176,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           NSUInteger result = ref.maxRenderFrame;
       
           // 返回值: Value
@@ -2161,6 +2194,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.isAllowDecreaseFrame;
       
           // 返回值: Value
@@ -2178,6 +2212,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.openGLESDisabled;
       
           // 返回值: Value
@@ -2195,6 +2230,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGPoint result = ref.screenAnchor;
       
           // 返回值: 结构体
@@ -2214,6 +2250,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           NSNumber* result = ref.showsWorldMap;
       
           // 返回值: jsonable
@@ -2231,6 +2268,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           NSNumber* result = ref.mapLanguage;
       
           // 返回值: jsonable
@@ -2248,6 +2286,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           NSArray* result = ref.annotations;
       
           // 返回值: 列表
@@ -2270,6 +2309,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           NSArray* result = ref.selectedAnnotations;
       
           // 返回值: 列表
@@ -2292,6 +2332,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGRect result = ref.annotationVisibleRect;
       
           // 返回值: 结构体
@@ -2311,6 +2352,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.allowsAnnotationViewSorting;
       
           // 返回值: Value
@@ -2328,6 +2370,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.showsUserLocation;
       
           // 返回值: Value
@@ -2345,6 +2388,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           MAUserLocation* result = ref.userLocation;
       
           // return a ref
@@ -2363,6 +2407,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.customizeUserLocationAccuracyCircleRepresentation;
       
           // 返回值: Value
@@ -2380,6 +2425,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           MACircle* result = ref.userLocationAccuracyCircle;
       
           // return a ref
@@ -2398,6 +2444,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           MAUserTrackingMode result = ref.userTrackingMode;
       
           // 返回值: Value
@@ -2415,6 +2462,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.userLocationVisible;
       
           // 返回值: Value
@@ -2432,6 +2480,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CLLocationDistance result = ref.distanceFilter;
       
           // 返回值: Value
@@ -2449,6 +2498,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CLLocationAccuracy result = ref.desiredAccuracy;
       
           // 返回值: Value
@@ -2466,6 +2516,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CLLocationDegrees result = ref.headingFilter;
       
           // 返回值: Value
@@ -2483,6 +2534,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.pausesLocationUpdatesAutomatically;
       
           // 返回值: Value
@@ -2500,6 +2552,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.allowsBackgroundLocationUpdates;
       
           // 返回值: Value
@@ -2517,6 +2570,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           NSArray* result = ref.overlays;
       
           // 返回值: 列表
@@ -2539,6 +2593,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.showsIndoorMap;
       
           // 返回值: Value
@@ -2556,6 +2611,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.showsIndoorMapControl;
       
           // 返回值: Value
@@ -2573,6 +2629,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           CGSize result = ref.indoorMapControlSize;
       
           // 返回值: 结构体
@@ -2592,6 +2649,7 @@ extern BOOL enableLog;
           // ref object
           MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           BOOL result = ref.customMapStyleEnabled;
       
           // 返回值: Value

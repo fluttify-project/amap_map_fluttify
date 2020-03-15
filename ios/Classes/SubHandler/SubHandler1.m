@@ -14,6 +14,109 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler1)
 - (NSDictionary<NSString*, Handler>*) getSubHandler1 {
     return @{
+        @"MAMapViewDelegate::mapViewDidTouchPois": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+            // list arg
+            NSArray<NSNumber*>* poisRefArray = (NSArray<NSNumber*> *) args[@"pois"];
+            NSMutableArray<NSArray*>* pois = [NSMutableArray arrayWithCapacity:poisRefArray.count];
+            for (int i = 0; i < poisRefArray.count; i++) {
+                NSArray* item = (NSArray*) HEAP[[poisRefArray objectAtIndex:i]];
+                [pois addObject:item];
+            }
+        
+            // ref
+            id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"pois"]);
+            }
+        
+            // invoke native method
+            [ref mapView : mapView didTouchPois: pois];
+        
+            // result
+            // 无返回值
+            NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
+        @"MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+            // struct arg
+            NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+            CLLocationCoordinate2D coordinate;
+            [coordinateValue getValue:&coordinate];
+        
+            // ref
+            id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"coordinate"]);
+            }
+        
+            // invoke native method
+            [ref mapView : mapView didSingleTappedAtCoordinate: coordinate];
+        
+            // result
+            // 无返回值
+            NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
+        @"MAMapViewDelegate::mapViewDidLongPressedAtCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+            // struct arg
+            NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+            CLLocationCoordinate2D coordinate;
+            [coordinateValue getValue:&coordinate];
+        
+            // ref
+            id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"coordinate"]);
+            }
+        
+            // invoke native method
+            [ref mapView : mapView didLongPressedAtCoordinate: coordinate];
+        
+            // result
+            // 无返回值
+            NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
+        @"MAMapViewDelegate::mapInitComplete": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+        
+            // ref
+            id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapInitComplete(%@)", args[@"refId"], args[@"mapView"]);
+            }
+        
+            // invoke native method
+            [ref mapInitComplete : mapView];
+        
+            // result
+            // 无返回值
+            NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
         @"MAMapViewDelegate::mapViewDidIndoorMapShowed": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
@@ -760,7 +863,7 @@ extern BOOL enableLog;
                     points[i] = pointsItem;
                 }
                 // jsonable arg
-                NSInteger count = [args[@"count"] integerValue];
+                NSInteger count = [args[@"count"] longValue];
         
                 // ref
                 MAPolygon* ref = (MAPolygon*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -795,7 +898,7 @@ extern BOOL enableLog;
                     coords[i] = coordsItem;
                 }
                 // jsonable arg
-                NSInteger count = [args[@"count"] integerValue];
+                NSInteger count = [args[@"count"] longValue];
         
                 // ref
                 MAPolygon* ref = (MAPolygon*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -953,7 +1056,7 @@ extern BOOL enableLog;
                     points[i] = pointsItem;
                 }
                 // jsonable arg
-                NSInteger count = [args[@"count"] integerValue];
+                NSInteger count = [args[@"count"] longValue];
         
                 // ref
                 MAPolyline* ref = (MAPolyline*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -988,7 +1091,7 @@ extern BOOL enableLog;
                     coords[i] = coordsItem;
                 }
                 // jsonable arg
-                NSInteger count = [args[@"count"] integerValue];
+                NSInteger count = [args[@"count"] longValue];
         
                 // ref
                 MAPolyline* ref = (MAPolyline*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -2038,6 +2141,32 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
+        @"MAParticleColorGenerate::getColor_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+        
+        
+                // ref
+                id<MAParticleColorGenerate> ref = (id<MAParticleColorGenerate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                float* result = [ref getColor];
+        
+                // result
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
         @"MAParticleRandomColorGenerate::initWithBoundaryColorR1G1B1A1R2G2B2A2_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -2261,6 +2390,32 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
+        @"MAParticleShapeModule::getPoint_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+        
+        
+                // ref
+                id<MAParticleShapeModule> ref = (id<MAParticleShapeModule>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                float* result = [ref getPoint];
+        
+                // result
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
         @"MAParticleShapeModule::isRatioEnable_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -2471,6 +2626,58 @@ extern BOOL enableLog;
                 // return a ref
                 HEAP[@((result).hash)] = result;
                 NSNumber* jsonableResult = @((result).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"MAOverlayRenderer::getViewMatrix_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+        
+        
+                // ref
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                float* result = [ref getViewMatrix];
+        
+                // result
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"MAOverlayRenderer::getProjectionMatrix_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+        
+        
+                // ref
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                float* result = [ref getProjectionMatrix];
+        
+                // result
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
         
                 [resultList addObject:jsonableResult];
             }
@@ -4725,7 +4932,7 @@ extern BOOL enableLog;
         
                 // args
                 // jsonable arg
-                NSInteger floorIndex = [args[@"floorIndex"] integerValue];
+                NSInteger floorIndex = [args[@"floorIndex"] longValue];
         
                 // ref
                 MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -5437,231 +5644,6 @@ extern BOOL enableLog;
         
                 // invoke native method
                 [ref mapView : mapView didAnnotationViewCalloutTapped: view];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidAnnotationViewTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // ref arg
-                MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didAnnotationViewTapped: view];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // enum arg
-                MAUserTrackingMode mode = (MAUserTrackingMode) [args[@"mode"] integerValue];
-                // jsonable arg
-                BOOL animated = [args[@"animated"] boolValue];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didChangeUserTrackingMode: mode animated: animated];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // jsonable arg
-                BOOL openGLESDisabled = [args[@"openGLESDisabled"] boolValue];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didChangeOpenGLESDisabled: openGLESDisabled];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidTouchPois_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // list arg
-                NSArray<NSNumber*>* poisRefArray = (NSArray<NSNumber*> *) args[@"pois"];
-                NSMutableArray<NSArray*>* pois = [NSMutableArray arrayWithCapacity:poisRefArray.count];
-                for (int i = 0; i < poisRefArray.count; i++) {
-                    NSArray* item = (NSArray*) HEAP[[poisRefArray objectAtIndex:i]];
-                    [pois addObject:item];
-                }
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didTouchPois: pois];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
-                CLLocationCoordinate2D coordinate;
-                [coordinateValue getValue:&coordinate];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didSingleTappedAtCoordinate: coordinate];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidLongPressedAtCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
-                CLLocationCoordinate2D coordinate;
-                [coordinateValue getValue:&coordinate];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didLongPressedAtCoordinate: coordinate];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapInitComplete_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapInitComplete : mapView];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidIndoorMapShowed_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // ref arg
-                MAIndoorInfo* indoorInfo = (MAIndoorInfo*) HEAP[@([args[@"indoorInfo"] integerValue])];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didIndoorMapShowed: indoorInfo];
         
                 // result
                 // 无返回值

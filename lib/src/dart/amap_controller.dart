@@ -237,11 +237,11 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         // todo 暂时没有找到比较直接的方式实现
         print('ios端暂时未实现');
-//        final annotations = await _iosController.get_annotations();
-//        for (final annotation in annotations) {
-//          if (await isKindOfMAUserLocation(annotation)) {
-//            final userLocation = await asMAUserLocation(annotation);
-//            userLocation.set()
+//        final annotations = await iosController.get_annotations();
+//        for (final MAAnnotation annotation in annotations) {
+//          if (await annotation.isMAUserLocation()) {
+//            final userLocation = await annotation.asMAUserLocation();
+//            userLocation.set_movingDirection(movingDirection)
 //            break;
 //          }
 //        }

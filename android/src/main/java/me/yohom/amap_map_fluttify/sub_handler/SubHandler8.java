@@ -2309,7 +2309,7 @@ public class SubHandler8 {
                 // ref arg
                 com.amap.api.maps.CameraUpdate var1 = (com.amap.api.maps.CameraUpdate) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) ((Map<String, Object>) args).get("var2");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -5480,7 +5480,7 @@ public class SubHandler8 {
                 // jsonable arg
                 int var5 = (int) ((Map<String, Object>) args).get("var5");
                 // jsonable arg
-                int var6 = (int) ((Map<String, Object>) args).get("var6");
+                long var6 = (long) ((Map<String, Object>) args).get("var6");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");

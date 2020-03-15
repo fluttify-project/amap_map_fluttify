@@ -128,6 +128,50 @@ class MAOverlayRenderer extends NSObject  {
     }
   }
   
+  Future<NSValue/* float* */> getViewMatrix() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAOverlayRenderer@$refId::getViewMatrix([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getViewMatrix', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'amap_map_fluttify');
+      return NSValue/* float* */()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
+  Future<NSValue/* float* */> getProjectionMatrix() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAOverlayRenderer@$refId::getProjectionMatrix([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getProjectionMatrix', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'amap_map_fluttify');
+      return NSValue/* float* */()..refId = result..tag = 'amap_map_fluttify';
+    }
+  }
+  
   Future<MAMapPoint> getOffsetPoint() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -505,6 +549,44 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
       return null;
     } else {
       final typedResult = (resultBatch as List).map((result) => MAOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<NSValue/* float* */>> getViewMatrix_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getViewMatrix_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<NSValue/* float* */>> getProjectionMatrix_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getProjectionMatrix_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

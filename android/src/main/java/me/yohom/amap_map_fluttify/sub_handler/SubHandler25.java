@@ -141,7 +141,7 @@ public class SubHandler25 {
                 // jsonable arg
                 int var1 = (int) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) ((Map<String, Object>) args).get("var2");
             
                 // create target object
                 com.autonavi.ae.gmap.GLMapState obj = new com.autonavi.ae.gmap.GLMapState(var1, var2);
@@ -162,9 +162,9 @@ public class SubHandler25 {
             
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                long var1 = (long) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                long var3 = (long) ((Map<String, Object>) args).get("var3");
             
                 // create target object
                 com.autonavi.ae.gmap.GLMapState obj = new com.autonavi.ae.gmap.GLMapState(var1, var3);
@@ -3764,7 +3764,7 @@ public class SubHandler25 {
                 // jsonable arg
                 Double var6 = (Double) ((Map<String, Object>) args).get("var6");
                 // jsonable arg
-                int var7 = (int) ((Map<String, Object>) args).get("var7");
+                long var7 = (long) ((Map<String, Object>) args).get("var7");
             
                 // create target object
                 com.amap.api.trace.TraceLocation obj = new com.amap.api.trace.TraceLocation(var1, var3, new Double(var5).floatValue(), new Double(var6).floatValue(), var7);
@@ -4488,7 +4488,7 @@ public class SubHandler25 {
                     // jsonable arg
                     int var1 = (int) ((Map<String, Object>) args).get("var1");
                     // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
+                    long var2 = (long) ((Map<String, Object>) args).get("var2");
             
                     // create target object
                     com.autonavi.ae.gmap.GLMapState obj = new com.autonavi.ae.gmap.GLMapState(var1, var2);
@@ -4528,9 +4528,9 @@ public class SubHandler25 {
             
                     // args
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    long var1 = (long) ((Map<String, Object>) args).get("var1");
                     // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
+                    long var3 = (long) ((Map<String, Object>) args).get("var3");
             
                     // create target object
                     com.autonavi.ae.gmap.GLMapState obj = new com.autonavi.ae.gmap.GLMapState(var1, var3);

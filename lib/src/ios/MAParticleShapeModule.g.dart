@@ -20,6 +20,15 @@ mixin MAParticleShapeModule on NSObject {
   
 
   @mustCallSuper
+  Future<NSValue/* float* */> getPoint() {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('getPoint::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
   Future<bool> isRatioEnable() {
   
   

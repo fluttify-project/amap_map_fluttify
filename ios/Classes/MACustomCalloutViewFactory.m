@@ -85,6 +85,7 @@ extern BOOL enableLog;
           // ref object
           MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           UIView* result = ref.customView;
       
           // return a ref
@@ -103,6 +104,7 @@ extern BOOL enableLog;
           // ref object
           MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           NSObject* result = ref.userData;
       
           // return a ref
