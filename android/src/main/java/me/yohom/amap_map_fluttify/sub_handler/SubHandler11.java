@@ -5137,7 +5137,7 @@ public class SubHandler11 {
             put("com.amap.api.maps.model.animation.Animation::setDuration", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");

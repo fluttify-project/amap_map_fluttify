@@ -6516,7 +6516,7 @@ public class SubHandler26 {
                     // jsonable arg
                     Double var6 = (Double) ((Map<String, Object>) args).get("var6");
                     // jsonable arg
-                    long var7 = (long) ((Map<String, Object>) args).get("var7");
+                    long var7 = (long) (int) ((Map<String, Object>) args).get("var7");
             
                     // create target object
                     com.amap.api.trace.TraceLocation obj = new com.amap.api.trace.TraceLocation(var1, var3, new Double(var5).floatValue(), new Double(var6).floatValue(), var7);

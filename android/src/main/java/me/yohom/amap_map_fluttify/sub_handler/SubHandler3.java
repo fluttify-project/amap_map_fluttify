@@ -85,7 +85,7 @@ public class SubHandler3 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // jsonable arg
-                    long mCreateTime = (long) ((Map<String, Object>) args).get("mCreateTime");
+                    long mCreateTime = (long) (int) ((Map<String, Object>) args).get("mCreateTime");
             
                     int refId = (int) ((Map<String, Object>) args).get("refId");
                     com.autonavi.ae.gmap.maploader.ProcessingTile ref = (com.autonavi.ae.gmap.maploader.ProcessingTile) getHEAP().get(refId);
@@ -981,7 +981,7 @@ public class SubHandler3 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // jsonable arg
-                    long mOverlayHashCode = (long) ((Map<String, Object>) args).get("mOverlayHashCode");
+                    long mOverlayHashCode = (long) (int) ((Map<String, Object>) args).get("mOverlayHashCode");
             
                     int refId = (int) ((Map<String, Object>) args).get("refId");
                     com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
@@ -997,7 +997,7 @@ public class SubHandler3 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // jsonable arg
-                    long mHitedIndex = (long) ((Map<String, Object>) args).get("mHitedIndex");
+                    long mHitedIndex = (long) (int) ((Map<String, Object>) args).get("mHitedIndex");
             
                     int refId = (int) ((Map<String, Object>) args).get("refId");
                     com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
@@ -1013,7 +1013,7 @@ public class SubHandler3 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // jsonable arg
-                    long mHitedTimes = (long) ((Map<String, Object>) args).get("mHitedTimes");
+                    long mHitedTimes = (long) (int) ((Map<String, Object>) args).get("mHitedTimes");
             
                     int refId = (int) ((Map<String, Object>) args).get("refId");
                     com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
@@ -1829,7 +1829,7 @@ public class SubHandler3 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // jsonable arg
-                    long handler = (long) ((Map<String, Object>) args).get("handler");
+                    long handler = (long) (int) ((Map<String, Object>) args).get("handler");
             
                     int refId = (int) ((Map<String, Object>) args).get("refId");
                     com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
@@ -2837,7 +2837,7 @@ public class SubHandler3 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
             
                     // jsonable arg
-                    long mDuration = (long) ((Map<String, Object>) args).get("mDuration");
+                    long mDuration = (long) (int) ((Map<String, Object>) args).get("mDuration");
             
                     int refId = (int) ((Map<String, Object>) args).get("refId");
                     com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
@@ -3017,7 +3017,7 @@ public class SubHandler3 {
                 // jsonable arg
                 int var1 = (int) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
                 byte[] var4 = (byte[]) ((Map<String, Object>) args).get("var4");
                 // jsonable arg
@@ -3055,7 +3055,7 @@ public class SubHandler3 {
                 // jsonable arg
                 int var1 = (int) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -3090,7 +3090,7 @@ public class SubHandler3 {
                 // jsonable arg
                 int var1 = (int) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -3124,7 +3124,7 @@ public class SubHandler3 {
                 // jsonable arg
                 int var1 = (int) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
                 int var4 = (int) ((Map<String, Object>) args).get("var4");
             
@@ -3160,7 +3160,7 @@ public class SubHandler3 {
                 // jsonable arg
                 int var1 = (int) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
                 // ref arg
                 com.autonavi.amap.mapcore.maploader.AMapLoader var4 = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get((int) ((Map<String, Object>) args).get("var4"));
             

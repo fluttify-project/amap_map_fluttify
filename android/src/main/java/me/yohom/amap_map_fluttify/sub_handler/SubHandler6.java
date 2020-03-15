@@ -2235,9 +2235,9 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.VirtualEarthProjection::pixelsToLatLong", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
                 int var4 = (int) ((Map<String, Object>) args).get("var4");
             
@@ -4379,7 +4379,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setInterval", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -5028,7 +5028,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setHttpTimeOut", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -5425,9 +5425,9 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetGLShaderManager", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
             
@@ -5458,7 +5458,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeDestroy", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -5490,7 +5490,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeRender", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -5535,7 +5535,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartParticleSize", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 Double var2 = (Double) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -5570,7 +5570,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setMaxParticles", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
             
@@ -5603,9 +5603,9 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setDuration", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
             
@@ -5636,9 +5636,9 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleLifeTime", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
             
@@ -5669,9 +5669,9 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleStartSpeed", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
             
@@ -5702,7 +5702,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setLoop", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
             
@@ -5735,9 +5735,9 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleShapeModule", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
             
@@ -5768,9 +5768,9 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleEmission", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
             
@@ -5801,7 +5801,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::getCurrentParticleNum", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -5833,9 +5833,9 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleOverLifeModule", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
             
@@ -5866,7 +5866,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setPreWram", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
             
@@ -5899,9 +5899,9 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartColor", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
             
@@ -5932,7 +5932,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetTextureId", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
             
@@ -6264,9 +6264,9 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetOverLifeItem", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
                 int var4 = (int) ((Map<String, Object>) args).get("var4");
             
@@ -6299,7 +6299,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseVelocityOverLife", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -6330,7 +6330,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseColorGenerate", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -6361,7 +6361,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleEmissonModule", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -6392,7 +6392,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleOverLifeModule", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -6423,7 +6423,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleShapeModule", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -6454,7 +6454,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseRotationOverLife", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -6485,7 +6485,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseSizeOverLife", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -6516,7 +6516,7 @@ public class SubHandler6 {
             put("com.autonavi.amap.mapcore.AeUtil.ZipCompressProgressListener::onFinishProgress", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var1 = (long) ((Map<String, Object>) args).get("var1");
+                long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
