@@ -780,7 +780,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
                 CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -816,7 +816,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 MAMapPoint points[pointsRefIdArray.count];
         
@@ -852,7 +852,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 MAMapPoint points[pointsRefIdArray.count];
         
@@ -887,7 +887,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
                 CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -973,7 +973,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 MAMapPoint points[pointsRefIdArray.count];
         
@@ -1009,7 +1009,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
                 CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -1045,7 +1045,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 MAMapPoint points[pointsRefIdArray.count];
         
@@ -1080,7 +1080,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
                 CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -2770,7 +2770,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* mapPointsRefIdArray = (NSArray*) args[@"mapPoints"];
                 MAMapPoint mapPoints[mapPointsRefIdArray.count];
         
@@ -2832,7 +2832,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 CGPoint points[pointsRefIdArray.count];
         
@@ -2873,7 +2873,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 CGPoint points[pointsRefIdArray.count];
         
@@ -2920,7 +2920,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 CGPoint points[pointsRefIdArray.count];
         
@@ -2973,7 +2973,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 CGPoint points[pointsRefIdArray.count];
         
@@ -3034,7 +3034,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 CGPoint points[pointsRefIdArray.count];
         
@@ -3073,7 +3073,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 CGPoint points[pointsRefIdArray.count];
         
@@ -3199,7 +3199,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
                 CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -3235,7 +3235,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
                 CLLocationCoordinate2D coords[coordsRefIdArray.count];
         

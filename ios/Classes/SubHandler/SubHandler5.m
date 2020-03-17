@@ -345,7 +345,7 @@ extern BOOL enableLog;
             }
         
             // args
-            // list arg
+            // list arg struct
             NSArray* glPointsRefIdArray = (NSArray*) args[@"glPoints"];
             CGPoint glPoints[glPointsRefIdArray.count];
         
@@ -3560,7 +3560,7 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* glPointsRefIdArray = (NSArray*) args[@"glPoints"];
                 CGPoint glPoints[glPointsRefIdArray.count];
         

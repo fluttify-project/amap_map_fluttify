@@ -459,7 +459,7 @@ extern BOOL enableLog;
         },
         @"MAPolygon::polygonWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
             CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -492,7 +492,7 @@ extern BOOL enableLog;
         },
         @"MAPolygon::polygonWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             MAMapPoint points[pointsRefIdArray.count];
         
@@ -525,7 +525,7 @@ extern BOOL enableLog;
         },
         @"MAPolygon::setPolygonWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             MAMapPoint points[pointsRefIdArray.count];
         
@@ -557,7 +557,7 @@ extern BOOL enableLog;
         },
         @"MAPolygon::setPolygonWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
             CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -634,7 +634,7 @@ extern BOOL enableLog;
         },
         @"MAPolyline::polylineWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             MAMapPoint points[pointsRefIdArray.count];
         
@@ -667,7 +667,7 @@ extern BOOL enableLog;
         },
         @"MAPolyline::polylineWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
             CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -700,7 +700,7 @@ extern BOOL enableLog;
         },
         @"MAPolyline::setPolylineWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             MAMapPoint points[pointsRefIdArray.count];
         
@@ -732,7 +732,7 @@ extern BOOL enableLog;
         },
         @"MAPolyline::setPolylineWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
             CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -787,7 +787,7 @@ extern BOOL enableLog;
         },
         @"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* coordinatesRefIdArray = (NSArray*) args[@"coordinates"];
             CLLocationCoordinate2D coordinates[coordinatesRefIdArray.count];
         
@@ -841,7 +841,7 @@ extern BOOL enableLog;
         },
         @"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* coordinatesRefIdArray = (NSArray*) args[@"coordinates"];
             CLLocationCoordinate2D coordinates[coordinatesRefIdArray.count];
         
@@ -2623,7 +2623,7 @@ extern BOOL enableLog;
         },
         @"MAOverlayRenderer::glPointsForMapPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* mapPointsRefIdArray = (NSArray*) args[@"mapPoints"];
             MAMapPoint mapPoints[mapPointsRefIdArray.count];
         
@@ -2679,7 +2679,7 @@ extern BOOL enableLog;
         },
         @"MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthlooped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             CGPoint points[pointsRefIdArray.count];
         
@@ -2717,7 +2717,7 @@ extern BOOL enableLog;
         },
         @"MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthloopedLineJoinTypeLineCapTypelineDash": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             CGPoint points[pointsRefIdArray.count];
         
@@ -2761,7 +2761,7 @@ extern BOOL enableLog;
         },
         @"MAOverlayRenderer::renderTexturedLinesWithPointsPointCountlineWidthtextureIDsdrawStyleIndexeslooped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             CGPoint points[pointsRefIdArray.count];
         
@@ -2811,7 +2811,7 @@ extern BOOL enableLog;
         },
         @"MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorsdrawStyleIndexesisGradientlineWidthloopedLineJoinTypeLineCapTypelineDash": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             CGPoint points[pointsRefIdArray.count];
         
@@ -2869,7 +2869,7 @@ extern BOOL enableLog;
         },
         @"MAOverlayRenderer::renderRegionWithPointsPointCountfillColorusingTriangleFan": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             CGPoint points[pointsRefIdArray.count];
         
@@ -2905,7 +2905,7 @@ extern BOOL enableLog;
         },
         @"MAOverlayRenderer::renderStrokedRegionWithPointsPointCountfillColorstrokeColorstrokeLineWidthstrokeLineJoinTypestrokeLineDashusingTriangleFan": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             CGPoint points[pointsRefIdArray.count];
         
@@ -3019,7 +3019,7 @@ extern BOOL enableLog;
         },
         @"MACustomBuildingOverlayOption::optionWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
             CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -3052,7 +3052,7 @@ extern BOOL enableLog;
         },
         @"MACustomBuildingOverlayOption::setOptionWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
-            // list arg
+            // list arg struct
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
             CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
