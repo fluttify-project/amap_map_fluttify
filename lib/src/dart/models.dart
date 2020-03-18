@@ -505,14 +505,14 @@ class Marker {
   Future<void> showInfoWindow() async {
     return platform(
       android: (_) => _androidModel.showInfoWindow(),
-      ios: (_) => _iosController?.selectAnnotationAnimated(_iosModel, true),
+      ios: (_) => _iosController?.selectAnnotation_animated(_iosModel, true),
     );
   }
 
   Future<void> hideInfoWindow() async {
     return platform(
       android: (_) => _androidModel.hideInfoWindow(),
-      ios: (_) => _iosController?.deselectAnnotationAnimated(_iosModel, true),
+      ios: (_) => _iosController?.deselectAnnotation_animated(_iosModel, true),
     );
   }
 }

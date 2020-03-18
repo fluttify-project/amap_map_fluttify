@@ -297,7 +297,7 @@ class AmapService {
         final traceManager = await MATraceManager.create__();
 
         await traceManager
-            .queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback(
+            .queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback(
           await locationList.toIOSModel(),
           AMapCoordinateType.AMapCoordinateTypeAMap,
           (int index, List<MATracePoint> points) async {
