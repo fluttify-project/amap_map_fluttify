@@ -14,7 +14,7 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler2)
 - (NSDictionary<NSString*, Handler>*) getSubHandler2 {
     return @{
-        @"MAMapViewDelegate::mapViewDidAnnotationViewTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didAnnotationViewTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -41,7 +41,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didChangeUserTrackingMode_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -70,7 +70,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didChangeOpenGLESDisabled_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -97,7 +97,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidTouchPois_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didTouchPois_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -129,7 +129,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didSingleTappedAtCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -158,7 +158,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidLongPressedAtCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didLongPressedAtCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -212,7 +212,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidIndoorMapShowed_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didIndoorMapShowed_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -239,7 +239,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didIndoorMapFloorIndexChanged_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -266,7 +266,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidIndoorMapHidden_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didIndoorMapHidden_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {

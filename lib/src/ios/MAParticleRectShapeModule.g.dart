@@ -48,14 +48,14 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
   //endregion
 
   //region methods
-  Future<MAParticleRectShapeModule> initWithLeftToprightbottomuseRatio(double left, double top, double right, double bottom, bool isUseRatio) async {
+  Future<MAParticleRectShapeModule> initWithLeft_top_right_bottom_useRatio(double left, double top, double right, double bottom, bool isUseRatio) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleRectShapeModule@$refId::initWithLeft([\'left\':$left, \'top\':$top, \'right\':$right, \'bottom\':$bottom, \'isUseRatio\':$isUseRatio])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeftToprightbottomuseRatio', {"left": left, "top": top, "right": right, "bottom": bottom, "isUseRatio": isUseRatio, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio', {"left": left, "top": top, "right": right, "bottom": bottom, "isUseRatio": isUseRatio, "refId": refId});
   
   
     // handle native call
@@ -83,13 +83,13 @@ extension MAParticleRectShapeModule_Batch on List<MAParticleRectShapeModule> {
   //endregion
 
   //region methods
-  Future<List<MAParticleRectShapeModule>> initWithLeftToprightbottomuseRatio_batch(List<double> left, List<double> top, List<double> right, List<double> bottom, List<bool> isUseRatio) async {
+  Future<List<MAParticleRectShapeModule>> initWithLeft_top_right_bottom_useRatio_batch(List<double> left, List<double> top, List<double> right, List<double> bottom, List<bool> isUseRatio) async {
     if (left.length != top.length || top.length != right.length || right.length != bottom.length || bottom.length != isUseRatio.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeftToprightbottomuseRatio_batch', [for (int i = 0; i < this.length; i++) {"left": left[i], "top": top[i], "right": right[i], "bottom": bottom[i], "isUseRatio": isUseRatio[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio_batch', [for (int i = 0; i < this.length; i++) {"left": left[i], "top": top[i], "right": right[i], "bottom": bottom[i], "isUseRatio": isUseRatio[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

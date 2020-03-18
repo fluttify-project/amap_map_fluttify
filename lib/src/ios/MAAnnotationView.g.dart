@@ -220,14 +220,14 @@ class MAAnnotationView extends UIView  {
   //endregion
 
   //region methods
-  Future<void> setSelectedAnimated(bool selected, bool animated, {bool viewChannel = true}) async {
+  Future<void> setSelected_animated(bool selected, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationView@$refId::setSelected([\'selected\':$selected, \'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setSelectedAnimated', {"selected": selected, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setSelected_animated', {"selected": selected, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -242,14 +242,14 @@ class MAAnnotationView extends UIView  {
     }
   }
   
-  Future<NSObject> initWithAnnotationReuseIdentifier(MAAnnotation annotation, String reuseIdentifier, {bool viewChannel = true}) async {
+  Future<NSObject> initWithAnnotation_reuseIdentifier(MAAnnotation annotation, String reuseIdentifier, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationView@$refId::initWithAnnotation([\'reuseIdentifier\':$reuseIdentifier])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::initWithAnnotationReuseIdentifier', {"annotation": annotation.refId, "reuseIdentifier": reuseIdentifier, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::initWithAnnotation_reuseIdentifier', {"annotation": annotation.refId, "reuseIdentifier": reuseIdentifier, "refId": refId});
   
   
     // handle native call
@@ -286,14 +286,14 @@ class MAAnnotationView extends UIView  {
     }
   }
   
-  Future<void> setDragStateAnimated(MAAnnotationViewDragState newDragState, bool animated, {bool viewChannel = true}) async {
+  Future<void> setDragState_animated(MAAnnotationViewDragState newDragState, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationView@$refId::setDragState([\'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setDragStateAnimated', {"newDragState": newDragState.index, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setDragState_animated', {"newDragState": newDragState.index, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -508,13 +508,13 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
   //endregion
 
   //region methods
-  Future<void> setSelectedAnimated_batch(List<bool> selected, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> setSelected_animated_batch(List<bool> selected, List<bool> animated, {bool viewChannel = true}) async {
     if (selected.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setSelectedAnimated_batch', [for (int i = 0; i < this.length; i++) {"selected": selected[i], "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setSelected_animated_batch', [for (int i = 0; i < this.length; i++) {"selected": selected[i], "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -527,13 +527,13 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
     }
   }
   
-  Future<List<NSObject>> initWithAnnotationReuseIdentifier_batch(List<MAAnnotation> annotation, List<String> reuseIdentifier, {bool viewChannel = true}) async {
+  Future<List<NSObject>> initWithAnnotation_reuseIdentifier_batch(List<MAAnnotation> annotation, List<String> reuseIdentifier, {bool viewChannel = true}) async {
     if (annotation.length != reuseIdentifier.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::initWithAnnotationReuseIdentifier_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "reuseIdentifier": reuseIdentifier[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::initWithAnnotation_reuseIdentifier_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "reuseIdentifier": reuseIdentifier[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -565,13 +565,13 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
     }
   }
   
-  Future<void> setDragStateAnimated_batch(List<MAAnnotationViewDragState> newDragState, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> setDragState_animated_batch(List<MAAnnotationViewDragState> newDragState, List<bool> animated, {bool viewChannel = true}) async {
     if (newDragState.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setDragStateAnimated_batch', [for (int i = 0; i < this.length; i++) {"newDragState": newDragState[i].index, "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::setDragState_animated_batch', [for (int i = 0; i < this.length; i++) {"newDragState": newDragState[i].index, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

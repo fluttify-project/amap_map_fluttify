@@ -110,7 +110,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest ext
       return null;
     } else {
     
-      return (result as List).cast<int>();
+      return result as Uint8List;
     }
   }
   
@@ -178,7 +178,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>()).toList();
+      final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
     
       return typedResult;
     }

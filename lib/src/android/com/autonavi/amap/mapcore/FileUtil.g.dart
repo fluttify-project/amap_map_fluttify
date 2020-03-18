@@ -132,7 +132,7 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
       return null;
     } else {
     
-      return (result as List).cast<int>();
+      return result as Uint8List;
     }
   }
   
@@ -198,7 +198,7 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
       return null;
     } else {
     
-      return (result as List).cast<int>();
+      return result as Uint8List;
     }
   }
   
@@ -329,7 +329,7 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>()).toList();
+      final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
     
       return typedResult;
     }
@@ -386,7 +386,7 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>()).toList();
+      final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
     
       return typedResult;
     }

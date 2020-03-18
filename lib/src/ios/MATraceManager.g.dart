@@ -54,14 +54,14 @@ class MATraceManager extends NSObject  {
         // if (refId != this.refId) return;
   
         switch (methodCall.method) {
-          case 'Callback::MATraceDelegate::traceManagerDidTracecorrectdistancewithError':
+          case 'Callback::MATraceDelegate::traceManager_didTrace_correct_distance_withError':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: traceManagerDidTracecorrectdistancewithError([\'distance\':$args[distance]])');
+              print('fluttify-dart-callback: traceManager_didTrace_correct_distance_withError([\'distance\':$args[distance]])');
             }
         
             // handle the native call
-            delegate?.traceManagerDidTracecorrectdistancewithError(MATraceManager()..refId = (args['manager'])..tag = 'amap_map_fluttify', (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag = 'amap_map_fluttify').toList(), args['distance'], NSError()..refId = (args['error'])..tag = 'amap_map_fluttify');
+            delegate?.traceManager_didTrace_correct_distance_withError(MATraceManager()..refId = (args['manager'])..tag = 'amap_map_fluttify', (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag = 'amap_map_fluttify').toList(), args['distance'], NSError()..refId = (args['error'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MATraceDelegate::mapViewRequireLocationAuth':
             // print log
@@ -103,18 +103,18 @@ class MATraceManager extends NSObject  {
     }
   }
   
-  Future<NSOperation> queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback(List<MATraceLocation> locations, AMapCoordinateType type, void processingCallback(int index, List<MATracePoint> points), void finishCallback(List<MATracePoint> points, double distance), void failedCallback(int errorCode, String errorDesc)) async {
+  Future<NSOperation> queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback(List<MATraceLocation> locations, AMapCoordinateType type, void processingCallback(int index, List<MATracePoint> points), void finishCallback(List<MATracePoint> points, double distance), void failedCallback(int errorCode, String errorDesc)) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MATraceManager@$refId::queryProcessedTraceWith([])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback', {"locations": locations.map((it) => it.refId).toList(), "type": type.index, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback', {"locations": locations.map((it) => it.refId).toList(), "type": type.index, "refId": refId});
   
   
     // handle native call
-    MethodChannel('MATraceManager::queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback::Callback')
+    MethodChannel('MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

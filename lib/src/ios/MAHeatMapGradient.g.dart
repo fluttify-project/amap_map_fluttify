@@ -59,14 +59,14 @@ class MAHeatMapGradient extends NSObject with NSCopying {
   //endregion
 
   //region methods
-  Future<MAHeatMapGradient> initWithColorAndWithStartPoints(List<UIColor> colors, List<num> startPoints) async {
+  Future<MAHeatMapGradient> initWithColor_andWithStartPoints(List<UIColor> colors, List<num> startPoints) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAHeatMapGradient@$refId::initWithColor([\'startPoints\':$startPoints])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapGradient::initWithColorAndWithStartPoints', {"colors": colors.map((it) => it.refId).toList(), "startPoints": startPoints, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapGradient::initWithColor_andWithStartPoints', {"colors": colors.map((it) => it.refId).toList(), "startPoints": startPoints, "refId": refId});
   
   
     // handle native call
@@ -107,13 +107,13 @@ extension MAHeatMapGradient_Batch on List<MAHeatMapGradient> {
   //endregion
 
   //region methods
-  Future<List<MAHeatMapGradient>> initWithColorAndWithStartPoints_batch(List<List<UIColor>> colors, List<List<num>> startPoints) async {
+  Future<List<MAHeatMapGradient>> initWithColor_andWithStartPoints_batch(List<List<UIColor>> colors, List<List<num>> startPoints) async {
     if (colors.length != startPoints.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapGradient::initWithColorAndWithStartPoints_batch', [for (int i = 0; i < this.length; i++) {"colors": colors[i].map((it) => it.refId).toList(), "startPoints": startPoints[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapGradient::initWithColor_andWithStartPoints_batch', [for (int i = 0; i < this.length; i++) {"colors": colors[i].map((it) => it.refId).toList(), "startPoints": startPoints[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

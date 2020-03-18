@@ -88,14 +88,14 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
   //endregion
 
   //region methods
-  static Future<MACircle> circleWithCenterCoordinateRadius(CLLocationCoordinate2D coord, double radius) async {
+  static Future<MACircle> circleWithCenterCoordinate_radius(CLLocationCoordinate2D coord, double radius) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MACircle::circleWithCenterCoordinate([\'radius\':$radius])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithCenterCoordinateRadius', {"coord": coord.refId, "radius": radius});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithCenterCoordinate_radius', {"coord": coord.refId, "radius": radius});
   
   
     // handle native call
@@ -132,14 +132,14 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
     }
   }
   
-  Future<bool> setCircleWithCenterCoordinateRadius(CLLocationCoordinate2D coord, double radius) async {
+  Future<bool> setCircleWithCenterCoordinate_radius(CLLocationCoordinate2D coord, double radius) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MACircle@$refId::setCircleWithCenterCoordinate([\'radius\':$radius])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::setCircleWithCenterCoordinateRadius', {"coord": coord.refId, "radius": radius, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::setCircleWithCenterCoordinate_radius', {"coord": coord.refId, "radius": radius, "refId": refId});
   
   
     // handle native call
@@ -211,13 +211,13 @@ extension MACircle_Batch on List<MACircle> {
   //endregion
 
   //region methods
-  Future<List<MACircle>> circleWithCenterCoordinateRadius_batch(List<CLLocationCoordinate2D> coord, List<double> radius) async {
+  Future<List<MACircle>> circleWithCenterCoordinate_radius_batch(List<CLLocationCoordinate2D> coord, List<double> radius) async {
     if (coord.length != radius.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithCenterCoordinateRadius_batch', [for (int i = 0; i < this.length; i++) {"coord": coord[i].refId, "radius": radius[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithCenterCoordinate_radius_batch', [for (int i = 0; i < this.length; i++) {"coord": coord[i].refId, "radius": radius[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -249,13 +249,13 @@ extension MACircle_Batch on List<MACircle> {
     }
   }
   
-  Future<List<bool>> setCircleWithCenterCoordinateRadius_batch(List<CLLocationCoordinate2D> coord, List<double> radius) async {
+  Future<List<bool>> setCircleWithCenterCoordinate_radius_batch(List<CLLocationCoordinate2D> coord, List<double> radius) async {
     if (coord.length != radius.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::setCircleWithCenterCoordinateRadius_batch', [for (int i = 0; i < this.length; i++) {"coord": coord[i].refId, "radius": radius[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::setCircleWithCenterCoordinate_radius_batch', [for (int i = 0; i < this.length; i++) {"coord": coord[i].refId, "radius": radius[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

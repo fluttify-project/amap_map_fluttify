@@ -55,7 +55,7 @@ class com_autonavi_ae_gmap_gloverlay_GLTextureProperty extends java_lang_Object 
   Future<Uint8List> get_mPngBuffer() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::get_mPngBuffer", {'refId': refId});
   
-    return result;
+    return result as Uint8List;
   }
   
   Future<int> get_mAnchor() async {
@@ -164,7 +164,7 @@ extension com_autonavi_ae_gmap_gloverlay_GLTextureProperty_Batch on List<com_aut
   
   Future<List<Uint8List>> get_mPngBuffer_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::get_mPngBuffer_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
   
     return typedResult;
   }

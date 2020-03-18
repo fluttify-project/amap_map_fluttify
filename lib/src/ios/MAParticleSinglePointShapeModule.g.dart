@@ -48,14 +48,14 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
   //endregion
 
   //region methods
-  Future<MAParticleSinglePointShapeModule> initWithShapeXYZuseRatio(double x, double y, double z, bool isUseRatio) async {
+  Future<MAParticleSinglePointShapeModule> initWithShapeX_Y_Z_useRatio(double x, double y, double z, bool isUseRatio) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleSinglePointShapeModule@$refId::initWithShapeX([\'x\':$x, \'y\':$y, \'z\':$z, \'isUseRatio\':$isUseRatio])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSinglePointShapeModule::initWithShapeXYZuseRatio', {"x": x, "y": y, "z": z, "isUseRatio": isUseRatio, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSinglePointShapeModule::initWithShapeX_Y_Z_useRatio', {"x": x, "y": y, "z": z, "isUseRatio": isUseRatio, "refId": refId});
   
   
     // handle native call
@@ -83,13 +83,13 @@ extension MAParticleSinglePointShapeModule_Batch on List<MAParticleSinglePointSh
   //endregion
 
   //region methods
-  Future<List<MAParticleSinglePointShapeModule>> initWithShapeXYZuseRatio_batch(List<double> x, List<double> y, List<double> z, List<bool> isUseRatio) async {
+  Future<List<MAParticleSinglePointShapeModule>> initWithShapeX_Y_Z_useRatio_batch(List<double> x, List<double> y, List<double> z, List<bool> isUseRatio) async {
     if (x.length != y.length || y.length != z.length || z.length != isUseRatio.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSinglePointShapeModule::initWithShapeXYZuseRatio_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i], "isUseRatio": isUseRatio[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSinglePointShapeModule::initWithShapeX_Y_Z_useRatio_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i], "isUseRatio": isUseRatio[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

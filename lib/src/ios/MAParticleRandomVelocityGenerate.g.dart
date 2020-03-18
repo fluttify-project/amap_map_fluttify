@@ -48,14 +48,14 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
   //endregion
 
   //region methods
-  Future<MAParticleRandomVelocityGenerate> initWithBoundaryValueX1Y1Z1X2Y2Z2(double x1, double y1, double z1, double x2, double y2, double z2) async {
+  Future<MAParticleRandomVelocityGenerate> initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2(double x1, double y1, double z1, double x2, double y2, double z2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleRandomVelocityGenerate@$refId::initWithBoundaryValueX1([\'x1\':$x1, \'y1\':$y1, \'z1\':$z1, \'x2\':$x2, \'y2\':$y2, \'z2\':$z2])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1Y1Z1X2Y2Z2', {"x1": x1, "y1": y1, "z1": z1, "x2": x2, "y2": y2, "z2": z2, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2', {"x1": x1, "y1": y1, "z1": z1, "x2": x2, "y2": y2, "z2": z2, "refId": refId});
   
   
     // handle native call
@@ -83,13 +83,13 @@ extension MAParticleRandomVelocityGenerate_Batch on List<MAParticleRandomVelocit
   //endregion
 
   //region methods
-  Future<List<MAParticleRandomVelocityGenerate>> initWithBoundaryValueX1Y1Z1X2Y2Z2_batch(List<double> x1, List<double> y1, List<double> z1, List<double> x2, List<double> y2, List<double> z2) async {
+  Future<List<MAParticleRandomVelocityGenerate>> initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2_batch(List<double> x1, List<double> y1, List<double> z1, List<double> x2, List<double> y2, List<double> z2) async {
     if (x1.length != y1.length || y1.length != z1.length || z1.length != x2.length || x2.length != y2.length || y2.length != z2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1Y1Z1X2Y2Z2_batch', [for (int i = 0; i < this.length; i++) {"x1": x1[i], "y1": y1[i], "z1": z1[i], "x2": x2[i], "y2": y2[i], "z2": z2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2_batch', [for (int i = 0; i < this.length; i++) {"x1": x1[i], "y1": y1[i], "z1": z1[i], "x2": x2[i], "y2": y2[i], "z2": z2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

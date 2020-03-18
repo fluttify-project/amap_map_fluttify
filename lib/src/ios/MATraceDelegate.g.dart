@@ -20,14 +20,14 @@ mixin MATraceDelegate on NSObject {
   
 
   @mustCallSuper
-  Future<void> traceManagerDidTracecorrectdistancewithError(MATraceManager manager, List<CLLocation> locations, List<MATracePoint> tracePoints, double distance, NSError error) {
+  Future<void> traceManager_didTrace_correct_distance_withError(MATraceManager manager, List<CLLocation> locations, List<MATracePoint> tracePoints, double distance, NSError error) {
     kNativeObjectPool.add(manager);
     kNativeObjectPool.addAll(locations);
     kNativeObjectPool.addAll(tracePoints);
     kNativeObjectPool.add(error);
   
     if (fluttifyLogEnabled) {
-      debugPrint('traceManagerDidTracecorrectdistancewithError::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('traceManager_didTrace_correct_distance_withError::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   

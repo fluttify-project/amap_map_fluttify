@@ -76,14 +76,14 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
   //endregion
 
   //region methods
-  static Future<MAGroundOverlay> groundOverlayWithBoundsIcon(MACoordinateBounds bounds, UIImage icon) async {
+  static Future<MAGroundOverlay> groundOverlayWithBounds_icon(MACoordinateBounds bounds, UIImage icon) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAGroundOverlay::groundOverlayWithBounds([])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithBoundsIcon', {"bounds": bounds.refId, "icon": icon.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithBounds_icon', {"bounds": bounds.refId, "icon": icon.refId});
   
   
     // handle native call
@@ -98,14 +98,14 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   }
   
-  static Future<MAGroundOverlay> groundOverlayWithCoordinateZoomLevelicon(CLLocationCoordinate2D coordinate, double zoomLevel, UIImage icon) async {
+  static Future<MAGroundOverlay> groundOverlayWithCoordinate_zoomLevel_icon(CLLocationCoordinate2D coordinate, double zoomLevel, UIImage icon) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAGroundOverlay::groundOverlayWithCoordinate([\'zoomLevel\':$zoomLevel])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithCoordinateZoomLevelicon', {"coordinate": coordinate.refId, "zoomLevel": zoomLevel, "icon": icon.refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithCoordinate_zoomLevel_icon', {"coordinate": coordinate.refId, "zoomLevel": zoomLevel, "icon": icon.refId});
   
   
     // handle native call
@@ -120,14 +120,14 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   }
   
-  Future<bool> setGroundOverlayWithBoundsIcon(MACoordinateBounds bounds, UIImage icon) async {
+  Future<bool> setGroundOverlayWithBounds_icon(MACoordinateBounds bounds, UIImage icon) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAGroundOverlay@$refId::setGroundOverlayWithBounds([])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithBoundsIcon', {"bounds": bounds.refId, "icon": icon.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithBounds_icon', {"bounds": bounds.refId, "icon": icon.refId, "refId": refId});
   
   
     // handle native call
@@ -142,14 +142,14 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   }
   
-  Future<bool> setGroundOverlayWithCoordinateZoomLevelicon(CLLocationCoordinate2D coordinate, double zoomLevel, UIImage icon) async {
+  Future<bool> setGroundOverlayWithCoordinate_zoomLevel_icon(CLLocationCoordinate2D coordinate, double zoomLevel, UIImage icon) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAGroundOverlay@$refId::setGroundOverlayWithCoordinate([\'zoomLevel\':$zoomLevel])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithCoordinateZoomLevelicon', {"coordinate": coordinate.refId, "zoomLevel": zoomLevel, "icon": icon.refId, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithCoordinate_zoomLevel_icon', {"coordinate": coordinate.refId, "zoomLevel": zoomLevel, "icon": icon.refId, "refId": refId});
   
   
     // handle native call
@@ -209,13 +209,13 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
   //endregion
 
   //region methods
-  Future<List<MAGroundOverlay>> groundOverlayWithBoundsIcon_batch(List<MACoordinateBounds> bounds, List<UIImage> icon) async {
+  Future<List<MAGroundOverlay>> groundOverlayWithBounds_icon_batch(List<MACoordinateBounds> bounds, List<UIImage> icon) async {
     if (bounds.length != icon.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithBoundsIcon_batch', [for (int i = 0; i < this.length; i++) {"bounds": bounds[i].refId, "icon": icon[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithBounds_icon_batch', [for (int i = 0; i < this.length; i++) {"bounds": bounds[i].refId, "icon": icon[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -228,13 +228,13 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
     }
   }
   
-  Future<List<MAGroundOverlay>> groundOverlayWithCoordinateZoomLevelicon_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<UIImage> icon) async {
+  Future<List<MAGroundOverlay>> groundOverlayWithCoordinate_zoomLevel_icon_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<UIImage> icon) async {
     if (coordinate.length != zoomLevel.length || zoomLevel.length != icon.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithCoordinateZoomLevelicon_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "zoomLevel": zoomLevel[i], "icon": icon[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithCoordinate_zoomLevel_icon_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "zoomLevel": zoomLevel[i], "icon": icon[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -247,13 +247,13 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
     }
   }
   
-  Future<List<bool>> setGroundOverlayWithBoundsIcon_batch(List<MACoordinateBounds> bounds, List<UIImage> icon) async {
+  Future<List<bool>> setGroundOverlayWithBounds_icon_batch(List<MACoordinateBounds> bounds, List<UIImage> icon) async {
     if (bounds.length != icon.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithBoundsIcon_batch', [for (int i = 0; i < this.length; i++) {"bounds": bounds[i].refId, "icon": icon[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithBounds_icon_batch', [for (int i = 0; i < this.length; i++) {"bounds": bounds[i].refId, "icon": icon[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -266,13 +266,13 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
     }
   }
   
-  Future<List<bool>> setGroundOverlayWithCoordinateZoomLevelicon_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<UIImage> icon) async {
+  Future<List<bool>> setGroundOverlayWithCoordinate_zoomLevel_icon_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<UIImage> icon) async {
     if (coordinate.length != zoomLevel.length || zoomLevel.length != icon.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithCoordinateZoomLevelicon_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "zoomLevel": zoomLevel[i], "icon": icon[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithCoordinate_zoomLevel_icon_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "zoomLevel": zoomLevel[i], "icon": icon[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

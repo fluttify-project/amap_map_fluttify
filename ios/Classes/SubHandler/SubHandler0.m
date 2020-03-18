@@ -14,7 +14,7 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler0)
 - (NSDictionary<NSString*, Handler>*) getSubHandler0 {
     return @{
-        @"MAGroundOverlay::groundOverlayWithBoundsIcon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAGroundOverlay::groundOverlayWithBounds_icon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* boundsValue = (NSValue*) HEAP[@([args[@"bounds"] integerValue])];
@@ -41,7 +41,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAGroundOverlay::groundOverlayWithCoordinateZoomLevelicon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAGroundOverlay::groundOverlayWithCoordinate_zoomLevel_icon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
@@ -70,7 +70,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAGroundOverlay::setGroundOverlayWithBoundsIcon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAGroundOverlay::setGroundOverlayWithBounds_icon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* boundsValue = (NSValue*) HEAP[@([args[@"bounds"] integerValue])];
@@ -96,7 +96,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAGroundOverlay::setGroundOverlayWithCoordinateZoomLevelicon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAGroundOverlay::setGroundOverlayWithCoordinate_zoomLevel_icon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
@@ -147,7 +147,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAHeatMapGradient::initWithColorAndWithStartPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAHeatMapGradient::initWithColor_andWithStartPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg
             NSArray<NSNumber*>* colorsRefArray = (NSArray<NSNumber*> *) args[@"colors"];
@@ -177,7 +177,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapStatus::statusWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapStatus::statusWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
@@ -212,7 +212,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapStatus::initWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapStatus::initWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
@@ -247,7 +247,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MACircle::circleWithCenterCoordinateRadius": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MACircle::circleWithCenterCoordinate_radius": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* coordValue = (NSValue*) HEAP[@([args[@"coord"] integerValue])];
@@ -299,7 +299,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MACircle::setCircleWithCenterCoordinateRadius": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MACircle::setCircleWithCenterCoordinate_radius": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* coordValue = (NSValue*) HEAP[@([args[@"coord"] integerValue])];
@@ -457,7 +457,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAPolygon::polygonWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAPolygon::polygonWithCoordinates_count": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
@@ -490,7 +490,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAPolygon::polygonWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAPolygon::polygonWithPoints_count": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
@@ -523,7 +523,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAPolygon::setPolygonWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAPolygon::setPolygonWithPoints_count": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
@@ -555,7 +555,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAPolygon::setPolygonWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAPolygon::setPolygonWithCoordinates_count": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
@@ -632,7 +632,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAPolyline::polylineWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAPolyline::polylineWithPoints_count": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
@@ -665,7 +665,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAPolyline::polylineWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAPolyline::polylineWithCoordinates_count": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
@@ -698,7 +698,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAPolyline::setPolylineWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAPolyline::setPolylineWithPoints_count": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
@@ -730,7 +730,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAPolyline::setPolylineWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAPolyline::setPolylineWithCoordinates_count": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
@@ -785,7 +785,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* coordinatesRefIdArray = (NSArray*) args[@"coordinates"];
@@ -816,7 +816,7 @@ extern BOOL enableLog;
             // invoke native method
             MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback::Callback"
+                    methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -839,7 +839,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* coordinatesRefIdArray = (NSArray*) args[@"coordinates"];
@@ -871,7 +871,7 @@ extern BOOL enableLog;
             // invoke native method
             MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback::Callback"
+                    methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -887,7 +887,7 @@ extern BOOL enableLog;
         
             } stepCallback: ^(MAAnnotationMoveAnimation* currentAni) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallbackstepCallback::Callback"
+                    methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -999,7 +999,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MATraceDelegate::traceManagerDidTracecorrectdistancewithError": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MATraceDelegate::traceManager_didTrace_correct_distance_withError": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MATraceManager* manager = (MATraceManager*) HEAP[@([args[@"manager"] integerValue])];
@@ -1083,7 +1083,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MATraceManager::queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg
             NSArray<NSNumber*>* locationsRefArray = (NSArray<NSNumber*> *) args[@"locations"];
@@ -1109,7 +1109,7 @@ extern BOOL enableLog;
             // invoke native method
             NSOperation* result = [ref queryProcessedTraceWith: locations type: type processingCallback: ^(int index, NSArray<MATracePoint*>* points) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:@"MATraceManager::queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback::Callback"
+                    methodChannelWithName:@"MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -1134,7 +1134,7 @@ extern BOOL enableLog;
         
             } finishCallback: ^(NSArray<MATracePoint*>* points, double distance) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:@"MATraceManager::queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback::Callback"
+                    methodChannelWithName:@"MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -1159,7 +1159,7 @@ extern BOOL enableLog;
         
             } failedCallback: ^(int errorCode, NSString* errorDesc) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:@"MATraceManager::queryProcessedTraceWithTypeprocessingCallbackfinishCallbackfailedCallback::Callback"
+                    methodChannelWithName:@"MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -1226,7 +1226,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMultiPointOverlayRendererDelegate::multiPointOverlayRenderer_didItemTapped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMultiPointOverlayRenderer* renderer = (MAMultiPointOverlayRenderer*) HEAP[@([args[@"renderer"] integerValue])];
@@ -1466,7 +1466,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAAnnotationView::setSelectedAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAAnnotationView::setSelected_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
             BOOL selected = [args[@"selected"] boolValue];
@@ -1490,7 +1490,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAAnnotationView::initWithAnnotationReuseIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAAnnotationView::initWithAnnotation_reuseIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
@@ -1536,7 +1536,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAAnnotationView::setDragStateAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAAnnotationView::setDragState_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // enum arg
             MAAnnotationViewDragState newDragState = (MAAnnotationViewDragState) [args[@"newDragState"] integerValue];
@@ -1583,7 +1583,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MATileOverlay::loadTileAtPathResult": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MATileOverlay::loadTileAtPath_result": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* pathValue = (NSValue*) HEAP[@([args[@"path"] integerValue])];
@@ -1602,7 +1602,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref loadTileAtPath : path result: ^(NSData* tileData, NSError* error) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:@"MATileOverlay::loadTileAtPathResult::Callback"
+                    methodChannelWithName:@"MATileOverlay::loadTileAtPath_result::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -1734,7 +1734,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAOfflineMap::downloadItemShouldContinueWhenAppEntersBackgrounddownloadBlock": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAOfflineMap::downloadItem_shouldContinueWhenAppEntersBackground_downloadBlock": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAOfflineItem* item = (MAOfflineItem*) HEAP[@([args[@"item"] integerValue])];
@@ -1753,7 +1753,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref downloadItem : item shouldContinueWhenAppEntersBackground: shouldContinueWhenAppEntersBackground downloadBlock: ^(MAOfflineItem* downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:@"MAOfflineMap::downloadItemShouldContinueWhenAppEntersBackgrounddownloadBlock::Callback"
+                    methodChannelWithName:@"MAOfflineMap::downloadItem_shouldContinueWhenAppEntersBackground_downloadBlock::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -2035,7 +2035,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAParticleRandomVelocityGenerate::initWithBoundaryValueX1Y1Z1X2Y2Z2": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
             float x1 = [args[@"x1"] floatValue];
@@ -2091,7 +2091,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAParticleRandomColorGenerate::initWithBoundaryColorR1G1B1A1R2G2B2A2": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAParticleRandomColorGenerate::initWithBoundaryColorR1_G1_B1_A1_R2_G2_B2_A2": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
             float r1 = [args[@"r1"] floatValue];
@@ -2238,7 +2238,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAParticleCurveSizeGenerate::initWithCurveXYZ": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAParticleCurveSizeGenerate::initWithCurveX_Y_Z": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
             float x = [args[@"x"] floatValue];
@@ -2265,7 +2265,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAParticleEmissionModule::initWithEmissionRateRateTime": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAParticleEmissionModule::initWithEmissionRate_rateTime": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
             int rate = [args[@"rate"] intValue];
@@ -2334,7 +2334,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAParticleSinglePointShapeModule::initWithShapeXYZuseRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAParticleSinglePointShapeModule::initWithShapeX_Y_Z_useRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
             float x = [args[@"x"] floatValue];
@@ -2363,7 +2363,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAParticleRectShapeModule::initWithLeftToprightbottomuseRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
             float left = [args[@"left"] floatValue];
@@ -2621,7 +2621,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAOverlayRenderer::glPointsForMapPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAOverlayRenderer::glPointsForMapPoints_count": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* mapPointsRefIdArray = (NSArray*) args[@"mapPoints"];
@@ -2677,7 +2677,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthlooped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
@@ -2715,7 +2715,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthloopedLineJoinTypeLineCapTypelineDash": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped_LineJoinType_LineCapType_lineDash": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
@@ -2759,7 +2759,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAOverlayRenderer::renderTexturedLinesWithPointsPointCountlineWidthtextureIDsdrawStyleIndexeslooped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAOverlayRenderer::renderTexturedLinesWithPoints_pointCount_lineWidth_textureIDs_drawStyleIndexes_looped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
@@ -2809,7 +2809,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorsdrawStyleIndexesisGradientlineWidthloopedLineJoinTypeLineCapTypelineDash": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColors_drawStyleIndexes_isGradient_lineWidth_looped_LineJoinType_LineCapType_lineDash": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
@@ -2867,7 +2867,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAOverlayRenderer::renderRegionWithPointsPointCountfillColorusingTriangleFan": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAOverlayRenderer::renderRegionWithPoints_pointCount_fillColor_usingTriangleFan": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
@@ -2903,7 +2903,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAOverlayRenderer::renderStrokedRegionWithPointsPointCountfillColorstrokeColorstrokeLineWidthstrokeLineJoinTypestrokeLineDashusingTriangleFan": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAOverlayRenderer::renderStrokedRegionWithPoints_pointCount_fillColor_strokeColor_strokeLineWidth_strokeLineJoinType_strokeLineDash_usingTriangleFan": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
@@ -3017,7 +3017,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MACustomBuildingOverlayOption::optionWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MACustomBuildingOverlayOption::optionWithCoordinates_count": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
@@ -3050,7 +3050,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MACustomBuildingOverlayOption::setOptionWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MACustomBuildingOverlayOption::setOptionWithCoordinates_count": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
@@ -3126,7 +3126,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAArc::arcWithStartCoordinatePassedCoordinateendCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAArc::arcWithStartCoordinate_passedCoordinate_endCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* startCoordinateValue = (NSValue*) HEAP[@([args[@"startCoordinate"] integerValue])];
@@ -3159,7 +3159,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::setRegionAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::setRegion_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* regionValue = (NSValue*) HEAP[@([args[@"region"] integerValue])];
@@ -3211,7 +3211,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::setVisibleMapRectAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::setVisibleMapRect_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* mapRectValue = (NSValue*) HEAP[@([args[@"mapRect"] integerValue])];
@@ -3263,7 +3263,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::mapRectThatFitsEdgePadding": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::mapRectThatFits_edgePadding": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* mapRectValue = (NSValue*) HEAP[@([args[@"mapRect"] integerValue])];
@@ -3293,7 +3293,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::setVisibleMapRectEdgePaddinganimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::setVisibleMapRect_edgePadding_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* mapRectValue = (NSValue*) HEAP[@([args[@"mapRect"] integerValue])];
@@ -3323,7 +3323,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::setCenterCoordinateAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::setCenterCoordinate_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
@@ -3349,7 +3349,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::setZoomLevelAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::setZoomLevel_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
             CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
@@ -3373,7 +3373,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::setZoomLevelAtPivotanimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::setZoomLevel_atPivot_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
             CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
@@ -3401,7 +3401,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::setRotationDegreeAnimatedduration": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::setRotationDegree_animated_duration": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
             CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
@@ -3427,7 +3427,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::setCameraDegreeAnimatedduration": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::setCameraDegree_animated_duration": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
             CGFloat cameraDegree = [args[@"cameraDegree"] floatValue];
@@ -3475,7 +3475,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::setMapStatusAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::setMapStatus_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapStatus* status = (MAMapStatus*) HEAP[@([args[@"status"] integerValue])];
@@ -3499,7 +3499,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::setMapStatusAnimatedduration": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::setMapStatus_animated_duration": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapStatus* status = (MAMapStatus*) HEAP[@([args[@"status"] integerValue])];
@@ -3547,7 +3547,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::takeSnapshotInRectWithCompletionBlock": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::takeSnapshotInRect_withCompletionBlock": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
@@ -3566,7 +3566,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref takeSnapshotInRect : rect withCompletionBlock: ^(UIImage* resultImage, NSInteger state) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:@"MAMapView::takeSnapshotInRectWithCompletionBlock::Callback"
+                    methodChannelWithName:@"MAMapView::takeSnapshotInRect_withCompletionBlock::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -3613,7 +3613,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::convertCoordinateToPointToView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::convertCoordinate_toPointToView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
@@ -3641,7 +3641,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::convertPointToCoordinateFromView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::convertPoint_toCoordinateFromView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
@@ -3669,7 +3669,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::convertRegionToRectToView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::convertRegion_toRectToView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* regionValue = (NSValue*) HEAP[@([args[@"region"] integerValue])];
@@ -3697,7 +3697,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::convertRectToRegionFromView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::convertRect_toRegionFromView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
             NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
@@ -3995,7 +3995,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::selectAnnotationAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::selectAnnotation_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
@@ -4019,7 +4019,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::deselectAnnotationAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::deselectAnnotation_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
@@ -4043,7 +4043,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::showAnnotationsAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::showAnnotations_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg
             NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
@@ -4072,7 +4072,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::showAnnotationsEdgePaddinganimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::showAnnotations_edgePadding_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg
             NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
@@ -4105,7 +4105,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::setUserTrackingModeAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::setUserTrackingMode_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // enum arg
             MAUserTrackingMode mode = (MAUserTrackingMode) [args[@"mode"] integerValue];
@@ -4227,7 +4227,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::addOverlayLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::addOverlay_level": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
@@ -4251,7 +4251,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::addOverlaysLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::addOverlays_level": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg
             NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
@@ -4329,7 +4329,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::insertOverlayAtIndexlevel": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::insertOverlay_atIndex_level": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
@@ -4355,7 +4355,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::insertOverlayAboveOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::insertOverlay_aboveOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
@@ -4379,7 +4379,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::insertOverlayBelowOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::insertOverlay_belowOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
@@ -4403,7 +4403,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::insertOverlayAtIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::insertOverlay_atIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             id<MAOverlay> overlay = (id<MAOverlay>) HEAP[@([args[@"overlay"] integerValue])];
@@ -4427,7 +4427,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::exchangeOverlayAtIndexWithOverlayAtIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::exchangeOverlayAtIndex_withOverlayAtIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
             NSUInteger index1 = [args[@"index1"] unsignedIntegerValue];
@@ -4451,7 +4451,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::exchangeOverlayAtIndexWithOverlayAtIndexatLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::exchangeOverlayAtIndex_withOverlayAtIndex_atLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
             NSUInteger index1 = [args[@"index1"] unsignedIntegerValue];
@@ -4477,7 +4477,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::exchangeOverlayWithOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::exchangeOverlay_withOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             id<MAOverlay> overlay1 = (id<MAOverlay>) HEAP[@([args[@"overlay1"] integerValue])];
@@ -4524,7 +4524,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::showOverlaysAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::showOverlays_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg
             NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
@@ -4553,7 +4553,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::showOverlaysEdgePaddinganimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapView::showOverlays_edgePadding_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg
             NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
@@ -4697,7 +4697,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewRegionWillChangeAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_regionWillChangeAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -4721,7 +4721,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewRegionDidChangeAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_regionDidChangeAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -4745,7 +4745,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewMapWillMoveByUser": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_mapWillMoveByUser": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -4769,7 +4769,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewMapDidMoveByUser": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_mapDidMoveByUser": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -4793,7 +4793,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewMapWillZoomByUser": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_mapWillZoomByUser": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -4817,7 +4817,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewMapDidZoomByUser": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_mapDidZoomByUser": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -4885,7 +4885,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewDidFailLoadingMapWithError": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapViewDidFailLoadingMap_withError": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -4909,7 +4909,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewViewForAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_viewForAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -4934,7 +4934,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewDidAddAnnotationViews": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didAddAnnotationViews": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -4963,7 +4963,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewDidSelectAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didSelectAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -4987,7 +4987,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewDidDeselectAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didDeselectAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -5055,7 +5055,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didUpdateUserLocation_updatingLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -5103,7 +5103,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewDidFailToLocateUserWithError": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didFailToLocateUserWithError": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -5127,7 +5127,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_annotationView_didChangeDragState_fromOldState": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -5155,7 +5155,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewRendererForOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_rendererForOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -5180,7 +5180,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewDidAddOverlayRenderers": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didAddOverlayRenderers": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -5209,7 +5209,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_annotationView_calloutAccessoryControlTapped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -5235,7 +5235,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -5259,7 +5259,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewDidAnnotationViewTapped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didAnnotationViewTapped": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -5283,7 +5283,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didChangeUserTrackingMode_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -5309,7 +5309,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didChangeOpenGLESDisabled": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
