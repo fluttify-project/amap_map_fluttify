@@ -851,13 +851,14 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 添加marker
         await iosController.addAnnotation(annotation);
 
-        // 等待添加完成 获取对应的view
-        final annotationViewList =
-            await _iosMapDelegate._annotationViewStream.stream.first;
+//        // 等待添加完成 获取对应的view
+//        final annotationViewList =
+//            await _iosMapDelegate._annotationViewStream.stream.first;
         // pointAnnotation不释放, 还有用
         pool.add(coordinate);
 
-        return Marker.ios(annotation, annotationViewList[0], iosController);
+        return Marker.ios(
+            annotation /*, annotationViewList[0]*/, iosController);
       },
     );
   }
@@ -1051,13 +1052,16 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 添加marker
         await iosController.addAnnotations(iosOptions);
 
-        // 等待添加完成 获取对应的view
-        final annotationViewList =
-            await _iosMapDelegate._annotationViewStream.stream.first;
+//        // 等待添加完成 获取对应的view
+//        // 由于只有可见marker才会返回, 防止返回的marker数量和option数量不一致, 这里强制给一个options数量的列表来装返回的marker
+//        final annotationViewList = List(options.length);
+//        final visibleMarkers =
+//            await _iosMapDelegate._annotationViewStream.stream.first;
+//        annotationViewList.fillRange(0, visibleMarkers.length, visibleMarkers);
 
         return [
           for (int i = 0; i < iosOptions.length; i++)
-            Marker.ios(iosOptions[i], annotationViewList[i], iosController)
+            Marker.ios(iosOptions[i] /*, annotationViewList[i]*/, iosController)
         ];
       },
     );
@@ -2102,7 +2106,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
           // 解决办法很简单, 把refId取出来放到目标实体类里就行了
           MAPointAnnotation()
             ..refId = (await view.get_annotation(viewChannel: false)).refId,
-          view,
+//          view,
           _iosController,
         ),
       );
@@ -2128,7 +2132,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       await _onMarkerDragStart(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
-          view,
+//          view,
           _iosController,
         ),
       );
@@ -2140,7 +2144,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       await _onMarkerDragging(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
-          view,
+//          view,
           _iosController,
         ),
       );
@@ -2151,7 +2155,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       await _onMarkerDragEnd(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
-          view,
+//          view,
           _iosController,
         ),
       );
@@ -2277,7 +2281,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
         Marker.ios(
           MAPointAnnotation()
             ..refId = (await view.get_annotation(viewChannel: false)).refId,
-          view,
+//          view,
           _iosController,
         ),
       );
