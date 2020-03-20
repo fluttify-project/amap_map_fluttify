@@ -55,7 +55,7 @@ class com_amap_api_maps_model_Tile extends java_lang_Object with android_os_Parc
   Future<Uint8List> get_data() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.Tile::get_data", {'refId': refId});
   
-    return result;
+    return result as Uint8List;
   }
   
   //endregion
@@ -108,7 +108,7 @@ extension com_amap_api_maps_model_Tile_Batch on List<com_amap_api_maps_model_Til
   
   Future<List<Uint8List>> get_data_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.Tile::get_data_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
   
     return typedResult;
   }

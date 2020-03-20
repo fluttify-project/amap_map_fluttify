@@ -19,5 +19,13 @@ mixin MAParticleColorGenerate on NSObject {
 
   
 
+  @mustCallSuper
+  Future<NSValue/* float* */> getColor() {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('getColor::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
   
 }

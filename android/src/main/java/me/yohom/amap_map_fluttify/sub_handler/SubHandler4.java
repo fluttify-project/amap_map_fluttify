@@ -1506,7 +1506,7 @@ public class SubHandler4 {
                 // jsonable arg
                 int var0 = (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
             
@@ -5544,7 +5544,7 @@ public class SubHandler4 {
                 // jsonable arg
                 int var1 = (int) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -5614,7 +5614,7 @@ public class SubHandler4 {
                 // jsonable arg
                 int var0 = (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
             
@@ -5646,7 +5646,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 Double var2 = (Double) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -5683,7 +5683,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -5722,7 +5722,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -5757,7 +5757,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // ref arg
                 android.graphics.Point var2 = (android.graphics.Point) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
             
@@ -5790,7 +5790,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeGetMapZoomer", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -5822,7 +5822,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 Double var2 = (Double) ((Map<String, Object>) args).get("var2");
             
@@ -5855,7 +5855,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 Double var2 = (Double) ((Map<String, Object>) args).get("var2");
             
@@ -5888,7 +5888,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -5920,7 +5920,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -5952,7 +5952,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 Double var2 = (Double) ((Map<String, Object>) args).get("var2");
             
@@ -5985,7 +5985,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeRecalculate", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -6016,7 +6016,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeStateDestroy", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -6047,7 +6047,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
             
@@ -6080,7 +6080,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
             
@@ -6113,7 +6113,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -6145,7 +6145,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
             

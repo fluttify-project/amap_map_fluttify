@@ -48,14 +48,14 @@ class MAParticleEmissionModule extends NSObject  {
   //endregion
 
   //region methods
-  Future<MAParticleEmissionModule> initWithEmissionRateRateTime(int rate, int rateTime) async {
+  Future<MAParticleEmissionModule> initWithEmissionRate_rateTime(int rate, int rateTime) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleEmissionModule@$refId::initWithEmissionRate([\'rate\':$rate, \'rateTime\':$rateTime])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleEmissionModule::initWithEmissionRateRateTime', {"rate": rate, "rateTime": rateTime, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleEmissionModule::initWithEmissionRate_rateTime', {"rate": rate, "rateTime": rateTime, "refId": refId});
   
   
     // handle native call
@@ -83,13 +83,13 @@ extension MAParticleEmissionModule_Batch on List<MAParticleEmissionModule> {
   //endregion
 
   //region methods
-  Future<List<MAParticleEmissionModule>> initWithEmissionRateRateTime_batch(List<int> rate, List<int> rateTime) async {
+  Future<List<MAParticleEmissionModule>> initWithEmissionRate_rateTime_batch(List<int> rate, List<int> rateTime) async {
     if (rate.length != rateTime.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleEmissionModule::initWithEmissionRateRateTime_batch', [for (int i = 0; i < this.length; i++) {"rate": rate[i], "rateTime": rateTime[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleEmissionModule::initWithEmissionRate_rateTime_batch', [for (int i = 0; i < this.length; i++) {"rate": rate[i], "rateTime": rateTime[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

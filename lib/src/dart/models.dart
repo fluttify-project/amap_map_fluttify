@@ -416,12 +416,12 @@ class MapLocation {
 class Marker {
   Marker.android(this._androidModel);
 
-  Marker.ios(this._iosModel, this._annotationView, this._iosController);
+  Marker.ios(this._iosModel /*, this._annotationView*/, this._iosController);
 
   com_amap_api_maps_model_Marker _androidModel;
 
   MAPointAnnotation _iosModel;
-  MAAnnotationView _annotationView;
+//  MAAnnotationView _annotationView;
   MAMapView _iosController;
 
   Future<String> get title {
@@ -484,12 +484,17 @@ class Marker {
         ),
       ),
       ios: (_) async {
-        final coordinate = await CLLocationCoordinate2D.create(
-          coord.latitude,
-          coord.longitude,
-        );
-        await _iosModel.set_coordinate(coordinate);
-        return _annotationView.set_annotation(_iosModel, viewChannel: false);
+        debugPrint('ios端目前无法设置经纬度!');
+//        if (_annotationView != null) {
+//          final coordinate = await CLLocationCoordinate2D.create(
+//            coord.latitude,
+//            coord.longitude,
+//          );
+//          await _iosModel.set_coordinate(coordinate);
+//          await _annotationView.set_annotation(_iosModel, viewChannel: false);
+//        } else {
+//          debugPrint('当前_annotationView为null, 无法设置经纬度!');
+//        }
       },
     );
   }
@@ -498,21 +503,28 @@ class Marker {
     assert(visible != null);
     return platform(
       android: (_) => _androidModel.setVisible(visible),
-      ios: (_) => _annotationView.setHidden(!visible),
+      ios: (_) async {
+        debugPrint('ios端目前无法设置可见性!');
+//        if (_annotationView != null) {
+//          await _annotationView.setHidden(!visible);
+//        } else {
+//          debugPrint('当前_annotationView为null, 无法设置可见性!');
+//        }
+      },
     );
   }
 
   Future<void> showInfoWindow() async {
     return platform(
       android: (_) => _androidModel.showInfoWindow(),
-      ios: (_) => _iosController?.selectAnnotationAnimated(_iosModel, true),
+      ios: (_) => _iosController?.selectAnnotation_animated(_iosModel, true),
     );
   }
 
   Future<void> hideInfoWindow() async {
     return platform(
       android: (_) => _androidModel.hideInfoWindow(),
-      ios: (_) => _iosController?.deselectAnnotationAnimated(_iosModel, true),
+      ios: (_) => _iosController?.deselectAnnotation_animated(_iosModel, true),
     );
   }
 }

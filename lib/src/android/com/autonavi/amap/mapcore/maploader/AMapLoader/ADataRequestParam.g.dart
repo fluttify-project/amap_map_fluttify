@@ -61,7 +61,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam extends j
   Future<Uint8List> get_enCodeString() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_enCodeString", {'refId': refId});
   
-    return result;
+    return result as Uint8List;
   }
   
   Future<int> get_nCompress() async {
@@ -147,7 +147,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam_Batch
   
   Future<List<Uint8List>> get_enCodeString_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_enCodeString_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
   
     return typedResult;
   }

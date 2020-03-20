@@ -1,3 +1,7 @@
+## 0.18.1
+- roll engine #5191928e
+- enhance: ios端Marker去除setCoordinate和setVisible方法, 防止阻塞
+
 ## 0.18.0
 - enhance: [breaking change] 优化定位api (#183, #182)
 - fix: addMarkers的rotateAngle无效修正

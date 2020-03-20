@@ -85,6 +85,7 @@ extern BOOL enableLog;
           // ref object
           MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           UIView* result = ref.customView;
       
           // return a ref
@@ -103,6 +104,7 @@ extern BOOL enableLog;
           // ref object
           MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
       
+          // invoke native method
           NSObject* result = ref.userData;
       
           // return a ref
@@ -160,7 +162,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MATraceDelegate::traceManagerDidTracecorrectdistancewithError");
+    NSLog(@"MATraceDelegate::traceManager_didTrace_correct_distance_withError");
   }
 
   // convert to jsonable arg
@@ -221,7 +223,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped");
+    NSLog(@"MAMultiPointOverlayRendererDelegate::multiPointOverlayRenderer_didItemTapped");
   }
 
   // convert to jsonable arg
@@ -262,7 +264,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewRegionWillChangeAnimated");
+    NSLog(@"MAMapViewDelegate::mapView_regionWillChangeAnimated");
   }
 
   // convert to jsonable arg
@@ -283,7 +285,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewRegionDidChangeAnimated");
+    NSLog(@"MAMapViewDelegate::mapView_regionDidChangeAnimated");
   }
 
   // convert to jsonable arg
@@ -304,7 +306,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewMapWillMoveByUser");
+    NSLog(@"MAMapViewDelegate::mapView_mapWillMoveByUser");
   }
 
   // convert to jsonable arg
@@ -325,7 +327,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewMapDidMoveByUser");
+    NSLog(@"MAMapViewDelegate::mapView_mapDidMoveByUser");
   }
 
   // convert to jsonable arg
@@ -346,7 +348,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewMapWillZoomByUser");
+    NSLog(@"MAMapViewDelegate::mapView_mapWillZoomByUser");
   }
 
   // convert to jsonable arg
@@ -367,7 +369,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewMapDidZoomByUser");
+    NSLog(@"MAMapViewDelegate::mapView_mapDidZoomByUser");
   }
 
   // convert to jsonable arg
@@ -426,7 +428,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidFailLoadingMapWithError");
+    NSLog(@"MAMapViewDelegate::mapViewDidFailLoadingMap_withError");
   }
 
   // convert to jsonable arg
@@ -448,7 +450,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewViewForAnnotation");
+    NSLog(@"MAMapViewDelegate::mapView_viewForAnnotation");
   }
 
   // convert to jsonable arg
@@ -481,7 +483,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidAddAnnotationViews");
+    NSLog(@"MAMapViewDelegate::mapView_didAddAnnotationViews");
   }
 
   // convert to jsonable arg
@@ -509,7 +511,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidSelectAnnotationView");
+    NSLog(@"MAMapViewDelegate::mapView_didSelectAnnotationView");
   }
 
   // convert to jsonable arg
@@ -531,7 +533,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidDeselectAnnotationView");
+    NSLog(@"MAMapViewDelegate::mapView_didDeselectAnnotationView");
   }
 
   // convert to jsonable arg
@@ -591,7 +593,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation");
+    NSLog(@"MAMapViewDelegate::mapView_didUpdateUserLocation_updatingLocation");
   }
 
   // convert to jsonable arg
@@ -615,7 +617,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidFailToLocateUserWithError");
+    NSLog(@"MAMapViewDelegate::mapView_didFailToLocateUserWithError");
   }
 
   // convert to jsonable arg
@@ -637,7 +639,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState");
+    NSLog(@"MAMapViewDelegate::mapView_annotationView_didChangeDragState_fromOldState");
   }
 
   // convert to jsonable arg
@@ -663,7 +665,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewRendererForOverlay");
+    NSLog(@"MAMapViewDelegate::mapView_rendererForOverlay");
   }
 
   // convert to jsonable arg
@@ -696,7 +698,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidAddOverlayRenderers");
+    NSLog(@"MAMapViewDelegate::mapView_didAddOverlayRenderers");
   }
 
   // convert to jsonable arg
@@ -724,7 +726,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped");
+    NSLog(@"MAMapViewDelegate::mapView_annotationView_calloutAccessoryControlTapped");
   }
 
   // convert to jsonable arg
@@ -749,7 +751,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped");
+    NSLog(@"MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped");
   }
 
   // convert to jsonable arg
@@ -771,7 +773,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewTapped");
+    NSLog(@"MAMapViewDelegate::mapView_didAnnotationViewTapped");
   }
 
   // convert to jsonable arg
@@ -793,7 +795,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated");
+    NSLog(@"MAMapViewDelegate::mapView_didChangeUserTrackingMode_animated");
   }
 
   // convert to jsonable arg
@@ -816,7 +818,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled");
+    NSLog(@"MAMapViewDelegate::mapView_didChangeOpenGLESDisabled");
   }
 
   // convert to jsonable arg
@@ -837,7 +839,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidTouchPois");
+    NSLog(@"MAMapViewDelegate::mapView_didTouchPois");
   }
 
   // convert to jsonable arg
@@ -865,7 +867,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate");
+    NSLog(@"MAMapViewDelegate::mapView_didSingleTappedAtCoordinate");
   }
 
   // convert to jsonable arg
@@ -889,7 +891,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidLongPressedAtCoordinate");
+    NSLog(@"MAMapViewDelegate::mapView_didLongPressedAtCoordinate");
   }
 
   // convert to jsonable arg
@@ -932,7 +934,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapShowed");
+    NSLog(@"MAMapViewDelegate::mapView_didIndoorMapShowed");
   }
 
   // convert to jsonable arg
@@ -954,7 +956,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged");
+    NSLog(@"MAMapViewDelegate::mapView_didIndoorMapFloorIndexChanged");
   }
 
   // convert to jsonable arg
@@ -976,7 +978,7 @@ extern BOOL enableLog;
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
-    NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapHidden");
+    NSLog(@"MAMapViewDelegate::mapView_didIndoorMapHidden");
   }
 
   // convert to jsonable arg

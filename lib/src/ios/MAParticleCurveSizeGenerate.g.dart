@@ -48,14 +48,14 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
   //endregion
 
   //region methods
-  Future<MAParticleCurveSizeGenerate> initWithCurveXYZ(double x, double y, double z) async {
+  Future<MAParticleCurveSizeGenerate> initWithCurveX_Y_Z(double x, double y, double z) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAParticleCurveSizeGenerate@$refId::initWithCurveX([\'x\':$x, \'y\':$y, \'z\':$z])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleCurveSizeGenerate::initWithCurveXYZ', {"x": x, "y": y, "z": z, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleCurveSizeGenerate::initWithCurveX_Y_Z', {"x": x, "y": y, "z": z, "refId": refId});
   
   
     // handle native call
@@ -83,13 +83,13 @@ extension MAParticleCurveSizeGenerate_Batch on List<MAParticleCurveSizeGenerate>
   //endregion
 
   //region methods
-  Future<List<MAParticleCurveSizeGenerate>> initWithCurveXYZ_batch(List<double> x, List<double> y, List<double> z) async {
+  Future<List<MAParticleCurveSizeGenerate>> initWithCurveX_Y_Z_batch(List<double> x, List<double> y, List<double> z) async {
     if (x.length != y.length || y.length != z.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleCurveSizeGenerate::initWithCurveXYZ_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleCurveSizeGenerate::initWithCurveX_Y_Z_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

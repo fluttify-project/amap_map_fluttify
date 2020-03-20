@@ -410,59 +410,59 @@ class MAMapView extends UIView  {
             // handle the native call
             delegate?.mapViewRegionChanged(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewRegionWillChangeAnimated':
+          case 'Callback::MAMapViewDelegate::mapView_regionWillChangeAnimated':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewRegionWillChangeAnimated([\'animated\':$args[animated]])');
+              print('fluttify-dart-callback: mapView_regionWillChangeAnimated([\'animated\':$args[animated]])');
             }
         
             // handle the native call
-            delegate?.mapViewRegionWillChangeAnimated(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['animated']);
+            delegate?.mapView_regionWillChangeAnimated(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['animated']);
             break;
-          case 'Callback::MAMapViewDelegate::mapViewRegionDidChangeAnimated':
+          case 'Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewRegionDidChangeAnimated([\'animated\':$args[animated]])');
+              print('fluttify-dart-callback: mapView_regionDidChangeAnimated([\'animated\':$args[animated]])');
             }
         
             // handle the native call
-            delegate?.mapViewRegionDidChangeAnimated(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['animated']);
+            delegate?.mapView_regionDidChangeAnimated(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['animated']);
             break;
-          case 'Callback::MAMapViewDelegate::mapViewMapWillMoveByUser':
+          case 'Callback::MAMapViewDelegate::mapView_mapWillMoveByUser':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewMapWillMoveByUser([\'wasUserAction\':$args[wasUserAction]])');
+              print('fluttify-dart-callback: mapView_mapWillMoveByUser([\'wasUserAction\':$args[wasUserAction]])');
             }
         
             // handle the native call
-            delegate?.mapViewMapWillMoveByUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['wasUserAction']);
+            delegate?.mapView_mapWillMoveByUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['wasUserAction']);
             break;
-          case 'Callback::MAMapViewDelegate::mapViewMapDidMoveByUser':
+          case 'Callback::MAMapViewDelegate::mapView_mapDidMoveByUser':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewMapDidMoveByUser([\'wasUserAction\':$args[wasUserAction]])');
+              print('fluttify-dart-callback: mapView_mapDidMoveByUser([\'wasUserAction\':$args[wasUserAction]])');
             }
         
             // handle the native call
-            delegate?.mapViewMapDidMoveByUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['wasUserAction']);
+            delegate?.mapView_mapDidMoveByUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['wasUserAction']);
             break;
-          case 'Callback::MAMapViewDelegate::mapViewMapWillZoomByUser':
+          case 'Callback::MAMapViewDelegate::mapView_mapWillZoomByUser':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewMapWillZoomByUser([\'wasUserAction\':$args[wasUserAction]])');
+              print('fluttify-dart-callback: mapView_mapWillZoomByUser([\'wasUserAction\':$args[wasUserAction]])');
             }
         
             // handle the native call
-            delegate?.mapViewMapWillZoomByUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['wasUserAction']);
+            delegate?.mapView_mapWillZoomByUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['wasUserAction']);
             break;
-          case 'Callback::MAMapViewDelegate::mapViewMapDidZoomByUser':
+          case 'Callback::MAMapViewDelegate::mapView_mapDidZoomByUser':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewMapDidZoomByUser([\'wasUserAction\':$args[wasUserAction]])');
+              print('fluttify-dart-callback: mapView_mapDidZoomByUser([\'wasUserAction\':$args[wasUserAction]])');
             }
         
             // handle the native call
-            delegate?.mapViewMapDidZoomByUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['wasUserAction']);
+            delegate?.mapView_mapDidZoomByUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLoadingMap':
             // print log
@@ -482,50 +482,50 @@ class MAMapView extends UIView  {
             // handle the native call
             delegate?.mapViewDidFinishLoadingMap(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidFailLoadingMapWithError':
+          case 'Callback::MAMapViewDelegate::mapViewDidFailLoadingMap_withError':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidFailLoadingMapWithError([])');
+              print('fluttify-dart-callback: mapViewDidFailLoadingMap_withError([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidFailLoadingMapWithError(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', NSError()..refId = (args['error'])..tag = 'amap_map_fluttify');
+            delegate?.mapViewDidFailLoadingMap_withError(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', NSError()..refId = (args['error'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewViewForAnnotation':
+          case 'Callback::MAMapViewDelegate::mapView_viewForAnnotation':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewViewForAnnotation([])');
+              print('fluttify-dart-callback: mapView_viewForAnnotation([])');
             }
         
             // handle the native call
-            delegate?.mapViewViewForAnnotation(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAGroundOverlay()..refId = (args['annotation'])..tag = 'amap_map_fluttify');
+            delegate?.mapView_viewForAnnotation(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAGroundOverlay()..refId = (args['annotation'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidAddAnnotationViews':
+          case 'Callback::MAMapViewDelegate::mapView_didAddAnnotationViews':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidAddAnnotationViews([])');
+              print('fluttify-dart-callback: mapView_didAddAnnotationViews([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidAddAnnotationViews(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', (args['views'] as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
+            delegate?.mapView_didAddAnnotationViews(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', (args['views'] as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidSelectAnnotationView':
+          case 'Callback::MAMapViewDelegate::mapView_didSelectAnnotationView':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidSelectAnnotationView([])');
+              print('fluttify-dart-callback: mapView_didSelectAnnotationView([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidSelectAnnotationView(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify');
+            delegate?.mapView_didSelectAnnotationView(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidDeselectAnnotationView':
+          case 'Callback::MAMapViewDelegate::mapView_didDeselectAnnotationView':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidDeselectAnnotationView([])');
+              print('fluttify-dart-callback: mapView_didDeselectAnnotationView([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidDeselectAnnotationView(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify');
+            delegate?.mapView_didDeselectAnnotationView(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLocatingUser':
             // print log
@@ -545,14 +545,14 @@ class MAMapView extends UIView  {
             // handle the native call
             delegate?.mapViewDidStopLocatingUser(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation':
+          case 'Callback::MAMapViewDelegate::mapView_didUpdateUserLocation_updatingLocation':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidUpdateUserLocationupdatingLocation([\'updatingLocation\':$args[updatingLocation]])');
+              print('fluttify-dart-callback: mapView_didUpdateUserLocation_updatingLocation([\'updatingLocation\':$args[updatingLocation]])');
             }
         
             // handle the native call
-            delegate?.mapViewDidUpdateUserLocationupdatingLocation(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAUserLocation()..refId = (args['userLocation'])..tag = 'amap_map_fluttify', args['updatingLocation']);
+            delegate?.mapView_didUpdateUserLocation_updatingLocation(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAUserLocation()..refId = (args['userLocation'])..tag = 'amap_map_fluttify', args['updatingLocation']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewRequireLocationAuth':
             // print log
@@ -563,113 +563,113 @@ class MAMapView extends UIView  {
             // handle the native call
             delegate?.mapViewRequireLocationAuth(CLLocationManager()..refId = (args['locationManager'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidFailToLocateUserWithError':
+          case 'Callback::MAMapViewDelegate::mapView_didFailToLocateUserWithError':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidFailToLocateUserWithError([])');
+              print('fluttify-dart-callback: mapView_didFailToLocateUserWithError([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidFailToLocateUserWithError(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', NSError()..refId = (args['error'])..tag = 'amap_map_fluttify');
+            delegate?.mapView_didFailToLocateUserWithError(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', NSError()..refId = (args['error'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState':
+          case 'Callback::MAMapViewDelegate::mapView_annotationView_didChangeDragState_fromOldState':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewAnnotationViewdidChangeDragStatefromOldState([])');
+              print('fluttify-dart-callback: mapView_annotationView_didChangeDragState_fromOldState([])');
             }
         
             // handle the native call
-            delegate?.mapViewAnnotationViewdidChangeDragStatefromOldState(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify', MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
+            delegate?.mapView_annotationView_didChangeDragState_fromOldState(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify', MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
             break;
-          case 'Callback::MAMapViewDelegate::mapViewRendererForOverlay':
+          case 'Callback::MAMapViewDelegate::mapView_rendererForOverlay':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewRendererForOverlay([])');
+              print('fluttify-dart-callback: mapView_rendererForOverlay([])');
             }
         
             // handle the native call
-            delegate?.mapViewRendererForOverlay(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAGroundOverlay()..refId = (args['overlay'])..tag = 'amap_map_fluttify');
+            delegate?.mapView_rendererForOverlay(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAGroundOverlay()..refId = (args['overlay'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidAddOverlayRenderers':
+          case 'Callback::MAMapViewDelegate::mapView_didAddOverlayRenderers':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidAddOverlayRenderers([])');
+              print('fluttify-dart-callback: mapView_didAddOverlayRenderers([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidAddOverlayRenderers(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', (args['overlayRenderers'] as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
+            delegate?.mapView_didAddOverlayRenderers(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', (args['overlayRenderers'] as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
             break;
-          case 'Callback::MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped':
+          case 'Callback::MAMapViewDelegate::mapView_annotationView_calloutAccessoryControlTapped':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewAnnotationViewcalloutAccessoryControlTapped([])');
+              print('fluttify-dart-callback: mapView_annotationView_calloutAccessoryControlTapped([])');
             }
         
             // handle the native call
-            delegate?.mapViewAnnotationViewcalloutAccessoryControlTapped(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify', UIControl()..refId = (args['control'])..tag = 'amap_map_fluttify');
+            delegate?.mapView_annotationView_calloutAccessoryControlTapped(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify', UIControl()..refId = (args['control'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped':
+          case 'Callback::MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidAnnotationViewCalloutTapped([])');
+              print('fluttify-dart-callback: mapView_didAnnotationViewCalloutTapped([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidAnnotationViewCalloutTapped(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify');
+            delegate?.mapView_didAnnotationViewCalloutTapped(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidAnnotationViewTapped':
+          case 'Callback::MAMapViewDelegate::mapView_didAnnotationViewTapped':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidAnnotationViewTapped([])');
+              print('fluttify-dart-callback: mapView_didAnnotationViewTapped([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidAnnotationViewTapped(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify');
+            delegate?.mapView_didAnnotationViewTapped(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated':
+          case 'Callback::MAMapViewDelegate::mapView_didChangeUserTrackingMode_animated':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidChangeUserTrackingModeanimated([\'animated\':$args[animated]])');
+              print('fluttify-dart-callback: mapView_didChangeUserTrackingMode_animated([\'animated\':$args[animated]])');
             }
         
             // handle the native call
-            delegate?.mapViewDidChangeUserTrackingModeanimated(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAUserTrackingMode.values[(args['mode'])], args['animated']);
+            delegate?.mapView_didChangeUserTrackingMode_animated(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAUserTrackingMode.values[(args['mode'])], args['animated']);
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled':
+          case 'Callback::MAMapViewDelegate::mapView_didChangeOpenGLESDisabled':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidChangeOpenGLESDisabled([\'openGLESDisabled\':$args[openGLESDisabled]])');
+              print('fluttify-dart-callback: mapView_didChangeOpenGLESDisabled([\'openGLESDisabled\':$args[openGLESDisabled]])');
             }
         
             // handle the native call
-            delegate?.mapViewDidChangeOpenGLESDisabled(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['openGLESDisabled']);
+            delegate?.mapView_didChangeOpenGLESDisabled(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', args['openGLESDisabled']);
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidTouchPois':
+          case 'Callback::MAMapViewDelegate::mapView_didTouchPois':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidTouchPois([])');
+              print('fluttify-dart-callback: mapView_didTouchPois([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidTouchPois(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', (args['pois'] as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
+            delegate?.mapView_didTouchPois(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', (args['pois'] as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate':
+          case 'Callback::MAMapViewDelegate::mapView_didSingleTappedAtCoordinate':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidSingleTappedAtCoordinate([])');
+              print('fluttify-dart-callback: mapView_didSingleTappedAtCoordinate([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidSingleTappedAtCoordinate(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', CLLocationCoordinate2D()..refId = (args['coordinate'])..tag = 'amap_map_fluttify');
+            delegate?.mapView_didSingleTappedAtCoordinate(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', CLLocationCoordinate2D()..refId = (args['coordinate'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidLongPressedAtCoordinate':
+          case 'Callback::MAMapViewDelegate::mapView_didLongPressedAtCoordinate':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidLongPressedAtCoordinate([])');
+              print('fluttify-dart-callback: mapView_didLongPressedAtCoordinate([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidLongPressedAtCoordinate(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', CLLocationCoordinate2D()..refId = (args['coordinate'])..tag = 'amap_map_fluttify');
+            delegate?.mapView_didLongPressedAtCoordinate(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', CLLocationCoordinate2D()..refId = (args['coordinate'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapInitComplete':
             // print log
@@ -680,32 +680,32 @@ class MAMapView extends UIView  {
             // handle the native call
             delegate?.mapInitComplete(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidIndoorMapShowed':
+          case 'Callback::MAMapViewDelegate::mapView_didIndoorMapShowed':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidIndoorMapShowed([])');
+              print('fluttify-dart-callback: mapView_didIndoorMapShowed([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidIndoorMapShowed(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAIndoorInfo()..refId = (args['indoorInfo'])..tag = 'amap_map_fluttify');
+            delegate?.mapView_didIndoorMapShowed(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAIndoorInfo()..refId = (args['indoorInfo'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged':
+          case 'Callback::MAMapViewDelegate::mapView_didIndoorMapFloorIndexChanged':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidIndoorMapFloorIndexChanged([])');
+              print('fluttify-dart-callback: mapView_didIndoorMapFloorIndexChanged([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidIndoorMapFloorIndexChanged(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAIndoorInfo()..refId = (args['indoorInfo'])..tag = 'amap_map_fluttify');
+            delegate?.mapView_didIndoorMapFloorIndexChanged(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAIndoorInfo()..refId = (args['indoorInfo'])..tag = 'amap_map_fluttify');
             break;
-          case 'Callback::MAMapViewDelegate::mapViewDidIndoorMapHidden':
+          case 'Callback::MAMapViewDelegate::mapView_didIndoorMapHidden':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewDidIndoorMapHidden([])');
+              print('fluttify-dart-callback: mapView_didIndoorMapHidden([])');
             }
         
             // handle the native call
-            delegate?.mapViewDidIndoorMapHidden(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAIndoorInfo()..refId = (args['indoorInfo'])..tag = 'amap_map_fluttify');
+            delegate?.mapView_didIndoorMapHidden(MAMapView()..refId = (args['mapView'])..tag = 'amap_map_fluttify', MAIndoorInfo()..refId = (args['indoorInfo'])..tag = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::offlineDataWillReload':
             // print log
@@ -1010,14 +1010,14 @@ class MAMapView extends UIView  {
   //endregion
 
   //region methods
-  Future<void> setRegionAnimated(MACoordinateRegion region, bool animated, {bool viewChannel = true}) async {
+  Future<void> setRegion_animated(MACoordinateRegion region, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setRegion([\'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRegionAnimated', {"region": region.refId, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRegion_animated', {"region": region.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1054,14 +1054,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setVisibleMapRectAnimated(MAMapRect mapRect, bool animated, {bool viewChannel = true}) async {
+  Future<void> setVisibleMapRect_animated(MAMapRect mapRect, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setVisibleMapRect([\'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRectAnimated', {"mapRect": mapRect.refId, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRect_animated', {"mapRect": mapRect.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1098,14 +1098,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<MAMapRect> mapRectThatFitsEdgePadding(MAMapRect mapRect, UIEdgeInsets insets, {bool viewChannel = true}) async {
+  Future<MAMapRect> mapRectThatFits_edgePadding(MAMapRect mapRect, UIEdgeInsets insets, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::mapRectThatFits([])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFitsEdgePadding', {"mapRect": mapRect.refId, "insets": insets.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFits_edgePadding', {"mapRect": mapRect.refId, "insets": insets.refId, "refId": refId});
   
   
     // handle native call
@@ -1120,14 +1120,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setVisibleMapRectEdgePaddinganimated(MAMapRect mapRect, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
+  Future<void> setVisibleMapRect_edgePadding_animated(MAMapRect mapRect, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setVisibleMapRect([\'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRectEdgePaddinganimated', {"mapRect": mapRect.refId, "insets": insets.refId, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRect_edgePadding_animated', {"mapRect": mapRect.refId, "insets": insets.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1142,14 +1142,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setCenterCoordinateAnimated(CLLocationCoordinate2D coordinate, bool animated, {bool viewChannel = true}) async {
+  Future<void> setCenterCoordinate_animated(CLLocationCoordinate2D coordinate, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setCenterCoordinate([\'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCenterCoordinateAnimated', {"coordinate": coordinate.refId, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCenterCoordinate_animated', {"coordinate": coordinate.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1164,14 +1164,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setZoomLevelAnimated(double zoomLevel, bool animated, {bool viewChannel = true}) async {
+  Future<void> setZoomLevel_animated(double zoomLevel, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setZoomLevel([\'zoomLevel\':$zoomLevel, \'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevelAnimated', {"zoomLevel": zoomLevel, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevel_animated', {"zoomLevel": zoomLevel, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1186,14 +1186,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setZoomLevelAtPivotanimated(double zoomLevel, CGPoint pivot, bool animated, {bool viewChannel = true}) async {
+  Future<void> setZoomLevel_atPivot_animated(double zoomLevel, CGPoint pivot, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setZoomLevel([\'zoomLevel\':$zoomLevel, \'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevelAtPivotanimated', {"zoomLevel": zoomLevel, "pivot": pivot.refId, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevel_atPivot_animated', {"zoomLevel": zoomLevel, "pivot": pivot.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1208,14 +1208,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setRotationDegreeAnimatedduration(double rotationDegree, bool animated, double duration, {bool viewChannel = true}) async {
+  Future<void> setRotationDegree_animated_duration(double rotationDegree, bool animated, double duration, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setRotationDegree([\'rotationDegree\':$rotationDegree, \'animated\':$animated, \'duration\':$duration])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRotationDegreeAnimatedduration', {"rotationDegree": rotationDegree, "animated": animated, "duration": duration, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRotationDegree_animated_duration', {"rotationDegree": rotationDegree, "animated": animated, "duration": duration, "refId": refId});
   
   
     // handle native call
@@ -1230,14 +1230,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setCameraDegreeAnimatedduration(double cameraDegree, bool animated, double duration, {bool viewChannel = true}) async {
+  Future<void> setCameraDegree_animated_duration(double cameraDegree, bool animated, double duration, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setCameraDegree([\'cameraDegree\':$cameraDegree, \'animated\':$animated, \'duration\':$duration])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCameraDegreeAnimatedduration', {"cameraDegree": cameraDegree, "animated": animated, "duration": duration, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCameraDegree_animated_duration', {"cameraDegree": cameraDegree, "animated": animated, "duration": duration, "refId": refId});
   
   
     // handle native call
@@ -1274,14 +1274,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setMapStatusAnimated(MAMapStatus status, bool animated, {bool viewChannel = true}) async {
+  Future<void> setMapStatus_animated(MAMapStatus status, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setMapStatus([\'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatusAnimated', {"status": status.refId, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatus_animated', {"status": status.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1296,14 +1296,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setMapStatusAnimatedduration(MAMapStatus status, bool animated, double duration, {bool viewChannel = true}) async {
+  Future<void> setMapStatus_animated_duration(MAMapStatus status, bool animated, double duration, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setMapStatus([\'animated\':$animated, \'duration\':$duration])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatusAnimatedduration', {"status": status.refId, "animated": animated, "duration": duration, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatus_animated_duration', {"status": status.refId, "animated": animated, "duration": duration, "refId": refId});
   
   
     // handle native call
@@ -1340,18 +1340,18 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> takeSnapshotInRectWithCompletionBlock(CGRect rect, void block(UIImage resultImage, int state), {bool viewChannel = true}) async {
+  Future<void> takeSnapshotInRect_withCompletionBlock(CGRect rect, void block(UIImage resultImage, int state), {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::takeSnapshotInRect([])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::takeSnapshotInRectWithCompletionBlock', {"rect": rect.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::takeSnapshotInRect_withCompletionBlock', {"rect": rect.refId, "refId": refId});
   
   
     // handle native call
-    MethodChannel('MAMapView::takeSnapshotInRectWithCompletionBlock::Callback')
+    MethodChannel('MAMapView::takeSnapshotInRect_withCompletionBlock::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -1403,14 +1403,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<CGPoint> convertCoordinateToPointToView(CLLocationCoordinate2D coordinate, UIView view, {bool viewChannel = true}) async {
+  Future<CGPoint> convertCoordinate_toPointToView(CLLocationCoordinate2D coordinate, UIView view, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::convertCoordinate([])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertCoordinateToPointToView', {"coordinate": coordinate.refId, "view": view.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertCoordinate_toPointToView', {"coordinate": coordinate.refId, "view": view.refId, "refId": refId});
   
   
     // handle native call
@@ -1425,14 +1425,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<CLLocationCoordinate2D> convertPointToCoordinateFromView(CGPoint point, UIView view, {bool viewChannel = true}) async {
+  Future<CLLocationCoordinate2D> convertPoint_toCoordinateFromView(CGPoint point, UIView view, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::convertPoint([])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertPointToCoordinateFromView', {"point": point.refId, "view": view.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertPoint_toCoordinateFromView', {"point": point.refId, "view": view.refId, "refId": refId});
   
   
     // handle native call
@@ -1447,14 +1447,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<CGRect> convertRegionToRectToView(MACoordinateRegion region, UIView view, {bool viewChannel = true}) async {
+  Future<CGRect> convertRegion_toRectToView(MACoordinateRegion region, UIView view, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::convertRegion([])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRegionToRectToView', {"region": region.refId, "view": view.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRegion_toRectToView', {"region": region.refId, "view": view.refId, "refId": refId});
   
   
     // handle native call
@@ -1469,14 +1469,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<MACoordinateRegion> convertRectToRegionFromView(CGRect rect, UIView view, {bool viewChannel = true}) async {
+  Future<MACoordinateRegion> convertRect_toRegionFromView(CGRect rect, UIView view, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::convertRect([])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRectToRegionFromView', {"rect": rect.refId, "view": view.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRect_toRegionFromView', {"rect": rect.refId, "view": view.refId, "refId": refId});
   
   
     // handle native call
@@ -1755,14 +1755,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> selectAnnotationAnimated(MAAnnotation annotation, bool animated, {bool viewChannel = true}) async {
+  Future<void> selectAnnotation_animated(MAAnnotation annotation, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::selectAnnotation([\'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::selectAnnotationAnimated', {"annotation": annotation.refId, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::selectAnnotation_animated', {"annotation": annotation.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1777,14 +1777,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> deselectAnnotationAnimated(MAAnnotation annotation, bool animated, {bool viewChannel = true}) async {
+  Future<void> deselectAnnotation_animated(MAAnnotation annotation, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::deselectAnnotation([\'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::deselectAnnotationAnimated', {"annotation": annotation.refId, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::deselectAnnotation_animated', {"annotation": annotation.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1799,14 +1799,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> showAnnotationsAnimated(List<NSObject> annotations, bool animated, {bool viewChannel = true}) async {
+  Future<void> showAnnotations_animated(List<NSObject> annotations, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::showAnnotations([\'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotationsAnimated', {"annotations": annotations.map((it) => it.refId).toList(), "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotations_animated', {"annotations": annotations.map((it) => it.refId).toList(), "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1821,14 +1821,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> showAnnotationsEdgePaddinganimated(List<NSObject> annotations, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
+  Future<void> showAnnotations_edgePadding_animated(List<NSObject> annotations, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::showAnnotations([\'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotationsEdgePaddinganimated', {"annotations": annotations.map((it) => it.refId).toList(), "insets": insets.refId, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotations_edgePadding_animated', {"annotations": annotations.map((it) => it.refId).toList(), "insets": insets.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1843,14 +1843,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> setUserTrackingModeAnimated(MAUserTrackingMode mode, bool animated, {bool viewChannel = true}) async {
+  Future<void> setUserTrackingMode_animated(MAUserTrackingMode mode, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::setUserTrackingMode([\'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setUserTrackingModeAnimated', {"mode": mode.index, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setUserTrackingMode_animated', {"mode": mode.index, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1953,14 +1953,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> addOverlayLevel(MAOverlay overlay, MAOverlayLevel level, {bool viewChannel = true}) async {
+  Future<void> addOverlay_level(MAOverlay overlay, MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::addOverlay([])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlayLevel', {"overlay": overlay.refId, "level": level.index, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlay_level', {"overlay": overlay.refId, "level": level.index, "refId": refId});
   
   
     // handle native call
@@ -1975,14 +1975,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> addOverlaysLevel(List<NSObject> overlays, MAOverlayLevel level, {bool viewChannel = true}) async {
+  Future<void> addOverlays_level(List<NSObject> overlays, MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::addOverlays([])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlaysLevel', {"overlays": overlays.map((it) => it.refId).toList(), "level": level.index, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlays_level', {"overlays": overlays.map((it) => it.refId).toList(), "level": level.index, "refId": refId});
   
   
     // handle native call
@@ -2041,14 +2041,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> insertOverlayAtIndexlevel(MAOverlay overlay, int index, MAOverlayLevel level, {bool viewChannel = true}) async {
+  Future<void> insertOverlay_atIndex_level(MAOverlay overlay, int index, MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::insertOverlay([\'index\':$index])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAtIndexlevel', {"overlay": overlay.refId, "index": index, "level": level.index, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_atIndex_level', {"overlay": overlay.refId, "index": index, "level": level.index, "refId": refId});
   
   
     // handle native call
@@ -2063,14 +2063,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> insertOverlayAboveOverlay(MAOverlay overlay, MAOverlay sibling, {bool viewChannel = true}) async {
+  Future<void> insertOverlay_aboveOverlay(MAOverlay overlay, MAOverlay sibling, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::insertOverlay([])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAboveOverlay', {"overlay": overlay.refId, "sibling": sibling.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_aboveOverlay', {"overlay": overlay.refId, "sibling": sibling.refId, "refId": refId});
   
   
     // handle native call
@@ -2085,14 +2085,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> insertOverlayBelowOverlay(MAOverlay overlay, MAOverlay sibling, {bool viewChannel = true}) async {
+  Future<void> insertOverlay_belowOverlay(MAOverlay overlay, MAOverlay sibling, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::insertOverlay([])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayBelowOverlay', {"overlay": overlay.refId, "sibling": sibling.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_belowOverlay', {"overlay": overlay.refId, "sibling": sibling.refId, "refId": refId});
   
   
     // handle native call
@@ -2107,14 +2107,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> insertOverlayAtIndex(MAOverlay overlay, int index, {bool viewChannel = true}) async {
+  Future<void> insertOverlay_atIndex(MAOverlay overlay, int index, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::insertOverlay([\'index\':$index])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAtIndex', {"overlay": overlay.refId, "index": index, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_atIndex', {"overlay": overlay.refId, "index": index, "refId": refId});
   
   
     // handle native call
@@ -2129,14 +2129,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> exchangeOverlayAtIndexWithOverlayAtIndex(int index1, int index2, {bool viewChannel = true}) async {
+  Future<void> exchangeOverlayAtIndex_withOverlayAtIndex(int index1, int index2, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::exchangeOverlayAtIndex([\'index1\':$index1, \'index2\':$index2])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndexWithOverlayAtIndex', {"index1": index1, "index2": index2, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndex_withOverlayAtIndex', {"index1": index1, "index2": index2, "refId": refId});
   
   
     // handle native call
@@ -2151,14 +2151,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> exchangeOverlayAtIndexWithOverlayAtIndexatLevel(int index1, int index2, MAOverlayLevel level, {bool viewChannel = true}) async {
+  Future<void> exchangeOverlayAtIndex_withOverlayAtIndex_atLevel(int index1, int index2, MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::exchangeOverlayAtIndex([\'index1\':$index1, \'index2\':$index2])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndexWithOverlayAtIndexatLevel', {"index1": index1, "index2": index2, "level": level.index, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndex_withOverlayAtIndex_atLevel', {"index1": index1, "index2": index2, "level": level.index, "refId": refId});
   
   
     // handle native call
@@ -2173,14 +2173,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> exchangeOverlayWithOverlay(MAOverlay overlay1, MAOverlay overlay2, {bool viewChannel = true}) async {
+  Future<void> exchangeOverlay_withOverlay(MAOverlay overlay1, MAOverlay overlay2, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::exchangeOverlay([])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayWithOverlay', {"overlay1": overlay1.refId, "overlay2": overlay2.refId, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlay_withOverlay', {"overlay1": overlay1.refId, "overlay2": overlay2.refId, "refId": refId});
   
   
     // handle native call
@@ -2217,14 +2217,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> showOverlaysAnimated(List<NSObject> overlays, bool animated, {bool viewChannel = true}) async {
+  Future<void> showOverlays_animated(List<NSObject> overlays, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::showOverlays([\'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlaysAnimated', {"overlays": overlays.map((it) => it.refId).toList(), "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlays_animated', {"overlays": overlays.map((it) => it.refId).toList(), "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -2239,14 +2239,14 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> showOverlaysEdgePaddinganimated(List<NSObject> overlays, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
+  Future<void> showOverlays_edgePadding_animated(List<NSObject> overlays, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::showOverlays([\'animated\':$animated])');
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlaysEdgePaddinganimated', {"overlays": overlays.map((it) => it.refId).toList(), "insets": insets.refId, "animated": animated, "refId": refId});
+    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlays_edgePadding_animated', {"overlays": overlays.map((it) => it.refId).toList(), "insets": insets.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -3042,13 +3042,13 @@ extension MAMapView_Batch on List<MAMapView> {
   //endregion
 
   //region methods
-  Future<void> setRegionAnimated_batch(List<MACoordinateRegion> region, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> setRegion_animated_batch(List<MACoordinateRegion> region, List<bool> animated, {bool viewChannel = true}) async {
     if (region.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRegionAnimated_batch', [for (int i = 0; i < this.length; i++) {"region": region[i].refId, "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRegion_animated_batch', [for (int i = 0; i < this.length; i++) {"region": region[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3080,13 +3080,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setVisibleMapRectAnimated_batch(List<MAMapRect> mapRect, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> setVisibleMapRect_animated_batch(List<MAMapRect> mapRect, List<bool> animated, {bool viewChannel = true}) async {
     if (mapRect.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRectAnimated_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRect_animated_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3118,13 +3118,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<List<MAMapRect>> mapRectThatFitsEdgePadding_batch(List<MAMapRect> mapRect, List<UIEdgeInsets> insets, {bool viewChannel = true}) async {
+  Future<List<MAMapRect>> mapRectThatFits_edgePadding_batch(List<MAMapRect> mapRect, List<UIEdgeInsets> insets, {bool viewChannel = true}) async {
     if (mapRect.length != insets.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFitsEdgePadding_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "insets": insets[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFits_edgePadding_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "insets": insets[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3137,13 +3137,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setVisibleMapRectEdgePaddinganimated_batch(List<MAMapRect> mapRect, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> setVisibleMapRect_edgePadding_animated_batch(List<MAMapRect> mapRect, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
     if (mapRect.length != insets.length || insets.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRectEdgePaddinganimated_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "insets": insets[i].refId, "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRect_edgePadding_animated_batch', [for (int i = 0; i < this.length; i++) {"mapRect": mapRect[i].refId, "insets": insets[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3156,13 +3156,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setCenterCoordinateAnimated_batch(List<CLLocationCoordinate2D> coordinate, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> setCenterCoordinate_animated_batch(List<CLLocationCoordinate2D> coordinate, List<bool> animated, {bool viewChannel = true}) async {
     if (coordinate.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCenterCoordinateAnimated_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCenterCoordinate_animated_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3175,13 +3175,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setZoomLevelAnimated_batch(List<double> zoomLevel, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> setZoomLevel_animated_batch(List<double> zoomLevel, List<bool> animated, {bool viewChannel = true}) async {
     if (zoomLevel.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevelAnimated_batch', [for (int i = 0; i < this.length; i++) {"zoomLevel": zoomLevel[i], "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevel_animated_batch', [for (int i = 0; i < this.length; i++) {"zoomLevel": zoomLevel[i], "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3194,13 +3194,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setZoomLevelAtPivotanimated_batch(List<double> zoomLevel, List<CGPoint> pivot, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> setZoomLevel_atPivot_animated_batch(List<double> zoomLevel, List<CGPoint> pivot, List<bool> animated, {bool viewChannel = true}) async {
     if (zoomLevel.length != pivot.length || pivot.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevelAtPivotanimated_batch', [for (int i = 0; i < this.length; i++) {"zoomLevel": zoomLevel[i], "pivot": pivot[i].refId, "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevel_atPivot_animated_batch', [for (int i = 0; i < this.length; i++) {"zoomLevel": zoomLevel[i], "pivot": pivot[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3213,13 +3213,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setRotationDegreeAnimatedduration_batch(List<double> rotationDegree, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
+  Future<void> setRotationDegree_animated_duration_batch(List<double> rotationDegree, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
     if (rotationDegree.length != animated.length || animated.length != duration.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRotationDegreeAnimatedduration_batch', [for (int i = 0; i < this.length; i++) {"rotationDegree": rotationDegree[i], "animated": animated[i], "duration": duration[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRotationDegree_animated_duration_batch', [for (int i = 0; i < this.length; i++) {"rotationDegree": rotationDegree[i], "animated": animated[i], "duration": duration[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3232,13 +3232,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setCameraDegreeAnimatedduration_batch(List<double> cameraDegree, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
+  Future<void> setCameraDegree_animated_duration_batch(List<double> cameraDegree, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
     if (cameraDegree.length != animated.length || animated.length != duration.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCameraDegreeAnimatedduration_batch', [for (int i = 0; i < this.length; i++) {"cameraDegree": cameraDegree[i], "animated": animated[i], "duration": duration[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCameraDegree_animated_duration_batch', [for (int i = 0; i < this.length; i++) {"cameraDegree": cameraDegree[i], "animated": animated[i], "duration": duration[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3270,13 +3270,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setMapStatusAnimated_batch(List<MAMapStatus> status, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> setMapStatus_animated_batch(List<MAMapStatus> status, List<bool> animated, {bool viewChannel = true}) async {
     if (status.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatusAnimated_batch', [for (int i = 0; i < this.length; i++) {"status": status[i].refId, "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatus_animated_batch', [for (int i = 0; i < this.length; i++) {"status": status[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3289,13 +3289,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setMapStatusAnimatedduration_batch(List<MAMapStatus> status, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
+  Future<void> setMapStatus_animated_duration_batch(List<MAMapStatus> status, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
     if (status.length != animated.length || animated.length != duration.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatusAnimatedduration_batch', [for (int i = 0; i < this.length; i++) {"status": status[i].refId, "animated": animated[i], "duration": duration[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatus_animated_duration_batch', [for (int i = 0; i < this.length; i++) {"status": status[i].refId, "animated": animated[i], "duration": duration[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3346,13 +3346,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<List<CGPoint>> convertCoordinateToPointToView_batch(List<CLLocationCoordinate2D> coordinate, List<UIView> view, {bool viewChannel = true}) async {
+  Future<List<CGPoint>> convertCoordinate_toPointToView_batch(List<CLLocationCoordinate2D> coordinate, List<UIView> view, {bool viewChannel = true}) async {
     if (coordinate.length != view.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertCoordinateToPointToView_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertCoordinate_toPointToView_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3365,13 +3365,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<List<CLLocationCoordinate2D>> convertPointToCoordinateFromView_batch(List<CGPoint> point, List<UIView> view, {bool viewChannel = true}) async {
+  Future<List<CLLocationCoordinate2D>> convertPoint_toCoordinateFromView_batch(List<CGPoint> point, List<UIView> view, {bool viewChannel = true}) async {
     if (point.length != view.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertPointToCoordinateFromView_batch', [for (int i = 0; i < this.length; i++) {"point": point[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertPoint_toCoordinateFromView_batch', [for (int i = 0; i < this.length; i++) {"point": point[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3384,13 +3384,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<List<CGRect>> convertRegionToRectToView_batch(List<MACoordinateRegion> region, List<UIView> view, {bool viewChannel = true}) async {
+  Future<List<CGRect>> convertRegion_toRectToView_batch(List<MACoordinateRegion> region, List<UIView> view, {bool viewChannel = true}) async {
     if (region.length != view.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRegionToRectToView_batch', [for (int i = 0; i < this.length; i++) {"region": region[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRegion_toRectToView_batch', [for (int i = 0; i < this.length; i++) {"region": region[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3403,13 +3403,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<List<MACoordinateRegion>> convertRectToRegionFromView_batch(List<CGRect> rect, List<UIView> view, {bool viewChannel = true}) async {
+  Future<List<MACoordinateRegion>> convertRect_toRegionFromView_batch(List<CGRect> rect, List<UIView> view, {bool viewChannel = true}) async {
     if (rect.length != view.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRectToRegionFromView_batch', [for (int i = 0; i < this.length; i++) {"rect": rect[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRect_toRegionFromView_batch', [for (int i = 0; i < this.length; i++) {"rect": rect[i].refId, "view": view[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3650,13 +3650,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> selectAnnotationAnimated_batch(List<MAAnnotation> annotation, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> selectAnnotation_animated_batch(List<MAAnnotation> annotation, List<bool> animated, {bool viewChannel = true}) async {
     if (annotation.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::selectAnnotationAnimated_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::selectAnnotation_animated_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3669,13 +3669,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> deselectAnnotationAnimated_batch(List<MAAnnotation> annotation, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> deselectAnnotation_animated_batch(List<MAAnnotation> annotation, List<bool> animated, {bool viewChannel = true}) async {
     if (annotation.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::deselectAnnotationAnimated_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::deselectAnnotation_animated_batch', [for (int i = 0; i < this.length; i++) {"annotation": annotation[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3688,13 +3688,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> showAnnotationsAnimated_batch(List<List<NSObject>> annotations, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> showAnnotations_animated_batch(List<List<NSObject>> annotations, List<bool> animated, {bool viewChannel = true}) async {
     if (annotations.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotationsAnimated_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotations_animated_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3707,13 +3707,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> showAnnotationsEdgePaddinganimated_batch(List<List<NSObject>> annotations, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> showAnnotations_edgePadding_animated_batch(List<List<NSObject>> annotations, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
     if (annotations.length != insets.length || insets.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotationsEdgePaddinganimated_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "insets": insets[i].refId, "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotations_edgePadding_animated_batch', [for (int i = 0; i < this.length; i++) {"annotations": annotations[i].map((it) => it.refId).toList(), "insets": insets[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3726,13 +3726,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setUserTrackingModeAnimated_batch(List<MAUserTrackingMode> mode, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> setUserTrackingMode_animated_batch(List<MAUserTrackingMode> mode, List<bool> animated, {bool viewChannel = true}) async {
     if (mode.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setUserTrackingModeAnimated_batch', [for (int i = 0; i < this.length; i++) {"mode": mode[i].index, "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setUserTrackingMode_animated_batch', [for (int i = 0; i < this.length; i++) {"mode": mode[i].index, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3821,13 +3821,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> addOverlayLevel_batch(List<MAOverlay> overlay, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
+  Future<void> addOverlay_level_batch(List<MAOverlay> overlay, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
     if (overlay.length != level.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlayLevel_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "level": level[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlay_level_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "level": level[i].index, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3840,13 +3840,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> addOverlaysLevel_batch(List<List<NSObject>> overlays, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
+  Future<void> addOverlays_level_batch(List<List<NSObject>> overlays, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
     if (overlays.length != level.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlaysLevel_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "level": level[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlays_level_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "level": level[i].index, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3897,13 +3897,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> insertOverlayAtIndexlevel_batch(List<MAOverlay> overlay, List<int> index, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
+  Future<void> insertOverlay_atIndex_level_batch(List<MAOverlay> overlay, List<int> index, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
     if (overlay.length != index.length || index.length != level.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAtIndexlevel_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "index": index[i], "level": level[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_atIndex_level_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "index": index[i], "level": level[i].index, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3916,13 +3916,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> insertOverlayAboveOverlay_batch(List<MAOverlay> overlay, List<MAOverlay> sibling, {bool viewChannel = true}) async {
+  Future<void> insertOverlay_aboveOverlay_batch(List<MAOverlay> overlay, List<MAOverlay> sibling, {bool viewChannel = true}) async {
     if (overlay.length != sibling.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAboveOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "sibling": sibling[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_aboveOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "sibling": sibling[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3935,13 +3935,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> insertOverlayBelowOverlay_batch(List<MAOverlay> overlay, List<MAOverlay> sibling, {bool viewChannel = true}) async {
+  Future<void> insertOverlay_belowOverlay_batch(List<MAOverlay> overlay, List<MAOverlay> sibling, {bool viewChannel = true}) async {
     if (overlay.length != sibling.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayBelowOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "sibling": sibling[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_belowOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "sibling": sibling[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3954,13 +3954,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> insertOverlayAtIndex_batch(List<MAOverlay> overlay, List<int> index, {bool viewChannel = true}) async {
+  Future<void> insertOverlay_atIndex_batch(List<MAOverlay> overlay, List<int> index, {bool viewChannel = true}) async {
     if (overlay.length != index.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlayAtIndex_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "index": index[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_atIndex_batch', [for (int i = 0; i < this.length; i++) {"overlay": overlay[i].refId, "index": index[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3973,13 +3973,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> exchangeOverlayAtIndexWithOverlayAtIndex_batch(List<int> index1, List<int> index2, {bool viewChannel = true}) async {
+  Future<void> exchangeOverlayAtIndex_withOverlayAtIndex_batch(List<int> index1, List<int> index2, {bool viewChannel = true}) async {
     if (index1.length != index2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndexWithOverlayAtIndex_batch', [for (int i = 0; i < this.length; i++) {"index1": index1[i], "index2": index2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndex_withOverlayAtIndex_batch', [for (int i = 0; i < this.length; i++) {"index1": index1[i], "index2": index2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3992,13 +3992,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> exchangeOverlayAtIndexWithOverlayAtIndexatLevel_batch(List<int> index1, List<int> index2, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
+  Future<void> exchangeOverlayAtIndex_withOverlayAtIndex_atLevel_batch(List<int> index1, List<int> index2, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
     if (index1.length != index2.length || index2.length != level.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndexWithOverlayAtIndexatLevel_batch', [for (int i = 0; i < this.length; i++) {"index1": index1[i], "index2": index2[i], "level": level[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndex_withOverlayAtIndex_atLevel_batch', [for (int i = 0; i < this.length; i++) {"index1": index1[i], "index2": index2[i], "level": level[i].index, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4011,13 +4011,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> exchangeOverlayWithOverlay_batch(List<MAOverlay> overlay1, List<MAOverlay> overlay2, {bool viewChannel = true}) async {
+  Future<void> exchangeOverlay_withOverlay_batch(List<MAOverlay> overlay1, List<MAOverlay> overlay2, {bool viewChannel = true}) async {
     if (overlay1.length != overlay2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayWithOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay1": overlay1[i].refId, "overlay2": overlay2[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlay_withOverlay_batch', [for (int i = 0; i < this.length; i++) {"overlay1": overlay1[i].refId, "overlay2": overlay2[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4049,13 +4049,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> showOverlaysAnimated_batch(List<List<NSObject>> overlays, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> showOverlays_animated_batch(List<List<NSObject>> overlays, List<bool> animated, {bool viewChannel = true}) async {
     if (overlays.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlaysAnimated_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlays_animated_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4068,13 +4068,13 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> showOverlaysEdgePaddinganimated_batch(List<List<NSObject>> overlays, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
+  Future<void> showOverlays_edgePadding_animated_batch(List<List<NSObject>> overlays, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
     if (overlays.length != insets.length || insets.length != animated.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlaysEdgePaddinganimated_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "insets": insets[i].refId, "animated": animated[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlays_edgePadding_animated_batch', [for (int i = 0; i < this.length; i++) {"overlays": overlays[i].map((it) => it.refId).toList(), "insets": insets[i].refId, "animated": animated[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

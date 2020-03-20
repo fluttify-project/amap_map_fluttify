@@ -14,7 +14,110 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler1)
 - (NSDictionary<NSString*, Handler>*) getSubHandler1 {
     return @{
-        @"MAMapViewDelegate::mapViewDidIndoorMapShowed": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didTouchPois": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+            // list arg
+            NSArray<NSNumber*>* poisRefArray = (NSArray<NSNumber*> *) args[@"pois"];
+            NSMutableArray<NSArray*>* pois = [NSMutableArray arrayWithCapacity:poisRefArray.count];
+            for (int i = 0; i < poisRefArray.count; i++) {
+                NSArray* item = (NSArray*) HEAP[[poisRefArray objectAtIndex:i]];
+                [pois addObject:item];
+            }
+        
+            // ref
+            id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"pois"]);
+            }
+        
+            // invoke native method
+            [ref mapView : mapView didTouchPois: pois];
+        
+            // result
+            // 无返回值
+            NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
+        @"MAMapViewDelegate::mapView_didSingleTappedAtCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+            // struct arg
+            NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+            CLLocationCoordinate2D coordinate;
+            [coordinateValue getValue:&coordinate];
+        
+            // ref
+            id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"coordinate"]);
+            }
+        
+            // invoke native method
+            [ref mapView : mapView didSingleTappedAtCoordinate: coordinate];
+        
+            // result
+            // 无返回值
+            NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
+        @"MAMapViewDelegate::mapView_didLongPressedAtCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+            // struct arg
+            NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+            CLLocationCoordinate2D coordinate;
+            [coordinateValue getValue:&coordinate];
+        
+            // ref
+            id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"coordinate"]);
+            }
+        
+            // invoke native method
+            [ref mapView : mapView didLongPressedAtCoordinate: coordinate];
+        
+            // result
+            // 无返回值
+            NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
+        @"MAMapViewDelegate::mapInitComplete": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+        
+            // ref
+            id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapInitComplete(%@)", args[@"refId"], args[@"mapView"]);
+            }
+        
+            // invoke native method
+            [ref mapInitComplete : mapView];
+        
+            // result
+            // 无返回值
+            NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
+        @"MAMapViewDelegate::mapView_didIndoorMapShowed": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -38,7 +141,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didIndoorMapFloorIndexChanged": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -62,7 +165,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapViewDelegate::mapViewDidIndoorMapHidden": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didIndoorMapHidden": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
             MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
@@ -176,7 +279,7 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAGroundOverlay::groundOverlayWithBoundsIcon_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAGroundOverlay::groundOverlayWithBounds_icon_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -206,7 +309,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAGroundOverlay::groundOverlayWithCoordinateZoomLevelicon_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAGroundOverlay::groundOverlayWithCoordinate_zoomLevel_icon_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -238,7 +341,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAGroundOverlay::setGroundOverlayWithBoundsIcon_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAGroundOverlay::setGroundOverlayWithBounds_icon_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -267,7 +370,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAGroundOverlay::setGroundOverlayWithCoordinateZoomLevelicon_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAGroundOverlay::setGroundOverlayWithCoordinate_zoomLevel_icon_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -324,7 +427,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAHeatMapGradient::initWithColorAndWithStartPoints_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAHeatMapGradient::initWithColor_andWithStartPoints_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -357,7 +460,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapStatus::statusWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapStatus::statusWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -395,7 +498,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapStatus::initWithCenterCoordinateZoomLevelrotationDegreecameraDegreescreenAnchor_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapStatus::initWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -433,7 +536,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MACircle::circleWithCenterCoordinateRadius_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MACircle::circleWithCenterCoordinate_radius_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -491,7 +594,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MACircle::setCircleWithCenterCoordinateRadius_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MACircle::setCircleWithCenterCoordinate_radius_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -670,14 +773,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAPolygon::polygonWithCoordinatesCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAPolygon::polygonWithCoordinates_count_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
                 CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -706,14 +809,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAPolygon::polygonWithPointsCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAPolygon::polygonWithPoints_count_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 MAMapPoint points[pointsRefIdArray.count];
         
@@ -742,14 +845,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAPolygon::setPolygonWithPointsCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAPolygon::setPolygonWithPoints_count_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 MAMapPoint points[pointsRefIdArray.count];
         
@@ -760,7 +863,7 @@ extern BOOL enableLog;
                     points[i] = pointsItem;
                 }
                 // jsonable arg
-                NSInteger count = [args[@"count"] integerValue];
+                NSInteger count = [args[@"count"] longValue];
         
                 // ref
                 MAPolygon* ref = (MAPolygon*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -777,14 +880,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAPolygon::setPolygonWithCoordinatesCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAPolygon::setPolygonWithCoordinates_count_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
                 CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -795,7 +898,7 @@ extern BOOL enableLog;
                     coords[i] = coordsItem;
                 }
                 // jsonable arg
-                NSInteger count = [args[@"count"] integerValue];
+                NSInteger count = [args[@"count"] longValue];
         
                 // ref
                 MAPolygon* ref = (MAPolygon*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -863,14 +966,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAPolyline::polylineWithPointsCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAPolyline::polylineWithPoints_count_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 MAMapPoint points[pointsRefIdArray.count];
         
@@ -899,14 +1002,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAPolyline::polylineWithCoordinatesCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAPolyline::polylineWithCoordinates_count_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
                 CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -935,14 +1038,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAPolyline::setPolylineWithPointsCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAPolyline::setPolylineWithPoints_count_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 MAMapPoint points[pointsRefIdArray.count];
         
@@ -953,7 +1056,7 @@ extern BOOL enableLog;
                     points[i] = pointsItem;
                 }
                 // jsonable arg
-                NSInteger count = [args[@"count"] integerValue];
+                NSInteger count = [args[@"count"] longValue];
         
                 // ref
                 MAPolyline* ref = (MAPolyline*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -970,14 +1073,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAPolyline::setPolylineWithCoordinatesCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAPolyline::setPolylineWithCoordinates_count_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
                 CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -988,7 +1091,7 @@ extern BOOL enableLog;
                     coords[i] = coordsItem;
                 }
                 // jsonable arg
-                NSInteger count = [args[@"count"] integerValue];
+                NSInteger count = [args[@"count"] longValue];
         
                 // ref
                 MAPolyline* ref = (MAPolyline*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -1131,7 +1234,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MATraceDelegate::traceManagerDidTracecorrectdistancewithError_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MATraceDelegate::traceManager_didTrace_correct_distance_withError_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -1272,7 +1375,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMultiPointOverlayRendererDelegate::multiPointOverlayRenderer_didItemTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -1545,7 +1648,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAAnnotationView::setSelectedAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAAnnotationView::setSelected_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -1572,7 +1675,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAAnnotationView::initWithAnnotationReuseIdentifier_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAAnnotationView::initWithAnnotation_reuseIdentifier_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -1624,7 +1727,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAAnnotationView::setDragStateAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAAnnotationView::setDragState_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -2002,7 +2105,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAParticleRandomVelocityGenerate::initWithBoundaryValueX1Y1Z1X2Y2Z2_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -2038,7 +2141,33 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAParticleRandomColorGenerate::initWithBoundaryColorR1G1B1A1R2G2B2A2_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAParticleColorGenerate::getColor_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+        
+        
+                // ref
+                id<MAParticleColorGenerate> ref = (id<MAParticleColorGenerate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                float* result = [ref getColor];
+        
+                // result
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"MAParticleRandomColorGenerate::initWithBoundaryColorR1_G1_B1_A1_R2_G2_B2_A2_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -2203,7 +2332,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAParticleCurveSizeGenerate::initWithCurveXYZ_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAParticleCurveSizeGenerate::initWithCurveX_Y_Z_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -2233,7 +2362,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAParticleEmissionModule::initWithEmissionRateRateTime_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAParticleEmissionModule::initWithEmissionRate_rateTime_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -2255,6 +2384,32 @@ extern BOOL enableLog;
                 // return a ref
                 HEAP[@((result).hash)] = result;
                 NSNumber* jsonableResult = @((result).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"MAParticleShapeModule::getPoint_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+        
+        
+                // ref
+                id<MAParticleShapeModule> ref = (id<MAParticleShapeModule>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                float* result = [ref getPoint];
+        
+                // result
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2285,7 +2440,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAParticleSinglePointShapeModule::initWithShapeXYZuseRatio_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAParticleSinglePointShapeModule::initWithShapeX_Y_Z_useRatio_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -2317,7 +2472,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAParticleRectShapeModule::initWithLeftToprightbottomuseRatio_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -2477,6 +2632,58 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
+        @"MAOverlayRenderer::getViewMatrix_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+        
+        
+                // ref
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                float* result = [ref getViewMatrix];
+        
+                // result
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"MAOverlayRenderer::getProjectionMatrix_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+        
+        
+                // ref
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                float* result = [ref getProjectionMatrix];
+        
+                // result
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
         @"MAOverlayRenderer::getOffsetPoint_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -2556,14 +2763,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAOverlayRenderer::glPointsForMapPointsCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAOverlayRenderer::glPointsForMapPoints_count_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* mapPointsRefIdArray = (NSArray*) args[@"mapPoints"];
                 MAMapPoint mapPoints[mapPointsRefIdArray.count];
         
@@ -2618,14 +2825,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthlooped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 CGPoint points[pointsRefIdArray.count];
         
@@ -2659,14 +2866,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorlineWidthloopedLineJoinTypeLineCapTypelineDash_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped_LineJoinType_LineCapType_lineDash_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 CGPoint points[pointsRefIdArray.count];
         
@@ -2706,14 +2913,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAOverlayRenderer::renderTexturedLinesWithPointsPointCountlineWidthtextureIDsdrawStyleIndexeslooped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAOverlayRenderer::renderTexturedLinesWithPoints_pointCount_lineWidth_textureIDs_drawStyleIndexes_looped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 CGPoint points[pointsRefIdArray.count];
         
@@ -2759,14 +2966,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAOverlayRenderer::renderLinesWithPointsPointCountstrokeColorsdrawStyleIndexesisGradientlineWidthloopedLineJoinTypeLineCapTypelineDash_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColors_drawStyleIndexes_isGradient_lineWidth_looped_LineJoinType_LineCapType_lineDash_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 CGPoint points[pointsRefIdArray.count];
         
@@ -2820,14 +3027,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAOverlayRenderer::renderRegionWithPointsPointCountfillColorusingTriangleFan_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAOverlayRenderer::renderRegionWithPoints_pointCount_fillColor_usingTriangleFan_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 CGPoint points[pointsRefIdArray.count];
         
@@ -2859,14 +3066,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAOverlayRenderer::renderStrokedRegionWithPointsPointCountfillColorstrokeColorstrokeLineWidthstrokeLineJoinTypestrokeLineDashusingTriangleFan_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAOverlayRenderer::renderStrokedRegionWithPoints_pointCount_fillColor_strokeColor_strokeLineWidth_strokeLineJoinType_strokeLineDash_usingTriangleFan_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
                 CGPoint points[pointsRefIdArray.count];
         
@@ -2985,14 +3192,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MACustomBuildingOverlayOption::optionWithCoordinatesCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MACustomBuildingOverlayOption::optionWithCoordinates_count_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
                 CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -3021,14 +3228,14 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MACustomBuildingOverlayOption::setOptionWithCoordinatesCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MACustomBuildingOverlayOption::setOptionWithCoordinates_count_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
         
                 // args
-                // list arg
+                // list arg struct
                 NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
                 CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
@@ -3106,7 +3313,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAArc::arcWithStartCoordinatePassedCoordinateendCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAArc::arcWithStartCoordinate_passedCoordinate_endCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3142,7 +3349,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::setRegionAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::setRegion_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3200,7 +3407,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::setVisibleMapRectAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::setVisibleMapRect_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3258,7 +3465,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::mapRectThatFitsEdgePadding_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::mapRectThatFits_edgePadding_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3291,7 +3498,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::setVisibleMapRectEdgePaddinganimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::setVisibleMapRect_edgePadding_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3324,7 +3531,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::setCenterCoordinateAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::setCenterCoordinate_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3353,7 +3560,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::setZoomLevelAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::setZoomLevel_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3380,7 +3587,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::setZoomLevelAtPivotanimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::setZoomLevel_atPivot_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3411,7 +3618,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::setRotationDegreeAnimatedduration_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::setRotationDegree_animated_duration_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3440,7 +3647,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::setCameraDegreeAnimatedduration_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::setCameraDegree_animated_duration_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3494,7 +3701,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::setMapStatusAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::setMapStatus_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3521,7 +3728,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::setMapStatusAnimatedduration_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::setMapStatus_animated_duration_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3600,7 +3807,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::convertCoordinateToPointToView_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::convertCoordinate_toPointToView_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3631,7 +3838,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::convertPointToCoordinateFromView_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::convertPoint_toCoordinateFromView_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3662,7 +3869,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::convertRegionToRectToView_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::convertRegion_toRectToView_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -3693,7 +3900,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::convertRectToRegionFromView_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::convertRect_toRegionFromView_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4030,7 +4237,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::selectAnnotationAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::selectAnnotation_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4057,7 +4264,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::deselectAnnotationAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::deselectAnnotation_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4084,7 +4291,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::showAnnotationsAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::showAnnotations_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4116,7 +4323,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::showAnnotationsEdgePaddinganimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::showAnnotations_edgePadding_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4152,7 +4359,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::setUserTrackingModeAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::setUserTrackingMode_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4289,7 +4496,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::addOverlayLevel_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::addOverlay_level_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4316,7 +4523,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::addOverlaysLevel_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::addOverlays_level_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4403,7 +4610,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::insertOverlayAtIndexlevel_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::insertOverlay_atIndex_level_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4432,7 +4639,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::insertOverlayAboveOverlay_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::insertOverlay_aboveOverlay_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4459,7 +4666,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::insertOverlayBelowOverlay_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::insertOverlay_belowOverlay_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4486,7 +4693,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::insertOverlayAtIndex_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::insertOverlay_atIndex_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4513,7 +4720,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::exchangeOverlayAtIndexWithOverlayAtIndex_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::exchangeOverlayAtIndex_withOverlayAtIndex_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4540,7 +4747,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::exchangeOverlayAtIndexWithOverlayAtIndexatLevel_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::exchangeOverlayAtIndex_withOverlayAtIndex_atLevel_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4569,7 +4776,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::exchangeOverlayWithOverlay_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::exchangeOverlay_withOverlay_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4622,7 +4829,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::showOverlaysAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::showOverlays_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4654,7 +4861,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapView::showOverlaysEdgePaddinganimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapView::showOverlays_edgePadding_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4725,7 +4932,7 @@ extern BOOL enableLog;
         
                 // args
                 // jsonable arg
-                NSInteger floorIndex = [args[@"floorIndex"] integerValue];
+                NSInteger floorIndex = [args[@"floorIndex"] longValue];
         
                 // ref
                 MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -4816,7 +5023,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewRegionWillChangeAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_regionWillChangeAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4843,7 +5050,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewRegionDidChangeAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_regionDidChangeAnimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4870,7 +5077,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewMapWillMoveByUser_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_mapWillMoveByUser_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4897,7 +5104,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewMapDidMoveByUser_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_mapDidMoveByUser_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4924,7 +5131,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewMapWillZoomByUser_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_mapWillZoomByUser_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -4951,7 +5158,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewMapDidZoomByUser_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_mapDidZoomByUser_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -5028,7 +5235,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidFailLoadingMapWithError_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapViewDidFailLoadingMap_withError_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -5055,7 +5262,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewViewForAnnotation_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_viewForAnnotation_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -5083,7 +5290,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidAddAnnotationViews_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didAddAnnotationViews_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -5115,7 +5322,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidSelectAnnotationView_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didSelectAnnotationView_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -5142,7 +5349,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidDeselectAnnotationView_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didDeselectAnnotationView_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -5219,7 +5426,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didUpdateUserLocation_updatingLocation_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -5273,7 +5480,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidFailToLocateUserWithError_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didFailToLocateUserWithError_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -5300,7 +5507,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_annotationView_didChangeDragState_fromOldState_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -5331,7 +5538,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewRendererForOverlay_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_rendererForOverlay_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -5359,7 +5566,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidAddOverlayRenderers_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didAddOverlayRenderers_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -5391,7 +5598,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_annotationView_calloutAccessoryControlTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -5420,7 +5627,7 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
-        @"MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+        @"MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
             for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
@@ -5437,231 +5644,6 @@ extern BOOL enableLog;
         
                 // invoke native method
                 [ref mapView : mapView didAnnotationViewCalloutTapped: view];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidAnnotationViewTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // ref arg
-                MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didAnnotationViewTapped: view];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // enum arg
-                MAUserTrackingMode mode = (MAUserTrackingMode) [args[@"mode"] integerValue];
-                // jsonable arg
-                BOOL animated = [args[@"animated"] boolValue];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didChangeUserTrackingMode: mode animated: animated];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // jsonable arg
-                BOOL openGLESDisabled = [args[@"openGLESDisabled"] boolValue];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didChangeOpenGLESDisabled: openGLESDisabled];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidTouchPois_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // list arg
-                NSArray<NSNumber*>* poisRefArray = (NSArray<NSNumber*> *) args[@"pois"];
-                NSMutableArray<NSArray*>* pois = [NSMutableArray arrayWithCapacity:poisRefArray.count];
-                for (int i = 0; i < poisRefArray.count; i++) {
-                    NSArray* item = (NSArray*) HEAP[[poisRefArray objectAtIndex:i]];
-                    [pois addObject:item];
-                }
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didTouchPois: pois];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
-                CLLocationCoordinate2D coordinate;
-                [coordinateValue getValue:&coordinate];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didSingleTappedAtCoordinate: coordinate];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidLongPressedAtCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
-                CLLocationCoordinate2D coordinate;
-                [coordinateValue getValue:&coordinate];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didLongPressedAtCoordinate: coordinate];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapInitComplete_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapInitComplete : mapView];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapViewDidIndoorMapShowed_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // ref arg
-                MAIndoorInfo* indoorInfo = (MAIndoorInfo*) HEAP[@([args[@"indoorInfo"] integerValue])];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didIndoorMapShowed: indoorInfo];
         
                 // result
                 // 无返回值

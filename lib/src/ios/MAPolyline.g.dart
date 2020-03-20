@@ -48,14 +48,14 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
   //endregion
 
   //region methods
-  static Future<MAPolyline> polylineWithPointsCount(List<MAMapPoint> points, int count) async {
+  static Future<MAPolyline> polylineWithPoints_count(List<MAMapPoint> points, int count) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAPolyline::polylineWithPoints([\'count\':$count])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::polylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::polylineWithPoints_count', {"points": points.map((it) => it.refId).toList(), "count": count});
   
   
     // handle native call
@@ -70,14 +70,14 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
     }
   }
   
-  static Future<MAPolyline> polylineWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
+  static Future<MAPolyline> polylineWithCoordinates_count(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAPolyline::polylineWithCoordinates([\'count\':$count])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::polylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::polylineWithCoordinates_count', {"coords": coords.map((it) => it.refId).toList(), "count": count});
   
   
     // handle native call
@@ -92,14 +92,14 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
     }
   }
   
-  Future<bool> setPolylineWithPointsCount(List<MAMapPoint> points, int count) async {
+  Future<bool> setPolylineWithPoints_count(List<MAMapPoint> points, int count) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::setPolylineWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::setPolylineWithPoints_count', {"points": points.map((it) => it.refId).toList(), "count": count, "refId": refId});
   
   
     // handle native call
@@ -114,14 +114,14 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
     }
   }
   
-  Future<bool> setPolylineWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
+  Future<bool> setPolylineWithCoordinates_count(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::setPolylineWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::setPolylineWithCoordinates_count', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});
   
   
     // handle native call
@@ -149,13 +149,13 @@ extension MAPolyline_Batch on List<MAPolyline> {
   //endregion
 
   //region methods
-  Future<List<MAPolyline>> polylineWithPointsCount_batch(List<List<MAMapPoint>> points, List<int> count) async {
+  Future<List<MAPolyline>> polylineWithPoints_count_batch(List<List<MAMapPoint>> points, List<int> count) async {
     if (points.length != count.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::polylineWithPointsCount_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::polylineWithPoints_count_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -168,13 +168,13 @@ extension MAPolyline_Batch on List<MAPolyline> {
     }
   }
   
-  Future<List<MAPolyline>> polylineWithCoordinatesCount_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
+  Future<List<MAPolyline>> polylineWithCoordinates_count_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
     if (coords.length != count.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::polylineWithCoordinatesCount_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::polylineWithCoordinates_count_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -187,13 +187,13 @@ extension MAPolyline_Batch on List<MAPolyline> {
     }
   }
   
-  Future<List<bool>> setPolylineWithPointsCount_batch(List<List<MAMapPoint>> points, List<int> count) async {
+  Future<List<bool>> setPolylineWithPoints_count_batch(List<List<MAMapPoint>> points, List<int> count) async {
     if (points.length != count.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::setPolylineWithPointsCount_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::setPolylineWithPoints_count_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -206,13 +206,13 @@ extension MAPolyline_Batch on List<MAPolyline> {
     }
   }
   
-  Future<List<bool>> setPolylineWithCoordinatesCount_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
+  Future<List<bool>> setPolylineWithCoordinates_count_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
     if (coords.length != count.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::setPolylineWithCoordinatesCount_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolyline::setPolylineWithCoordinates_count_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

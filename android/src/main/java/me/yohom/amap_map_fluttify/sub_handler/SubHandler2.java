@@ -440,7 +440,7 @@ public class SubHandler2 {
             // setter
             put("com.autonavi.ae.gmap.maploader.ProcessingTile::set_mCreateTime", (args, methodResult) -> {
                 // jsonable arg
-                int mCreateTime = (int) ((Map<String, Object>) args).get("mCreateTime");
+                long mCreateTime = (long) (int) ((Map<String, Object>) args).get("mCreateTime");
             
                 int refId = (int) ((Map<String, Object>) args).get("refId");
                 com.autonavi.ae.gmap.maploader.ProcessingTile ref = (com.autonavi.ae.gmap.maploader.ProcessingTile) getHEAP().get(refId);
@@ -1056,7 +1056,7 @@ public class SubHandler2 {
             // setter
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mOverlayHashCode", (args, methodResult) -> {
                 // jsonable arg
-                int mOverlayHashCode = (int) ((Map<String, Object>) args).get("mOverlayHashCode");
+                long mOverlayHashCode = (long) (int) ((Map<String, Object>) args).get("mOverlayHashCode");
             
                 int refId = (int) ((Map<String, Object>) args).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
@@ -1067,7 +1067,7 @@ public class SubHandler2 {
             // setter
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedIndex", (args, methodResult) -> {
                 // jsonable arg
-                int mHitedIndex = (int) ((Map<String, Object>) args).get("mHitedIndex");
+                long mHitedIndex = (long) (int) ((Map<String, Object>) args).get("mHitedIndex");
             
                 int refId = (int) ((Map<String, Object>) args).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
@@ -1078,7 +1078,7 @@ public class SubHandler2 {
             // setter
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedTimes", (args, methodResult) -> {
                 // jsonable arg
-                int mHitedTimes = (int) ((Map<String, Object>) args).get("mHitedTimes");
+                long mHitedTimes = (long) (int) ((Map<String, Object>) args).get("mHitedTimes");
             
                 int refId = (int) ((Map<String, Object>) args).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
@@ -1639,7 +1639,7 @@ public class SubHandler2 {
             // setter
             put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_handler", (args, methodResult) -> {
                 // jsonable arg
-                int handler = (int) ((Map<String, Object>) args).get("handler");
+                long handler = (long) (int) ((Map<String, Object>) args).get("handler");
             
                 int refId = (int) ((Map<String, Object>) args).get("refId");
                 com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
@@ -2343,7 +2343,7 @@ public class SubHandler2 {
             // setter
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mDuration", (args, methodResult) -> {
                 // jsonable arg
-                int mDuration = (int) ((Map<String, Object>) args).get("mDuration");
+                long mDuration = (long) (int) ((Map<String, Object>) args).get("mDuration");
             
                 int refId = (int) ((Map<String, Object>) args).get("refId");
                 com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);

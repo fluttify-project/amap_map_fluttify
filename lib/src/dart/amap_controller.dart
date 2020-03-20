@@ -160,7 +160,7 @@ class AmapController with WidgetsBindingObserver, _Private {
             _locateSubscription?.cancel();
             _locateSubscription = Stream.periodic(option.interval, (_) => _)
                 .listen((_) async =>
-                    await iosController.setUserTrackingModeAnimated(
+                    await iosController.setUserTrackingMode_animated(
                       MAUserTrackingMode.MAUserTrackingModeFollow,
                       true,
                     ));
@@ -168,25 +168,25 @@ class AmapController with WidgetsBindingObserver, _Private {
 
           switch (option.myLocationType) {
             case MyLocationType.Show:
-              await iosController.setUserTrackingModeAnimated(
+              await iosController.setUserTrackingMode_animated(
                 MAUserTrackingMode.MAUserTrackingModeNone,
                 true,
               );
               break;
             case MyLocationType.Locate:
-              await iosController.setUserTrackingModeAnimated(
+              await iosController.setUserTrackingMode_animated(
                 MAUserTrackingMode.MAUserTrackingModeFollow,
                 true,
               );
               break;
             case MyLocationType.Follow:
-              await iosController.setUserTrackingModeAnimated(
+              await iosController.setUserTrackingMode_animated(
                 MAUserTrackingMode.MAUserTrackingModeFollow,
                 true,
               );
               break;
             case MyLocationType.Rotate:
-              await iosController.setUserTrackingModeAnimated(
+              await iosController.setUserTrackingMode_animated(
                 MAUserTrackingMode.MAUserTrackingModeFollowWithHeading,
                 true,
               );
@@ -237,11 +237,11 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         // todo 暂时没有找到比较直接的方式实现
         print('ios端暂时未实现');
-//        final annotations = await _iosController.get_annotations();
-//        for (final annotation in annotations) {
-//          if (await isKindOfMAUserLocation(annotation)) {
-//            final userLocation = await asMAUserLocation(annotation);
-//            userLocation.set()
+//        final annotations = await iosController.get_annotations();
+//        for (final MAAnnotation annotation in annotations) {
+//          if (await annotation.isMAUserLocation()) {
+//            final userLocation = await annotation.asMAUserLocation();
+//            userLocation.set_movingDirection(movingDirection)
 //            break;
 //          }
 //        }
@@ -521,7 +521,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool..add(map)..add(cameraUpdate);
       },
       ios: (pool) async {
-        await iosController.setZoomLevelAnimated(level, animated);
+        await iosController.setZoomLevel_animated(level, animated);
       },
     );
   }
@@ -576,7 +576,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       },
       ios: (pool) async {
         final currentLevel = await iosController.get_zoomLevel();
-        await iosController.setZoomLevelAnimated(currentLevel + 1, animated);
+        await iosController.setZoomLevel_animated(currentLevel + 1, animated);
       },
     );
   }
@@ -598,7 +598,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       },
       ios: (pool) async {
         final currentLevel = await iosController.get_zoomLevel();
-        await iosController.setZoomLevelAnimated(currentLevel - 1, animated);
+        await iosController.setZoomLevel_animated(currentLevel - 1, animated);
       },
     );
   }
@@ -647,7 +647,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         final latLng = await CLLocationCoordinate2D.create(lat, lng);
         if (zoomLevel != null) {
-          await iosController.setZoomLevelAnimated(zoomLevel, animated);
+          await iosController.setZoomLevel_animated(zoomLevel, animated);
         }
         if (bearing != null) {
           await iosController.set_rotationDegree(bearing);
@@ -655,7 +655,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         if (tilt != null) {
           await iosController.set_cameraDegree(tilt);
         }
-        await iosController.setCenterCoordinateAnimated(latLng, animated);
+        await iosController.setCenterCoordinate_animated(latLng, animated);
 
         pool..add(latLng);
       },
@@ -851,13 +851,14 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 添加marker
         await iosController.addAnnotation(annotation);
 
-        // 等待添加完成 获取对应的view
-        final annotationViewList =
-            await _iosMapDelegate._annotationViewStream.stream.first;
+//        // 等待添加完成 获取对应的view
+//        final annotationViewList =
+//            await _iosMapDelegate._annotationViewStream.stream.first;
         // pointAnnotation不释放, 还有用
         pool.add(coordinate);
 
-        return Marker.ios(annotation, annotationViewList[0], iosController);
+        return Marker.ios(
+            annotation /*, annotationViewList[0]*/, iosController);
       },
     );
   }
@@ -1051,13 +1052,16 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 添加marker
         await iosController.addAnnotations(iosOptions);
 
-        // 等待添加完成 获取对应的view
-        final annotationViewList =
-            await _iosMapDelegate._annotationViewStream.stream.first;
+//        // 等待添加完成 获取对应的view
+//        // 由于只有可见marker才会返回, 防止返回的marker数量和option数量不一致, 这里强制给一个options数量的列表来装返回的marker
+//        final annotationViewList = List(options.length);
+//        final visibleMarkers =
+//            await _iosMapDelegate._annotationViewStream.stream.first;
+//        annotationViewList.fillRange(0, visibleMarkers.length, visibleMarkers);
 
         return [
           for (int i = 0; i < iosOptions.length; i++)
-            Marker.ios(iosOptions[i], annotationViewList[i], iosController)
+            Marker.ios(iosOptions[i] /*, annotationViewList[i]*/, iosController)
         ];
       },
     );
@@ -1142,7 +1146,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 添加动画
         final animation = await annotation
-            .addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback(
+            .addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback(
           points,
           points.length,
           option.duration.inSeconds.toDouble(),
@@ -1222,7 +1226,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       },
       ios: (pool) async {
         final cgPoint = await CGPoint.create(point.x, point.y);
-        final coord2d = await iosController.convertPointToCoordinateFromView(
+        final coord2d = await iosController.convertPoint_toCoordinateFromView(
             cgPoint, iosController);
 
         pool..add(cgPoint)..add(coord2d);
@@ -1249,7 +1253,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         final latLng = await CLLocationCoordinate2D.create(
             coord.latitude, coord.longitude);
-        final point = await iosController.convertCoordinateToPointToView(
+        final point = await iosController.convertCoordinate_toPointToView(
             latLng, iosController);
 
         pool..add(latLng)..add(point);
@@ -1352,7 +1356,7 @@ class AmapController with WidgetsBindingObserver, _Private {
                 latitudeBatch, longitudeBatch);
 
         // 构造折线参数
-        final polyline = await MAPolyline.polylineWithCoordinatesCount(
+        final polyline = await MAPolyline.polylineWithCoordinates_count(
             latLngList, latLngList.length);
 
         // 宽度和颜色需要设置到STACK里去
@@ -1465,7 +1469,7 @@ class AmapController with WidgetsBindingObserver, _Private {
                 latitudeBatch, longitudeBatch);
 
         // 构造折线参数
-        final polygon = await MAPolygon.polygonWithCoordinatesCount(
+        final polygon = await MAPolygon.polygonWithCoordinates_count(
             latLngList, latLngList.length);
 
         // 宽度和颜色需要设置到STACK里去
@@ -1540,7 +1544,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         );
 
         // 参数
-        final circle = await MACircle.circleWithCenterCoordinateRadius(
+        final circle = await MACircle.circleWithCenterCoordinate_radius(
           latLng,
           option.radius,
         );
@@ -1709,7 +1713,7 @@ class AmapController with WidgetsBindingObserver, _Private {
       },
       ios: (pool) async {
         final rect = await iosController.frame;
-        await iosController.takeSnapshotInRectWithCompletionBlock(
+        await iosController.takeSnapshotInRect_withCompletionBlock(
           rect,
           (image, state) async {
             await onScreenShot(await image.data);
@@ -1877,7 +1881,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         final rect = await MAMapRectMake(x, y, width, height);
 
         final dPadding = padding.toDouble();
-        iosController.setVisibleMapRectEdgePaddinganimated(
+        iosController.setVisibleMapRect_edgePadding_animated(
           rect,
           await UIEdgeInsets.create(dPadding, dPadding, dPadding, dPadding),
           animated,
@@ -2073,11 +2077,11 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       StreamController<List<MAAnnotationView>>.broadcast();
 
   @override
-  Future<void> mapViewDidAddAnnotationViews(
+  Future<void> mapView_didAddAnnotationViews(
     MAMapView mapView,
     List<NSObject> views,
   ) async {
-    super.mapViewDidAddAnnotationViews(mapView, views);
+    super.mapView_didAddAnnotationViews(mapView, views);
     if (_annotationViewStream != null && !_annotationViewStream.isClosed) {
       List<MAAnnotationView> result = [
         for (final view in views) await view.asMAAnnotationView()
@@ -2087,11 +2091,11 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   }
 
   @override
-  Future<void> mapViewDidAnnotationViewTapped(
+  Future<void> mapView_didAnnotationViewTapped(
     MAMapView mapView,
     MAAnnotationView view,
   ) async {
-    super.mapViewDidAnnotationViewTapped(mapView, view);
+    super.mapView_didAnnotationViewTapped(mapView, view);
     if (_onMarkerClicked != null) {
       await _onMarkerClicked(
         Marker.ios(
@@ -2102,7 +2106,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
           // 解决办法很简单, 把refId取出来放到目标实体类里就行了
           MAPointAnnotation()
             ..refId = (await view.get_annotation(viewChannel: false)).refId,
-          view,
+//          view,
           _iosController,
         ),
       );
@@ -2110,13 +2114,13 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   }
 
   @override
-  Future<void> mapViewAnnotationViewdidChangeDragStatefromOldState(
+  Future<void> mapView_annotationView_didChangeDragState_fromOldState(
     MAMapView mapView,
     MAAnnotationView view,
     MAAnnotationViewDragState newState,
     MAAnnotationViewDragState oldState,
   ) async {
-    super.mapViewAnnotationViewdidChangeDragStatefromOldState(
+    super.mapView_annotationView_didChangeDragState_fromOldState(
       mapView,
       view,
       newState,
@@ -2128,7 +2132,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       await _onMarkerDragStart(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
-          view,
+//          view,
           _iosController,
         ),
       );
@@ -2140,7 +2144,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       await _onMarkerDragging(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
-          view,
+//          view,
           _iosController,
         ),
       );
@@ -2151,7 +2155,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       await _onMarkerDragEnd(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
-          view,
+//          view,
           _iosController,
         ),
       );
@@ -2159,11 +2163,11 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   }
 
   @override
-  Future<void> mapViewDidSingleTappedAtCoordinate(
+  Future<void> mapView_didSingleTappedAtCoordinate(
     MAMapView mapView,
     CLLocationCoordinate2D coordinate,
   ) async {
-    super.mapViewDidSingleTappedAtCoordinate(mapView, coordinate);
+    super.mapView_didSingleTappedAtCoordinate(mapView, coordinate);
     if (_onMapClick != null) {
       await _onMapClick(LatLng(
         await coordinate.latitude,
@@ -2173,11 +2177,11 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   }
 
   @override
-  Future<void> mapViewMapWillMoveByUser(
+  Future<void> mapView_mapWillMoveByUser(
     MAMapView mapView,
     bool wasUserAction,
   ) async {
-    super.mapViewMapWillMoveByUser(mapView, wasUserAction);
+    super.mapView_mapWillMoveByUser(mapView, wasUserAction);
     if (_onMapMoveStart != null) {
       final location = await mapView.get_centerCoordinate();
       await _onMapMoveStart(MapMove(
@@ -2190,11 +2194,11 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   }
 
   @override
-  Future<void> mapViewMapDidMoveByUser(
+  Future<void> mapView_mapDidMoveByUser(
     MAMapView mapView,
     bool wasUserAction,
   ) async {
-    super.mapViewMapDidMoveByUser(mapView, wasUserAction);
+    super.mapView_mapDidMoveByUser(mapView, wasUserAction);
     if (_onMapMoveEnd != null) {
       final location = await mapView.get_centerCoordinate();
       await _onMapMoveEnd(MapMove(
@@ -2207,11 +2211,11 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   }
 
   @override
-  Future<void> mapViewMapWillZoomByUser(
+  Future<void> mapView_mapWillZoomByUser(
     MAMapView mapView,
     bool wasUserAction,
   ) async {
-    super.mapViewMapWillZoomByUser(mapView, wasUserAction);
+    super.mapView_mapWillZoomByUser(mapView, wasUserAction);
     if (_onMapMoveStart != null) {
       final location = await mapView.get_centerCoordinate();
       await _onMapMoveStart(MapMove(
@@ -2224,11 +2228,11 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   }
 
   @override
-  Future<void> mapViewMapDidZoomByUser(
+  Future<void> mapView_mapDidZoomByUser(
     MAMapView mapView,
     bool wasUserAction,
   ) async {
-    super.mapViewMapDidZoomByUser(mapView, wasUserAction);
+    super.mapView_mapDidZoomByUser(mapView, wasUserAction);
     if (_onMapMoveEnd != null) {
       final location = await mapView.get_centerCoordinate();
       await _onMapMoveEnd(MapMove(
@@ -2251,12 +2255,12 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   }
 
   @override
-  Future<void> mapViewDidUpdateUserLocationupdatingLocation(
+  Future<void> mapView_didUpdateUserLocation_updatingLocation(
     MAMapView mapView,
     MAUserLocation userLocation,
     bool updatingLocation,
   ) async {
-    super.mapViewDidUpdateUserLocationupdatingLocation(
+    super.mapView_didUpdateUserLocation_updatingLocation(
       mapView,
       userLocation,
       updatingLocation,
@@ -2267,17 +2271,17 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   }
 
   @override
-  Future<void> mapViewDidAnnotationViewCalloutTapped(
+  Future<void> mapView_didAnnotationViewCalloutTapped(
     MAMapView mapView,
     MAAnnotationView view,
   ) async {
-    super.mapViewDidAnnotationViewCalloutTapped(mapView, view);
+    super.mapView_didAnnotationViewCalloutTapped(mapView, view);
     if (_onInfoWindowClicked != null) {
       await _onInfoWindowClicked(
         Marker.ios(
           MAPointAnnotation()
             ..refId = (await view.get_annotation(viewChannel: false)).refId,
-          view,
+//          view,
           _iosController,
         ),
       );
