@@ -1,3 +1,7 @@
+## 0.18.2
+- fix: 调用fromScreenLocation后调用Circle.remove方法报错处理
+- fix: ios端回调无效处理
+
 ## 0.18.1
 - roll engine #5191928e
 - enhance: ios端Marker去除setCoordinate和setVisible方法, 防止阻塞
