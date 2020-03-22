@@ -48,8 +48,8 @@ extern BOOL enableLog;
 
 - (UIView *)view {
   MAMapView *view = [[MAMapView alloc] init];
-  // 这里viewId加1是为了防止往HEAP里放了nil的key, 把HEAP内原先viewId为0的覆盖掉了, 因为nil实际上就是0
-  HEAP[@(_viewId + 1)] = view;
+  // 这里用一个magic number调整一下id
+  HEAP[@(2147483647 - _viewId)] = view;
 
   //region handlers
   _handlerMap = @{
@@ -3541,7 +3541,7 @@ extern BOOL enableLog;
   NSNumber* argerror = @(error.hash);
   HEAP[argerror] = error;
 
-  [channel invokeMethod:@"Callback::MATraceDelegate::traceManagerDidTracecorrectdistancewithError" arguments:@{@"manager": argmanager, @"locations": arglocations, @"tracePoints": argtracePoints, @"distance": argdistance, @"error": argerror}];
+  [channel invokeMethod:@"Callback::MATraceDelegate::traceManager_didTrace_correct_distance_withError" arguments:@{@"manager": argmanager, @"locations": arglocations, @"tracePoints": argtracePoints, @"distance": argdistance, @"error": argerror}];
   
 }
 
@@ -3582,7 +3582,7 @@ extern BOOL enableLog;
   NSNumber* argitem = @(item.hash);
   HEAP[argitem] = item;
 
-  [channel invokeMethod:@"Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped" arguments:@{@"renderer": argrenderer, @"item": argitem}];
+  [channel invokeMethod:@"Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRenderer_didItemTapped" arguments:@{@"renderer": argrenderer, @"item": argitem}];
   
 }
 
@@ -3622,7 +3622,7 @@ extern BOOL enableLog;
   // primitive callback arg
   NSNumber* arganimated = @(animated);
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionWillChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionWillChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
   
 }
 
@@ -3643,7 +3643,7 @@ extern BOOL enableLog;
   // primitive callback arg
   NSNumber* arganimated = @(animated);
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionDidChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
   
 }
 
@@ -3664,7 +3664,7 @@ extern BOOL enableLog;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillMoveByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_mapWillMoveByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
   
 }
 
@@ -3685,7 +3685,7 @@ extern BOOL enableLog;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidMoveByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_mapDidMoveByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
   
 }
 
@@ -3706,7 +3706,7 @@ extern BOOL enableLog;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillZoomByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_mapWillZoomByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
   
 }
 
@@ -3727,7 +3727,7 @@ extern BOOL enableLog;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidZoomByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_mapDidZoomByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
   
 }
 
@@ -3787,7 +3787,7 @@ extern BOOL enableLog;
   NSNumber* argerror = @(error.hash);
   HEAP[argerror] = error;
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFailLoadingMapWithError" arguments:@{@"mapView": argmapView, @"error": argerror}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFailLoadingMap_withError" arguments:@{@"mapView": argmapView, @"error": argerror}];
   
 }
 
@@ -3809,7 +3809,7 @@ extern BOOL enableLog;
   NSNumber* argannotation = @(annotation.hash);
   HEAP[argannotation] = annotation;
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewViewForAnnotation"
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_viewForAnnotation"
               arguments:@{}
                  result:^(id result) {}]; // 由于结果是异步返回, 这里用不上, 所以就不生成代码了
   
@@ -3898,7 +3898,7 @@ extern BOOL enableLog;
       HEAP[@(item.hash)] = item;
   }
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAddAnnotationViews" arguments:@{@"mapView": argmapView, @"views": argviews}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAddAnnotationViews" arguments:@{@"mapView": argmapView, @"views": argviews}];
   
 }
 
@@ -3920,7 +3920,7 @@ extern BOOL enableLog;
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidSelectAnnotationView" arguments:@{@"mapView": argmapView, @"view": argview}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didSelectAnnotationView" arguments:@{@"mapView": argmapView, @"view": argview}];
   
 }
 
@@ -3942,7 +3942,7 @@ extern BOOL enableLog;
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidDeselectAnnotationView" arguments:@{@"mapView": argmapView, @"view": argview}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didDeselectAnnotationView" arguments:@{@"mapView": argmapView, @"view": argview}];
   
 }
 
@@ -4004,7 +4004,7 @@ extern BOOL enableLog;
   // primitive callback arg
   NSNumber* argupdatingLocation = @(updatingLocation);
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation" arguments:@{@"mapView": argmapView, @"userLocation": arguserLocation, @"updatingLocation": argupdatingLocation}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didUpdateUserLocation_updatingLocation" arguments:@{@"mapView": argmapView, @"userLocation": arguserLocation, @"updatingLocation": argupdatingLocation}];
   
 }
 
@@ -4026,7 +4026,7 @@ extern BOOL enableLog;
   NSNumber* argerror = @(error.hash);
   HEAP[argerror] = error;
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFailToLocateUserWithError" arguments:@{@"mapView": argmapView, @"error": argerror}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didFailToLocateUserWithError" arguments:@{@"mapView": argmapView, @"error": argerror}];
   
 }
 
@@ -4052,7 +4052,7 @@ extern BOOL enableLog;
   // enum callback arg
   NSNumber* argoldState = @((NSInteger) oldState);
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState" arguments:@{@"mapView": argmapView, @"view": argview, @"newState": argnewState, @"oldState": argoldState}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_annotationView_didChangeDragState_fromOldState" arguments:@{@"mapView": argmapView, @"view": argview, @"newState": argnewState, @"oldState": argoldState}];
   
 }
 
@@ -4074,7 +4074,7 @@ extern BOOL enableLog;
   NSNumber* argoverlay = @(overlay.hash);
   HEAP[argoverlay] = overlay;
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRendererForOverlay"
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_rendererForOverlay"
               arguments:@{}
                  result:^(id result) {}]; // 由于结果是异步返回, 这里用不上, 所以就不生成代码了
   
@@ -4106,7 +4106,7 @@ extern BOOL enableLog;
           rgba >>= 8;
       }
       polylineRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
-      polylineRenderer.strokeImage = texture;
+      if (texture != nil) polylineRenderer.strokeImage = texture;
       if (lineCapType != nil) polylineRenderer.lineCapType = (MALineCapType) [lineCapType integerValue];
       if (lineJoinType != nil) polylineRenderer.lineJoinType = (MALineJoinType) [lineJoinType integerValue];
       if (dashType != nil) polylineRenderer.lineDashType = (MALineDashType) [dashType integerValue];
@@ -4122,7 +4122,7 @@ extern BOOL enableLog;
       MAPolygonRenderer *polygonRenderer = [[MAPolygonRenderer alloc] initWithPolygon:overlay];
 
       // 宽度 比android端的粗一倍 这里除以2
-      polygonRenderer.lineWidth    = [width doubleValue] / 2;
+      if (width != nil) polygonRenderer.lineWidth    = [width doubleValue] / 2;
       // 描边颜色
       NSUInteger rgba = [strokeColor unsignedIntegerValue];
       float components[4];
@@ -4151,7 +4151,7 @@ extern BOOL enableLog;
       MACircleRenderer *circleRenderer = [[MACircleRenderer alloc] initWithCircle:overlay];
 
       // 宽度
-      circleRenderer.lineWidth    = [width doubleValue] / 2;
+      if (width != nil) circleRenderer.lineWidth = [width doubleValue] / 2;
 
       // 描边颜色
       NSUInteger rgba = [strokeColor unsignedIntegerValue];
@@ -4210,7 +4210,7 @@ extern BOOL enableLog;
       HEAP[@(item.hash)] = item;
   }
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAddOverlayRenderers" arguments:@{@"mapView": argmapView, @"overlayRenderers": argoverlayRenderers}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAddOverlayRenderers" arguments:@{@"mapView": argmapView, @"overlayRenderers": argoverlayRenderers}];
   
 }
 
@@ -4235,7 +4235,7 @@ extern BOOL enableLog;
   NSNumber* argcontrol = @(control.hash);
   HEAP[argcontrol] = control;
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped" arguments:@{@"mapView": argmapView, @"view": argview, @"control": argcontrol}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_annotationView_calloutAccessoryControlTapped" arguments:@{@"mapView": argmapView, @"view": argview, @"control": argcontrol}];
   
 }
 
@@ -4257,7 +4257,7 @@ extern BOOL enableLog;
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped" arguments:@{@"mapView": argmapView, @"view": argview}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped" arguments:@{@"mapView": argmapView, @"view": argview}];
   
 }
 
@@ -4279,7 +4279,7 @@ extern BOOL enableLog;
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAnnotationViewTapped" arguments:@{@"mapView": argmapView, @"view": argview}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAnnotationViewTapped" arguments:@{@"mapView": argmapView, @"view": argview}];
   
 }
 
@@ -4302,7 +4302,7 @@ extern BOOL enableLog;
   // primitive callback arg
   NSNumber* arganimated = @(animated);
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated" arguments:@{@"mapView": argmapView, @"mode": argmode, @"animated": arganimated}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didChangeUserTrackingMode_animated" arguments:@{@"mapView": argmapView, @"mode": argmode, @"animated": arganimated}];
   
 }
 
@@ -4323,7 +4323,7 @@ extern BOOL enableLog;
   // primitive callback arg
   NSNumber* argopenGLESDisabled = @(openGLESDisabled);
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled" arguments:@{@"mapView": argmapView, @"openGLESDisabled": argopenGLESDisabled}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didChangeOpenGLESDisabled" arguments:@{@"mapView": argmapView, @"openGLESDisabled": argopenGLESDisabled}];
   
 }
 
@@ -4351,7 +4351,7 @@ extern BOOL enableLog;
       HEAP[@(item.hash)] = item;
   }
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidTouchPois" arguments:@{@"mapView": argmapView, @"pois": argpois}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didTouchPois" arguments:@{@"mapView": argmapView, @"pois": argpois}];
   
 }
 
@@ -4375,7 +4375,7 @@ extern BOOL enableLog;
   HEAP[argcoordinate] = coordinateValue;
   
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate" arguments:@{@"mapView": argmapView, @"coordinate": argcoordinate}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didSingleTappedAtCoordinate" arguments:@{@"mapView": argmapView, @"coordinate": argcoordinate}];
   
 }
 
@@ -4399,7 +4399,7 @@ extern BOOL enableLog;
   HEAP[argcoordinate] = coordinateValue;
   
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidLongPressedAtCoordinate" arguments:@{@"mapView": argmapView, @"coordinate": argcoordinate}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didLongPressedAtCoordinate" arguments:@{@"mapView": argmapView, @"coordinate": argcoordinate}];
   
 }
 
@@ -4440,7 +4440,7 @@ extern BOOL enableLog;
   NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP[argindoorInfo] = indoorInfo;
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidIndoorMapShowed" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didIndoorMapShowed" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
   
 }
 
@@ -4462,7 +4462,7 @@ extern BOOL enableLog;
   NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP[argindoorInfo] = indoorInfo;
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didIndoorMapFloorIndexChanged" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
   
 }
 
@@ -4484,7 +4484,7 @@ extern BOOL enableLog;
   NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP[argindoorInfo] = indoorInfo;
 
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidIndoorMapHidden" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didIndoorMapHidden" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
   
 }
 

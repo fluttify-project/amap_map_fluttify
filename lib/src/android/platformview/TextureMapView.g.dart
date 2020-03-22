@@ -55,7 +55,8 @@ class _com_amap_api_maps_TextureMapView_AndroidState extends State<com_amap_api_
   }
 
   void _onViewCreated(int id) {
-    _controller = com_amap_api_maps_TextureMapView()..refId = id;
+    // 碰到一个对象返回的hashCode为0的情况, 造成和这个id冲突了, 这里用一个magic number避免一下
+    _controller = com_amap_api_maps_TextureMapView()..refId = 2147483647 - id;
     if (widget.onViewCreated != null) {
       widget.onViewCreated(_controller);
     }
