@@ -208,8 +208,8 @@ class PolylineOption {
 
   PolylineOption({
     @required this.latLngList,
-    this.width,
-    this.strokeColor,
+    this.width = 10,
+    this.strokeColor = Colors.green,
     this.customTexture,
     this.imageConfig,
     this.lineCapType,
@@ -244,8 +244,8 @@ class PolygonOption {
 
   PolygonOption({
     @required this.latLngList,
-    this.width,
-    this.strokeColor,
+    this.width = 10,
+    this.strokeColor = Colors.green,
     this.fillColor = Colors.transparent,
   });
 
@@ -276,9 +276,9 @@ class CircleOption {
   CircleOption({
     @required this.center,
     @required this.radius,
-    this.width,
-    this.strokeColor,
-    this.fillColor,
+    this.width = 10,
+    this.strokeColor = Colors.green,
+    this.fillColor = Colors.transparent,
   })  : assert(center != null),
         assert(radius != null);
 

@@ -4106,7 +4106,7 @@ extern BOOL enableLog;
           rgba >>= 8;
       }
       polylineRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
-      polylineRenderer.strokeImage = texture;
+      if (texture != nil) polylineRenderer.strokeImage = texture;
       if (lineCapType != nil) polylineRenderer.lineCapType = (MALineCapType) [lineCapType integerValue];
       if (lineJoinType != nil) polylineRenderer.lineJoinType = (MALineJoinType) [lineJoinType integerValue];
       if (dashType != nil) polylineRenderer.lineDashType = (MALineDashType) [dashType integerValue];
@@ -4122,7 +4122,7 @@ extern BOOL enableLog;
       MAPolygonRenderer *polygonRenderer = [[MAPolygonRenderer alloc] initWithPolygon:overlay];
 
       // 宽度 比android端的粗一倍 这里除以2
-      polygonRenderer.lineWidth    = [width doubleValue] / 2;
+      if (width != nil) polygonRenderer.lineWidth    = [width doubleValue] / 2;
       // 描边颜色
       NSUInteger rgba = [strokeColor unsignedIntegerValue];
       float components[4];
@@ -4151,7 +4151,7 @@ extern BOOL enableLog;
       MACircleRenderer *circleRenderer = [[MACircleRenderer alloc] initWithCircle:overlay];
 
       // 宽度
-      circleRenderer.lineWidth    = [width doubleValue] / 2;
+      if (width != nil) circleRenderer.lineWidth = [width doubleValue] / 2;
 
       // 描边颜色
       NSUInteger rgba = [strokeColor unsignedIntegerValue];
