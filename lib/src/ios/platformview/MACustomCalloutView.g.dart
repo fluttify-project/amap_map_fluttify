@@ -51,8 +51,8 @@ class _MACustomCalloutView_iOSState extends State<MACustomCalloutView_iOS> {
   }
 
   void _onViewCreated(int id) {
-    // 这里id+1是为了和iOS端对齐, 因为objc里nil==0的缘故, 0和nil会混淆, 所以这里从1开始
-    _controller = MACustomCalloutView()..refId = id + 1;
+    // 碰到一个对象返回的hashCode为0的情况, 造成和这个id冲突了, 这里用一个magic number避免一下
+    _controller = MACustomCalloutView()..refId = 2147483647 - id;
     if (widget.onViewCreated != null) {
       widget.onViewCreated(_controller);
     }

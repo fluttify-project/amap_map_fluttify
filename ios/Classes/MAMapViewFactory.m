@@ -48,8 +48,8 @@ extern BOOL enableLog;
 
 - (UIView *)view {
   MAMapView *view = [[MAMapView alloc] init];
-  // 这里viewId加1是为了防止往HEAP里放了nil的key, 把HEAP内原先viewId为0的覆盖掉了, 因为nil实际上就是0
-  HEAP[@(_viewId + 1)] = view;
+  // 这里用一个magic number调整一下id
+  HEAP[@(2147483647 - _viewId)] = view;
 
   //region handlers
   _handlerMap = @{

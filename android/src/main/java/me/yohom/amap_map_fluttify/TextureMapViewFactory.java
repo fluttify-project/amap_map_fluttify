@@ -319,7 +319,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
         com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
 
         com.amap.api.maps.TextureMapView view = new com.amap.api.maps.TextureMapView(activity, var2);
-        getHEAP().put(id, view);
+        getHEAP().put(Integer.MAX_VALUE - id, view);
         return new PlatformView() {
 
             // add to HEAP

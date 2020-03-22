@@ -94,7 +94,7 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
         
 
         com.amap.api.maps.offlinemap.DownloadProgressView view = new com.amap.api.maps.offlinemap.DownloadProgressView(activity);
-        getHEAP().put(id, view);
+        getHEAP().put(Integer.MAX_VALUE - id, view);
         return new PlatformView() {
 
             // add to HEAP
